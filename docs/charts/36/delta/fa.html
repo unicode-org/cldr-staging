@@ -1,0 +1,669 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Persian Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Persian Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: punctuation</td><td class='source' rowSpan='575'>fa</td><td class='target'>‫[\- ‐ ، ٫ ٬ ؛ \: ! ؟ . … ‹ › « » ( ) \[ \] * / \\]‬</td><td class='target'>‫[\- ‐ ‑ ، ٫ ٬ ؛ \: ! ؟ . … ‹ › « » ( ) \[ \] * / \\]‬</td><td class='target'>core</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Parse' href='#Parse'>Parse</a></td><td class='source'>date-lenient(:)</td><td class='target'>[\:∶]</td><td class='target'>[\:∶︓﹕：]</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'>general-lenient($)</td><td class='target'>[\$﹩＄$]</td><td class='target'>[\$﹩＄]</td></tr>
+	<tr><td class='source'>general-lenient(£)</td><td class='target'>[£₤]</td><td class='target'>[£₤￡]</td></tr>
+	<tr><td class='source'>number-lenient(-)</td><td class='target'>[\-‒⁻₋−➖﹣－]</td><td class='target'>[\-‐‒–⁻₋−➖﹣－]</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='4'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='4'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>yue</td><td class='target'>‫چینی کانتونی‬</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target' rowSpan='3'>zh</td><td class='target'>‫چینی ماندارین ساده‌شده‬</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>‫چینی ماندارین سنتی‬</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>‫چینی، ماندارین‬</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='N' href='#N'>N</a></td><td class='source'>Ngiemboon ► nnh</td><td class='target'>‫انگیمبونی‬</td><td class='target'>‫نیامبون‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Hanb</td><td class='target'>‫هانبی‬</td><td class='target'>‫هان با بوموپوفو‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source'><a name='World' href='#World'>World</a></td><td class='source'>EZ</td><td class='target'>‫منطقه یورو‬</td><td class='target'>‫منطقهٔ یورو‬</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'>202</td><td class='target'>‫افریقای سیاه‬</td><td class='target'>‫افریقای جنوب صحرا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>XA</td><td class='target'>XA</td><td class='target'>‫انگلیسی با لهجه خارجی‬</td></tr>
+	<tr><td class='source'>XB</td><td class='target'>XB</td><td class='target'>‫مجازی - دوجهته‬</td></tr>
+	<tr><td class='source'><a name='Territories (South America)' href='#Territories (South America)'>Territories (South America)</a></td><td class='source'><a name='South America' href='#South America'>South America</a></td><td class='source'>GS</td><td class='target'>‫جزایر جورجیای جنوبی و ساندویچ جنوبی‬</td><td class='target'>‫جورجیای جنوبی و جزایر ساندویچ جنوبی‬</td></tr>
+	<tr><td class='source'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'>CI-variant</td><td class='target'>‫ساحل‌عاج‬</td><td class='target'>CI</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>‫انگلستان‬</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='target'>‫انگلستان‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>‫اسکاتلند‬</td></tr>
+	<tr><td class='target'>‫اسکاتلند‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>‫ویلز‬</td></tr>
+	<tr><td class='target'>‫ویلز‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td><td class='source'>SJ</td><td class='target'>‫اسوالبارد و جان‌ماین‬</td><td class='target'>‫سوالبارد و یان ماین‬</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eastern Europe' href='#Eastern Europe'>Eastern Europe</a></td><td class='source'>CZ</td><td class='target'>‫جمهوری چک‬</td><td class='target'>‫چک‬</td></tr>
+	<tr><td class='source'>CZ-variant</td><td class='target'>CZ</td><td class='target'>‫جمهوری چک‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source' rowSpan='2'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'>HK</td><td class='target'>‫هنگ‌کنگ، منطقۀ ویژۀ اداری چین‬</td><td class='target'>‫هنگ‌کنگ، منطقهٔ ویژهٔ اداری چین‬</td></tr>
+	<tr><td class='source'>MO</td><td class='target'>‫ماکائو، منطقۀ ویژۀ اداری چین‬</td><td class='target'>‫ماکائو، منطقهٔ ویژهٔ اداری چین‬</td></tr>
+	<tr><td class='source'><a name='Territories (Oceania)' href='#Territories (Oceania)'>Territories (Oceania)</a></td><td class='source'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source'>HM</td><td class='target'>‫جزیرهٔ هرد و جزایر مک‌دونالد‬</td><td class='target'>‫هرد و جزایر مک‌دونالد‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Locale Variants' href='#Locale Variants'>Locale Variants</a></td><td class='source' rowSpan='3'><a name='null' href='#null'>null</a></td><td class='source'>COLB1945</td><td class='target'>COLB1945</td><td class='target'>‫کنوانسیون رسم‌الخط پرتغال و برزیل در ۱۹۴۵‬</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>KSCOR</td><td class='target'>KSCOR</td><td class='target'>‫رسم‌الخط استاندارد‬</td></tr>
+	<tr><td class='source'>OXENDICT</td><td class='target'>OXENDICT</td><td class='target'>‫املای فرهنگ انگلیسی آکسفورد‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='collation' href='#collation'>collation</a></td><td class='source'>collation-zhuyin</td><td class='target'>zhuyin</td><td class='target'>‫ترتیب ژویین‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Line Break' href='#Line Break'>Line Break</a></td><td class='source'>lb</td><td class='target'>‫شیوهٔ اعمال سرخط‬</td><td class='target'>‫شیوهٔ سطرشکنی‬</td><td class='target' rowSpan='4'>modern</td></tr>
+	<tr><td class='source'>lb-loose</td><td class='target'>‫شیوهٔ ضعیف اعمال سرخط‬</td><td class='target'>‫شیوهٔ سطرشکنی سهل‌گیرانه‬</td></tr>
+	<tr><td class='source'>lb-normal</td><td class='target'>‫شیوهٔ عادی اعمال سرخط‬</td><td class='target'>‫شیوهٔ سطرشکنی عادی‬</td></tr>
+	<tr><td class='source'>lb-strict</td><td class='target'>‫شیوهٔ قوی اعمال سرخط‬</td><td class='target'>‫شیوهٔ سطرشکنی سخت‌گیرانه‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-brah</td><td class='target'>brah</td><td class='target'>‫ارقام برهمایی‬</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>numbers-mathbold</td><td class='target'>mathbold</td><td class='target'>‫ارقام ریاضی سیاه‬</td></tr>
+	<tr><td class='source'>numbers-mathsanb</td><td class='target'>mathsanb</td><td class='target'>‫ارقام ریاضی سیاه بی‌سریف‬</td></tr>
+	<tr><td class='source'>numbers-mathsans</td><td class='target'>mathsans</td><td class='target'>‫ارقام ریاضی بی‌سریف‬</td></tr>
+	<tr><td class='source' rowSpan='170'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='2'><a name='Fields' href='#Fields'>Fields</a></td><td class='source'><a name='Relative Month Short' href='#Relative Month Short'>Relative Month Short</a></td><td class='source' rowSpan='2'>-1</td><td class='target' rowSpan='2'>‫ماه پیش‬</td><td class='target' rowSpan='2'>‫ماه گذشته‬</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td></tr>
+	<tr><td class='source' rowSpan='31'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='4'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>MMMMW-one</td><td class='target' rowSpan='2'>‫هفتۀ W از LLLL‬</td><td class='target' rowSpan='2'>‫هفتهٔ Wم LLLL‬</td></tr>
+	<tr><td class='source'>MMMMW-other</td></tr>
+	<tr><td class='source'>yw-one</td><td class='target' rowSpan='2'>‫هفته w از Y‬</td><td class='target' rowSpan='2'>‫هفتهٔ wم Y‬</td></tr>
+	<tr><td class='source'>yw-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Formats - Flexible - 24 Hour Time Formats' href='#Formats - Flexible - 24 Hour Time Formats'>Formats - Flexible - 24 Hour Time Formats</a></td><td class='source'>Hmsv</td><td class='target'>HH:mm:ss v</td><td class='target'>H:mm:ss v</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Hmv</td><td class='target'>HH:mm v</td><td class='target'>H:mm v</td></tr>
+	<tr><td class='source'>ms</td><td class='target'>mm:ss</td><td class='target'>m:ss</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>‫y G تا y G‬</td><td class='target' rowSpan='24'>moderate</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>‫y تا y G‬</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>‫y/M GGGGG تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>‫y/M/d GGGGG تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>‫E y/M/d GGGGG تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>‫MMM y G تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>‫LLL تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>‫MMM y تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>‫d تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>‫d MMM y G تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>‫d LLL تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>‫d MMM y تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>‫E d MMM y G تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>‫E d MMM y تا E d MMM y G‬</td></tr>
+	<tr><td class='source' rowSpan='42'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>short</td><td class='target'>y/M/d G</td><td class='target'>y/M/d GGGGG</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>E d</td><td class='target'>‫E dم‬</td><td class='target' rowSpan='41'>moderate</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>y/M G</td><td class='target'>y/M GGGGG</td></tr>
+	<tr><td class='source'>yyyyMd</td><td class='target'>y/M/d G</td><td class='target'>y/M/d GGGGG</td></tr>
+	<tr><td class='source'>yyyyMEd</td><td class='target'>E y/M/d G</td><td class='target'>E y/M/d GGGGG</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>QQQQ y G</td><td class='target'>QQQ y G</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Formats - Flexible - 24 Hour Time Formats' href='#Formats - Flexible - 24 Hour Time Formats'>Formats - Flexible - 24 Hour Time Formats</a></td><td class='source'>EHm</td><td class='target'>E HH:mm</td><td class='target'>E H:mm</td></tr>
+	<tr><td class='source'>EHms</td><td class='target'>E HH:mm:ss</td><td class='target'>E H:mm:ss</td></tr>
+	<tr><td class='source'>ms</td><td class='target'>mm:ss</td><td class='target'>m:ss</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>‫y G تا y G‬</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>‫y تا y G‬</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>‫y/M GGGGG تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>‫y/M/d GGGGG تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>‫E y/M/d GGGGG تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>‫MMM y G تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>‫LLL تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>‫MMM y تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>‫d تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>‫d MMM y G تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>‫d LLL تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>‫d MMM y تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>‫E d MMM y G تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>‫E d MMM y تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>MMM/M</td><td class='target'>‫MMM تا MMM‬</td><td class='target'>‫LLL تا LLL‬</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>‫y/M تا y/M G‬</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>‫y/M/d تا y/M/d G‬</td><td class='target' rowSpan='3'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>‫E y/M/d تا E y/M/d G‬</td><td class='target' rowSpan='3'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source' rowSpan='65'><a name='Islamic' href='#Islamic'>Islamic</a></td><td class='source' rowSpan='3'><a name='Months - wide - Standalone' href='#Months - wide - Standalone'>Months - wide - Standalone</a></td><td class='source'>Apr</td><td class='target'>‫ربیع الثانی‬</td><td class='target'>‫ربیع‌الثانی‬</td><td class='target' rowSpan='27'>basic</td></tr>
+	<tr><td class='source'>May</td><td class='target'>‫جمادی الاول‬</td><td class='target'>‫جمادی‌الاول‬</td></tr>
+	<tr><td class='source'>Jun</td><td class='target'>‫جمادی الثانی‬</td><td class='target'>‫جمادی‌الثانی‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Months - narrow - Formatting' href='#Months - narrow - Formatting'>Months - narrow - Formatting</a></td><td class='source'>Jan</td><td class='target'>1</td><td class='target'>‫م‬</td></tr>
+	<tr><td class='source'>Feb</td><td class='target'>2</td><td class='target'>‫ص‬</td></tr>
+	<tr><td class='source'>Mar</td><td class='target'>3</td><td class='target' rowSpan='2'>‫ر‬</td></tr>
+	<tr><td class='source'>Apr</td><td class='target'>4</td></tr>
+	<tr><td class='source'>May</td><td class='target'>5</td><td class='target' rowSpan='2'>‫ج‬</td></tr>
+	<tr><td class='source'>Jun</td><td class='target'>6</td></tr>
+	<tr><td class='source'>Jul</td><td class='target'>7</td><td class='target'>‫ر‬</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>8</td><td class='target'>‫ش‬</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>9</td><td class='target'>‫ر‬</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>10</td><td class='target'>‫ش‬</td></tr>
+	<tr><td class='source'>Nov</td><td class='target'>11</td><td class='target' rowSpan='2'>‫ذ‬</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>12</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Months - narrow - Standalone' href='#Months - narrow - Standalone'>Months - narrow - Standalone</a></td><td class='source'>Jan</td><td class='target'>1</td><td class='target'>‫م‬</td></tr>
+	<tr><td class='source'>Feb</td><td class='target'>2</td><td class='target'>‫ص‬</td></tr>
+	<tr><td class='source'>Mar</td><td class='target'>3</td><td class='target' rowSpan='2'>‫ر‬</td></tr>
+	<tr><td class='source'>Apr</td><td class='target'>4</td></tr>
+	<tr><td class='source'>May</td><td class='target'>5</td><td class='target' rowSpan='2'>‫ج‬</td></tr>
+	<tr><td class='source'>Jun</td><td class='target'>6</td></tr>
+	<tr><td class='source'>Jul</td><td class='target'>7</td><td class='target'>‫ر‬</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>8</td><td class='target'>‫ش‬</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>9</td><td class='target'>‫ر‬</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>10</td><td class='target'>‫ش‬</td></tr>
+	<tr><td class='source'>Nov</td><td class='target'>11</td><td class='target' rowSpan='2'>‫ذ‬</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>12</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>E d</td><td class='target'>‫E dم‬</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>y/M G</td><td class='target'>y/M GGGGG</td></tr>
+	<tr><td class='source'>yyyyMd</td><td class='target'>y/M/d G</td><td class='target'>y/M/d GGGGG</td></tr>
+	<tr><td class='source'>yyyyMEd</td><td class='target'>E y/M/d G</td><td class='target'>E y/M/d GGGGG</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>y MMMM G</td><td class='target'>MMMM y G</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>‫y G تا y G‬</td><td class='target' rowSpan='63'>comprehensive</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>‫y تا y G‬</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>‫y/M GGGGG تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>‫y/M/d GGGGG تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>‫E y/M/d GGGGG تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>‫MMM y G تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>‫LLL تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>‫MMM y تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>‫d تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>‫d MMM y G تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>‫d LLL تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>‫d MMM y تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>‫E d MMM y G تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>‫E d MMM y تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>MMM/M</td><td class='target'>‫MMM تا MMM‬</td><td class='target'>‫LLL تا LLL‬</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>‫y/M تا y/M G‬</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>‫y/M/d تا y/M/d G‬</td><td class='target' rowSpan='3'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>‫E y/M/d تا E y/M/d G‬</td><td class='target' rowSpan='3'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'><a name='Eras - wide' href='#Eras - wide'>Eras - wide</a></td><td class='source' rowSpan='3'>235</td><td class='target' rowSpan='2'>‫هیسه‌ای‬</td><td class='target' rowSpan='2'>‫هیسی‬</td></tr>
+	<tr><td class='source'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eras - narrow' href='#Eras - narrow'>Eras - narrow</a></td><td class='target'>H</td><td class='target'>‫ه‍‬</td></tr>
+	<tr><td class='source'>236</td><td class='target'>R</td><td class='target'>‫ر‬</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Persian' href='#Persian'>Persian</a></td><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>E d</td><td class='target'>‫E dم‬</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>‫y G تا y G‬</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>‫y تا y G‬</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>‫y/M GGGGG تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>‫y/M تا y/M GGGGG‬</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>‫y/M/d GGGGG تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>‫y/M/d تا y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>‫E y/M/d GGGGG تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>‫E y/M/d تا E y/M/d GGGGG‬</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>‫MMM y G تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>‫LLL تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>‫MMM y تا MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>‫d تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>‫d MMM y G تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>‫d LLL تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>‫d MMM y تا d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>‫E d MMM y G تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E d LLL تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>‫E d MMM y تا E d MMM y G‬</td></tr>
+	<tr><td class='source'>MMM/M</td><td class='target'>‫MMM تا MMM‬</td><td class='target'>‫LLL تا LLL‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='2'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'><a name='Reunion' href='#Reunion'>Reunion</a></td><td class='source'>standard-long</td><td class='target'>‫وقت ریونیون‬</td><td class='target'>‫وقت رئونیون‬</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Tunis</td><td class='target'>‫شهر تونس‬</td><td class='target'>‫تونس‬</td></tr>
+	<tr><td class='source'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source'><a name='Norfolk' href='#Norfolk'>Norfolk</a></td><td class='source'>standard-long</td><td class='target'>‫وقت جزایر نورفولک‬</td><td class='target'>‫وقت جزیرهٔ نورفولک‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='2'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>‫او {0} فیلم در هفته می‌بیند که کمدی است.‬</td><td class='target'>‫{0} نفر در بازی شرکت کرد.‬</td></tr>
+	<tr><td class='source'>other</td><td class='target'>‫او {0} فیلم در هفته می‌بیند که کمدی‌اند.‬</td><td class='target'>‫{0} نفر در بازی شرکت کردند.‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Compact Decimal Formatting' href='#Compact Decimal Formatting'>Compact Decimal Formatting</a></td><td class='source' rowSpan='2'><a name='Short Formats ' href='#Short Formats '>Short Formats </a></td><td class='source'>12-digits-short-one</td><td class='target'>‫000 میلیارد‬</td><td class='target'>‫000 ب‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>13-digits-short-one</td><td class='target'>‫0 تریلیون‬</td><td class='target'>‫0 ت‬</td></tr>
+	<tr><td class='source' rowSpan='53'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='14'><a name='South America (C)' href='#South America (C)'>South America (C)</a></td><td class='source' rowSpan='3'><a name='South America: Argentina: ARM (old)' href='#South America: Argentina: ARM (old)'>South America: Argentina: ARM (old)</a></td><td class='source'>ARM-name</td><td class='target' rowSpan='3'>ARM</td><td class='target' rowSpan='3'>‫پزوی آرژانتین (۱۸۸۱ تا ۱۹۷۰)‬</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>ARM-name-one</td></tr>
+	<tr><td class='source'>ARM-name-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Argentina: ARP (old)' href='#South America: Argentina: ARP (old)'>South America: Argentina: ARP (old)</a></td><td class='source'>ARP-name-one</td><td class='target' rowSpan='2'>‫پزوی آرژانتین (۱۹۸۳ تا ۱۹۸۵)‏‬</td><td class='target' rowSpan='2'>‫پزوی آرژانتین (۱۹۸۳ تا ۱۹۸۵)‬</td></tr>
+	<tr><td class='source'>ARP-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Peru' href='#South America: Peru'>South America: Peru</a></td><td class='source'>PEN-name</td><td class='target' rowSpan='3'>‫نوئووسول پرو‬</td><td class='target' rowSpan='3'>‫سول پرو‬</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>PEN-name-one</td></tr>
+	<tr><td class='source'>PEN-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Peru: PEI (old)' href='#South America: Peru: PEI (old)'>South America: Peru: PEI (old)</a></td><td class='source'>PEI-name</td><td class='target' rowSpan='3'>PEI</td><td class='target' rowSpan='3'>‫اینتی پرو‬</td><td class='target' rowSpan='45'>comprehensive</td></tr>
+	<tr><td class='source'>PEI-name-one</td></tr>
+	<tr><td class='source'>PEI-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Peru: PES (old)' href='#South America: Peru: PES (old)'>South America: Peru: PES (old)</a></td><td class='source'>PES-name</td><td class='target' rowSpan='3'>PES</td><td class='target' rowSpan='3'>‫سول پرو (۱۸۶۳ تا ۱۹۶۵)‬</td></tr>
+	<tr><td class='source'>PES-name-one</td></tr>
+	<tr><td class='source'>PES-name-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Northern/Western Europe' href='#Northern/Western Europe'>Northern/Western Europe</a></td><td class='source' rowSpan='3'><a name='Northern Europe: Estonia: EEK (old)' href='#Northern Europe: Estonia: EEK (old)'>Northern Europe: Estonia: EEK (old)</a></td><td class='source'>EEK-name</td><td class='target' rowSpan='3'>EEK</td><td class='target' rowSpan='3'>‫کرون استونی‬</td></tr>
+	<tr><td class='source'>EEK-name-one</td></tr>
+	<tr><td class='source'>EEK-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern Europe: Iceland: ISJ (old)' href='#Northern Europe: Iceland: ISJ (old)'>Northern Europe: Iceland: ISJ (old)</a></td><td class='source'>ISJ-name</td><td class='target' rowSpan='3'>ISJ</td><td class='target' rowSpan='3'>‫کرونای ایسلند (۱۹۱۸ تا ۱۹۸۱)‬</td></tr>
+	<tr><td class='source'>ISJ-name-one</td></tr>
+	<tr><td class='source'>ISJ-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Europe: Monaco: MCF (old)' href='#Western Europe: Monaco: MCF (old)'>Western Europe: Monaco: MCF (old)</a></td><td class='source'>MCF-name</td><td class='target' rowSpan='3'>MCF</td><td class='target' rowSpan='3'>‫فرانک موناکو‬</td></tr>
+	<tr><td class='source'>MCF-name-one</td></tr>
+	<tr><td class='source'>MCF-name-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source' rowSpan='3'><a name='Southern Europe: Albania: ALK (old)' href='#Southern Europe: Albania: ALK (old)'>Southern Europe: Albania: ALK (old)</a></td><td class='source'>ALK-name</td><td class='target' rowSpan='3'>ALK</td><td class='target' rowSpan='3'>‫لک آلبانی (۱۹۴۶ تا ۱۹۶۵)‬</td></tr>
+	<tr><td class='source'>ALK-name-one</td></tr>
+	<tr><td class='source'>ALK-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Spain: ESP (old)' href='#Southern Europe: Spain: ESP (old)'>Southern Europe: Spain: ESP (old)</a></td><td class='source'>ESP-name</td><td class='target' rowSpan='3'>ESP</td><td class='target' rowSpan='3'>‫پزتای اسپانیا‬</td></tr>
+	<tr><td class='source'>ESP-name-one</td></tr>
+	<tr><td class='source'>ESP-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: North Macedonia: MKN (old)' href='#Southern Europe: North Macedonia: MKN (old)'>Southern Europe: North Macedonia: MKN (old)</a></td><td class='source'>MKN-name</td><td class='target' rowSpan='3'>MKN</td><td class='target' rowSpan='3'>‫دینار مقدونیه (۱۹۹۲ تا ۱۹۹۳)‬</td></tr>
+	<tr><td class='source'>MKN-name-one</td></tr>
+	<tr><td class='source'>MKN-name-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source' rowSpan='3'><a name='Western Asia: Israel: ILP (old)' href='#Western Asia: Israel: ILP (old)'>Western Asia: Israel: ILP (old)</a></td><td class='source'>ILP-name</td><td class='target' rowSpan='3'>ILP</td><td class='target' rowSpan='3'>‫پوند اسرائیل‬</td></tr>
+	<tr><td class='source'>ILP-name-one</td></tr>
+	<tr><td class='source'>ILP-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Israel: ILR (old)' href='#Western Asia: Israel: ILR (old)'>Western Asia: Israel: ILR (old)</a></td><td class='source'>ILR-name</td><td class='target' rowSpan='3'>ILR</td><td class='target' rowSpan='3'>‫شقل اسرائیل (۱۹۸۰ تا ۱۹۸۵)‬</td></tr>
+	<tr><td class='source'>ILR-name-one</td></tr>
+	<tr><td class='source'>ILR-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source' rowSpan='3'><a name='Eastern Asia: South Korea: KRO (old)' href='#Eastern Asia: South Korea: KRO (old)'>Eastern Asia: South Korea: KRO (old)</a></td><td class='source'>KRO-name</td><td class='target' rowSpan='3'>KRO</td><td class='target' rowSpan='3'>‫وون کرهٔ جنوبی (۱۹۴۵ تا ۱۹۵۳)‬</td></tr>
+	<tr><td class='source'>KRO-name-one</td></tr>
+	<tr><td class='source'>KRO-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source' rowSpan='3'><a name='Southern Asia: Maldives: MVP (old)' href='#Southern Asia: Maldives: MVP (old)'>Southern Asia: Maldives: MVP (old)</a></td><td class='source'>MVP-name</td><td class='target' rowSpan='3'>MVP</td><td class='target' rowSpan='3'>‫روپیهٔ مالدیو (۱۹۴۷ تا ۱۹۸۱)‬</td></tr>
+	<tr><td class='source'>MVP-name-one</td></tr>
+	<tr><td class='source'>MVP-name-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Unknown Region (C)' href='#Unknown Region (C)'>Unknown Region (C)</a></td><td class='source' rowSpan='2'><a name='Unknown Region: XAG' href='#Unknown Region: XAG'>Unknown Region: XAG</a></td><td class='source'>XAG-name-one</td><td class='target' rowSpan='2'>‫نقره‬</td><td class='target' rowSpan='2'>‫اونس تروا نقره‬</td></tr>
+	<tr><td class='source'>XAG-name-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XAU' href='#Unknown Region: XAU'>Unknown Region: XAU</a></td><td class='source'>XAU-name-one</td><td class='target' rowSpan='2'>‫طلا‬</td><td class='target' rowSpan='2'>‫اونس تروا طلا‬</td></tr>
+	<tr><td class='source'>XAU-name-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XPT' href='#Unknown Region: XPT'>Unknown Region: XPT</a></td><td class='source'>XPT-name-one</td><td class='target' rowSpan='2'>‫پلاتین‬</td><td class='target' rowSpan='2'>‫اونس تروا پلاتین‬</td></tr>
+	<tr><td class='source'>XPT-name-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Unknown Region: XTS' href='#Unknown Region: XTS'>Unknown Region: XTS</a></td><td class='source'>XTS-name</td><td class='target' rowSpan='3'>XTS</td><td class='target'>‫ارز آزمایشی‬</td></tr>
+	<tr><td class='source'>XTS-name-one</td><td class='target' rowSpan='2'>‫واحد ارز آزمایشی‬</td></tr>
+	<tr><td class='source'>XTS-name-other</td></tr>
+	<tr><td class='source' rowSpan='55'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='6'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='6'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='25'>▷missing◁</td><td class='target'>‫دهه‬</td><td class='target' rowSpan='55'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} دهه‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫دهه‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>‫{0} دهه‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='4'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>‫نقطه در سانتی‌متر‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} نقطه در سانتی‌متر‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dpcm</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫نقطه در اینچ‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} نقطه در اینچ‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-displayName</td><td class='target'>‫مگاپیکسل‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} مگاپیکسل‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>‫پیکسل‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} پیکسل‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>‫پیکسل در سانتی‌متر‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} پیکسل در سانتی‌متر‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫پیکسل در اینچ‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} پیکسل در اینچ‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='2'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source'>long-per</td><td class='target' rowSpan='2'>‫{0}/کیلومتر‬</td><td class='target' rowSpan='2'>‫{0} در کیلومتر‬</td></tr>
+	<tr><td class='source'>short-per</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='meter' href='#meter'>meter</a></td><td class='source'>long-per</td><td class='target' rowSpan='2'>‫{0}/متر‬</td><td class='target' rowSpan='2'>‫{0} در متر‬</td></tr>
+	<tr><td class='source'>short-per</td></tr>
+	<tr><td class='source'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source' rowSpan='2'>long-per</td><td class='target'>‫{0}/سانتی‌متر‬</td><td class='target'>‫{0} در سانتی‌متر‬</td></tr>
+	<tr><td class='source'><a name='inch' href='#inch'>inch</a></td><td class='target'>‫{0}/اینچ‬</td><td class='target'>‫{0} در اینچ‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='point' href='#point'>point</a></td><td class='source'>long-displayName</td><td class='target'>‫امتیاز‬</td><td class='target'>‫پونت‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} امتیاز‬</td><td class='target' rowSpan='2'>‫{0} پونت‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫امتیاز‬</td><td class='target'>‫پونت‬</td></tr>
+	<tr><td class='source'><a name='Area' href='#Area'>Area</a></td><td class='source'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td><td class='source'>long-per</td><td class='target'>‫کیلومتر مربع در {0}‬</td><td class='target'>‫{0} در کیلومتر مربع‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='2'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>short-one</td><td class='target' rowSpan='2'>‫{0} ک.وات‌ساعت‬</td><td class='target' rowSpan='2'>‫{0} ک.و.ساعت‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='source'>long-one</td><td class='target'>‫{0} الکترون ولت‬</td><td class='target'>‫{0} الکترون‌ولت‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>‫ترم آمریکایی‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} ترم آمریکایی‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫ترم آمریکایی‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>‫{0} ترم آمریکایی‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='6'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-displayName</td><td class='target'>‫بار‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} بار‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بار‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>‫{0} بار‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target'>‫پاسکال‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>‫{0} پاسکال‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source'><a name='times' href='#times'>times</a></td><td class='source'>short</td><td class='target'>{0}⋅{1}</td></tr>
+	<tr><td class='source' rowSpan='248'><a name='Characters' href='#Characters'>Characters</a></td><td class='source'><a name='Category' href='#Category'>Category</a></td><td class='source'><a name='Label' href='#Label'>Label</a></td><td class='source'>weather</td><td class='target'>‫هوا‬</td><td class='target'>‫آب‌وهوا‬</td><td class='target' rowSpan='248'>modern</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='9'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😸 –keywords</td><td class='target'>‫…<br>گربه خندان<br>…‬</td><td class='target'>‫…<br>گربهٔ خندان<br>…‬</td></tr>
+	<tr><td class='source'>😹 -name</td><td class='target'>‫گربه خندان با اشک شوق‬</td><td class='target'>‫گربهٔ خندان با اشک شوق‬</td></tr>
+	<tr><td class='source'>😹 –keywords</td><td class='target'>‫…<br>گربه خندان با اشک شوق‬</td><td class='target'>‫…<br>گربهٔ خندان با اشک شوق‬</td></tr>
+	<tr><td class='source'>😻 -name</td><td class='target'>‫گربه خندان عاشق‬</td><td class='target'>‫گربهٔ خندان عاشق‬</td></tr>
+	<tr><td class='source'>😻 –keywords</td><td class='target'>‫…<br>گربه خندان عاشق<br>گربه عاشق<br>…‬</td><td class='target'>‫…<br>گربهٔ خندان عاشق<br>…‬</td></tr>
+	<tr><td class='source'>😽 -name</td><td class='target'>‫گربه و بوسه خجالتی‬</td><td class='target'>‫گربه و بوسهٔ خجالتی‬</td></tr>
+	<tr><td class='source'>😽 –keywords</td><td class='target'>‫…<br>گربه و بوسه خجالتی‬</td><td class='target'>‫…<br>گربه و بوسهٔ خجالتی‬</td></tr>
+	<tr><td class='source'>😾 -name</td><td class='target'>‫گربه اخمو‬</td><td class='target'>‫گربهٔ اخمو‬</td></tr>
+	<tr><td class='source'>😾 –keywords</td><td class='target'>‫…<br>گربه اخمو‬</td><td class='target'>‫…<br>گربهٔ اخمو‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>💋 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>بوسهٔ ماتیکی<br>…‬</td></tr>
+	<tr><td class='source'>💌 -name</td><td class='target'>‫نامه عاشقانه‬</td><td class='target'>‫نامهٔ عاشقانه‬</td></tr>
+	<tr><td class='source'>💌 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>نامهٔ عاشقانه‬</td></tr>
+	<tr><td class='source'>💘 –keywords</td><td class='target'>‫الهه عشق<br>…‬</td><td class='target'>‫الههٔ عشق<br>…‬</td></tr>
+	<tr><td class='source'>🖤 –keywords</td><td class='target'>‫تار<br>…<br>قلب‬</td><td class='target'>‫…<br>قلب سیاه‬</td></tr>
+	<tr><td class='source'>💯 -name</td><td class='target'>‫نمره صد‬</td><td class='target'>‫۱۰۰ امتیاز‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>😚 -name</td><td class='target'>‫بوسه خجالتی‬</td><td class='target'>‫بوسهٔ خجالتی‬</td></tr>
+	<tr><td class='source'>😚 –keywords</td><td class='target'>‫…<br>بوسه خجالتی<br>…‬</td><td class='target'>‫…<br>بوسهٔ خجالتی<br>…‬</td></tr>
+	<tr><td class='source'>🥲 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫چهرهٔ خندان با اشک‬</td></tr>
+	<tr><td class='source'>🥲 –keywords</td><td class='target'>‫آسوده‌خاطر<br>اشک<br>چهرهٔ خندان با اشک<br>خرسند<br>خندان<br>سربلند<br>مسرور‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-costume' href='#face-costume'>face-costume</a></td><td class='source'>💩 –keywords</td><td class='target'>‫ان<br>پشکل<br>…<br>مصور<br>نارضایتی<br>…‬</td><td class='target'>‫…<br>طنز<br>…‬</td></tr>
+	<tr><td class='source'>👽 –keywords</td><td class='target'>‫…<br>جن و پری<br>…<br>فانتزی<br>…<br>فضا<br>فضایی<br>…<br>هیولا‬</td><td class='target'>‫…<br>تخیلی<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-hat' href='#face-hat'>face-hat</a></td><td class='source'>🥷 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫نینجا‬</td></tr>
+	<tr><td class='source'>🥷 –keywords</td><td class='target'>‫جنگجو<br>دزدکی<br>مخفی<br>نینجا‬</td></tr>
+	<tr><td class='source'>🥸 -name</td><td class='target'>‫تغییرقیافه داده‬</td></tr>
+	<tr><td class='source'>🥸 –keywords</td><td class='target'>‫بینی<br>تغییرقیافه<br>تغییرقیافه داده<br>چهره<br>عینک<br>ناشناس‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😷 –keywords</td><td class='target'>‫…<br>سرما<br>…<br>صورت<br>…‬</td><td class='target' rowSpan='3'>…</td></tr>
+	<tr><td class='source'>🤕 –keywords</td><td class='target'>‫…<br>با سر باندپیچی<br>بانداژ<br>…‬</td></tr>
+	<tr><td class='source'>🤢 –keywords</td><td class='target'>‫…<br>صورت<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='monkey-face' href='#monkey-face'>monkey-face</a></td><td class='source'>🙈 –keywords</td><td class='target'>‫اشاره<br>…<br>نبین<br>نه‬</td><td class='target'>‫…<br>میمون بدنبین<br>میمون خردمند<br>…‬</td></tr>
+	<tr><td class='source'>🙉 –keywords</td><td class='target'>‫اشاره<br>…<br>میمون شر نشنو<br>…<br>نه‬</td><td class='target'>‫…<br>میمون بدنشنو<br>میمون خردمند<br>…‬</td></tr>
+	<tr><td class='source'>🙊 –keywords</td><td class='target'>‫اشاره<br>…<br>صحبت<br>…<br>میمون شر نگو<br>…<br>نه‬</td><td class='target'>‫…<br>میمون بدنگو<br>میمون خردمند<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='64'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='6'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>💪 -name</td><td class='target'>‫عضله بازو‬</td><td class='target'>‫عضلهٔ بازو‬</td></tr>
+	<tr><td class='source'>💪 –keywords</td><td class='target'>‫…<br>عضله بازو<br>…‬</td><td class='target'>‫…<br>عضلهٔ بازو<br>…‬</td></tr>
+	<tr><td class='source'>🫀 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫قلب‬</td></tr>
+	<tr><td class='source'>🫀 –keywords</td><td class='target'>‫اندام<br>ضربان قلب<br>قلب<br>مرکز<br>نبض‬</td></tr>
+	<tr><td class='source'>🫁 -name</td><td class='target'>‫ریه‬</td></tr>
+	<tr><td class='source'>🫁 –keywords</td><td class='target'>‫اندام<br>بازدم<br>تنفس<br>دم<br>ریه‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='family' href='#family'>family</a></td><td class='source'>🧑‍🤝‍🧑 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>دست<br>دست در دست<br>زوج<br>شخص‬</td></tr>
+	<tr><td class='source'>👬 –keywords</td><td class='target'>‫…<br>همجنس‌گرا‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🤚 –keywords</td><td class='target'>‫…<br>دست باز‬</td><td class='target'>‫اجازه<br>بالا بردن دست<br>…<br>موافقت‬</td></tr>
+	<tr><td class='source'>🖐 -name</td><td class='target'>‫بزن قدش‬</td><td class='target'>‫دست با انگشتان باز‬</td></tr>
+	<tr><td class='source'>🖐 –keywords</td><td class='target'>‫انگشت<br>بزن قدش<br>…‬</td><td class='target'>‫انگشتان<br>پنج<br>خداحافظی<br>…<br>دست با انگشتان باز<br>سلام‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🤌 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫انگشتان جمع‌شده‬</td></tr>
+	<tr><td class='source'>🤌 –keywords</td><td class='target'>‫اشاره با دست<br>انگشتان<br>جمع‌شده<br>سؤال<br>طنزآلود‬</td></tr>
+	<tr><td class='source'>🤘 -name</td><td class='target'>‫شاخ شیطان‬</td><td class='target'>‫نماد شاخ‬</td></tr>
+	<tr><td class='source'>🤙 –keywords</td><td class='target'>‫…<br>زنگ‬</td><td class='target'>‫…<br>تماس بگیر<br>…<br>زنگ بزن‬</td></tr>
+	<tr><td class='source'><a name='hand-prop' href='#hand-prop'>hand-prop</a></td><td class='source'>💅 –keywords</td><td class='target'>‫…<br>بدن<br>توجه<br>…<br>زیبایی<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'><a name='hands' href='#hands'>hands</a></td><td class='source'>🙏 –keywords</td><td class='target'>‫…<br>تعظیم<br>خواهش کردن<br>…<br>لطفاً<br>ممنونم‬</td><td class='target'>‫…<br>خواهش<br>…<br>دستان دعاگو<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source'>🧑‍🦯 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫شخصی با عصای راهنما‬</td></tr>
+	<tr><td class='source'>🧑‍🦯 –keywords</td><td class='target'>‫دسترس‌پذیری<br>شخصی با عصای راهنما<br>نابینا‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 -name</td><td class='target'>‫شخصی با صندلی چرخ‌دار موتوری‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 –keywords</td><td class='target'>‫دسترس‌پذیری<br>شخصی با صندلی چرخ‌دار موتوری<br>صندلی چرخ‌دار‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 -name</td><td class='target'>‫شخصی با صندلی چرخ‌دار دستی‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='target'>‫دسترس‌پذیری<br>شخصی با صندلی چرخ‌دار دستی<br>صندلی چرخ‌دار‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🦹 –keywords</td><td class='target'>‫آدم بد<br>…<br>اهریمنی<br>…<br>جنایتکار<br>خبیث<br>دیوسیرت<br>…‬</td><td class='target'>‫…<br>اهریمن<br>…‬</td></tr>
+	<tr><td class='source'>🦹‍♂ –keywords</td><td class='target' rowSpan='2'>‫آدم بد<br>…<br>ابرشرور<br>…<br>اهریمنی<br>…<br>جنایتکار<br>خبیث<br>دیوسیرت<br>…‬</td><td class='target'>‫…<br>ابرشرور مرد<br>…<br>اهریمن<br>…‬</td></tr>
+	<tr><td class='source'>🦹‍♀ –keywords</td><td class='target'>‫…<br>ابرشرور زن<br>…<br>اهریمن<br>…‬</td></tr>
+	<tr><td class='source'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>🤦 –keywords</td><td class='target'>‫آخ<br>آه<br>افتضاح<br>افسوس<br>ای خدا<br>ای وای<br>…<br>بدبخت‬</td><td class='target'>‫…<br>رنجش<br>صورت<br>کف دست<br>ناباوری‬</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍⚕ -name</td><td class='target' rowSpan='32'>▷missing◁</td><td class='target'>‫مأمور بهداشت‬</td></tr>
+	<tr><td class='source'>🧑‍⚕ –keywords</td><td class='target'>‫پرستار<br>پزشک<br>درمانگر<br>مأمور بهداشت<br>مراقبت بهداشتی‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 -name</td><td class='target'>‫دانش‌آموز‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 –keywords</td><td class='target'>‫دانش‌آموز<br>دانشجو<br>فارغ‌التحصیل‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 -name</td><td class='target'>‫معلم‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 –keywords</td><td class='target'>‫استاد<br>مربی<br>معلم‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ -name</td><td class='target'>‫قاضی‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ –keywords</td><td class='target'>‫ترازو<br>قاضی‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 -name</td><td class='target'>‫کشاورز‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 –keywords</td><td class='target'>‫باغبان<br>کشاورز<br>مزرعه‌دار‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 -name</td><td class='target'>‫آشپز‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 –keywords</td><td class='target'>‫آشپز<br>سرآشپز‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 -name</td><td class='target'>‫مکانیک‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 –keywords</td><td class='target'>‫برق‌کار<br>لوله‌کش<br>مکانیک‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 -name</td><td class='target'>‫کارگر کارخانه‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>‫صنعتی<br>کارخانه<br>کارگر<br>مونتاژ‬</td></tr>
+	<tr><td class='source'>🧑‍💼 -name</td><td class='target'>‫کارمند‬</td></tr>
+	<tr><td class='source'>🧑‍💼 –keywords</td><td class='target'>‫کارمند<br>کارمند اداری<br>کسب و کار<br>مدیر<br>معمار‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 -name</td><td class='target'>‫دانشمند‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 –keywords</td><td class='target'>‫دانشمند<br>زیست‌شناس<br>شیمی‌دان<br>فیزیک‌دان<br>مهندس‬</td></tr>
+	<tr><td class='source'>🧑‍💻 -name</td><td class='target'>‫متخصص‬</td></tr>
+	<tr><td class='source'>🧑‍💻 –keywords</td><td class='target'>‫برنامه‌نویس<br>کدنویس<br>متخصص<br>مخترع<br>نرم‌افزار‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 -name</td><td class='target'>‫خواننده‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 –keywords</td><td class='target'>‫بازیگر<br>خواننده<br>راک<br>ستاره<br>هنرپیشه‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 -name</td><td class='target'>‫هنرمند‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 –keywords</td><td class='target'>‫پالت رنگ<br>هنرمند‬</td></tr>
+	<tr><td class='source'>🧑‍✈ -name</td><td class='target'>‫خلبان‬</td></tr>
+	<tr><td class='source'>🧑‍✈ –keywords</td><td class='target'>‫خلبان<br>هواپیما‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 -name</td><td class='target'>‫فضانورد‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 –keywords</td><td class='target'>‫فضانورد<br>موشک‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 -name</td><td class='target'>‫مأمور آتش‌نشانی‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 –keywords</td><td class='target'>‫مأمور آتش‌نشانی<br>ماشین آتش‌نشانی‬</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>‫…<br>پاپیون<br>جوان<br>خوش تیپ<br>دوماد<br>شادوماد<br>شاه داماد<br>…‬</td><td class='target'>‫…<br>خوش‌تیپ<br>داماد<br>کت و شلوار<br>…‬</td></tr>
+	<tr><td class='source'><a name='person-sport' href='#person-sport'>person-sport</a></td><td class='source'>🤹 –keywords</td><td class='target'>‫…<br>تمرکز<br>…<br>ژانگولر<br>…<br>ژانگوله<br>ژانگوله بازی<br>سرگرمی‬</td><td class='target'>‫…<br>چندکاره<br>…<br>شعبده‌باز<br>شعبده‌بازی<br>مهارت‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>🗣 –keywords</td><td class='target'>‫…<br>سایه<br>…<br>سیاه‌نما<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🫂 -name</td><td class='target' rowSpan='22'>▷missing◁</td><td class='target'>‫درآغوش گرفتن‬</td></tr>
+	<tr><td class='source'>🫂 –keywords</td><td class='target'>‫تشکر<br>خداحافظ<br>درآغوش گرفتن<br>روبوسی<br>سلام‬</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='4'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🪶 -name</td><td class='target'>‫پَر‬</td></tr>
+	<tr><td class='source'>🪶 –keywords</td><td class='target'>‫بال و پَر<br>پَر<br>پرنده<br>پرواز<br>سَبُک‬</td></tr>
+	<tr><td class='source'>🦤 -name</td><td class='target'>‫دودو‬</td></tr>
+	<tr><td class='source'>🦤 –keywords</td><td class='target'>‫انهدام<br>بزرگ<br>جزیره موریس<br>دودو‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🪲 -name</td><td class='target'>‫سوسک‬</td></tr>
+	<tr><td class='source'>🪲 –keywords</td><td class='target'>‫حشره<br>سوسک‬</td></tr>
+	<tr><td class='source'>🪳 -name</td><td class='target'>‫سوسک حمام‬</td></tr>
+	<tr><td class='source'>🪳 –keywords</td><td class='target'>‫حشره<br>سوسک<br>سوسک حمام‬</td></tr>
+	<tr><td class='source'>🪰 -name</td><td class='target'>‫مگس‬</td></tr>
+	<tr><td class='source'>🪰 –keywords</td><td class='target'>‫بیماری<br>پوسیدن<br>تسه تسه<br>خرمگس<br>کرم حشره<br>مگس<br>مگس خانگی‬</td></tr>
+	<tr><td class='source'>🪱 -name</td><td class='target'>‫کرم‬</td></tr>
+	<tr><td class='source'>🪱 –keywords</td><td class='target'>‫انگل<br>کرم<br>کرم حلقوی<br>کرم خاکی‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🦬 -name</td><td class='target'>‫گاومیش‬</td></tr>
+	<tr><td class='source'>🦬 –keywords</td><td class='target'>‫بایسون<br>بوفالو<br>گاومیش<br>گله<br>ویسنت‬</td></tr>
+	<tr><td class='source'>🦣 -name</td><td class='target'>‫ماموت‬</td></tr>
+	<tr><td class='source'>🦣 –keywords</td><td class='target'>‫انهدام<br>بزرگ<br>پشمالو<br>عاج<br>ماموت‬</td></tr>
+	<tr><td class='source'>🦫 -name</td><td class='target'>‫بیدستر‬</td></tr>
+	<tr><td class='source'>🦫 –keywords</td><td class='target'>‫بیدستر<br>سد‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🦭 -name</td><td class='target'>‫فُک‬</td></tr>
+	<tr><td class='source'>🦭 –keywords</td><td class='target'>‫شیر دریایی<br>فُک‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🌺 -name</td><td class='target'>‫گل بامیه‬</td><td class='target'>‫گل ختمی‬</td></tr>
+	<tr><td class='source'>🌺 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>گل ختمی<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪴 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫گیاه گلدانی‬</td></tr>
+	<tr><td class='source'>🪴 –keywords</td><td class='target'>‫بی‌ثمر<br>خانه<br>رشد<br>کسل‌کننده<br>گیاه<br>گیاه گلدانی<br>مراقبت‬</td></tr>
+	<tr><td class='source'>🌳 -name</td><td class='target'>‫برگ‌ریز‬</td><td class='target'>‫درخت سبز‬</td></tr>
+	<tr><td class='source'>🌳 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>درخت سبز<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🏺 –keywords</td><td class='target'>‫…<br>آمفورا<br>ابزار<br>اسلحه<br>برج فلکی<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫖 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫قوری‬</td></tr>
+	<tr><td class='source'>🫖 –keywords</td><td class='target'>‫چای<br>قوری<br>قوریِ‌چای<br>نوشیدن‬</td></tr>
+	<tr><td class='source'>🍾 –keywords</td><td class='target'>‫…<br>جوشان<br>…<br>لیوان<br>میخانه<br>نوشیدن<br>…‬</td><td class='target'>‫…<br>بطری با چوب‌پنبه<br>پراندن<br>چوب‌پنبه<br>…‬</td></tr>
+	<tr><td class='source'>🍻 –keywords</td><td class='target'>‫…<br>به سلامتی<br>…<br>ماگ<br>میخانه<br>…‬</td><td class='target'>‫…<br>به‌هم زدن لیوان‌های آبجو<br>لیوان آبجو<br>…‬</td></tr>
+	<tr><td class='source'>🧋 -name</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>‫چای حُبابی‬</td></tr>
+	<tr><td class='source'>🧋 –keywords</td><td class='target'>‫چای<br>چای حُبابی<br>حباب<br>شیر<br>مروارید‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🫐 -name</td><td class='target'>‫توت آبی‬</td></tr>
+	<tr><td class='source'>🫐 –keywords</td><td class='target'>‫آبی<br>توت<br>توت‌آبی<br>قره‌گیله‬</td></tr>
+	<tr><td class='source'>🫒 -name</td><td class='target'>‫زیتون‬</td></tr>
+	<tr><td class='source'>🫒 –keywords</td><td class='target'>‫زیتون<br>غذا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source'>🫓 -name</td><td class='target'>‫نان مسطح‬</td></tr>
+	<tr><td class='source'>🫓 –keywords</td><td class='target'>‫آره‌پا<br>پیتا<br>لواش<br>نان<br>نان مسطح‬</td></tr>
+	<tr><td class='source'>🫔 -name</td><td class='target'>‫تامال‬</td></tr>
+	<tr><td class='source'>🫔 –keywords</td><td class='target'>‫تامال<br>لقمه<br>مکزیکی‬</td></tr>
+	<tr><td class='source'>🫕 -name</td><td class='target'>‫فوندو‬</td></tr>
+	<tr><td class='source'>🫕 –keywords</td><td class='target'>‫آب شده<br>پنیر<br>سوییس<br>شکلات<br>فوندو<br>قابلمه‬</td></tr>
+	<tr><td class='source'><a name='food-sweet' href='#food-sweet'>food-sweet</a></td><td class='source'>🍦 –keywords</td><td class='target'>‫…<br>قیف<br>کرم<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫑 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫فلفل دلمه‌ای‬</td></tr>
+	<tr><td class='source'>🫑 –keywords</td><td class='target'>‫سبزیجات<br>فلفل<br>فلفل دلمه‌ای‬</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='6'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🛖 -name</td><td class='target'>‫کلبه‬</td></tr>
+	<tr><td class='source'>🛖 –keywords</td><td class='target'>‫خانه<br>خیمه<br>کلبه<br>کلبه جنگلی‬</td></tr>
+	<tr><td class='source'>🪵 -name</td><td class='target'>‫چوب‬</td></tr>
+	<tr><td class='source'>🪵 –keywords</td><td class='target'>‫الوار<br>تیر<br>چوب<br>کنده‬</td></tr>
+	<tr><td class='source'>🪨 -name</td><td class='target'>‫صخره‬</td></tr>
+	<tr><td class='source'>🪨 –keywords</td><td class='target'>‫تخته سنگ<br>جامد<br>سنگ<br>سنگین<br>صخره‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='place-map' href='#place-map'>place-map</a></td><td class='source'>🌍 –keywords</td><td class='target'>‫…<br>جهان<br>دنیا<br>…‬</td><td class='target' rowSpan='10'>…</td></tr>
+	<tr><td class='source'>🌏 –keywords</td><td class='target'>‫…<br>دنیا<br>…‬</td></tr>
+	<tr><td class='source'>🌐 –keywords</td><td class='target'>‫…<br>نصف‌النهارها‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='place-other' href='#place-other'>place-other</a></td><td class='source'>🌄 –keywords</td><td class='target'>‫آفتاب<br>…<br>صبح زود<br>…‬</td></tr>
+	<tr><td class='source'>🌆 –keywords</td><td class='target'>‫…<br>غروب آفتاب<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>🌔 –keywords</td><td class='target'>‫…<br>تحدب به‌سوی بدر<br>رو به بدر رفتن<br>…<br>محدب افزاینده‬</td></tr>
+	<tr><td class='source'>🌖 –keywords</td><td class='target'>‫آب‌وهوا<br>…<br>تحدب به‌سوی محاق<br>رو به کاهش<br>رو به محاق رفتن<br>…‬</td></tr>
+	<tr><td class='source'><a name='transport-air' href='#transport-air'>transport-air</a></td><td class='source'>🛬 –keywords</td><td class='target'>‫…<br>زمان ورود<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🚃 –keywords</td><td class='target'>‫…<br>خودرو<br>…‬</td></tr>
+	<tr><td class='source'>🚅 –keywords</td><td class='target'>‫…<br>وسیلهٔ نقلیه‬</td></tr>
+	<tr><td class='source'>🛻 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫وانت‬</td></tr>
+	<tr><td class='source'>🛻 –keywords</td><td class='target'>‫کامیون<br>ماشین باری<br>وانت‬</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='6'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🎭 –keywords</td><td class='target'>‫…<br>صورتک<br>…<br>نمایشی<br>…‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>🖼 –keywords</td><td class='target'>‫…<br>قاب<br>…<br>قاب کردن<br>…‬</td></tr>
+	<tr><td class='source'>🪡 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫سوزن خیاطی‬</td></tr>
+	<tr><td class='source'>🪡 –keywords</td><td class='target'>‫بخیه<br>خیاطی<br>دوختن<br>سوزن<br>کوک<br>گل‌دوزی‬</td></tr>
+	<tr><td class='source'>🪢 -name</td><td class='target'>‫گره‬</td></tr>
+	<tr><td class='source'>🪢 –keywords</td><td class='target'>‫پیچاندن<br>دوقلو<br>طناب<br>گره‬</td></tr>
+	<tr><td class='source'><a name='event' href='#event'>event</a></td><td class='source'>🎑 –keywords</td><td class='target'>‫…<br>جشن رؤیت ماه<br>جشن رؤیت ماه کامل<br>جشنواره<br>رؤیت<br>ماه کامل<br>…‬</td><td class='target'>‫…<br>ماه<br>مراسم<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='game' href='#game'>game</a></td><td class='source'>🎯 –keywords</td><td class='target'>‫…<br>پرتاب<br>…<br>چشم<br>…<br>قلب هدف<br>مرکز<br>مرکز صفحه<br>…‬</td><td class='target'>‫…<br>وسط هدف‬</td></tr>
+	<tr><td class='source'>🔮 –keywords</td><td class='target'>‫…<br>بخت<br>توپ<br>…<br>طالع‌بینی<br>فانتزی<br>…‬</td><td class='target'>‫…<br>بخت و اقبال<br>تخیلی<br>…‬</td></tr>
+	<tr><td class='source'>🪄 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫عصای سحرآمیز‬</td></tr>
+	<tr><td class='source'>🪄 –keywords</td><td class='target'>‫جادو<br>جادوگر<br>سحرآمیز<br>عصای سحرآمیز‬</td></tr>
+	<tr><td class='source'>🪅 -name</td><td class='target'>‫پینیاتا‬</td></tr>
+	<tr><td class='source'>🪅 –keywords</td><td class='target'>‫پینیاتا<br>جشن<br>مهمانی‬</td></tr>
+	<tr><td class='source'>🪆 -name</td><td class='target'>‫عروسک تودرتو‬</td></tr>
+	<tr><td class='source'>🪆 –keywords</td><td class='target'>‫تودرتو<br>روسیه<br>عروسک‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='sport' href='#sport'>sport</a></td><td class='source'>🛼 -name</td><td class='target'>‫کفش اسکیت‬</td></tr>
+	<tr><td class='source'>🛼 –keywords</td><td class='target'>‫اسکیت<br>غلتک<br>کفش اسکیت‬</td></tr>
+	<tr><td class='source' rowSpan='46'><a name='Objects' href='#Objects'>Objects</a></td><td class='source'><a name='book-paper' href='#book-paper'>book-paper</a></td><td class='source'>📔 –keywords</td><td class='target'>‫تزئینی<br>…<br>سخت<br>…<br>وزیری<br>یادداشت‬</td><td class='target'>‫…<br>دفتر با جلد تزئینی<br>…<br>صحافی<br>…<br>کتاب صحافی‌شده‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>🩴 -name</td><td class='target' rowSpan='18'>▷missing◁</td><td class='target'>‫دمپایی لاانگشتی‬</td></tr>
+	<tr><td class='source'>🩴 –keywords</td><td class='target'>‫دمپایی چوبی لاانگشتی<br>دمپایی ساحلی<br>دمپایی لاانگشتی<br>صندل‬</td></tr>
+	<tr><td class='source'>🪖 -name</td><td class='target'>‫کلاه‌خود‬</td></tr>
+	<tr><td class='source'>🪖 –keywords</td><td class='target'>‫ارتش<br>جنگجو<br>سرباز<br>کلاه‌خود<br>نظامی‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='household' href='#household'>household</a></td><td class='source'>🛗 -name</td><td class='target'>‫بالابر‬</td></tr>
+	<tr><td class='source'>🛗 –keywords</td><td class='target'>‫آسانسور<br>بالابر<br>جرثقیل<br>دسترس‌پذیری‬</td></tr>
+	<tr><td class='source'>🪞 -name</td><td class='target'>‫آینه‬</td></tr>
+	<tr><td class='source'>🪞 –keywords</td><td class='target'>‫آینه<br>آینه طبی<br>انعکاس<br>منعکس‌کننده‬</td></tr>
+	<tr><td class='source'>🪟 -name</td><td class='target'>‫پنجره‬</td></tr>
+	<tr><td class='source'>🪟 –keywords</td><td class='target'>‫پنجره<br>چشم‌انداز<br>دریچه<br>شفاف<br>قاب<br>هوای تازه‬</td></tr>
+	<tr><td class='source'>🪠 -name</td><td class='target'>‫لوله‌بازکن‬</td></tr>
+	<tr><td class='source'>🪠 –keywords</td><td class='target'>‫توالت<br>لوله‌بازکن<br>لوله‌کش<br>مکش<br>مکینه‬</td></tr>
+	<tr><td class='source'>🪤 -name</td><td class='target'>‫تله موش‬</td></tr>
+	<tr><td class='source'>🪤 –keywords</td><td class='target'>‫تله<br>تله موش<br>دام<br>طعمه‬</td></tr>
+	<tr><td class='source'>🪣 -name</td><td class='target'>‫سطل‬</td></tr>
+	<tr><td class='source'>🪣 –keywords</td><td class='target'>‫بشکه<br>خمره<br>دلو<br>سطل‬</td></tr>
+	<tr><td class='source'>🪥 -name</td><td class='target'>‫مسواک‬</td></tr>
+	<tr><td class='source'>🪥 –keywords</td><td class='target'>‫بهداشت<br>تمیز کردن<br>حمام<br>دندان<br>مربوط به دندان<br>مسواک‬</td></tr>
+	<tr><td class='source'><a name='mail' href='#mail'>mail</a></td><td class='source'>📩 –keywords</td><td class='target'>‫…<br>پایین<br>پست<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'><a name='medical' href='#medical'>medical</a></td><td class='source'>💉 –keywords</td><td class='target'>‫…<br>ابزار<br>بیمار<br>…<br>دکتر<br>…<br>شات<br>…‬</td><td class='target'>‫…<br>واکسن‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='money' href='#money'>money</a></td><td class='source'>🪙 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫سکه‬</td></tr>
+	<tr><td class='source'>🪙 –keywords</td><td class='target'>‫پول<br>سکه<br>طلا<br>فلز<br>گنجینه<br>نقره‬</td></tr>
+	<tr><td class='source'>💹 –keywords</td><td class='target'>‫…<br>بازار<br>بانک<br>…<br>روند<br>صعود<br>صعودی<br>گراف<br>گرایش<br>…‬</td><td class='target'>‫…<br>منحنی<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source'>🪗 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫آکوردئون‬</td></tr>
+	<tr><td class='source'>🪗 –keywords</td><td class='target'>‫آکاردئون<br>آکوردئون<br>ارغنون‬</td></tr>
+	<tr><td class='source'>🪘 -name</td><td class='target'>‫طبل بلند‬</td></tr>
+	<tr><td class='source'>🪘 –keywords</td><td class='target'>‫ریتم<br>ضرب<br>طبل<br>طبل بلند<br>کانگا‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪦 -name</td><td class='target'>‫سنگ قبر‬</td></tr>
+	<tr><td class='source'>🪦 –keywords</td><td class='target'>‫سنگ قبر<br>سنگ قبر عمودی<br>گورستان<br>مقبره‬</td></tr>
+	<tr><td class='source'>🪧 -name</td><td class='target'>‫پلاکارد‬</td></tr>
+	<tr><td class='source'>🪧 –keywords</td><td class='target'>‫اعتراض<br>اعتصاب<br>پلاکارد<br>تظاهرات‬</td></tr>
+	<tr><td class='source'><a name='science' href='#science'>science</a></td><td class='source'>🧬 –keywords</td><td class='target'>‫…<br>حیات<br>…<br>فرگشت<br>…‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'><a name='sound' href='#sound'>sound</a></td><td class='source'>🔕 –keywords</td><td class='target'>‫…<br>خیر<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='tool' href='#tool'>tool</a></td><td class='source'>🪚 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫اره نجاری‬</td></tr>
+	<tr><td class='source'>🪚 –keywords</td><td class='target'>‫ابزار<br>اره<br>اره نجاری<br>چوب‌بُر<br>نجار‬</td></tr>
+	<tr><td class='source'>🪃 -name</td><td class='target'>‫بومرنگ‬</td></tr>
+	<tr><td class='source'>🪃 –keywords</td><td class='target'>‫استرالیا<br>بومرنگ<br>کمانه<br>واجهش‬</td></tr>
+	<tr><td class='source'>🏹 –keywords</td><td class='target'>‫ابزار<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🪛 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫پیچ‌گوشتی‬</td></tr>
+	<tr><td class='source'>🪛 –keywords</td><td class='target'>‫ابزار<br>پیچ<br>پیچ‌گوشتی‬</td></tr>
+	<tr><td class='source'>🪜 -name</td><td class='target'>‫نردبان‬</td></tr>
+	<tr><td class='source'>🪜 –keywords</td><td class='target'>‫بالا رفتن<br>پله<br>پلهٔ نردبان<br>نردبان‬</td></tr>
+	<tr><td class='source'>⚖ –keywords</td><td class='target'>‫آزادی<br>ابزار<br>برج فلکی<br>…‬</td><td class='target'>‫برج میزان<br>…‬</td></tr>
+	<tr><td class='source'>🪝 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫قلاب‬</td></tr>
+	<tr><td class='source'>🪝 –keywords</td><td class='target'>‫انحنا<br>به‌دام انداختن<br>خمیدگی<br>قلاب<br>گرفتن<br>نقطه فروش‬</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='13'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>🆓 –keywords</td><td class='target'>‫…<br>فیری‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🆔 –keywords</td><td class='target'>id<br>…</td><td class='target'>‫دکمهٔ ID<br>…‬</td></tr>
+	<tr><td class='source'>🈯 –keywords</td><td class='target'>‫اشاره<br>…‬</td><td class='target'>‫اندیشه‌نگاشت<br>…<br>رزروشده<br>…‬</td></tr>
+	<tr><td class='source'>🈹 –keywords</td><td class='target'>…</td><td class='target'>‫اندیشه‌نگاشت<br>…‬</td></tr>
+	<tr><td class='source'>🈚 –keywords</td><td class='target'>‫تمام شده<br>در انبار نیست<br>…‬</td><td class='target'>‫اندیشه‌نگاشت<br>…<br>رایگان<br>…‬</td></tr>
+	<tr><td class='source'>🈲 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target' rowSpan='2'>‫اندیشه‌نگاشت<br>…‬</td></tr>
+	<tr><td class='source'>🉑 –keywords</td></tr>
+	<tr><td class='source'>🈸 -name</td><td class='target'>‫دکمۀ «برنامه» به ژاپنی‬</td><td class='target'>‫دکمۀ «تقاضانامه» به ژاپنی‬</td></tr>
+	<tr><td class='source'>🈸 –keywords</td><td class='target'>‫پرسیدن<br>درخواست<br>دکمۀ «برنامه» به ژاپنی<br>…‬</td><td class='target'>‫«تقاضانامه»<br>اندیشه‌نگاشت<br>دکمهٔ «تقاضانامه» به ژاپنی<br>دکمۀ «تقاضانامه» به ژاپنی<br>…‬</td></tr>
+	<tr><td class='source'>🈴 –keywords</td><td class='target'>‫توافق<br>توافقنامه<br>…‬</td><td class='target'>‫«نمرهٔ قبولی»<br>اندیشه‌نگاشت<br>…‬</td></tr>
+	<tr><td class='source'>🈳 -name</td><td class='target'>‫دکمۀ «جای خالی» به ژاپنی‬</td><td class='target'>‫دکمۀ «پست خالی» به ژاپنی‬</td></tr>
+	<tr><td class='source'>🈳 –keywords</td><td class='target'>‫خالی<br>در دسترس<br>دکمۀ «جای خالی» به ژاپنی<br>…‬</td><td class='target'>‫اندیشه‌نگاشت<br>پست خالی<br>دردسترس<br>دکمۀ «پست خالی» به ژاپنی<br>…‬</td></tr>
+	<tr><td class='source'>🈺 –keywords</td><td class='target'>‫اقدام<br>…<br>کار‬</td><td class='target'>‫«آماده برای کسب‌و‌کار»<br>اندیشه‌نگاشت<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='gender' href='#gender'>gender</a></td><td class='source'>⚧ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫علامت تراجنسیتی‬</td></tr>
+	<tr><td class='source'>⚧ –keywords</td><td class='target'>‫تراجنسیتی<br>علامت تراجنسیتی‬</td></tr>
+	<tr><td class='source'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>🔰 –keywords</td><td class='target'>‫ابتدایی<br>ابزار<br>…<br>سبز<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'><a name='warning' href='#warning'>warning</a></td><td class='source'>🔞 –keywords</td><td class='target'>‫…<br>خیر<br>…<br>محدودیت سن<br>…<br>نه<br>هجده<br>…‬</td><td class='target'>‫…<br>محدودیت سنی<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Flags' href='#Flags'>Flags</a></td><td class='source' rowSpan='2'><a name='flag' href='#flag'>flag</a></td><td class='source'>🏳‍⚧ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫پرچم تراجنسیتی‬</td></tr>
+	<tr><td class='source'>🏳‍⚧ –keywords</td><td class='target'>‫آبی روشن<br>پرچم<br>تراجنسیتی<br>سفید<br>صورتی‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Component' href='#Component'>Component</a></td><td class='source'><a name='hair-style' href='#hair-style'>hair-style</a></td><td class='source'>🦲 –keywords</td><td class='target'>‫اصلاح‌شده<br>…<br>تاشیده<br>زده<br>…‬</td><td class='target'>‫…<br>تراشیده<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='skin-tone' href='#skin-tone'>skin-tone</a></td><td class='source'>🏻 –keywords</td><td class='target'>‫…<br>تن پوست<br>…<br>نوع اول و دوم‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>🏼 –keywords</td><td class='target'>‫…<br>تن رنگ<br>…<br>نوع سوم‬</td></tr>
+	<tr><td class='source'>🏽 –keywords</td><td class='target'>‫…<br>تن رنگ<br>…<br>نوع چهارم‬</td><td class='target'>‫…<br>پوست برنزه<br>…‬</td></tr>
+	<tr><td class='source'>🏾 –keywords</td><td class='target'>‫…<br>تن رنگ<br>…<br>نوع پنجم‬</td><td class='target' rowSpan='2'>‫…<br>پوست تیره<br>…‬</td></tr>
+	<tr><td class='source'>🏿 –keywords</td><td class='target'>‫…<br>تن رنگ<br>…<br>نوع ششم‬</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='2'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td><td class='source' rowSpan='2'><a name='Collation' href='#Collation'>Collation</a></td><td class='source' rowSpan='2'>standard</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫[normalization on]<br>[reorder Arab]<br>&amp;َ&lt;&lt;ِ&lt;&lt;ُ&lt;&lt;ً&lt;&lt;ٍ&lt;&lt;ٌ<br>&amp;[before 1]ا&lt;آ<br>&amp;ا&lt;&lt;ٱ&lt;ء<br>&lt;&lt;أ&lt;&lt;ٲ&lt;&lt;إ&lt;&lt;ٳ&lt;&lt;ؤ<br>&lt;&lt;یٔ&lt;&lt;&lt;ىٔ&lt;&lt;&lt;ئ<br>&amp;ک&lt;&lt;*ڪګكڬڭڮ<br>&amp;ۏ&lt;ه&lt;&lt;ە&lt;&lt;ہ&lt;&lt;ة&lt;&lt;ۃ&lt;&lt;ۀ&lt;&lt;ھ<br>&amp;ی&lt;&lt;*ىےيېۑۍێ‬</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>fa_AF</td><td class='target'>[import ps]</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source' rowSpan='2'><a name='Narrow “and” List' href='#Narrow “and” List'>Narrow “and” List</a></td><td class='source'>2</td><td class='source' rowSpan='8'>fa</td><td class='target'>{0}، {1}</td><td class='target' rowSpan='8'>‫{0}،‏ {1}‬</td><td class='target' rowSpan='8'>moderate</td></tr>
+	<tr><td class='source'>end</td><td class='target'>‫{0}، و {1}‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='“Or” List' href='#“Or” List'>“Or” List</a></td><td class='source'>start</td><td class='target' rowSpan='6'>{0}، {1}</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td><td class='source'>start</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td><td class='source'>start</td></tr>
+	<tr><td class='source'>middle</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

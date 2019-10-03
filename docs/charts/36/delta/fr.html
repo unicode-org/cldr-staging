@@ -1,0 +1,584 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>French Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">French Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='4'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='4'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='4'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source' rowSpan='3'>Others: numbers</td><td class='source'>fr</td><td class='target'>[  \- , . % ‰ + − 0 1 2 ² 3 ³ 4 5 6 7 8 9 ᵈ ᵉ ʳ ˢ]</td><td class='target'>[  \- ‑ , . % ‰ + − 0 1 2 ² 3 ³ 4 5 6 7 8 9 ᵈ ᵉ ʳ ˢ]</td><td class='target' rowSpan='4'>core</td></tr>
+	<tr><td class='source'>fr_LU</td><td class='target' rowSpan='2'>[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target' rowSpan='2'>[\- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td></tr>
+	<tr><td class='source'>fr_MA</td></tr>
+	<tr><td class='source'>Others: punctuation</td><td class='source' rowSpan='2'>fr</td><td class='target'>[\- ‐ – — , ; \: ! ? . … ’ &quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡]</td><td class='target'>[\- ‐ ‑ – — , ; \: ! ? . … ’ &quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡]</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='8'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='8'><a name='C' href='#C'>C</a></td><td class='source' rowSpan='2'>Cantonese ► yue-menu</td><td class='target' rowSpan='2'>yue</td><td class='target'>chinois cantonais</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chinois, cantonais</td></tr>
+	<tr><td class='source' rowSpan='2'>Chinese ► zh_Hans-long</td><td class='source'>fr</td><td class='target' rowSpan='6'>zh</td><td class='target'>mandarin simplifié</td><td class='target' rowSpan='6'>basic</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chinois, mandarin simplifié</td></tr>
+	<tr><td class='source' rowSpan='2'>Chinese ► zh_Hant-long</td><td class='source'>fr</td><td class='target'>mandarin traditionnel</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chinois, mandarin traditionnel</td></tr>
+	<tr><td class='source' rowSpan='2'>Chinese ► zh-menu</td><td class='source'>fr</td><td class='target'>chinois mandarin</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>chinois, mandarin</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='L' href='#L'>L</a></td><td class='source'>Low German ► nds</td><td class='target'>bas allemand</td><td class='target'>bas-allemand</td><td class='target' rowSpan='30'>modern</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='15'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='source' rowSpan='25'>fr</td><td class='target'>▷missing◁</td><td class='target'>Angleterre</td></tr>
+	<tr><td class='target'>Angleterre</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>Écosse</td></tr>
+	<tr><td class='target'>Écosse</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>Pays de Galles</td></tr>
+	<tr><td class='target'>Pays de Galles</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source'>sebd</td><td class='target'>Comté de Norrbotten</td><td class='target'>comté de Norrbotten</td></tr>
+	<tr><td class='source'>seg</td><td class='target'>Comté de Kronoberg</td><td class='target'>comté de Kronoberg</td></tr>
+	<tr><td class='source'>sei</td><td class='target'>Comté de Gotland</td><td class='target'>comté de Gotland</td></tr>
+	<tr><td class='source'>set</td><td class='target'>Comté d’Örebro</td><td class='target'>comté d’Örebro</td></tr>
+	<tr><td class='source'>seu</td><td class='target'>Comté de Västmanland</td><td class='target'>comté de Västmanland</td></tr>
+	<tr><td class='source'>sew</td><td class='target'>Comté de Dalécarlie</td><td class='target'>comté de Dalécarlie</td></tr>
+	<tr><td class='source'>sex</td><td class='target'>Comté de Gävleborg</td><td class='target'>comté de Gävleborg</td></tr>
+	<tr><td class='source'>sey</td><td class='target'>Comté de Västernorrland</td><td class='target'>comté de Västernorrland</td></tr>
+	<tr><td class='source'>sez</td><td class='target'>Comté de Jämtland</td><td class='target'>comté de Jämtland</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='colAlternate' href='#colAlternate'>colAlternate</a></td><td class='source'>colAlternate</td><td class='target'>Tri ne tenant pas compte des symboles</td><td class='target'>tri ne tenant pas compte des symboles</td></tr>
+	<tr><td class='source'><a name='colBackwards' href='#colBackwards'>colBackwards</a></td><td class='source'>colBackwards</td><td class='target'>Tri inversé des caractères accentués</td><td class='target'>tri inversé des caractères accentués</td></tr>
+	<tr><td class='source'><a name='colCaseFirst' href='#colCaseFirst'>colCaseFirst</a></td><td class='source'>colCaseFirst</td><td class='target'>Classement basé sur les majuscules et les minuscules</td><td class='target'>classement basé sur les majuscules et les minuscules</td></tr>
+	<tr><td class='source'><a name='colCaseLevel' href='#colCaseLevel'>colCaseLevel</a></td><td class='source'>colCaseLevel</td><td class='target'>Tri sensible à la casse</td><td class='target'>tri sensible à la casse</td></tr>
+	<tr><td class='source'><a name='colNormalization' href='#colNormalization'>colNormalization</a></td><td class='source'>colNormalization</td><td class='target'>Tri normalisé</td><td class='target'>tri normalisé</td></tr>
+	<tr><td class='source'><a name='colNumeric' href='#colNumeric'>colNumeric</a></td><td class='source'>colNumeric</td><td class='target'>Tri numérique</td><td class='target'>tri numérique</td></tr>
+	<tr><td class='source'><a name='colStrength' href='#colStrength'>colStrength</a></td><td class='source'>colStrength</td><td class='target'>Priorité du tri</td><td class='target'>priorité du tri</td></tr>
+	<tr><td class='source'><a name='timezone' href='#timezone'>timezone</a></td><td class='source'>timezone</td><td class='target'>Fuseau horaire</td><td class='target'>fuseau horaire</td></tr>
+	<tr><td class='source'><a name='va' href='#va'>va</a></td><td class='source'>va</td><td class='target'>Variante locale</td><td class='target'>variante locale</td></tr>
+	<tr><td class='source'><a name='x' href='#x'>x</a></td><td class='source'>x</td><td class='target'>Usage privé</td><td class='target'>usage privé</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='4'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='4'><a name='Relative Year' href='#Relative Year'>Relative Year</a></td><td class='source'>future-one</td><td class='source' rowSpan='24'>fr_CA</td><td class='target'>Dans {0} an</td><td class='target'>dans {0} an</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>Dans {0} ans</td><td class='target'>dans {0} ans</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>Il y a {0} an</td><td class='target'>il y a {0} an</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>Il y a {0} ans</td><td class='target'>il y a {0} ans</td></tr>
+	<tr><td class='source'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>short</td><td class='target'>yy-MM-dd</td><td class='target'>y-MM-dd</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source' rowSpan='18'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td><td class='target' rowSpan='18'>comprehensive</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Coptic' href='#Coptic'>Coptic</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Ethiopic' href='#Ethiopic'>Ethiopic</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Indian' href='#Indian'>Indian</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Islamic' href='#Islamic'>Islamic</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Persian' href='#Persian'>Persian</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Minguo' href='#Minguo'>Minguo</a></td><td class='source'>Bh/B</td><td class='target'>h B – h B</td><td class='target'>h 'h' B – h 'h' B</td></tr>
+	<tr><td class='source'>Bhm/B</td><td class='target'>h:mm B – h:mm B</td><td class='target'>h 'h' mm B – h 'h' mm B</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='Europe' href='#Europe'>Europe</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Canary</td><td class='target'>îles Canaries</td><td class='target'>Îles Canaries</td><td class='target' rowSpan='81'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='2'><a name='Oceania (C)' href='#Oceania (C)'>Oceania (C)</a></td><td class='source'><a name='Polynesia: Tonga' href='#Polynesia: Tonga'>Polynesia: Tonga</a></td><td class='source'>TOP-symbol-narrow</td><td class='source' rowSpan='3'>fr</td><td class='target'>T$</td><td class='target'>$T</td></tr>
+	<tr><td class='source'><a name='Polynesia: Samoa' href='#Polynesia: Samoa'>Polynesia: Samoa</a></td><td class='source'>WST-symbol</td><td class='target'>WS$</td><td class='target'>$WS</td></tr>
+	<tr><td class='source' rowSpan='78'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='10'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='9'><a name='decade' href='#decade'>decade</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target' rowSpan='9'>▷missing◁</td><td class='target' rowSpan='2'>décennies</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-one</td><td class='source'>fr</td><td class='target' rowSpan='2'>{0} décennie</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-other</td><td class='source'>fr</td><td class='target' rowSpan='2'>{0} décennies</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='source' rowSpan='3'>fr</td><td class='target'>décennies</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>{0} décennie</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} décennies</td></tr>
+	<tr><td class='source'><a name='century' href='#century'>century</a></td><td class='source'>short-displayName</td><td class='source'>fr_CA</td><td class='target'>si</td><td class='target'>s.</td></tr>
+	<tr><td class='source' rowSpan='43'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='6'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='source' rowSpan='25'>fr</td><td class='target' rowSpan='43'>▷missing◁</td><td class='target'>points par centimètre</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} point par centimètre</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} points par centimètre</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>pt/cm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} pt/cm</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>points par pouce</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} point par pouce</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} points par pouce</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>pt/po</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} pt/po</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='em' href='#em'>em</a></td><td class='source'>long-displayName</td><td class='target'>cadratin</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} cadratin</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} cadratins</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>em</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} em</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-displayName</td><td class='target'>mégapixels</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} mégapixel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} mégapixels</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Mpx</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} Mpx</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pixel' href='#pixel'>pixel</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target' rowSpan='2'>pixels</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>long-one</td><td class='source' rowSpan='17'>fr</td><td class='target'>{0} pixel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pixels</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>{0} px</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} px</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>pixels par centimètre</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} pixel par centimètre</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pixels par centimètre</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px/cm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} px/cm</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>pixels par pouce</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} pixel par pouce</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pixels par pouce</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px/po</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} px/po</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='2'><a name='g-force' href='#g-force'>g-force</a></td><td class='source'>long-one</td><td class='source' rowSpan='2'>fr_CA</td><td class='target' rowSpan='2'>{0} fois la gravitation terrestre</td><td class='target' rowSpan='2'>{0} fois l’accélération de pesanteur terrestre</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='9'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='source'>fr</td><td class='target' rowSpan='19'>▷missing◁</td><td class='target'>therms US</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>therms américains</td></tr>
+	<tr><td class='source' rowSpan='2'>long-one</td><td class='source'>fr</td><td class='target'>{0} therm US</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} therm américain</td></tr>
+	<tr><td class='source' rowSpan='2'>long-other</td><td class='source'>fr</td><td class='target'>{0} therms US</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} therms américains</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='source' rowSpan='13'>fr</td><td class='target'>therm US</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>{0} therm US</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} therms US</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='5'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-displayName</td><td class='target'>bars</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} bar</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} bars</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>{0} bar</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} bars</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target'>pascals</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} pascal</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pascals</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} Pa</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='2'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>short-one</td><td class='source' rowSpan='2'>fr_CA</td><td class='target' rowSpan='2'>{0} mi/gal Imp</td><td class='target' rowSpan='2'>{0} mi/gal imp.</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='2'><a name='times' href='#times'>times</a></td><td class='source'>narrow</td><td class='source' rowSpan='2'>fr</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>{0}{1}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='356'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='37'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>💞 –keywords</td><td class='source' rowSpan='3'>fr_CA</td><td class='target' rowSpan='2'>…</td><td class='target'>cœurs<br>…</td><td class='target' rowSpan='356'>modern</td></tr>
+	<tr><td class='source'>💕 –keywords</td><td class='target'>amour<br>…</td></tr>
+	<tr><td class='source'>🤎 –keywords</td><td class='target'>cœur brun</td><td class='target'>brun<br>cœur</td></tr>
+	<tr><td class='source'>🖤 –keywords</td><td class='source'>fr</td><td class='target'>cœur<br>…</td><td class='target'>…<br>noir</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>🥰 –keywords</td><td class='source' rowSpan='3'>fr_CA</td><td class='target'>…<br>sourire<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>☺ –keywords</td><td class='target'>visage souriant</td><td class='target'>détendu<br>sourire<br>visage</td></tr>
+	<tr><td class='source'>😙 -name</td><td class='target'>visage donnant un baiser avec les yeux plissés</td><td class='target'>visage faisant un baiser les yeux rieurs</td></tr>
+	<tr><td class='source' rowSpan='2'>🥲 -name</td><td class='source'>fr</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target'>Visage souriant avec une larme</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>visage souriant avec larme</td></tr>
+	<tr><td class='source'>🥲 –keywords</td><td class='source'>fr</td><td class='target'>ému<br>fier<br>larme<br>soulagé<br>souriant<br>touché<br>Visage souriant avec une larme</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>😥 –keywords</td><td class='source' rowSpan='5'>fr_CA</td><td class='target'>…</td><td class='target'>déçu<br>fiou<br>soulagé<br>visage<br>…</td></tr>
+	<tr><td class='source'>😢 -name</td><td class='target'>visage en pleure</td><td class='target'>visage qui pleure</td></tr>
+	<tr><td class='source'>😢 –keywords</td><td class='target'>…<br>visage en pleure</td><td class='target' rowSpan='3'>…</td></tr>
+	<tr><td class='source'>😓 –keywords</td><td class='target'>…<br>visage triste et en sueur</td></tr>
+	<tr><td class='source'><a name='face-glasses' href='#face-glasses'>face-glasses</a></td><td class='source'>🤓 –keywords</td><td class='target'>…<br>niaiseux<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hat' href='#face-hat'>face-hat</a></td><td class='source' rowSpan='2'>🥷 -name</td><td class='source'>fr</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target' rowSpan='2'>ninja</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🥷 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>furtif<br>guerrier<br>masqué<br>ninja</td></tr>
+	<tr><td class='source' rowSpan='2'>🥸 -name</td><td class='target' rowSpan='2'>visage déguisé</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🥸 –keywords</td><td class='source'>fr</td><td class='target'>déguisement<br>faux nez<br>incognito<br>lunettes<br>postiche<br>visage<br>visage déguisé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😐 –keywords</td><td class='source' rowSpan='14'>fr_CA</td><td class='target'>visage neutre</td><td class='target'>impassible<br>neutre<br>visage</td></tr>
+	<tr><td class='source'>😶 –keywords</td><td class='target'>visage sans bouche</td><td class='target'>muet<br>sans bouche<br>silence<br>silencieux<br>visage</td></tr>
+	<tr><td class='source'>😏 –keywords</td><td class='target'>…<br>visage au sourire malin</td><td class='target'>…</td></tr>
+	<tr><td class='source'>😒 –keywords</td><td class='target'>visage désabusé</td><td class='target'>contrarié<br>désabusé<br>pas content<br>résigné<br>visage</td></tr>
+	<tr><td class='source'>🙄 –keywords</td><td class='target'>…<br>visage qui roule des yeux<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'><a name='face-sleepy' href='#face-sleepy'>face-sleepy</a></td><td class='source'>🤤 –keywords</td><td class='target'>visage qui bave</td><td class='target'>bave<br>baver<br>salive<br>saliver<br>visage</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>😃 –keywords</td><td class='target'>…<br>visage souriant les yeux grands ouverts</td><td class='target' rowSpan='4'>…</td></tr>
+	<tr><td class='source'>😄 –keywords</td><td class='target'>…<br>visage avec large sourire et yeux rieurs</td></tr>
+	<tr><td class='source'>😁 –keywords</td><td class='target'>…<br>visage radieux et yeux rieurs</td></tr>
+	<tr><td class='source'>😆 –keywords</td><td class='target'>…<br>visage avec large sourire, les yeux fermés</td></tr>
+	<tr><td class='source'>😅 –keywords</td><td class='target'>un visage en sueur avec large sourire</td><td class='target'>froid<br>ouvert<br>sourire<br>sueur<br>visage</td></tr>
+	<tr><td class='source'>🙂 –keywords</td><td class='target'>visage avec un léger sourire</td><td class='target'>sourire<br>visage</td></tr>
+	<tr><td class='source'>🙃 –keywords</td><td class='target'>…<br>visage à l’envers</td><td class='target' rowSpan='3'>…</td></tr>
+	<tr><td class='source'>😇 –keywords</td><td class='target'>…<br>visage qui sourit avec une auréole</td></tr>
+	<tr><td class='source'><a name='face-tongue' href='#face-tongue'>face-tongue</a></td><td class='source'>😝 –keywords</td><td class='source'>fr</td><td class='target'>…<br>visage<br>visage qui tire la langue avec les yeux plissés<br>…</td></tr>
+	<tr><td class='source'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>🥴 –keywords</td><td class='source'>fr_CA</td><td class='target'>visage abruti</td><td class='target'>bouche ondulée<br>dans les vapes<br>hébété<br>pompette<br>rond<br>visage éméché</td></tr>
+	<tr><td class='source' rowSpan='104'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source' rowSpan='2'>🫀 -name</td><td class='source'>fr</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target' rowSpan='2'>cœur</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🫀 –keywords</td><td class='source'>fr</td><td class='target'>battements<br>cardiologie<br>centre<br>cœur<br>organe<br>pouls<br>pulsation</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>battement de coeur<br>cardiologie<br>organe<br>pouls</td></tr>
+	<tr><td class='source' rowSpan='2'>🫁 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>poumons</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🫁 –keywords</td><td class='source'>fr</td><td class='target'>expiration<br>inspiration<br>organe<br>poumons<br>respiration<br>souffle</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>expiration<br>inspiration<br>organe<br>respiration<br>respirer</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source' rowSpan='2'>🤌 -name</td><td class='source'>fr</td><td class='target'>bout des doigts joints</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>main qui interroge</td></tr>
+	<tr><td class='source' rowSpan='2'>🤌 –keywords</td><td class='source'>fr</td><td class='target'>argumentation<br>bout des doigts joints<br>doigts<br>geste<br>main<br>parler avec les mains</td></tr>
+	<tr><td class='source' rowSpan='5'>fr_CA</td><td class='target'>geste de la main<br>interrogation<br>sarcastique</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hand-single-finger' href='#hand-single-finger'>hand-single-finger</a></td><td class='source'>👈 -name</td><td class='target'>dos de la main avec index pointant vers la gauche</td><td class='target'>main avec index pointant à gauche</td></tr>
+	<tr><td class='source'>👉 -name</td><td class='target'>dos de la main avec index pointant vers la droite</td><td class='target'>main avec index pointant à droite</td></tr>
+	<tr><td class='source'>👆 -name</td><td class='target'>dos de la main avec index pointant vers le haut</td><td class='target'>main avec index pointant vers le haut</td></tr>
+	<tr><td class='source'>👇 -name</td><td class='target'>dos de la main avec index pointant vers le bas</td><td class='target'>main avec index pointant vers le bas</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source' rowSpan='2'>🧑‍🦯 -name</td><td class='source'>fr</td><td class='target' rowSpan='10'>▷missing◁</td><td class='target'>personne avec une canne blanche</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>aveugle avec canne</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🦯 –keywords</td><td class='source'>fr</td><td class='target'>accessibilité<br>aveugle<br>personne avec une canne blanche</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>accessibilité<br>aveugle</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🦼 -name</td><td class='source'>fr</td><td class='target'>personne en fauteuil motorisé</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>personne en fauteuil roulant</td></tr>
+	<tr><td class='source'>🧑‍🦼 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>accessibilité<br>fauteuil roulant<br>personne en fauteuil motorisé</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🦽 -name</td><td class='target' rowSpan='2'>personne en fauteuil roulant manuel</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='source'>fr</td><td class='target'>accessibilité<br>fauteuil roulant<br>personne en fauteuil roulant manuel</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>💁 –keywords</td><td class='source' rowSpan='4'>fr_CA</td><td class='target'>…<br>assistance<br>concierge<br>guichet<br>…<br>personne au guichet<br>réception</td><td class='target'>…<br>main<br>personne paume vers le haut</td></tr>
+	<tr><td class='source'>🙇 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>courbette<br>désolé<br>excuses<br>incliné<br>…</td></tr>
+	<tr><td class='source'>🤷 –keywords</td><td class='target'>doute<br>haussement d’épaules<br>ignorance<br>indifférence<br>…</td></tr>
+	<tr><td class='source' rowSpan='71'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>👨‍⚕ -name</td><td class='target'>professionnel de la santé</td><td class='target'>professionnel de la santé homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍⚕ -name</td><td class='source'>fr</td><td class='target' rowSpan='15'>▷missing◁</td><td class='target'>professionnel de la santé (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>professionnel de la santé</td></tr>
+	<tr><td class='source'>🧑‍⚕ –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>docteur<br>infirmier<br>médecin<br>professionnel de la santé (tous genres)<br>santé<br>thérapeute</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎓 -name</td><td class='target'>étudiant (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>étudiant universitaire</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎓 –keywords</td><td class='source'>fr</td><td class='target'>diplôme<br>étudiant<br>étudiant (tous genres)<br>étudiante</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>diplômé<br>étudiant</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🏫 -name</td><td class='source'>fr</td><td class='target'>personnel enseignant</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>professeur</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🏫 –keywords</td><td class='source'>fr</td><td class='target'>enseignant<br>enseignante<br>formateur<br>formatrice<br>personnel enseignant<br>professeur</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>enseignant<br>instituteur<br>professeur</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍⚖ -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>juge</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍⚖ –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>balance<br>juge</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td></tr>
+	<tr><td class='source'>👨‍🌾 -name</td><td class='target'>fermier</td><td class='target'>fermier homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🌾 -name</td><td class='source'>fr</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>fermier (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>fermier</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🌾 –keywords</td><td class='source'>fr</td><td class='target'>fermier<br>fermier (tous genres)<br>fermière<br>jardinier<br>jardinière</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>agriculteur<br>fermier<br>jardinier</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🍳 -name</td><td class='source'>fr</td><td class='target'>cuisinier (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chef</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🍳 –keywords</td><td class='source'>fr</td><td class='target'>chef<br>cuisinier<br>cuisinier (tous genres)<br>cuisinière</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>chef<br>cuisinier</td></tr>
+	<tr><td class='source'>👨‍🔧 -name</td><td class='target'>mécanicien</td><td class='target'>mécanicien homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🔧 -name</td><td class='source'>fr</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>mécanicien (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>mécanicien</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🔧 –keywords</td><td class='source'>fr</td><td class='target'>artisan<br>électricien<br>électricienne<br>mécanicien<br>mécanicien (tous genres)<br>mécanicienne<br>plombier</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>électricien<br>mécanicien<br>ouvrier<br>plombier</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🏭 -name</td><td class='source'>fr</td><td class='target'>ouvrier (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>travailleur d’usine</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🏭 –keywords</td><td class='source'>fr</td><td class='target'>assemblage<br>industrie<br>ouvrier<br>ouvrier (tous genres)<br>ouvrière<br>usine</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>assemblage usine<br>industrie<br>travailleur</td></tr>
+	<tr><td class='source'>👨‍💼 -name</td><td class='target'>employé de bureau</td><td class='target'>employé de bureau homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍💼 -name</td><td class='source'>fr</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>employé de bureau (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>employé de bureau</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍💼 –keywords</td><td class='source'>fr</td><td class='target'>affaires<br>architecte<br>bureau<br>employé de bureau<br>employé de bureau (tous genres)<br>employée de bureau</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>affaires<br>architecte<br>cadre<br>col blanc</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🔬 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>scientifique</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🔬 –keywords</td><td class='source'>fr</td><td class='target'>chimiste<br>scientifique</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>biologiste<br>chimiste<br>ingénieur<br>physicien<br>scientifique</td></tr>
+	<tr><td class='source'>👨‍💻 -name</td><td class='target'>informaticien</td><td class='target'>informaticien homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍💻 -name</td><td class='source'>fr</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>informaticien (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>informaticien</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍💻 –keywords</td><td class='source'>fr</td><td class='target'>développeur<br>développeuse<br>informaticien<br>informaticien (tous genres)<br>informaticienne<br>logiciels<br>technologie</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>développeur<br>homme<br>informaticien<br>logiciels<br>technologie</td></tr>
+	<tr><td class='source'>👨‍🎤 -name</td><td class='target'>chanteur</td><td class='target'>chanteur homme</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎤 -name</td><td class='source'>fr</td><td class='target' rowSpan='20'>▷missing◁</td><td class='target'>chanteur (tous genres)</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chanteur</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎤 –keywords</td><td class='source'>fr</td><td class='target'>artiste<br>chanteur<br>chanteur (tous genres)<br>chanteuse<br>rock<br>star</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>acteur<br>artiste<br>chanteur<br>rock<br>vedette</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎨 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>artiste</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🎨 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>artiste<br>palette</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍✈ -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>pilote</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍✈ –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>avion<br>pilote</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🚀 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>astronaute</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🚀 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>astronaute<br>fusée</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🚒 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>pompier</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧑‍🚒 –keywords</td><td class='source'>fr</td><td class='target'>camion de pompiers<br>pompier</td></tr>
+	<tr><td class='source' rowSpan='3'>fr_CA</td><td class='target'>camion de pompier<br>pompier</td></tr>
+	<tr><td class='source'>👮 -name</td><td class='target'>agent de la paix</td><td class='target'>policier</td></tr>
+	<tr><td class='source'>👮‍♂ -name</td><td class='target'>policier</td><td class='target'>policier homme</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source' rowSpan='2'>🫂 -name</td><td class='source'>fr</td><td class='target' rowSpan='28'>▷missing◁</td><td class='target'>étreinte</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>personnes qui s’étreignent</td></tr>
+	<tr><td class='source' rowSpan='2'>🫂 –keywords</td><td class='source'>fr</td><td class='target'>au revoir<br>bonjour<br>câlin<br>étreinte<br>gratitude</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>accolade<br>au revoir<br>bonjour<br>merci</td></tr>
+	<tr><td class='source' rowSpan='46'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='8'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source' rowSpan='2'>🪶 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>plume</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪶 –keywords</td><td class='source'>fr</td><td class='target'>léger<br>oiseau<br>plumage<br>plume<br>voler</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>léger<br>oiseau<br>plume<br>vol</td></tr>
+	<tr><td class='source' rowSpan='2'>🦤 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>dodo</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🦤 –keywords</td><td class='source'>fr</td><td class='target'>dodo<br>extinction<br>grand<br>île Maurice</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>extinction<br>gros oiseau<br>Maurice</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source' rowSpan='2'>🪲 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>scarabée</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪲 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>insecte<br>scarabée</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪳 -name</td><td class='source'>fr</td><td class='target'>cafard</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>coquerelle</td></tr>
+	<tr><td class='source' rowSpan='2'>🪳 –keywords</td><td class='source'>fr</td><td class='target'>blatte<br>cafard<br>insecte<br>nuisible</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>cafard<br>insecte<br>nuisible</td></tr>
+	<tr><td class='source' rowSpan='2'>🪰 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>mouche</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪰 –keywords</td><td class='source'>fr</td><td class='target'>asticot<br>maladie<br>mouche<br>nuisible<br>putréfaction</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>maladie<br>pourrissement<br>puanteur<br>ver</td></tr>
+	<tr><td class='source' rowSpan='2'>🪱 -name</td><td class='source'>fr</td><td class='target'>lombric</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>ver</td></tr>
+	<tr><td class='source' rowSpan='2'>🪱 –keywords</td><td class='source'>fr</td><td class='target'>annélide<br>lombric<br>parasite<br>ver<br>ver de terre</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>annélide<br>parasite<br>ver<br>ver de terre</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🦮 –keywords</td><td class='target'>chien-guide</td><td class='target'>accessibilité<br>animal<br>aveugle<br>chien guide<br>guide<br>non-voyant</td></tr>
+	<tr><td class='source' rowSpan='2'>🦬 -name</td><td class='source'>fr</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target' rowSpan='2'>bison</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🦬 –keywords</td><td class='source'>fr</td><td class='target'>bison<br>cornes<br>herbivore<br>troupeau</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>bison<br>buffle<br>troupeau</td></tr>
+	<tr><td class='source' rowSpan='2'>🦣 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>mammouth</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🦣 –keywords</td><td class='source'>fr</td><td class='target'>défenses<br>extinction<br>grand<br>laineux<br>mammouth</td></tr>
+	<tr><td class='source' rowSpan='3'>fr_CA</td><td class='target'>défenses<br>extinction<br>gros animal</td></tr>
+	<tr><td class='source'>🐿 -name</td><td class='target'>tamia</td><td class='target'>écureuil</td></tr>
+	<tr><td class='source'>🐿 –keywords</td><td class='target'>…</td><td class='target'>écureuil<br>suisse<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'>🦫 -name</td><td class='source'>fr</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>castor</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🦫 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>barrage<br>castor</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🐳 –keywords</td><td class='target'>…</td><td class='target'>…<br>souffle</td></tr>
+	<tr><td class='source' rowSpan='2'>🦭 -name</td><td class='source'>fr</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target' rowSpan='2'>phoque</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🦭 –keywords</td><td class='source' rowSpan='3'>fr</td><td class='target'>lion de mer<br>otarie<br>phoque</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪴 -name</td><td class='target'>plante en pot</td></tr>
+	<tr><td class='source' rowSpan='2'>🪴 –keywords</td><td class='target'>décoration<br>ennuyeux<br>intérieur<br>plante en pot<br>pousser<br>prendre soin</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>ennuyeux<br>faire pousser<br>intérieur<br>inutile<br>plante<br>prendre soin</td></tr>
+	<tr><td class='source' rowSpan='44'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='4'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🍽 -name</td><td class='source' rowSpan='5'>fr</td><td class='target'>assiette et couverts</td><td class='target'>fourchette et couteau avec assiette</td></tr>
+	<tr><td class='source'>🍽 –keywords</td><td class='target'>…</td><td class='target'>…<br>fourchette et couteau avec assiette</td></tr>
+	<tr><td class='source'>🍴 -name</td><td class='target'>couteau et fourchette</td><td class='target'>fourchette et couteau</td></tr>
+	<tr><td class='source'>🍴 –keywords</td><td class='target'>…</td><td class='target'>…<br>fourchette et couteau<br>…</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='drink' href='#drink'>drink</a></td><td class='source' rowSpan='2'>🫖 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>théière</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🫖 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>boisson<br>thé<br>théière</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td></tr>
+	<tr><td class='source'>🥃 –keywords</td><td class='target'>…<br>Verre<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🥤 -name</td><td class='source' rowSpan='3'>fr</td><td class='target'>tasse avec paille</td><td class='target'>gobelet avec paille</td></tr>
+	<tr><td class='source'>🥤 –keywords</td><td class='target'>…<br>tasse avec paille</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='2'>🧋 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>thé aux perles</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🧋 –keywords</td><td class='source'>fr</td><td class='target'>bulle<br>lait<br>perle<br>thé aux perles</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>lait<br>perles<br>thé</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='food-asian' href='#food-asian'>food-asian</a></td><td class='source'>🍱 –keywords</td><td class='target'>…<br>déjeuner</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🍘 –keywords</td><td class='source' rowSpan='4'>fr</td><td class='target'>galette<br>…</td><td class='target'>cracker<br>…</td></tr>
+	<tr><td class='source'>🍙 –keywords</td><td class='target'>boulette<br>…</td><td class='target'>…<br>onigiri<br>plat<br>…</td></tr>
+	<tr><td class='source'>🍜 –keywords</td><td class='target'>bol<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🍣 –keywords</td><td class='target'>…</td><td class='target'>japonais<br>poisson<br>…</td></tr>
+	<tr><td class='source'>🍡 –keywords</td><td class='source'>fr_CA</td><td class='target'>…<br>dango<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🥡 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>…<br>seau d’huîtres</td><td class='target'>…<br>carton<br>chinois<br>nourriture à emporter</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source' rowSpan='2'>🫐 -name</td><td class='target' rowSpan='11'>▷missing◁</td><td class='target'>myrtilles</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>bleuets</td></tr>
+	<tr><td class='source' rowSpan='2'>🫐 –keywords</td><td class='source'>fr</td><td class='target'>baies<br>bleu<br>bleuets<br>myrtilles<br>violet</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>baies<br>bleuets<br>myrtilles</td></tr>
+	<tr><td class='source' rowSpan='2'>🫒 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>olive</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🫒 –keywords</td><td class='source'>fr</td><td class='target'>aliment<br>apéro<br>nourriture<br>olive</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>nourriture<br>olive</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source' rowSpan='2'>🫓 -name</td><td class='source'>fr</td><td class='target'>galette</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>pain plat</td></tr>
+	<tr><td class='source'>🫓 –keywords</td><td class='source'>fr</td><td class='target'>arepa<br>galette<br>lavash<br>naan<br>pita</td></tr>
+	<tr><td class='source'>🥩 –keywords</td><td class='source'>fr_CA</td><td class='target'>bifteck<br>bœuf<br>coupe<br>morceau<br>…<br>tranche<br>viande</td><td class='target'>côtelette<br>côtelette d’agneau<br>côtelette de porc<br>…</td></tr>
+	<tr><td class='source'>🫔 -name</td><td class='source' rowSpan='3'>fr</td><td class='target' rowSpan='21'>▷missing◁</td><td class='target'>tamal</td></tr>
+	<tr><td class='source'>🫔 –keywords</td><td class='target'>mexicain<br>papillote<br>tamal</td></tr>
+	<tr><td class='source' rowSpan='2'>🫕 -name</td><td class='target' rowSpan='2'>fondue</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🫕 –keywords</td><td class='source'>fr</td><td class='target'>bourguignonne<br>chocolat<br>fondue<br>fromage<br>poêlon<br>savoyarde<br>Suisse</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chocolat<br>fondu<br>fromage<br>plat<br>suisse</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source' rowSpan='2'>🫑 -name</td><td class='source'>fr</td><td class='target'>poivron</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>poivron rouge</td></tr>
+	<tr><td class='source' rowSpan='2'>🫑 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>légume<br>piment<br>poivron</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='11'><a name='place-building' href='#place-building'>place-building</a></td><td class='source' rowSpan='2'>🛖 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>hutte</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🛖 –keywords</td><td class='source'>fr</td><td class='target'>case<br>hutte<br>maison<br>yourte</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>maison<br>ronde<br>yourte</td></tr>
+	<tr><td class='source' rowSpan='2'>🪵 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>bois</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪵 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>bois<br>bûche<br>rondins<br>tronc</td></tr>
+	<tr><td class='source' rowSpan='2'>🪨 -name</td><td class='target'>rocher</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>roche</td></tr>
+	<tr><td class='source' rowSpan='2'>🪨 –keywords</td><td class='source'>fr</td><td class='target'>lourd<br>pierre<br>roc<br>rocher<br>solide</td></tr>
+	<tr><td class='source' rowSpan='3'>fr_CA</td><td class='target'>lourde<br>roche<br>rocher<br>solide</td></tr>
+	<tr><td class='source'><a name='place-map' href='#place-map'>place-map</a></td><td class='source'>🧭 –keywords</td><td class='target'>…</td><td class='target'>boussole<br>…</td></tr>
+	<tr><td class='source'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>⭐ –keywords</td><td class='target'>…<br>étoile blanche moyenne</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source' rowSpan='2'>🛻 -name</td><td class='source'>fr</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>pick-up</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>camionnette</td></tr>
+	<tr><td class='source' rowSpan='2'>🛻 –keywords</td><td class='source'>fr</td><td class='target'>pick-up<br>pickup<br>véhicule</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>camion<br>camionnette</td></tr>
+	<tr><td class='source' rowSpan='29'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='8'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source' rowSpan='2'>🪡 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>aiguille à coudre</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪡 –keywords</td><td class='source'>fr</td><td class='target'>aiguille à coudre<br>broderie<br>couture<br>points<br>suture<br>tailleur</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>aiguille<br>broderie<br>coudre<br>couture<br>coutures<br>points</td></tr>
+	<tr><td class='source'>🧶 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>…</td><td class='target'>…<br>pelote<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'>🪢 -name</td><td class='target' rowSpan='15'>▷missing◁</td><td class='target' rowSpan='2'>nœud</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪢 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>attacher<br>corde<br>entrelacer<br>nœud<br>noué<br>tordre</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='game' href='#game'>game</a></td><td class='source' rowSpan='2'>🪄 -name</td><td class='target' rowSpan='2'>baguette magique</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪄 –keywords</td><td class='source'>fr</td><td class='target'>baguette magique<br>magicien<br>magie<br>sorcier<br>sorcière</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>magicien<br>magicienne<br>magie<br>sorcier<br>sorcière</td></tr>
+	<tr><td class='source' rowSpan='2'>🪅 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>piñata</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪅 –keywords</td><td class='source'>fr</td><td class='target'>bonbons<br>confiseries<br>fête<br>piñata</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>fête</td></tr>
+	<tr><td class='source' rowSpan='2'>🪆 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>poupées russes</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪆 –keywords</td><td class='source'>fr</td><td class='target'>emboîté<br>matriochka<br>poupées russes<br>russe</td></tr>
+	<tr><td class='source' rowSpan='3'>fr_CA</td><td class='target'>poupée russe<br>russie</td></tr>
+	<tr><td class='source'>♥ -name</td><td class='target'>cœur</td><td class='target'>cœur cartes</td></tr>
+	<tr><td class='source'>🎴 –keywords</td><td class='target'>…</td><td class='target'>carte<br>fleur<br>japonais<br>jeu<br>…</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='sport' href='#sport'>sport</a></td><td class='source' rowSpan='2'>⚽ –keywords</td><td class='source'>fr</td><td class='target'>ballon<br>…</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>…<br>football<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'>🛼 -name</td><td class='source'>fr</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>patin à roulettes</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🛼 –keywords</td><td class='source'>fr</td><td class='target'>derby<br>patin à roulettes<br>roller<br>roulette</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>patin<br>roulettes</td></tr>
+	<tr><td class='source'>🎽 –keywords</td><td class='target'>…<br>banderole<br>…<br>t-shirt</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='68'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='8'><a name='clothing' href='#clothing'>clothing</a></td><td class='source' rowSpan='2'>🩴 -name</td><td class='source'>fr</td><td class='target' rowSpan='42'>▷missing◁</td><td class='target'>tong</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>gougoune</td></tr>
+	<tr><td class='source' rowSpan='2'>🩴 –keywords</td><td class='source'>fr</td><td class='target'>claquettes<br>sandales<br>sandales de plage<br>tatanes<br>tong<br>tongs</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>sandales<br>sandales de plage<br>tongs<br>zōri</td></tr>
+	<tr><td class='source' rowSpan='2'>🪖 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>casque militaire</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪖 –keywords</td><td class='source'>fr</td><td class='target' rowSpan='2'>armée<br>casque<br>guerrier<br>militaire<br>soldat</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='household' href='#household'>household</a></td><td class='source' rowSpan='2'>🛗 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>ascenseur</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🛗 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>accessibilité<br>ascenseur<br>monte-personnes</td></tr>
+	<tr><td class='source' rowSpan='2'>🪞 -name</td><td class='target' rowSpan='2'>miroir</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪞 –keywords</td><td class='source'>fr</td><td class='target'>glace<br>miroir<br>psyché<br>reflet</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>glace<br>réflecteur<br>réflexion</td></tr>
+	<tr><td class='source' rowSpan='2'>🪟 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>fenêtre</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪟 –keywords</td><td class='source'>fr</td><td class='target'>air frais<br>cadre<br>fenêtre<br>ouverture<br>transparent<br>vue</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>air frais<br>cadre<br>ouverture<br>transparent<br>vue</td></tr>
+	<tr><td class='source' rowSpan='2'>🪠 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>ventouse</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪠 –keywords</td><td class='source'>fr</td><td class='target'>déboucheur<br>plombier<br>suction<br>toilettes<br>ventouse</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>force<br>plombier<br>succion<br>toilette<br>ventouse</td></tr>
+	<tr><td class='source' rowSpan='2'>🪤 -name</td><td class='source'>fr</td><td class='target'>tapette à souris</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>piège à souris</td></tr>
+	<tr><td class='source' rowSpan='2'>🪤 –keywords</td><td class='source'>fr</td><td class='target'>appât<br>piège<br>piège à souris<br>tapette<br>tapette à souris</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>apât<br>piège<br>piège à souris</td></tr>
+	<tr><td class='source' rowSpan='2'>🪣 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>seau</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪣 –keywords</td><td class='source'>fr</td><td class='target'>conteneur<br>seau</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>chaudière<br>seau</td></tr>
+	<tr><td class='source' rowSpan='2'>🪥 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>brosse à dents</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪥 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>brosse<br>brosse à dents<br>dentaire<br>dents<br>hygiène<br>laver<br>salle de bain</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='money' href='#money'>money</a></td><td class='source' rowSpan='2'>🪙 -name</td><td class='target'>pièce</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>pièce de monnaie</td></tr>
+	<tr><td class='source' rowSpan='2'>🪙 –keywords</td><td class='source'>fr</td><td class='target'>argent<br>métal<br>or<br>pièce<br>trésor</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>argent<br>métal<br>monnaie<br>or<br>trésor</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source' rowSpan='2'>🪗 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>accordéon</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪗 –keywords</td><td class='source'>fr</td><td class='target'>accordéon<br>bandonéon<br>concertina<br>piano à bretelles</td></tr>
+	<tr><td class='source' rowSpan='2'>fr_CA</td><td class='target'>accordéon<br>concertina</td></tr>
+	<tr><td class='source'>🥁 -name</td><td class='target'>batterie</td><td class='target'>tambour</td></tr>
+	<tr><td class='source'>🪘 -name</td><td class='source' rowSpan='2'>fr</td><td class='target' rowSpan='28'>▷missing◁</td><td class='target'>djembé</td></tr>
+	<tr><td class='source' rowSpan='2'>🪘 –keywords</td><td class='target'>battement<br>conga<br>djembé<br>rythme<br>tambour</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>conga<br>rythme<br>tam-tam<br>tambour</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='other-object' href='#other-object'>other-object</a></td><td class='source' rowSpan='2'>🪦 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>pierre tombale</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪦 –keywords</td><td class='source' rowSpan='4'>fr</td><td class='target'>cimetière<br>pierre tombale<br>stèle<br>tombe</td></tr>
+	<tr><td class='source'>🪧 -name</td><td class='target'>pancarte</td></tr>
+	<tr><td class='source'>🪧 –keywords</td><td class='target'>grève<br>manifestation<br>pancarte<br>panneau<br>protestation</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='tool' href='#tool'>tool</a></td><td class='source' rowSpan='2'>🪚 -name</td><td class='target'>scie</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>scie à bois</td></tr>
+	<tr><td class='source'>🪚 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>bois<br>outil<br>scie<br>scie égoïne</td></tr>
+	<tr><td class='source' rowSpan='2'>🪃 -name</td><td class='target' rowSpan='2'>boomerang</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪃 –keywords</td><td class='source'>fr</td><td class='target'>australie<br>boomerang<br>répercussion</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>australie<br>boomerang<br>outil<br>répercussion<br>retour</td></tr>
+	<tr><td class='source' rowSpan='2'>🪛 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>tournevis</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🪛 –keywords</td><td class='source'>fr</td><td class='target'>outil<br>tournevis<br>vis</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>outil<br>tounevis</td></tr>
+	<tr><td class='source' rowSpan='2'>🪜 -name</td><td class='source'>fr</td><td class='target' rowSpan='2'>échelle</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪜 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>barreau<br>échelle<br>échelon<br>escabeau<br>monter</td></tr>
+	<tr><td class='source' rowSpan='2'>🪝 -name</td><td class='target' rowSpan='2'>crochet</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source'>🪝 –keywords</td><td class='source' rowSpan='2'>fr</td><td class='target'>accrocher<br>appâter<br>attraper<br>crochet<br>ferrer<br>hameçonner</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='3'><a name='gender' href='#gender'>gender</a></td><td class='source' rowSpan='2'>⚧ -name</td><td class='target'>symbole de la communauté transgenre</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>symbole transgenre</td></tr>
+	<tr><td class='source'>⚧ –keywords</td><td class='source'>fr</td><td class='target'>symbole de la communauté transgenre<br>transgenre</td></tr>
+	<tr><td class='source'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>⚕ –keywords</td><td class='source'>fr_CA</td><td class='target'>symbole la médecine</td><td class='target'>Asclépios<br>caducée<br>docteur<br>médecin<br>médecine</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Flags' href='#Flags'>Flags</a></td><td class='source' rowSpan='4'><a name='flag' href='#flag'>flag</a></td><td class='source' rowSpan='2'>🏳‍⚧ -name</td><td class='source'>fr</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>drapeau transgenre</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>🏳‍⚧ –keywords</td><td class='source'>fr</td><td class='target'>blanc<br>bleu clair<br>drapeau transgenre<br>rose<br>transgenre</td></tr>
+	<tr><td class='source' rowSpan='5'>fr_CA</td><td class='target'>blanc<br>bleu pâle<br>drapeau<br>rose<br>transgenre</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Component' href='#Component'>Component</a></td><td class='source' rowSpan='3'><a name='skin-tone' href='#skin-tone'>skin-tone</a></td><td class='source'>🏻 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>peau<br>…<br>type 1–2</td></tr>
+	<tr><td class='source'>🏽 –keywords</td><td class='target'>peau<br>…<br>type 4</td></tr>
+	<tr><td class='source'>🏿 –keywords</td><td class='target'>peau<br>…<br>type 6</td></tr>
+	<tr><td class='source'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td><td class='source'><a name='Collation' href='#Collation'>Collation</a></td><td class='source'>standard</td><td class='target'>▷missing◁</td><td class='target'>[backwards 2]</td><td class='target'>comprehensive</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,1743 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Breton Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Breton Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='7'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='7'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='2'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: numbers</td><td class='source' rowSpan='1658'>br</td><td class='target'>[  \- , % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target'>[  \- ‑ , % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target' rowSpan='2'>core</td></tr>
+	<tr><td class='source'>Others: punctuation</td><td class='target'>[\- , ; \: ! ? . ( ) \[ \] \{ \}]</td><td class='target'>[\- ‑ , ; \: ! ? . ( ) \[ \] \{ \}]</td></tr>
+	<tr><td class='source'><a name='Parse' href='#Parse'>Parse</a></td><td class='source'>general-lenient(’)</td><td class='target'>['ʼ՚᾽᾿’＇]</td><td class='target'>‫['ʼ՚ߴ᾽᾿’＇]‬</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Quotation Marks' href='#Quotation Marks'>Quotation Marks</a></td><td class='source'>End</td><td class='target'>”</td><td class='target'>»</td><td class='target' rowSpan='7'>basic</td></tr>
+	<tr><td class='source'>Start</td><td class='target'>“</td><td class='target'>«</td></tr>
+	<tr><td class='source'>embedded-End</td><td class='target'>»</td><td class='target'>”</td></tr>
+	<tr><td class='source'>embedded-Start</td><td class='target'>«</td><td class='target'>“</td></tr>
+	<tr><td class='source' rowSpan='58'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='3'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td><td class='source' rowSpan='3'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td><td class='source'>language</td><td class='target' rowSpan='3'>{0}</td><td class='target'>yezh : {0}</td></tr>
+	<tr><td class='source'>script</td><td class='target'>skritur : {0}</td></tr>
+	<tr><td class='source'>territory</td><td class='target'>rannved : {0}</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='5'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>yue</td><td class='target'>sinaeg, kantoneg</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>Chakma ► ccp</td><td class='target'>ccp</td><td class='target'>chakmaeg</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target' rowSpan='3'>zh</td><td class='target'>sinaeg mandarinek eeunaet</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>sinaeg mandarinek hengounel</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>sinaeg, mandarineg</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='4'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Hani</td><td class='target'>han</td><td class='target'>sinalunioù (han)</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Hans-stand-alone</td><td class='target'>han eeunaet</td><td class='target'>sinalunioù (han) eeunaet</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>Hant-stand-alone</td><td class='target'>han hengounel</td><td class='target'>sinalunioù (han) hengounel</td></tr>
+	<tr><td class='source'>Zinh</td><td class='target'>Zinh</td><td class='target'>hêrezh</td><td class='target' rowSpan='9'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Limited Use' href='#Limited Use'>Limited Use</a></td><td class='source'>Batk</td><td class='target'>Batk</td><td class='target'>batak</td></tr>
+	<tr><td class='source'>Cakm</td><td class='target'>Cakm</td><td class='target'>chakmaek</td></tr>
+	<tr><td class='source'>Cans</td><td class='target'>Cans</td><td class='target'>silabennaoueg engenidik unvan Kanada</td></tr>
+	<tr><td class='source'>Cham</td><td class='target'>Cham</td><td class='target'>cham</td></tr>
+	<tr><td class='source'>Cher</td><td class='target'>Cher</td><td class='target'>cherokee</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Historic' href='#Historic'>Historic</a></td><td class='source'>Cprt</td><td class='target'>Cprt</td><td class='target'>silabennaoueg kipriek</td></tr>
+	<tr><td class='source'>Dupl</td><td class='target'>Dupl</td><td class='target'>berrskriverezh Duployé</td></tr>
+	<tr><td class='source'>Phnx</td><td class='target'>Phnx</td><td class='target'>fenikianek</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source' rowSpan='2'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>XA</td><td class='target'>XA</td><td class='target'>pouez-mouezh gaou</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'>XB</td><td class='target'>XB</td><td class='target'>BiDi gaou</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source' rowSpan='2'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Swaziland</td><td class='target'>Eswatini</td></tr>
+	<tr><td class='source'>SZ-variant</td><td class='target'>SZ</td><td class='target'>Swaziland</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>Bro-Saoz</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='target'>Bro-Saoz</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>Skos</td></tr>
+	<tr><td class='target'>Skos</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>Kembre</td></tr>
+	<tr><td class='target'>Kembre</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Southern Europe' href='#Southern Europe'>Southern Europe</a></td><td class='source'>MK</td><td class='target'>Makedonia</td><td class='target'>Makedonia an Norzh</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>MK-variant</td><td class='target'>Makedonia (RYKM)</td><td class='target'>MK</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Locale Variants' href='#Locale Variants'>Locale Variants</a></td><td class='source' rowSpan='24'><a name='null' href='#null'>null</a></td><td class='source'>1606NICT</td><td class='target'>krenncʼhalleg</td><td class='target'>krenncʼhalleg diwezhañ</td><td class='target' rowSpan='26'>comprehensive</td></tr>
+	<tr><td class='source'>ARANES</td><td class='target'>ARANES</td><td class='target'>araneg</td></tr>
+	<tr><td class='source'>AUVERN</td><td class='target'>AUVERN</td><td class='target'>arverneg</td></tr>
+	<tr><td class='source'>CISAUP</td><td class='target'>CISAUP</td><td class='target'>kizalpeg</td></tr>
+	<tr><td class='source'>CREISS</td><td class='target'>CREISS</td><td class='target'>rannyezhoù Creissent</td></tr>
+	<tr><td class='source'>FONKIRSH</td><td class='target'>FONKIRSH</td><td class='target'>lizherenneg fonetek Kirshenbaum</td></tr>
+	<tr><td class='source'>FONNAPA</td><td class='target'>FONNAPA</td><td class='target'>lizherenneg fonetek Norzh Amerika</td></tr>
+	<tr><td class='source'>GASCON</td><td class='target'>GASCON</td><td class='target'>gwaskoneg</td></tr>
+	<tr><td class='source'>GRCLASS</td><td class='target'>GRCLASS</td><td class='target'>skritur okitanek klasel</td></tr>
+	<tr><td class='source'>GRITAL</td><td class='target'>GRITAL</td><td class='target'>skritur okitanek Italia</td></tr>
+	<tr><td class='source'>GRMISTR</td><td class='target'>GRMISTR</td><td class='target'>skritur okitanek mistralek</td></tr>
+	<tr><td class='source'>IVANCHOV</td><td class='target'>reizhskrivadur Ivanchov</td><td class='target'>reizhskrivadur bulgarek Ivanchov</td></tr>
+	<tr><td class='source'>KOCIEWIE</td><td class='target'>Kociewie</td><td class='target'>rannyezh polonek Kociewie</td></tr>
+	<tr><td class='source'>LEMOSIN</td><td class='target'>LEMOSIN</td><td class='target'>rannyezh Limousin</td></tr>
+	<tr><td class='source'>LENGADOC</td><td class='target'>LENGADOC</td><td class='target'>lengadokeg</td></tr>
+	<tr><td class='source'>NICARD</td><td class='target'>NICARD</td><td class='target'>nisardeg</td></tr>
+	<tr><td class='source'>PAHAWH2</td><td class='target'>PAHAWH2</td><td class='target'>reizhskrivadur pahawh hmong lankad 2</td></tr>
+	<tr><td class='source'>PAHAWH3</td><td class='target'>PAHAWH3</td><td class='target'>reizhskrivadur pahawh hmong lankad 3</td></tr>
+	<tr><td class='source'>PAHAWH4</td><td class='target'>PAHAWH4</td><td class='target'>reizhskrivadur pahawh hmong doare diwezhañ</td></tr>
+	<tr><td class='source'>POSIX</td><td class='target'>POSIX</td><td class='target'>stlenneg</td></tr>
+	<tr><td class='source'>PROVENC</td><td class='target'>PROVENC</td><td class='target'>provañseg</td></tr>
+	<tr><td class='source'>SIMPLE</td><td class='target'>SIMPLE</td><td class='target'>eeunaet</td></tr>
+	<tr><td class='source'>SPANGLIS</td><td class='target'>SPANGLIS</td><td class='target'>spanglish</td></tr>
+	<tr><td class='source'>VIVARAUP</td><td class='target'>VIVARAUP</td><td class='target'>vivaroalpeg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Keys' href='#Keys'>Keys</a></td><td class='source' rowSpan='2'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-wara</td><td class='target'>wara</td><td class='target'>sifroù warang</td></tr>
+	<tr><td class='source'>numbers-wcho</td><td class='target'>wcho</td><td class='target'>sifroù wantcho</td></tr>
+	<tr><td class='source' rowSpan='131'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='54'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='22'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>era-short</td><td class='target' rowSpan='2'>amzervezh</td><td class='target' rowSpan='2'>amzerv.</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>era-narrow</td></tr>
+	<tr><td class='source'>year-narrow</td><td class='target'>bl.</td><td class='target'>b.</td><td class='target' rowSpan='5'>basic</td></tr>
+	<tr><td class='source'>quarter-narrow</td><td class='target'>trim.</td><td class='target'>t.</td></tr>
+	<tr><td class='source'>month-narrow</td><td class='target'>miz</td><td class='target'>m.</td></tr>
+	<tr><td class='source'>week-short</td><td class='target' rowSpan='2'>sizhun</td><td class='target' rowSpan='2'>sizh.</td></tr>
+	<tr><td class='source'>week-narrow</td></tr>
+	<tr><td class='source'>weekOfMonth</td><td class='target' rowSpan='3'>Week Of Month</td><td class='target'>sizhun ar miz</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source'>weekOfMonth-short</td><td class='target'>sizh. ar miz</td></tr>
+	<tr><td class='source'>weekOfMonth-narrow</td><td class='target'>sizh. ar m.</td></tr>
+	<tr><td class='source'>day-short</td><td class='target' rowSpan='2'>d</td><td class='target' rowSpan='2'>d.</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>day-narrow</td></tr>
+	<tr><td class='source'>dayOfYear</td><td class='target' rowSpan='3'>Day Of Year</td><td class='target'>deiz ar bloaz</td><td class='target' rowSpan='10'>modern</td></tr>
+	<tr><td class='source'>dayOfYear-short</td><td class='target'>d. ar bl.</td></tr>
+	<tr><td class='source'>dayOfYear-narrow</td><td class='target'>d. ar b.</td></tr>
+	<tr><td class='source'>weekday-short</td><td class='target' rowSpan='2'>deiz ar sizhun</td><td class='target' rowSpan='2'>d. ar sizh.</td></tr>
+	<tr><td class='source'>weekday-narrow</td></tr>
+	<tr><td class='source'>weekdayOfMonth</td><td class='target' rowSpan='3'>Weekday Of Month</td><td class='target'>deiz ar miz</td></tr>
+	<tr><td class='source'>weekdayOfMonth-short</td><td class='target'>d. ar miz</td></tr>
+	<tr><td class='source'>weekdayOfMonth-narrow</td><td class='target'>d. ar m.</td></tr>
+	<tr><td class='source'>zone-short</td><td class='target' rowSpan='2'>takad eur</td><td class='target' rowSpan='2'>takad</td></tr>
+	<tr><td class='source'>zone-narrow</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td><td class='source'>-1</td><td class='target'>ar miz diaraok</td><td class='target'>ar m. diaraok</td><td class='target' rowSpan='7'>moderate</td></tr>
+	<tr><td class='source'>0</td><td class='target'>ar miz-mañ</td><td class='target'>ar m.-mañ</td></tr>
+	<tr><td class='source'>1</td><td class='target'>ar miz a zeu</td><td class='target'>ar m. a zeu</td></tr>
+	<tr><td class='source'><a name='Relative Week' href='#Relative Week'>Relative Week</a></td><td class='source'>Period</td><td class='target'>the week of {0}</td><td class='target'>sizhun {0}</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Relative Week Short' href='#Relative Week Short'>Relative Week Short</a></td><td class='source'>-1</td><td class='target'>ar sizhun diaraok</td><td class='target'>ar sizh. diaraok</td></tr>
+	<tr><td class='source'>0</td><td class='target'>ar sizhun-mañ</td><td class='target'>ar sizh.-mañ</td></tr>
+	<tr><td class='source'>1</td><td class='target'>ar sizhun a zeu</td><td class='target'>ar sizh. a zeu</td></tr>
+	<tr><td class='source'>future-one</td><td class='target' rowSpan='3'>a-benn {0} sizhun</td><td class='target' rowSpan='5'>a-benn {0} sizh.</td><td class='target' rowSpan='10'>modern</td></tr>
+	<tr><td class='source'>future-two</td></tr>
+	<tr><td class='source'>future-few</td></tr>
+	<tr><td class='source'>future-many</td><td class='target'>a-benn {0} a sizhunioù</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>a-benn {0} sizhun</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='3'>{0} sizhun zo</td><td class='target' rowSpan='5'>{0} sizh. zo</td></tr>
+	<tr><td class='source'>past-two</td></tr>
+	<tr><td class='source'>past-few</td></tr>
+	<tr><td class='source'>past-many</td><td class='target'>{0} a sizhunioù zo</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>{0} sizhun zo</td></tr>
+	<tr><td class='source'>Period</td><td class='target'>the week of {0}</td><td class='target'>sizh. {0}</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Relative Week Narrow' href='#Relative Week Narrow'>Relative Week Narrow</a></td><td class='source'>-1</td><td class='target'>ar sizhun diaraok</td><td class='target'>ar sizh. diaraok</td></tr>
+	<tr><td class='source'>0</td><td class='target'>ar sizhun-mañ</td><td class='target'>ar sizh.-mañ</td></tr>
+	<tr><td class='source'>1</td><td class='target'>ar sizhun a zeu</td><td class='target'>ar sizh. a zeu</td></tr>
+	<tr><td class='source'>future-one</td><td class='target' rowSpan='3'>a-benn {0} sizhun</td><td class='target' rowSpan='5'>a-benn {0} sizh.</td><td class='target' rowSpan='10'>modern</td></tr>
+	<tr><td class='source'>future-two</td></tr>
+	<tr><td class='source'>future-few</td></tr>
+	<tr><td class='source'>future-many</td><td class='target'>a-benn {0} a sizhunioù</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>a-benn {0} sizhun</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='3'>{0} sizhun zo</td><td class='target' rowSpan='5'>{0} sizh. zo</td></tr>
+	<tr><td class='source'>past-two</td></tr>
+	<tr><td class='source'>past-few</td></tr>
+	<tr><td class='source'>past-many</td><td class='target'>{0} a sizhunioù zo</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>{0} sizhun zo</td></tr>
+	<tr><td class='source'>Period</td><td class='target'>the week of {0}</td><td class='target'>sizh. {0}</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Eras - wide' href='#Eras - wide'>Eras - wide</a></td><td class='source'>0-variant</td><td class='target'>BCE</td><td class='target'>a-raok an amzervezh kristen</td></tr>
+	<tr><td class='source'>1-variant</td><td class='target'>CE</td><td class='target'>an amzervezh kristen</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td><td class='source'>0-variant</td><td class='target'>BCE</td><td class='target'>AAK</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>1-variant</td><td class='target'>CE</td><td class='target'>AK</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eras - narrow' href='#Eras - narrow'>Eras - narrow</a></td><td class='source'>0-variant</td><td class='target'>BCE</td><td class='target'>AAK</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>1-variant</td><td class='target'>CE</td><td class='target'>AK</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>MMMMW-few</td><td class='target' rowSpan='5'>'sizhun' W MMMM</td><td class='target' rowSpan='5'>'sizhun' W 'miz' MMMM</td><td class='target' rowSpan='53'>moderate</td></tr>
+	<tr><td class='source'>MMMMW-many</td></tr>
+	<tr><td class='source'>MMMMW-one</td></tr>
+	<tr><td class='source'>MMMMW-other</td></tr>
+	<tr><td class='source'>MMMMW-two</td></tr>
+	<tr><td class='source' rowSpan='48'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y – y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM/y GGGGG – MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM/y – MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd/MM/y GGGGG – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd/MM/y – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E dd/MM/y – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E dd/MM/y GGGGG – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E dd/MM/y – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d MMM y G – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d MMM – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d MMM y – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E d MMM – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E d MMM y G – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E d MMM – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E d MMM y – E d MMM y G</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y – y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM/y GGGGG – MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM/y – MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd/MM/y GGGGG – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd/MM/y – dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E dd/MM/y – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E dd/MM/y GGGGG – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E dd/MM/y – E dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d MMM y G – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d MMM – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d MMM y – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E d MMM y – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E d MMM y G – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E d MMM – E d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E d MMM y – E d MMM y G</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source'><a name='Eras - wide' href='#Eras - wide'>Eras - wide</a></td><td class='source' rowSpan='3'>0</td><td class='target' rowSpan='3'>BE</td><td class='target'>amzervezh voudaek</td><td class='target' rowSpan='18'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td><td class='target'>A.B.</td></tr>
+	<tr><td class='source'><a name='Eras - narrow' href='#Eras - narrow'>Eras - narrow</a></td><td class='target'>AB</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y – y G</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Dangi' href='#Dangi'>Dangi</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>MM-dd – MM-dd</td><td class='target' rowSpan='2'>dd/MM – dd/MM</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>MM-dd, E – MM-dd, E</td><td class='target' rowSpan='2'>E dd/MM – E dd/MM</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>MMMd/d</td><td class='target'>MMM d–d</td><td class='target'>d–d MMM</td></tr>
+	<tr><td class='source'>MMMd/M</td><td class='target'>MMM d – MMM d</td><td class='target'>d MMM – d MMM</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='target' rowSpan='2'>MMM d, E – MMM d, E</td><td class='target' rowSpan='2'>E d MMM – E d MMM</td></tr>
+	<tr><td class='source'>MMMEd/M</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>y-MM – y-MM</td><td class='target' rowSpan='2'>MM/y – MM/y</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source' rowSpan='48'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='9'><a name='North America' href='#North America'>North America</a></td><td class='source' rowSpan='3'><a name='America_Central' href='#America_Central'>America_Central</a></td><td class='source'>generic-long</td><td class='target' rowSpan='22'>▷missing◁</td><td class='target'>eur ar Cʼhreiz</td><td class='target' rowSpan='9'>basic</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv ar Cʼhreiz</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv ar Cʼhreiz</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Pacific' href='#America_Pacific'>America_Pacific</a></td><td class='source'>generic-long</td><td class='target'>eur an Habask</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv an Habask</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv an Habask</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Atlantic' href='#Atlantic'>Atlantic</a></td><td class='source'>generic-long</td><td class='target'>eur an Atlantel</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv an Atlantel</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv an Atlantel</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America' href='#South America'>South America</a></td><td class='source' rowSpan='3'><a name='Noronha' href='#Noronha'>Noronha</a></td><td class='source'>generic-long</td><td class='target'>eur Fernando de Noronha</td><td class='target' rowSpan='38'>moderate</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Fernando de Noronha</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Fernando de Noronha</td></tr>
+	<tr><td class='source'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'><a name='Indian_Ocean' href='#Indian_Ocean'>Indian_Ocean</a></td><td class='source'>standard-long</td><td class='target'>eur Meurvor Indez</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Russia' href='#Russia'>Russia</a></td><td class='source' rowSpan='3'><a name='Krasnoyarsk' href='#Krasnoyarsk'>Krasnoyarsk</a></td><td class='source'>generic-long</td><td class='target'>eur Krasnoyarsk</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Krasnoyarsk</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Krasnoyarsk</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Magadan' href='#Magadan'>Magadan</a></td><td class='source'>generic-long</td><td class='target'>eur Magadan</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Magadan</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Magadan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Omsk' href='#Omsk'>Omsk</a></td><td class='source'>generic-long</td><td class='target'>eur Omsk</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Omsk</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Omsk</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Chita</td><td class='target'>Chita</td><td class='target'>Tchita</td></tr>
+	<tr><td class='source'>Kamchatka</td><td class='target'>Kamchatka</td><td class='target'>Kamtchatka</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source' rowSpan='3'><a name='Choibalsan' href='#Choibalsan'>Choibalsan</a></td><td class='source'>generic-long</td><td class='target' rowSpan='15'>▷missing◁</td><td class='target'>eur Choibalsan</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Choibalsan</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Choibalsan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Hovd' href='#Hovd'>Hovd</a></td><td class='source'>generic-long</td><td class='target'>eur Hovd</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>eur cʼhoañv Hovd</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>eur hañv Hovd</td></tr>
+	<tr><td class='source'><a name='Pyongyang' href='#Pyongyang'>Pyongyang</a></td><td class='source' rowSpan='18'>standard-long</td><td class='target'>eur Pʼyongyang</td></tr>
+	<tr><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'><a name='Indonesia_Central' href='#Indonesia_Central'>Indonesia_Central</a></td><td class='target'>eur Kreiz Indonezia</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Antarctica' href='#Antarctica'>Antarctica</a></td><td class='source'><a name='Davis' href='#Davis'>Davis</a></td><td class='target'>eur Davis</td></tr>
+	<tr><td class='source'><a name='DumontDUrville' href='#DumontDUrville'>DumontDUrville</a></td><td class='target'>eur Dumont-d’Urville</td></tr>
+	<tr><td class='source'><a name='Mawson' href='#Mawson'>Mawson</a></td><td class='target'>eur Mawson</td></tr>
+	<tr><td class='source'><a name='Rothera' href='#Rothera'>Rothera</a></td><td class='target'>eur Rothera</td></tr>
+	<tr><td class='source'><a name='Syowa' href='#Syowa'>Syowa</a></td><td class='target'>eur Syowa</td></tr>
+	<tr><td class='source'><a name='Vostok' href='#Vostok'>Vostok</a></td><td class='target'>eur Vostok</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Oceania' href='#Oceania'>Oceania</a></td><td class='source'><a name='Chamorro' href='#Chamorro'>Chamorro</a></td><td class='target'>eur Chamorro</td></tr>
+	<tr><td class='source'><a name='Gambier' href='#Gambier'>Gambier</a></td><td class='target'>eur Gambier</td><td class='target'>eur Inizi Gambier</td></tr>
+	<tr><td class='source'><a name='Gilbert_Islands' href='#Gilbert_Islands'>Gilbert_Islands</a></td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>eur Inizi Gilbert</td></tr>
+	<tr><td class='source'><a name='Kosrae' href='#Kosrae'>Kosrae</a></td><td class='target'>eur Kosrae</td></tr>
+	<tr><td class='source'><a name='Line_Islands' href='#Line_Islands'>Line_Islands</a></td><td class='target'>eur Line Islands</td></tr>
+	<tr><td class='source'><a name='Papua_New_Guinea' href='#Papua_New_Guinea'>Papua_New_Guinea</a></td><td class='target'>eur Papoua-Ginea-Nevez</td></tr>
+	<tr><td class='source'><a name='Phoenix_Islands' href='#Phoenix_Islands'>Phoenix_Islands</a></td><td class='target'>eur Inizi Phoenix</td></tr>
+	<tr><td class='source'><a name='Truk' href='#Truk'>Truk</a></td><td class='target'>eur Chuuk</td></tr>
+	<tr><td class='source'><a name='Wake' href='#Wake'>Wake</a></td><td class='target'>eur Wake Island</td></tr>
+	<tr><td class='source'><a name='Overrides' href='#Overrides'>Overrides</a></td><td class='source'><a name='Etc/UTC' href='#Etc/UTC'>Etc/UTC</a></td><td class='target'>amzer hollvedel kenurzhiet</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='5'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='5'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>few</td><td class='target' rowSpan='5'>{0}?</td><td class='target'>{0} cʼhi-error</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>many</td><td class='target'>{0} a chas</td></tr>
+	<tr><td class='source'>one</td><td class='target'>{0} cʼhi</td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} ki</td></tr>
+	<tr><td class='source'>two</td><td class='target'>{0} gi</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='20'><a name='Unknown Region (C)' href='#Unknown Region (C)'>Unknown Region (C)</a></td><td class='source' rowSpan='5'><a name='Unknown Region: XAG' href='#Unknown Region: XAG'>Unknown Region: XAG</a></td><td class='source'>XAG-name-one</td><td class='target' rowSpan='5'>arcʼhant</td><td class='target' rowSpan='5'>oñs troy arcʼhant</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>XAG-name-two</td></tr>
+	<tr><td class='source'>XAG-name-few</td></tr>
+	<tr><td class='source'>XAG-name-many</td></tr>
+	<tr><td class='source'>XAG-name-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Unknown Region: XAU' href='#Unknown Region: XAU'>Unknown Region: XAU</a></td><td class='source'>XAU-name-one</td><td class='target' rowSpan='5'>aour</td><td class='target' rowSpan='5'>oñs troy aour</td></tr>
+	<tr><td class='source'>XAU-name-two</td></tr>
+	<tr><td class='source'>XAU-name-few</td></tr>
+	<tr><td class='source'>XAU-name-many</td></tr>
+	<tr><td class='source'>XAU-name-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Unknown Region: XPD' href='#Unknown Region: XPD'>Unknown Region: XPD</a></td><td class='source'>XPD-name-one</td><td class='target' rowSpan='5'>palladiom</td><td class='target' rowSpan='5'>oñs troy palladiom</td></tr>
+	<tr><td class='source'>XPD-name-two</td></tr>
+	<tr><td class='source'>XPD-name-few</td></tr>
+	<tr><td class='source'>XPD-name-many</td></tr>
+	<tr><td class='source'>XPD-name-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Unknown Region: XPT' href='#Unknown Region: XPT'>Unknown Region: XPT</a></td><td class='source'>XPT-name-one</td><td class='target' rowSpan='5'>platin</td><td class='target' rowSpan='5'>oñs troy platin</td></tr>
+	<tr><td class='source'>XPT-name-two</td></tr>
+	<tr><td class='source'>XPT-name-few</td></tr>
+	<tr><td class='source'>XPT-name-many</td></tr>
+	<tr><td class='source'>XPT-name-other</td></tr>
+	<tr><td class='source' rowSpan='1245'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='100'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='18'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='18'>▷missing◁</td><td class='target'>dekvloavezhiadoù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} dekvloavezhiad</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} zekvloavezhiad</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} dekvloavezhiad</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a zekvloavezhiadoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} dekvloavezhiad</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dek</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} dek</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>dek</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}dek</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='century' href='#century'>century</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kved</td><td class='target' rowSpan='5'>{0}kved</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='year' href='#year'>year</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} b</td><td class='target' rowSpan='5'>{0}b</td><td class='target' rowSpan='18'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='month' href='#month'>month</a></td><td class='source'>short-displayName</td><td class='target'>mizioù</td><td class='target'>m.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>{0} miz</td><td class='target' rowSpan='5'>{0} m.</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>{0} viz</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>{0} miz</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>{0} a vizioù</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} miz</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/miz</td><td class='target'>{0}/m.</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mizioù</td><td class='target'>m</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target'>{0} miz</td><td class='target' rowSpan='5'>{0}m</td></tr>
+	<tr><td class='source'>narrow-two</td><td class='target'>{0} m</td></tr>
+	<tr><td class='source'>narrow-few</td><td class='target'>{0} miz</td></tr>
+	<tr><td class='source'>narrow-many</td><td class='target'>{0} a vizioù</td></tr>
+	<tr><td class='source'>narrow-other</td><td class='target'>{0} miz</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/miz</td><td class='target'>{0}/m</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='week' href='#week'>week</a></td><td class='source'>short-displayName</td><td class='target'>wk</td><td class='target'>sizh.</td><td class='target' rowSpan='13'>moderate</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} w</td><td class='target' rowSpan='5'>{0} sizh.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/w</td><td class='target'>{0}/sizh.</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>wk</td><td class='target'>sizh.</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} w</td><td class='target' rowSpan='5'>{0}sizh.</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/w</td><td class='target'>{0}/sizh.</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='day' href='#day'>day</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} d</td><td class='target' rowSpan='5'>{0}d</td><td class='target' rowSpan='18'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='hour' href='#hour'>hour</a></td><td class='source'>short-displayName</td><td class='target'>e</td><td class='target'>h</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} e</td><td class='target' rowSpan='5'>{0} h</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/e</td><td class='target'>{0}/h</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>e</td><td class='target'>h</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} e</td><td class='target' rowSpan='5'>{0}h</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/e</td><td class='target'>{0}/h</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='minute' href='#minute'>minute</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} min</td><td class='target' rowSpan='5'>{0}min</td><td class='target' rowSpan='15'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='second' href='#second'>second</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} s</td><td class='target' rowSpan='5'>{0}s</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='millisecond' href='#millisecond'>millisecond</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ms</td><td class='target' rowSpan='5'>{0}ms</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='microsecond' href='#microsecond'>microsecond</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} μs</td><td class='target' rowSpan='5'>{0}μs</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ns</td><td class='target' rowSpan='5'>{0}ns</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='106'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='18'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='106'>▷missing◁</td><td class='target'>pikoù dre gentimetr</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} pik dre gentimetr</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} bik dre gentimetr</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fik dre gentimetr</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a bikoù dre gentimetr</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pik dre gentimetr</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>pdcm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} pdcm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>pdcm</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}pdcm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>pikoù dre veutad</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} pik dre veutad</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} bik dre veutad</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fik dre veutad</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a bikoù dre veutad</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pik dre veutad</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>pdm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} pdm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>pdm</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}pdm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='em' href='#em'>em</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}em</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-displayName</td><td class='target'>megapikselioù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} megapiksel</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} vegapiksel</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} megapiksel</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a vegapikselioù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} megapiksel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Mpx</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} Mpx</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>Mpx</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}Mpx</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>pikselioù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} piksel</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} biksel</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fiksel</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a bikselioù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} piksel</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}px</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>pikselioù dre gentimetr</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} piksel dre gentimetr</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} biksel dre gentimetr</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fiksel dre gentimetr</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a bikselioù dre gentimetr</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} piksel dre gentimetr</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px/cm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} px/cm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>px/cm</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}px/cm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>pikselioù dre veutad</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} piksel dre veutad</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} biksel dre veutad</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fiksel dre veutad</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a pikselioù dre veutad</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} piksel dre veutad</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px/in</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} px/in</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>px/in</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}px/in</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='134'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='5'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} km</td><td class='target' rowSpan='5'>{0}km</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='meter' href='#meter'>meter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} m</td><td class='target' rowSpan='5'>{0}m</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='decimeter' href='#decimeter'>decimeter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} dm</td><td class='target' rowSpan='5'>{0}dm</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} cm</td><td class='target' rowSpan='5'>{0}cm</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='millimeter' href='#millimeter'>millimeter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mm</td><td class='target' rowSpan='5'>{0}mm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} µm</td><td class='target' rowSpan='5'>{0}µm</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='nanometer' href='#nanometer'>nanometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} nm</td><td class='target' rowSpan='5'>{0}nm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='picometer' href='#picometer'>picometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} pm</td><td class='target' rowSpan='5'>{0}pm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile' href='#mile'>mile</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mi</td><td class='target' rowSpan='5'>{0}mi</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='yard' href='#yard'>yard</a></td><td class='source'>long-displayName</td><td class='target'>yd</td><td class='target'>yardoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} yd</td><td class='target' rowSpan='3'>{0} yard</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a yardoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} yard</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}yd</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='parsec' href='#parsec'>parsec</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} pc</td><td class='target' rowSpan='5'>{0}pc</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='light-year' href='#light-year'>light-year</a></td><td class='source'>long-displayName</td><td class='target'>ly</td><td class='target'>bloavezhioù-gouloù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} ly</td><td class='target'>{0} bloavezh-gouloù</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} vloavezh-gouloù</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} bloavezh-gouloù</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a vloavezhioù-gouloù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} bloavezh-gouloù</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ly</td><td class='target'>b.g.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} ly</td><td class='target' rowSpan='5'>{0} b.g.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ly</td><td class='target'>b.g.</td><td class='target' rowSpan='34'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ly</td><td class='target' rowSpan='5'>{0}b.g.</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} au</td><td class='target' rowSpan='5'>{0}au</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>long-displayName</td><td class='target'>fur</td><td class='target'>furlongoù</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} fur</td><td class='target' rowSpan='3'>{0} furlong</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a furlongoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} furlong</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}fur</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='2'>fm</td><td class='target' rowSpan='2'>fth</td></tr>
+	<tr><td class='source'>narrow-displayName</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} fth</td><td class='target' rowSpan='5'>{0}fth</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} nmi</td><td class='target' rowSpan='5'>{0}nmi</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-displayName</td><td class='target'>smi</td><td class='target'>miltirioù skandinaviat</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} smi</td><td class='target' rowSpan='3'>{0} miltir skandinaviat</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a viltirioù skandinaviat</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} miltir skandinaviat</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}smi</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='point' href='#point'>point</a></td><td class='source'>long-displayName</td><td class='target'>poent</td><td class='target'>poentoù</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} pt</td><td class='target' rowSpan='5'>{0}pt</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>long-displayName</td><td class='target'>R☉</td><td class='target'>skinoù heol</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='9'>{0} R☉</td><td class='target' rowSpan='4'>{0} skin heol</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}R☉</td><td class='target' rowSpan='35'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='69'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='5'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} km²</td><td class='target' rowSpan='5'>{0}km²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ha</td><td class='target' rowSpan='5'>{0}ha</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} m²</td><td class='target' rowSpan='5'>{0}m²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} cm²</td><td class='target' rowSpan='5'>{0}cm²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mi²</td><td class='target' rowSpan='5'>{0}mi²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='acre' href='#acre'>acre</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ac</td><td class='target' rowSpan='5'>{0}ac</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='square-yard' href='#square-yard'>square-yard</a></td><td class='source'>long-displayName</td><td class='target'>yd²</td><td class='target'>yardoù karrez</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} yd²</td><td class='target' rowSpan='3'>{0} yard karrez</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a yardoù karrez</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} yard karrez</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}yd²</td><td class='target' rowSpan='15'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-foot' href='#square-foot'>square-foot</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ft²</td><td class='target' rowSpan='5'>{0}ft²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-inch' href='#square-inch'>square-inch</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} in²</td><td class='target' rowSpan='5'>{0}in²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='dunam' href='#dunam'>dunam</a></td><td class='source'>long-displayName</td><td class='target'>dunam</td><td class='target'>dounamoù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} dunam</td><td class='target'>{0} dounam</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} zounam</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} dounam</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a zounamoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} dounam</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dunam</td><td class='target'>dounam</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} dunam</td><td class='target' rowSpan='5'>{0} dounam</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>dunam</td><td class='target'>dounam</td><td class='target' rowSpan='26'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} dunam</td><td class='target' rowSpan='5'>{0}dounam</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='248'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='5'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} km³</td><td class='target' rowSpan='5'>{0}km³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} m³</td><td class='target' rowSpan='5'>{0}m³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} cm³</td><td class='target' rowSpan='5'>{0}cm³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mi³</td><td class='target' rowSpan='5'>{0}mi³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td><td class='source'>long-displayName</td><td class='target'>yd³</td><td class='target'>yardoù diñs</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} yd³</td><td class='target' rowSpan='3'>{0} yard diñs</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a yardoù diñs</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} yard diñs</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}yd³</td><td class='target' rowSpan='25'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ft³</td><td class='target' rowSpan='5'>{0}ft³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='cubic-inch' href='#cubic-inch'>cubic-inch</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} in³</td><td class='target' rowSpan='5'>{0}in³</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='megaliter' href='#megaliter'>megaliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Ml</td><td class='target' rowSpan='5'>{0}Ml</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} hl</td><td class='target' rowSpan='5'>{0}hl</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='liter' href='#liter'>liter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} l</td><td class='target' rowSpan='5'>{0}l</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='deciliter' href='#deciliter'>deciliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} dl</td><td class='target' rowSpan='5'>{0}dl</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='centiliter' href='#centiliter'>centiliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} cl</td><td class='target' rowSpan='5'>{0}cl</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='milliliter' href='#milliliter'>milliliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ml</td><td class='target' rowSpan='5'>{0}ml</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mpt</td><td class='target' rowSpan='5'>{0}mpt</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>long-displayName</td><td class='target'>mcup</td><td class='target'>tasadoù metrek</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} mc</td><td class='target'>{0} tasad metrek</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} dasad vetrek</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zasad metrek</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a dasadoù metrek</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tasad metrek</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mcup</td><td class='target'>tm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} mc</td><td class='target' rowSpan='5'>{0} tm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mcup</td><td class='target'>tm</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mc</td><td class='target' rowSpan='5'>{0}tm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td><td class='source'>long-displayName</td><td class='target'>ac ft</td><td class='target'>akroù-troatadoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} ac ft</td><td class='target' rowSpan='5'>{0} akr-troatad</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ac ft</td><td class='target'>acft</td><td class='target' rowSpan='16'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ac ft</td><td class='target' rowSpan='5'>{0}acft</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='bushel' href='#bushel'>bushel</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} bu</td><td class='target' rowSpan='5'>{0}bu</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='gallon' href='#gallon'>gallon</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} gal</td><td class='target' rowSpan='5'>{0}gal</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Imp. gal</td><td class='target'>gallonoù impalaerel</td><td class='target' rowSpan='14'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} gal Imp.</td><td class='target'>{0} gallon impalaerel</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} c'hallon impalaerel</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} gallon impalaerel</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a c'hallonoù impalaerel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} gallon impalaerel</td></tr>
+	<tr><td class='source'>long-per</td><td class='target'>{0}/gal Imp.</td><td class='target'>{0} dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Imp. gal</td><td class='target'>gal imp.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} gal Imp.</td><td class='target' rowSpan='5'>{0} gal imp.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/gal Imp.</td><td class='target'>{0}/gal imp.</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>Imp. gal</td><td class='target'>galIm</td><td class='target' rowSpan='17'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} gal Imp.</td><td class='target' rowSpan='5'>{0}galIm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/gal Imp.</td><td class='target'>{0}/galIm</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='quart' href='#quart'>quart</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} qt</td><td class='target' rowSpan='5'>{0}qt</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pint' href='#pint'>pint</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} pt</td><td class='target' rowSpan='5'>{0}pt</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='cup' href='#cup'>cup</a></td><td class='source'>long-displayName</td><td class='target'>cup</td><td class='target'>tasadoù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} c</td><td class='target' rowSpan='2'>{0} tasad</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zasad</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a dasadoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tasad</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>cup</td><td class='target'>tas.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} c</td><td class='target' rowSpan='5'>{0} tas.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>cup</td><td class='target'>tas.</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} c</td><td class='target' rowSpan='5'>{0}tas.</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='source'>long-displayName</td><td class='target'>US fl oz</td><td class='target'>oñsoù liñvel</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} fl oz US</td><td class='target' rowSpan='3'>{0} oñs liñvel</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a oñsoù liñvel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} oñs liñvel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>US fl oz</td><td class='target'>fl oz</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} fl oz US</td><td class='target' rowSpan='5'>{0} fl oz</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>US fl oz</td><td class='target'>fl oz</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} fl oz US</td><td class='target' rowSpan='5'>{0}fl oz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>oñsoù liñvel impalaerel</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} fl oz Imp.</td><td class='target' rowSpan='3'>{0} oñs liñvel impalaerel</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a oñsoù liñvel impalaerel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} oñs liñvel impalaerel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>fl oz imp.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} fl oz Imp.</td><td class='target' rowSpan='5'>{0} fl oz imp.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>fl oz Im</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} fl oz Imp.</td><td class='target' rowSpan='5'>{0}fl oz Im</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='source'>long-displayName</td><td class='target'>tbsp</td><td class='target'>loaiadoù-boued</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} tbsp</td><td class='target' rowSpan='3'>{0} loaiad-voued</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a loaiadoù-boued</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} loaiad-voued</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>tbsp</td><td class='target'>l.-v.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} tbsp</td><td class='target' rowSpan='5'>{0} l.-v.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>tbsp</td><td class='target'>l.-v.</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} tbsp</td><td class='target' rowSpan='5'>{0}l.-v.</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='source'>long-displayName</td><td class='target'>tsp</td><td class='target'>loaiadoù-kafe</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} tsp</td><td class='target' rowSpan='3'>{0} loaiad-gafe</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a loaiadoù-kafe</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} loaiad-gafe</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>tsp</td><td class='target'>l.-g.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} tsp</td><td class='target' rowSpan='5'>{0} l.-g.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>tsp</td><td class='target'>l.-g.</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} tsp</td><td class='target' rowSpan='5'>{0}l.-g.</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='barrel' href='#barrel'>barrel</a></td><td class='source'>long-displayName</td><td class='target'>bbl</td><td class='target'>barilhoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} bbl</td><td class='target'>{0} barilh</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} varilh</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} barilh</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a varilhoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} barilh</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}bbl</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='7'><a name='g-force' href='#g-force'>g-force</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='2'>g-force</td><td class='target' rowSpan='2'>G</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} G</td><td class='target' rowSpan='5'>{0}G</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='meter-per-second-squared' href='#meter-per-second-squared'>meter-per-second-squared</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} m/s²</td><td class='target' rowSpan='5'>{0}m/s²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} km/h</td><td class='target' rowSpan='5'>{0}km/h</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} m/s</td><td class='target' rowSpan='5'>{0}m/s</td><td class='target' rowSpan='21'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-per-hour' href='#mile-per-hour'>mile-per-hour</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mi/h</td><td class='target' rowSpan='5'>{0}mi/h</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='knot' href='#knot'>knot</a></td><td class='source'>narrow-displayName</td><td class='target'>n</td><td class='target'>nd</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} n</td><td class='target' rowSpan='5'>{0}nd</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='100'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='5'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} t</td><td class='target' rowSpan='5'>{0}t</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kg</td><td class='target' rowSpan='5'>{0}kg</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='gram' href='#gram'>gram</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} g</td><td class='target' rowSpan='5'>{0}g</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='milligram' href='#milligram'>milligram</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mg</td><td class='target' rowSpan='5'>{0}mg</td><td class='target' rowSpan='36'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} µg</td><td class='target' rowSpan='5'>{0}µg</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='ton' href='#ton'>ton</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} tn</td><td class='target' rowSpan='5'>{0}tn</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='stone' href='#stone'>stone</a></td><td class='source'>long-displayName</td><td class='target'>st</td><td class='target'>stonoù</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} st</td><td class='target' rowSpan='5'>{0} ston</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}st</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pound' href='#pound'>pound</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} lb</td><td class='target' rowSpan='5'>{0}lb</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='ounce' href='#ounce'>ounce</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} oz</td><td class='target' rowSpan='5'>{0}oz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='ounce-troy' href='#ounce-troy'>ounce-troy</a></td><td class='source'>long-displayName</td><td class='target'>oz t</td><td class='target'>oñsoù troy</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} oz t</td><td class='target' rowSpan='5'>{0} oñs troy</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>oz t</td><td class='target'>ozt</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} oz t</td><td class='target' rowSpan='5'>{0}ozt</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='carat' href='#carat'>carat</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} CD</td><td class='target' rowSpan='5'>{0}CD</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='dalton' href='#dalton'>dalton</a></td><td class='source'>long-displayName</td><td class='target'>Da</td><td class='target'>daltonoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='9'>{0} Da</td><td class='target'>{0} dalton</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} zalton</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} dalton</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a zaltonoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} dalton</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0}Da</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='source'>long-displayName</td><td class='target'>M⊕</td><td class='target'>tolzadoù douar</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} M⊕</td><td class='target'>{0} tolzad douar</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} dolzad douar</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zolzad douar</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a dolzadoù douar</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tolzad douar</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}M⊕</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source'>long-displayName</td><td class='target'>M☉</td><td class='target'>tolzadoù heol</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} M☉</td><td class='target'>{0} tolzad heol</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} dolzad heol</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zolzad heol</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a dolzadoù heol</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tolzad heol</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}M☉</td><td class='target' rowSpan='15'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='106'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='5'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kcal</td><td class='target' rowSpan='5'>{0}kcal</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='calorie' href='#calorie'>calorie</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} cal</td><td class='target' rowSpan='5'>{0}cal</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='foodcalorie' href='#foodcalorie'>foodcalorie</a></td><td class='source'>long-displayName</td><td class='target'>Cal</td><td class='target'>kaloriennoù bras</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} Cal</td><td class='target' rowSpan='2'>{0} galorienn vras</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} c'halorienn vras</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a galoriennoù bras</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} kalorienn vras</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}Cal</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kJ</td><td class='target' rowSpan='5'>{0}kJ</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='joule' href='#joule'>joule</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} J</td><td class='target' rowSpan='5'>{0}J</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kWh</td><td class='target' rowSpan='5'>{0}kWh</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='source'>long-displayName</td><td class='target'>eV</td><td class='target'>elektron-voltoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} eV</td><td class='target' rowSpan='3'>{0} elektron-volt</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a elektron-voltoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} elektron-volt</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}eV</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='source'>long-displayName</td><td class='target'>Btu</td><td class='target'>British thermal units</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} Btu</td><td class='target'>{0} British thermal unit</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} vBritish thermal unit</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='3'>{0} British thermal unit</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}Btu</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='18'>▷missing◁</td><td class='target'>termiennoù SU</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} dermienn</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zermienn</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a dermiennoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} termienn</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>thm SU</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} thm SU</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>thm</td><td class='target' rowSpan='85'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}thm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} GW</td><td class='target' rowSpan='5'>{0}GW</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='megawatt' href='#megawatt'>megawatt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} MW</td><td class='target' rowSpan='5'>{0}MW</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilowatt' href='#kilowatt'>kilowatt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kW</td><td class='target' rowSpan='5'>{0}kW</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='watt' href='#watt'>watt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} W</td><td class='target' rowSpan='5'>{0}W</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mW</td><td class='target' rowSpan='5'>{0}mW</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='horsepower' href='#horsepower'>horsepower</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} hp</td><td class='target' rowSpan='5'>{0}hp</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='39'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source' rowSpan='5'><a name='ampere' href='#ampere'>ampere</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} A</td><td class='target' rowSpan='5'>{0}A</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='milliampere' href='#milliampere'>milliampere</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} mA</td><td class='target' rowSpan='4'>{0}mA</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='ohm' href='#ohm'>ohm</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Ω</td><td class='target' rowSpan='5'>{0}Ω</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='volt' href='#volt'>volt</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} V</td><td class='target' rowSpan='5'>{0}V</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} GHz</td><td class='target' rowSpan='5'>{0}GHz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} MHz</td><td class='target' rowSpan='5'>{0}MHz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kHz</td><td class='target' rowSpan='5'>{0}kHz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Hz</td><td class='target' rowSpan='5'>{0}Hz</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='74'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='5'><a name='millimeter-of-mercury' href='#millimeter-of-mercury'>millimeter-of-mercury</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mmHg</td><td class='target' rowSpan='5'>{0}mmHg</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pound-per-square-inch' href='#pound-per-square-inch'>pound-per-square-inch</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} lb/in²</td><td class='target' rowSpan='5'>{0}lb/in²</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='11'>▷missing◁</td><td class='target'>baroù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} bar</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} var</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} bar</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a varoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} bar</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}bar</td><td class='target' rowSpan='15'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='millibar' href='#millibar'>millibar</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mbar</td><td class='target' rowSpan='5'>{0}mbar</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} atm</td><td class='target' rowSpan='5'>{0}atm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='11'>▷missing◁</td><td class='target'>paskaloù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} paskal</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} baskal</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} faskal</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a baskaloù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} paskal</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}Pa</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hectopascal' href='#hectopascal'>hectopascal</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} hPa</td><td class='target' rowSpan='5'>{0}hPa</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source'>long-displayName</td><td class='target'>kPa</td><td class='target'>kilopaskaloù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} kPa</td><td class='target'>{0} c'hilopaskal</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} gilopaskal</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} c'hilopaskal</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a gilopaskaloù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} kilopaskal</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}kPa</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='source'>long-displayName</td><td class='target'>MPa</td><td class='target'>megapaskaloù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} MPa</td><td class='target'>{0} megapaskal</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} vegapaskal</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} megapaskal</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a vegapaskaloù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} megapaskal</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}MPa</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} K</td><td class='target' rowSpan='5'>{0}K</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='72'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='18'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>long-displayName</td><td class='target'>PB</td><td class='target'>petaoktedoù</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} PB</td><td class='target'>{0} petaokted</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} betaokted</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} fetaokted</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a betaoktedoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} petaokted</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>PB</td><td class='target'>Po</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} PB</td><td class='target' rowSpan='5'>{0} Po</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>PB</td><td class='target'>Po</td><td class='target' rowSpan='60'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} PB</td><td class='target' rowSpan='5'>{0}Po</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='terabyte' href='#terabyte'>terabyte</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} To</td><td class='target' rowSpan='5'>{0}To</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='terabit' href='#terabit'>terabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Tb</td><td class='target'>Tbit</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Tb</td><td class='target' rowSpan='5'>{0}Tbit</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='gigabyte' href='#gigabyte'>gigabyte</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Go</td><td class='target' rowSpan='5'>{0}Go</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Gb</td><td class='target'>Gbit</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Gb</td><td class='target' rowSpan='5'>{0}Gbit</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='megabyte' href='#megabyte'>megabyte</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Mo</td><td class='target' rowSpan='5'>{0}Mo</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='megabit' href='#megabit'>megabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Mb</td><td class='target'>Mbit</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} Mb</td><td class='target' rowSpan='5'>{0}Mbit</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} ko</td><td class='target' rowSpan='5'>{0}ko</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source'>narrow-displayName</td><td class='target'>kb</td><td class='target'>kbit</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kb</td><td class='target' rowSpan='5'>{0}kbit</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='byte' href='#byte'>byte</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} o</td><td class='target' rowSpan='4'>{0}o</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='bit' href='#bit'>bit</a></td><td class='source'>narrow-displayName</td><td class='target'>b</td><td class='target'>bit</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} b</td><td class='target' rowSpan='5'>{0}bit</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Coordinates' href='#Coordinates'>Coordinates</a></td><td class='source'><a name='east' href='#east'>east</a></td><td class='source' rowSpan='4'>narrow</td><td class='target'>{0} R</td><td class='target'>{0}R</td><td class='target' rowSpan='16'>moderate</td></tr>
+	<tr><td class='source'><a name='north' href='#north'>north</a></td><td class='target'>{0} N</td><td class='target'>{0}N</td></tr>
+	<tr><td class='source'><a name='south' href='#south'>south</a></td><td class='target'>{0} S</td><td class='target'>{0}S</td></tr>
+	<tr><td class='source'><a name='west' href='#west'>west</a></td><td class='target'>{0} K</td><td class='target'>{0}K</td></tr>
+	<tr><td class='source' rowSpan='159'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='18'><a name='revolution' href='#revolution'>revolution</a></td><td class='source'>long-displayName</td><td class='target'>rev</td><td class='target'>tro</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} rev</td><td class='target' rowSpan='2'>{0} dro</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} zro</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a droioù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tro</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>rev</td><td class='target'>tr</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} rev</td><td class='target' rowSpan='5'>{0} tr</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>rev</td><td class='target'>tr</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} rev</td><td class='target' rowSpan='5'>{0}tr</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='radian' href='#radian'>radian</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} rad</td><td class='target' rowSpan='5'>{0}rad</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='2'>arcmin</td><td class='target' rowSpan='2'>′</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='2'>arcsec</td><td class='target' rowSpan='2'>″</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='karat' href='#karat'>karat</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} kt</td><td class='target' rowSpan='5'>{0}kt</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='milligram-per-deciliter' href='#milligram-per-deciliter'>milligram-per-deciliter</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mg/dl</td><td class='target' rowSpan='5'>{0}mg/dl</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='millimole-per-liter' href='#millimole-per-liter'>millimole-per-liter</a></td><td class='source'>long-displayName</td><td class='target'>millimol dre litr</td><td class='target'>millimoloù dre litr</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mmol/l</td><td class='target' rowSpan='5'>{0}mmol/l</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='percent' href='#percent'>percent</a></td><td class='source'>long-displayName</td><td class='target'>%</td><td class='target'>dre gant</td><td class='target' rowSpan='36'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0}%</td><td class='target' rowSpan='5'>{0} dre gant</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} %</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='permille' href='#permille'>permille</a></td><td class='source'>long-displayName</td><td class='target'>‰</td><td class='target'>dre vil</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0}‰</td><td class='target' rowSpan='5'>{0} dre vil</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} ‰</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>long-displayName</td><td class='target'>‱</td><td class='target'>dre zek mil</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0}‱</td><td class='target' rowSpan='5'>{0} dre zek mil</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} ‱</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='mole' href='#mole'>mole</a></td><td class='source'>long-displayName</td><td class='target'>mol</td><td class='target'>moloù</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='7'>{0} mol</td><td class='target'>{0} vol</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a voloù</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}mol</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} l/km</td><td class='target' rowSpan='5'>{0}l/km</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='liter-per-100kilometers' href='#liter-per-100kilometers'>liter-per-100kilometers</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} l/100km</td><td class='target' rowSpan='5'>{0}l/100km</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mi/gal</td><td class='target' rowSpan='5'>{0}mi/gal</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>mpg Imp.</td><td class='target'>miltirioù dre cʼhallon impalaerel</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='5'>{0} mpg Imp.</td><td class='target'>{0} miltir dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>{0} viltir dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} miltir dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a viltirioù dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} miltir dre cʼhallon impalaerel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mpg Imp.</td><td class='target'>mi/gal imp.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='5'>{0} mpg Imp.</td><td class='target' rowSpan='5'>{0} mi/gal imp.</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mpg Imp.</td><td class='target'>mi/gIm</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} mpg Imp.</td><td class='target' rowSpan='5'>{0}mi/gIm</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} lbf</td><td class='target' rowSpan='5'>{0}lbf</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-displayName</td><td class='target'>N</td><td class='target'>newtonoù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} N</td><td class='target' rowSpan='3'>{0} newton</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a newtonoù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} newton</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}N</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='lux' href='#lux'>lux</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} lx</td><td class='target' rowSpan='5'>{0}lx</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} L☉</td><td class='target' rowSpan='5'>{0}L☉</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pound-foot' href='#pound-foot'>pound-foot</a></td><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0} lbf⋅ft</td><td class='target' rowSpan='5'>{0}lbf⋅ft</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>long-displayName</td><td class='target'>N⋅m</td><td class='target'>newton-metroù</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='10'>{0} N⋅m</td><td class='target' rowSpan='3'>{0} newton-metr</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} a newton-metroù</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} newton-metr</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='5'>{0}N⋅m</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source'><a name='times' href='#times'>times</a></td><td class='source'>long</td><td class='target'>▷missing◁</td><td class='target'>{0}-{1}</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='137'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='21'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='6'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>enclosed</td><td class='target'>{0} — enclosed</td><td class='target'>{0} — kelcʼhiet</td><td class='target' rowSpan='137'>modern</td></tr>
+	<tr><td class='source'>extended</td><td class='target'>{0} — extended</td><td class='target'>{0} — astennet</td></tr>
+	<tr><td class='source'>historic</td><td class='target'>{0} — historic</td><td class='target'>{0} — istorel</td></tr>
+	<tr><td class='source'>miscellaneous</td><td class='target'>{0} — miscellaneous</td><td class='target'>{0} — liesseurt</td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} — other</td><td class='target'>{0} — all</td></tr>
+	<tr><td class='source'>scripts</td><td class='target'>scripts — {0}</td><td class='target'>skriturioù — {0}</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Label' href='#Label'>Label</a></td><td class='source'>braille</td><td class='target'>braille</td><td class='target'>skritur Braille</td></tr>
+	<tr><td class='source'>bullets_stars</td><td class='target'>bullet or star</td><td class='target'>krug pe steredenn</td></tr>
+	<tr><td class='source'>divination_symbols</td><td class='target'>divination symbol</td><td class='target'>arouez divinouriezh</td></tr>
+	<tr><td class='source'>european_scripts</td><td class='target'>European script</td><td class='target'>skritur europat</td></tr>
+	<tr><td class='source'>female</td><td class='target'>female</td><td class='target'>benel</td></tr>
+	<tr><td class='source'>food_drink</td><td class='target'>food &amp; drink</td><td class='target'>boued hag evaj</td></tr>
+	<tr><td class='source'>format</td><td class='target'>format</td><td class='target'>furmad</td></tr>
+	<tr><td class='source'>historic_scripts</td><td class='target'>historic script</td><td class='target'>skritur istorel</td></tr>
+	<tr><td class='source'>modern_scripts</td><td class='target'>modern script</td><td class='target'>skritur modern</td></tr>
+	<tr><td class='source'>modifier</td><td class='target'>modifier</td><td class='target'>kemmañ</td></tr>
+	<tr><td class='source'>phonetic_alphabet</td><td class='target'>phonetic alphabet</td><td class='target'>lizherenneg soniadel</td></tr>
+	<tr><td class='source'>pictographs</td><td class='target'>pictograph</td><td class='target'>piktogramm</td></tr>
+	<tr><td class='source'>place</td><td class='target'>place</td><td class='target'>lecʼh</td></tr>
+	<tr><td class='source'>punctuation</td><td class='target'>punctuation</td><td class='target'>poentadur</td></tr>
+	<tr><td class='source'>smiley</td><td class='target'>smiley</td><td class='target'>fromlun</td></tr>
+	<tr><td class='source' rowSpan='103'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-amphibian' href='#animal-amphibian'>animal-amphibian</a></td><td class='source'>🐸 -name</td><td class='target' rowSpan='2'>E501</td><td class='target'>ran</td></tr>
+	<tr><td class='source'>🐸 –keywords</td><td class='target'>penn<br>ran</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🦃 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target' rowSpan='4'>evn<br>…</td></tr>
+	<tr><td class='source'>🐔 –keywords</td></tr>
+	<tr><td class='source'>🐓 –keywords</td></tr>
+	<tr><td class='source'>🐤 –keywords</td></tr>
+	<tr><td class='source'>🐦 -name</td><td class='target' rowSpan='2'>E483</td><td class='target' rowSpan='2'>evn</td></tr>
+	<tr><td class='source'>🐦 –keywords</td></tr>
+	<tr><td class='source'>🐧 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target' rowSpan='2'>evn<br>…</td></tr>
+	<tr><td class='source'>🕊 –keywords</td></tr>
+	<tr><td class='source'>🦅 –keywords</td><td class='target'>…<br>evn</td></tr>
+	<tr><td class='source'>🦆 –keywords</td><td class='target'>evn<br>…</td></tr>
+	<tr><td class='source'>🦢 -name</td><td class='target' rowSpan='2'>E11:032</td><td class='target'>alarcʼh</td></tr>
+	<tr><td class='source'>🦢 –keywords</td><td class='target'>alarcʼh<br>evn</td></tr>
+	<tr><td class='source'>🦉 –keywords</td><td class='target'>…</td><td class='target'>evn<br>…</td></tr>
+	<tr><td class='source'>🪶 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>pluenn</td></tr>
+	<tr><td class='source'>🪶 –keywords</td></tr>
+	<tr><td class='source'>🦤 -name</td><td class='target' rowSpan='2'>dodo</td></tr>
+	<tr><td class='source'>🦤 –keywords</td></tr>
+	<tr><td class='source'>🦩 -name</td><td class='target' rowSpan='2'>E12–032</td><td class='target' rowSpan='2'>flammeg</td></tr>
+	<tr><td class='source'>🦩 –keywords</td></tr>
+	<tr><td class='source'>🦚 -name</td><td class='target' rowSpan='2'>E11:024</td><td class='target' rowSpan='2'>paun</td></tr>
+	<tr><td class='source'>🦚 –keywords</td></tr>
+	<tr><td class='source'>🦜 -name</td><td class='target' rowSpan='2'>E11:026</td><td class='target' rowSpan='2'>peroked</td></tr>
+	<tr><td class='source'>🦜 –keywords</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🦋 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target' rowSpan='4'>amprevan<br>…</td></tr>
+	<tr><td class='source'>🐛 –keywords</td></tr>
+	<tr><td class='source'>🐜 –keywords</td></tr>
+	<tr><td class='source'>🐝 –keywords</td></tr>
+	<tr><td class='source'>🪲 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>cʼhwil</td></tr>
+	<tr><td class='source'>🪲 –keywords</td><td class='target'>amprevan<br>cʼhwil</td></tr>
+	<tr><td class='source'>🐞 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target' rowSpan='2'>amprevan<br>…</td></tr>
+	<tr><td class='source'>🦗 –keywords</td></tr>
+	<tr><td class='source'>🪳 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>cʼhwil-du</td></tr>
+	<tr><td class='source'>🪳 –keywords</td><td class='target'>amprevan<br>cʼhwil-du</td></tr>
+	<tr><td class='source'>🦟 -name</td><td class='target' rowSpan='2'>E11:029</td><td class='target' rowSpan='2'>moustik</td></tr>
+	<tr><td class='source'>🦟 –keywords</td></tr>
+	<tr><td class='source'>🪰 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>kelienenn</td></tr>
+	<tr><td class='source'>🪰 –keywords</td></tr>
+	<tr><td class='source'>🪱 -name</td><td class='target' rowSpan='2'>buzhugenn</td></tr>
+	<tr><td class='source'>🪱 –keywords</td></tr>
+	<tr><td class='source'>🦠 -name</td><td class='target' rowSpan='2'>E11:030</td><td class='target' rowSpan='2'>mikrob</td></tr>
+	<tr><td class='source'>🦠 –keywords</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐵 -name</td><td class='target' rowSpan='2'>E498</td><td class='target'>penn marmouz</td></tr>
+	<tr><td class='source'>🐵 –keywords</td><td class='target'>marmouz<br>penn</td></tr>
+	<tr><td class='source'>🦧 -name</td><td class='target' rowSpan='2'>E12–030</td><td class='target'>orangoutan</td></tr>
+	<tr><td class='source'>🦧 –keywords</td><td class='target'>loen<br>orangoutan</td></tr>
+	<tr><td class='source'>🐶 –keywords</td><td class='target'>penn ki</td><td class='target'>ki<br>penn</td></tr>
+	<tr><td class='source'>🐕 –keywords</td><td class='target'>…</td><td class='target'>…<br>loen</td></tr>
+	<tr><td class='source'>🦮 -name</td><td class='target' rowSpan='2'>E12–034</td><td class='target'>ki-heñchañ</td></tr>
+	<tr><td class='source'>🦮 –keywords</td><td class='target'>dall<br>ki-heñchañ</td></tr>
+	<tr><td class='source'>🐩 –keywords</td><td class='target'>…</td><td class='target'>ki<br>…</td></tr>
+	<tr><td class='source'>🐺 -name</td><td class='target' rowSpan='2'>penn bleiz</td><td class='target'>bleiz</td></tr>
+	<tr><td class='source'>🐺 –keywords</td><td class='target'>bleiz<br>penn</td></tr>
+	<tr><td class='source'>🦊 -name</td><td class='target' rowSpan='2'>penn louarn</td><td class='target'>louarn</td></tr>
+	<tr><td class='source'>🦊 –keywords</td><td class='target'>louarn<br>penn</td></tr>
+	<tr><td class='source'>🦝 -name</td><td class='target' rowSpan='2'>E11:027</td><td class='target'>rakoun</td></tr>
+	<tr><td class='source'>🦝 –keywords</td><td class='target'>loen<br>rakoun</td></tr>
+	<tr><td class='source'>🐱 –keywords</td><td class='target'>penn kazh</td><td class='target'>kazh<br>penn</td></tr>
+	<tr><td class='source'>🐈 –keywords</td><td class='target'>…</td><td class='target'>…<br>loen</td></tr>
+	<tr><td class='source'>🦁 -name</td><td class='target' rowSpan='2'>penn leon</td><td class='target'>leon</td></tr>
+	<tr><td class='source'>🦁 –keywords</td><td class='target'>leon<br>penn</td></tr>
+	<tr><td class='source'>🐯 –keywords</td><td class='target'>penn tigr</td><td class='target'>penn<br>tigr</td></tr>
+	<tr><td class='source'>🐴 –keywords</td><td class='target'>penn marcʼh</td><td class='target'>marcʼh<br>penn</td></tr>
+	<tr><td class='source'>🦄 –keywords</td><td class='target'>…</td><td class='target'>penn<br>…</td></tr>
+	<tr><td class='source'>🦬 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>bizon</td></tr>
+	<tr><td class='source'>🦬 –keywords</td></tr>
+	<tr><td class='source'>🐮 –keywords</td><td class='target'>penn buocʼh</td><td class='target'>buocʼh<br>penn</td></tr>
+	<tr><td class='source'>🐹 -name</td><td class='target' rowSpan='2'>penn hamster</td><td class='target'>hamster</td></tr>
+	<tr><td class='source'>🐹 –keywords</td><td class='target'>hamster<br>penn</td></tr>
+	<tr><td class='source'>🐰 -name</td><td class='target' rowSpan='2'>E493</td><td class='target'>penn lapin</td></tr>
+	<tr><td class='source'>🐰 –keywords</td><td class='target'>lapin<br>penn</td></tr>
+	<tr><td class='source'>🐇 -name</td><td class='target' rowSpan='2'>E452</td><td class='target'>lapin</td></tr>
+	<tr><td class='source'>🐇 –keywords</td><td class='target'>lapin<br>loen</td></tr>
+	<tr><td class='source'>🐼 -name</td><td class='target' rowSpan='2'>penn panda</td><td class='target'>panda</td></tr>
+	<tr><td class='source'>🐼 –keywords</td><td class='target'>panda<br>penn</td></tr>
+	<tr><td class='source'>🦨 -name</td><td class='target' rowSpan='2'>E12–031</td><td class='target' rowSpan='2'>skoñs</td></tr>
+	<tr><td class='source'>🦨 –keywords</td></tr>
+	<tr><td class='source'>🦡 -name</td><td class='target' rowSpan='2'>E11:031</td><td class='target' rowSpan='2'>brocʼh</td></tr>
+	<tr><td class='source'>🦡 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='animal-reptile' href='#animal-reptile'>animal-reptile</a></td><td class='source'>🐲 -name</td><td class='target' rowSpan='2'>E495</td><td class='target'>penn dragon</td></tr>
+	<tr><td class='source'>🐲 –keywords</td><td class='target'>dragon<br>penn</td></tr>
+	<tr><td class='source'>🐉 -name</td><td class='target' rowSpan='2'>E454</td><td class='target'>dragon</td></tr>
+	<tr><td class='source'>🐉 –keywords</td><td class='target'>dragon<br>loen</td></tr>
+	<tr><td class='source'>🦖 -name</td><td class='target' rowSpan='2'>E1118</td><td class='target' rowSpan='2'>tiranosaor roue</td></tr>
+	<tr><td class='source'>🦖 –keywords</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>💐 -name</td><td class='target' rowSpan='2'>E589</td><td class='target'>boked bleunioù</td></tr>
+	<tr><td class='source'>💐 –keywords</td><td class='target'>bleunioù<br>boked</td></tr>
+	<tr><td class='source'>🌹 -name</td><td class='target' rowSpan='2'>E254</td><td class='target'>rozenn</td></tr>
+	<tr><td class='source'>🌹 –keywords</td><td class='target'>bleunienn<br>rozenn</td></tr>
+	<tr><td class='source'>🌺 -name</td><td class='target' rowSpan='2'>E255</td><td class='target'>hibiskuz</td></tr>
+	<tr><td class='source'>🌺 –keywords</td><td class='target'>bleunienn<br>hibiskuz</td></tr>
+	<tr><td class='source'>🌻 -name</td><td class='target' rowSpan='2'>E256</td><td class='target'>tro-heol</td></tr>
+	<tr><td class='source'>🌻 –keywords</td><td class='target'>bleunienn<br>tro-heol</td></tr>
+	<tr><td class='source'>🌼 -name</td><td class='target' rowSpan='2'>E257</td><td class='target'>broñs</td></tr>
+	<tr><td class='source'>🌼 –keywords</td><td class='target'>bleunienn<br>broñs</td></tr>
+	<tr><td class='source'>🌷 -name</td><td class='target' rowSpan='2'>E252</td><td class='target'>tulipezenn</td></tr>
+	<tr><td class='source'>🌷 –keywords</td><td class='target'>bleunienn<br>tulipezenn</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🌲 –keywords</td><td class='target' rowSpan='5'>…</td><td class='target' rowSpan='2'>…<br>gwez</td></tr>
+	<tr><td class='source'>🌳 –keywords</td></tr>
+	<tr><td class='source'>🌴 –keywords</td><td class='target'>gwez<br>…<br>palmez</td></tr>
+	<tr><td class='source'>🌵 –keywords</td><td class='target' rowSpan='2'>…<br>plant</td></tr>
+	<tr><td class='source'>☘ –keywords</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Typography' href='#Typography'>Typography</a></td><td class='source' rowSpan='3'><a name='Axis' href='#Axis'>Axis</a></td><td class='source'>ital</td><td class='target'>italic</td><td class='target'>italek</td></tr>
+	<tr><td class='source'>wdth</td><td class='target'>width</td><td class='target'>ledander</td></tr>
+	<tr><td class='source'>wght</td><td class='target'>weight</td><td class='target'>tevder</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Style' href='#Style'>Style</a></td><td class='source'>ital-1</td><td class='target'>cursive</td><td class='target'>red</td></tr>
+	<tr><td class='source'>opsz-8</td><td class='target'>caption</td><td class='target'>alcʼhwez</td></tr>
+	<tr><td class='source'>opsz-12</td><td class='target'>text</td><td class='target'>testenn</td></tr>
+	<tr><td class='source'>opsz-18</td><td class='target'>titling</td><td class='target'>titlañ</td></tr>
+	<tr><td class='source'>opsz-72</td><td class='target'>display</td><td class='target'>diskwel</td></tr>
+	<tr><td class='source'>opsz-144</td><td class='target'>poster</td><td class='target'>skritell</td></tr>
+	<tr><td class='source'>slnt-0</td><td class='target'>upright</td><td class='target'>a-serzh</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Feature' href='#Feature'>Feature</a></td><td class='source'>ordn</td><td class='target'>ordinals</td><td class='target'>niveroù petvediñ</td></tr>
+	<tr><td class='source'>smcp</td><td class='target'>small capitals</td><td class='target'>pennlizherennoù bihan</td></tr>
+	<tr><td class='source'>zero</td><td class='target'>slashed zero</td><td class='target'>teskad goullo</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='7'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source' rowSpan='2'><a name='“And” List' href='#“And” List'>“And” List</a></td><td class='source'>2</td><td class='target' rowSpan='4'>{0}, {1}</td><td class='target' rowSpan='2'>{0} ha {1}</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>end</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Short “and” List' href='#Short “and” List'>Short “and” List</a></td><td class='source'>2</td><td class='target' rowSpan='2'>{0} &amp; {1}</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source' rowSpan='4'>end</td></tr>
+	<tr><td class='source'><a name='“Or” List' href='#“Or” List'>“Or” List</a></td><td class='target' rowSpan='3'>{0}, pe {1}</td><td class='target' rowSpan='3'>{0} pe {1}</td></tr>
+	<tr><td class='source'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td></tr>
+	<tr><td class='source'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

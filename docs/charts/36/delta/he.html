@@ -1,0 +1,644 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hebrew Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Hebrew Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='2'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='2'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: numbers</td><td class='source' rowSpan='559'>he</td><td class='target'>[\u200E \- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target'>[\u200E \- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target' rowSpan='2'>core</td></tr>
+	<tr><td class='source'>Others: punctuation</td><td class='target'>‫[\- ‐ – — , ; \: ! ? . ׳ ' &quot; ( ) \[ \] / ״ ־]‬</td><td class='target'>‫[\- ‐ ‑ – — , ; \: ! ? . ׳ ' &quot; ( ) \[ \] / ״ ־]‬</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='4'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='4'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>yue</td><td class='target'>‫סינית, קנטונזית‬</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target' rowSpan='3'>zh</td><td class='target'>‫סינית מנדרינית פשוטה‬</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>‫סינית מנדרינית מסורתית‬</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>‫סינית, מנדרינית‬</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='K' href='#K'>K</a></td><td class='source'>Klingon ► tlh</td><td class='target'>‫קלינגון‬</td><td class='target'>‫קלינגונית‬</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='S' href='#S'>S</a></td><td class='source'>Swiss German ► gsw</td><td class='target'>‫גרמנית שוויצרית‬</td><td class='target'>‫גרמנית (בשוויץ)‬</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='U' href='#U'>U</a></td><td class='source'>Upper Sorbian ► hsb</td><td class='target'>‫סורבית גבוהה‬</td><td class='target'>‫סורבית עילית‬</td></tr>
+	<tr><td class='source'><a name='V' href='#V'>V</a></td><td class='source'>Vietnamese ► vi</td><td class='target'>‫ויאטנמית‬</td><td class='target'>‫וייטנאמית‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='3'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Hanb</td><td class='target'>‫האנב‬</td><td class='target'>‫האן עם בופומופו‬</td></tr>
+	<tr><td class='source'>Laoo</td><td class='target'>‫לאית‬</td><td class='target'>‫לאי‬</td></tr>
+	<tr><td class='source'>Orya</td><td class='target'>‫אורייה‬</td><td class='target'>‫אודייה‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source' rowSpan='2'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>XA</td><td class='target'>XA</td><td class='target'>‫מבטאים חלקיים‬</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>XB</td><td class='target'>XB</td><td class='target'>‫דו-כיווני חלקי‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>‫אנגליה‬</td><td class='target' rowSpan='7'>modern</td></tr>
+	<tr><td class='target'>‫אנגליה‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>‫סקוטלנד‬</td></tr>
+	<tr><td class='target'>‫סקוטלנד‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>‫וויילס‬</td></tr>
+	<tr><td class='target'>‫וויילס‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-roc</td><td class='target'>‫לוח השנה הטאיווני‬</td><td class='target'>‫לוח השנה הטייוואני‬</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='2'><a name='Fields' href='#Fields'>Fields</a></td><td class='source'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>zone</td><td class='target'>‫אזור‬</td><td class='target'>‫אזור זמן‬</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Relative Friday Short' href='#Relative Friday Short'>Relative Friday Short</a></td><td class='source'>1</td><td class='target'>‫ביום ו׳ הבא‬</td><td class='target'>‫יום ו׳ הבא‬</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='18'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td><td class='target' rowSpan='253'>moderate</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>d.M.y – d.M.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, d.M.y – E, d.M.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E, d.M.y GGGGG – E, d.M.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E, d.M.y – E, d.M.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>‫d – d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>‫d בMMM y G – d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>‫d בMMM – d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>‫d בMMM y – d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E, d בMMM – E, d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>‫E, d בMMM y G – E, d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>‫E, d בMMM – E, d בMMM y G‬</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>‫E, d בMMM y – E, d בMMM y G‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='3'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source' rowSpan='3'><a name='Azerbaijan' href='#Azerbaijan'>Azerbaijan</a></td><td class='source'>generic-long</td><td class='target'>‫שעון אזרבייג׳אן‬</td><td class='target'>‫שעון אזרבייג׳ן‬</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>‫שעון אזרבייג׳אן (חורף)‬</td><td class='target'>‫שעון אזרבייג׳ן (חורף)‬</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>‫שעון אזרבייג׳אן (קיץ)‬</td><td class='target'>‫שעון אזרבייג׳ן (קיץ)‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source' rowSpan='3'><a name='Mongolia' href='#Mongolia'>Mongolia</a></td><td class='source'>generic-long</td><td class='target'>‫שעון אולן בטור‬</td><td class='target'>‫שעון אולאן באטור‬</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>‫שעון אולן בטור (חורף)‬</td><td class='target'>‫שעון אולאן באטור (חורף)‬</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>‫שעון אולן בטור (קיץ)‬</td><td class='target'>‫שעון אולאן באטור (קיץ)‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Ulaanbaatar</td><td class='target'>‫אולאאנבטאר‬</td><td class='target'>‫אולאן באטור‬</td></tr>
+	<tr><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>Vientiane</td><td class='target'>‫האנוי‬</td><td class='target'>‫ויינטיאן‬</td></tr>
+	<tr><td class='source'><a name='Antarctica' href='#Antarctica'>Antarctica</a></td><td class='source'>Syowa</td><td class='target'>‫סיוואה‬</td><td class='target'>‫סייווה‬</td></tr>
+	<tr><td class='source'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td><td class='source'><a name='Miscellaneous Patterns ' href='#Miscellaneous Patterns '>Miscellaneous Patterns </a></td><td class='source'>atLeast</td><td class='target'>≥{0}+</td><td class='target'>≥{0}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source'><a name='Eastern Europe: Belarus' href='#Eastern Europe: Belarus'>Eastern Europe: Belarus</a></td><td class='source'>BYN-symbol-narrow</td><td class='target'>р.</td><td class='target'>р</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source' rowSpan='5'><a name='Middle Africa: São Tomé & Príncipe' href='#Middle Africa: São Tomé & Príncipe'>Middle Africa: São Tomé & Príncipe</a></td><td class='source'>STN-name</td><td class='target' rowSpan='5'>‫דוברה של סן טומה ופרינסיפה‬</td><td class='target' rowSpan='5'>‫דוברה של סאו טומה ופרינסיפה‬</td></tr>
+	<tr><td class='source'>STN-name-one</td></tr>
+	<tr><td class='source'>STN-name-two</td></tr>
+	<tr><td class='source'>STN-name-many</td></tr>
+	<tr><td class='source'>STN-name-other</td></tr>
+	<tr><td class='source' rowSpan='219'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='9'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='9'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='66'>▷missing◁</td><td class='target'>‫עשורים‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} עשורים‬</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫עשור‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>‫עשור {0}‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} עשורים‬</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='57'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='9'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>‫נקודות לסנטימטר‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>‫נקודה {0} לסנטימטר‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‎{0} dpcm‎</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‎{0} dpcm</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>‫{0} נקודות לסנטימטר‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‎{0} dpcm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫נקודות לאינץ׳‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='3'>‎{0} dpi‎</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>‎{0} dots per inch‎</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‎{0} dpi‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='em' href='#em'>em</a></td><td class='source'>long-displayName</td><td class='target'>‫קו מפריד מסוג em‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='3'>‎{0} em ‎</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>‎{0} ems ‎</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‎{0} em ‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-displayName</td><td class='target'>‫מגה-פיקסל‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='6'>‎{0} MP ‎</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>‫פיקסלים‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='6'>‎{0} px ‎</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>‫פיקסלים לסנטימטר‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='6'>‎{0} ppcm‎</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫פיקסלים לאינץ׳‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>‫{0} פיקסל לאינץ'‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='2'>‎{0} ppi‎</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>‫{0} פיקסלים לאינץ'‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‎{0} ppi‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='41'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='3'><a name='meter' href='#meter'>meter</a></td><td class='source'>short-one</td><td class='target'>‫מ׳‬</td><td class='target' rowSpan='3'>‫{0} מ׳‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫שני מ׳‬</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target'>‫מ' {0}‬</td></tr>
+	<tr><td class='source'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source' rowSpan='2'>short-one</td><td class='target'>‫ס&quot;מ {0}‬</td><td class='target'>‫{0} ס״מ‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='target' rowSpan='4'>{0} µm</td><td class='target' rowSpan='4'>‎{0} µm‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='nanometer' href='#nanometer'>nanometer</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} nm</td><td class='target' rowSpan='4'>‎{0} nm</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='picometer' href='#picometer'>picometer</a></td><td class='source'>short-two</td><td class='target' rowSpan='3'>‫פ“מ {0}‬</td><td class='target' rowSpan='3'>‫{0} פ&quot;מ‬</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'><a name='mile' href='#mile'>mile</a></td><td class='source' rowSpan='2'>short-one</td><td class='target'>‫מייל {0}‬</td><td class='target'>‫{0} מייל‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='foot' href='#foot'>foot</a></td><td class='target' rowSpan='4'>{0} ft</td><td class='target' rowSpan='4'>‎{0} ft</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/ft</td><td class='target'>‎{0}/ft</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='inch' href='#inch'>inch</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} in</td><td class='target' rowSpan='4'>‎{0} in</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/in</td><td class='target'>‎{0}/in</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='parsec' href='#parsec'>parsec</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} pc</td><td class='target' rowSpan='4'>‎{0} pc</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} au</td><td class='target' rowSpan='4'>‎{0} au</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>long-two</td><td class='target' rowSpan='7'>{0} R☉</td><td class='target' rowSpan='3'>‫{0} רדיוס סולרי‬</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‎{0} R☉‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='4'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ha</td><td class='target' rowSpan='4'>‎{0} ha</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} sq mi</td><td class='target' rowSpan='4'>‎{0} sq mi</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/mi²</td><td class='target'>‎{0}/mi²</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='acre' href='#acre'>acre</a></td><td class='source'>short-one</td><td class='target' rowSpan='3'>{0} ac</td><td class='target' rowSpan='3'>‎{0} ac</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='square-yard' href='#square-yard'>square-yard</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} yd²</td><td class='target' rowSpan='4'>‎{0} yd²</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='square-foot' href='#square-foot'>square-foot</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} sq ft</td><td class='target' rowSpan='4'>‎{0} sq ft</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-inch' href='#square-inch'>square-inch</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} in²</td><td class='target' rowSpan='4'>‎{0} in²</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/in²</td><td class='target'>‎{0}/in²</td></tr>
+	<tr><td class='source' rowSpan='64'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='4'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} m³</td><td class='target' rowSpan='4'>‎{0} m³</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} mi³</td><td class='target' rowSpan='4'>‎{0} mi³</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} yd³</td><td class='target' rowSpan='4'>‎{0} yd³</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ft³</td><td class='target' rowSpan='4'>‎{0} ft³</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic-inch' href='#cubic-inch'>cubic-inch</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} in³</td><td class='target' rowSpan='4'>‎{0} in³</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megaliter' href='#megaliter'>megaliter</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ML</td><td class='target' rowSpan='4'>‎{0} ML</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} hL</td><td class='target' rowSpan='4'>‎{0} hL</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='centiliter' href='#centiliter'>centiliter</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} cL</td><td class='target' rowSpan='4'>‎{0} cL</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} mpt</td><td class='target' rowSpan='4'>‎{0} mpt</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} mc</td><td class='target' rowSpan='4'>‎{0} mc</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ac ft</td><td class='target' rowSpan='4'>‎{0} ac ft</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='quart' href='#quart'>quart</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} qt</td><td class='target' rowSpan='4'>‎{0} qt</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pint' href='#pint'>pint</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} pt</td><td class='target' rowSpan='4'>‎{0} pt</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} fl oz</td><td class='target' rowSpan='4'>‎{0} fl oz</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} fl oz Imp.</td><td class='target' rowSpan='4'>‎{0} fl oz Imp.‎</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='barrel' href='#barrel'>barrel</a></td><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} bbl</td><td class='target' rowSpan='4'>‎{0} bbl</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>‫יחידה תרמית בארה״ב‬</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='10'><a name='bar' href='#bar'>bar</a></td><td class='target'>‫בר‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='4'>‫{0} בר‬</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫בר‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>‫{0} בר‬</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target'>‫פסקל‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='4'>‫{0} פסקל‬</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='5'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>long-displayName</td><td class='target'>‫גיגהביט‬</td><td class='target'>‫ג׳יגה-ביט‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='4'>‫{0} גיגהביט‬</td><td class='target' rowSpan='4'>‫{0} ג'יגה-ביט‬</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source'><a name='per' href='#per'>per</a></td><td class='source'>long</td><td class='target'>‫{0} לכל {1}‬</td><td class='target'>‫{0} ל{1}‬</td></tr>
+	<tr><td class='source'><a name='times' href='#times'>times</a></td><td class='source'>short</td><td class='target'>▷missing◁</td><td class='target'>{0}⋅{1}</td></tr>
+	<tr><td class='source' rowSpan='278'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='7'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='7'><a name='Label' href='#Label'>Label</a></td><td class='source'>bullets_stars</td><td class='target'>‫תבליטים/כוכבים‬</td><td class='target'>‫תבליטים או כוכבים‬</td><td class='target' rowSpan='278'>modern</td></tr>
+	<tr><td class='source'>east_asian_scripts</td><td class='target'>‫כתב של מזרח אסיה‬</td><td class='target'>‫כתב של שפות מזרח אסיה‬</td></tr>
+	<tr><td class='source'>half_width_form_variant</td><td class='target'>‫משתנים מבחינת רוחב‬</td><td class='target'>‫משתנה בחצי רוחב‬</td></tr>
+	<tr><td class='source'>smiley</td><td class='target'>‫חיוך‬</td><td class='target'>‫סמלי סמיילי‬</td></tr>
+	<tr><td class='source'>southeast_asian_scripts</td><td class='target'>‫מערכות כתב מזרח אסייתיות‬</td><td class='target'>‫מערכות כתב דרום מזרח אסיה‬</td></tr>
+	<tr><td class='source'>travel</td><td class='target'>‫טיול‬</td><td class='target'>‫נסיעות‬</td></tr>
+	<tr><td class='source'>western_asian_scripts</td><td class='target'>‫מערכות כתב ממערב אסיה‬</td><td class='target'>‫מערכות כתב מערב אסיה‬</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='3'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>💌 -name</td><td class='target'>‫מכתב חתום בלב‬</td><td class='target'>‫מכתב אהבה‬</td></tr>
+	<tr><td class='source'>💞 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>לבבות מסתובבים<br>…‬</td></tr>
+	<tr><td class='source'>💬 –keywords</td><td class='target'>‫…<br>דיבור<br>ענן‬</td><td class='target'>‫…<br>בלון<br>…<br>שיחה‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>🥲 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫פרצוף מחייך עם דמעה‬</td></tr>
+	<tr><td class='source'>🥲 –keywords</td><td class='target'>‫גאווה<br>דומע<br>דמעה<br>מחייך<br>מרגש<br>מתרגש<br>פרצוף מחייך עם דמעה‬</td></tr>
+	<tr><td class='source'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>😳 –keywords</td><td class='target'>‫…<br>פרצוף<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-hat' href='#face-hat'>face-hat</a></td><td class='source'>🥷 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫נינג׳ה‬</td></tr>
+	<tr><td class='source'>🥷 –keywords</td><td class='target'>‫אומנויות לחימה<br>לוחם<br>נינג׳ה‬</td></tr>
+	<tr><td class='source'>🥸 -name</td><td class='target'>‫פרצוף עם תחפושת‬</td></tr>
+	<tr><td class='source'>🥸 –keywords</td><td class='target'>‫הסוואה<br>מסיכה<br>משקפיים<br>פרצוף<br>פרצוף עם תחפושת<br>שפם<br>תחפושת‬</td></tr>
+	<tr><td class='source'><a name='face-negative' href='#face-negative'>face-negative</a></td><td class='source'>😈 –keywords</td><td class='target'>‫זדוני<br>מחייך<br>פרצוף<br>…<br>שדון<br>…‬</td><td class='target'>‫אגדות<br>חיוך מרושע<br>…<br>שד<br>…‬</td></tr>
+	<tr><td class='source'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🤥 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>שקרן‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-sleepy' href='#face-sleepy'>face-sleepy</a></td><td class='source'>😌 -name</td><td class='target'>‫פרצוף רגוע‬</td><td class='target'>‫פרצוף של אנחת רווחה‬</td></tr>
+	<tr><td class='source'>😌 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target'>‫…<br>פרצוף של אנחת רווחה<br>…‬</td></tr>
+	<tr><td class='source'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>🙂 –keywords</td><td class='target'>‫…<br>פרצוף עם חיוך קל‬</td></tr>
+	<tr><td class='source' rowSpan='103'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🦵 –keywords</td><td class='target'>‫איבר<br>…<br>גפיים<br>…‬</td></tr>
+	<tr><td class='source'>🦶 –keywords</td><td class='target'>‫בעיטה<br>…‬</td></tr>
+	<tr><td class='source'>🫀 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫לב‬</td></tr>
+	<tr><td class='source'>🫀 –keywords</td><td class='target'>‫דופק<br>לב<br>מרכז<br>פעימות לב‬</td></tr>
+	<tr><td class='source'>🫁 -name</td><td class='target'>‫ריאות‬</td></tr>
+	<tr><td class='source'>🫁 –keywords</td><td class='target'>‫מערכת הנשימה<br>נשימה<br>ריאה<br>ריאות‬</td></tr>
+	<tr><td class='source'>👁 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target' rowSpan='2'>‫גוף האדם<br>…‬</td></tr>
+	<tr><td class='source'>👅 –keywords</td></tr>
+	<tr><td class='source'><a name='family' href='#family'>family</a></td><td class='source'>👪 –keywords</td><td class='target'>‫…<br>הורים<br>…<br>ילדה<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🖖 -name</td><td class='target'>‫ברכת וולקנים‬</td><td class='target'>‫הצדעה וולקנית‬</td></tr>
+	<tr><td class='source'>🖖 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>הצדעה וולקנית<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🤌 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫יד מסמנת רק רגע‬</td></tr>
+	<tr><td class='source'>🤌 –keywords</td><td class='target'>‫אצבעות<br>יד מסמנת רק רגע<br>כף יד<br>רק רגע<br>תיכף‬</td></tr>
+	<tr><td class='source'>🤘 -name</td><td class='target'>‫יד מסמנת קרניים באצבע מורה ובזרת‬</td><td class='target'>‫יד מסמנת קרניים‬</td></tr>
+	<tr><td class='source'>🤘 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>יד מסמנת קרניים<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-prop' href='#hand-prop'>hand-prop</a></td><td class='source'>💅 -name</td><td class='target'>‫מריחת לק על ציפורניים‬</td><td class='target'>‫מריחת לק‬</td></tr>
+	<tr><td class='source'>💅 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>מריחת לק<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person' href='#person'>person</a></td><td class='source'>🧑 -name</td><td class='target'>‫גבר‬</td><td class='target'>‫אדם‬</td></tr>
+	<tr><td class='source'>🧑 –keywords</td><td class='target'>‫…<br>בגירה<br>גבר<br>…<br>מבוגרת‬</td><td class='target'>‫אדם<br>…<br>ללא מגדר<br>…<br>מגדר נייטרלי‬</td></tr>
+	<tr><td class='source'>👨 –keywords</td><td class='target'>‫…<br>שפם‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source'>💆 –keywords</td><td class='target'>…</td><td class='target'>‫מכון יופי<br>מסז׳<br>ספא<br>…‬</td></tr>
+	<tr><td class='source'>🚶 -name</td><td class='target'>‫הולך רגל‬</td><td class='target'>‫איש הולך‬</td></tr>
+	<tr><td class='source'>🚶 –keywords</td><td class='target'>‫…<br>הולך רגל<br>…‬</td><td class='target'>‫איש הולך<br>…<br>טיול<br>צעידה‬</td></tr>
+	<tr><td class='source'>🧑‍🦯 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫אדם עם מקל נחייה‬</td></tr>
+	<tr><td class='source'>🧑‍🦯 –keywords</td><td class='target'>‫אדם עם מקל נחייה<br>לקוי ראייה<br>נגישות<br>עיוור‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 -name</td><td class='target'>‫אדם בכסא גלגלים ממונע‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 –keywords</td><td class='target'>‫אדם בכסא גלגלים ממונע<br>כסא גלגלים<br>נגישות<br>נכה‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 -name</td><td class='target'>‫אדם בכסא גלגלים ידני‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='target'>‫אדם בכסא גלגלים ידני<br>כסא גלגלים<br>נגישות<br>נכה‬</td></tr>
+	<tr><td class='source'>👯 -name</td><td class='target'>‫נשים רוקדות‬</td><td class='target'>‫נשים עם אוזני ארנב רוקדות‬</td></tr>
+	<tr><td class='source'>👯 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>נשים עם אוזני ארנב רוקדות<br>…‬</td></tr>
+	<tr><td class='source'>👯‍♂ -name</td><td class='target'>‫בנים רוקדים עם אוזני ארנב‬</td><td class='target'>‫גברים עם אוזני ארנב רוקדים‬</td></tr>
+	<tr><td class='source'>👯‍♂ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>גברים עם אוזני ארנב רוקדים<br>…‬</td></tr>
+	<tr><td class='source'>👯‍♀ -name</td><td class='target'>‫נשים רוקדות עם אוזני ארנב‬</td><td class='target'>‫נשים עם אוזני ארנב‬</td></tr>
+	<tr><td class='source'>👯‍♀ –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>‫…<br>נשים עם אוזני ארנב<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🦸 –keywords</td><td class='target'>‫…<br>גיבורת על<br>…‬</td></tr>
+	<tr><td class='source'>🧞‍♂ –keywords</td><td class='target'>‫…<br>ג׳ין<br>…‬</td><td class='target'>‫…<br>ג׳יני<br>…‬</td></tr>
+	<tr><td class='source'>🧞‍♀ –keywords</td><td class='target'>‫ג׳ין<br>…‬</td><td class='target'>‫ג׳יני<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>🙅‍♂ -name</td><td class='target'>‫גבר מסמן ״לא״ עם הידיים‬</td><td class='target'>‫גבר מסמן ״לא״‬</td></tr>
+	<tr><td class='source'>🙅‍♂ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>גבר מסמן ״לא״<br>…‬</td></tr>
+	<tr><td class='source'>🙅‍♀ -name</td><td class='target'>‫אישה מסמנת ״לא טוב״‬</td><td class='target'>‫אישה מסמנת ״לא״‬</td></tr>
+	<tr><td class='source'>🙅‍♀ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>אישה מסמנת ״לא״<br>…‬</td></tr>
+	<tr><td class='source'>💁 -name</td><td class='target'>‫פקידה בדלפק מידע‬</td><td class='target'>‫אדם בדלפק מידע או מבקש טיפ‬</td></tr>
+	<tr><td class='source'>💁 –keywords</td><td class='target'>‫…<br>פקידה בדלפק מידע‬</td><td class='target'>‫אדם בדלפק מידע או מבקש טיפ<br>דלפק מידע<br>חוצפה<br>טיפ<br>…‬</td></tr>
+	<tr><td class='source'>💁‍♂ -name</td><td class='target'>‫גבר מבקש טיפ‬</td><td class='target'>‫איש בדלפק מידע או מבקש טיפ‬</td></tr>
+	<tr><td class='source'>💁‍♂ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>איש בדלפק מידע או מבקש טיפ<br>…‬</td></tr>
+	<tr><td class='source'>💁‍♀ –keywords</td><td class='target'>‫…<br>חצופה<br>מבקשת נדבה<br>מטה יד<br>שובבה‬</td><td class='target'>‫…<br>דלפק מידע<br>חוצפה<br>טיפ<br>יד<br>מידע<br>עזרה‬</td></tr>
+	<tr><td class='source'>🙋 -name</td><td class='target'>‫אישה שמחה מרימה יד‬</td><td class='target'>‫אישה מרימה את היד‬</td></tr>
+	<tr><td class='source'>🙋 –keywords</td><td class='target'>‫…<br>תשובה‬</td><td class='target'>‫אישה מרימה את היד<br>…‬</td></tr>
+	<tr><td class='source'>🙋‍♀ -name</td><td class='target'>‫אישה מרימה יד‬</td><td class='target'>‫אישה מנופפת בידה‬</td></tr>
+	<tr><td class='source'>🙋‍♀ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>אישה מנופפת בידה<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍⚕ -name</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>‫עובד בשירותי הבריאות‬</td></tr>
+	<tr><td class='source'>🧑‍⚕ –keywords</td><td class='target'>‫אח<br>דוקטור<br>מטפל<br>עובד בשירותי הבריאות<br>רופא<br>תרפיסט‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 -name</td><td class='target'>‫סטודנט/ית‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 –keywords</td><td class='target'>‫בוגר<br>בוגרת<br>סטודנט<br>סטודנט/ית<br>סטודנטית‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 -name</td><td class='target'>‫מצוות המורים‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 –keywords</td><td class='target'>‫מדריך<br>מדריכה<br>מורה<br>מלמד<br>מלמדת<br>מצוות המורים<br>מרצה<br>עוזר הוראה‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ -name</td><td class='target'>‫שופט/ת‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ –keywords</td><td class='target'>‫מאזני הצדק<br>מאזניים<br>משפט<br>משפטים<br>שופט<br>שופט/ת<br>שופטת‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 -name</td><td class='target'>‫חקלאי/ת‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 –keywords</td><td class='target'>‫חווה<br>חקלאות<br>חקלאי<br>חקלאי/ת<br>חקלאית<br>טבע‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 -name</td><td class='target'>‫טבח/ית‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 –keywords</td><td class='target'>‫טבח<br>טבח/ית<br>טבחית<br>שף<br>שפית‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 -name</td><td class='target'>‫מכונאי/ת‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 –keywords</td><td class='target'>‫חשמלאי<br>חשמלאית<br>מכונאי<br>מכונאי/ת<br>מכונאית‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 -name</td><td class='target'>‫פועל/ת‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>‫בית חרושת<br>מפעל<br>פועל<br>פועל/ת<br>פועלת<br>תעשייה‬</td></tr>
+	<tr><td class='source'>👨‍💼 –keywords</td><td class='target'>‫…<br>איש<br>…<br>גבר<br>…‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>👩‍💼 –keywords</td><td class='target'>‫…<br>אישה<br>…‬</td></tr>
+	<tr><td class='source'>🧑‍💼 -name</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>‫עובד/ת משרד‬</td></tr>
+	<tr><td class='source'>🧑‍💼 –keywords</td><td class='target'>‫איש עסקים<br>משרד<br>עובד/ת משרד<br>צווארון לבן‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 -name</td><td class='target'>‫מדען/ית‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 –keywords</td><td class='target'>‫מדען<br>מדען/ית<br>מדענית<br>מהנדס<br>מהנדסת<br>מעבדה‬</td></tr>
+	<tr><td class='source'>🧑‍💻 -name</td><td class='target'>‫טכנולוג/ית‬</td></tr>
+	<tr><td class='source'>🧑‍💻 –keywords</td><td class='target'>‫טכנולוג<br>טכנולוג/ית<br>טכנולוגית<br>מפתח<br>מפתחת<br>מתכנת<br>מתכנתת‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 -name</td><td class='target'>‫זמר/ת‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 –keywords</td><td class='target'>‫אומן<br>אמן<br>אמנית<br>זמר<br>זמר/ת<br>זמרת<br>שחקן<br>שחקנית‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 -name</td><td class='target'>‫אומן/ית‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 –keywords</td><td class='target'>‫אומן<br>אומן/ית<br>אומנות<br>אומנית<br>אמן<br>אמנות<br>אמנית‬</td></tr>
+	<tr><td class='source'>🧑‍✈ -name</td><td class='target'>‫טייס/ת‬</td></tr>
+	<tr><td class='source'>🧑‍✈ –keywords</td><td class='target'>‫טייס<br>טייס/ת<br>טייסת<br>טיסה<br>מטוס‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 -name</td><td class='target'>‫אסטרונאוט/ית‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 –keywords</td><td class='target'>‫אסטרונאוט<br>אסטרונאוט/ית<br>אסטרונאוטית<br>חלל<br>חללית‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 -name</td><td class='target'>‫לוחם/ת אש‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 –keywords</td><td class='target'>‫כבאות<br>כבאי<br>לוחם אש<br>לוחם/ת אש<br>לוחמת אש<br>מכבי אש‬</td></tr>
+	<tr><td class='source'>👳 –keywords</td><td class='target'>‫…<br>הודי<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🤱 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>‫…<br>מיניקה<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='person-sport' href='#person-sport'>person-sport</a></td><td class='source'>🏇 –keywords</td><td class='target'>‫…<br>מרוץ סוסים<br>מרוצי סוסים<br>…<br>פרש<br>…‬</td></tr>
+	<tr><td class='source'>🚣‍♂ –keywords</td><td class='target' rowSpan='2'>‫אוניה<br>…‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>🚣‍♀ –keywords</td></tr>
+	<tr><td class='source'>🏊 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target' rowSpan='2'>‫…<br>שחייה<br>…‬</td></tr>
+	<tr><td class='source'>🏊‍♂ –keywords</td></tr>
+	<tr><td class='source'>⛹ -name</td><td class='target'>‫בחור מקפיץ כדור‬</td><td class='target'>‫הקפצת כדור‬</td></tr>
+	<tr><td class='source'>⛹ –keywords</td><td class='target'>‫בחור מקפיץ כדור<br>…‬</td><td class='target'>‫הקפצת כדור<br>ילד מקפיץ כדור<br>…‬</td></tr>
+	<tr><td class='source'>🤽 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>כדור מים<br>כדור-מים<br>…<br>ספורט במים‬</td></tr>
+	<tr><td class='source'>🤾‍♂ -name</td><td class='target'>‫גבר משחק כדור יד‬</td><td class='target'>‫גבר משחק כדוריד‬</td></tr>
+	<tr><td class='source'>🤾‍♂ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>גבר משחק כדוריד<br>…‬</td></tr>
+	<tr><td class='source'>🤹‍♂ -name</td><td class='target'>‫גבר מלהטט‬</td><td class='target'>‫גבר עושה ג׳גלינג‬</td></tr>
+	<tr><td class='source'>🤹‍♂ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>ג׳גלינג<br>…<br>גבר עושה ג׳גלינג<br>…<br>מולטי-טסקינג<br>…‬</td></tr>
+	<tr><td class='source'>🤹‍♀ -name</td><td class='target'>‫אישה מלהטטת‬</td><td class='target'>‫אישה עושה ג׳גלינג‬</td></tr>
+	<tr><td class='source'>🤹‍♀ –keywords</td><td class='target'>…</td><td class='target'>‫…<br>אישה עושה ג׳גלינג<br>ג׳גלינג<br>…<br>מולטי-טסקינג<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>🫂 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫אנשים מתחבקים‬</td></tr>
+	<tr><td class='source'>🫂 –keywords</td><td class='target'>‫אהבה<br>אנשים מתחבקים<br>חיבוק<br>פרידה<br>תודה‬</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='5'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🪶 -name</td><td class='target'>‫נוצה‬</td></tr>
+	<tr><td class='source'>🪶 –keywords</td><td class='target'>‫לעוף<br>נוצה<br>נוצות<br>ציפורים‬</td></tr>
+	<tr><td class='source'>🦤 -name</td><td class='target'>‫ציפור דודו‬</td></tr>
+	<tr><td class='source'>🦤 –keywords</td><td class='target'>‫זן נכחד<br>מאוריציוס<br>ציפור גדולה<br>ציפור דודו‬</td></tr>
+	<tr><td class='source'>🦚 –keywords</td><td class='target'>‫גאה<br>…‬</td><td class='target'>‫גאוותן<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🪲 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫חיפושית‬</td></tr>
+	<tr><td class='source'>🪲 –keywords</td><td class='target'>‫חיפושית<br>חרק‬</td></tr>
+	<tr><td class='source'>🪳 -name</td><td class='target'>‫תיקן‬</td></tr>
+	<tr><td class='source'>🪳 –keywords</td><td class='target'>‫ג׳וק<br>חרק<br>תיקן‬</td></tr>
+	<tr><td class='source'>🪰 -name</td><td class='target'>‫זבוב‬</td></tr>
+	<tr><td class='source'>🪰 –keywords</td><td class='target'>‫זבוב<br>זבוב הבית<br>זבוב הסוס<br>טסה טסה<br>מחלות<br>צה-צה‬</td></tr>
+	<tr><td class='source'>🪱 -name</td><td class='target'>‫תולעת‬</td></tr>
+	<tr><td class='source'>🪱 –keywords</td><td class='target'>‫תולעים, תולעת, שלשול, פרזיט<br>תולעת‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐺 –keywords</td><td class='target'>‫…<br>פני זאב<br>…‬</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>🦊 –keywords</td><td class='target'>‫פני שועל<br>…‬</td></tr>
+	<tr><td class='source'>🦬 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫ביזון‬</td></tr>
+	<tr><td class='source'>🦬 –keywords</td><td class='target'>‫ביזון<br>בפאלו<br>עדר‬</td></tr>
+	<tr><td class='source'>🦒 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>ג׳ירפה<br>…‬</td></tr>
+	<tr><td class='source'>🦣 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫ממותה‬</td></tr>
+	<tr><td class='source'>🦣 –keywords</td><td class='target'>‫חט<br>ממותה<br>נכחד<br>ענק<br>צמרי‬</td></tr>
+	<tr><td class='source'>🦫 -name</td><td class='target'>‫בונה‬</td></tr>
+	<tr><td class='source'>🦫 –keywords</td><td class='target'>‫בונה<br>סכר<br>סכרים‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🦭 -name</td><td class='target'>‫כלב ים‬</td></tr>
+	<tr><td class='source'>🦭 –keywords</td><td class='target'>‫אריה ים<br>כלב ים‬</td></tr>
+	<tr><td class='source'><a name='animal-reptile' href='#animal-reptile'>animal-reptile</a></td><td class='source'>🐲 –keywords</td><td class='target'>‫…<br>פנים‬</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🌸 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target'>‫…<br>פריחת הדובדבן‬</td></tr>
+	<tr><td class='source'>🌼 –keywords</td><td class='target'>‫אביב<br>…‬</td></tr>
+	<tr><td class='source'>🌷 –keywords</td><td class='target'>‫הולנד<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🌱 –keywords</td><td class='target'>‫…<br>שתיל‬</td></tr>
+	<tr><td class='source'>🪴 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫צמח בעציץ‬</td></tr>
+	<tr><td class='source'>🪴 –keywords</td><td class='target'>‫משעמם<br>עציץ<br>עציץ לבית<br>צמח<br>צמח בעציץ‬</td></tr>
+	<tr><td class='source'>🌵 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>קוצים<br>קוצני<br>…‬</td></tr>
+	<tr><td class='source'>🍁 –keywords</td><td class='target'>‫…<br>נושר<br>עלה<br>צמח<br>…‬</td><td class='target'>‫…<br>סירופ<br>סתיו<br>עלה מייפל<br>עלים נושרים<br>פנקייק<br>…<br>שלכת‬</td></tr>
+	<tr><td class='source'>🍃 -name</td><td class='target'>‫עלים עפים ברוח‬</td><td class='target'>‫עלה עף ברוח‬</td></tr>
+	<tr><td class='source'>🍃 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>עלה נידף<br>עלה עף ברוח<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='4'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫖 -name</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>‫קנקן תה‬</td></tr>
+	<tr><td class='source'>🫖 –keywords</td><td class='target'>‫משקה חם<br>קנקן<br>תה‬</td></tr>
+	<tr><td class='source'>🧋 -name</td><td class='target'>‫באבל טי‬</td></tr>
+	<tr><td class='source'>🧋 –keywords</td><td class='target'>‫באבל טי<br>בועות<br>חלב<br>טאיוואן<br>תה‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🫐 -name</td><td class='target'>‫אוכמניות‬</td></tr>
+	<tr><td class='source'>🫐 –keywords</td><td class='target'>‫אוכמניות<br>כחול<br>פירות<br>פרי יער‬</td></tr>
+	<tr><td class='source'>🫒 -name</td><td class='target'>‫זית‬</td></tr>
+	<tr><td class='source'>🫒 –keywords</td><td class='target'>‫זית<br>זיתים‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source'>🫓 -name</td><td class='target'>‫פיתה‬</td></tr>
+	<tr><td class='source'>🫓 –keywords</td><td class='target'>‫ארפה<br>לאפה<br>לוואשי<br>נאן<br>פיתה‬</td></tr>
+	<tr><td class='source'>🫔 -name</td><td class='target'>‫טמלה‬</td></tr>
+	<tr><td class='source'>🫔 –keywords</td><td class='target'>‫טמלה<br>מקסיקני<br>ראפ‬</td></tr>
+	<tr><td class='source'>🥙 -name</td><td class='target'>‫פיתה‬</td><td class='target'>‫פיתה עם פלאפל‬</td></tr>
+	<tr><td class='source'>🥙 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>פיתה עם פלאפל<br>…‬</td></tr>
+	<tr><td class='source'>🫕 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫פונדו‬</td></tr>
+	<tr><td class='source'>🫕 –keywords</td><td class='target'>‫גבינות<br>סיר<br>פונדו<br>שוקולד‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫑 -name</td><td class='target'>‫פלפל אדום‬</td></tr>
+	<tr><td class='source'>🫑 –keywords</td><td class='target'>‫גמבה<br>ירק<br>פלפל<br>פלפל אדום‬</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='10'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🛖 -name</td><td class='target'>‫בקתה‬</td></tr>
+	<tr><td class='source'>🛖 –keywords</td><td class='target'>‫ביתן עגול<br>בקתה<br>יורט<br>צריף‬</td></tr>
+	<tr><td class='source'>🏛 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>העת העתיקה<br>…‬</td></tr>
+	<tr><td class='source'>🪵 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫בול עץ‬</td></tr>
+	<tr><td class='source'>🪵 –keywords</td><td class='target'>‫בול עץ<br>בולי עץ<br>עץ<br>עצים<br>עצים לאח‬</td></tr>
+	<tr><td class='source'>🪨 -name</td><td class='target'>‫סלע‬</td></tr>
+	<tr><td class='source'>🪨 –keywords</td><td class='target'>‫אבן<br>סלע<br>סלעים‬</td></tr>
+	<tr><td class='source'>🏤 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>‫…<br>סניף דואר‬</td></tr>
+	<tr><td class='source'>🏰 –keywords</td><td class='target'>‫…<br>טירה אירופית‬</td></tr>
+	<tr><td class='source'>🗽 –keywords</td><td class='target'>‫…<br>ניו יורק<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>🌓 –keywords</td><td class='target'>‫חלל<br>חצי ירח<br>…‬</td><td class='target'>‫…<br>ירח<br>ירח רבעון ראשון<br>רבעון<br>שבוע ראשון‬</td></tr>
+	<tr><td class='source'>🌗 –keywords</td><td class='target'>‫חלל<br>…<br>סהר‬</td><td class='target'>‫…<br>ירח רבעון אחרון<br>רבעון<br>שבוע אחרון‬</td></tr>
+	<tr><td class='source'>⭐ -name</td><td class='target'>‫כוכב לבן בינוני‬</td><td class='target'>‫כוכב‬</td></tr>
+	<tr><td class='source'>⭐ –keywords</td><td class='target'>‫…<br>כוכב לבן בינוני‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🌪 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>‫…<br>סופה<br>…‬</td></tr>
+	<tr><td class='source'>🔥 –keywords</td><td class='target'>‫…<br>דליקה<br>…<br>שלהבת<br>…‬</td></tr>
+	<tr><td class='source'>💧 –keywords</td><td class='target'>‫…<br>קור<br>קר‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='time' href='#time'>time</a></td><td class='source'>⌛ –keywords</td><td class='target'>‫…<br>שעוון חול<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>⏱ –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>‫סטופר<br>…‬</td></tr>
+	<tr><td class='source'>⏲ –keywords</td><td class='target'>‫זמן קצוב<br>…‬</td></tr>
+	<tr><td class='source'>🕑 –keywords</td><td class='target'>‫02:00 שתיים<br>…‬</td><td class='target'>02:00<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-air' href='#transport-air'>transport-air</a></td><td class='source'>✈ –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>‫אווירון<br>…‬</td></tr>
+	<tr><td class='source'>🛸 –keywords</td><td class='target'>‫עב״מ<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🚃 -name</td><td class='target'>‫קרון‬</td><td class='target'>‫קרון רכבת‬</td></tr>
+	<tr><td class='source'>🚇 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>‫מטרו<br>…‬</td></tr>
+	<tr><td class='source'>🚕 –keywords</td><td class='target'>‫טקסי<br>…‬</td></tr>
+	<tr><td class='source'>🚙 –keywords</td><td class='target'>‫4 על 4<br>4*4<br>SUV<br>…‬</td></tr>
+	<tr><td class='source'>🛻 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫טנדר‬</td></tr>
+	<tr><td class='source'>🛻 –keywords</td><td class='target'>‫טנדר<br>כלי רכב<br>משאית קטנה<br>תחבורה‬</td></tr>
+	<tr><td class='source'>🚛 -name</td><td class='target'>‫משאית קטנה‬</td><td class='target'>‫משאית מפרקית‬</td></tr>
+	<tr><td class='source'>🚛 –keywords</td><td class='target'>‫משאית<br>קטנה<br>תחבורה‬</td><td class='target'>‫משאית מפרקית<br>משאית עפר<br>סמי‬</td></tr>
+	<tr><td class='source'>🚨 –keywords</td><td class='target'>‫…<br>קוג׳אק‬</td><td class='target'>‫…<br>קוז׳אק‬</td></tr>
+	<tr><td class='source'>🚧 -name</td><td class='target'>‫מחסום עבודות‬</td><td class='target'>‫מחסום עבודות בכביש‬</td></tr>
+	<tr><td class='source'>🚧 –keywords</td><td class='target' rowSpan='4'>…</td><td class='target'>‫כביש חסום<br>…<br>מחסום עבודות בכביש<br>…<br>עבודות בכביש‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>⚓ –keywords</td><td class='target'>‫אוניה<br>אונייה<br>…‬</td></tr>
+	<tr><td class='source'>⛵ –keywords</td><td class='target'>‫…<br>מפרשית<br>…‬</td></tr>
+	<tr><td class='source'>⛴ –keywords</td><td class='target'>‫…<br>נוסעים<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🪡 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫מחט‬</td></tr>
+	<tr><td class='source'>🪡 –keywords</td><td class='target'>‫לרקום<br>לתפור<br>מחט<br>רקמה<br>תפירה‬</td></tr>
+	<tr><td class='source'>🪢 -name</td><td class='target'>‫קשר‬</td></tr>
+	<tr><td class='source'>🪢 –keywords</td><td class='target'>‫חבל<br>לקשור<br>עניבה<br>קשירה<br>קשר‬</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='game' href='#game'>game</a></td><td class='source'>🔮 –keywords</td><td class='target'>‫חיזוי<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🪄 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>‫שרביט קסמים‬</td></tr>
+	<tr><td class='source'>🪄 –keywords</td><td class='target'>‫מכשף<br>מכשפה<br>קוסמים<br>קסם<br>קסמים<br>שרביט‬</td></tr>
+	<tr><td class='source'>🪅 -name</td><td class='target'>‫פיניאטה‬</td></tr>
+	<tr><td class='source'>🪅 –keywords</td><td class='target'>‫חגיגה<br>מסיבה<br>פיניאטה‬</td></tr>
+	<tr><td class='source'>🪆 -name</td><td class='target'>‫בבושקה‬</td></tr>
+	<tr><td class='source'>🪆 –keywords</td><td class='target'>‫בבושקה<br>בובה<br>בובות בבושקה<br>רוסית‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='sport' href='#sport'>sport</a></td><td class='source'>🥋 –keywords</td><td class='target'>‫…<br>חוג<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🛼 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>‫גלגיליות‬</td></tr>
+	<tr><td class='source'>🛼 –keywords</td><td class='target'>‫גלגיליות<br>החלקה<br>סקטים‬</td></tr>
+	<tr><td class='source' rowSpan='44'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='6'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>👝 -name</td><td class='target'>‫פאוץ׳‬</td><td class='target'>‫תיק ערב‬</td></tr>
+	<tr><td class='source'>👝 –keywords</td><td class='target'>‫ארנק<br>פאוץ׳‬</td><td class='target'>‫תיק ערב<br>תיק קלאץ׳‬</td></tr>
+	<tr><td class='source'>🩴 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫כפכפי אצבע‬</td></tr>
+	<tr><td class='source'>🩴 –keywords</td><td class='target'>‫כפכפי אצבע<br>כפכפים<br>נעלי אצבע‬</td></tr>
+	<tr><td class='source'>🪖 -name</td><td class='target'>‫קסדה צבאית‬</td></tr>
+	<tr><td class='source'>🪖 –keywords</td><td class='target'>‫חייל<br>חיילים<br>צבא<br>צה״ל<br>קסדה<br>קסדה צבאית‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🖥 –keywords</td><td class='target'>‫…<br>שולחן עבודה‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'>💽 -name</td><td class='target'>‫דיסק קשיח‬</td><td class='target'>‫דיסק‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='household' href='#household'>household</a></td><td class='source'>🛗 -name</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>‫מעלית‬</td></tr>
+	<tr><td class='source'>🛗 –keywords</td><td class='target'>‫בניין גבוה<br>לעלות<br>מעלית<br>נגישות‬</td></tr>
+	<tr><td class='source'>🪞 -name</td><td class='target'>‫מראה‬</td></tr>
+	<tr><td class='source'>🪞 –keywords</td><td class='target'>‫בבואה<br>השתקפות<br>מראה<br>ראי‬</td></tr>
+	<tr><td class='source'>🪟 -name</td><td class='target'>‫חלון‬</td></tr>
+	<tr><td class='source'>🪟 –keywords</td><td class='target'>‫חלון<br>מסגרת<br>פתח‬</td></tr>
+	<tr><td class='source'>🪠 -name</td><td class='target'>‫פומפה‬</td></tr>
+	<tr><td class='source'>🪠 –keywords</td><td class='target'>‫אינסטלטור<br>פומפה<br>פמפמת<br>פתיחת סתימות<br>שירותים<br>שרברב‬</td></tr>
+	<tr><td class='source'>🪤 -name</td><td class='target'>‫מלכודת עכברים‬</td></tr>
+	<tr><td class='source'>🪤 –keywords</td><td class='target'>‫להפיל בפח<br>מלכודת<br>מלכודת עכברים<br>פח‬</td></tr>
+	<tr><td class='source'>🪣 -name</td><td class='target'>‫דלי‬</td></tr>
+	<tr><td class='source'>🪣 –keywords</td><td class='target'>‫דלי<br>מיכל‬</td></tr>
+	<tr><td class='source'>🪥 -name</td><td class='target'>‫מברשת שיניים‬</td></tr>
+	<tr><td class='source'>🪥 –keywords</td><td class='target'>‫דנטלי<br>היגיינת הפה<br>לצחצח<br>מברשת<br>צחצוח<br>שיניים‬</td></tr>
+	<tr><td class='source'><a name='light & video' href='#light & video'>light & video</a></td><td class='source'>🏮 –keywords</td><td class='target'>‫…<br>יפני<br>…‬</td><td class='target'>…</td></tr>
+	<tr><td class='source'><a name='mail' href='#mail'>mail</a></td><td class='source'>📩 –keywords</td><td class='target'>‫…<br>דואר<br>…‬</td><td class='target'>‫…<br>דוא״ל<br>דואר אלקטרוני<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='money' href='#money'>money</a></td><td class='source'>🪙 -name</td><td class='target' rowSpan='22'>▷missing◁</td><td class='target'>‫מטבע‬</td></tr>
+	<tr><td class='source'>🪙 –keywords</td><td class='target'>‫אוצר<br>זהב<br>כסף<br>מטבע<br>מטבעות‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source'>🪗 -name</td><td class='target'>‫אקורדיון‬</td></tr>
+	<tr><td class='source'>🪗 –keywords</td><td class='target'>‫אקורדיאון<br>אקורדיון<br>קונצרטינה‬</td></tr>
+	<tr><td class='source'>🪘 -name</td><td class='target'>‫תוף גבוה‬</td></tr>
+	<tr><td class='source'>🪘 –keywords</td><td class='target'>‫קונגה<br>קצב<br>תוף<br>תוף גבוה<br>תופים<br>תיפוף‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪦 -name</td><td class='target'>‫מצבה‬</td></tr>
+	<tr><td class='source'>🪦 –keywords</td><td class='target'>‫בית קברות<br>מצבה<br>מציבה<br>קבר‬</td></tr>
+	<tr><td class='source'>🪧 -name</td><td class='target'>‫כרזה‬</td></tr>
+	<tr><td class='source'>🪧 –keywords</td><td class='target'>‫הפגנה<br>כרזה<br>פלקט<br>שלט‬</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='tool' href='#tool'>tool</a></td><td class='source'>🪚 -name</td><td class='target'>‫מסור‬</td></tr>
+	<tr><td class='source'>🪚 –keywords</td><td class='target'>‫כלי עבודה<br>מסור<br>מסור ידני<br>נגר<br>נגרייה<br>ניסור‬</td></tr>
+	<tr><td class='source'>🪃 -name</td><td class='target'>‫בומרנג‬</td></tr>
+	<tr><td class='source'>🪃 –keywords</td><td class='target'>‫אוסטרליה<br>בומרנג<br>חרב פיפיות<br>לחזור כבומרנג‬</td></tr>
+	<tr><td class='source'>🪛 -name</td><td class='target'>‫מברג‬</td></tr>
+	<tr><td class='source'>🪛 –keywords</td><td class='target'>‫הברגה<br>כלי עבודה<br>מברג‬</td></tr>
+	<tr><td class='source'>🪜 -name</td><td class='target'>‫סולם‬</td></tr>
+	<tr><td class='source'>🪜 –keywords</td><td class='target'>‫טיפוס<br>לטפס<br>סולם<br>עלייה‬</td></tr>
+	<tr><td class='source'>🪝 -name</td><td class='target'>‫קרס‬</td></tr>
+	<tr><td class='source'>🪝 –keywords</td><td class='target'>‫אנקול<br>וו<br>קרס‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='gender' href='#gender'>gender</a></td><td class='source'>⚧ -name</td><td class='target'>‫סמל לטרנסג׳נדר‬</td></tr>
+	<tr><td class='source'>⚧ –keywords</td><td class='target'>‫טרנסג׳נדר<br>סמל לטרנסג׳נדר‬</td></tr>
+	<tr><td class='source'><a name='warning' href='#warning'>warning</a></td><td class='source'>🚫 –keywords</td><td class='target'>…</td><td class='target'>‫אין כניסה<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Flags' href='#Flags'>Flags</a></td><td class='source' rowSpan='2'><a name='flag' href='#flag'>flag</a></td><td class='source'>🏳‍⚧ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>‫דגל טרנסג׳נדר‬</td></tr>
+	<tr><td class='source'>🏳‍⚧ –keywords</td><td class='target'>‫דגל<br>טרנסג׳נדר‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='2'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td><td class='source' rowSpan='2'><a name='Collation' href='#Collation'>Collation</a></td><td class='source'>search</td><td class='target'>‫[import und-u-co-search]<br>‎&amp;׳	# 05F3 HEBREW PUNCTUATION GERESH, ignorable<br>&lt;&lt;''	# APOSTROPHE, Hebrew-specific addition, should match GERESH<br>‎&amp;״	# 05F4 HEBREW PUNCTUATION GERSHAYIM, ignorable<br>&lt;&lt;'\&quot;'	# QUOTATION MARK, Hebrew-specific addition, should match GERSHAYIM‬</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>standard</td><td class='target'>‫[normalization on]<br>[reorder Hebr]<br>&amp;[before 2]''&lt;&lt;׳ # GERESH just before APOSTROPHE (secondary difference)<br>&amp;[before 2]'\&quot;'&lt;&lt;״ # GERSHAYIM just before QUOTATION MARK (secondary difference)‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td><td class='source' rowSpan='2'>end</td><td class='target' rowSpan='2'>‫{0}, או {1}‬</td><td class='target' rowSpan='2'>‫{0} או {1}‬</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

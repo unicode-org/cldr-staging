@@ -1,0 +1,983 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Arabic Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Arabic Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='10'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='10'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='10'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source' rowSpan='9'>Others: numbers</td><td class='source'>ar</td><td class='target'>[\u061C\u200E \- , ٫ ٬ . % ٪ ‰ ؉ + 0٠ 1١ 2٢ 3٣ 4٤ 5٥ 6٦ 7٧ 8٨ 9٩]</td><td class='target'>[\u061C\u200E \- ‑ , ٫ ٬ . % ٪ ‰ ؉ + 0٠ 1١ 2٢ 3٣ 4٤ 5٥ 6٦ 7٧ 8٨ 9٩]</td><td class='target' rowSpan='10'>core</td></tr>
+	<tr><td class='source'>ar_DZ</td><td class='target' rowSpan='5'>[\u200E \- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target' rowSpan='5'>[\u200E \- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td></tr>
+	<tr><td class='source'>ar_LB</td></tr>
+	<tr><td class='source'>ar_LY</td></tr>
+	<tr><td class='source'>ar_MA</td></tr>
+	<tr><td class='source'>ar_MR</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target' rowSpan='2'>[\u200E \- , . ٪ ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target' rowSpan='2'>[\u200E \- ‑ , . ٪ ‰ + 0 1 2 3 4 5 6 7 8 9]</td></tr>
+	<tr><td class='source'>ar_SO</td></tr>
+	<tr><td class='source'>ar_TN</td><td class='target'>[\u200E \- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td><td class='target'>[\u200E \- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</td></tr>
+	<tr><td class='source'>Others: punctuation</td><td class='source' rowSpan='22'>ar</td><td class='target'>‫[\- ‐ – — ، ؛ \: ! ؟ . … ' &quot; « » ( ) \[ \]]‬</td><td class='target'>‫[\- ‐ ‑ – — ، ؛ \: ! ؟ . … ' &quot; « » ( ) \[ \]]‬</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='4'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='A' href='#A'>A</a></td><td class='source'>Arabic ► ar_001</td><td class='target'>‫العربية الرسمية الحديثة‬</td><td class='target'>‫العربية الفصحى الحديثة‬</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>yue</td><td class='target'>‫الكَنْتُونية‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>Chakma ► ccp</td><td class='target'>ccp</td><td class='target'>‫تشاكما‬</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>zh</td><td class='target'>‫الصينية‬</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td><td class='source'><a name='Caribbean' href='#Caribbean'>Caribbean</a></td><td class='source'>BS</td><td class='target'>‫البهاما‬</td><td class='target'>‫جزر البهاما‬</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ-variant</td><td class='target'>SZ</td><td class='target'>‫سوازيلاند‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>‫إنجلترا‬</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='target'>‫إنجلترا‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>‫اسكتلندا‬</td></tr>
+	<tr><td class='target'>‫اسكتلندا‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>‫ويلز‬</td></tr>
+	<tr><td class='target'>‫ويلز‬</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'>MO</td><td class='target'>‫مكاو الصينية (منطقة إدارية خاصة)‬</td><td class='target'>‫منطقة ماكاو الإدارية الخاصة‬</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='colAlternate' href='#colAlternate'>colAlternate</a></td><td class='source'>colAlternate</td><td class='target'>‫التصنيف بحسب تجاهل الرموز‬</td><td class='target'>‫الفرز بحسب تجاهل الرموز‬</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source'><a name='colBackwards' href='#colBackwards'>colBackwards</a></td><td class='source'>colBackwards</td><td class='target'>‫التصنيف بحسب اللكنة المعكوسة‬</td><td class='target'>‫الفرز بحسب اللكنة المعكوسة‬</td></tr>
+	<tr><td class='source'><a name='colCaseLevel' href='#colCaseLevel'>colCaseLevel</a></td><td class='source'>colCaseLevel</td><td class='target'>‫التصنيف بحسب حساسية حالة الأحرف‬</td><td class='target'>‫الفرز بحسب حساسية حالة الأحرف‬</td></tr>
+	<tr><td class='source'><a name='colNormalization' href='#colNormalization'>colNormalization</a></td><td class='source'>colNormalization</td><td class='target'>‫التصنيف الموحد‬</td><td class='target'>‫الفرز الموحد‬</td></tr>
+	<tr><td class='source'><a name='colNumeric' href='#colNumeric'>colNumeric</a></td><td class='source'>colNumeric</td><td class='target'>‫التصنيف الرقمي‬</td><td class='target'>‫الفرز الرقمي‬</td></tr>
+	<tr><td class='source'><a name='colStrength' href='#colStrength'>colStrength</a></td><td class='source'>colStrength</td><td class='target'>‫قوة التصنيف‬</td><td class='target'>‫قوة الفرز‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Northern/Western Europe' href='#Northern/Western Europe'>Northern/Western Europe</a></td><td class='source'><a name='Northern Europe: United Kingdom' href='#Northern Europe: United Kingdom'>Northern Europe: United Kingdom</a></td><td class='source'>GBP-symbol</td><td class='target'>£</td><td class='target'>UK£</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Liberia' href='#Western Africa: Liberia'>Western Africa: Liberia</a></td><td class='source'>LRD-symbol-narrow</td><td class='target'>$</td><td class='target'>$LR</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='695'><a name='Units' href='#Units'>Units</a></td><td class='source'><a name='Measurement Systems' href='#Measurement Systems'>Measurement Systems</a></td><td class='source'><a name='null' href='#null'>null</a></td><td class='source'>US</td><td class='source'>ar_SA</td><td class='target'>‫النظام الأمريكي‬</td><td class='target'>‫الولايت المتحدة‬</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='38'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='14'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-displayName</td><td class='source' rowSpan='14'>ar</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>‫عقود‬</td><td class='target' rowSpan='694'>moderate</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>‫عقد‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫عقدان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} عقود‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} عقدًا‬</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫عقد‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>‫عقد‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫عقدان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} عقود‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} عقدًا‬</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='year' href='#year'>year</a></td><td class='source'>short-displayName</td><td class='source' rowSpan='2'>ar_SA</td><td class='target'>‫سنة‬</td><td class='target'>‫سنوات‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>‫سنة واحدة‬</td><td class='target'>‫سنة‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target' rowSpan='5'>‫{0} سنة‬</td><td class='target' rowSpan='2'>‫{0} سنوات‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target'>‫سنة‬</td></tr>
+	<tr><td class='source'>narrow-two</td><td class='target'>‫سنتان‬</td></tr>
+	<tr><td class='source'>narrow-few</td><td class='target'>‫{0} سنوات‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='month' href='#month'>month</a></td><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td><td class='target' rowSpan='12'>‫{0} شهر‬</td><td class='target' rowSpan='2'>‫شهران‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} أشهر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} شهرًا‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-one</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫شهر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-two</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫شهران‬</td></tr>
+	<tr><td class='source' rowSpan='3'>ar_SA</td></tr>
+	<tr><td class='source'>narrow-few</td><td class='target'>‫{0} أشهر‬</td></tr>
+	<tr><td class='source'>narrow-many</td><td class='target'>‫{0} شهرًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='day' href='#day'>day</a></td><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target' rowSpan='4'>‫{0} يوم‬</td><td class='target' rowSpan='2'>‫{0} أيام‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} يومًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'>ar_SA</td></tr>
+	<tr><td class='source'><a name='second' href='#second'>second</a></td><td class='source'>long-few</td><td class='target'>‫{0} ثوان‬</td><td class='target'>‫{0} ثوانٍ‬</td></tr>
+	<tr><td class='source' rowSpan='98'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='14'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='source' rowSpan='98'>ar</td><td class='target' rowSpan='98'>▷missing◁</td><td class='target'>‫نقطة لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='2'>‫{0} نقطة لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫نقطتان لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} نقاط لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target' rowSpan='2'>‫{0} نقطة لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫نقطة لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='2'>‫{0} نقطة/سم‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫نقطتان/سم‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} نقاط/سم‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target' rowSpan='2'>‫{0} نقطة/سم‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫نقطة لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='2'>‫{0} نقطة لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫نقطتان لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} نقاط لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target' rowSpan='2'>‫{0} نقطة لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫نقطة لكل بوصة‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='2'>‫{0} نقطة/بوصة‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫نقطتان/بوصة‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} نقاط/بوصة‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target' rowSpan='2'>‫{0} نقطة/بوصة‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='em' href='#em'>em</a></td><td class='source'>long-displayName</td><td class='target'>‫إم مطبعي‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} إم‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫إم‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} إم‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-displayName</td><td class='target'>‫ميغابكسل‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} ميغابكسل‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫م.بكسل‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} م.بكسل‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>‫بكسل‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} بكسل‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بكسل‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} بكسل‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>‫بكسل لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} بكسل لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بكسل لكل سنتيمتر‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} بكسل/سم‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>‫بكسل لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} بكسل لكل بوصة‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بكسل لكل بوصة‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} بكسل/بوصة‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='71'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='3'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source'>long-two</td><td class='source' rowSpan='10'>ar_SA</td><td class='target' rowSpan='3'>‫{0} كيلومتر‬</td><td class='target'>‫كيلومتران‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كيلومترات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كيلومترًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} سنتيمتر‬</td><td class='target'>‫سنتيمتران‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} سنتيمترات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} سنتيمترًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millimeter' href='#millimeter'>millimeter</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} مليمتر‬</td><td class='target'>‫مليمتران‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مليمترًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile' href='#mile'>mile</a></td><td class='source'>short-two</td><td class='target' rowSpan='2'>‫{0} ميل‬</td><td class='target'>‫ميلان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='yard' href='#yard'>yard</a></td><td class='source'>long-zero</td><td class='source'>ar</td><td class='target'>‫ياردة‬</td><td class='target'>‫{0} ياردة‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='source' rowSpan='34'>ar_SA</td><td class='target' rowSpan='4'>‫{0} ياردة‬</td><td class='target'>‫ياردتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ياردات‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫ياردتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} ياردات‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='foot' href='#foot'>foot</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} قدم‬</td><td class='target'>‫قدمان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أقدام‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} قدمًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫قدمان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أقدام‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} قدمًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='inch' href='#inch'>inch</a></td><td class='source'>long-two</td><td class='target' rowSpan='4'>‫{0} بوصة‬</td><td class='target'>‫بوصتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} بوصات‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫بوصتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} بوصات‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='parsec' href='#parsec'>parsec</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} فرسخ فلكي‬</td><td class='target'>‫فرسخان فلكيان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} فراسخ فلكية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} فرسخًا فلكيًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫فرسخان فلكيان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} فراسخ فلكية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} فرسخًا فلكيًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} وحدة فلكية‬</td><td class='target'>‫وحدتان فلكيتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} وحدات فلكية‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} ميل بحري‬</td><td class='target'>‫ميلان بحريان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أميال بحرية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميلًا بحريًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫ميلان بحريان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال بحرية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} ميلًا بحريًا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} ميل اسكندنافي‬</td><td class='target'>‫ميلان اسكندنافيان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أميال اسكندنافية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميلًا اسكندنافيًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫ميلان اسكندنافيان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال اسكندنافية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} ميلًا اسكندنافيًا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='point' href='#point'>point</a></td><td class='source'>short-zero</td><td class='source' rowSpan='15'>ar</td><td class='target' rowSpan='6'>‫{0} ن‬</td><td class='target'>‫{0} نقطة‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>‫نقطة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫نقطتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} نقاط‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target' rowSpan='2'>‫{0} نقطة‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>long-displayName</td><td class='target'>‫نصف قطر الشمس‬</td><td class='target'>‫نصف قطر شمسي‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} نصف قطر الشمس‬</td><td class='target' rowSpan='6'>‫{0} نصف قطر شمسي‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>R☉</td><td class='target'>‫نق شمسي‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='target' rowSpan='12'>{0} R☉</td><td class='target' rowSpan='12'>‫{0} نق شمسي‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source' rowSpan='76'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='30'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='3'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} كيلومتر مربع‬</td><td class='target'>‫كيلومتران مربعان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كيلومترات مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كيلومترًا مربعًا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} هكتار‬</td><td class='target'>‫هكتاران‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} هكتارات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} هكتارًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫هكتاران‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} هكتارات‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} هكتارًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} متر مربع‬</td><td class='target'>‫متران مربعان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أمتار مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مترًا مربعًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} سنتيمتر مربع‬</td><td class='target'>‫سنتيمتران مربعان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} سنتيمترات مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} سنتيمترًا مربعًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} ميل مربع‬</td><td class='target'>‫ميلان مربعان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أميال مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميلًا مربعًا‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='acre' href='#acre'>acre</a></td><td class='source'>long-few</td><td class='target' rowSpan='5'>‫{0} فدان‬</td><td class='target'>‫{0} أفدنة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} فدانًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫فدانان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أفدنة‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} فدانًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='square-yard' href='#square-yard'>square-yard</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} ياردة مربعة‬</td><td class='target'>‫ياردتان مربعتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ياردات مربعة‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='square-foot' href='#square-foot'>square-foot</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} قدم مربعة‬</td><td class='target'>‫قدمان مربعتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أقدام مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} قدمًا مربعة‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='square-inch' href='#square-inch'>square-inch</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} بوصة مربعة‬</td><td class='target'>‫بوصتان مربعتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} بوصات مربعة‬</td></tr>
+	<tr><td class='source' rowSpan='77'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='3'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} كيلومتر مكعب‬</td><td class='target'>‫كيلومتران مكعبان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كيلومترات مكعبة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كيلومترًا مكعبًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} متر مكعب‬</td><td class='target'>‫متران مكعبان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} مترات مكعبة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مترًا مكعبًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} سنتيمتر مكعب‬</td><td class='target'>‫سنتيمتران مكعبان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} سنتيمترات مكعبة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} سنتيمترًا مكعبًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} ميل مكعب‬</td><td class='target'>‫ميلان مكعبان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أميال مكعبة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميلًا مكعبًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} ياردة مكعبة‬</td><td class='target'>‫ياردتان مكعبتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ياردات مكعبة‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} قدم مكعبة‬</td><td class='target'>‫قدمان مكعبتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>‫{0} أقدام مكعبة‬</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='cubic-inch' href='#cubic-inch'>cubic-inch</a></td><td class='source'>long-two</td><td class='target' rowSpan='7'>‫{0} بوصة مكعبة‬</td><td class='target'>‫بوصتان مكعبات‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} بوصات مكعبة‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='5'>‫{0} بوصة³‬</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} لتر‬</td><td class='target'>‫لتران‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} لترات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} لترًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫لتران‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} لترات‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} لترًا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} مكيال متري‬</td><td class='target'>‫مكيالان متريان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} مكاييل مترية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مكيالًا متريًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫مكيالان متريان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} مكاييل مترية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} مكيالًا متريًا‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>long-two</td><td class='target' rowSpan='6'>‫{0} كوب متري‬</td><td class='target'>‫كوبان متريان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أكواب مترية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كوبًا متريًا‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫كوبان متريان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أكواب مترية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} كوبًا متريًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cup' href='#cup'>cup</a></td><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} كوب‬</td><td class='target'>‫كوبان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أكواب‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} كوبًا‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='source'>short-displayName</td><td class='source' rowSpan='2'>ar</td><td class='target'>‫أونصة س‬</td><td class='target'>‫أونصة سائلة‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='4'>‫{0} أونصة س‬</td><td class='target'>‫{0} أونصة سائلة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='source'>ar_SA</td><td class='target'>‫أونصتان سائلتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='source' rowSpan='10'>ar</td><td class='target'>‫{0} أونصات سائلة‬</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>‫{0} أونصة سائلة‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>‫أونصة سائلة إمبراطورية‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>{0} fl oz Imp.</td><td class='target' rowSpan='2'>‫{0} أونصة سائلة إمبراطورية‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫أونصتان سائلتان إمبراطوريتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أونصات سائلة إمبراطورية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target' rowSpan='2'>‫{0} أونصة سائلة إمبراطورية‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>‫أونصة سائلة إمبراطورية‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='source'>long-two</td><td class='source' rowSpan='8'>ar_SA</td><td class='target' rowSpan='2'>‫{0} ملعقة كبيرة‬</td><td class='target'>‫ملعقتان كبيرتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ملاعق كبيرة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='2'>‫{0} ملعقة ك.‬</td><td class='target'>‫{0} ملعقتان ك.‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} ملاعق ك.‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='source'>long-two</td><td class='target' rowSpan='2'>‫{0} ملعقة صغيرة‬</td><td class='target'>‫ملعقتان صغيرتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ملاعق صغيرة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='2'>‫{0} ملعقة ص‬</td><td class='target'>‫{0} ملعقتان ص‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} ملاعق ص‬</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='barrel' href='#barrel'>barrel</a></td><td class='source'>long-one</td><td class='source' rowSpan='11'>ar</td><td class='target' rowSpan='4'>‫{0} برميل‬</td><td class='target'>‫برميل‬</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫برميلان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} براميل‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} برميلًا‬</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bbl</td><td class='target'>‫برميل‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>{0} bbl</td><td class='target'>‫{0} برميل‬</td></tr>
+	<tr><td class='source'>short-one</td><td class='target'>‫برميل‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫برميلان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} براميل‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} برميلًا‬</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>‫{0} برميل‬</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='3'><a name='meter-per-second-squared' href='#meter-per-second-squared'>meter-per-second-squared</a></td><td class='source'>long-two</td><td class='source' rowSpan='48'>ar_SA</td><td class='target' rowSpan='3'>‫{0} متر في الثانية المربعة‬</td><td class='target'>‫متران في الثانية المربعة‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أمتار في الثانية المربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مترًا في الثانية المربعة‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} كيلومتر في الساعة‬</td><td class='target'>‫كيلومتران في الساعة‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كيلومترات في الساعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كيلومترًا في الساعة‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} متر في الثانية‬</td><td class='target'>‫متران في الثانية‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أمتار في الثانية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مترًا في الثانية‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='mile-per-hour' href='#mile-per-hour'>mile-per-hour</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} ميل في الساعة‬</td><td class='target'>‫ميلان في الساعة‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أميال في الساعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميلًا في الساعة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} ميل/س‬</td><td class='target'>‫ميلان/س‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال/س‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} ميلًا/س‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='knot' href='#knot'>knot</a></td><td class='source'>long-two</td><td class='target' rowSpan='4'>‫{0} عقدة‬</td><td class='target'>‫عقدتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫عقدتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} عقد‬</td></tr>
+	<tr><td class='source' rowSpan='96'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='3'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} طن متري‬</td><td class='target'>‫طنان متريان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أطنان مترية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} طنًا متريًا‬</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} كيلوغرام‬</td><td class='target'>‫كيلوغرامان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كيلوغرامات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} كيلوغرامًا‬</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>‫كغ‬</td><td class='target'>‫كغم‬</td></tr>
+	<tr><td class='source'>narrow-zero</td><td class='target' rowSpan='6'>‫{0} كغ‬</td><td class='target' rowSpan='6'>‫{0} كغم‬</td></tr>
+	<tr><td class='source'>narrow-one</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='gram' href='#gram'>gram</a></td><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} غرام‬</td><td class='target'>‫غرامان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} غرامات‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} غرامًا‬</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>‫غ‬</td><td class='target'>‫غم‬</td></tr>
+	<tr><td class='source'>narrow-zero</td><td class='target' rowSpan='6'>‫{0} غ‬</td><td class='target' rowSpan='6'>‫{0} غم‬</td></tr>
+	<tr><td class='source'>narrow-one</td></tr>
+	<tr><td class='source'>narrow-two</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='milligram' href='#milligram'>milligram</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} مليغرام‬</td><td class='target'>‫مليغرامان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} مليغرامات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} مليغرامًا‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} ميكروغرام‬</td><td class='target'>‫ميكروغرامان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ميكروغرامات‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ميكروغرامًا‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='ton' href='#ton'>ton</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='9'>‫{0} طن‬</td><td class='target' rowSpan='2'>‫طنان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} أطنان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} طنًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫طنان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أطنان‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} طنًا‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pound' href='#pound'>pound</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='9'>‫{0} رطل‬</td><td class='target' rowSpan='2'>‫رطلان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target'>‫{0} أرطل‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} أرطال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} رطلًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫رطلان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أرطال‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} رطلُا‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='carat' href='#carat'>carat</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='9'>‫{0} قيراط‬</td><td class='target' rowSpan='2'>‫قيراطان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} قراريط‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} قيراطًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫قيراطان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} قراريط‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} قيراطًا‬</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='dalton' href='#dalton'>dalton</a></td><td class='source'>long-zero</td><td class='source' rowSpan='15'>ar</td><td class='target' rowSpan='4'>{0} Da</td><td class='target' rowSpan='4'>‫{0} دالتون‬</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Da</td><td class='target'>‫دالتون‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>{0} Da</td><td class='target' rowSpan='6'>‫{0} دالتون‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='source'>long-displayName</td><td class='target'>‫كتلة الأرض‬</td><td class='target'>‫كتلة أرضية‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='8'>‫{0} كتلة الأرض‬</td><td class='target' rowSpan='3'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source' rowSpan='2'>long-two</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫كتلتان أرضيتان‬</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كتل أرضية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='source' rowSpan='6'>ar</td><td class='target' rowSpan='2'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>M⊕</td><td class='target'>‫كتلة أرضية‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='8'>{0} M⊕</td><td class='target' rowSpan='3'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫كتلتان أرضيتان‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كتل أرضية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='source' rowSpan='2'>ar</td><td class='target' rowSpan='2'>‫{0} كتلة أرضية‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source'>long-two</td><td class='source' rowSpan='2'>ar_SA</td><td class='target' rowSpan='2'>‫{0} كتلة شمسية‬</td><td class='target'>‫كتلتان شمسيتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} كتل شمسية‬</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='source' rowSpan='4'>ar</td><td class='target'>M☉</td><td class='target'>‫كتلة شمسية‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='8'>{0} M☉</td><td class='target' rowSpan='3'>‫{0} كتلة شمسية‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫كتلتان شمسيتان‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target'>‫{0} كتلة شمسية‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كتل شمسية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='source' rowSpan='3'>ar</td><td class='target' rowSpan='2'>‫{0} كتلة شمسية‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='43'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='12'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='source' rowSpan='2'>short-zero</td><td class='target' rowSpan='12'>{0} eV</td><td class='target' rowSpan='12'>‫{0} إلكترون فولت‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='4'>‫{0} وحدة حرارية بريطانية‬</td><td class='target' rowSpan='2'>‫وحدتان حراريتان بريطانيتان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} وحدات حرارية بريطانية‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-displayName</td><td class='source'>ar</td><td class='target' rowSpan='2'>Btu</td><td class='target' rowSpan='2'>‫وحدة حرارية بريطانية‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} Btu</td><td class='target' rowSpan='6'>‫{0} وحدة حرارية بريطانية‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} وحدات حرارية بريطانية‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target' rowSpan='4'>‫{0} وحدة حرارية بريطانية‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>long-displayName</td><td class='source' rowSpan='13'>ar</td><td class='target' rowSpan='13'>▷missing◁</td><td class='target'>‫وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='2'>‫{0} وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td><td class='target'>‫وحدتان حراريتان أمريكيتان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} وحدات حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target' rowSpan='2'>‫{0} وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='2'>‫{0} وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} وحدات حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target' rowSpan='2'>‫{0} وحدة حرارية أمريكية‬</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='69'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='6'><a name='pound-per-square-inch' href='#pound-per-square-inch'>pound-per-square-inch</a></td><td class='source'>long-two</td><td class='source' rowSpan='6'>ar_SA</td><td class='target' rowSpan='3'>‫{0} رطل لكل بوصة مربعة‬</td><td class='target'>‫رطلان لكل بوصة مربعة‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} أرطال لكل بوصة مربعة‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} رطلًا لكل بوصة مربعة‬</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} رطل/بوصة²‬</td><td class='target'>‫رطلان/بوصة²‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أرطال/بوصة²‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} رطلًا/بوصة²‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-displayName</td><td class='source' rowSpan='29'>ar</td><td class='target' rowSpan='28'>▷missing◁</td><td class='target'>‫بار‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} بار‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بار‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} بار‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target'>‫باسكال‬</td></tr>
+	<tr><td class='source'>long-zero</td><td class='target' rowSpan='6'>‫{0} باسكال‬</td></tr>
+	<tr><td class='source'>long-one</td></tr>
+	<tr><td class='source'>long-two</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫باسكال‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} باسكال‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source' rowSpan='2'>short-displayName</td><td class='target' rowSpan='2'>kPa</td><td class='target'>‫ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} kPa</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td><td class='target'>‫{0} ك.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} كيلوباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='source' rowSpan='2'>short-displayName</td><td class='source'>ar</td><td class='target' rowSpan='2'>MPa</td><td class='target'>‫م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} MPa</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td><td class='target'>‫{0} م.باسكال‬</td></tr>
+	<tr><td class='source' rowSpan='12'>ar_SA</td><td class='target'>‫{0} ميغاباسكال‬</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>short-displayName</td><td class='target'>‫د كلفن‬</td><td class='target'>‫درجة كلفن‬</td></tr>
+	<tr><td class='source'>short-zero</td><td class='target' rowSpan='6'>‫{0} د كلفن‬</td><td class='target' rowSpan='6'>‫{0} درجة كلفن‬</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Coordinates' href='#Coordinates'>Coordinates</a></td><td class='source' rowSpan='2'><a name='south' href='#south'>south</a></td><td class='source'>short</td><td class='target' rowSpan='2'>‫{0} ج‬</td><td class='target' rowSpan='2'>‫{0} جنوب‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='west' href='#west'>west</a></td><td class='source'>short</td><td class='target' rowSpan='2'>‫{0} غ‬</td><td class='target' rowSpan='2'>‫{0} غرب‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source' rowSpan='148'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='6'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} دورة‬</td><td class='target' rowSpan='2'>‫دورتان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} دورات‬</td></tr>
+	<tr><td class='source' rowSpan='3'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫دورتان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} دورات‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source' rowSpan='3'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} دقيقة قوسية‬</td><td class='target' rowSpan='2'>‫دقيقتان قوسيتان‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='karat' href='#karat'>karat</a></td><td class='source' rowSpan='2'>ar</td><td class='target' rowSpan='8'>‫{0} قيراط‬</td><td class='target'>‫قيراطان‬</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='target' rowSpan='2'>‫{0} قراريط‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} قيراطًا‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target'>‫قيراطان‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} قراريط‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} قيراطًا‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='part-per-million' href='#part-per-million'>part-per-million</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} جزء في المليون‬</td><td class='target'>‫جزآن في المليون‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫جزءان في المليون‬</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} أجزاء في المليون‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} جزءًا في المليون‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} جزء/مليون‬</td><td class='target'>‫جزءان/مليون‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أجزاء/مليون‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} جزءًا/مليون‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='permille' href='#permille'>permille</a></td><td class='source'>short-zero</td><td class='source' rowSpan='7'>ar</td><td class='target' rowSpan='6'>{0}‰</td><td class='target' rowSpan='6'>{0}؉</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-two</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='mole' href='#mole'>mole</a></td><td class='source' rowSpan='2'>short-zero</td><td class='target' rowSpan='12'>{0} mol</td><td class='target' rowSpan='12'>‫{0} مول‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} لتر لكل كيلومتر‬</td><td class='target' rowSpan='2'>‫لتران لكل كيلومتر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} لترات لكل كيلومتر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} لترًا لكل كيلومتر‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} لتر/كم‬</td><td class='target'>‫لتران/كم‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} لترات/كم‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} لترًا/كم‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='liter-per-100kilometers' href='#liter-per-100kilometers'>liter-per-100kilometers</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} لتر لكل ١٠٠ كيلومتر‬</td><td class='target' rowSpan='2'>‫لتران لكل ١٠٠ كيلومتر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} لترات لكل ١٠٠ كيلومتر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} لترًا لكل ١٠٠ كيلومتر‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} لتر/١٠٠ كم‬</td><td class='target'>‫لتران/١٠٠ كم‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} لترات/١٠٠ كم‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} لترًا/١٠٠ كم‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} ميل لكل غالون‬</td><td class='target'>‫ميلان لكل غالون‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ميلان لكل غالون‬</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} أميال لكل غالون‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} ميلًا لكل غالون‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} ميل/غالون‬</td><td class='target'>‫ميلان/غالون‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال/غالون‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} ميلًا/غالون‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source' rowSpan='2'>long-two</td><td class='source'>ar</td><td class='target' rowSpan='6'>‫{0} ميل لكل غالون إمبراطوري‬</td><td class='target' rowSpan='2'>‫ميلان لكل غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-few</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} أميال لكل غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>long-many</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} ميلًا لكل غالون إمبراطوري‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>short-two</td><td class='target' rowSpan='3'>‫{0} ميل/غ. إمبراطوري‬</td><td class='target'>‫ميلان/غ. إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-few</td><td class='target'>‫{0} أميال/غ. إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-many</td><td class='target'>‫{0} ميلًا/غ. إمبراطوري‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} lbf</td><td class='target' rowSpan='12'>‫{0} باوند قوة‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='newton' href='#newton'>newton</a></td><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} N</td><td class='target' rowSpan='12'>‫{0} نيوتن‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source' rowSpan='2'>long-zero</td><td class='source'>ar</td><td class='target' rowSpan='2'>{0} L☉</td><td class='target' rowSpan='2'>‫{0} ضياء شمسي‬</td></tr>
+	<tr><td class='source' rowSpan='4'>ar_SA</td></tr>
+	<tr><td class='source'>long-two</td><td class='target' rowSpan='3'>‫{0} ضياء شمسي‬</td><td class='target'>‫ضياءان شمسيان‬</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>‫{0} ضياءات شمسية‬</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>‫{0} ضياءً شمسيًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} L☉</td><td class='target' rowSpan='5'>‫{0} ضياء شمسي‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫ضياءان شمسيان‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td><td class='target'>‫{0} ضياء شمسي‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ضياءات شمسية‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td><td class='target'>‫{0} ضياء شمسي‬</td></tr>
+	<tr><td class='source'>ar_SA</td><td class='target'>‫{0} ضياءً شمسيًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td><td class='target' rowSpan='2'>‫{0} ضياء شمسي‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pound-foot' href='#pound-foot'>pound-foot</a></td><td class='source' rowSpan='2'>short-displayName</td><td class='source'>ar</td><td class='target' rowSpan='2'>lbf⋅ft</td><td class='target' rowSpan='2'>‫باوند قدم‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} lbf⋅ft</td><td class='target' rowSpan='12'>‫{0} باوند قدم‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source' rowSpan='2'>short-displayName</td><td class='source'>ar</td><td class='target' rowSpan='2'>N⋅m</td><td class='target' rowSpan='2'>‫نيوتن متر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-zero</td><td class='source'>ar</td><td class='target' rowSpan='12'>{0} N⋅m</td><td class='target' rowSpan='12'>‫{0} نيوتن متر‬</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-one</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-few</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-many</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source' rowSpan='2'>short-other</td><td class='source'>ar</td></tr>
+	<tr><td class='source'>ar_SA</td></tr>
+	<tr><td class='source'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source'><a name='times' href='#times'>times</a></td><td class='source'>short</td><td class='source' rowSpan='173'>ar</td><td class='target' rowSpan='7'>▷missing◁</td><td class='target'>{0}⋅{1}</td></tr>
+	<tr><td class='source' rowSpan='156'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='8'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>🥲 -name</td><td class='target'>‫وجه مبتسم مع دمعة‬</td><td class='target' rowSpan='156'>modern</td></tr>
+	<tr><td class='source'>🥲 –keywords</td><td class='target'>‫امتنان<br>دمع<br>فخور<br>مبتسم<br>متأثر<br>مرتاح<br>وجه مبتسم مع دمعة‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-hat' href='#face-hat'>face-hat</a></td><td class='source'>🥷 -name</td><td class='target'>‫نينجا‬</td></tr>
+	<tr><td class='source'>🥷 –keywords</td><td class='target'>‫خفي<br>متخفي<br>محارب<br>نينجا‬</td></tr>
+	<tr><td class='source'>🥸 -name</td><td class='target'>‫وجع مقنّع‬</td></tr>
+	<tr><td class='source'>🥸 –keywords</td><td class='target'>‫أنف<br>قناع<br>متخفي<br>نظارات<br>وجع مقنّع<br>وجه‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>🤒 -name</td><td class='target'>‫وجه بترمومتر‬</td><td class='target'>‫وجه مع ميزان للحرارة‬</td></tr>
+	<tr><td class='source'>🤒 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>وجه مع ميزان للحرارة‬</td></tr>
+	<tr><td class='source' rowSpan='46'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='4'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫀 -name</td><td class='target' rowSpan='52'>▷missing◁</td><td class='target'>‫عضو القلب‬</td></tr>
+	<tr><td class='source'>🫀 –keywords</td><td class='target'>‫دقات القلب<br>طب القلب<br>عضو<br>عضو القلب<br>نبض<br>وسط‬</td></tr>
+	<tr><td class='source'>🫁 -name</td><td class='target'>‫رئتان‬</td></tr>
+	<tr><td class='source'>🫁 –keywords</td><td class='target'>‫تنفّس<br>جهاز التنفس<br>رئتان<br>زفير<br>شهيق<br>عضو‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🤌 -name</td><td class='target'>‫أصابع مضمومة‬</td></tr>
+	<tr><td class='source'>🤌 –keywords</td><td class='target'>‫أصابع<br>أصابع مضمومة<br>إيماءة باليد<br>تهكّم<br>ضم‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source'>🧑‍🦯 -name</td><td class='target'>‫شخص مع عصا سير‬</td></tr>
+	<tr><td class='source'>🧑‍🦯 –keywords</td><td class='target'>‫أعمى<br>احتياجات خاصة<br>شخص مع عصا سير<br>ضرير<br>كفيف‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 -name</td><td class='target'>‫شخص على كرسي متحرك كهربائي‬</td></tr>
+	<tr><td class='source'>🧑‍🦼 –keywords</td><td class='target'>‫احتياجات خاصة<br>شخص على كرسي متحرك كهربائي<br>كرسي متحرك‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 -name</td><td class='target'>‫شخص على كرسي متحرك يدوي‬</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='target'>‫احتياجات خاصة<br>شخص على كرسي متحرك يدوي<br>كرسي متحرك‬</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍⚕ -name</td><td class='target'>‫موظف بقطاع الصحة‬</td></tr>
+	<tr><td class='source'>🧑‍⚕ –keywords</td><td class='target'>‫رعاية صحية<br>طبيب<br>معالج<br>ممرض<br>موظف بقطاع الصحة‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 -name</td><td class='target'>‫طالِب‬</td></tr>
+	<tr><td class='source'>🧑‍🎓 –keywords</td><td class='target'>‫خريج<br>طالب<br>طالِب‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 -name</td><td class='target'>‫أستاذ‬</td></tr>
+	<tr><td class='source'>🧑‍🏫 –keywords</td><td class='target'>‫أستاذ<br>مدرس<br>معلم‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ -name</td><td class='target'>‫قاضي‬</td></tr>
+	<tr><td class='source'>🧑‍⚖ –keywords</td><td class='target'>‫عدالة<br>عدل<br>قاضي‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 -name</td><td class='target'>‫مُزارع‬</td></tr>
+	<tr><td class='source'>🧑‍🌾 –keywords</td><td class='target'>‫عامل زراعي<br>فلاح<br>مزارع<br>مُزارع<br>منسق حدائق‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 -name</td><td class='target'>‫طاهي‬</td></tr>
+	<tr><td class='source'>🧑‍🍳 –keywords</td><td class='target'>‫شيف<br>طاه<br>طاهي<br>طباخ‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 -name</td><td class='target'>‫خبير ميكانيكي‬</td></tr>
+	<tr><td class='source'>🧑‍🔧 –keywords</td><td class='target'>‫تاجر<br>حرفي<br>خبير ميكانيكي<br>سباك<br>كهربائي<br>ميكانيكي‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 -name</td><td class='target'>‫عامل في مصنع‬</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>‫تجميع<br>صناعة<br>عامل<br>عامل في مصنع<br>مصنع‬</td></tr>
+	<tr><td class='source'>🧑‍💼 -name</td><td class='target'>‫موظف مكتب‬</td></tr>
+	<tr><td class='source'>🧑‍💼 –keywords</td><td class='target'>‫شركة<br>مدير<br>مهندس<br>موظف<br>موظف مكتب‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 -name</td><td class='target'>‫عالِم‬</td></tr>
+	<tr><td class='source'>🧑‍🔬 –keywords</td><td class='target'>‫بيولوجي<br>عالم<br>عالِم<br>فيزيائي<br>كيميائي<br>مهندس‬</td></tr>
+	<tr><td class='source'>🧑‍💻 -name</td><td class='target'>‫خبير تكنولوجيا‬</td></tr>
+	<tr><td class='source'>🧑‍💻 –keywords</td><td class='target'>‫تقني<br>خبير تكنولوجيا<br>عالم تكنولوجيا<br>مبرمج<br>مصمم أكواد‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 -name</td><td class='target'>‫مغنّي‬</td></tr>
+	<tr><td class='source'>🧑‍🎤 –keywords</td><td class='target'>‫استعراضي<br>فنان<br>مطرب<br>مغني<br>مغنّي<br>نجم‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 -name</td><td class='target'>‫فنان رسم‬</td></tr>
+	<tr><td class='source'>🧑‍🎨 –keywords</td><td class='target'>‫رسام<br>فنان<br>فنان رسم‬</td></tr>
+	<tr><td class='source'>🧑‍✈ -name</td><td class='target'>‫ربان طائرة‬</td></tr>
+	<tr><td class='source'>🧑‍✈ –keywords</td><td class='target'>‫ربان<br>طائرة<br>طيار‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 -name</td><td class='target'>‫رائد الفضاء‬</td></tr>
+	<tr><td class='source'>🧑‍🚀 –keywords</td><td class='target'>‫رائد الفضاء<br>رائد فضاء<br>صاروخ‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 -name</td><td class='target'>‫إطفائي‬</td></tr>
+	<tr><td class='source'>🧑‍🚒 –keywords</td><td class='target'>‫إطفائي<br>عربة إطفاء‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>🫂 -name</td><td class='target'>‫شخصان يتعانقان‬</td></tr>
+	<tr><td class='source'>🫂 –keywords</td><td class='target'>‫ترحيب<br>توديع<br>شخصان يتعانقان<br>شكر<br>عناق‬</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='4'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🪶 -name</td><td class='target'>‫ريشة‬</td></tr>
+	<tr><td class='source'>🪶 –keywords</td><td class='target'>‫تحليق<br>خفيف<br>ريشة<br>طائر‬</td></tr>
+	<tr><td class='source'>🦤 -name</td><td class='target'>‫طائر الدودو‬</td></tr>
+	<tr><td class='source'>🦤 –keywords</td><td class='target'>‫حيوان منقرض<br>ضخم<br>طائر<br>طائر الدودو<br>منقرض<br>موريشيوس‬</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🪲 -name</td><td class='target'>‫خنفساء‬</td></tr>
+	<tr><td class='source'>🪲 –keywords</td><td class='target'>‫حشرة<br>خنفساء‬</td></tr>
+	<tr><td class='source'>🐞 -name</td><td class='target'>‫خنفساء‬</td><td class='target'>‫دعسوقة‬</td></tr>
+	<tr><td class='source'>🐞 –keywords</td><td class='target'>…</td><td class='target'>‫…<br>دعسوقة‬</td></tr>
+	<tr><td class='source'>🪳 -name</td><td class='target' rowSpan='96'>▷missing◁</td><td class='target'>‫صرصور‬</td></tr>
+	<tr><td class='source'>🪳 –keywords</td><td class='target'>‫جدجد<br>حشرة<br>صرصور‬</td></tr>
+	<tr><td class='source'>🪰 -name</td><td class='target'>‫ذبابة‬</td></tr>
+	<tr><td class='source'>🪰 –keywords</td><td class='target'>‫حشرة<br>ذبابة<br>عفن<br>مرض<br>نفايات<br>يرقة‬</td></tr>
+	<tr><td class='source'>🪱 -name</td><td class='target'>‫دودة‬</td></tr>
+	<tr><td class='source'>🪱 –keywords</td><td class='target'>‫بريمة<br>دودة<br>دودة أرض<br>دودة علقية<br>طفيليات‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🦬 -name</td><td class='target'>‫ثور أمريكي‬</td></tr>
+	<tr><td class='source'>🦬 –keywords</td><td class='target'>‫بايسن<br>ثور<br>ثور أمريكي<br>جاموس<br>قطيع‬</td></tr>
+	<tr><td class='source'>🦣 -name</td><td class='target'>‫ماموث‬</td></tr>
+	<tr><td class='source'>🦣 –keywords</td><td class='target'>‫أنياب<br>صوف<br>ضخم<br>فيل<br>ماموث<br>منقرض‬</td></tr>
+	<tr><td class='source'>🦫 -name</td><td class='target'>‫سمّور‬</td></tr>
+	<tr><td class='source'>🦫 –keywords</td><td class='target'>‫سد<br>سمّور<br>قندس‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🦭 -name</td><td class='target'>‫فقمة‬</td></tr>
+	<tr><td class='source'>🦭 –keywords</td><td class='target'>‫أسد البحر<br>عجل البحر<br>فقمة<br>كلب البحر‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪴 -name</td><td class='target'>‫نبتة في وعاء‬</td></tr>
+	<tr><td class='source'>🪴 –keywords</td><td class='target'>‫بدون فائدة<br>رعاية<br>زراعة<br>ممل<br>منزل<br>نبتة<br>نبتة في وعاء‬</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='4'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫖 -name</td><td class='target'>‫إبريق شاي‬</td></tr>
+	<tr><td class='source'>🫖 –keywords</td><td class='target'>‫إبريق<br>شاي<br>مشروب‬</td></tr>
+	<tr><td class='source'>🧋 -name</td><td class='target'>‫شاي الفقاعات‬</td></tr>
+	<tr><td class='source'>🧋 –keywords</td><td class='target'>‫حليب<br>شاي<br>شاي الفقاعات<br>فقاعات‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🫐 -name</td><td class='target'>‫توت برّي‬</td></tr>
+	<tr><td class='source'>🫐 –keywords</td><td class='target'>‫برّي<br>توت<br>عنب برّي‬</td></tr>
+	<tr><td class='source'>🫒 -name</td><td class='target'>‫زيتون‬</td></tr>
+	<tr><td class='source'>🫒 –keywords</td><td class='target'>‫زيتون<br>طعام‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source'>🫓 -name</td><td class='target'>‫خبز مفرود‬</td></tr>
+	<tr><td class='source'>🫓 –keywords</td><td class='target'>‫آريبا<br>بيتا<br>خبز مسطح<br>خبز مفرود<br>لواش<br>نان‬</td></tr>
+	<tr><td class='source'>🫔 -name</td><td class='target'>‫تامال‬</td></tr>
+	<tr><td class='source'>🫔 –keywords</td><td class='target'>‫تامال<br>شطيرة<br>مكسيك‬</td></tr>
+	<tr><td class='source'>🫕 -name</td><td class='target'>‫فوندو‬</td></tr>
+	<tr><td class='source'>🫕 –keywords</td><td class='target'>‫جبن<br>ذائب<br>سويسرا<br>شوكولاتة<br>فوندو<br>وعاء‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫑 -name</td><td class='target'>‫فلفل حلو‬</td></tr>
+	<tr><td class='source'>🫑 –keywords</td><td class='target'>‫خضار<br>فلفل<br>فلفل أحمر<br>فلفل حلو‬</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='6'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🛖 -name</td><td class='target'>‫كوخ‬</td></tr>
+	<tr><td class='source'>🛖 –keywords</td><td class='target'>‫بيت<br>بيت دائري<br>كوخ<br>منزل<br>يورت‬</td></tr>
+	<tr><td class='source'>🪵 -name</td><td class='target'>‫خشب‬</td></tr>
+	<tr><td class='source'>🪵 –keywords</td><td class='target'>‫ألواح خشب<br>خشب<br>لوح‬</td></tr>
+	<tr><td class='source'>🪨 -name</td><td class='target'>‫صخرة‬</td></tr>
+	<tr><td class='source'>🪨 –keywords</td><td class='target'>‫ثقيل<br>جلمود<br>حجر<br>صخر<br>صخرة<br>صلب‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛻 -name</td><td class='target'>‫شاحنة خفيفة‬</td></tr>
+	<tr><td class='source'>🛻 –keywords</td><td class='target'>‫بيك أب<br>شاحنة<br>شاحنة خفيفة‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🪡 -name</td><td class='target'>‫إبرة خياطة‬</td></tr>
+	<tr><td class='source'>🪡 –keywords</td><td class='target'>‫إبرة<br>تطريز<br>خياطة<br>غرز‬</td></tr>
+	<tr><td class='source'>🪢 -name</td><td class='target'>‫عُقدة‬</td></tr>
+	<tr><td class='source'>🪢 –keywords</td><td class='target'>‫حبل<br>عقدة<br>عُقدة<br>متشابك<br>مجدول‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='game' href='#game'>game</a></td><td class='source'>🪄 -name</td><td class='target'>‫عصا سحرية‬</td></tr>
+	<tr><td class='source'>🪄 –keywords</td><td class='target'>‫ساحر<br>ساحرة<br>سحر<br>عصا<br>عصا سحرية‬</td></tr>
+	<tr><td class='source'>🪅 -name</td><td class='target'>‫بنياتا‬</td></tr>
+	<tr><td class='source'>🪅 –keywords</td><td class='target'>‫احتفال<br>بنياتا<br>حفلة<br>حلوى<br>معلّقة‬</td></tr>
+	<tr><td class='source'>🪆 -name</td><td class='target'>‫دمية روسية‬</td></tr>
+	<tr><td class='source'>🪆 –keywords</td><td class='target'>‫دمية<br>دمية روسية<br>روسيا<br>ماتريوشكا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='sport' href='#sport'>sport</a></td><td class='source'>🛼 -name</td><td class='target'>‫حذاء مع عجلات‬</td></tr>
+	<tr><td class='source'>🛼 –keywords</td><td class='target'>‫حذاء<br>حذاء مع عجلات<br>زلاجة<br>عجلات<br>مزلجة‬</td></tr>
+	<tr><td class='source' rowSpan='38'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='4'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>🩴 -name</td><td class='target'>‫صندل إصبع‬</td></tr>
+	<tr><td class='source'>🩴 –keywords</td><td class='target'>‫بإصبع<br>صنادل<br>صنادل إصبع<br>صندل إصبع<br>صندل للشاطئ‬</td></tr>
+	<tr><td class='source'>🪖 -name</td><td class='target'>‫خوذة عسكرية‬</td></tr>
+	<tr><td class='source'>🪖 –keywords</td><td class='target'>‫جيش<br>خوذة<br>عسكري<br>عسكرية<br>محارب‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='household' href='#household'>household</a></td><td class='source'>🛗 -name</td><td class='target'>‫مصعد‬</td></tr>
+	<tr><td class='source'>🛗 –keywords</td><td class='target'>‫إمكانية الوصول<br>رافع<br>مصعد‬</td></tr>
+	<tr><td class='source'>🪞 -name</td><td class='target'>‫مرآة‬</td></tr>
+	<tr><td class='source'>🪞 –keywords</td><td class='target'>‫انعكاس<br>عاكس<br>مرآة<br>مرآة معدنية‬</td></tr>
+	<tr><td class='source'>🪟 -name</td><td class='target'>‫نافذة‬</td></tr>
+	<tr><td class='source'>🪟 –keywords</td><td class='target'>‫إطار<br>إطلالة<br>شفاف<br>فتحة<br>منظر<br>نافذة<br>هواء منعش‬</td></tr>
+	<tr><td class='source'>🪠 -name</td><td class='target'>‫مكبس غطاس‬</td></tr>
+	<tr><td class='source'>🪠 –keywords</td><td class='target'>‫امتصاص<br>حمام<br>سباك<br>سباكة<br>ضغط<br>مرحاض<br>مكبس غطاس‬</td></tr>
+	<tr><td class='source'>🪤 -name</td><td class='target'>‫مصيدة فئران‬</td></tr>
+	<tr><td class='source'>🪤 –keywords</td><td class='target'>‫طعم<br>فخ<br>كمين<br>مصيدة<br>مصيدة فئران‬</td></tr>
+	<tr><td class='source'>🪣 -name</td><td class='target'>‫دلو‬</td></tr>
+	<tr><td class='source'>🪣 –keywords</td><td class='target'>‫برميل<br>خابية<br>دلو<br>وعاء‬</td></tr>
+	<tr><td class='source'>🪥 -name</td><td class='target'>‫فرشاة أسنان‬</td></tr>
+	<tr><td class='source'>🪥 –keywords</td><td class='target'>‫أسنان<br>تنظيف<br>حمام<br>فرشاة<br>فم<br>نظافة‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='money' href='#money'>money</a></td><td class='source'>🪙 -name</td><td class='target'>‫عملة معدنية‬</td></tr>
+	<tr><td class='source'>🪙 –keywords</td><td class='target'>‫ذهب<br>عملة معدنية<br>فضة<br>كنز<br>مال<br>معدن‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source'>🪗 -name</td><td class='target'>‫أكورديون‬</td></tr>
+	<tr><td class='source'>🪗 –keywords</td><td class='target'>‫آلة موسيقية<br>أكورديون‬</td></tr>
+	<tr><td class='source'>🪘 -name</td><td class='target'>‫طبل طويل‬</td></tr>
+	<tr><td class='source'>🪘 –keywords</td><td class='target'>‫دق<br>طبل<br>طبل طويل<br>كونغا<br>لحن‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪦 -name</td><td class='target'>‫حجر مقبرة‬</td></tr>
+	<tr><td class='source'>🪦 –keywords</td><td class='target'>‫حجر مقبرة<br>شاهد<br>شاهد القبر<br>قبر<br>مقبرة‬</td></tr>
+	<tr><td class='source'>🪧 -name</td><td class='target'>‫يافطة‬</td></tr>
+	<tr><td class='source'>🪧 –keywords</td><td class='target'>‫اعتصام<br>لافتة<br>مظاهرة<br>يافطة‬</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='tool' href='#tool'>tool</a></td><td class='source'>🪚 -name</td><td class='target'>‫منشار يدوي‬</td></tr>
+	<tr><td class='source'>🪚 –keywords</td><td class='target'>‫أداة<br>خشب<br>منشار<br>منشار يدوي<br>نجار‬</td></tr>
+	<tr><td class='source'>🪃 -name</td><td class='target'>‫خذوف مرتد‬</td></tr>
+	<tr><td class='source'>🪃 –keywords</td><td class='target'>‫أستراليا<br>ارتداد<br>خذوف<br>كيد<br>مرتد‬</td></tr>
+	<tr><td class='source'>🪛 -name</td><td class='target'>‫مفك براغي‬</td></tr>
+	<tr><td class='source'>🪛 –keywords</td><td class='target'>‫أداة<br>مفك<br>مفك براغي‬</td></tr>
+	<tr><td class='source'>🪜 -name</td><td class='target'>‫سلّم‬</td></tr>
+	<tr><td class='source'>🪜 –keywords</td><td class='target'>‫تسلق<br>درج<br>سلّم<br>صعود<br>عارضة‬</td></tr>
+	<tr><td class='source'>🪝 -name</td><td class='target'>‫خطاف‬</td></tr>
+	<tr><td class='source'>🪝 –keywords</td><td class='target'>‫إبزيم<br>إلتقاط<br>خطاف<br>صنارة<br>كبشة<br>كلاب<br>مشبك<br>نقطة شراء‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='gender' href='#gender'>gender</a></td><td class='source'>⚧ -name</td><td class='target'>‫رمز المتحوّلين جنسيًا‬</td></tr>
+	<tr><td class='source'>⚧ –keywords</td><td class='target'>‫رمز المتحوّلين جنسيًا<br>متحوّل جنسيًا<br>متحوّلة جنسيًا‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Flags' href='#Flags'>Flags</a></td><td class='source' rowSpan='2'><a name='flag' href='#flag'>flag</a></td><td class='source'>🏳‍⚧ -name</td><td class='target'>‫علم المتحولين جنسيًا‬</td></tr>
+	<tr><td class='source'>🏳‍⚧ –keywords</td><td class='target'>‫أبيض<br>أزرق<br>أزرق خفيف<br>المتحولون جنسيًا<br>المتحولين جنسيًا<br>زهري<br>علم<br>علم المتحولين جنسيًا<br>وردي‬</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='2'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td><td class='source' rowSpan='2'><a name='Collation' href='#Collation'>Collation</a></td><td class='source'>compat</td><td class='target'>‫[reorder Arab]<br>&amp;ت&lt;&lt;ة&lt;&lt;&lt;ﺔ&lt;&lt;&lt;ﺓ<br>&amp;ي&lt;&lt;ى&lt;&lt;&lt;ﯨ&lt;&lt;&lt;ﯩ&lt;&lt;&lt;ﻰ&lt;&lt;&lt;ﻯ&lt;&lt;&lt;ﲐ&lt;&lt;&lt;ﱝ‬</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>standard</td><td class='target'>‫[reorder Arab]<br># Updated Arabic Ordering Specification<br># -------------------------------------<br>#<br># See the following ticket for background and discussion.<br># http://unicode.org/cldr/trac/ticket/4207#comment:22<br># &quot;P1&quot;, etc, refers to point 1 of comment 22, etc.<br>#<br># Note: Use the 'compat' tailoring for the previous ordering.<br># P1. Teh Marbuta is secondary-before Teh<br>&amp;[before 2]ت&lt;&lt;‎ة<br># P2. Alef Maksura is secondary-before Yeh, followed by Farsi Yeh<br>&amp;[before 2]‎ي‎&lt;&lt;ی&lt;&lt;‎ى<br># P4. Hamzas have secondary differences (instead of primary)<br>&amp;‎ء&lt;&lt;‎أ&lt;&lt;‎ؤ&lt;&lt;‎إ&lt;&lt;‎ئ&lt;&lt;‎ىٕ&lt;&lt;‎ا<br># P3. Alef with Madda above is secondary-after Hamza + Alef.<br># (This rule must be after any other rules which tailor Alef.)<br>‎&amp;ءا‎&lt;&lt;‎آ‎<br># P4. Tashkil (vowel marks) are tertiary differences, and are<br># moved to after the last secondary ignorable.<br>&amp;[last secondary ignorable]&lt;&lt;&lt;\u064B&lt;&lt;&lt;\u08F0&lt;&lt;&lt;\u08E7&lt;&lt;&lt;\u064C&lt;&lt;&lt;\u08F1<br>&lt;&lt;&lt;\u08E8&lt;&lt;&lt;\u064D&lt;&lt;&lt;\u08F2&lt;&lt;&lt;\u08E9&lt;&lt;&lt;\u064E&lt;&lt;&lt;\u08E4&lt;&lt;&lt;\u08F4&lt;&lt;&lt;\u08F5<br>&lt;&lt;&lt;\u064F&lt;&lt;&lt;\u08E5&lt;&lt;&lt;\u08FE&lt;&lt;&lt;\u0650&lt;&lt;&lt;\u08E6&lt;&lt;&lt;\u08F6&lt;&lt;&lt;\u0651&lt;&lt;&lt;\u0652<br>&lt;&lt;&lt;\u0653&lt;&lt;&lt;\u06DF&lt;&lt;&lt;\u06E1&lt;&lt;&lt;\u065F&lt;&lt;&lt;\u0656&lt;&lt;&lt;\u0657&lt;&lt;&lt;\u0658&lt;&lt;&lt;\u08FF<br>&lt;&lt;&lt;\u0659&lt;&lt;&lt;\u065A&lt;&lt;&lt;\u065B&lt;&lt;&lt;\u065C&lt;&lt;&lt;\u065D&lt;&lt;&lt;\u065E&lt;&lt;&lt;\u08F7&lt;&lt;&lt;\u08F8<br>&lt;&lt;&lt;\u08FD&lt;&lt;&lt;\u08FB&lt;&lt;&lt;\u08FC&lt;&lt;&lt;\u08F9&lt;&lt;&lt;\u08FA&lt;&lt;&lt;\u0670<br># P6. Presentation forms<br>#<br># Most presentation forms are tailored to be identical to the<br># normal forms.<br># The characters U+FDF0..U+FDFD were given tertiary differences instead<br># of identical. They have a slightly different semantic meaning and are<br># much more common than the other presentation forms.<br>#<br># All of the P6 rules may be candidates for moving to root as a private set<br># in the future:  &lt;http://unicode.org/cldr/trac/ticket/7766&gt;<br>#<br># Note: U+FDFD doesn't show up in the below UnicodeSet as it is<br># architecturally a symbol.<br>&amp;‎'بسم الله الرحمن الرحيم'&lt;&lt;&lt;‎﷽<br># The rest of these lines are generated by GenerateDecompCollationRules<br># from UnicodeSet [[:dt=init:][:dt=med:][:dt=fin:][:dt=iso:]]<br># Using: ICU v54.0.1.0, Unicode v7.0.0.0<br>#<br># ‎&amp;\u0621‎=\uFE80<br>‎&amp;ء‎=ﺀ<br># ‎&amp;\u0627‎=\uFE8D‎=\uFE8E<br>‎&amp;ا‎=ﺍ‎=ﺎ<br># ‎&amp;\u0627\u0643\u0628\u0631‎&lt;&lt;&lt;\uFDF3<br>‎&amp;اكبر‎&lt;&lt;&lt;ﷳ<br># ‎&amp;\u0627\u0644\u0644\u0647‎&lt;&lt;&lt;\uFDF2<br>‎&amp;الله‎&lt;&lt;&lt;ﷲ<br># ‎&amp;\u0627\u064B‎=\uFD3C‎=\uFD3D<br>‎&amp;ا\u064B‎=ﴼ‎=ﴽ<br># ‎&amp;\u0627\u0653‎=\uFE81‎=\uFE82<br>‎&amp;آ‎=ﺁ‎=ﺂ<br># ‎&amp;\u0627\u0654‎=\uFE83‎=\uFE84<br>‎&amp;أ‎=ﺃ‎=ﺄ<br># ‎&amp;\u0627\u0655‎=\uFE87‎=\uFE88<br>‎&amp;إ‎=ﺇ‎=ﺈ<br># ‎&amp;\u0628‎=\uFE8F‎=\uFE90‎=\uFE91‎=\uFE92<br>‎&amp;ب‎=ﺏ‎=ﺐ‎=ﺑ‎=ﺒ<br># ‎&amp;\u0628\u062C‎=\uFC05‎=\uFC9C<br>‎&amp;بج‎=ﰅ‎=ﲜ<br># ‎&amp;\u0628\u062D‎=\uFC06‎=\uFC9D<br>‎&amp;بح‎=ﰆ‎=ﲝ<br># ‎&amp;\u0628\u062D\u064A‎=\uFDC2<br>‎&amp;بحي‎=ﷂ<br># ‎&amp;\u0628\u062E‎=\uFC07‎=\uFC9E<br>‎&amp;بخ‎=ﰇ‎=ﲞ<br># ‎&amp;\u0628\u062E\u064A‎=\uFD9E<br>‎&amp;بخي‎=ﶞ<br># ‎&amp;\u0628\u0631‎=\uFC6A<br>‎&amp;بر‎=ﱪ<br># ‎&amp;\u0628\u0632‎=\uFC6B<br>‎&amp;بز‎=ﱫ<br># ‎&amp;\u0628\u0645‎=\uFC08‎=\uFC6C‎=\uFC9F‎=\uFCE1<br>‎&amp;بم‎=ﰈ‎=ﱬ‎=ﲟ‎=ﳡ<br># ‎&amp;\u0628\u0646‎=\uFC6D<br>‎&amp;بن‎=ﱭ<br># ‎&amp;\u0628\u0647‎=\uFCA0‎=\uFCE2<br>‎&amp;به‎=ﲠ‎=ﳢ<br># ‎&amp;\u0628\u0649‎=\uFC09‎=\uFC6E<br>‎&amp;بى‎=ﰉ‎=ﱮ<br># ‎&amp;\u0628\u064A‎=\uFC0A‎=\uFC6F<br>‎&amp;بي‎=ﰊ‎=ﱯ<br># ‎&amp;\u0629‎=\uFE93‎=\uFE94<br>‎&amp;ة‎=ﺓ‎=ﺔ<br># ‎&amp;\u062A‎=\uFE95‎=\uFE96‎=\uFE97‎=\uFE98<br>‎&amp;ت‎=ﺕ‎=ﺖ‎=ﺗ‎=ﺘ<br># ‎&amp;\u062A\u062C‎=\uFC0B‎=\uFCA1<br>‎&amp;تج‎=ﰋ‎=ﲡ<br># ‎&amp;\u062A\u062C\u0645‎=\uFD50<br>‎&amp;تجم‎=ﵐ<br># ‎&amp;\u062A\u062C\u0649‎=\uFDA0<br>‎&amp;تجى‎=ﶠ<br># ‎&amp;\u062A\u062C\u064A‎=\uFD9F<br>‎&amp;تجي‎=ﶟ<br># ‎&amp;\u062A\u062D‎=\uFC0C‎=\uFCA2<br>‎&amp;تح‎=ﰌ‎=ﲢ<br># ‎&amp;\u062A\u062D\u062C‎=\uFD51‎=\uFD52<br>‎&amp;تحج‎=ﵑ‎=ﵒ<br># ‎&amp;\u062A\u062D\u0645‎=\uFD53<br>‎&amp;تحم‎=ﵓ<br># ‎&amp;\u062A\u062E‎=\uFC0D‎=\uFCA3<br>‎&amp;تخ‎=ﰍ‎=ﲣ<br># ‎&amp;\u062A\u062E\u0645‎=\uFD54<br>‎&amp;تخم‎=ﵔ<br># ‎&amp;\u062A\u062E\u0649‎=\uFDA2<br>‎&amp;تخى‎=ﶢ<br># ‎&amp;\u062A\u062E\u064A‎=\uFDA1<br>‎&amp;تخي‎=ﶡ<br># ‎&amp;\u062A\u0631‎=\uFC70<br>‎&amp;تر‎=ﱰ<br># ‎&amp;\u062A\u0632‎=\uFC71<br>‎&amp;تز‎=ﱱ<br># ‎&amp;\u062A\u0645‎=\uFC0E‎=\uFC72‎=\uFCA4‎=\uFCE3<br>‎&amp;تم‎=ﰎ‎=ﱲ‎=ﲤ‎=ﳣ<br># ‎&amp;\u062A\u0645\u062C‎=\uFD55<br>‎&amp;تمج‎=ﵕ<br># ‎&amp;\u062A\u0645\u062D‎=\uFD56<br>‎&amp;تمح‎=ﵖ<br># ‎&amp;\u062A\u0645\u062E‎=\uFD57<br>‎&amp;تمخ‎=ﵗ<br># ‎&amp;\u062A\u0645\u0649‎=\uFDA4<br>‎&amp;تمى‎=ﶤ<br># ‎&amp;\u062A\u0645\u064A‎=\uFDA3<br>‎&amp;تمي‎=ﶣ<br># ‎&amp;\u062A\u0646‎=\uFC73<br>‎&amp;تن‎=ﱳ<br># ‎&amp;\u062A\u0647‎=\uFCA5‎=\uFCE4<br>‎&amp;ته‎=ﲥ‎=ﳤ<br># ‎&amp;\u062A\u0649‎=\uFC0F‎=\uFC74<br>‎&amp;تى‎=ﰏ‎=ﱴ<br># ‎&amp;\u062A\u064A‎=\uFC10‎=\uFC75<br>‎&amp;تي‎=ﰐ‎=ﱵ<br># ‎&amp;\u062B‎=\uFE99‎=\uFE9A‎=\uFE9B‎=\uFE9C<br>‎&amp;ث‎=ﺙ‎=ﺚ‎=ﺛ‎=ﺜ<br># ‎&amp;\u062B\u062C‎=\uFC11<br>‎&amp;ثج‎=ﰑ<br># ‎&amp;\u062B\u0631‎=\uFC76<br>‎&amp;ثر‎=ﱶ<br># ‎&amp;\u062B\u0632‎=\uFC77<br>‎&amp;ثز‎=ﱷ<br># ‎&amp;\u062B\u0645‎=\uFC12‎=\uFC78‎=\uFCA6‎=\uFCE5<br>‎&amp;ثم‎=ﰒ‎=ﱸ‎=ﲦ‎=ﳥ<br># ‎&amp;\u062B\u0646‎=\uFC79<br>‎&amp;ثن‎=ﱹ<br># ‎&amp;\u062B\u0647‎=\uFCE6<br>‎&amp;ثه‎=ﳦ<br># ‎&amp;\u062B\u0649‎=\uFC13‎=\uFC7A<br>‎&amp;ثى‎=ﰓ‎=ﱺ<br># ‎&amp;\u062B\u064A‎=\uFC14‎=\uFC7B<br>‎&amp;ثي‎=ﰔ‎=ﱻ<br># ‎&amp;\u062C‎=\uFE9D‎=\uFE9E‎=\uFE9F‎=\uFEA0<br>‎&amp;ج‎=ﺝ‎=ﺞ‎=ﺟ‎=ﺠ<br># ‎&amp;\u062C\u062D‎=\uFC15‎=\uFCA7<br>‎&amp;جح‎=ﰕ‎=ﲧ<br># ‎&amp;\u062C\u062D\u0649‎=\uFDA6<br>‎&amp;جحى‎=ﶦ<br># ‎&amp;\u062C\u062D\u064A‎=\uFDBE<br>‎&amp;جحي‎=ﶾ<br># ‎&amp;\u062C\u0644\\u0020\u062C\u0644\u0627\u0644\u0647‎&lt;&lt;&lt;\uFDFB<br>‎&amp;'جل جلاله'‎&lt;&lt;&lt;ﷻ<br># ‎&amp;\u062C\u0645‎=\uFC16‎=\uFCA8<br>‎&amp;جم‎=ﰖ‎=ﲨ<br># ‎&amp;\u062C\u0645\u062D‎=\uFD58‎=\uFD59<br>‎&amp;جمح‎=ﵘ‎=ﵙ<br># ‎&amp;\u062C\u0645\u0649‎=\uFDA7<br>‎&amp;جمى‎=ﶧ<br># ‎&amp;\u062C\u0645\u064A‎=\uFDA5<br>‎&amp;جمي‎=ﶥ<br># ‎&amp;\u062C\u0649‎=\uFD01‎=\uFD1D<br>‎&amp;جى‎=ﴁ‎=ﴝ<br># ‎&amp;\u062C\u064A‎=\uFD02‎=\uFD1E<br>‎&amp;جي‎=ﴂ‎=ﴞ<br># ‎&amp;\u062D‎=\uFEA1‎=\uFEA2‎=\uFEA3‎=\uFEA4<br>‎&amp;ح‎=ﺡ‎=ﺢ‎=ﺣ‎=ﺤ<br># ‎&amp;\u062D\u062C‎=\uFC17‎=\uFCA9<br>‎&amp;حج‎=ﰗ‎=ﲩ<br># ‎&amp;\u062D\u062C\u064A‎=\uFDBF<br>‎&amp;حجي‎=ﶿ<br># ‎&amp;\u062D\u0645‎=\uFC18‎=\uFCAA<br>‎&amp;حم‎=ﰘ‎=ﲪ<br># ‎&amp;\u062D\u0645\u0649‎=\uFD5B<br>‎&amp;حمى‎=ﵛ<br># ‎&amp;\u062D\u0645\u064A‎=\uFD5A<br>‎&amp;حمي‎=ﵚ<br># ‎&amp;\u062D\u0649‎=\uFCFF‎=\uFD1B<br>‎&amp;حى‎=ﳿ‎=ﴛ<br># ‎&amp;\u062D\u064A‎=\uFD00‎=\uFD1C<br>‎&amp;حي‎=ﴀ‎=ﴜ<br># ‎&amp;\u062E‎=\uFEA5‎=\uFEA6‎=\uFEA7‎=\uFEA8<br>‎&amp;خ‎=ﺥ‎=ﺦ‎=ﺧ‎=ﺨ<br># ‎&amp;\u062E\u062C‎=\uFC19‎=\uFCAB<br>‎&amp;خج‎=ﰙ‎=ﲫ<br># ‎&amp;\u062E\u062D‎=\uFC1A<br>‎&amp;خح‎=ﰚ<br># ‎&amp;\u062E\u0645‎=\uFC1B‎=\uFCAC<br>‎&amp;خم‎=ﰛ‎=ﲬ<br># ‎&amp;\u062E\u0649‎=\uFD03‎=\uFD1F<br>‎&amp;خى‎=ﴃ‎=ﴟ<br># ‎&amp;\u062E\u064A‎=\uFD04‎=\uFD20<br>‎&amp;خي‎=ﴄ‎=ﴠ<br># ‎&amp;\u062F‎=\uFEA9‎=\uFEAA<br>‎&amp;د‎=ﺩ‎=ﺪ<br># ‎&amp;\u0630‎=\uFEAB‎=\uFEAC<br>‎&amp;ذ‎=ﺫ‎=ﺬ<br># ‎&amp;\u0630\u0670‎=\uFC5B<br>‎&amp;ذ\u0670‎=ﱛ<br># ‎&amp;\u0631‎=\uFEAD‎=\uFEAE<br>‎&amp;ر‎=ﺭ‎=ﺮ<br># ‎&amp;\u0631\u0633\u0648\u0644‎&lt;&lt;&lt;\uFDF6<br>‎&amp;رسول‎&lt;&lt;&lt;ﷶ<br># ‎&amp;\u0631\u0670‎=\uFC5C<br>‎&amp;ر\u0670‎=ﱜ<br># ‎&amp;\u0631\u06CC\u0627\u0644‎&lt;&lt;&lt;\uFDFC<br>‎&amp;ریال‎&lt;&lt;&lt;﷼<br># ‎&amp;\u0632‎=\uFEAF‎=\uFEB0<br>‎&amp;ز‎=ﺯ‎=ﺰ<br># ‎&amp;\u0633‎=\uFEB1‎=\uFEB2‎=\uFEB3‎=\uFEB4<br>‎&amp;س‎=ﺱ‎=ﺲ‎=ﺳ‎=ﺴ<br># ‎&amp;\u0633\u062C‎=\uFC1C‎=\uFCAD‎=\uFD34<br>‎&amp;سج‎=ﰜ‎=ﲭ‎=ﴴ<br># ‎&amp;\u0633\u062C\u062D‎=\uFD5D<br>‎&amp;سجح‎=ﵝ<br># ‎&amp;\u0633\u062C\u0649‎=\uFD5E<br>‎&amp;سجى‎=ﵞ<br># ‎&amp;\u0633\u062D‎=\uFC1D‎=\uFCAE‎=\uFD35<br>‎&amp;سح‎=ﰝ‎=ﲮ‎=ﴵ<br># ‎&amp;\u0633\u062D\u062C‎=\uFD5C<br>‎&amp;سحج‎=ﵜ<br># ‎&amp;\u0633\u062E‎=\uFC1E‎=\uFCAF‎=\uFD36<br>‎&amp;سخ‎=ﰞ‎=ﲯ‎=ﴶ<br># ‎&amp;\u0633\u062E\u0649‎=\uFDA8<br>‎&amp;سخى‎=ﶨ<br># ‎&amp;\u0633\u062E\u064A‎=\uFDC6<br>‎&amp;سخي‎=ﷆ<br># ‎&amp;\u0633\u0631‎=\uFD0E‎=\uFD2A<br>‎&amp;سر‎=ﴎ‎=ﴪ<br># ‎&amp;\u0633\u0645‎=\uFC1F‎=\uFCB0‎=\uFCE7<br>‎&amp;سم‎=ﰟ‎=ﲰ‎=ﳧ<br># ‎&amp;\u0633\u0645\u062C‎=\uFD61<br>‎&amp;سمج‎=ﵡ<br># ‎&amp;\u0633\u0645\u062D‎=\uFD5F‎=\uFD60<br>‎&amp;سمح‎=ﵟ‎=ﵠ<br># ‎&amp;\u0633\u0645\u0645‎=\uFD62‎=\uFD63<br>‎&amp;سمم‎=ﵢ‎=ﵣ<br># ‎&amp;\u0633\u0647‎=\uFCE8‎=\uFD31<br>‎&amp;سه‎=ﳨ‎=ﴱ<br># ‎&amp;\u0633\u0649‎=\uFCFB‎=\uFD17<br>‎&amp;سى‎=ﳻ‎=ﴗ<br># ‎&amp;\u0633\u064A‎=\uFCFC‎=\uFD18<br>‎&amp;سي‎=ﳼ‎=ﴘ<br># ‎&amp;\u0634‎=\uFEB5‎=\uFEB6‎=\uFEB7‎=\uFEB8<br>‎&amp;ش‎=ﺵ‎=ﺶ‎=ﺷ‎=ﺸ<br># ‎&amp;\u0634\u062C‎=\uFD09‎=\uFD25‎=\uFD2D‎=\uFD37<br>‎&amp;شج‎=ﴉ‎=ﴥ‎=ﴭ‎=ﴷ<br># ‎&amp;\u0634\u062C\u064A‎=\uFD69<br>‎&amp;شجي‎=ﵩ<br># ‎&amp;\u0634\u062D‎=\uFD0A‎=\uFD26‎=\uFD2E‎=\uFD38<br>‎&amp;شح‎=ﴊ‎=ﴦ‎=ﴮ‎=ﴸ<br># ‎&amp;\u0634\u062D\u0645‎=\uFD67‎=\uFD68<br>‎&amp;شحم‎=ﵧ‎=ﵨ<br># ‎&amp;\u0634\u062D\u064A‎=\uFDAA<br>‎&amp;شحي‎=ﶪ<br># ‎&amp;\u0634\u062E‎=\uFD0B‎=\uFD27‎=\uFD2F‎=\uFD39<br>‎&amp;شخ‎=ﴋ‎=ﴧ‎=ﴯ‎=ﴹ<br># ‎&amp;\u0634\u0631‎=\uFD0D‎=\uFD29<br>‎&amp;شر‎=ﴍ‎=ﴩ<br># ‎&amp;\u0634\u0645‎=\uFCE9‎=\uFD0C‎=\uFD28‎=\uFD30<br>‎&amp;شم‎=ﳩ‎=ﴌ‎=ﴨ‎=ﴰ<br># ‎&amp;\u0634\u0645\u062E‎=\uFD6A‎=\uFD6B<br>‎&amp;شمخ‎=ﵪ‎=ﵫ<br># ‎&amp;\u0634\u0645\u0645‎=\uFD6C‎=\uFD6D<br>‎&amp;شمم‎=ﵬ‎=ﵭ<br># ‎&amp;\u0634\u0647‎=\uFCEA‎=\uFD32<br>‎&amp;شه‎=ﳪ‎=ﴲ<br># ‎&amp;\u0634\u0649‎=\uFCFD‎=\uFD19<br>‎&amp;شى‎=ﳽ‎=ﴙ<br># ‎&amp;\u0634\u064A‎=\uFCFE‎=\uFD1A<br>‎&amp;شي‎=ﳾ‎=ﴚ<br># ‎&amp;\u0635‎=\uFEB9‎=\uFEBA‎=\uFEBB‎=\uFEBC<br>‎&amp;ص‎=ﺹ‎=ﺺ‎=ﺻ‎=ﺼ<br># ‎&amp;\u0635\u062D‎=\uFC20‎=\uFCB1<br>‎&amp;صح‎=ﰠ‎=ﲱ<br># ‎&amp;\u0635\u062D\u062D‎=\uFD64‎=\uFD65<br>‎&amp;صحح‎=ﵤ‎=ﵥ<br># ‎&amp;\u0635\u062D\u064A‎=\uFDA9<br>‎&amp;صحي‎=ﶩ<br># ‎&amp;\u0635\u062E‎=\uFCB2<br>‎&amp;صخ‎=ﲲ<br># ‎&amp;\u0635\u0631‎=\uFD0F‎=\uFD2B<br>‎&amp;صر‎=ﴏ‎=ﴫ<br># ‎&amp;\u0635\u0644\u0639\u0645‎&lt;&lt;&lt;\uFDF5<br>‎&amp;صلعم‎&lt;&lt;&lt;ﷵ<br># ‎&amp;\u0635\u0644\u0649‎&lt;&lt;&lt;\uFDF9<br>‎&amp;صلى‎&lt;&lt;&lt;ﷹ<br># ‎&amp;\u0635\u0644\u0649\\u0020\u0627\u0644\u0644\u0647<br>#  \\u0020\u0639\u0644\u064A\u0647\\u0020\u0648\u0633\u0644\u0645‎&lt;&lt;&lt;\uFDFA<br>‎&amp;'صلى الله عليه وسلم'‎&lt;&lt;&lt;ﷺ<br># ‎&amp;\u0635\u0644\u06D2‎&lt;&lt;&lt;\uFDF0<br>‎&amp;صلے‎&lt;&lt;&lt;ﷰ<br># ‎&amp;\u0635\u0645‎=\uFC21‎=\uFCB3<br>‎&amp;صم‎=ﰡ‎=ﲳ<br># ‎&amp;\u0635\u0645\u0645‎=\uFD66‎=\uFDC5<br>‎&amp;صمم‎=ﵦ‎=ﷅ<br># ‎&amp;\u0635\u0649‎=\uFD05‎=\uFD21<br>‎&amp;صى‎=ﴅ‎=ﴡ<br># ‎&amp;\u0635\u064A‎=\uFD06‎=\uFD22<br>‎&amp;صي‎=ﴆ‎=ﴢ<br># ‎&amp;\u0636‎=\uFEBD‎=\uFEBE‎=\uFEBF‎=\uFEC0<br>‎&amp;ض‎=ﺽ‎=ﺾ‎=ﺿ‎=ﻀ<br># ‎&amp;\u0636\u062C‎=\uFC22‎=\uFCB4<br>‎&amp;ضج‎=ﰢ‎=ﲴ<br># ‎&amp;\u0636\u062D‎=\uFC23‎=\uFCB5<br>‎&amp;ضح‎=ﰣ‎=ﲵ<br># ‎&amp;\u0636\u062D\u0649‎=\uFD6E<br>‎&amp;ضحى‎=ﵮ<br># ‎&amp;\u0636\u062D\u064A‎=\uFDAB<br>‎&amp;ضحي‎=ﶫ<br># ‎&amp;\u0636\u062E‎=\uFC24‎=\uFCB6<br>‎&amp;ضخ‎=ﰤ‎=ﲶ<br># ‎&amp;\u0636\u062E\u0645‎=\uFD6F‎=\uFD70<br>‎&amp;ضخم‎=ﵯ‎=ﵰ<br># ‎&amp;\u0636\u0631‎=\uFD10‎=\uFD2C<br>‎&amp;ضر‎=ﴐ‎=ﴬ<br># ‎&amp;\u0636\u0645‎=\uFC25‎=\uFCB7<br>‎&amp;ضم‎=ﰥ‎=ﲷ<br># ‎&amp;\u0636\u0649‎=\uFD07‎=\uFD23<br>‎&amp;ضى‎=ﴇ‎=ﴣ<br># ‎&amp;\u0636\u064A‎=\uFD08‎=\uFD24<br>‎&amp;ضي‎=ﴈ‎=ﴤ<br># ‎&amp;\u0637‎=\uFEC1‎=\uFEC2‎=\uFEC3‎=\uFEC4<br>‎&amp;ط‎=ﻁ‎=ﻂ‎=ﻃ‎=ﻄ<br># ‎&amp;\u0637\u062D‎=\uFC26‎=\uFCB8<br>‎&amp;طح‎=ﰦ‎=ﲸ<br># ‎&amp;\u0637\u0645‎=\uFC27‎=\uFD33‎=\uFD3A<br>‎&amp;طم‎=ﰧ‎=ﴳ‎=ﴺ<br># ‎&amp;\u0637\u0645\u062D‎=\uFD71‎=\uFD72<br>‎&amp;طمح‎=ﵱ‎=ﵲ<br># ‎&amp;\u0637\u0645\u0645‎=\uFD73<br>‎&amp;طمم‎=ﵳ<br># ‎&amp;\u0637\u0645\u064A‎=\uFD74<br>‎&amp;طمي‎=ﵴ<br># ‎&amp;\u0637\u0649‎=\uFCF5‎=\uFD11<br>‎&amp;طى‎=ﳵ‎=ﴑ<br># ‎&amp;\u0637\u064A‎=\uFCF6‎=\uFD12<br>‎&amp;طي‎=ﳶ‎=ﴒ<br># ‎&amp;\u0638‎=\uFEC5‎=\uFEC6‎=\uFEC7‎=\uFEC8<br>‎&amp;ظ‎=ﻅ‎=ﻆ‎=ﻇ‎=ﻈ<br># ‎&amp;\u0638\u0645‎=\uFC28‎=\uFCB9‎=\uFD3B<br>‎&amp;ظم‎=ﰨ‎=ﲹ‎=ﴻ<br># ‎&amp;\u0639‎=\uFEC9‎=\uFECA‎=\uFECB‎=\uFECC<br>‎&amp;ع‎=ﻉ‎=ﻊ‎=ﻋ‎=ﻌ<br># ‎&amp;\u0639\u062C‎=\uFC29‎=\uFCBA<br>‎&amp;عج‎=ﰩ‎=ﲺ<br># ‎&amp;\u0639\u062C\u0645‎=\uFD75‎=\uFDC4<br>‎&amp;عجم‎=ﵵ‎=ﷄ<br># ‎&amp;\u0639\u0644\u064A\u0647‎&lt;&lt;&lt;\uFDF7<br>‎&amp;عليه‎&lt;&lt;&lt;ﷷ<br># ‎&amp;\u0639\u0645‎=\uFC2A‎=\uFCBB<br>‎&amp;عم‎=ﰪ‎=ﲻ<br># ‎&amp;\u0639\u0645\u0645‎=\uFD76‎=\uFD77<br>‎&amp;عمم‎=ﵶ‎=ﵷ<br># ‎&amp;\u0639\u0645\u0649‎=\uFD78<br>‎&amp;عمى‎=ﵸ<br># ‎&amp;\u0639\u0645\u064A‎=\uFDB6<br>‎&amp;عمي‎=ﶶ<br># ‎&amp;\u0639\u0649‎=\uFCF7‎=\uFD13<br>‎&amp;عى‎=ﳷ‎=ﴓ<br># ‎&amp;\u0639\u064A‎=\uFCF8‎=\uFD14<br>‎&amp;عي‎=ﳸ‎=ﴔ<br># ‎&amp;\u063A‎=\uFECD‎=\uFECE‎=\uFECF‎=\uFED0<br>‎&amp;غ‎=ﻍ‎=ﻎ‎=ﻏ‎=ﻐ<br># ‎&amp;\u063A\u062C‎=\uFC2B‎=\uFCBC<br>‎&amp;غج‎=ﰫ‎=ﲼ<br># ‎&amp;\u063A\u0645‎=\uFC2C‎=\uFCBD<br>‎&amp;غم‎=ﰬ‎=ﲽ<br># ‎&amp;\u063A\u0645\u0645‎=\uFD79<br>‎&amp;غمم‎=ﵹ<br># ‎&amp;\u063A\u0645\u0649‎=\uFD7B<br>‎&amp;غمى‎=ﵻ<br># ‎&amp;\u063A\u0645\u064A‎=\uFD7A<br>‎&amp;غمي‎=ﵺ<br># ‎&amp;\u063A\u0649‎=\uFCF9‎=\uFD15<br>‎&amp;غى‎=ﳹ‎=ﴕ<br># ‎&amp;\u063A\u064A‎=\uFCFA‎=\uFD16<br>‎&amp;غي‎=ﳺ‎=ﴖ<br># ‎&amp;\u0640\u064B‎=\uFE71<br>‎&amp;ـ\u064B‎=ﹱ<br># ‎&amp;\u0640\u064E‎=\uFE77<br>‎&amp;ـ\u064E‎=ﹷ<br># ‎&amp;\u0640\u064E\u0651‎=\uFCF2<br>‎&amp;ـ\u064E\u0651‎=ﳲ<br># ‎&amp;\u0640\u064F‎=\uFE79<br>‎&amp;ـ\u064F‎=ﹹ<br># ‎&amp;\u0640\u064F\u0651‎=\uFCF3<br>‎&amp;ـ\u064F\u0651‎=ﳳ<br># ‎&amp;\u0640\u0650‎=\uFE7B<br>‎&amp;ـ\u0650‎=ﹻ<br># ‎&amp;\u0640\u0650\u0651‎=\uFCF4<br>‎&amp;ـ\u0650\u0651‎=ﳴ<br># ‎&amp;\u0640\u0651‎=\uFE7D<br>‎&amp;ـ\u0651‎=ﹽ<br># ‎&amp;\u0640\u0652‎=\uFE7F<br>‎&amp;ـ\u0652‎=ﹿ<br># ‎&amp;\u0641‎=\uFED1‎=\uFED2‎=\uFED3‎=\uFED4<br>‎&amp;ف‎=ﻑ‎=ﻒ‎=ﻓ‎=ﻔ<br># ‎&amp;\u0641\u062C‎=\uFC2D‎=\uFCBE<br>‎&amp;فج‎=ﰭ‎=ﲾ<br># ‎&amp;\u0641\u062D‎=\uFC2E‎=\uFCBF<br>‎&amp;فح‎=ﰮ‎=ﲿ<br># ‎&amp;\u0641\u062E‎=\uFC2F‎=\uFCC0<br>‎&amp;فخ‎=ﰯ‎=ﳀ<br># ‎&amp;\u0641\u062E\u0645‎=\uFD7C‎=\uFD7D<br>‎&amp;فخم‎=ﵼ‎=ﵽ<br># ‎&amp;\u0641\u0645‎=\uFC30‎=\uFCC1<br>‎&amp;فم‎=ﰰ‎=ﳁ<br># ‎&amp;\u0641\u0645\u064A‎=\uFDC1<br>‎&amp;فمي‎=ﷁ<br># ‎&amp;\u0641\u0649‎=\uFC31‎=\uFC7C<br>‎&amp;فى‎=ﰱ‎=ﱼ<br># ‎&amp;\u0641\u064A‎=\uFC32‎=\uFC7D<br>‎&amp;في‎=ﰲ‎=ﱽ<br># ‎&amp;\u0642‎=\uFED5‎=\uFED6‎=\uFED7‎=\uFED8<br>‎&amp;ق‎=ﻕ‎=ﻖ‎=ﻗ‎=ﻘ<br># ‎&amp;\u0642\u062D‎=\uFC33‎=\uFCC2<br>‎&amp;قح‎=ﰳ‎=ﳂ<br># ‎&amp;\u0642\u0644\u06D2‎&lt;&lt;&lt;\uFDF1<br>‎&amp;قلے‎&lt;&lt;&lt;ﷱ<br># ‎&amp;\u0642\u0645‎=\uFC34‎=\uFCC3<br>‎&amp;قم‎=ﰴ‎=ﳃ<br># ‎&amp;\u0642\u0645\u062D‎=\uFD7E‎=\uFDB4<br>‎&amp;قمح‎=ﵾ‎=ﶴ<br># ‎&amp;\u0642\u0645\u0645‎=\uFD7F<br>‎&amp;قمم‎=ﵿ<br># ‎&amp;\u0642\u0645\u064A‎=\uFDB2<br>‎&amp;قمي‎=ﶲ<br># ‎&amp;\u0642\u0649‎=\uFC35‎=\uFC7E<br>‎&amp;قى‎=ﰵ‎=ﱾ<br># ‎&amp;\u0642\u064A‎=\uFC36‎=\uFC7F<br>‎&amp;قي‎=ﰶ‎=ﱿ<br># ‎&amp;\u0643‎=\uFED9‎=\uFEDA‎=\uFEDB‎=\uFEDC<br>‎&amp;ك‎=ﻙ‎=ﻚ‎=ﻛ‎=ﻜ<br># ‎&amp;\u0643\u0627‎=\uFC37‎=\uFC80<br>‎&amp;كا‎=ﰷ‎=ﲀ<br># ‎&amp;\u0643\u062C‎=\uFC38‎=\uFCC4<br>‎&amp;كج‎=ﰸ‎=ﳄ<br># ‎&amp;\u0643\u062D‎=\uFC39‎=\uFCC5<br>‎&amp;كح‎=ﰹ‎=ﳅ<br># ‎&amp;\u0643\u062E‎=\uFC3A‎=\uFCC6<br>‎&amp;كخ‎=ﰺ‎=ﳆ<br># ‎&amp;\u0643\u0644‎=\uFC3B‎=\uFC81‎=\uFCC7‎=\uFCEB<br>‎&amp;كل‎=ﰻ‎=ﲁ‎=ﳇ‎=ﳫ<br># ‎&amp;\u0643\u0645‎=\uFC3C‎=\uFC82‎=\uFCC8‎=\uFCEC<br>‎&amp;كم‎=ﰼ‎=ﲂ‎=ﳈ‎=ﳬ<br># ‎&amp;\u0643\u0645\u0645‎=\uFDBB‎=\uFDC3<br>‎&amp;كمم‎=ﶻ‎=ﷃ<br># ‎&amp;\u0643\u0645\u064A‎=\uFDB7<br>‎&amp;كمي‎=ﶷ<br># ‎&amp;\u0643\u0649‎=\uFC3D‎=\uFC83<br>‎&amp;كى‎=ﰽ‎=ﲃ<br># ‎&amp;\u0643\u064A‎=\uFC3E‎=\uFC84<br>‎&amp;كي‎=ﰾ‎=ﲄ<br># ‎&amp;\u0644‎=\uFEDD‎=\uFEDE‎=\uFEDF‎=\uFEE0<br>‎&amp;ل‎=ﻝ‎=ﻞ‎=ﻟ‎=ﻠ<br># ‎&amp;\u0644\u0627‎=\uFEFB‎=\uFEFC<br>‎&amp;لا‎=ﻻ‎=ﻼ<br># ‎&amp;\u0644\u0627\u0653‎=\uFEF5‎=\uFEF6<br>‎&amp;لآ‎=ﻵ‎=ﻶ<br># ‎&amp;\u0644\u0627\u0654‎=\uFEF7‎=\uFEF8<br>‎&amp;لأ‎=ﻷ‎=ﻸ<br># ‎&amp;\u0644\u0627\u0655‎=\uFEF9‎=\uFEFA<br>‎&amp;لإ‎=ﻹ‎=ﻺ<br># ‎&amp;\u0644\u062C‎=\uFC3F‎=\uFCC9<br>‎&amp;لج‎=ﰿ‎=ﳉ<br># ‎&amp;\u0644\u062C\u062C‎=\uFD83‎=\uFD84<br>‎&amp;لجج‎=ﶃ‎=ﶄ<br># ‎&amp;\u0644\u062C\u0645‎=\uFDBA‎=\uFDBC<br>‎&amp;لجم‎=ﶺ‎=ﶼ<br># ‎&amp;\u0644\u062C\u064A‎=\uFDAC<br>‎&amp;لجي‎=ﶬ<br># ‎&amp;\u0644\u062D‎=\uFC40‎=\uFCCA<br>‎&amp;لح‎=ﱀ‎=ﳊ<br># ‎&amp;\u0644\u062D\u0645‎=\uFD80‎=\uFDB5<br>‎&amp;لحم‎=ﶀ‎=ﶵ<br># ‎&amp;\u0644\u062D\u0649‎=\uFD82<br>‎&amp;لحى‎=ﶂ<br># ‎&amp;\u0644\u062D\u064A‎=\uFD81<br>‎&amp;لحي‎=ﶁ<br># ‎&amp;\u0644\u062E‎=\uFC41‎=\uFCCB<br>‎&amp;لخ‎=ﱁ‎=ﳋ<br># ‎&amp;\u0644\u062E\u0645‎=\uFD85‎=\uFD86<br>‎&amp;لخم‎=ﶅ‎=ﶆ<br># ‎&amp;\u0644\u0645‎=\uFC42‎=\uFC85‎=\uFCCC‎=\uFCED<br>‎&amp;لم‎=ﱂ‎=ﲅ‎=ﳌ‎=ﳭ<br># ‎&amp;\u0644\u0645\u062D‎=\uFD87‎=\uFD88<br>‎&amp;لمح‎=ﶇ‎=ﶈ<br># ‎&amp;\u0644\u0645\u064A‎=\uFDAD<br>‎&amp;لمي‎=ﶭ<br># ‎&amp;\u0644\u0647‎=\uFCCD<br>‎&amp;له‎=ﳍ<br># ‎&amp;\u0644\u0649‎=\uFC43‎=\uFC86<br>‎&amp;لى‎=ﱃ‎=ﲆ<br># ‎&amp;\u0644\u064A‎=\uFC44‎=\uFC87<br>‎&amp;لي‎=ﱄ‎=ﲇ<br># ‎&amp;\u0645‎=\uFEE1‎=\uFEE2‎=\uFEE3‎=\uFEE4<br>‎&amp;م‎=ﻡ‎=ﻢ‎=ﻣ‎=ﻤ<br># ‎&amp;\u0645\u0627‎=\uFC88<br>‎&amp;ما‎=ﲈ<br># ‎&amp;\u0645\u062C‎=\uFC45‎=\uFCCE<br>‎&amp;مج‎=ﱅ‎=ﳎ<br># ‎&amp;\u0645\u062C\u062D‎=\uFD8C<br>‎&amp;مجح‎=ﶌ<br># ‎&amp;\u0645\u062C\u062E‎=\uFD92<br>‎&amp;مجخ‎=ﶒ<br># ‎&amp;\u0645\u062C\u0645‎=\uFD8D<br>‎&amp;مجم‎=ﶍ<br># ‎&amp;\u0645\u062C\u064A‎=\uFDC0<br>‎&amp;مجي‎=ﷀ<br># ‎&amp;\u0645\u062D‎=\uFC46‎=\uFCCF<br>‎&amp;مح‎=ﱆ‎=ﳏ<br># ‎&amp;\u0645\u062D\u062C‎=\uFD89<br>‎&amp;محج‎=ﶉ<br># ‎&amp;\u0645\u062D\u0645‎=\uFD8A<br>‎&amp;محم‎=ﶊ<br># ‎&amp;\u0645\u062D\u0645\u062F‎&lt;&lt;&lt;\uFDF4<br>‎&amp;محمد‎&lt;&lt;&lt;ﷴ<br># ‎&amp;\u0645\u062D\u064A‎=\uFD8B<br>‎&amp;محي‎=ﶋ<br># ‎&amp;\u0645\u062E‎=\uFC47‎=\uFCD0<br>‎&amp;مخ‎=ﱇ‎=ﳐ<br># ‎&amp;\u0645\u062E\u062C‎=\uFD8E<br>‎&amp;مخج‎=ﶎ<br># ‎&amp;\u0645\u062E\u0645‎=\uFD8F<br>‎&amp;مخم‎=ﶏ<br># ‎&amp;\u0645\u062E\u064A‎=\uFDB9<br>‎&amp;مخي‎=ﶹ<br># ‎&amp;\u0645\u0645‎=\uFC48‎=\uFC89‎=\uFCD1<br>‎&amp;مم‎=ﱈ‎=ﲉ‎=ﳑ<br># ‎&amp;\u0645\u0645\u064A‎=\uFDB1<br>‎&amp;ممي‎=ﶱ<br># ‎&amp;\u0645\u0649‎=\uFC49<br>‎&amp;مى‎=ﱉ<br># ‎&amp;\u0645\u064A‎=\uFC4A<br>‎&amp;مي‎=ﱊ<br># ‎&amp;\u0646‎=\uFEE5‎=\uFEE6‎=\uFEE7‎=\uFEE8<br>‎&amp;ن‎=ﻥ‎=ﻦ‎=ﻧ‎=ﻨ<br># ‎&amp;\u0646\u062C‎=\uFC4B‎=\uFCD2<br>‎&amp;نج‎=ﱋ‎=ﳒ<br># ‎&amp;\u0646\u062C\u062D‎=\uFDB8‎=\uFDBD<br>‎&amp;نجح‎=ﶸ‎=ﶽ<br># ‎&amp;\u0646\u062C\u0645‎=\uFD97‎=\uFD98<br>‎&amp;نجم‎=ﶗ‎=ﶘ<br># ‎&amp;\u0646\u062C\u0649‎=\uFD99<br>‎&amp;نجى‎=ﶙ<br># ‎&amp;\u0646\u062C\u064A‎=\uFDC7<br>‎&amp;نجي‎=ﷇ<br># ‎&amp;\u0646\u062D‎=\uFC4C‎=\uFCD3<br>‎&amp;نح‎=ﱌ‎=ﳓ<br># ‎&amp;\u0646\u062D\u0645‎=\uFD95<br>‎&amp;نحم‎=ﶕ<br># ‎&amp;\u0646\u062D\u0649‎=\uFD96<br>‎&amp;نحى‎=ﶖ<br># ‎&amp;\u0646\u062D\u064A‎=\uFDB3<br>‎&amp;نحي‎=ﶳ<br># ‎&amp;\u0646\u062E‎=\uFC4D‎=\uFCD4<br>‎&amp;نخ‎=ﱍ‎=ﳔ<br># ‎&amp;\u0646\u0631‎=\uFC8A<br>‎&amp;نر‎=ﲊ<br># ‎&amp;\u0646\u0632‎=\uFC8B<br>‎&amp;نز‎=ﲋ<br># ‎&amp;\u0646\u0645‎=\uFC4E‎=\uFC8C‎=\uFCD5‎=\uFCEE<br>‎&amp;نم‎=ﱎ‎=ﲌ‎=ﳕ‎=ﳮ<br># ‎&amp;\u0646\u0645\u0649‎=\uFD9B<br>‎&amp;نمى‎=ﶛ<br># ‎&amp;\u0646\u0645\u064A‎=\uFD9A<br>‎&amp;نمي‎=ﶚ<br># ‎&amp;\u0646\u0646‎=\uFC8D<br>‎&amp;نن‎=ﲍ<br># ‎&amp;\u0646\u0647‎=\uFCD6‎=\uFCEF<br>‎&amp;نه‎=ﳖ‎=ﳯ<br># ‎&amp;\u0646\u0649‎=\uFC4F‎=\uFC8E<br>‎&amp;نى‎=ﱏ‎=ﲎ<br># ‎&amp;\u0646\u064A‎=\uFC50‎=\uFC8F<br>‎&amp;ني‎=ﱐ‎=ﲏ<br># ‎&amp;\u0647‎=\uFEE9‎=\uFEEA‎=\uFEEB‎=\uFEEC<br>‎&amp;ه‎=ﻩ‎=ﻪ‎=ﻫ‎=ﻬ<br># ‎&amp;\u0647\u062C‎=\uFC51‎=\uFCD7<br>‎&amp;هج‎=ﱑ‎=ﳗ<br># ‎&amp;\u0647\u0645‎=\uFC52‎=\uFCD8<br>‎&amp;هم‎=ﱒ‎=ﳘ<br># ‎&amp;\u0647\u0645\u062C‎=\uFD93<br>‎&amp;همج‎=ﶓ<br># ‎&amp;\u0647\u0645\u0645‎=\uFD94<br>‎&amp;همم‎=ﶔ<br># ‎&amp;\u0647\u0649‎=\uFC53<br>‎&amp;هى‎=ﱓ<br># ‎&amp;\u0647\u064A‎=\uFC54<br>‎&amp;هي‎=ﱔ<br># ‎&amp;\u0647\u0670‎=\uFCD9<br>‎&amp;ه\u0670‎=ﳙ<br># ‎&amp;\u0648‎=\uFEED‎=\uFEEE<br>‎&amp;و‎=ﻭ‎=ﻮ<br># ‎&amp;\u0648\u0633\u0644\u0645‎&lt;&lt;&lt;\uFDF8<br>‎&amp;وسلم‎&lt;&lt;&lt;ﷸ<br># ‎&amp;\u0648\u0654‎=\uFE85‎=\uFE86<br>‎&amp;ؤ‎=ﺅ‎=ﺆ<br># ‎&amp;\u0649‎=\uFBE8‎=\uFBE9‎=\uFEEF‎=\uFEF0<br>‎&amp;ى‎=ﯨ‎=ﯩ‎=ﻯ‎=ﻰ<br># ‎&amp;\u0649\u0670‎=\uFC5D‎=\uFC90<br>‎&amp;ى\u0670‎=ﱝ‎=ﲐ<br># ‎&amp;\u064A‎=\uFEF1‎=\uFEF2‎=\uFEF3‎=\uFEF4<br>‎&amp;ي‎=ﻱ‎=ﻲ‎=ﻳ‎=ﻴ<br># ‎&amp;\u064A\u062C‎=\uFC55‎=\uFCDA<br>‎&amp;يج‎=ﱕ‎=ﳚ<br># ‎&amp;\u064A\u062C\u064A‎=\uFDAF<br>‎&amp;يجي‎=ﶯ<br># ‎&amp;\u064A\u062D‎=\uFC56‎=\uFCDB<br>‎&amp;يح‎=ﱖ‎=ﳛ<br># ‎&amp;\u064A\u062D\u064A‎=\uFDAE<br>‎&amp;يحي‎=ﶮ<br># ‎&amp;\u064A\u062E‎=\uFC57‎=\uFCDC<br>‎&amp;يخ‎=ﱗ‎=ﳜ<br># ‎&amp;\u064A\u0631‎=\uFC91<br>‎&amp;ير‎=ﲑ<br># ‎&amp;\u064A\u0632‎=\uFC92<br>‎&amp;يز‎=ﲒ<br># ‎&amp;\u064A\u0645‎=\uFC58‎=\uFC93‎=\uFCDD‎=\uFCF0<br>‎&amp;يم‎=ﱘ‎=ﲓ‎=ﳝ‎=ﳰ<br># ‎&amp;\u064A\u0645\u0645‎=\uFD9C‎=\uFD9D<br>‎&amp;يمم‎=ﶜ‎=ﶝ<br># ‎&amp;\u064A\u0645\u064A‎=\uFDB0<br>‎&amp;يمي‎=ﶰ<br># ‎&amp;\u064A\u0646‎=\uFC94<br>‎&amp;ين‎=ﲔ<br># ‎&amp;\u064A\u0647‎=\uFCDE‎=\uFCF1<br>‎&amp;يه‎=ﳞ‎=ﳱ<br># ‎&amp;\u064A\u0649‎=\uFC59‎=\uFC95<br>‎&amp;يى‎=ﱙ‎=ﲕ<br># ‎&amp;\u064A\u064A‎=\uFC5A‎=\uFC96<br>‎&amp;يي‎=ﱚ‎=ﲖ<br># ‎&amp;\u064A\u0654‎=\uFE89‎=\uFE8A‎=\uFE8B‎=\uFE8C<br>‎&amp;ئ‎=ﺉ‎=ﺊ‎=ﺋ‎=ﺌ<br># ‎&amp;\u064A\u0654\u0627‎=\uFBEA‎=\uFBEB<br>‎&amp;ئا‎=ﯪ‎=ﯫ<br># ‎&amp;\u064A\u0654\u062C‎=\uFC00‎=\uFC97<br>‎&amp;ئج‎=ﰀ‎=ﲗ<br># ‎&amp;\u064A\u0654\u062D‎=\uFC01‎=\uFC98<br>‎&amp;ئح‎=ﰁ‎=ﲘ<br># ‎&amp;\u064A\u0654\u062E‎=\uFC99<br>‎&amp;ئخ‎=ﲙ<br># ‎&amp;\u064A\u0654\u0631‎=\uFC64<br>‎&amp;ئر‎=ﱤ<br># ‎&amp;\u064A\u0654\u0632‎=\uFC65<br>‎&amp;ئز‎=ﱥ<br># ‎&amp;\u064A\u0654\u0645‎=\uFC02‎=\uFC66‎=\uFC9A‎=\uFCDF<br>‎&amp;ئم‎=ﰂ‎=ﱦ‎=ﲚ‎=ﳟ<br># ‎&amp;\u064A\u0654\u0646‎=\uFC67<br>‎&amp;ئن‎=ﱧ<br># ‎&amp;\u064A\u0654\u0647‎=\uFC9B‎=\uFCE0<br>‎&amp;ئه‎=ﲛ‎=ﳠ<br># ‎&amp;\u064A\u0654\u0648‎=\uFBEE‎=\uFBEF<br>‎&amp;ئو‎=ﯮ‎=ﯯ<br># ‎&amp;\u064A\u0654\u0649‎=\uFBF9‎=\uFBFA‎=\uFBFB‎=\uFC03‎=\uFC68<br>‎&amp;ئى‎=ﯹ‎=ﯺ‎=ﯻ‎=ﰃ‎=ﱨ<br># ‎&amp;\u064A\u0654\u064A‎=\uFC04‎=\uFC69<br>‎&amp;ئي‎=ﰄ‎=ﱩ<br># ‎&amp;\u064A\u0654\u06C6‎=\uFBF2‎=\uFBF3<br>‎&amp;ئۆ‎=ﯲ‎=ﯳ<br># ‎&amp;\u064A\u0654\u06C7‎=\uFBF0‎=\uFBF1<br>‎&amp;ئۇ‎=ﯰ‎=ﯱ<br># ‎&amp;\u064A\u0654\u06C8‎=\uFBF4‎=\uFBF5<br>‎&amp;ئۈ‎=ﯴ‎=ﯵ<br># ‎&amp;\u064A\u0654\u06D0‎=\uFBF6‎=\uFBF7‎=\uFBF8<br>‎&amp;ئې‎=ﯶ‎=ﯷ‎=ﯸ<br># ‎&amp;\u064A\u0654\u06D5‎=\uFBEC‎=\uFBED<br>‎&amp;ئە‎=ﯬ‎=ﯭ<br># ‎&amp;\u064B‎=\uFE70<br>‎&amp;\u064B‎=ﹰ<br># ‎&amp;\u064C‎=\uFE72<br>‎&amp;\u064C‎=ﹲ<br># ‎&amp;\u064C\u0651‎=\uFC5E<br>‎&amp;\u064C\u0651‎=ﱞ<br># ‎&amp;\u064D‎=\uFE74<br>‎&amp;\u064D‎=ﹴ<br># ‎&amp;\u064D\u0651‎=\uFC5F<br>‎&amp;\u064D\u0651‎=ﱟ<br># ‎&amp;\u064E‎=\uFE76<br>‎&amp;\u064E‎=ﹶ<br># ‎&amp;\u064E\u0651‎=\uFC60<br>‎&amp;\u064E\u0651‎=ﱠ<br># ‎&amp;\u064F‎=\uFE78<br>‎&amp;\u064F‎=ﹸ<br># ‎&amp;\u064F\u0651‎=\uFC61<br>‎&amp;\u064F\u0651‎=ﱡ<br># ‎&amp;\u0650‎=\uFE7A<br>‎&amp;\u0650‎=ﹺ<br># ‎&amp;\u0650\u0651‎=\uFC62<br>‎&amp;\u0650\u0651‎=ﱢ<br># ‎&amp;\u0651‎=\uFE7C<br>‎&amp;\u0651‎=ﹼ<br># ‎&amp;\u0651\u0670‎=\uFC63<br>‎&amp;\u0651\u0670‎=ﱣ<br># ‎&amp;\u0652‎=\uFE7E<br>‎&amp;\u0652‎=ﹾ<br># ‎&amp;\u0671‎=\uFB50‎=\uFB51<br>‎&amp;ٱ‎=ﭐ‎=ﭑ<br># ‎&amp;\u0679‎=\uFB66‎=\uFB67‎=\uFB68‎=\uFB69<br>‎&amp;ٹ‎=ﭦ‎=ﭧ‎=ﭨ‎=ﭩ<br># ‎&amp;\u067A‎=\uFB5E‎=\uFB5F‎=\uFB60‎=\uFB61<br>‎&amp;ٺ‎=ﭞ‎=ﭟ‎=ﭠ‎=ﭡ<br># ‎&amp;\u067B‎=\uFB52‎=\uFB53‎=\uFB54‎=\uFB55<br>‎&amp;ٻ‎=ﭒ‎=ﭓ‎=ﭔ‎=ﭕ<br># ‎&amp;\u067E‎=\uFB56‎=\uFB57‎=\uFB58‎=\uFB59<br>‎&amp;پ‎=ﭖ‎=ﭗ‎=ﭘ‎=ﭙ<br># ‎&amp;\u067F‎=\uFB62‎=\uFB63‎=\uFB64‎=\uFB65<br>‎&amp;ٿ‎=ﭢ‎=ﭣ‎=ﭤ‎=ﭥ<br># ‎&amp;\u0680‎=\uFB5A‎=\uFB5B‎=\uFB5C‎=\uFB5D<br>‎&amp;ڀ‎=ﭚ‎=ﭛ‎=ﭜ‎=ﭝ<br># ‎&amp;\u0683‎=\uFB76‎=\uFB77‎=\uFB78‎=\uFB79<br>‎&amp;ڃ‎=ﭶ‎=ﭷ‎=ﭸ‎=ﭹ<br># ‎&amp;\u0684‎=\uFB72‎=\uFB73‎=\uFB74‎=\uFB75<br>‎&amp;ڄ‎=ﭲ‎=ﭳ‎=ﭴ‎=ﭵ<br># ‎&amp;\u0686‎=\uFB7A‎=\uFB7B‎=\uFB7C‎=\uFB7D<br>‎&amp;چ‎=ﭺ‎=ﭻ‎=ﭼ‎=ﭽ<br># ‎&amp;\u0687‎=\uFB7E‎=\uFB7F‎=\uFB80‎=\uFB81<br>‎&amp;ڇ‎=ﭾ‎=ﭿ‎=ﮀ‎=ﮁ<br># ‎&amp;\u0688‎=\uFB88‎=\uFB89<br>‎&amp;ڈ‎=ﮈ‎=ﮉ<br># ‎&amp;\u068C‎=\uFB84‎=\uFB85<br>‎&amp;ڌ‎=ﮄ‎=ﮅ<br># ‎&amp;\u068D‎=\uFB82‎=\uFB83<br>‎&amp;ڍ‎=ﮂ‎=ﮃ<br># ‎&amp;\u068E‎=\uFB86‎=\uFB87<br>‎&amp;ڎ‎=ﮆ‎=ﮇ<br># ‎&amp;\u0691‎=\uFB8C‎=\uFB8D<br>‎&amp;ڑ‎=ﮌ‎=ﮍ<br># ‎&amp;\u0698‎=\uFB8A‎=\uFB8B<br>‎&amp;ژ‎=ﮊ‎=ﮋ<br># ‎&amp;\u06A4‎=\uFB6A‎=\uFB6B‎=\uFB6C‎=\uFB6D<br>‎&amp;ڤ‎=ﭪ‎=ﭫ‎=ﭬ‎=ﭭ<br># ‎&amp;\u06A6‎=\uFB6E‎=\uFB6F‎=\uFB70‎=\uFB71<br>‎&amp;ڦ‎=ﭮ‎=ﭯ‎=ﭰ‎=ﭱ<br># ‎&amp;\u06A9‎=\uFB8E‎=\uFB8F‎=\uFB90‎=\uFB91<br>‎&amp;ک‎=ﮎ‎=ﮏ‎=ﮐ‎=ﮑ<br># ‎&amp;\u06AD‎=\uFBD3‎=\uFBD4‎=\uFBD5‎=\uFBD6<br>‎&amp;ڭ‎=ﯓ‎=ﯔ‎=ﯕ‎=ﯖ<br># ‎&amp;\u06AF‎=\uFB92‎=\uFB93‎=\uFB94‎=\uFB95<br>‎&amp;گ‎=ﮒ‎=ﮓ‎=ﮔ‎=ﮕ<br># ‎&amp;\u06B1‎=\uFB9A‎=\uFB9B‎=\uFB9C‎=\uFB9D<br>‎&amp;ڱ‎=ﮚ‎=ﮛ‎=ﮜ‎=ﮝ<br># ‎&amp;\u06B3‎=\uFB96‎=\uFB97‎=\uFB98‎=\uFB99<br>‎&amp;ڳ‎=ﮖ‎=ﮗ‎=ﮘ‎=ﮙ<br># ‎&amp;\u06BA‎=\uFB9E‎=\uFB9F<br>‎&amp;ں‎=ﮞ‎=ﮟ<br># ‎&amp;\u06BB‎=\uFBA0‎=\uFBA1‎=\uFBA2‎=\uFBA3<br>‎&amp;ڻ‎=ﮠ‎=ﮡ‎=ﮢ‎=ﮣ<br># ‎&amp;\u06BE‎=\uFBAA‎=\uFBAB‎=\uFBAC‎=\uFBAD<br>‎&amp;ھ‎=ﮪ‎=ﮫ‎=ﮬ‎=ﮭ<br># ‎&amp;\u06C1‎=\uFBA6‎=\uFBA7‎=\uFBA8‎=\uFBA9<br>‎&amp;ہ‎=ﮦ‎=ﮧ‎=ﮨ‎=ﮩ<br># ‎&amp;\u06C5‎=\uFBE0‎=\uFBE1<br>‎&amp;ۅ‎=ﯠ‎=ﯡ<br># ‎&amp;\u06C6‎=\uFBD9‎=\uFBDA<br>‎&amp;ۆ‎=ﯙ‎=ﯚ<br># ‎&amp;\u06C7‎=\uFBD7‎=\uFBD8<br>‎&amp;ۇ‎=ﯗ‎=ﯘ<br># ‎&amp;\u06C7\u0674‎=\uFBDD<br>‎&amp;ۇٴ‎=ﯝ<br># ‎&amp;\u06C8‎=\uFBDB‎=\uFBDC<br>‎&amp;ۈ‎=ﯛ‎=ﯜ<br># ‎&amp;\u06C9‎=\uFBE2‎=\uFBE3<br>‎&amp;ۉ‎=ﯢ‎=ﯣ<br># ‎&amp;\u06CB‎=\uFBDE‎=\uFBDF<br>‎&amp;ۋ‎=ﯞ‎=ﯟ<br># ‎&amp;\u06CC‎=\uFBFC‎=\uFBFD‎=\uFBFE‎=\uFBFF<br>‎&amp;ی‎=ﯼ‎=ﯽ‎=ﯾ‎=ﯿ<br># ‎&amp;\u06D0‎=\uFBE4‎=\uFBE5‎=\uFBE6‎=\uFBE7<br>‎&amp;ې‎=ﯤ‎=ﯥ‎=ﯦ‎=ﯧ<br># ‎&amp;\u06D2‎=\uFBAE‎=\uFBAF<br>‎&amp;ے‎=ﮮ‎=ﮯ<br># ‎&amp;\u06D2\u0654‎=\uFBB0‎=\uFBB1<br>‎&amp;ۓ‎=ﮰ‎=ﮱ<br># ‎&amp;\u06D5\u0654‎=\uFBA4‎=\uFBA5<br>‎&amp;ۀ‎=ﮤ‎=ﮥ<br>#<br># End of updated Arabic Ordering Specification‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source' rowSpan='3'><a name='“And” List' href='#“And” List'>“And” List</a></td><td class='source'>start</td><td class='target' rowSpan='2'>{0}، {1}</td><td class='target' rowSpan='6'>‫{0} و{1}‬</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source'>end</td><td class='target' rowSpan='4'>‫{0}، و{1}‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Short “and” List' href='#Short “and” List'>Short “and” List</a></td><td class='source'>start</td><td class='target' rowSpan='11'>moderate</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source'>end</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='“Or” List' href='#“Or” List'>“Or” List</a></td><td class='source'>start</td><td class='target' rowSpan='4'>‫{0} و{1}‬</td><td class='target' rowSpan='4'>‫{0} أو {1}‬</td></tr>
+	<tr><td class='source' rowSpan='2'>middle</td></tr>
+	<tr><td class='source'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td></tr>
+	<tr><td class='source'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td><td class='source'>start</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Narrow Unit List' href='#Narrow Unit List'>Narrow Unit List</a></td><td class='source'>2</td><td class='target' rowSpan='4'>{0}، {1}</td><td class='target' rowSpan='4'>‫{0} و{1}‬</td></tr>
+	<tr><td class='source'>start</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source'>end</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

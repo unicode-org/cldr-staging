@@ -1,0 +1,867 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Faroese Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="http://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Faroese Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last version. Inherited differences in locales are suppressed, except where the source locales are different.  The collations and metadata still have a raw format. The rbnf, segmentations, and annotations are not yet included.<p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: punctuation</td><td class='source' rowSpan='782'>fo</td><td class='target'>[\- ‐ – , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ′ ″]</td><td class='target'>[\- ‐ ‑ – , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ′ ″]</td><td class='target'>core</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='5'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='5'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>yue</td><td class='target'>kinesiskt, kantonesiskt</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>Chakma ► ccp</td><td class='target'>ccp</td><td class='target'>khakma</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target' rowSpan='3'>zh</td><td class='target'>mandarin kinesiskt (einkult)</td><td class='target' rowSpan='13'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>mandarin kinesiskt (vanligt)</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>kinesiskt, mandarin</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source' rowSpan='4'><a name='E' href='#E'>E</a></td><td class='source'>English ► en_AU</td><td class='target'>en_AU</td><td class='target'>enskt (Avstralia)</td></tr>
+	<tr><td class='source'>English ► en_CA</td><td class='target'>en_CA</td><td class='target'>enskt (Kanada)</td></tr>
+	<tr><td class='source'>English ► en_GB</td><td class='target'>en_GB</td><td class='target'>enskt (Stórabretland)</td></tr>
+	<tr><td class='source'>English ► en_US</td><td class='target'>en_US</td><td class='target'>enskt (Sambandsríki Amerika)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='F' href='#F'>F</a></td><td class='source'>French ► fr_CA</td><td class='target'>fr_CA</td><td class='target'>franskt (Kanada)</td></tr>
+	<tr><td class='source'>French ► fr_CH</td><td class='target'>fr_CH</td><td class='target'>franskt (Sveis)</td></tr>
+	<tr><td class='source'><a name='G' href='#G'>G</a></td><td class='source'>German ► de_AT</td><td class='target'>de_AT</td><td class='target'>týskt (Eysturríki)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source' rowSpan='3'><a name='S' href='#S'>S</a></td><td class='source'>Spanish ► es_419</td><td class='target'>es_419</td><td class='target'>spanskt (Latínamerika)</td></tr>
+	<tr><td class='source'>Spanish ► es_ES</td><td class='target'>es_ES</td><td class='target'>spanskt (Spania)</td></tr>
+	<tr><td class='source'>Spanish ► es_MX</td><td class='target'>es_MX</td><td class='target'>spanskt (Meksiko)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source' rowSpan='2'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>XA</td><td class='target'>XA</td><td class='target'>óekta tónalag</td><td class='target' rowSpan='209'>moderate</td></tr>
+	<tr><td class='source'>XB</td><td class='target'>XB</td><td class='target'>óektaður BIDI tekstur</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'>CI-variant</td><td class='target'>CI</td><td class='target'>Fílabeinsstrondin</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source'>CD-variant</td><td class='target'>CD</td><td class='target'>Kongo, Dem. Lýðveldið</td></tr>
+	<tr><td class='source'>CG-variant</td><td class='target'>CG</td><td class='target'>Kongo</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Svasiland</td><td class='target'>Esvatini</td></tr>
+	<tr><td class='source'>SZ-variant</td><td class='target'>SZ</td><td class='target'>Svasiland</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Eastern Europe' href='#Eastern Europe'>Eastern Europe</a></td><td class='source'>CZ-variant</td><td class='target'>CZ</td><td class='target'>Kekkia</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Southern Europe' href='#Southern Europe'>Southern Europe</a></td><td class='source'>MK</td><td class='target'>Makedónia</td><td class='target' rowSpan='2'>MK</td></tr>
+	<tr><td class='source'>MK-variant</td><td class='target'>Makedónia (FJM)</td></tr>
+	<tr><td class='source'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>TL-variant</td><td class='target'>TL</td><td class='target'>Eysturtimor</td></tr>
+	<tr><td class='source' rowSpan='60'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='12'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='3'><a name='Relative Month Short' href='#Relative Month Short'>Relative Month Short</a></td><td class='source'>-1</td><td class='target'>seinasta mánað</td><td class='target'>seinasta mnð.</td></tr>
+	<tr><td class='source'>0</td><td class='target'>henda mánaðin</td><td class='target'>henda mnð.</td></tr>
+	<tr><td class='source'>1</td><td class='target'>næsta mánað</td><td class='target'>næsta mnð.</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td><td class='source'>-1</td><td class='target'>seinasta mánað</td><td class='target'>seinasta mnð.</td></tr>
+	<tr><td class='source'>0</td><td class='target'>henda mánaðin</td><td class='target'>henda mnð.</td></tr>
+	<tr><td class='source'>1</td><td class='target'>næsta mánað</td><td class='target'>næsta mnð.</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Week Short' href='#Relative Week Short'>Relative Week Short</a></td><td class='source'>-1</td><td class='target'>seinastu viku</td><td class='target'>seinastu vi.</td></tr>
+	<tr><td class='source'>0</td><td class='target'>hesu viku</td><td class='target'>hesu vi.</td></tr>
+	<tr><td class='source'>1</td><td class='target'>næstu viku</td><td class='target'>næstu vi.</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Week Narrow' href='#Relative Week Narrow'>Relative Week Narrow</a></td><td class='source'>-1</td><td class='target'>seinastu viku</td><td class='target'>seinastu v.</td></tr>
+	<tr><td class='source'>0</td><td class='target'>hesu viku</td><td class='target'>hesu v.</td></tr>
+	<tr><td class='source'>1</td><td class='target'>næstu viku</td><td class='target'>næstu v.</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='48'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y–y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM.y GGGGG – MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM.y–MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>dd.MM.y–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd.MM.y GGGGG – dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd.MM.y – dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, dd.MM.y – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E, dd.MM.y GGGGG – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E, dd.MM.y – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM–MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d.–d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d. MMM y G – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d. MMM – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d. MMM y – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d. MMM – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E, d. MMM y G – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d. MMM – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E, d. MMM y – E, d. MMM y G</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y–y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM.y GGGGG – MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM.y–MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>dd.MM.y–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd.MM.y GGGGG – dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd.MM.y–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, dd.MM.y – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E, dd.MM.y GGGGG – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E, dd.MM.y – E, dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM–MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d.–d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d. MMM y G – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d. MMM – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d. MMM y – d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d. MMM – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E, d. MMM y G – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d. MMM – E, d. MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E, d. MMM y – E, d. MMM y G</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='Central Asia' href='#Central Asia'>Central Asia</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Qostanay</td><td class='target'>Qostanay</td><td class='target'>Kostanay</td></tr>
+	<tr><td class='source'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td><td class='source'><a name='Miscellaneous Patterns ' href='#Miscellaneous Patterns '>Miscellaneous Patterns </a></td><td class='source'>atLeast</td><td class='target'>{0} ella meira</td><td class='target'>{0}+</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Mauritania' href='#Western Africa: Mauritania'>Western Africa: Mauritania</a></td><td class='source'>MRU-name-other</td><td class='target'>Móritania ouguiya</td><td class='target'>Móritania ouguiyar</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source'><a name='Middle Africa: Angola' href='#Middle Africa: Angola'>Middle Africa: Angola</a></td><td class='source'>AOA-name-other</td><td class='target'>Angola kwanza</td><td class='target'>Angola kwanzar</td></tr>
+	<tr><td class='source'><a name='Middle Africa: São Tomé & Príncipe' href='#Middle Africa: São Tomé & Príncipe'>Middle Africa: São Tomé & Príncipe</a></td><td class='source'>STN-name-other</td><td class='target'>Sao Tome &amp; Prinsipi dobra</td><td class='target'>Sao Tome &amp; Prinsipi dobrar</td></tr>
+	<tr><td class='source'><a name='Eastern Africa' href='#Eastern Africa'>Eastern Africa</a></td><td class='source'><a name='Eastern Africa: Eritrea' href='#Eastern Africa: Eritrea'>Eastern Africa: Eritrea</a></td><td class='source'>ERN-name-other</td><td class='target'>Eritrea nakfa</td><td class='target'>Eritrea nakfar</td></tr>
+	<tr><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'><a name='Southern Africa: Botswana' href='#Southern Africa: Botswana'>Southern Africa: Botswana</a></td><td class='source'>BWP-name-other</td><td class='target'>Botsvana pula</td><td class='target'>Botsvana pular</td></tr>
+	<tr><td class='source' rowSpan='131'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='9'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='6'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>áratíggju</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} áratíggju</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>áratí.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} áratí.</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='month' href='#month'>month</a></td><td class='source'>short-displayName</td><td class='target'>mán.</td><td class='target'>mnð.</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} mán.</td><td class='target' rowSpan='2'>{0} mnð.</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='3'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='21'>▷missing◁</td><td class='target'>punkt fyri hvønn sentimetur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} punkt fyri hvønn sentimetur</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>punkt fyri hvønn tumma</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} punkt fyri hvønn tumma</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'><a name='em' href='#em'>em</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>prent em</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='target'>megaskíggjadeplar</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} megaskíggjadepil</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} megaskíggjadeplar</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>megaskíggjadeplar</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>skíggjadeplar</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} skíggjadeplar</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>skíggjadeplar</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>skíggjadeplar fyri hvønn sentimetur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} skíggjadeplar fyri hvønn sentimetur</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>skíggjadeplar fyri hvønn tunna</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} skíggjadepil fyri hvønn tunna</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} skíggjadeplar fyri hvønn tunna</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='4'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>long-displayName</td><td class='target'>R☉</td><td class='target'>sólarradii</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} R☉</td><td class='target'>{0} sólarradius</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} sólarradii</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>R☉</td><td class='target'>sólarradii</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='6'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>bretskar flótandi unsur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} fl oz Imp.</td><td class='target'>{0} bretsk flótandi unsa</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} bretskar flótandi unsur</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>bretskar flótandi unsur</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} fl oz Imp.</td><td class='target'>{0} bretsk flótandi unsa</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} bretskar flót. unsur</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='barrel' href='#barrel'>barrel</a></td><td class='source'>long-displayName</td><td class='target'>bbl</td><td class='target'>tunnur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} bbl</td><td class='target'>{0} tunna</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} tunnur</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bbl</td><td class='target'>tunna</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} bbl</td><td class='target'>{0} tunna</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} tunnur</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='4'><a name='dalton' href='#dalton'>dalton</a></td><td class='source'>long-displayName</td><td class='target'>Da</td><td class='target'>dalton</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} Da</td><td class='target' rowSpan='2'>{0} dalton</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Da</td><td class='target'>dalton</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='source'>long-displayName</td><td class='target'>M⊕</td><td class='target'>jarðmassi</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} M⊕</td><td class='target'>{0} jarðmassi</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} jarðmassar</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>M⊕</td><td class='target'>jarðmassi</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source'>long-displayName</td><td class='target'>M☉</td><td class='target'>sólarmassi</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} M☉</td><td class='target'>{0} sólarmassi</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} sólarmassar</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>M☉</td><td class='target'>sólarmassi</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='4'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='source'>long-displayName</td><td class='target'>eV</td><td class='target'>elektronvolt</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} eV</td><td class='target' rowSpan='2'>{0} elektronvolt</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>eV</td><td class='target'>elektronvolt</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='source'>long-displayName</td><td class='target'>Btu</td><td class='target'>bretskar hitaeindir</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} Btu</td><td class='target'>{0} bretsk hitaeind</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} bretskar hitaeindir</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Btu</td><td class='target'>bretskar hitaeindir</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>hitaeindir</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} hitaeind</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} hitaeindir</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>hitaeindir</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} thm</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='6'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source'>long-displayName</td><td class='target'>atm</td><td class='target'>lufttrýst</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} atm</td><td class='target' rowSpan='2'>{0} lufttrýst</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>atm</td><td class='target'>lufttrýst</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0} atm</td><td class='target' rowSpan='2'>{0} lufttrýst</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>pascal</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} Pascal</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>pascal</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source'>long-displayName</td><td class='target'>kPa</td><td class='target'>kilopascal</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} kPa</td><td class='target' rowSpan='2'>{0} kilopascal</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='source'>long-displayName</td><td class='target'>MPa</td><td class='target'>megapascal</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} MPa</td><td class='target' rowSpan='2'>{0} megapascal</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='3'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>long-displayName</td><td class='target'>PB</td><td class='target'>petabýt</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} PB</td><td class='target' rowSpan='2'>{0} petabýt</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Coordinates' href='#Coordinates'>Coordinates</a></td><td class='source' rowSpan='3'><a name='all' href='#all'>all</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='3'>direction</td><td class='target' rowSpan='3'>ætt</td></tr>
+	<tr><td class='source'>short-displayName</td></tr>
+	<tr><td class='source'>narrow-displayName</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='8'><a name='percent' href='#percent'>percent</a></td><td class='source'>long-displayName</td><td class='target'>%</td><td class='target'>prosent</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0}%</td><td class='target' rowSpan='2'>{0} prosent</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>%</td><td class='target'>prosent</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0}%</td><td class='target' rowSpan='4'>{0} %</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-one</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='permille' href='#permille'>permille</a></td><td class='source'>long-displayName</td><td class='target'>‰</td><td class='target'>promillur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0}‰</td><td class='target'>{0} promilla</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} promillur</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‰</td><td class='target'>promillur</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0}‰</td><td class='target' rowSpan='2'>{0} ‰</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>long-displayName</td><td class='target'>‱</td><td class='target'>promyriad</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0}‱</td><td class='target' rowSpan='2'>{0} promyriad</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‱</td><td class='target'>promyriad</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='2'>{0}‱</td><td class='target' rowSpan='2'>{0} ‱</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source'>long-displayName</td><td class='target'>lbf</td><td class='target'>pund av kraft</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} lbf</td><td class='target' rowSpan='2'>{0} pund av kraft</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-displayName</td><td class='target'>N</td><td class='target'>newton</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} N</td><td class='target' rowSpan='2'>{0} newton</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>N</td><td class='target'>newton</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>long-displayName</td><td class='target'>L☉</td><td class='target'>sólarljósmegi</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} L☉</td><td class='target' rowSpan='2'>{0} sólarljósmegi</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>L☉</td><td class='target'>sólarljósmegi</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pound-foot' href='#pound-foot'>pound-foot</a></td><td class='source'>long-displayName</td><td class='target'>lbf⋅ft</td><td class='target'>pund føtur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} lbf⋅ft</td><td class='target'>{0} pund fótur</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} pund føtur</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>long-displayName</td><td class='target'>N⋅m</td><td class='target'>newtonmetur</td></tr>
+	<tr><td class='source'>long-one</td><td class='target' rowSpan='2'>{0} N⋅m</td><td class='target'>{0} newtonmetur</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} newtonmetrar</td></tr>
+	<tr><td class='source' rowSpan='554'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='29'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😺 –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>…<br>brosandi<br>…</td><td class='target' rowSpan='554'>modern</td></tr>
+	<tr><td class='source'>😹 –keywords</td><td class='target'>…<br>bros<br>…<br>smíl<br>…</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❣ –keywords</td><td class='target'>…<br>teknseting</td></tr>
+	<tr><td class='source'>❤ -name</td><td class='target'>hjarta</td><td class='target'>reytt hjarta</td></tr>
+	<tr><td class='source'>❤ –keywords</td><td class='target'>…</td><td class='target'>…<br>reytt</td></tr>
+	<tr><td class='source'>🤎 -name</td><td class='target' rowSpan='2'>E12–023</td><td class='target'>brúnt hjarta</td></tr>
+	<tr><td class='source'>🤎 –keywords</td><td class='target'>brúnt<br>hjarta</td></tr>
+	<tr><td class='source'>🤍 -name</td><td class='target' rowSpan='2'>E12–022</td><td class='target'>hvítt hjarta</td></tr>
+	<tr><td class='source'>🤍 –keywords</td><td class='target'>hjarta<br>hvítt</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>🥰 -name</td><td class='target' rowSpan='2'>E11:012</td><td class='target'>smílandi andlit við hjørtum</td></tr>
+	<tr><td class='source'>🥰 –keywords</td><td class='target'>andlit<br>elska<br>hjarta<br>kærleikur<br>smílandi andlit við hjørtum</td></tr>
+	<tr><td class='source'>🥲 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>smílandi andlit ið tárar</td></tr>
+	<tr><td class='source'>🥲 –keywords</td><td class='target'>andlit<br>bros<br>errin<br>smílandi andlit ið tárar<br>stolt<br>stoltur<br>takksamur<br>takksom</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>🥺 -name</td><td class='target' rowSpan='2'>E11:017</td><td class='target'>biðjandi andlit</td></tr>
+	<tr><td class='source'>🥺 –keywords</td><td class='target'>biðjandi andlit<br>bønandi<br>náði</td></tr>
+	<tr><td class='source'>🥱 -name</td><td class='target' rowSpan='2'>E12–026</td><td class='target'>geispandi andlit</td></tr>
+	<tr><td class='source'>🥱 –keywords</td><td class='target'>geisp<br>geispandi andlit<br>keða<br>keðsemi<br>troytt<br>troyttur</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hat' href='#face-hat'>face-hat</a></td><td class='source'>🥷 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>ninja andlit</td></tr>
+	<tr><td class='source'>🥷 –keywords</td><td class='target'>fjaldur<br>ninja<br>ninja andlit<br>sníkjandi<br>stríðsmaður</td></tr>
+	<tr><td class='source'>🥳 -name</td><td class='target' rowSpan='2'>E11:013</td><td class='target'>veitslu andlit</td></tr>
+	<tr><td class='source'>🥳 –keywords</td><td class='target'>hattur<br>veitsla<br>veitslu andlit<br>veitslu horn</td></tr>
+	<tr><td class='source'>🥸 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>grýlu andlit</td></tr>
+	<tr><td class='source'>🥸 –keywords</td><td class='target'>andlit<br>brillur<br>grýla<br>grýlu andlit<br>nøs</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>🥵 -name</td><td class='target' rowSpan='2'>E11:015</td><td class='target'>heitt andlit</td></tr>
+	<tr><td class='source'>🥵 –keywords</td><td class='target'>fepur<br>heitt<br>heitt andlit<br>hitasótt<br>sveitti</td></tr>
+	<tr><td class='source'>🥶 -name</td><td class='target' rowSpan='2'>E11:016</td><td class='target'>kalt andlit</td></tr>
+	<tr><td class='source'>🥶 –keywords</td><td class='target'>blátt andlit<br>frost<br>kalt<br>kalt andlit</td></tr>
+	<tr><td class='source'>🥴 -name</td><td class='target' rowSpan='2'>E11:014</td><td class='target'>í ørviti andlit</td></tr>
+	<tr><td class='source'>🥴 –keywords</td><td class='target'>í ørviti<br>í ørviti andlit<br>kenning<br>skít<br>svimbul</td></tr>
+	<tr><td class='source' rowSpan='126'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='19'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>💪 –keywords</td><td class='target'>biceps<br>…<br>spentur biseps<br>…</td><td class='target'>biseps<br>…</td></tr>
+	<tr><td class='source'>🦾 -name</td><td class='target' rowSpan='2'>E12–040</td><td class='target'>kunstigur armur</td></tr>
+	<tr><td class='source'>🦾 –keywords</td><td class='target'>armur<br>kunstigur armur<br>maskinarmur<br>mekaniskur</td></tr>
+	<tr><td class='source'>🦿 -name</td><td class='target' rowSpan='2'>E12–041</td><td class='target'>kunstigt bein</td></tr>
+	<tr><td class='source'>🦿 –keywords</td><td class='target'>bein<br>kunstigt bein<br>maskinbein<br>mekaniskt</td></tr>
+	<tr><td class='source'>🦵 -name</td><td class='target' rowSpan='2'>E11:038</td><td class='target'>bein</td></tr>
+	<tr><td class='source'>🦵 –keywords</td><td class='target'>bein<br>limur<br>sparka</td></tr>
+	<tr><td class='source'>🦶 -name</td><td class='target' rowSpan='2'>E11:039</td><td class='target'>fótur</td></tr>
+	<tr><td class='source'>🦶 –keywords</td><td class='target'>fótur<br>limur<br>sparka<br>trampa</td></tr>
+	<tr><td class='source'>🦻 -name</td><td class='target' rowSpan='2'>E12–037</td><td class='target'>oyra við hoyritólið</td></tr>
+	<tr><td class='source'>🦻 –keywords</td><td class='target'>deyvur<br>hoyritól<br>oyra<br>oyra við hoyritólið</td></tr>
+	<tr><td class='source'>🫀 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>hjarta</td></tr>
+	<tr><td class='source'>🫀 –keywords</td><td class='target'>hjarta<br>hjartasláttur<br>pulsur<br>yrkisgagn</td></tr>
+	<tr><td class='source'>🫁 -name</td><td class='target'>lungur</td></tr>
+	<tr><td class='source'>🫁 –keywords</td><td class='target'>andadráttur<br>lungur<br>yrkisgagn</td></tr>
+	<tr><td class='source'>🦷 -name</td><td class='target' rowSpan='2'>E11:040</td><td class='target'>tonn</td></tr>
+	<tr><td class='source'>🦷 –keywords</td><td class='target'>tannlækni<br>tonn</td></tr>
+	<tr><td class='source'>🦴 -name</td><td class='target' rowSpan='2'>E11:037</td><td class='target'>kjøtbein</td></tr>
+	<tr><td class='source'>🦴 –keywords</td><td class='target'>bein<br>beinagrind<br>kjøtbein</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='family' href='#family'>family</a></td><td class='source'>🧑‍🤝‍🧑 -name</td><td class='target' rowSpan='2'>E12–099</td><td class='target'>fólk leiðast</td></tr>
+	<tr><td class='source'>🧑‍🤝‍🧑 –keywords</td><td class='target'>fólk<br>leiðast<br>par</td></tr>
+	<tr><td class='source'>👭 -name</td><td class='target'>tvær konur leiðast</td><td class='target'>kvinnur leiðast</td></tr>
+	<tr><td class='source'>👭 –keywords</td><td class='target'>kona<br>…<br>tvær konur leiðast</td><td class='target'>…<br>kvinnur<br>…</td></tr>
+	<tr><td class='source'>👫 -name</td><td class='target'>maður og kona leiðast</td><td class='target'>kvinna or maður leiðast</td></tr>
+	<tr><td class='source'>👫 –keywords</td><td class='target'>…<br>maður og kona leiðast<br>…</td><td class='target'>…<br>kvinna<br>kvinna or maður leiðast<br>…</td></tr>
+	<tr><td class='source'>👬 -name</td><td class='target'>tveir menn leiðast</td><td class='target'>menn leiðast</td></tr>
+	<tr><td class='source'>👬 –keywords</td><td class='target'>…<br>tveir menn leiðast</td><td class='target'>…<br>stjørnutekin<br>tvíburar<br>Tvíburarnir</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🤌 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>samlaðir fingrar</td></tr>
+	<tr><td class='source'>🤌 –keywords</td><td class='target'>fingrar<br>hond<br>hondtekin<br>samlaðir fingrar</td></tr>
+	<tr><td class='source'>🤏 -name</td><td class='target' rowSpan='2'>E12–024</td><td class='target'>fingrar sum vísa ikki nógv</td></tr>
+	<tr><td class='source'>🤏 –keywords</td><td class='target'>eitt sindur<br>fingrar<br>fingrar sum vísa ikki nógv<br>hond<br>hondtekin<br>ikki nógv<br>lítið</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person' href='#person'>person</a></td><td class='source'>🧔 -name</td><td class='target'>persónur við skeggi</td><td class='target'>maður við skeggi</td></tr>
+	<tr><td class='source'>🧔 –keywords</td><td class='target'>fólk<br>persónur við skeggi<br>…</td><td class='target'>maður<br>maður við skeggi<br>…</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source'>🧍 -name</td><td class='target' rowSpan='2'>E12–050</td><td class='target'>persónur ið stendur</td></tr>
+	<tr><td class='source'>🧍 –keywords</td><td class='target'>persónur<br>persónur ið stendur<br>stendur</td></tr>
+	<tr><td class='source'>🧍‍♂ -name</td><td class='target' rowSpan='2'>E12–052</td><td class='target'>maður ið stendur</td></tr>
+	<tr><td class='source'>🧍‍♂ –keywords</td><td class='target'>maður<br>maður ið stendur<br>stendur</td></tr>
+	<tr><td class='source'>🧍‍♀ -name</td><td class='target' rowSpan='2'>E12–051</td><td class='target'>kvinna ið stendur</td></tr>
+	<tr><td class='source'>🧍‍♀ –keywords</td><td class='target'>kona<br>kvinna<br>kvinna ið stendur<br>stendur</td></tr>
+	<tr><td class='source'>🧎 -name</td><td class='target' rowSpan='2'>E12–053</td><td class='target'>persónur á knæ</td></tr>
+	<tr><td class='source'>🧎 –keywords</td><td class='target'>á knæ<br>knæ<br>persónur<br>persónur á knæ</td></tr>
+	<tr><td class='source'>🧎‍♂ -name</td><td class='target' rowSpan='2'>E12–055</td><td class='target'>maður á knæ</td></tr>
+	<tr><td class='source'>🧎‍♂ –keywords</td><td class='target'>á knæ<br>knæ<br>maður<br>maður á knæ</td></tr>
+	<tr><td class='source'>🧎‍♀ -name</td><td class='target' rowSpan='2'>E12–054</td><td class='target'>kvinna á knæ</td></tr>
+	<tr><td class='source'>🧎‍♀ –keywords</td><td class='target'>á knæ<br>knæ<br>kona<br>kvinna<br>kvinna á knæ</td></tr>
+	<tr><td class='source'>👨‍🦯 -name</td><td class='target' rowSpan='2'>E12–002</td><td class='target'>maður við blindastavi</td></tr>
+	<tr><td class='source'>👨‍🦯 –keywords</td><td class='target'>blindastavur<br>blindur<br>maður<br>maður við blindastavi<br>stavur</td></tr>
+	<tr><td class='source'>👩‍🦯 -name</td><td class='target' rowSpan='2'>E12–005</td><td class='target'>kvinna við blindastavi</td></tr>
+	<tr><td class='source'>👩‍🦯 –keywords</td><td class='target'>blind<br>blindastavur<br>kona<br>kvinna<br>kvinna við blindastavi<br>stavur</td></tr>
+	<tr><td class='source'>🧑‍🦯 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>persónur við blindastavi</td></tr>
+	<tr><td class='source'>🧑‍🦯 –keywords</td><td class='target'>blind<br>blindastavur<br>blindur<br>persónur<br>persónur við blindastavi<br>stavur</td></tr>
+	<tr><td class='source'>👨‍🦼 -name</td><td class='target' rowSpan='2'>E12–003</td><td class='target'>maður í motorkoyristóli</td></tr>
+	<tr><td class='source'>👨‍🦼 –keywords</td><td class='target'>koyristólur<br>maður<br>maður í motorkoyristóli<br>motorkoyristólur</td></tr>
+	<tr><td class='source'>👩‍🦼 -name</td><td class='target' rowSpan='2'>E12–006</td><td class='target'>kvinna í motorkoyristóli</td></tr>
+	<tr><td class='source'>👩‍🦼 –keywords</td><td class='target'>kona<br>koyristólur<br>kvinna<br>kvinna í motorkoyristóli<br>motorkoyristólur</td></tr>
+	<tr><td class='source'>🧑‍🦼 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>persónur í motorkoyristóli</td></tr>
+	<tr><td class='source'>🧑‍🦼 –keywords</td><td class='target'>koyristólur<br>motorkoyristólur<br>persónur<br>persónur í motorkoyristóli</td></tr>
+	<tr><td class='source'>👨‍🦽 -name</td><td class='target' rowSpan='2'>E12–004</td><td class='target'>maður í koyristóli</td></tr>
+	<tr><td class='source'>👨‍🦽 –keywords</td><td class='target'>koyristólur<br>maður<br>maður í koyristóli</td></tr>
+	<tr><td class='source'>👩‍🦽 -name</td><td class='target' rowSpan='2'>E12–007</td><td class='target'>kvinna í koyristóli</td></tr>
+	<tr><td class='source'>👩‍🦽 –keywords</td><td class='target'>kona<br>koyristólur<br>kvinna<br>kvinna í koyristóli</td></tr>
+	<tr><td class='source'>🧑‍🦽 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>persónur í koyristóli</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='target'>koyristólur<br>persónur<br>persónur í koyristóli</td></tr>
+	<tr><td class='source'>🧖‍♂ –keywords</td><td class='target'>…<br>kona<br>kvinna<br>…</td><td class='target'>…<br>maður<br>…</td></tr>
+	<tr><td class='source'>🧖‍♀ -name</td><td class='target'>kona í sauna</td><td class='target'>kvinna í sauna</td></tr>
+	<tr><td class='source'>🧖‍♀ –keywords</td><td class='target'>…<br>kona í sauna<br>maður<br>…</td><td class='target'>…<br>kona<br>kvinna<br>kvinna í sauna<br>…</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🦸 -name</td><td class='target' rowSpan='2'>E11:041</td><td class='target'>superhetja</td></tr>
+	<tr><td class='source'>🦸 –keywords</td><td class='target'>góður<br>hetja<br>super<br>superhetja<br>yvirnátúrligur</td></tr>
+	<tr><td class='source'>🦸‍♂ -name</td><td class='target' rowSpan='2'>E11:043</td><td class='target'>mannlig superhetja</td></tr>
+	<tr><td class='source'>🦸‍♂ –keywords</td><td class='target'>góður<br>hetja<br>maður<br>mannlig superhetja<br>super<br>yvirnát´úrligur</td></tr>
+	<tr><td class='source'>🦸‍♀ -name</td><td class='target' rowSpan='2'>E11:042</td><td class='target'>kvinnulig superhetja</td></tr>
+	<tr><td class='source'>🦸‍♀ –keywords</td><td class='target'>góð<br>hetja<br>kvinnulig superhetja<br>super<br>yvirnátúrlig</td></tr>
+	<tr><td class='source'>🦹 -name</td><td class='target' rowSpan='2'>E11:044</td><td class='target'>superskálkur</td></tr>
+	<tr><td class='source'>🦹 –keywords</td><td class='target'>bakbeist<br>illmenni<br>óndur<br>skálkur<br>super<br>superskálkur</td></tr>
+	<tr><td class='source'>🦹‍♂ -name</td><td class='target' rowSpan='2'>E11:046</td><td class='target'>mannligur superskálkur</td></tr>
+	<tr><td class='source'>🦹‍♂ –keywords</td><td class='target'>bakbeist<br>illmenni<br>maður<br>mannligur superskálkur<br>óndur<br>skálkur<br>super</td></tr>
+	<tr><td class='source'>🦹‍♀ -name</td><td class='target' rowSpan='2'>E11:045</td><td class='target'>kvinnuligur superskálkur</td></tr>
+	<tr><td class='source'>🦹‍♀ –keywords</td><td class='target'>bakbeist<br>illmenni<br>kona<br>kvinna<br>kvinnuligur superskálkur<br>ónd<br>skálkur<br>super</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>🧏 -name</td><td class='target' rowSpan='2'>E12–056</td><td class='target'>deyvur persónur</td></tr>
+	<tr><td class='source'>🧏 –keywords</td><td class='target'>deyvur<br>persónur</td></tr>
+	<tr><td class='source'>🧏‍♂ -name</td><td class='target' rowSpan='2'>E12–058</td><td class='target'>deyvur maður</td></tr>
+	<tr><td class='source'>🧏‍♂ –keywords</td><td class='target'>deyvur<br>maður</td></tr>
+	<tr><td class='source'>🧏‍♀ -name</td><td class='target' rowSpan='2'>E12–057</td><td class='target'>deyv kvinna</td></tr>
+	<tr><td class='source'>🧏‍♀ –keywords</td><td class='target'>deyv<br>kona<br>kvinna</td></tr>
+	<tr><td class='source' rowSpan='40'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍⚕ -name</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>heilsuverkfrøðingur</td></tr>
+	<tr><td class='source'>🧑‍⚕ –keywords</td><td class='target'>heilsuverkfrøðingur<br>lækni<br>lekifrøðingur<br>sjúkrarøktarfrøðingur<br>sjúkrasystir</td></tr>
+	<tr><td class='source'>🧑‍🎓 -name</td><td class='target'>studentur</td></tr>
+	<tr><td class='source'>🧑‍🎓 –keywords</td><td class='target'>lesandi<br>næmingur<br>prógv<br>studentur</td></tr>
+	<tr><td class='source'>🧑‍🏫 -name</td><td class='target'>lærari</td></tr>
+	<tr><td class='source'>🧑‍🏫 –keywords</td><td class='target'>lærari<br>professari<br>vegleiðari</td></tr>
+	<tr><td class='source'>🧑‍⚖ -name</td><td class='target'>dómari</td></tr>
+	<tr><td class='source'>🧑‍⚖ –keywords</td><td class='target'>dómari<br>rættvísi</td></tr>
+	<tr><td class='source'>🧑‍🌾 -name</td><td class='target'>bóndi</td></tr>
+	<tr><td class='source'>🧑‍🌾 –keywords</td><td class='target'>bóndi<br>urtagarðsmaður</td></tr>
+	<tr><td class='source'>🧑‍🍳 -name</td><td class='target'>kokkur</td></tr>
+	<tr><td class='source'>🧑‍🍳 –keywords</td><td class='target'>høvuðskokkur<br>kokkur<br>matgera</td></tr>
+	<tr><td class='source'>🧑‍🔧 -name</td><td class='target'>mekanikari</td></tr>
+	<tr><td class='source'>🧑‍🔧 –keywords</td><td class='target'>maksinsmiður<br>mekanikari<br>rørsmiður<br>smiður</td></tr>
+	<tr><td class='source'>👨‍🏭 -name</td><td class='target'>arbeiðsmaður</td><td class='target'>mannligur sveisari</td></tr>
+	<tr><td class='source'>👨‍🏭 –keywords</td><td class='target'>…<br>ídnaðarvirki<br>…<br>verksmiðja<br>virki</td><td class='target'>…<br>mannligur sveisari<br>sjóðari<br>sveisari</td></tr>
+	<tr><td class='source'>👩‍🏭 -name</td><td class='target'>arbeiðskvinna</td><td class='target'>kvinnuligur sveisari</td></tr>
+	<tr><td class='source'>👩‍🏭 –keywords</td><td class='target'>…<br>ídnaðarvirki<br>…<br>verksmiðja<br>virki</td><td class='target'>…<br>kvinnuligur sveisari<br>sj´óðari<br>sveisari</td></tr>
+	<tr><td class='source'>🧑‍🏭 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>sveisari</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>arbeiðsfólk<br>sj´óðari<br>sveisari</td></tr>
+	<tr><td class='source'>🧑‍💼 -name</td><td class='target'>skrivstovufólk</td></tr>
+	<tr><td class='source'>🧑‍💼 –keywords</td><td class='target'>embætisfólk<br>handilsfólk<br>skrivstovufólk<br>starvsfólk</td></tr>
+	<tr><td class='source'>🧑‍🔬 -name</td><td class='target'>náttúruvísindafólk</td></tr>
+	<tr><td class='source'>🧑‍🔬 –keywords</td><td class='target'>alisfrøðingur<br>evnafrøðingur<br>lívsfrøðingur<br>náttúruvísindafólk</td></tr>
+	<tr><td class='source'>👨‍💻 –keywords</td><td class='target'>…</td><td class='target' rowSpan='2'>forritari<br>…</td></tr>
+	<tr><td class='source'>👩‍💻 –keywords</td><td class='target'>…<br>mannligur tøknifrøðingur<br>…</td></tr>
+	<tr><td class='source'>🧑‍💻 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>tøknifrøðingur</td></tr>
+	<tr><td class='source'>🧑‍💻 –keywords</td><td class='target'>forritari<br>tøkni<br>tøknifrøðingur<br>uppfinnari</td></tr>
+	<tr><td class='source'>🧑‍🎤 -name</td><td class='target'>sangari</td></tr>
+	<tr><td class='source'>🧑‍🎤 –keywords</td><td class='target'>rokk<br>sangari<br>stjørna<br>undirhaldari</td></tr>
+	<tr><td class='source'>🧑‍🎨 -name</td><td class='target'>listafólk</td></tr>
+	<tr><td class='source'>🧑‍🎨 –keywords</td><td class='target'>list<br>listafólk<br>listamálari</td></tr>
+	<tr><td class='source'>🧑‍✈ -name</td><td class='target'>flogskipari</td></tr>
+	<tr><td class='source'>🧑‍✈ –keywords</td><td class='target'>flogskipari<br>pilotur<br>René</td></tr>
+	<tr><td class='source'>👨‍🚀 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target' rowSpan='2'>…<br>rúmdarskipari<br>…</td></tr>
+	<tr><td class='source'>👩‍🚀 –keywords</td></tr>
+	<tr><td class='source'>🧑‍🚀 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>astronautur</td></tr>
+	<tr><td class='source'>🧑‍🚀 –keywords</td><td class='target'>astronautur<br>rúmdarskipari<br>rúmdin</td></tr>
+	<tr><td class='source'>🧑‍🚒 -name</td><td class='target'>sløkkiliðsfólk</td></tr>
+	<tr><td class='source'>🧑‍🚒 –keywords</td><td class='target'>sløkkilið<br>sløkkiliðsfólk</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>🫂 -name</td><td class='target'>fólk sum klemmast</td></tr>
+	<tr><td class='source'>🫂 –keywords</td><td class='target'>bei<br>fólk sum klemmast<br>hey<br>klemm<br>takk</td></tr>
+	<tr><td class='source' rowSpan='59'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='12'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🦢 -name</td><td class='target' rowSpan='2'>E11:032</td><td class='target'>svanur</td></tr>
+	<tr><td class='source'>🦢 –keywords</td><td class='target'>fuglur<br>okn<br>svanur</td></tr>
+	<tr><td class='source'>🪶 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>fjøður</td></tr>
+	<tr><td class='source'>🪶 –keywords</td><td class='target'>fjaðurhamur<br>fjøður<br>fjøðurhamur<br>flúgva<br>fuglur<br>lætt</td></tr>
+	<tr><td class='source'>🦤 -name</td><td class='target'>dronta</td></tr>
+	<tr><td class='source'>🦤 –keywords</td><td class='target'>dronta<br>fuglur<br>Mauritius<br>útdeyður</td></tr>
+	<tr><td class='source'>🦩 -name</td><td class='target' rowSpan='2'>E12–032</td><td class='target'>flamingo</td></tr>
+	<tr><td class='source'>🦩 –keywords</td><td class='target'>flamingo<br>fuglur<br>tropiskur</td></tr>
+	<tr><td class='source'>🦚 -name</td><td class='target' rowSpan='2'>E11:024</td><td class='target'>páfuglur</td></tr>
+	<tr><td class='source'>🦚 –keywords</td><td class='target'>fuglur<br>p´´afuglahøna<br>páfuglahani<br>páfuglur</td></tr>
+	<tr><td class='source'>🦜 -name</td><td class='target' rowSpan='2'>E11:026</td><td class='target'>pappageykur</td></tr>
+	<tr><td class='source'>🦜 –keywords</td><td class='target'>fuglur<br>pappageykur<br>sjórænari</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🪲 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>klukka</td></tr>
+	<tr><td class='source'>🪲 –keywords</td><td class='target'>klukka<br>skordýr</td></tr>
+	<tr><td class='source'>🪳 -name</td><td class='target'>kakkulakkur</td></tr>
+	<tr><td class='source'>🪳 –keywords</td><td class='target'>farsótt<br>kakkulakkur<br>pest<br>skaðadýr<br>skaðakykt<br>skordýr</td></tr>
+	<tr><td class='source'>🦟 -name</td><td class='target' rowSpan='2'>E11:029</td><td class='target'>mýggjabiti</td></tr>
+	<tr><td class='source'>🦟 –keywords</td><td class='target'>farsótt<br>fepur<br>malaria<br>moskito<br>mýggjabiti<br>pest</td></tr>
+	<tr><td class='source'>🪰 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>fluga</td></tr>
+	<tr><td class='source'>🪰 –keywords</td><td class='target'>fluga<br>pest<br>rot<br>spilt</td></tr>
+	<tr><td class='source'>🪱 -name</td><td class='target'>maðkur</td></tr>
+	<tr><td class='source'>🪱 –keywords</td><td class='target'>maðkur<br>ormur<br>reyðmaðkur<br>skriðkykt</td></tr>
+	<tr><td class='source'>🦠 -name</td><td class='target' rowSpan='2'>E11:030</td><td class='target'>smávera</td></tr>
+	<tr><td class='source'>🦠 –keywords</td><td class='target'>amøba<br>bakteria<br>skaploysingur<br>smávera<br>virus</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🦍 –keywords</td><td class='target'>…</td><td class='target'>apa<br>…</td></tr>
+	<tr><td class='source'>🦧 -name</td><td class='target' rowSpan='2'>E12–030</td><td class='target'>orangutang</td></tr>
+	<tr><td class='source'>🦧 –keywords</td><td class='target'>apa<br>orangutang</td></tr>
+	<tr><td class='source'>🦮 -name</td><td class='target' rowSpan='2'>E12–034</td><td class='target'>førarahundur</td></tr>
+	<tr><td class='source'>🦮 –keywords</td><td class='target'>blindur<br>førarahundur<br>hundur</td></tr>
+	<tr><td class='source'>🐕‍🦺 -name</td><td class='target' rowSpan='2'>E12–001</td><td class='target'>tænastuhundur</td></tr>
+	<tr><td class='source'>🐕‍🦺 –keywords</td><td class='target'>hjálp<br>hundur<br>tænasta<br>tænastuhundur</td></tr>
+	<tr><td class='source'>🐺 -name</td><td class='target'>úlvaandlit</td><td class='target'>úlvur</td></tr>
+	<tr><td class='source'>🐺 –keywords</td><td class='target'>…<br>úlvaandlit<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🦝 -name</td><td class='target' rowSpan='2'>E11:027</td><td class='target'>tváttarbjørn</td></tr>
+	<tr><td class='source'>🦝 –keywords</td><td class='target'>forvitin<br>tváttarbjørn</td></tr>
+	<tr><td class='source'>🦬 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>bisonur</td></tr>
+	<tr><td class='source'>🦬 –keywords</td><td class='target'>bisonur<br>fylgi<br>visundur</td></tr>
+	<tr><td class='source'>🦙 -name</td><td class='target' rowSpan='2'>E11:023</td><td class='target'>lama</td></tr>
+	<tr><td class='source'>🦙 –keywords</td><td class='target'>alpaka<br>lama</td></tr>
+	<tr><td class='source'>🦣 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>mammuttur</td></tr>
+	<tr><td class='source'>🦣 –keywords</td><td class='target'>loðfílur<br>mammuttur<br>útdeyður<br>útdeytt</td></tr>
+	<tr><td class='source'>🦛 -name</td><td class='target' rowSpan='2'>E11:025</td><td class='target'>áarross</td></tr>
+	<tr><td class='source'>🦛 –keywords</td><td class='target'>áarross<br>vatnhestur</td></tr>
+	<tr><td class='source'>🦫 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>bævur</td></tr>
+	<tr><td class='source'>🦫 –keywords</td></tr>
+	<tr><td class='source'>🦥 -name</td><td class='target' rowSpan='2'>E12–028</td><td class='target'>letidýr</td></tr>
+	<tr><td class='source'>🦥 –keywords</td><td class='target'>dovin<br>letidýr<br>sein<br>seinur</td></tr>
+	<tr><td class='source'>🦦 -name</td><td class='target' rowSpan='2'>E12–029</td><td class='target' rowSpan='2'>otur</td></tr>
+	<tr><td class='source'>🦦 –keywords</td></tr>
+	<tr><td class='source'>🦨 -name</td><td class='target' rowSpan='2'>E12–031</td><td class='target'>stinkdýr</td></tr>
+	<tr><td class='source'>🦨 –keywords</td><td class='target'>skunkur<br>stinkdýr</td></tr>
+	<tr><td class='source'>🦘 -name</td><td class='target' rowSpan='2'>E11:022</td><td class='target'>kenguru</td></tr>
+	<tr><td class='source'>🦘 –keywords</td><td class='target'>Avstralia<br>kenguru<br>posadýr</td></tr>
+	<tr><td class='source'>🦡 -name</td><td class='target' rowSpan='2'>E11:031</td><td class='target' rowSpan='2'>grevlingur</td></tr>
+	<tr><td class='source'>🦡 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🦭 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>kópur</td></tr>
+	<tr><td class='source'>🦭 –keywords</td><td class='target'>kópur<br>sjóljón</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪴 -name</td><td class='target'>urtapottur</td></tr>
+	<tr><td class='source'>🪴 –keywords</td><td class='target'>planta<br>pottaplanta<br>pottur<br>urtapottur<br>veksur</td></tr>
+	<tr><td class='source' rowSpan='51'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='10'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫖 -name</td><td class='target'>tekanna</td></tr>
+	<tr><td class='source'>🫖 –keywords</td><td class='target'>drykkur<br>te<br>tekanna</td></tr>
+	<tr><td class='source'>🧋 -name</td><td class='target'>boba te</td></tr>
+	<tr><td class='source'>🧋 –keywords</td><td class='target'>boba<br>Taivan<br>te</td></tr>
+	<tr><td class='source'>🧃 -name</td><td class='target' rowSpan='2'>E12–042</td><td class='target'>sunkist</td></tr>
+	<tr><td class='source'>🧃 –keywords</td><td class='target'>drykkur<br>saft<br>sunkist</td></tr>
+	<tr><td class='source'>🧉 -name</td><td class='target' rowSpan='2'>E12–048</td><td class='target'>mate</td></tr>
+	<tr><td class='source'>🧉 –keywords</td><td class='target'>drykkur<br>mate</td></tr>
+	<tr><td class='source'>🧊 -name</td><td class='target' rowSpan='2'>E12–049</td><td class='target'>ísterningur</td></tr>
+	<tr><td class='source'>🧊 –keywords</td><td class='target'>ísterningur<br>ísur<br>kalt<br>terningur</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-asian' href='#food-asian'>food-asian</a></td><td class='source'>🥮 -name</td><td class='target' rowSpan='2'>E11:010</td><td class='target'>mánakaka</td></tr>
+	<tr><td class='source'>🥮 –keywords</td><td class='target'>hátíð<br>heyst<br>Kina<br>mánakaka<br>yuèbǐng</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🥭 -name</td><td class='target' rowSpan='2'>E11:009</td><td class='target'>mangofrukt</td></tr>
+	<tr><td class='source'>🥭 –keywords</td><td class='target'>frukt<br>mango<br>mangofrukt<br>tropisk</td></tr>
+	<tr><td class='source'>🫐 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>bláber</td></tr>
+	<tr><td class='source'>🫐 –keywords</td><td class='target'>ber<br>blá<br>bláber<br>frukt</td></tr>
+	<tr><td class='source'>🫒 -name</td><td class='target'>oljuber</td></tr>
+	<tr><td class='source'>🫒 –keywords</td><td class='target'>matur<br>olja<br>oljuber</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='food-marine' href='#food-marine'>food-marine</a></td><td class='source'>🦀 –keywords</td><td class='target'>…</td><td class='target'>…<br>havføði<br>…<br>sjógæti<br>…</td></tr>
+	<tr><td class='source'>🦞 -name</td><td class='target' rowSpan='2'>E11:028</td><td class='target'>hummari</td></tr>
+	<tr><td class='source'>🦞 –keywords</td><td class='target'>dýr<br>havføði<br>hummari<br>sjógæti</td></tr>
+	<tr><td class='source'>🦐 –keywords</td><td class='target'>…</td><td class='target'>…<br>havføði<br>…<br>sjógæti</td></tr>
+	<tr><td class='source'>🦑 -name</td><td class='target'>høgguslokkur við tíggju ørmum</td><td class='target'>høgguslokkur</td></tr>
+	<tr><td class='source'>🦪 -name</td><td class='target' rowSpan='2'>E12–033</td><td class='target'>ostra</td></tr>
+	<tr><td class='source'>🦪 –keywords</td><td class='target'>dýr<br>ostra<br>perla</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source'>🫓 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>flatbreyð</td></tr>
+	<tr><td class='source'>🫓 –keywords</td><td class='target'>breyð<br>flatbreyð<br>ósúrgað<br>pitabreyð</td></tr>
+	<tr><td class='source'>🥯 -name</td><td class='target' rowSpan='2'>E11:011</td><td class='target'>bagel</td></tr>
+	<tr><td class='source'>🥯 –keywords</td><td class='target'>bagel<br>breyð<br>morgunbreyð</td></tr>
+	<tr><td class='source'>🧇 -name</td><td class='target' rowSpan='2'>E12–046</td><td class='target' rowSpan='2'>vafla</td></tr>
+	<tr><td class='source'>🧇 –keywords</td></tr>
+	<tr><td class='source'>🫔 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>tamales</td></tr>
+	<tr><td class='source'>🫔 –keywords</td><td class='target'>matur<br>Meksiko<br>tamales</td></tr>
+	<tr><td class='source'>🧆 -name</td><td class='target' rowSpan='2'>E12–045</td><td class='target'>falafel</td></tr>
+	<tr><td class='source'>🧆 –keywords</td><td class='target'>falafel<br>matur<br>miðeystur</td></tr>
+	<tr><td class='source'>🫕 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>fondue</td></tr>
+	<tr><td class='source'>🫕 –keywords</td><td class='target'>fondue<br>matur<br>Sveis</td></tr>
+	<tr><td class='source'>🧈 -name</td><td class='target' rowSpan='2'>E12–047</td><td class='target'>smør</td></tr>
+	<tr><td class='source'>🧈 –keywords</td><td class='target'>matur<br>mjólk<br>rómi<br>smør</td></tr>
+	<tr><td class='source'>🧂 -name</td><td class='target' rowSpan='2'>E11:048</td><td class='target'>salt</td></tr>
+	<tr><td class='source'>🧂 –keywords</td><td class='target'>krydd<br>salt<br>saltílat</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-sweet' href='#food-sweet'>food-sweet</a></td><td class='source'>🧁 -name</td><td class='target' rowSpan='2'>E11:047</td><td class='target'>koppakaka</td></tr>
+	<tr><td class='source'>🧁 –keywords</td><td class='target'>formakaka<br>kaka<br>koppakaka</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫑 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>piparfrukt</td></tr>
+	<tr><td class='source'>🫑 –keywords</td><td class='target'>grønmeti<br>pipar<br>piparfrukt</td></tr>
+	<tr><td class='source'>🥬 -name</td><td class='target' rowSpan='2'>E11:008</td><td class='target'>salatblað</td></tr>
+	<tr><td class='source'>🥬 –keywords</td><td class='target'>blað<br>grønmeti<br>salat<br>salatblað</td></tr>
+	<tr><td class='source'>🧄 -name</td><td class='target' rowSpan='2'>E12–043</td><td class='target'>hvítleykur</td></tr>
+	<tr><td class='source'>🧄 –keywords</td><td class='target'>hvítleykur<br>matur<br>smakkur</td></tr>
+	<tr><td class='source'>🧅 -name</td><td class='target' rowSpan='2'>E12–044</td><td class='target'>leykur</td></tr>
+	<tr><td class='source'>🧅 –keywords</td><td class='target'>leykur<br>matur<br>smakkur</td></tr>
+	<tr><td class='source' rowSpan='28'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='hotel' href='#hotel'>hotel</a></td><td class='source'>🧳 -name</td><td class='target' rowSpan='2'>E11:061</td><td class='target'>viðføri</td></tr>
+	<tr><td class='source'>🧳 –keywords</td><td class='target'>bagasja<br>ferðast<br>viðføri</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🛖 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>smátta</td></tr>
+	<tr><td class='source'>🛖 –keywords</td><td class='target'>heim<br>hús<br>smátta</td></tr>
+	<tr><td class='source'>🧱 -name</td><td class='target' rowSpan='2'>E11:059</td><td class='target'>múrsteinur</td></tr>
+	<tr><td class='source'>🧱 –keywords</td><td class='target'>leirur<br>mørtil<br>múrkálk<br>múrsteinar<br>múrsteinur<br>veggur</td></tr>
+	<tr><td class='source'>🪵 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>viður</td></tr>
+	<tr><td class='source'>🪵 –keywords</td><td class='target'>bjálki<br>timbur<br>træ<br>viður</td></tr>
+	<tr><td class='source'>🪨 -name</td><td class='target'>steinur</td></tr>
+	<tr><td class='source'>🪨 –keywords</td><td class='target'>grót<br>klettur<br>steinur<br>tungt</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='place-map' href='#place-map'>place-map</a></td><td class='source'>🧭 -name</td><td class='target' rowSpan='2'>E11:055</td><td class='target'>kumpass</td></tr>
+	<tr><td class='source'>🧭 –keywords</td><td class='target'>ætt<br>kós<br>kumpass<br>tól</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='place-religious' href='#place-religious'>place-religious</a></td><td class='source'>🛕 -name</td><td class='target' rowSpan='2'>E12–008</td><td class='target'>hinduitempul</td></tr>
+	<tr><td class='source'>🛕 –keywords</td><td class='target'>hindui<br>hinduitempul<br>tempul</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>🪐 -name</td><td class='target' rowSpan='2'>E12–069</td><td class='target'>gongustjørna við ringi</td></tr>
+	<tr><td class='source'>🪐 –keywords</td><td class='target'>gongustjørna<br>gongustjørna við ringi<br>saturn</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-air' href='#transport-air'>transport-air</a></td><td class='source'>🪂 -name</td><td class='target' rowSpan='2'>E12–068</td><td class='target'>fallskíggi</td></tr>
+	<tr><td class='source'>🪂 –keywords</td><td class='target'>fallskíggi<br>fallskíggjalop</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛻 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>opin vørubilur</td></tr>
+	<tr><td class='source'>🛻 –keywords</td><td class='target'>bilur<br>opin<br>opin vørubilur<br>pickup<br>vøruvognur</td></tr>
+	<tr><td class='source'>🦽 -name</td><td class='target' rowSpan='2'>E12–039</td><td class='target'>koyristólur</td></tr>
+	<tr><td class='source'>🦽 –keywords</td><td class='target'>hjólstólur<br>koyristólur<br>rullistólur</td></tr>
+	<tr><td class='source'>🦼 -name</td><td class='target' rowSpan='2'>E12–038</td><td class='target'>motorkoyristólur</td></tr>
+	<tr><td class='source'>🦼 –keywords</td><td class='target'>koyristólur<br>motorhjólstólur<br>motorkoyristólur<br>motorrullistólur</td></tr>
+	<tr><td class='source'>🛺 -name</td><td class='target' rowSpan='2'>E12–009</td><td class='target'>motor rickshaw</td></tr>
+	<tr><td class='source'>🛺 –keywords</td><td class='target'>motor rickshaw<br>rickshaw<br>tuk tuk</td></tr>
+	<tr><td class='source'>🛹 -name</td><td class='target' rowSpan='2'>E11:004</td><td class='target'>rennifjøl</td></tr>
+	<tr><td class='source'>🛹 –keywords</td><td class='target'>akfjøl<br>rennibretti<br>rennifjøl<br>rullibretti<br>skateboard<br>skíðifjøl<br>skoytufjøl</td></tr>
+	<tr><td class='source' rowSpan='40'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='8'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🧵 -name</td><td class='target' rowSpan='2'>E11:063</td><td class='target'>tráður</td></tr>
+	<tr><td class='source'>🧵 –keywords</td><td class='target'>seyma<br>tráður</td></tr>
+	<tr><td class='source'>🪡 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>nál</td></tr>
+	<tr><td class='source'>🪡 –keywords</td><td class='target'>nál<br>seyminál</td></tr>
+	<tr><td class='source'>🧶 -name</td><td class='target' rowSpan='2'>E11:064</td><td class='target'>tógv</td></tr>
+	<tr><td class='source'>🧶 –keywords</td><td class='target'>garn<br>tógv</td></tr>
+	<tr><td class='source'>🪢 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>knútur</td></tr>
+	<tr><td class='source'>🪢 –keywords</td><td class='target'>binda<br>knútur<br>knýta<br>reip<br>tog</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='event' href='#event'>event</a></td><td class='source'>🧨 -name</td><td class='target' rowSpan='2'>E11:050</td><td class='target'>kinesari</td></tr>
+	<tr><td class='source'>🧨 –keywords</td><td class='target'>dynamitt<br>eldverk<br>kinesari<br>skreyteldur<br>spreingievni</td></tr>
+	<tr><td class='source'>🧧 -name</td><td class='target' rowSpan='2'>E11:049</td><td class='target'>reyður brævbjálvi</td></tr>
+	<tr><td class='source'>🧧 –keywords</td><td class='target'>brævbjálvi<br>gáva<br>hóngbāo<br>lai see<br>reyður brævbjálvi</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='game' href='#game'>game</a></td><td class='source'>🪀 -name</td><td class='target' rowSpan='2'>E12–066</td><td class='target'>jojo</td></tr>
+	<tr><td class='source'>🪀 –keywords</td><td class='target'>jojo<br>leika<br>yo yo<br>yo-yo<br>yoyo</td></tr>
+	<tr><td class='source'>🪁 -name</td><td class='target' rowSpan='2'>E12–067</td><td class='target'>flúgvandi dreki</td></tr>
+	<tr><td class='source'>🪁 –keywords</td><td class='target'>dreki<br>flúgvandi dreki</td></tr>
+	<tr><td class='source'>🪄 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>gandastavur</td></tr>
+	<tr><td class='source'>🪄 –keywords</td><td class='target'>gandakallur<br>gandastavur<br>gandur<br>rúnakelvi</td></tr>
+	<tr><td class='source'>🧿 -name</td><td class='target' rowSpan='2'>E11:073</td><td class='target'>nasaramulett</td></tr>
+	<tr><td class='source'>🧿 –keywords</td><td class='target'>amulett<br>eydnulutur<br>nasar<br>nasaramulett<br>nazar<br>verndargripur</td></tr>
+	<tr><td class='source'>🧩 -name</td><td class='target' rowSpan='2'>E11:051</td><td class='target'>putlispælbrot</td></tr>
+	<tr><td class='source'>🧩 –keywords</td><td class='target'>brot<br>petti<br>puntur<br>putlispæl<br>putlispælbrot<br>spor</td></tr>
+	<tr><td class='source'>🧸 -name</td><td class='target' rowSpan='2'>E11:066</td><td class='target'>bamsa</td></tr>
+	<tr><td class='source'>🧸 –keywords</td><td class='target'>bamsa<br>leikatoy<br>spælitoy</td></tr>
+	<tr><td class='source'>🪅 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>pinata</td></tr>
+	<tr><td class='source'>🪅 –keywords</td><td class='target'>pinata<br>veitsla</td></tr>
+	<tr><td class='source'>🪆 -name</td><td class='target'>babusjka</td></tr>
+	<tr><td class='source'>🪆 –keywords</td><td class='target'>babusjka<br>matrjosjka<br>russisk dukka</td></tr>
+	<tr><td class='source'>♟ -name</td><td class='target' rowSpan='2'>E11:001</td><td class='target'>finna</td></tr>
+	<tr><td class='source'>♟ –keywords</td><td class='target'>finna<br>talv</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='sport' href='#sport'>sport</a></td><td class='source'>🥎 -name</td><td class='target' rowSpan='2'>E11:006</td><td class='target' rowSpan='2'>softball</td></tr>
+	<tr><td class='source'>🥎 –keywords</td></tr>
+	<tr><td class='source'>🥏 -name</td><td class='target' rowSpan='2'>E11:007</td><td class='target'>frisbee</td></tr>
+	<tr><td class='source'>🥏 –keywords</td><td class='target'>diskur<br>flúgvandi diskur<br>frisbee</td></tr>
+	<tr><td class='source'>🥍 -name</td><td class='target' rowSpan='2'>E11:005</td><td class='target' rowSpan='2'>lacrosse</td></tr>
+	<tr><td class='source'>🥍 –keywords</td></tr>
+	<tr><td class='source'>🛼 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>rulluskoyta</td></tr>
+	<tr><td class='source'>🛼 –keywords</td></tr>
+	<tr><td class='source'>🤿 -name</td><td class='target' rowSpan='2'>E12–025</td><td class='target'>kavaramaska</td></tr>
+	<tr><td class='source'>🤿 –keywords</td><td class='target'>andingarpípa<br>kava<br>kavaramaska<br>kavari<br>luftpípa<br>maska<br>snorkul</td></tr>
+	<tr><td class='source' rowSpan='107'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='24'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>🥽 -name</td><td class='target' rowSpan='2'>E11:019</td><td class='target'>verjubrillur</td></tr>
+	<tr><td class='source'>🥽 –keywords</td><td class='target'>brillur<br>skíðbrillur<br>verjubrillur</td></tr>
+	<tr><td class='source'>🥼 -name</td><td class='target' rowSpan='2'>E11:018</td><td class='target'>kittil</td></tr>
+	<tr><td class='source'>🥼 –keywords</td><td class='target'>kittil<br>lækni<br>náttúruvísind<br>roynd</td></tr>
+	<tr><td class='source'>🦺 -name</td><td class='target' rowSpan='2'>E12–036</td><td class='target'>trygdarvestur</td></tr>
+	<tr><td class='source'>🦺 –keywords</td><td class='target'>trygd<br>trygdarvestur<br>vestur</td></tr>
+	<tr><td class='source'>🥻 -name</td><td class='target' rowSpan='2'>E12–027</td><td class='target'>sari</td></tr>
+	<tr><td class='source'>🥻 –keywords</td><td class='target'>búni<br>India<br>konufólkabúni<br>sari</td></tr>
+	<tr><td class='source'>🩱 -name</td><td class='target' rowSpan='2'>E12–060</td><td class='target'>svimjibúni</td></tr>
+	<tr><td class='source'>🩱 –keywords</td><td class='target'>svimjibúni<br>svimjing</td></tr>
+	<tr><td class='source'>🩲 -name</td><td class='target' rowSpan='2'>E12–061</td><td class='target'>trussur</td></tr>
+	<tr><td class='source'>🩲 –keywords</td><td class='target'>trussur<br>undirklæðir</td></tr>
+	<tr><td class='source'>🩳 -name</td><td class='target' rowSpan='2'>E12–062</td><td class='target'>shorts</td></tr>
+	<tr><td class='source'>🩳 –keywords</td><td class='target'>brøkur<br>shorts<br>stuttar</td></tr>
+	<tr><td class='source'>🩴 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>sandála</td></tr>
+	<tr><td class='source'>🩴 –keywords</td><td class='target'>sandála<br>thong</td></tr>
+	<tr><td class='source'>🥾 -name</td><td class='target' rowSpan='2'>E11:020</td><td class='target'>gangistilvi</td></tr>
+	<tr><td class='source'>🥾 –keywords</td><td class='target'>fjakka<br>ganga<br>gangistilvi<br>gongutúr<br>stilvi<br>tjalding</td></tr>
+	<tr><td class='source'>🥿 -name</td><td class='target' rowSpan='2'>E11:021</td><td class='target'>flatbotnaður skógvur</td></tr>
+	<tr><td class='source'>🥿 –keywords</td><td class='target'>flatbotnaður<br>flatur<br>skógvur</td></tr>
+	<tr><td class='source'>🩰 -name</td><td class='target' rowSpan='2'>E12–059</td><td class='target'>balletskógvar</td></tr>
+	<tr><td class='source'>🩰 –keywords</td><td class='target'>ballet<br>balletskógvar<br>dansa<br>dansiskógvar<br>skógvar</td></tr>
+	<tr><td class='source'>🪖 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>herhjálmur</td></tr>
+	<tr><td class='source'>🪖 –keywords</td><td class='target'>hereind<br>herhjálmur<br>hermaður<br>herur<br>hjálmur</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🧮 -name</td><td class='target' rowSpan='2'>E11:056</td><td class='target'>kúluramma</td></tr>
+	<tr><td class='source'>🧮 –keywords</td><td class='target'>abakus<br>kúluramma<br>roknibretti</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='household' href='#household'>household</a></td><td class='source'>🛗 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>lyfta</td></tr>
+	<tr><td class='source'>🛗 –keywords</td><td class='target'>elevatorur<br>lyfta</td></tr>
+	<tr><td class='source'>🪞 -name</td><td class='target'>spegil</td></tr>
+	<tr><td class='source'>🪞 –keywords</td><td class='target'>spegil<br>spegilsmynd<br>spegl<br>speglast<br>sýna<br>vísa</td></tr>
+	<tr><td class='source'>🪟 -name</td><td class='target'>vindeyga</td></tr>
+	<tr><td class='source'>🪟 –keywords</td><td class='target'>gluggi<br>rútar<br>rútur<br>vindeyga</td></tr>
+	<tr><td class='source'>🪑 -name</td><td class='target' rowSpan='2'>E12–070</td><td class='target'>stólur</td></tr>
+	<tr><td class='source'>🪑 –keywords</td><td class='target'>sæti<br>sessur<br>setur<br>stólur</td></tr>
+	<tr><td class='source'>🪠 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>súgvari</td></tr>
+	<tr><td class='source'>🪠 –keywords</td><td class='target'>kumma<br>súgvari<br>toilett<br>typt<br>ves</td></tr>
+	<tr><td class='source'>🪤 -name</td><td class='target'>músafella</td></tr>
+	<tr><td class='source'>🪤 –keywords</td><td class='target'>fella<br>lokkingarmatur<br>músafella</td></tr>
+	<tr><td class='source'>🪒 -name</td><td class='target' rowSpan='2'>E12–071</td><td class='target'>rakiknívur</td></tr>
+	<tr><td class='source'>🪒 –keywords</td><td class='target'>barberblað<br>knívur<br>raka<br>rakiblað<br>rakiknívur</td></tr>
+	<tr><td class='source'>🧴 -name</td><td class='target' rowSpan='2'>E11:062</td><td class='target'>lotiónfløska</td></tr>
+	<tr><td class='source'>🧴 –keywords</td><td class='target'>fløska<br>húðkrem<br>lotión<br>lotiónfløska<br>smyrsl</td></tr>
+	<tr><td class='source'>🧷 -name</td><td class='target' rowSpan='2'>E11:065</td><td class='target'>trygdarnál</td></tr>
+	<tr><td class='source'>🧷 –keywords</td><td class='target'>læsinál<br>nál<br>trygdarnál</td></tr>
+	<tr><td class='source'>🧹 -name</td><td class='target' rowSpan='2'>E11:067</td><td class='target'>kustur</td></tr>
+	<tr><td class='source'>🧹 –keywords</td><td class='target'>gandakelling<br>kelling<br>kustur<br>sópa<br>vaska</td></tr>
+	<tr><td class='source'>🧺 -name</td><td class='target' rowSpan='2'>E11:068</td><td class='target' rowSpan='2'>kurv</td></tr>
+	<tr><td class='source'>🧺 –keywords</td></tr>
+	<tr><td class='source'>🧻 -name</td><td class='target' rowSpan='2'>E11:069</td><td class='target'>vesipappír</td></tr>
+	<tr><td class='source'>🧻 –keywords</td><td class='target'>kukka<br>toilettpappír<br>ves<br>vesipappír</td></tr>
+	<tr><td class='source'>🪣 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>spann</td></tr>
+	<tr><td class='source'>🪣 –keywords</td><td class='target'>oysa<br>pøs<br>spann</td></tr>
+	<tr><td class='source'>🧼 -name</td><td class='target' rowSpan='2'>E11:070</td><td class='target'>hondsápa</td></tr>
+	<tr><td class='source'>🧼 –keywords</td><td class='target'>hendur<br>hond<br>hondsápa<br>sápa<br>vaska</td></tr>
+	<tr><td class='source'>🪥 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>tannbust</td></tr>
+	<tr><td class='source'>🪥 –keywords</td><td class='target'>busta<br>tannbust<br>tannrøkt<br>tenn</td></tr>
+	<tr><td class='source'>🧽 -name</td><td class='target' rowSpan='2'>E11:071</td><td class='target'>svampur</td></tr>
+	<tr><td class='source'>🧽 –keywords</td><td class='target'>holutur<br>svampur<br>vaska</td></tr>
+	<tr><td class='source'>🧯 -name</td><td class='target' rowSpan='2'>E11:057</td><td class='target'>eldskøkkjari</td></tr>
+	<tr><td class='source'>🧯 –keywords</td><td class='target'>eld<br>eldskøkkjari<br>eldur<br>sløkkja<br>trygd</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='light & video' href='#light & video'>light & video</a></td><td class='source'>🏮 -name</td><td class='target'>pappírlanterna</td><td class='target'>reyð pappírlanterna</td></tr>
+	<tr><td class='source'>🪔 -name</td><td class='target' rowSpan='2'>E12–073</td><td class='target'>diyalampa</td></tr>
+	<tr><td class='source'>🪔 –keywords</td><td class='target'>diya<br>diyalampa<br>lampa<br>olja</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩸 -name</td><td class='target' rowSpan='2'>E12–063</td><td class='target'>blóðdropi</td></tr>
+	<tr><td class='source'>🩸 –keywords</td><td class='target'>blóð<br>blóðdropi<br>blóðgáva<br>blóðgevi<br>dropi</td></tr>
+	<tr><td class='source'>🩹 -name</td><td class='target' rowSpan='2'>E12–064</td><td class='target'>heftiplástur</td></tr>
+	<tr><td class='source'>🩹 –keywords</td><td class='target'>heftiplástur<br>plástur</td></tr>
+	<tr><td class='source'>🩺 -name</td><td class='target' rowSpan='2'>E12–065</td><td class='target'>stetoskop</td></tr>
+	<tr><td class='source'>🩺 –keywords</td><td class='target'>læknalurt<br>læknapípa<br>lurt<br>stetoskop</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='money' href='#money'>money</a></td><td class='source'>🪙 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>myntur</td></tr>
+	<tr><td class='source'>🪙 –keywords</td><td class='target'>gull<br>myntur<br>pengar<br>pengi<br>skattur</td></tr>
+	<tr><td class='source'>🧾 -name</td><td class='target' rowSpan='2'>E11:072</td><td class='target'>kvittan</td></tr>
+	<tr><td class='source'>🧾 –keywords</td><td class='target'>keyp<br>kvittan<br>prógv<br>søla</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source'>🪗 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>harmonika</td></tr>
+	<tr><td class='source'>🪗 –keywords</td><td class='target'>dans<br>dansur<br>harmonika<br>ljóðføri<br>tónleikur</td></tr>
+	<tr><td class='source'>🪕 -name</td><td class='target' rowSpan='2'>E12–074</td><td class='target'>banjo</td></tr>
+	<tr><td class='source'>🪕 –keywords</td><td class='target'>banjo<br>ljóðføri<br>tónleikur</td></tr>
+	<tr><td class='source'>🪘 -name</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>long trumma</td></tr>
+	<tr><td class='source'>🪘 –keywords</td><td class='target'>ljóðføri<br>long trumma<br>tónleikur<br>trumma</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪦 -name</td><td class='target'>gravsteinur</td></tr>
+	<tr><td class='source'>🪦 –keywords</td><td class='target'>deyði<br>gravsteinur<br>grøv<br>kirkjugarður</td></tr>
+	<tr><td class='source'>🪧 -name</td><td class='target'>skelti</td></tr>
+	<tr><td class='source'>🪧 –keywords</td><td class='target'>kunnger<br>mótmæli<br>plakat<br>skelti<br>uppslag</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='science' href='#science'>science</a></td><td class='source'>🧪 -name</td><td class='target' rowSpan='2'>E11:052</td><td class='target'>royndarglas</td></tr>
+	<tr><td class='source'>🧪 –keywords</td><td class='target'>evnafrøði<br>náttúruvísind<br>roynd<br>royndarglas</td></tr>
+	<tr><td class='source'>🧫 -name</td><td class='target' rowSpan='2'>E11:053</td><td class='target'>petriskál</td></tr>
+	<tr><td class='source'>🧫 –keywords</td><td class='target'>lívfrøði<br>náttúruvísind<br>petriskál<br>tilbúningarglas<br>tilbúningsglas</td></tr>
+	<tr><td class='source'>🧬 -name</td><td class='target' rowSpan='2'>E11:054</td><td class='target'>dna</td></tr>
+	<tr><td class='source'>🧬 –keywords</td><td class='target'>arvaeind<br>dna<br>ílega<br>lív<br>lívfrøði<br>lívmenning<br>náttúruvísind</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='tool' href='#tool'>tool</a></td><td class='source'>🪓 -name</td><td class='target' rowSpan='2'>E12–072</td><td class='target'>øks</td></tr>
+	<tr><td class='source'>🪓 –keywords</td><td class='target'>amboð<br>høgg<br>høgga<br>hondøks<br>øks</td></tr>
+	<tr><td class='source'>🪚 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>sag</td></tr>
+	<tr><td class='source'>🪚 –keywords</td><td class='target'>amboð<br>hondsag<br>sag</td></tr>
+	<tr><td class='source'>🪃 -name</td><td class='target'>boomerang</td></tr>
+	<tr><td class='source'>🪃 –keywords</td><td class='target'>Avstralia<br>bomerang<br>boomerang<br>kastivápn</td></tr>
+	<tr><td class='source'>🪛 -name</td><td class='target'>skrúvublað</td></tr>
+	<tr><td class='source'>🪛 –keywords</td><td class='target'>amboð<br>skrúva<br>skrúvublað</td></tr>
+	<tr><td class='source'>🪜 -name</td><td class='target'>stigi</td></tr>
+	<tr><td class='source'>🪜 –keywords</td><td class='target'>klatra<br>stig<br>stigi<br>upp</td></tr>
+	<tr><td class='source'>🦯 -name</td><td class='target' rowSpan='2'>E12–035</td><td class='target'>blindastavur</td></tr>
+	<tr><td class='source'>🦯 –keywords</td><td class='target'>blind<br>blindastavur<br>blindur<br>brek<br>handikapp<br>stavur</td></tr>
+	<tr><td class='source'>🪝 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>krókur</td></tr>
+	<tr><td class='source'>🪝 –keywords</td></tr>
+	<tr><td class='source'>🧰 -name</td><td class='target' rowSpan='2'>E11:058</td><td class='target'>amboðskassi</td></tr>
+	<tr><td class='source'>🧰 –keywords</td><td class='target'>amboð<br>amboðskassi<br>kassi</td></tr>
+	<tr><td class='source'>🧲 -name</td><td class='target' rowSpan='2'>E11:060</td><td class='target'>magnet</td></tr>
+	<tr><td class='source'>🧲 –keywords</td><td class='target'>magnet<br>magnetisk<br>magnetiskur<br>sigul</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='gender' href='#gender'>gender</a></td><td class='source'>⚧ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>tvørkyndtekin</td></tr>
+	<tr><td class='source'>⚧ –keywords</td><td class='target'>tvørkynd<br>tvørkyndtekin<br>tvørkyndur</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='geometric' href='#geometric'>geometric</a></td><td class='source'>🔴 –keywords</td><td class='target'>mátingarfrøði<br>…</td><td class='target'>…<br>reytt<br>…</td></tr>
+	<tr><td class='source'>🟠 -name</td><td class='target' rowSpan='2'>E12–010</td><td class='target'>appilsingulur sirkul</td></tr>
+	<tr><td class='source'>🟠 –keywords</td><td class='target'>appilsingult<br>appilsingulur<br>sirkul</td></tr>
+	<tr><td class='source'>🟡 -name</td><td class='target' rowSpan='2'>E12–011</td><td class='target'>gulur sirkul</td></tr>
+	<tr><td class='source'>🟡 –keywords</td><td class='target'>gult<br>gulur<br>sirkul</td></tr>
+	<tr><td class='source'>🟢 -name</td><td class='target' rowSpan='2'>E12–012</td><td class='target'>grønur sirkul</td></tr>
+	<tr><td class='source'>🟢 –keywords</td><td class='target'>grønt<br>grønur<br>sirkul</td></tr>
+	<tr><td class='source'>🔵 –keywords</td><td class='target'>…<br>mátingarfrøði<br>…</td><td class='target'>blátt<br>…</td></tr>
+	<tr><td class='source'>🟣 -name</td><td class='target' rowSpan='2'>E12–013</td><td class='target'>lillafarvaður sirkul</td></tr>
+	<tr><td class='source'>🟣 –keywords</td><td class='target'>korkalitt<br>korkalittur<br>korkalitur<br>lillafarva<br>lillafarvaður<br>reyðblátt<br>reyðbláur<br>sirkul</td></tr>
+	<tr><td class='source'>🟤 -name</td><td class='target' rowSpan='2'>E12–014</td><td class='target'>brúnur sirkul</td></tr>
+	<tr><td class='source'>🟤 –keywords</td><td class='target'>brúnt<br>brúnur<br>sirkul</td></tr>
+	<tr><td class='source'>🟥 -name</td><td class='target' rowSpan='2'>E12–015</td><td class='target'>reyður fýrakantur</td></tr>
+	<tr><td class='source'>🟥 –keywords</td><td class='target'>fýrakantur<br>reyður<br>reytt</td></tr>
+	<tr><td class='source'>🟧 -name</td><td class='target' rowSpan='2'>E12–017</td><td class='target'>appilsingulur fýrakantur</td></tr>
+	<tr><td class='source'>🟧 –keywords</td><td class='target'>appilsingult<br>appilsingulur<br>fýrakantur</td></tr>
+	<tr><td class='source'>🟨 -name</td><td class='target' rowSpan='2'>E12–018</td><td class='target'>gulur fýrakantur</td></tr>
+	<tr><td class='source'>🟨 –keywords</td><td class='target'>fýrakantur<br>gult<br>gulur</td></tr>
+	<tr><td class='source'>🟩 -name</td><td class='target' rowSpan='2'>E12–019</td><td class='target'>grønur fýrakantur</td></tr>
+	<tr><td class='source'>🟩 –keywords</td><td class='target'>fýrakantur<br>grønt<br>grønur</td></tr>
+	<tr><td class='source'>🟦 -name</td><td class='target' rowSpan='2'>E12–016</td><td class='target'>blaúr fýrakantur</td></tr>
+	<tr><td class='source'>🟦 –keywords</td><td class='target'>blátt<br>bláur<br>blaúr fýrakantur<br>fýrakantur</td></tr>
+	<tr><td class='source'>🟪 -name</td><td class='target' rowSpan='2'>E12–020</td><td class='target'>lillafarvaður fýrakantur</td></tr>
+	<tr><td class='source'>🟪 –keywords</td><td class='target'>fýrakantur<br>korkalitt<br>korkalittur<br>korkalitur<br>lillafarva<br>lillafarvaður<br>reyðblátt<br>reyðbláur</td></tr>
+	<tr><td class='source'>🟫 -name</td><td class='target' rowSpan='2'>E12–021</td><td class='target'>brúnur fýrakantur</td></tr>
+	<tr><td class='source'>🟫 –keywords</td><td class='target'>brúnt<br>brúnur<br>fýrakantur</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>♾ -name</td><td class='target' rowSpan='2'>E11:002</td><td class='target'>óendaligt</td></tr>
+	<tr><td class='source'>♾ –keywords</td><td class='target'>endaleyst<br>í allar ævir<br>óendalig<br>óendaligt</td></tr>
+	<tr><td class='source'>⭕ -name</td><td class='target'>stórur tjúkkur ringur</td><td class='target'>innanopin reyður sirkul</td></tr>
+	<tr><td class='source'>⭕ –keywords</td><td class='target'>…<br>stórur tjúkkur ringur</td><td class='target'>innanopin reyður sirkul<br>…<br>reyður<br>reytt<br>…</td></tr>
+	<tr><td class='source'>© –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>c<br>…</td></tr>
+	<tr><td class='source'>® –keywords</td><td class='target'>r<br>…<br>skrásettur</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Flags' href='#Flags'>Flags</a></td><td class='source' rowSpan='4'><a name='flag' href='#flag'>flag</a></td><td class='source'>🏳‍⚧ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>blátt, ljósareytt og hvítt flagg</td></tr>
+	<tr><td class='source'>🏳‍⚧ –keywords</td><td class='target'>blátt, ljósareytt og hvítt flagg<br>flagg<br>tvørkyn<br>tvørkynd<br>tvørkyndur</td></tr>
+	<tr><td class='source'>🏴‍☠ -name</td><td class='target' rowSpan='2'>E11:003</td><td class='target'>sjórænaraflagg</td></tr>
+	<tr><td class='source'>🏴‍☠ –keywords</td><td class='target'>Jolly Roger<br>sjórænaraflagg<br>sjórænari<br>sjórán</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Component' href='#Component'>Component</a></td><td class='source' rowSpan='8'><a name='hair-style' href='#hair-style'>hair-style</a></td><td class='source'>🦰 -name</td><td class='target' rowSpan='2'>E11:033</td><td class='target'>reytt hár</td></tr>
+	<tr><td class='source'>🦰 –keywords</td><td class='target'>hár<br>reyðhærdur<br>reytt hár</td></tr>
+	<tr><td class='source'>🦱 -name</td><td class='target' rowSpan='2'>E11:034</td><td class='target'>purlut hár</td></tr>
+	<tr><td class='source'>🦱 –keywords</td><td class='target'>afro<br>hár<br>krúllut<br>purlut</td></tr>
+	<tr><td class='source'>🦳 -name</td><td class='target' rowSpan='2'>E11:036</td><td class='target'>hvítt hár</td></tr>
+	<tr><td class='source'>🦳 –keywords</td><td class='target'>gamal<br>gomul<br>hár<br>hvítt hár</td></tr>
+	<tr><td class='source'>🦲 -name</td><td class='target' rowSpan='2'>E11:035</td><td class='target'>skallutur</td></tr>
+	<tr><td class='source'>🦲 –keywords</td><td class='target'>einki hár<br>hár<br>kemoterapi<br>skallut<br>skallutur</td></tr>
+	<tr><td class='source' rowSpan='68'><a name='Typography' href='#Typography'>Typography</a></td><td class='source' rowSpan='5'><a name='Axis' href='#Axis'>Axis</a></td><td class='source'>ital</td><td class='target'>italic</td><td class='target'>skákskrift</td></tr>
+	<tr><td class='source'>opsz</td><td class='target'>optical size</td><td class='target'>sjónarstødd</td></tr>
+	<tr><td class='source'>slnt</td><td class='target'>slant</td><td class='target'>skák</td></tr>
+	<tr><td class='source'>wdth</td><td class='target'>width</td><td class='target'>breidd</td></tr>
+	<tr><td class='source'>wght</td><td class='target'>weight</td><td class='target'>vekt</td></tr>
+	<tr><td class='source' rowSpan='52'><a name='Style' href='#Style'>Style</a></td><td class='source'>ital-1</td><td class='target'>cursive</td><td class='target'>skák</td></tr>
+	<tr><td class='source'>opsz-8</td><td class='target'>caption</td><td class='target'>yvirskrift</td></tr>
+	<tr><td class='source'>opsz-12</td><td class='target'>text</td><td class='target'>tekstur</td></tr>
+	<tr><td class='source'>opsz-18</td><td class='target'>titling</td><td class='target'>heiti</td></tr>
+	<tr><td class='source'>opsz-72</td><td class='target'>display</td><td class='target'>sýn</td></tr>
+	<tr><td class='source'>opsz-144</td><td class='target'>poster</td><td class='target'>uppslag</td></tr>
+	<tr><td class='source'>slnt--12</td><td class='target'>backslanted</td><td class='target'>á skák aftureftir</td></tr>
+	<tr><td class='source'>slnt-0</td><td class='target'>upright</td><td class='target'>beinur</td></tr>
+	<tr><td class='source'>slnt-12</td><td class='target'>slanted</td><td class='target'>á sk´ák</td></tr>
+	<tr><td class='source'>slnt-24</td><td class='target'>extra-slanted</td><td class='target'>eyka á skák</td></tr>
+	<tr><td class='source'>wdth-50</td><td class='target'>ultracondensed</td><td class='target'>ultratætt</td></tr>
+	<tr><td class='source'>wdth-50-compressed</td><td class='target'>ultracompressed</td><td class='target'>ultrastappa</td></tr>
+	<tr><td class='source'>wdth-50-narrow</td><td class='target'>ultranarrow</td><td class='target'>ultrasmalt</td></tr>
+	<tr><td class='source'>wdth-62.5</td><td class='target'>extra-condensed</td><td class='target'>eykatætt</td></tr>
+	<tr><td class='source'>wdth-62.5-compressed</td><td class='target'>extra-compressed</td><td class='target'>eykastappa</td></tr>
+	<tr><td class='source'>wdth-62.5-narrow</td><td class='target'>extra-narrow</td><td class='target'>eykasmalt</td></tr>
+	<tr><td class='source'>wdth-75</td><td class='target'>condensed</td><td class='target'>tætt</td></tr>
+	<tr><td class='source'>wdth-75-compressed</td><td class='target' rowSpan='2'>compressed</td><td class='target' rowSpan='2'>stappa</td></tr>
+	<tr><td class='source'>wdth-75-narrow</td></tr>
+	<tr><td class='source'>wdth-87.5</td><td class='target'>semicondensed</td><td class='target'>hálvtætt</td></tr>
+	<tr><td class='source'>wdth-87.5-compressed</td><td class='target'>semicompressed</td><td class='target'>hálvstappa</td></tr>
+	<tr><td class='source'>wdth-87.5-narrow</td><td class='target'>seminarrow</td><td class='target'>hálvsmalt</td></tr>
+	<tr><td class='source'>wdth-100</td><td class='target'>normal</td><td class='target'>normalt</td></tr>
+	<tr><td class='source'>wdth-112.5</td><td class='target'>semiexpanded</td><td class='target'>hálvvíðka</td></tr>
+	<tr><td class='source'>wdth-112.5-extended</td><td class='target'>semiextended</td><td class='target'>hálvútrætt</td></tr>
+	<tr><td class='source'>wdth-112.5-wide</td><td class='target'>semiwide</td><td class='target'>hálvbreitt</td></tr>
+	<tr><td class='source'>wdth-125</td><td class='target'>expanded</td><td class='target'>víðka</td></tr>
+	<tr><td class='source'>wdth-125-extended</td><td class='target'>extended</td><td class='target'>útrætt</td></tr>
+	<tr><td class='source'>wdth-125-wide</td><td class='target'>wide</td><td class='target'>breitt</td></tr>
+	<tr><td class='source'>wdth-150</td><td class='target'>extra-expanded</td><td class='target'>eykavíðka</td></tr>
+	<tr><td class='source'>wdth-150-extended</td><td class='target'>extra-extended</td><td class='target'>eykaútrætt</td></tr>
+	<tr><td class='source'>wdth-150-wide</td><td class='target'>extra-wide</td><td class='target'>eykabreitt</td></tr>
+	<tr><td class='source'>wdth-200</td><td class='target'>ultraexpanded</td><td class='target'>ultravíðka</td></tr>
+	<tr><td class='source'>wdth-200-extended</td><td class='target'>ultraextended</td><td class='target'>ultraútrætt</td></tr>
+	<tr><td class='source'>wdth-200-wide</td><td class='target'>ultrawide</td><td class='target'>ultrabreitt</td></tr>
+	<tr><td class='source'>wght-100</td><td class='target'>thin</td><td class='target'>tunt</td></tr>
+	<tr><td class='source'>wght-200</td><td class='target'>extra-light</td><td class='target'>eykalætt</td></tr>
+	<tr><td class='source'>wght-200-ultra</td><td class='target'>ultralight</td><td class='target'>ultralætt</td></tr>
+	<tr><td class='source'>wght-300</td><td class='target'>light</td><td class='target'>lætt</td></tr>
+	<tr><td class='source'>wght-350</td><td class='target'>semilight</td><td class='target'>hálvlætt</td></tr>
+	<tr><td class='source'>wght-380</td><td class='target'>book</td><td class='target'>bók</td></tr>
+	<tr><td class='source'>wght-400</td><td class='target'>regular</td><td class='target'>vanligt</td></tr>
+	<tr><td class='source'>wght-500</td><td class='target'>medium</td><td class='target'>miðal</td></tr>
+	<tr><td class='source'>wght-600</td><td class='target'>semibold</td><td class='target'>hálvfeitir</td></tr>
+	<tr><td class='source'>wght-600-demi</td><td class='target'>demibold</td><td class='target'>eitt sindur feitir</td></tr>
+	<tr><td class='source'>wght-700</td><td class='target'>bold</td><td class='target'>feitir</td></tr>
+	<tr><td class='source'>wght-800</td><td class='target'>extra-bold</td><td class='target'>eykafeitir</td></tr>
+	<tr><td class='source'>wght-900</td><td class='target'>black</td><td class='target'>svart</td></tr>
+	<tr><td class='source'>wght-900-heavy</td><td class='target'>heavy</td><td class='target'>tungt</td></tr>
+	<tr><td class='source'>wght-950</td><td class='target'>extra-black</td><td class='target'>eykasvart</td></tr>
+	<tr><td class='source'>wght-950-ultrablack</td><td class='target'>ultrablack</td><td class='target'>ultrasvart</td></tr>
+	<tr><td class='source'>wght-950-ultraheavy</td><td class='target'>ultraheavy</td><td class='target'>ultratungt</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Feature' href='#Feature'>Feature</a></td><td class='source'>afrc</td><td class='target'>vertical fractions</td><td class='target'>loddrætt brot</td></tr>
+	<tr><td class='source'>cpsp</td><td class='target'>capital spacing</td><td class='target'>spjaldrastavatenjing</td></tr>
+	<tr><td class='source'>dlig</td><td class='target'>optional ligatures</td><td class='target'>sjálvbodnir samanstoyptir stavir</td></tr>
+	<tr><td class='source'>frac</td><td class='target'>diagonal fractions</td><td class='target'>diagonalt brot</td></tr>
+	<tr><td class='source'>lnum</td><td class='target'>lining numbers</td><td class='target'>nútíðar tøl</td></tr>
+	<tr><td class='source'>onum</td><td class='target'>old-style figures</td><td class='target'>gamaldags tøl</td></tr>
+	<tr><td class='source'>ordn</td><td class='target'>ordinals</td><td class='target'>raðtøl</td></tr>
+	<tr><td class='source'>pnum</td><td class='target'>proportional numbers</td><td class='target'>lutfalslig tøl</td></tr>
+	<tr><td class='source'>smcp</td><td class='target'>small capitals</td><td class='target'>lítlir kapitelur</td></tr>
+	<tr><td class='source'>tnum</td><td class='target'>tabular numbers</td><td class='target'>talvuskapa tøl</td></tr>
+	<tr><td class='source'>zero</td><td class='target'>slashed zero</td><td class='target'>null við skrástriku</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='3'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td><td class='source' rowSpan='3'><a name='Collation' href='#Collation'>Collation</a></td><td class='source'>search</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target'>[import und-u-co-search]<br>[import fo-u-co-standard]</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>standard</td><td class='target'>&amp;D&lt;&lt;đ&lt;&lt;&lt;Đ&lt;&lt;ð&lt;&lt;&lt;Ð<br>&amp;t&lt;&lt;&lt;þ/h<br>&amp;T&lt;&lt;&lt;Þ/H<br>&amp;Y&lt;&lt;ü&lt;&lt;&lt;Ü&lt;&lt;ű&lt;&lt;&lt;Ű<br>&amp;[before 1]ǀ&lt;æ&lt;&lt;&lt;Æ&lt;&lt;ä&lt;&lt;&lt;Ä&lt;&lt;ę&lt;&lt;&lt;Ę&lt;ø&lt;&lt;&lt;Ø&lt;&lt;ö&lt;&lt;&lt;Ö&lt;&lt;ő&lt;&lt;&lt;Ő&lt;&lt;œ&lt;&lt;&lt;Œ&lt;å&lt;&lt;&lt;Å&lt;&lt;&lt;aa&lt;&lt;&lt;Aa&lt;&lt;&lt;AA</td></tr>
+	<tr><td class='source'>standard-proposed</td><td class='target'>&amp;D&lt;&lt;đ&lt;&lt;&lt;Đ&lt;&lt;ð&lt;&lt;&lt;Ð<br>&amp;t&lt;&lt;&lt;þ/h<br>&amp;T&lt;&lt;&lt;Þ/H<br>&amp;Y&lt;&lt;ü&lt;&lt;&lt;Ü&lt;&lt;ű&lt;&lt;&lt;Ű<br>&amp;[before 1]ǀ&lt;æ&lt;&lt;&lt;Æ&lt;&lt;ä&lt;&lt;&lt;Ä&lt;&lt;ę&lt;&lt;&lt;Ę&lt;ø&lt;&lt;&lt;Ø&lt;&lt;ö&lt;&lt;&lt;Ö&lt;&lt;ő&lt;&lt;&lt;Ő&lt;&lt;œ&lt;&lt;&lt;Œ&lt;å&lt;&lt;&lt;Å&lt;&lt;&lt;aa&lt;&lt;&lt;aA&lt;&lt;&lt;Aa<br>&lt;&lt;&lt;AA</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script language='Javascript' type='text/javascript' src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script type="text/javascript">
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
