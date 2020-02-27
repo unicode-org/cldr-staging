@@ -52,6 +52,7 @@ annotations.
 			<language type="arp">Arapaho</language>
 			<language type="arq">Algerian Arabic</language>
 			<language type="ars">Najdi Arabic</language>
+			<language type="ars" alt="menu">Arabic, Najdi</language>
 			<language type="arw">Arawak</language>
 			<language type="ary">Moroccan Arabic</language>
 			<language type="arz">Egyptian Arabic</language>
@@ -126,6 +127,8 @@ annotations.
 			<language type="chy">Cheyenne</language>
 			<language type="cic">Chickasaw</language>
 			<language type="ckb">Central Kurdish</language>
+			<language type="ckb" alt="menu">Kurdish, Central</language>
+			<language type="ckb" alt="variant">Kurdish, Sorani</language>
 			<language type="co">Corsican</language>
 			<language type="cop">Coptic</language>
 			<language type="cps">Capiznon</language>
@@ -662,6 +665,7 @@ annotations.
 			<script type="Ahom">Ahom</script>
 			<script type="Arab">Arabic</script>
 			<script type="Arab" alt="variant">Perso-Arabic</script>
+			<script type="Aran">Nastaliq</script>
 			<script type="Armi">Imperial Aramaic</script>
 			<script type="Armn">Armenian</script>
 			<script type="Avst">Avestan</script>
@@ -946,6 +950,7 @@ annotations.
 			<territory type="CR">Costa Rica</territory>
 			<territory type="CU">Cuba</territory>
 			<territory type="CV">Cape Verde</territory>
+			<territory type="CV" alt="variant">Cabo Verde</territory>
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmas Island</territory>
 			<territory type="CY">Cyprus</territory>
@@ -4007,7 +4012,9 @@ annotations.
 			</metazone>
 			<metazone type="Norfolk">
 				<long>
-					<standard>Norfolk Island Time</standard>
+					<generic>Norfolk Island Time</generic>
+					<standard>Norfolk Island Standard Time</standard>
+					<daylight>Norfolk Island Daylight Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
@@ -5950,8 +5957,78 @@ annotations.
 	</numbers>
 	<units>
 		<unitLength type="long">
+			<compoundUnit type="10p-1">
+				<unitPrefixPattern>deci{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-2">
+				<unitPrefixPattern>centi{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-3">
+				<unitPrefixPattern>milli{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-6">
+				<unitPrefixPattern>micro{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-9">
+				<unitPrefixPattern>nano{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-12">
+				<unitPrefixPattern>pico{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-15">
+				<unitPrefixPattern>femto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-18">
+				<unitPrefixPattern>atto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-21">
+				<unitPrefixPattern>zepto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-24">
+				<unitPrefixPattern>yocto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p1">
+				<unitPrefixPattern>deka{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p2">
+				<unitPrefixPattern>hecto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p3">
+				<unitPrefixPattern>kilo{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p6">
+				<unitPrefixPattern>mega{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p9">
+				<unitPrefixPattern>giga{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p12">
+				<unitPrefixPattern>tera{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p15">
+				<unitPrefixPattern>peta{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p18">
+				<unitPrefixPattern>exa{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p21">
+				<unitPrefixPattern>zetta{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p24">
+				<unitPrefixPattern>yotta{0}</unitPrefixPattern>
+			</compoundUnit>
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0} per {1}</compoundUnitPattern>
+			</compoundUnit>
+			<compoundUnit type="power2">
+				<compoundUnitPattern1>square {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="one">square {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">square {0}</compoundUnitPattern1>
+			</compoundUnit>
+			<compoundUnit type="power3">
+				<compoundUnitPattern1>cubic {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="one">cubic {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">cubic {0}</compoundUnitPattern1>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>g-force</displayName>
@@ -7089,9 +7166,9 @@ annotations.
 				<unitPattern count="other">{0} ms</unitPattern>
 			</unit>
 			<unit type="duration-microsecond">
-				<displayName>μsecs</displayName>
-				<unitPattern count="one">{0} μs</unitPattern>
-				<unitPattern count="other">{0} μs</unitPattern>
+				<displayName>µsecs</displayName>
+				<unitPattern count="one">{0} µs</unitPattern>
+				<unitPattern count="other">{0} µs</unitPattern>
 			</unit>
 			<unit type="duration-nanosecond">
 				<displayName>nanosecs</displayName>
@@ -7470,7 +7547,7 @@ annotations.
 			<unit type="pressure-bar">
 				<displayName>bar</displayName>
 				<unitPattern count="one">{0} bar</unitPattern>
-				<unitPattern count="other">{0} bars</unitPattern>
+				<unitPattern count="other">{0} bar</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
@@ -7727,10 +7804,22 @@ annotations.
 				<unitPattern count="one">{0}″</unitPattern>
 				<unitPattern count="other">{0}″</unitPattern>
 			</unit>
+			<unit type="area-square-kilometer">
+				<displayName>km²</displayName>
+				<unitPattern count="one">{0}km²</unitPattern>
+				<unitPattern count="other">{0}km²</unitPattern>
+				<perUnitPattern>{0}/km²</perUnitPattern>
+			</unit>
 			<unit type="area-hectare">
 				<displayName>hectare</displayName>
 				<unitPattern count="one">{0}ha</unitPattern>
 				<unitPattern count="other">{0}ha</unitPattern>
+			</unit>
+			<unit type="area-square-meter">
+				<displayName>meters²</displayName>
+				<unitPattern count="one">{0}m²</unitPattern>
+				<unitPattern count="other">{0}m²</unitPattern>
+				<perUnitPattern>{0}/m²</perUnitPattern>
 			</unit>
 			<unit type="area-square-centimeter">
 				<displayName>cm²</displayName>
@@ -7883,6 +7972,11 @@ annotations.
 				<unitPattern count="one">{0}bit</unitPattern>
 				<unitPattern count="other">{0}bit</unitPattern>
 			</unit>
+			<unit type="duration-century">
+				<displayName>c</displayName>
+				<unitPattern count="one">{0}c</unitPattern>
+				<unitPattern count="other">{0}c</unitPattern>
+			</unit>
 			<unit type="duration-decade">
 				<displayName>dec</displayName>
 				<unitPattern count="one">{0}dec</unitPattern>
@@ -7930,8 +8024,8 @@ annotations.
 			</unit>
 			<unit type="duration-microsecond">
 				<displayName>μsec</displayName>
-				<unitPattern count="one">{0}μs</unitPattern>
-				<unitPattern count="other">{0}μs</unitPattern>
+				<unitPattern count="one">{0}µs</unitPattern>
+				<unitPattern count="other">{0}µs</unitPattern>
 			</unit>
 			<unit type="duration-nanosecond">
 				<displayName>ns</displayName>
@@ -8301,7 +8395,7 @@ annotations.
 			<unit type="pressure-bar">
 				<displayName>bar</displayName>
 				<unitPattern count="one">{0}bar</unitPattern>
-				<unitPattern count="other">{0}bars</unitPattern>
+				<unitPattern count="other">{0}bar</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>

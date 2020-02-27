@@ -15,6 +15,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<languages>
 			<language type="ar_001">Modern Standard Arabic</language>
 			<language type="bn">Bengali</language>
+			<language type="ckb" alt="menu">Kurdish (Central)</language>
+			<language type="ckb" alt="variant">Kurdish (Sorani)</language>
 			<language type="de_AT">Austrian German</language>
 			<language type="de_CH">Swiss High German</language>
 			<language type="en_AU">Australian English</language>
@@ -47,6 +49,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="MF">St. Martin</territory>
 			<territory type="VC">St. Vincent &amp; Grenadines</territory>
 		</territories>
+		<keys>
+			<key type="colCaseFirst">Upper case / Lower case Ordering</key>
+		</keys>
 		<types>
 			<type key="calendar" type="dangi">Korean Calendar</type>
 			<type key="calendar" type="ethiopic">Ethiopian Calendar</type>
@@ -128,6 +133,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMEd">E, dd/MM/y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatItem id="GyMEd">
+							<greatestDifference id="d">E dd/MM/y – E dd/MM/y GGGGG</greatestDifference>
+							<greatestDifference id="G">E dd/MM/y GGGGG – E dd/MM/y GGGGG</greatestDifference>
+							<greatestDifference id="M">E dd/MM/y – E dd/MM/y GGGGG</greatestDifference>
+							<greatestDifference id="y">E dd/MM/y – E dd/MM/y GGGGG</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="GyMMMEd">
+							<greatestDifference id="d">E d MMM – E d MMM y G</greatestDifference>
+							<greatestDifference id="G">E d MMM y G – E d MMM y G</greatestDifference>
+							<greatestDifference id="M">E d MMM – E d MMM y G</greatestDifference>
+							<greatestDifference id="y">E d MMM y – E d MMM y G</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
 							<greatestDifference id="d">E, d/M – E, d/M</greatestDifference>
 							<greatestDifference id="M">E, d/M – E, d/M</greatestDifference>

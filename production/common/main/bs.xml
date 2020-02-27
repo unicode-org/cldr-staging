@@ -119,6 +119,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="dar">dargva</language>
 			<language type="dav">taita</language>
 			<language type="de">njemački</language>
+			<language type="de_CH">visoki njemački (Švicarska)</language>
 			<language type="del">delaver</language>
 			<language type="den">slave</language>
 			<language type="dgr">dogrib</language>
@@ -148,6 +149,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="eu">baskijski</language>
 			<language type="ewo">evondo</language>
 			<language type="fa">perzijski</language>
+			<language type="fa_AF">dari</language>
 			<language type="fan">fang</language>
 			<language type="fat">fanti</language>
 			<language type="ff">fulah</language>
@@ -1000,6 +1002,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Ostrva Valis i Futuna</territory>
 			<territory type="WS">Samoa</territory>
+			<territory type="XA">Pseudo naglasci</territory>
+			<territory type="XB">Pseudo bidi</territory>
 			<territory type="XK">Kosovo</territory>
 			<territory type="YE">Jemen</territory>
 			<territory type="YT">Majote</territory>
@@ -4904,7 +4908,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</metazone>
 			<metazone type="Norfolk">
 				<long>
-					<standard>Norfolško vrijeme</standard>
+					<generic draft="contributed">Norfolško vrijeme</generic>
+					<standard draft="contributed">Norfolško standardno vrijeme</standard>
+					<daylight draft="contributed">Norfolško ljetno vrijeme</daylight>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
@@ -7422,6 +7428,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<unitLength type="long">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
+			</compoundUnit>
+			<compoundUnit type="power2">
+				<compoundUnitPattern1 count="one">kvadratni {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="few">kvadratna {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">kvadratnih {0}</compoundUnitPattern1>
+			</compoundUnit>
+			<compoundUnit type="power3">
+				<compoundUnitPattern1 count="one">kubni {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="few">kubna {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">kubnih {0}</compoundUnitPattern1>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>G</displayName>

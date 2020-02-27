@@ -109,6 +109,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="eu">bask dili</language>
 			<language type="ewo">ewondo dili</language>
 			<language type="fa">pars dili</language>
+			<language type="fa_AF">dari dili</language>
 			<language type="ff">fula dili</language>
 			<language type="fi">fin dili</language>
 			<language type="fil">filippin dili</language>
@@ -574,7 +575,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="FR">Fransiýa</territory>
 			<territory type="GA">Gabon</territory>
 			<territory type="GB">Birleşen Patyşalyk</territory>
-			<territory type="GB" alt="short">Birleşen Patyşalyk</territory>
 			<territory type="GD">Grenada</territory>
 			<territory type="GE">Gruziýa</territory>
 			<territory type="GF">Fransuz Gwianasy</territory>
@@ -915,28 +915,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
-				<timeFormats>
-					<timeFormatLength type="full">
-						<timeFormat>
-							<pattern draft="unconfirmed">HH:mm:ss zzzz</pattern>
-						</timeFormat>
-					</timeFormatLength>
-					<timeFormatLength type="long">
-						<timeFormat>
-							<pattern draft="unconfirmed">HH:mm:ss z</pattern>
-						</timeFormat>
-					</timeFormatLength>
-					<timeFormatLength type="medium">
-						<timeFormat>
-							<pattern draft="provisional">HH:mm:ss</pattern>
-						</timeFormat>
-					</timeFormatLength>
-					<timeFormatLength type="short">
-						<timeFormat>
-							<pattern draft="provisional">HH:mm</pattern>
-						</timeFormat>
-					</timeFormatLength>
-				</timeFormats>
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
@@ -4170,7 +4148,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Norfolk">
 				<long>
-					<standard>Norfolk adasy wagty</standard>
+					<generic draft="contributed">Norfolk adasy wagty</generic>
+					<standard draft="contributed">Norfolk adasy standart wagty</standard>
+					<daylight draft="contributed">Norfolk adasy tomusky wagty</daylight>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
@@ -5643,6 +5623,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<compoundUnit type="per">
 				<compoundUnitPattern>{1} başyna {0}</compoundUnitPattern>
 			</compoundUnit>
+			<compoundUnit type="power2">
+				<compoundUnitPattern1 count="one">kwadrat {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">kwadrat {0}</compoundUnitPattern1>
+			</compoundUnit>
+			<compoundUnit type="power3">
+				<compoundUnitPattern1 count="one">kub {0}</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">kub {0}</compoundUnitPattern1>
+			</compoundUnit>
 			<compoundUnit type="times">
 				<compoundUnitPattern>{0}.{1}</compoundUnitPattern>
 			</compoundUnit>
@@ -6028,22 +6016,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other">{0} megapiksel</unitPattern>
 			</unit>
 			<unit type="graphics-pixel-per-centimeter">
-				<displayName draft="provisional">santimetr başyna piksel</displayName>
+				<displayName>santimetr başyna piksel</displayName>
 				<unitPattern count="one">{0} santimetr başyna piksel</unitPattern>
 				<unitPattern count="other">{0} santimetr başyna piksel</unitPattern>
 			</unit>
 			<unit type="graphics-pixel-per-inch">
-				<displayName draft="provisional">dýuým başyna piksel</displayName>
+				<displayName>dýuým başyna piksel</displayName>
 				<unitPattern count="one">{0} dýuým başyna piksel</unitPattern>
 				<unitPattern count="other">{0} dýuým başyna piksel</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-centimeter">
-				<displayName draft="provisional">santimetr başyna nokat</displayName>
+				<displayName>santimetr başyna nokat</displayName>
 				<unitPattern count="one">{0} santimetr başyna nokat</unitPattern>
 				<unitPattern count="other">{0} santimetr başyna nokat</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-inch">
-				<displayName draft="provisional">dýuým başyna nokat</displayName>
+				<displayName>dýuým başyna nokat</displayName>
 				<unitPattern count="one">{0} dýuým başyna nokat</unitPattern>
 				<unitPattern count="other">{0} dýuým başyna nokat</unitPattern>
 			</unit>

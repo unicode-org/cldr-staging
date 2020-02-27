@@ -52,7 +52,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="awa">awadhi</language>
 			<language type="ay">aimará</language>
 			<language type="az">azerbaijano</language>
-			<language type="az" alt="short">azerbaijano</language>
 			<language type="az_Arab">azeri sul</language>
 			<language type="ba">bashkir</language>
 			<language type="bal">balúchi</language>
@@ -106,6 +105,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="chr">cheroqui</language>
 			<language type="chy">cheiene</language>
 			<language type="ckb">curdo central</language>
+			<language type="ckb" alt="variant">curdo sorâni</language>
 			<language type="co">corso</language>
 			<language type="cop">copta</language>
 			<language type="cr">cree</language>
@@ -151,6 +151,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="eu">basco</language>
 			<language type="ewo">ewondo</language>
 			<language type="fa">persa</language>
+			<language type="fa_AF">dari</language>
 			<language type="fan">fangue</language>
 			<language type="fat">fanti</language>
 			<language type="ff">fula</language>
@@ -551,6 +552,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<scripts>
 			<script type="Arab">árabe</script>
 			<script type="Arab" alt="variant">perso-árabe</script>
+			<script type="Aran" draft="contributed">nastaliq</script>
 			<script type="Armi" draft="contributed">armi</script>
 			<script type="Armn">armênio</script>
 			<script type="Avst">avéstico</script>
@@ -648,6 +650,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<script type="Phnx">fenício</script>
 			<script type="Plrd" draft="contributed">fonético pollard</script>
 			<script type="Prti" draft="contributed">prti</script>
+			<script type="Qaag" draft="contributed">zawgyi</script>
 			<script type="Rjng" draft="contributed">rejang</script>
 			<script type="Roro" draft="contributed">rongorongo</script>
 			<script type="Runr">rúnico</script>
@@ -809,7 +812,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="FR">França</territory>
 			<territory type="GA">Gabão</territory>
 			<territory type="GB">Reino Unido</territory>
-			<territory type="GB" alt="short">Reino Unido</territory>
 			<territory type="GD">Granada</territory>
 			<territory type="GE">Geórgia</territory>
 			<territory type="GF">Guiana Francesa</territory>
@@ -4735,7 +4737,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</metazone>
 			<metazone type="Norfolk">
 				<long>
-					<standard>Horário da Ilha Norfolk</standard>
+					<generic draft="contributed">Horário da Ilha Norfolk</generic>
+					<standard draft="contributed">Horário Padrão da Ilha Norfolk</standard>
+					<daylight draft="contributed">Horário de Verão da Ilha Norfolk</daylight>
 				</long>
 			</metazone>
 			<metazone type="Noronha">
@@ -6915,6 +6919,66 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 	</numbers>
 	<units>
 		<unitLength type="long">
+			<compoundUnit type="10p-1">
+				<unitPrefixPattern>deci{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-2">
+				<unitPrefixPattern>centi{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-3">
+				<unitPrefixPattern>mili{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-6">
+				<unitPrefixPattern>micro{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-9">
+				<unitPrefixPattern>nano{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-12">
+				<unitPrefixPattern>pico{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-15">
+				<unitPrefixPattern>femto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-18">
+				<unitPrefixPattern>atto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-21">
+				<unitPrefixPattern>zepto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-24">
+				<unitPrefixPattern>iocto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p1">
+				<unitPrefixPattern>deca{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p2">
+				<unitPrefixPattern>hecto{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p3">
+				<unitPrefixPattern>quilo{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p6">
+				<unitPrefixPattern>mega{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p9">
+				<unitPrefixPattern>giga{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p12">
+				<unitPrefixPattern>tera{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p15">
+				<unitPrefixPattern>peta{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p18">
+				<unitPrefixPattern>exa{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p21">
+				<unitPrefixPattern>zeta{0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p24">
+				<unitPrefixPattern>iota{0}</unitPrefixPattern>
+			</compoundUnit>
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0} por {1}</compoundUnitPattern>
 			</compoundUnit>

@@ -10,17 +10,17 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     $Revision$
 -->
 
-<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups? ) >
+<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitConstants*, unitQuantities*, convertUnits*, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups?, grammaticalData? ) >
 
 <!ELEMENT version EMPTY >
     <!--@METADATA-->
 <!ATTLIST version number CDATA #REQUIRED >
 	<!--@MATCH:any-->
     <!--@METADATA-->
-<!ATTLIST version cldrVersion CDATA #FIXED "36.1" >
+<!ATTLIST version cldrVersion CDATA #FIXED "37" >
 	<!--@MATCH:version-->
     <!--@VALUE-->
-<!ATTLIST version unicodeVersion CDATA #FIXED "13.0" >
+<!ATTLIST version unicodeVersion CDATA #FIXED "13.0.0" >
 	<!--@MATCH:version-->
     <!--@VALUE-->
 
@@ -383,14 +383,66 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ATTLIST unitPreferences scope (small) #IMPLIED >
 
 <!ELEMENT unitPreference ( #PCDATA ) >
+    <!--@ORDERED-->
+
 <!ATTLIST unitPreference regions NMTOKENS #REQUIRED >
 	<!--@MATCH:set/validity/region-->
+<!ATTLIST unitPreference geq NMTOKEN #IMPLIED >
+    <!--@MATCH:any-->
+<!ATTLIST unitPreference skeleton CDATA #IMPLIED >
+    <!--@VALUE-->
+    <!--@MATCH:any-->
 <!ATTLIST unitPreference draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
     <!--@METADATA-->
 <!ATTLIST unitPreference references CDATA #IMPLIED >
     <!--@METADATA-->
 <!ATTLIST unitPreference alt NMTOKENS #IMPLIED >
     <!--@MATCH:literal/informal, variant-->
+
+
+<!ELEMENT unitConstants ( unitConstant* ) >
+
+<!ELEMENT unitConstant EMPTY >
+<!ATTLIST unitConstant constant NMTOKEN #REQUIRED >
+	<!--@MATCH:regex/[A-Za-z][A-Za-z0-9]*-->
+<!ATTLIST unitConstant value CDATA #REQUIRED >
+    <!--@VALUE-->
+    <!--@MATCH:any-->
+<!ATTLIST unitConstant status NMTOKEN #IMPLIED >
+    <!--@VALUE-->
+    <!--@MATCH:literal/approximate, exact-->
+
+
+<!ELEMENT unitQuantities ( unitQuantity* ) >
+
+<!ELEMENT unitQuantity EMPTY >
+<!ATTLIST unitQuantity baseUnit CDATA #REQUIRED >
+    <!--@MATCH:any-->
+<!ATTLIST unitQuantity quantity NMTOKEN #REQUIRED >
+    <!--@VALUE-->
+	<!--@MATCH:regex/[A-Za-z][A-Za-z0-9]*-->
+<!ATTLIST unitQuantity status NMTOKEN #IMPLIED >
+    <!--@VALUE-->
+	<!--@MATCH:regex/simple-->
+
+<!ELEMENT convertUnits ( convertUnit* ) >
+
+<!ELEMENT convertUnit EMPTY >
+<!ATTLIST convertUnit source NMTOKEN #REQUIRED >
+    <!--@MATCH:validity/unit-->
+<!ATTLIST convertUnit baseUnit NMTOKEN #REQUIRED >
+    <!--@VALUE-->
+    <!--@MATCH:validity/unit-->
+<!ATTLIST convertUnit factor CDATA #IMPLIED >
+	<!--@MATCH:regex/[0-9]+([/\.][0-9]+)?-->
+    <!--@VALUE-->
+<!ATTLIST convertUnit offset CDATA #IMPLIED >
+	<!--@MATCH:regex/[0-9]+([/\.][0-9]+)?-->
+    <!--@VALUE-->
+<!ATTLIST convertUnit systems NMTOKENS #IMPLIED >
+    <!--@VALUE-->
+	<!--@MATCH:literal/US UK -->
+
 
 <!ELEMENT timezoneData ( mapTimezones*, zoneFormatting* ) >
     <!--@DEPRECATED-->
@@ -592,7 +644,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     <!--@METADATA-->
     <!--@DEPRECATED:true, false-->
 
-<!ELEMENT alias ( languageAlias*, scriptAlias*, territoryAlias*, subdivisionAlias*, variantAlias*, zoneAlias* ) >
+<!ELEMENT alias ( languageAlias*, scriptAlias*, territoryAlias*, subdivisionAlias*, variantAlias*, zoneAlias*, unitAlias*, usageAlias*) >
 <!ATTLIST alias draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
     <!--@DEPRECATED-->
@@ -649,6 +701,24 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 	<!--@MATCH:bcp47/tz-->
     <!--@VALUE-->
 <!ATTLIST zoneAlias reason (deprecated | overlong) #IMPLIED >
+    <!--@VALUE-->
+    
+<!ELEMENT unitAlias EMPTY >
+<!ATTLIST unitAlias type NMTOKEN #REQUIRED >
+	<!--@MATCH:validity/unit-->
+<!ATTLIST unitAlias replacement NMTOKEN #REQUIRED >
+	<!--@MATCH:validity/unit-->
+    <!--@VALUE-->
+<!ATTLIST unitAlias reason (deprecated) #IMPLIED >
+    <!--@VALUE-->
+
+<!ELEMENT usageAlias EMPTY >
+<!ATTLIST usageAlias type NMTOKEN #REQUIRED >
+    <!--@MATCH:validity/unit-->
+<!ATTLIST usageAlias replacement NMTOKEN #REQUIRED >
+    <!--@MATCH:validity/unit-->
+    <!--@VALUE-->
+<!ATTLIST usageAlias reason (deprecated) #IMPLIED >
     <!--@VALUE-->
 
 <!ELEMENT deprecated ( deprecatedItems* ) >
@@ -1154,3 +1224,27 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ELEMENT languageGroup ( #PCDATA ) >
 <!ATTLIST languageGroup parent NMTOKEN #REQUIRED >
 	<!--@MATCH:validity/language-->
+
+<!-- # Grammatical Features -->
+<!ELEMENT grammaticalData ( grammaticalFeatures* )>
+
+<!ELEMENT grammaticalFeatures ( grammaticalCase?, grammaticalGender?, grammaticalDefiniteness? ) >
+<!ATTLIST grammaticalFeatures targets NMTOKENS #REQUIRED >
+    <!--@MATCH:set/literal/nominal-->
+<!ATTLIST grammaticalFeatures locales NMTOKENS #REQUIRED >
+    <!--@MATCH:set/validity/language-->
+
+<!ELEMENT grammaticalCase EMPTY>
+<!ATTLIST grammaticalCase values NMTOKENS #REQUIRED >
+    <!--@VALUE-->
+    <!--@MATCH:set/literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, partitive, prepositional, sociative, vocative-->
+
+<!ELEMENT grammaticalGender EMPTY>
+<!ATTLIST grammaticalGender values NMTOKENS #REQUIRED >
+    <!--@VALUE-->
+    <!--@MATCH:set/literal/animate, common, feminine, inanimate, masculine, neuter, personal-->
+
+<!ELEMENT grammaticalDefiniteness EMPTY>
+<!ATTLIST grammaticalDefiniteness values NMTOKENS #REQUIRED >
+    <!--@VALUE-->
+    <!--@MATCH:set/literal/definite, indefinite, unspecified, construct-->

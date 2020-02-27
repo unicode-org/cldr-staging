@@ -29,6 +29,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="chg">tchagatay</language>
 			<language type="chn">chinook</language>
 			<language type="ckb">kurde central</language>
+			<language type="ckb" alt="menu">sorani</language>
 			<language type="cr">cri</language>
 			<language type="de_AT">allemand autrichien</language>
 			<language type="de_CH">allemand suisse</language>
@@ -107,6 +108,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Hant">idéogrammes han traditionnels</script>
 			<script type="Hant" alt="stand-alone">caractères chinois traditionnels</script>
 			<script type="Hrkt">syllabaires japonais</script>
+			<script type="Olck" draft="contributed">ol chiki</script>
 			<script type="Zsye">zsye</script>
 		</scripts>
 		<territories>
@@ -1675,6 +1677,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>HAT</daylight>
 				</short>
 			</metazone>
+			<metazone type="Norfolk">
+				<long>
+					<generic draft="contributed">heure de l’île Norfolk</generic>
+					<standard draft="contributed">heure normale de l’île Norfolk</standard>
+					<daylight draft="contributed">heure avancée de l’île Norfolk</daylight>
+				</long>
+			</metazone>
 			<metazone type="Noronha">
 				<long>
 					<generic>heure de Fernando de Noronha</generic>
@@ -2085,6 +2094,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</numbers>
 	<units>
 		<unitLength type="long">
+			<compoundUnit type="power2">
+				<compoundUnitPattern1 count="one">{0}²</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">{0}²</compoundUnitPattern1>
+			</compoundUnit>
+			<compoundUnit type="power3">
+				<compoundUnitPattern1>{0} cubes</compoundUnitPattern1>
+				<compoundUnitPattern1 count="one">{0} cube</compoundUnitPattern1>
+				<compoundUnitPattern1 count="other">{0} cubes</compoundUnitPattern1>
+			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName draft="contributed">force G</displayName>
 			</unit>
