@@ -1,0 +1,508 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Czech Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Czech Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='18'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='C' href='#C'>C</a></td><td class='source'>Chinese ► zh_Hant</td><td class='source' rowSpan='423'>cs</td><td class='target'>zh_Hant</td><td class='target'>čínština (tradiční)</td><td class='target' rowSpan='6'>basic</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source' rowSpan='2'><a name='E' href='#E'>E</a></td><td class='source'>English ► en_AU</td><td class='target'>en_AU</td><td class='target'>angličtina (Austrálie)</td></tr>
+	<tr><td class='source'>English ► en_CA</td><td class='target'>en_CA</td><td class='target'>angličtina (Kanada)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='F' href='#F'>F</a></td><td class='source'>French ► fr_CA</td><td class='target'>fr_CA</td><td class='target'>francouzština (Kanada)</td></tr>
+	<tr><td class='source'>French ► fr_CH</td><td class='target'>fr_CH</td><td class='target'>francouzština (Švýcarsko)</td></tr>
+	<tr><td class='source'><a name='G' href='#G'>G</a></td><td class='source'>German ► de_AT</td><td class='target'>de_AT</td><td class='target'>němčina (Rakousko)</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source' rowSpan='2'><a name='P' href='#P'>P</a></td><td class='source'>Persian ► fa_AF</td><td class='target'>fa_AF</td><td class='target'>darí</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Portuguese ► pt_BR</td><td class='target'>pt_BR</td><td class='target'>portugalština (Brazílie)</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='S' href='#S'>S</a></td><td class='source'>Spanish ► es_419</td><td class='target'>es_419</td><td class='target'>španělština (Latinská Amerika)</td></tr>
+	<tr><td class='source'>Spanish ► es_MX</td><td class='target'>es_MX</td><td class='target'>španělština (Mexiko)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='2'><a name='Other' href='#Other'>Other</a></td><td class='source'>Aran</td><td class='target'>Aran</td><td class='target'>nastaliq</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>Qaag</td><td class='target'>Qaag</td><td class='target'>zawgyi</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>Anglie</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='target'>Anglie</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>Skotsko</td></tr>
+	<tr><td class='target'>Skotsko</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>Wales</td></tr>
+	<tr><td class='target'>Wales</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='3'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source' rowSpan='3'><a name='Norfolk' href='#Norfolk'>Norfolk</a></td><td class='source'>generic-long</td><td class='target'>▷missing◁</td><td class='target'>Norfolkský čas</td><td class='target' rowSpan='13'>moderate</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Norfolkský čas</td><td class='target'>Norfolkský standardní čas</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>▷missing◁</td><td class='target'>Norfolkský letní čas</td></tr>
+	<tr><td class='source' rowSpan='290'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='30'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='15'><a name='meter-per-second-squared' href='#meter-per-second-squared'>meter-per-second-squared</a></td><td class='source'>long-displayName</td><td class='target'>metr za sekundu na druhou</td><td class='target' rowSpan='15'>▷removed◁</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} metr za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} metry za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} metru za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} metrů za sekundu na druhou</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>m/s²</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} m/s²</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>m/s²</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} m/s²</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='15'>▷missing◁</td><td class='target'>metr za sekundu na druhou</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} metr za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} metry za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} metru za sekundu na druhou</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} metrů za sekundu na druhou</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>m/s²</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} m/s²</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>m/s²</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} m/s²</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='90'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='15'><a name='inch-hg' href='#inch-hg'>inch-hg</a></td><td class='source'>long-displayName</td><td class='target'>palce rtuti</td><td class='target' rowSpan='45'>▷removed◁</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} palec rtuti</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} palce rtuti</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} palců rtuti</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>inHg</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} inHg</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>inHg</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} inHg</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='millimeter-of-mercury' href='#millimeter-of-mercury'>millimeter-of-mercury</a></td><td class='source'>long-displayName</td><td class='target'>milimetry rtuti</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} milimetr rtuti</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} milimetry rtuti</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} milimetru rtuti</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} milimetrů rtuti</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mm Hg</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} mm Hg</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mm Hg</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} mm Hg</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='pound-per-square-inch' href='#pound-per-square-inch'>pound-per-square-inch</a></td><td class='source'>long-displayName</td><td class='target'>libry na čtvereční palec</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} libra na čtvereční palec</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} libry na čtvereční palec</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} psi</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>psi</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} psi</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>psi</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} psi</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='45'>▷missing◁</td><td class='target'>milimetry rtuti</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} milimetr rtuti</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} milimetry rtuti</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} milimetru rtuti</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} milimetrů rtuti</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mm Hg</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} mm Hg</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mm Hg</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} mm Hg</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='pound-force-per-square-inch' href='#pound-force-per-square-inch'>pound-force-per-square-inch</a></td><td class='source'>long-displayName</td><td class='target'>libry na čtvereční palec</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} libra na čtvereční palec</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} libry na čtvereční palec</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} psi</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>psi</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} psi</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>psi</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} psi</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='inch-ofhg' href='#inch-ofhg'>inch-ofhg</a></td><td class='source'>long-displayName</td><td class='target'>palce rtuti</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} palec rtuti</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} palce rtuti</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} palců rtuti</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>inHg</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} inHg</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>inHg</td><td class='target' rowSpan='20'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} inHg</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='80'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='15'><a name='liter-per-100kilometers' href='#liter-per-100kilometers'>liter-per-100kilometers</a></td><td class='source'>long-displayName</td><td class='target'>litry na sto kilometrů</td><td class='target' rowSpan='40'>▷removed◁</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} litr na sto kilometrů</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} litry na sto kilometrů</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} litru na sto kilometrů</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} litrů na sto kilometrů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>l/100 km</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} l/100 km</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>l/100 km</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} l/100 km</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='part-per-million' href='#part-per-million'>part-per-million</a></td><td class='source'>long-displayName</td><td class='target'>díly z milionu</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} díl z milionu</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} díly z milionu</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} dílu z milionu</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} dílů z milionu</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ppm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ppm</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ppm</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} ppm</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='pound-foot' href='#pound-foot'>pound-foot</a></td><td class='source'>long-displayName</td><td class='target'>librostopy</td><td class='target' rowSpan='20'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} librostopa</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} librostopy</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} librostop</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>lbf⋅ft</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} lbf⋅ft</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='130'>▷missing◁</td><td class='target'>díly z milionu</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} díl z milionu</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} díly z milionu</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} dílu z milionu</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} dílů z milionu</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ppm</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} ppm</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ppm</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} ppm</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target'>litry na sto kilometrů</td><td class='target' rowSpan='115'>moderate</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} litr na sto kilometrů</td></tr>
+	<tr><td class='source'>long-few</td><td class='target'>{0} litry na sto kilometrů</td></tr>
+	<tr><td class='source'>long-many</td><td class='target'>{0} litru na sto kilometrů</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} litrů na sto kilometrů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>l/100 km</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} l/100 km</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>l/100 km</td></tr>
+	<tr><td class='source'>narrow-one</td><td class='target' rowSpan='4'>{0} l/100 km</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='pound-force-foot' href='#pound-force-foot'>pound-force-foot</a></td><td class='source'>long-displayName</td><td class='target'>librostopy</td></tr>
+	<tr><td class='source'>long-one</td><td class='target'>{0} librostopa</td></tr>
+	<tr><td class='source'>long-few</td><td class='target' rowSpan='2'>{0} librostopy</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} librostop</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>lbf⋅ft</td></tr>
+	<tr><td class='source'>short-one</td><td class='target' rowSpan='4'>{0} lbf⋅ft</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source' rowSpan='90'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='10p-1' href='#10p-1'>10p-1</a></td><td class='source'>long</td><td class='target'>deci{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>d{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-2' href='#10p-2'>10p-2</a></td><td class='source'>long</td><td class='target'>centi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>c{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-3' href='#10p-3'>10p-3</a></td><td class='source'>long</td><td class='target'>mili{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>m{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-6' href='#10p-6'>10p-6</a></td><td class='source'>long</td><td class='target'>mikro{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>µ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-9' href='#10p-9'>10p-9</a></td><td class='source'>long</td><td class='target'>nano{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>n{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-12' href='#10p-12'>10p-12</a></td><td class='source'>long</td><td class='target'>piko{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>p{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-15' href='#10p-15'>10p-15</a></td><td class='source'>long</td><td class='target'>femto{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>f{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-18' href='#10p-18'>10p-18</a></td><td class='source'>long</td><td class='target'>atto{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>a{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-21' href='#10p-21'>10p-21</a></td><td class='source'>long</td><td class='target'>zepto{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>z{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-24' href='#10p-24'>10p-24</a></td><td class='source'>long</td><td class='target'>yokto{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>y{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p1' href='#10p1'>10p1</a></td><td class='source'>long</td><td class='target'>deka{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>da{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p2' href='#10p2'>10p2</a></td><td class='source'>long</td><td class='target'>hekto{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>h{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p3' href='#10p3'>10p3</a></td><td class='source'>long</td><td class='target'>kilo{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>k{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p6' href='#10p6'>10p6</a></td><td class='source'>long</td><td class='target'>mega{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>M{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p9' href='#10p9'>10p9</a></td><td class='source'>long</td><td class='target'>giga{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>G{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p12' href='#10p12'>10p12</a></td><td class='source'>long</td><td class='target'>tera{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>T{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p15' href='#10p15'>10p15</a></td><td class='source'>long</td><td class='target'>peta{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>P{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p18' href='#10p18'>10p18</a></td><td class='source'>long</td><td class='target'>exa{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>E{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p21' href='#10p21'>10p21</a></td><td class='source'>long</td><td class='target'>zetta{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Z{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p24' href='#10p24'>10p24</a></td><td class='source'>long</td><td class='target'>yotta{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Y{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-one</td><td class='target' rowSpan='12'>{0}²</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-one</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'>long</td><td class='target'>čtvereční {0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>{0}²</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-one</td><td class='target' rowSpan='12'>{0}³</td></tr>
+	<tr><td class='source'>long-few</td></tr>
+	<tr><td class='source'>long-many</td></tr>
+	<tr><td class='source'>long-other</td></tr>
+	<tr><td class='source'>short-one</td></tr>
+	<tr><td class='source'>short-few</td></tr>
+	<tr><td class='source'>short-many</td></tr>
+	<tr><td class='source'>short-other</td></tr>
+	<tr><td class='source'>narrow-one</td></tr>
+	<tr><td class='source'>narrow-few</td></tr>
+	<tr><td class='source'>narrow-many</td></tr>
+	<tr><td class='source'>narrow-other</td></tr>
+	<tr><td class='source'>long</td><td class='target'>krychlové {0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>{0}³</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='112'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='20'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='18'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🤵 -name</td><td class='target'>muž ve smokingu</td><td class='target'>osoba ve smokingu</td><td class='target' rowSpan='112'>modern</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>muž<br>muž ve smokingu<br>…</td><td class='target'>osoba<br>osoba ve smokingu<br>…</td></tr>
+	<tr><td class='source'>🤵‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>muž ve smokingu</td></tr>
+	<tr><td class='source'>🤵‍♂ –keywords</td><td class='target'>muž<br>muž ve smokingu<br>smoking<br>ženich</td></tr>
+	<tr><td class='source'>🤵‍♀ -name</td><td class='target'>žena ve smokingu</td></tr>
+	<tr><td class='source'>🤵‍♀ –keywords</td><td class='target'>smoking<br>žena<br>žena ve smokingu</td></tr>
+	<tr><td class='source'>👰 -name</td><td class='target'>nevěsta se závojem</td><td class='target'>osoba se závojem</td></tr>
+	<tr><td class='source'>👰 –keywords</td><td class='target'>…<br>nevěsta se závojem<br>…</td><td class='target'>…<br>osoba<br>osoba se závojem<br>…</td></tr>
+	<tr><td class='source'>👰‍♂ -name</td><td class='target' rowSpan='104'>▷missing◁</td><td class='target'>muž se závojem</td></tr>
+	<tr><td class='source'>👰‍♂ –keywords</td><td class='target'>muž<br>muž se závojem<br>svatba<br>závoj<br>ženich</td></tr>
+	<tr><td class='source'>👰‍♀ -name</td><td class='target'>žena se závojem</td></tr>
+	<tr><td class='source'>👰‍♀ –keywords</td><td class='target'>nevěsta<br>svatba<br>závoj<br>žena<br>žena se závojem</td></tr>
+	<tr><td class='source'>👩‍🍼 -name</td><td class='target'>žena krmící dítě z lahve</td></tr>
+	<tr><td class='source'>👩‍🍼 –keywords</td><td class='target'>dítě<br>kojenec<br>kojení<br>krmení<br>nemluvně<br>žena<br>žena krmící dítě z lahve</td></tr>
+	<tr><td class='source'>👨‍🍼 -name</td><td class='target'>muž krmící dítě z lahve</td></tr>
+	<tr><td class='source'>👨‍🍼 –keywords</td><td class='target'>dítě<br>kojenec<br>kojení<br>krmení<br>muž<br>muž krmící dítě z lahve<br>nemluvně</td></tr>
+	<tr><td class='source'>🧑‍🍼 -name</td><td class='target'>osoba krmící dítě z lahve</td></tr>
+	<tr><td class='source'>🧑‍🍼 –keywords</td><td class='target'>dítě<br>kojenec<br>kojení<br>krmení<br>nemluvně<br>osoba<br>osoba krmící dítě z lahve</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧑‍🎄 -name</td><td class='target'>Santa</td></tr>
+	<tr><td class='source'>🧑‍🎄 –keywords</td><td class='target'>fantasy<br>oslava<br>pohádka<br>santa<br>Santa<br>santa claus<br>vánoce</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='4'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐈‍⬛ -name</td><td class='target'>černá kočka</td></tr>
+	<tr><td class='source'>🐈‍⬛ –keywords</td><td class='target'>černá<br>kočka<br>neštěstí<br>smůla</td></tr>
+	<tr><td class='source'>🐻‍❄ -name</td><td class='target'>hlava ledního medvěda</td></tr>
+	<tr><td class='source'>🐻‍❄ –keywords</td><td class='target'>arktida<br>bílý<br>hlava ledního medvěda<br>lední<br>medvěd</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='12'><a name='arrow' href='#arrow'>arrow</a></td><td class='source'>→ -name</td><td class='target'>šipka ukazující doprava</td></tr>
+	<tr><td class='source'>→ –keywords</td><td class='target'>doprava<br>šipka<br>šipka ukazující doprava<br>šipka ukazující vpravo<br>vpravo</td></tr>
+	<tr><td class='source'>↓ -name</td><td class='target'>šipka ukazující dolů</td></tr>
+	<tr><td class='source'>↓ –keywords</td><td class='target'>dolů<br>šipka<br>šipka ukazující dolů</td></tr>
+	<tr><td class='source'>↑ -name</td><td class='target'>šipka ukazující nahoru</td></tr>
+	<tr><td class='source'>↑ –keywords</td><td class='target'>nahoru<br>šipka<br>šipka ukazující nahoru<br>šipka ukazující vzhůru<br>vzhůru</td></tr>
+	<tr><td class='source'>← -name</td><td class='target'>šipka ukazující doleva</td></tr>
+	<tr><td class='source'>← –keywords</td><td class='target'>doleva<br>šipka<br>šipka ukazující doleva<br>šipka ukazující vlevo<br>vlevo</td></tr>
+	<tr><td class='source'>⇆ -name</td><td class='target'>šipka doleva nad šipkou doprava</td></tr>
+	<tr><td class='source'>⇆ –keywords</td><td class='target'>doleva<br>doprava<br>šipka<br>šipka doleva nad šipkou doprava</td></tr>
+	<tr><td class='source'>⇅ -name</td><td class='target'>šipky nahoru a dolů</td></tr>
+	<tr><td class='source'>⇅ –keywords</td><td class='target'>dolů<br>nahoru<br>šipky<br>šipky nahoru a dolů</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='math' href='#math'>math</a></td><td class='source'>× -name</td><td class='target'>symbol násobení</td></tr>
+	<tr><td class='source'>× –keywords</td><td class='target'>krát<br>násobení<br>násobit<br>symbol násobení</td></tr>
+	<tr><td class='source'>÷ -name</td><td class='target'>symbol dělení</td></tr>
+	<tr><td class='source'>÷ –keywords</td><td class='target'>dělení<br>děleno<br>dělit<br>symbol dělení<br>znak</td></tr>
+	<tr><td class='source'>√ -name</td><td class='target'>druhá odmocnina</td></tr>
+	<tr><td class='source'>√ –keywords</td><td class='target'>druhá odmocnina<br>kořen<br>odmocnina<br>odmocnítko</td></tr>
+	<tr><td class='source'>∞ -name</td><td class='target'>znak nekonečna</td></tr>
+	<tr><td class='source'>∞ –keywords</td><td class='target'>nekonečno<br>znak nekonečna</td></tr>
+	<tr><td class='source'>∆ -name</td><td class='target'>delta</td></tr>
+	<tr><td class='source'>∆ –keywords</td><td class='target'>delta<br>přírůstek<br>trojúhelník</td></tr>
+	<tr><td class='source'>∇ -name</td><td class='target'>nabla</td></tr>
+	<tr><td class='source'>∇ –keywords</td><td class='target'>nabla<br>trojúhelník</td></tr>
+	<tr><td class='source'>⁻ -name</td><td class='target'>minus jako horní index</td></tr>
+	<tr><td class='source'>⁻ –keywords</td><td class='target'>horní index<br>minus<br>minus jako horní index</td></tr>
+	<tr><td class='source'>¹ -name</td><td class='target'>číslice jedna jako horní index</td></tr>
+	<tr><td class='source'>¹ –keywords</td><td class='target'>číslice jedna jako horní index<br>exponent<br>horní index<br>jedna<br>jednička<br>na první</td></tr>
+	<tr><td class='source'>² -name</td><td class='target'>číslice dvě jako horní index</td></tr>
+	<tr><td class='source'>² –keywords</td><td class='target'>číslice dvě jako horní index<br>čtvereční<br>dvě<br>dvojka<br>exponent<br>horní index<br>na druhou</td></tr>
+	<tr><td class='source'>³ -name</td><td class='target'>číslice tři jako horní index</td></tr>
+	<tr><td class='source'>³ –keywords</td><td class='target'>číslice tři jako horní index<br>exponent<br>horní index<br>krychlový<br>na třetí<br>tři<br>trojka</td></tr>
+	<tr><td class='source'>≡ -name</td><td class='target'>shoduje se</td></tr>
+	<tr><td class='source'>≡ –keywords</td><td class='target'>identita<br>kongruence<br>kongruentní<br>shodný<br>shoduje se<br>stejný<br>trojitý</td></tr>
+	<tr><td class='source'>∈ -name</td><td class='target'>prvek množiny</td></tr>
+	<tr><td class='source'>∈ –keywords</td><td class='target'>členství<br>je prvkem<br>množina<br>obsahuje<br>prvek<br>prvek množiny</td></tr>
+	<tr><td class='source'>⊂ -name</td><td class='target'>podmnožina</td></tr>
+	<tr><td class='source'>⊂ –keywords</td><td class='target'>je podmnožinou<br>množina<br>podmnožina</td></tr>
+	<tr><td class='source'>∩ -name</td><td class='target'>průnik</td></tr>
+	<tr><td class='source'>∩ –keywords</td><td class='target'>množina<br>průnik</td></tr>
+	<tr><td class='source'>∪ -name</td><td class='target'>sjednocení</td></tr>
+	<tr><td class='source'>∪ –keywords</td><td class='target'>množina<br>sjednocení</td></tr>
+	<tr><td class='source'>° -name</td><td class='target'>stupeň</td></tr>
+	<tr><td class='source'>° –keywords</td><td class='target'>stupeň<br>stupňovitost</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>– -name</td><td class='target'>krátká pomlčka</td></tr>
+	<tr><td class='source'>– –keywords</td><td class='target'>en-pomlčka<br>krátká<br>pomlčka<br>půlčtverčíková pomlčka</td></tr>
+	<tr><td class='source'>— -name</td><td class='target'>dlouhá pomlčka</td></tr>
+	<tr><td class='source'>— –keywords</td><td class='target'>čtverčíková pomlčka<br>dlouhá<br>em-pomlčka<br>pomlčka</td></tr>
+	<tr><td class='source'>» -name</td><td class='target'>boční uvozovky mířící doprava</td></tr>
+	<tr><td class='source'>» –keywords</td><td class='target'>boční uvozovky<br>boční uvozovky mířící doprava<br>lomené uvozovky<br>uvozovky</td></tr>
+	<tr><td class='source'>« -name</td><td class='target'>boční uvozovky mířící doleva</td></tr>
+	<tr><td class='source'>« –keywords</td><td class='target'>boční uvozovky<br>boční uvozovky mířící doleva<br>lomené uvozovky<br>uvozovky</td></tr>
+	<tr><td class='source'>• -name</td><td class='target'>puntík</td></tr>
+	<tr><td class='source'>• –keywords</td><td class='target'>bod<br>odrážka<br>puntík</td></tr>
+	<tr><td class='source'>· -name</td><td class='target'>střední puntík</td></tr>
+	<tr><td class='source'>· –keywords</td><td class='target'>odrážka<br>puntík<br>střední<br>tečka</td></tr>
+	<tr><td class='source'>§ -name</td><td class='target'>paragraf</td></tr>
+	<tr><td class='source'>§ –keywords</td><td class='target'>část<br>oddíl<br>odstavec<br>paragraf<br>sekce</td></tr>
+	<tr><td class='source'>† -name</td><td class='target'>znak křížku</td></tr>
+	<tr><td class='source'>† –keywords</td><td class='target'>dýka<br>kříž<br>křížek<br>obelisk<br>obelus<br>znak křížku</td></tr>
+	<tr><td class='source'>‡ -name</td><td class='target'>znak dvojitého křížku</td></tr>
+	<tr><td class='source'>‡ –keywords</td><td class='target'>dvojitá<br>dvojitý<br>dýka<br>kříž<br>křížek<br>obelisk<br>obelus<br>znak dvojitého křížku</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='currency' href='#currency'>currency</a></td><td class='source'>€ -name</td><td class='target'>euro</td></tr>
+	<tr><td class='source'>€ –keywords</td><td class='target'>EUR<br>euro<br>měna</td></tr>
+	<tr><td class='source'>£ -name</td><td class='target'>libra</td></tr>
+	<tr><td class='source'>£ –keywords</td><td class='target'>EGP<br>GBP<br>libra<br>měna</td></tr>
+	<tr><td class='source'>¥ -name</td><td class='target'>jen</td></tr>
+	<tr><td class='source'>¥ –keywords</td><td class='target'>CNY<br>jen<br>JPY<br>juan<br>jüan<br>měna</td></tr>
+	<tr><td class='source'>₹ -name</td><td class='target'>indická rupie</td></tr>
+	<tr><td class='source'>₹ –keywords</td><td class='target'>indická rupie<br>měna<br>rupie<br>rupie indická</td></tr>
+	<tr><td class='source'>₽ -name</td><td class='target'>rubl</td></tr>
+	<tr><td class='source'>₽ –keywords</td><td class='target'>měna<br>rubl<br>ruský rubl</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>℗ -name</td><td class='target'>znak práv ke zvukovému záznamu</td></tr>
+	<tr><td class='source'>℗ –keywords</td><td class='target'>copyright<br>nahrávka<br>znak práv ke zvukovému záznamu<br>zvuková</td></tr>
+	<tr><td class='source'>µ -name</td><td class='target'>znak mikro</td></tr>
+	<tr><td class='source'>µ –keywords</td><td class='target'>mikro<br>míra<br>znak mikro</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='geometric' href='#geometric'>geometric</a></td><td class='source'>▼ -name</td><td class='target'>vyplněný trojúhelník směřující dolů</td></tr>
+	<tr><td class='source'>▼ –keywords</td><td class='target'>dolů<br>plný<br>šipka<br>trojúhelník<br>vyplněný trojúhelník směřující dolů</td></tr>
+	<tr><td class='source'>▲ -name</td><td class='target'>vyplněný trojúhelník směřující nahoru</td></tr>
+	<tr><td class='source'>▲ –keywords</td><td class='target'>nahoru<br>plný<br>šipka<br>trojúhelník<br>vyplněný trojúhelník směřující nahoru</td></tr>
+	<tr><td class='source'>● -name</td><td class='target'>plný kroužek</td></tr>
+	<tr><td class='source'>● –keywords</td><td class='target'>kroužek<br>kruh<br>plný kroužek<br>plný kruh<br>vyplněná kružnice<br>vyplněný kroužek<br>vyplněný kruh</td></tr>
+	<tr><td class='source'>○ -name</td><td class='target'>prázdný kroužek</td></tr>
+	<tr><td class='source'>○ –keywords</td><td class='target'>kroužek<br>kruh<br>kružnice<br>prázdný kroužek<br>prázdný kruh<br>prstenec</td></tr>
+	<tr><td class='source'>◯ -name</td><td class='target'>prázdný kruh</td></tr>
+	<tr><td class='source'>◯ –keywords</td><td class='target'>kroužek<br>kruh<br>kružnice<br>prázdný kruh<br>prstenec<br>velká kružnice<br>velký prázdný kruh</td></tr>
+	<tr><td class='source'>◊ -name</td><td class='target'>kosočtverec</td></tr>
+	<tr><td class='source'>◊ –keywords</td><td class='target'>diamant<br>káry<br>kosočtverec</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
