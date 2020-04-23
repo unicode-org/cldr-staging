@@ -1,0 +1,512 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Konkani Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Konkani Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='43'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td><td class='source'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td><td class='source'>language</td><td class='source' rowSpan='427'>kok</td><td class='target'>भाशा: {0}</td><td class='target'>भासः{0}</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='4'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>कांटोसी</td><td class='target'>चिनी, कॅण्टोनीस</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target'>सोंपी चिनी</td><td class='target'>सोंपी मंडारीन चिनी</td><td class='target' rowSpan='10'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>पारंपारीक चिनी</td><td class='target'>पारंपारीक मंडारीन चिनी</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>चिनी</td><td class='target'>चिनी, मंडारीन</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source' rowSpan='3'><a name='E' href='#E'>E</a></td><td class='source'>English ► en_CA</td><td class='target'>कॅनाडीयन इंग्लीश</td><td class='target'>कॅनडियन इंग्लीश</td></tr>
+	<tr><td class='source'>English ► en_GB-short</td><td class='target'>युके इंग्लीश</td><td class='target'>यूके इंग्लीश</td></tr>
+	<tr><td class='source'>English ► en_US-short</td><td class='target'>युएस इंग्लीश</td><td class='target'>यूएस इंग्लीश</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='F' href='#F'>F</a></td><td class='source'>French ► fr</td><td class='target'>फ्रेन्च</td><td class='target'>फ्रेंच</td></tr>
+	<tr><td class='source'>French ► fr_CA</td><td class='target'>कॅनाडीयन फ्रेन्च</td><td class='target'>कॅनडियन फ्रेंच</td></tr>
+	<tr><td class='source'>French ► fr_CH</td><td class='target'>स्वीझ फ्रेन्च</td><td class='target'>स्विझ फ्रेंच</td></tr>
+	<tr><td class='source'><a name='G' href='#G'>G</a></td><td class='source'>German ► de_CH</td><td class='target'>स्वीझ म्हान जर्मन</td><td class='target'>स्विझ हाय जर्मन</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='O' href='#O'>O</a></td><td class='source'>Odia ► or</td><td class='target'>ओरिया</td><td class='target'>ओडिया</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='P' href='#P'>P</a></td><td class='source'>Persian ► fa</td><td class='target'>पर्सियन</td><td class='target'>पर्शियन</td></tr>
+	<tr><td class='source'>Persian ► fa_AF</td><td class='target'>fa_AF</td><td class='target'>दारी</td></tr>
+	<tr><td class='source'>Polish ► pl</td><td class='target'>पोलिष</td><td class='target'>पॉलीश</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>Portuguese ► pt</td><td class='target'>पोर्तुगिज</td><td class='target'>पोर्तुगीज</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Portuguese ► pt_BR</td><td class='target'>ब्राझिलियन पोर्तुगिज</td><td class='target'>ब्राझिलियन पोर्तुगीज</td></tr>
+	<tr><td class='source'>Portuguese ► pt_PT</td><td class='target'>युरोपियन पोर्तुगिज</td><td class='target'>युरोपियन पोर्तुगीज</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='R' href='#R'>R</a></td><td class='source'>Romanian ► ro</td><td class='target'>रोमानियन्</td><td class='target'>रोमानियन</td><td class='target' rowSpan='10'>modern</td></tr>
+	<tr><td class='source'>Romansh ► rm</td><td class='target'>रोमांन्श</td><td class='target'>रोमान्श</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='S' href='#S'>S</a></td><td class='source'>Samburu ► saq</td><td class='target'>सांबारु</td><td class='target'>साम्बरू</td></tr>
+	<tr><td class='source'>Samoan ► sm</td><td class='target'>समोन</td><td class='target'>सामोअन</td></tr>
+	<tr><td class='source'>Sango ► sg</td><td class='target'>सांग्रो</td><td class='target'>सांगो</td></tr>
+	<tr><td class='source'>Scottish Gaelic ► gd</td><td class='target'>स्काटस् गेलिक्</td><td class='target'>स्कॉटीश गॅलीक</td></tr>
+	<tr><td class='source'>Shambala ► ksb</td><td class='target'>शंबाला</td><td class='target'>शांबाला</td></tr>
+	<tr><td class='source'>Sinhala ► si</td><td class='target'>सिन्हलीस्</td><td class='target'>सिनहालीस</td></tr>
+	<tr><td class='source'>Slovenian ► sl</td><td class='target'>स्लोवेनियन्</td><td class='target'>स्लोवानियन</td></tr>
+	<tr><td class='source'>Southern Sotho ► st</td><td class='target'>सेसोथो</td><td class='target'>सावथर्न सोथो</td></tr>
+	<tr><td class='source'>Spanish ► es</td><td class='target'>स्पॅनिश</td><td class='target'>स्पॅनीश</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'>Spanish ► es_419</td><td class='target'>लॅटिन अमेरिकन स्पॅनिश</td><td class='target'>लातीं अमेरिकन स्पॅनीश</td></tr>
+	<tr><td class='source'>Spanish ► es_ES</td><td class='target'>युरोपियन स्पॅनिश</td><td class='target'>युरोपियन स्पॅनीश</td></tr>
+	<tr><td class='source'>Spanish ► es_MX</td><td class='target'>मेक्सिकन स्पॅनिश</td><td class='target'>मॅक्सिकन स्पॅनीश</td></tr>
+	<tr><td class='source'>Standard Moroccan Tamazight ► zgh</td><td class='target'>प्रमाणित मोरोक्कन तामाझायट</td><td class='target'>प्रमाणीत मॉरोक्कन तमाझीट</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>Swedish ► sv</td><td class='target'>स्वीदीष</td><td class='target'>स्विडीश</td></tr>
+	<tr><td class='source'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='U' href='#U'>U</a></td><td class='source'>Unknown language ► und</td><td class='target'>अज्ञात भाशा</td><td class='target'>अज्ञात भास</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='6'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Arab</td><td class='target'>अरेबिक</td><td class='target'>आरबी</td></tr>
+	<tr><td class='source'>Hanb</td><td class='target'>बोपोमोफो वांगडा हॅन</td><td class='target'>बोपोफोमो वरवीं हान</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source'>Hani</td><td class='target'>हॅन</td><td class='target'>हान</td></tr>
+	<tr><td class='source'>Kana</td><td class='target'>काटकाना</td><td class='target'>कटाकाना</td></tr>
+	<tr><td class='source'>Khmr</td><td class='target'>कंबोडियन</td><td class='target'>खमेर</td></tr>
+	<tr><td class='source'>Telu</td><td class='target'>तेलुगू</td><td class='target'>तेलगू</td></tr>
+	<tr><td class='source'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-gregorian</td><td class='target'>ग्रेगोरियन दिनदर्शिका</td><td class='target'>ग्रेगोरियन कॅलेन्डर</td><td class='target' rowSpan='20'>basic</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='25'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td><td class='source'>Jul</td><td class='target'>जुलाय</td><td class='target'>जुलय</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>आगोस्त</td><td class='target'>ऑगस्ट</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Months - wide - Standalone' href='#Months - wide - Standalone'>Months - wide - Standalone</a></td><td class='source'>Jul</td><td class='target'>जुलाय</td><td class='target'>जुलय</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>आगोस्त</td><td class='target'>ऑगस्ट</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Months - abbreviated - Formatting' href='#Months - abbreviated - Formatting'>Months - abbreviated - Formatting</a></td><td class='source'>Jul</td><td class='target'>जुलाय</td><td class='target'>जुलय</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>आगोस्त</td><td class='target'>ऑगस्ट</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Months - abbreviated - Standalone' href='#Months - abbreviated - Standalone'>Months - abbreviated - Standalone</a></td><td class='source'>Jan</td><td class='target'>जानेवारी</td><td class='target'>जाने</td></tr>
+	<tr><td class='source'>Feb</td><td class='target'>फेब्रुवारी</td><td class='target'>फेब्रु</td></tr>
+	<tr><td class='source'>Apr</td><td class='target'>एप्रिल</td><td class='target'>एप्री</td></tr>
+	<tr><td class='source'>Jul</td><td class='target'>जुलाय</td><td class='target'>जुल</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>आगोस्त</td><td class='target'>ऑग</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>सप्टेंबर</td><td class='target'>सप्टें</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>ऑक्टोबर</td><td class='target'>ऑक्टो</td></tr>
+	<tr><td class='source'>Nov</td><td class='target'>नोव्हेंबर</td><td class='target'>नो</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>डिसेंबर</td><td class='target'>डिसे</td></tr>
+	<tr><td class='source'><a name='Days - wide - Formatting' href='#Days - wide - Formatting'>Days - wide - Formatting</a></td><td class='source' rowSpan='8'>thu</td><td class='target' rowSpan='4'>गुरुवार</td><td class='target' rowSpan='4'>बिरेस्तार</td></tr>
+	<tr><td class='source'><a name='Days - wide - Standalone' href='#Days - wide - Standalone'>Days - wide - Standalone</a></td></tr>
+	<tr><td class='source'><a name='Days - abbreviated - Formatting' href='#Days - abbreviated - Formatting'>Days - abbreviated - Formatting</a></td></tr>
+	<tr><td class='source'><a name='Days - abbreviated - Standalone' href='#Days - abbreviated - Standalone'>Days - abbreviated - Standalone</a></td></tr>
+	<tr><td class='source'><a name='Days - short - Formatting' href='#Days - short - Formatting'>Days - short - Formatting</a></td><td class='target' rowSpan='2'>गुरु</td><td class='target' rowSpan='2'>बिरे</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Days - short - Standalone' href='#Days - short - Standalone'>Days - short - Standalone</a></td></tr>
+	<tr><td class='source'><a name='Days - narrow - Formatting' href='#Days - narrow - Formatting'>Days - narrow - Formatting</a></td><td class='target' rowSpan='2'>गु</td><td class='target'>बि</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'><a name='Days - narrow - Standalone' href='#Days - narrow - Standalone'>Days - narrow - Standalone</a></td><td class='target'>ब</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>yMEd</td><td class='target'>y-MM-dd, E</td><td class='target'>d-M-y, E</td></tr>
+	<tr><td class='source'>yMMMM</td><td class='target'>y MMMM</td><td class='target'>MMMM, y</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='9'><a name='North America' href='#North America'>North America</a></td><td class='source'><a name='Alaska' href='#Alaska'>Alaska</a></td><td class='source' rowSpan='9'>standard-long</td><td class='target'>अलास्का प्रमाणित वेळ</td><td class='target'>अलास्का प्रमाणीत वेळ</td><td class='target' rowSpan='9'>moderate</td></tr>
+	<tr><td class='source'><a name='Cuba' href='#Cuba'>Cuba</a></td><td class='target'>क्युबा प्रमाणित वेळ</td><td class='target'>क्युबा प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Greenland_Eastern' href='#Greenland_Eastern'>Greenland_Eastern</a></td><td class='target'>उदेंत ग्रीनलँड प्रमाणित वेळ</td><td class='target'>उदेंत ग्रीनलँड प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Greenland_Western' href='#Greenland_Western'>Greenland_Western</a></td><td class='target'>अस्तंत ग्रीनलँड प्रमाणित वेळ</td><td class='target'>अस्तंत ग्रीनलँड प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Hawaii_Aleutian' href='#Hawaii_Aleutian'>Hawaii_Aleutian</a></td><td class='target'>हवाई-अलेयुशिन प्रमाणित वेळ</td><td class='target'>हवाई-अलेयुशिन प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Mexico_Northwest' href='#Mexico_Northwest'>Mexico_Northwest</a></td><td class='target'>वायव्य मेक्सिको प्रमाणित वेळ</td><td class='target'>वायव्य मेक्सिको प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Mexico_Pacific' href='#Mexico_Pacific'>Mexico_Pacific</a></td><td class='target'>मेक्सिकन प्रशांत प्रमाणित वेळ</td><td class='target'>मेक्सिकन प्रशांत प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Newfoundland' href='#Newfoundland'>Newfoundland</a></td><td class='target'>न्युफावंडलँड प्रमाणित वेळ</td><td class='target'>न्युफावंडलँड प्रमाणीत वेळ</td></tr>
+	<tr><td class='source'><a name='Pierre_Miquelon' href='#Pierre_Miquelon'>Pierre_Miquelon</a></td><td class='target'>सेंट पियर आनी मिकलान प्रमाणित वेळ</td><td class='target'>सेंट पियर आनी मिकलान प्रमाणीत वेळ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Europe' href='#Europe'>Europe</a></td><td class='source'><a name='Europe_Central' href='#Europe_Central'>Europe_Central</a></td><td class='source'>daylight-long</td><td class='target'>मध्य युवरोपियन ग्रीष्म वेळ</td><td class='target'>मध्य युरोपियन ग्रीष्म वेळ</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'><a name='GMT' href='#GMT'>GMT</a></td><td class='source'>standard-long</td><td class='target'>ग्रीनविच मध्यc वेळ</td><td class='target'>ग्रीनविच मध्य वेळ</td></tr>
+	<tr><td class='source'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Aden</td><td class='target'>Aden</td><td class='target'>ऍडन</td><td class='target' rowSpan='27'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source' rowSpan='3'><a name='Norfolk' href='#Norfolk'>Norfolk</a></td><td class='source'>generic-long</td><td class='target'>▷missing◁</td><td class='target'>नॉरफॉक आयलँड वेळ</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>नॉरफॉक आयलँड वेळ</td><td class='target'>नॉरफॉक आयलँड प्रमाणित वेळ</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>▷missing◁</td><td class='target'>नॉरफॉक आयलँड ग्रीष्म वेळ</td></tr>
+	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'><a name='Southern Africa: Botswana' href='#Southern Africa: Botswana'>Southern Africa: Botswana</a></td><td class='source'>BWP-name-other</td><td class='target'>Vote बोत्सवाना पुलास</td><td class='target'>बोत्सवाना पुलास</td></tr>
+	<tr><td class='source' rowSpan='101'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='8'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='4'><a name='meter-per-second-squared' href='#meter-per-second-squared'>meter-per-second-squared</a></td><td class='source'>long-displayName</td><td class='target'>मी/से²</td><td class='target' rowSpan='4'>▷removed◁</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} मी/से²</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>मी/से²</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} मी/से²</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>मी/से²</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} मी/से²</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>मी/से²</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} मी/से²</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='2'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td><td class='source'>long-displayName</td><td class='target'>GW</td><td class='target'>गिगावॉट्स</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} GW</td><td class='target'>{0} गिगावॉट्स</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='2'><a name='inch-hg' href='#inch-hg'>inch-hg</a></td><td class='source'>short-displayName</td><td class='target'>inHg</td><td class='target' rowSpan='6'>▷removed◁</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} inHg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millimeter-of-mercury' href='#millimeter-of-mercury'>millimeter-of-mercury</a></td><td class='source'>short-displayName</td><td class='target'>mm Hg</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} mm Hg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-per-square-inch' href='#pound-per-square-inch'>pound-per-square-inch</a></td><td class='source'>short-displayName</td><td class='target'>psi</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} psi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>mm Hg</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} mm Hg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force-per-square-inch' href='#pound-force-per-square-inch'>pound-force-per-square-inch</a></td><td class='source'>short-displayName</td><td class='target'>psi</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} psi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='inch-ofhg' href='#inch-ofhg'>inch-ofhg</a></td><td class='source'>short-displayName</td><td class='target'>inHg</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} inHg</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='4'><a name='liter-per-100kilometers' href='#liter-per-100kilometers'>liter-per-100kilometers</a></td><td class='source'>long-displayName</td><td class='target'>लिटर/100किलोमीटर</td><td class='target' rowSpan='8'>▷removed◁</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} लिटर/100किलोमीटर</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>लि/100किमी</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} लि/100किमी</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='part-per-million' href='#part-per-million'>part-per-million</a></td><td class='source'>short-displayName</td><td class='target'>ppm</td><td class='target' rowSpan='75'>moderate</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} ppm</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-foot' href='#pound-foot'>pound-foot</a></td><td class='source'>short-displayName</td><td class='target'>lbf⋅ft</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} lbf⋅ft</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>short-displayName</td><td class='target' rowSpan='66'>▷missing◁</td><td class='target'>ppm</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} ppm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target'>लिटर/100किलोमीटर</td></tr>
+	<tr><td class='source'>long-other</td><td class='target'>{0} लिटर/100किलोमीटर</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>लि/100किमी</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} लि/100किमी</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force-foot' href='#pound-force-foot'>pound-force-foot</a></td><td class='source'>short-displayName</td><td class='target'>lbf⋅ft</td></tr>
+	<tr><td class='source'>short-other</td><td class='target'>{0} lbf⋅ft</td></tr>
+	<tr><td class='source' rowSpan='63'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='10p-1' href='#10p-1'>10p-1</a></td><td class='source'>long</td><td class='target'>डेसी{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>डी{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-2' href='#10p-2'>10p-2</a></td><td class='source'>long</td><td class='target'>सँटी{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>सँ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-3' href='#10p-3'>10p-3</a></td><td class='source'>long</td><td class='target'>मिली{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>मि {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>मि{0}</td></tr>
+	<tr><td class='source'><a name='10p-6' href='#10p-6'>10p-6</a></td><td class='source' rowSpan='2'>long</td><td class='target'>मायक्रो{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-9' href='#10p-9'>10p-9</a></td><td class='target'>नॅनो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>नॅ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-12' href='#10p-12'>10p-12</a></td><td class='source'>long</td><td class='target'>पिको{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>पि {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>पि{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-15' href='#10p-15'>10p-15</a></td><td class='source'>long</td><td class='target'>फॅम्टो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>फॅ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-18' href='#10p-18'>10p-18</a></td><td class='source'>long</td><td class='target'>ऑटो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>अ {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>अ{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-21' href='#10p-21'>10p-21</a></td><td class='source'>long</td><td class='target'>जॅप्टो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>जे{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p-24' href='#10p-24'>10p-24</a></td><td class='source'>long</td><td class='target'>यॉक्टो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>यॉ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p1' href='#10p1'>10p1</a></td><td class='source'>long</td><td class='target'>डॅका{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>डा{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p2' href='#10p2'>10p2</a></td><td class='source'>long</td><td class='target'>हॅक्टो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>हे {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>हे{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p3' href='#10p3'>10p3</a></td><td class='source'>long</td><td class='target'>किलो{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>कि {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>कि{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p6' href='#10p6'>10p6</a></td><td class='source'>long</td><td class='target'>मॅगा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>मॅ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p9' href='#10p9'>10p9</a></td><td class='source'>long</td><td class='target'>गिगा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>गि{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p12' href='#10p12'>10p12</a></td><td class='source'>long</td><td class='target'>टेरा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>टे {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>टे{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p15' href='#10p15'>10p15</a></td><td class='source'>long</td><td class='target'>पेटा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>पे {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>पे{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p18' href='#10p18'>10p18</a></td><td class='source'>long</td><td class='target'>ऍक्सा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>ए {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>ए{0}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p21' href='#10p21'>10p21</a></td><td class='source'>long</td><td class='target'>झॅटा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>झॅ{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='10p24' href='#10p24'>10p24</a></td><td class='source'>long</td><td class='target'>योटा{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target'>यो {0}</td></tr>
+	<tr><td class='source'>short</td><td class='target'>यो{0}</td></tr>
+	<tr><td class='source'><a name='per' href='#per'>per</a></td><td class='source'>long</td><td class='target'>{0}/{1}</td><td class='target'>{1} क {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-other</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='2'>चवकोण {0}</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-other</td><td class='target' rowSpan='2'>घनाकार {0}</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source' rowSpan='241'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='10'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='10'><a name='Label' href='#Label'>Label</a></td><td class='source'>emoji</td><td class='target'>emoji</td><td class='target'>इमोजी</td><td class='target' rowSpan='241'>modern</td></tr>
+	<tr><td class='source'>nonspacing</td><td class='target'>सुवातना</td><td class='target'>सुवात ना</td></tr>
+	<tr><td class='source'>paired</td><td class='target'>जोडी लायिल्लें</td><td class='target'>जोडी</td></tr>
+	<tr><td class='source'>south_asian_scripts</td><td class='target'>दक्षिण आशियाई लिपी</td><td class='target'>दक्षीण आशियायी लिपी</td></tr>
+	<tr><td class='source'>sport</td><td class='target'>क्रिडा</td><td class='target'>खेळ</td></tr>
+	<tr><td class='source'>symbols</td><td class='target'>कुरू</td><td class='target'>चिन्न</td></tr>
+	<tr><td class='source'>technical_symbols</td><td class='target'>तांत्रिक कुरू</td><td class='target'>तांत्रीक चिन्न</td></tr>
+	<tr><td class='source'>travel</td><td class='target'>भोंवडी</td><td class='target'>प्रवास</td></tr>
+	<tr><td class='source'>travel_places</td><td class='target'>भोंवडी वा सुवात</td><td class='target'>प्रवास वा ठिकाण</td></tr>
+	<tr><td class='source'>western_asian_scripts</td><td class='target'>अस्तंत आशियाई लिपी</td><td class='target'>पश्चिमी आशियायी लिपी</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='6'><a name='face-tongue' href='#face-tongue'>face-tongue</a></td><td class='source'>😛 -name</td><td class='target'>जीभ भायर काडिल्लो चेरो</td><td class='target'>जीब भायर काडिल्लें मुखामळ</td></tr>
+	<tr><td class='source'>😛 –keywords</td><td class='target'>चेरो<br>जीभ<br>जीभ भायर काडिल्लो चेरो</td><td class='target'>जीब भायर काडिल्लें मुखामळ<br>मुखामळ। जीब भायर काडिल्लें मुखामळ। जीब</td></tr>
+	<tr><td class='source'>😜 -name</td><td class='target'>जीभ भायर काडिल्लो दोळे मिचकावपी चेरो</td><td class='target'>जीब भायर काडून, दोळो मिचकावपी मुखामळ</td></tr>
+	<tr><td class='source'>😜 –keywords</td><td class='target'>…</td><td class='target'>…<br>जीब भायर काडून, दोळो मिचकावपी मुखामळ<br>…</td></tr>
+	<tr><td class='source'>🤪 -name</td><td class='target'>मस्करो चेरो</td><td class='target'>मुमुर्को हांसो आशिल्लें मुखामळ</td></tr>
+	<tr><td class='source'>🤪 –keywords</td><td class='target'>…</td><td class='target'>…<br>मुमुर्को हांसो आशिल्लें मुखामळ<br>…</td></tr>
+	<tr><td class='source'><a name='face-sleepy' href='#face-sleepy'>face-sleepy</a></td><td class='source'>😴 –keywords</td><td class='target'>zzz<br>चेरो<br>…<br>न्हीद<br>न्हीदपी चेरो</td><td class='target'>…<br>मुखामळ। न्हीद। जेमिल्लें मुखामळ। zzz</td></tr>
+	<tr><td class='source'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😻 –keywords</td><td class='target'>…<br>काळीज दोळे आसपी हांसपी माजर<br>…<br>चेरो<br>दोळो<br>…<br>हास्य</td><td class='target'>…<br>दोळे<br>…<br>मुखामळ<br>…<br>मोवाळ दोळ्यांचें हांसतें माजर<br>हांसो</td></tr>
+	<tr><td class='source' rowSpan='91'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='3'><a name='hand-prop' href='#hand-prop'>hand-prop</a></td><td class='source'>✍ -name</td><td class='target'>बरोवपी हात</td><td class='target'>बरोवपाचो हात</td></tr>
+	<tr><td class='source'>✍ –keywords</td><td class='target'>बरोवप<br>बरोवपी हात<br>हात</td><td class='target'>बरोवपाचो हात<br>हात । बरोवप । बरोवपाचो हात</td></tr>
+	<tr><td class='source'>💅 –keywords</td><td class='target'>कॅर<br>नेल<br>पॉलिश<br>मॅनिक्युअर<br>सौंदर्यप्रसाधन</td><td class='target'>जतन । सौंदर्यप्रसाधन । मॅनिक्युअर ।नेल पॉलिश<br>नेल पॉलिश</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🦻 -name</td><td class='target'>आयकुपाचें यंत्र लायिल्लो कान</td><td class='target'>आयकुपाचें यंत्र बसयल्लो कान</td></tr>
+	<tr><td class='source'>🦻 –keywords</td><td class='target'>आयकुंक कठीणताय<br>आयकुपाचें यंत्र लायिल्लो कान<br>ऍक्सॅसिबिलिटी</td><td class='target'>आयकुपाचें यंत्र बसयल्लो कान<br>ऍक्सॅसिबिलिटी। आयकुपाचें यंत्र बसयल्लो कान। आयकूंक कठीण</td></tr>
+	<tr><td class='source'>🫀 -name</td><td class='target'>काळीज अवयव</td><td class='target'>काळजाचे अवयव</td></tr>
+	<tr><td class='source'>🫀 –keywords</td><td class='target'>अवयव<br>कार्डियोलॉजी<br>काळजाठोको<br>काळीज अवयव<br>केंद्र<br>धडधड</td><td class='target'>अवयव। कार्डिओलॉजी। काळीज। ऑर्गन। नाडी<br>काळजाचे अवयव</td></tr>
+	<tr><td class='source'>🫁 -name</td><td class='target'>फुफ्फुस</td><td class='target'>फुफूस</td></tr>
+	<tr><td class='source'>🫁 –keywords</td><td class='target'>अवयव<br>फुफ्फुस<br>श्वास<br>श्वासोच्छवास<br>स्वास घेवप<br>स्वास सोडप</td><td class='target'>फुफूस<br>स्वास। स्वासोच्छवास। स्वास घेवप। फुफूस। ऑर्गन। स्वास सोडप</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='person' href='#person'>person</a></td><td class='source'>👶 -name</td><td class='target'>शिशू</td><td class='target'>शिशु</td></tr>
+	<tr><td class='source'>👶 –keywords</td><td class='target'>शिशू<br>…</td><td class='target'>शिशु<br>…</td></tr>
+	<tr><td class='source'>🧒 –keywords</td><td class='target'>अउल्लेखीत लिंग<br>…<br>लिंग-तटस्थ<br>सान</td><td class='target'>बाळक । तटस्थ लिंग। अनिर्दिश्ट लिंग । तरणाटो<br>…</td></tr>
+	<tr><td class='source'>🧑 –keywords</td><td class='target'>अउल्लेखीत लिंग<br>प्रौढ<br>लिंक-तटस्थ<br>…</td><td class='target'>प्रौढ । तटस्थ लिंग । व्यक्ती । अनिर्दिश्ट लिंग<br>…</td></tr>
+	<tr><td class='source' rowSpan='29'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>🙅 –keywords</td><td class='target'>निषिध्द<br>…<br>हात<br>हावभाव</td><td class='target'>वर्जीत करप। हावभाव। हात। ना अशें दाखोवपी व्यक्तीचे हावभाव। प्रतिबंधीत<br>…</td></tr>
+	<tr><td class='source'>🙅‍♂ -name</td><td class='target'>दादलो ना असो हावभाव करता</td><td class='target'>ना अशें दाखोवपी हावभाव दादलो करता</td></tr>
+	<tr><td class='source'>🙅‍♂ –keywords</td><td class='target'>दादलो<br>दादलो ना असो हावभाव करता<br>निषिध्द<br>हात<br>हावभाव</td><td class='target'>ना अशें दाखोवपी हावभाव दादलो करता<br>वर्जीत करप। हावभाव। हात। दादलो । ना अशें दाखोवपी व्यक्तीचे हावभाव। प्रतिबंधीत</td></tr>
+	<tr><td class='source'>🙅‍♀ -name</td><td class='target'>बायल ना असो हावभाव करता</td><td class='target'>ना अशें दाखोवपी हावभाव बायल करता</td></tr>
+	<tr><td class='source'>🙅‍♀ –keywords</td><td class='target'>निषिध्द<br>प्रतिबंध<br>बायल ना असो हावभाव करता<br>हात<br>हावभाव</td><td class='target'>ना अशें दाखोवपी हावभाव बायल करता<br>वर्जीत करप। हावभाव। हात। प्रतिबंधीत। बायल। ना अशें दाखोवपी बायल हावभाव करता</td></tr>
+	<tr><td class='source'>🙆 -name</td><td class='target'>व्यक्ती ओके असो हावभाव करता</td><td class='target'>बरें आसा अशें व्यक्ती दाखयता</td></tr>
+	<tr><td class='source'>🙆 –keywords</td><td class='target'>ओके<br>व्यक्ती<br>व्यक्ती ओके असो हावभाव करता<br>हात<br>हावभाव</td><td class='target'>बरें आसा अशें व्यक्ती दाखयता<br>हावभाव। हात। बरें आसा। बरें आसा असो हावभाव</td></tr>
+	<tr><td class='source'>🙆‍♂ -name</td><td class='target'>ओके हावभाव करपी दादलो</td><td class='target'>बरें आसा अशें दाखोवपी हावभाव दादलो करता</td></tr>
+	<tr><td class='source'>🙆‍♂ –keywords</td><td class='target'>ओके<br>ओके हावभाव करपी दादलो<br>दादलो<br>दादलो ओके असो हावभाव करता<br>हात<br>हावभाव</td><td class='target'>बरें आसा अशें दाखोवपी हावभाव दादलो करता<br>हावभाव। हात। दादलो। दादलो। बरें आसा अशें दाखोवी हावभाव। बरें आसा</td></tr>
+	<tr><td class='source'>🙆‍♀ -name</td><td class='target'>बायल ओके असो हावभाव करता</td><td class='target'>बरें आसा असो हावभाव बायल दाखयता</td></tr>
+	<tr><td class='source'>🙆‍♀ –keywords</td><td class='target'>ओके<br>बायल<br>बायल ओके असो हावभाव करता<br>हात<br>हावभाव</td><td class='target'>बरें आसा असो हावभाव बायल दाखयता<br>हावभाव। हात। बरें आसा। बायल। बरें आसा असो हावभाव बायल दाखयता</td></tr>
+	<tr><td class='source'>💁 -name</td><td class='target'>व्यक्तीच्या हातात ताटली आसा</td><td class='target'>बायर हात वयर काडटा</td></tr>
+	<tr><td class='source'>💁 –keywords</td><td class='target'>आदार<br>ताटली धरल्या<br>म्हायती<br>व्यक्तीच्या हातात ताटली आसा<br>सेसी<br>हात</td><td class='target'>बायर हात वयर काडटा<br>हात। आदार।माहिती। व्यक्ती हात वयर काडटा। सेसी। हात वयर काडप</td></tr>
+	<tr><td class='source'>💁‍♂ –keywords</td><td class='target'>दादलो<br>…<br>सेसी<br>हातांत ताटली आसा</td><td class='target'>दादलो। दादलो हात वयर काडटा। सेसी। हात वयर काडप<br>…</td></tr>
+	<tr><td class='source'>💁‍♀ -name</td><td class='target'>बायलेच्या हातांत ताटली आसा</td><td class='target'>बायल हात वयर काडटा</td></tr>
+	<tr><td class='source'>💁‍♀ –keywords</td><td class='target'>बायल<br>बायलेच्या हातांत ताटली आसा<br>सेसी<br>हातांत ताटली आसा</td><td class='target'>बायल हात वयर काडटा<br>सेसी। हात वयर काडप। बायल। बायल हात वयर काडटा</td></tr>
+	<tr><td class='source'>🙋 -name</td><td class='target'>व्यक्तीन हात उबारला</td><td class='target'>व्यक्ती हात वयर काडटा</td></tr>
+	<tr><td class='source'>🙋 –keywords</td><td class='target'>आनंदी<br>उबारला<br>व्यक्तीन हात उबारला<br>हात<br>हावभाव</td><td class='target'>व्यक्ती हात वयर काडटा<br>हावभाव। हात। खुशाल। व्यक्ती हात वयर काडटा। वयर काडला</td></tr>
+	<tr><td class='source'>🙋‍♂ -name</td><td class='target'>दादलो हात उबारता</td><td class='target'>दादलो हात वयर काडटा</td></tr>
+	<tr><td class='source'>🙋‍♂ –keywords</td><td class='target'>दादलो<br>दादलो हात उबारता<br>हात उबारता<br>हावभाव</td><td class='target'>दादलो हात वयर काडटा<br>हावभाव। दादलो। दादलो हात वयर काडटा। हात वयर काडटा</td></tr>
+	<tr><td class='source'>🙋‍♀ –keywords</td><td class='target'>बायल<br>…<br>हात उबारता<br>हावभाव</td><td class='target'>…<br>हावभाव। हात वयर काडटा। बायल। बायल हात वयर काडटा</td></tr>
+	<tr><td class='source'>🤦 -name</td><td class='target'>व्यक्ती चे-यार हात धरता</td><td class='target'>व्यक्ती मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤦 –keywords</td><td class='target'>अविस्वास<br>उत्कंठां<br>चेरो<br>तळहात<br>व्यक्ती चे-यार हात धरता<br>व्यक्तीन चे-यार हात धरला</td><td class='target'>अविस्वास। उत्कंठा। मुखामळ। तळहात। व्यक्ती मुखामळाचेर हात धरता<br>व्यक्ती मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤦‍♂ -name</td><td class='target'>दादल्यान चे-यार हात धरला</td><td class='target'>दादलो मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤦‍♂ –keywords</td><td class='target'>अविस्वास<br>उत्कंठां<br>चेरोहात<br>दादलो<br>दादलो चे-यार हात धरला<br>दादल्यान चे-यार हात धरला</td><td class='target'>अविस्वास। उत्कंठा। मुखामळाचेर हात। दादलो। दादलो मुखामळाचेर हात धरता<br>दादलो मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤦‍♀ -name</td><td class='target'>बायलेन चे-यार हात धरला</td><td class='target'>बायल मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤦‍♀ –keywords</td><td class='target'>अविस्वास<br>उत्कंठां<br>चेरोहात<br>बायल<br>बायल चे-यार हात धरला<br>बायलेन चे-यार हात धरला</td><td class='target'>अविस्वास। उत्कंठा। मुखामळाचेर हात। बायल। बायल मुखामळाचेर हात धरता<br>बायल मुखामळाचेर हात धरता</td></tr>
+	<tr><td class='source'>🤷‍♂ -name</td><td class='target'>दादल्यान नकळो म्हूण केल्लो हावभाव</td><td class='target'>आपूण नकळो म्हूण दादल्यान केल्लो हावभाव</td></tr>
+	<tr><td class='source'>🤷‍♂ –keywords</td><td class='target'>…<br>दादल्यान नकळो म्हूण केल्लो हावभाव<br>…</td><td class='target'>आपूण नकळो म्हूण दादल्यान केल्लो हावभाव<br>…</td></tr>
+	<tr><td class='source' rowSpan='42'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍⚕ –keywords</td><td class='target'>…<br>हॅल्थकॅर</td><td class='target'>…<br>भलायकी जतन</td></tr>
+	<tr><td class='source'>👨‍⚕ –keywords</td><td class='target'>थॅरेपिस्ट<br>…<br>हॅल्थकॅर</td><td class='target'>थॅरापिस्ट<br>…<br>भलायकी जतन</td></tr>
+	<tr><td class='source'>👩‍⚕ –keywords</td><td class='target'>…<br>हॅल्थकॅर</td><td class='target'>…<br>भलायकी जतन</td></tr>
+	<tr><td class='source'>🧑‍🌾 -name</td><td class='target'>शेतकामती</td><td class='target'>शेतकार</td></tr>
+	<tr><td class='source'>🧑‍🌾 –keywords</td><td class='target'>बागकाम करपी<br>…<br>शेतकामती</td><td class='target'>मानाय<br>…<br>शेतकार</td></tr>
+	<tr><td class='source'>👨‍🌾 -name</td><td class='target'>दादलो शेतकामती</td><td class='target'>दादलो शेतकार</td></tr>
+	<tr><td class='source'>👨‍🌾 –keywords</td><td class='target'>…<br>बागकाम करपी<br>…<br>शेतकामती</td><td class='target'>…<br>मानाय<br>…<br>शेतकार</td></tr>
+	<tr><td class='source'>👩‍🌾 -name</td><td class='target'>बायल शेतकामती</td><td class='target'>बायल शेतकान्न</td></tr>
+	<tr><td class='source'>👩‍🌾 –keywords</td><td class='target'>बागकाम करपी<br>बायल<br>रँचर<br>शेतकामती</td><td class='target'>बायल शेतकान्न<br>शेतकार। मानाय। रँचर। बायल</td></tr>
+	<tr><td class='source'>🧑‍🍳 -name</td><td class='target'>कूक</td><td class='target'>कुझनेर</td></tr>
+	<tr><td class='source'>🧑‍🍳 –keywords</td><td class='target'>कूक<br>शॅफ</td><td class='target'>कुझनेर<br>शॅफ। कुझनेर</td></tr>
+	<tr><td class='source'>👨‍🍳 -name</td><td class='target'>दादलो कूक</td><td class='target'>दादलो कुझनेर</td></tr>
+	<tr><td class='source'>👨‍🍳 –keywords</td><td class='target'>कूक<br>दादलो<br>शॅफ</td><td class='target'>दादलो कुझनेर<br>शॅफ। कुझनेर। दादलो</td></tr>
+	<tr><td class='source'>👩‍🍳 -name</td><td class='target'>बायल कूक</td><td class='target'>बायल कुझनेर</td></tr>
+	<tr><td class='source'>👩‍🍳 –keywords</td><td class='target'>कूक<br>बायल<br>शॅफ</td><td class='target'>बायल कुझनेर<br>शॅफ। कुझनेर। बायल</td></tr>
+	<tr><td class='source'>🧑‍🔧 –keywords</td><td class='target'>इलॅक्ट्रिसियन<br>प्लंबर<br>…</td><td class='target'>इलॅक्ट्रिशियन<br>प्लम्बर<br>…</td></tr>
+	<tr><td class='source'>👨‍🔧 –keywords</td><td class='target'>इलॅक्ट्रिसियन<br>…<br>प्लंबर<br>…</td><td class='target'>इलॅक्ट्रिशियन<br>…<br>प्लम्बर<br>…</td></tr>
+	<tr><td class='source'>👩‍🔧 –keywords</td><td class='target'>इलॅक्ट्रिसियन<br>प्लंबर<br>…</td><td class='target'>इलॅक्ट्रिशियन<br>प्लम्बर<br>…</td></tr>
+	<tr><td class='source'>🧑‍🏭 -name</td><td class='target'>फॅक्टरी कामगार</td><td class='target'>फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>असेब्ली<br>उद्देगधंदो<br>कामगार<br>फॅक्टरी</td><td class='target'>असॅम्बली। फॅक्ट्री। उद्येगधंदो। कामगार<br>फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>👨‍🏭 -name</td><td class='target'>दादलो फॅक्टरीचो कामगार</td><td class='target'>दादलो फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>👨‍🏭 –keywords</td><td class='target'>असेब्ली<br>उद्देगधंदो<br>कामगार<br>दादलो<br>दादलो फॅक्टरीचो कामगार<br>फॅक्टरी</td><td class='target'>असॅम्बली। फॅक्ट्री। उद्येगधंदो। दादलो। कामगार<br>दादलो फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>👩‍🏭 -name</td><td class='target'>बायल फॅक्टरी कामगार</td><td class='target'>बायल फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>👩‍🏭 –keywords</td><td class='target'>असेब्ली<br>उद्देगधंदो<br>कामगार<br>फॅक्टरी<br>बायल</td><td class='target'>असॅम्बली। फॅक्ट्री। उद्येगधंदो। बायल। कामगार<br>बायल फॅक्ट्री कामगार</td></tr>
+	<tr><td class='source'>🤵 -name</td><td class='target'>टक्सेडोतलो मनीस</td><td class='target'>फात घातिल्लो व्यक्ती</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>टक्सेडो<br>टक्सेडोतलो दादलो<br>टक्सेडोतलो मनीस<br>दादलो<br>…</td><td class='target'>…<br>फात<br>फात घातिल्लो व्यक्ती<br>व्यक्ती</td></tr>
+	<tr><td class='source'>🤵‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>फात घातिल्लो दादलो</td></tr>
+	<tr><td class='source'>🤵‍♂ –keywords</td><td class='target'>दादलो। फात घातिल्लो दादलो। फात<br>फात घातिल्लो दादलो</td></tr>
+	<tr><td class='source'>🤵‍♀ -name</td><td class='target'>फात घातिल्ली बायल</td></tr>
+	<tr><td class='source'>🤵‍♀ –keywords</td><td class='target'>फात घातिल्ली बायल<br>फात। बायल। फात घातिल्ली बायल</td></tr>
+	<tr><td class='source'>👰 -name</td><td class='target'>नववारीतली व्हंकल</td><td class='target'>वेल घातिल्ली व्यक्ती</td></tr>
+	<tr><td class='source'>👰 –keywords</td><td class='target'>नववारी<br>नववारीतली व्हंकल<br>…</td><td class='target'>…<br>वेल<br>वेल घातिल्ली व्यक्ती<br>व्यक्ती<br>…</td></tr>
+	<tr><td class='source'>👰‍♂ -name</td><td class='target' rowSpan='13'>▷missing◁</td><td class='target'>वेल घातिल्लो दादलो</td></tr>
+	<tr><td class='source'>👰‍♂ –keywords</td><td class='target'>दादलो। वेल घातिल्लो दादलो। वेल<br>वेल घातिल्लो दादलो</td></tr>
+	<tr><td class='source'>👰‍♀ -name</td><td class='target'>वेल घातिल्ली बायल</td></tr>
+	<tr><td class='source'>👰‍♀ –keywords</td><td class='target'>वेल घातिल्ली बायल<br>वेल। बायल। वेल घातिल्ली बायल</td></tr>
+	<tr><td class='source'>👩‍🍼 -name</td><td class='target'>बायल बाळकाक दूद पाजता</td></tr>
+	<tr><td class='source'>👩‍🍼 –keywords</td><td class='target'>बायल बाळकाक दूद पाजता<br>बाळक। दूद पाजप। नर्सिंग। बायल</td></tr>
+	<tr><td class='source'>👨‍🍼 -name</td><td class='target'>दादलो बाळकाक दूद पिवयता</td></tr>
+	<tr><td class='source'>👨‍🍼 –keywords</td><td class='target'>दादलो बाळकाक दूद पिवयता<br>बाळक। दूद पाजप। दादलो। नर्सिंग</td></tr>
+	<tr><td class='source'>🧑‍🍼 -name</td><td class='target'>व्यक्ती बाळकाक दूद पाजता</td></tr>
+	<tr><td class='source'>🧑‍🍼 –keywords</td><td class='target'>नर्सिंग<br>बाळक। दूद पाजप<br>व्यक्ती बाळकाक दूद पाजता<br>व्यक्ती। व्यक्ती बाळकाक दूद पाजता</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧑‍🎄 -name</td><td class='target'>सांता क्लॉस</td></tr>
+	<tr><td class='source'>🧑‍🎄 –keywords</td><td class='target'>क्लॉस, नातलां। सांता क्लॉस<br>सांता क्लॉस</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-sport' href='#person-sport'>person-sport</a></td><td class='source'>🤼‍♂ -name</td><td class='target'>दादल्यांचें रेसलिंग</td></tr>
+	<tr><td class='source'>🤼‍♂ –keywords</td><td class='target'>…</td><td class='target'>…<br>दादल्यांचें रेसलिंग<br>…</td></tr>
+	<tr><td class='source'><a name='family' href='#family'>family</a></td><td class='source'>👬 –keywords</td><td class='target'>एकमेकांचे हात धरून दादले<br>जवळीं<br>जोडपें<br>…<br>दादलो<br>मिथुन<br>…<br>हात धरून</td><td class='target'>जुवळीं<br>जोडपें। मिथुन। एकमेकांचे हात धरल्यात। दादलो<br>…<br>दादल्यांनी एकमेकांचे हात धरल्यात<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>👣 -name</td><td class='target'>▷missing◁</td><td class='target'>पांयाचे छाप</td></tr>
+	<tr><td class='source'>👣 –keywords</td><td class='target'>…</td><td class='target'>…<br>पांयाचे छाप<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='6'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐈‍⬛ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>काळें माजर</td></tr>
+	<tr><td class='source'>🐈‍⬛ –keywords</td><td class='target'>काळें । माजर। दुर्दैवी<br>काळें माजर</td></tr>
+	<tr><td class='source'>🦬 -name</td><td class='target'>bison</td><td class='target'>गवो रेडो</td></tr>
+	<tr><td class='source'>🦬 –keywords</td><td class='target'>bison<br>कळप<br>गवो<br>म्हस<br>रॅडो</td><td class='target'>गवो रेडो<br>गवो रेडो। म्हस। राखणो। गवो</td></tr>
+	<tr><td class='source'>🐻‍❄ -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>ध्रुवीय वांस्वेल</td></tr>
+	<tr><td class='source'>🐻‍❄ –keywords</td><td class='target'>आर्टिक। वांस्वेल। ध्रुवीय वांस्वेल। धवें<br>ध्रुवीय वांस्वेल</td></tr>
+	<tr><td class='source' rowSpan='126'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='4'><a name='transport-sign' href='#transport-sign'>transport-sign</a></td><td class='source'>🚹 –keywords</td><td class='target'>wc<br>…<br>दादल्याची कूड<br>लेवेटरी<br>विसवकूड</td><td class='target'>…<br>दादल्यांची कूड<br>विसव कूड। wc<br>संडास</td></tr>
+	<tr><td class='source'>🚺 –keywords</td><td class='target'>wc<br>बायल<br>…<br>लॅवेटरी<br>विसवकूड</td><td class='target'>…<br>संडास। विसव कूड। wc। बायल। बायलांची कूड</td></tr>
+	<tr><td class='source'>🚻 –keywords</td><td class='target'>WC<br>लॅवटरी<br>…</td><td class='target'>विसव कूड। wc<br>…<br>संडास</td></tr>
+	<tr><td class='source'>🚾 –keywords</td><td class='target'>wc<br>उदक<br>…<br>क्लोसेट<br>लेवेटरी<br>विसवकूड</td><td class='target'>…<br>कुरकूट। संडास। विसव कूड। उदक। wc</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='arrow' href='#arrow'>arrow</a></td><td class='source'>➡ –keywords</td><td class='target'>…</td><td class='target'>…<br>बाण<br>…</td></tr>
+	<tr><td class='source'>→ -name</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>उजव्यान खुणावपी बाण</td></tr>
+	<tr><td class='source'>→ –keywords</td><td class='target'>उजव्यान खुणावपी बाण<br>बाण। उजवें। उजव्यान खुणावपी बाण</td></tr>
+	<tr><td class='source'>↓ -name</td><td class='target'>सकयल खुणावपी बाण</td></tr>
+	<tr><td class='source'>↓ –keywords</td><td class='target'>बाण। सकयल। सकयल खुणावपी बाण<br>सकयल खुणावपी बाण</td></tr>
+	<tr><td class='source'>↑ -name</td><td class='target'>वयर खुणावपी बाण</td></tr>
+	<tr><td class='source'>↑ –keywords</td><td class='target'>बाण। वयर। वयर खुणावपी बाण<br>वयर खुणावपी बाण</td></tr>
+	<tr><td class='source'>← -name</td><td class='target'>दाव्यान खुणावपी बाण</td></tr>
+	<tr><td class='source'>← –keywords</td><td class='target'>दाव्यान खुणावपी बाण<br>बाण। दाव्यान। दाव्यान खुणावपी बाण</td></tr>
+	<tr><td class='source'>⇆ -name</td><td class='target'>उजव्यान खुणावपी बाणांचेर दाव्यान खुणावपी बाण</td></tr>
+	<tr><td class='source'>⇆ –keywords</td><td class='target'>उजव्यान खुणावपी बाणांचेर दाव्यान खुणावपी बाण<br>बाण। दाव्यान। उजव्यान खुणावपी बाणांचेर दाव्यान खुणावपी बाण। उजव्यान</td></tr>
+	<tr><td class='source'>⇅ -name</td><td class='target'>वयर खुणावपी आनी सकयल खुणावपी बाण</td></tr>
+	<tr><td class='source'>⇅ –keywords</td><td class='target'>बाण। सकयल। वयर। वयर खुणावपी आनी सकयल खुणावपी बाण<br>वयर खुणावपी आनी सकयल खुणावपी बाण</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='math' href='#math'>math</a></td><td class='source'>✖ -name</td><td class='target'>गुणाकार चिन्न</td><td class='target'>गुणाकार</td></tr>
+	<tr><td class='source'>➕ -name</td><td class='target'>अदीक चिन्न</td><td class='target'>अदीक</td></tr>
+	<tr><td class='source'>× -name</td><td class='target' rowSpan='32'>▷missing◁</td><td class='target'>गुणाकार चिन्न</td></tr>
+	<tr><td class='source'>× –keywords</td><td class='target'>गुणाकार चिन्न<br>गुणाकारा। गुणाकार चिन्न। गुणाकार करप।खेपे</td></tr>
+	<tr><td class='source'>÷ -name</td><td class='target'>विभाजन कुरू</td></tr>
+	<tr><td class='source'>÷ –keywords</td><td class='target'>विभाजन कुरू<br>विभाजीत। विभाजन। विभाजन कुरू। ओबेलस</td></tr>
+	<tr><td class='source'>√ -name</td><td class='target'>वर्गमूळ</td></tr>
+	<tr><td class='source'>√ –keywords</td><td class='target'>मौलीक। मूळ। मूळ शब्द। समकोण। सुर्द<br>वर्गमूळ</td></tr>
+	<tr><td class='source'>∞ -name</td><td class='target'>असीमताय कुरू</td></tr>
+	<tr><td class='source'>∞ –keywords</td><td class='target'>असीमताय<br>असीमताय कुरू</td></tr>
+	<tr><td class='source'>∆ -name</td><td class='target'>वृद्धी</td></tr>
+	<tr><td class='source'>∆ –keywords</td><td class='target'>वृद्धी<br>वृद्धी। त्रिकोण</td></tr>
+	<tr><td class='source'>∇ -name</td><td class='target'>नाब्ला</td></tr>
+	<tr><td class='source'>∇ –keywords</td><td class='target'>नाब्ला<br>नाब्ला । त्रिकोण</td></tr>
+	<tr><td class='source'>⁻ -name</td><td class='target'>सुपरस्क्रिप्ट वजा</td></tr>
+	<tr><td class='source'>⁻ –keywords</td><td class='target'>वजा । सुपरस्क्रिप्ट<br>सुपरस्क्रिप्ट वजा</td></tr>
+	<tr><td class='source'>¹ -name</td><td class='target'>सुपरस्क्रिप्ट एक</td></tr>
+	<tr><td class='source'>¹ –keywords</td><td class='target'>एक । सुपरस्क्रिप्ट<br>सुपरस्क्रिप्ट एक</td></tr>
+	<tr><td class='source'>² -name</td><td class='target'>सुपरस्क्रिप्ट दोन</td></tr>
+	<tr><td class='source'>² –keywords</td><td class='target'>समकोनी। सुपरस्क्रिप्ट। दोन<br>सुपरस्क्रिप्ट दोन</td></tr>
+	<tr><td class='source'>³ -name</td><td class='target'>सुपरस्क्रिप्ट तीन</td></tr>
+	<tr><td class='source'>³ –keywords</td><td class='target'>घनाकार। सुपरस्क्रिप्ट। तीन<br>सुपरस्क्रिप्ट तीन</td></tr>
+	<tr><td class='source'>≡ -name</td><td class='target'>समरुपी</td></tr>
+	<tr><td class='source'>≡ –keywords</td><td class='target'>जुस्ताजुस्त। समरुपी। ताका समरुपी। तिट्टी<br>समरुपी</td></tr>
+	<tr><td class='source'>∈ -name</td><td class='target'>चो घटक</td></tr>
+	<tr><td class='source'>∈ –keywords</td><td class='target'>आसपावीत। घटक। चो घटक। वांगडीपद। संच<br>चो घटक</td></tr>
+	<tr><td class='source'>⊂ -name</td><td class='target'>चो उप-संच</td></tr>
+	<tr><td class='source'>⊂ –keywords</td><td class='target'>चो उप-संच<br>संच। उप-संच। चो उप-संच</td></tr>
+	<tr><td class='source'>∩ -name</td><td class='target'>प्रतिच्छेदन</td></tr>
+	<tr><td class='source'>∩ –keywords</td><td class='target'>प्रतिच्छेदन<br>प्रतिच्छेदन। संच</td></tr>
+	<tr><td class='source'>∪ -name</td><td class='target'>संघीत</td></tr>
+	<tr><td class='source'>∪ –keywords</td><td class='target'>एकठावणी। संच। संघीय<br>संघीत</td></tr>
+	<tr><td class='source'>° -name</td><td class='target'>पदवी</td></tr>
+	<tr><td class='source'>° –keywords</td><td class='target'>पदवी<br>पदवी। वर। पुरावो</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>⁉ –keywords</td><td class='target'>…<br>इंटरोबँग<br>…<br>चिन्न<br>प्रस्न<br>विरामचिन्न</td><td class='target'>…<br>इंटोरोबँग<br>…<br>उद्गार प्रस्न चिन्न<br>खूण<br>विराम चिन्न। प्रस्न</td></tr>
+	<tr><td class='source'>– -name</td><td class='target' rowSpan='28'>▷missing◁</td><td class='target'>en डॅश</td></tr>
+	<tr><td class='source'>– –keywords</td><td class='target'>en डॅश<br>डॅश । en</td></tr>
+	<tr><td class='source'>— -name</td><td class='target'>em डॅश</td></tr>
+	<tr><td class='source'>— –keywords</td><td class='target'>em डॅश<br>डॅश । em</td></tr>
+	<tr><td class='source'>» -name</td><td class='target'>उजवो कंस</td></tr>
+	<tr><td class='source'>» –keywords</td><td class='target'>उजवो कंस<br>कोन। ब्रॅकेट। हंसपद चिन्न। चॅवरॉन। अवतरण। उजवो। उजवो कंस</td></tr>
+	<tr><td class='source'>« -name</td><td class='target'>दावो कंस</td></tr>
+	<tr><td class='source'>« –keywords</td><td class='target'>कोन। ब्रॅकेट। हंसपद चिन्न। चॅवरॉन। दावो। दावो कंस। अवतरण<br>दावो कंस</td></tr>
+	<tr><td class='source'>• -name</td><td class='target'>बुलेट</td></tr>
+	<tr><td class='source'>• –keywords</td><td class='target'>बुलेट<br>बुलेट। बिंदू</td></tr>
+	<tr><td class='source'>· -name</td><td class='target'>मदलो बिंदू</td></tr>
+	<tr><td class='source'>· –keywords</td><td class='target'>बिंदू। खंड बिंदू। मदलो। मदलो बिंदू<br>मदलो बिंदू</td></tr>
+	<tr><td class='source'>§ -name</td><td class='target'>विभाग</td></tr>
+	<tr><td class='source'>§ –keywords</td><td class='target'>परिच्छेद। भाग। विभाग। सिलक्रो<br>विभाग</td></tr>
+	<tr><td class='source'>† -name</td><td class='target'>डॅगर चिन्न</td></tr>
+	<tr><td class='source'>† –keywords</td><td class='target'>डॅगर चिन्न<br>डॅगर। ऑबेलिस्क। ओबिलस</td></tr>
+	<tr><td class='source'>‡ -name</td><td class='target'>डबल डॅगर चिन्न</td></tr>
+	<tr><td class='source'>‡ –keywords</td><td class='target'>डबल डॅगर चिन्न<br>डॅगर। डबल। ऑबेलिस्क। ओबेलस</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='currency' href='#currency'>currency</a></td><td class='source'>€ -name</td><td class='target'>युरो</td></tr>
+	<tr><td class='source'>€ –keywords</td><td class='target'>चलन। युरो। युरो<br>युरो</td></tr>
+	<tr><td class='source'>£ -name</td><td class='target'>पावंड</td></tr>
+	<tr><td class='source'>£ –keywords</td><td class='target'>चलन। EGP। GBP। पावंड<br>पावंड</td></tr>
+	<tr><td class='source'>¥ -name</td><td class='target'>यॅन</td></tr>
+	<tr><td class='source'>¥ –keywords</td><td class='target'>CNY<br>JPY<br>चलन<br>युआन<br>यॅन</td></tr>
+	<tr><td class='source'>₹ -name</td><td class='target'>भारतीय रुपया</td></tr>
+	<tr><td class='source'>₹ –keywords</td><td class='target'>चलन। भारतीय रुपया। रुपया<br>भारतीय रुपया</td></tr>
+	<tr><td class='source'>₽ -name</td><td class='target'>रुबल (रशियेचे नाणे)</td></tr>
+	<tr><td class='source'>₽ –keywords</td><td class='target'>चलन। रुबल (रशियेचे नाणे)<br>रुबल (रशियेचे नाणे)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>❌ –keywords</td><td class='target'>…<br>गुणुले<br>चिन्न<br>…</td><td class='target'>…<br>खूण<br>…<br>गुणाकार करप<br>…</td></tr>
+	<tr><td class='source'>❎ –keywords</td><td class='target'>…<br>चवकोन<br>चिन्न</td><td class='target'>…<br>क्रॉस खूण बटण<br>…<br>खूण<br>चवकोण</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>🔠 –keywords</td><td class='target'>…<br>अपरकेस<br>…<br>लॅटीन</td><td class='target'>…<br>इनपूट लॅटीन अपरकेस<br>लातीं<br>व्हड अक्षरां</td></tr>
+	<tr><td class='source'>🔡 –keywords</td><td class='target'>…<br>इनपूट abcd<br>…<br>लॅटीन<br>लोवरकेस</td><td class='target'>…<br>इनपूट<br>…<br>लातीं<br>ल्हान अक्षरां</td></tr>
+	<tr><td class='source'>🔤 –keywords</td><td class='target'>…<br>उतर<br>लॅटीन</td><td class='target'>…<br>इनपूट लॅटीन अक्षरां<br>लातीं</td></tr>
+	<tr><td class='source'>🅰 -name</td><td class='target'>A बटण (रक्ताचो प्रकार)</td><td class='target'>A बटण (रक्ताचो गट)</td></tr>
+	<tr><td class='source'>🅰 –keywords</td><td class='target'>…<br>A बटण (रक्ताचो प्रकार)<br>रक्ताचो प्रकार</td><td class='target'>…<br>A बटण (रक्ताचो गट)<br>रक्ताचो गट</td></tr>
+	<tr><td class='source'>🆎 -name</td><td class='target'>AB बटण (रक्ताचो प्रकार)</td><td class='target'>AB बटण (रक्ताचो गट)</td></tr>
+	<tr><td class='source'>🆎 –keywords</td><td class='target'>…<br>AB बटण (रक्ताचो प्रकार)<br>ABबटण (रक्ताचो प्रकार)<br>रक्ताचो प्रकार</td><td class='target'>…<br>AB बटण (रक्ताचो गट)<br>रक्ताचो गट</td></tr>
+	<tr><td class='source'>🅱 -name</td><td class='target'>B बटण (रक्ताचो प्रकार)</td><td class='target'>B बटण (रक्ताचो गट)</td></tr>
+	<tr><td class='source'>🅱 –keywords</td><td class='target'>…<br>B बटण (रक्ताचो प्रकार)<br>रक्ताचो प्रकार</td><td class='target'>…<br>B बटण (रक्ताचो गट)<br>रक्ताचो गट</td></tr>
+	<tr><td class='source'>ℹ –keywords</td><td class='target'>i<br>…</td><td class='target'>माहिती<br>…</td></tr>
+	<tr><td class='source'>🆔 –keywords</td><td class='target'>…<br>बळख</td><td class='target'>…<br>वळख</td></tr>
+	<tr><td class='source'>🅾 -name</td><td class='target'>O बटण (रक्ताचो प्रकार)</td><td class='target'>O बटण (रक्ताचो गट)</td></tr>
+	<tr><td class='source'>🅾 –keywords</td><td class='target'>…<br>O बटण (रक्ताचो प्रकार)<br>रक्ताचो प्रकार</td><td class='target'>…<br>O बटण (रक्ताचो गट)<br>रक्ताचो गट</td></tr>
+	<tr><td class='source'>🆙 –keywords</td><td class='target'>…<br>करप<br>खुण<br>बटण</td><td class='target'>…<br>खूण। वयर। वयर! बटण</td></tr>
+	<tr><td class='source'>🆚 –keywords</td><td class='target'>vs<br>…<br>वर्सस</td><td class='target'>…<br>आड</td></tr>
+	<tr><td class='source'>🈷 –keywords</td><td class='target'>“मासीक रक्कम”<br>आयडीयोग्राफ<br>…<br>जपानी “मासीक शुल्क” बटण<br>…</td><td class='target'>“म्हयन्याळी रक्कम”<br>आयडिओग्राफ<br>…<br>जपानी “म्हयन्याळी रक्कम” बटण<br>…</td></tr>
+	<tr><td class='source'>🈶 –keywords</td><td class='target'>“शशुल्क नासतना न्हय”<br>आयडियोग्राफ<br>…<br>तपानी<br>…</td><td class='target'>“फुकट न्हय”<br>आयडिओग्राफ<br>जपानी<br>जपानी “फुकट न्हय” बटण<br>…</td></tr>
+	<tr><td class='source'>🉐 –keywords</td><td class='target'>“बारगेन”<br>आयडियोग्राफ<br>…</td><td class='target'>“वाणपण”<br>आयडिओग्राफ<br>…<br>जपानी “वाणपण” बटण<br>…</td></tr>
+	<tr><td class='source'>🈹 –keywords</td><td class='target'>“सवलत“<br>आयडियोग्राफ<br>…<br>जपानी “सवलत“ बटण<br>…</td><td class='target'>“सूट”<br>आयडिओग्राफ<br>…<br>जपानी “सूट” बटण<br>…</td></tr>
+	<tr><td class='source'>🈚 –keywords</td><td class='target'>“शुल्क ना”<br>आयडियोग्राफ<br>…<br>जपानी “शुल्क ना” बटण<br>…</td><td class='target'>“फुकट”<br>आयडिओग्राफ<br>…<br>जपानी “फुकट” बटण<br>…</td></tr>
+	<tr><td class='source'>🈲 –keywords</td><td class='target'>”प्रतिबंध”<br>आयडियोग्राफ<br>…<br>जपानी ” प्रतिबंध” बटण<br>…</td><td class='target'>“प्रतिबंधीत”<br>आयडिओग्राफ<br>…<br>जपानी “प्रतिबंधीत” बटण<br>…</td></tr>
+	<tr><td class='source'>🉑 –keywords</td><td class='target'>”स्विकार करपायोग्य”<br>आयडियोग्राफ<br>…</td><td class='target'>“स्विकार योग्य”<br>आयडिओग्राफ<br>…<br>जपानी “स्विकार योग्य” बटण<br>…</td></tr>
+	<tr><td class='source'>🈸 –keywords</td><td class='target'>…<br>आयडियोग्राफ<br>…</td><td class='target'>…<br>आयडिओग्राफ<br>…</td></tr>
+	<tr><td class='source'>🈳 –keywords</td><td class='target'>“सुवात”<br>आयडियोग्राफ<br>…</td><td class='target'>“रिक्त सुवात”<br>आयडिओग्राफ<br>…<br>जपानी “रिक्त सुवात” बटण<br>…</td></tr>
+	<tr><td class='source'>㊗ –keywords</td><td class='target'>“अभिनंदन”<br>आयडियोग्राफ<br>…</td><td class='target'>“परबीं”<br>आयडिओग्राफ<br>…<br>जपानी “परबीं” बटण<br>…</td></tr>
+	<tr><td class='source'>㊙ –keywords</td><td class='target'>…<br>आयडियोग्राफ<br>…</td><td class='target'>…<br>आयडिओग्राफ<br>…</td></tr>
+	<tr><td class='source'>🈺 –keywords</td><td class='target'>“वेवसाया खातीर उगडचें”<br>आयडीयोग्राफ<br>जजपानी “वेवसाया खातीर उकतें” बटण<br>…</td><td class='target'>“वेवसायाक उक्तो”<br>आयडिओग्राफ<br>…<br>जपानी “वेवसायाक उक्तो” बटण<br>…</td></tr>
+	<tr><td class='source'>🈵 –keywords</td><td class='target'>“सुवात ना”<br>आयडियोग्राफ<br>…</td><td class='target'>“रिक्त सुवात ना”<br>आयडिओग्राफ<br>…<br>जपानी “रिक्त सुवात ना” बटण<br>…</td></tr>
+	<tr><td class='source'>℗ -name</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>ध्वनी रॅकॉर्डींग मालकीहक्क</td></tr>
+	<tr><td class='source'>℗ –keywords</td><td class='target'>ध्वनी रॅकॉर्डींग मालकीहक्क<br>मालकीहक्क। रॅकॉर्डींग। ध्वनी</td></tr>
+	<tr><td class='source'>µ -name</td><td class='target'>मायक्रो खूण</td></tr>
+	<tr><td class='source'>µ –keywords</td><td class='target'>मायक्रो खूण<br>मेजणी। मायक्रो खूण</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='geometric' href='#geometric'>geometric</a></td><td class='source'>▼ -name</td><td class='target'>सकयल खुणावपी त्रिकोण भरलां</td></tr>
+	<tr><td class='source'>▼ –keywords</td><td class='target'>बाण। सकयल। भरिल्लें। सकयल खुणावपी त्रिकोण भरलां। त्रिकोण<br>सकयल खुणावपी त्रिकोण भरलां</td></tr>
+	<tr><td class='source'>▲ -name</td><td class='target'>वयर खुणावपी त्रिकोण भरलां</td></tr>
+	<tr><td class='source'>▲ –keywords</td><td class='target'>बाण। भरलां। वयर खुणावपी त्रिकोण भरलां। त्रिकोण। वयर<br>वयर खुणावपी त्रिकोण भरलां</td></tr>
+	<tr><td class='source'>● -name</td><td class='target'>भरिल्लें त्रिकोण</td></tr>
+	<tr><td class='source'>● –keywords</td><td class='target'>भरिल्लें त्रिकोण<br>वर्तूळ। भरिल्लें वर्तूळ</td></tr>
+	<tr><td class='source'>○ -name</td><td class='target'>बुराक आशिल्लें वर्तूळ</td></tr>
+	<tr><td class='source'>○ –keywords</td><td class='target'>बुराक आशिल्लें वर्तूळ<br>वर्तूळ। बुराक आशिल्लें वर्तूळ। रिंग</td></tr>
+	<tr><td class='source'>◯ -name</td><td class='target'>व्हड बुराक आशिल्लें वर्तूळ</td></tr>
+	<tr><td class='source'>◯ –keywords</td><td class='target'>वर्तूळ। व्हड बुराक आशिल्लें वर्तूळ। रिंग<br>व्हड बुराक आशिल्लें वर्तूळ</td></tr>
+	<tr><td class='source'>◊ -name</td><td class='target'>समचतुर्भुज</td></tr>
+	<tr><td class='source'>◊ –keywords</td><td class='target'>डायमण्ड। समचतुर्भुज। विषमकोण<br>समचतुर्भुज</td></tr>
+	<tr><td class='source'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source'><a name='Narrow “and” List' href='#Narrow “and” List'>Narrow “and” List</a></td><td class='source'>2</td><td class='target'>{0} &amp; {1}</td><td class='target'>{0}, {1}</td><td class='target'>moderate</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

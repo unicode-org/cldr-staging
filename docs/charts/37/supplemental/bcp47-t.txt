@@ -1,0 +1,465 @@
+Version: 37.0
+Extension: t
+%%
+Key: d0
+Description: Transform destination for non-languages/scripts.
+%%
+Key: h0
+Description: Language mixed in to form hybrid language tag.    See http://unicode.org/reports/tr35/#Hybrid_Locale
+%%
+Key: i0
+Description: Input Method Engine transform:   Used to indicate an input method transformation, such as one used by   a client-side input method. The first subfield in a sequence would   typically be a 'platform' or vendor designation.
+%%
+Key: k0
+Description: Keyboard transform:    Used to indicate a keyboard transformation, such as one used by a client-side virtual keyboard.    The first subfield in a sequence would typically be a 'platform' designation,    representing the platform that the keyboard is intended for.   The keyboard might or might not correspond to a keyboard mapping shipped by the vendor for the platform.   One or more subsequent fields may occur, but are only added where needed to distinguish from others.
+%%
+Key: m0
+Description: Transform extension mechanism:    to reference an authority or rules for a type of transformation
+%%
+Key: s0
+Description: Transform source for non-languages/scripts.
+%%
+Key: t0
+Description: Machine Translation:          Used to indicate content that has been machine translated, or a request for a particular type of machine translation of content.         The first subfield in a sequence would typically be a 'platform' or vendor designation.
+%%
+Key: x0
+Description: Private use transform type key.
+%%
+Key: d0
+Subtype: accents
+Description: map base + punctuation, etc to accented characters
+Since: 29
+%%
+Key: d0
+Subtype: ascii
+Description: map as many characters to the closest ASCII character as possible
+Since: 29
+%%
+Key: d0
+Subtype: casefold
+Description: apply Unicode case folding
+Since: 29
+%%
+Key: d0
+Subtype: charname
+Aliases: name
+Description: map each character to its Unicode name
+Since: 29
+%%
+Key: d0
+Subtype: digit
+Description: convert to digit form of accent
+Since: 29
+%%
+Key: d0
+Subtype: fcc
+Description: map string to the FCC format; http://unicode.org/notes/tn5
+Since: 29
+%%
+Key: d0
+Subtype: fcd
+Description: map string to the FCD format; http://unicode.org/notes/tn5
+Since: 29
+%%
+Key: d0
+Subtype: fwidth
+Aliases: fullwidth
+Description: map characters to their fullwidth equivalents
+Since: 29
+%%
+Key: d0
+Subtype: hex
+Description: map characters to a hex equivalents, eg 'a' to '\u0061'; for hex variants see transform.xml
+Since: 29
+%%
+Key: d0
+Subtype: hwidth
+Aliases: halfwidth
+Description: map characters to their halfwidth equivalents
+Since: 29
+%%
+Key: d0
+Subtype: lower
+Description: apply Unicode full lowercase mapping
+Since: 29
+%%
+Key: d0
+Subtype: nfc
+Description: map string to the Unicode NFC format
+Since: 29
+%%
+Key: d0
+Subtype: nfd
+Description: map string to the Unicode NFD format
+Since: 29
+%%
+Key: d0
+Subtype: nfkc
+Description: map string to the Unicode NFKC format
+Since: 29
+%%
+Key: d0
+Subtype: nfkd
+Description: map string to the Unicode NFKD format
+Since: 29
+%%
+Key: d0
+Subtype: npinyin
+Aliases: numericPinyin
+Description: map pinyin written with tones to the numeric form
+Since: 29
+%%
+Key: d0
+Subtype: null
+Description: make no change in the string
+Since: 29
+%%
+Key: d0
+Subtype: publish
+Aliases: publishing
+Description: map to preferred forms for publishing, such as “, ”, —
+Since: 29
+%%
+Key: d0
+Subtype: remove
+Description: remove every character in the string
+Since: 29
+%%
+Key: d0
+Subtype: title
+Description: apply Unicode full titlecase mapping
+Since: 29
+%%
+Key: d0
+Subtype: upper
+Description: apply Unicode full uppercase mapping
+Since: 29
+%%
+Key: d0
+Subtype: zawgyi
+Description: map Unicode to Zawgyi Myanmar encoding
+Since: 34
+%%
+Key: h0
+Subtype: hybrid
+Description: indicates hybrid language
+Since: 31
+%%
+Key: i0
+Subtype: handwrit
+Description: Handwriting input: Used when the only information known (or requested) is that the text was (or is to be) converted using an handwriting input.
+Since: 21.0.2
+%%
+Key: i0
+Subtype: pinyin
+Description: Pinyin input: for simplified Chinese characters. See also http://en.wikipedia.org/wiki/Pinyin_method.
+Since: 21.0.2
+%%
+Key: i0
+Subtype: und
+Description: The choice of input method is not specified. Used when the only information known (or requested) is that the text was (or is to be) converted using an input method engine
+Since: 21.0.2
+%%
+Key: i0
+Subtype: wubi
+Description: Wubi input: for simplified Chinese characters. For background information, see http://en.wikipedia.org/wiki/Wubi_method
+Since: 21.0.2
+%%
+Key: k0
+Subtype: 101key
+Description: 101 key layout.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: 102key
+Description: 102 key layout.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: 600dpi
+Description: Keyboard for a 600 dpi device.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: 768dpi
+Description: Keyboard for a 768 dpi device.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: android
+Description: Android keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: azerty
+Description: A AZERTY-based keyboard or one that approximates AZERTY in a different script.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: chromeos
+Description: ChromeOS keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: colemak
+Description: Colemak keyboard layout. The Colemak keyboard is an alternative to the QWERTY and dvorak keyboards. http://colemak.com/.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: dvorak
+Description: Dvorak keyboard layout. See also http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: dvorakl
+Description: Dvorak left-handed keyboard layout. See also http://en.wikipedia.org/wiki/File:KB_Dvorak_Left.svg.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: dvorakr
+Description: Dvorak right-handed keyboard layout. See also http://en.wikipedia.org/wiki/File:KB_Dvorak_Right.svg.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: el220
+Description: Greek 220 keyboard. See also http://www.microsoft.com/resources/msdn/goglobal/keyboards/kbdhela2.html.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: el319
+Description: Greek 319 keyboard. See also ftp://ftp.software.ibm.com/software/globalization/keyboards/KBD319.pdf.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: extended
+Description: A keyboard that has been enhanced with a large number of extra characters.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: googlevk
+Description: Google virtual keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: isiri
+Description: Persian ISIRI keyboard. Based on ISIRI 2901:1994 standard. See also http://behdad.org/download/Publications/persiancomputing/a007.pdf.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: legacy
+Description: A keyboard that has been replaced with a newer standard but is kept for legacy purposes.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: lt1205
+Description: Lithuanian standard keyboard, based on the LST 1205:1992 standard. See also http://www.kada.lt/litwin/.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: lt1582
+Description: Lithuanian standard keyboard, based on the LST 1582:2000 standard. See also http://www.kada.lt/litwin/.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: nutaaq
+Description: Inuktitut Nutaaq keyboard. See also http://www.pirurvik.ca/en/webfm_send/15.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: osx
+Description: Mac OSX keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: patta
+Description: Thai Pattachote keyboard. This is a less frequently used layout in Thai (Kedmanee layout is more popular). See also http://www.nectec.or.th/it-standards/keyboard_layout/thai-key.htm.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: qwerty
+Description: QWERTY-based keyboard or one that approximates QWERTY in a different script.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: qwertz
+Description: QWERTZ-based keyboard or one that approximates QWERTZ in a different script.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: ta99
+Description: Tamil 99 keyboard. See also http://www.tamilvu.org/Tamilnet99/annex1.htm.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: und
+Description: The vender for the keyboard is not specified. Used when the only information known (or requested) is that the text was (or is to be) converted using an keyboard.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: var
+Description: A keyboard layout with small variations from the default.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: viqr
+Description: Vietnamese VIQR layout, based on http://tools.ietf.org/html/rfc1456.
+Since: 21.0.2
+%%
+Key: k0
+Subtype: windows
+Description: Windows keyboard.
+Since: 21.0.2
+%%
+Key: m0
+Subtype: alaloc
+Description: American Library Association-Library of Congress
+Since: 21
+%%
+Key: m0
+Subtype: bgn
+Description: US Board on Geographic Names
+Since: 21
+%%
+Key: m0
+Subtype: buckwalt
+Description: Buckwalter Arabic transliteration system
+Since: 22.1
+%%
+Key: m0
+Subtype: c11
+Aliases: c
+Description: for hex transforms, using the C11 syntax: \u0061\U0001F4D6
+Since: 29
+%%
+Key: m0
+Subtype: css
+Description: for hex transforms, using the CSS syntax: \61 \01F4D6, spacing where necessary
+Since: 29
+%%
+Key: m0
+Subtype: din
+Description: Deutsches Institut für Normung
+Since: 21
+%%
+Key: m0
+Subtype: ewts
+Description: Extended Wylie Transliteration Scheme
+Since: 35
+%%
+Key: m0
+Subtype: gost
+Description: Euro-Asian Council for Standardization, Metrology and Certification
+Since: 21
+%%
+Key: m0
+Subtype: iast
+Description: International Alphabet of Sanskrit Transliteration
+Since: 35
+%%
+Key: m0
+Subtype: iso
+Description: International Organization for Standardization
+Since: 21
+%%
+Key: m0
+Subtype: java
+Description: for hex transforms, using the Java syntax: \u0061\uD83D\uDCD6
+Since: 29
+%%
+Key: m0
+Subtype: mcst
+Description: Korean Ministry of Culture, Sports and Tourism
+Since: 21
+%%
+Key: m0
+Subtype: mns
+Description: Mongolian National Standard
+Since: 29
+%%
+Key: m0
+Subtype: percent
+Description: for hex transforms, using the percent syntax: %61%F0%9F%93%96
+Since: 29
+%%
+Key: m0
+Subtype: perl
+Description: for hex transforms, using the perl syntax: \x{61}\x{1F4D6}
+Since: 29
+%%
+Key: m0
+Subtype: plain
+Description: for hex transforms, with no surrounding syntax, spacing where necessary: 0061 1F4D6
+Since: 29
+%%
+Key: m0
+Subtype: prprname
+Aliases: names
+Description: transform variant for proper names
+Since: 29
+%%
+Key: m0
+Subtype: satts
+Description: Standard Arabic Technical Transliteration System (SATTS)
+Since: 22.1
+%%
+Key: m0
+Subtype: ungegn
+Description: United Nations Group of Experts on Geographical Names
+Since: 21
+%%
+Key: m0
+Subtype: unicode
+Description: to hex with the Unicode syntax: U+0061 U+1F4D6, spacing where necessary
+Since: 29
+%%
+Key: m0
+Subtype: xml
+Description: for hex transforms, using the xml syntax: &#x61;&#x1F4D6;
+Since: 29
+%%
+Key: m0
+Subtype: xml10
+Description: for hex transforms, using the xml decimal syntax: &#97;&#128214;
+Since: 29
+%%
+Key: s0
+Subtype: accents
+Description: accented characters to map base + punctuation, etc
+Since: 29
+%%
+Key: s0
+Subtype: ascii
+Description: map from ASCII to the target, perhaps using different conventions
+Since: 29
+%%
+Key: s0
+Subtype: hex
+Description: map characters from hex equivalents, trying all variants, eg 'U+0061' to 'a'; for hex variants see transform.xml
+Since: 29
+%%
+Key: s0
+Subtype: npinyin
+Aliases: numericPinyin
+Description: map the numeric form of pinyin to the tone format
+Since: 29
+%%
+Key: s0
+Subtype: publish
+Aliases: publishing
+Description: map publishing characters, such as “, ”, —, to from vanilla characters
+Since: 29
+%%
+Key: s0
+Subtype: zawgyi
+Description: map Zawgyi Myanmar encoding to Unicode
+Since: 30
+%%
+Key: t0
+Subtype: und
+Description: The choice of machine translation is not specified. Used when the only information known (or requested) is that the text was machine translated.
+Since: 21.0.2
+%%
+Key: x0
+Subtype: PRIVATE_USE
+Description: Private use transform identifier. All subfields consistent with rfc6497 (that is, subtags of 3-8 alphanum characters) are valid, and do not require registration.
+Since: 21.0.2
