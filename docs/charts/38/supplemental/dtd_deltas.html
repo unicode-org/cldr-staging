@@ -64,6 +64,7 @@
 <ul><li>Attribute status is marked by: §d=distinguished, §v=value, or §m︎=metadata.</li>
 <li>Attribute value constraints are marked with ⟨…⟩ (for DTD constraints) and ⟪…⟫ (for augmented constraints, added in v35.0).</li>
 <li>Changes in status or constraints are shown with ➠.</li>
+<li>Newly ordered elements are indicated with ⇣; newly unordered with ⇟.</li>
 </ul></li></ul>
 <p>For more information, see the LDML spec.</p><table>
 	<tr><th class='source'>Version</th><th class='source'>Dtd Type</th><th class='source'>Intermediate Path</th><th class='target'>Element</th><th class='target'>Attributes</th></tr>
@@ -101,7 +102,7 @@
 	<tr><td class='target'>​/subdivisionContainment/</td><td class='target'>subgroup</td><td class='target'><div>+contains ⟪set/validity/subdivision⟫➠⟪set/or/validity/subdivision||literal/itca, itnu, itor, itsd, itss, no01, no02, no03, no04, no05, no06, no07, no08, no09, no10, no11, no12, no14, no15, no18, no19, no20, no21, no22, no50⟫</div></td></tr>
 	<tr><td class='target'>​/unitConstants/</td><td class='target'>+unitConstant</td><td class='target'><div>+constant §d ⟪regex/[A-Za-z][_A-Za-z0-9]*⟫</div><div>+value §v ⟪regex/[-+*/\._ 0-9a-zA-Z]+⟫</div><div>+status §v ⟪literal/approximate, exact⟫</div></td></tr>
 	<tr><td class='target'>​/unitPreferenceData/</td><td class='target'>unitPreferences</td><td class='target'><div>+category ⟪literal/area, concentr, consumption, duration, energy, length, mass, pressure, speed, temperature, volume⟫➠⟪regex/[a-z]+([-][a-z]+)*⟫</div><div>+usage ⟪literal/baromtrc, blood-glucose, food, land-agricult, land-commercl, land-residntl, music-track, person, person-age, person-usage, rainfall, road, road-travel, snowfall, tv-program, vehicle, vehicle-fuel, visiblty, weather, wind⟫➠⟪regex/[a-z]+([-][a-z]+)*⟫</div><div>⊖scope</div></td></tr>
-	<tr><td class='target'>​/unitPreferenceData​/unitPreferences/</td><td class='target'>unitPreference</td><td class='target'><div>+geq §d ⟪any⟫</div><div>+skeleton §v ⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData​/unitPreferences/</td><td class='target'>unitPreference⇣</td><td class='target'><div>+geq §d ⟪any⟫</div><div>+skeleton §v ⟪any⟫</div></td></tr>
 	<tr><td class='target'>​/unitQuantities/</td><td class='target'>+unitQuantity</td><td class='target'><div>+baseUnit §d ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+quantity §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+status §v ⟪regex/simple⟫</div></td></tr>
 	<tr><td class='source'><a name='36.0' href='#36.0'>36.0</a></td><td class='source'>ldml</td><td class='target'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>+type ⟪literal/per⟫➠⟪literal/per, times⟫</div></td></tr>
 	<tr><td class='source' rowSpan='130'><a name='35.0' href='#35.0'>35.0</a></td><td class='source' rowSpan='57'>ldml</td><td class='target'>​/annotations/</td><td class='target'>annotation</td><td class='target'><div>+cp ➠⟪any⟫</div></td></tr>
@@ -528,8 +529,8 @@
 	<tr><td class='target'>​/posix/</td><td class='target'>messages</td><td class='target'><div>⊖validSubLocales</div></td></tr>
 	<tr><td class='target' rowSpan='2'>​/posix​/messages/</td><td class='target'>⊖yesexpr</td><td class='target'> </td></tr>
 	<tr><td class='target'>⊖noexpr</td><td class='target'> </td></tr>
-	<tr><td class='target'>​/rbnf​/rulesetGrouping/</td><td class='target'>ruleset</td><td class='target'><div>+access §d➠§v</div><div>+allowsParsing §d➠§v</div></td></tr>
-	<tr><td class='target'>​/rbnf​/rulesetGrouping​/ruleset/</td><td class='target'>rbnfrule</td><td class='target'><div>+value §d➠§v</div><div>+radix §d➠§v</div><div>+decexp §d➠§v</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping/</td><td class='target'>ruleset⇣</td><td class='target'><div>+access §d➠§v</div><div>+allowsParsing §d➠§v</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping​/ruleset/</td><td class='target'>rbnfrule⇣</td><td class='target'><div>+value §d➠§v</div><div>+radix §d➠§v</div><div>+decexp §d➠§v</div></td></tr>
 	<tr><td class='target' rowSpan='2'>​/references/</td><td class='target'>⊖reference</td><td class='target'> </td></tr>
 	<tr><td class='target'>⊖reference</td><td class='target'><div>⊖type</div><div>⊖uri</div></td></tr>
 	<tr><td class='target'>​/segmentations/</td><td class='target'>segmentation</td><td class='target'><div>⊖validSubLocales</div></td></tr>
@@ -564,8 +565,8 @@
 	<tr><td class='target'>⊖languageCodes</td><td class='target'><div>⊖type</div><div>⊖alpha3</div></td></tr>
 	<tr><td class='target'>territoryCodes</td><td class='target'><div>+numeric §d➠§v</div><div>+alpha3 §d➠§v</div><div>+fips10 §d➠§v</div><div>+internet §d➠§v</div></td></tr>
 	<tr><td class='target'>currencyCodes</td><td class='target'><div>+numeric §d➠§v</div></td></tr>
-	<tr><td class='target' rowSpan='2'>​/coverageLevels/</td><td class='target'>coverageVariable</td><td class='target'><div>+value §d➠§v</div></td></tr>
-	<tr><td class='target'>coverageLevel</td><td class='target'><div>+value §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/coverageLevels/</td><td class='target'>coverageVariable⇣</td><td class='target'><div>+value §d➠§v</div></td></tr>
+	<tr><td class='target'>coverageLevel⇣</td><td class='target'><div>+value §d➠§v</div></td></tr>
 	<tr><td class='target'>​/coverageLevels​/approvalRequirements/</td><td class='target'>approvalRequirement</td><td class='target'><div>+votes §d➠§v</div></td></tr>
 	<tr><td class='target'>​/currencyData​/fractions/</td><td class='target'>info</td><td class='target'><div>+digits §d➠§v</div><div>+rounding §d➠§v</div><div>+cashDigits §d➠§v</div><div>+cashRounding §d➠§v</div></td></tr>
 	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>⊖before</div><div>+digits §d➠§v</div><div>+rounding §d➠§v</div><div>+cashRounding §d➠§v</div><div>+tender §d➠§v</div></td></tr>
@@ -574,7 +575,7 @@
 	<tr><td class='target'>​/gender/</td><td class='target'>personList</td><td class='target'><div>+locales §d➠§v</div></td></tr>
 	<tr><td class='target'>​/idValidity/</td><td class='target'>+id</td><td class='target'><div>+type §d </div><div>+idStatus §d </div></td></tr>
 	<tr><td class='target'>​/languageData/</td><td class='target'>language</td><td class='target'><div>+scripts §d➠§v</div><div>+territories §d➠§v</div><div>+variants §d➠§v</div></td></tr>
-	<tr><td class='target'>​/languageMatching​/languageMatches/</td><td class='target'>languageMatch</td><td class='target'><div>+desired §d➠§v</div><div>+oneway §d➠§v</div><div>+percent §d➠§v</div><div>+supported §d➠§v</div></td></tr>
+	<tr><td class='target'>​/languageMatching​/languageMatches/</td><td class='target'>languageMatch⇣</td><td class='target'><div>+desired §d➠§v</div><div>+oneway §d➠§v</div><div>+percent §d➠§v</div><div>+supported §d➠§v</div></td></tr>
 	<tr><td class='target'>​/likelySubtags/</td><td class='target'>likelySubtag</td><td class='target'><div>+to §d➠§v</div></td></tr>
 	<tr><td class='target' rowSpan='2'>​/measurementData/</td><td class='target'>measurementSystem</td><td class='target'><div>+territories §d➠§v</div></td></tr>
 	<tr><td class='target'>paperSize</td><td class='target'><div>+territories §d➠§v</div></td></tr>
@@ -601,9 +602,9 @@
 	<tr><td class='target'>⊖timezoneCoverage</td><td class='target'> </td></tr>
 	<tr><td class='target'>⊖timezoneCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
 	<tr><td class='target'>​/metadata​/distinguishing/</td><td class='target'>distinguishingItems</td><td class='target'><div>+exclude §d➠§v</div><div>+elements §d➠§v</div></td></tr>
-	<tr><td class='target'>​/metadata​/suppress/</td><td class='target'>attributes</td><td class='target'><div>+element §d➠§v</div><div>+attribute §d➠§v</div><div>+attributeValue §d➠§v</div></td></tr>
-	<tr><td class='target' rowSpan='2'>​/metadata​/validity/</td><td class='target'>variable</td><td class='target'><div>+id §d➠§v</div></td></tr>
-	<tr><td class='target'>attributeValues</td><td class='target'><div>+dtds §d </div><div>+elements §d➠§v</div><div>+attributes §d➠§v</div><div>+order §d➠§v</div></td></tr>
+	<tr><td class='target'>​/metadata​/suppress/</td><td class='target'>attributes⇣</td><td class='target'><div>+element §d➠§v</div><div>+attribute §d➠§v</div><div>+attributeValue §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/validity/</td><td class='target'>variable⇣</td><td class='target'><div>+id §d➠§v</div></td></tr>
+	<tr><td class='target'>attributeValues⇣</td><td class='target'><div>+dtds §d </div><div>+elements §d➠§v</div><div>+attributes §d➠§v</div><div>+order §d➠§v</div></td></tr>
 	<tr><td class='target'>​/metazoneInfo​/timezone/</td><td class='target'>usesMetazone</td><td class='target'><div>+mzone §d➠§v</div></td></tr>
 	<tr><td class='target'>​/numberingSystems/</td><td class='target'>numberingSystem</td><td class='target'><div>+type §d➠§v</div><div>+radix §d➠§v</div><div>+digits §d➠§v</div><div>+rules §d➠§v</div></td></tr>
 	<tr><td class='target'>​/parentLocales/</td><td class='target'>parentLocale</td><td class='target'><div>+locales §d➠§v</div></td></tr>
@@ -635,7 +636,7 @@
 	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+description §d➠§v</div><div>+deprecated §d➠§m︎</div><div>+preferred §d➠§v</div><div>+alias §d➠§v</div><div>+since §d➠§m︎</div></td></tr>
 	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>+description §d➠§v</div><div>+deprecated §d➠§m︎</div><div>+preferred §d➠§v</div><div>+alias §d➠§v</div><div>+since §d➠§m︎</div></td></tr>
 	<tr><td class='source' rowSpan='5'>keyboard</td><td class='target' rowSpan='2'>/</td><td class='target'>version</td><td class='target'><div>+platform §d➠§v</div><div>+number §d➠§m︎</div><div>+cldrVersion §d➠§m︎</div></td></tr>
-	<tr><td class='target'>settings</td><td class='target'><div>+fallback §d➠§v</div><div>+transformFailure §d➠§v</div><div>+transformPartial §d➠§v</div></td></tr>
+	<tr><td class='target'>settings⇣</td><td class='target'><div>+fallback §d➠§v</div><div>+transformFailure §d➠§v</div><div>+transformPartial §d➠§v</div></td></tr>
 	<tr><td class='target'>​/keyMap/</td><td class='target'>map</td><td class='target'><div>+to §d➠§v</div><div>+longPress §d➠§v</div><div>+transform §d➠§v</div></td></tr>
 	<tr><td class='target'>​/names/</td><td class='target'>name</td><td class='target'><div>+value §d➠§v</div></td></tr>
 	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>+to §d➠§v</div></td></tr>
