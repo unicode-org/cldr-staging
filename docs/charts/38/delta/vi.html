@@ -58,18 +58,522 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='12'>vi</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source'><a name='H' href='#H'>H</a></td><td class='source'>Hmong ► hmn</td><td class='source' rowSpan='516'>vi</td><td class='target'>Tiếng Hmông</td><td class='target'>Tiếng H’Mông</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td><td class='source'><a name='Caribbean' href='#Caribbean'>Caribbean</a></td><td class='source'>VI</td><td class='target'>Quần đảo Virgin thuộc Mỹ</td><td class='target'>Quần đảo Virgin thuộc Hoa Kỳ</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source' rowSpan='2'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Swaziland</td><td class='target'>Eswatini</td></tr>
+	<tr><td class='source'>SZ-variant</td><td class='target'>Eswatini</td><td class='target'>Swaziland</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source' rowSpan='2'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'>HK</td><td class='target'>Hồng Kông, Trung Quốc</td><td class='target'>Đặc khu Hành chính Hồng Kông, Trung Quốc</td></tr>
+	<tr><td class='source'>MO</td><td class='target'>Macao, Trung Quốc</td><td class='target'>Đặc khu Hành chính Macao, Trung Quốc</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='3'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='3'><a name='Relative Day Short' href='#Relative Day Short'>Relative Day Short</a></td><td class='source'>-1</td><td class='target'>Hôm qua</td><td class='target'>hôm qua</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>0</td><td class='target'>Hôm nay</td><td class='target'>hôm nay</td></tr>
+	<tr><td class='source'>1</td><td class='target'>Ngày mai</td><td class='target'>ngày mai</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='4'><a name='Eras - wide' href='#Eras - wide'>Eras - wide</a></td><td class='source'>0</td><td class='target'>Trước CN</td><td class='target'>Trước Thiên Chúa</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'>0-variant</td><td class='target'>trước CN</td><td class='target'>Trước Công Nguyên</td></tr>
+	<tr><td class='source'>1</td><td class='target'>sau CN</td><td class='target'>Sau Công Nguyên</td></tr>
+	<tr><td class='source'>1-variant</td><td class='target'>CN</td><td class='target'>Công Nguyên</td></tr>
+	<tr><td class='source'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td><td class='source'>1</td><td class='target'>sau CN</td><td class='target'>Sau CN</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='3'><a name='Europe' href='#Europe'>Europe</a></td><td class='source' rowSpan='2'><a name='Azores' href='#Azores'>Azores</a></td><td class='source'>standard-long</td><td class='target'>Giờ Chuẩn Azores</td><td class='target'>Giờ chuẩn Azores</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Giờ Mùa Hè Azores</td><td class='target'>Giờ mùa hè Azores</td></tr>
+	<tr><td class='source'><a name='Europe_Further_Eastern' href='#Europe_Further_Eastern'>Europe_Further_Eastern</a></td><td class='source'>standard-long</td><td class='target'>Giờ Châu Âu Viễn Đông</td><td class='target'>Giờ Viễn đông Châu Âu</td></tr>
+	<tr><td class='source'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Unknown</td><td class='target'>Thành phố Không xác định</td><td class='target'>Thành phố không xác định</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Symbols ' href='#Symbols '>Symbols </a></td><td class='source'>approximatelySign</td><td class='target'>▷missing◁</td><td class='target'>~</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
-	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
-	<tr><td class='source' rowSpan='8'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='7'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source' rowSpan='8'>long-other-nominative</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>{0} muỗng ăn tráng miệng</td></tr>
-	<tr><td class='source'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='target'>{0} muỗng ăn tráng miệng Anh</td></tr>
-	<tr><td class='source'><a name='drop' href='#drop'>drop</a></td><td class='target'>{0} giọt</td></tr>
-	<tr><td class='source'><a name='dram' href='#dram'>dram</a></td><td class='target'>{0} dram chất lỏng Anh</td></tr>
-	<tr><td class='source'><a name='jigger' href='#jigger'>jigger</a></td><td class='target'>{0} jigger</td></tr>
-	<tr><td class='source'><a name='pinch' href='#pinch'>pinch</a></td><td class='target'>{0} nhúm</td></tr>
-	<tr><td class='source'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='target'>{0} lít Anh</td></tr>
-	<tr><td class='source'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source'><a name='grain' href='#grain'>grain</a></td><td class='target'>{0} grain</td></tr>
+	<tr><td class='source'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source'><a name='Eastern Asia: Japan' href='#Eastern Asia: Japan'>Eastern Asia: Japan</a></td><td class='source'>JPY-symbol</td><td class='target'>JP¥</td><td class='target'>¥</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td><td class='target' rowSpan='78'>moderate</td></tr>
+	<tr><td class='source' rowSpan='77'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='4'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='4'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>chấm</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} chấm</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>chấm</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} chấm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='4'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target'>bán kính trái đất</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} bán kính trái đất</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>R⊕</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} R⊕</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='2'><a name='cup' href='#cup'>cup</a></td><td class='source'>long-displayName</td><td class='target'>c</td><td class='target'>tách</td></tr>
+	<tr><td class='source' rowSpan='3'>short-other-nominative</td><td class='target'>{0} c</td><td class='target'>{0} tách</td></tr>
+	<tr><td class='source'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='target'>{0} tbsp</td><td class='target'>{0} thìa xúp</td></tr>
+	<tr><td class='source'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='target'>{0} tsp</td><td class='target'>{0} thìa cà phê</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='63'>▷missing◁</td><td class='target'>thìa ăn tráng miệng</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} thìa ăn tráng miệng</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>thìa tráng miệng</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} thìa tm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>thìa ăn tráng miệng Anh</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} thìa ăn tráng miệng Anh</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>thìa tráng miệng Anh</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} thìa tm Anh</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-displayName</td><td class='target'>giọt</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} giọt</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>giọt</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} giọt</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>dram</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dram chất lỏng Anh</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dram chất lỏng</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-displayName</td><td class='target'>jigger</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} jigger</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>jigger</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} jigger</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-displayName</td><td class='target'>nhúm</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} nhúm</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>nhúm</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} nhúm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-displayName</td><td class='target'>lít Anh</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} lít Anh</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>lít Anh</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} lít Anh</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='4'><a name='grain' href='#grain'>grain</a></td><td class='source'>long-displayName</td><td class='target'>gren</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} gren</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>gren</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} gren</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='4'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target'>candela</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} candela</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>cd</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} cd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>lumen</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} lumen</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>lm</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} lm</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source'>long</td><td class='target'>kibi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ki{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='source'>long</td><td class='target'>mebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Mi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='source'>long</td><td class='target'>gibi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Gi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='source'>long</td><td class='target'>tebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ti{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='source'>long</td><td class='target'>pebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Pi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='source'>long</td><td class='target'>exbi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ei{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='source'>long</td><td class='target'>zebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Zi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='source'>long</td><td class='target'>yobi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Yi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source'><a name='power2' href='#power2'>power2</a></td><td class='source' rowSpan='2'>long-other-nominative-dgender</td><td class='target'>{0}²</td><td class='target'>{0} vuông</td></tr>
+	<tr><td class='source'><a name='power3' href='#power3'>power3</a></td><td class='target'>{0}³</td><td class='target'>{0} khối</td></tr>
+	<tr><td class='source' rowSpan='409'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='2'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>chỉ số dưới {0}</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>chỉ số trên {0}</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target'>mặt trong đám mây</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>đãng trí<br>đầu trong đám mây<br>mặt trong đám mây<br>mặt trong sương mù</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target'>mặt thở ra</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>huýt sáo<br>rên rỉ<br>thì thầm<br>thở hổn hển<br>thở ra</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target'>mặt có đôi mắt xoắn ốc</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>chóng mặt<br>rắc rối<br>thôi miên<br>xoắn ốc</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target'>trái tim bốc lửa</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>bốc lửa<br>cháy<br>thèm khát<br>tình yêu<br>trái tim<br>trái tim linh thiêng</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>trái tim đang lành</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>cải thiện<br>đang lành<br>hồi phục<br>khỏe mạnh hơn<br>phục hồi</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='5'><a name='person' href='#person'>person</a></td><td class='source'>🧔 -name</td><td class='target'>người đàn ông có râu</td><td class='target'>người có râu</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>🧔‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>người đàn ông có râu</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>người đàn ông<br>người đàn ông có râu<br>râu</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>người phụ nữ có râu</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>người phụ nữ<br>người phụ nữ có râu<br>râu</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍💼 –keywords</td><td class='target'>…<br>ông việc văn phòng</td><td class='target'>công việc văn phòng<br>…</td></tr>
+	<tr><td class='source'>🤵 -name</td><td class='target'>người đàn ông mặc bộ vest</td><td class='target'>người mặc bộ vest</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>…<br>người đàn ông<br>người đàn ông mặc bộ vest</td><td class='target'>…<br>người<br>người mặc bộ vest</td></tr>
+	<tr><td class='source'>🤵‍♂ -name</td><td class='target'>người đàn ông mặc tuxedo</td><td class='target'>người đàn ông mặc bộ vest</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>🤵‍♂ –keywords</td><td class='target'>…<br>người đàn ông mặc tuxedo<br>tuxedo</td><td class='target'>bộ vest<br>…<br>người đàn ông mặc bộ vest</td></tr>
+	<tr><td class='source'>👰 -name</td><td class='target'>cô dâu với khăn voan</td><td class='target'>người đội khăn voan</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>👰 –keywords</td><td class='target'>…<br>cô dâu với khăn voan<br>…<br>mạng che mặt</td><td class='target'>…<br>khăn voan<br>người<br>người đội khăn voan</td></tr>
+	<tr><td class='source'>👰‍♂ -name</td><td class='target'>người đàn ông đội lúp cưới</td><td class='target'>người đàn ông đội khăn voan</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>👰‍♂ –keywords</td><td class='target'>lúp cưới<br>…<br>người đàn ông đội lúp cưới</td><td class='target'>khăn voan<br>…<br>người đàn ông đội khăn voan</td></tr>
+	<tr><td class='source'>👰‍♀ -name</td><td class='target'>người phụ nữ đội lúp cưới</td><td class='target'>người phụ nữ đội khăn voan</td></tr>
+	<tr><td class='source'>👰‍♀ –keywords</td><td class='target'>lúp cưới<br>…<br>người phụ nữ đội lúp cưới</td><td class='target'>khăn voan<br>…<br>người phụ nữ đội khăn voan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🍒 –keywords</td><td class='target'>…<br>hoa quả<br>thực vật</td><td class='target'>…<br>màu đỏ<br>quả mọng<br>trái cây</td><td class='target' rowSpan='207'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td><td class='source'>🥯 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>…<br>bữa sáng<br>…</td></tr>
+	<tr><td class='source'>🥙 –keywords</td><td class='target'>…<br>đồ ăn<br>…</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='8'><a name='place-map' href='#place-map'>place-map</a></td><td class='source'>🌍 -name</td><td class='target'>địa cầu hiển thị Châu Âu-Châu Phi</td><td class='target'>địa cầu thể hiện Châu Âu-Châu Phi</td></tr>
+	<tr><td class='source'>🌍 –keywords</td><td class='target'>…<br>địa cầu hiển thị Châu Âu-Châu Phi<br>…</td><td class='target'>…<br>địa cầu thể hiện Châu Âu-Châu Phi<br>…</td></tr>
+	<tr><td class='source'>🌎 -name</td><td class='target'>địa cầu hiển thị Châu Mỹ</td><td class='target'>địa cầu thể hiện Châu Mỹ</td></tr>
+	<tr><td class='source'>🌎 –keywords</td><td class='target'>…<br>địa cầu hiển thị Châu Mỹ<br>…</td><td class='target'>…<br>địa cầu thể hiện Châu Mỹ<br>…</td></tr>
+	<tr><td class='source'>🌏 -name</td><td class='target'>địa cầu hiển thị Châu Á-Châu Úc</td><td class='target'>địa cầu thể hiện Châu Á-Châu Úc</td></tr>
+	<tr><td class='source'>🌏 –keywords</td><td class='target'>…<br>địa cầu hiển thị Châu Á-Châu Úc<br>…</td><td class='target'>…<br>địa cầu thể hiện Châu Á-Châu Úc<br>…</td></tr>
+	<tr><td class='source'>🌐 -name</td><td class='target'>địa cầu với kinh tuyến</td><td class='target'>địa cầu có đường kinh tuyến</td></tr>
+	<tr><td class='source'>🌐 –keywords</td><td class='target'>địa cầu với kinh tuyến<br>…</td><td class='target'>địa cầu có đường kinh tuyến<br>…</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🏪 -name</td><td class='target'>cửa hàng tiện dụng</td><td class='target'>cửa hàng tiện lợi</td></tr>
+	<tr><td class='source'>🏪 –keywords</td><td class='target'>…<br>cửa hàng tiện dụng<br>…</td><td class='target'>…<br>cửa hàng tiện lợi<br>…</td></tr>
+	<tr><td class='source'>🗽 -name</td><td class='target'>Tượng nữ thần Tự do</td><td class='target'>Tượng Nữ thần Tự do</td></tr>
+	<tr><td class='source'>🗽 –keywords</td><td class='target'>…<br>Tượng nữ thần Tự do</td><td class='target'>…<br>Tượng Nữ thần Tự do</td></tr>
+	<tr><td class='source'><a name='place-religious' href='#place-religious'>place-religious</a></td><td class='source'>⛪ –keywords</td><td class='target'>chữ thập<br>đạo cơ đốc<br>…</td><td class='target'>cây thánh giá<br>Đạo cơ đốc<br>…</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🚇 –keywords</td><td class='target'>…<br>xe cộ</td><td class='target'>…<br>xe điện ngầm</td></tr>
+	<tr><td class='source'>🛤 -name</td><td class='target'>đường sắt</td><td class='target'>đường ray</td></tr>
+	<tr><td class='source'>🛤 –keywords</td><td class='target'>đường sắt<br>…</td><td class='target'>đường ray<br>…</td></tr>
+	<tr><td class='source'><a name='transport-air' href='#transport-air'>transport-air</a></td><td class='source'>🛫 –keywords</td><td class='target'>đăng ký<br>…</td><td class='target'>…<br>làm thủ tục<br>…</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>🪐 -name</td><td class='target'>hành tính có vành đai bao quanh</td><td class='target'>hành tinh có vành đai bao quanh</td></tr>
+	<tr><td class='source'>🪐 –keywords</td><td class='target'>hành tính có vành đai bao quanh<br>…</td><td class='target'>hành tinh có vành đai bao quanh<br>…</td></tr>
+	<tr><td class='source'>⛈ -name</td><td class='target'>đám mây với tia chớp và mưa</td><td class='target'>đám mây kèm chớp và mưa</td></tr>
+	<tr><td class='source'>⛈ –keywords</td><td class='target'>đám mây với tia chớp và mưa<br>…</td><td class='target'>đám mây kèm chớp và mưa<br>…</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Activities' href='#Activities'>Activities</a></td><td class='source'><a name='event' href='#event'>event</a></td><td class='source'>🎃 –keywords</td><td class='target'>…<br>lễ kỷ niệm<br>…</td><td class='target'>…<br>lễ hội<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='game' href='#game'>game</a></td><td class='source'>🎮 –keywords</td><td class='target'>thiết bị điều khiển<br>…</td><td class='target'>tay điều khiển<br>…</td></tr>
+	<tr><td class='source'>♟ –keywords</td><td class='target'>…<br>có thể mở rộng<br>…</td><td class='target'>…<br>thí tốt<br>…</td></tr>
+	<tr><td class='source'><a name='Objects' href='#Objects'>Objects</a></td><td class='source'><a name='tool' href='#tool'>tool</a></td><td class='source'>🔫 -name</td><td class='target'>súng lục</td><td class='target'>súng nước</td></tr>
+	<tr><td class='source' rowSpan='353'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='zodiac' href='#zodiac'>zodiac</a></td><td class='source'>♏ -name</td><td class='target'>cung bọ cạp</td><td class='target'>Thiên Yết</td></tr>
+	<tr><td class='source'>♓ -name</td><td class='target'>song ngư</td><td class='target'>Song Ngư</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='math' href='#math'>math</a></td><td class='source'>➕ -name</td><td class='target'>dấu cộng</td><td class='target'>cộng</td></tr>
+	<tr><td class='source'>➕ –keywords</td><td class='target'>…</td><td class='target'>+<br>…</td></tr>
+	<tr><td class='source'>➖ -name</td><td class='target'>dấu trừ</td><td class='target'>trừ</td></tr>
+	<tr><td class='source'>➖ –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>-<br>−<br>…</td></tr>
+	<tr><td class='source'>➗ –keywords</td><td class='target'>÷<br>…</td></tr>
+	<tr><td class='source'>≡ -name</td><td class='target'>dấu bằng</td><td class='target'>bằng</td></tr>
+	<tr><td class='source'>+ -name</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target'>dấu cộng</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>cộng<br>thêm</td></tr>
+	<tr><td class='source'>± -name</td><td class='target' rowSpan='2'>dấu cộng trừ</td></tr>
+	<tr><td class='source'>± –keywords</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>dấu trừ</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>dấu trừ<br>trừ</td></tr>
+	<tr><td class='source'>= -name</td><td class='target' rowSpan='2'>dấu bằng</td></tr>
+	<tr><td class='source'>= –keywords</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>dấu xấp xỉ</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>gần bằng<br>khoảng<br>xấp xỉ</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>dấu khác</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>khác<br>không bằng<br>không giống</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>dấu lớn hơn</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>lớn hơn<br>thẻ<br>thẻ đóng</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>dấu nhỏ hơn</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>nhỏ hơn<br>thẻ<br>thẻ mở</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>dấu nhỏ hơn hoặc bằng</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>bằng<br>không bằng<br>nhỏ hơn hoặc bằng</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>dấu lớn hơn hoặc bằng</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>bằng<br>không bằng<br>lớn hơn</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>dấu phủ định</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>không<br>phủ định</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>dấu sổ thẳng</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>dấu sổ dọc<br>dấu sổ thẳng<br>ống<br>thanh</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>dấu ngã</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='133'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>❗ -name</td><td class='target'>dấu chấm than</td><td class='target'>dấu chấm than đỏ</td></tr>
+	<tr><td class='source'>, -name</td><td class='target' rowSpan='318'>▷missing◁</td><td class='target' rowSpan='2'>dấu phẩy</td></tr>
+	<tr><td class='source'>, –keywords</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>dấu phẩy tượng hình</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>dấu phẩy<br>tượng hình</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>dấu phẩy ả rập</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>ả rập<br>dấu phẩy</td></tr>
+	<tr><td class='source'>; -name</td><td class='target' rowSpan='2'>dấu chấm phẩy</td></tr>
+	<tr><td class='source'>; –keywords</td></tr>
+	<tr><td class='source'>: -name</td><td class='target' rowSpan='2'>dấu hai chấm</td></tr>
+	<tr><td class='source'>: –keywords</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>dấu chấm phẩy ả rập</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>ả rập<br>dấu chấm phẩy</td></tr>
+	<tr><td class='source'>! -name</td><td class='target'>dấu chấm than</td></tr>
+	<tr><td class='source'>! –keywords</td><td class='target'>chấm than<br>dấu cảm<br>dấu chấm than</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>dấu chấm than ngược</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>chấm than<br>dấu cảm<br>dấu chấm than<br>ngược</td></tr>
+	<tr><td class='source'>? -name</td><td class='target' rowSpan='2'>dấu hỏi</td></tr>
+	<tr><td class='source'>? –keywords</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>dấu hỏi ngược</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>dấu hỏi<br>ngược</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>dấu hỏi ả rập</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>ả rập<br>dấu hỏi</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>dấu ngắt đoạn</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>đoạn<br>đoạn văn<br>ký hiệu</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target'>dấu tham chiếu</td></tr>
+	<tr><td class='source'>※ –keywords</td><td class='target'>dấu tham chiếu<br>ký hiệu tham chiếu</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>dấu sổ chéo</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>chéo<br>dấu sổ chéo<br>gạch chéo<br>xiên</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>dấu sổ ngược</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>dấu sổ ngược<br>gạch chéo ngược<br>xiên ngược</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>dấu và</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>dấu và<br>và</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>dấu thăng</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>dấu thăng<br>hashtag<br>số<br>thăng</td></tr>
+	<tr><td class='source'>% -name</td><td class='target'>phần trăm</td></tr>
+	<tr><td class='source'>% –keywords</td><td class='target'>dấu phần trăm<br>phần trăm</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target'>phần nghìn</td></tr>
+	<tr><td class='source'>‰ –keywords</td><td class='target'>dấu phần nghìn<br>phần nghìn</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target' rowSpan='2'>dấu nháy</td></tr>
+	<tr><td class='source'>′ –keywords</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>dấu nháy kép</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>dấu nháy<br>nháy</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>dấu nháy ba</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>dấu nháy</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>a còng</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target'>ký hiệu a còng<br>ký hiệu a móc</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>dấu hoa thị</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>dấu hoa thị<br>dấu sao<br>ký tự đại diện</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>nốt móc đơn</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>âm nhạc<br>móc đơn<br>nốt<br>phần tám</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>nốt giáng</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>âm nhạc<br>giáng<br>nốt</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>nốt thăng</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>âm nhạc<br>cao<br>nốt<br>thăng</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>dấu huyền</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>dấu<br>huyền<br>nốt</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>dấu sắc</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>dấu<br>nốt<br>sắc</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>dấu mũ</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>con trỏ<br>dấu<br>dấu tuyển loại trừ<br>điều khiển<br>lũy thừa<br>mũ<br>nêm<br>nón</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target' rowSpan='2'>dấu tách đôi</td></tr>
+	<tr><td class='source'>¨ –keywords</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>dấu gạch nối</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>dấu gạch ngang<br>dấu gạch nối</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>dấu gạch ngang dài</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>dòng<br>gạch ngang<br>gạch ngang dài<br>thanh</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>dấu gạch dưới</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>dòng<br>gạch chân<br>gạch dưới</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>dấu gạch nối-dấu trừ</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>dấu gạch ngang<br>dấu gạch nối<br>dấu trừ</td></tr>
+	<tr><td class='source'>. -name</td><td class='target'>dấu chấm</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>chấm câu<br>chấm hết<br>dấu chấm</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>dấu ba chấm</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>chấm chấm<br>dấu ba chấm<br>dấu chấm lửng<br>dấu lửng</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>dấu chấm tượng hình</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>chấm câu<br>chấm hết<br>dấu chấm<br>tượng hình</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>dấu chấm nối</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>chấm<br>nối</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>dấu chấm giữa katakana</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>chấm<br>dấu chấm giữa<br>dấu chấm ở giữa<br>điểm trung gian<br>katakana</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>dấu móc lửng trái</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>dấu móc lửng<br>dấu nháy<br>dấu nháy đơn<br>dấu nháy thông minh</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>dấu móc lửng phải</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>dấu móc lửng<br>dấu nháy<br>dấu nháy đơn<br>dấu nháy thông minh</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>dấu móc dưới phải</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>dấu móc dưới<br>dấu nháy<br>dấu nháy dưới</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>dấu móc lửng máy chữ</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>dấu móc lửng<br>dấu nháy<br>dấu nháy đơn</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>dấu nháy kép trái</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>dấu nháy<br>dấu nháy kép<br>dấu nháy thông minh</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>dấu nháy kép phải</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>dấu nháy<br>dấu nháy kép<br>dấu nháy thông minh</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>dấu nháy kép dưới phải</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>dấu nháy<br>dấu nháy dưới<br>dấu nháy kép<br>dấu nháy thông minh</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>dấu ngoặc đơn đóng</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc đơn<br>ngoặc tròn</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>dấu ngoặc vuông mở</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>dấu móc<br>dấu ngoặc<br>dấu ngoặc vuông</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>dấu ngoặc vuông đóng</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>dấu móc<br>dấu ngoặc<br>dấu ngoặc vuông</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>dấu ngoặc nhọn mở</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc nhọn</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>dấu ngoặc nhọn đóng</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc nhọn</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>dấu ngoặc mai rùa mở</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc hình mai rùa<br>dấu ngoặc mai rùa</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>dấu ngoặc mai rùa đóng</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc hình mai rùa<br>dấu ngoặc mai rùa</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>dấu ngoặc góc mở</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc góc<br>dấu ngoặc kim cương<br>dấu ngoặc nhọn</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>dấu ngoặc góc đóng</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc góc<br>dấu ngoặc kim cương<br>dấu ngoặc nhọn</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>dấu ngoặc góc kép mở</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc góc kép</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>dấu ngoặc góc kép đóng</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc góc kép</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>dấu ngoặc chữ L mở</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc chữ L</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>dấu ngoặc chữ L đóng</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc chữ L</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>dấu ngoặc chữ L rỗng mở</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc chữ L rỗng</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>dấu ngoặc chữ L rỗng đóng</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc chữ L rỗng</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>dấu ngoặc thấu kính rỗng mở</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc thấu kính rỗng</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>dấu ngoặc thấu kính rỗng đóng</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc thấu kính rỗng</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>dấu ngoặc thấu kính đen mở</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc thấu kính</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>dấu ngoặc thấu kính đen đóng</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>dấu ngoặc<br>dấu ngoặc thấu kính</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>đô la</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>đô la<br>peso<br>tiền<br>USD</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target'>xu</td></tr>
+	<tr><td class='source'>¢ –keywords</td><td class='target'>cent<br>xu</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>peso</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>won</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>KPW<br>KRW</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target'>mill</td></tr>
+	<tr><td class='source'>₥ –keywords</td><td class='target'>mil</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>bitcoin</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>BTC</td></tr>
+	<tr><td class='source' rowSpan='174'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‾ -name</td><td class='target'>đường trên đầu</td><td class='target' rowSpan='174'>comprehensive</td></tr>
+	<tr><td class='source'>‾ –keywords</td><td class='target'>in chồng<br>thanh phân số</td></tr>
+	<tr><td class='source'>‽ -name</td><td class='target' rowSpan='2'>dấu hỏi than</td></tr>
+	<tr><td class='source'>‽ –keywords</td></tr>
+	<tr><td class='source'>‸ -name</td><td class='target' rowSpan='2'>dấu sót</td></tr>
+	<tr><td class='source'>‸ –keywords</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>dấu chia văn bản</td></tr>
+	<tr><td class='source'>⁂ –keywords</td><td class='target'>dấu vẽ<br>ngôi sao</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target' rowSpan='2'>mũi tên trái có dấu gạch chéo</td></tr>
+	<tr><td class='source'>↚ –keywords</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target' rowSpan='2'>mũi tên phải có dấu gạch chéo</td></tr>
+	<tr><td class='source'>↛ –keywords</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target' rowSpan='2'>mũi tên trái phải có dấu gạch chéo</td></tr>
+	<tr><td class='source'>↮ –keywords</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target' rowSpan='2'>mũi tên sóng trái</td></tr>
+	<tr><td class='source'>↜ –keywords</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target' rowSpan='2'>mũi tên sóng phải</td></tr>
+	<tr><td class='source'>↝ –keywords</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target' rowSpan='2'>mũi tên trái hai đầu</td></tr>
+	<tr><td class='source'>↞ –keywords</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên hai đầu</td></tr>
+	<tr><td class='source'>↟ –keywords</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target' rowSpan='2'>mũi tên phải hai đầu</td></tr>
+	<tr><td class='source'>↠ –keywords</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống hai đầu</td></tr>
+	<tr><td class='source'>↡ –keywords</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target' rowSpan='2'>mũi tên trái có đuôi</td></tr>
+	<tr><td class='source'>↢ –keywords</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target' rowSpan='2'>mũi tên phải có đuôi</td></tr>
+	<tr><td class='source'>↣ –keywords</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target' rowSpan='2'>mũi tên trái từ thanh</td></tr>
+	<tr><td class='source'>↤ –keywords</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên từ thanh</td></tr>
+	<tr><td class='source'>↥ –keywords</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target' rowSpan='2'>mũi tên phải từ thanh</td></tr>
+	<tr><td class='source'>↦ –keywords</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống từ thanh</td></tr>
+	<tr><td class='source'>↧ –keywords</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target' rowSpan='2'>mũi tên lên xuống có nét ngang</td></tr>
+	<tr><td class='source'>↨ –keywords</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target' rowSpan='2'>mũi tên trái có vòng tròn nhỏ</td></tr>
+	<tr><td class='source'>↫ –keywords</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target' rowSpan='2'>mũi tên phải có vòng tròn nhỏ</td></tr>
+	<tr><td class='source'>↬ –keywords</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target' rowSpan='2'>mũi tên sóng trái phải</td></tr>
+	<tr><td class='source'>↭ –keywords</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>mũi tên xuống hình dích dắc</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>hình dích dắc</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên có đầu sang trái</td></tr>
+	<tr><td class='source'>↰ –keywords</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên có đầu sang phải</td></tr>
+	<tr><td class='source'>↱ –keywords</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống có đầu sang trái</td></tr>
+	<tr><td class='source'>↲ –keywords</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống có đầu sang phải</td></tr>
+	<tr><td class='source'>↳ –keywords</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target' rowSpan='2'>mũi tên phải có góc hướng xuống</td></tr>
+	<tr><td class='source'>↴ –keywords</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống có góc sang trái</td></tr>
+	<tr><td class='source'>↵ –keywords</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target' rowSpan='2'>mũi tên hình bán nguyệt đầu ngược chiều kim đồng hồ</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>mũi tên hình bán nguyệt đầu theo chiều kim đồng hồ</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>mũi tên tây bắc đến thanh dài</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target' rowSpan='2'>mũi tên trái đến thanh trên mũi tên phải đến thanh</td></tr>
+	<tr><td class='source'>↹ –keywords</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>mũi tên mở tròn ngược chiều kim đồng hồ</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>mũi tên mở tròn theo chiều kim đồng hồ</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>nét thẳng trái có ngạnh hướng lên</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target' rowSpan='2'>nét thẳng trái có ngạnh hướng xuống</td></tr>
+	<tr><td class='source'>↽ –keywords</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>nét thẳng hướng lên có ngạnh sang phải</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>nét thẳng hướng lên có ngạnh sang trái</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>nét thẳng phải có ngạnh hướng lên</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>nét thẳng phải có ngạnh hướng xuống</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>nét thẳng hướng xuống có ngạnh sang phải</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>nét thẳng hướng xuống có ngạnh sang trái</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>ngạnh</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target' rowSpan='2'>mũi tên phải trên mũi tên trái</td></tr>
+	<tr><td class='source'>⇄ –keywords</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target' rowSpan='2'>mũi tên ghép trái</td></tr>
+	<tr><td class='source'>⇇ –keywords</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target' rowSpan='2'>mũi tên ghép hướng lên</td></tr>
+	<tr><td class='source'>⇈ –keywords</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target' rowSpan='2'>mũi tên ghép phải</td></tr>
+	<tr><td class='source'>⇉ –keywords</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target' rowSpan='2'>mũi tên ghép hướng xuống</td></tr>
+	<tr><td class='source'>⇊ –keywords</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target' rowSpan='2'>nét thẳng có ngạnh trái trên nét thẳng có ngạnh phải</td></tr>
+	<tr><td class='source'>⇋ –keywords</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target' rowSpan='2'>nét thẳng có ngạnh phải trên nét thẳng có ngạnh trái</td></tr>
+	<tr><td class='source'>⇌ –keywords</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target' rowSpan='2'>mũi tên kép trái</td></tr>
+	<tr><td class='source'>⇐ –keywords</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target' rowSpan='2'>mũi tên kép trái có dấu gạch chéo</td></tr>
+	<tr><td class='source'>⇍ –keywords</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target' rowSpan='2'>mũi tên kép hướng lên</td></tr>
+	<tr><td class='source'>⇑ –keywords</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target' rowSpan='2'>mũi tên kép phải</td></tr>
+	<tr><td class='source'>⇒ –keywords</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target' rowSpan='2'>mũi tên kép phải có dấu gạch chéo</td></tr>
+	<tr><td class='source'>⇏ –keywords</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target' rowSpan='2'>mũi tên kép xuống</td></tr>
+	<tr><td class='source'>⇓ –keywords</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target' rowSpan='2'>mũi tên kép trái phải</td></tr>
+	<tr><td class='source'>⇔ –keywords</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target' rowSpan='2'>mũi tên kép trái phải có dấu gạch chéo</td></tr>
+	<tr><td class='source'>⇎ –keywords</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target' rowSpan='2'>mũi tên kép tây bắc</td></tr>
+	<tr><td class='source'>⇖ –keywords</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target' rowSpan='2'>mũi tên kép đông bắc</td></tr>
+	<tr><td class='source'>⇗ –keywords</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target' rowSpan='2'>mũi tên kép đông nam</td></tr>
+	<tr><td class='source'>⇘ –keywords</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target' rowSpan='2'>mũi tên kép tây nam</td></tr>
+	<tr><td class='source'>⇙ –keywords</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target' rowSpan='2'>mũi tên ba trái</td></tr>
+	<tr><td class='source'>⇚ –keywords</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target' rowSpan='2'>mũi tên ba phải</td></tr>
+	<tr><td class='source'>⇛ –keywords</td></tr>
+	<tr><td class='source'>⇜ -name</td><td class='target' rowSpan='2'>mũi tên ngoằn ngoèo trái</td></tr>
+	<tr><td class='source'>⇜ –keywords</td></tr>
+	<tr><td class='source'>⇝ -name</td><td class='target' rowSpan='2'>mũi tên ngoằn ngoèo phải</td></tr>
+	<tr><td class='source'>⇝ –keywords</td></tr>
+	<tr><td class='source'>⇞ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên có hai nét gạch</td></tr>
+	<tr><td class='source'>⇞ –keywords</td></tr>
+	<tr><td class='source'>⇟ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống có hai nét gạch</td></tr>
+	<tr><td class='source'>⇟ –keywords</td></tr>
+	<tr><td class='source'>⇠ -name</td><td class='target' rowSpan='2'>mũi tên trái nét đứt</td></tr>
+	<tr><td class='source'>⇠ –keywords</td></tr>
+	<tr><td class='source'>⇡ -name</td><td class='target' rowSpan='2'>mũi tên hướng lên nét đứt</td></tr>
+	<tr><td class='source'>⇡ –keywords</td></tr>
+	<tr><td class='source'>⇢ -name</td><td class='target' rowSpan='2'>mũi tên phải nét đứt</td></tr>
+	<tr><td class='source'>⇢ –keywords</td></tr>
+	<tr><td class='source'>⇣ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống nét đứt</td></tr>
+	<tr><td class='source'>⇣ –keywords</td></tr>
+	<tr><td class='source'>⇤ -name</td><td class='target' rowSpan='2'>mũi tên trái đến thanh</td></tr>
+	<tr><td class='source'>⇤ –keywords</td></tr>
+	<tr><td class='source'>⇥ -name</td><td class='target' rowSpan='2'>mũi tên phải đến thanh</td></tr>
+	<tr><td class='source'>⇥ –keywords</td></tr>
+	<tr><td class='source'>⇦ -name</td><td class='target' rowSpan='2'>mũi tên rỗng trái</td></tr>
+	<tr><td class='source'>⇦ –keywords</td></tr>
+	<tr><td class='source'>⇧ -name</td><td class='target' rowSpan='2'>mũi tên rỗng hướng lên</td></tr>
+	<tr><td class='source'>⇧ –keywords</td></tr>
+	<tr><td class='source'>⇨ -name</td><td class='target' rowSpan='2'>mũi tên rỗng phải</td></tr>
+	<tr><td class='source'>⇨ –keywords</td></tr>
+	<tr><td class='source'>⇩ -name</td><td class='target' rowSpan='2'>mũi tên rỗng hướng xuống</td></tr>
+	<tr><td class='source'>⇩ –keywords</td></tr>
+	<tr><td class='source'>⇪ -name</td><td class='target' rowSpan='2'>mũi tên rỗng hướng lên từ thanh</td></tr>
+	<tr><td class='source'>⇪ –keywords</td></tr>
+	<tr><td class='source'>⇵ -name</td><td class='target' rowSpan='2'>mũi tên hướng xuống bên trái mũi tên hướng lên</td></tr>
+	<tr><td class='source'>⇵ –keywords</td></tr>
+	<tr><td class='source'>∀ -name</td><td class='target'>với mọi</td></tr>
+	<tr><td class='source'>∀ –keywords</td><td class='target'>bất kỳ<br>chung<br>đã cho<br>tất cả</td></tr>
+	<tr><td class='source'>∂ -name</td><td class='target'>vi phân riêng phần</td></tr>
+	<tr><td class='source'>∂ –keywords</td><td class='target'>vi phân</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target' rowSpan='2'>tồn tại</td></tr>
+	<tr><td class='source'>∃ –keywords</td></tr>
+	<tr><td class='source'>∅ -name</td><td class='target'>tập hợp rỗng</td></tr>
+	<tr><td class='source'>∅ –keywords</td><td class='target'>toán học<br>toán tử tập hợp</td></tr>
+	<tr><td class='source'>∉ -name</td><td class='target'>không thuộc</td></tr>
+	<tr><td class='source'>∉ –keywords</td><td class='target'>phần tử</td></tr>
+	<tr><td class='source'>∋ -name</td><td class='target'>chứa</td></tr>
+	<tr><td class='source'>∋ –keywords</td><td class='target'>phần tử</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='2'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source' rowSpan='2'><a name='Short Unit List' href='#Short Unit List'>Short Unit List</a></td><td class='source'>2</td><td class='target' rowSpan='2'>{0} và {1}</td><td class='target' rowSpan='2'>{0}, {1}</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>end</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='2'><a name='Ordinal' href='#Ordinal'>Ordinal</a></td><td class='source'>one</td><td class='target'>Rẽ vào lối rẽ thứ nhất bên phải.</td><td class='target'>▷removed◁</td></tr>
+	<tr><td class='source'>other</td><td class='target'>Rẽ vào lối rẽ thứ {0} bên phải.</td><td class='target' rowSpan='3'>{0}?</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>Rẽ vào lối rẽ thứ nhất bên phải.</td></tr>
+	<tr><td class='source'>other</td><td class='target'>Rẽ vào lối rẽ thứ {0} bên phải.</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

@@ -58,10 +58,588 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='4'>zu</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='2'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='2'><a name='Parse' href='#Parse'>Parse</a></td><td class='source'>general-lenient($)</td><td class='source' rowSpan='582'>zu</td><td class='target'>[\$﹩＄$]</td><td class='target'>[\$﹩＄]</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>general-lenient(£)</td><td class='target'>[£₤]</td><td class='target'>[£₤￡]</td></tr>
+	<tr><td class='source' rowSpan='284'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='4'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='3'><a name='C' href='#C'>C</a></td><td class='source'>Cajun French ► frc</td><td class='target'>frc</td><td class='target'>isi-Cajun French</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant</td><td class='target' rowSpan='2'>isi-Chinese (Okosiko)</td><td class='target'>isi-Chinese (Sasendulo)</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>isi-Chinese (sasendulo)</td></tr>
+	<tr><td class='source'><a name='D' href='#D'>D</a></td><td class='source'>Dogri ► doi</td><td class='target'>doi</td><td class='target'>isi-Dogri</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='L' href='#L'>L</a></td><td class='source'>Louisiana Creole ► lou</td><td class='target'>lou</td><td class='target'>isi-Louisiana Creole</td></tr>
+	<tr><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='S' href='#S'>S</a></td><td class='source'>Spanish ► es_MX</td><td class='target'>Isi-Mexican Spanish</td><td class='target'>isi-Mexican Spanish</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='125'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Zinh</td><td class='target'>Zinh</td><td class='target'>Okuthethwe</td><td class='target' rowSpan='125'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='Limited Use' href='#Limited Use'>Limited Use</a></td><td class='source'>Adlm</td><td class='target'>Adlm</td><td class='target'>isi-Adlam</td></tr>
+	<tr><td class='source'>Bali</td><td class='target'>Bali</td><td class='target'>isi-Balinese</td></tr>
+	<tr><td class='source'>Bamu</td><td class='target'>Bamu</td><td class='target'>isi-Bamum</td></tr>
+	<tr><td class='source'>Batk</td><td class='target'>Batk</td><td class='target'>isi-Batak</td></tr>
+	<tr><td class='source'>Cakm</td><td class='target'>Cakm</td><td class='target'>isi-Chakma</td></tr>
+	<tr><td class='source'>Cans</td><td class='target'>Cans</td><td class='target'>i-Unified Canadian Aboriginal Syllabics</td></tr>
+	<tr><td class='source'>Cham</td><td class='target'>Cham</td><td class='target'>isi-Cham</td></tr>
+	<tr><td class='source'>Cher</td><td class='target'>Cher</td><td class='target'>isi-Cherokee</td></tr>
+	<tr><td class='source'>Gong</td><td class='target'>Gong</td><td class='target'>isi-Gunjala Gondi</td></tr>
+	<tr><td class='source'>Hmnp</td><td class='target'>Hmnp</td><td class='target'>i-Nyiakeng Puachue Hmong</td></tr>
+	<tr><td class='source'>Java</td><td class='target'>Java</td><td class='target'>isi-Javanese</td></tr>
+	<tr><td class='source'>Kali</td><td class='target'>Kali</td><td class='target'>isi-Kayah Li</td></tr>
+	<tr><td class='source'>Lana</td><td class='target'>Lana</td><td class='target'>isi-Lanna</td></tr>
+	<tr><td class='source'>Lepc</td><td class='target'>Lepc</td><td class='target'>isi-Lepcha</td></tr>
+	<tr><td class='source'>Limb</td><td class='target'>Limb</td><td class='target'>isi-Limbu</td></tr>
+	<tr><td class='source'>Lisu</td><td class='target'>Lisu</td><td class='target'>isi-Fraser</td></tr>
+	<tr><td class='source'>Mand</td><td class='target'>Mand</td><td class='target'>isi-Mandaean</td></tr>
+	<tr><td class='source'>Mtei</td><td class='target'>Mtei</td><td class='target'>isi-Meitei Mayek</td></tr>
+	<tr><td class='source'>Nkoo</td><td class='target'>Nkoo</td><td class='target'>isi-N’Ko</td></tr>
+	<tr><td class='source'>Olck</td><td class='target'>Olck</td><td class='target'>isi-Ol Chiki</td></tr>
+	<tr><td class='source'>Osge</td><td class='target'>Osge</td><td class='target'>isi-Osage</td></tr>
+	<tr><td class='source'>Plrd</td><td class='target'>Plrd</td><td class='target'>isi-Pollard Phonetic</td></tr>
+	<tr><td class='source'>Rohg</td><td class='target'>Rohg</td><td class='target'>isi-Hanifi Rohingya</td></tr>
+	<tr><td class='source'>Saur</td><td class='target'>Saur</td><td class='target'>isi-Saurashtra</td></tr>
+	<tr><td class='source'>Sund</td><td class='target'>Sund</td><td class='target'>isi-Sundanese</td></tr>
+	<tr><td class='source'>Sylo</td><td class='target'>Sylo</td><td class='target'>isi-Syloti Nagri</td></tr>
+	<tr><td class='source'>Syrc</td><td class='target'>Syrc</td><td class='target'>isi-Syriac</td></tr>
+	<tr><td class='source'>Tale</td><td class='target'>Tale</td><td class='target'>isi-Tai Le</td></tr>
+	<tr><td class='source'>Talu</td><td class='target'>Talu</td><td class='target'>isi-New Tai Lue</td></tr>
+	<tr><td class='source'>Tavt</td><td class='target'>Tavt</td><td class='target'>isi-Tai Viet</td></tr>
+	<tr><td class='source'>Tfng</td><td class='target'>Tfng</td><td class='target'>isi-Tifinagh</td></tr>
+	<tr><td class='source'>Vaii</td><td class='target'>Vaii</td><td class='target'>isi-Vai</td></tr>
+	<tr><td class='source'>Wcho</td><td class='target'>Wcho</td><td class='target'>isi-Wancho</td></tr>
+	<tr><td class='source'>Yiii</td><td class='target'>Yiii</td><td class='target'>isi-Yi</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='Historic' href='#Historic'>Historic</a></td><td class='source'>Aghb</td><td class='target'>Aghb</td><td class='target'>isi-Caucasian Albanian</td></tr>
+	<tr><td class='source'>Ahom</td><td class='target'>Ahom</td><td class='target'>isi-Ahom</td></tr>
+	<tr><td class='source'>Armi</td><td class='target'>Armi</td><td class='target'>isi-Imperial Aramaic</td></tr>
+	<tr><td class='source'>Avst</td><td class='target'>Avst</td><td class='target'>isi-Avestan</td></tr>
+	<tr><td class='source'>Bass</td><td class='target'>Bass</td><td class='target'>isi-Bassa Vah</td></tr>
+	<tr><td class='source'>Bhks</td><td class='target'>Bhks</td><td class='target'>isi-Bhaiksuki</td></tr>
+	<tr><td class='source'>Brah</td><td class='target'>Brah</td><td class='target'>isi-Brahmi</td></tr>
+	<tr><td class='source'>Bugi</td><td class='target'>Bugi</td><td class='target'>isi-Buginese</td></tr>
+	<tr><td class='source'>Buhd</td><td class='target'>Buhd</td><td class='target'>isi-Buhid</td></tr>
+	<tr><td class='source'>Cari</td><td class='target'>Cari</td><td class='target'>isi-Carian</td></tr>
+	<tr><td class='source'>Chrs</td><td class='target'>Chrs</td><td class='target'>isi-Chorasmian</td></tr>
+	<tr><td class='source'>Copt</td><td class='target'>Copt</td><td class='target'>isi-Coptic</td></tr>
+	<tr><td class='source'>Cprt</td><td class='target'>Cprt</td><td class='target'>isi-Cypriot</td></tr>
+	<tr><td class='source'>Diak</td><td class='target'>Diak</td><td class='target'>isi-Dives Akuru</td></tr>
+	<tr><td class='source'>Dogr</td><td class='target'>Dogr</td><td class='target'>isi-Dogra</td></tr>
+	<tr><td class='source'>Dsrt</td><td class='target'>Dsrt</td><td class='target'>isi-Deseret</td></tr>
+	<tr><td class='source'>Dupl</td><td class='target'>Dupl</td><td class='target'>isi-Duployan shorthand</td></tr>
+	<tr><td class='source'>Egyp</td><td class='target'>Egyp</td><td class='target'>i-Egyptian hieroglyphs</td></tr>
+	<tr><td class='source'>Elba</td><td class='target'>Elba</td><td class='target'>isi-Elbasan</td></tr>
+	<tr><td class='source'>Elym</td><td class='target'>Elym</td><td class='target'>isi-Elymaic</td></tr>
+	<tr><td class='source'>Glag</td><td class='target'>Glag</td><td class='target'>isi-Glagolitic</td></tr>
+	<tr><td class='source'>Gonm</td><td class='target'>Gonm</td><td class='target'>isi-Masaram Gondi</td></tr>
+	<tr><td class='source'>Goth</td><td class='target'>Goth</td><td class='target'>isi-Gothic</td></tr>
+	<tr><td class='source'>Gran</td><td class='target'>Gran</td><td class='target'>isi-Grantha</td></tr>
+	<tr><td class='source'>Hano</td><td class='target'>Hano</td><td class='target'>isi-Hanunoo</td></tr>
+	<tr><td class='source'>Hatr</td><td class='target'>Hatr</td><td class='target'>isi-Hatran</td></tr>
+	<tr><td class='source'>Hluw</td><td class='target'>Hluw</td><td class='target'>isi-Anatolian Hieroglyphs</td></tr>
+	<tr><td class='source'>Hmng</td><td class='target'>Hmng</td><td class='target'>isi-Pahawh Hmong</td></tr>
+	<tr><td class='source'>Hung</td><td class='target'>Hung</td><td class='target'>isi-Old Hungarian</td></tr>
+	<tr><td class='source'>Ital</td><td class='target'>Ital</td><td class='target'>i-Old Italic</td></tr>
+	<tr><td class='source'>Khar</td><td class='target'>Khar</td><td class='target'>isi-Kharoshthi</td></tr>
+	<tr><td class='source'>Khoj</td><td class='target'>Khoj</td><td class='target'>isi-Khojki</td></tr>
+	<tr><td class='source'>Kits</td><td class='target'>Kits</td><td class='target'>i-Khitan small script</td></tr>
+	<tr><td class='source'>Kthi</td><td class='target'>Kthi</td><td class='target'>isi-Kaithi</td></tr>
+	<tr><td class='source'>Lina</td><td class='target'>Lina</td><td class='target'>i-Linear A</td></tr>
+	<tr><td class='source'>Linb</td><td class='target'>Linb</td><td class='target'>i-Linear B</td></tr>
+	<tr><td class='source'>Lyci</td><td class='target'>Lyci</td><td class='target'>i-Lycian</td></tr>
+	<tr><td class='source'>Lydi</td><td class='target'>Lydi</td><td class='target'>i-Lydian</td></tr>
+	<tr><td class='source'>Mahj</td><td class='target'>Mahj</td><td class='target'>i-Mahajani</td></tr>
+	<tr><td class='source'>Maka</td><td class='target'>Maka</td><td class='target'>i-Makasar</td></tr>
+	<tr><td class='source'>Mani</td><td class='target'>Mani</td><td class='target'>i-Manichaean</td></tr>
+	<tr><td class='source'>Marc</td><td class='target'>Marc</td><td class='target'>i-Marchen</td></tr>
+	<tr><td class='source'>Medf</td><td class='target'>Medf</td><td class='target'>i-Medefaidrin</td></tr>
+	<tr><td class='source'>Mend</td><td class='target'>Mend</td><td class='target'>i-Mende</td></tr>
+	<tr><td class='source'>Merc</td><td class='target'>Merc</td><td class='target'>i-Meroitic Cursive</td></tr>
+	<tr><td class='source'>Mero</td><td class='target'>Mero</td><td class='target'>i-Meroitic</td></tr>
+	<tr><td class='source'>Modi</td><td class='target'>Modi</td><td class='target'>i-Modi</td></tr>
+	<tr><td class='source'>Mroo</td><td class='target'>Mroo</td><td class='target'>i-Mro</td></tr>
+	<tr><td class='source'>Mult</td><td class='target'>Mult</td><td class='target'>i-Multani</td></tr>
+	<tr><td class='source'>Nand</td><td class='target'>Nand</td><td class='target'>i-Nandinagari</td></tr>
+	<tr><td class='source'>Narb</td><td class='target'>Narb</td><td class='target'>i-Old North Arabian</td></tr>
+	<tr><td class='source'>Nbat</td><td class='target'>Nbat</td><td class='target'>i-Nabataean</td></tr>
+	<tr><td class='source'>Nshu</td><td class='target'>Nshu</td><td class='target'>i-Nüshu</td></tr>
+	<tr><td class='source'>Ogam</td><td class='target'>Ogam</td><td class='target'>i-Ogham</td></tr>
+	<tr><td class='source'>Orkh</td><td class='target'>Orkh</td><td class='target'>i-Orkhon</td></tr>
+	<tr><td class='source'>Osma</td><td class='target'>Osma</td><td class='target'>i-Osmanya</td></tr>
+	<tr><td class='source'>Palm</td><td class='target'>Palm</td><td class='target'>i-Palmyrene</td></tr>
+	<tr><td class='source'>Pauc</td><td class='target'>Pauc</td><td class='target'>i-Pau Cin Hau</td></tr>
+	<tr><td class='source'>Perm</td><td class='target'>Perm</td><td class='target'>i-Old Permic</td></tr>
+	<tr><td class='source'>Phag</td><td class='target'>Phag</td><td class='target'>i-Phags-pa</td></tr>
+	<tr><td class='source'>Phli</td><td class='target'>Phli</td><td class='target'>i-Inscriptional Pahlavi</td></tr>
+	<tr><td class='source'>Phlp</td><td class='target'>Phlp</td><td class='target'>i-Psalter Pahlavi</td></tr>
+	<tr><td class='source'>Phnx</td><td class='target'>Phnx</td><td class='target'>i-Phoenician</td></tr>
+	<tr><td class='source'>Prti</td><td class='target'>Prti</td><td class='target'>i-Inscriptional Parthian</td></tr>
+	<tr><td class='source'>Rjng</td><td class='target'>Rjng</td><td class='target'>i-Rejang</td></tr>
+	<tr><td class='source'>Runr</td><td class='target'>Runr</td><td class='target'>i-Runic</td></tr>
+	<tr><td class='source'>Samr</td><td class='target'>Samr</td><td class='target'>i-Samaritan</td></tr>
+	<tr><td class='source'>Sarb</td><td class='target'>Sarb</td><td class='target'>i-Old South Arabian</td></tr>
+	<tr><td class='source'>Sgnw</td><td class='target'>Sgnw</td><td class='target'>i-SignWriting</td></tr>
+	<tr><td class='source'>Shaw</td><td class='target'>Shaw</td><td class='target'>i-Shavian</td></tr>
+	<tr><td class='source'>Shrd</td><td class='target'>Shrd</td><td class='target'>i-Sharada</td></tr>
+	<tr><td class='source'>Sidd</td><td class='target'>Sidd</td><td class='target'>i-Siddham</td></tr>
+	<tr><td class='source'>Sind</td><td class='target'>Sind</td><td class='target'>i-Khudawadi</td></tr>
+	<tr><td class='source'>Sogd</td><td class='target'>Sogd</td><td class='target'>i-Sogdian</td></tr>
+	<tr><td class='source'>Sogo</td><td class='target'>Sogo</td><td class='target'>i-Old Sogdian</td></tr>
+	<tr><td class='source'>Sora</td><td class='target'>Sora</td><td class='target'>i-Sora Sompeng</td></tr>
+	<tr><td class='source'>Soyo</td><td class='target'>Soyo</td><td class='target'>i-Soyombo</td></tr>
+	<tr><td class='source'>Tagb</td><td class='target'>Tagb</td><td class='target'>i-Tagbanwa</td></tr>
+	<tr><td class='source'>Takr</td><td class='target'>Takr</td><td class='target'>i-Takri</td></tr>
+	<tr><td class='source'>Tang</td><td class='target'>Tang</td><td class='target'>i-Tangut</td></tr>
+	<tr><td class='source'>Tglg</td><td class='target'>Tglg</td><td class='target'>i-Tagalog</td></tr>
+	<tr><td class='source'>Tirh</td><td class='target'>Tirh</td><td class='target'>i-Tirhuta</td></tr>
+	<tr><td class='source'>Ugar</td><td class='target'>Ugar</td><td class='target'>i-Ugaritic</td></tr>
+	<tr><td class='source'>Wara</td><td class='target'>Wara</td><td class='target'>i-Varang Kshiti</td></tr>
+	<tr><td class='source'>Xpeo</td><td class='target'>Xpeo</td><td class='target'>i-Old Persian</td></tr>
+	<tr><td class='source'>Xsux</td><td class='target'>Xsux</td><td class='target'>i-Sumero-Akkadian Cuneiform</td></tr>
+	<tr><td class='source'>Yezi</td><td class='target'>Yezi</td><td class='target'>i-Yezidi</td></tr>
+	<tr><td class='source'>Zanb</td><td class='target'>Zanb</td><td class='target'>i-Zanabazar Square</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Other' href='#Other'>Other</a></td><td class='source'>Aran</td><td class='target'>Aran</td><td class='target'>i-Nastaliq</td></tr>
+	<tr><td class='source'>Qaag</td><td class='target'>Qaag</td><td class='target'>i-Zawgyi</td></tr>
+	<tr><td class='source'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source'><a name='World' href='#World'>World</a></td><td class='source'>EZ</td><td class='target'>EZ</td><td class='target'>I-Eurozone</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source'>gbwls</td><td class='target'>I-Wales</td><td class='target'>i-Wales</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='101'><a name='Locale Variants' href='#Locale Variants'>Locale Variants</a></td><td class='source' rowSpan='101'><a name='null' href='#null'>null</a></td><td class='source'>1606NICT</td><td class='target'>1606NICT</td><td class='target'>Isi-French esimaphakathi kuya ku-1606</td><td class='target' rowSpan='151'>comprehensive</td></tr>
+	<tr><td class='source'>1694ACAD</td><td class='target'>1694ACAD</td><td class='target'>isi-French Samanje</td></tr>
+	<tr><td class='source'>1901</td><td class='target'>1901</td><td class='target'>Ubhalomagama lwase-German losiko</td></tr>
+	<tr><td class='source'>1959ACAD</td><td class='target'>1959ACAD</td><td class='target'>Okwemfundo</td></tr>
+	<tr><td class='source'>1994</td><td class='target'>1994</td><td class='target'>Ubhalomagama lwase-Russia olusezingeni</td></tr>
+	<tr><td class='source'>1996</td><td class='target'>1996</td><td class='target'>Ubhalomagama lwase-German lwango-1996</td></tr>
+	<tr><td class='source'>ABL1943</td><td class='target'>ABL1943</td><td class='target'>Ukwakhiwa kobhalomagama kwango-1943</td></tr>
+	<tr><td class='source'>AKUAPEM</td><td class='target'>AKUAPEM</td><td class='target'>i-AKUAPEM</td></tr>
+	<tr><td class='source'>ALALC97</td><td class='target'>ALALC97</td><td class='target'>i-ALA-LC Romanization, i-edishini yango-1997</td></tr>
+	<tr><td class='source'>ALUKU</td><td class='target'>ALUKU</td><td class='target'>Ulwimi lwesi-Aluku</td></tr>
+	<tr><td class='source'>AO1990</td><td class='target'>AO1990</td><td class='target'>Isivumelwano Sobhalomagama Lolwimi lesi-Portuguese sango-1990</td></tr>
+	<tr><td class='source'>ARANES</td><td class='target'>ARANES</td><td class='target'>i-ARANES</td></tr>
+	<tr><td class='source'>ASANTE</td><td class='target'>ASANTE</td><td class='target'>i-ASANTE</td></tr>
+	<tr><td class='source'>AUVERN</td><td class='target'>AUVERN</td><td class='target'>i-AUVERN</td></tr>
+	<tr><td class='source'>BAKU1926</td><td class='target'>BAKU1926</td><td class='target'>Uhlamvu lwesi-Turkic Latin oluhlanganisiwe</td></tr>
+	<tr><td class='source'>BALANKA</td><td class='target'>BALANKA</td><td class='target'>Ulwimi lwe-Balank lwe-Anii</td></tr>
+	<tr><td class='source'>BARLA</td><td class='target'>BARLA</td><td class='target'>Iqembu lolwomi lwesi-Barlavento lwe-Kabuverdianu</td></tr>
+	<tr><td class='source'>BASICENG</td><td class='target'>BASICENG</td><td class='target'>i-BASICENG</td></tr>
+	<tr><td class='source'>BAUDDHA</td><td class='target'>BAUDDHA</td><td class='target'>i-BAUDDHA</td></tr>
+	<tr><td class='source'>BISCAYAN</td><td class='target'>BISCAYAN</td><td class='target'>i-BISCAYAN</td></tr>
+	<tr><td class='source'>BISKE</td><td class='target'>BISKE</td><td class='target'>Ulwimi lwe-San Giorgio/Bila</td></tr>
+	<tr><td class='source'>BOHORIC</td><td class='target'>BOHORIC</td><td class='target'>Uhlambu lwe-Bohorič</td></tr>
+	<tr><td class='source'>BOONT</td><td class='target'>BOONT</td><td class='target'>i-Boontling</td></tr>
+	<tr><td class='source'>BORNHOLM</td><td class='target'>BORNHOLM</td><td class='target'>i-BORNHOLM</td></tr>
+	<tr><td class='source'>CISAUP</td><td class='target'>CISAUP</td><td class='target'>i-CISAUP</td></tr>
+	<tr><td class='source'>COLB1945</td><td class='target'>COLB1945</td><td class='target'>Ubhalomagama lwe-Portuguese-Brazilian lwango-1945</td></tr>
+	<tr><td class='source'>CORNU</td><td class='target'>CORNU</td><td class='target'>i-CORNU</td></tr>
+	<tr><td class='source'>CREISS</td><td class='target'>CREISS</td><td class='target'>i-CREISS</td></tr>
+	<tr><td class='source'>DAJNKO</td><td class='target'>DAJNKO</td><td class='target'>Uhlamvu lwe-Dajnko</td></tr>
+	<tr><td class='source'>EKAVSK</td><td class='target'>EKAVSK</td><td class='target'>isi-Serbian esinokuphimisa kwe-Ekavian</td></tr>
+	<tr><td class='source'>EMODENG</td><td class='target'>EMODENG</td><td class='target'>i-English Yesimanje</td></tr>
+	<tr><td class='source'>FONIPA</td><td class='target'>FONIPA</td><td class='target'>Ifonotiki ye-IPA</td></tr>
+	<tr><td class='source'>FONKIRSH</td><td class='target'>FONKIRSH</td><td class='target'>i-FONKIRSH</td></tr>
+	<tr><td class='source'>FONNAPA</td><td class='target'>FONNAPA</td><td class='target'>i-FONNAPA</td></tr>
+	<tr><td class='source'>FONUPA</td><td class='target'>FONUPA</td><td class='target'>Ifonotiki ye-UPA</td></tr>
+	<tr><td class='source'>FONXSAMP</td><td class='target'>FONXSAMP</td><td class='target'>i-FONXSAMP</td></tr>
+	<tr><td class='source'>GASCON</td><td class='target'>GASCON</td><td class='target'>i-GASCON</td></tr>
+	<tr><td class='source'>GRCLASS</td><td class='target'>GRCLASS</td><td class='target'>i-GRCLASS</td></tr>
+	<tr><td class='source'>GRITAL</td><td class='target'>GRITAL</td><td class='target'>i-GRITAL</td></tr>
+	<tr><td class='source'>GRMISTR</td><td class='target'>GRMISTR</td><td class='target'>i-GRMISTR</td></tr>
+	<tr><td class='source'>HEPBURN</td><td class='target'>HEPBURN</td><td class='target'>i-Hepburn romanization</td></tr>
+	<tr><td class='source'>HOGNORSK</td><td class='target'>HOGNORSK</td><td class='target'>i-HOGNORSK</td></tr>
+	<tr><td class='source'>HSISTEMO</td><td class='target'>HSISTEMO</td><td class='target'>i-HSISTEMO</td></tr>
+	<tr><td class='source'>IJEKAVSK</td><td class='target'>IJEKAVSK</td><td class='target'>Isi-Serbian esinokuphimisa kwe-Ijekavian</td></tr>
+	<tr><td class='source'>ITIHASA</td><td class='target'>ITIHASA</td><td class='target'>i-ITIHASA</td></tr>
+	<tr><td class='source'>IVANCHOV</td><td class='target'>IVANCHOV</td><td class='target'>i-IVANCHOV</td></tr>
+	<tr><td class='source'>JAUER</td><td class='target'>JAUER</td><td class='target'>i-JAUER</td></tr>
+	<tr><td class='source'>JYUTPING</td><td class='target'>JYUTPING</td><td class='target'>i-JYUTPING</td></tr>
+	<tr><td class='source'>KKCOR</td><td class='target'>KKCOR</td><td class='target'>Ubhalomagama oluvamile</td></tr>
+	<tr><td class='source'>KOCIEWIE</td><td class='target'>KOCIEWIE</td><td class='target'>i-KOCIEWIE</td></tr>
+	<tr><td class='source'>KSCOR</td><td class='target'>KSCOR</td><td class='target'>Ubhalomagama olusezingeni</td></tr>
+	<tr><td class='source'>LAUKIKA</td><td class='target'>LAUKIKA</td><td class='target'>i-LAUKIKA</td></tr>
+	<tr><td class='source'>LEMOSIN</td><td class='target'>LEMOSIN</td><td class='target'>i-LEMOSIN</td></tr>
+	<tr><td class='source'>LENGADOC</td><td class='target'>LENGADOC</td><td class='target'>i-LENGADOC</td></tr>
+	<tr><td class='source'>LIPAW</td><td class='target'>LIPAW</td><td class='target'>Ulwimi lwesi-Lipovaz lase-Resian</td></tr>
+	<tr><td class='source'>LUNA1918</td><td class='target'>LUNA1918</td><td class='target'>i-LUNA1918</td></tr>
+	<tr><td class='source'>METELKO</td><td class='target'>METELKO</td><td class='target'>Uhlambu lwe-Metelko</td></tr>
+	<tr><td class='source'>MONOTON</td><td class='target'>MONOTON</td><td class='target'>i-Monotonic</td></tr>
+	<tr><td class='source'>NDYUKA</td><td class='target'>NDYUKA</td><td class='target'>Ulwimi lwesi-Ndyuka</td></tr>
+	<tr><td class='source'>NEDIS</td><td class='target'>NEDIS</td><td class='target'>Ulwimi lwesi-Natisone</td></tr>
+	<tr><td class='source'>NEWFOUND</td><td class='target'>NEWFOUND</td><td class='target'>i-NEWFOUND</td></tr>
+	<tr><td class='source'>NICARD</td><td class='target'>NICARD</td><td class='target'>i-NICARD</td></tr>
+	<tr><td class='source'>NJIVA</td><td class='target'>NJIVA</td><td class='target'>Ulwimi lwesi-Gniva/Njiva</td></tr>
+	<tr><td class='source'>NULIK</td><td class='target'>NULIK</td><td class='target'>i-Volapük yesimanje</td></tr>
+	<tr><td class='source'>OSOJS</td><td class='target'>OSOJS</td><td class='target'>Ulwimi lwesi-Oseacco/Osojane</td></tr>
+	<tr><td class='source'>OXENDICT</td><td class='target'>OXENDICT</td><td class='target'>Ukupela Kwesichazamazwi se-Oxford EnglishOxford English Dictionary spelling</td></tr>
+	<tr><td class='source'>PAHAWH2</td><td class='target'>PAHAWH2</td><td class='target'>i-PAHAWH2</td></tr>
+	<tr><td class='source'>PAHAWH3</td><td class='target'>PAHAWH3</td><td class='target'>i-PAHAWH3</td></tr>
+	<tr><td class='source'>PAHAWH4</td><td class='target'>PAHAWH4</td><td class='target'>i-PAHAWH4</td></tr>
+	<tr><td class='source'>PAMAKA</td><td class='target'>PAMAKA</td><td class='target'>ulwimi lwesi-Pamaka</td></tr>
+	<tr><td class='source'>PETR1708</td><td class='target'>PETR1708</td><td class='target'>i-PETR1708</td></tr>
+	<tr><td class='source'>PINYIN</td><td class='target'>PINYIN</td><td class='target'>i-Pinyin Romanization</td></tr>
+	<tr><td class='source'>POLYTON</td><td class='target'>POLYTON</td><td class='target'>i-Polytonic</td></tr>
+	<tr><td class='source'>POSIX</td><td class='target'>POSIX</td><td class='target'>Ikhompyutha</td></tr>
+	<tr><td class='source'>PROVENC</td><td class='target'>PROVENC</td><td class='target'>i-PROVENC</td></tr>
+	<tr><td class='source'>PUTER</td><td class='target'>PUTER</td><td class='target'>i-PUTER</td></tr>
+	<tr><td class='source'>REVISED</td><td class='target'>REVISED</td><td class='target'>Ubhalomagama Olubuyekeziwe</td></tr>
+	<tr><td class='source'>RIGIK</td><td class='target'>RIGIK</td><td class='target'>I-Volapük Yakudala</td></tr>
+	<tr><td class='source'>ROZAJ</td><td class='target'>ROZAJ</td><td class='target'>i-Resian</td></tr>
+	<tr><td class='source'>RUMGR</td><td class='target'>RUMGR</td><td class='target'>i-RUMGR</td></tr>
+	<tr><td class='source'>SAAHO</td><td class='target'>SAAHO</td><td class='target'>i-Saho</td></tr>
+	<tr><td class='source'>SCOTLAND</td><td class='target'>SCOTLAND</td><td class='target'>i-English Esezingeni ye-Scotish</td></tr>
+	<tr><td class='source'>SCOUSE</td><td class='target'>SCOUSE</td><td class='target'>i-Scouse</td></tr>
+	<tr><td class='source'>SIMPLE</td><td class='target'>SIMPLE</td><td class='target'>OKULULA</td></tr>
+	<tr><td class='source'>SOLBA</td><td class='target'>SOLBA</td><td class='target'>Ulwimi lwesi-Stolvizza/Solbica</td></tr>
+	<tr><td class='source'>SOTAV</td><td class='target'>SOTAV</td><td class='target'>Iqembu lolwimi lwesi-Sotavento lwe-Kabuverdianu</td></tr>
+	<tr><td class='source'>SPANGLIS</td><td class='target'>SPANGLIS</td><td class='target'>i-SPANGLIS</td></tr>
+	<tr><td class='source'>SURMIRAN</td><td class='target'>SURMIRAN</td><td class='target'>i-SURMIRAN</td></tr>
+	<tr><td class='source'>SURSILV</td><td class='target'>SURSILV</td><td class='target'>i-SURSILV</td></tr>
+	<tr><td class='source'>SUTSILV</td><td class='target'>SUTSILV</td><td class='target'>i-SUTSILV</td></tr>
+	<tr><td class='source'>TARASK</td><td class='target'>TARASK</td><td class='target'>Ubhalomagama lwesi-Taraskievica</td></tr>
+	<tr><td class='source'>UCCOR</td><td class='target'>UCCOR</td><td class='target'>Ubhalomagama Oluhlanganisiwe</td></tr>
+	<tr><td class='source'>UCRCOR</td><td class='target'>UCRCOR</td><td class='target'>Ubhalomagama Olubuyekeziwe Oluhlanganisiwe</td></tr>
+	<tr><td class='source'>ULSTER</td><td class='target'>ULSTER</td><td class='target'>i-ULSTER</td></tr>
+	<tr><td class='source'>UNIFON</td><td class='target'>UNIFON</td><td class='target'>Uhlamvu lwefonotiki lwe-Unifon</td></tr>
+	<tr><td class='source'>VAIDIKA</td><td class='target'>VAIDIKA</td><td class='target'>i-VAIDIKA</td></tr>
+	<tr><td class='source'>VALENCIA</td><td class='target'>VALENCIA</td><td class='target'>i-Valencian</td></tr>
+	<tr><td class='source'>VALLADER</td><td class='target'>VALLADER</td><td class='target'>i-VALLADER</td></tr>
+	<tr><td class='source'>VIVARAUP</td><td class='target'>VIVARAUP</td><td class='target'>i-VIVARAUP</td></tr>
+	<tr><td class='source'>WADEGILE</td><td class='target'>WADEGILE</td><td class='target'>i-Wade-Giles Romanization</td></tr>
+	<tr><td class='source'>XSISTEMO</td><td class='target'>XSISTEMO</td><td class='target'>i-XSISTEMO</td></tr>
+	<tr><td class='source' rowSpan='50'><a name='Keys' href='#Keys'>Keys</a></td><td class='source' rowSpan='3'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-islamic-rgsa</td><td class='target'>islamic-rgsa</td><td class='target'>Ikhalenda yesi-Islamic (Saudi Arabia, sighting)</td></tr>
+	<tr><td class='source'>calendar-islamic-tbla</td><td class='target'>islamic-tbla</td><td class='target'>Ikhalenda yesi-Islamic (tabular, astronomical epoch)</td></tr>
+	<tr><td class='source'>calendar-islamic-umalqura</td><td class='target'>islamic-umalqura</td><td class='target'>Ikhalenda yesi-Islamic (Umm al-Qura)</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='collation' href='#collation'>collation</a></td><td class='source'>collation-compat</td><td class='target'>compat</td><td class='target'>Ukuhlunga Kwangaphambilini, ngokusebenzisana</td></tr>
+	<tr><td class='source'>collation-dictionary</td><td class='target'>Ukuhlunga kwesichazimazwi</td><td class='target'>Uhlelo Lokuhlunga Lesichazamazwi</td></tr>
+	<tr><td class='source'>collation-emoji</td><td class='target'>emoji</td><td class='target'>Uhlelo Lokuhlunga le-Emoji</td></tr>
+	<tr><td class='source'>collation-eor</td><td class='target'>eor</td><td class='target'>Imithetho Yokuhlunga ye-European</td></tr>
+	<tr><td class='source'>collation-zhuyin</td><td class='target'>zhuyin</td><td class='target'>Ukuhlunga kwe-Zhuyin</td></tr>
+	<tr><td class='source' rowSpan='42'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-ahom</td><td class='target'>ahom</td><td class='target'>Izinombolo ze-Ahom</td></tr>
+	<tr><td class='source'>numbers-bali</td><td class='target'>bali</td><td class='target'>Izinombolo ze-Balinese</td></tr>
+	<tr><td class='source'>numbers-brah</td><td class='target'>brah</td><td class='target'>Izinombolo ze-Brahmi</td></tr>
+	<tr><td class='source'>numbers-cakm</td><td class='target'>cakm</td><td class='target'>Izinombolo ze-Chakma</td></tr>
+	<tr><td class='source'>numbers-cham</td><td class='target'>cham</td><td class='target'>Izinombolo ze-Cham</td></tr>
+	<tr><td class='source'>numbers-cyrl</td><td class='target'>cyrl</td><td class='target'>Izinombolo ze-Cyrillic</td></tr>
+	<tr><td class='source'>numbers-diak</td><td class='target'>diak</td><td class='target'>Izinombolo ze-Dives Akuru</td></tr>
+	<tr><td class='source'>numbers-gong</td><td class='target'>gong</td><td class='target'>Izinombolo ze-Gunjala Gondi</td></tr>
+	<tr><td class='source'>numbers-gonm</td><td class='target'>gonm</td><td class='target'>Izinombolo ze-Masaram Gondi</td></tr>
+	<tr><td class='source'>numbers-hmng</td><td class='target'>hmng</td><td class='target'>Izinombolo ze-Pahawh Hmong</td></tr>
+	<tr><td class='source'>numbers-hmnp</td><td class='target'>hmnp</td><td class='target'>Izinombolo ze-Nyiakeng Puachue Hmong</td></tr>
+	<tr><td class='source'>numbers-java</td><td class='target'>java</td><td class='target'>Izinombolo ze-Javanese</td></tr>
+	<tr><td class='source'>numbers-kali</td><td class='target'>kali</td><td class='target'>Izinombolo ze-Kayah Li</td></tr>
+	<tr><td class='source'>numbers-lana</td><td class='target'>lana</td><td class='target'>Izinombolo ze-Tai Tham Hora</td></tr>
+	<tr><td class='source'>numbers-lanatham</td><td class='target'>lanatham</td><td class='target'>Izinombolo ze-Tai Tham Tham</td></tr>
+	<tr><td class='source'>numbers-lepc</td><td class='target'>lepc</td><td class='target'>Izinombolo ze-Lepcha</td></tr>
+	<tr><td class='source'>numbers-limb</td><td class='target'>limb</td><td class='target'>Izinombolo ze-Limbu</td></tr>
+	<tr><td class='source'>numbers-mathbold</td><td class='target'>mathbold</td><td class='target'>Izinombolo ze-Mathematical Bold</td></tr>
+	<tr><td class='source'>numbers-mathdbl</td><td class='target'>mathdbl</td><td class='target'>Izinombolo ze-Mathematical Double-Struck</td></tr>
+	<tr><td class='source'>numbers-mathmono</td><td class='target'>mathmono</td><td class='target'>Izinombolo ze-Mathematical Monospace</td></tr>
+	<tr><td class='source'>numbers-mathsanb</td><td class='target'>mathsanb</td><td class='target'>Izinombolo ze-Mathematical Sans-Serif Bold</td></tr>
+	<tr><td class='source'>numbers-mathsans</td><td class='target'>mathsans</td><td class='target'>Izinombolo ze-Mathematical Sans-Serif</td></tr>
+	<tr><td class='source'>numbers-modi</td><td class='target'>modi</td><td class='target'>Izinombolo ze-Modi</td></tr>
+	<tr><td class='source'>numbers-mroo</td><td class='target'>mroo</td><td class='target'>Izinombolo ze-Mro</td></tr>
+	<tr><td class='source'>numbers-mtei</td><td class='target'>mtei</td><td class='target'>Izinombolo ze-Meetei Mayek</td></tr>
+	<tr><td class='source'>numbers-mymrshan</td><td class='target'>mymrshan</td><td class='target'>Izinombolo ze-Myanmar Shan</td></tr>
+	<tr><td class='source'>numbers-mymrtlng</td><td class='target'>mymrtlng</td><td class='target'>Izinombolo ze-Myanmar Tai Laing</td></tr>
+	<tr><td class='source'>numbers-nkoo</td><td class='target'>nkoo</td><td class='target'>Izinombolo ze-N’Ko</td></tr>
+	<tr><td class='source'>numbers-olck</td><td class='target'>olck</td><td class='target'>Izinombolo ze-Ol Chiki</td></tr>
+	<tr><td class='source'>numbers-osma</td><td class='target'>osma</td><td class='target'>Izinombolo ze-Osmanya</td></tr>
+	<tr><td class='source'>numbers-rohg</td><td class='target'>rohg</td><td class='target'>Izinombolo ze-Hanifi Rohingya</td></tr>
+	<tr><td class='source'>numbers-saur</td><td class='target'>saur</td><td class='target'>Izinombolo ze-Saurashtra</td></tr>
+	<tr><td class='source'>numbers-shrd</td><td class='target'>shrd</td><td class='target'>Izinombolo ze-Sharada</td></tr>
+	<tr><td class='source'>numbers-sind</td><td class='target'>sind</td><td class='target'>Izinombolo ze-Khudawadi</td></tr>
+	<tr><td class='source'>numbers-sinh</td><td class='target'>sinh</td><td class='target'>Izinombolo ze-Sinhala Lith</td></tr>
+	<tr><td class='source'>numbers-sora</td><td class='target'>sora</td><td class='target'>Izinombolo ze-Sora Sompeng</td></tr>
+	<tr><td class='source'>numbers-sund</td><td class='target'>sund</td><td class='target'>Izinombolo ze-Sundanese</td></tr>
+	<tr><td class='source'>numbers-takr</td><td class='target'>takr</td><td class='target'>Izinombolo ze-Takri</td></tr>
+	<tr><td class='source'>numbers-talu</td><td class='target'>talu</td><td class='target'>Izinombolo ze-New Tai Lue</td></tr>
+	<tr><td class='source'>numbers-tirh</td><td class='target'>tirh</td><td class='target'>Izinombolo ze-Tirhuta</td></tr>
+	<tr><td class='source'>numbers-wara</td><td class='target'>wara</td><td class='target'>Izinombolo ze-Warang Citi</td></tr>
+	<tr><td class='source'>numbers-wcho</td><td class='target'>wcho</td><td class='target'>Izinombolo ze-Wancho</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='9'>moderate</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
+	<tr><td class='source'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source'><a name='Eastern Asia: China: CNH (offshore)' href='#Eastern Asia: China: CNH (offshore)'>Eastern Asia: China: CNH (offshore)</a></td><td class='source'>CNH-name</td><td class='target'>CNH</td><td class='target'>i-CNH</td></tr>
 	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='2'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source' rowSpan='2'>long-one-nominative</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target'>{0} sipuni dessert</td></tr>
+	<tr><td class='source'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='target'>{0} Imp. isipuni dessert</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-other-nominative</td><td class='target'>{0} candela</td></tr>
+	<tr><td class='source'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-one-nominative</td><td class='target'>{0} i-lumen</td></tr>
+	<tr><td class='source' rowSpan='287'><a name='Characters' href='#Characters'>Characters</a></td><td class='source'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target'>inhliziyo ebhakuzayo</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-geographic' href='#place-geographic'>place-geographic</a></td><td class='source'>🌋 -name</td><td class='target'>ivolcano</td><td class='target'>intabamlilo</td><td class='target' rowSpan='144'>modern</td></tr>
+	<tr><td class='source'>🌋 –keywords</td><td class='target'>…<br>ivolcano<br>…</td><td class='target'>…<br>intabamlilo<br>…</td></tr>
+	<tr><td class='source'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🧱 –keywords</td><td class='target'>bricks<br>clay<br>…<br>mortar<br>wall</td><td class='target'>i-mortar<br>…<br>izitini<br>ubumba<br>udonga</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='2'><a name='event' href='#event'>event</a></td><td class='source'>🎄 -name</td><td class='target'>isihlahla sikhakhisimusi</td><td class='target'>isihlahla sikaKhisimusi</td></tr>
+	<tr><td class='source'>🎄 –keywords</td><td class='target'>…<br>isihlahla sikhakhisimusi<br>ukhisimusi<br>…</td><td class='target'>…<br>isihlahla sikaKhisimusi<br>uKhisimusi<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='game' href='#game'>game</a></td><td class='source'>🎱 -name</td><td class='target'>billiards</td><td class='target'>amabhiliyade</td></tr>
+	<tr><td class='source'>🧩 -name</td><td class='target'>izingcezu</td><td class='target'>izingcezu zephazili</td></tr>
+	<tr><td class='source'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🪡 –keywords</td><td class='target'>embroidery<br>needle<br>sewing<br>stitches<br>sutures<br>tailoring</td><td class='target'>inaliti<br>izihlungo<br>izitishi<br>ukufeketha<br>ukuthunga</td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='3'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>👠 -name</td><td class='target'>igqoksi</td><td class='target'>iqhoksi</td></tr>
+	<tr><td class='source'>👠 –keywords</td><td class='target'>igqoksi<br>…</td><td class='target'>…<br>iqhoksi<br>…</td></tr>
+	<tr><td class='source'>🧢 –keywords</td><td class='target'>ikhehu ye-baseball<br>…</td><td class='target'>…<br>ikhephu ye-baseball</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='sound' href='#sound'>sound</a></td><td class='source'>📣 -name</td><td class='target'>umbobho omkhulu</td><td class='target'>umbhobho omkhulu</td></tr>
+	<tr><td class='source'>📣 –keywords</td><td class='target'>…<br>umbobho omkhulu</td><td class='target'>…<br>umbhobho omkhulu</td></tr>
+	<tr><td class='source'>📯 -name</td><td class='target'>umbobo weposi</td><td class='target'>umbhobo weposi</td></tr>
+	<tr><td class='source'>📯 –keywords</td><td class='target'>…<br>umbobo weposi<br>umbono</td><td class='target'>…<br>umbhobho<br>umbhobho weposi</td></tr>
+	<tr><td class='source'><a name='music' href='#music'>music</a></td><td class='source'>🎶 –keywords</td><td class='target'>…<br>inotih<br>…</td><td class='target'>…<br>inothi<br>…</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='computer' href='#computer'>computer</a></td><td class='source'>💾 -name</td><td class='target'>ifoppy diski</td><td class='target'>i-floppy diski</td></tr>
+	<tr><td class='source'>💾 –keywords</td><td class='target'>…<br>ifloppy<br>ifoppy diski<br>…</td><td class='target'>i-floppy<br>i-floppy diski<br>…</td></tr>
+	<tr><td class='source'>💿 –keywords</td><td class='target' rowSpan='2'>…<br>idvd<br>…</td><td class='target' rowSpan='2'>…<br>i-dvd<br>…</td></tr>
+	<tr><td class='source'>📀 –keywords</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='light & video' href='#light & video'>light & video</a></td><td class='source'>🎥 –keywords</td><td class='target'>…<br>umuvi</td><td class='target'>…<br>imuvi</td></tr>
+	<tr><td class='source'>🎬 -name</td><td class='target'>iclapper board</td><td class='target'>i-clapper board</td></tr>
+	<tr><td class='source'>🎬 –keywords</td><td class='target'>iclapper<br>iclapper board<br>…</td><td class='target'>i-clapper<br>i-clapper board<br>…</td></tr>
+	<tr><td class='source'><a name='book-paper' href='#book-paper'>book-paper</a></td><td class='source'>📰 –keywords</td><td class='target'>ipepha<br>…</td><td class='target'>iphepha<br>…</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='science' href='#science'>science</a></td><td class='source'>🔬 -name</td><td class='target'>imicroscope</td><td class='target'>i-microscope</td></tr>
+	<tr><td class='source'>🔬 –keywords</td><td class='target'>imicroscope<br>…</td><td class='target'>i-microscope<br>…</td></tr>
+	<tr><td class='source'>🔭 -name</td><td class='target'>itelescope</td><td class='target'>i-telescope</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩸 -name</td><td class='target'>itonsi lokudla</td><td class='target'>ithonsi legazi</td></tr>
+	<tr><td class='source'>🩸 –keywords</td><td class='target'>…<br>itonsi lokudla<br>…</td><td class='target'>…<br>ithonsi legazi<br>…</td></tr>
+	<tr><td class='source'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>⚱ –keywords</td><td class='target'>isitsha somgcwabo<br>…</td><td class='target'>…<br>umlotha<br>…</td></tr>
+	<tr><td class='source' rowSpan='256'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='26'><a name='math' href='#math'>math</a></td><td class='source'>+ -name</td><td class='target' rowSpan='256'>▷missing◁</td><td class='target'>uphawu lokuhlanganisa</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>hlanganisa<br>yengeza</td></tr>
+	<tr><td class='source'>± -name</td><td class='target' rowSpan='2'>hlanganisa-susa</td></tr>
+	<tr><td class='source'>± –keywords</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>uphawu lokususa</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>khipha<br>susa</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>lingana</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>lingana<br>okulingana</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>cishe kulingane</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>cishe<br>cishe kulingane<br>ukusondela</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>ngalingani</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>ngalingani<br>ukungalingani</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>khulu kuno</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>ithegi<br>khulu kuno<br>vala ithegi</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>ncane kune</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>ithegi<br>ncane kune<br>vula ithegi</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>ncane kune noma ukulingana</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>ncane kune<br>ukulingana<br>ukungalingani</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>okukhulu kuno noma okulinganayo</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>khulu kune<br>lingana<br>okulingana<br>okungalingani</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>i-negation</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>hhayi<br>ukuphikisa</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>umugqa ome mpo</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>ibha<br>ibha yokuqonda mpo<br>induku<br>ipayipi<br>ipiki<br>umugqa<br>unhlangothi<br>unhlangothi owu-sheffer<br>vbar</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>i-tilde</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='76'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>♪ –keywords</td><td class='target'>inothi<br>umculo<br>yesishiyagalombili</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>isimangalo esibi</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>i-acute<br>isimangalo<br>ithoni</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>amandla<br>circumflex<br>control<br>I-chevron<br>inkomba<br>isibonakaliso se-xor<br>isigqoko<br>isimangalo<br>ukunakekelwa<br>wedge</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>i-diaeresis</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>i-diaeresis<br>i-tréma<br>i-umlaut</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>i-hyphen</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>i-hyphen<br>udeshi</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>ibha evundlile</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>ibha<br>udeshi<br>ulayini</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>umugqa ophansi</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>dwebela<br>udeshi<br>udeshi ophansi<br>umugqa<br>underdash</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>i-hyphen-minus</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>i-hyphen<br>susa<br>udeshi</td></tr>
+	<tr><td class='source'>. -name</td><td class='target'>isikhathi</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>ichashazi<br>isikhathi<br>ungqi</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>i-ellipsis</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>amachashazi<br>i-ellipsis<br>okusalayo</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>isikhathi se-ideographic</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>i-ideographic<br>isikhathi<br>ungqi</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>iphuzu le-hyphenation</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>i-hyphen<br>iphuzu<br>udeshi</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>ichashazi lekatakana eliphakathi nendawo</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>amachashazi<br>katakana<br>middot<br>ukuxhumana</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>i-aphostrofi yakwesokunxele</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>i-aphostrof<br>isilinganiso<br>isilinganiso esihlakaniphile<br>isilinganiso esisodwa</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>i-aphostrofi yakwesokudla</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>i-aphostrofi<br>isilinganiso<br>isilinganiso esihlakaniphile<br>isilinganiso esisodwa</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>umphikisi wesokudla ophansi</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>i-aphostrofi<br>isicaphuni<br>isilinganiso esiphansi</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>i-aphostrofi yokuthayipha</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>i-aphostrofi<br>isilinganiso<br>isilinganiso esisodwa</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>uphawu lwesicaphuni lwesobunxele</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>isicaphuni<br>isilinganiso kabili<br>ukucaphuna<br>ukucaphuna okuhle</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>uphawu lwesicaphuni lwesokudla</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>isicaphuni<br>isicaphuni esiphindwe kabili<br>ukucaphuna<br>ukucaphuna okuhlakaniphile</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>uphawu locaphuna oluphansi kwesokudla</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>isicaphuni<br>isicaphuni esiphindwe kabili<br>ukucaphuna<br>ukucaphuna okuhlakaniphile</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>ubuzali obusondelene</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>paren<br>parens<br>parenthesis<br>ubakaki<br>ubakaki oyindilinga</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>ubakaki wesikwele ovulekile</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>ikhroshethi<br>ubakaki<br>ubakaki oyisikwele</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>vala ubakaki oyisikwele</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>ikhroshethi<br>ubakaki<br>ubakaki oyisikwele</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>ubakaki ovulekile</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>i-gullwing<br>ubakaki<br>ubakaki ogobile</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>vala ubakaki ogobile</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>i-gullwing<br>ubakaki<br>ubakaki ogobile</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>vula ubakaki oyigobolondo lofudu</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>ubakaki<br>ubakaki oyigobolondo<br>ubakaki oyigobolondo lofudu</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>vala ubakaki oyigobolondo lofudu</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>ubakaki<br>ubakaki oyigobolondo<br>ubakaki oyigobolondo lofudu</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>vula ubakaki oyi-engeli</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>abakaki abayidayimane<br>i-chevron<br>i-tuple<br>ubakaki<br>ubakaki ocijile<br>ubakaki oyi-engeli</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>vala ubakaki oyi-engeli</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>abakaki abayidayimane<br>i-chevron<br>i-tuple<br>ubakaki<br>ubakaki ocijile<br>ubakaki oyi-engeli</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>vula ubakaki oyi-engeli ophindwe kabili</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>ubakaki<br>ubakaki oyi-engeli ophindwe kabili</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>vala ubakaki oyi-engeli ophindwe kabili</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>ubakaki<br>ubakaki oyi-engeli ophindwe kabili</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>vula ubakaki osekhoneni</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>ubakaki<br>ubakaki osekhoneni</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>vala ubakaki osekhoneni</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>ubakaki<br>ubakaki osekhoneni</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>vula ubakaki onembobo osekhoneni</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>ubakaki<br>ubakaki onembobo osekhoneni</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>vala ubakaki onembobo osekhoneni</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>ubakaki<br>ubakaki onembobo osekhoneni</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>vula amalensi embobo kabakaki</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>hollow lenticular bracket<br>imbobo yamalensi kabakaki<br>ubakaki</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>vala amalensi embobo kabakaki</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>hollow lens bracket<br>hollow lenticular bracket<br>ubakaki</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>vula amalensi amnyama abakaki</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>amalensi kabakaki<br>ubakaki<br>ubakaki oyi-lenticular</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>vala amalensi amnyama kabakaki</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>amalensi kabakaki<br>ubakaki<br>ubakaki oyi-lenticular</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>i-dollar</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>i-dollar<br>i-peso<br>i-USD<br>imali</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>i-cent</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>i-peso</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>i-won</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>KPW<br>KRW</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target'>i-mill</td></tr>
+	<tr><td class='source'>₥ –keywords</td><td class='target'>i-mil</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>i-bitcoin</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>i-BTC</td></tr>
+	<tr><td class='source' rowSpan='142'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‾ -name</td><td class='target'>ngaphezu komugqa</td><td class='target' rowSpan='142'>comprehensive</td></tr>
+	<tr><td class='source'>‾ –keywords</td><td class='target'>i-overstrike<br>i-vinculum</td></tr>
+	<tr><td class='source'>‽ -name</td><td class='target'>i-interrobang</td></tr>
+	<tr><td class='source'>‽ –keywords</td><td class='target'>i-interabang</td></tr>
+	<tr><td class='source'>‸ -name</td><td class='target' rowSpan='2'>i-caret</td></tr>
+	<tr><td class='source'>‸ –keywords</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>i-asterism</td></tr>
+	<tr><td class='source'>⁂ –keywords</td><td class='target'>i-dinkus<br>izinkanyezi</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target' rowSpan='2'>umugqa womcibisholo wangakwesokundele</td></tr>
+	<tr><td class='source'>↚ –keywords</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target' rowSpan='2'>umugqa womcibisholo wangakwesokudla</td></tr>
+	<tr><td class='source'>↛ –keywords</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target' rowSpan='2'>umugqa womcibisholo wangakwesokunxele kwesokudla</td></tr>
+	<tr><td class='source'>↮ –keywords</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target' rowSpan='2'>umcibisholo wegagasi wangakwesokunxele</td></tr>
+	<tr><td class='source'>↜ –keywords</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target' rowSpan='2'>umcibisholo wegagasi wangakwesokudla</td></tr>
+	<tr><td class='source'>↝ –keywords</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target' rowSpan='2'>umcibisholo onamakhanda amabili wangakwesokudla</td></tr>
+	<tr><td class='source'>↞ –keywords</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target' rowSpan='2'>umcibisholo onamakhanda amabili waphezulu</td></tr>
+	<tr><td class='source'>↟ –keywords</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target' rowSpan='2'>umcibisholo onamakhanda amabili wangakwesokunxele</td></tr>
+	<tr><td class='source'>↠ –keywords</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target' rowSpan='2'>umcibisholo onamakhanda amabili waphansi</td></tr>
+	<tr><td class='source'>↡ –keywords</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target' rowSpan='2'>umsila womcibisholo wangakwesokunxele</td></tr>
+	<tr><td class='source'>↢ –keywords</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target' rowSpan='2'>umsila womcibisholo wangakwesokudla</td></tr>
+	<tr><td class='source'>↣ –keywords</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target' rowSpan='2'>umcibisholo wangakwesokunxele kusuka kwibha</td></tr>
+	<tr><td class='source'>↤ –keywords</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target' rowSpan='2'>umcibisholo waphezulu kusuka kwibha</td></tr>
+	<tr><td class='source'>↥ –keywords</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target' rowSpan='2'>umcibisholo wangakwesokudla kusuka kwibha</td></tr>
+	<tr><td class='source'>↦ –keywords</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target' rowSpan='2'>umcibisholo waphansi kusuka kwibha</td></tr>
+	<tr><td class='source'>↧ –keywords</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target' rowSpan='2'>umcibisholo waphezulu phansi onebhesi</td></tr>
+	<tr><td class='source'>↨ –keywords</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target' rowSpan='2'>iluphu lomcibisholo wangakwesokunxele</td></tr>
+	<tr><td class='source'>↫ –keywords</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target' rowSpan='2'>iluphu lomcibisholo wangakwesokudla</td></tr>
+	<tr><td class='source'>↬ –keywords</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target' rowSpan='2'>umcibisholo wegagasi wangakwesokunxele kwesokudla</td></tr>
+	<tr><td class='source'>↭ –keywords</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>umcibisholo we-zigzag waphansi</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>i-zigzag</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target' rowSpan='2'>ithiphu yomcibisholo waphezulu kwesokunxele</td></tr>
+	<tr><td class='source'>↰ –keywords</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target' rowSpan='2'>ithiphu yomcibisholo waphezulu kwesokudla</td></tr>
+	<tr><td class='source'>↱ –keywords</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target' rowSpan='2'>ithiphu yomcibisholo waphansi kwesokunxele</td></tr>
+	<tr><td class='source'>↲ –keywords</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target' rowSpan='2'>ithiphu yomcibisholo waphansi kwesokudla</td></tr>
+	<tr><td class='source'>↳ –keywords</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target' rowSpan='2'>ikhona lomcibisholo wakwesokudla phansi</td></tr>
+	<tr><td class='source'>↴ –keywords</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target' rowSpan='2'>ikhona lomcibisholo waphansi kwesokunxele</td></tr>
+	<tr><td class='source'>↵ –keywords</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target' rowSpan='2'>umcibisholo cishe oyindingilizi ophezulu ohamba ngokuphikisana newashi</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>umcibisholo cishe oyindingilizi ophezulu ohamba newashi</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>ibha elide lomcibisholo wentshonalanga nenyakatho</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target' rowSpan='2'>ibha lomcibisholo ngakwesokudla ngaphezu kwebha lomcibisholo wangakwesokudla</td></tr>
+	<tr><td class='source'>↹ –keywords</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>umcibisholo oyindingilizi evulekile ohamba ngokuphikisana newashi</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>umcibisholo oyindingilizi evulekile ohamba newashi</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>i-harpoon barb yaphezulu kwesokunxele</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target' rowSpan='2'>i-harpoon barb yaphansi kwesokunxele</td></tr>
+	<tr><td class='source'>↽ –keywords</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>i-harpoon barb yakwesokudla phezulu</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>i-harpoon barb yakwesokunxele phezulu</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>i-harpoon barb yaphezulu kwesokudla</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>i-harpoon barb yaphansi kwesokudla</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>i-harpoon barb yakwesokudla phansi</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>i-harpoon barb yakwesokunxele phansi</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>i-barb</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target' rowSpan='2'>umcibisholo wakwesokudla ngaphezu komcibisholo wakwesokunxele</td></tr>
+	<tr><td class='source'>⇄ –keywords</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target' rowSpan='2'>imicibisholo ebhangqiwe yangakwesokunxele</td></tr>
+	<tr><td class='source'>⇇ –keywords</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target' rowSpan='2'>imicibisholo ebhangqiwe yaphezulu</td></tr>
+	<tr><td class='source'>⇈ –keywords</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target' rowSpan='2'>imicibisholo ebhangqiwe yakwesokudla</td></tr>
+	<tr><td class='source'>⇉ –keywords</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target' rowSpan='2'>imicibisholo ebhangqiwe yaphansi</td></tr>
+	<tr><td class='source'>⇊ –keywords</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target' rowSpan='2'>i-harpoon yangakwesokunxele ngaphezu kwe-harpon yangakwesokudla</td></tr>
+	<tr><td class='source'>⇋ –keywords</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target' rowSpan='2'>i-harpoon yangakwesokudla ngaphezu kwe-harpon yangakwesokunxele</td></tr>
+	<tr><td class='source'>⇌ –keywords</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili wangakwesokunxele</td></tr>
+	<tr><td class='source'>⇐ –keywords</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target' rowSpan='2'>i-stroke somcibisholo ongakubili wangakwesokunxele</td></tr>
+	<tr><td class='source'>⇍ –keywords</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili waphezulu</td></tr>
+	<tr><td class='source'>⇑ –keywords</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili wangakwesokudla</td></tr>
+	<tr><td class='source'>⇒ –keywords</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target' rowSpan='2'>i-stroke somcibisholo ongakubili wangakwesokudla</td></tr>
+	<tr><td class='source'>⇏ –keywords</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili waphansi</td></tr>
+	<tr><td class='source'>⇓ –keywords</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili wesokunxele kwesokudla</td></tr>
+	<tr><td class='source'>⇔ –keywords</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target' rowSpan='2'>i-stroke somcibisholo ongakubili wesokunxele kwesokudla</td></tr>
+	<tr><td class='source'>⇎ –keywords</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili wasentshonalanga nenyakatho</td></tr>
+	<tr><td class='source'>⇖ –keywords</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili wasempumalanga nenyakatho</td></tr>
+	<tr><td class='source'>⇗ –keywords</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili waseningizimu esempumalanga</td></tr>
+	<tr><td class='source'>⇘ –keywords</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target' rowSpan='2'>umcibisholo ongakubili weningizimu esentshonalanga</td></tr>
+	<tr><td class='source'>⇙ –keywords</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target' rowSpan='2'>umcibisholo ongakuthathu wangakwesokunxele</td></tr>
+	<tr><td class='source'>⇚ –keywords</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target' rowSpan='2'>umcibisholo ongakuthathu wangakwesokudla</td></tr>
+	<tr><td class='source'>⇛ –keywords</td></tr>
+	<tr><td class='source'>⇜ -name</td><td class='target' rowSpan='2'>umcibisholo we-squiggle ongakwesokunxele</td></tr>
+	<tr><td class='source'>⇜ –keywords</td></tr>
+	<tr><td class='source'>⇝ -name</td><td class='target' rowSpan='2'>umcibisholo we-squiggle ongakwesokudla</td></tr>
+	<tr><td class='source'>⇝ –keywords</td></tr>
+	<tr><td class='source'>⇞ -name</td><td class='target' rowSpan='2'>i-stroke esingakubili somcibisholo ophezulu</td></tr>
+	<tr><td class='source'>⇞ –keywords</td></tr>
+	<tr><td class='source'>⇟ -name</td><td class='target' rowSpan='2'>i-stroke esingakubili somcibisholo ophansi</td></tr>
+	<tr><td class='source'>⇟ –keywords</td></tr>
+	<tr><td class='source'>⇠ -name</td><td class='target' rowSpan='2'>umcibisholo wedeshi ongakwesokunxele</td></tr>
+	<tr><td class='source'>⇠ –keywords</td></tr>
+	<tr><td class='source'>⇡ -name</td><td class='target' rowSpan='2'>umcibisholo wedeshi ophezulu</td></tr>
+	<tr><td class='source'>⇡ –keywords</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

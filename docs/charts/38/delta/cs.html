@@ -58,10 +58,533 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='4'>cs</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='4'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='4'><a name='Parse' href='#Parse'>Parse</a></td><td class='source'>date-lenient(:)</td><td class='source' rowSpan='527'>cs</td><td class='target'>[\:∶]</td><td class='target'>[\:∶︓﹕：]</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'>general-lenient($)</td><td class='target'>[\$﹩＄$]</td><td class='target'>[\$﹩＄]</td></tr>
+	<tr><td class='source'>general-lenient(£)</td><td class='target'>[£₤]</td><td class='target'>[£₤￡]</td></tr>
+	<tr><td class='source'>number-lenient(-)</td><td class='target'>[\-‒⁻₋−➖﹣－]</td><td class='target'>[\-‐‒–⁻₋−➖﹣－]</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='target'>jüe</td><td class='target'>čínština (kantonština)</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source' rowSpan='2'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Svazijsko</td><td class='target'>Eswatini</td><td class='target' rowSpan='27'>moderate</td></tr>
+	<tr><td class='source'>SZ-variant</td><td class='target'>Eswatini</td><td class='target'>Svazijsko</td></tr>
+	<tr><td class='source'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Symbols ' href='#Symbols '>Symbols </a></td><td class='source'>approximatelySign</td><td class='target'>▷missing◁</td><td class='target'>~</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
 	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
+	<tr><td class='source' rowSpan='226'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='10'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='10'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='20'>▷missing◁</td><td class='target'>obrazový bod</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} obrazové body</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} obrazového bodu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} obrazový bod</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} obrazových bodů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bod</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} b.</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='10'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target'>poloměr Země</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} poloměry Země</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} poloměru Země</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} poloměr Země</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} poloměrů Země</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>R⊕</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} R⊕</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>long-displayName</td><td class='target'>fathomy</td><td class='target'>sáhy</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} fathomy</td><td class='target'>{0} sáhy</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} fathomu</td><td class='target'>{0} sáhu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} fathom</td><td class='target'>{0} sáh</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} fathomů</td><td class='target'>{0} sáhů</td></tr>
+	<tr><td class='source' rowSpan='85'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>hektolitr</td><td class='target'>hektolitry</td><td class='target' rowSpan='74'>moderate</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='target'>imp. galony</td><td class='target'>britské galony</td></tr>
+	<tr><td class='source'>long-per</td><td class='target'>{0} na imp. galon</td><td class='target'>{0} na britský galon</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} imp. galony</td><td class='target'>{0} britské galony</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} imp. galonu</td><td class='target'>{0} britského galonu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} imp. galon</td><td class='target'>{0} britský galon</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} imp. galonů</td><td class='target'>{0} britských galonů</td></tr>
+	<tr><td class='source'><a name='cup' href='#cup'>cup</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>šálek</td><td class='target'>šálky</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='target'>kapalinové unce</td><td class='target'>duté unce</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} kapalinové unce</td><td class='target' rowSpan='2'>{0} duté unce</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} kapalinová unce</td><td class='target'>{0} dutá unce</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kapalinových uncí</td><td class='target'>{0} dutých uncí</td></tr>
+	<tr><td class='source'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>lžička</td><td class='target'>lžičky</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='target' rowSpan='71'>▷missing◁</td><td class='target'>dezertní lžičky</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} dezertní lžičky</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dezertní lžička</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dezertních lžiček</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dstspn</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} dstspn</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>britské dezertní lžičky</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} britské dezertní lžičky</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britská dezertní lžička</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} britských dezertních lžiček</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dstspn Imp.</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} dstspn Imp.</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-displayName</td><td class='target'>kapky</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} kapky</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} kapka</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kapek</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kapky</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='2'>{0} kapky</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} kapka</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} kapek</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>duté dramy</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} duté dramy</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} dutého dramu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dutý dram</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dutých dramů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fl dr</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} fl dr</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-displayName</td><td class='target'>barmanské odměrky</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} barmanské odměrky</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} barmanská odměrka</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} barmanských odměrek</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>odměrky</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='2'>{0} odměrky</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} odměrka</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} odměrek</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-displayName</td><td class='target'>špetky</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} špetky</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} špetka</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} špetek</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>špetky</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='2'>{0} špetky</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} špetka</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} špetek</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>šp</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-displayName</td><td class='target'>britské kvarty</td><td class='target' rowSpan='21'>moderate</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} britské kvarty</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} britského kvartu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britský kvart</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} britských kvartů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>qt Imp.</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} qt Imp.</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>metr za sekundu na druhou</td><td class='target'>metry za sekundu na druhou</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='15'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='target'>metrické tuny</td><td class='target'>tuny</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} metrické tuny</td><td class='target' rowSpan='2'>{0} tuny</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} metrická tuna</td><td class='target'>{0} tuna</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} metrických tun</td><td class='target'>{0} tun</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mt</td><td class='target'>t</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} mt</td><td class='target' rowSpan='4'>{0} t</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>mt</td><td class='target'>t</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-few-nominative</td><td class='target' rowSpan='4'>{0} mt</td><td class='target' rowSpan='4'>{0} t</td></tr>
+	<tr><td class='source'>narrow-many-nominative</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='ton' href='#ton'>ton</a></td><td class='source'>long-displayName</td><td class='target'>tuny</td><td class='target'>americké tuny</td><td class='target' rowSpan='100'>moderate</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} tuny</td><td class='target' rowSpan='2'>{0} americké tuny</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} tuna</td><td class='target'>{0} americká tuna</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} tun</td><td class='target'>{0} amerických tun</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>t</td><td class='target'>sht</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} t</td><td class='target' rowSpan='4'>{0} sht</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='pound' href='#pound'>pound</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>libra</td><td class='target'>libry</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='grain' href='#grain'>grain</a></td><td class='target' rowSpan='10'>▷missing◁</td><td class='target'>grainy</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} grainy</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} grainu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} grain</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} grainů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>gr</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} gr</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='10'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source'>long-displayName</td><td class='target'>milimetry rtuti</td><td class='target'>milimetry rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} milimetry rtuti</td><td class='target'>{0} milimetry rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} milimetru rtuti</td><td class='target'>{0} milimetru rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} milimetr rtuti</td><td class='target'>{0} milimetr rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} milimetrů rtuti</td><td class='target'>{0} milimetrů rtuťového sloupce</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mm Hg</td><td class='target'>mmHg</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} mm Hg</td><td class='target' rowSpan='4'>{0} mmHg</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='pound-force-per-square-inch' href='#pound-force-per-square-inch'>pound-force-per-square-inch</a></td><td class='source'>long-other-nominative</td><td class='target'>{0} psi</td><td class='target'>{0} liber na čtvereční palec</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='inch-ofhg' href='#inch-ofhg'>inch-ofhg</a></td><td class='source'>long-displayName</td><td class='target'>palce rtuti</td><td class='target'>palce rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} palce rtuti</td><td class='target' rowSpan='2'>{0} palce rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} palec rtuti</td><td class='target'>{0} palec rtuťového sloupce</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} palců rtuti</td><td class='target'>{0} palců rtuťového sloupce</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='5'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>narrow-displayName</td><td class='target'>l/100 km</td><td class='target'>l/100km</td></tr>
+	<tr><td class='source'>narrow-few-nominative</td><td class='target' rowSpan='4'>{0} l/100 km</td><td class='target' rowSpan='4'>{0} l/100km</td></tr>
+	<tr><td class='source'>narrow-many-nominative</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>míle na imp. galon</td><td class='target'>míle na britský galon</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='3'>{0} míle na imp. galon</td><td class='target' rowSpan='3'>{0} míle na britský galon</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} mil na imp. galon</td><td class='target'>{0} mil na britský galon</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='20'>▷missing◁</td><td class='target'>kandely</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} kandely</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} kandela</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kandel</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>cd</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} cd</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>lumeny</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} lumeny</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} lumenu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} lumen</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} lumenů</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>lm</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='4'>{0} lm</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>long-displayName</td><td class='target'>zářivé výkony Sllunce</td><td class='target'>zářivé výkony Slunce</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source'>long</td><td class='target' rowSpan='24'>▷missing◁</td><td class='target'>kibi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ki{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='source'>long</td><td class='target'>mebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Mi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='source'>long</td><td class='target'>gibi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Gi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='source'>long</td><td class='target'>tebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ti{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='source'>long</td><td class='target'>pebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Pi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='source'>long</td><td class='target'>exbi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ei{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='source'>long</td><td class='target'>zebi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Zi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='source'>long</td><td class='target'>yobi{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Yi{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-few-nominative-dgender</td><td class='target' rowSpan='4'>{0}²</td><td class='target' rowSpan='4'>{0} čtver.</td></tr>
+	<tr><td class='source'>long-many-nominative-dgender</td></tr>
+	<tr><td class='source'>long-one-nominative-dgender</td></tr>
+	<tr><td class='source'>long-other-nominative-dgender</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-few-nominative-dgender</td><td class='target' rowSpan='4'>{0}³</td><td class='target' rowSpan='4'>{0} krychl.</td></tr>
+	<tr><td class='source'>long-many-nominative-dgender</td></tr>
+	<tr><td class='source'>long-one-nominative-dgender</td></tr>
+	<tr><td class='source'>long-other-nominative-dgender</td></tr>
+	<tr><td class='source' rowSpan='287'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='2'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>{0} v dolním indexu</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>{0} v horním indexu</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target'>obličej v oblacích</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>duchem nepřítomný<br>hlava v oblacích<br>nepřítomný<br>obličej v mlze<br>smajlík<br>tvář</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target'>vydechující obličej</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>lapání po dechu<br>oddechnutí<br>pískání<br>šepot<br>úleva<br>výdech<br>vydechnutí</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target'>obličej se spirálami místo očí</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>hypnotizovaný<br>no páni<br>potíže<br>spirála<br>spirály<br>závrať<br>zhypnotizovaný</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target'>hořící srdce</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>hořet<br>láska<br>nejsvětější srdce<br>plamen<br>srdce<br>vášeň</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>záplatované srdce</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>náplast<br>uzdravit<br>vyléčit<br>záplata<br>zdraví<br>zlepšení<br>zotavení</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫀 –keywords</td><td class='target'>…</td><td class='target'>…<br>pulz<br>…</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person' href='#person'>person</a></td><td class='source'>🧔 -name</td><td class='target'>muž s plnovousem</td><td class='target'>osoba s plnovousem</td></tr>
+	<tr><td class='source'>🧔 –keywords</td><td class='target'>muž s plnovousem<br>…</td><td class='target'>osoba s plnovousem<br>…</td></tr>
+	<tr><td class='source'>🧔‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>muž s plnovousem</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>muž s plnovousem<br>plnovous<br>vous<br>vousáč</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>žena s plnovousem</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>plnovous<br>vous<br>vousatá žena<br>žena<br>žena s plnovousem</td></tr>
+	<tr><td class='source'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛻 –keywords</td><td class='target' rowSpan='5'>…</td><td class='target'>auto s korbou<br>malá dodávka<br>…</td><td class='target' rowSpan='180'>modern</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Activities' href='#Activities'>Activities</a></td><td class='source'><a name='award-medal' href='#award-medal'>award-medal</a></td><td class='source'>🏅 –keywords</td><td class='target'>…<br>nejlepší<br>ocenění<br>sportovní medaile<br>výhra v soutěži</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='game' href='#game'>game</a></td><td class='source'>🪄 –keywords</td><td class='target'>čaroděj<br>čarodějka<br>…<br>iluzionista<br>…<br>kouzlení<br>…</td></tr>
+	<tr><td class='source'>🪅 –keywords</td><td class='target'>…<br>piňata<br>…</td></tr>
+	<tr><td class='source'><a name='arts & crafts' href='#arts & crafts'>arts & crafts</a></td><td class='source'>🪢 –keywords</td><td class='target'>…<br>zamotaný<br>…</td></tr>
+	<tr><td class='source'><a name='Objects' href='#Objects'>Objects</a></td><td class='source'><a name='tool' href='#tool'>tool</a></td><td class='source'>🔫 -name</td><td class='target'>pistole</td><td class='target'>vodní pistole</td></tr>
+	<tr><td class='source' rowSpan='262'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='28'><a name='math' href='#math'>math</a></td><td class='source'>÷ –keywords</td><td class='target'>…<br>znak</td><td class='target'>…</td></tr>
+	<tr><td class='source'>√ –keywords</td><td class='target'>…</td><td class='target'>…<br>značka odmocniny</td></tr>
+	<tr><td class='source'>+ -name</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target'>znaménko plus</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>plus<br>sčítání<br>součet</td></tr>
+	<tr><td class='source'>± -name</td><td class='target'>plus minus</td></tr>
+	<tr><td class='source'>± –keywords</td><td class='target'>plus minus<br>plus-minus<br>plus/minus</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>znaménko minus</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>minus<br>odčítání<br>rozdíl</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>rovná se</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>je rovno<br>rovná se<br>rovnítko<br>rovnost</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>rovná se přibližně</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>aproximace<br>přiblížení<br>rovná se přibližně</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>nerovná se</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>není rovno<br>nerovná se<br>nerovnítko<br>nerovnost</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>je větší než</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>konec tagu<br>konec značky<br>tag<br>větší než<br>značka</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>je menší než</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>menší než<br>tag<br>začátek tagu<br>začátek značky<br>značka</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>je menší nebo rovno</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>menší nebo rovno<br>menší než<br>menší než nebo rovno<br>nerovnost<br>rovná se<br>rovno</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>je větší nebo rovno</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>nerovnost<br>rovná se<br>rovno<br>větší nebo rovno<br>větší než<br>větší než nebo rovno</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>negace</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>ne<br>negace<br>neplatí</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>svislá čára</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>absolutní hodnota<br>čára<br>negace logického součinu<br>pruh<br>Shefferova funkce<br>svislý pruh</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target'>vlnovka</td></tr>
+	<tr><td class='source'>~ –keywords</td><td class='target'>tilda<br>vlnovka</td></tr>
+	<tr><td class='source' rowSpan='134'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>❓ -name</td><td class='target'>otazník</td><td class='target'>červený otazník</td></tr>
+	<tr><td class='source'>❗ -name</td><td class='target'>vykřičník</td><td class='target'>červený vykřičník</td></tr>
+	<tr><td class='source'>, -name</td><td class='target' rowSpan='232'>▷missing◁</td><td class='target' rowSpan='2'>čárka</td></tr>
+	<tr><td class='source'>, –keywords</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>ideografická čárka</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>čárka<br>ideografická</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>arabská čárka</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>arabská<br>čárka</td></tr>
+	<tr><td class='source'>; -name</td><td class='target' rowSpan='2'>středník</td></tr>
+	<tr><td class='source'>; –keywords</td></tr>
+	<tr><td class='source'>: -name</td><td class='target' rowSpan='2'>dvojtečka</td></tr>
+	<tr><td class='source'>: –keywords</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>arabský středník</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>arabský<br>středník</td></tr>
+	<tr><td class='source'>! -name</td><td class='target' rowSpan='2'>vykřičník</td></tr>
+	<tr><td class='source'>! –keywords</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>obrácený vykřičník</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>obrácený<br>vykřičník</td></tr>
+	<tr><td class='source'>? -name</td><td class='target' rowSpan='2'>otazník</td></tr>
+	<tr><td class='source'>? –keywords</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>obrácený otazník</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>obrácený<br>otazník</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>arabský otazník</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>arabský<br>otazník</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>značka odstavce</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>alinea<br>odstavec<br>paraf<br>parafa</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target'>odkazovací znaménko</td></tr>
+	<tr><td class='source'>※ –keywords</td><td class='target'>komedžiruši<br>odkazovací znaménko<br>označení poznámky<br>symbol odkazu</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>lomítko</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>lomeno<br>lomítko<br>zlomek</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>zpětné lomítko</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>obrácené lomítko<br>zpětné lomítko</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>ampersand</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>a<br>ampersand<br>et<br>plus</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>mřížka</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>hash<br>hashtag<br>křížek<br>mřížka</td></tr>
+	<tr><td class='source'>% -name</td><td class='target'>procento</td></tr>
+	<tr><td class='source'>% –keywords</td><td class='target'>procenta<br>procento</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target' rowSpan='2'>promile</td></tr>
+	<tr><td class='source'>‰ –keywords</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target'>jednoduchá čárka</td></tr>
+	<tr><td class='source'>′ –keywords</td><td class='target'>čárka<br>derivace<br>jedna čárka<br>jednočárkované<br>jednoduchá čárka<br>s čárkou</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>dvojitá čárka</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>čárka<br>druhá derivace<br>dvě čárky<br>dvojčárkované<br>dvojitá čárka<br>dvoučárkované<br>se dvěma čárkami</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>trojitá čárka</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>čárka<br>se třemi čárkami<br>třetí derivace<br>tři čárky<br>tříčárkované<br>trojčárkované<br>trojitá čárka</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>zavináč</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target'>@<br>at<br>et<br>zavináč</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>hvězdička</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>hvězdička<br>maskovací znak<br>zástupný znak<br>žolíkový znak</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>osminová nota</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>hudba<br>nota<br>noty<br>osmina<br>osminová nota</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>bé</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>bé<br>béčko<br>hudba<br>noty<br>posuvka<br>snížený tón</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>křížek (posuvka)</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>hudba<br>křížek<br>noty<br>posuvka<br>zvýšený tón</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>obrácená diakritická čárka</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>akcent<br>čárka<br>gravis<br>obrácená<br>přízvuk<br>těžký akcent<br>tupý akcent</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>diakritická čárka</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>akcent<br>akut<br>čárka<br>ostrý<br>přízvuk</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>stříška</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>circumflex<br>cirkumflex<br>háček<br>stříška<br>vokáň</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>trema</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>diereze<br>dvojtečka<br>přehláska<br>rozlučník<br>trema<br>umlaut</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>spojovník</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>pomlčka<br>spojovník</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>vodorovná čára</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>čára<br>pomlčka<br>pruh<br>vodorovná čára<br>vodorovný pruh</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>podtržení</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>dlouhá čára<br>podtrhávací čára<br>podtržení<br>podtržítko</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>spojovník-minus</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>minus<br>pomlčka<br>spojovník<br>spojovník-minus</td></tr>
+	<tr><td class='source'>. -name</td><td class='target'>tečka</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>bod<br>tečka</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>výpustka</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>elipsa<br>tři tečky<br>výpustka</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>ideografická tečka</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>bod<br>ideografická<br>tečka</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>spojovací tečka</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>bod<br>pomlčka<br>spojovník<br>tečka</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>japonská středová tečka</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>interpunkce<br>katakana<br>střed<br>tečka<br>tečky</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>jednoduchá uvozovka nahoře</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>jednoduchá uvozovka<br>poloviční uvozovky nahoře<br>pravá jednoduchá uvozovka<br>uvozovka<br>uvozovka nahoře<br>uzavírací jednoduchá uvozovka<br>uzavírací uvozovka</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>obrácená jednoduchá uvozovka nahoře</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>obrácená jednoduchá uvozovka<br>obrácená pravá uvozovka<br>obrácená uvozovka<br>obrácená uvozovka nahoře<br>obrácená uzavírací uvozovka<br>obrácené poloviční uvozovky nahoře<br>uvozovka</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>jednoduchá uvozovka dole</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>jednoduchá uvozovka<br>jednoduchá uvozovka dole<br>levá jednoduchá uvozovka<br>otevírací jednoduchá uvozovka<br>otevírací uvozovka<br>poloviční uvozovky dole<br>uvozovka</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>apostrof</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>apostrof<br>jednoduchá uvozovka<br>rovná uvozovka</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>uvozovky nahoře</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>dvojitá uvozovka nahoře<br>pravá dvojitá uvozovka<br>pravé uvozovky<br>uvozovky<br>uvozovky nahoře<br>uzavírací dvojitá uvozovka<br>uzavírací uvozovky</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>obrácené uvozovky nahoře</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>obrácená dvojitá uvozovka<br>obrácená dvojitá uvozovka nahoře<br>obrácené pravé uvozovky<br>obrácené uvozovky<br>obrácené uvozovky nahoře<br>obrácené uzavírací uvozovky<br>uvozovky</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>uvozovky dole</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>dvojitá uvozovka dole<br>levá dvojitá uvozovka<br>levé uvozovky<br>otevírací dvojitá uvozovka<br>otevírací uvozovky<br>uvozovky<br>uvozovky dole</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>pravá závorka</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>kulatá závorka<br>kulaté závorky<br>pravá kulatá závorka<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>levá hranatá závorka</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>hranatá závorka<br>hranaté závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>pravá hranatá závorka</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>hranatá závorka<br>hranaté závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>levá složená závorka</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>složená závorka<br>složené závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>pravá složená závorka</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>složená závorka<br>složené závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>levá asijská komentářová závorka</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>šestiúhelníková závorka<br>šestiúhelníkové závorky<br>závorka<br>závorky<br>želví závorka<br>želví závorky</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>pravá asijská komentářová závorka</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>šestiúhelníková závorka<br>šestiúhelníkové závorky<br>závorka<br>závorky<br>želví závorka<br>želví závorky</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>levá lomená závorka</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>lomená závorka<br>lomené závorky<br>špičatá závorka<br>špičaté závorky<br>úhlová závorka<br>úhlové závorky</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>pravá lomená závorka</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>lomená závorka<br>lomené závorky<br>špičatá závorka<br>špičaté závorky<br>úhlová závorka<br>úhlové závorky</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>dvojitá levá lomená závorka</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>dvojitá lomená závorka<br>dvojitá špičatá závorka<br>dvojitá úhlová závorka<br>dvojité lomené závorky<br>dvojité špičaté závorky<br>dvojité úhlové závorky</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>dvojitá pravá lomená závorka</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>dvojitá lomená závorka<br>dvojitá špičatá závorka<br>dvojitá úhlová závorka<br>dvojité lomené závorky<br>dvojité špičaté závorky<br>dvojité úhlové závorky</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>levá rohová závorka</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>asijské uvozovky<br>horní celá část<br>levá horní rohová závorka<br>levá jednoduchá asijská uvozovka<br>rohová závorka<br>rohové závorky</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>pravá rohová závorka</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>asijské uvozovky<br>dolní celá část<br>pravá dolní rohová závorka<br>pravá jednoduchá asijská uvozovka<br>rohová závorka<br>rohové závorky</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>dvojitá levá rohová závorka</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>asijské uvozovky<br>dutá rohová závorka<br>duté rohové závorky<br>dvojitá rohová závorka<br>dvojité rohové závorky<br>levá dvojitá asijská uvozovka<br>levá horní rohová závorka<br>rohová závorka<br>rohové závorky</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>dvojitá pravá rohová závorka</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>asijské uvozovky<br>dutá rohová závorka<br>duté rohové závorky<br>dvojitá rohová závorka<br>dvojité rohové závorky<br>pravá dolní rohová závorka<br>pravá dvojitá asijská uvozovka<br>rohová závorka<br>rohové závorky</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>levá dutá lentikulární závorka</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>bílá lentikulární závorka<br>bílé lentikulární závorky<br>dutá lentikulární závorka<br>duté lentikulární závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>pravá dutá lentikulární závorka</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>bílá lentikulární závorka<br>bílé lentikulární závorky<br>dutá lentikulární závorka<br>duté lentikulární závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>levá plná lentikulární závorka</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>černá lentikulární závorka<br>černé lentikulární závorky<br>plná lentikulární závorka<br>plné lentikulární závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>pravá plná lentikulární závorka</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>černá lentikulární závorka<br>černé lentikulární závorky<br>plná lentikulární závorka<br>plné lentikulární závorky<br>závorka<br>závorky</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>dolar</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>dolar<br>peníze<br>peso<br>USD</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>cent</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>peso</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>won</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>KPW<br>KRW</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target'>mill</td></tr>
+	<tr><td class='source'>₥ –keywords</td><td class='target'>mil</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>bitcoin</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>BTC<br>kryptoměna<br>měna</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‾ -name</td><td class='target'>pruh</td><td class='target' rowSpan='90'>comprehensive</td></tr>
+	<tr><td class='source'>‾ –keywords</td><td class='target'>aritmetrický průměr<br>periodický desetinný rozvoj<br>pruh<br>uzávěr množiny<br>uzda</td></tr>
+	<tr><td class='source'>‽ -name</td><td class='target'>interrobang</td></tr>
+	<tr><td class='source'>‽ –keywords</td><td class='target'>interabang<br>interrobang<br>vykřičník a otazník</td></tr>
+	<tr><td class='source'>‸ -name</td><td class='target' rowSpan='2'>stříška (nediakritický znak)</td></tr>
+	<tr><td class='source'>‸ –keywords</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>asterismus</td></tr>
+	<tr><td class='source'>⁂ –keywords</td><td class='target'>asterismus<br>dinkus<br>skupinka hvězd</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target' rowSpan='2'>přeškrutnutá šipka doleva</td></tr>
+	<tr><td class='source'>↚ –keywords</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target' rowSpan='2'>přeškrtnutá šipka doprava</td></tr>
+	<tr><td class='source'>↛ –keywords</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target' rowSpan='2'>přeškrtnutá šipka doleva a doprava</td></tr>
+	<tr><td class='source'>↮ –keywords</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target' rowSpan='2'>vlnitá šipka doleva</td></tr>
+	<tr><td class='source'>↜ –keywords</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target' rowSpan='2'>vlnitá šipka doprava</td></tr>
+	<tr><td class='source'>↝ –keywords</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target' rowSpan='2'>dvojitá šipka doleva</td></tr>
+	<tr><td class='source'>↞ –keywords</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target' rowSpan='2'>dvojitá šipka nahoru</td></tr>
+	<tr><td class='source'>↟ –keywords</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target' rowSpan='2'>dvojitá šipka doprava</td></tr>
+	<tr><td class='source'>↠ –keywords</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target' rowSpan='2'>dvojitá šipka dolů</td></tr>
+	<tr><td class='source'>↡ –keywords</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target' rowSpan='2'>šipka doleva s chvostem</td></tr>
+	<tr><td class='source'>↢ –keywords</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target' rowSpan='2'>šipka doprava s chvostem</td></tr>
+	<tr><td class='source'>↣ –keywords</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target' rowSpan='2'>šipka vlevo od zarážky</td></tr>
+	<tr><td class='source'>↤ –keywords</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target' rowSpan='2'>šipka nahoru od zarážky</td></tr>
+	<tr><td class='source'>↥ –keywords</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target' rowSpan='2'>šipka vpravo od zarážky</td></tr>
+	<tr><td class='source'>↦ –keywords</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target' rowSpan='2'>šipka dolů od zarážky</td></tr>
+	<tr><td class='source'>↧ –keywords</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target' rowSpan='2'>šipka nahoru a dolů se základnou</td></tr>
+	<tr><td class='source'>↨ –keywords</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target' rowSpan='2'>špika doleva se smyčkou</td></tr>
+	<tr><td class='source'>↫ –keywords</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target' rowSpan='2'>špika doprava se smyčkou</td></tr>
+	<tr><td class='source'>↬ –keywords</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target' rowSpan='2'>vlnící se šipka doleva a doprava</td></tr>
+	<tr><td class='source'>↭ –keywords</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>cik cak šipka dolů</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>blesk<br>cik cak</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target' rowSpan='2'>šipka směrem nahoru a doleva</td></tr>
+	<tr><td class='source'>↰ –keywords</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target' rowSpan='2'>šipka směrem nahoru a doprava</td></tr>
+	<tr><td class='source'>↱ –keywords</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target' rowSpan='2'>šipka směrem dolu a doleva</td></tr>
+	<tr><td class='source'>↲ –keywords</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target' rowSpan='2'>šipka směrem dolu a doprava</td></tr>
+	<tr><td class='source'>↳ –keywords</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target' rowSpan='2'>šipka doprava a dolu</td></tr>
+	<tr><td class='source'>↴ –keywords</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target' rowSpan='2'>šipka dolů a doleva</td></tr>
+	<tr><td class='source'>↵ –keywords</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target' rowSpan='2'>polokruhová šipka horní proti směru ručiček</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>polokruhová šipka horní po směru ručiček</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>šipka směřijící na severozápad s horní zarážkou</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target'>šipka doleva se zarážkou nad šipkou doprava se zarážkou</td></tr>
+	<tr><td class='source'>↹ –keywords</td><td class='target'>šipka doleva se zarážkou nad šipkou doprava se zarážko</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>šipka na otevřené kružnici proti směru ručiček</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>šipka na otevřené kružnici po směru ručiček</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>praporek nahoře směrem doleva</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>doleva<br>nahoře<br>praporek</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target' rowSpan='2'>praporek dole směrem doleva</td></tr>
+	<tr><td class='source'>↽ –keywords</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>praporek vpravo směrem nahoru</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>nahoru<br>praporek<br>vpravo</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>praporek vlevo směrem nahoru</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>nahoru<br>praporek<br>vlevo</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>praporek nahoře směrem doprava</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>doprava<br>nahoře<br>praporek</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>praporek dole směrem doprava</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>dole<br>doprava<br>praporek</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>pravorek vpravo směrem dolů</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>dolů<br>praporek<br>vpravo</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>praporek vlevo směrem dolů</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>dolů<br>praporek<br>vlevo</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source'><a name='compound-UnitPattern1-power2' href='#compound-UnitPattern1-power2'>compound-UnitPattern1-power2</a></td><td class='source' rowSpan='2'>long</td><td class='target'>čtvereční {0}</td><td class='target'>{0}²</td></tr>
+	<tr><td class='source'><a name='compound-UnitPattern1-power3' href='#compound-UnitPattern1-power3'>compound-UnitPattern1-power3</a></td><td class='target'>krychlové {0}</td><td class='target'>{0}³</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

@@ -58,10 +58,692 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='4'>sw</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='2'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: index</td><td class='source' rowSpan='13'>sw</td><td class='target'>[A B C D E F G H I J K L M N O P R S T U V W Y Z]</td><td class='target'>[A B {CH} D E F G H I J K L M N O P R S T U V W Y Z]</td><td class='target'>core</td></tr>
+	<tr><td class='source'><a name='Parse' href='#Parse'>Parse</a></td><td class='source'>date-lenient(:)</td><td class='target'>[\:∶]</td><td class='target'>[\:∶︓﹕：]</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='C' href='#C'>C</a></td><td class='source'>Croatian ► hr</td><td class='target'>Kikroeshia</td><td class='target'>Kikorasia</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source' rowSpan='2'><a name='K' href='#K'>K</a></td><td class='source'>Koyra Chiini ► khq</td><td class='target'>Koyra Chiini</td><td class='target'>Kikoyra Chiini</td></tr>
+	<tr><td class='source'>Koyraboro Senni ► ses</td><td class='target'>Koyraboro Senni</td><td class='target'>Kikoyraboro Senni</td></tr>
+	<tr><td class='source'><a name='M' href='#M'>M</a></td><td class='source'>Multiple languages ► mul</td><td class='target'>Lugha Nyingi</td><td class='target'>Lugha nyingi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source' rowSpan='2'><a name='P' href='#P'>P</a></td><td class='source'>Persian ► fa_AF</td><td class='target'>fa_AF</td><td class='target'>Kiajemi (Afganistani)</td></tr>
+	<tr><td class='source'>Portuguese ► pt_BR</td><td class='target'>pt_BR</td><td class='target'>Kireno (Brazili)</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='T' href='#T'>T</a></td><td class='source'>Tasawaq ► twq</td><td class='target'>Kitasawaq</td><td class='target'>Kitasawak</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='U' href='#U'>U</a></td><td class='source'>Unknown language ► und</td><td class='target'>Lugha Isiyojulikana</td><td class='target'>Lugha isiyojulikana</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source'><a name='Other' href='#Other'>Other</a></td><td class='source'>Brai</td><td class='target'>Braille</td><td class='target'>Nukta nundu</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'>202</td><td class='target'>Afrika Kusini mwa Jangwa la Sahara</td><td class='target'>Afrika ya Kusini mwa Jangwa la Sahara</td><td class='target' rowSpan='10'>moderate</td></tr>
+	<tr><td class='source'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td><td class='source'><a name='Caribbean' href='#Caribbean'>Caribbean</a></td><td class='source'>CU</td><td class='target'>Cuba</td><td class='target'>Kuba</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'>CI</td><td class='source'>sw_KE</td><td class='target'>Ivorikosti</td><td class='target'>Cote d’Ivoire</td></tr>
+	<tr><td class='source'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source'>ST</td><td class='source' rowSpan='672'>sw</td><td class='target'>São Tomé na Príncipe</td><td class='target'>Sao Tome na Principe</td></tr>
+	<tr><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Uswazi</td><td class='target'>Eswatini</td></tr>
+	<tr><td class='source'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td><td class='source'>DK</td><td class='target'>Denmark</td><td class='target'>Denmaki</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source'>CY</td><td class='target'>Cyprus</td><td class='target'>Saiprasi</td></tr>
+	<tr><td class='source'><a name='Southern Asia' href='#Southern Asia'>Southern Asia</a></td><td class='source'>MV</td><td class='target'>Maldives</td><td class='target'>Maldivi</td></tr>
+	<tr><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>VN</td><td class='target'>Vietnam</td><td class='target'>Vietnamu</td></tr>
+	<tr><td class='source'><a name='Territories (Oceania)' href='#Territories (Oceania)'>Territories (Oceania)</a></td><td class='source'><a name='Micronesian Region' href='#Micronesian Region'>Micronesian Region</a></td><td class='source'>FM</td><td class='target'>Micronesia</td><td class='target'>Mikronesia</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-roc</td><td class='target'>Kalenda ya Minguo</td><td class='target'>Kalenda ya Jamhuri ya Uchina</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source'><a name='colCaseLevel' href='#colCaseLevel'>colCaseLevel</a></td><td class='source'>colCaseLevel</td><td class='target'>Upangaji Unaoathiriwa na Herufi</td><td class='target'>Upangaji Kulingana na Ukubwa wa Herufi</td></tr>
+	<tr><td class='source'><a name='colNumeric' href='#colNumeric'>colNumeric</a></td><td class='source'>colNumeric</td><td class='target'>Upangaji wa Namba</td><td class='target'>Upangaji kwa Nambari</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Measurement System' href='#Measurement System'>Measurement System</a></td><td class='source'>ms-uksystem</td><td class='target'>Mfumo wa UK</td><td class='target'>Mfumo wa Vipimo wa Uingereza</td></tr>
+	<tr><td class='source'>ms-ussystem</td><td class='target'>Mfumo wa US</td><td class='target'>Mfumo wa Vipimo wa Marekani</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-khmr</td><td class='target'>Nambari za Kikhmer</td><td class='target'>Nambari za Kikambodia</td></tr>
+	<tr><td class='source'>numbers-latn</td><td class='target'>Nambari za Magharibi</td><td class='target'>Nambari za Nchi za Magharibi</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='29'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='9'><a name='North America' href='#North America'>North America</a></td><td class='source' rowSpan='3'><a name='Cuba' href='#Cuba'>Cuba</a></td><td class='source'>generic-long</td><td class='target'>Saa za Cuba</td><td class='target'>Saa za Kuba</td><td class='target' rowSpan='22'>moderate</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani ya Cuba</td><td class='target'>Saa za Wastani ya Kuba</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Mchana za Cuba</td><td class='target'>Saa za Mchana za Kuba</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Mexico_Northwest' href='#Mexico_Northwest'>Mexico_Northwest</a></td><td class='source'>generic-long</td><td class='target'>Saa za Mexico Kaskazini Magharibi</td><td class='target'>Saa za Meksiko Kaskazini Magharibi</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Mexico Kaskazini Magharibi</td><td class='target'>Saa za Wastani za Meksiko Kaskazini Magharibi</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za mchana za Mexico Kaskazini Magharibi</td><td class='target'>Saa za mchana za Meksiko Kaskazini Magharibi</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Mexico_Pacific' href='#Mexico_Pacific'>Mexico_Pacific</a></td><td class='source'>generic-long</td><td class='target'>Saa za pasifiki za Mexico</td><td class='target'>Saa za pasifiki za Meksiko</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za wastani za pasifiki za Mexico</td><td class='target'>Saa za wastani za pasifiki za Meksiko</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za mchana za pasifiki za Mexico</td><td class='target'>Saa za mchana za pasifiki za Meksiko</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='South America' href='#South America'>South America</a></td><td class='source' rowSpan='3'><a name='Colombia' href='#Colombia'>Colombia</a></td><td class='source'>generic-long</td><td class='target'>Saa za Colombia</td><td class='target'>Saa za Kolombia</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Colombia</td><td class='target'>Saa za Wastani za Kolombia</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Majira ya joto za Colombia</td><td class='target'>Saa za Majira ya joto za Kolombia</td></tr>
+	<tr><td class='source'><a name='Ecuador' href='#Ecuador'>Ecuador</a></td><td class='source'>standard-long</td><td class='target'>Saa za Ecuador</td><td class='target'>Saa za Ekwado</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Paraguay' href='#Paraguay'>Paraguay</a></td><td class='source'>generic-long</td><td class='target'>Saa za Paraguay</td><td class='target'>Saa za Paragwai</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Paraguay</td><td class='target'>Saa za Wastani za Paragwai</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Majira ya joto za Paraguay</td><td class='target'>Saa za Majira ya joto za Paragwai</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Uruguay' href='#Uruguay'>Uruguay</a></td><td class='source'>generic-long</td><td class='target'>Saa za Uruguay</td><td class='target'>Saa za Urugwai</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Uruguay</td><td class='target'>Saa za Wastani za Urugwai</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Majira ya joto za Uruguay</td><td class='target'>Saa za Majira ya joto za Urugwai</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Africa' href='#Africa'>Africa</a></td><td class='source' rowSpan='3'><a name='Mauritius' href='#Mauritius'>Mauritius</a></td><td class='source'>generic-long</td><td class='target'>Saa za Mauritius</td><td class='target'>Saa za Morisi</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Mauritius</td><td class='target'>Saa za Wastani za Morisi</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Majira ya joto za Mauritius</td><td class='target'>Saa za Majira ya joto za Morisi</td></tr>
+	<tr><td class='source'><a name='Europe' href='#Europe'>Europe</a></td><td class='source'><a name='Europe_Central' href='#Europe_Central'>Europe_Central</a></td><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Ulaya ya kati</td><td class='target'>Saa za Wastani za Ulaya ya Kati</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source' rowSpan='3'><a name='Georgia' href='#Georgia'>Georgia</a></td><td class='source'>generic-long</td><td class='target'>Saa za Georgia</td><td class='target'>Saa za Jojia</td><td class='target' rowSpan='107'>moderate</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Saa za Wastani za Georgia</td><td class='target'>Saa za Wastani za Jojia</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Saa za Majira ya joto za Georgia</td><td class='target'>Saa za Majira ya joto za Jojia</td></tr>
+	<tr><td class='source'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'><a name='Japan' href='#Japan'>Japan</a></td><td class='source' rowSpan='3'>standard-long</td><td class='target'>Saa Wastani za Japan</td><td class='target'>Saa za Wastani za Japani</td></tr>
+	<tr><td class='source'><a name='Southern Asia' href='#Southern Asia'>Southern Asia</a></td><td class='source'><a name='India' href='#India'>India</a></td><td class='target'>Saa Wastani za India</td><td class='target'>Saa za Wastani za India</td></tr>
+	<tr><td class='source'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source'><a name='Christmas' href='#Christmas'>Christmas</a></td><td class='target'>Saa za Kisiwa cha Christmas</td><td class='target'>Saa za Kisiwa cha Krismasi</td></tr>
+	<tr><td class='source'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Symbols ' href='#Symbols '>Symbols </a></td><td class='source'>approximatelySign</td><td class='target'>▷missing◁</td><td class='target'>~</td></tr>
+	<tr><td class='source' rowSpan='110'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='25'><a name='North America (C)' href='#North America (C)'>North America (C)</a></td><td class='source' rowSpan='3'><a name='Central America: Costa Rica' href='#Central America: Costa Rica'>Central America: Costa Rica</a></td><td class='source'>CRC-name-one</td><td class='target'>colon ya Costa Rica</td><td class='target'>colon ya Kostarika</td></tr>
+	<tr><td class='source'>CRC-name-other</td><td class='target'>colon za Costa Rica</td><td class='target'>colon za Kostarika</td></tr>
+	<tr><td class='source'>CRC-name</td><td class='target'>Colon ya Costa Rica</td><td class='target'>Colon ya Kostarika</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central America: Mexico' href='#Central America: Mexico'>Central America: Mexico</a></td><td class='source'>MXN-name-one</td><td class='target'>peso ya Mexico</td><td class='target'>peso ya Meksiko</td></tr>
+	<tr><td class='source'>MXN-name-other</td><td class='target'>peso za Mexico</td><td class='target'>peso za Meksiko</td></tr>
+	<tr><td class='source'>MXN-name</td><td class='target'>Peso ya Mexico</td><td class='target'>Peso ya Meksiko</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central America: Nicaragua' href='#Central America: Nicaragua'>Central America: Nicaragua</a></td><td class='source'>NIO-name-one</td><td class='target'>cordoba ya Nicaragua</td><td class='target'>cordoba ya Nikaragwa</td></tr>
+	<tr><td class='source'>NIO-name-other</td><td class='target'>cordoba za Nicaragua</td><td class='target'>cordoba za Nikaragwa</td></tr>
+	<tr><td class='source'>NIO-name</td><td class='target'>Cordoba ya Nicaragua</td><td class='target'>Cordoba ya Nikaragwa</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Caribbean: Cuba' href='#Caribbean: Cuba'>Caribbean: Cuba</a></td><td class='source'>CUC-name-one</td><td class='target'>Peso ya Cuba Inayoweza Kubadilishwa</td><td class='target'>peso ya Kuba inayoweza kubadilishwa</td></tr>
+	<tr><td class='source'>CUC-name-other</td><td class='target'>Peso za Cuba Zinazoweza Kubadilishwa</td><td class='target'>peso za Kuba zinazoweza kubadilishwa</td></tr>
+	<tr><td class='source'>CUP-name-one</td><td class='target'>Peso ya Cuba</td><td class='target'>peso ya Kuba</td></tr>
+	<tr><td class='source'>CUP-name-other</td><td class='target'>Peso za Cuba</td><td class='target'>peso za Kuba</td></tr>
+	<tr><td class='source'>CUC-name</td><td class='target'>Peso ya Cuba Inayoweza Kubadilishwa</td><td class='target'>Peso ya Kuba Inayoweza Kubadilishwa</td></tr>
+	<tr><td class='source'>CUP-name</td><td class='target'>Peso ya Cuba</td><td class='target'>Peso ya Kuba</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean: Dominican Republic' href='#Caribbean: Dominican Republic'>Caribbean: Dominican Republic</a></td><td class='source'>DOP-name-one</td><td class='target'>peso ya Dominica</td><td class='target'>peso ya Dominika</td></tr>
+	<tr><td class='source'>DOP-name-other</td><td class='target'>peso za Dominica</td><td class='target'>peso za Dominika</td></tr>
+	<tr><td class='source'>DOP-name</td><td class='target'>Peso ya Dominica</td><td class='target'>Peso ya Dominika</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean: Jamaica' href='#Caribbean: Jamaica'>Caribbean: Jamaica</a></td><td class='source'>JMD-name-one</td><td class='target'>dola ya Jamaica</td><td class='target'>dola ya Jamaika</td></tr>
+	<tr><td class='source'>JMD-name-other</td><td class='target'>dola za Jamaica</td><td class='target'>dola za Jamaika</td></tr>
+	<tr><td class='source'>JMD-name</td><td class='target'>Dola ya Jamaica</td><td class='target'>Dola ya Jamaika</td></tr>
+	<tr><td class='source'><a name='Caribbean: Cayman Islands' href='#Caribbean: Cayman Islands'>Caribbean: Cayman Islands</a></td><td class='source'>KYD-name-other</td><td class='target'>Dola ya Visiwa vya Cayman</td><td class='target'>dola za Visiwa vya Cayman</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean: St. Lucia' href='#Caribbean: St. Lucia'>Caribbean: St. Lucia</a></td><td class='source'>XCD-name-one</td><td class='target'>Dola ya Caribbean Mashariki</td><td class='target'>dola ya Karibi Mashariki</td></tr>
+	<tr><td class='source'>XCD-name-other</td><td class='target'>Dola za Caribbean Mashariki</td><td class='target'>dola za Karibi Mashariki</td></tr>
+	<tr><td class='source'>XCD-name</td><td class='target'>Dola ya Caribbean Mashariki</td><td class='target'>Dola ya Karibi Mashariki</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='South America (C)' href='#South America (C)'>South America (C)</a></td><td class='source' rowSpan='3'><a name='South America: Argentina' href='#South America: Argentina'>South America: Argentina</a></td><td class='source'>ARS-name-one</td><td class='target'>Peso ya Argentina</td><td class='target'>peso ya Ajentina</td></tr>
+	<tr><td class='source'>ARS-name-other</td><td class='target'>Peso za Argentina</td><td class='target'>peso za Ajentina</td></tr>
+	<tr><td class='source'>ARS-name</td><td class='target'>Peso ya Argentina</td><td class='target'>Peso ya Ajentina</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Colombia' href='#South America: Colombia'>South America: Colombia</a></td><td class='source'>COP-name-one</td><td class='target'>Peso ya Colombia</td><td class='target'>peso ya Kolombia</td></tr>
+	<tr><td class='source'>COP-name-other</td><td class='target'>Peso za Colombia</td><td class='target'>peso za Kolombia</td></tr>
+	<tr><td class='source'>COP-name</td><td class='target'>Peso ya Colombia</td><td class='target'>Peso ya Kolombia</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Guyana' href='#South America: Guyana'>South America: Guyana</a></td><td class='source'>GYD-name-one</td><td class='target'>Dola ya Guyana</td><td class='target'>dola ya Guyana</td></tr>
+	<tr><td class='source'>GYD-name-other</td><td class='target'>Dola za Guyana</td><td class='target'>dola za Guyana</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Peru' href='#South America: Peru'>South America: Peru</a></td><td class='source'>PEN-name-one</td><td class='target'>Sol ya Peru</td><td class='target'>sol ya Peru</td></tr>
+	<tr><td class='source'>PEN-name-other</td><td class='target'>Sol za Peru</td><td class='target'>sol za Peru</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Paraguay' href='#South America: Paraguay'>South America: Paraguay</a></td><td class='source'>PYG-name-one</td><td class='target'>Guarani ya Paraguay</td><td class='target'>guarani ya Paragwai</td></tr>
+	<tr><td class='source'>PYG-name-other</td><td class='target'>Guarani za Paraguay</td><td class='target'>guarani za Paragwai</td></tr>
+	<tr><td class='source'>PYG-name</td><td class='target'>Guarani ya Paraguay</td><td class='target'>Guarani ya Paragwai</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Suriname' href='#South America: Suriname'>South America: Suriname</a></td><td class='source'>SRD-name-one</td><td class='target'>Dola ya Suriname</td><td class='target'>dola ya Suriname</td></tr>
+	<tr><td class='source'>SRD-name-other</td><td class='target'>Dola za Suriname</td><td class='target'>dola za Suriname</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Uruguay' href='#South America: Uruguay'>South America: Uruguay</a></td><td class='source'>UYU-name-one</td><td class='target'>Peso ya Uruguay</td><td class='target'>peso ya Urugwai</td></tr>
+	<tr><td class='source'>UYU-name-other</td><td class='target'>Peso za Uruguay</td><td class='target'>peso za Urugwai</td></tr>
+	<tr><td class='source'>UYU-name</td><td class='target'>Peso ya Uruguay</td><td class='target'>Peso ya Urugwai</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Venezuela' href='#South America: Venezuela'>South America: Venezuela</a></td><td class='source'>VES-name-one</td><td class='target'>Bolivar ya Venezuela</td><td class='target'>bolivar ya Venezuela</td></tr>
+	<tr><td class='source'>VES-name-other</td><td class='target'>Bolivar za Venezuela</td><td class='target'>bolivar za Venezuela</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern/Western Europe' href='#Northern/Western Europe'>Northern/Western Europe</a></td><td class='source' rowSpan='3'><a name='Northern Europe: Norway' href='#Northern Europe: Norway'>Northern Europe: Norway</a></td><td class='source'>NOK-name-one</td><td class='target'>krone ya Norway</td><td class='target'>krone ya Norwe</td></tr>
+	<tr><td class='source'>NOK-name-other</td><td class='target'>krone za Norway</td><td class='target'>krone za Norwe</td></tr>
+	<tr><td class='source'>NOK-name</td><td class='target'>Krone ya Norway</td><td class='target'>Krone ya Norwe</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source'><a name='Eastern Europe: Czechia' href='#Eastern Europe: Czechia'>Eastern Europe: Czechia</a></td><td class='source'>CZK-name</td><td class='target'>koruna ya Jamhuri ya Czech</td><td class='target'>Koruna ya Jamhuri ya Czech</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Croatia' href='#Southern Europe: Croatia'>Southern Europe: Croatia</a></td><td class='source'>HRK-name-one</td><td class='target'>kuna ya Croatia</td><td class='target'>kuna ya Korasia</td></tr>
+	<tr><td class='source'>HRK-name-other</td><td class='target'>kuna za Croatia</td><td class='target'>kuna za Korasia</td></tr>
+	<tr><td class='source'>HRK-name</td><td class='target'>Kuna ya Croatia</td><td class='target'>Kuna ya Korasia</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: North Macedonia' href='#Southern Europe: North Macedonia'>Southern Europe: North Macedonia</a></td><td class='source'>MKD-name-one</td><td class='target'>denar ya Macedonia</td><td class='target'>denar ya Masedonia</td></tr>
+	<tr><td class='source'>MKD-name-other</td><td class='target'>denar za Macedonia</td><td class='target'>denar za Masedonia</td></tr>
+	<tr><td class='source'>MKD-name</td><td class='target'>Denar ya Macedonia</td><td class='target'>Denar ya Masedonia</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern Africa' href='#Northern Africa'>Northern Africa</a></td><td class='source' rowSpan='3'><a name='Northern Africa: Morocco' href='#Northern Africa: Morocco'>Northern Africa: Morocco</a></td><td class='source'>MAD-name-one</td><td class='target'>dirham ya Morocco</td><td class='target'>dirham ya Moroko</td></tr>
+	<tr><td class='source'>MAD-name-other</td><td class='target'>dirham za Morocco</td><td class='target'>dirham za Moroko</td></tr>
+	<tr><td class='source'>MAD-name</td><td class='target'>Dirham ya Morocco</td><td class='target'>Dirham ya Moroko</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Africa: Mauritania' href='#Western Africa: Mauritania'>Western Africa: Mauritania</a></td><td class='source'>MRU-name-one</td><td class='target'>ouguiya ya Mauritania</td><td class='target'>ouguiya ya Moritania</td></tr>
+	<tr><td class='source'>MRU-name-other</td><td class='target'>ouguiya za Mauritania</td><td class='target'>ouguiya za Moritania</td></tr>
+	<tr><td class='source'>MRU-name</td><td class='target'>Ouguiya ya Mauritania</td><td class='target'>Ouguiya ya Moritania</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Africa: Sierra Leone' href='#Western Africa: Sierra Leone'>Western Africa: Sierra Leone</a></td><td class='source'>SLL-name-one</td><td class='target' rowSpan='2'>leone</td><td class='target'>leone ya Siera Leoni</td></tr>
+	<tr><td class='source'>SLL-name-other</td><td class='target'>leone za Siera Leoni</td></tr>
+	<tr><td class='source'>SLL-name</td><td class='target'>Leone</td><td class='target'>Leone ya Siera Leoni</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Eastern Africa' href='#Eastern Africa'>Eastern Africa</a></td><td class='source' rowSpan='3'><a name='Eastern Africa: Djibouti' href='#Eastern Africa: Djibouti'>Eastern Africa: Djibouti</a></td><td class='source'>DJF-name-one</td><td class='target'>faranga ya Djibouti</td><td class='target'>faranga ya Jibuti</td></tr>
+	<tr><td class='source'>DJF-name-other</td><td class='target'>faranga za Djibouti</td><td class='target'>faranga za Jibuti</td></tr>
+	<tr><td class='source'>DJF-name</td><td class='target'>Faranga ya Djibouti</td><td class='target'>Faranga ya Jibuti</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Comoros' href='#Eastern Africa: Comoros'>Eastern Africa: Comoros</a></td><td class='source'>KMF-name-one</td><td class='target'>faranga ya Comoros</td><td class='target'>faranga ya Komoro</td></tr>
+	<tr><td class='source'>KMF-name-other</td><td class='target'>faranga za Comoros</td><td class='target'>faranga za Komoro</td></tr>
+	<tr><td class='source'>KMF-name</td><td class='target'>Faranga ya Comoros</td><td class='target'>Faranga ya Komoro</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Madagascar' href='#Eastern Africa: Madagascar'>Eastern Africa: Madagascar</a></td><td class='source'>MGA-name-one</td><td class='target'>ariari ya Madagascar</td><td class='target'>ariari ya Madagaska</td></tr>
+	<tr><td class='source'>MGA-name-other</td><td class='target'>ariari za Madagascar</td><td class='target'>ariari za Madagaska</td></tr>
+	<tr><td class='source'>MGA-name</td><td class='target'>Ariari ya Madagascar</td><td class='target'>Ariari ya Madagaska</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Mauritius' href='#Eastern Africa: Mauritius'>Eastern Africa: Mauritius</a></td><td class='source'>MUR-name-one</td><td class='target'>rupia ya Mauritius</td><td class='target'>rupia ya Morisi</td></tr>
+	<tr><td class='source'>MUR-name-other</td><td class='target'>rupia za Mauritius</td><td class='target'>rupia za Morisi</td></tr>
+	<tr><td class='source'>MUR-name</td><td class='target'>Rupia ya Mauritius</td><td class='target'>Rupia ya Morisi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eastern Africa: Mozambique' href='#Eastern Africa: Mozambique'>Eastern Africa: Mozambique</a></td><td class='source'>MZN-name-one</td><td class='target'>Metikali ya Msumbiji</td><td class='target'>metikali ya Msumbiji</td></tr>
+	<tr><td class='source'>MZN-name-other</td><td class='target'>Metikali za Msumbiji</td><td class='target'>metikali za Msumbiji</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source' rowSpan='3'><a name='Southern Africa: Eswatini' href='#Southern Africa: Eswatini'>Southern Africa: Eswatini</a></td><td class='source'>SZL-name-one</td><td class='target' rowSpan='2'>lilangeni</td><td class='target'>lilangeni ya Uswazi</td></tr>
+	<tr><td class='source'>SZL-name-other</td><td class='target'>emalangeni za Uswazi</td></tr>
+	<tr><td class='source'>SZL-name</td><td class='target'>Lilangeni</td><td class='target'>Lilangeni ya Uswazi</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
-	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Bahrain' href='#Western Asia: Bahrain'>Western Asia: Bahrain</a></td><td class='source'>BHD-name-one</td><td class='target'>dinar ya Bahrain</td><td class='target'>dinari ya Bahareni</td></tr>
+	<tr><td class='source'>BHD-name-other</td><td class='target'>dinar za Bahrain</td><td class='target'>dinari za Bahareni</td></tr>
+	<tr><td class='source'>BHD-name</td><td class='target'>Dinar ya Bahrain</td><td class='target'>Dinari ya Bahareni</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Georgia' href='#Western Asia: Georgia'>Western Asia: Georgia</a></td><td class='source'>GEL-name-one</td><td class='target'>lari ya Georgia</td><td class='target'>lari ya Jojia</td></tr>
+	<tr><td class='source'>GEL-name-other</td><td class='target'>lari za Georgia</td><td class='target'>lari za Jojia</td></tr>
+	<tr><td class='source'>GEL-name</td><td class='target'>Lari ya Georgia</td><td class='target'>Lari ya Jojia</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Iraq' href='#Western Asia: Iraq'>Western Asia: Iraq</a></td><td class='source'>IQD-name-one</td><td class='target'>dinar ya Iraq</td><td class='target'>dinari ya Iraki</td></tr>
+	<tr><td class='source'>IQD-name-other</td><td class='target'>dinar za Iraq</td><td class='target'>dinari za Iraki</td></tr>
+	<tr><td class='source'>IQD-name</td><td class='target'>Dinar ya Iraq</td><td class='target'>Dinari ya Iraki</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Jordan' href='#Western Asia: Jordan'>Western Asia: Jordan</a></td><td class='source'>JOD-name-one</td><td class='target'>dinar ya Jordan</td><td class='target'>dinari ya Jordan</td></tr>
+	<tr><td class='source'>JOD-name-other</td><td class='target'>dinar za Jordan</td><td class='target'>dinari za Jordan</td></tr>
+	<tr><td class='source'>JOD-name</td><td class='target'>Dinar ya Jordan</td><td class='target'>Dinari ya Jordan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Kuwait' href='#Western Asia: Kuwait'>Western Asia: Kuwait</a></td><td class='source'>KWD-name-one</td><td class='target'>dinar ya Kuwait</td><td class='target'>dinari ya Kuwait</td></tr>
+	<tr><td class='source'>KWD-name-other</td><td class='target'>dinar za Kuwait</td><td class='target'>dinari za Kuwait</td></tr>
+	<tr><td class='source'>KWD-name</td><td class='target'>Dinar ya Kuwait</td><td class='target'>Dinari ya Kuwait</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source'><a name='Eastern Asia: China: CNH (offshore)' href='#Eastern Asia: China: CNH (offshore)'>Eastern Asia: China: CNH (offshore)</a></td><td class='source'>CNH-name-other</td><td class='target'>yuan ya Uchina (huru)</td><td class='target'>yuan za Uchina (huru)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia: Japan' href='#Eastern Asia: Japan'>Eastern Asia: Japan</a></td><td class='source'>JPY-name-one</td><td class='target'>yen ya Ujapani</td><td class='target'>yen ya Japani</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>JPY-name-other</td><td class='target'>yen za Ujapani</td><td class='target'>yen za Japani</td></tr>
+	<tr><td class='source'>JPY-name</td><td class='target'>Yen ya Ujapani</td><td class='target'>Yen ya Japani</td></tr>
+	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td><td class='target' rowSpan='30'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia (C)' href='#Southeast Asia (C)'>Southeast Asia (C)</a></td><td class='source' rowSpan='3'><a name='Southeast Asia: Cambodia' href='#Southeast Asia: Cambodia'>Southeast Asia: Cambodia</a></td><td class='source'>KHR-name-one</td><td class='target'>riel ya Cambodia</td><td class='target'>riel ya Kambodia</td></tr>
+	<tr><td class='source'>KHR-name-other</td><td class='target'>riel za Cambodia</td><td class='target'>riel za Kambodia</td></tr>
+	<tr><td class='source'>KHR-name</td><td class='target'>Riel ya Cambodia</td><td class='target'>Riel ya Kambodia</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Oceania (C)' href='#Oceania (C)'>Oceania (C)</a></td><td class='source' rowSpan='3'><a name='Australasia: New Zealand' href='#Australasia: New Zealand'>Australasia: New Zealand</a></td><td class='source'>NZD-name-one</td><td class='target'>dola ya New Zealand</td><td class='target'>dola ya Nyuzilandi</td></tr>
+	<tr><td class='source'>NZD-name-other</td><td class='target'>dola za New Zealand</td><td class='target'>dola za Nyuzilandi</td></tr>
+	<tr><td class='source'>NZD-name</td><td class='target'>Dola ya New Zealand</td><td class='target'>Dola ya Nyuzilandi</td></tr>
+	<tr><td class='source' rowSpan='237'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='6'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='2'><a name='minute' href='#minute'>minute</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>dakika {0}</td><td class='target' rowSpan='2'>dak {0}</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='second' href='#second'>second</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>sekunde {0}</td><td class='target' rowSpan='2'>sek {0}</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millisecond' href='#millisecond'>millisecond</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>millisekunde {0}</td><td class='target' rowSpan='2'>ms {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='6'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='11'>▷missing◁</td><td class='target'>kitone</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>kitone {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>vitone {0}</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kitone</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>kitone {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>vitone {0}</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='5'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target'>nusu kipenyo cha dunia</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>nusu kipenyo cha dunia {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>R⊕ {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} cm</td><td class='target' rowSpan='2'>cm {0}</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millimeter' href='#millimeter'>millimeter</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} mm</td><td class='target' rowSpan='2'>mm {0}</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='parsec' href='#parsec'>parsec</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} pc</td><td class='target' rowSpan='2'>pc {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>long-displayName</td><td class='target'>fur</td><td class='target'>furlong</td><td class='target' rowSpan='12'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target' rowSpan='2'>furlong {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fur</td><td class='target'>furlong</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target' rowSpan='2'>fur {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>long-displayName</td><td class='target'>fm</td><td class='target'>fathom</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fth</td><td class='target' rowSpan='2'>fathom {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fm</td><td class='target'>fathom</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} fth</td><td class='target' rowSpan='2'>fth {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-one-nominative</td><td class='target'>maili ya skandinavia</td><td class='target'>maili {0} ya skandinavia</td><td class='target' rowSpan='22'>moderate</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target' rowSpan='3'>{0} smi</td><td class='target'>maili {0} za skandinavia</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>smi {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>long-displayName</td><td class='target'>R☉</td><td class='target'>nusu vipenyo vya jua</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} R☉</td><td class='target'>nusu kipenyo cha jua {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>nusu vipenyo vya jua {0}</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>R☉</td><td class='target'>nusu vipenyo vya jua</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} R☉</td><td class='target' rowSpan='2'>R☉ {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='2'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source'>long-per</td><td class='target'>{0} kwa kila mita mraba</td><td class='target'>{0} kwa kila mita ya mraba</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>mita {0} ya mraba</td><td class='target'>m² {0}</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td><td class='source'>long-displayName</td><td class='target'>sentimita mraba</td><td class='target'>sentimita za mraba</td></tr>
+	<tr><td class='source'>long-per</td><td class='target'>{0} kwa kila sentimita mraba</td><td class='target'>{0} kwa kila sentimita ya mraba</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>sentimita mraba {0}</td><td class='target'>sentimita {0} ya mraba</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>sentimita {0} za mraba</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>sentimita mraba</td><td class='target'>sentimita za mraba</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source'>long-per</td><td class='target'>{0} kwa kila maili mraba</td><td class='target'>{0} kwa kila maili ya mraba</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>maili {0} ya mraba</td><td class='target' rowSpan='2'>sq mi {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>maili {0} za mraba</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='square-yard' href='#square-yard'>square-yard</a></td><td class='source'>short-one-nominative</td><td class='target'>yadi {0} ya mraba</td><td class='target' rowSpan='2'>yd² {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>yadi {0} za mraba</td></tr>
+	<tr><td class='source' rowSpan='60'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='6'><a name='bushel' href='#bushel'>bushel</a></td><td class='source'>long-displayName</td><td class='target'>bu</td><td class='target'>busheli</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} bu</td><td class='target' rowSpan='2'>busheli {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bu</td><td class='target'>busheli</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} bu</td><td class='target' rowSpan='2'>bu {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='source'>long-one-nominative</td><td class='target' rowSpan='4'>{0} gal Imp.</td><td class='target' rowSpan='4'>gal Imp. {0}</td><td class='target' rowSpan='64'>moderate</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>aunsi za ujazo za Uingereza</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='4'>{0} fl oz Imp.</td><td class='target'>aunsi {0} ya ujazo ya Uingereza</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>aunsi {0} za ujazo za Uingereza</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>fl oz Imp. {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='source'>short-one-nominative</td><td class='target'>kijiko {0} kikubwa</td><td class='target' rowSpan='2'>tbsp {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>vijiko {0} vikubwa</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='source'>short-one-nominative</td><td class='target'>kijiko {0} kidogo</td><td class='target' rowSpan='2'>tsp {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>vijiko {0} vidogo</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='41'>▷missing◁</td><td class='target'>kijiko cha kitindamlo</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>kijiko {0} cha kitindamlo</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>vijiko {0} vya kitindamlo</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>dstspn {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>Kijiko cha kitindamlo cha Uingireza</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>kijiko {0} cha kitindamlo cha Uingereza</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>vijiko {0} vya kitindamlo vya Uingereza</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dstspn Imp</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>dstspn Imp {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-displayName</td><td class='target'>tone</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>tone {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>matone {0}</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>tone</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>tone {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>matone {0}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>dramu</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>dramu {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ujazo wa dramu</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>ujazo wa dramu {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-displayName</td><td class='target'>toti</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>toti {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>toti</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>toti {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-displayName</td><td class='target'>mfinyo kwa vidole</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>mfinyo {0} kwa vidole</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>mifinyo {0} kwa vidole</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>mfinyo kwa vidole</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>mfinyo {0} kwa vidole</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>mifinyo {0} kwa vidole</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-displayName</td><td class='target'>kwati ya Uingereza</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>kwati {0} ya Uingereza</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>kwati {0} za Uingereza</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>qt Imp</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>qt Imp. {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='2'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} m/s</td><td class='target' rowSpan='2'>m/s {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-hour' href='#mile-per-hour'>mile-per-hour</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mph</td><td class='target' rowSpan='2'>mph {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='6'><a name='ton' href='#ton'>ton</a></td><td class='source'>long-displayName</td><td class='target'>tani</td><td class='target'>tani fupi</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>tani {0}</td><td class='target' rowSpan='2'>tani fupi {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>tani</td><td class='target'>tani fupi</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>tani {0}</td><td class='target' rowSpan='2'>tani fupi {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='stone' href='#stone'>stone</a></td><td class='source'>long-displayName</td><td class='target'>st</td><td class='target'>mawe</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} st</td><td class='target'>jiwe {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>mawe {0}</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>st</td><td class='target'>mawe</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} st</td><td class='target' rowSpan='2'>st {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dalton' href='#dalton'>dalton</a></td><td class='source'>long-displayName</td><td class='target'>Da</td><td class='target'>daltoni</td><td class='target' rowSpan='104'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Da</td><td class='target' rowSpan='2'>daltoni {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Da</td><td class='target'>daltoni</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} Da</td><td class='target' rowSpan='2'>Da {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='source'>long-displayName</td><td class='target'>M⊕</td><td class='target'>uzito wa dunia</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} M⊕</td><td class='target' rowSpan='2'>uzito wa dunia {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>M⊕</td><td class='target'>uzito wa dunia</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} M⊕</td><td class='target' rowSpan='2'>M⊕ {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source'>long-displayName</td><td class='target'>M☉</td><td class='target'>uzito wa jua</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} M☉</td><td class='target' rowSpan='2'>uzito wa jua {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>M☉</td><td class='target'>uzito wa jua</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} M☉</td><td class='target' rowSpan='2'>M☉ {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='grain' href='#grain'>grain</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>nafaka</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>nafaka {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>nafaka</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>nafaka {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='2'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} kWh</td><td class='target' rowSpan='2'>kWh {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} eV</td><td class='target' rowSpan='2'>eV {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='source'>long-displayName</td><td class='target'>Btu</td><td class='target'>vipimo vya joto vya Uingereza</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Btu</td><td class='target'>kipimo {0} cha joto cha Uingereza</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>vipimo {0} vya joto vya Uingereza</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Btu</td><td class='target'>BTU</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} Btu</td><td class='target' rowSpan='2'>Btu {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='horsepower' href='#horsepower'>horsepower</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} hp</td><td class='target' rowSpan='2'>hp {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source' rowSpan='2'><a name='milliampere' href='#milliampere'>milliampere</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mA</td><td class='target' rowSpan='2'>mA {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='2'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source'>short-one-nominative</td><td class='target'>milimita {0} ya zebaki</td><td class='target' rowSpan='2'>mmHg {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>mm Hg {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='inch-ofhg' href='#inch-ofhg'>inch-ofhg</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} inHg</td><td class='target' rowSpan='2'>inHg {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='4'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-displayName</td><td class='target'>ppm</td><td class='target'>sehemu kwa kila milioni</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>ppm {0}</td><td class='target' rowSpan='2'>sehemu {0} kwa kila milioni</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ppm</td><td class='target'>sehemu kwa kila milioni</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>short-one-nominative</td><td class='target'>lita {0} kwa kilomita 100</td><td class='target' rowSpan='2'>lita {0}/km 100</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>lita {0}/km100</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}L/100km</td><td class='target' rowSpan='2'>L/100km {0}</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mpg</td><td class='target' rowSpan='2'>mpg {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mpg Imp.</td><td class='target' rowSpan='2'>mpg Imp. {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} lbf</td><td class='target' rowSpan='2'>lbf {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='newton' href='#newton'>newton</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} N</td><td class='target' rowSpan='2'>N {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='10'>▷missing◁</td><td class='target'>kandela</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>kandela {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>cd {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>lumeni</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>lumeni {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>lm {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>long-displayName</td><td class='target'>L☉</td><td class='target'>ung’avu wa jua</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} L☉</td><td class='target' rowSpan='2'>ung'avu wa jua {0}</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>L☉</td><td class='target'>ung’avu wa jua</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} L☉</td><td class='target' rowSpan='2'>L☉ {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force-foot' href='#pound-force-foot'>pound-force-foot</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} lbf⋅ft</td><td class='target' rowSpan='2'>lbf⋅ft {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} N⋅m</td><td class='target' rowSpan='2'>N⋅m {0}</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='2'><a name='10p-3' href='#10p-3'>10p-3</a></td><td class='source'>narrow</td><td class='target' rowSpan='2'>milli{0}</td><td class='target' rowSpan='2'>mili{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source'>long</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target' rowSpan='3'>kibi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='source'>long</td><td class='target' rowSpan='3'>mebi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='source'>long</td><td class='target' rowSpan='3'>gibi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='source'>long</td><td class='target' rowSpan='3'>tebi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='source'>long</td><td class='target' rowSpan='3'>pebi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='source'>long</td><td class='target' rowSpan='3'>eksibi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='source'>long</td><td class='target' rowSpan='3'>zebi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='source'>long</td><td class='target' rowSpan='3'>yobi{0}</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='281'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='11'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target'>herufichini {0}</td><td class='target' rowSpan='22'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>herufijuu {0}</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Label' href='#Label'>Label</a></td><td class='source'>braille</td><td class='target'>nukta vinundu</td><td class='target'>nukta nundu</td></tr>
+	<tr><td class='source'>divination_symbols</td><td class='target'>alama za kugawa</td><td class='target'>alama za ubashiri</td></tr>
+	<tr><td class='source'>middle_eastern_scripts</td><td class='target'>hati za mashariki ya kati</td><td class='target'>hati za Mashariki ya Kati</td></tr>
+	<tr><td class='source'>phonetic_alphabet</td><td class='target'>abjadi za fonetiki</td><td class='target'>alfabeti za fonetiki</td></tr>
+	<tr><td class='source'>smiley</td><td class='target'>tabasamu</td><td class='target'>kicheshi</td></tr>
+	<tr><td class='source'>smileys_people</td><td class='target'>tabasamu au mtu</td><td class='target'>kicheshi au mtu</td></tr>
+	<tr><td class='source'>south_asian_scripts</td><td class='target'>hati za kusini mwa Asia</td><td class='target'>hati za Kusini mwa Asia</td></tr>
+	<tr><td class='source'>southeast_asian_scripts</td><td class='target'>hati za kusini mashariki mwa Asia</td><td class='target'>hati za Kusini Mashariki mwa Asia</td></tr>
+	<tr><td class='source'>western_asian_scripts</td><td class='target'>hati za magharibi mwa Asia</td><td class='target'>hati za Magharibi mwa Asia</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='9'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>😀 -name</td><td class='target'>sura inayokenua</td><td class='target'>uso unaokenua</td></tr>
+	<tr><td class='source'>😀 –keywords</td><td class='target'>…<br>sura inayokenua<br>…</td><td class='target'>…<br>uso unaokenua</td></tr>
+	<tr><td class='source'>😃 –keywords</td><td class='target'>…<br>uso unaotabasamu na mdomo uliofunguliwa<br>uso unaotabasamu wenye macho makubwa</td><td class='target'>…<br>uso unaokenua wenye macho makubwa</td></tr>
+	<tr><td class='source'>😄 –keywords</td><td class='target'>…<br>uso unaotabasamu wenye macho ya tabasamu<br>uso unaotabasamu wenye mdomo uliofunguliwa na macho yanayotabasamu</td><td class='target'>…<br>uso unaokenua wenye macho ya tabasamu</td></tr>
+	<tr><td class='source'>😆 –keywords</td><td class='target'>…<br>funguliwa<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>😅 -name</td><td class='target'>uso unaotabasamu wenye tone la jasho na mdomo uliofunguliwa</td><td class='target'>uso unaotabasamu wenye tone la jasho</td></tr>
+	<tr><td class='source'>😅 –keywords</td><td class='target'>…<br>jembamba<br>…</td><td class='target'>baridi<br>…</td></tr>
+	<tr><td class='source'>🙃 –keywords</td><td class='target'>…<br>uso uliogeuzwa juu chini</td><td class='target'>…</td></tr>
+	<tr><td class='source'>😇 –keywords</td><td class='target'>…<br>kichimbakazi<br>…</td><td class='target'>…<br>tabasamu<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-affection' href='#face-affection'>face-affection</a></td><td class='source'>😍 –keywords</td><td class='target' rowSpan='2'>…<br>moyo<br>…</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>😘 –keywords</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>uso kwenye mawingu</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>fikra za mbali<br>kichwa katika mawingu<br>uso katika mawingu<br>uso kwa ukungu</td></tr>
+	<tr><td class='source'>😒 –keywords</td><td class='target'>…<br>uso<br>…</td><td class='target'>…</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🙄 –keywords</td><td class='target'>…<br>usio wenye macho yanayorembua<br>…</td><td class='target'>kubiringika<br>…<br>uso wenye macho yanayorembua</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>uso unaopumua</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>binja<br>farijika<br>kite<br>kukamata<br>nong’ona<br>pumua</td></tr>
+	<tr><td class='source'>🤥 -name</td><td class='target'>kudanganya</td><td class='target'>uso unaodanganya</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🤥 –keywords</td><td class='target'>…</td><td class='target'>…<br>uso unaodanganya<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>uso wenye macho yanayozunguka</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>hiponozi<br>kilevilevi<br>kuzunguka<br>tatizo<br>whoa</td></tr>
+	<tr><td class='source'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>😥 –keywords</td><td class='target'>…<br>Uso wenye huzuni lakini unaoonyesha kufarijika</td><td class='target' rowSpan='6'>…</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😺 –keywords</td><td class='target'>…<br>uso wa paka mwenye tabasamu</td></tr>
+	<tr><td class='source'>😸 –keywords</td><td class='target'>…<br>uso wa paka mwenye tabasamu wenye macho ya tabasamu<br>…</td></tr>
+	<tr><td class='source'>😾 –keywords</td><td class='target'>…<br>uso wa paka uliobibidua midomo</td></tr>
+	<tr><td class='source'><a name='monkey-face' href='#monkey-face'>monkey-face</a></td><td class='source'>🙊 –keywords</td><td class='target'>…<br>nyani alifunika mdomo kwa mikono<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❣ –keywords</td><td class='target'>…<br>umbo la moyo lenye alama ya mshangao</td></tr>
+	<tr><td class='source'>❤‍🔥 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>moyo unaochomeka</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>chomeka<br>moyo<br>moyo mtakatifu<br>penda<br>tamaa</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>kurekebisha moyo</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>anaimarika<br>anapata nafuu<br>anapona<br>mwenye afya<br>rekebisha<br>vizuri</td></tr>
+	<tr><td class='source'>🖤 –keywords</td><td class='target'>…<br>umbo nyeusi la moyo</td><td class='target'>…<br>uovu</td><td class='target' rowSpan='7'>modern</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='2'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🖐 –keywords</td><td class='target'>…<br>mwili<br>…</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>✋ –keywords</td><td class='target'>…<br>mwili</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-prop' href='#hand-prop'>hand-prop</a></td><td class='source'>🤳 -name</td><td class='target'>selfie</td><td class='target'>selfi</td></tr>
+	<tr><td class='source'>🤳 –keywords</td><td class='target'>…<br>selfie<br>…</td><td class='target'>…<br>selfi<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person' href='#person'>person</a></td><td class='source'>👱 –keywords</td><td class='target'>…<br>mtu mwenye nywele za shaba<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🧔 –keywords</td><td class='target'>…<br>mtu mwenye ndevu<br>mwanamume<br>mwanamume mwenye ndevu<br>…</td><td class='target'>…<br>mtu: ndevu<br>…</td></tr>
+	<tr><td class='source'>🧔‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>mwanamume: ndevu</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>mwanamume<br>mwanamume: ndevu<br>ndevu</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>mwanamke: ndevu</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>mwanamke<br>mwanamke: ndevu<br>ndevu</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🤵 -name</td><td class='target'>mwanamume mwenye tuxedo</td><td class='target'>mtu aliyevaa tuxedo</td><td class='target' rowSpan='228'>modern</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>…<br>mwanamume mwenye tuxedo<br>…</td><td class='target'>…<br>mtu aliyevaa tuxedo<br>…</td></tr>
+	<tr><td class='source'>👰 -name</td><td class='target'>bi harusi aliyevaa shela</td><td class='target'>mtu aliyevaa shela</td></tr>
+	<tr><td class='source'>👰 –keywords</td><td class='target'>…<br>bi harusi aliyevaa shela<br>…</td><td class='target'>…<br>mtu aliyevaa shela<br>…</td></tr>
+	<tr><td class='source'><a name='family' href='#family'>family</a></td><td class='source'>👬 –keywords</td><td class='target'>…<br>wanaume wawili<br>…</td><td class='target' rowSpan='3'>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td><td class='source'>👤 –keywords</td><td class='target'>…<br>sanamu ya kichwa na mabega ya mtu katika kivuli</td></tr>
+	<tr><td class='source'>👥 –keywords</td><td class='target'>…<br>sanamu ya kichwa na mabega ya mtu<br>…</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='3'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐫 -name</td><td class='target'>ngamia mwenye vibyongo viwili</td><td class='target'>ngamia mwenye nundu mbili</td></tr>
+	<tr><td class='source'>🐫 –keywords</td><td class='target'>…<br>ngamia mwenye vibyongo viwili<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🦙 –keywords</td><td class='target'>…<br>vicuña</td><td class='target'>…<br>vicuna</td></tr>
+	<tr><td class='source'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🦤 –keywords</td><td class='target'>…<br>kutokomea<br>…</td><td class='target'>…<br>kutoweka<br>…</td></tr>
+	<tr><td class='source'><a name='animal-bug' href='#animal-bug'>animal-bug</a></td><td class='source'>🐞 –keywords</td><td class='target'>kombamwiko<br>…<br>mende</td><td class='target'>bimbirisa kimba<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td><td class='source'>🥥 –keywords</td><td class='target'>…<br>piña colada</td><td class='target'>…<br>pina kolada</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='food-asian' href='#food-asian'>food-asian</a></td><td class='source'>🍘 -name</td><td class='target'>chakula kilichotengenezwa kutoka kwa mchele</td><td class='target'>biskuti za mchele</td></tr>
+	<tr><td class='source'>🥮 –keywords</td><td class='target'>…<br>yuèbǐng</td><td class='target'>…<br>yuebing</td></tr>
+	<tr><td class='source'>🥟 –keywords</td><td class='target'>…<br>gyōza<br>…</td><td class='target'>…<br>gyoza<br>…</td></tr>
+	<tr><td class='source'><a name='food-sweet' href='#food-sweet'>food-sweet</a></td><td class='source'>🍧 –keywords</td><td class='target'>aisikrimu iliyotengenezwa kwa barafu iliyokatwakatwa<br>…<br>barafu iliyochongwa<br>…</td><td class='target'>aisikrimu<br>…</td></tr>
+	<tr><td class='source'><a name='drink' href='#drink'>drink</a></td><td class='source'>🍶 –keywords</td><td class='target'>…<br>kinywaji cha kijapani kinachotengenezwa kwa kuvundika mchele<br>…</td><td class='target'>…<br>sake</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-building' href='#place-building'>place-building</a></td><td class='source'>🧱 –keywords</td><td class='target'>…<br>mota<br>…</td><td class='target'>…<br>zege</td></tr>
+	<tr><td class='source'>🛖 –keywords</td><td class='target'>hema<br>…</td><td class='target'>kibanda<br>…</td></tr>
+	<tr><td class='source'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🚊 –keywords</td><td class='target'>…<br>gari<br>…</td><td class='target'>…<br>mwendokasi<br>…</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>🛳 –keywords</td><td class='target'>…<br>gari<br>…<br>meli ya abiria</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🚢 –keywords</td><td class='target'>gari<br>…</td><td class='target'>abiria<br>mashua<br>…</td></tr>
+	<tr><td class='source'><a name='transport-air' href='#transport-air'>transport-air</a></td><td class='source'>✈ –keywords</td><td class='target'>…<br>gari</td><td class='target'>…<br>ndege</td></tr>
+	<tr><td class='source'><a name='sky & weather' href='#sky & weather'>sky & weather</a></td><td class='source'>🌔 –keywords</td><td class='target'>…<br>hali ya hewa<br>kuanza<br>…<br>mwezi ulioangazwa zaidi ya nusu<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Activities' href='#Activities'>Activities</a></td><td class='source'><a name='event' href='#event'>event</a></td><td class='source'>🧧 –keywords</td><td class='target'>…<br>hóngbāo<br>…</td><td class='target'>…<br>hongbao<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='sport' href='#sport'>sport</a></td><td class='source'>🤿 -name</td><td class='target'>barakoa la kupiga mbizi</td><td class='target'>barakoa ya kupiga mbizi</td></tr>
+	<tr><td class='source'>🤿 –keywords</td><td class='target'>barakoa la kupiga mbizi<br>…</td><td class='target'>barakoa ya kupiga mbizi<br>…</td></tr>
+	<tr><td class='source'>🎽 -name</td><td class='target'>shati ya kukimbia</td><td class='target'>shati la kukimbia</td></tr>
+	<tr><td class='source'>🎽 –keywords</td><td class='target'>…<br>shati ya kukimbia</td><td class='target'>…<br>shati la kukimbia</td></tr>
+	<tr><td class='source'>🎿 -name</td><td class='target'>ski</td><td class='target'>skii</td></tr>
+	<tr><td class='source'>🎿 –keywords</td><td class='target'>ski<br>…</td><td class='target'>relitheluji<br>skii<br>…</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='7'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>🦺 –keywords</td><td class='target'>…<br>jaketi ya usalama<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🛍 -name</td><td class='target'>mifuko ya kubeba bidhaa baada ya kununua</td><td class='target'>mifuko ya kubebea bidhaa</td></tr>
+	<tr><td class='source'>🩴 –keywords</td><td class='target'>…<br>zōri</td><td class='target'>…<br>zori</td></tr>
+	<tr><td class='source'>🎓 -name</td><td class='target'>kofia inayovaliwa kwenye sherehe za kuhitimu masomo</td><td class='target'>kofia ya mahafali</td></tr>
+	<tr><td class='source'>🎓 –keywords</td><td class='target'>…<br>kofia inayovaliwa kwenye sherehe za kuhitimu masomo<br>…</td><td class='target'>…<br>kofia ya mahafali<br>…</td></tr>
+	<tr><td class='source'>🧢 -name</td><td class='target'>kofia iliyochorwa emoji</td><td class='target'>chepeo</td></tr>
+	<tr><td class='source'>🧢 –keywords</td><td class='target'>kofia iliyochorwa emoji<br>…</td><td class='target'>chepeo<br>…</td></tr>
+	<tr><td class='source'><a name='money' href='#money'>money</a></td><td class='source'>💹 -name</td><td class='target'>chayi inayopanda yenye yeni</td><td class='target'>chati inayopanda yenye yeni</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='tool' href='#tool'>tool</a></td><td class='source'>🔫 -name</td><td class='target'>bastola</td><td class='target'>bastola ya maji</td></tr>
+	<tr><td class='source'>🔫 –keywords</td><td class='target'>…</td><td class='target'>…<br>maji<br>…</td></tr>
+	<tr><td class='source' rowSpan='186'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source'><a name='warning' href='#warning'>warning</a></td><td class='source'>🚱 –keywords</td><td class='target'>isiyo bebeka<br>…</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'><a name='arrow' href='#arrow'>arrow</a></td><td class='source'>⬇ –keywords</td><td class='target'>…<br>mshale unaoangalia chini<br>…</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='math' href='#math'>math</a></td><td class='source'>➕ -name</td><td class='target'>alama ya kuongeza</td><td class='target'>kuongeza</td></tr>
+	<tr><td class='source'>➖ -name</td><td class='target'>alama ya kutoa</td><td class='target'>kutoa</td></tr>
+	<tr><td class='source'>¹ –keywords</td><td class='target' rowSpan='3'>juu<br>…</td><td class='target' rowSpan='3'>herufijuu<br>…</td></tr>
+	<tr><td class='source'>² –keywords</td></tr>
+	<tr><td class='source'>³ –keywords</td></tr>
+	<tr><td class='source'>+ -name</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target'>alama ya kujumlisha</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>jumlisha<br>toa</td></tr>
+	<tr><td class='source'>± -name</td><td class='target' rowSpan='2'>jumlisha-toa</td></tr>
+	<tr><td class='source'>± –keywords</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>alama ya kutoa</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>ondoa<br>toa</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>lingana</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>inalingana na<br>lingana</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>karibu inalingana</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>kadirio<br>karibia<br>karibu inalingana</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>hailingani</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>hailingani<br>isiyolingana<br>kutokuwa sawa</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>zaidi ya</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>lebo<br>lebo ya kufunga<br>zaidi ya</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>chini ya</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>chini ya<br>lebo<br>lebo ya kufungua</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>chini ya au lingana</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>chini ya<br>inalingana<br>kutokuwa sawa<br>lingana</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>zaidi ya au lingana</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>inalingana<br>kutokuwa sawa<br>lingana<br>zaidi ya</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>uhasi</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>sio<br>uhasi</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>mstari wima</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>alama<br>alama ya upau wima<br>mstari<br>upau<br>upau wima</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>kiwimbi</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='137'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>❓ -name</td><td class='target'>alama ya kuuliza</td><td class='target'>alama nyekundu ya kuuliza</td></tr>
+	<tr><td class='source'>❗ -name</td><td class='target'>alama ya mshangao</td><td class='target'>alama nyekundu ya mshangao</td></tr>
+	<tr><td class='source'>, -name</td><td class='target' rowSpan='70'>▷missing◁</td><td class='target' rowSpan='2'>koma</td></tr>
+	<tr><td class='source'>, –keywords</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>koma ya idiografia</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>idiografia<br>koma</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>koma ya kiarabu</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>kiarabu<br>koma</td></tr>
+	<tr><td class='source'>; -name</td><td class='target'>nuktamkato</td></tr>
+	<tr><td class='source'>; –keywords</td><td class='target'>nukta-mkato</td></tr>
+	<tr><td class='source'>: -name</td><td class='target' rowSpan='2'>nuktapacha</td></tr>
+	<tr><td class='source'>: –keywords</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>nuktamkato ya kiarabu</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>kiarabu<br>nukta-mkato</td></tr>
+	<tr><td class='source'>! -name</td><td class='target'>alama ya mshangao</td></tr>
+	<tr><td class='source'>! –keywords</td><td class='target'>alama ya mshangao<br>mshindo<br>shangaa</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>alama ya mshangao iliyopinduliwa</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>alama ya mshangao<br>iliyopinduliwa<br>mshangao<br>mshindo<br>shangaa</td></tr>
+	<tr><td class='source'>? -name</td><td class='target'>alama ya kuuliza</td></tr>
+	<tr><td class='source'>? –keywords</td><td class='target'>swali</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>alama ya kuuliza iliyopinduliwa</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>alama ya kuuliza<br>iliyopinduliwa<br>swali</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>alama ya kuuliza ya kiarabu</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>alama ya kuuliza<br>kiarabu<br>swali</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>alama ya aya</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>alama ya aya<br>alinea<br>aya</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target' rowSpan='2'>alama ya kurejelea</td></tr>
+	<tr><td class='source'>※ –keywords</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>mkwaju</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>mgawo<br>mkwaju<br>mkwaju mbele<br>mshazari<br>mstari</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>mkwaju nyuma</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>mgawo<br>mkwaji nyuma<br>mkwaju nyuma</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>alama ya na</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>alama ya na<br>na</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>alama ya reli</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>alama ya reli<br>nambari<br>pauni<br>reli</td></tr>
+	<tr><td class='source'>% -name</td><td class='target'>asilimia</td></tr>
+	<tr><td class='source'>% –keywords</td><td class='target'>asili mia<br>asili-mia</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target' rowSpan='2'>kwa elfu</td></tr>
+	<tr><td class='source'>‰ –keywords</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target' rowSpan='2'>tasa</td></tr>
+	<tr><td class='source'>′ –keywords</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>tasa mbili</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>tasa</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>tasa tatu</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>tasa</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target' rowSpan='2'>alama ya ‘kwa’</td></tr>
+	<tr><td class='source'>@ –keywords</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>kinyota</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>herufi wakilishi<br>kinyota<br>nyota</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>noti ya nane</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>muziki<br>nane<br>noti</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>kishukisho</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>bemolle<br>kishukisho<br>muziki<br>noti</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>kipandisho</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>diese<br>diesis<br>kipandisho<br>muziki<br>noti</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>lafudhi ya kuu</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>juu<br>lafudhi<br>toni</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>lafudhi kali</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>kali<br>lafudhi<br>toni</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>lafudhi ya juu na kali</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>alama ya xor<br>chevron<br>juu na kali<br>kali<br>kareti<br>lafudhi<br>mshale<br>nguvu<br>udhibiti</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>alama ya kutofautisha irabu mbili</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>alama ya kutofautisha irabu mbili<br>trema<br>umlati</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>kistariungio</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>kistari<br>kistariungio</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>upau mlalo</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>kistari<br>mstari<br>upau</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>mstari wa chini</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>kistari<br>kistari chini<br>mstari<br>mstari chini</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>kistariungio-alama ya kutoa</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>alama ya kutoa<br>kistari<br>kistariungio</td></tr>
+	<tr><td class='source'>— –keywords</td><td class='target'>kirefu zaidi<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>. -name</td><td class='target' rowSpan='24'>▷missing◁</td><td class='target'>kikomo</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>alama ya kikomo<br>kikomo<br>nukta</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>alama ya dukuduku</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>nukta<br>nukta ya dukuduku<br>ruko</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>kikomo cha idiografia</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>alama ya kikomo<br>idiografia<br>kikomo</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>sehemu ya kistariungio</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>kistari<br>kistariungio<br>sehemu</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>nukta ya kati ya katakana</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>katakana<br>nukta<br>nukta ya kati</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>apostrofi ya kushoto</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>alama ya nukuu<br>apostrofi<br>nukuu<br>nukuu moja</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>apostrofi ya kulia</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>alama ya nukuu<br>apostrofi<br>nukuu<br>nukuu moja</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>apostrofi ya chini kulia</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>apostrofi<br>nukuu<br>nukuu ya chini</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>apostrofi ya taipureta</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>apostrofi<br>nukuu<br>nukuu moja</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>alama ya kunukuu ya kushoto</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>alama ya kunukuu<br>manukuu<br>nukuu<br>nukuu mbili</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>alama ya kunukuu ya kulia</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>alama ya kunukuu<br>manukuu<br>nukuu<br>nukuu mbili</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>alama ya kunukuu ya chini kushoto</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>alama ya kunukuu<br>alama ya kunukuu ya chini<br>manukuu<br>nukuu<br>nukuu mbili</td></tr>
+	<tr><td class='source'>» –keywords</td><td class='target'>…<br>vishale viwili vya kulia</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'>« –keywords</td><td class='target'>…<br>vishale viwili vya kushoto</td></tr>
+	<tr><td class='source'>) -name</td><td class='target' rowSpan='50'>▷missing◁</td><td class='target'>funga mabano</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>mabano<br>mabano ya mduara</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>fungua mabano ya mraba</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>mabano<br>mabano mraba<br>robo</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>funga mabano mraba</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>mabano<br>mabano mraba<br>robo</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>fungua mabano yaliyokunjwa</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>mabano<br>mabano yaliyokunjwa</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>funga mabano yaliyokujwa</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>mabano<br>mabano yaliyokunjwa</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>fungua mabano ya kombe</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>mabano<br>mabano ya kombe</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>funga mabano ya kombe</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>mabano<br>mabano ya kombe</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>fungua mabano ya pembe</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>chevron<br>mabano<br>mabano makali<br>mabano ya almasi<br>mabano ya pembe</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>funga mabano ya pembe</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>chevron<br>mabano<br>mabano makali<br>mabano ya almasi<br>mabano ya pembe</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>fungua mabano ya pembe mbili</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>mabano<br>mabano ya pembe mbili</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>funga mabano ya pembe mbili</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>mabano<br>mabano ya pembe mbili</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>fungua mabano ya kona</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>mabano<br>mabano ya kona</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>funga mabano ya kona</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>mabano<br>mabano ya kona</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>fungua mabano ya kona wazi</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>mabano<br>mabano ya kona wazi</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>funga mabano ya kona wazi</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>mabano<br>mabano ya kona wazi</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>fungua mabano ya lenzi wazi</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>mabano<br>mabano ya lenzi wazi</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>funga mabano ya lenzi wazi</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>mabano<br>mabano ya lenzi wazi</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>fungua mabano ya lenzi nyeusi</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>mabano<br>mabano ya lenzi</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>funga mabano ya lenzi nyeusi</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>mabano<br>mabano ya lenzi</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>dola</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>dola<br>pesa<br>peso<br>USD</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>senti</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>peso</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>won</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>KPW<br>KRW</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target'>mill</td></tr>
+	<tr><td class='source'>₥ –keywords</td><td class='target'>mil</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>bitcoin</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>BTC</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>🔱 –keywords</td><td class='target'>…<br>nembo ya chusa chenye ncha tatu, mkuki wa vyembe vitatu<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source'>✔ –keywords</td><td class='target'>…<br>tiki nyeupe</td><td class='target'>…<br>tiki ya kijani</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>🔠 –keywords</td><td class='target'>…<br>weka herufi kubwa za kilatini</td><td class='target'>ABCD<br>…</td></tr>
+	<tr><td class='source'>℗ –keywords</td><td class='target'>…<br>hakimiliki ya rekodi ya sauti<br>…</td><td class='target'>…</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
