@@ -58,18 +58,181 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='93'>da</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='C' href='#C'>C</a></td><td class='source'>Central Kurdish ► ckb-variant</td><td class='source' rowSpan='869'>da</td><td class='target'>sorani</td><td class='target'>centralkurdisk</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source'><a name='E' href='#E'>E</a></td><td class='source'>English ► en_GB-short</td><td class='target'>engelsk (UK)</td><td class='target'>britisk engelsk</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='F' href='#F'>F</a></td><td class='source'>Friulian ► fur</td><td class='target'>friulian</td><td class='target'>friulisk</td><td class='target' rowSpan='4'>modern</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='N' href='#N'>N</a></td><td class='source'>Norwegian Bokmål ► nb</td><td class='target'>norsk bokmål</td><td class='target'>bokmål</td></tr>
+	<tr><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='S' href='#S'>S</a></td><td class='source'>Sakha ► sah</td><td class='target'>yakut</td><td class='target'>jakutisk</td></tr>
+	<tr><td class='source'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='X' href='#X'>X</a></td><td class='source'>Xhosa ► xh</td><td class='target'>isiXhosa</td><td class='target'>xhosa</td></tr>
+	<tr><td class='source'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td><td class='source'>GB-short</td><td class='target'>UK</td><td class='target'>Storbritannien</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='138'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='111'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='2'><a name='Relative Year Short' href='#Relative Year Short'>Relative Year Short</a></td><td class='source'>past-one</td><td class='target' rowSpan='4'>for {0} år siden</td><td class='target' rowSpan='4'>{0} år siden</td><td class='target' rowSpan='111'>modern</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Year Narrow' href='#Relative Year Narrow'>Relative Year Narrow</a></td><td class='source'>past-one</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Quarter Short' href='#Relative Quarter Short'>Relative Quarter Short</a></td><td class='source'>past-one</td><td class='target' rowSpan='4'>for {0} kvt. siden</td><td class='target' rowSpan='4'>{0} kvt. siden</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Quarter Narrow' href='#Relative Quarter Narrow'>Relative Quarter Narrow</a></td><td class='source'>past-one</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Month Short' href='#Relative Month Short'>Relative Month Short</a></td><td class='source'>past-one</td><td class='target'>for {0} md. siden</td><td class='target'>{0} md. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} mdr. siden</td><td class='target'>{0} mdr. siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td><td class='source'>past-one</td><td class='target'>for {0} md. siden</td><td class='target'>{0} md. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} mdr. siden</td><td class='target'>{0} mdr. siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Week Short' href='#Relative Week Short'>Relative Week Short</a></td><td class='source'>past-one</td><td class='target'>for {0} uge siden</td><td class='target'>{0} uge siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} uger siden</td><td class='target'>{0} uger siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Week Narrow' href='#Relative Week Narrow'>Relative Week Narrow</a></td><td class='source'>past-one</td><td class='target'>for {0} uge siden</td><td class='target'>{0} uge siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} uger siden</td><td class='target'>{0} uger siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Day Short' href='#Relative Day Short'>Relative Day Short</a></td><td class='source'>past-one</td><td class='target'>for {0} dag siden</td><td class='target'>{0} dag siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} dage siden</td><td class='target'>{0} dage siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Day Narrow' href='#Relative Day Narrow'>Relative Day Narrow</a></td><td class='source'>past-one</td><td class='target'>for {0} dag siden</td><td class='target'>{0} dag siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} dage siden</td><td class='target'>{0} dage siden</td></tr>
+	<tr><td class='source'><a name='Relative Hour' href='#Relative Hour'>Relative Hour</a></td><td class='source'>0</td><td class='target'>i den kommende time</td><td class='target'>denne time</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Hour Short' href='#Relative Hour Short'>Relative Hour Short</a></td><td class='source'>past-one</td><td class='target'>for {0} time siden</td><td class='target'>{0} time siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} timer siden</td><td class='target'>{0} timer siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Hour Narrow' href='#Relative Hour Narrow'>Relative Hour Narrow</a></td><td class='source'>past-one</td><td class='target'>for {0} time siden</td><td class='target'>{0} time siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} timer siden</td><td class='target'>{0} timer siden</td></tr>
+	<tr><td class='source'><a name='Relative Minute' href='#Relative Minute'>Relative Minute</a></td><td class='source'>0</td><td class='target'>i det kommende minut</td><td class='target'>dette minut</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Minute Short' href='#Relative Minute Short'>Relative Minute Short</a></td><td class='source'>past-one</td><td class='target' rowSpan='4'>for {0} min. siden</td><td class='target' rowSpan='4'>{0} min. siden</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Minute Narrow' href='#Relative Minute Narrow'>Relative Minute Narrow</a></td><td class='source'>past-one</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Second Short' href='#Relative Second Short'>Relative Second Short</a></td><td class='source'>past-one</td><td class='target' rowSpan='4'>for {0} sek. siden</td><td class='target' rowSpan='4'>{0} sek. siden</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Second Narrow' href='#Relative Second Narrow'>Relative Second Narrow</a></td><td class='source'>past-one</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source'><a name='Relative Sunday' href='#Relative Sunday'>Relative Sunday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste søndag</td><td class='target'>på søndag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Sunday Short' href='#Relative Sunday Short'>Relative Sunday Short</a></td><td class='target'>næste søn.</td><td class='target'>på søn.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} søndag</td><td class='target' rowSpan='2'>om {0} søn.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} søndage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} søndag siden</td><td class='target' rowSpan='2'>{0} søn. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} søndage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Sunday Narrow' href='#Relative Sunday Narrow'>Relative Sunday Narrow</a></td><td class='source'>1</td><td class='target'>næste sø.</td><td class='target'>på sø.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} søndag</td><td class='target' rowSpan='2'>om {0} sø.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} søndage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} søndag siden</td><td class='target' rowSpan='2'>{0} sø. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} søndage siden</td></tr>
+	<tr><td class='source'><a name='Relative Monday' href='#Relative Monday'>Relative Monday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste mandag</td><td class='target'>på mandag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Monday Short' href='#Relative Monday Short'>Relative Monday Short</a></td><td class='target'>næste man.</td><td class='target'>på man.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} mandag</td><td class='target' rowSpan='2'>om {0} man.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} mandage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} mandag siden</td><td class='target' rowSpan='2'>{0} man. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} mandage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Monday Narrow' href='#Relative Monday Narrow'>Relative Monday Narrow</a></td><td class='source'>1</td><td class='target'>næste ma.</td><td class='target'>på ma.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} mandag</td><td class='target' rowSpan='2'>om {0} ma.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} mandage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} mandag siden</td><td class='target' rowSpan='2'>{0} ma. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} mandage siden</td></tr>
+	<tr><td class='source'><a name='Relative Tuesday' href='#Relative Tuesday'>Relative Tuesday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste tirsdag</td><td class='target'>på tirsdag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Tuesday Short' href='#Relative Tuesday Short'>Relative Tuesday Short</a></td><td class='target'>næste tir.</td><td class='target'>på tir.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} tirsdag</td><td class='target' rowSpan='2'>om {0} tir.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} tirsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} tirsdag siden</td><td class='target' rowSpan='2'>{0} tir. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} tirsdage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Tuesday Narrow' href='#Relative Tuesday Narrow'>Relative Tuesday Narrow</a></td><td class='source'>1</td><td class='target'>næste ti.</td><td class='target'>på ti.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} tirsdag</td><td class='target' rowSpan='2'>om {0} ti.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} tirsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} tirsdag siden</td><td class='target' rowSpan='2'>{0} ti. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} tirsdage siden</td></tr>
+	<tr><td class='source'><a name='Relative Wednesday' href='#Relative Wednesday'>Relative Wednesday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste onsdag</td><td class='target'>på onsdag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Wednesday Short' href='#Relative Wednesday Short'>Relative Wednesday Short</a></td><td class='target'>næste ons.</td><td class='target'>på ons.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} onsdag</td><td class='target' rowSpan='2'>om {0} ons.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} onsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} onsdag siden</td><td class='target' rowSpan='2'>{0} ons. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} onsdage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Wednesday Narrow' href='#Relative Wednesday Narrow'>Relative Wednesday Narrow</a></td><td class='source'>1</td><td class='target'>næste on.</td><td class='target'>på on.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} onsdag</td><td class='target' rowSpan='2'>om {0} on.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} onsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} onsdag siden</td><td class='target' rowSpan='2'>{0} on. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} onsdage siden</td></tr>
+	<tr><td class='source'><a name='Relative Thursday' href='#Relative Thursday'>Relative Thursday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste torsdag</td><td class='target'>på torsdag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Thursday Short' href='#Relative Thursday Short'>Relative Thursday Short</a></td><td class='target'>næste tor.</td><td class='target'>på tor.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} torsdag</td><td class='target' rowSpan='2'>om {0} tor.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} torsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} torsdag siden</td><td class='target' rowSpan='2'>{0} tor. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} torsdage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Thursday Narrow' href='#Relative Thursday Narrow'>Relative Thursday Narrow</a></td><td class='source'>1</td><td class='target'>næste to.</td><td class='target'>på to.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} torsdag</td><td class='target' rowSpan='2'>om {0} to.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} torsdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} torsdag siden</td><td class='target' rowSpan='2'>{0} to. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} torsdage siden</td></tr>
+	<tr><td class='source'><a name='Relative Friday' href='#Relative Friday'>Relative Friday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste fredag</td><td class='target'>på fredag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Friday Short' href='#Relative Friday Short'>Relative Friday Short</a></td><td class='target'>næste fre.</td><td class='target'>på fre.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} fredag</td><td class='target' rowSpan='2'>om {0} fre.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} fredage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} fredag siden</td><td class='target' rowSpan='2'>{0} fre. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} fredage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Friday Narrow' href='#Relative Friday Narrow'>Relative Friday Narrow</a></td><td class='source'>1</td><td class='target'>næste fr.</td><td class='target'>på fr.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} fredag</td><td class='target' rowSpan='2'>om {0} fr.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} fredage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} fredag siden</td><td class='target' rowSpan='2'>{0} fr. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} fredage siden</td></tr>
+	<tr><td class='source'><a name='Relative Saturday' href='#Relative Saturday'>Relative Saturday</a></td><td class='source' rowSpan='2'>1</td><td class='target'>næste lørdag</td><td class='target'>på lørdag</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Saturday Short' href='#Relative Saturday Short'>Relative Saturday Short</a></td><td class='target'>næste lør.</td><td class='target'>på lør.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} lørdag</td><td class='target' rowSpan='2'>om {0} lør.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} lørdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} lørdag siden</td><td class='target' rowSpan='2'>{0} lør. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} lørdage siden</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Relative Saturday Narrow' href='#Relative Saturday Narrow'>Relative Saturday Narrow</a></td><td class='source'>1</td><td class='target'>næste lø.</td><td class='target'>på lø.</td></tr>
+	<tr><td class='source'>future-one</td><td class='target'>om {0} lørdag</td><td class='target' rowSpan='2'>om {0} lø.</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>om {0} lørdage</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>for {0} lørdag siden</td><td class='target' rowSpan='2'>{0} lø. siden</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>for {0} lørdage siden</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='27'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>GyMMMd/M</td><td class='target'>d. MMM y–d. MMM G</td><td class='target'>d. MMM–d. MMM y G</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>E d. MMM y–E d. MMM G</td><td class='target'>E d. MMM–E d. MMM y G</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Bhm/h</td><td class='target' rowSpan='2'>h:mm–h:mm B</td><td class='target' rowSpan='2'>h.mm–h.mm B</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>Bhm/m</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>M/y GGGGG–M/y GGGGG</td><td class='target'>MM.y GGGGG–MM.y GGGGG</td><td class='target' rowSpan='32'>moderate</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>M/y–M/y GGGGG</td><td class='target' rowSpan='2'>MM.y–MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>d/M/y–d/M/y GGGGG</td><td class='target'>dd.MM.y–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>d/M/y GGGGG–d/M/y GGGGG</td><td class='target'>dd.MM.y GGGGG–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>d/M/y–d/M/y GGGGG</td><td class='target' rowSpan='2'>dd.MM.y–dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>E 'den' d/M/y–E 'den' d/M/y GGGGG</td><td class='target'>E 'den' dd.MM.y–E 'den' dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>E 'den' d/M/y GGGGG–E 'den' d/M/y GGGGG</td><td class='target'>E 'den' dd.MM.y GGGGG–E 'den' dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>E 'den' d/M/y–E 'den' d/M/y GGGGG</td><td class='target' rowSpan='2'>E 'den' dd.MM.y–E 'den' dd.MM.y GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>Md/d</td><td class='target' rowSpan='2'>dd/MM–dd/MM</td><td class='target' rowSpan='2'>dd.MM–dd.MM</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>E dd/MM–E dd/MM</td><td class='target' rowSpan='2'>E dd.MM–E dd.MM</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>MM/y–MM/y G</td><td class='target' rowSpan='2'>MM.y–MM.y G</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>dd/MM/y–dd/MM/y G</td><td class='target' rowSpan='3'>dd.MM.y–dd.MM.y G</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>E dd/MM/y–E dd/MM/y G</td><td class='target' rowSpan='3'>E dd.MM.y–E dd.MM.y G</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='4'><a name='North America (C)' href='#North America (C)'>North America (C)</a></td><td class='source'><a name='Caribbean: Curaçao' href='#Caribbean: Curaçao'>Caribbean: Curaçao</a></td><td class='source'>ANG-name-one</td><td class='target'>Nederlandsk Antiller-gylden</td><td class='target'>Nederlandske Antiller-gylden</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean: Trinidad & Tobago' href='#Caribbean: Trinidad & Tobago'>Caribbean: Trinidad & Tobago</a></td><td class='source'>TTD-name-one</td><td class='target' rowSpan='3'>dollar fra Trinidad og Tobago</td><td class='target'>trinidadisk dollar</td></tr>
+	<tr><td class='source'>TTD-name-other</td><td class='target'>trinidadiske dollar</td></tr>
+	<tr><td class='source'>TTD-name</td><td class='target'>trinidadisk dollar</td></tr>
+	<tr><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
+	<tr><td class='source'><a name='Western Asia: Oman' href='#Western Asia: Oman'>Western Asia: Oman</a></td><td class='source'>OMR-name-other</td><td class='target'>omanske rial</td><td class='target'>omanske rialer</td></tr>
 	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
-	<tr><td class='source' rowSpan='89'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='7'><a name='Duration' href='#Duration'>Duration</a></td><td class='source'><a name='year' href='#year'>year</a></td><td class='source' rowSpan='41'>long-gender</td><td class='target' rowSpan='89'>▷missing◁</td><td class='target'>neuter</td><td class='target' rowSpan='41'>modern</td></tr>
+	<tr><td class='source' rowSpan='189'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='8'><a name='Duration' href='#Duration'>Duration</a></td><td class='source'><a name='year' href='#year'>year</a></td><td class='source' rowSpan='5'>long-gender</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target'>neuter</td><td class='target' rowSpan='5'>modern</td></tr>
 	<tr><td class='source'><a name='month' href='#month'>month</a></td><td class='target' rowSpan='4'>common</td></tr>
 	<tr><td class='source'><a name='week' href='#week'>week</a></td></tr>
 	<tr><td class='source'><a name='day' href='#day'>day</a></td></tr>
-	<tr><td class='source'><a name='hour' href='#hour'>hour</a></td></tr>
-	<tr><td class='source'><a name='minute' href='#minute'>minute</a></td><td class='target' rowSpan='2'>neuter</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hour' href='#hour'>hour</a></td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} t</td><td class='target'>{0} t.</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='minute' href='#minute'>minute</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target' rowSpan='2'>neuter</td><td class='target' rowSpan='2'>modern</td></tr>
 	<tr><td class='source'><a name='second' href='#second'>second</a></td></tr>
-	<tr><td class='source' rowSpan='11'><a name='Length' href='#Length'>Length</a></td><td class='source'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='target' rowSpan='34'>common</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='6'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target'>prik</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} prik</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} punkter</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>prik</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} p</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>px</td><td class='target'>pixels</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} px</td><td class='target'>{0} pixel</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} pixels</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='3'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='13'>▷missing◁</td><td class='target'>jordradius</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} jordradius</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} jordradier</td></tr>
+	<tr><td class='source'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source' rowSpan='10'>long-gender</td><td class='target' rowSpan='10'>common</td><td class='target' rowSpan='26'>modern</td></tr>
 	<tr><td class='source'><a name='meter' href='#meter'>meter</a></td></tr>
 	<tr><td class='source'><a name='centimeter' href='#centimeter'>centimeter</a></td></tr>
 	<tr><td class='source'><a name='millimeter' href='#millimeter'>millimeter</a></td></tr>
@@ -79,78 +242,691 @@
 	<tr><td class='source'><a name='foot' href='#foot'>foot</a></td></tr>
 	<tr><td class='source'><a name='inch' href='#inch'>inch</a></td></tr>
 	<tr><td class='source'><a name='parsec' href='#parsec'>parsec</a></td></tr>
-	<tr><td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td></tr>
-	<tr><td class='source' rowSpan='6'><a name='Area' href='#Area'>Area</a></td><td class='source'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td></tr>
+	<tr><td class='source' rowSpan='3'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>long-displayName</td><td class='target'>fur</td><td class='target'>furlongs</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target'>{0} furlong</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} furlongs</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>long-displayName</td><td class='target'>fm</td><td class='target'>favne</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fth</td><td class='target'>{0} favn</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} favne</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fm</td><td class='target'>favn</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} fth</td><td class='target'>{0} favn</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} favne</td></tr>
+	<tr><td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source' rowSpan='7'>long-gender</td><td class='target' rowSpan='7'>▷missing◁</td><td class='target' rowSpan='7'>common</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Area' href='#Area'>Area</a></td><td class='source'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td></tr>
 	<tr><td class='source'><a name='hectare' href='#hectare'>hectare</a></td></tr>
 	<tr><td class='source'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td></tr>
 	<tr><td class='source'><a name='square-mile' href='#square-mile'>square-mile</a></td></tr>
 	<tr><td class='source'><a name='acre' href='#acre'>acre</a></td></tr>
 	<tr><td class='source'><a name='square-foot' href='#square-foot'>square-foot</a></td></tr>
-	<tr><td class='source' rowSpan='37'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td></tr>
+	<tr><td class='source'><a name='square-inch' href='#square-inch'>square-inch</a></td><td class='source'>long-per</td><td class='target'>{0}/in²</td><td class='target'>{0} pr. kvadrattomme</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='68'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='source' rowSpan='7'>long-gender</td><td class='target' rowSpan='7'>▷missing◁</td><td class='target' rowSpan='7'>common</td><td class='target' rowSpan='18'>modern</td></tr>
 	<tr><td class='source'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td></tr>
 	<tr><td class='source'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td></tr>
 	<tr><td class='source'><a name='liter' href='#liter'>liter</a></td></tr>
 	<tr><td class='source'><a name='deciliter' href='#deciliter'>deciliter</a></td></tr>
 	<tr><td class='source'><a name='centiliter' href='#centiliter'>centiliter</a></td></tr>
 	<tr><td class='source'><a name='milliliter' href='#milliliter'>milliliter</a></td></tr>
-	<tr><td class='source'><a name='gallon' href='#gallon'>gallon</a></td></tr>
+	<tr><td class='source' rowSpan='6'><a name='bushel' href='#bushel'>bushel</a></td><td class='source'>long-displayName</td><td class='target'>bu</td><td class='target'>skæpper</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} bu</td><td class='target'>{0} skæppe</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} skæpper</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bu</td><td class='target'>skp.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} bu</td><td class='target' rowSpan='2'>{0} skp.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='gallon' href='#gallon'>gallon</a></td><td class='source' rowSpan='5'>long-gender</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target' rowSpan='5'>common</td></tr>
 	<tr><td class='source'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td></tr>
 	<tr><td class='source'><a name='quart' href='#quart'>quart</a></td></tr>
 	<tr><td class='source'><a name='pint' href='#pint'>pint</a></td></tr>
-	<tr><td class='source'><a name='cup' href='#cup'>cup</a></td></tr>
-	<tr><td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='cup' href='#cup'>cup</a></td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>cup</td><td class='target'>{0} cup</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='source' rowSpan='5'>long-gender</td><td class='target' rowSpan='55'>▷missing◁</td><td class='target' rowSpan='5'>common</td><td class='target' rowSpan='5'>modern</td></tr>
 	<tr><td class='source'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td></tr>
 	<tr><td class='source'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td></tr>
 	<tr><td class='source'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td></tr>
-	<tr><td class='source' rowSpan='3'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dessertske</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>dessertske</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dessertske</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dessertskeer</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk dessertske</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dsk.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} dsk.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>britisk dessertske</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk dessertske</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} britiske dessertskeer</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dråbe</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>brit. dsk.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} brit. dsk.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>dråbe</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} dråbe</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dråber</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk flydende dram</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>dråbe</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} dråbe</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} dråber</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>britisk flydende dram</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk flydende dram</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} britiske flydende dramme</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>br. fl. dr.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} br. fl. dr.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
 	<tr><td class='source' rowSpan='3'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
 	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} jigger</td><td class='target' rowSpan='2'>moderate</td></tr>
 	<tr><td class='source'>long-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} knivspids</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>knivspids</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} knivspids</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} knivspidser</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk quart</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>knsp.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} knsp.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>britisk quart</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} britisk quart</td></tr>
 	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} britiske quarts</td></tr>
-	<tr><td class='source' rowSpan='5'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='g-force' href='#g-force'>g-force</a></td><td class='source' rowSpan='14'>long-gender</td><td class='target' rowSpan='5'>common</td><td class='target' rowSpan='14'>modern</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>britisk qt</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} britisk qt</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} britiske qt</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='g-force' href='#g-force'>g-force</a></td><td class='source' rowSpan='6'>long-gender</td><td class='target' rowSpan='5'>common</td><td class='target' rowSpan='6'>modern</td></tr>
 	<tr><td class='source'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td></tr>
 	<tr><td class='source'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td></tr>
 	<tr><td class='source'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td></tr>
 	<tr><td class='source'><a name='mile-per-hour' href='#mile-per-hour'>mile-per-hour</a></td></tr>
-	<tr><td class='source' rowSpan='11'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='target' rowSpan='4'>neuter</td></tr>
-	<tr><td class='source'><a name='gram' href='#gram'>gram</a></td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='2'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='target'>neuter</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kilogram</td><td class='target'>kg</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='gram' href='#gram'>gram</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>neuter</td><td class='target' rowSpan='9'>modern</td></tr>
 	<tr><td class='source'><a name='milligram' href='#milligram'>milligram</a></td></tr>
-	<tr><td class='source'><a name='pound' href='#pound'>pound</a></td></tr>
-	<tr><td class='source'><a name='ounce' href='#ounce'>ounce</a></td><td class='target' rowSpan='4'>common</td></tr>
-	<tr><td class='source'><a name='dalton' href='#dalton'>dalton</a></td></tr>
-	<tr><td class='source'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td></tr>
-	<tr><td class='source'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td></tr>
-	<tr><td class='source' rowSpan='3'><a name='grain' href='#grain'>grain</a></td><td class='target'>neuter</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} gran</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='stone' href='#stone'>stone</a></td><td class='source'>long-displayName</td><td class='target'>st</td><td class='target'>stone</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} st</td><td class='target' rowSpan='2'>{0} stone</td></tr>
 	<tr><td class='source'>long-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td><td class='source' rowSpan='12'>long-gender</td><td class='target' rowSpan='12'>common</td><td class='target' rowSpan='12'>modern</td></tr>
+	<tr><td class='source'><a name='pound' href='#pound'>pound</a></td><td class='source' rowSpan='4'>long-gender</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>neuter</td></tr>
+	<tr><td class='source'><a name='ounce' href='#ounce'>ounce</a></td><td class='target' rowSpan='3'>common</td></tr>
+	<tr><td class='source'><a name='dalton' href='#dalton'>dalton</a></td></tr>
+	<tr><td class='source' rowSpan='4'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>M⊕</td><td class='target'>Jordmasser</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} M⊕</td><td class='target'>{0} jordmasse</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} jordmasser</td></tr>
+	<tr><td class='source'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='10'>▷missing◁</td><td class='target'>common</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='grain' href='#grain'>grain</a></td><td class='target'>neuter</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>gran</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} gran</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>gran</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} gran</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='2'>common</td><td class='target' rowSpan='2'>modern</td></tr>
 	<tr><td class='source'><a name='foodcalorie' href='#foodcalorie'>foodcalorie</a></td></tr>
-	<tr><td class='source' rowSpan='5'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td></tr>
+	<tr><td class='source'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>long-one-nominative</td><td class='target'>kilowatt-time</td><td class='target'>{0} kilowatt-time</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='pound-force-per-square-inch' href='#pound-force-per-square-inch'>pound-force-per-square-inch</a></td><td class='source'>long-other-nominative</td><td class='target'>{0} pounds pr. kvadrattommer</td><td class='target'>{0} pounds pr. kvadrattomme</td></tr>
+	<tr><td class='source'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source' rowSpan='5'>long-gender</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target' rowSpan='5'>common</td><td class='target' rowSpan='5'>modern</td></tr>
 	<tr><td class='source'><a name='generic' href='#generic'>generic</a></td></tr>
 	<tr><td class='source'><a name='celsius' href='#celsius'>celsius</a></td></tr>
 	<tr><td class='source'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td></tr>
 	<tr><td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td></tr>
-	<tr><td class='source' rowSpan='5'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source'><a name='percent' href='#percent'>percent</a></td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='3'><a name='terabit' href='#terabit'>terabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Tbit</td><td class='target'>Tb</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} Tbit</td><td class='target' rowSpan='2'>{0} Tb</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Gbit</td><td class='target'>Gb</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} Gbit</td><td class='target' rowSpan='2'>{0} Gb</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='megabit' href='#megabit'>megabit</a></td><td class='source'>narrow-displayName</td><td class='target'>Mbit</td><td class='target'>Mb</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} Mbit</td><td class='target' rowSpan='2'>{0} Mb</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source'>narrow-displayName</td><td class='target'>kbit</td><td class='target'>kb</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} kbit</td><td class='target' rowSpan='2'>{0} kb</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='byte' href='#byte'>byte</a></td><td class='source'>short-displayName</td><td class='target'>byte</td><td class='target'>B</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} byte</td><td class='target' rowSpan='2'>{0} B</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='bit' href='#bit'>bit</a></td><td class='source'>narrow-displayName</td><td class='target'>bit</td><td class='target'>b</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} bit</td><td class='target' rowSpan='2'>{0} b</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-one-nominative</td><td class='target'>{0} parts per million</td><td class='target'>{0} part per million</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='4'>long-gender</td><td class='target' rowSpan='31'>▷missing◁</td><td class='target' rowSpan='4'>common</td><td class='target' rowSpan='4'>modern</td></tr>
 	<tr><td class='source'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td></tr>
 	<tr><td class='source'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td></tr>
 	<tr><td class='source'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td></tr>
-	<tr><td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td></tr>
+	<tr><td class='source' rowSpan='3'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target'>candela</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} candela</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>lumen</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} lumen</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>long-gender</td><td class='target'>common</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source' rowSpan='8'>long</td><td class='target'>kibi{0}</td><td class='target' rowSpan='8'>moderate</td></tr>
+	<tr><td class='source'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='target'>mebi{0}</td></tr>
+	<tr><td class='source'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='target'>gibi{0}</td></tr>
+	<tr><td class='source'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='target'>tebi{0}</td></tr>
+	<tr><td class='source'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='target'>pebi{0}</td></tr>
+	<tr><td class='source'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='target'>exbi{0}</td></tr>
+	<tr><td class='source'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='target'>zebi{0}</td></tr>
+	<tr><td class='source'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='target'>yobi{0}</td></tr>
+	<tr><td class='source' rowSpan='524'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='2'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target'>sænket skrift {0}</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>hævet skrift {0}</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target'>ansigt i sky</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>fraværende<br>hovedet i skyerne<br>tåget<br>ukoncentreret</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target'>udåndende ansigt</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>ånde ud<br>ansigt<br>ekshalerende<br>fløjt<br>hvisken<br>lettelse<br>pift<br>pyha<br>udånding</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target'>ansigt med spiraløjne</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>hypnose<br>hypnotiseret<br>problemer<br>spiral<br>svimmel</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target'>brændende hjerte</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>brændende kærlighed<br>hjerte med ild i<br>ild<br>kærlighed<br>passion</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>helende hjerte</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>bedring<br>hjerte<br>plaster<br>plaster på hjerte<br>rask<br>sundere</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='6'><a name='person' href='#person'>person</a></td><td class='source'>🧔 -name</td><td class='target'>mand med skæg</td><td class='target'>person med skæg</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🧔 –keywords</td><td class='target'>…<br>mand<br>mand med skæg<br>…</td><td class='target'>…<br>person med skæg<br>…</td></tr>
+	<tr><td class='source'>🧔‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>mand med skæg</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>fuldskæg<br>mand<br>mand med skæg<br>skæg</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>kvinde med skæg</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>fuldskæg<br>kvinde<br>kvinde med skæg<br>skæg</td></tr>
+	<tr><td class='source'><a name='person-gesture' href='#person-gesture'>person-gesture</a></td><td class='source'>🧏 –keywords</td><td class='target'>…</td><td class='target'>døv<br>…<br>høre<br>øre<br>tilgængelighed</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🦮 –keywords</td><td class='target' rowSpan='2'>adgang<br>…</td><td class='target' rowSpan='2'>…<br>tilgængelighed</td></tr>
+	<tr><td class='source'>🐕‍🦺 –keywords</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Objects' href='#Objects'>Objects</a></td><td class='source'><a name='tool' href='#tool'>tool</a></td><td class='source'>🔫 -name</td><td class='target'>pistol</td><td class='target'>vandpistol</td><td class='target' rowSpan='184'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩸 –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>blod<br>bloddonor<br>…<br>medicin<br>menstruation<br>sår</td></tr>
+	<tr><td class='source'>🩺 –keywords</td><td class='target'>doktor<br>hjerte<br>læge<br>medicin<br>…</td></tr>
+	<tr><td class='source' rowSpan='495'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source'><a name='av-symbol' href='#av-symbol'>av-symbol</a></td><td class='source'>🔀 -name</td><td class='target'>pile for bland</td><td class='target'>bland sange-knap</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='math' href='#math'>math</a></td><td class='source'>✖ -name</td><td class='target'>multiplikationstegn</td><td class='target'>gange</td></tr>
+	<tr><td class='source'>➕ -name</td><td class='target'>plustegn</td><td class='target'>plus</td></tr>
+	<tr><td class='source'>➖ -name</td><td class='target'>minustegn</td><td class='target'>minus</td></tr>
+	<tr><td class='source'>➗ -name</td><td class='target'>divisionstegn</td><td class='target'>dividere</td></tr>
+	<tr><td class='source'>÷ -name</td><td class='target'>division</td><td class='target'>divisionstegn</td></tr>
+	<tr><td class='source'>° -name</td><td class='target'>gradtegn</td><td class='target'>grader</td></tr>
+	<tr><td class='source'>+ -name</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target'>plustegn</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>addere<br>lægge til<br>plus</td></tr>
+	<tr><td class='source'>± -name</td><td class='target'>plus/minus</td></tr>
+	<tr><td class='source'>± –keywords</td><td class='target'>minus<br>plus<br>plus/minus</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>minustegn</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>minus<br>subtrahere<br>trække fra</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>lig med</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>er lig med<br>lig med<br>lighed</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>næsten lig med</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>approksimation<br>cirka<br>næsten lig med<br>omtrent</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>ikke lig med</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>ikke lig med<br>ulighed</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>større end</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>afsluttende tag<br>slut-tag<br>større end<br>tag</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>mindre end</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>mindre end<br>start-tag<br>tag</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>mindre end eller lig med</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>er lig med<br>lig med<br>mindre end<br>ulighed</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>større end eller lig med</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>er lig med<br>lig med<br>større end<br>ulighed</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>negation</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>ikke<br>negation<br>negere</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>lodret streg</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>ikke og<br>lodret søjle<br>lodret streg<br>pipe<br>sheffers streg<br>streg<br>uforenelig med</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>tilde</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='136'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>❓ -name</td><td class='target'>spørgsmålstegn</td><td class='target'>rødt spørgsmålstegn</td></tr>
+	<tr><td class='source'>❗ -name</td><td class='target'>udråbstegn</td><td class='target'>rødt udråbstegn</td></tr>
+	<tr><td class='source'>† -name</td><td class='target'>kors</td><td class='target'>korstegn</td></tr>
+	<tr><td class='source'>‡ -name</td><td class='target'>dobbelt kors</td><td class='target'>dobbeltkorstegn</td></tr>
+	<tr><td class='source'>, -name</td><td class='target' rowSpan='456'>▷missing◁</td><td class='target'>komma</td></tr>
+	<tr><td class='source'>, –keywords</td><td class='target'>grammatik<br>komma<br>pause<br>sætningsopdeling</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>ideografisk komma</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>grammatik<br>ideografisk komma<br>kinesisk komma<br>tegnsætning</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>arabisk komma</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>arabisk komma<br>grammatik<br>tegnsætning</td></tr>
+	<tr><td class='source'>; -name</td><td class='target'>semikolon</td></tr>
+	<tr><td class='source'>; –keywords</td><td class='target'>grammatik<br>kolon<br>semi<br>semikolon<br>tegn<br>tegnsætning</td></tr>
+	<tr><td class='source'>: -name</td><td class='target'>kolon</td></tr>
+	<tr><td class='source'>: –keywords</td><td class='target'>definition<br>kolon<br>tegn<br>tegnsætning</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>arabisk semikolon</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>arabisk<br>semikolon</td></tr>
+	<tr><td class='source'>! -name</td><td class='target'>udråbstegn</td></tr>
+	<tr><td class='source'>! –keywords</td><td class='target'>bang<br>idé<br>tegn<br>tegnsætning<br>udråb<br>udråbstegn</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>omvendt udråbstegn</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>omvendt udråbstegn<br>på hovedet<br>udråbstegn</td></tr>
+	<tr><td class='source'>? -name</td><td class='target'>spørgsmålstegn</td></tr>
+	<tr><td class='source'>? –keywords</td><td class='target'>spørgsmål<br>spørgsmålstegn</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>omvendt spørgsmålstegn</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>omvendt<br>spørgsmål<br>spørgsmålstegn</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>arabisk spørgsmålstegn</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>arabisk<br>spejlvendt<br>spørgsmål<br>spørgsmålstegn</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>afsnitstegn</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>a linea<br>afsnit<br>afsnitstegn<br>alinea<br>pilcrow</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target'>henvisningstegn</td></tr>
+	<tr><td class='source'>※ –keywords</td><td class='target'>henvisning<br>henvisningstegn<br>reference</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>skråstreg</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>skrå<br>skråstreg<br>soliduslinje</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>omvendt skråstreg</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>backslash<br>omvendt skråstreg<br>omvendt solidustegn</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>og-tegn</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>og<br>og-tegn</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>hashtag</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>antal<br>hash<br>hashtag<br>nummer</td></tr>
+	<tr><td class='source'>% -name</td><td class='target'>procent</td></tr>
+	<tr><td class='source'>% –keywords</td><td class='target'>procent<br>procenttegn</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target'>promille</td></tr>
+	<tr><td class='source'>‰ –keywords</td><td class='target'>promille<br>promilletegn</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target'>enkelt anførselstegn</td></tr>
+	<tr><td class='source'>′ –keywords</td><td class='target'>anførselstegn<br>citationstegn<br>enkelt anførselstegn<br>enkelt citationstegn</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>dobbelt anførselstegn</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>anførselstegn<br>citationstegn<br>dobbelt anførselstegn<br>dobbelt citationstegn</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>tredobbelt anførselstegn</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>anførselstegn<br>citationstegn<br>tredobbelt anførselstegn<br>tredobbelt citationstegn</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>snabel-a</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target'>ampersat<br>at-tegn<br>commercial a<br>snabel-a</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>asterisk</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>asterisk<br>jokertegn<br>stjerne</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>ottendedelsnode</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>musik<br>node<br>ottendedel</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>tone med b for</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>b<br>bemol<br>es<br>musik<br>node<br>tone</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>tone med kryds for</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>diesis<br>is<br>kryds<br>musik<br>node<br>tone</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>accent grave</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>accent<br>grave<br>tone</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>accent aigu</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>accent<br>accenttegn<br>aigu<br>tone</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>accent circumfleks</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>accent<br>caret<br>chevron<br>circumfleks<br>eksklusiv eller<br>hat<br>kile<br>kontrol<br>pointer<br>potens<br>xeller<br>xor</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>tréma</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>diaeresis<br>tréma<br>umlaut</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>bindestreg</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>bindestreg<br>streg</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>vandret streg</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>linje<br>streg<br>tankestreg</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>lav streg</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>lav tankestreg<br>streg<br>tankestreg<br>understregning<br>understregningstegn</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>tankestreg-minus</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>minus<br>streg<br>tankestreg</td></tr>
+	<tr><td class='source'>. -name</td><td class='target'>punktum</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>prik<br>punktum</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>udeladelsesprikker</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>ellipse<br>prikker<br>tøveprikker<br>udelade<br>udeladelsesprikker</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>ideografisk punktum</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>ideografisk<br>punktum</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>bindeprik</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>bindestreg<br>prik<br>sammensætning<br>tankestreg</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>katakana-mellemprik</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>katakana<br>mellemprik<br>mellempunkt<br>prikker</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>venstre apostrof</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>apostrof<br>citat<br>enkelt anførselstegn<br>enkelt citationstegn<br>krøllet anførselstegn<br>krøllet citationstegn</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>højre apostrof</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>apostrof<br>citat<br>enkelt anførselstegn<br>enkelt citationstegn<br>krøllet anførselstegn<br>krøllet citationstegn</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>lav højre apostrof</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>anførselstegn<br>apostrof<br>citat<br>citationstegn<br>lavt anførselstegn<br>lavt citationstegn</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>apostrof</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>anførselstegn<br>apostrof<br>citat<br>citationstegn<br>enkelt anførselstegn<br>enkelt citationstegn</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>venstre anførselstegn</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>anførselstegn<br>citat<br>citationstegn<br>dobbelt anførselstegn<br>dobbelt citationstegn<br>krøllet anførselstegn<br>krøllet citationstegn</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>højre anførselstegn</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>anførselstegn<br>citat<br>citationstegn<br>dobbelt anførselstegn<br>dobbelt citationstegn<br>krøllet anførselstegn<br>krøllet citationstegn</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>lavt højre anførselstegn</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>anførselstegn<br>citat<br>citationstegn<br>dobbelt anførselstegn<br>dobbelt citationstegn<br>krøllet anførselstegn<br>krøllet citationstegn<br>lavt anførselstegn<br>lavt citationstegn</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>slutparentes</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>parentes<br>rund parentes</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>venstre firkantet parentes</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>firkantet parentes<br>kantet parentes<br>parentes</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>højre firkantet parentes</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>firkantet parentes<br>kantet parentes<br>parentes</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>venstre akkolade</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>akkolade<br>klammeparentes<br>krøllet parentes<br>tuborgparentes</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>højre akkolade</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>akkolade<br>klammeparentes<br>krøllet parentes<br>tuborgparentes</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>venstre skjoldparentes</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>parentes<br>skildpaddeparentes<br>skjoldparentes</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>højre skjoldparentes</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>parentes<br>skildpaddeparentes<br>skjoldparentes</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>venstre vinkelparentes</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>hak<br>mindre end<br>parentes<br>ruderparentes<br>spids parentes<br>vinkelparentes</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>højre vinkelparentes</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>hak<br>parentes<br>ruderparentes<br>spids parentes<br>større end<br>vinkelparentes</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>venstre dobbelt vinkelparentes</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>dobbelt vinkelparentes<br>parentes<br>vinkelparentes</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>højre dobbelt vinkelparentes</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>dobbelt vinkelparentes<br>parentes<br>vinkelparentes</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>venstre hjørneparentes</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>hjørneparentes<br>parentes</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>højre hjørneparentes</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>hjørneparentes<br>parentes</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>venstre hul hjørneparentes</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>hjørneparentes<br>hul hjørneparentes<br>parentes</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>højre hul hjørneparentes</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>hjørneparentes<br>hul hjørneparentes<br>parentes</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>venstre hul linseparentes</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>hul linseparentes<br>linseformet parentes<br>linseparentes<br>parentes</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>højre hul linseparentes</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>hul linseparentes<br>linseformet parentes<br>linseparentes<br>parentes</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>venstre sort linseparentes</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>linseformet parentes<br>linseparentes<br>parentes<br>sort linseparentes</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>højre sort linseparentes</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>linseformet parentes<br>linseparentes<br>parentes<br>sort linseparentes</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>dollar</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>AUD<br>CAD<br>dollar<br>HKD<br>NZD<br>penge<br>USD</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>cent</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>peso</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>won</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>korea<br>KPW<br>KRW<br>nordkorea<br>sydkorea</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target'>mill</td></tr>
+	<tr><td class='source'>₥ –keywords</td><td class='target'>mil<br>mill</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>bitcoin</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>bitcoin<br>BTC</td></tr>
+	<tr><td class='source' rowSpan='312'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‸ -name</td><td class='target'>indskudstegn</td><td class='target' rowSpan='312'>comprehensive</td></tr>
+	<tr><td class='source'>‸ –keywords</td><td class='target'>cirkumfleks<br>indskudstegn</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>asterisme</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target'>venstrepil og skråstreg</td></tr>
+	<tr><td class='source'>↚ –keywords</td><td class='target'>skråstreg<br>venstrepil<br>venstrepil og skråstreg</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target'>højrepil og skråstreg</td></tr>
+	<tr><td class='source'>↛ –keywords</td><td class='target'>højrepil<br>højrepil og skråstreg<br>skråstreg</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target'>venstre-/højrepil og skråstreg</td></tr>
+	<tr><td class='source'>↮ –keywords</td><td class='target'>højrepil<br>skråstreg<br>venstre-/højrepil og skråstreg<br>venstrepil</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target'>bølget venstrepil</td></tr>
+	<tr><td class='source'>↜ –keywords</td><td class='target'>bølget<br>krøllet<br>venstrepil</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target'>bølget højrepil</td></tr>
+	<tr><td class='source'>↝ –keywords</td><td class='target'>bølget<br>højrepil<br>krøllet</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target'>tohovedet venstrepil</td></tr>
+	<tr><td class='source'>↞ –keywords</td><td class='target'>to hoveder<br>tohovedet venstrepil<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target'>tohovedet pil op</td></tr>
+	<tr><td class='source'>↟ –keywords</td><td class='target'>op<br>pil op<br>to hoveder<br>tohovedet pil op</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target'>tohovedet højrepil</td></tr>
+	<tr><td class='source'>↠ –keywords</td><td class='target'>højre<br>højrepil<br>to hoveder<br>tohovedet højrepil</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target'>tohovedet pil ned</td></tr>
+	<tr><td class='source'>↡ –keywords</td><td class='target'>ned<br>pil ned<br>to hoveder<br>tohovedet pil ned</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target'>venstrepil med fjer</td></tr>
+	<tr><td class='source'>↢ –keywords</td><td class='target'>fjer<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target'>højrepil med fjer</td></tr>
+	<tr><td class='source'>↣ –keywords</td><td class='target'>fjer<br>højre<br>højrepil</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target'>venstrepil fra streg</td></tr>
+	<tr><td class='source'>↤ –keywords</td><td class='target'>streg<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target'>pil op fra streg</td></tr>
+	<tr><td class='source'>↥ –keywords</td><td class='target'>op<br>pil op<br>streg</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target'>højrepil fra streg</td></tr>
+	<tr><td class='source'>↦ –keywords</td><td class='target'>højre<br>højrepil<br>streg</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target'>pil ned fra streg</td></tr>
+	<tr><td class='source'>↧ –keywords</td><td class='target'>ned<br>pil ned<br>streg</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target'>pil op/ned med fod</td></tr>
+	<tr><td class='source'>↨ –keywords</td><td class='target'>fod<br>ned<br>op<br>pil op/ned</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target'>venstrepil med sløjfe</td></tr>
+	<tr><td class='source'>↫ –keywords</td><td class='target'>løkke<br>sløjfe<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target'>højrepil med sløjfe</td></tr>
+	<tr><td class='source'>↬ –keywords</td><td class='target'>højre<br>højrepil<br>løkke<br>sløjfe</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target'>venstre-/højrepil med bølge</td></tr>
+	<tr><td class='source'>↭ –keywords</td><td class='target'>bølge<br>højre<br>venstre<br>venstre-/højrepil</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>zigzagpil ned</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>lyn<br>pil<br>zigzag</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target'>pil op og til venstre</td></tr>
+	<tr><td class='source'>↰ –keywords</td><td class='target'>hjørnepil<br>op<br>pil<br>venstre</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target'>pil op og til højre</td></tr>
+	<tr><td class='source'>↱ –keywords</td><td class='target'>hjørnepil<br>højre<br>op<br>pil</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target'>pil ned og til venstre</td></tr>
+	<tr><td class='source'>↲ –keywords</td><td class='target'>hjørnepil<br>ned<br>pil<br>venstre</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target'>pil ned og til højre</td></tr>
+	<tr><td class='source'>↳ –keywords</td><td class='target'>hjørnepil<br>højre<br>ned<br>pil</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target'>hjørnepil til højre og ned</td></tr>
+	<tr><td class='source'>↴ –keywords</td><td class='target'>hjørnepil<br>højre<br>ned<br>pil</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target'>hjørnepil ned og til venstre</td></tr>
+	<tr><td class='source'>↵ –keywords</td><td class='target'>hjørnepil<br>ned<br>pil<br>venstre</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target'>halvcirkelpil mod uret, top</td></tr>
+	<tr><td class='source'>↶ –keywords</td><td class='target'>halvcirkel<br>halvcirkelpil<br>mod uret<br>øverst<br>pil<br>top</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target'>halvcirkelpil med uret, top</td></tr>
+	<tr><td class='source'>↷ –keywords</td><td class='target'>halvcirkel<br>halvcirkelpil<br>med uret<br>øverst<br>pil<br>top</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target'>pil mod nordvest med lang streg</td></tr>
+	<tr><td class='source'>↸ –keywords</td><td class='target'>lang streg<br>nordvest<br>pil</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target'>venstrepil med streg over højrepil med streg</td></tr>
+	<tr><td class='source'>↹ –keywords</td><td class='target'>højre<br>højrepil<br>streg<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target'>åben cirkelpil mod uret</td></tr>
+	<tr><td class='source'>↺ –keywords</td><td class='target'>åben<br>cirkelpil<br>mod uret</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target'>åben cirkelpil med uret</td></tr>
+	<tr><td class='source'>↻ –keywords</td><td class='target'>åben<br>cirkelpil<br>med uret</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>venstre harpun med krog op</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target'>venstre harpun med krog ned</td></tr>
+	<tr><td class='source'>↽ –keywords</td><td class='target'>harpun<br>krog<br>modhage<br>ned<br>venstre</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>harpun op med krog til højre</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>harpun op med krog til venstre</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>højre harpun med krog op</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>højre harpun med krog ned</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>harpun ned med krog til højre</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>harpun ned med krog til venstre</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>krog<br>modhage</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target'>højrepil over venstrepil</td></tr>
+	<tr><td class='source'>⇄ –keywords</td><td class='target'>højre<br>højrepil<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target'>to pile mod venstre</td></tr>
+	<tr><td class='source'>⇇ –keywords</td><td class='target'>par<br>pile<br>to<br>venstre</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target'>to pile op</td></tr>
+	<tr><td class='source'>⇈ –keywords</td><td class='target'>op<br>par<br>pile<br>to</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target'>to pile mod højre</td></tr>
+	<tr><td class='source'>⇉ –keywords</td><td class='target'>højre<br>par<br>pile<br>to</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target'>to pile ned</td></tr>
+	<tr><td class='source'>⇊ –keywords</td><td class='target'>ned<br>par<br>pile<br>to</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target'>venstre harpun over højre harpun</td></tr>
+	<tr><td class='source'>⇋ –keywords</td><td class='target'>harpun<br>højre<br>venstre</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target'>højre harpun over venstre harpun</td></tr>
+	<tr><td class='source'>⇌ –keywords</td><td class='target'>harpun<br>højre<br>venstre</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target'>dobbeltpil mod venstre</td></tr>
+	<tr><td class='source'>⇐ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>pil<br>venstre</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target'>dobbeltpil mod venstre med skråstreg</td></tr>
+	<tr><td class='source'>⇍ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>pil<br>skråstreg<br>venstre</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target'>dobbeltpil op</td></tr>
+	<tr><td class='source'>⇑ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>op<br>pil</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target'>dobbeltpil mod højre</td></tr>
+	<tr><td class='source'>⇒ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>højre<br>pil</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target'>dobbeltpil mod højre med skråstreg</td></tr>
+	<tr><td class='source'>⇏ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>højre<br>pil<br>skråstreg</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target'>dobbeltpil ned</td></tr>
+	<tr><td class='source'>⇓ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>ned<br>pil</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target'>dobbeltpil mod venstre og højre</td></tr>
+	<tr><td class='source'>⇔ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>højre<br>pil<br>venstre</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target'>dobbeltpil mod venstre og højre med skråstreg</td></tr>
+	<tr><td class='source'>⇎ –keywords</td><td class='target'>dobbelt<br>dobbeltpil<br>højre<br>pil<br>skråstreg<br>venstre</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target'>dobbeltpil mod nordvest</td></tr>
+	<tr><td class='source'>⇖ –keywords</td><td class='target'>dobbeltpil<br>nordvest<br>pil</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target'>dobbeltpil mod nordøst</td></tr>
+	<tr><td class='source'>⇗ –keywords</td><td class='target'>dobbeltpil<br>nordøst<br>pil</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target'>dobbeltpil mod sydøst</td></tr>
+	<tr><td class='source'>⇘ –keywords</td><td class='target'>dobbeltpil<br>pil<br>sydøst</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target'>dobbeltpil mod sydvest</td></tr>
+	<tr><td class='source'>⇙ –keywords</td><td class='target'>dobbeltpil<br>pil<br>sydvest</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target'>tredobbelt pil mod venstre</td></tr>
+	<tr><td class='source'>⇚ –keywords</td><td class='target'>pil<br>tredobbelt<br>venstre</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target'>tredobbelt pil mod højre</td></tr>
+	<tr><td class='source'>⇛ –keywords</td><td class='target'>højre<br>pil<br>tredobbelt</td></tr>
+	<tr><td class='source'>⇜ -name</td><td class='target'>snoet pil mod venstre</td></tr>
+	<tr><td class='source'>⇜ –keywords</td><td class='target'>bølget<br>krøllet<br>pil<br>snoet<br>venstre</td></tr>
+	<tr><td class='source'>⇝ -name</td><td class='target'>snoet pil mod højre</td></tr>
+	<tr><td class='source'>⇝ –keywords</td><td class='target'>bølget<br>højre<br>krøllet<br>pil<br>snoet</td></tr>
+	<tr><td class='source'>⇞ -name</td><td class='target'>pil op med dobbelt tværstreg</td></tr>
+	<tr><td class='source'>⇞ –keywords</td><td class='target'>op<br>pil<br>tværstreg</td></tr>
+	<tr><td class='source'>⇟ -name</td><td class='target'>pil ned med dobbelt tværstreg</td></tr>
+	<tr><td class='source'>⇟ –keywords</td><td class='target'>ned<br>pil<br>tværstreg</td></tr>
+	<tr><td class='source'>⇠ -name</td><td class='target'>stiplet venstrepil</td></tr>
+	<tr><td class='source'>⇠ –keywords</td><td class='target'>pil<br>stiplet<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>⇡ -name</td><td class='target'>stiplet pil op</td></tr>
+	<tr><td class='source'>⇡ –keywords</td><td class='target'>op<br>pil<br>stiplet</td></tr>
+	<tr><td class='source'>⇢ -name</td><td class='target'>stiplet højrepil</td></tr>
+	<tr><td class='source'>⇢ –keywords</td><td class='target'>højre<br>højrepil<br>pil<br>stiplet</td></tr>
+	<tr><td class='source'>⇣ -name</td><td class='target'>stiplet pil ned</td></tr>
+	<tr><td class='source'>⇣ –keywords</td><td class='target'>ned<br>pil<br>stiplet</td></tr>
+	<tr><td class='source'>⇤ -name</td><td class='target'>venstrepil mod streg</td></tr>
+	<tr><td class='source'>⇤ –keywords</td><td class='target'>pil<br>streg<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>⇥ -name</td><td class='target'>højrepil mod streg</td></tr>
+	<tr><td class='source'>⇥ –keywords</td><td class='target'>højre<br>højrepil<br>pil<br>streg</td></tr>
+	<tr><td class='source'>⇦ -name</td><td class='target'>hul venstrepil</td></tr>
+	<tr><td class='source'>⇦ –keywords</td><td class='target'>hul<br>pil<br>venstre<br>venstrepil</td></tr>
+	<tr><td class='source'>⇧ -name</td><td class='target'>hul pil op</td></tr>
+	<tr><td class='source'>⇧ –keywords</td><td class='target'>hul<br>op<br>pil</td></tr>
+	<tr><td class='source'>⇨ -name</td><td class='target'>hul højrepil</td></tr>
+	<tr><td class='source'>⇨ –keywords</td><td class='target'>højre<br>højrepil<br>hul<br>pil</td></tr>
+	<tr><td class='source'>⇩ -name</td><td class='target'>hul pil ned</td></tr>
+	<tr><td class='source'>⇩ –keywords</td><td class='target'>hul<br>ned<br>pil</td></tr>
+	<tr><td class='source'>⇪ -name</td><td class='target'>hul pil op fra streg</td></tr>
+	<tr><td class='source'>⇪ –keywords</td><td class='target'>hul<br>op<br>pil<br>streg</td></tr>
+	<tr><td class='source'>⇵ -name</td><td class='target'>pil ned til venstre for pil op</td></tr>
+	<tr><td class='source'>⇵ –keywords</td><td class='target'>ned<br>op<br>pil</td></tr>
+	<tr><td class='source'>∀ -name</td><td class='target'>for alle</td></tr>
+	<tr><td class='source'>∀ –keywords</td><td class='target'>alkvantor<br>alle<br>for alle<br>givet<br>kvantor</td></tr>
+	<tr><td class='source'>∂ -name</td><td class='target'>partiel differentialligning</td></tr>
+	<tr><td class='source'>∂ –keywords</td><td class='target'>differentiale<br>differentialligning</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target'>der findes</td></tr>
+	<tr><td class='source'>∃ –keywords</td><td class='target'>der findes<br>eksistenskvantor<br>findes<br>kvantor</td></tr>
+	<tr><td class='source'>∅ -name</td><td class='target'>tom mængde</td></tr>
+	<tr><td class='source'>∅ –keywords</td><td class='target'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>∉ -name</td><td class='target'>tilhører ikke</td></tr>
+	<tr><td class='source'>∉ –keywords</td><td class='target'>element<br>mængdelære<br>matematik<br>medlem</td></tr>
+	<tr><td class='source'>∋ -name</td><td class='target'>indeholder som element</td></tr>
+	<tr><td class='source'>∋ –keywords</td><td class='target'>element<br>medlem</td></tr>
+	<tr><td class='source'>∎ -name</td><td class='target'>slut på bevis</td></tr>
+	<tr><td class='source'>∎ –keywords</td><td class='target'>bevis<br>firkant<br>halmos<br>matematik<br>q.e.d.<br>QED</td></tr>
+	<tr><td class='source'>∏ -name</td><td class='target'>produkt</td></tr>
+	<tr><td class='source'>∏ –keywords</td><td class='target'>logik<br>matematik<br>produkt</td></tr>
+	<tr><td class='source'>∑ -name</td><td class='target'>sum</td></tr>
+	<tr><td class='source'>∑ –keywords</td><td class='target'>matematik<br>sum<br>summering</td></tr>
+	<tr><td class='source'>≮ -name</td><td class='target'>ikke mindre end</td></tr>
+	<tr><td class='source'>≮ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≯ -name</td><td class='target'>ikke større end</td></tr>
+	<tr><td class='source'>≯ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>∓ -name</td><td class='target'>minus eller plus</td></tr>
+	<tr><td class='source'>∓ –keywords</td><td class='target'>minus<br>plus<br>plus-minus</td></tr>
+	<tr><td class='source'>∕ -name</td><td class='target'>division</td></tr>
+	<tr><td class='source'>∕ –keywords</td><td class='target'>skråstreg</td></tr>
+	<tr><td class='source'>⁄ -name</td><td class='target'>brøkdel</td></tr>
+	<tr><td class='source'>⁄ –keywords</td><td class='target'>skråstreg</td></tr>
+	<tr><td class='source'>∗ -name</td><td class='target'>asteriskoperator</td></tr>
+	<tr><td class='source'>∗ –keywords</td><td class='target'>stjerne</td></tr>
+	<tr><td class='source'>∘ -name</td><td class='target'>ringoperator</td></tr>
+	<tr><td class='source'>∘ –keywords</td><td class='target'>operator<br>sammensætning</td></tr>
+	<tr><td class='source'>∙ -name</td><td class='target'>punktoperator</td></tr>
+	<tr><td class='source'>∙ –keywords</td><td class='target'>operator</td></tr>
+	<tr><td class='source'>∝ -name</td><td class='target'>proportional</td></tr>
+	<tr><td class='source'>∝ –keywords</td><td class='target'>proportionalitet</td></tr>
+	<tr><td class='source'>∟ -name</td><td class='target'>ret vinkel</td></tr>
+	<tr><td class='source'>∟ –keywords</td><td class='target'>matematik<br>ret vinkel<br>vinkel</td></tr>
+	<tr><td class='source'>∠ -name</td><td class='target'>vinkel</td></tr>
+	<tr><td class='source'>∠ –keywords</td><td class='target'>spids<br>vinkel</td></tr>
+	<tr><td class='source'>∣ -name</td><td class='target'>deler</td></tr>
+	<tr><td class='source'>∣ –keywords</td><td class='target'>divisor</td></tr>
+	<tr><td class='source'>∥ -name</td><td class='target' rowSpan='2'>parallel</td></tr>
+	<tr><td class='source'>∥ –keywords</td></tr>
+	<tr><td class='source'>∧ -name</td><td class='target'>logisk og</td></tr>
+	<tr><td class='source'>∧ –keywords</td><td class='target'>kile<br>logik<br>og</td></tr>
+	<tr><td class='source'>∫ -name</td><td class='target'>integral</td></tr>
+	<tr><td class='source'>∫ –keywords</td><td class='target'>infinitesimalregning<br>integral<br>integralregning</td></tr>
+	<tr><td class='source'>∬ -name</td><td class='target'>dobbelt integral</td></tr>
+	<tr><td class='source'>∬ –keywords</td><td class='target'>infinitesimalregning<br>integral<br>integralregning</td></tr>
+	<tr><td class='source'>∮ -name</td><td class='target'>lukket kurveintegral</td></tr>
+	<tr><td class='source'>∮ –keywords</td><td class='target'>integral<br>kurveintegral</td></tr>
+	<tr><td class='source'>∴ -name</td><td class='target'>derfor</td></tr>
+	<tr><td class='source'>∴ –keywords</td><td class='target'>logik</td></tr>
+	<tr><td class='source'>∵ -name</td><td class='target'>fordi</td></tr>
+	<tr><td class='source'>∵ –keywords</td><td class='target'>logik</td></tr>
+	<tr><td class='source'>∶ -name</td><td class='target' rowSpan='2'>forhold</td></tr>
+	<tr><td class='source'>∶ –keywords</td></tr>
+	<tr><td class='source'>∷ -name</td><td class='target'>proportion</td></tr>
+	<tr><td class='source'>∷ –keywords</td><td class='target'>proportionalitet</td></tr>
+	<tr><td class='source'>∼ -name</td><td class='target'>tilde-operator</td></tr>
+	<tr><td class='source'>∼ –keywords</td><td class='target'>operator</td></tr>
+	<tr><td class='source'>∽ -name</td><td class='target'>omvendt tilde</td></tr>
+	<tr><td class='source'>∽ –keywords</td><td class='target'>tilde</td></tr>
+	<tr><td class='source'>∾ -name</td><td class='target'>omvendt dovent s</td></tr>
+	<tr><td class='source'>∾ –keywords</td><td class='target'>omvendt liggende s</td></tr>
+	<tr><td class='source'>≃ -name</td><td class='target'>asymptotisk lig med</td></tr>
+	<tr><td class='source'>≃ –keywords</td><td class='target'>asymptotisk<br>matematik<br>tilnærmelse</td></tr>
+	<tr><td class='source'>≅ -name</td><td class='target'>cirka lig med</td></tr>
+	<tr><td class='source'>≅ –keywords</td><td class='target'>isomorfisme<br>kongruens<br>lighed<br>matematik</td></tr>
+	<tr><td class='source'>≌ -name</td><td class='target'>alle lig med</td></tr>
+	<tr><td class='source'>≌ –keywords</td><td class='target'>lighed<br>matematik</td></tr>
+	<tr><td class='source'>≒ -name</td><td class='target'>cirka lig med billedet</td></tr>
+	<tr><td class='source'>≒ –keywords</td><td class='target'>approksimere<br>billede<br>cirka lig med<br>omtrent</td></tr>
+	<tr><td class='source'>≖ -name</td><td class='target'>ring i lighedstegn</td></tr>
+	<tr><td class='source'>≖ –keywords</td><td class='target'>lighed<br>matematik</td></tr>
+	<tr><td class='source'>≦ -name</td><td class='target'>mindre end over lig med</td></tr>
+	<tr><td class='source'>≦ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≧ -name</td><td class='target'>større end over lig med</td></tr>
+	<tr><td class='source'>≧ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≪ -name</td><td class='target'>meget mindre end</td></tr>
+	<tr><td class='source'>≪ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≫ -name</td><td class='target'>meget større end</td></tr>
+	<tr><td class='source'>≫ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≬ -name</td><td class='target' rowSpan='2'>mellem</td></tr>
+	<tr><td class='source'>≬ –keywords</td></tr>
+	<tr><td class='source'>≳ -name</td><td class='target'>større end-ekvivalent</td></tr>
+	<tr><td class='source'>≳ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>≺ -name</td><td class='target'>kommer før</td></tr>
+	<tr><td class='source'>≺ –keywords</td><td class='target'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>≻ -name</td><td class='target'>kommer efter</td></tr>
+	<tr><td class='source'>≻ –keywords</td><td class='target'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⊁ -name</td><td class='target'>kommer ikke efter</td></tr>
+	<tr><td class='source'>⊁ –keywords</td><td class='target' rowSpan='2'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⊃ –keywords</td></tr>
+	<tr><td class='source'>⊆ -name</td><td class='target'>delmængde eller lig med</td></tr>
+	<tr><td class='source'>⊆ –keywords</td><td class='target'>delmængde<br>lig med</td></tr>
+	<tr><td class='source'>⊇ –keywords</td><td class='target'>lighed<br>matematik</td></tr>
+	<tr><td class='source'>⊕ -name</td><td class='target'>plus med ring</td></tr>
+	<tr><td class='source'>⊕ –keywords</td><td class='target'>plus</td></tr>
+	<tr><td class='source'>⊖ -name</td><td class='target'>minus med ring</td></tr>
+	<tr><td class='source'>⊖ –keywords</td><td class='target'>erosion<br>symmetrisk difference</td></tr>
+	<tr><td class='source'>⊗ -name</td><td class='target'>gange med ring</td></tr>
+	<tr><td class='source'>⊗ –keywords</td><td class='target'>produkt<br>tensor</td></tr>
+	<tr><td class='source'>⊘ -name</td><td class='target'>division med ring</td></tr>
+	<tr><td class='source'>⊙ -name</td><td class='target'>punktoperator med ring</td></tr>
+	<tr><td class='source'>⊙ –keywords</td><td class='target'>ikke eksklusiv eller<br>operator<br>XNOR</td></tr>
+	<tr><td class='source'>⊚ -name</td><td class='target'>ring-operator med ring</td></tr>
+	<tr><td class='source'>⊚ –keywords</td><td class='target'>ring<br>ring med ring<br>ring-operator</td></tr>
+	<tr><td class='source'>⊛ -name</td><td class='target'>stjerne-operator med ring</td></tr>
+	<tr><td class='source'>⊛ –keywords</td><td class='target'>operator<br>stjerne</td></tr>
+	<tr><td class='source'>⊮ -name</td><td class='target' rowSpan='2'>gennemtvinger ikke</td></tr>
+	<tr><td class='source'>⊮ –keywords</td></tr>
+	<tr><td class='source'>⊰ -name</td><td class='target'>kommer før under relation</td></tr>
+	<tr><td class='source'>⊰ –keywords</td><td class='target'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⊱ -name</td><td class='target'>følger efter under relation</td></tr>
+	<tr><td class='source'>⊱ –keywords</td><td class='target'>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⋭ -name</td><td class='target'>indeholder ikke som normal undergruppe lig med</td></tr>
+	<tr><td class='source'>⋭ –keywords</td><td class='target'>gruppeteori<br>matematik</td></tr>
+	<tr><td class='source'>⊶ -name</td><td class='target' rowSpan='2'>oprindelig</td></tr>
+	<tr><td class='source'>⊶ –keywords</td></tr>
+	<tr><td class='source'>⊹ -name</td><td class='target'>hermitisk transponeret matrix</td></tr>
+	<tr><td class='source'>⊹ –keywords</td><td class='target'>kvadratisk matrix<br>matematik<br>selv-invers matrix</td></tr>
+	<tr><td class='source'>⊿ -name</td><td class='target'>retvinklet trekant</td></tr>
+	<tr><td class='source'>⊿ –keywords</td><td class='target'>matematik<br>retvinklet trekant</td></tr>
+	<tr><td class='source'>⋁ -name</td><td class='target'>n-ært logisk eller</td></tr>
+	<tr><td class='source'>⋁ –keywords</td><td class='target'>disjunktion<br>eller<br>logik</td></tr>
+	<tr><td class='source'>⋂ -name</td><td class='target'>n-ær fællesmængde</td></tr>
+	<tr><td class='source'>⋂ –keywords</td><td class='target'>fællesmængde<br>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⋃ -name</td><td class='target'>n-ær foreningsmængde</td></tr>
+	<tr><td class='source'>⋃ –keywords</td><td class='target'>foreningsmængde<br>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⋅ -name</td><td class='target'>prikoperator</td></tr>
+	<tr><td class='source'>⋅ –keywords</td><td class='target'>operator</td></tr>
+	<tr><td class='source'>⋆ -name</td><td class='target'>stjerneoperator</td></tr>
+	<tr><td class='source'>⋆ –keywords</td><td class='target'>operator</td></tr>
+	<tr><td class='source'>⋈ -name</td><td class='target'>naturlig join</td></tr>
+	<tr><td class='source'>⋈ –keywords</td><td class='target'>binær operator<br>butterfly</td></tr>
+	<tr><td class='source'>⋒ -name</td><td class='target'>dobbelt fællesmængde</td></tr>
+	<tr><td class='source'>⋒ –keywords</td><td class='target'>fællesmængde<br>mængdeoperator<br>matematik</td></tr>
+	<tr><td class='source'>⋘ -name</td><td class='target'>langt mindre end</td></tr>
+	<tr><td class='source'>⋘ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>⋙ -name</td><td class='target'>langt større end</td></tr>
+	<tr><td class='source'>⋙ –keywords</td><td class='target'>matematik<br>ulighed</td></tr>
+	<tr><td class='source'>⋮ -name</td><td class='target'>lodret ellipse</td></tr>
+	<tr><td class='source'>⋮ –keywords</td><td class='target'>ellipse<br>matematik</td></tr>
+	<tr><td class='source'>⋯ -name</td><td class='target'>vandret ellipse</td></tr>
+	<tr><td class='source'>⋯ –keywords</td><td class='target'>ellipse<br>tøvetegn</td></tr>
+	<tr><td class='source'>⋰ -name</td><td class='target'>diagonal ellipse opad mod højre</td></tr>
+	<tr><td class='source'>⋰ –keywords</td><td class='target'>ellipse<br>matematik</td></tr>
+	<tr><td class='source'>⋱ -name</td><td class='target'>diagonal ellipse nedad mod højre</td></tr>
+	<tr><td class='source'>⋱ –keywords</td><td class='target'>ellipse<br>matematik</td></tr>
+	<tr><td class='source'>■ -name</td><td class='target'>udfyldt firkant</td></tr>
+	<tr><td class='source'>■ –keywords</td><td class='target'>firkant<br>kvadrat<br>udfyldt firkant</td></tr>
+	<tr><td class='source'>□ -name</td><td class='target'>hul firkant</td></tr>
+	<tr><td class='source'>□ –keywords</td><td class='target'>firkant<br>hul firkant<br>kvadrat</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='geometric' href='#geometric'>geometric</a></td><td class='source'>🟣 -name</td><td class='target' rowSpan='2'>lille cirkel</td><td class='target' rowSpan='2'>lilla cirkel</td><td class='target' rowSpan='9'>modern</td></tr>
+	<tr><td class='source'>🟣 –keywords</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Typography' href='#Typography'>Typography</a></td><td class='source'><a name='Style' href='#Style'>Style</a></td><td class='source'>opsz-72</td><td class='target'>vis</td><td class='target'>visning</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Feature' href='#Feature'>Feature</a></td><td class='source'>lnum</td><td class='target'>moderne tal</td><td class='target'>majuskeltal</td></tr>
+	<tr><td class='source'>onum</td><td class='target'>gammeldags tal</td><td class='target'>minuskeltal</td></tr>
+	<tr><td class='source'>pnum</td><td class='target'>proportionelle tal</td><td class='target'>proportionale tal</td></tr>
+	<tr><td class='source'>tnum</td><td class='target'>tal i tabelformat</td><td class='target'>tabulære tal</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='2'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='2'><a name='Gender' href='#Gender'>Gender</a></td><td class='source'>common</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>En {0}</td></tr>
+	<tr><td class='source'>neuter</td><td class='target'>Et {0}</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

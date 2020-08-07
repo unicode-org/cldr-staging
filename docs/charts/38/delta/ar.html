@@ -58,10 +58,744 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='4'>ar</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='3'><a name='Keys' href='#Keys'>Keys</a></td><td class='source' rowSpan='3'><a name='Measurement System' href='#Measurement System'>Measurement System</a></td><td class='source'>ms-metric</td><td class='source' rowSpan='6'>ar</td><td class='target'>‫نظام متري‬</td><td class='target'>‫النظام المتري‬</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source'>ms-uksystem</td><td class='target'>‫نظام المملكة المتحدة‬</td><td class='target'>‫نظام القياس البريطاني‬</td></tr>
+	<tr><td class='source'>ms-ussystem</td><td class='target'>‫نظام الولايات المتحدة‬</td><td class='target'>‫نظام القياس الأمريكي‬</td></tr>
+	<tr><td class='source' rowSpan='67'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='34'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Day Periods - wide - Formatting' href='#Day Periods - wide - Formatting'>Day Periods - wide - Formatting</a></td><td class='source'>morning1</td><td class='target'>‫فجرًا‬</td><td class='target'>‫في الصباح‬</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'>night1</td><td class='target' rowSpan='3'>‫منتصف الليل‬</td><td class='target' rowSpan='3'>‫في المساء‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Day Periods - abbreviated - Formatting' href='#Day Periods - abbreviated - Formatting'>Day Periods - abbreviated - Formatting</a></td></tr>
+	<tr><td class='source'>ar_LY</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='source' rowSpan='731'>ar</td><td class='target' rowSpan='4'>{1} {0}</td><td class='target' rowSpan='2'>‫{1} في {0}‬</td><td class='target' rowSpan='5'>basic</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source'>medium</td><td class='target' rowSpan='2'>{1}, {0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>MEd</td><td class='target'>E، d/M</td><td class='target'>‫E، d/‏M‬</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td><td class='target' rowSpan='25'>moderate</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y – y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM-y GGGG – MM-y GGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM-y – MM-y GGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>d-MM-y – d-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd-MM-y GGGG – dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd-MM-y – dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, dd-MM-y – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E, dd-MM-y GGGG – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>E, dd-MM-y – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d–d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d MMM y G – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d MMM – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d MMM y – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d MMM – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E, d MMM y G – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d MMM – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E, d MMM y – E, d MMM y G</td></tr>
+	<tr><td class='source'>Md/d</td><td class='target'>M/d – M/d</td><td class='target'>d-M – d-M</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target' rowSpan='4'>{1} {0}</td><td class='target' rowSpan='4'>‫{1} في {0}‬</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source'>medium</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>MEd</td><td class='target'>E، d/M</td><td class='target'>‫E، d/‏M‬</td><td class='target' rowSpan='28'>moderate</td></tr>
+	<tr><td class='source' rowSpan='27'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>y G – y G</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>y–y G</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>MM-y GGGG – MM-y GGGG</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>MM-y – MM-y GGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>dd-MM-y – dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>dd-MM-y GGGG – dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>dd-MM-y – dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, dd-MM-y – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>E, dd-MM-y GGGG – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>E, dd-MM-y – E, dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMEd/y</td><td class='target'>E, dd-MM-y – E,dd-MM-y GGGG</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y MMM – G y MMM</td><td class='target'>MMM y G – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y MMM–MMM</td><td class='target'>MMM – MMM y G</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y MMM – y MMM</td><td class='target'>MMM y – MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y MMM d–d</td><td class='target'>d–d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y MMM d – G y MMM d</td><td class='target'>d MMM y G – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y MMM d – MMM d</td><td class='target'>d MMM – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y MMM d – y MMM d</td><td class='target'>d MMM y – d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d MMM – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y MMM d, E – G y MMM d, E</td><td class='target'>E, d MMM y G – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y MMM d, E – MMM d, E</td><td class='target'>E, d MMM – E, d MMM y G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y MMM d, E – y MMM d, E</td><td class='target'>E, d MMM y – E, d MMM y G</td></tr>
+	<tr><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d – M/d</td><td class='target' rowSpan='2'>d-M – d-M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MMMd/d</td><td class='target'>MMM d–d</td><td class='target'>d–d MMM</td></tr>
+	<tr><td class='source'><a name='Islamic' href='#Islamic'>Islamic</a></td><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>MEd</td><td class='target'>E، d/M</td><td class='target'>‫E، d/‏M‬</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Amman</td><td class='target'>‫عمان‬</td><td class='target'>‫عمّان‬</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='72'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='72'><a name='Compact Decimal Formatting' href='#Compact Decimal Formatting'>Compact Decimal Formatting</a></td><td class='source' rowSpan='72'><a name='Short Currency ' href='#Short Currency '>Short Currency </a></td><td class='source'>4-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 0 ألف‬</td><td class='target' rowSpan='6'>‫ 0 ألف ¤‬</td><td class='target' rowSpan='72'>modern</td></tr>
+	<tr><td class='source'>4-digits-short-one</td></tr>
+	<tr><td class='source'>4-digits-short-two</td></tr>
+	<tr><td class='source'>4-digits-short-few</td></tr>
+	<tr><td class='source'>4-digits-short-many</td></tr>
+	<tr><td class='source'>4-digits-short-other</td></tr>
+	<tr><td class='source'>5-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 00 ألف‬</td><td class='target' rowSpan='6'>‫ 00 ألف ¤‬</td></tr>
+	<tr><td class='source'>5-digits-short-one</td></tr>
+	<tr><td class='source'>5-digits-short-two</td></tr>
+	<tr><td class='source'>5-digits-short-few</td></tr>
+	<tr><td class='source'>5-digits-short-many</td></tr>
+	<tr><td class='source'>5-digits-short-other</td></tr>
+	<tr><td class='source'>6-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 000 ألف‬</td><td class='target' rowSpan='6'>‫ 000 ألف ¤‬</td></tr>
+	<tr><td class='source'>6-digits-short-one</td></tr>
+	<tr><td class='source'>6-digits-short-two</td></tr>
+	<tr><td class='source'>6-digits-short-few</td></tr>
+	<tr><td class='source'>6-digits-short-many</td></tr>
+	<tr><td class='source'>6-digits-short-other</td></tr>
+	<tr><td class='source'>7-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 0 مليون‬</td><td class='target' rowSpan='6'>‫ 0 مليون ¤‬</td></tr>
+	<tr><td class='source'>7-digits-short-one</td></tr>
+	<tr><td class='source'>7-digits-short-two</td></tr>
+	<tr><td class='source'>7-digits-short-few</td></tr>
+	<tr><td class='source'>7-digits-short-many</td></tr>
+	<tr><td class='source'>7-digits-short-other</td></tr>
+	<tr><td class='source'>8-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 00 مليون‬</td><td class='target' rowSpan='6'>‫ 00 مليون ¤‬</td></tr>
+	<tr><td class='source'>8-digits-short-one</td></tr>
+	<tr><td class='source'>8-digits-short-two</td></tr>
+	<tr><td class='source'>8-digits-short-few</td></tr>
+	<tr><td class='source'>8-digits-short-many</td></tr>
+	<tr><td class='source'>8-digits-short-other</td></tr>
+	<tr><td class='source'>9-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 000 مليون‬</td><td class='target' rowSpan='6'>‫ 000 مليون ¤‬</td></tr>
+	<tr><td class='source'>9-digits-short-one</td></tr>
+	<tr><td class='source'>9-digits-short-two</td></tr>
+	<tr><td class='source'>9-digits-short-few</td></tr>
+	<tr><td class='source'>9-digits-short-many</td></tr>
+	<tr><td class='source'>9-digits-short-other</td></tr>
+	<tr><td class='source'>10-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 0 مليار‬</td><td class='target' rowSpan='6'>‫ 0 مليار ¤‬</td></tr>
+	<tr><td class='source'>10-digits-short-one</td></tr>
+	<tr><td class='source'>10-digits-short-two</td></tr>
+	<tr><td class='source'>10-digits-short-few</td></tr>
+	<tr><td class='source'>10-digits-short-many</td></tr>
+	<tr><td class='source'>10-digits-short-other</td></tr>
+	<tr><td class='source'>11-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 00 مليار‬</td><td class='target' rowSpan='6'>‫00 مليار ¤‬</td></tr>
+	<tr><td class='source'>11-digits-short-one</td></tr>
+	<tr><td class='source'>11-digits-short-two</td></tr>
+	<tr><td class='source'>11-digits-short-few</td></tr>
+	<tr><td class='source'>11-digits-short-many</td></tr>
+	<tr><td class='source'>11-digits-short-other</td></tr>
+	<tr><td class='source'>12-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 000 مليار‬</td><td class='target' rowSpan='6'>‫000 مليار ¤‬</td></tr>
+	<tr><td class='source'>12-digits-short-one</td></tr>
+	<tr><td class='source'>12-digits-short-two</td></tr>
+	<tr><td class='source'>12-digits-short-few</td></tr>
+	<tr><td class='source'>12-digits-short-many</td></tr>
+	<tr><td class='source'>12-digits-short-other</td></tr>
+	<tr><td class='source'>13-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 0 ترليون‬</td><td class='target' rowSpan='6'>‫0 ترليون ¤‬</td></tr>
+	<tr><td class='source'>13-digits-short-one</td></tr>
+	<tr><td class='source'>13-digits-short-two</td></tr>
+	<tr><td class='source'>13-digits-short-few</td></tr>
+	<tr><td class='source'>13-digits-short-many</td></tr>
+	<tr><td class='source'>13-digits-short-other</td></tr>
+	<tr><td class='source'>14-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 00 ترليون‬</td><td class='target' rowSpan='6'>‫00 ترليون ¤‬</td></tr>
+	<tr><td class='source'>14-digits-short-one</td></tr>
+	<tr><td class='source'>14-digits-short-two</td></tr>
+	<tr><td class='source'>14-digits-short-few</td></tr>
+	<tr><td class='source'>14-digits-short-many</td></tr>
+	<tr><td class='source'>14-digits-short-other</td></tr>
+	<tr><td class='source'>15-digits-short-zero</td><td class='target' rowSpan='6'>‫¤ 000 ترليون‬</td><td class='target' rowSpan='6'>‫000 ترليون ¤‬</td></tr>
+	<tr><td class='source'>15-digits-short-one</td></tr>
+	<tr><td class='source'>15-digits-short-two</td></tr>
+	<tr><td class='source'>15-digits-short-few</td></tr>
+	<tr><td class='source'>15-digits-short-many</td></tr>
+	<tr><td class='source'>15-digits-short-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
 	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
+	<tr><td class='source' rowSpan='262'><a name='Units' href='#Units'>Units</a></td><td class='source'><a name='Measurement Systems' href='#Measurement Systems'>Measurement Systems</a></td><td class='source'><a name='null' href='#null'>null</a></td><td class='source'>UK</td><td class='target'>‫المملكة المتحدة‬</td><td class='target'>‫النظام البريطاني‬</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='2'><a name='month' href='#month'>month</a></td><td class='source'>narrow-few-nominative</td><td class='target' rowSpan='2'>‫{0} شهر‬</td><td class='target'>‫{0} أشهر‬</td><td class='target' rowSpan='33'>moderate</td></tr>
+	<tr><td class='source'>narrow-many-nominative</td><td class='target'>‫{0} شهرًا‬</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='14'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>‫بكسل‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} بكسل‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫بكسل‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} بكسل‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>short-displayName</td><td class='target'>‫نقطة لكل سنتيمتر‬</td><td class='target'>‫نقطة/سم‬</td></tr>
+	<tr><td class='source' rowSpan='2'>short-two-nominative</td><td class='target'>‫نقطتان/سم‬</td><td class='target'>‫{0} نقطة/سم‬</td></tr>
+	<tr><td class='source'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='target'>‫نقطتان/بوصة‬</td><td class='target'>‫{0} نقطة/بوصة‬</td></tr>
+	<tr><td class='source' rowSpan='42'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='14'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>‫نصف قطر أرضي‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} نصف قطر أرضي‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫نق أرضي‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} نق أرضي‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>long-displayName</td><td class='target'>fur</td><td class='target'>‫فرلنغ‬</td><td class='target' rowSpan='42'>modern</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>{0} fur</td><td class='target' rowSpan='6'>‫{0} فرلنغ‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fur</td><td class='target'>‫فرلنغ‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>{0} fur</td><td class='target' rowSpan='6'>‫{0} فرلنغ‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>long-displayName</td><td class='target'>fm</td><td class='target'>‫قامة‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>{0} fth</td><td class='target' rowSpan='6'>‫{0} قامة‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fm</td><td class='target'>‫قامة‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>{0} fth</td><td class='target' rowSpan='6'>‫{0} قامة‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='111'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='14'><a name='bushel' href='#bushel'>bushel</a></td><td class='source'>long-displayName</td><td class='target'>bu</td><td class='target'>‫بوشل‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>{0} bu</td><td class='target' rowSpan='6'>‫{0} بوشل‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>bu</td><td class='target'>‫بوشل‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>{0} bu</td><td class='target' rowSpan='6'>‫{0} بوشل‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='97'>▷missing◁</td><td class='target'>‫ملعقة حلو‬</td><td class='target' rowSpan='97'>moderate</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} ملعقة حلو‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫ملعقة ح.‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} ملعقة ح.‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>‫ملعقة حلو إمبراطوري‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} ملعقة حلو إمبراطوري‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫ملعقة حلو إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} ملعقة ح. إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-displayName</td><td class='target'>‫قطرة‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>‫{0} قطرات‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='3'>‫{0} قطرة‬</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td><td class='target'>‫قطرتان‬</td></tr>
+	<tr><td class='source'>long-zero-nominative</td><td class='target'>‫{0} قطرة‬</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫قطرة‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='5'>‫{0} قطرة‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>‫درهم سائل‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>‫{0} درهم سائل‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>‫{0} درهم‬</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td><td class='target' rowSpan='2'>‫{0} درهم سائل‬</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫درهم سائل‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} درهم سائل‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-displayName</td><td class='target'>‫قدح‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>‫{0} أقداح‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='5'>‫{0} قدح‬</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫قدح‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target'>‫{0} أقداح‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td><td class='target' rowSpan='5'>‫{0} قدح‬</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-displayName</td><td class='target'>‫رشّة‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>‫{0} رشّات‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='5'>‫{0} رشّة‬</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫رشّة‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} رشّة‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-displayName</td><td class='target'>‫ربع غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} ربع غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫ربع غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} ربع غالون إمبراطوري‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='29'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='14'><a name='stone' href='#stone'>stone</a></td><td class='source'>long-displayName</td><td class='target'>st</td><td class='target'>‫ستون‬</td><td class='target' rowSpan='14'>modern</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>{0} st</td><td class='target' rowSpan='6'>‫{0} ستون‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>st</td><td class='target'>‫ستون‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>{0} st</td><td class='target' rowSpan='6'>‫{0} ستون‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source'><a name='pound' href='#pound'>pound</a></td><td class='source'>long-few-nominative</td><td class='target'>‫{0} أرطل‬</td><td class='target'>‫{0} رطل‬</td><td class='target' rowSpan='75'>moderate</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='grain' href='#grain'>grain</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='66'>▷missing◁</td><td class='target'>‫قمحة‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} قمحة‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫قمحة‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} قمحة‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='28'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='14'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target'>‫شمعة‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} شمعة‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫شمعة‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} شمعة‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>‫لومن‬</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='6'>‫{0} لومن‬</td></tr>
+	<tr><td class='source'>long-many-nominative</td></tr>
+	<tr><td class='source'>long-one-nominative</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>long-two-nominative</td></tr>
+	<tr><td class='source'>long-zero-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>‫لومن‬</td></tr>
+	<tr><td class='source'>short-few-nominative</td><td class='target' rowSpan='6'>‫{0} لومن‬</td></tr>
+	<tr><td class='source'>short-many-nominative</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>short-two-nominative</td></tr>
+	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫كيبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫ميبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫غيبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫تيبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫بيبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫إكسبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫زيبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='source'>long</td><td class='target' rowSpan='3'>‫يوبي{0}‬</td></tr>
+	<tr><td class='source'>narrow</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-few-nominative-dgender</td><td class='target' rowSpan='4'>{0}²</td><td class='target'>‫{0} مربّعة‬</td></tr>
+	<tr><td class='source'>long-many-nominative-dgender</td><td class='target'>‫{0} مربّعًا‬</td></tr>
+	<tr><td class='source'>long-two-nominative-dgender</td><td class='target'>‫{0} مربّعان‬</td></tr>
+	<tr><td class='source'>long-zero-nominative-dgender</td><td class='target'>‫{0} مربّع‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-few-nominative-dgender</td><td class='target' rowSpan='4'>{0}³</td><td class='target'>‫{0} مكعّبة‬</td></tr>
+	<tr><td class='source'>long-many-nominative-dgender</td><td class='target'>‫{0} مكعبًا‬</td></tr>
+	<tr><td class='source'>long-two-nominative-dgender</td><td class='target'>‫{0} مكعّبان‬</td></tr>
+	<tr><td class='source'>long-zero-nominative-dgender</td><td class='target'>‫{0} مكعّب‬</td></tr>
+	<tr><td class='source' rowSpan='327'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='2'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫نظام الكتابة تحت السطر {0}‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>‫نظام الكتابة فوق السطر {0}‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target'>‫وجه في الغيوم‬</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>‫رأس في الغيوم<br>شارد الذهن<br>وجه في الضباب<br>وجه في الغيوم‬</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target'>‫وجه يزفر الهواء‬</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>‫راحة<br>زفير<br>صفير<br>همس<br>يتلهث‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target'>‫وجه بعينين دائختين‬</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>‫حلزون<br>دائخ<br>دوامة<br>لولبي<br>منوّم‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😾 -name</td><td class='target'>‫وجه قطة مقطب‬</td><td class='target'>‫وجه قطة عابس‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>😾 –keywords</td><td class='target'>‫…<br>وجه قطة مقطب‬</td><td class='target'>‫…<br>وجه قطة عابس‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>‫قلب يحترق‬</td><td class='target' rowSpan='8'>comprehensive</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>‫القلب المقدس<br>حب<br>حريق<br>عشق<br>قلب‬</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>‫قلب يتعافى‬</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>‫سليم<br>صحّي<br>يتحسّن<br>يتعافى<br>يصحّ<br>يعالَج‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='4'><a name='person' href='#person'>person</a></td><td class='source'>🧔‍♂ -name</td><td class='target'>‫رجل بلحية‬</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>‫رجل<br>رجل مع لحية<br>لحية‬</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>‫امرأة بلحية‬</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>‫امرأة<br>امرأة مع لحية<br>لحية‬</td></tr>
+	<tr><td class='source'><a name='person-sport' href='#person-sport'>person-sport</a></td><td class='source'>🏄 -name</td><td class='target'>‫‫شخص يركب أمواج‬</td><td class='target'>‫شخص يركب الأمواج‬</td><td class='target' rowSpan='177'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐀 -name</td><td class='target'>‫فأر كبير‬</td><td class='target'>‫جرذ‬</td></tr>
+	<tr><td class='source'>🐀 –keywords</td><td class='target'>…</td><td class='target'>‫جرذ<br>…‬</td></tr>
+	<tr><td class='source'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source'><a name='food-sweet' href='#food-sweet'>food-sweet</a></td><td class='source'>🍫 -name</td><td class='target'>‫‫لوح شيكولاتة‬</td><td class='target'>‫لوح شوكولاتة‬</td></tr>
+	<tr><td class='source'><a name='Objects' href='#Objects'>Objects</a></td><td class='source'><a name='tool' href='#tool'>tool</a></td><td class='source'>🔫 -name</td><td class='target'>‫مسدس‬</td><td class='target'>‫مسدس ماء‬</td></tr>
+	<tr><td class='source' rowSpan='304'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source'><a name='religion' href='#religion'>religion</a></td><td class='source'>☸ -name</td><td class='target'>‫عجلة‬</td><td class='target'>‫عجلة دارما‬</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='math' href='#math'>math</a></td><td class='source'>+ -name</td><td class='target' rowSpan='26'>▷missing◁</td><td class='target'>‫علامة الجمع‬</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>‫إضافة<br>جمع‬</td></tr>
+	<tr><td class='source'>± -name</td><td class='target' rowSpan='2'>‫زائد-ناقص‬</td></tr>
+	<tr><td class='source'>± –keywords</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>‫علامة الطرح‬</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>‫طرح<br>ناقص‬</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>‫يعادل‬</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>‫يساوي<br>يعادل‬</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>‫يساوي تقريبًا‬</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>‫حوالي<br>يساوي تقريبًا<br>يقارب‬</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>‫لا يساوي‬</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>‫لا يساوي<br>لا يعادل‬</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>‫أكبر من‬</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>‫أكبر من<br>علامة<br>علامة إغلاق‬</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>‫أقل من‬</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>‫أقل من<br>علامة<br>علامة فتح‬</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>‫أقل من أو يعادل‬</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>‫أقل من<br>يساوي<br>يعادل‬</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>‫أكبر من أو يعادل‬</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>‫أكبر من<br>يساوي<br>يعادل‬</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>‫نفي‬</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>‫غير<br>نفي‬</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>‫خط عمودي‬</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>‫أنبوب<br>خرطوم<br>خط<br>خط رأسي<br>خط عمودي<br>شريط<br>شريط عمودي<br>عصا‬</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>‫تلدة‬</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='133'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>❓ -name</td><td class='target'>‫علامة استفهام‬</td><td class='target'>‫علامة استفهام حمراء‬</td></tr>
+	<tr><td class='source'>, -name</td><td class='target' rowSpan='274'>▷missing◁</td><td class='target' rowSpan='2'>‫فاصلة‬</td></tr>
+	<tr><td class='source'>, –keywords</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>‫فاصلة أيدوغرافية‬</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>‫أيدوغرافية<br>فاصلة‬</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>‫فاصلة عربية‬</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>‫عربية<br>فاصلة‬</td></tr>
+	<tr><td class='source'>; -name</td><td class='target' rowSpan='2'>‫فاصلة منقوطة‬</td></tr>
+	<tr><td class='source'>; –keywords</td></tr>
+	<tr><td class='source'>: -name</td><td class='target' rowSpan='2'>‫نقطتان‬</td></tr>
+	<tr><td class='source'>: –keywords</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>‫فاصلة منقوطة عربية‬</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>‫عربية<br>فاصلة منقوطة‬</td></tr>
+	<tr><td class='source'>! -name</td><td class='target'>‫علامة تعجّب‬</td></tr>
+	<tr><td class='source'>! –keywords</td><td class='target'>‫تعجّب<br>علامة تعجّب<br>مفاجأة‬</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>‫علامة تعجّب مقلوبة‬</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>‫تعجّب<br>علامة تعجّب<br>مفاجأة<br>مقلوبة<br>نقطة تعجّب‬</td></tr>
+	<tr><td class='source'>? -name</td><td class='target'>‫علامة استفهام‬</td></tr>
+	<tr><td class='source'>? –keywords</td><td class='target'>‫استفهام<br>سؤال‬</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>‫علامة استفهام مقلوبة‬</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>‫استفهام<br>سؤال<br>علامة استفهام<br>مقلوبة‬</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>‫علامة استفهام عربية‬</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>‫استفهام<br>سؤال<br>عربية<br>علامة استفهام‬</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>‫علامة فقرة‬</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>‫علامة فقرة<br>فقرة‬</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target'>‫علامة إسناد‬</td></tr>
+	<tr><td class='source'>※ –keywords</td><td class='target'>‫علامة إسناد<br>علامة دليلية<br>علامة مرجعية‬</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>‫شرطة‬</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>‫خط مائل<br>خط مائل للأمام<br>شرطة<br>شرطة مائلة للأمام<br>مائل<br>مائل ناحية اليمين‬</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>‫شرطة مائلة للخلف‬</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>‫خط مائل<br>خط مال للخلف<br>شرطة مائلة للخلف<br>مائل ناحية اليسار‬</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>‫علامة عطف‬</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>‫علامة عطف<br>و<br>واو لاتينية‬</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>‫علامة المربّع‬</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>‫باوند<br>رقم<br>مربّع<br>هاشتاغ<br>وسم‬</td></tr>
+	<tr><td class='source'>% -name</td><td class='target'>‫نسبة مئوية‬</td></tr>
+	<tr><td class='source'>% –keywords</td><td class='target'>‫بالمئة<br>مئوية‬</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target'>‫في الألف‬</td></tr>
+	<tr><td class='source'>‰ –keywords</td><td class='target'>‫بالألف<br>في الألف‬</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target'>‫برايم‬</td></tr>
+	<tr><td class='source'>′ –keywords</td><td class='target'>‫برايم<br>رمز أولي‬</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>‫برايم مزدوج‬</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>‫برايم<br>رمز أولي‬</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>‫برايم ثلاثي‬</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>‫برايم<br>رمز أولي‬</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>‫علامة آت‬</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target'>‫أروب<br>الربع<br>علامة آت‬</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>‫نجمة‬</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>‫علامة<br>نجمة‬</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>‫ذات السن‬</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>‫ذات السن<br>موسيقى<br>نغمة‬</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>‫خفض‬</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>‫بيمول<br>خفض<br>موسيقى<br>نغمة‬</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>‫رفع‬</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>‫دييز<br>رفع<br>موسيقى<br>نغمة‬</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>‫نبر الإطالة‬</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>‫إطالة<br>نبر<br>نبرة‬</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>‫نبرة حادة‬</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>‫حادة<br>نبر<br>نبرة‬</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>‫مدة معقوفة‬</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>‫الضرب المنطقي<br>رفع<br>علامة الاستثناء<br>مدة معقوفة<br>معقوفة‬</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>‫نقطتان على الحرف‬</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>‫علامة فك<br>نقطتان<br>نقطتان على الحرف‬</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>‫واصلة‬</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>‫شحطة<br>شرطة<br>واصلة‬</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>‫شريط أفقي‬</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>‫خط<br>شرطة<br>شريط‬</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>‫خط تحت السطر‬</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>‫تسطير<br>خط تحتي<br>شرطة تحت السطر<br>شرطة سفلية‬</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>‫واصلة-ناقص‬</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>‫شرطة<br>ناقص<br>واصلة‬</td></tr>
+	<tr><td class='source'>. -name</td><td class='target'>‫نقطة‬</td></tr>
+	<tr><td class='source'>. –keywords</td><td class='target'>‫نقطة<br>نقطة نهاية‬</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>‫علامة الحذف‬</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>‫ثلاث نقاط<br>حذف<br>علامة الحذف‬</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>‫نقطة أيدوغرافية‬</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>‫أيدوغرافية<br>نقطة<br>نقطة نهاية‬</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>‫نقطة فاصلة‬</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>‫شرطة<br>فصل<br>نقطة<br>واصلة‬</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>‫نقطة متوسطة بالكاتاكانا‬</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>‫اليابان<br>كاتاكانا<br>نقاط<br>نقطة بالوسط<br>نقطة متوسطة‬</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>‫فاصلة علوية لليسار‬</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس مفردة<br>فاصلة علوية<br>فاصلة عليا‬</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>‫فاصلة علوية لليمين‬</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس مفردة<br>فاصلة علوية<br>فاصلة عليا‬</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>‫فاصلة سفلية لليمين‬</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس سفلية<br>فاصلة‬</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>‫فاصلة علوية عمودية‬</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس مفردة<br>فاصلة علوية‬</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>‫علامة اقتباس مزدوجة لليسار‬</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس مزدوجة‬</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>‫علامة اقتباس مزدوجة لليمين‬</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس مزدوجة‬</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>‫علامة اقتباس مزدوجة سفلية لليمين‬</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>‫اقتباس<br>علامة اقتباس<br>علامة اقتباس سفلية<br>علامة اقتباس مزدوجة‬</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>‫قوس إغلاق هلالي‬</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>‫إغلاق<br>غلق<br>قوس<br>قوس دائري<br>قوس هلالي‬</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>‫قوس فتح معقوف‬</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>‫قوس مستطيل<br>قوس معقوف‬</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>‫قوس إغلاق معقوف‬</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>‫قوس مستطيل<br>قوس معقوف‬</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>‫قوس فتح متعرج‬</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>‫قوس<br>قوس حصر<br>قوس متعرج‬</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>‫قوس إغلاق متعرج‬</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>‫قوس<br>قوس حصر<br>قوس متعرج‬</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>‫قوس فتح على شكل صدفة السلحفاة‬</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>‫قوس<br>قوس على شكل صدفة<br>قوس على شكل صدفة السلحفاة‬</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>‫قوس إغلاق على شكل صدفة السلحفاة‬</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>‫قوس<br>قوس على شكل صدفة<br>قوس على شكل صدفة السلحفاة‬</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>‫فتح قوس تنصيص‬</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>‫قوس<br>قوس تنصيص<br>قوس زاوية<br>قوس مدبّب‬</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>‫إغلاق قوس تنصيص‬</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>‫قوس<br>قوس تنصيص<br>قوس زاوية<br>قوس مدبّب‬</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>‫فتح قوس تنصيص مزدوج‬</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>‫قوس<br>قوس تنصيص مزدوج‬</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>‫إغلاق قوس تنصيص مزدوج‬</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>‫قوس<br>قوس تنصيص مزدوج‬</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>‫فتح قوس زاوية‬</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>‫قوس<br>قوس زاوية‬</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>‫إغلاق قوس زاوية‬</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>‫قوس<br>قوس زاوية‬</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>‫فتح قوس زاوية مجوّفة‬</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>‫قوس<br>قوس زاوية مجوّفة‬</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>‫إغلاق قوس زاوية مجوّفة‬</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>‫قوس<br>قوس زاوية مجوّفة‬</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>‫فتح قوس عدسة مجوّفة‬</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>‫قوس<br>قوس عدسة مجوّفة‬</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>‫إغلاق قوس عدسة مجوّفة‬</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>‫قوس<br>قوس عدسة مجوّفة‬</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>‫فتح قوس عدسة سوداء‬</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>‫قوس<br>قوس عدسة‬</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>‫إغلاق قوس عدسة سوداء‬</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>‫قوس<br>قوس عدسة‬</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='currency' href='#currency'>currency</a></td><td class='source'>$ -name</td><td class='target'>‫دولار‬</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>‫بيزو<br>دولار<br>دولار أمريكي<br>مال‬</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>‫سنت‬</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>‫بيزو‬</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>‫وون‬</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>‫وون كوري جنوبي<br>وون كوري شمالي‬</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target' rowSpan='2'>‫ميل‬</td></tr>
+	<tr><td class='source'>₥ –keywords</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>‫بيتكوين‬</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>‫BTC<br>بيتكوين‬</td></tr>
+	<tr><td class='source' rowSpan='130'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‾ -name</td><td class='target'>‫خط فوقي‬</td><td class='target' rowSpan='130'>comprehensive</td></tr>
+	<tr><td class='source'>‾ –keywords</td><td class='target'>‫خط علوي<br>طباعة فوقية<br>معلاة‬</td></tr>
+	<tr><td class='source'>‽ -name</td><td class='target'>‫علامة استفهام وتعجب‬</td></tr>
+	<tr><td class='source'>‽ –keywords</td><td class='target'>‫إنتروبانغ<br>علامة استفهام وتعجب‬</td></tr>
+	<tr><td class='source'>‸ -name</td><td class='target' rowSpan='2'>‫علامة الإقحام‬</td></tr>
+	<tr><td class='source'>‸ –keywords</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>‫علامة نجمية‬</td></tr>
+	<tr><td class='source'>⁂ –keywords</td><td class='target'>‫ثلاث نجوم<br>نجوم‬</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليسار مع خط مائل‬</td></tr>
+	<tr><td class='source'>↚ –keywords</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليمين مع خط مائل‬</td></tr>
+	<tr><td class='source'>↛ –keywords</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليسار واليمين مع خط مائل‬</td></tr>
+	<tr><td class='source'>↮ –keywords</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target' rowSpan='2'>‫سهم متموج إلى اليسار‬</td></tr>
+	<tr><td class='source'>↜ –keywords</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target' rowSpan='2'>‫سهم متموج إلى اليمين‬</td></tr>
+	<tr><td class='source'>↝ –keywords</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target' rowSpan='2'>‫سهم ثنائي الرأس إلى اليسار‬</td></tr>
+	<tr><td class='source'>↞ –keywords</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target' rowSpan='2'>‫سهم ثنائي الرأس إلى الأعلى‬</td></tr>
+	<tr><td class='source'>↟ –keywords</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target' rowSpan='2'>‫سهم ثنائي الرأس إلى اليمين‬</td></tr>
+	<tr><td class='source'>↠ –keywords</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target' rowSpan='2'>‫سهم ثنائي الرأس إلى الأسفل‬</td></tr>
+	<tr><td class='source'>↡ –keywords</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليسار مع ذيل‬</td></tr>
+	<tr><td class='source'>↢ –keywords</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليمين مع ذيل‬</td></tr>
+	<tr><td class='source'>↣ –keywords</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليسار من شريط‬</td></tr>
+	<tr><td class='source'>↤ –keywords</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target' rowSpan='2'>‫سهم إلى الأعلى من شريط‬</td></tr>
+	<tr><td class='source'>↥ –keywords</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليمين من شريط‬</td></tr>
+	<tr><td class='source'>↦ –keywords</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target' rowSpan='2'>‫سهم إلى الأسفل من شريط‬</td></tr>
+	<tr><td class='source'>↧ –keywords</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target' rowSpan='2'>‫سهم إلى الأعلى والأسفل مع قاعدة‬</td></tr>
+	<tr><td class='source'>↨ –keywords</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليسار مع حلقة‬</td></tr>
+	<tr><td class='source'>↫ –keywords</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليمين مع حلقة‬</td></tr>
+	<tr><td class='source'>↬ –keywords</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target' rowSpan='2'>‫سهم متموج إلى اليمين واليسار‬</td></tr>
+	<tr><td class='source'>↭ –keywords</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>‫سهم متعرج إلى الأسفل‬</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>‫متعرج‬</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target' rowSpan='2'>‫سهم علوي مع طرف إلى اليسار‬</td></tr>
+	<tr><td class='source'>↰ –keywords</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target' rowSpan='2'>‫سهم علوي مع طرف إلى اليمين‬</td></tr>
+	<tr><td class='source'>↱ –keywords</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target' rowSpan='2'>‫سهم سفلي مع طرف إلى اليسار‬</td></tr>
+	<tr><td class='source'>↲ –keywords</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target' rowSpan='2'>‫سهم سفلي مع طرف إلى اليمين‬</td></tr>
+	<tr><td class='source'>↳ –keywords</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target' rowSpan='2'>‫سهم أيمن مع زاوية إلى الأسفل‬</td></tr>
+	<tr><td class='source'>↴ –keywords</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target' rowSpan='2'>‫سهم سفلي مع زاوية إلى اليسار‬</td></tr>
+	<tr><td class='source'>↵ –keywords</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target' rowSpan='2'>‫سهم نصف دائرة علوية عكس اتجاه عقارب الساعة‬</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>‫سهم نصف دائرة علوية في اتجاه عقارب الساعة‬</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>‫سهم شمالي غربي إلى شريط طويل‬</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target' rowSpan='2'>‫سهم أيسر إلى شريط فوق سهم أيمن إلى شريط‬</td></tr>
+	<tr><td class='source'>↹ –keywords</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>‫سهم دائرة مفتوحة عكس اتجاه عقارب الساعة‬</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>‫سهم دائرة مفتوحة في اتجاه عقارب الساعة‬</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>‫حربة يسرى مع شوكة علوية‬</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target' rowSpan='2'>‫حربة يسرى مع شوكة سفلية‬</td></tr>
+	<tr><td class='source'>↽ –keywords</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>‫حربة علوية مع شوكة يمنى‬</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>‫حربة علوية مع شوكة يسرى‬</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>‫حربة يمنى مع شوكة علوية‬</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>‫حربة يمنى مع شوكة سفلية‬</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>‫حربة سفلية مع شوكة يمنى‬</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>‫حربة سفلية مع شوكة يسرى‬</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>‫شوكة‬</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target' rowSpan='2'>‫سهم إلى اليمين فوق سهم إلى اليسار‬</td></tr>
+	<tr><td class='source'>⇄ –keywords</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target' rowSpan='2'>‫سهمان مزدوجان إلى اليسار‬</td></tr>
+	<tr><td class='source'>⇇ –keywords</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target' rowSpan='2'>‫سهمان مزدوجان إلى الأعلى‬</td></tr>
+	<tr><td class='source'>⇈ –keywords</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target' rowSpan='2'>‫سهمان مزدوجان إلى اليمين‬</td></tr>
+	<tr><td class='source'>⇉ –keywords</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target' rowSpan='2'>‫سهمان مزدوجان إلى الأسفل‬</td></tr>
+	<tr><td class='source'>⇊ –keywords</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target' rowSpan='2'>‫حربة يسرى فوق حربة يمنى‬</td></tr>
+	<tr><td class='source'>⇋ –keywords</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target' rowSpan='2'>‫حربة يمنى فوق حربة يسرى‬</td></tr>
+	<tr><td class='source'>⇌ –keywords</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليسار‬</td></tr>
+	<tr><td class='source'>⇐ –keywords</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليسار مع خط‬</td></tr>
+	<tr><td class='source'>⇍ –keywords</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الأعلى‬</td></tr>
+	<tr><td class='source'>⇑ –keywords</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليمين‬</td></tr>
+	<tr><td class='source'>⇒ –keywords</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليمين مع خط‬</td></tr>
+	<tr><td class='source'>⇏ –keywords</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الأسفل‬</td></tr>
+	<tr><td class='source'>⇓ –keywords</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليسار واليمين‬</td></tr>
+	<tr><td class='source'>⇔ –keywords</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى اليسار واليمين مع خط‬</td></tr>
+	<tr><td class='source'>⇎ –keywords</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الشمال الغربي‬</td></tr>
+	<tr><td class='source'>⇖ –keywords</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الشمال الشرقي‬</td></tr>
+	<tr><td class='source'>⇗ –keywords</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الجنوب الشرقي‬</td></tr>
+	<tr><td class='source'>⇘ –keywords</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target' rowSpan='2'>‫سهم مزدوج إلى الجنوب الغربي‬</td></tr>
+	<tr><td class='source'>⇙ –keywords</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target' rowSpan='2'>‫سهم ثلاثي إلى اليسار‬</td></tr>
+	<tr><td class='source'>⇚ –keywords</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target' rowSpan='2'>‫سهم ثلاثي إلى اليمين‬</td></tr>
+	<tr><td class='source'>⇛ –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>🈶 -name</td><td class='target'>‫الزر /ليس مجاني/ باليابانية‬</td><td class='target'>‫الزر /غير مجاني/ باليابانية‬</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🈶 –keywords</td><td class='target'>‫الزر /ليس مجاني/ باليابانية<br>…‬</td><td class='target'>‫الزر /غير مجاني/ باليابانية<br>…‬</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source'><a name='compound-UnitPattern1-power2' href='#compound-UnitPattern1-power2'>compound-UnitPattern1-power2</a></td><td class='source' rowSpan='2'>long</td><td class='target'>‫{0} مربّع‬</td><td class='target'>{0}²</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='compound-UnitPattern1-power3' href='#compound-UnitPattern1-power3'>compound-UnitPattern1-power3</a></td><td class='target'>‫{0} مكعّب‬</td><td class='target'>{0}³</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

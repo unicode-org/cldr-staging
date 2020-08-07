@@ -58,10 +58,591 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='source' rowSpan='4'>kk</td><td class='target'>GHS</td><td class='target'>GH₵</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>TH</td><td class='source' rowSpan='585'>kk</td><td class='target'>Тайланд</td><td class='target'>Таиланд</td><td class='target' rowSpan='14'>moderate</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-symbol-narrow</td><td class='target'>GHS</td><td class='target'>GH₵</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-symbol-narrow</td><td class='target'>AMD</td><td class='target'>֏</td></tr>
 	<tr><td class='source'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-symbol-narrow</td><td class='target'>AZN</td><td class='target'>₼</td></tr>
 	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-symbol-narrow</td><td class='target'>AFN</td><td class='target'>‫؋‬</td></tr>
+	<tr><td class='source' rowSpan='118'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='6'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='6'><a name='dot' href='#dot'>dot</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='9'>▷missing◁</td><td class='target'>нүкте</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} нүкте</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>нүкте</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} нүкте</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='3'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>long-displayName</td><td class='target'>Жер радиусы</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Жер радиусы</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>long-displayName</td><td class='target'>fur</td><td class='target'>фурлонг</td><td class='target' rowSpan='10'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target' rowSpan='2'>{0} фурлонг</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fur</td><td class='target'>фурлонг</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target' rowSpan='2'>{0} фурлонг</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>long-displayName</td><td class='target'>fm</td><td class='target'>фатом</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} fth</td><td class='target' rowSpan='2'>{0} фатом</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>fm</td><td class='target'>фатом</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='point' href='#point'>point</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ұпай</td><td class='target' rowSpan='2'>{0} пункт</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='45'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='3'><a name='bushel' href='#bushel'>bushel</a></td><td class='source'>long-displayName</td><td class='target'>bu</td><td class='target'>бушель</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} bu</td><td class='target' rowSpan='2'>{0} бушель</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='42'>▷missing◁</td><td class='target'>десерт қасығы</td><td class='target' rowSpan='42'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} десерт қасығы</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>дес. қас.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} дес. қас.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>long-displayName</td><td class='target'>британдық десерт қасығы</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} британдық десерт қасығы</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>брит. дес. қас.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} брит. дес. қас.</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='drop' href='#drop'>drop</a></td><td class='source'>long-displayName</td><td class='target'>тамшы</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} тамшы</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>тамшы</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} тамшы</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>драхма</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} драхма</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>сұйық драхма</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} сұй. драхма</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='jigger' href='#jigger'>jigger</a></td><td class='source'>long-displayName</td><td class='target'>джиггер</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} джиггер</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>джиггер</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} джиггер</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>long-displayName</td><td class='target'>шөкім</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} шөкім</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>шөкім</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} шөкім</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>long-displayName</td><td class='target'>британдық кварта</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} британдық кварта</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>брит. кварта</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} брит. кварта</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='6'><a name='stone' href='#stone'>stone</a></td><td class='source'>long-displayName</td><td class='target'>st</td><td class='target'>стоун</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} st</td><td class='target' rowSpan='2'>{0} стоун</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>st</td><td class='target'>стоун</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} st</td><td class='target' rowSpan='2'>{0} стоун</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='grain' href='#grain'>grain</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='42'>▷missing◁</td><td class='target'>гран</td><td class='target' rowSpan='46'>moderate</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} гран</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>гран</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} гран</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='6'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-displayName</td><td class='target'>кандела</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} кандела</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Кд</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} Кд</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-displayName</td><td class='target'>люмен</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} люмен</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>лм</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} лм</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='28'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='3'><a name='1024p1' href='#1024p1'>1024p1</a></td><td class='source'>long</td><td class='target'>киби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ки{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p2' href='#1024p2'>1024p2</a></td><td class='source'>long</td><td class='target'>меби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ми{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p3' href='#1024p3'>1024p3</a></td><td class='source'>long</td><td class='target'>гиби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ги{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p4' href='#1024p4'>1024p4</a></td><td class='source'>long</td><td class='target'>теби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Ти{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p5' href='#1024p5'>1024p5</a></td><td class='source'>long</td><td class='target'>пеби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Пи{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p6' href='#1024p6'>1024p6</a></td><td class='source'>long</td><td class='target'>эксби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Эи{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p7' href='#1024p7'>1024p7</a></td><td class='source'>long</td><td class='target'>зеби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Зи{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td><td class='source'>long</td><td class='target'>йоби{0}</td></tr>
+	<tr><td class='source'>narrow</td><td class='target' rowSpan='2'>Йи{0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-one-nominative-dgender</td><td class='target' rowSpan='2'>{0}²</td><td class='target'>шаршы {0}</td></tr>
+	<tr><td class='source'>long-other-nominative-dgender</td><td class='target'>квадрат {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-one-nominative-dgender</td><td class='target' rowSpan='2'>{0}³</td><td class='target' rowSpan='2'>текше {0}</td></tr>
+	<tr><td class='source'>long-other-nominative-dgender</td></tr>
+	<tr><td class='source' rowSpan='462'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='2'><a name='Category' href='#Category'>Category</a></td><td class='source' rowSpan='2'><a name='Pattern' href='#Pattern'>Pattern</a></td><td class='source'>subscript</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>жол асты таңба {0}</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>superscript</td><td class='target'>жол үсті таңба {0}</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='4'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>😶‍🌫 -name</td><td class='target'>бұлт басқан бет</td><td class='target' rowSpan='10'>comprehensive</td></tr>
+	<tr><td class='source'>😶‍🌫 –keywords</td><td class='target'>бұлт басқан бас<br>бұлт басқан бет<br>ойға батқан<br>тұман басқан бет</td></tr>
+	<tr><td class='source'>😮‍💨 -name</td><td class='target'>ауаны шығарып тұрған бет</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>дем шығару<br>тыныс шығару<br>тынысы тарылу<br>үһлеу<br>ысқыру<br>ысқырық</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td><td class='source'>😵‍💫 -name</td><td class='target'>көзі шиыршық бет</td></tr>
+	<tr><td class='source'>😵‍💫 –keywords</td><td class='target'>басы айналған<br>гипноздалған<br>мәссаған<br>үрей<br>шиыршық</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❤‍🔥 -name</td><td class='target'>лаулап тұрған жүрек</td></tr>
+	<tr><td class='source'>❤‍🔥 –keywords</td><td class='target'>асыл жүрек<br>жану<br>жүрек<br>махаббат<br>ынтық</td></tr>
+	<tr><td class='source'>❤‍🩹 -name</td><td class='target'>жаралы жүрек</td></tr>
+	<tr><td class='source'>❤‍🩹 –keywords</td><td class='target'>аман-сау<br>жазылу<br>жөнделу<br>қалпына келу<br>оңалу<br>сау</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫀 –keywords</td><td class='target'>жүрек органы<br>жүрек соғысы<br>…<br>орталық<br>пулсь</td><td class='target'>жүрек<br>…<br>пульс</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='person' href='#person'>person</a></td><td class='source'>🧔‍♂ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>ер адам: сақал</td><td class='target' rowSpan='9'>comprehensive</td></tr>
+	<tr><td class='source'>🧔‍♂ –keywords</td><td class='target'>ер адам<br>ер адам: сақал<br>сақал</td></tr>
+	<tr><td class='source'>🧔‍♀ -name</td><td class='target'>әйел адам: сақал</td></tr>
+	<tr><td class='source'>🧔‍♀ –keywords</td><td class='target'>әйел адам<br>әйел адам: сақал<br>сақал</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🧑‍🍳 –keywords</td><td class='target'>…</td><td class='target'>…<br>бас аспаз</td></tr>
+	<tr><td class='source'>🧑‍🏭 –keywords</td><td class='target'>…<br>зауыт жұмысшысы<br>құрасыру<br>…</td><td class='target'>…<br>құрастыру<br>…</td></tr>
+	<tr><td class='source'>🧑‍✈ –keywords</td><td class='target' rowSpan='2'>…</td><td class='target'>…<br>ұшақ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-activity' href='#person-activity'>person-activity</a></td><td class='source'>🧑‍🦼 –keywords</td><td class='target'>арба<br>…<br>мүмкіндігі шектеулі</td></tr>
+	<tr><td class='source'>🧑‍🦽 –keywords</td><td class='target'>қол жетегі бар арбашадағы адам</td><td class='target'>арба<br>қол жетегі бар арбадағы адам<br>мүмкіндігі шектеулі</td></tr>
+	<tr><td class='source'><a name='Activities' href='#Activities'>Activities</a></td><td class='source'><a name='game' href='#game'>game</a></td><td class='source'>🎯 –keywords</td><td class='target'>бұқа көз<br>дарт<br>…</td><td class='target'>дартс<br>дартс найзасы<br>…</td><td class='target' rowSpan='175'>modern</td></tr>
+	<tr><td class='source' rowSpan='439'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='3'><a name='arrow' href='#arrow'>arrow</a></td><td class='source'>↓ -name</td><td class='target'>E13-101</td><td class='target'>төмен бағытты көрсеткі</td></tr>
+	<tr><td class='source'>↑ -name</td><td class='target'>E13-102</td><td class='target'>жоғары бағытты көрсеткі</td></tr>
+	<tr><td class='source'>⇆ -name</td><td class='target'>E13-106</td><td class='target'>оң бағытты көрсеткілер үстіндегі сол бағытты көрсеткілер</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='math' href='#math'>math</a></td><td class='source'>+ -name</td><td class='target' rowSpan='158'>▷missing◁</td><td class='target'>қосу таңбасы</td></tr>
+	<tr><td class='source'>+ –keywords</td><td class='target'>қосу<br>плюс</td></tr>
+	<tr><td class='source'>± -name</td><td class='target' rowSpan='2'>плюс-минус</td></tr>
+	<tr><td class='source'>± –keywords</td></tr>
+	<tr><td class='source'>− -name</td><td class='target'>азайту таңбасы</td></tr>
+	<tr><td class='source'>− –keywords</td><td class='target'>азайту<br>минус</td></tr>
+	<tr><td class='source'>= -name</td><td class='target'>тең</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target'>тең<br>тепе-тең</td></tr>
+	<tr><td class='source'>≈ -name</td><td class='target'>тең дерлік</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>тең дерлік<br>шамаланған мән<br>шамамен</td></tr>
+	<tr><td class='source'>≠ -name</td><td class='target'>тең емес</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>тең емес<br>теңсіздік</td></tr>
+	<tr><td class='source'>> -name</td><td class='target'>үлкенірек</td></tr>
+	<tr><td class='source'>> –keywords</td><td class='target'>соңғы тег<br>тег<br>үлкенірек</td></tr>
+	<tr><td class='source'>< -name</td><td class='target'>кішірек</td></tr>
+	<tr><td class='source'>< –keywords</td><td class='target'>бастапқы тег<br>кішірек<br>тег</td></tr>
+	<tr><td class='source'>≤ -name</td><td class='target'>кішірек немесе тең</td></tr>
+	<tr><td class='source'>≤ –keywords</td><td class='target'>кішірек<br>тең<br>теңсіздік</td></tr>
+	<tr><td class='source'>≥ -name</td><td class='target'>үлкенірек немесе тең</td></tr>
+	<tr><td class='source'>≥ –keywords</td><td class='target'>тең<br>теңсіздік<br>үлкенірек</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>теріске шығару</td></tr>
+	<tr><td class='source'>¬ –keywords</td><td class='target'>емес<br>теріске шығару</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>тік сызық</td></tr>
+	<tr><td class='source'>| –keywords</td><td class='target'>жолақ<br>сүңгі<br>сызық<br>таяқша<br>тік жолақ<br>түтік<br>Шеффер штрихі<br>штрих</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target' rowSpan='2'>тильда</td></tr>
+	<tr><td class='source'>~ –keywords</td></tr>
+	<tr><td class='source' rowSpan='132'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>, -name</td><td class='target' rowSpan='2'>үтір</td></tr>
+	<tr><td class='source'>, –keywords</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target'>идеографиялық үтір</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>идеографиялық<br>үтір</td></tr>
+	<tr><td class='source'>، -name</td><td class='target'>араб үтірі</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>араб<br>үтір</td></tr>
+	<tr><td class='source'>; -name</td><td class='target' rowSpan='2'>нүктелі үтір</td></tr>
+	<tr><td class='source'>; –keywords</td></tr>
+	<tr><td class='source'>: -name</td><td class='target' rowSpan='2'>қос нүкте</td></tr>
+	<tr><td class='source'>: –keywords</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target'>араб нүктелі үтірі</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>араб<br>нүктелі үтір</td></tr>
+	<tr><td class='source'>! -name</td><td class='target'>лептік белгісі</td></tr>
+	<tr><td class='source'>! –keywords</td><td class='target'>леп белгісі<br>лептік белгісі</td></tr>
+	<tr><td class='source'>¡ -name</td><td class='target'>төңкерілген лептік белгісі</td></tr>
+	<tr><td class='source'>¡ –keywords</td><td class='target'>леп белгісі<br>лептік белгісі<br>төңкерілген</td></tr>
+	<tr><td class='source'>? -name</td><td class='target'>сұрау белгісі</td></tr>
+	<tr><td class='source'>? –keywords</td><td class='target'>сұрақ</td></tr>
+	<tr><td class='source'>¿ -name</td><td class='target'>төңкерілген сұрақ белгісі</td></tr>
+	<tr><td class='source'>¿ –keywords</td><td class='target'>сұрақ<br>сұрақ белгісі<br>төңкерілген</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target'>араб сұрақ белгісі</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>араб<br>сұрақ<br>сұрақ белгісі</td></tr>
+	<tr><td class='source'>¶ -name</td><td class='target'>абзац белгісі</td></tr>
+	<tr><td class='source'>¶ –keywords</td><td class='target'>абзац<br>абзац белгісі<br>параф</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target' rowSpan='2'>бақылау белгісі</td></tr>
+	<tr><td class='source'>※ –keywords</td></tr>
+	<tr><td class='source'>/ -name</td><td class='target'>қиғаш сызық</td></tr>
+	<tr><td class='source'>/ –keywords</td><td class='target'>бөлшек сызығы<br>көлбеу<br>қиғаш сызық<br>штрих</td></tr>
+	<tr><td class='source'>\ -name</td><td class='target'>кері қиғаш сызық</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>кері көлбеу<br>кері қиғаш сызық</td></tr>
+	<tr><td class='source'>& -name</td><td class='target'>амперсанд</td></tr>
+	<tr><td class='source'>& –keywords</td><td class='target'>et<br>амперсанд<br>және</td></tr>
+	<tr><td class='source'># -name</td><td class='target'>тор белгісі</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>нөмір<br>тор<br>фунт<br>хэштег</td></tr>
+	<tr><td class='source'>% -name</td><td class='target' rowSpan='2'>пайыз</td></tr>
+	<tr><td class='source'>% –keywords</td></tr>
+	<tr><td class='source'>‰ -name</td><td class='target' rowSpan='2'>промилле</td></tr>
+	<tr><td class='source'>‰ –keywords</td></tr>
+	<tr><td class='source'>′ -name</td><td class='target' rowSpan='2'>штрих</td></tr>
+	<tr><td class='source'>′ –keywords</td></tr>
+	<tr><td class='source'>″ -name</td><td class='target'>қос штрих</td></tr>
+	<tr><td class='source'>″ –keywords</td><td class='target'>штрих</td></tr>
+	<tr><td class='source'>‴ -name</td><td class='target'>үш штрих</td></tr>
+	<tr><td class='source'>‴ –keywords</td><td class='target'>штрих</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>айқұлақ белгісі</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target'>айқұлақ белгісі<br>коммерциялық белгі</td></tr>
+	<tr><td class='source'>* -name</td><td class='target'>жұлдызша</td></tr>
+	<tr><td class='source'>* –keywords</td><td class='target'>жұлдыз<br>жұлдызша<br>қойылмалы таңба</td></tr>
+	<tr><td class='source'>♪ -name</td><td class='target'>сегізінші нота</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>музыка<br>нота<br>сегізінші</td></tr>
+	<tr><td class='source'>♭ -name</td><td class='target'>төмендеу белгісі</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>бемоль<br>музыка<br>нота<br>төмендеу белгісі</td></tr>
+	<tr><td class='source'>♯ -name</td><td class='target'>диез</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>диез<br>музыка<br>нота</td></tr>
+	<tr><td class='source'>` -name</td><td class='target'>қатаң екпін</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>дыбыс<br>екпін<br>қатаң</td></tr>
+	<tr><td class='source'>´ -name</td><td class='target'>акут екпін</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>акут<br>дыбыс<br>екпін</td></tr>
+	<tr><td class='source'>^ -name</td><td class='target'>түрленген екпін</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>бақылау<br>екпін<br>ендірме<br>сына<br>телпек<br>түрленген<br>шеврон</td></tr>
+	<tr><td class='source'>¨ -name</td><td class='target'>диереза</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target'>диереза<br>трема<br>умляут</td></tr>
+	<tr><td class='source'>‐ -name</td><td class='target'>дефис</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>дефис<br>сызықша</td></tr>
+	<tr><td class='source'>― -name</td><td class='target'>көлденең жолақ</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>жолақ<br>сызық<br>сызықша</td></tr>
+	<tr><td class='source'>_ -name</td><td class='target'>төмен сызық</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>астыңғы сызық<br>астыңғы сызықша<br>сызық<br>сызықша<br>төмен сызықша</td></tr>
+	<tr><td class='source'>- -name</td><td class='target'>минус таңбасы</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>дефис<br>минус<br>сызықша</td></tr>
+	<tr><td class='source'>. -name</td><td class='target' rowSpan='2'>нүкте</td></tr>
+	<tr><td class='source'>. –keywords</td></tr>
+	<tr><td class='source'>… -name</td><td class='target'>көп нүкте</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>көп нүкте<br>қалдырып кету<br>нүктелер</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target'>идеографиялық нүкте</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>идеографиялық<br>нүкте</td></tr>
+	<tr><td class='source'>‧ -name</td><td class='target'>сөз тасымалдау нүктесі</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target'>дефис<br>нүкте<br>сызықша</td></tr>
+	<tr><td class='source'>・ -name</td><td class='target'>катакана интерпункті</td></tr>
+	<tr><td class='source'>・ –keywords</td><td class='target'>интерпункт<br>катакана<br>нүктелер</td></tr>
+	<tr><td class='source'>‘ -name</td><td class='target'>сол жақ апостроф</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>апостроф<br>дара тырнақша<br>типографиялық тырнақшалар<br>тырнақша</td></tr>
+	<tr><td class='source'>’ -name</td><td class='target'>оң апостроф</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>апостроф<br>дара тырнақша<br>типографиялық тырнақшалар<br>тырнақша</td></tr>
+	<tr><td class='source'>‚ -name</td><td class='target'>төменгі оң апостроф</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>апостроф<br>төменгі тырнақша<br>тырнақша</td></tr>
+	<tr><td class='source'>' -name</td><td class='target'>типографиялық апостроф</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>апостроф<br>дара тырнақша<br>тырнақша</td></tr>
+	<tr><td class='source'>“ -name</td><td class='target'>сол жақ тырнақша белгісі</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target'>қос тырнақша<br>типографиялық тырнақшалар<br>тырнақша<br>тырнақшалар</td></tr>
+	<tr><td class='source'>” -name</td><td class='target'>оң жақ тырнақша белгісі</td></tr>
+	<tr><td class='source'>” –keywords</td><td class='target'>қос тырнақша<br>типографиялық тырнақшалар<br>тырнақша<br>тырнақшалар</td></tr>
+	<tr><td class='source'>„ -name</td><td class='target'>төменгі оң жақ тырнақша белгісі</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>қос тырнақша<br>типографиялық тырнақшалар<br>төменгі тырнақша<br>тырнақша<br>тырнақшалар</td></tr>
+	<tr><td class='source'>) -name</td><td class='target'>оң жақша</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>дөңгелек жақша<br>жақша</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target'>сол жақ тік жақша</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>жақша<br>тік жақша</td></tr>
+	<tr><td class='source'>] -name</td><td class='target'>оң жақ тік жақша</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>жақша<br>тік жақша</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target'>сол жақ фигуралық жақша</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>жақша<br>ирек жақша<br>фигуралық жақша</td></tr>
+	<tr><td class='source'>} -name</td><td class='target'>оң жақ фигуралық жақша</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>жақша<br>ирек жақша<br>фигуралық жақша</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target'>сол жақ қалың дөңгелек жақша</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>қалың дөңгелек жақша</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target'>оң жақ қалың дөңгелек жақша</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>қалың дөңгелек жақша</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target'>сол жақ бұрыштық жақша</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>бұрыштық жақша<br>жақша<br>шеврон</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target'>оң жақ бұрыштық жақша</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>бұрыштық жақша<br>жақша<br>шеврон</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target'>сол жақ қосарлы бұрыштық жақша</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>жақша<br>қосарлы бұрыштық жақша</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target'>оң жақ қосарлы бұрыштық жақша</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>жақша<br>қосарлы бұрыштық жақша</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target'>сол жақ тік бұрышты жақша</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>жақша<br>тік бұрышты жақша</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target'>оң жақ тік бұрышты жақша</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>жақша<br>тік бұрышты жақша</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target'>сол жақ қосарлы тік бұрышты жақша</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>жақша<br>қосарлы тік бұрышты жақша</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target'>оң жақ қосарлы тік бұрышты жақша</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>жақша<br>қосарлы тік бұрышты жақша</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target'>сол жақ тік бұрышты дөңес жақша</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>жақша<br>тік бұрышты дөңес жақша<br>тік бұрышты линза пішінді жақша</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target'>оң жақ тік бұрышты дөңес жақша</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>жақша<br>тік бұрышты дөңес жақша<br>тік бұрышты линза пішінді жақша</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target'>қара түсті сол жақ дөңес жақша</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>дөңес жақша<br>жақша<br>линза пішінді жақша</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target'>қара түсті оң жақ дөңес жақша</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>дөңес жақша<br>жақша<br>линза пішінді жақша</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='currency' href='#currency'>currency</a></td><td class='source'>¥ –keywords</td><td class='target'>…</td><td class='target'>CNY<br>JPY<br>валюта<br>…<br>юань</td></tr>
+	<tr><td class='source'>$ -name</td><td class='target' rowSpan='276'>▷missing◁</td><td class='target'>доллар</td></tr>
+	<tr><td class='source'>$ –keywords</td><td class='target'>USD<br>ақша<br>доллар<br>песо</td></tr>
+	<tr><td class='source'>¢ -name</td><td class='target' rowSpan='2'>цент</td></tr>
+	<tr><td class='source'>¢ –keywords</td></tr>
+	<tr><td class='source'>₱ -name</td><td class='target' rowSpan='2'>песо</td></tr>
+	<tr><td class='source'>₱ –keywords</td></tr>
+	<tr><td class='source'>₩ -name</td><td class='target'>вона</td></tr>
+	<tr><td class='source'>₩ –keywords</td><td class='target'>KPW<br>KRW</td></tr>
+	<tr><td class='source'>₥ -name</td><td class='target' rowSpan='2'>милль</td></tr>
+	<tr><td class='source'>₥ –keywords</td></tr>
+	<tr><td class='source'>₿ -name</td><td class='target'>биткоин</td></tr>
+	<tr><td class='source'>₿ –keywords</td><td class='target'>BTC</td></tr>
+	<tr><td class='source' rowSpan='264'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‾ -name</td><td class='target'>үстіңгі сызық</td><td class='target' rowSpan='264'>comprehensive</td></tr>
+	<tr><td class='source'>‾ –keywords</td><td class='target'>сызықша<br>үстінен сызу</td></tr>
+	<tr><td class='source'>‽ -name</td><td class='target' rowSpan='2'>интерробанг</td></tr>
+	<tr><td class='source'>‽ –keywords</td></tr>
+	<tr><td class='source'>‸ -name</td><td class='target' rowSpan='2'>карет</td></tr>
+	<tr><td class='source'>‸ –keywords</td></tr>
+	<tr><td class='source'>⁂ -name</td><td class='target'>үш жұлдызша</td></tr>
+	<tr><td class='source'>⁂ –keywords</td><td class='target'>жұлдыздар</td></tr>
+	<tr><td class='source'>↚ -name</td><td class='target' rowSpan='2'>сол жақ көрсеткісі бар штрих</td></tr>
+	<tr><td class='source'>↚ –keywords</td></tr>
+	<tr><td class='source'>↛ -name</td><td class='target' rowSpan='2'>оң жақ көрсеткісі бар штрих</td></tr>
+	<tr><td class='source'>↛ –keywords</td></tr>
+	<tr><td class='source'>↮ -name</td><td class='target' rowSpan='2'>сол және оң жақ көрсеткісі бар штрих</td></tr>
+	<tr><td class='source'>↮ –keywords</td></tr>
+	<tr><td class='source'>↜ -name</td><td class='target' rowSpan='2'>сол жақ ирек көрсеткі</td></tr>
+	<tr><td class='source'>↜ –keywords</td></tr>
+	<tr><td class='source'>↝ -name</td><td class='target' rowSpan='2'>оң жақ ирек көрсеткі</td></tr>
+	<tr><td class='source'>↝ –keywords</td></tr>
+	<tr><td class='source'>↞ -name</td><td class='target' rowSpan='2'>қос басты сол жақ көрсеткі</td></tr>
+	<tr><td class='source'>↞ –keywords</td></tr>
+	<tr><td class='source'>↟ -name</td><td class='target' rowSpan='2'>қос басты жоғары көрсеткі</td></tr>
+	<tr><td class='source'>↟ –keywords</td></tr>
+	<tr><td class='source'>↠ -name</td><td class='target' rowSpan='2'>қос басты оң жақ көрсеткі</td></tr>
+	<tr><td class='source'>↠ –keywords</td></tr>
+	<tr><td class='source'>↡ -name</td><td class='target' rowSpan='2'>қос басты төмен көрсеткі</td></tr>
+	<tr><td class='source'>↡ –keywords</td></tr>
+	<tr><td class='source'>↢ -name</td><td class='target' rowSpan='2'>сол жақ құйрықты көрсеткі</td></tr>
+	<tr><td class='source'>↢ –keywords</td></tr>
+	<tr><td class='source'>↣ -name</td><td class='target' rowSpan='2'>оң жақ құйрықты көрсеткі</td></tr>
+	<tr><td class='source'>↣ –keywords</td></tr>
+	<tr><td class='source'>↤ -name</td><td class='target' rowSpan='2'>сызықшадан солға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↤ –keywords</td></tr>
+	<tr><td class='source'>↥ -name</td><td class='target' rowSpan='2'>сызықшадан жоғары қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↥ –keywords</td></tr>
+	<tr><td class='source'>↦ -name</td><td class='target' rowSpan='2'>сызықшадан оңға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↦ –keywords</td></tr>
+	<tr><td class='source'>↧ -name</td><td class='target' rowSpan='2'>сызықшадан төмен қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↧ –keywords</td></tr>
+	<tr><td class='source'>↨ -name</td><td class='target' rowSpan='2'>астында сызықшасы бар жоғары және төмен көрсеткі</td></tr>
+	<tr><td class='source'>↨ –keywords</td></tr>
+	<tr><td class='source'>↫ -name</td><td class='target' rowSpan='2'>сол жақ ілмекті көрсеткі</td></tr>
+	<tr><td class='source'>↫ –keywords</td></tr>
+	<tr><td class='source'>↬ -name</td><td class='target' rowSpan='2'>оң жақ ілмекті көрсеткі</td></tr>
+	<tr><td class='source'>↬ –keywords</td></tr>
+	<tr><td class='source'>↭ -name</td><td class='target' rowSpan='2'>сол және оң жақ ирек көрсеткі</td></tr>
+	<tr><td class='source'>↭ –keywords</td></tr>
+	<tr><td class='source'>↯ -name</td><td class='target'>төменге бағытталған иір көрсеткі</td></tr>
+	<tr><td class='source'>↯ –keywords</td><td class='target'>иір</td></tr>
+	<tr><td class='source'>↰ -name</td><td class='target' rowSpan='2'>басы жоғары және солға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↰ –keywords</td></tr>
+	<tr><td class='source'>↱ -name</td><td class='target' rowSpan='2'>басы жоғары және оңға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↱ –keywords</td></tr>
+	<tr><td class='source'>↲ -name</td><td class='target' rowSpan='2'>басы төмен және солға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↲ –keywords</td></tr>
+	<tr><td class='source'>↳ -name</td><td class='target' rowSpan='2'>басы төмен және оңға қарай бағытталған көрсеткі</td></tr>
+	<tr><td class='source'>↳ –keywords</td></tr>
+	<tr><td class='source'>↴ -name</td><td class='target' rowSpan='2'>оңға және төмен бағытталған бұрыштық көрсеткі</td></tr>
+	<tr><td class='source'>↴ –keywords</td></tr>
+	<tr><td class='source'>↵ -name</td><td class='target' rowSpan='2'>төмен және солға бағытталған бұрыштық көрсеткі</td></tr>
+	<tr><td class='source'>↵ –keywords</td></tr>
+	<tr><td class='source'>↶ -name</td><td class='target' rowSpan='2'>шеңбердің жоғарғы жарты бөлігі түріндегі сағат тіліне қарсы бағыттағы көрсеткі</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>шеңбердің жоғарғы жарты бөлігі түріндегі сағат тілі бағытындағы көрсеткі</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>үстінде ұзын сызықшасы бар солтүстік-батыс бағыттағы көрсеткі</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target' rowSpan='2'>оң жағында сызықшасы бар оң жақ көрсеткінің үстіндегі сол жағында сызықшасы бар сол жақ көрсеткі</td></tr>
+	<tr><td class='source'>↹ –keywords</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>сағат тіліне қарсы бағыттағы ашық шеңберлі көрсеткі</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>сағат тілі бағытындағы ашық шеңберлі көрсеткі</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>жоғарғы жағында кертігі бар сол жақ сүңгі</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target' rowSpan='2'>төменгі жағында кертігі бар сол жақ сүңгі</td></tr>
+	<tr><td class='source'>↽ –keywords</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>оң жағында кертігі бар жоғары сүңгі</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>сол жағында кертігі бар жоғары сүңгі</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>жоғарғы жағында кертігі бар оң жақ сүңгі</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>төменгі жағында кертігі бар оң жақ сүңгі</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>оң жағында кертігі бар төмен сүңгі</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>сол жағында кертігі бар төмен сүңгі</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>кертік</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target' rowSpan='2'>сол жақ көрсеткінің үстіндегі оң жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇄ –keywords</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target' rowSpan='2'>екі сол жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇇ –keywords</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target' rowSpan='2'>екі жоғары көрсеткі</td></tr>
+	<tr><td class='source'>⇈ –keywords</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target' rowSpan='2'>екі оң жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇉ –keywords</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target' rowSpan='2'>екі төмен көрсеткі</td></tr>
+	<tr><td class='source'>⇊ –keywords</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target' rowSpan='2'>оң жақ сүңгінің үстіндегі сол жақ сүңгі</td></tr>
+	<tr><td class='source'>⇋ –keywords</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target' rowSpan='2'>сол жақ сүңгінің үстіндегі оң жақ сүңгі</td></tr>
+	<tr><td class='source'>⇌ –keywords</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target' rowSpan='2'>сол жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇐ –keywords</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target' rowSpan='2'>штрихі бар сол жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇍ –keywords</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target' rowSpan='2'>жоғары қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇑ –keywords</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target' rowSpan='2'>оң жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇒ –keywords</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target' rowSpan='2'>штрихі бар оң жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇏ –keywords</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target' rowSpan='2'>төмен қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇓ –keywords</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target' rowSpan='2'>сол және оң жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇔ –keywords</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target' rowSpan='2'>штрихі бар сол және оң жақ қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇎ –keywords</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target' rowSpan='2'>солтүстік-батыс бағыттағы қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇖ –keywords</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target' rowSpan='2'>солтүстік-шығыс бағыттағы қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇗ –keywords</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target' rowSpan='2'>оңтүстік-шығыс бағыттағы қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇘ –keywords</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target' rowSpan='2'>оңтүстік-батыс бағыттағы қосарлы көрсеткі</td></tr>
+	<tr><td class='source'>⇙ –keywords</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target' rowSpan='2'>сол жақ үштік көрсеткі</td></tr>
+	<tr><td class='source'>⇚ –keywords</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target' rowSpan='2'>оң жақ үштік көрсеткі</td></tr>
+	<tr><td class='source'>⇛ –keywords</td></tr>
+	<tr><td class='source'>⇜ -name</td><td class='target' rowSpan='2'>сол жақ иректелген көрсеткі</td></tr>
+	<tr><td class='source'>⇜ –keywords</td></tr>
+	<tr><td class='source'>⇝ -name</td><td class='target' rowSpan='2'>оң жақ иректелген көрсеткі</td></tr>
+	<tr><td class='source'>⇝ –keywords</td></tr>
+	<tr><td class='source'>⇞ -name</td><td class='target' rowSpan='2'>қосарлы штрихі бар жоғары көрсеткі</td></tr>
+	<tr><td class='source'>⇞ –keywords</td></tr>
+	<tr><td class='source'>⇟ -name</td><td class='target' rowSpan='2'>қосарлы штрихі бар төмен көрсеткі</td></tr>
+	<tr><td class='source'>⇟ –keywords</td></tr>
+	<tr><td class='source'>⇠ -name</td><td class='target' rowSpan='2'>сол жақ пунктирлі көрсеткі</td></tr>
+	<tr><td class='source'>⇠ –keywords</td></tr>
+	<tr><td class='source'>⇡ -name</td><td class='target' rowSpan='2'>жоғары пунктирлі көрсеткі</td></tr>
+	<tr><td class='source'>⇡ –keywords</td></tr>
+	<tr><td class='source'>⇢ -name</td><td class='target' rowSpan='2'>оң жақ пунктирлі көрсеткі</td></tr>
+	<tr><td class='source'>⇢ –keywords</td></tr>
+	<tr><td class='source'>⇣ -name</td><td class='target' rowSpan='2'>төмен пунктирлі көрсеткі</td></tr>
+	<tr><td class='source'>⇣ –keywords</td></tr>
+	<tr><td class='source'>⇤ -name</td><td class='target' rowSpan='2'>сол жағында сызықшасы бар сол жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇤ –keywords</td></tr>
+	<tr><td class='source'>⇥ -name</td><td class='target' rowSpan='2'>оң жағында сызықшасы бар оң жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇥ –keywords</td></tr>
+	<tr><td class='source'>⇦ -name</td><td class='target' rowSpan='2'>іші қуыс сол жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇦ –keywords</td></tr>
+	<tr><td class='source'>⇧ -name</td><td class='target' rowSpan='2'>іші қуыс жоғары көрсеткі</td></tr>
+	<tr><td class='source'>⇧ –keywords</td></tr>
+	<tr><td class='source'>⇨ -name</td><td class='target' rowSpan='2'>іші қуыс оң жақ көрсеткі</td></tr>
+	<tr><td class='source'>⇨ –keywords</td></tr>
+	<tr><td class='source'>⇩ -name</td><td class='target' rowSpan='2'>іші қуыс төмен көрсеткі</td></tr>
+	<tr><td class='source'>⇩ –keywords</td></tr>
+	<tr><td class='source'>⇪ -name</td><td class='target' rowSpan='2'>іші қуыс жоғары пунктирлі көрсеткі</td></tr>
+	<tr><td class='source'>⇪ –keywords</td></tr>
+	<tr><td class='source'>⇵ -name</td><td class='target' rowSpan='2'>жоғары көрсеткінің сол жағындағы төмен көрсеткі</td></tr>
+	<tr><td class='source'>⇵ –keywords</td></tr>
+	<tr><td class='source'>∀ -name</td><td class='target'>барлығы үшін</td></tr>
+	<tr><td class='source'>∀ –keywords</td><td class='target'>әмбебап<br>барлығы<br>берілген<br>кез келген</td></tr>
+	<tr><td class='source'>∂ -name</td><td class='target'>ішінара дифференциал</td></tr>
+	<tr><td class='source'>∂ –keywords</td><td class='target'>дифференциал</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target' rowSpan='2'>бар</td></tr>
+	<tr><td class='source'>∃ –keywords</td></tr>
+	<tr><td class='source'>∅ -name</td><td class='target'>бос жиын</td></tr>
+	<tr><td class='source'>∅ –keywords</td><td class='target'>жиын операторы<br>математика</td></tr>
+	<tr><td class='source'>∉ -name</td><td class='target'>элемент емес</td></tr>
+	<tr><td class='source'>∉ –keywords</td><td class='target'>элемент</td></tr>
+	<tr><td class='source'>∋ -name</td><td class='target'>мүшені қамтиды</td></tr>
+	<tr><td class='source'>∋ –keywords</td><td class='target'>элемент</td></tr>
+	<tr><td class='source'>∎ -name</td><td class='target'>Q.E.D.</td></tr>
+	<tr><td class='source'>∎ –keywords</td><td class='target'>q.e.d.<br>qed<br>құлпытас<br>Халмош</td></tr>
+	<tr><td class='source'>∏ -name</td><td class='target'>n-ші көбейтінді</td></tr>
+	<tr><td class='source'>∏ –keywords</td><td class='target'>көбейтінді<br>логика</td></tr>
+	<tr><td class='source'>∑ -name</td><td class='target'>n-ші қосынды</td></tr>
+	<tr><td class='source'>∑ –keywords</td><td class='target'>қосынды<br>математика</td></tr>
+	<tr><td class='source'>≮ -name</td><td class='target'>кем емес</td></tr>
+	<tr><td class='source'>≮ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≯ -name</td><td class='target'>үлкен емес</td></tr>
+	<tr><td class='source'>≯ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>∓ -name</td><td class='target'>минус немесе плюс</td></tr>
+	<tr><td class='source'>∓ –keywords</td><td class='target'>плюс-минус</td></tr>
+	<tr><td class='source'>∕ -name</td><td class='target'>бөлу қиғаш сызығы</td></tr>
+	<tr><td class='source'>∕ –keywords</td><td class='target'>бөлшек<br>қиғаш сызық<br>штрих</td></tr>
+	<tr><td class='source'>⁄ -name</td><td class='target'>бөлшек сызығы</td></tr>
+	<tr><td class='source'>⁄ –keywords</td><td class='target'>қиғаш сызық<br>штрих</td></tr>
+	<tr><td class='source'>∗ -name</td><td class='target'>жұлдызша операторы</td></tr>
+	<tr><td class='source'>∗ –keywords</td><td class='target'>жұлдыз</td></tr>
+	<tr><td class='source'>∘ -name</td><td class='target'>сақина операторы</td></tr>
+	<tr><td class='source'>∘ –keywords</td><td class='target'>композиция<br>оператор</td></tr>
+	<tr><td class='source'>∙ -name</td><td class='target'>нүкте операторы</td></tr>
+	<tr><td class='source'>∙ –keywords</td><td class='target'>оператор</td></tr>
+	<tr><td class='source'>∝ -name</td><td class='target'>пропорционал</td></tr>
+	<tr><td class='source'>∝ –keywords</td><td class='target'>пропорционалдық</td></tr>
+	<tr><td class='source'>∟ -name</td><td class='target'>тік бұрыш</td></tr>
+	<tr><td class='source'>∟ –keywords</td><td class='target'>математика</td></tr>
+	<tr><td class='source'>∠ -name</td><td class='target'>бұрыш</td></tr>
+	<tr><td class='source'>∠ –keywords</td><td class='target'>сүйір бұрыш</td></tr>
+	<tr><td class='source'>∣ -name</td><td class='target'>бөледі</td></tr>
+	<tr><td class='source'>∣ –keywords</td><td class='target'>бөлгіш</td></tr>
+	<tr><td class='source'>∥ -name</td><td class='target' rowSpan='2'>параллель</td></tr>
+	<tr><td class='source'>∥ –keywords</td></tr>
+	<tr><td class='source'>∧ -name</td><td class='target'>логикалық &quot;және&quot;</td></tr>
+	<tr><td class='source'>∧ –keywords</td><td class='target'>ac<br>atque<br>сына</td></tr>
+	<tr><td class='source'>∫ -name</td><td class='target'>интеграл</td></tr>
+	<tr><td class='source'>∫ –keywords</td><td class='target'>есептеу</td></tr>
+	<tr><td class='source'>∬ -name</td><td class='target'>қос интеграл</td></tr>
+	<tr><td class='source'>∬ –keywords</td><td class='target'>есептеу</td></tr>
+	<tr><td class='source'>∮ -name</td><td class='target' rowSpan='2'>контурлы интеграл</td></tr>
+	<tr><td class='source'>∮ –keywords</td></tr>
+	<tr><td class='source'>∴ -name</td><td class='target'>сондықтан</td></tr>
+	<tr><td class='source'>∴ –keywords</td><td class='target'>логика</td></tr>
+	<tr><td class='source'>∵ -name</td><td class='target'>себебі</td></tr>
+	<tr><td class='source'>∵ –keywords</td><td class='target'>логика</td></tr>
+	<tr><td class='source'>∶ -name</td><td class='target' rowSpan='2'>ара қатынас</td></tr>
+	<tr><td class='source'>∶ –keywords</td></tr>
+	<tr><td class='source'>∷ -name</td><td class='target'>пропорция</td></tr>
+	<tr><td class='source'>∷ –keywords</td><td class='target'>пропорционалдық</td></tr>
+	<tr><td class='source'>∼ -name</td><td class='target'>тильда операторы</td></tr>
+	<tr><td class='source'>∼ –keywords</td><td class='target'>оператор</td></tr>
+	<tr><td class='source'>∽ -name</td><td class='target'>кері тильда</td></tr>
+	<tr><td class='source'>∽ –keywords</td><td class='target'>тильда</td></tr>
+	<tr><td class='source'>∾ -name</td><td class='target' rowSpan='2'>кері жатық s</td></tr>
+	<tr><td class='source'>∾ –keywords</td></tr>
+	<tr><td class='source'>≃ -name</td><td class='target'>асимптотикалық тең</td></tr>
+	<tr><td class='source'>≃ –keywords</td><td class='target'>асимптота<br>математика</td></tr>
+	<tr><td class='source'>≅ -name</td><td class='target'>шамамен тең</td></tr>
+	<tr><td class='source'>≅ –keywords</td><td class='target'>изоморфизм<br>конгруэнция<br>математика<br>теңдік</td></tr>
+	<tr><td class='source'>≌ -name</td><td class='target'>барлығы тең</td></tr>
+	<tr><td class='source'>≌ –keywords</td><td class='target'>математика<br>теңдік</td></tr>
+	<tr><td class='source'>≒ -name</td><td class='target' rowSpan='2'>&quot;шамамен тең&quot; кескіні</td></tr>
+	<tr><td class='source'>≒ –keywords</td></tr>
+	<tr><td class='source'>≖ -name</td><td class='target'>теңдік белгісінің ішіндегі сақина</td></tr>
+	<tr><td class='source'>≖ –keywords</td><td class='target'>математика<br>теңдік</td></tr>
+	<tr><td class='source'>≣ -name</td><td class='target'>қатаң эквивалентті</td></tr>
+	<tr><td class='source'>≣ –keywords</td><td class='target'>математика<br>теңдік</td></tr>
+	<tr><td class='source'>≦ -name</td><td class='target'>кем немесе тең</td></tr>
+	<tr><td class='source'>≦ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≧ -name</td><td class='target'>үлкен немесе тең</td></tr>
+	<tr><td class='source'>≧ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≪ -name</td><td class='target'>әлдеқайда кем</td></tr>
+	<tr><td class='source'>≪ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≫ -name</td><td class='target'>әлдеқайда үлкен</td></tr>
+	<tr><td class='source'>≫ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≬ -name</td><td class='target' rowSpan='2'>аралығында</td></tr>
+	<tr><td class='source'>≬ –keywords</td></tr>
+	<tr><td class='source'>≳ -name</td><td class='target'>үлкен немесе эквивалентті</td></tr>
+	<tr><td class='source'>≳ –keywords</td><td class='target'>математика<br>теңсіздік</td></tr>
+	<tr><td class='source'>≺ -name</td><td class='target'>алдында келеді</td></tr>
+	<tr><td class='source'>≺ –keywords</td><td class='target'>жиын операторы<br>математика</td></tr>
+	<tr><td class='source'>≻ -name</td><td class='target'>артында келеді</td></tr>
+	<tr><td class='source'>≻ –keywords</td><td class='target'>жиын операторы<br>математика</td></tr>
+	<tr><td class='source'>⊁ -name</td><td class='target'>артында келмейді</td></tr>
+	<tr><td class='source'>⊁ –keywords</td><td class='target'>жиын операторы<br>математика</td></tr>
+	<tr><td class='source'>⊃ -name</td><td class='target'>басты жиын</td></tr>
+	<tr><td class='source'>⊃ –keywords</td><td class='target'>жиын операторы<br>математика</td></tr>
+	<tr><td class='source'>⊆ -name</td><td class='target' rowSpan='2'>ішкі жиынға тең</td></tr>
+	<tr><td class='source'>⊆ –keywords</td></tr>
+	<tr><td class='source'>⊇ -name</td><td class='target'>басты жиынға тең</td></tr>
+	<tr><td class='source'>⊇ –keywords</td><td class='target'>математика<br>теңдік</td></tr>
+	<tr><td class='source'><a name='geometric' href='#geometric'>geometric</a></td><td class='source'>▲ -name</td><td class='target'>E13-119</td><td class='target'>толтырылған жоғары бағытталған үшбұрыш</td><td class='target'>modern</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='http://www.unicode.org/unicode/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>

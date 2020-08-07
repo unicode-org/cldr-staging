@@ -1,0 +1,837 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Romansh Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Romansh Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='172'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='18'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='3'><a name='A' href='#A'>A</a></td><td class='source'>Aghem ► agq</td><td class='source' rowSpan='752'>rm</td><td class='target'>agq</td><td class='target'>aghem</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Arabic ► ar_001</td><td class='target'>ar_001</td><td class='target'>arab modern standardisà</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>Asu ► asa</td><td class='target'>asa</td><td class='target'>asu</td><td class='target' rowSpan='12'>modern</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='B' href='#B'>B</a></td><td class='source'>Bafia ► ksf</td><td class='target'>ksf</td><td class='target'>bafia</td></tr>
+	<tr><td class='source'>Bena ► bez</td><td class='target'>bez</td><td class='target'>bena</td></tr>
+	<tr><td class='source'>Bodo ► brx</td><td class='target'>brx</td><td class='target'>bodo</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue</td><td class='target' rowSpan='2'>yue</td><td class='target'>cantonais</td></tr>
+	<tr><td class='source'>Cantonese ► yue-menu</td><td class='target'>chinais, cantonais</td></tr>
+	<tr><td class='source'>Central Atlas Tamazight ► tzm</td><td class='target'>tzm</td><td class='target'>tamazight</td></tr>
+	<tr><td class='source'>Central Kurdish ► ckb</td><td class='target' rowSpan='3'>ckb</td><td class='target'>curd central</td></tr>
+	<tr><td class='source'>Central Kurdish ► ckb-menu</td><td class='target'>curd, central</td></tr>
+	<tr><td class='source'>Central Kurdish ► ckb-variant</td><td class='target'>curd, sorani</td></tr>
+	<tr><td class='source'>Chakma ► ccp</td><td class='target'>ccp</td><td class='target'>chakma</td></tr>
+	<tr><td class='source'>Chiga ► cgg</td><td class='target'>cgg</td><td class='target'>chiga</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target'>chinais simplifitgà</td><td class='target'>chinais mandarin simplifitgà</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>chinais tradiziunal</td><td class='target'>chinais mandarin tradiziunal</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>chinais</td><td class='target'>chinais, mandarin</td></tr>
+	<tr><td class='source'>Colognian ► ksh</td><td class='target'>ksh</td><td class='target'>colognais</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source' rowSpan='3'><a name='E' href='#E'>E</a></td><td class='source'>Embu ► ebu</td><td class='target'>ebu</td><td class='target'>embu</td></tr>
+	<tr><td class='source'>English ► en_GB-short</td><td class='target'>englais (GB)</td><td class='target'>englais GB</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>English ► en_US-short</td><td class='target'>englais (US)</td><td class='target'>englais USA</td></tr>
+	<tr><td class='source'><a name='F' href='#F'>F</a></td><td class='source'>Faroese ► fo</td><td class='target'>ferrais</td><td class='target'>feroais</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='G' href='#G'>G</a></td><td class='source'>German ► de_CH</td><td class='target'>de_CH</td><td class='target'>tudestg da scrittira svizzer</td><td class='target'>basic</td></tr>
+	<tr><td class='source'>Gusii ► guz</td><td class='target'>guz</td><td class='target'>gusii</td><td class='target' rowSpan='27'>modern</td></tr>
+	<tr><td class='source'><a name='H' href='#H'>H</a></td><td class='source'>Haitian Creole ► ht</td><td class='target'>haitian</td><td class='target'>creol haitian</td></tr>
+	<tr><td class='source'><a name='J' href='#J'>J</a></td><td class='source'>Jola-Fonyi ► dyo</td><td class='target'>dyo</td><td class='target'>jola-fonyi</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source' rowSpan='6'><a name='K' href='#K'>K</a></td><td class='source'>Kabuverdianu ► kea</td><td class='target'>kea</td><td class='target'>cabverdian</td></tr>
+	<tr><td class='source'>Kako ► kkj</td><td class='target'>kkj</td><td class='target'>kako</td></tr>
+	<tr><td class='source'>Kalenjin ► kln</td><td class='target'>kln</td><td class='target'>kalenjin</td></tr>
+	<tr><td class='source'>Koyra Chiini ► khq</td><td class='target'>khq</td><td class='target'>koyra chiini</td></tr>
+	<tr><td class='source'>Koyraboro Senni ► ses</td><td class='target'>ses</td><td class='target'>koyraboro senni</td></tr>
+	<tr><td class='source'>Kwasio ► nmg</td><td class='target'>nmg</td><td class='target'>kwasio</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='L' href='#L'>L</a></td><td class='source'>Lakota ► lkt</td><td class='target'>lkt</td><td class='target'>lakota</td></tr>
+	<tr><td class='source'>Langi ► lag</td><td class='target'>lag</td><td class='target'>langi</td></tr>
+	<tr><td class='source'>Luyia ► luy</td><td class='target'>luy</td><td class='target'>luyia</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='M' href='#M'>M</a></td><td class='source'>Machame ► jmc</td><td class='target'>jmc</td><td class='target'>machame</td></tr>
+	<tr><td class='source'>Makhuwa-Meetto ► mgh</td><td class='target'>mgh</td><td class='target'>makhuwa-meetto</td></tr>
+	<tr><td class='source'>Makonde ► kde</td><td class='target'>kde</td><td class='target'>makonde</td></tr>
+	<tr><td class='source'>Mazanderani ► mzn</td><td class='target'>mzn</td><td class='target'>mazanderani</td></tr>
+	<tr><td class='source'>Meru ► mer</td><td class='target'>mer</td><td class='target'>meru</td></tr>
+	<tr><td class='source'>Metaʼ ► mgo</td><td class='target'>mgo</td><td class='target'>meta’</td></tr>
+	<tr><td class='source'>Morisyen ► mfe</td><td class='target'>mfe</td><td class='target'>morisyen</td></tr>
+	<tr><td class='source'>Mundang ► mua</td><td class='target'>mua</td><td class='target'>mundang</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='N' href='#N'>N</a></td><td class='source'>Nama ► naq</td><td class='target'>naq</td><td class='target'>nama</td></tr>
+	<tr><td class='source'>Ngiemboon ► nnh</td><td class='target'>nnh</td><td class='target'>ngienboon</td></tr>
+	<tr><td class='source'>Ngomba ► jgo</td><td class='target'>jgo</td><td class='target'>ngomba</td></tr>
+	<tr><td class='source'>Nigerian Pidgin ► pcm</td><td class='target'>pcm</td><td class='target'>pidgin nigerian</td></tr>
+	<tr><td class='source'>Northern Luri ► lrc</td><td class='target'>lrc</td><td class='target'>luri dal nord</td></tr>
+	<tr><td class='source'>Nuer ► nus</td><td class='target'>nus</td><td class='target'>nuer</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source' rowSpan='3'><a name='P' href='#P'>P</a></td><td class='source'>Persian ► fa_AF</td><td class='target'>fa_AF</td><td class='target'>dari</td></tr>
+	<tr><td class='source'>Portuguese ► pt_PT</td><td class='target'>portugais iberian</td><td class='target'>portugais europeic</td><td class='target'>basic</td></tr>
+	<tr><td class='source'>Prussian ► prg</td><td class='target'>prg</td><td class='target'>prussian</td><td class='target' rowSpan='8'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='R' href='#R'>R</a></td><td class='source'>Rombo ► rof</td><td class='target'>rof</td><td class='target'>rombo</td></tr>
+	<tr><td class='source'>Rwa ► rwk</td><td class='target'>rwk</td><td class='target'>rwa</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='S' href='#S'>S</a></td><td class='source'>Samburu ► saq</td><td class='target'>saq</td><td class='target'>samburu</td></tr>
+	<tr><td class='source'>Sangu ► sbp</td><td class='target'>sbp</td><td class='target'>sangu</td></tr>
+	<tr><td class='source'>Sena ► seh</td><td class='target'>seh</td><td class='target'>sena</td></tr>
+	<tr><td class='source'>Shambala ► ksb</td><td class='target'>ksb</td><td class='target'>shambala</td></tr>
+	<tr><td class='source'>Soga ► xog</td><td class='target'>xog</td><td class='target'>soga</td></tr>
+	<tr><td class='source'>Spanish ► es_ES</td><td class='target'>spagnol iberic</td><td class='target'>spagnol europeic</td><td class='target'>basic</td></tr>
+	<tr><td class='source'>Standard Moroccan Tamazight ► zgh</td><td class='target'>zgh</td><td class='target'>marocan tamazight standardisà</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Swahili ► sw_CD</td><td class='target'>sw_CD</td><td class='target'>suahili dal Congo</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source' rowSpan='4'><a name='T' href='#T'>T</a></td><td class='source'>Tachelhit ► shi</td><td class='target'>shi</td><td class='target'>tachelit</td><td class='target' rowSpan='4'>modern</td></tr>
+	<tr><td class='source'>Taita ► dav</td><td class='target'>dav</td><td class='target'>taita</td></tr>
+	<tr><td class='source'>Tasawaq ► twq</td><td class='target'>twq</td><td class='target'>tasawaq</td></tr>
+	<tr><td class='source'>Teso ► teo</td><td class='target'>teo</td><td class='target'>teso</td></tr>
+	<tr><td class='source'><a name='U' href='#U'>U</a></td><td class='source'>Unknown language ► und</td><td class='target'>linguas betg determinadas</td><td class='target'>lingua nunenconuschenta</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='V' href='#V'>V</a></td><td class='source'>Vunjo ► vun</td><td class='target'>vun</td><td class='target'>vunjo</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source'><a name='W' href='#W'>W</a></td><td class='source'>Walser ► wae</td><td class='target'>wae</td><td class='target'>gualser</td></tr>
+	<tr><td class='source'><a name='Y' href='#Y'>Y</a></td><td class='source'>Yangben ► yav</td><td class='target'>yav</td><td class='target'>yangben</td></tr>
+	<tr><td class='source'><a name='Z' href='#Z'>Z</a></td><td class='source'>Zarma ► dje</td><td class='target'>dje</td><td class='target'>zarma</td></tr>
+	<tr><td class='source' rowSpan='40'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='6'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Hanb</td><td class='target'>Hanb</td><td class='target'>han cun bopomofo</td></tr>
+	<tr><td class='source'>Hans</td><td class='target' rowSpan='2'>scrittira chinaisa simplifitgada</td><td class='target'>simplifitgà</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'>Hans-stand-alone</td><td class='target'>han simplifitgà</td></tr>
+	<tr><td class='source'>Hant</td><td class='target' rowSpan='2'>scrittira chinaisa tradiziunala</td><td class='target'>tradiziunal</td></tr>
+	<tr><td class='source'>Hant-stand-alone</td><td class='target'>han tradiziunal</td></tr>
+	<tr><td class='source'>Jamo</td><td class='target'>Jamo</td><td class='target'>jamo</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Limited Use' href='#Limited Use'>Limited Use</a></td><td class='source'>Adlm</td><td class='target'>Adlm</td><td class='target'>adlam</td><td class='target' rowSpan='29'>comprehensive</td></tr>
+	<tr><td class='source'>Bamu</td><td class='target'>Bamu</td><td class='target'>bamun</td></tr>
+	<tr><td class='source'>Lisu</td><td class='target'>Lisu</td><td class='target'>Fraser</td></tr>
+	<tr><td class='source'>Newa</td><td class='target'>Newa</td><td class='target'>newari</td></tr>
+	<tr><td class='source'>Osge</td><td class='target'>Osge</td><td class='target'>osage</td></tr>
+	<tr><td class='source'>Wcho</td><td class='target'>Wcho</td><td class='target'>wancho</td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Historic' href='#Historic'>Historic</a></td><td class='source'>Aghb</td><td class='target'>Aghb</td><td class='target'>albanais dal Caucasus</td></tr>
+	<tr><td class='source'>Ahom</td><td class='target'>Ahom</td><td class='target'>ahom</td></tr>
+	<tr><td class='source'>Dupl</td><td class='target'>Dupl</td><td class='target'>stenografia da Duployé</td></tr>
+	<tr><td class='source'>Elba</td><td class='target'>Elba</td><td class='target'>elbasan</td></tr>
+	<tr><td class='source'>Elym</td><td class='target'>Elym</td><td class='target'>elimeic</td></tr>
+	<tr><td class='source'>Narb</td><td class='target'>Narb</td><td class='target'>arab vegl dal nord</td></tr>
+	<tr><td class='source'>Nbat</td><td class='target'>Nbat</td><td class='target'>nabateic</td></tr>
+	<tr><td class='source'>Nshu</td><td class='target'>Nshu</td><td class='target'>scrittira da dunnas</td></tr>
+	<tr><td class='source'>Palm</td><td class='target'>Palm</td><td class='target'>palmiren</td></tr>
+	<tr><td class='source'>Sarb</td><td class='target'>Sarb</td><td class='target'>arab vegl dal sid</td></tr>
+	<tr><td class='source'>Shrd</td><td class='target'>Shrd</td><td class='target'>sharada</td></tr>
+	<tr><td class='source'>Sidd</td><td class='target'>Sidd</td><td class='target'>siddham</td></tr>
+	<tr><td class='source'>Sind</td><td class='target'>Sind</td><td class='target'>khudabadic</td></tr>
+	<tr><td class='source'>Sogd</td><td class='target'>Sogd</td><td class='target'>sogdian</td></tr>
+	<tr><td class='source'>Sogo</td><td class='target'>Sogo</td><td class='target'>sogdian vegl</td></tr>
+	<tr><td class='source'>Sora</td><td class='target'>Sora</td><td class='target'>sora sompeng</td></tr>
+	<tr><td class='source'>Soyo</td><td class='target'>Soyo</td><td class='target'>soyombo</td></tr>
+	<tr><td class='source'>Takr</td><td class='target'>Takr</td><td class='target'>takri</td></tr>
+	<tr><td class='source'>Tang</td><td class='target'>Tang</td><td class='target'>tangut</td></tr>
+	<tr><td class='source'>Wara</td><td class='target'>Wara</td><td class='target'>varang kshiti</td></tr>
+	<tr><td class='source'>Yezi</td><td class='target'>Yezi</td><td class='target'>jesid</td></tr>
+	<tr><td class='source'>Zanb</td><td class='target'>Zanb</td><td class='target'>quadrats da Zanabazar</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Other' href='#Other'>Other</a></td><td class='source'>Aran</td><td class='target'>Aran</td><td class='target'>nastaliq</td></tr>
+	<tr><td class='source'>Hrkt</td><td class='target'>katanaka u hiragana</td><td class='target'>scrittira da silbas giapunaisa</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Qaag</td><td class='target'>Qaag</td><td class='target'>zawgyi</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'>Zsye</td><td class='target'>Zsye</td><td class='target'>emojis</td><td class='target'>modern</td></tr>
+	<tr><td class='source'>Zxxx</td><td class='target'>linguas na scrittas</td><td class='target'>betg scrit</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>Zzzz</td><td class='target'>scrittira nunenconuschenta u nunvalaivla</td><td class='target'>scrittira nunenconuschenta</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source' rowSpan='4'><a name='World' href='#World'>World</a></td><td class='source'>019</td><td class='target'>America dal Nord, America Centrala ed America dal Sid</td><td class='target'>americas</td><td class='target' rowSpan='8'>moderate</td></tr>
+	<tr><td class='source'>EU</td><td class='target'>Uniun europeica</td><td class='target'>Uniun Europeica</td></tr>
+	<tr><td class='source'>EZ</td><td class='target'>EZ</td><td class='target'>zona da l’euro</td></tr>
+	<tr><td class='source'>UN</td><td class='target'>UN</td><td class='target'>Naziuns Unidas</td></tr>
+	<tr><td class='source'><a name='Americas' href='#Americas'>Americas</a></td><td class='source'>021</td><td class='target'>021</td><td class='target'>Amercia dal Nord</td></tr>
+	<tr><td class='source'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'>202</td><td class='target'>202</td><td class='target'>Africa Subsaharica</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>XA</td><td class='target'>XA</td><td class='target'>accents pseudo</td></tr>
+	<tr><td class='source'>XB</td><td class='target'>XB</td><td class='target'>pseudo-bidirecziunal</td></tr>
+	<tr><td class='source'>ZZ</td><td class='target'>Regiun betg encouschenta u nunvalaivla</td><td class='target'>regiun nunenconuschenta</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td><td class='source'><a name='Northern America' href='#Northern America'>Northern America</a></td><td class='source'>US-short</td><td class='target'>Stadis Unids da l’America</td><td class='target'>US</td><td class='target' rowSpan='29'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean' href='#Caribbean'>Caribbean</a></td><td class='source'>BQ</td><td class='target'>BQ</td><td class='target'>Antillas Ollandaisas</td></tr>
+	<tr><td class='source'>CW</td><td class='target'>CW</td><td class='target'>Curaçao</td></tr>
+	<tr><td class='source'>SX</td><td class='target'>SX</td><td class='target'>Sint Maarten</td></tr>
+	<tr><td class='source'><a name='Territories (South America)' href='#Territories (South America)'>Territories (South America)</a></td><td class='source'><a name='South America' href='#South America'>South America</a></td><td class='source'>FK-variant</td><td class='target'>Inslas dal Falkland</td><td class='target'>Inslas Falkland</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source' rowSpan='2'><a name='Northern Africa' href='#Northern Africa'>Northern Africa</a></td><td class='source'>EA</td><td class='target'>EA</td><td class='target'>Ceuta e Melilla</td></tr>
+	<tr><td class='source'>IC</td><td class='target'>IC</td><td class='target'>Inslas Canarias</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source'>CD</td><td class='target' rowSpan='2'>Republica Democratica dal Congo</td><td class='target'>Congo - Kinshasa</td></tr>
+	<tr><td class='source'>CD-variant</td><td class='target'>Congo (DRC)</td></tr>
+	<tr><td class='source'>CG-variant</td><td class='target'>Congo</td><td class='target'>Congo (republica)</td></tr>
+	<tr><td class='source'>ST</td><td class='target'>São Tomé e Principe</td><td class='target'>São Tomé &amp; Príncipe</td></tr>
+	<tr><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'>SZ</td><td class='target'>Swaziland</td><td class='target'>Eswatini</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td><td class='source'>GB-short</td><td class='target'>Reginavel Unì</td><td class='target'>GB</td></tr>
+	<tr><td class='source'><a name='Eastern Europe' href='#Eastern Europe'>Eastern Europe</a></td><td class='source'>CZ</td><td class='target'>Republica Tscheca</td><td class='target'>Tschechia</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Southern Europe' href='#Southern Europe'>Southern Europe</a></td><td class='source'>MK</td><td class='target'>MK</td><td class='target'>Macedonia dal Nord</td></tr>
+	<tr><td class='source'>XK</td><td class='target'>XK</td><td class='target'>Cosovo</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td><td class='source'>PS-short</td><td class='target'>Territori Palestinais</td><td class='target'>Palestina</td></tr>
+	<tr><td class='source'><a name='Central Asia' href='#Central Asia'>Central Asia</a></td><td class='source'>KG</td><td class='target'>Kirghisistan</td><td class='target'>Kirgisistan</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'>HK-short</td><td class='target'>Regiun d’administraziun speziala da Hongkong, China</td><td class='target'>Hong Kong</td></tr>
+	<tr><td class='source'>MO-short</td><td class='target'>Regiun d’administraziun speziala Macao, China</td><td class='target'>Macao</td></tr>
+	<tr><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>MM</td><td class='target'>Myanmar</td><td class='target'>Myanmar (Burma)</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Territories (Oceania)' href='#Territories (Oceania)'>Territories (Oceania)</a></td><td class='source'><a name='Australasia' href='#Australasia'>Australasia</a></td><td class='source'>CX</td><td class='target'>Insla da Christmas</td><td class='target'>Insla da Nadal</td></tr>
+	<tr><td class='source'><a name='Melanesia' href='#Melanesia'>Melanesia</a></td><td class='source'>SB</td><td class='target'>Salomonas</td><td class='target'>Inslas Salomonas</td></tr>
+	<tr><td class='source'><a name='Micronesian Region' href='#Micronesian Region'>Micronesian Region</a></td><td class='source'>UM</td><td class='target'>Inslas pitschnas perifericas dals Stadis Unids da l’America</td><td class='target'>Inslas Pitschnas Perifericas dals Stadis Unids da l’America</td></tr>
+	<tr><td class='source'><a name='Polynesia' href='#Polynesia'>Polynesia</a></td><td class='source'>WF</td><td class='target'>Wallis e Futuna</td><td class='target'>Wallis &amp; Futuna</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Outlying Oceania' href='#Outlying Oceania'>Outlying Oceania</a></td><td class='source'>AC</td><td class='target'>AC</td><td class='target'>Insla d’Ascensiun</td></tr>
+	<tr><td class='source'>CP</td><td class='target'>CP</td><td class='target'>Insla da Clipperton</td></tr>
+	<tr><td class='source'>DG</td><td class='target'>DG</td><td class='target'>Diego Garcia</td></tr>
+	<tr><td class='source'>TA</td><td class='target'>TA</td><td class='target'>Tristan da Cunha</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Keys' href='#Keys'>Keys</a></td><td class='source' rowSpan='2'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-dangi</td><td class='target'>dangi</td><td class='target'>chalender dangi</td><td class='target' rowSpan='22'>modern</td></tr>
+	<tr><td class='source'>calendar-roc</td><td class='target'>chalendar da la republica chinaisa</td><td class='target'>chalender da la Republica Chinaisa</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='collation' href='#collation'>collation</a></td><td class='source'>collation-ducet</td><td class='target'>ducet</td><td class='target'>zavrada unicode standard</td></tr>
+	<tr><td class='source'>collation-search</td><td class='target'>search</td><td class='target'>tschertga generala</td></tr>
+	<tr><td class='source'><a name='currency' href='#currency'>currency</a></td><td class='source'>currency</td><td class='target'>munaida</td><td class='target'>valuta</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Currency Format' href='#Currency Format'>Currency Format</a></td><td class='source'>cf</td><td class='target'>cf</td><td class='target'>format da valuta</td></tr>
+	<tr><td class='source'>cf-account</td><td class='target'>account</td><td class='target'>format da valuta per la contabilitad</td></tr>
+	<tr><td class='source'>cf-standard</td><td class='target'>standard</td><td class='target'>format da valuta da standard</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Hour Cycle' href='#Hour Cycle'>Hour Cycle</a></td><td class='source'>hc</td><td class='target'>hc</td><td class='target'>ciclus da las uras</td></tr>
+	<tr><td class='source'>hc-h11</td><td class='target'>h11</td><td class='target'>sistem da 12 uras (0–11)</td></tr>
+	<tr><td class='source'>hc-h12</td><td class='target'>h12</td><td class='target'>sistem da 12 uras (1–12)</td></tr>
+	<tr><td class='source'>hc-h23</td><td class='target'>h23</td><td class='target'>sistem da 24 uras (0–23)</td></tr>
+	<tr><td class='source'>hc-h24</td><td class='target'>h24</td><td class='target'>sistem da 24 uras (1–24)</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Line Break' href='#Line Break'>Line Break</a></td><td class='source'>lb</td><td class='target'>lb</td><td class='target'>stil da sigl da lingia</td></tr>
+	<tr><td class='source'>lb-loose</td><td class='target'>loose</td><td class='target'>stil da sigl da lingia liber</td></tr>
+	<tr><td class='source'>lb-normal</td><td class='target'>normal</td><td class='target'>stil da sigl da lingia normal</td></tr>
+	<tr><td class='source'>lb-strict</td><td class='target'>strict</td><td class='target'>stil da sigl da lingia strict</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Measurement System' href='#Measurement System'>Measurement System</a></td><td class='source'>ms</td><td class='target'>ms</td><td class='target'>sistem da mesira</td></tr>
+	<tr><td class='source'>ms-metric</td><td class='target'>metric</td><td class='target'>sistem metric</td></tr>
+	<tr><td class='source'>ms-uksystem</td><td class='target'>uksystem</td><td class='target'>sistem da mesira imperial</td></tr>
+	<tr><td class='source'>ms-ussystem</td><td class='target'>ussystem</td><td class='target'>sistem da mesira US</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-arab</td><td class='target'>arab</td><td class='target'>cifras indic-arabas</td></tr>
+	<tr><td class='source'>numbers-latn</td><td class='target'>cifras europeicas</td><td class='target'>cifras occidentalas</td><td class='target' rowSpan='5'>basic</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='9'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='4'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>quarter</td><td class='target'>Quarter</td><td class='target'>quartal</td></tr>
+	<tr><td class='source'>day</td><td class='target' rowSpan='3'>Tag</td><td class='target' rowSpan='2'>di</td></tr>
+	<tr><td class='source'>day-short</td></tr>
+	<tr><td class='source'>day-narrow</td><td class='target'>d</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Year' href='#Relative Year'>Relative Year</a></td><td class='source'>-1</td><td class='target'>last year</td><td class='target'>l’onn passà</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>0</td><td class='target'>this year</td><td class='target'>quest onn</td></tr>
+	<tr><td class='source'>1</td><td class='target'>next year</td><td class='target'>l’onn proxim</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Sunday Short' href='#Relative Sunday Short'>Relative Sunday Short</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>+{0} Sundays</td><td class='target'>+{0} dumengia</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>en {0} du</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target' rowSpan='4'>{1} {0}</td><td class='target' rowSpan='2'>{1} 'a' 'las' {0}</td><td class='target' rowSpan='22'>basic</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source'>medium</td><td class='target' rowSpan='2'>{1}, {0}</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='39'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='3'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td><td class='source' rowSpan='3'><a name='null' href='#null'>null</a></td><td class='source'>Region Format - Generic</td><td class='target'>{0}</td><td class='target'>temp: {0}</td></tr>
+	<tr><td class='source'>Region Format - Standard</td><td class='target'>{0} (+0)</td><td class='target'>temp normal: {0}</td></tr>
+	<tr><td class='source'>Region Format - Daylight</td><td class='target'>{0} (+1)</td><td class='target'>temp da stad: {0}</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='North America' href='#North America'>North America</a></td><td class='source' rowSpan='3'><a name='America_Central' href='#America_Central'>America_Central</a></td><td class='source'>generic-long</td><td class='target' rowSpan='15'>▷missing◁</td><td class='target'>Temp central</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard central</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad central</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Eastern' href='#America_Eastern'>America_Eastern</a></td><td class='source'>generic-long</td><td class='target'>Temp oriental</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard oriental</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad oriental</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Mountain' href='#America_Mountain'>America_Mountain</a></td><td class='source'>generic-long</td><td class='target'>Temp da muntogna</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard da muntogna</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad da muntogna</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Pacific' href='#America_Pacific'>America_Pacific</a></td><td class='source'>generic-long</td><td class='target'>Temp pacific</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard pacific</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad pacific</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Atlantic' href='#Atlantic'>Atlantic</a></td><td class='source'>generic-long</td><td class='target'>Temp atlantic</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard atlantic</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad atlantic</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Costa_Rica</td><td class='target'>San José</td><td class='target'>Costa Rica</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>Port_of_Spain</td><td class='target'>Port-of-Spain</td><td class='target'>Port of Spain</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Africa' href='#Africa'>Africa</a></td><td class='source'>Chagos</td><td class='target'>Diego Garcia</td><td class='target'>Chagos</td></tr>
+	<tr><td class='source'>El_Aaiun</td><td class='target'>El Ayun</td><td class='target'>El Aaiún</td></tr>
+	<tr><td class='source'>Kerguelen</td><td class='target'>Port-aux-Français</td><td class='target'>Kerguelen</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Europe' href='#Europe'>Europe</a></td><td class='source' rowSpan='3'><a name='Europe_Central' href='#Europe_Central'>Europe_Central</a></td><td class='source'>generic-long</td><td class='target' rowSpan='10'>▷missing◁</td><td class='target'>Temp da l’Europa Centrala</td><td class='target' rowSpan='10'>basic</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard da l’Europa Centrala</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad da l’Europa Centrala</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Europe_Eastern' href='#Europe_Eastern'>Europe_Eastern</a></td><td class='source'>generic-long</td><td class='target'>Temp da l’Europa Orientala</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard da l’Europa Orientala</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad da l’Europa Orientala</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Europe_Western' href='#Europe_Western'>Europe_Western</a></td><td class='source'>generic-long</td><td class='target'>Temp da l’Europa dal Vest</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>Temp da standard da l’Europa dal Vest</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>Temp da stad da l’Europa dal Vest</td></tr>
+	<tr><td class='source'><a name='GMT' href='#GMT'>GMT</a></td><td class='source'>standard-long</td><td class='target'>Temp Greenwich</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Copenhagen</td><td class='target'>Copenhaghen</td><td class='target'>Copenhagen</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'>Uzhgorod</td><td class='target'>Uschgorod</td><td class='target'>Uschhorod</td></tr>
+	<tr><td class='source'>Vatican</td><td class='target'>Citad dal Vatican</td><td class='target'>Vatican</td></tr>
+	<tr><td class='source'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td><td class='source'>Saigon</td><td class='target'>Ho Chi Minh</td><td class='target'>Citad da Ho Chi Minh</td></tr>
+	<tr><td class='source'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>Unknown</td><td class='target'>zona betg enconuschenta</td><td class='target'>citad nunenconuschenta</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'><a name='Overrides' href='#Overrides'>Overrides</a></td><td class='source'><a name='Etc/UTC' href='#Etc/UTC'>Etc/UTC</a></td><td class='source'>standard-long</td><td class='target'>▷missing◁</td><td class='target'>Temp universal coordinà</td></tr>
+	<tr><td class='source' rowSpan='423'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='30'><a name='North America (C)' href='#North America (C)'>North America (C)</a></td><td class='source'><a name='Northern America: Bermuda' href='#Northern America: Bermuda'>Northern America: Bermuda</a></td><td class='source'>BMD-name-other</td><td class='target'>dollar da las Bermudas</td><td class='target'>dollars da las Bermudas</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Northern America: Canada' href='#Northern America: Canada'>Northern America: Canada</a></td><td class='source'>CAD-name-other</td><td class='target'>dollar canadais</td><td class='target'>dollars canadais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern America: United States' href='#Northern America: United States'>Northern America: United States</a></td><td class='source'>USD-name-one</td><td class='target' rowSpan='3'>dollar dals Stadis Unids da l’America</td><td class='target'>dollar da l’USA</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>USD-name-other</td><td class='target'>dollars da l’USA</td></tr>
+	<tr><td class='source'>USD-name</td><td class='target'>dollar da l’USA</td></tr>
+	<tr><td class='source'><a name='Central America: Belize' href='#Central America: Belize'>Central America: Belize</a></td><td class='source'>BZD-name-other</td><td class='target'>dollar dal Belize</td><td class='target'>dollars dal Belize</td><td class='target' rowSpan='29'>moderate</td></tr>
+	<tr><td class='source'><a name='Central America: Costa Rica' href='#Central America: Costa Rica'>Central America: Costa Rica</a></td><td class='source'>CRC-name-other</td><td class='target'>colon da la Costa Rica</td><td class='target'>colons da la Costa Rica</td></tr>
+	<tr><td class='source'><a name='Central America: Guatemala' href='#Central America: Guatemala'>Central America: Guatemala</a></td><td class='source'>GTQ-name-other</td><td class='target'>quetzal da la Guatemala</td><td class='target'>quetzals da la Guatemala</td></tr>
+	<tr><td class='source'><a name='Central America: Honduras' href='#Central America: Honduras'>Central America: Honduras</a></td><td class='source'>HNL-name-other</td><td class='target'>lempira hondurian</td><td class='target'>lempiras hondurians</td></tr>
+	<tr><td class='source'><a name='Central America: Mexico' href='#Central America: Mexico'>Central America: Mexico</a></td><td class='source'>MXN-name-other</td><td class='target'>peso mexican</td><td class='target'>pesos mexicans</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central America: Nicaragua' href='#Central America: Nicaragua'>Central America: Nicaragua</a></td><td class='source'>NIO-name-one</td><td class='target' rowSpan='3'>cordoba oro nicaraguan</td><td class='target'>córdoba nicaraguan</td></tr>
+	<tr><td class='source'>NIO-name-other</td><td class='target'>córdobas nicaraguans</td></tr>
+	<tr><td class='source'>NIO-name</td><td class='target'>córdoba nicaraguan</td></tr>
+	<tr><td class='source'><a name='Central America: Panama' href='#Central America: Panama'>Central America: Panama</a></td><td class='source'>PAB-name-other</td><td class='target'>balboa dal Panama</td><td class='target'>balboas dal Panama</td></tr>
+	<tr><td class='source'><a name='Caribbean: Aruba' href='#Caribbean: Aruba'>Caribbean: Aruba</a></td><td class='source'>AWG-name-other</td><td class='target'>flurin da l’Aruba</td><td class='target'>flurins da l’Aruba</td></tr>
+	<tr><td class='source'><a name='Caribbean: Barbados' href='#Caribbean: Barbados'>Caribbean: Barbados</a></td><td class='source'>BBD-name-other</td><td class='target'>dollar da Barbados</td><td class='target'>dollars da Barbados</td></tr>
+	<tr><td class='source'><a name='Caribbean: Bahamas' href='#Caribbean: Bahamas'>Caribbean: Bahamas</a></td><td class='source'>BSD-name-other</td><td class='target'>dollar da las Bahamas</td><td class='target'>dollars da las Bahamas</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Caribbean: Cuba' href='#Caribbean: Cuba'>Caribbean: Cuba</a></td><td class='source'>CUC-name-one</td><td class='target' rowSpan='2'>CUC</td><td class='target'>peso cuban convertibel</td></tr>
+	<tr><td class='source'>CUC-name-other</td><td class='target'>pesos cubans convertibels</td></tr>
+	<tr><td class='source'>CUP-name-other</td><td class='target'>peso cuban</td><td class='target'>pesos cubans</td></tr>
+	<tr><td class='source'>CUC-name</td><td class='target'>CUC</td><td class='target'>peso cuban convertibel</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Caribbean: Curaçao' href='#Caribbean: Curaçao'>Caribbean: Curaçao</a></td><td class='source'>ANG-name-one</td><td class='target' rowSpan='3'>flurin da las Antillas Olandaisas</td><td class='target'>flurin da las Antillas Ollandaisas</td></tr>
+	<tr><td class='source'>ANG-name-other</td><td class='target'>flurins da las Antillas Ollandaisas</td></tr>
+	<tr><td class='source'>ANG-name</td><td class='target'>flurin da las Antillas Ollandaisas</td></tr>
+	<tr><td class='source'><a name='Caribbean: Dominican Republic' href='#Caribbean: Dominican Republic'>Caribbean: Dominican Republic</a></td><td class='source'>DOP-name-other</td><td class='target'>peso dominican</td><td class='target'>pesos dominicans</td></tr>
+	<tr><td class='source'><a name='Caribbean: Haiti' href='#Caribbean: Haiti'>Caribbean: Haiti</a></td><td class='source'>HTG-name-other</td><td class='target'>gourde haitian</td><td class='target'>gourdes haitians</td></tr>
+	<tr><td class='source'><a name='Caribbean: Jamaica' href='#Caribbean: Jamaica'>Caribbean: Jamaica</a></td><td class='source'>JMD-name-other</td><td class='target'>dollar giamaican</td><td class='target'>dollars giamaicans</td></tr>
+	<tr><td class='source'><a name='Caribbean: Cayman Islands' href='#Caribbean: Cayman Islands'>Caribbean: Cayman Islands</a></td><td class='source'>KYD-name-other</td><td class='target'>dollar da las Inslas Cayman</td><td class='target'>dollars da las Inslas Cayman</td></tr>
+	<tr><td class='source'><a name='Caribbean: St. Lucia' href='#Caribbean: St. Lucia'>Caribbean: St. Lucia</a></td><td class='source'>XCD-name-other</td><td class='target'>dollar da la Caribica Orientala</td><td class='target'>dollars da la Caribica Orientala</td></tr>
+	<tr><td class='source'><a name='Caribbean: Trinidad & Tobago' href='#Caribbean: Trinidad & Tobago'>Caribbean: Trinidad & Tobago</a></td><td class='source'>TTD-name-other</td><td class='target'>dollar da Trinidad e Tobago</td><td class='target'>dollars da Trinidad e Tobago</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='South America (C)' href='#South America (C)'>South America (C)</a></td><td class='source'><a name='South America: Argentina' href='#South America: Argentina'>South America: Argentina</a></td><td class='source'>ARS-name-other</td><td class='target'>peso argentin</td><td class='target'>pesos argentins</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Bolivia' href='#South America: Bolivia'>South America: Bolivia</a></td><td class='source'>BOB-name-one</td><td class='target' rowSpan='3'>boliviano</td><td class='target'>boliviano bolivian</td></tr>
+	<tr><td class='source'>BOB-name-other</td><td class='target'>bolivianos bolivians</td></tr>
+	<tr><td class='source'>BOB-name</td><td class='target'>boliviano bolivian</td></tr>
+	<tr><td class='source'><a name='South America: Brazil' href='#South America: Brazil'>South America: Brazil</a></td><td class='source'>BRL-name-other</td><td class='target'>real brasilian</td><td class='target'>reals brasilians</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='South America: Chile' href='#South America: Chile'>South America: Chile</a></td><td class='source'>CLP-name-other</td><td class='target'>peso chilen</td><td class='target'>pesos chilens</td><td class='target' rowSpan='14'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Colombia' href='#South America: Colombia'>South America: Colombia</a></td><td class='source'>COP-name-one</td><td class='target' rowSpan='2'>peso columbian</td><td class='target' rowSpan='2'>pesos columbians</td></tr>
+	<tr><td class='source'>COP-name-other</td></tr>
+	<tr><td class='source'><a name='South America: Falkland Islands' href='#South America: Falkland Islands'>South America: Falkland Islands</a></td><td class='source'>FKP-name-other</td><td class='target'>glivra dal Falkland</td><td class='target'>glivras dal Falkland</td></tr>
+	<tr><td class='source'><a name='South America: Guyana' href='#South America: Guyana'>South America: Guyana</a></td><td class='source'>GYD-name-other</td><td class='target'>dollar da la Guyana</td><td class='target'>dollars da la Guyana</td></tr>
+	<tr><td class='source'><a name='South America: Peru' href='#South America: Peru'>South America: Peru</a></td><td class='source'>PEN-name-other</td><td class='target'>sol peruan</td><td class='target'>soles peruans</td></tr>
+	<tr><td class='source'><a name='South America: Paraguay' href='#South America: Paraguay'>South America: Paraguay</a></td><td class='source'>PYG-name-other</td><td class='target'>guarani paraguaian</td><td class='target'>guaranis paraguaians</td></tr>
+	<tr><td class='source'><a name='South America: Suriname' href='#South America: Suriname'>South America: Suriname</a></td><td class='source'>SRD-name-other</td><td class='target'>dollar surinam</td><td class='target'>dollars surinams</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='South America: Uruguay' href='#South America: Uruguay'>South America: Uruguay</a></td><td class='source'>UYU-name-one</td><td class='target' rowSpan='2'>peso da l’Uruguay</td><td class='target'>peso da l’Uruguai</td></tr>
+	<tr><td class='source'>UYU-name-other</td><td class='target'>pesos da l’Uruguai</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America: Venezuela' href='#South America: Venezuela'>South America: Venezuela</a></td><td class='source'>VES-name-one</td><td class='target' rowSpan='3'>bolivar venezuelan</td><td class='target'>bolívar venezuelan</td></tr>
+	<tr><td class='source'>VES-name-other</td><td class='target'>bolívars venezuelans</td></tr>
+	<tr><td class='source'>VES-name</td><td class='target'>bolívar venezuelan</td></tr>
+	<tr><td class='source' rowSpan='28'><a name='Northern/Western Europe' href='#Northern/Western Europe'>Northern/Western Europe</a></td><td class='source'><a name='Northern Europe: Denmark' href='#Northern Europe: Denmark'>Northern Europe: Denmark</a></td><td class='source'>DKK-name-other</td><td class='target'>cruna danaisa</td><td class='target'>crunas danaisas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern Europe: United Kingdom' href='#Northern Europe: United Kingdom'>Northern Europe: United Kingdom</a></td><td class='source'>GBP-name-one</td><td class='target' rowSpan='3'>glivra sterlina</td><td class='target'>glivra britannica</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>GBP-name-other</td><td class='target'>glivras britannicas</td></tr>
+	<tr><td class='source'>GBP-name</td><td class='target'>glivra britannica</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Iceland' href='#Northern Europe: Iceland'>Northern Europe: Iceland</a></td><td class='source'>ISK-name-other</td><td class='target'>cruna islandaisa</td><td class='target'>crunas islandaisas</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Lithuania: LTL (old)' href='#Northern Europe: Lithuania: LTL (old)'>Northern Europe: Lithuania: LTL (old)</a></td><td class='source'>LTL-name-other</td><td class='target'>litas lituan</td><td class='target'>litas lituans</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Lithuania: LTT (old)' href='#Northern Europe: Lithuania: LTT (old)'>Northern Europe: Lithuania: LTT (old)</a></td><td class='source'>LTT-name-other</td><td class='target'>talonas lituan</td><td class='target'>talonas lituans</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Latvia: LVL (old)' href='#Northern Europe: Latvia: LVL (old)'>Northern Europe: Latvia: LVL (old)</a></td><td class='source'>LVL-name-other</td><td class='target'>lats letton</td><td class='target'>lats lettons</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Latvia: LVR (old)' href='#Northern Europe: Latvia: LVR (old)'>Northern Europe: Latvia: LVR (old)</a></td><td class='source'>LVR-name-other</td><td class='target'>rubel letton</td><td class='target'>rubels lettons</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Norway' href='#Northern Europe: Norway'>Northern Europe: Norway</a></td><td class='source'>NOK-name-other</td><td class='target'>cruna norvegiaisa</td><td class='target'>crunas norvegiaisas</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Northern Europe: Sweden' href='#Northern Europe: Sweden'>Northern Europe: Sweden</a></td><td class='source'>SEK-name-other</td><td class='target'>cruna svedaisa</td><td class='target'>crunas svedaisas</td></tr>
+	<tr><td class='source'><a name='Western Europe: Austria: ATS (old)' href='#Western Europe: Austria: ATS (old)'>Western Europe: Austria: ATS (old)</a></td><td class='source'>ATS-name-other</td><td class='target'>schilling austriac</td><td class='target'>schillings austriacs</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Europe: Belgium: BEC (old)' href='#Western Europe: Belgium: BEC (old)'>Western Europe: Belgium: BEC (old)</a></td><td class='source'>BEC-name-other</td><td class='target'>franc beltg (convertibel)</td><td class='target'>francs beltgs (convertibels)</td></tr>
+	<tr><td class='source'><a name='Western Europe: Belgium: BEF (old)' href='#Western Europe: Belgium: BEF (old)'>Western Europe: Belgium: BEF (old)</a></td><td class='source'>BEF-name-other</td><td class='target'>franc beltg</td><td class='target'>francs beltgs</td></tr>
+	<tr><td class='source'><a name='Western Europe: Belgium: BEL (old)' href='#Western Europe: Belgium: BEL (old)'>Western Europe: Belgium: BEL (old)</a></td><td class='source'>BEL-name-other</td><td class='target'>franc beltg (finanzial)</td><td class='target'>francs beltgs (finanzial)</td></tr>
+	<tr><td class='source'><a name='Western Europe: Switzerland' href='#Western Europe: Switzerland'>Western Europe: Switzerland</a></td><td class='source'>CHF-name-other</td><td class='target'>franc svizzer</td><td class='target'>francs svizzers</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Europe: Switzerland: CHE (fund)' href='#Western Europe: Switzerland: CHE (fund)'>Western Europe: Switzerland: CHE (fund)</a></td><td class='source'>CHE-name-other</td><td class='target'>euro WIR</td><td class='target'>euros WIR</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Europe: Switzerland: CHW (fund)' href='#Western Europe: Switzerland: CHW (fund)'>Western Europe: Switzerland: CHW (fund)</a></td><td class='source'>CHW-name-other</td><td class='target'>franc WIR</td><td class='target'>francs WIR</td></tr>
+	<tr><td class='source'><a name='Western Europe: Germany: DDM (old)' href='#Western Europe: Germany: DDM (old)'>Western Europe: Germany: DDM (old)</a></td><td class='source'>DDM-name-other</td><td class='target'>marc da la Germania da l’Ost</td><td class='target'>marcs da la Germania da l’Ost</td></tr>
+	<tr><td class='source'><a name='Western Europe: Germany: DEM (old)' href='#Western Europe: Germany: DEM (old)'>Western Europe: Germany: DEM (old)</a></td><td class='source'>DEM-name-other</td><td class='target'>marc tudestg</td><td class='target'>marcs tudestgs</td></tr>
+	<tr><td class='source'><a name='Western Europe: France: FRF (old)' href='#Western Europe: France: FRF (old)'>Western Europe: France: FRF (old)</a></td><td class='source'>FRF-name-other</td><td class='target'>franc franzos</td><td class='target'>francs franzos</td></tr>
+	<tr><td class='source'><a name='Western Europe: Luxembourg: LUC (old)' href='#Western Europe: Luxembourg: LUC (old)'>Western Europe: Luxembourg: LUC (old)</a></td><td class='source'>LUC-name-other</td><td class='target'>franc convertibel luxemburgais</td><td class='target'>francs convertibels luxemburgais</td></tr>
+	<tr><td class='source'><a name='Western Europe: Luxembourg: LUF (old)' href='#Western Europe: Luxembourg: LUF (old)'>Western Europe: Luxembourg: LUF (old)</a></td><td class='source'>LUF-name-other</td><td class='target'>franc luxemburgais</td><td class='target'>francs luxemburgais</td></tr>
+	<tr><td class='source'><a name='Western Europe: Luxembourg: LUL (old)' href='#Western Europe: Luxembourg: LUL (old)'>Western Europe: Luxembourg: LUL (old)</a></td><td class='source'>LUL-name-other</td><td class='target'>franc finanzial luxemburgais</td><td class='target'>francs finanzials luxemburgais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Europe: Monaco: MCF (old)' href='#Western Europe: Monaco: MCF (old)'>Western Europe: Monaco: MCF (old)</a></td><td class='source'>MCF-name-one</td><td class='target' rowSpan='3'>franc monegas</td><td class='target'>franc monegass</td></tr>
+	<tr><td class='source'>MCF-name-other</td><td class='target'>francs monegass</td></tr>
+	<tr><td class='source'>MCF-name</td><td class='target'>franc monegass</td></tr>
+	<tr><td class='source'><a name='Western Europe: Netherlands: NLG (old)' href='#Western Europe: Netherlands: NLG (old)'>Western Europe: Netherlands: NLG (old)</a></td><td class='source'>NLG-name-other</td><td class='target'>flurin ollandais</td><td class='target'>flurins ollandais</td></tr>
+	<tr><td class='source' rowSpan='86'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source' rowSpan='3'><a name='Eastern Europe: Bulgaria' href='#Eastern Europe: Bulgaria'>Eastern Europe: Bulgaria</a></td><td class='source'>BGN-name-one</td><td class='target' rowSpan='3'>nov lev bulgar</td><td class='target'>lev bulgar</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>BGN-name-other</td><td class='target'>levs bulgars</td></tr>
+	<tr><td class='source'>BGN-name</td><td class='target'>lev bulgar</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Bulgaria: BGL (old)' href='#Eastern Europe: Bulgaria: BGL (old)'>Eastern Europe: Bulgaria: BGL (old)</a></td><td class='source'>BGL-name-one</td><td class='target' rowSpan='3'>lev bulgar</td><td class='target'>lev bulgar dir</td><td class='target' rowSpan='7'>comprehensive</td></tr>
+	<tr><td class='source'>BGL-name-other</td><td class='target'>levs bulgars dirs</td></tr>
+	<tr><td class='source'>BGL-name</td><td class='target'>lev bulgar dir</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Bulgaria: BGM (old)' href='#Eastern Europe: Bulgaria: BGM (old)'>Eastern Europe: Bulgaria: BGM (old)</a></td><td class='source'>BGM-name-other</td><td class='target'>lev bulgar socialistic</td><td class='target'>levs bulgars socialistics</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Bulgaria: BGO (old)' href='#Eastern Europe: Bulgaria: BGO (old)'>Eastern Europe: Bulgaria: BGO (old)</a></td><td class='source'>BGO-name-one</td><td class='target' rowSpan='3'>vegl lev bulgar</td><td class='target'>lev bulgar (1879–1952)</td></tr>
+	<tr><td class='source'>BGO-name-other</td><td class='target'>levs bulgars (1879–1952)</td></tr>
+	<tr><td class='source'>BGO-name</td><td class='target'>lev bulgar (1879–1952)</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Belarus' href='#Eastern Europe: Belarus'>Eastern Europe: Belarus</a></td><td class='source'>BYN-name-other</td><td class='target'>rubel bieloruss</td><td class='target'>rubels bieloruss</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Belarus: BYB (old)' href='#Eastern Europe: Belarus: BYB (old)'>Eastern Europe: Belarus: BYB (old)</a></td><td class='source'>BYB-name-one</td><td class='target' rowSpan='3'>nov rubel bieloruss (1994–1999)</td><td class='target'>rubel bieloruss (1994–1999)</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>BYB-name-other</td><td class='target'>rubels bieloruss (1994–1999)</td></tr>
+	<tr><td class='source'>BYB-name</td><td class='target'>rubel bieloruss (1994–1999)</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Belarus: BYR (old)' href='#Eastern Europe: Belarus: BYR (old)'>Eastern Europe: Belarus: BYR (old)</a></td><td class='source'>BYR-name-other</td><td class='target'>rubel bieloruss (2000–2016)</td><td class='target'>rubels bieloruss (2000–2016)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eastern Europe: Czechia' href='#Eastern Europe: Czechia'>Eastern Europe: Czechia</a></td><td class='source'>CZK-name-one</td><td class='target' rowSpan='2'>cruna tscheca</td><td class='target'>cruna tcheca</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>CZK-name-other</td><td class='target'>crunas tschecas</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Czechia: CSK (old)' href='#Eastern Europe: Czechia: CSK (old)'>Eastern Europe: Czechia: CSK (old)</a></td><td class='source'>CSK-name-other</td><td class='target'>cruna tschecoslovaca</td><td class='target'>crunas tschecoslovacas</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Hungary' href='#Eastern Europe: Hungary'>Eastern Europe: Hungary</a></td><td class='source'>HUF-name-other</td><td class='target'>forint ungarais</td><td class='target'>forints ungarais</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Moldova' href='#Eastern Europe: Moldova'>Eastern Europe: Moldova</a></td><td class='source'>MDL-name-other</td><td class='target'>leu moldav</td><td class='target'>leus moldavs</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Moldova: MDC (old)' href='#Eastern Europe: Moldova: MDC (old)'>Eastern Europe: Moldova: MDC (old)</a></td><td class='source'>MDC-name-other</td><td class='target'>cupon moldav</td><td class='target'>cupons moldavs</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Poland' href='#Eastern Europe: Poland'>Eastern Europe: Poland</a></td><td class='source'>PLN-name-other</td><td class='target'>zloty polac</td><td class='target'>zlotys polacs</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Romania' href='#Eastern Europe: Romania'>Eastern Europe: Romania</a></td><td class='source'>RON-name-other</td><td class='target'>leu rumen</td><td class='target'>leus rumens</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Romania: ROL (old)' href='#Eastern Europe: Romania: ROL (old)'>Eastern Europe: Romania: ROL (old)</a></td><td class='source'>ROL-name-one</td><td class='target' rowSpan='3'>vegl leu rumen</td><td class='target'>leu rumen (1952–2006)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>ROL-name-other</td><td class='target'>leus rumens (1952–2006)</td></tr>
+	<tr><td class='source'>ROL-name</td><td class='target'>leu rumen (1952–2006)</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Eastern Europe: Russia' href='#Eastern Europe: Russia'>Eastern Europe: Russia</a></td><td class='source'>RUB-name-one</td><td class='target' rowSpan='3'>rubel russ (nov)</td><td class='target'>rubel russ</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'>RUB-name-other</td><td class='target'>rubels russ</td></tr>
+	<tr><td class='source'>RUB-name</td><td class='target'>rubel russ</td></tr>
+	<tr><td class='source'>RUB-symbol-variant</td><td class='target'>₽</td><td class='target'>RUB</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Russia: SUR (old)' href='#Eastern Europe: Russia: SUR (old)'>Eastern Europe: Russia: SUR (old)</a></td><td class='source'>SUR-name-other</td><td class='target'>rubel sovietic</td><td class='target'>rubels sovietics</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Eastern Europe: Slovakia: SKK (old)' href='#Eastern Europe: Slovakia: SKK (old)'>Eastern Europe: Slovakia: SKK (old)</a></td><td class='source'>SKK-name-other</td><td class='target'>cruna slovaca</td><td class='target'>crunas slovacas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Ukraine' href='#Eastern Europe: Ukraine'>Eastern Europe: Ukraine</a></td><td class='source'>UAH-name-one</td><td class='target' rowSpan='3'>hryvnia ucranais</td><td class='target'>hryvnia ucranaisa</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>UAH-name-other</td><td class='target'>hryvnias ucranaisas</td></tr>
+	<tr><td class='source'>UAH-name</td><td class='target'>hryvnia ucranaisa</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Europe: Ukraine: UAK (old)' href='#Eastern Europe: Ukraine: UAK (old)'>Eastern Europe: Ukraine: UAK (old)</a></td><td class='source'>UAK-name-one</td><td class='target' rowSpan='3'>karbovanetz ucranais</td><td class='target'>karbovanets ucranais</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>UAK-name-other</td><td class='target'>karbovantsiv ucranais</td></tr>
+	<tr><td class='source'>UAK-name</td><td class='target'>karbovanets ucranais</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Andorra: ADP (old)' href='#Southern Europe: Andorra: ADP (old)'>Southern Europe: Andorra: ADP (old)</a></td><td class='source'>ADP-name-other</td><td class='target'>peseta andorrana</td><td class='target'>pesetas andorranas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Albania' href='#Southern Europe: Albania'>Southern Europe: Albania</a></td><td class='source'>ALL-name-one</td><td class='target' rowSpan='3'>lek</td><td class='target'>lek albanais</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>ALL-name-other</td><td class='target'>leks albanais</td></tr>
+	<tr><td class='source'>ALL-name</td><td class='target'>lek albanais</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Albania: ALK (old)' href='#Southern Europe: Albania: ALK (old)'>Southern Europe: Albania: ALK (old)</a></td><td class='source'>ALK-name-other</td><td class='target'>lek albanais (1947–1961)</td><td class='target'>leks albanais (1947–1961)</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Bosnia & Herzegovina' href='#Southern Europe: Bosnia & Herzegovina'>Southern Europe: Bosnia & Herzegovina</a></td><td class='source'>BAM-name-one</td><td class='target' rowSpan='3'>marc convertibel bosniac</td><td class='target'>marc convertibel da la Bosnia-Erzegovina</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>BAM-name-other</td><td class='target'>marcs convertibel da la Bosnia-Erzegovina</td></tr>
+	<tr><td class='source'>BAM-name</td><td class='target'>marc convertibel da la Bosnia-Erzegovina</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Bosnia & Herzegovina: BAD (old)' href='#Southern Europe: Bosnia & Herzegovina: BAD (old)'>Southern Europe: Bosnia & Herzegovina: BAD (old)</a></td><td class='source'>BAD-name-one</td><td class='target' rowSpan='3'>dinar da la Bosnia ed Erzegovina</td><td class='target'>dinar da la Bosnia-Erzegovina (1992–1994)</td><td class='target' rowSpan='9'>comprehensive</td></tr>
+	<tr><td class='source'>BAD-name-other</td><td class='target'>dinars da la Bosnia-Erzegovina (1992–1994)</td></tr>
+	<tr><td class='source'>BAD-name</td><td class='target'>dinar da la Bosnia-Erzegovina (1992–1994)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Bosnia & Herzegovina: BAN (old)' href='#Southern Europe: Bosnia & Herzegovina: BAN (old)'>Southern Europe: Bosnia & Herzegovina: BAN (old)</a></td><td class='source'>BAN-name-one</td><td class='target' rowSpan='3'>nov dinar da la Bosnia ed Erzegovina</td><td class='target'>nov dinar da la Bosnia-Erzegovina (1994–1997)</td></tr>
+	<tr><td class='source'>BAN-name-other</td><td class='target'>novs dinars da la Bosnia-Erzegovina (1994–1997)</td></tr>
+	<tr><td class='source'>BAN-name</td><td class='target'>nov dinar da la Bosnia-Erzegovina (1994–1997)</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Spain: ESA (old)' href='#Southern Europe: Spain: ESA (old)'>Southern Europe: Spain: ESA (old)</a></td><td class='source'>ESA-name-other</td><td class='target'>peseta spagnola (conto A)</td><td class='target'>pesetas spagnolas (conto A)</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Spain: ESB (old)' href='#Southern Europe: Spain: ESB (old)'>Southern Europe: Spain: ESB (old)</a></td><td class='source'>ESB-name-other</td><td class='target'>peseta spagnola (conto convertibel)</td><td class='target'>pesetas spagnolas (conto convertibel)</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Spain: ESP (old)' href='#Southern Europe: Spain: ESP (old)'>Southern Europe: Spain: ESP (old)</a></td><td class='source'>ESP-name-other</td><td class='target'>peseta spagnola</td><td class='target'>pesetas spagnolas</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Gibraltar' href='#Southern Europe: Gibraltar'>Southern Europe: Gibraltar</a></td><td class='source'>GIP-name-other</td><td class='target'>glivra da Gibraltar</td><td class='target'>glivras da Gibraltar</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Greece: GRD (old)' href='#Southern Europe: Greece: GRD (old)'>Southern Europe: Greece: GRD (old)</a></td><td class='source'>GRD-name-other</td><td class='target'>drachma greca</td><td class='target'>drachmas grecas</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Croatia' href='#Southern Europe: Croatia'>Southern Europe: Croatia</a></td><td class='source'>HRK-name-other</td><td class='target'>kuna croata</td><td class='target'>kunas croatas</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Croatia: HRD (old)' href='#Southern Europe: Croatia: HRD (old)'>Southern Europe: Croatia: HRD (old)</a></td><td class='source'>HRD-name-other</td><td class='target'>dinar croat</td><td class='target'>dinars croats</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Italy: ITL (old)' href='#Southern Europe: Italy: ITL (old)'>Southern Europe: Italy: ITL (old)</a></td><td class='source'>ITL-name-other</td><td class='target'>lira taliana</td><td class='target'>liras talianas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: North Macedonia' href='#Southern Europe: North Macedonia'>Southern Europe: North Macedonia</a></td><td class='source'>MKD-name-one</td><td class='target' rowSpan='3'>dinar da la Macedonia</td><td class='target'>dinar macedon</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>MKD-name-other</td><td class='target'>dinars macedons</td></tr>
+	<tr><td class='source'>MKD-name</td><td class='target'>dinar macedon</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: North Macedonia: MKN (old)' href='#Southern Europe: North Macedonia: MKN (old)'>Southern Europe: North Macedonia: MKN (old)</a></td><td class='source'>MKN-name-one</td><td class='target' rowSpan='3'>vegl dinar macedon</td><td class='target'>dinar macedon (1992–1993)</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>MKN-name-other</td><td class='target'>dinars macedons (1992–1993)</td></tr>
+	<tr><td class='source'>MKN-name</td><td class='target'>dinar macedon (1992–1993)</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Malta: MTL (old)' href='#Southern Europe: Malta: MTL (old)'>Southern Europe: Malta: MTL (old)</a></td><td class='source'>MTL-name-other</td><td class='target'>lira maltaisa</td><td class='target'>liras maltaisas</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Malta: MTP (old)' href='#Southern Europe: Malta: MTP (old)'>Southern Europe: Malta: MTP (old)</a></td><td class='source'>MTP-name-other</td><td class='target'>glivra maltaisa</td><td class='target'>glivras maltaisas</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Serbia' href='#Southern Europe: Serbia'>Southern Europe: Serbia</a></td><td class='source'>RSD-name-other</td><td class='target'>dinar serb</td><td class='target'>dinars serbs</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Serbia: CSD (old)' href='#Southern Europe: Serbia: CSD (old)'>Southern Europe: Serbia: CSD (old)</a></td><td class='source'>CSD-name-one</td><td class='target' rowSpan='3'>vegl dinar serb</td><td class='target'>dinar serb (2002–2006)</td><td class='target' rowSpan='17'>comprehensive</td></tr>
+	<tr><td class='source'>CSD-name-other</td><td class='target'>dinars serbs (2002–2006)</td></tr>
+	<tr><td class='source'>CSD-name</td><td class='target'>dinar serb (2002–2006)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Serbia: YUD (old)' href='#Southern Europe: Serbia: YUD (old)'>Southern Europe: Serbia: YUD (old)</a></td><td class='source'>YUD-name-one</td><td class='target' rowSpan='3'>dinar jugoslav (1966–1990)</td><td class='target'>dinar jugoslav dir (1966–1990)</td></tr>
+	<tr><td class='source'>YUD-name-other</td><td class='target'>dinars jugoslavs dirs (1966–1990)</td></tr>
+	<tr><td class='source'>YUD-name</td><td class='target'>dinar jugoslav dir (1966–1990)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Serbia: YUM (old)' href='#Southern Europe: Serbia: YUM (old)'>Southern Europe: Serbia: YUM (old)</a></td><td class='source'>YUM-name-one</td><td class='target' rowSpan='3'>nov dinar jugoslav</td><td class='target'>nov dinar jugoslav (1994–2002)</td></tr>
+	<tr><td class='source'>YUM-name-other</td><td class='target'>novs dinars jugoslavs (1994–2002)</td></tr>
+	<tr><td class='source'>YUM-name</td><td class='target'>nov dinar jugoslav (1994–2002)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Serbia: YUN (old)' href='#Southern Europe: Serbia: YUN (old)'>Southern Europe: Serbia: YUN (old)</a></td><td class='source'>YUN-name-one</td><td class='target' rowSpan='3'>dinar jugoslav convertibel</td><td class='target'>dinar jugoslav convertibel (1990–1992)</td></tr>
+	<tr><td class='source'>YUN-name-other</td><td class='target'>dinars jugoslavs convertibels (1990–1992)</td></tr>
+	<tr><td class='source'>YUN-name</td><td class='target'>dinar jugoslav convertibel (1990–1992)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Europe: Serbia: YUR (old)' href='#Southern Europe: Serbia: YUR (old)'>Southern Europe: Serbia: YUR (old)</a></td><td class='source'>YUR-name-one</td><td class='target' rowSpan='3'>dinar jugoslav refurmà</td><td class='target'>dinar jugoslav refurmà (1992–1993)</td></tr>
+	<tr><td class='source'>YUR-name-other</td><td class='target'>dinars jugoslavs refurmads (1992–1993)</td></tr>
+	<tr><td class='source'>YUR-name</td><td class='target'>dinar jugoslav refurmà (1992–1993)</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Portugal: PTE (old)' href='#Southern Europe: Portugal: PTE (old)'>Southern Europe: Portugal: PTE (old)</a></td><td class='source'>PTE-name-other</td><td class='target'>escudo portugais</td><td class='target'>escudos portugais</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Slovenia: SIT (old)' href='#Southern Europe: Slovenia: SIT (old)'>Southern Europe: Slovenia: SIT (old)</a></td><td class='source'>SIT-name-other</td><td class='target'>tolar sloven</td><td class='target'>tolars slovens</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Northern Africa' href='#Northern Africa'>Northern Africa</a></td><td class='source'><a name='Northern Africa: Algeria' href='#Northern Africa: Algeria'>Northern Africa: Algeria</a></td><td class='source'>DZD-name-other</td><td class='target'>dinar algerian</td><td class='target'>dinars algerians</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Egypt' href='#Northern Africa: Egypt'>Northern Africa: Egypt</a></td><td class='source'>EGP-name-other</td><td class='target'>glivra egipziana</td><td class='target'>glivras egipzianas</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Libya' href='#Northern Africa: Libya'>Northern Africa: Libya</a></td><td class='source'>LYD-name-other</td><td class='target'>dinar libic</td><td class='target'>dinars libics</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Morocco' href='#Northern Africa: Morocco'>Northern Africa: Morocco</a></td><td class='source'>MAD-name-other</td><td class='target'>dirham marocan</td><td class='target'>dirhams marocans</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Morocco: MAF (old)' href='#Northern Africa: Morocco: MAF (old)'>Northern Africa: Morocco: MAF (old)</a></td><td class='source'>MAF-name-other</td><td class='target'>franc marocan</td><td class='target'>francs marocans</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Sudan' href='#Northern Africa: Sudan'>Northern Africa: Sudan</a></td><td class='source'>SDG-name-other</td><td class='target'>glivra sudanaisa</td><td class='target'>glivras sudanaisas</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern Africa: Sudan: SDD (old)' href='#Northern Africa: Sudan: SDD (old)'>Northern Africa: Sudan: SDD (old)</a></td><td class='source'>SDD-name-one</td><td class='target' rowSpan='3'>dinar sudanais</td><td class='target'>dinar sudanais (1992–2007)</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>SDD-name-other</td><td class='target'>dinars sudanais (1992–2007)</td></tr>
+	<tr><td class='source'>SDD-name</td><td class='target'>dinar sudanais (1992–2007)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Northern Africa: Sudan: SDP (old)' href='#Northern Africa: Sudan: SDP (old)'>Northern Africa: Sudan: SDP (old)</a></td><td class='source'>SDP-name-one</td><td class='target' rowSpan='3'>glivra sudanaisa (1956–2007)</td><td class='target'>glivra sudanaisa (1957–1998)</td></tr>
+	<tr><td class='source'>SDP-name-other</td><td class='target'>glivras sudanaisas (1957–1998)</td></tr>
+	<tr><td class='source'>SDP-name</td><td class='target'>glivra sudanaisa (1957–1998)</td></tr>
+	<tr><td class='source'><a name='Northern Africa: Tunisia' href='#Northern Africa: Tunisia'>Northern Africa: Tunisia</a></td><td class='source'>TND-name-other</td><td class='target'>dinar tunesian</td><td class='target'>dinars tunesians</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source' rowSpan='3'><a name='Western Africa: Côte d’Ivoire' href='#Western Africa: Côte d’Ivoire'>Western Africa: Côte d’Ivoire</a></td><td class='source'>XOF-name-one</td><td class='target' rowSpan='3'>franc CFA BCEAO</td><td class='target'>franc CFA da l’Africa dal Vest</td></tr>
+	<tr><td class='source'>XOF-name-other</td><td class='target'>francs CFA da l’Africa dal Vest</td></tr>
+	<tr><td class='source'>XOF-name</td><td class='target'>franc CFA da l’Africa dal Vest</td></tr>
+	<tr><td class='source'><a name='Western Africa: Cape Verde' href='#Western Africa: Cape Verde'>Western Africa: Cape Verde</a></td><td class='source'>CVE-name-other</td><td class='target'>escudo dal Cap Verd</td><td class='target'>escudos dal Cap Verd</td></tr>
+	<tr><td class='source'><a name='Western Africa: Ghana' href='#Western Africa: Ghana'>Western Africa: Ghana</a></td><td class='source'>GHS-name-other</td><td class='target'>cedi ghanais</td><td class='target'>cedis ghanais</td></tr>
+	<tr><td class='source'><a name='Western Africa: Ghana: GHC (old)' href='#Western Africa: Ghana: GHC (old)'>Western Africa: Ghana: GHC (old)</a></td><td class='source'>GHC-name-other</td><td class='target'>cedi ghanais (1979–2007)</td><td class='target'>cedis ghanais (1979–2007)</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Africa: Gambia' href='#Western Africa: Gambia'>Western Africa: Gambia</a></td><td class='source'>GMD-name-other</td><td class='target'>dalasi gambic</td><td class='target'>dalasis gambics</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Africa: Guinea' href='#Western Africa: Guinea'>Western Africa: Guinea</a></td><td class='source'>GNF-name-other</td><td class='target'>franc da la Guinea</td><td class='target'>francs da la Guinea</td></tr>
+	<tr><td class='source'><a name='Western Africa: Guinea: GNS (old)' href='#Western Africa: Guinea: GNS (old)'>Western Africa: Guinea: GNS (old)</a></td><td class='source'>GNS-name-other</td><td class='target'>syli da la Guinea</td><td class='target'>sylis da la Guinea</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Africa: Guinea-Bissau: GWE (old)' href='#Western Africa: Guinea-Bissau: GWE (old)'>Western Africa: Guinea-Bissau: GWE (old)</a></td><td class='source'>GWE-name-other</td><td class='target'>escudo da la Guinea Portugaisa</td><td class='target'>escudos da la Guinea Portugaisa</td></tr>
+	<tr><td class='source'><a name='Western Africa: Guinea-Bissau: GWP (old)' href='#Western Africa: Guinea-Bissau: GWP (old)'>Western Africa: Guinea-Bissau: GWP (old)</a></td><td class='source'>GWP-name-other</td><td class='target'>peso da la Guinea-Bissau</td><td class='target'>pesos da la Guinea-Bissau</td></tr>
+	<tr><td class='source'><a name='Western Africa: Liberia' href='#Western Africa: Liberia'>Western Africa: Liberia</a></td><td class='source'>LRD-name-other</td><td class='target'>dollar liberian</td><td class='target'>dollars liberians</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Africa: Mali: MLF (old)' href='#Western Africa: Mali: MLF (old)'>Western Africa: Mali: MLF (old)</a></td><td class='source'>MLF-name-other</td><td class='target'>franc dal Mali</td><td class='target'>francs dal Mali</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Africa: Mauritania' href='#Western Africa: Mauritania'>Western Africa: Mauritania</a></td><td class='source'>MRU-name-other</td><td class='target'>ouguiya da la Mauretania</td><td class='target'>ouguiyas da la Mauretania</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Africa: Mauritania: MRO (old)' href='#Western Africa: Mauritania: MRO (old)'>Western Africa: Mauritania: MRO (old)</a></td><td class='source'>MRO-name-other</td><td class='target'>ouguiya da la Mauretania (1973–2017)</td><td class='target'>ouguiyas da la Mauretania (1973–2017)</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Africa: Nigeria' href='#Western Africa: Nigeria'>Western Africa: Nigeria</a></td><td class='source'>NGN-name-other</td><td class='target'>naira nigeriana</td><td class='target'>nairas nigerianas</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Africa: St. Helena' href='#Western Africa: St. Helena'>Western Africa: St. Helena</a></td><td class='source'>SHP-name-other</td><td class='target'>glivra da Sontg’Elena</td><td class='target'>glivras da Sontg’Elena</td></tr>
+	<tr><td class='source'><a name='Western Africa: Sierra Leone' href='#Western Africa: Sierra Leone'>Western Africa: Sierra Leone</a></td><td class='source'>SLL-name-other</td><td class='target'>leone da la Sierra Leone</td><td class='target'>leones da la Sierra Leone</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Middle Africa' href='#Middle Africa'>Middle Africa</a></td><td class='source'><a name='Middle Africa: Angola' href='#Middle Africa: Angola'>Middle Africa: Angola</a></td><td class='source'>AOA-name-other</td><td class='target'>kwanza angolan</td><td class='target'>kwanzas angolans</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Middle Africa: Angola: AOK (old)' href='#Middle Africa: Angola: AOK (old)'>Middle Africa: Angola: AOK (old)</a></td><td class='source'>AOK-name-one</td><td class='target' rowSpan='3'>kwanza angolan (1977–1990)</td><td class='target'>kwanza angolan (1977–1991)</td><td class='target' rowSpan='9'>comprehensive</td></tr>
+	<tr><td class='source'>AOK-name-other</td><td class='target'>kwanzas angolans (1977–1991)</td></tr>
+	<tr><td class='source'>AOK-name</td><td class='target'>kwanza angolan (1977–1991)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Middle Africa: Angola: AON (old)' href='#Middle Africa: Angola: AON (old)'>Middle Africa: Angola: AON (old)</a></td><td class='source'>AON-name-one</td><td class='target' rowSpan='3'>nov kwanza angolan</td><td class='target'>nov kwanza angolan (1990–2000)</td></tr>
+	<tr><td class='source'>AON-name-other</td><td class='target'>novs kwanzas angolans (1990–2000)</td></tr>
+	<tr><td class='source'>AON-name</td><td class='target'>nov kwanza angolan (1990–2000)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Middle Africa: Angola: AOR (old)' href='#Middle Africa: Angola: AOR (old)'>Middle Africa: Angola: AOR (old)</a></td><td class='source'>AOR-name-one</td><td class='target' rowSpan='3'>kwanza angolan reajustado</td><td class='target'>kwanza angolan reagiustà (1995–1999)</td></tr>
+	<tr><td class='source'>AOR-name-other</td><td class='target'>kwanzas angolans reagiustads (1995–1999)</td></tr>
+	<tr><td class='source'>AOR-name</td><td class='target'>kwanza angolan reagiustà (1995–1999)</td></tr>
+	<tr><td class='source'><a name='Middle Africa: Congo - Kinshasa' href='#Middle Africa: Congo - Kinshasa'>Middle Africa: Congo - Kinshasa</a></td><td class='source'>CDF-name-other</td><td class='target'>franc congolais</td><td class='target'>francs congolais</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Middle Africa: Congo - Kinshasa: ZRN (old)' href='#Middle Africa: Congo - Kinshasa: ZRN (old)'>Middle Africa: Congo - Kinshasa: ZRN (old)</a></td><td class='source'>ZRN-name-one</td><td class='target' rowSpan='3'>nov zaire dal Zaire</td><td class='target'>nov zaire dal Zaire (1993–1998)</td><td class='target' rowSpan='5'>comprehensive</td></tr>
+	<tr><td class='source'>ZRN-name-other</td><td class='target'>novs zaires dal Zaire (1993–1998)</td></tr>
+	<tr><td class='source'>ZRN-name</td><td class='target'>nov zaire dal Zaire (1993–1998)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Middle Africa: Congo - Kinshasa: ZRZ (old)' href='#Middle Africa: Congo - Kinshasa: ZRZ (old)'>Middle Africa: Congo - Kinshasa: ZRZ (old)</a></td><td class='source'>ZRZ-name-one</td><td class='target' rowSpan='2'>zaire dal Zaire</td><td class='target'>zaire dal Zaire (1971–1993)</td></tr>
+	<tr><td class='source'>ZRZ-name-other</td><td class='target'>zaires dal Zaire (1971–1993)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Middle Africa: Cameroon' href='#Middle Africa: Cameroon'>Middle Africa: Cameroon</a></td><td class='source'>XAF-name-one</td><td class='target' rowSpan='3'>franc CFA BEAC</td><td class='target'>franc CFA da l’Africa Centrala</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>XAF-name-other</td><td class='target'>francs CFA da l’Africa Centrala</td></tr>
+	<tr><td class='source'>XAF-name</td><td class='target'>franc CFA da l’Africa Centrala</td></tr>
+	<tr><td class='source'><a name='Middle Africa: Equatorial Guinea: GQE (old)' href='#Middle Africa: Equatorial Guinea: GQE (old)'>Middle Africa: Equatorial Guinea: GQE (old)</a></td><td class='source'>GQE-name-other</td><td class='target'>ekwele da la Guinea Equatoriala</td><td class='target'>ekweles da la Guinea Equatoriala</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Middle Africa: São Tomé & Príncipe' href='#Middle Africa: São Tomé & Príncipe'>Middle Africa: São Tomé & Príncipe</a></td><td class='source'>STN-name-one</td><td class='target' rowSpan='2'>dobra da São Tomé e Principe</td><td class='target'>dobra da São Tomé e Príncipe</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>STN-name-other</td><td class='target'>dobras da São Tomé e Príncipe</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Middle Africa: São Tomé & Príncipe: STD (old)' href='#Middle Africa: São Tomé & Príncipe: STD (old)'>Middle Africa: São Tomé & Príncipe: STD (old)</a></td><td class='source'>STD-name-one</td><td class='target' rowSpan='2'>dobra da São Tomé e Principe (1977–2017)</td><td class='target'>dobra da São Tomé e Príncipe (1977–2017)</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>STD-name-other</td><td class='target'>dobras da São Tomé e Príncipe (1977–2017)</td></tr>
+	<tr><td class='source' rowSpan='45'><a name='Eastern Africa' href='#Eastern Africa'>Eastern Africa</a></td><td class='source'><a name='Eastern Africa: Burundi' href='#Eastern Africa: Burundi'>Eastern Africa: Burundi</a></td><td class='source'>BIF-name-other</td><td class='target'>franc dal Burundi</td><td class='target'>francs dal Burundi</td><td class='target' rowSpan='7'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Djibouti' href='#Eastern Africa: Djibouti'>Eastern Africa: Djibouti</a></td><td class='source'>DJF-name-other</td><td class='target'>franc dal Dschibuti</td><td class='target'>francs dal Dschibuti</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Eritrea' href='#Eastern Africa: Eritrea'>Eastern Africa: Eritrea</a></td><td class='source'>ERN-name-other</td><td class='target'>nakfa eritreic</td><td class='target'>nakfas eritreics</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Ethiopia' href='#Eastern Africa: Ethiopia'>Eastern Africa: Ethiopia</a></td><td class='source'>ETB-name-other</td><td class='target'>birr etiopic</td><td class='target'>birrs etiopics</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Kenya' href='#Eastern Africa: Kenya'>Eastern Africa: Kenya</a></td><td class='source'>KES-name-other</td><td class='target'>schilling kenian</td><td class='target'>schillings kenians</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Comoros' href='#Eastern Africa: Comoros'>Eastern Africa: Comoros</a></td><td class='source'>KMF-name-other</td><td class='target'>franc comorian</td><td class='target'>francs comorians</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Madagascar' href='#Eastern Africa: Madagascar'>Eastern Africa: Madagascar</a></td><td class='source'>MGA-name-other</td><td class='target'>ariary madagasc</td><td class='target'>ariarys madagascs</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Madagascar: MGF (old)' href='#Eastern Africa: Madagascar: MGF (old)'>Eastern Africa: Madagascar: MGF (old)</a></td><td class='source'>MGF-name-other</td><td class='target'>franc madagasc</td><td class='target'>francs madagascs</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Mauritius' href='#Eastern Africa: Mauritius'>Eastern Africa: Mauritius</a></td><td class='source'>MUR-name-other</td><td class='target'>rupia dal Mauritius</td><td class='target'>rupias dal Mauritius</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Malawi' href='#Eastern Africa: Malawi'>Eastern Africa: Malawi</a></td><td class='source'>MWK-name-other</td><td class='target'>kwacha dal Malawi</td><td class='target'>kwachas dal Malawi</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Mozambique' href='#Eastern Africa: Mozambique'>Eastern Africa: Mozambique</a></td><td class='source'>MZN-name-one</td><td class='target' rowSpan='3'>metical dal mozambican</td><td class='target'>metical dal Mosambic</td></tr>
+	<tr><td class='source'>MZN-name-other</td><td class='target'>meticals dal Mosambic</td></tr>
+	<tr><td class='source'>MZN-name</td><td class='target'>metical dal Mosambic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Mozambique: MZE (old)' href='#Eastern Africa: Mozambique: MZE (old)'>Eastern Africa: Mozambique: MZE (old)</a></td><td class='source'>MZE-name-one</td><td class='target' rowSpan='3'>escudo dal mozambican</td><td class='target'>escudo dal Mosambic</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>MZE-name-other</td><td class='target'>escudos dal Mosambic</td></tr>
+	<tr><td class='source'>MZE-name</td><td class='target'>escudo dal Mosambic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Mozambique: MZM (old)' href='#Eastern Africa: Mozambique: MZM (old)'>Eastern Africa: Mozambique: MZM (old)</a></td><td class='source'>MZM-name-one</td><td class='target' rowSpan='3'>vegl metical mozambican</td><td class='target'>metical dal Mosambic (1980–2006)</td></tr>
+	<tr><td class='source'>MZM-name-other</td><td class='target'>meticals dal Mosambic (1980–2006)</td></tr>
+	<tr><td class='source'>MZM-name</td><td class='target'>metical dal Mosambic (1980–2006)</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Rwanda' href='#Eastern Africa: Rwanda'>Eastern Africa: Rwanda</a></td><td class='source'>RWF-name-other</td><td class='target'>franc ruandais</td><td class='target'>francs ruandais</td><td class='target' rowSpan='8'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Seychelles' href='#Eastern Africa: Seychelles'>Eastern Africa: Seychelles</a></td><td class='source'>SCR-name-other</td><td class='target'>rupia da las Seychellas</td><td class='target'>rupias da las Seychellas</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Somalia' href='#Eastern Africa: Somalia'>Eastern Africa: Somalia</a></td><td class='source'>SOS-name-other</td><td class='target'>schilling somalian</td><td class='target'>schillings somalians</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: South Sudan' href='#Eastern Africa: South Sudan'>Eastern Africa: South Sudan</a></td><td class='source'>SSP-name-one</td><td class='target' rowSpan='3'>SSP</td><td class='target'>glivra sidsudanaisa</td></tr>
+	<tr><td class='source'>SSP-name-other</td><td class='target'>glivras sidsudanaisas</td></tr>
+	<tr><td class='source'>SSP-name</td><td class='target'>glivra sidsudanaisa</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Tanzania' href='#Eastern Africa: Tanzania'>Eastern Africa: Tanzania</a></td><td class='source'>TZS-name-other</td><td class='target'>schilling tansanian</td><td class='target'>schillings tansanians</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Uganda' href='#Eastern Africa: Uganda'>Eastern Africa: Uganda</a></td><td class='source'>UGX-name-other</td><td class='target'>schilling ugandais</td><td class='target'>schillings ugandais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Uganda: UGS (old)' href='#Eastern Africa: Uganda: UGS (old)'>Eastern Africa: Uganda: UGS (old)</a></td><td class='source'>UGS-name-one</td><td class='target' rowSpan='3'>schilling ucranais</td><td class='target'>schilling ugandais (1966–1987)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>UGS-name-other</td><td class='target'>schillings ugandais (1966–1987)</td></tr>
+	<tr><td class='source'>UGS-name</td><td class='target'>schilling ugandais (1966–1987)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Eastern Africa: Zambia' href='#Eastern Africa: Zambia'>Eastern Africa: Zambia</a></td><td class='source'>ZMW-name-one</td><td class='target' rowSpan='2'>kwacha da la sambia</td><td class='target'>kwacha da la Sambia</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>ZMW-name-other</td><td class='target'>kwachas da la Sambia</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Zambia: ZMK (old)' href='#Eastern Africa: Zambia: ZMK (old)'>Eastern Africa: Zambia: ZMK (old)</a></td><td class='source'>ZMK-name-one</td><td class='target' rowSpan='3'>kwacha da la sambia (1968–2012)</td><td class='target'>kwacha da la Sambia (1968–2012)</td><td class='target' rowSpan='13'>comprehensive</td></tr>
+	<tr><td class='source'>ZMK-name-other</td><td class='target'>kwachas da la Sambia (1968–2012)</td></tr>
+	<tr><td class='source'>ZMK-name</td><td class='target'>kwacha da la Sambia (1968–2012)</td></tr>
+	<tr><td class='source'><a name='Eastern Africa: Zimbabwe: RHD (old)' href='#Eastern Africa: Zimbabwe: RHD (old)'>Eastern Africa: Zimbabwe: RHD (old)</a></td><td class='source'>RHD-name-other</td><td class='target'>dollar rodesian</td><td class='target'>dollars rodesians</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Zimbabwe: ZWD (old)' href='#Eastern Africa: Zimbabwe: ZWD (old)'>Eastern Africa: Zimbabwe: ZWD (old)</a></td><td class='source'>ZWD-name-one</td><td class='target' rowSpan='3'>dollar dal Simbabwe</td><td class='target'>dollar dal Simbabwe (1980–2008)</td></tr>
+	<tr><td class='source'>ZWD-name-other</td><td class='target'>dollars dal Simbabwe (1980–2008)</td></tr>
+	<tr><td class='source'>ZWD-name</td><td class='target'>dollar dal Simbabwe (1980–2008)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Zimbabwe: ZWL (old)' href='#Eastern Africa: Zimbabwe: ZWL (old)'>Eastern Africa: Zimbabwe: ZWL (old)</a></td><td class='source'>ZWL-name-one</td><td class='target' rowSpan='3'>ZWL</td><td class='target'>dollar dal Simbabwe (2009)</td></tr>
+	<tr><td class='source'>ZWL-name-other</td><td class='target'>dollars dal Simbabwe (2009)</td></tr>
+	<tr><td class='source'>ZWL-name</td><td class='target'>dollar dal Simbabwe (2009)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Africa: Zimbabwe: ZWR (old)' href='#Eastern Africa: Zimbabwe: ZWR (old)'>Eastern Africa: Zimbabwe: ZWR (old)</a></td><td class='source'>ZWR-name-one</td><td class='target' rowSpan='3'>ZWR</td><td class='target'>dollar dal Simbabwe (2008)</td></tr>
+	<tr><td class='source'>ZWR-name-other</td><td class='target'>dollars dal Simbabwe (2008)</td></tr>
+	<tr><td class='source'>ZWR-name</td><td class='target'>dollar dal Simbabwe (2008)</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'><a name='Southern Africa: Botswana' href='#Southern Africa: Botswana'>Southern Africa: Botswana</a></td><td class='source'>BWP-name-other</td><td class='target'>pula da la Botswana</td><td class='target'>pulas da la Botswana</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Africa: Lesotho' href='#Southern Africa: Lesotho'>Southern Africa: Lesotho</a></td><td class='source'>LSL-name-other</td><td class='target'>loti dal Lesotho</td><td class='target'>lotis dal Lesotho</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Southern Africa: Namibia' href='#Southern Africa: Namibia'>Southern Africa: Namibia</a></td><td class='source'>NAD-name-other</td><td class='target'>dollar namibian</td><td class='target'>dollars namibians</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Africa: Eswatini' href='#Southern Africa: Eswatini'>Southern Africa: Eswatini</a></td><td class='source'>SZL-name-other</td><td class='target'>lilangeni dal Swaziland</td><td class='target'>emalangenis dal Swaziland</td></tr>
+	<tr><td class='source'><a name='Southern Africa: South Africa' href='#Southern Africa: South Africa'>Southern Africa: South Africa</a></td><td class='source'>ZAR-name-other</td><td class='target'>rand sidafrican</td><td class='target'>rands sidafricans</td></tr>
+	<tr><td class='source'><a name='Southern Africa: South Africa: ZAL (fund)' href='#Southern Africa: South Africa: ZAL (fund)'>Southern Africa: South Africa: ZAL (fund)</a></td><td class='source'>ZAL-name-other</td><td class='target'>rand sidafrican (finanzial)</td><td class='target'>rands sidafricans (finanzial)</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='41'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: United Arab Emirates' href='#Western Asia: United Arab Emirates'>Western Asia: United Arab Emirates</a></td><td class='source'>AED-name-other</td><td class='target'>dirham dals Emirats Arabs Unids</td><td class='target'>dirhams dals Emirats Arabs Unids</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Asia: Armenia' href='#Western Asia: Armenia'>Western Asia: Armenia</a></td><td class='source'>AMD-name-other</td><td class='target'>dram armen</td><td class='target'>drams armens</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Azerbaijan' href='#Western Asia: Azerbaijan'>Western Asia: Azerbaijan</a></td><td class='source'>AZN-name-one</td><td class='target' rowSpan='3'>manat aserbaidschanic</td><td class='target'>manat aserbaidschan</td></tr>
+	<tr><td class='source'>AZN-name-other</td><td class='target'>manats aserbaidschans</td></tr>
+	<tr><td class='source'>AZN-name</td><td class='target'>manat aserbaidschan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Azerbaijan: AZM (old)' href='#Western Asia: Azerbaijan: AZM (old)'>Western Asia: Azerbaijan: AZM (old)</a></td><td class='source'>AZM-name-one</td><td class='target' rowSpan='3'>manat aserbaidschanic (1993–2006)</td><td class='target'>manat aserbaidschan (1993–2006)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>AZM-name-other</td><td class='target'>manats aserbaidschans (1993–2006)</td></tr>
+	<tr><td class='source'>AZM-name</td><td class='target'>manat aserbaidschan (1993–2006)</td></tr>
+	<tr><td class='source'><a name='Western Asia: Bahrain' href='#Western Asia: Bahrain'>Western Asia: Bahrain</a></td><td class='source'>BHD-name-other</td><td class='target'>dinar dal Bahrain</td><td class='target'>dinars dal Bahrain</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Asia: Cyprus: CYP (old)' href='#Western Asia: Cyprus: CYP (old)'>Western Asia: Cyprus: CYP (old)</a></td><td class='source'>CYP-name-other</td><td class='target'>glivra cipriota</td><td class='target'>glivras cipriotas</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Western Asia: Georgia' href='#Western Asia: Georgia'>Western Asia: Georgia</a></td><td class='source'>GEL-name-other</td><td class='target'>lari georgian</td><td class='target'>laris georgians</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Asia: Georgia: GEK (old)' href='#Western Asia: Georgia: GEK (old)'>Western Asia: Georgia: GEK (old)</a></td><td class='source'>GEK-name-other</td><td class='target'>kupon larit georgian</td><td class='target'>kupon larits georgians</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Israel' href='#Western Asia: Israel'>Western Asia: Israel</a></td><td class='source'>ILS-name-one</td><td class='target' rowSpan='3'>sheqel</td><td class='target'>nov schekel israelian</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>ILS-name-other</td><td class='target'>novs schekels israelians</td></tr>
+	<tr><td class='source'>ILS-name</td><td class='target'>nov schekel israelian</td></tr>
+	<tr><td class='source'><a name='Western Asia: Israel: ILP (old)' href='#Western Asia: Israel: ILP (old)'>Western Asia: Israel: ILP (old)</a></td><td class='source'>ILP-name-other</td><td class='target'>glivra israeliana</td><td class='target'>glivras israelianas</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Israel: ILR (old)' href='#Western Asia: Israel: ILR (old)'>Western Asia: Israel: ILR (old)</a></td><td class='source'>ILR-name-one</td><td class='target' rowSpan='3'>vegl sheqel israelian</td><td class='target'>schekel israelian (1980–1985)</td></tr>
+	<tr><td class='source'>ILR-name-other</td><td class='target'>schekels israelians (1980–1985)</td></tr>
+	<tr><td class='source'>ILR-name</td><td class='target'>schekel israelian (1980–1985)</td></tr>
+	<tr><td class='source'><a name='Western Asia: Iraq' href='#Western Asia: Iraq'>Western Asia: Iraq</a></td><td class='source'>IQD-name-other</td><td class='target'>dinar iracais</td><td class='target'>dinars iracais</td><td class='target' rowSpan='13'>moderate</td></tr>
+	<tr><td class='source'><a name='Western Asia: Jordan' href='#Western Asia: Jordan'>Western Asia: Jordan</a></td><td class='source'>JOD-name-other</td><td class='target'>dinar jordanic</td><td class='target'>dinars jordanics</td></tr>
+	<tr><td class='source'><a name='Western Asia: Kuwait' href='#Western Asia: Kuwait'>Western Asia: Kuwait</a></td><td class='source'>KWD-name-other</td><td class='target'>dinar dal Kuwait</td><td class='target'>dinars dal Kuwait</td></tr>
+	<tr><td class='source'><a name='Western Asia: Lebanon' href='#Western Asia: Lebanon'>Western Asia: Lebanon</a></td><td class='source'>LBP-name-other</td><td class='target'>glivra libanaisa</td><td class='target'>glivras libanaisas</td></tr>
+	<tr><td class='source'><a name='Western Asia: Oman' href='#Western Asia: Oman'>Western Asia: Oman</a></td><td class='source'>OMR-name-other</td><td class='target'>rial da l’Oman</td><td class='target'>rials da l’Oman</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Qatar' href='#Western Asia: Qatar'>Western Asia: Qatar</a></td><td class='source'>QAR-name-one</td><td class='target' rowSpan='3'>riyal da Katar</td><td class='target'>rial da Katar</td></tr>
+	<tr><td class='source'>QAR-name-other</td><td class='target'>rials da Katar</td></tr>
+	<tr><td class='source'>QAR-name</td><td class='target'>rial da Katar</td></tr>
+	<tr><td class='source'><a name='Western Asia: Saudi Arabia' href='#Western Asia: Saudi Arabia'>Western Asia: Saudi Arabia</a></td><td class='source'>SAR-name-other</td><td class='target'>riyal saudit</td><td class='target'>riyals saudits</td></tr>
+	<tr><td class='source'><a name='Western Asia: Syria' href='#Western Asia: Syria'>Western Asia: Syria</a></td><td class='source'>SYP-name-other</td><td class='target'>glivra siriana</td><td class='target'>glivras sirianas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Turkey' href='#Western Asia: Turkey'>Western Asia: Turkey</a></td><td class='source'>TRY-name-one</td><td class='target' rowSpan='3'>nova lira tirca</td><td class='target'>lira tirca</td></tr>
+	<tr><td class='source'>TRY-name-other</td><td class='target'>liras tircas</td></tr>
+	<tr><td class='source'>TRY-name</td><td class='target'>lira tirca</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Turkey: TRL (old)' href='#Western Asia: Turkey: TRL (old)'>Western Asia: Turkey: TRL (old)</a></td><td class='source'>TRL-name-one</td><td class='target' rowSpan='3'>lira tirca</td><td class='target'>lira tirca (1922–2005)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>TRL-name-other</td><td class='target'>liras tircas (1922–2005)</td></tr>
+	<tr><td class='source'>TRL-name</td><td class='target'>lira tirca (1922–2005)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Yemen' href='#Western Asia: Yemen'>Western Asia: Yemen</a></td><td class='source'>YER-name-one</td><td class='target' rowSpan='3'>rial dal Jemen</td><td class='target'>rial jemenit</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>YER-name-other</td><td class='target'>rials jemenits</td></tr>
+	<tr><td class='source'>YER-name</td><td class='target'>rial jemenit</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Western Asia: Yemen: YDD (old)' href='#Western Asia: Yemen: YDD (old)'>Western Asia: Yemen: YDD (old)</a></td><td class='source'>YDD-name-one</td><td class='target' rowSpan='3'>dinar dal Jemen</td><td class='target'>dinar jemenit</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>YDD-name-other</td><td class='target'>dinars jemenits</td></tr>
+	<tr><td class='source'>YDD-name</td><td class='target'>dinar jemenit</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='Central Asia (C)' href='#Central Asia (C)'>Central Asia (C)</a></td><td class='source' rowSpan='3'><a name='Central Asia: Turkmenistan' href='#Central Asia: Turkmenistan'>Central Asia: Turkmenistan</a></td><td class='source'>TMT-name-one</td><td class='target' rowSpan='3'>TMT</td><td class='target'>manat turkmen</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>TMT-name-other</td><td class='target'>manats turkmens</td></tr>
+	<tr><td class='source'>TMT-name</td><td class='target'>manat turkmen</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Turkmenistan: TMM (old)' href='#Central Asia: Turkmenistan: TMM (old)'>Central Asia: Turkmenistan: TMM (old)</a></td><td class='source'>TMM-name-one</td><td class='target' rowSpan='3'>manat turkmen</td><td class='target'>manat turkmen (1993–2009)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>TMM-name-other</td><td class='target'>manats turkmens (1993–2009)</td></tr>
+	<tr><td class='source'>TMM-name</td><td class='target'>manat turkmen (1993–2009)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Tajikistan' href='#Central Asia: Tajikistan'>Central Asia: Tajikistan</a></td><td class='source'>TJS-name-one</td><td class='target' rowSpan='3'>somoni dal Tadschikistan</td><td class='target'>somoni tadschic</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>TJS-name-other</td><td class='target'>somonis tadschics</td></tr>
+	<tr><td class='source'>TJS-name</td><td class='target'>somoni tadschic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Tajikistan: TJR (old)' href='#Central Asia: Tajikistan: TJR (old)'>Central Asia: Tajikistan: TJR (old)</a></td><td class='source'>TJR-name-one</td><td class='target' rowSpan='3'>rubel dal Tadschikistan</td><td class='target'>rubel tadschic</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>TJR-name-other</td><td class='target'>rubels tadschics</td></tr>
+	<tr><td class='source'>TJR-name</td><td class='target'>rubel tadschic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Kyrgyzstan' href='#Central Asia: Kyrgyzstan'>Central Asia: Kyrgyzstan</a></td><td class='source'>KGS-name-one</td><td class='target' rowSpan='3'>som kirghis</td><td class='target'>som kirgis</td><td class='target' rowSpan='9'>moderate</td></tr>
+	<tr><td class='source'>KGS-name-other</td><td class='target'>soms kirgis</td></tr>
+	<tr><td class='source'>KGS-name</td><td class='target'>som kirgis</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Kazakhstan' href='#Central Asia: Kazakhstan'>Central Asia: Kazakhstan</a></td><td class='source'>KZT-name-one</td><td class='target' rowSpan='3'>tenge casac</td><td class='target'>tenge kasac</td></tr>
+	<tr><td class='source'>KZT-name-other</td><td class='target'>tenges kasacs</td></tr>
+	<tr><td class='source'>KZT-name</td><td class='target'>tenge kasac</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Central Asia: Uzbekistan' href='#Central Asia: Uzbekistan'>Central Asia: Uzbekistan</a></td><td class='source'>UZS-name-one</td><td class='target' rowSpan='3'>sum usbec</td><td class='target'>som usbec</td></tr>
+	<tr><td class='source'>UZS-name-other</td><td class='target'>soms usbecs</td></tr>
+	<tr><td class='source'>UZS-name</td><td class='target'>som usbec</td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source' rowSpan='3'><a name='Eastern Asia: China' href='#Eastern Asia: China'>Eastern Asia: China</a></td><td class='source'>CNY-name-one</td><td class='target' rowSpan='3'>yuan renminbi chinais</td><td class='target'>yuan chinais</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>CNY-name-other</td><td class='target'>yuans chinais</td></tr>
+	<tr><td class='source'>CNY-name</td><td class='target'>yuan chinais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia: China: CNH (offshore)' href='#Eastern Asia: China: CNH (offshore)'>Eastern Asia: China: CNH (offshore)</a></td><td class='source'>CNH-name-one</td><td class='target' rowSpan='3'>CNH</td><td class='target'>yuan chinais (offshore)</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>CNH-name-other</td><td class='target'>yuans chinais (offshore)</td></tr>
+	<tr><td class='source'>CNH-name</td><td class='target'>yuan chinais (offshore)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia: China: CNX (old)' href='#Eastern Asia: China: CNX (old)'>Eastern Asia: China: CNX (old)</a></td><td class='source'>CNX-name-one</td><td class='target' rowSpan='3'>CNX</td><td class='target'>dollar da la banca populara chinaisa</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>CNX-name-other</td><td class='target'>dollars da la banca populara chinaisa</td></tr>
+	<tr><td class='source'>CNX-name</td><td class='target'>dollar da la banca populara chinaisa</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: Hong Kong SAR China' href='#Eastern Asia: Hong Kong SAR China'>Eastern Asia: Hong Kong SAR China</a></td><td class='source'>HKD-name-other</td><td class='target'>dollar da Hongkong</td><td class='target'>dollars da Hongkong</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: Japan' href='#Eastern Asia: Japan'>Eastern Asia: Japan</a></td><td class='source'>JPY-name-other</td><td class='target'>yen giapunais</td><td class='target'>yens giapunais</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: North Korea' href='#Eastern Asia: North Korea'>Eastern Asia: North Korea</a></td><td class='source'>KPW-name-other</td><td class='target'>won da la Corea dal Nord</td><td class='target'>wons da la Corea dal Nord</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: South Korea' href='#Eastern Asia: South Korea'>Eastern Asia: South Korea</a></td><td class='source'>KRW-name-other</td><td class='target'>won da la Corea dal Sid</td><td class='target'>wons da la Corea dal Sid</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia: South Korea: KRH (old)' href='#Eastern Asia: South Korea: KRH (old)'>Eastern Asia: South Korea: KRH (old)</a></td><td class='source'>KRH-name-one</td><td class='target' rowSpan='3'>hwan da la Corea dal Sid</td><td class='target'>hwan da la Corea dal Sid (1953–1962)</td><td class='target' rowSpan='6'>comprehensive</td></tr>
+	<tr><td class='source'>KRH-name-other</td><td class='target'>hwans da la Corea dal Sid (1953–1962)</td></tr>
+	<tr><td class='source'>KRH-name</td><td class='target'>hwan da la Corea dal Sid (1953–1962)</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia: South Korea: KRO (old)' href='#Eastern Asia: South Korea: KRO (old)'>Eastern Asia: South Korea: KRO (old)</a></td><td class='source'>KRO-name-one</td><td class='target' rowSpan='3'>vegl won da la Corea dal Sid</td><td class='target'>won da la Corea dal Sid (1945–1953)</td></tr>
+	<tr><td class='source'>KRO-name-other</td><td class='target'>wons da la Corea dal Sid (1945–1953)</td></tr>
+	<tr><td class='source'>KRO-name</td><td class='target'>won da la Corea dal Sid (1945–1953)</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: Mongolia' href='#Eastern Asia: Mongolia'>Eastern Asia: Mongolia</a></td><td class='source'>MNT-name-other</td><td class='target'>tugrik mongolic</td><td class='target'>tugriks mongolics</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: Macao SAR China' href='#Eastern Asia: Macao SAR China'>Eastern Asia: Macao SAR China</a></td><td class='source'>MOP-name-other</td><td class='target'>pataca dal Macao</td><td class='target'>patacas dal Macao</td></tr>
+	<tr><td class='source'><a name='Eastern Asia: Taiwan' href='#Eastern Asia: Taiwan'>Eastern Asia: Taiwan</a></td><td class='source'>TWD-name-other</td><td class='target'>nov dollar taiwanais</td><td class='target'>novs dollars taiwanais</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source' rowSpan='3'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td><td class='source'>AFN-name-one</td><td class='target' rowSpan='3'>afghani</td><td class='target'>afgani afgan</td></tr>
+	<tr><td class='source'>AFN-name-other</td><td class='target'>afganis afgans</td></tr>
+	<tr><td class='source'>AFN-name</td><td class='target'>afgani afgan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Asia: Afghanistan: AFA (old)' href='#Southern Asia: Afghanistan: AFA (old)'>Southern Asia: Afghanistan: AFA (old)</a></td><td class='source'>AFA-name-one</td><td class='target' rowSpan='3'>afghani (1927–2002)</td><td class='target'>afgani afgan (1927–2002)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>AFA-name-other</td><td class='target'>afganis afgans (1927–2002)</td></tr>
+	<tr><td class='source'>AFA-name</td><td class='target'>afgani afgan (1927–2002)</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Bangladesh' href='#Southern Asia: Bangladesh'>Southern Asia: Bangladesh</a></td><td class='source'>BDT-name-other</td><td class='target'>taka bangladais</td><td class='target'>takas bangladais</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Bhutan' href='#Southern Asia: Bhutan'>Southern Asia: Bhutan</a></td><td class='source'>BTN-name-other</td><td class='target'>ngultrum butanais</td><td class='target'>ngultrums butanais</td></tr>
+	<tr><td class='source'><a name='Southern Asia: India' href='#Southern Asia: India'>Southern Asia: India</a></td><td class='source'>INR-name-other</td><td class='target'>rupia indica</td><td class='target'>rupias indicas</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Iran' href='#Southern Asia: Iran'>Southern Asia: Iran</a></td><td class='source'>IRR-name-other</td><td class='target'>rial iranais</td><td class='target'>rials iranais</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Sri Lanka' href='#Southern Asia: Sri Lanka'>Southern Asia: Sri Lanka</a></td><td class='source'>LKR-name-other</td><td class='target'>rupia da la Sri Lanka</td><td class='target'>rupias da la Sri Lanka</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Maldives' href='#Southern Asia: Maldives'>Southern Asia: Maldives</a></td><td class='source'>MVR-name-other</td><td class='target'>rufiyaa da las Maledivas</td><td class='target'>rufiyaas da las Maledivas</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southern Asia: Maldives: MVP (old)' href='#Southern Asia: Maldives: MVP (old)'>Southern Asia: Maldives: MVP (old)</a></td><td class='source'>MVP-name-one</td><td class='target' rowSpan='3'>rupia da las Maledivas</td><td class='target'>rupia da las Maledivas (1947–1981)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>MVP-name-other</td><td class='target'>rupias da las Maledivas (1947–1981)</td></tr>
+	<tr><td class='source'>MVP-name</td><td class='target'>rupia da las Maledivas (1947–1981)</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Nepal' href='#Southern Asia: Nepal'>Southern Asia: Nepal</a></td><td class='source'>NPR-name-other</td><td class='target'>rupia nepalaisa</td><td class='target'>rupias nepalaisas</td><td class='target' rowSpan='9'>moderate</td></tr>
+	<tr><td class='source'><a name='Southern Asia: Pakistan' href='#Southern Asia: Pakistan'>Southern Asia: Pakistan</a></td><td class='source'>PKR-name-other</td><td class='target'>rupia pakistana</td><td class='target'>rupias pakistanas</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Southeast Asia (C)' href='#Southeast Asia (C)'>Southeast Asia (C)</a></td><td class='source'><a name='Southeast Asia: Brunei' href='#Southeast Asia: Brunei'>Southeast Asia: Brunei</a></td><td class='source'>BND-name-other</td><td class='target'>dollar dal Brunei</td><td class='target'>dollars dal Brunei</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Indonesia' href='#Southeast Asia: Indonesia'>Southeast Asia: Indonesia</a></td><td class='source'>IDR-name-other</td><td class='target'>rupia indonaisa</td><td class='target'>rupias indonaisas</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Cambodia' href='#Southeast Asia: Cambodia'>Southeast Asia: Cambodia</a></td><td class='source'>KHR-name-other</td><td class='target'>riel cambodschan</td><td class='target'>riels cambodschans</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Laos' href='#Southeast Asia: Laos'>Southeast Asia: Laos</a></td><td class='source'>LAK-name-other</td><td class='target'>kip laot</td><td class='target'>kips laots</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia: Myanmar (Burma)' href='#Southeast Asia: Myanmar (Burma)'>Southeast Asia: Myanmar (Burma)</a></td><td class='source'>MMK-name-one</td><td class='target' rowSpan='3'>Kyat dal Myanmar</td><td class='target'>kyat dal Myanmar</td></tr>
+	<tr><td class='source'>MMK-name-other</td><td class='target'>kyats dal Myanmar</td></tr>
+	<tr><td class='source'>MMK-name</td><td class='target'>kyat dal Myanmar</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia: Myanmar (Burma): BUK (old)' href='#Southeast Asia: Myanmar (Burma): BUK (old)'>Southeast Asia: Myanmar (Burma): BUK (old)</a></td><td class='source'>BUK-name-one</td><td class='target' rowSpan='3'>Kyat burmais</td><td class='target'>kyat burmais</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>BUK-name-other</td><td class='target'>kyats burmais</td></tr>
+	<tr><td class='source'>BUK-name</td><td class='target'>kyat burmais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia: Malaysia' href='#Southeast Asia: Malaysia'>Southeast Asia: Malaysia</a></td><td class='source'>MYR-name-one</td><td class='target' rowSpan='3'>ringgit da la Malaisia</td><td class='target'>ringgit malaisic</td><td class='target' rowSpan='6'>moderate</td></tr>
+	<tr><td class='source'>MYR-name-other</td><td class='target'>ringgits malaisics</td></tr>
+	<tr><td class='source'>MYR-name</td><td class='target'>ringgit malaisic</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Philippines' href='#Southeast Asia: Philippines'>Southeast Asia: Philippines</a></td><td class='source'>PHP-name-other</td><td class='target'>peso filippin</td><td class='target'>pesos filippins</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Singapore' href='#Southeast Asia: Singapore'>Southeast Asia: Singapore</a></td><td class='source'>SGD-name-other</td><td class='target'>dollar dal Singapur</td><td class='target'>dollars dal Singapur</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Thailand' href='#Southeast Asia: Thailand'>Southeast Asia: Thailand</a></td><td class='source'>THB-name-other</td><td class='target'>baht tailandais</td><td class='target'>bahts tailandais</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia: Timor-Leste: TPE (old)' href='#Southeast Asia: Timor-Leste: TPE (old)'>Southeast Asia: Timor-Leste: TPE (old)</a></td><td class='source'>TPE-name-one</td><td class='target' rowSpan='3'>escudo da Timor</td><td class='target'>escudo dal Timor</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>TPE-name-other</td><td class='target'>escudos dal Timor</td></tr>
+	<tr><td class='source'>TPE-name</td><td class='target'>escudo dal Timor</td></tr>
+	<tr><td class='source'><a name='Southeast Asia: Vietnam' href='#Southeast Asia: Vietnam'>Southeast Asia: Vietnam</a></td><td class='source'>VND-name-other</td><td class='target'>dong vietnamais</td><td class='target'>dongs vietnamais</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Southeast Asia: Vietnam: VNN (old)' href='#Southeast Asia: Vietnam: VNN (old)'>Southeast Asia: Vietnam: VNN (old)</a></td><td class='source'>VNN-name-one</td><td class='target' rowSpan='3'>vegl dong vietnamais</td><td class='target'>dong vietnamais (1978–1985)</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>VNN-name-other</td><td class='target'>dongs vietnamais (1978–1985)</td></tr>
+	<tr><td class='source'>VNN-name</td><td class='target'>dong vietnamais (1978–1985)</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Oceania (C)' href='#Oceania (C)'>Oceania (C)</a></td><td class='source'><a name='Australasia: Australia' href='#Australasia: Australia'>Australasia: Australia</a></td><td class='source'>AUD-name-other</td><td class='target'>dollar australian</td><td class='target'>dollars australians</td><td class='target' rowSpan='13'>moderate</td></tr>
+	<tr><td class='source'><a name='Australasia: New Zealand' href='#Australasia: New Zealand'>Australasia: New Zealand</a></td><td class='source'>NZD-name-other</td><td class='target'>dollar da la Nova Zelanda</td><td class='target'>dollars da la Nova Zelanda</td></tr>
+	<tr><td class='source'><a name='Melanesia: Fiji' href='#Melanesia: Fiji'>Melanesia: Fiji</a></td><td class='source'>FJD-name-other</td><td class='target'>dollar dal Fidschi</td><td class='target'>dollars dal Fidschi</td></tr>
+	<tr><td class='source'><a name='Melanesia: Papua New Guinea' href='#Melanesia: Papua New Guinea'>Melanesia: Papua New Guinea</a></td><td class='source'>PGK-name-other</td><td class='target'>kina da la Papua Nova Guinea</td><td class='target'>kinas da la Papua Nova Guinea</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Melanesia: Solomon Islands' href='#Melanesia: Solomon Islands'>Melanesia: Solomon Islands</a></td><td class='source'>SBD-name-one</td><td class='target' rowSpan='3'>dollar da las Salomonas</td><td class='target'>dollar da las Inslas da Salomon</td></tr>
+	<tr><td class='source'>SBD-name-other</td><td class='target'>dollars da las Inslas da Salomon</td></tr>
+	<tr><td class='source'>SBD-name</td><td class='target'>dollar da las Inslas da Salomon</td></tr>
+	<tr><td class='source'><a name='Melanesia: Vanuatu' href='#Melanesia: Vanuatu'>Melanesia: Vanuatu</a></td><td class='source'>VUV-name-other</td><td class='target'>vatu dal Vanuatu</td><td class='target'>vatus dal Vanuatu</td></tr>
+	<tr><td class='source'><a name='Polynesia: French Polynesia' href='#Polynesia: French Polynesia'>Polynesia: French Polynesia</a></td><td class='source'>XPF-name-other</td><td class='target'>franc CFP</td><td class='target'>francs CFP</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Polynesia: Tonga' href='#Polynesia: Tonga'>Polynesia: Tonga</a></td><td class='source'>TOP-name-one</td><td class='target' rowSpan='3'>pa’anga da Tonga</td><td class='target'>paʻanga da Tonga</td></tr>
+	<tr><td class='source'>TOP-name-other</td><td class='target'>pa’angas da Tonga</td></tr>
+	<tr><td class='source'>TOP-name</td><td class='target'>paʻanga da Tonga</td></tr>
+	<tr><td class='source'><a name='Polynesia: Samoa' href='#Polynesia: Samoa'>Polynesia: Samoa</a></td><td class='source'>WST-name-other</td><td class='target'>tala da la Samoa</td><td class='target'>talas da la Samoa</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Unknown Region (C)' href='#Unknown Region (C)'>Unknown Region (C)</a></td><td class='source'><a name='Unknown Region: EUR' href='#Unknown Region: EUR'>Unknown Region: EUR</a></td><td class='source'>EUR-name-other</td><td class='target'>euro</td><td class='target'>euros</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XAU' href='#Unknown Region: XAU'>Unknown Region: XAU</a></td><td class='source'>XAU-name-one</td><td class='target' rowSpan='2'>aur</td><td class='target'>unza d’aur</td><td class='target' rowSpan='15'>comprehensive</td></tr>
+	<tr><td class='source'>XAU-name-other</td><td class='target'>unzas d’aur</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XBA' href='#Unknown Region: XBA'>Unknown Region: XBA</a></td><td class='source'>XBA-name-other</td><td class='target'>unitad europeica cumponida</td><td class='target'>unitads europeicas cumponidas</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XBC' href='#Unknown Region: XBC'>Unknown Region: XBC</a></td><td class='source'>XBC-name-other</td><td class='target'>unitad dal quint europeica (XBC)</td><td class='target'>unitads dal quint europeicas (XBC)</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XBD' href='#Unknown Region: XBD'>Unknown Region: XBD</a></td><td class='source'>XBD-name-other</td><td class='target'>unitad dal quint europeica (XBD)</td><td class='target'>unitads dal quint europeicas (XBD)</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XDR' href='#Unknown Region: XDR'>Unknown Region: XDR</a></td><td class='source'>XDR-name-one</td><td class='target'>dretgs da prelevaziun spezials</td><td class='target'>dretg da prelevaziun spezial</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XFO' href='#Unknown Region: XFO'>Unknown Region: XFO</a></td><td class='source'>XFO-name-other</td><td class='target'>franc d’aur franzos</td><td class='target'>francs d’aur franzos</td></tr>
+	<tr><td class='source'><a name='Unknown Region: XFU' href='#Unknown Region: XFU'>Unknown Region: XFU</a></td><td class='source'>XFU-name-other</td><td class='target'>franc UIC franzos</td><td class='target'>francs UIC franzos</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XPD' href='#Unknown Region: XPD'>Unknown Region: XPD</a></td><td class='source'>XPD-name-one</td><td class='target' rowSpan='2'>palladi</td><td class='target'>unza da palladi</td></tr>
+	<tr><td class='source'>XPD-name-other</td><td class='target'>unzas da palladi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XPT' href='#Unknown Region: XPT'>Unknown Region: XPT</a></td><td class='source'>XPT-name-one</td><td class='target' rowSpan='2'>platin</td><td class='target'>unza da platin</td></tr>
+	<tr><td class='source'>XPT-name-other</td><td class='target'>unzas da platin</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Unknown Region: XSU' href='#Unknown Region: XSU'>Unknown Region: XSU</a></td><td class='source'>XSU-name-one</td><td class='target' rowSpan='3'>XSU</td><td class='target'>zutger</td></tr>
+	<tr><td class='source'>XSU-name-other</td><td class='target'>zutgers</td></tr>
+	<tr><td class='source'>XSU-name</td><td class='target'>zutger</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Unknown Region: XXX' href='#Unknown Region: XXX'>Unknown Region: XXX</a></td><td class='source'>XXX-name-one</td><td class='target' rowSpan='2'>valuta nunenconuschenta</td><td class='target'>(unitad nunenconuschenta da la valuta)</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>XXX-name-other</td><td class='target'>(valuta nunenconuschenta)</td></tr>
+	<tr><td class='source' rowSpan='48'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='2'><a name='Duration' href='#Duration'>Duration</a></td><td class='source'><a name='minute' href='#minute'>minute</a></td><td class='source' rowSpan='2'>long-per</td><td class='target'>{0}/min</td><td class='target'>{0} per minuta</td><td class='target' rowSpan='48'>moderate</td></tr>
+	<tr><td class='source'><a name='second' href='#second'>second</a></td><td class='target'>{0}/s</td><td class='target'>{0} per secunda</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='4'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-displayName</td><td class='target'>px</td><td class='target'>pixels</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} px</td><td class='target'>{0} pixel</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} pixels</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>px</td><td class='target'>pixels</td></tr>
+	<tr><td class='source'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-per</td><td class='target'>{0}/l</td><td class='target'>{0} per liter</td></tr>
+	<tr><td class='source'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source'>short-displayName</td><td class='target'>km/h</td><td class='target'>km/ura</td></tr>
+	<tr><td class='source' rowSpan='40'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='4'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>long-displayName</td><td class='target'>PB</td><td class='target'>petabytes</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} PB</td><td class='target'>{0} petabyte</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} petabytes</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>PB</td><td class='target'>PByte</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='terabyte' href='#terabyte'>terabyte</a></td><td class='source'>long-displayName</td><td class='target'>TB</td><td class='target'>terabytes</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} TB</td><td class='target'>{0} terabyte</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} terabytes</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>TB</td><td class='target'>TByte</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='terabit' href='#terabit'>terabit</a></td><td class='source'>long-displayName</td><td class='target'>Tb</td><td class='target'>terabits</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Tb</td><td class='target'>{0} terabit</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} terabits</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Tb</td><td class='target'>Tbit</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='gigabyte' href='#gigabyte'>gigabyte</a></td><td class='source'>long-displayName</td><td class='target'>GB</td><td class='target'>gigabytes</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} GB</td><td class='target'>{0} gigabyte</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} gigabytes</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>GB</td><td class='target'>GByte</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>long-displayName</td><td class='target'>Gb</td><td class='target'>gigabits</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Gb</td><td class='target'>{0} gigabit</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} gigabits</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Gb</td><td class='target'>Gbit</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megabyte' href='#megabyte'>megabyte</a></td><td class='source'>long-displayName</td><td class='target'>MB</td><td class='target'>megabytes</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} MB</td><td class='target'>{0} megabyte</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} megabytes</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>MB</td><td class='target'>MByte</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megabit' href='#megabit'>megabit</a></td><td class='source'>long-displayName</td><td class='target'>Mb</td><td class='target'>megabits</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} Mb</td><td class='target'>{0} megabit</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} megabits</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>Mb</td><td class='target'>Mbit</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td><td class='source'>long-displayName</td><td class='target'>kB</td><td class='target'>kilobytes</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} kB</td><td class='target'>{0} kilobyte</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kilobytes</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kB</td><td class='target'>kByte</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source'>long-displayName</td><td class='target'>kb</td><td class='target'>kilobits</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} kb</td><td class='target'>{0} kilobit</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kilobits</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kb</td><td class='target'>kbit</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='byte' href='#byte'>byte</a></td><td class='source'>long-displayName</td><td class='target'>byte</td><td class='target'>bytes</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} byte</td><td class='target'>{0} bytes</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='bit' href='#bit'>bit</a></td><td class='source'>long-displayName</td><td class='target'>bit</td><td class='target'>bits</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} bit</td><td class='target'>{0} bits</td></tr>
+	<tr><td class='source' rowSpan='43'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='12'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='12'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🤵 -name</td><td class='target' rowSpan='2'>E10-1047</td><td class='target'>persuna cun smoking</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>🤵 –keywords</td><td class='target'>persuna<br>persuna cun smoking<br>smoking<br>spus</td></tr>
+	<tr><td class='source'>🤵‍♂ -name</td><td class='target' rowSpan='2'>E13-077</td><td class='target'>um cun smoking</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>🤵‍♂ –keywords</td><td class='target'>smoking<br>um<br>um cun smoking</td></tr>
+	<tr><td class='source'>🤵‍♀ -name</td><td class='target' rowSpan='2'>E13-078</td><td class='target'>dunna cun smoking</td></tr>
+	<tr><td class='source'>🤵‍♀ –keywords</td><td class='target'>dunna<br>dunna cun smoking<br>smoking</td></tr>
+	<tr><td class='source'>👰 -name</td><td class='target' rowSpan='2'>E10-557</td><td class='target'>persuna cun vel</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>👰 –keywords</td><td class='target'>maridaglia<br>nozzas<br>persuna<br>persuna cun vel<br>spusa<br>vel</td></tr>
+	<tr><td class='source'>👰‍♂ -name</td><td class='target' rowSpan='2'>E13-080</td><td class='target'>um cun vel</td><td class='target' rowSpan='4'>comprehensive</td></tr>
+	<tr><td class='source'>👰‍♂ –keywords</td><td class='target'>um<br>um cun vel<br>vel</td></tr>
+	<tr><td class='source'>👰‍♀ -name</td><td class='target' rowSpan='2'>E13-079</td><td class='target'>dunna cun vel</td></tr>
+	<tr><td class='source'>👰‍♀ –keywords</td><td class='target'>dunna<br>dunna cun vel<br>vel</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='14'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🐵 -name</td><td class='target' rowSpan='2'>E10-498</td><td class='target'>fatscha da schimgia</td><td class='target' rowSpan='31'>modern</td></tr>
+	<tr><td class='source'>🐵 –keywords</td><td class='target'>fatscha<br>schimgia</td></tr>
+	<tr><td class='source'>🐒 -name</td><td class='target' rowSpan='2'>E10-463</td><td class='target' rowSpan='2'>schimgia</td></tr>
+	<tr><td class='source'>🐒 –keywords</td></tr>
+	<tr><td class='source'>🦍 -name</td><td class='target' rowSpan='2'>E10-1109</td><td class='target'>gorilla</td></tr>
+	<tr><td class='source'>🦍 –keywords</td><td class='target'>gorilla<br>schimgia</td></tr>
+	<tr><td class='source'>🦧 -name</td><td class='target' rowSpan='2'>E12–030</td><td class='target'>orangutan</td></tr>
+	<tr><td class='source'>🦧 –keywords</td><td class='target'>orangutan<br>schimgia</td></tr>
+	<tr><td class='source'>🐶 -name</td><td class='target' rowSpan='2'>E10-499</td><td class='target'>fatscha da chaun</td></tr>
+	<tr><td class='source'>🐶 –keywords</td><td class='target'>animal da chasa<br>chaun<br>fatscha</td></tr>
+	<tr><td class='source'>🐕 -name</td><td class='target' rowSpan='2'>E10-466</td><td class='target'>chaun</td></tr>
+	<tr><td class='source'>🐕 –keywords</td><td class='target'>animal da chasa<br>chaun</td></tr>
+	<tr><td class='source'>🐩 -name</td><td class='target' rowSpan='2'>E10-486</td><td class='target'>pudel</td></tr>
+	<tr><td class='source'>🐩 –keywords</td><td class='target'>chaun<br>pudel</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='4'><a name='math' href='#math'>math</a></td><td class='source'>≥ -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>pli grond che u egual</td></tr>
+	<tr><td class='source'>¬ -name</td><td class='target'>negaziun</td></tr>
+	<tr><td class='source'>| -name</td><td class='target'>lingia verticala</td></tr>
+	<tr><td class='source'>~ -name</td><td class='target'>tilda</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Component' href='#Component'>Component</a></td><td class='source' rowSpan='10'><a name='skin-tone' href='#skin-tone'>skin-tone</a></td><td class='source'>🏻 -name</td><td class='target' rowSpan='2'>E10-440</td><td class='target'>pel clera</td></tr>
+	<tr><td class='source'>🏻 –keywords</td><td class='target'>colur da pel<br>pel clera<br>tip 1–2</td></tr>
+	<tr><td class='source'>🏼 -name</td><td class='target' rowSpan='2'>E10-441</td><td class='target'>pel mez clera</td></tr>
+	<tr><td class='source'>🏼 –keywords</td><td class='target'>colur da pel<br>pel mez clera<br>tip 3</td></tr>
+	<tr><td class='source'>🏽 -name</td><td class='target' rowSpan='2'>E10-442</td><td class='target'>pel media</td></tr>
+	<tr><td class='source'>🏽 –keywords</td><td class='target'>colur da pel<br>pel media<br>tip 4</td></tr>
+	<tr><td class='source'>🏾 -name</td><td class='target' rowSpan='2'>E10-443</td><td class='target'>pel mez stgira</td></tr>
+	<tr><td class='source'>🏾 –keywords</td><td class='target'>colur da pel<br>pel mez stgira<br>tip 5</td></tr>
+	<tr><td class='source'>🏿 -name</td><td class='target' rowSpan='2'>E10-444</td><td class='target'>pel stgira</td></tr>
+	<tr><td class='source'>🏿 –keywords</td><td class='target'>colur da pel<br>pel stgira<br>tip 6</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hair-style' href='#hair-style'>hair-style</a></td><td class='source'>🦰 -name</td><td class='target'>E11-033</td><td class='target'>chavels cotschens</td></tr>
+	<tr><td class='source'>🦱 -name</td><td class='target'>E11-034</td><td class='target'>chavels ritschads</td></tr>
+	<tr><td class='source'><a name='Typography' href='#Typography'>Typography</a></td><td class='source'><a name='Axis' href='#Axis'>Axis</a></td><td class='source'>ital</td><td class='target'>italic</td><td class='target'>cursiv</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='12'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td><td class='source' rowSpan='2'><a name='“And” List' href='#“And” List'>“And” List</a></td><td class='source'>2</td><td class='target' rowSpan='2'>{0}, {1}</td><td class='target' rowSpan='2'>{0} e {1}</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>end</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='“Or” List' href='#“Or” List'>“Or” List</a></td><td class='source'>2</td><td class='target'>{0} or {1}</td><td class='target' rowSpan='6'>{0} u {1}</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>end</td><td class='target'>{0}, or {1}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td><td class='source'>2</td><td class='target'>{0} or {1}</td></tr>
+	<tr><td class='source'>end</td><td class='target'>{0}, or {1}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td><td class='source'>2</td><td class='target'>{0} or {1}</td></tr>
+	<tr><td class='source'>end</td><td class='target'>{0}, or {1}</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Narrow Unit List' href='#Narrow Unit List'>Narrow Unit List</a></td><td class='source'>2</td><td class='target' rowSpan='4'>{0}, {1}</td><td class='target' rowSpan='4'>{0} {1}</td></tr>
+	<tr><td class='source'>start</td></tr>
+	<tr><td class='source'>middle</td></tr>
+	<tr><td class='source'>end</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target' rowSpan='2'>{0}?</td><td class='target'>{0} di</td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} dis</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
