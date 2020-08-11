@@ -1,0 +1,94 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Swedish: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Swedish: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p>Unit Inflections, Phase 1: The full goal is to add full case and gender support for formatted units. During phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales (those where we can get the grammatical structure).</p>
+<p>This chart shows grammatical information available for certain units. The rows contain forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value in the Plural column. That value is used with the localized unit pattern to form a formatted measure, such as “2.0 Stunden”. That formatted measure is in turn substituted into a <a target='minimal-case' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair</a> phrase, which is constructed to require the particular case form. For example, “… für {0} …” requires the placeholder to be in the accusative case in German.</p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair</i> phrase might not be correct for the row’s plural category.</li><li>In addition, translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations.</li><li>It can also be difficult for translators to supply minimal pair patterns that are natural for a variety of placeholders: for example, it is probably not typical to use the vocative with 3.2 meters!</li><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='33.0%'>one (1)</th><th class='target' width='33.0%'>other (2)</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='power2' href='#power2'>power2</a></td><td class='source' rowSpan='2'>nominative</td><td class='source'>common</td><td class='target' rowSpan='2'>kvadrat{0}</td><td class='target' rowSpan='2'>kvadrat{0}</td></tr>
+	<tr><td class='source'>neuter</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='33.0%'>one (1)</th><th class='target' width='33.0%'>other (2)</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='power3' href='#power3'>power3</a></td><td class='source' rowSpan='2'>nominative</td><td class='source'>common</td><td class='target' rowSpan='2'>kubik{0}</td><td class='target' rowSpan='2'>kubik{0}</td></tr>
+	<tr><td class='source'>neuter</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
