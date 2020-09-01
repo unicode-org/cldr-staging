@@ -139,18 +139,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
-							<dayPeriod type="am" draft="contributed">a. m.</dayPeriod>
 							<dayPeriod type="noon" draft="contributed">mediodía</dayPeriod>
-							<dayPeriod type="pm" draft="contributed">p. m.</dayPeriod>
 							<dayPeriod type="morning1" draft="contributed">madrugada</dayPeriod>
 							<dayPeriod type="morning2" draft="contributed">mañana</dayPeriod>
 							<dayPeriod type="evening1" draft="contributed">tarde</dayPeriod>
 							<dayPeriod type="night1" draft="contributed">noche</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
-							<dayPeriod type="am" draft="contributed">a. m.</dayPeriod>
 							<dayPeriod type="noon" draft="contributed">mediodía</dayPeriod>
-							<dayPeriod type="pm" draft="contributed">p. m.</dayPeriod>
 							<dayPeriod type="morning1" draft="contributed">madrugada</dayPeriod>
 							<dayPeriod type="morning2" draft="contributed">mañana</dayPeriod>
 							<dayPeriod type="evening1" draft="contributed">tarde</dayPeriod>
@@ -158,16 +154,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dayPeriodWidth>
 					</dayPeriodContext>
 					<dayPeriodContext type="stand-alone">
-						<dayPeriodWidth type="abbreviated">
-							<dayPeriod type="am" draft="contributed">a. m.</dayPeriod>
-							<dayPeriod type="pm" draft="contributed">p. m.</dayPeriod>
-						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="noon">m.</dayPeriod>
-						</dayPeriodWidth>
-						<dayPeriodWidth type="wide">
-							<dayPeriod type="am" draft="contributed">a. m.</dayPeriod>
-							<dayPeriod type="pm" draft="contributed">p. m.</dayPeriod>
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
@@ -286,9 +274,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">hace {0} días</relativeTimePattern>
 				</relativeTime>
 			</field>
-			<field type="dayperiod">
-				<displayName draft="contributed">a. m./p. m.</displayName>
-			</field>
 			<field type="second-short">
 				<displayName draft="contributed">seg.</displayName>
 				<relativeTime type="future">
@@ -406,6 +391,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one" draft="contributed">{0} seg.</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} seg.</unitPattern>
 				<perUnitPattern draft="contributed">{0}/seg.</perUnitPattern>
+			</unit>
+			<unit type="electric-volt">
+				<displayName draft="contributed">voltios</displayName>
+			</unit>
+			<unit type="power-watt">
+				<displayName draft="contributed">vatios</displayName>
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">
