@@ -2,6 +2,12 @@
 
 This directory contains derived data from the [CLDR](https://github.com/unicode-org/cldr.git) project.
 
+![maven](https://github.com/unicode-org/cldr-staging/workflows/maven/badge.svg)
+
+## Building production zips
+
+You can run `mvn package` in this directory to create production .zip files under `target/`
+
 ## LICENSE
 
 See [LICENSE.txt](./LICENSE.txt)
