@@ -1,0 +1,502 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Day Periods</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Day Periods</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Day Periods indicate roughly how the day is broken up in different languages. The following shows the ones that can be used as selectors in messages. The first column has a language group to collect languages together that are more likely to have similar day periods. For more information, see: <a href='http://unicode.org/repos/cldr/trunk/specs/ldml/tr35-dates.html#Day_Period_Rule_Sets'>Day Period Rules</a>. The latest release data for this chart is in <a href='http://unicode.org/cldr/latest/common/supplemental/dayPeriods.xml'>dayPeriods.xml</a>.<p><table>
+	<tr><th class='source'>Locale Group</th><th class='source'>Locale Name</th><th class='source'>Code</th><th class='target'>Start Time</th><th class='target'>Day Period Code</th><th class='target'>Example</th></tr>
+	<tr><td class='source' rowSpan='44'><a name='Germanic' href='#Germanic'>Germanic</a></td><td class='source' rowSpan='4'>Afrikaans</td><td class='source' rowSpan='4'><a name='af' href='#af'>af</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nag</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>oggend</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>middag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>aand</td></tr>
+	<tr><td class='source' rowSpan='5'>Danish</td><td class='source' rowSpan='5'><a name='da' href='#da'>da</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nat</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>morgen</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>formiddag</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>eftermiddag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>aften</td></tr>
+	<tr><td class='source' rowSpan='4'>Dutch</td><td class='source' rowSpan='4'><a name='nl' href='#nl'>nl</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nacht</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>ochtend</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>middag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>avond</td></tr>
+	<tr><td class='source' rowSpan='5'>English</td><td class='source' rowSpan='5'><a name='en' href='#en'>en</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>night</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>morning</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>afternoon</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>evening</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>night</td></tr>
+	<tr><td class='source' rowSpan='6'>German</td><td class='source' rowSpan='6'><a name='de' href='#de'>de</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>Nacht</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>Morgen</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>Vormittag</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>Mittag</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>Nachmittag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>Abend</td></tr>
+	<tr><td class='source' rowSpan='4'>Icelandic</td><td class='source' rowSpan='4'><a name='is' href='#is'>is</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nótt</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>morgunn</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>eftir hádegi</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>kvöld</td></tr>
+	<tr><td class='source' rowSpan='5'>Norwegian Bokmål</td><td class='source' rowSpan='5'><a name='nb' href='#nb'>nb</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>natt</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>morgen</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>formiddag</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ettermiddag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>kveld</td></tr>
+	<tr><td class='source' rowSpan='5'>Swedish</td><td class='source' rowSpan='5'><a name='sv' href='#sv'>sv</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>natt</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>morgon</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>förmiddag</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>eftermiddag</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>kväll</td></tr>
+	<tr><td class='source' rowSpan='6'>Swiss German</td><td class='source' rowSpan='6'><a name='gsw' href='#gsw'>gsw</a></td><td class='target' rowSpan='2'>00:00</td><td class='target'>midnight</td><td class='target' rowSpan='6'>missing</td></tr>
+	<tr><td class='target'>night1</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon2</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Celtic' href='#Celtic'>Celtic</a></td><td class='source' rowSpan='3'>Welsh</td><td class='source' rowSpan='3'><a name='cy' href='#cy'>cy</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target' rowSpan='3'>missing</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Romance' href='#Romance'>Romance</a></td><td class='source' rowSpan='6'>Catalan</td><td class='source' rowSpan='6'><a name='ca' href='#ca'>ca</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>matinada</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>matí</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>migdia</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>tarda</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>vespre</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>nit</td></tr>
+	<tr><td class='source' rowSpan='4'>French</td><td class='source' rowSpan='4'><a name='fr' href='#fr'>fr</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nuit</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>matin</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>après-midi</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>soir</td></tr>
+	<tr><td class='source' rowSpan='5'>Galician</td><td class='source' rowSpan='5'><a name='gl' href='#gl'>gl</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>madrugada</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>mañá</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>mediodía</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>evening1</td><td class='target'>tarde</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>noite</td></tr>
+	<tr><td class='source' rowSpan='4'>Italian</td><td class='source' rowSpan='4'><a name='it' href='#it'>it</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>notte</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>mattina</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>pomeriggio</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>sera</td></tr>
+	<tr><td class='source' rowSpan='4'>Portuguese</td><td class='source' rowSpan='4'><a name='pt' href='#pt'>pt</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>madrugada</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>manhã</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>tarde</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>noite</td></tr>
+	<tr><td class='source' rowSpan='5'>Romanian</td><td class='source' rowSpan='5'><a name='ro' href='#ro'>ro</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noapte</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>dimineață</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>după-amiază</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>seară</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>noapte</td></tr>
+	<tr><td class='source' rowSpan='4'>Spanish</td><td class='source' rowSpan='4'><a name='es' href='#es'>es</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>madrugada</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>mañana</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>evening1</td><td class='target'>tarde</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>noche</td></tr>
+	<tr><td class='source' rowSpan='3'>Spanish (Colombia)</td><td class='source' rowSpan='3'><a name='es_CO' href='#es_CO'>es_CO</a></td><td class='target'>00:00</td><td class='target'>morning2</td><td class='target' rowSpan='3'>missing</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td></tr>
+	<tr><td class='source' rowSpan='58'><a name='Slavic' href='#Slavic'>Slavic</a></td><td class='source' rowSpan='5'>Bosnian</td><td class='source' rowSpan='5'><a name='bs' href='#bs'>bs</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noć</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>jutro</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>popodne</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>veče</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>noć</td></tr>
+	<tr><td class='source' rowSpan='6'>Bulgarian</td><td class='source' rowSpan='6'><a name='bg' href='#bg'>bg</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>нощ</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>сутринта</td></tr>
+	<tr><td class='target'>11:00</td><td class='target'>morning2</td><td class='target'>на обяд</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon1</td><td class='target'>следобяд</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>вечерта</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>нощ</td></tr>
+	<tr><td class='source' rowSpan='5'>Croatian</td><td class='source' rowSpan='5'><a name='hr' href='#hr'>hr</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noć</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>jutro</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>popodne</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>večer</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>noć</td></tr>
+	<tr><td class='source' rowSpan='6'>Czech</td><td class='source' rowSpan='6'><a name='cs' href='#cs'>cs</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>ráno</td></tr>
+	<tr><td class='target'>09:00</td><td class='target'>morning2</td><td class='target'>dopoledne</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>odpoledne</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>večer</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='source' rowSpan='5'>Macedonian</td><td class='source' rowSpan='5'><a name='mk' href='#mk'>mk</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>по полноќ</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>наутро</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>претпладне</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>попладне</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>навечер</td></tr>
+	<tr><td class='source' rowSpan='6'>Polish</td><td class='source' rowSpan='6'><a name='pl' href='#pl'>pl</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>rano</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>przedpołudnie</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>popołudnie</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>wieczór</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='source' rowSpan='4'>Russian</td><td class='source' rowSpan='4'><a name='ru' href='#ru'>ru</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ночь</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>утро</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>день</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>вечер</td></tr>
+	<tr><td class='source' rowSpan='5'>Serbian</td><td class='source' rowSpan='5'><a name='sr' href='#sr'>sr</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ноћ</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>јутро</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>поподне</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>вече</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>ноћ</td></tr>
+	<tr><td class='source' rowSpan='6'>Slovak</td><td class='source' rowSpan='6'><a name='sk' href='#sk'>sk</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>ráno</td></tr>
+	<tr><td class='target'>09:00</td><td class='target'>morning2</td><td class='target'>dopoludnie</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>popoludnie</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>večer</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>noc</td></tr>
+	<tr><td class='source' rowSpan='6'>Slovenian</td><td class='source' rowSpan='6'><a name='sl' href='#sl'>sl</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>noč</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>jutro</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>dopoldne</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>popoldne</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>večer</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>noč</td></tr>
+	<tr><td class='source' rowSpan='4'>Ukrainian</td><td class='source' rowSpan='4'><a name='uk' href='#uk'>uk</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ніч</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>ранок</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>день</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>вечір</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Baltic' href='#Baltic'>Baltic</a></td><td class='source' rowSpan='5'>Latvian</td><td class='source' rowSpan='5'><a name='lv' href='#lv'>lv</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>nakts</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>rīts</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>pēcpusdiena</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>vakars</td></tr>
+	<tr><td class='target'>23:00</td><td class='target'>night1</td><td class='target'>nakts</td></tr>
+	<tr><td class='source' rowSpan='4'>Lithuanian</td><td class='source' rowSpan='4'><a name='lt' href='#lt'>lt</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>naktis</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>rytas</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>diena</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>vakaras</td></tr>
+	<tr><td class='source' rowSpan='54'><a name='Indic' href='#Indic'>Indic</a></td><td class='source' rowSpan='7'>Bangla</td><td class='source' rowSpan='7'><a name='bn' href='#bn'>bn</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>রাত্রি</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>ভোর</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>সকাল</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>দুপুর</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>afternoon2</td><td class='target'>বিকাল</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>সন্ধ্যা</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>রাত্রি</td></tr>
+	<tr><td class='source' rowSpan='7'>Chakma</td><td class='source' rowSpan='7'><a name='ccp' href='#ccp'>ccp</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target' rowSpan='7'>missing</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>afternoon2</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td></tr>
+	<tr><td class='source' rowSpan='5'>Gujarati</td><td class='source' rowSpan='5'><a name='gu' href='#gu'>gu</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>રાત</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>સવાર</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>બપોર</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>સાંજ</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>રાત</td></tr>
+	<tr><td class='source' rowSpan='5'>Hindi</td><td class='source' rowSpan='5'><a name='hi' href='#hi'>hi</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>रात</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>सुबह</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>दोपहर</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>शाम</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>रात</td></tr>
+	<tr><td class='source' rowSpan='7'>Marathi</td><td class='source' rowSpan='7'><a name='mr' href='#mr'>mr</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>रात्री</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>पहाटे</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>सकाळी</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>दुपारी</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>संध्याकाळी</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening2</td><td class='target'>missing</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>रात्री</td></tr>
+	<tr><td class='source' rowSpan='6'>Nepali</td><td class='source' rowSpan='6'><a name='ne' href='#ne'>ne</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>रात</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>विहान</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>अपरान्ह</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>afternoon2</td><td class='target'>साँझ</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>बेलुका</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>रात</td></tr>
+	<tr><td class='source' rowSpan='5'>Punjabi</td><td class='source' rowSpan='5'><a name='pa' href='#pa'>pa</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ਰਾਤ</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>ਸਵੇਰ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ਦੁਪਹਿਰ</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>ਸ਼ਾਮ</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>ਰਾਤ</td></tr>
+	<tr><td class='source' rowSpan='6'>Sinhala</td><td class='source' rowSpan='6'><a name='si' href='#si'>si</a></td><td class='target'>00:00</td><td class='target'>night2</td><td class='target'>මැදියමට පසු</td></tr>
+	<tr><td class='target'>01:00</td><td class='target'>morning1</td><td class='target'>පාන්දර</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>උදේ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>දවල්</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>evening1</td><td class='target'>හවස</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>night1</td><td class='target'>රෑ</td></tr>
+	<tr><td class='source' rowSpan='6'>Urdu</td><td class='source' rowSpan='6'><a name='ur' href='#ur'>ur</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>‫رات‬</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>‫صبح‬</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>‫دوپہر‬</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>afternoon2</td><td class='target'>‫سہ پہر‬</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>‫شام‬</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>‫رات‬</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Iranian' href='#Iranian'>Iranian</a></td><td class='source' rowSpan='6'>Persian</td><td class='source' rowSpan='6'><a name='fa' href='#fa'>fa</a></td><td class='target'>00:00</td><td class='target'>night2</td><td class='target'>missing</td></tr>
+	<tr><td class='target'>01:00</td><td class='target'>morning1</td><td class='target'>‫صبح‬</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning2</td><td class='target'>missing</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>‫بعد از ظهر‬</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>missing</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>‫شب‬</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Other Indo-European' href='#Other Indo-European'>Other Indo-European</a></td><td class='source' rowSpan='5'>Albanian</td><td class='source' rowSpan='5'><a name='sq' href='#sq'>sq</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>natë</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>mëngjes</td></tr>
+	<tr><td class='target'>09:00</td><td class='target'>morning2</td><td class='target'>paradite</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>pasdite</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>mbrëmje</td></tr>
+	<tr><td class='source' rowSpan='4'>Armenian</td><td class='source' rowSpan='4'><a name='hy' href='#hy'>hy</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>գիշեր</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>առավոտ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ցերեկ</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>երեկո</td></tr>
+	<tr><td class='source' rowSpan='5'>Greek</td><td class='source' rowSpan='5'><a name='el' href='#el'>el</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>βράδυ</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>πρωί</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>μεσημέρι</td></tr>
+	<tr><td class='target'>17:00</td><td class='target'>evening1</td><td class='target'>απόγευμα</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>βράδυ</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Caucasian' href='#Caucasian'>Caucasian</a></td><td class='source' rowSpan='5'>Georgian</td><td class='source' rowSpan='5'><a name='ka' href='#ka'>ka</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ღამე</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>დილა</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ნაშუადღევი</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>საღამო</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>ღამე</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Dravidian' href='#Dravidian'>Dravidian</a></td><td class='source' rowSpan='5'>Kannada</td><td class='source' rowSpan='5'><a name='kn' href='#kn'>kn</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ರಾತ್ರಿ</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>ಬೆಳಗ್ಗೆ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ಮಧ್ಯಾಹ್ನ</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>ಸಂಜೆ</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>ರಾತ್ರಿ</td></tr>
+	<tr><td class='source' rowSpan='8'>Malayalam</td><td class='source' rowSpan='8'><a name='ml' href='#ml'>ml</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>രാത്രി</td></tr>
+	<tr><td class='target'>03:00</td><td class='target'>morning1</td><td class='target'>പുലർച്ചെ</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>രാവിലെ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ഉച്ചയ്ക്ക്</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon2</td><td class='target'>ഉച്ചതിരിഞ്ഞ്</td></tr>
+	<tr><td class='target'>15:00</td><td class='target'>evening1</td><td class='target'>വൈകുന്നേരം</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening2</td><td class='target'>സന്ധ്യയ്ക്ക്</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>രാത്രി</td></tr>
+	<tr><td class='source' rowSpan='8'>Tamil</td><td class='source' rowSpan='8'><a name='ta' href='#ta'>ta</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>இரவு</td></tr>
+	<tr><td class='target'>03:00</td><td class='target'>morning1</td><td class='target'>அதிகாலை</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning2</td><td class='target'>காலை</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>மதியம்</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon2</td><td class='target'>பிற்பகல்</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>மாலை</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening2</td><td class='target'>அந்தி மாலை</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>இரவு</td></tr>
+	<tr><td class='source' rowSpan='5'>Telugu</td><td class='source' rowSpan='5'><a name='te' href='#te'>te</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>రాత్రి</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>ఉదయం</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>మధ్యాహ్నం</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>సాయంత్రం</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>రాత్రి</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Uralic' href='#Uralic'>Uralic</a></td><td class='source' rowSpan='5'>Estonian</td><td class='source' rowSpan='5'><a name='et' href='#et'>et</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>öö</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>hommik</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>pärastlõuna</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>õhtu</td></tr>
+	<tr><td class='target'>23:00</td><td class='target'>night1</td><td class='target'>öö</td></tr>
+	<tr><td class='source' rowSpan='6'>Finnish</td><td class='source' rowSpan='6'><a name='fi' href='#fi'>fi</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>yö</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>aamu</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>morning2</td><td class='target'>aamupäivä</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>iltapäivä</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>ilta</td></tr>
+	<tr><td class='target'>23:00</td><td class='target'>night1</td><td class='target'>yö</td></tr>
+	<tr><td class='source' rowSpan='7'>Hungarian</td><td class='source' rowSpan='7'><a name='hu' href='#hu'>hu</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>éjjel</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>night2</td><td class='target'>hajnal</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>reggel</td></tr>
+	<tr><td class='target'>09:00</td><td class='target'>morning2</td><td class='target'>délelőtt</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>délután</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>este</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>éjjel</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='CJK' href='#CJK'>CJK</a></td><td class='source' rowSpan='6'>Cantonese</td><td class='source' rowSpan='6'><a name='yue' href='#yue'>yue</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target' rowSpan='6'>missing</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td></tr>
+	<tr><td class='target'>08:00</td><td class='target'>morning2</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='source' rowSpan='6'>Chinese</td><td class='source' rowSpan='6'><a name='zh' href='#zh'>zh</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>凌晨</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>早上</td></tr>
+	<tr><td class='target'>08:00</td><td class='target'>morning2</td><td class='target'>上午</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>中午</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>下午</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>晚上</td></tr>
+	<tr><td class='source' rowSpan='6'>Japanese</td><td class='source' rowSpan='6'><a name='ja' href='#ja'>ja</a></td><td class='target'>00:00</td><td class='target'>night2</td><td class='target'>夜中</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>朝</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>昼</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>夕方</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>夜</td></tr>
+	<tr><td class='target'>23:00</td><td class='target'>night2</td><td class='target'>夜中</td></tr>
+	<tr><td class='source' rowSpan='6'>Korean</td><td class='source' rowSpan='6'><a name='ko' href='#ko'>ko</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>밤</td></tr>
+	<tr><td class='target'>03:00</td><td class='target'>morning1</td><td class='target'>새벽</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>오전</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>오후</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>저녁</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>밤</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Sino-Tibetan' href='#Sino-Tibetan'>Sino-Tibetan</a></td><td class='source' rowSpan='4'>Burmese</td><td class='source' rowSpan='4'><a name='my' href='#my'>my</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>နံနက်</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>နေ့လည်</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>ညနေ</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>ည</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Tai' href='#Tai'>Tai</a></td><td class='source' rowSpan='5'>Lao</td><td class='source' rowSpan='5'><a name='lo' href='#lo'>lo</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>​ກາງ​ຄືນ</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning1</td><td class='target'>​ເຊົ້າ</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ສວຍ</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>ແລງ</td></tr>
+	<tr><td class='target'>20:00</td><td class='target'>night1</td><td class='target'>​ກາງ​ຄືນ</td></tr>
+	<tr><td class='source' rowSpan='7'>Thai</td><td class='source' rowSpan='7'><a name='th' href='#th'>th</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>กลางคืน</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>เช้า</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>เที่ยง</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>บ่าย</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>เย็น</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening2</td><td class='target'>ค่ำ</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>กลางคืน</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Austronesian' href='#Austronesian'>Austronesian</a></td><td class='source' rowSpan='5'>Filipino</td><td class='source' rowSpan='5'><a name='fil' href='#fil'>fil</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>madaling-araw</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>umaga</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>tanghali</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>hapon</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>night1</td><td class='target'>gabi</td></tr>
+	<tr><td class='source' rowSpan='4'>Indonesian</td><td class='source' rowSpan='4'><a name='id' href='#id'>id</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>pagi</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>afternoon1</td><td class='target'>siang</td></tr>
+	<tr><td class='target'>15:00</td><td class='target'>evening1</td><td class='target'>sore</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>night1</td><td class='target'>malam</td></tr>
+	<tr><td class='source' rowSpan='5'>Malay</td><td class='source' rowSpan='5'><a name='ms' href='#ms'>ms</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>tengah malam</td></tr>
+	<tr><td class='target'>01:00</td><td class='target'>morning2</td><td class='target'>pagi</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>tengah hari</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>evening1</td><td class='target'>petang</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>malam</td></tr>
+	<tr><td class='source' rowSpan='28'><a name='Turkic' href='#Turkic'>Turkic</a></td><td class='source' rowSpan='6'>Azerbaijani</td><td class='source' rowSpan='6'><a name='az' href='#az'>az</a></td><td class='target'>00:00</td><td class='target'>night2</td><td class='target'>gecə</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>sübh</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>səhər</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>gündüz</td></tr>
+	<tr><td class='target'>17:00</td><td class='target'>evening1</td><td class='target'>axşamüstü</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>axşam</td></tr>
+	<tr><td class='source' rowSpan='5'>Kazakh</td><td class='source' rowSpan='5'><a name='kk' href='#kk'>kk</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>түн</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>таң</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>түс</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>кеш</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>түн</td></tr>
+	<tr><td class='source' rowSpan='5'>Kyrgyz</td><td class='source' rowSpan='5'><a name='ky' href='#ky'>ky</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>түн</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>эртең менен</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>түштөн кийин</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>кечкурун</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>түн</td></tr>
+	<tr><td class='source' rowSpan='7'>Turkish</td><td class='source' rowSpan='7'><a name='tr' href='#tr'>tr</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>gece</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>sabah</td></tr>
+	<tr><td class='target'>11:00</td><td class='target'>morning2</td><td class='target'>öğleden önce</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>öğleden sonra</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>afternoon2</td><td class='target'>akşamüstü</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>akşam</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>gece</td></tr>
+	<tr><td class='source' rowSpan='5'>Uzbek</td><td class='source' rowSpan='5'><a name='uz' href='#uz'>uz</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>tun</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>ertalab</td></tr>
+	<tr><td class='target'>11:00</td><td class='target'>afternoon1</td><td class='target'>kunduzi</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>kechqurun</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>tun</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Afro-Asiatic' href='#Afro-Asiatic'>Afro-Asiatic</a></td><td class='source' rowSpan='4'>Amharic</td><td class='source' rowSpan='4'><a name='am' href='#am'>am</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>ሌሊት</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>ጥዋት</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>ከሰዓት በኋላ</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>ማታ</td></tr>
+	<tr><td class='source' rowSpan='7'>Arabic</td><td class='source' rowSpan='7'><a name='ar' href='#ar'>ar</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>‫منتصف الليل‬</td></tr>
+	<tr><td class='target'>01:00</td><td class='target'>night2</td><td class='target'>‫ليلا‬</td></tr>
+	<tr><td class='target'>03:00</td><td class='target'>morning1</td><td class='target'>‫فجرا‬</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>‫صباحا‬</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>‫ظهرا‬</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>afternoon2</td><td class='target'>‫بعد الظهر‬</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>‫مساء‬</td></tr>
+	<tr><td class='source' rowSpan='7'>Hebrew</td><td class='source' rowSpan='7'><a name='he' href='#he'>he</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>‫לילה‬</td></tr>
+	<tr><td class='target'>03:00</td><td class='target'>night2</td><td class='target'>missing</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>‫בוקר‬</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>‫צהריים‬</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>afternoon2</td><td class='target'>‫אחר הצהריים‬</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>‫ערב‬</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td><td class='target'>‫לילה‬</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Austro-Asiatic' href='#Austro-Asiatic'>Austro-Asiatic</a></td><td class='source' rowSpan='4'>Khmer</td><td class='source' rowSpan='4'><a name='km' href='#km'>km</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>ព្រឹក</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>រសៀល</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>ល្ងាច</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>យប់</td></tr>
+	<tr><td class='source' rowSpan='5'>Vietnamese</td><td class='source' rowSpan='5'><a name='vi' href='#vi'>vi</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>đêm</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>sáng</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>chiều</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>tối</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>đêm</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Niger-Kordofanian' href='#Niger-Kordofanian'>Niger-Kordofanian</a></td><td class='source' rowSpan='7'>Ewe</td><td class='source' rowSpan='7'><a name='ee' href='#ee'>ee</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target' rowSpan='7'>missing</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td></tr>
+	<tr><td class='target'>05:00</td><td class='target'>morning2</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon2</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td></tr>
+	<tr><td class='source' rowSpan='6'>Swahili</td><td class='source' rowSpan='6'><a name='sw' href='#sw'>sw</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>usiku</td></tr>
+	<tr><td class='target'>04:00</td><td class='target'>morning1</td><td class='target'>alfajiri</td></tr>
+	<tr><td class='target'>07:00</td><td class='target'>morning2</td><td class='target'>asubuhi</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>mchana</td></tr>
+	<tr><td class='target'>16:00</td><td class='target'>evening1</td><td class='target'>jioni</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>usiku</td></tr>
+	<tr><td class='source' rowSpan='5'>Zulu</td><td class='source' rowSpan='5'><a name='zu' href='#zu'>zu</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>ntathakusa</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>ekuseni</td></tr>
+	<tr><td class='target'>10:00</td><td class='target'>afternoon1</td><td class='target'>emini</td></tr>
+	<tr><td class='target'>13:00</td><td class='target'>evening1</td><td class='target'>ntambama</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>night1</td><td class='target'>ebusuku</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Americas' href='#Americas'>Americas</a></td><td class='source' rowSpan='2'>Cherokee</td><td class='source' rowSpan='2'><a name='chr' href='#chr'>chr</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target' rowSpan='2'>missing</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Other' href='#Other'>Other</a></td><td class='source' rowSpan='6'>Basque</td><td class='source' rowSpan='6'><a name='eu' href='#eu'>eu</a></td><td class='target'>00:00</td><td class='target'>morning1</td><td class='target'>goizaldea</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning2</td><td class='target'>goiza</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>eguerdia</td></tr>
+	<tr><td class='target'>14:00</td><td class='target'>afternoon2</td><td class='target'>arratsaldea</td></tr>
+	<tr><td class='target'>19:00</td><td class='target'>evening1</td><td class='target'>iluntzea</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>gaua</td></tr>
+	<tr><td class='source' rowSpan='5'>Ligurian</td><td class='source' rowSpan='5'><a name='lij' href='#lij'>lij</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target' rowSpan='5'>missing</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td></tr>
+	<tr><td class='target'>22:00</td><td class='target'>night1</td></tr>
+	<tr><td class='source' rowSpan='5'>Mongolian</td><td class='source' rowSpan='5'><a name='mn' href='#mn'>mn</a></td><td class='target'>00:00</td><td class='target'>night1</td><td class='target'>шөнө</td></tr>
+	<tr><td class='target'>06:00</td><td class='target'>morning1</td><td class='target'>өглөө</td></tr>
+	<tr><td class='target'>12:00</td><td class='target'>afternoon1</td><td class='target'>өдөр</td></tr>
+	<tr><td class='target'>18:00</td><td class='target'>evening1</td><td class='target'>орой</td></tr>
+	<tr><td class='target'>21:00</td><td class='target'>night1</td><td class='target'>шөнө</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
