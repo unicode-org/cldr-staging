@@ -1,0 +1,255 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unit Preferences</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Unit Preferences</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Unit Preferences provide a way to get the units that are appropriate for a region, and usage, and threshold amounts. The <a href='unit_conversions.html' target='unit_conversions'>Unit Conversions</a> are used to handle conversion of units needed to use the preferences.This release adds additional structure for usage and threshold amount, allowing for more additions of regions, usages, thresholds, and units in future releases.</p><ul><li>The Base Unit shows the unit whose amount is to be compared to the ‘If ≥’ amount of the Result Unit.<li>The unit identifiers are internal, and would be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example.<li>The Usage shows the type of usage; <i>default</i> is used as a fallback no more specific match is found.<li>The Sample region  represents a set of regions if it has a superscript. See the table at the bottom. 001 (World) is the default if no more specific region is found.</li><li>The ‘If ≥’ column shows the thresholds: the first line for a given region where the input amount is greater or equal applies. For example, for 0.5km as input for [area, default, 001] would result in <i>hectare</i>.</li><li>Each numeric value is an exact rational. The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li>
+<li>The units are grouped and ordered by Quantity (which are based on the NIST quantities, see <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). Note that the quantities are informative.</li><li>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements, and how to fall back if a given usage or region is not found.</li>
+</ul><p><b>Warning:</b> Do not scrape this chart for production data.
+Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/master/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/master/common/testData/units/unitPreferencesTest.txt' target='common/testData/units/unitPreferencesTest.txt'>common/testData/units/unitPreferencesTest.txt</a>.</p>
+<table>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='12'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source' rowSpan='8'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='4'>001</td><td class='target' style='text-align:right' rowSpan='12'>1</td><td class='target'>square-kilometer</td><td class='target' rowSpan='12'></td><td class='target' rowSpan='12'>area</td></tr>
+	<tr><td class='target'>hectare</td></tr>
+	<tr><td class='target'>square-meter</td></tr>
+	<tr><td class='target'>square-centimeter</td></tr>
+	<tr><td class='source' rowSpan='4'>GB, …<sup>1</sup></td><td class='target'>square-mile</td></tr>
+	<tr><td class='target'>acre</td></tr>
+	<tr><td class='target'>square-foot</td></tr>
+	<tr><td class='target'>square-inch</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='geograph' href='#geograph'>geograph</a></td><td class='source'>001</td><td class='target'>square-kilometer</td></tr>
+	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>square-mile</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='land' href='#land'>land</a></td><td class='source'>001</td><td class='target'>hectare</td></tr>
+	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>acre</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='item-per-cubic-meter' href='#item-per-cubic-meter'>item-per-cubic-meter</a></td><td class='source'><a name='blood-glucose' href='#blood-glucose'>blood-glucose</a></td><td class='source'>AG, …<sup>1</sup></td><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target'>millimole-per-liter</td><td class='target' rowSpan='2'></td><td class='target' rowSpan='2'>concentration</td></tr>
+	<tr><td class='source'><a name='default' href='#default'>default</a></td><td class='source'>001</td><td class='target'>item-per-cubic-meter</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='3'><a name='cubic-meter-per-meter' href='#cubic-meter-per-meter'>cubic-meter-per-meter</a></td><td class='source'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='2'>001</td><td class='target' style='text-align:right' rowSpan='3'>1</td><td class='target' rowSpan='2'>liter-per-100-kilometer</td><td class='target' rowSpan='3'></td><td class='target' rowSpan='3'>consumption</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='vehicle-fuel' href='#vehicle-fuel'>vehicle-fuel</a></td></tr>
+	<tr><td class='source'>BR, …<sup>1</sup></td><td class='target'>liter-per-kilometer</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='4'><a name='meter-per-cubic-meter' href='#meter-per-cubic-meter'>meter-per-cubic-meter</a></td><td class='source'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='2'>001</td><td class='target' style='text-align:right' rowSpan='4'>1</td><td class='target' rowSpan='2'>kilometer-per-centiliter</td><td class='target' rowSpan='4'></td><td class='target' rowSpan='4'>consumption-inverse</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='vehicle-fuel' href='#vehicle-fuel'>vehicle-fuel</a></td></tr>
+	<tr><td class='source'>US</td><td class='target'>mile-per-gallon</td></tr>
+	<tr><td class='source'>CA, …<sup>1</sup></td><td class='target'>mile-per-gallon-imperial</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='9'><a name='second' href='#second'>second</a></td><td class='source' rowSpan='7'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='9'>001</td><td class='target' style='text-align:right' rowSpan='9'>1</td><td class='target'>day</td><td class='target' rowSpan='9'></td><td class='target' rowSpan='9'>duration</td></tr>
+	<tr><td class='target'>hour</td></tr>
+	<tr><td class='target'>minute</td></tr>
+	<tr><td class='target'>second</td></tr>
+	<tr><td class='target'>millisecond</td></tr>
+	<tr><td class='target'>microsecond</td></tr>
+	<tr><td class='target'>nanosecond</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='media' href='#media'>media</a></td><td class='target'>minute & second</td></tr>
+	<tr><td class='target'>second</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='3'><a name='kilogram-square-meter-per-square-second' href='#kilogram-square-meter-per-square-second'>kilogram-square-meter-per-square-second</a></td><td class='source'><a name='default' href='#default'>default</a></td><td class='source'>001</td><td class='target' style='text-align:right' rowSpan='3'>1</td><td class='target'>kilowatt-hour</td><td class='target' rowSpan='3'></td><td class='target' rowSpan='3'>energy</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='food' href='#food'>food</a></td><td class='source'>US</td><td class='target'>foodcalorie</td></tr>
+	<tr><td class='source'>001</td><td class='target'>kilocalorie</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='39'><a name='meter' href='#meter'>meter</a></td><td class='source' rowSpan='6'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='3'>001</td><td class='target' style='text-align:right' rowSpan='10'>1</td><td class='target'>kilometer</td><td class='target' rowSpan='17'></td><td class='target' rowSpan='39'>length</td></tr>
+	<tr><td class='target'>meter</td></tr>
+	<tr><td class='target'>centimeter</td></tr>
+	<tr><td class='source' rowSpan='3'>GB, …<sup>1</sup></td><td class='target'>mile</td></tr>
+	<tr><td class='target'>foot</td></tr>
+	<tr><td class='target'>inch</td></tr>
+	<tr><td class='source'><a name='focal-length' href='#focal-length'>focal-length</a></td><td class='source' rowSpan='2'>001</td><td class='target'>millimeter</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person' href='#person'>person</a></td><td class='target'>centimeter</td></tr>
+	<tr><td class='source'>CA, …<sup>2</sup></td><td class='target'>inch</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='person-height' href='#person-height'>person-height</a></td><td class='source'>001</td><td class='target'>centimeter</td></tr>
+	<tr><td class='source' rowSpan='2'>CA, …<sup>2</sup></td><td class='target' style='text-align:right'>3</td><td class='target'>foot & inch</td></tr>
+	<tr><td class='target' style='text-align:right' rowSpan='5'>1</td><td class='target'>inch</td></tr>
+	<tr><td class='source'>AT, …<sup>1</sup></td><td class='target'>meter & centimeter</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='rainfall' href='#rainfall'>rainfall</a></td><td class='source'>BR</td><td class='target'>centimeter</td></tr>
+	<tr><td class='source'>US</td><td class='target'>inch</td></tr>
+	<tr><td class='source' rowSpan='4'>001</td><td class='target'>millimeter</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='road' href='#road'>road</a></td><td class='target' style='text-align:right'>0.9</td><td class='target'>kilometer</td></tr>
+	<tr><td class='target' style='text-align:right'>300</td><td class='target' rowSpan='2'>meter</td><td class='target'>precision-increment/50</td></tr>
+	<tr><td class='target' style='text-align:right'>1</td><td class='target'>precision-increment/10</td></tr>
+	<tr><td class='source' rowSpan='3'>US</td><td class='target' style='text-align:right'>0.5</td><td class='target'>mile</td><td class='target'></td></tr>
+	<tr><td class='target' style='text-align:right'>100</td><td class='target' rowSpan='2'>foot</td><td class='target'>precision-increment/50</td></tr>
+	<tr><td class='target' style='text-align:right'>1</td><td class='target'>precision-increment/10</td></tr>
+	<tr><td class='source' rowSpan='3'>GB</td><td class='target' style='text-align:right'>0.5</td><td class='target'>mile</td><td class='target'></td></tr>
+	<tr><td class='target' style='text-align:right'>100</td><td class='target' rowSpan='2'>yard</td><td class='target'>precision-increment/50</td></tr>
+	<tr><td class='target' style='text-align:right' rowSpan='3'>1</td><td class='target' rowSpan='3'></td></tr>
+	<tr><td class='source' rowSpan='4'>SE</td><td class='target'>mile-scandinavian</td></tr>
+	<tr><td class='target'>kilometer</td></tr>
+	<tr><td class='target' style='text-align:right'>300</td><td class='target' rowSpan='2'>meter</td><td class='target'>precision-increment/50</td></tr>
+	<tr><td class='target' style='text-align:right' rowSpan='6'>1</td><td class='target'>precision-increment/10</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='snowfall' href='#snowfall'>snowfall</a></td><td class='source'>001</td><td class='target'>centimeter</td><td class='target' rowSpan='10'></td></tr>
+	<tr><td class='source'>US</td><td class='target'>inch</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='vehicle' href='#vehicle'>vehicle</a></td><td class='source'>GB, …<sup>1</sup></td><td class='target'>foot & inch</td></tr>
+	<tr><td class='source'>001</td><td class='target'>meter</td></tr>
+	<tr><td class='source'>MX</td><td class='target'>meter & centimeter</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='visiblty' href='#visiblty'>visiblty</a></td><td class='source' rowSpan='2'>001</td><td class='target' style='text-align:right'>0.1</td><td class='target'>kilometer</td></tr>
+	<tr><td class='target' style='text-align:right' rowSpan='4'>1</td><td class='target' rowSpan='2'>meter</td></tr>
+	<tr><td class='source'>DE, …<sup>1</sup></td></tr>
+	<tr><td class='source' rowSpan='2'>GB, …<sup>1</sup></td><td class='target'>mile</td></tr>
+	<tr><td class='target'>foot</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='16'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source' rowSpan='8'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='5'>001</td><td class='target' style='text-align:right' rowSpan='16'>1</td><td class='target'>metric-ton</td><td class='target' rowSpan='16'></td><td class='target' rowSpan='16'>mass</td></tr>
+	<tr><td class='target'>kilogram</td></tr>
+	<tr><td class='target'>gram</td></tr>
+	<tr><td class='target'>milligram</td></tr>
+	<tr><td class='target'>microgram</td></tr>
+	<tr><td class='source' rowSpan='3'>GB, …<sup>1</sup></td><td class='target'>ton</td></tr>
+	<tr><td class='target'>pound</td></tr>
+	<tr><td class='target'>ounce</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='person' href='#person'>person</a></td><td class='source' rowSpan='2'>001</td><td class='target'>kilogram</td></tr>
+	<tr><td class='target'>gram</td></tr>
+	<tr><td class='source'>DZ, …<sup>1</sup></td><td class='target'>kilogram & gram</td></tr>
+	<tr><td class='source' rowSpan='2'>US</td><td class='target'>pound</td></tr>
+	<tr><td class='target'>pound & ounce</td></tr>
+	<tr><td class='source' rowSpan='2'>GB</td><td class='target'>stone & pound</td></tr>
+	<tr><td class='target' rowSpan='2'>pound & ounce</td></tr>
+	<tr><td class='source'>HK</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='kilogram-per-cubic-meter' href='#kilogram-per-cubic-meter'>kilogram-per-cubic-meter</a></td><td class='source'><a name='blood-glucose' href='#blood-glucose'>blood-glucose</a></td><td class='source' rowSpan='2'>001</td><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target'>milligram-per-deciliter</td><td class='target' rowSpan='2'></td><td class='target' rowSpan='2'>mass-density</td></tr>
+	<tr><td class='source'><a name='default' href='#default'>default</a></td><td class='target'>kilogram-per-cubic-meter</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='7'><a name='kilogram-square-meter-per-cubic-second' href='#kilogram-square-meter-per-cubic-second'>kilogram-square-meter-per-cubic-second</a></td><td class='source' rowSpan='5'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='6'>001</td><td class='target' style='text-align:right' rowSpan='7'>1</td><td class='target'>gigawatt</td><td class='target' rowSpan='7'></td><td class='target' rowSpan='7'>power</td></tr>
+	<tr><td class='target'>megawatt</td></tr>
+	<tr><td class='target'>kilowatt</td></tr>
+	<tr><td class='target'>watt</td></tr>
+	<tr><td class='target'>milliwatt</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='engine' href='#engine'>engine</a></td><td class='target'>kilowatt</td></tr>
+	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>horsepower</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='7'><a name='kilogram-per-meter-square-second' href='#kilogram-per-meter-square-second'>kilogram-per-meter-square-second</a></td><td class='source' rowSpan='4'><a name='baromtrc' href='#baromtrc'>baromtrc</a></td><td class='source'>001</td><td class='target' style='text-align:right' rowSpan='7'>1</td><td class='target'>hectopascal</td><td class='target' rowSpan='7'></td><td class='target' rowSpan='7'>pressure</td></tr>
+	<tr><td class='source'>IN, …<sup>1</sup></td><td class='target'>inch-ofhg</td></tr>
+	<tr><td class='source'>BR, …<sup>2</sup></td><td class='target'>millibar</td></tr>
+	<tr><td class='source'>MX, …<sup>1</sup></td><td class='target'>millimeter-ofhg</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='2'>001</td><td class='target'>megapascal</td></tr>
+	<tr><td class='target'>pascal</td></tr>
+	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>pound-force-per-square-inch</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source' rowSpan='2'><a name='default' href='#default'>default</a></td><td class='source'>001</td><td class='target' style='text-align:right' rowSpan='5'>1</td><td class='target'>kilometer-per-hour</td><td class='target' rowSpan='5'></td><td class='target' rowSpan='5'>speed</td></tr>
+	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>mile-per-hour</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='wind' href='#wind'>wind</a></td><td class='source'>001</td><td class='target'>kilometer-per-hour</td></tr>
+	<tr><td class='source'>FI, …<sup>1</sup></td><td class='target'>meter-per-second</td></tr>
+	<tr><td class='source'>US</td><td class='target'>mile-per-hour</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='4'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source' rowSpan='2'><a name='default' href='#default'>default</a></td><td class='source'>001</td><td class='target' style='text-align:right' rowSpan='4'>1</td><td class='target'>celsius</td><td class='target' rowSpan='4'></td><td class='target' rowSpan='4'>temperature</td></tr>
+	<tr><td class='source'>US</td><td class='target'>fahrenheit</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='weather' href='#weather'>weather</a></td><td class='source'>001</td><td class='target'>celsius</td></tr>
+	<tr><td class='source'>BS, …<sup>1</sup></td><td class='target'>fahrenheit</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='18'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source' rowSpan='4'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='2'>001</td><td class='target' style='text-align:right' rowSpan='18'>1</td><td class='target'>cubic-meter</td><td class='target' rowSpan='18'></td><td class='target' rowSpan='18'>volume</td></tr>
+	<tr><td class='target'>cubic-centimeter</td></tr>
+	<tr><td class='source' rowSpan='2'>GB, …<sup>1</sup></td><td class='target'>cubic-foot</td></tr>
+	<tr><td class='target'>cubic-inch</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='fluid' href='#fluid'>fluid</a></td><td class='source' rowSpan='2'>001</td><td class='target'>liter</td></tr>
+	<tr><td class='target'>milliliter</td></tr>
+	<tr><td class='source' rowSpan='7'>US</td><td class='target'>gallon</td></tr>
+	<tr><td class='target'>quart</td></tr>
+	<tr><td class='target'>pint</td></tr>
+	<tr><td class='target'>cup</td></tr>
+	<tr><td class='target'>fluid-ounce</td></tr>
+	<tr><td class='target'>tablespoon</td></tr>
+	<tr><td class='target'>teaspoon</td></tr>
+	<tr><td class='source' rowSpan='2'>GB</td><td class='target'>gallon-imperial</td></tr>
+	<tr><td class='target'>fluid-ounce-imperial</td></tr>
+	<tr><td class='source'><a name='oil' href='#oil'>oil</a></td><td class='source'>001</td><td class='target'>barrel</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='vehicle' href='#vehicle'>vehicle</a></td><td class='source'>US</td><td class='target'>gallon</td></tr>
+	<tr><td class='source'>001</td><td class='target'>liter</td></tr>
+	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='year' href='#year'>year</a></td><td class='source' rowSpan='2'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='5'>001</td><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target'>year</td><td class='target' rowSpan='5'></td><td class='target' rowSpan='5'>year-duration</td></tr>
+	<tr><td class='target'>month</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='person-age' href='#person-age'>person-age</a></td><td class='target' style='text-align:right'>2.5</td><td class='target'>year-person</td></tr>
+	<tr><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target'>year-person & month-person</td></tr>
+	<tr><td class='target'>month-person</td></tr>
+</table><br><h1>Region Sets</h1>
+<table>
+	<tr><th class='source'>Sample Region</th><th class='target'>Region Set</th></tr>
+	<tr><td class='source'><a name='AG, …<sup>1</sup>' href='#AG, …<sup>1</sup>'>AG, …<sup>1</sup></a></td><td class='source'><a name='AG, AI, AO, AU, BA, BG, BH, BM, BN, BW, BY, CA, CH, CM, CN, CZ, DK, DM, EE, FI, FJ, GB, GD, HK, HR, HU, IE, IM, IS, KE, KN, KW, KZ, LC, LI, LT, LU, LV, ME, MG, MK, MO, MS, MT, MU, MY, MZ, NA, NL, NO, NZ, OM, PG, RS, RU, SE, SG, SI, SK, TC, TO, UA, UG, VC, VG, VN, VU, ZA' href='#AG, AI, AO, AU, BA, BG, BH, BM, BN, BW, BY, CA, CH, CM, CN, CZ, DK, DM, EE, FI, FJ, GB, GD, HK, HR, HU, IE, IM, IS, KE, KN, KW, KZ, LC, LI, LT, LU, LV, ME, MG, MK, MO, MS, MT, MU, MY, MZ, NA, NL, NO, NZ, OM, PG, RS, RU, SE, SG, SI, SK, TC, TO, UA, UG, VC, VG, VN, VU, ZA'>AG, AI, AO, AU, BA, BG, BH, BM, BN, BW, BY, CA, CH, CM, CN, CZ, DK, DM, EE, FI, FJ, GB, GD, HK, HR, HU, IE, IM, IS, KE, KN, KW, KZ, LC, LI, LT, LU, LV, ME, MG, MK, MO, MS, MT, MU, MY, MZ, NA, NL, NO, NZ, OM, PG, RS, RU, SE, SG, SI, SK, TC, TO, UA, UG, VC, VG, VN, VU, ZA</a></td></tr>
+	<tr><td class='source'><a name='AT, …<sup>1</sup>' href='#AT, …<sup>1</sup>'>AT, …<sup>1</sup></a></td><td class='source'><a name='AT, BE, BR, CN, DE, DK, DZ, EG, ES, FR, HK, ID, IL, IT, JO, MX, MY, NL, NO, PL, PT, RU, SA, SE, TR, VN' href='#AT, BE, BR, CN, DE, DK, DZ, EG, ES, FR, HK, ID, IL, IT, JO, MX, MY, NL, NO, PL, PT, RU, SA, SE, TR, VN'>AT, BE, BR, CN, DE, DK, DZ, EG, ES, FR, HK, ID, IL, IT, JO, MX, MY, NL, NO, PL, PT, RU, SA, SE, TR, VN</a></td></tr>
+	<tr><td class='source'><a name='BR, …<sup>1</sup>' href='#BR, …<sup>1</sup>'>BR, …<sup>1</sup></a></td><td class='source'><a name='BR, IT, JP, KR, MX, MY, NL, TH, TR' href='#BR, IT, JP, KR, MX, MY, NL, TH, TR'>BR, IT, JP, KR, MX, MY, NL, TH, TR</a></td></tr>
+	<tr><td class='source'><a name='BR, …<sup>2</sup>' href='#BR, …<sup>2</sup>'>BR, …<sup>2</sup></a></td><td class='source'><a name='BR, EG, GB, IL, TH' href='#BR, EG, GB, IL, TH'>BR, EG, GB, IL, TH</a></td></tr>
+	<tr><td class='source'><a name='BS, …<sup>1</sup>' href='#BS, …<sup>1</sup>'>BS, …<sup>1</sup></a></td><td class='source'><a name='BS, BZ, KY, PR, PW, US' href='#BS, BZ, KY, PR, PW, US'>BS, BZ, KY, PR, PW, US</a></td></tr>
+	<tr><td class='source'><a name='CA, …<sup>1</sup>' href='#CA, …<sup>1</sup>'>CA, …<sup>1</sup></a></td><td class='source'><a name='CA, GB' href='#CA, GB'>CA, GB</a></td></tr>
+	<tr><td class='source'><a name='CA, …<sup>2</sup>' href='#CA, …<sup>2</sup>'>CA, …<sup>2</sup></a></td><td class='source'><a name='CA, GB, IN, US' href='#CA, GB, IN, US'>CA, GB, IN, US</a></td></tr>
+	<tr><td class='source'><a name='DE, …<sup>1</sup>' href='#DE, …<sup>1</sup>'>DE, …<sup>1</sup></a></td><td class='source'><a name='DE, NL' href='#DE, NL'>DE, NL</a></td></tr>
+	<tr><td class='source'><a name='DZ, …<sup>1</sup>' href='#DZ, …<sup>1</sup>'>DZ, …<sup>1</sup></a></td><td class='source'><a name='DZ, EG, ES, JO, SA' href='#DZ, EG, ES, JO, SA'>DZ, EG, ES, JO, SA</a></td></tr>
+	<tr><td class='source'><a name='FI, …<sup>1</sup>' href='#FI, …<sup>1</sup>'>FI, …<sup>1</sup></a></td><td class='source'><a name='FI, KR, NO, PL, RU, SE' href='#FI, KR, NO, PL, RU, SE'>FI, KR, NO, PL, RU, SE</a></td></tr>
+	<tr><td class='source'><a name='GB, …<sup>1</sup>' href='#GB, …<sup>1</sup>'>GB, …<sup>1</sup></a></td><td class='source'><a name='GB, US' href='#GB, US'>GB, US</a></td></tr>
+	<tr><td class='source'><a name='IN, …<sup>1</sup>' href='#IN, …<sup>1</sup>'>IN, …<sup>1</sup></a></td><td class='source'><a name='IN, US' href='#IN, US'>IN, US</a></td></tr>
+	<tr><td class='source'><a name='MX, …<sup>1</sup>' href='#MX, …<sup>1</sup>'>MX, …<sup>1</sup></a></td><td class='source'><a name='MX, RU' href='#MX, RU'>MX, RU</a></td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
