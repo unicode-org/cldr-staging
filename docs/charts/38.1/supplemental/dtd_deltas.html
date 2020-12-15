@@ -1,0 +1,1339 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DTD Deltas</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">DTD Deltas</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Changes to the LDML DTDs over time.</p>
+<ul>
+<li>New elements or attributes are indicated with a + sign, and newly deprecated ones with a ⊖ sign.</li>
+<li>Element attributes are abbreviated as ⊕ where is no change to them, but the element is newly the child of another.</li>
+<li>LDML DTDs have augmented data:
+<ul><li>Attribute status is marked by: §d=distinguished, §v=value, or §m︎=metadata.</li>
+<li>Attribute value constraints are marked with ⟨…⟩ (for DTD constraints) and ⟪…⟫ (for augmented constraints, added in v35.0).</li>
+<li>Changes in status or constraints are shown with ➠, with identical sections shown with ….</li>
+<li>Newly ordered elements are indicated with ⇣; newly unordered with ⇟.</li>
+</ul></li></ul>
+<p>For more information, see the LDML spec.</p><table>
+	<tr><th class='source'>Version</th><th class='source'>Dtd Type</th><th class='source'>Intermediate Path</th><th class='target'>Element</th><th class='target'>Attributes</th></tr>
+	<tr><td class='source' rowSpan='18'><a name='38.0' href='#38.0'>38.0</a></td><td class='source' rowSpan='10'>ldml</td><td class='target'>​/characterLabels/</td><td class='target'>characterLabelPattern</td><td class='target'><div>type ⟪… strokes⟫➠⟪… strokes, subscript, superscript⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td><td class='target'>dateFormatItem</td><td class='target'><div>id ⟪…⟫➠⟪… Hmvvvv, … hmvvvv, …⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats/</td><td class='target'>unitPattern</td><td class='target'><div>+case §d ⟪literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, prepositional, sociative, vocative⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/minimalPairs/</td><td class='target'>+caseMinimalPairs</td><td class='target'><div>+case §d ⟪literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, prepositional, sociative, vocative⟫</div></td></tr>
+	<tr><td class='target'>+genderMinimalPairs</td><td class='target'><div>+gender §d ⟪literal/animate, common, feminine, inanimate, masculine, neuter, personal⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/symbols/</td><td class='target'>+approximatelySign</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/units​/unit/</td><td class='target'>+gender</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>type ⟪or/regex/10p-?[0-9]{1,2}||literal/per, …⟫➠⟪or/regex/10p-?[0-9]{1,2}||regex/1024p[1-8]||literal/per, …⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/units​/unitLength​/compoundUnit/</td><td class='target'>compoundUnitPattern1</td><td class='target'><div>+gender §d ⟪literal/animate, common, feminine, inanimate, masculine, neuter, personal⟫</div><div>+case §d ⟪literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, prepositional, sociative, vocative⟫</div></td></tr>
+	<tr><td class='target'>compoundUnitPattern</td><td class='target'><div>+case §d ⟪literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, prepositional, sociative, vocative⟫</div></td></tr>
+	<tr><td class='source' rowSpan='8'>supplementalData</td><td class='target'>​/grammaticalData/</td><td class='target'>+grammaticalDerivations</td><td class='target'><div>+locales §d ⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/grammaticalData​/grammaticalDerivations/</td><td class='target'>+deriveCompound</td><td class='target'><div>+feature §d ⟪set/literal/gender⟫</div><div>+structure §d ⟪set/literal/per, times, power, prefix⟫</div><div>+value §v ⟪set/literal/0, 1⟫</div></td></tr>
+	<tr><td class='target'>+deriveComponent</td><td class='target'><div>+feature §d ⟪set/literal/plural, case⟫</div><div>+structure §d ⟪set/literal/per, times, power, prefix⟫</div><div>+value0 §v ⟪set/literal/compound, zero, one, two, few, many, other, accusative, nominative⟫</div><div>+value1 §v ⟪set/literal/compound, zero, one, two, few, many, other, accusative, nominative⟫</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/grammaticalData​/grammaticalFeatures/</td><td class='target'>grammaticalCase</td><td class='target'><div>+scope §d ⟪set/literal/units⟫</div></td></tr>
+	<tr><td class='target'>grammaticalGender</td><td class='target'><div>+scope §d ⟪set/literal/units⟫</div></td></tr>
+	<tr><td class='target'>grammaticalDefiniteness</td><td class='target'><div>+scope §d ⟪set/literal/units⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>type ⟪or/validity/locale||literal/aa_SAAHO, … no_BOKMAL, no_NYNORSK, … cel-gaulish, i-default, i-enochian, i-mingo, zh-min⟫➠⟪or/validity/locale||literal/aa_saaho, … no_bokmal, no_nynorsk, … cel_gaulish, i_default, i_enochian, i_mingo, und_aaland, und_bokmal, und_hakka, und_lojban, und_nynorsk, und_saaho, und_xiang, zh_min, en_GB_oed, zh_cmn, zh_cmn_Hans, zh_cmn_Hant, zh_gan, zh_wuu, zh_yue⟫</div><div>replacement ⟪or/validity/locale||literal/en-x-i-default, nan-x-zh-min, see-x-i-mingo, und-x-i-enochian, xtg-x-cel-gaulish⟫➠⟪or/validity/locale||literal/en_x_i_default, nan_x_zh_min, see_x_i_mingo, und_x_i_enochian, xtg_x_cel_gaulish⟫</div></td></tr>
+	<tr><td class='target'>variantAlias</td><td class='target'><div>type ⟪or/validity/variant||literal/AALAND, POLYTONI⟫➠⟪or/validity/variant||literal/aaland, polytoni⟫</div></td></tr>
+	<tr><td class='source' rowSpan='25'><a name='37.0' href='#37.0'>37.0</a></td><td class='source' rowSpan='6'>ldml</td><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td><td class='target'>intervalFormatItem</td><td class='target'><div>id ⟪… yMd⟫➠⟪… yMd, GGGGGyM, GGGGGyMEd, GGGGGyMd, GyMMMM, GyMMMMEd, GyMMMMd⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/keys/</td><td class='target'>key</td><td class='target'><div>type ⟪bcp47/anykey⟫➠⟪or/bcp47/anykey||literal/t⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/subdivisions/</td><td class='target'>subdivision</td><td class='target'><div>type ⟪validity/subdivision⟫➠⟪or/validity/subdivision||literal/AS, AW, AX, BL, CP, CW, GF, GP, GU, HK, IC, MF, MO, MP, MQ, NC, PF, PM, PR, RE, SX, TA, TF, TW, UM, VI, WF, YT, itsd, no50⟫</div></td></tr>
+	<tr><td class='target'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>type ⟪literal/per, times⟫➠⟪or/regex/10p-?[0-9]{1,2}||literal/per, times, power2, power3⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/units​/unitLength​/compoundUnit/</td><td class='target'>+compoundUnitPattern1</td><td class='target'><div>+count §d ⟨0, 1, zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='target'>+unitPrefixPattern</td><td class='target'> </td></tr>
+	<tr><td class='source' rowSpan='19'>supplementalData</td><td class='target' rowSpan='4'>/</td><td class='target'>+unitConstants</td><td class='target'> </td></tr>
+	<tr><td class='target'>+unitQuantities</td><td class='target'> </td></tr>
+	<tr><td class='target'>+convertUnits</td><td class='target'> </td></tr>
+	<tr><td class='target'>+grammaticalData</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/convertUnits/</td><td class='target'>+convertUnit</td><td class='target'><div>+source §d ⟪regex/(100-)?[A-Za-z][-A-Za-z0-9]*⟫</div><div>+baseUnit §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+factor §v ⟪regex/[-+*/\._ 0-9a-zA-Z]+⟫</div><div>+offset §v ⟪regex/[-+*/\._ 0-9a-zA-Z]+⟫</div><div>+systems §v ⟪set/literal/ussystem, uksystem⟫</div></td></tr>
+	<tr><td class='target'>​/grammaticalData/</td><td class='target'>+grammaticalFeatures</td><td class='target'><div>+targets §d ⟪set/literal/nominal⟫</div><div>+locales §d ⟪set/validity/language⟫</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/grammaticalData​/grammaticalFeatures/</td><td class='target'>+grammaticalCase</td><td class='target'><div>+values §v ⟪set/literal/ablative, accusative, comitative, dative, ergative, genitive, instrumental, locative, locativecopulative, nominative, oblique, partitive, prepositional, sociative, vocative⟫</div></td></tr>
+	<tr><td class='target'>+grammaticalGender</td><td class='target'><div>+values §v ⟪set/literal/animate, common, feminine, inanimate, masculine, neuter, personal⟫</div></td></tr>
+	<tr><td class='target'>+grammaticalDefiniteness</td><td class='target'><div>+values §v ⟪set/literal/definite, indefinite, unspecified, construct⟫</div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>type ⟪… zul⟫➠⟪… zul, cel-gaulish, i-default, i-enochian, i-mingo, zh-min⟫</div><div>replacement ⟪validity/locale⟫➠⟪or/validity/locale||literal/en-x-i-default, nan-x-zh-min, see-x-i-mingo, und-x-i-enochian, xtg-x-cel-gaulish⟫</div></td></tr>
+	<tr><td class='target'>subdivisionAlias</td><td class='target'><div>replacement ⟪set/or/validity/region||validity/subdivision⟫➠⟪set/or/validity/region||validity/subdivision||literal/cnmn, cz663, no50⟫</div></td></tr>
+	<tr><td class='target'>variantAlias</td><td class='target'><div>replacement ⟪or/validity/variant||validity/region⟫➠⟪or/validity/variant||validity/region||literal/hy, hyw⟫</div></td></tr>
+	<tr><td class='target'>+unitAlias</td><td class='target'><div>+type §d ⟪validity/short-unit/deprecated⟫</div><div>+replacement §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+reason §v ⟨deprecated⟩</div></td></tr>
+	<tr><td class='target'>+usageAlias</td><td class='target'><div>+type §d ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+replacement §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+reason §v ⟨deprecated⟩</div></td></tr>
+	<tr><td class='target'>​/subdivisionContainment/</td><td class='target'>subgroup</td><td class='target'><div>contains ⟪set/validity/subdivision⟫➠⟪set/or/validity/subdivision||literal/itca, itnu, itor, itsd, itss, no01, no02, no03, no04, no05, no06, no07, no08, no09, no10, no11, no12, no14, no15, no18, no19, no20, no21, no22, no50⟫</div></td></tr>
+	<tr><td class='target'>​/unitConstants/</td><td class='target'>+unitConstant</td><td class='target'><div>+constant §d ⟪regex/[A-Za-z][_A-Za-z0-9]*⟫</div><div>+value §v ⟪regex/[-+*/\._ 0-9a-zA-Z]+⟫</div><div>+status §v ⟪literal/approximate, exact⟫</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData/</td><td class='target'>unitPreferences</td><td class='target'><div>category ⟪literal/area, concentr, consumption, duration, energy, length, mass, pressure, speed, temperature, volume⟫➠⟪regex/[a-z]+([-][a-z]+)*⟫</div><div>usage ⟪literal/baromtrc, blood-glucose, food, land-agricult, land-commercl, land-residntl, music-track, person, person-age, person-usage, rainfall, road, road-travel, snowfall, tv-program, vehicle, vehicle-fuel, visiblty, weather, wind⟫➠⟪regex/[a-z]+([-][a-z]+)*⟫</div><div>⊖scope</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData​/unitPreferences/</td><td class='target'>unitPreference⇣</td><td class='target'><div>+geq §d ⟪any⟫</div><div>+skeleton §v ⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/unitQuantities/</td><td class='target'>+unitQuantity</td><td class='target'><div>+baseUnit §d ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+quantity §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div><div>+status §v ⟪regex/simple⟫</div></td></tr>
+	<tr><td class='source'><a name='36.0' href='#36.0'>36.0</a></td><td class='source'>ldml</td><td class='target'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>type ⟪literal/per⟫➠⟪literal/per, times⟫</div></td></tr>
+	<tr><td class='source' rowSpan='130'><a name='35.0' href='#35.0'>35.0</a></td><td class='source' rowSpan='57'>ldml</td><td class='target'>​/annotations/</td><td class='target'>annotation</td><td class='target'><div>cp ➠⟪any⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characterLabels/</td><td class='target'>characterLabelPattern</td><td class='target'><div>type ➠⟪literal/all, category-list, compatibility, enclosed, extended, historic, miscellaneous, other, scripts, strokes⟫</div></td></tr>
+	<tr><td class='target'>characterLabel</td><td class='target'><div>type ➠⟪literal/activities, african_scripts, american_scripts, animal, animals_nature, arrows, body, box_drawing, braille, building, bullets_stars, consonantal_jamo, currency_symbols, dash_connector, digits, dingbats, divination_symbols, downwards_arrows, downwards_upwards_arrows, east_asian_scripts, emoji, european_scripts, female, flag, flags, food_drink, format, format_whitespace, full_width_form_variant, geometric_shapes, half_width_form_variant, han_characters, han_radicals, hanja, hanzi_simplified, hanzi_traditional, heart, historic_scripts, ideographic_desc_characters, japanese_kana, kanbun, kanji, keycap, leftwards_arrows, leftwards_rightwards_arrows, letterlike_symbols, limited_use, male, math_symbols, middle_eastern_scripts, miscellaneous, modern_scripts, modifier, musical_symbols, nature, nonspacing, numbers, objects, other, paired, person, phonetic_alphabet, pictographs, place, plant, punctuation, rightwards_arrows, sign_standard_symbols, small_form_variant, smiley, smileys_people, south_asian_scripts, southeast_asian_scripts, spacing, sport, symbols, technical_symbols, tone_marks, travel, travel_places, upwards_arrows, variant_forms, vocalic_jamo, weather, western_asian_scripts, whitespace⟫</div></td></tr>
+	<tr><td class='target'>​/characters​/parseLenients/</td><td class='target'>parseLenient</td><td class='target'><div>sample ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/collations/</td><td class='target'>collation</td><td class='target'><div>type ➠⟪or/bcp47/co||regex/private-.*||literal/digits-after⟫</div></td></tr>
+	<tr><td class='target'>​/contextTransforms/</td><td class='target'>contextTransformUsage</td><td class='target'><div>type ➠⟪literal/calendar-field, currencyName, day-format-except-narrow, day-standalone-except-narrow, era-abbr, era-name, keyValue, languages, month-format-except-narrow, month-standalone-except-narrow, number-spellout, relative, script, typographicNames⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars/</td><td class='target'>calendar</td><td class='target'><div>type ➠⟪bcp47/ca⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet​/cyclicNameContext​/cyclicNameWidth/</td><td class='target'>cyclicName</td><td class='target'><div>type ➠⟪range/1~60⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength/</td><td class='target'>dateFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>pattern</td><td class='target'><div>type ➠⟪literal/1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000, 100000000000, 1000000000000, 10000000000000, 100000000000000, approximately, atLeast, atMost, range, standard⟫</div><div>numbers ➠⟪literal/M=romanlow, d=hanidays, hanidec, hebr, y=jpanyear⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/appendItems/</td><td class='target'>appendItem</td><td class='target'><div>request ➠⟪literal/Day, Day-Of-Week, Era, Hour, Minute, Month, Quarter, Second, Timezone, Week, Year⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td><td class='target'>dateFormatItem</td><td class='target'><div>id ➠⟪literal/Bh, Bhm, Bhms, E, EBhm, EBhms, EEEEd, EHm, EHms, Ed, Ehm, Ehms, Gy, GyM, GyMMM, GyMMMEEEEd, GyMMMEd, GyMMMM, GyMMMMEd, GyMMMMd, GyMMMd, GyMd, H, HHmm, HHmmZ, HHmmss, Hm, HmZ, Hmm, Hms, Hmsv, Hmsvvvv, Hmv, M, MEEEEd, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEEEEd, MMMMEd, MMMMW, MMMMd, MMMMdd, MMMd, MMMdd, MMd, MMdd, Md, Mdd, UM, UMMM, UMMMd, UMd, d, h, hhmm, hhmmss, hm, hms, hmsv, hmsvvvv, hmv, mmss, ms, y, yM, yMEEEEd, yMEd, yMM, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMccccd, yMMMMd, yMMMd, yMMdd, yMd, yQ, yQQQ, yQQQQ, yw, yyyy, yyyyM, yyyyMEEEEd, yyyyMEd, yyyyMM, yyyyMMM, yyyyMMMEEEEd, yyyyMMMEd, yyyyMMMM, yyyyMMMMEd, yyyyMMMMccccd, yyyyMMMMd, yyyyMMMd, yyyyMMdd, yyyyMd, yyyyQQQ, yyyyQQQQ⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/dateTimeFormatLength/</td><td class='target'>dateTimeFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td><td class='target'>intervalFormatItem</td><td class='target'><div>id ➠⟪literal/Bh, Bhm, Gy, GyM, GyMEd, GyMMM, GyMMMEd, GyMMMd, GyMd, H, Hm, Hmv, Hv, M, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEd, MMMMd, MMMd, Md, d, h, hm, hmv, hv, y, yM, yMEd, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMd, yMMMd, yMd⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats​/intervalFormatItem/</td><td class='target'>greatestDifference</td><td class='target'><div>id ➠⟪literal/B, G, H, M, a, d, h, m, y⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods/</td><td class='target'>dayPeriodContext</td><td class='target'><div>type ➠⟪literal/format, stand-alone⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods​/dayPeriodContext​/dayPeriodWidth/</td><td class='target'>dayPeriod</td><td class='target'><div>type ➠⟪literal/afternoon1, afternoon2, am, evening1, evening2, midnight, morning1, morning2, night1, night2, noon, pm⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/eras​/eraNames/</td><td class='target'>era</td><td class='target'><div>type ➠⟪range/0~237⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>relative</td><td class='target'><div>type ➠⟪range/-2~3⟫</div></td></tr>
+	<tr><td class='target'>relativeTime</td><td class='target'><div>type ➠⟪literal/future, past⟫</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/timeFormats​/timeFormatLength/</td><td class='target'>timeFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/timeZoneNames/</td><td class='target'>zone</td><td class='target'><div>type ➠⟪bcp47/tz⟫</div></td></tr>
+	<tr><td class='target'>metazone</td><td class='target'><div>type ➠⟪metazone⟫</div></td></tr>
+	<tr><td class='target'>​/listPatterns/</td><td class='target'>listPattern</td><td class='target'><div>type ➠⟪literal/or, or-narrow, or-short, standard-narrow, standard-short, unit, unit-narrow, unit-short⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/codePatterns/</td><td class='target'>codePattern</td><td class='target'><div>type ➠⟪literal/language, script, territory⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/keys/</td><td class='target'>key</td><td class='target'><div>type ➠⟪bcp47/anykey⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/languages/</td><td class='target'>language</td><td class='target'><div>type ➠⟪validity/locale⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/scripts/</td><td class='target'>script</td><td class='target'><div>type ➠⟪validity/script⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/subdivisions/</td><td class='target'>subdivision</td><td class='target'><div>type ➠⟪validity/subdivision⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/territories/</td><td class='target'>territory</td><td class='target'><div>type ➠⟪validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/types/</td><td class='target'>type</td><td class='target'><div>key ➠⟪bcp47/anykey⟫</div><div>type ➠⟪bcp47/anyvalue⟫</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/variants/</td><td class='target'>variant</td><td class='target'><div>type ➠⟪validity/variant⟫</div></td></tr>
+	<tr><td class='target'>​/metadata​/casingData/</td><td class='target'>casingItem</td><td class='target'><div>type ➠⟪any⟫</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/numbers/</td><td class='target'>symbols</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>decimalFormats</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>scientificFormats</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>percentFormats</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>currencyFormats</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>miscPatterns</td><td class='target'><div>numberSystem ➠⟪bcp47/nu⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencies/</td><td class='target'>currency</td><td class='target'><div>type ➠⟪validity/currency⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats​/currencyFormatLength/</td><td class='target'>currencyFormat</td><td class='target'><div>type ➠⟪literal/accounting, standard⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats​/decimalFormatLength/</td><td class='target'>decimalFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/minimalPairs/</td><td class='target'>pluralMinimalPairs</td><td class='target'><div>count ➠⟪literal/few, many, one, other, two, zero⟫</div></td></tr>
+	<tr><td class='target'>ordinalMinimalPairs</td><td class='target'><div>ordinal ➠⟪literal/few, many, one, other, two, zero⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats​/percentFormatLength/</td><td class='target'>percentFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats​/scientificFormatLength/</td><td class='target'>scientificFormat</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target'>​/rbnf/</td><td class='target'>rulesetGrouping</td><td class='target'><div>type ➠⟪literal/NumberingSystemRules, OrdinalRules, SpelloutRules⟫</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping/</td><td class='target'>ruleset</td><td class='target'><div>type ➠⟪regex/(ord-M-)?[\-0-9a-z]+⟫</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping​/ruleset/</td><td class='target'>rbnfrule</td><td class='target'><div>value ➠⟪or/range/-1.0E20~1.0E20||literal/-x, 0, 0.x, NaN, -Inf, Inf, x,x, x.x⟫</div><div>radix ➠⟪literal/1,000, 100, 1000, 100000, 20⟫</div></td></tr>
+	<tr><td class='target'>​/segmentations/</td><td class='target'>segmentation</td><td class='target'><div>type ➠⟪literal/GraphemeClusterBreak, LineBreak, SentenceBreak, WordBreak⟫</div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation/</td><td class='target'>suppressions</td><td class='target'><div>type ➠⟪literal/standard⟫</div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/segmentRules/</td><td class='target'>rule</td><td class='target'><div>id ➠⟪range/0.0~9999.0⟫</div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/variables/</td><td class='target'>variable</td><td class='target'><div>id ➠⟪regex/\$[a-zA-Z0-9_]+⟫</div></td></tr>
+	<tr><td class='target'>​/typographicNames/</td><td class='target'>styleName</td><td class='target'><div>subtype ➠⟪literal/-12, 0, 1, 100, 112.5, 12, 125, 144, 150, 18, 200, 24, 300, 350, 380, 400, 50, 500, 600, 62.5, 700, 72, 75, 8, 800, 87.5, 900, 950⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/units/</td><td class='target'>unit</td><td class='target'><div>type ➠⟪validity/unit⟫</div></td></tr>
+	<tr><td class='target'>durationUnit</td><td class='target'><div>type ➠⟪literal/hm, hms, ms⟫</div></td></tr>
+	<tr><td class='target'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>type ➠⟪literal/per⟫</div></td></tr>
+	<tr><td class='source' rowSpan='61'>supplementalData</td><td class='target' rowSpan='2'>/</td><td class='target'>version</td><td class='target'><div>number ➠⟪any⟫</div><div>cldrVersion ➠⟪version⟫</div><div>unicodeVersion ➠⟪version⟫</div></td></tr>
+	<tr><td class='target'>dayPeriodRuleSet</td><td class='target'><div>type ➠⟪literal/selection⟫</div></td></tr>
+	<tr><td class='target'>​/calendarData/</td><td class='target'>calendar</td><td class='target'><div>type ➠⟪bcp47/ca⟫</div></td></tr>
+	<tr><td class='target'>​/calendarData​/calendar​/eras/</td><td class='target'>era</td><td class='target'><div>type ➠⟪range/0~250⟫</div><div>start ➠⟪time/yyyy-MM-dd⟫</div><div>end ➠⟪time/yyyy-MM-dd⟫</div></td></tr>
+	<tr><td class='target'>​/calendarPreferenceData/</td><td class='target'>calendarPreference</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div><div>ordering ➠⟪set/bcp47/ca⟫</div></td></tr>
+	<tr><td class='target'>​/characters​/character-fallback/</td><td class='target'>character</td><td class='target'><div>value ➠⟪any⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/codeMappings/</td><td class='target'>territoryCodes</td><td class='target'><div>type ➠⟪validity/region⟫</div><div>numeric ➠⟪range/1~999⟫</div><div>alpha3 ➠⟪regex/[A-Z]{3}⟫</div><div>fips10 ➠⟪regex/[A-Z]{2}⟫</div></td></tr>
+	<tr><td class='target'>currencyCodes</td><td class='target'><div>type ➠⟪validity/currency⟫</div><div>numeric ➠⟪range/1~999⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/coverageLevels/</td><td class='target'>coverageVariable</td><td class='target'><div>key ➠⟪any⟫</div><div>value ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>coverageLevel</td><td class='target'><div>inLanguage ➠⟪any⟫</div><div>inScript ➠⟪validity/script⟫</div><div>inTerritory ➠⟪any⟫</div><div>value ➠⟪literal/basic, core, minimal, moderate, modern, posix⟫</div><div>match ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/coverageLevels​/approvalRequirements/</td><td class='target'>approvalRequirement</td><td class='target'><div>votes ➠⟪any⟫</div><div>locales ➠⟪any⟫</div><div>paths ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/currencyData/</td><td class='target'>region</td><td class='target'><div>iso3166 ➠⟪validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/currencyData​/fractions/</td><td class='target'>info</td><td class='target'><div>iso4217 ➠⟪or/validity/currency||literal/DEFAULT⟫</div><div>digits ➠⟪range/0~5⟫</div><div>rounding ➠⟪range/0~5⟫</div><div>cashDigits ➠⟪range/0~100⟫</div><div>cashRounding ➠⟪literal/0, 5, 50⟫</div></td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>from ➠⟪time/yyyy-MM-dd⟫</div><div>to ➠⟪time/yyyy-MM-dd⟫</div><div>iso4217 ➠⟪validity/currency⟫</div></td></tr>
+	<tr><td class='target'>​/dayPeriodRuleSet/</td><td class='target'>dayPeriodRules</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target'>​/dayPeriodRuleSet​/dayPeriodRules/</td><td class='target'>dayPeriodRule</td><td class='target'><div>type ➠⟪literal/afternoon1, afternoon2, am, evening1, evening2, midnight, morning1, morning2, night1, night2, noon, pm⟫</div><div>at ➠⟪time/HH:mm⟫</div><div>after ➠⟪time/HH:mm⟫</div><div>before ➠⟪time/HH:mm⟫</div><div>from ➠⟪time/HH:mm⟫</div><div>to ➠⟪time/HH:mm⟫</div></td></tr>
+	<tr><td class='target'>​/gender/</td><td class='target'>personList</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target'>​/idValidity/</td><td class='target'>id</td><td class='target'><div>type ➠⟪literal/currency, language, region, script, subdivision, unit, variant⟫</div><div>idStatus ➠⟪literal/deprecated, macroregion, private_use, regular, reserved, special, unknown⟫</div></td></tr>
+	<tr><td class='target'>​/languageData/</td><td class='target'>language</td><td class='target'><div>type ➠⟪set/validity/language⟫</div><div>scripts ➠⟪set/validity/script⟫</div><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/languageGroups/</td><td class='target'>languageGroup</td><td class='target'><div>parent ➠⟪validity/language⟫</div></td></tr>
+	<tr><td class='target'>​/languageMatching/</td><td class='target'>languageMatches</td><td class='target'><div>type ➠⟪literal/written, written_new⟫</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/languageMatching​/languageMatches/</td><td class='target'>paradigmLocales</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target'>matchVariable</td><td class='target'><div>id ➠⟪regex/\$[a-zA-Z0-9_]+⟫</div><div>value ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>languageMatch</td><td class='target'><div>desired ➠⟪any/TODO⟫</div><div>supported ➠⟪any/TODO⟫</div><div>percent ➠⟪range/0~100⟫</div><div>distance ➠⟪range/0~100⟫</div></td></tr>
+	<tr><td class='target'>​/likelySubtags/</td><td class='target'>likelySubtag</td><td class='target'><div>from ➠⟪validity/locale⟫</div><div>to ➠⟪validity/locale⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurementData/</td><td class='target'>measurementSystem</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>paperSize</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/metadata/</td><td class='target'>defaultContent</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>type ➠⟪or/validity/locale||literal/aa_SAAHO, aar, abk, afr, aka, alb, amh, ara, arg, arm, art_lojban, asm, ava, ave, aym, aze, bak, bam, baq, bel, ben, bih, bis, bod, bos, bre, bul, bur, cat, ces, cha, che, chi, chu, chv, cor, cos, cre, cym, cze, dan, deu, div, dut, dzo, ell, eng, epo, est, eus, ewe, fao, fas, fij, fin, fra, fre, fry, ful, geo, ger, gla, gle, glg, glv, gre, grn, guj, hat, hau, hbs, heb, her, hin, hmo, hrv, hun, hye, i_ami, i_bnn, i_hak, i_klingon, i_lux, i_navajo, i_pwn, i_tao, i_tay, i_tsu, ibo, ice, ido, iii, iku, ile, ina, ind, ipk, isl, ita, jav, jpn, kal, kan, kas, kat, kau, kaz, khm, kik, kin, kir, kom, kon, kor, kua, kur, lao, lat, lav, lim, lin, lit, ltz, lub, lug, mac, mah, mal, mao, mar, may, mkd, mlg, mlt, mol, mon, mri, msa, mya, nau, nav, nbl, nde, ndo, nep, nld, nno, no_BOKMAL, no_NYNORSK, no_bok, no_nyn, nob, nor, nya, oci, oji, ori, orm, oss, pan, per, pli, pol, por, pus, que, roh, ron, rum, run, rus, sag, san, scc, scr, sgn_BE_FR, sgn_BE_NL, sgn_CH_DE, sin, slk, slo, slv, sme, smo, sna, snd, som, sot, spa, sqi, srd, srp, ssw, sun, swa, swe, tah, tam, tat, tel, tgk, tgl, tha, tib, tir, ton, tsn, tso, tuk, tur, twi, uig, ukr, urd, uzb, ven, vie, vol, wel, wln, wol, xho, yid, yor, zh_guoyu, zh_hakka, zh_min_nan, zh_xiang, zha, zho, zul⟫</div><div>replacement ➠⟪validity/locale⟫</div></td></tr>
+	<tr><td class='target'>scriptAlias</td><td class='target'><div>type ➠⟪validity/script⟫</div><div>replacement ➠⟪validity/script⟫</div></td></tr>
+	<tr><td class='target'>territoryAlias</td><td class='target'><div>type ➠⟪set/or/validity/region||regex/[0-9]{3}|[A-Z]{3}||literal/CT, DY, FQ, HV, JT, MI, NH, NQ, PC, PU, PZ, RH, UK, VD, WK⟫</div><div>replacement ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>subdivisionAlias</td><td class='target'><div>type ➠⟪validity/subdivision⟫</div><div>replacement ➠⟪set/or/validity/region||validity/subdivision⟫</div></td></tr>
+	<tr><td class='target'>variantAlias</td><td class='target'><div>type ➠⟪or/validity/variant||literal/AALAND, POLYTONI⟫</div><div>replacement ➠⟪or/validity/variant||validity/region⟫</div></td></tr>
+	<tr><td class='target'>zoneAlias</td><td class='target'><div>type ➠⟪or/bcp47/tz||literal/SystemV/AST4, SystemV/AST4ADT, SystemV/CST6, SystemV/CST6CDT, SystemV/EST5, SystemV/EST5EDT, SystemV/HST10, SystemV/MST7, SystemV/MST7MDT, SystemV/PST8, SystemV/PST8PDT, SystemV/YST9, SystemV/YST9YDT⟫</div><div>replacement ➠⟪bcp47/tz⟫</div></td></tr>
+	<tr><td class='target'>​/metadata​/suppress/</td><td class='target'>attributes</td><td class='target'><div>element ➠⟪any⟫</div><div>attribute ➠⟪any⟫</div><div>attributeValue ➠⟪any⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/validity/</td><td class='target'>variable</td><td class='target'><div>type ➠⟪any⟫</div><div>id ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>attributeValues</td><td class='target'><div>dtds ➠⟪any⟫</div><div>type ➠⟪any⟫</div><div>elements ➠⟪any⟫</div><div>attributes ➠⟪any⟫</div><div>order ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/metazoneInfo/</td><td class='target'>timezone</td><td class='target'><div>type ➠⟪bcp47/tz⟫</div></td></tr>
+	<tr><td class='target'>​/metazoneInfo​/timezone/</td><td class='target'>usesMetazone</td><td class='target'><div>from ➠⟪time/yyyy-MM-dd HH:mm⟫</div><div>to ➠⟪time/yyyy-MM-dd HH:mm⟫</div><div>mzone ➠⟪metazone⟫</div></td></tr>
+	<tr><td class='target'>​/numberingSystems/</td><td class='target'>numberingSystem</td><td class='target'><div>id ➠⟪bcp47/nu⟫</div><div>digits ➠⟪unicodeset/[\p{Nd}[\u3007\u4E00\u4E03\u4E09\u4E5D\u4E8C\u4E94\u516B\u516D\u56DB][\U0001E140-\U0001E149][\U0001E2F0-\U0001E2F9]]⟫</div><div>rules ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/parentLocales/</td><td class='target'>parentLocale</td><td class='target'><div>parent ➠⟪validity/locale⟫</div><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/plurals/</td><td class='target'>pluralRules</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target'>pluralRanges</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div></td></tr>
+	<tr><td class='target'>​/primaryZones/</td><td class='target'>primaryZone</td><td class='target'><div>iso3166 ➠⟪validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/references/</td><td class='target'>reference</td><td class='target'><div>type ➠⟪any⟫</div><div>uri ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/rgScope/</td><td class='target'>rgPath</td><td class='target'><div>path ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/subdivisionContainment/</td><td class='target'>subgroup</td><td class='target'><div>type ➠⟪or/validity/region||validity/subdivision⟫</div><div>contains ➠⟪set/validity/subdivision⟫</div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>group</td><td class='target'><div>type ➠⟪validity/region⟫</div><div>contains ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/territoryInfo/</td><td class='target'>territory</td><td class='target'><div>type ➠⟪validity/region⟫</div><div>gdp ➠⟪range/0~100000000000000⟫</div><div>literacyPercent ➠⟪range/0.0~100.0⟫</div><div>population ➠⟪range/0~10000000000⟫</div></td></tr>
+	<tr><td class='target'>​/territoryInfo​/territory/</td><td class='target'>languagePopulation</td><td class='target'><div>type ➠⟪validity/locale⟫</div><div>literacyPercent ➠⟪range/0~100⟫</div><div>writingPercent ➠⟪range/0~100⟫</div><div>populationPercent ➠⟪range/0.0~100.0⟫</div></td></tr>
+	<tr><td class='target'>​/timeData/</td><td class='target'>hours</td><td class='target'><div>allowed ➠⟪set/literal/H, h, K, k, hB, hb⟫</div><div>preferred ➠⟪literal/H, h⟫</div><div>regions ➠⟪set/or/validity/region||validity/locale⟫</div></td></tr>
+	<tr><td class='target'>​/timezoneData/</td><td class='target'>mapTimezones</td><td class='target'><div>type ➠⟪literal/metazones⟫</div><div>otherVersion ➠⟪any⟫</div><div>typeVersion ➠⟪regex/[0-9]{4}[a-z]+⟫</div></td></tr>
+	<tr><td class='target'>​/timezoneData​/mapTimezones/</td><td class='target'>mapZone</td><td class='target'><div>type ➠⟪set/bcp47/tz⟫</div><div>other ➠⟪any⟫</div><div>territory ➠⟪validity/region⟫</div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>source ➠⟪any/TODO⟫</div><div>target ➠⟪any/TODO⟫</div><div>variant ➠⟪any/TODO⟫</div><div>alias ➠⟪any/TODO⟫</div><div>backwardAlias ➠⟪any/TODO⟫</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData/</td><td class='target'>unitPreferences</td><td class='target'><div>category ➠⟪literal/area, concentr, consumption, duration, energy, length, mass, pressure, speed, temperature, volume⟫</div><div>usage ➠⟪literal/baromtrc, blood-glucose, food, land-agricult, land-commercl, land-residntl, music-track, person, person-age, person-usage, rainfall, road, road-travel, snowfall, tv-program, vehicle, vehicle-fuel, visiblty, weather, wind⟫</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData​/unitPreferences/</td><td class='target'>unitPreference</td><td class='target'><div>regions ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/weekData/</td><td class='target'>minDays</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>firstDay</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>weekendStart</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>weekendEnd</td><td class='target'><div>territories ➠⟪set/validity/region⟫</div></td></tr>
+	<tr><td class='target'>weekOfPreference</td><td class='target'><div>locales ➠⟪set/validity/locale⟫</div><div>ordering ➠⟪set/literal/weekOfDate, weekOfInterval, weekOfMonth, weekOfYear⟫</div></td></tr>
+	<tr><td class='source' rowSpan='3'>ldmlBCP47</td><td class='target'>/</td><td class='target'>version</td><td class='target'><div>number ➠⟪regex/\$Revision.*\$⟫</div><div>cldrVersion ➠⟪version⟫</div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>extension ➠⟪any⟫</div><div>name ➠⟪regex/[a-z0-9]{2}⟫</div><div>description ➠⟪any⟫</div><div>alias ➠⟪any⟫</div><div>since ➠⟪version⟫</div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>name ➠⟪any⟫</div><div>description ➠⟪any⟫</div><div>preferred ➠⟪bcp47/anyvalue⟫</div><div>alias ➠⟪any⟫</div><div>since ➠⟪version⟫</div></td></tr>
+	<tr><td class='source' rowSpan='7'>keyboard</td><td class='target'></td><td class='target'>keyboard</td><td class='target'><div>locale ➠⟪any/TODO⟫</div></td></tr>
+	<tr><td class='target' rowSpan='3'>/</td><td class='target'>version</td><td class='target'><div>platform ➠⟪version⟫</div><div>number ➠⟪regex/\$Revision.*\$⟫</div><div>cldrVersion ➠⟪version⟫</div></td></tr>
+	<tr><td class='target'>keyMap</td><td class='target'><div>modifiers ➠⟪any/TODO⟫</div></td></tr>
+	<tr><td class='target'>transforms</td><td class='target'><div>type ➠⟪literal/simple⟫</div></td></tr>
+	<tr><td class='target'>​/keyMap/</td><td class='target'>map</td><td class='target'><div>iso ➠⟪regex/[A-E](0[0-9]|1[0-3])⟫</div><div>to ➠⟪any⟫</div><div>longPress ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/names/</td><td class='target'>name</td><td class='target'><div>value ➠⟪any⟫</div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>from ➠⟪any⟫</div><div>to ➠⟪any⟫</div></td></tr>
+	<tr><td class='source' rowSpan='2'>platform</td><td class='target'></td><td class='target'>platform</td><td class='target'><div>id ➠⟪literal/android, chromeos, osx, windows⟫</div></td></tr>
+	<tr><td class='target'>​/hardwareMap/</td><td class='target'>map</td><td class='target'><div>keycode ➠⟪range/0~150⟫</div><div>iso ➠⟪regex/[A-E](0[0-9]|1[0-3])⟫</div></td></tr>
+	<tr><td class='source' rowSpan='8'><a name='34.0' href='#34.0'>34.0</a></td><td class='source'>ldml</td><td class='target'>​/units​/unitLength​/coordinateUnit/</td><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='source' rowSpan='7'>supplementalData</td><td class='target'>/</td><td class='target'>⊖telephoneCodeData</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/calendarData​/calendar​/eras/</td><td class='target'>era</td><td class='target'><div>+named §v ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/codeMappings/</td><td class='target'>territoryCodes</td><td class='target'><div>⊖internet</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/telephoneCodeData/</td><td class='target'>⊖codesByTerritory</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖codesByTerritory</td><td class='target'><div>⊖territory</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/telephoneCodeData​/codesByTerritory/</td><td class='target'>⊖telephoneCountryCode</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖telephoneCountryCode</td><td class='target'><div>⊖code</div><div>⊖from</div><div>⊖to</div></td></tr>
+	<tr><td class='source' rowSpan='29'><a name='33.0' href='#33.0'>33.0</a></td><td class='source' rowSpan='4'>ldml</td><td class='target'>/</td><td class='target'>+typographicNames</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/typographicNames/</td><td class='target'>+axisName</td><td class='target'><div>+type §d ⟨ital, opsz, slnt, wdth, wght⟩</div></td></tr>
+	<tr><td class='target'>+styleName</td><td class='target'><div>+type §d ⟨ital, opsz, slnt, wdth, wght⟩</div><div>+subtype §d </div></td></tr>
+	<tr><td class='target'>+featureName</td><td class='target'><div>+type §d ⟨afrc, cpsp, dlig, frac, lnum, onum, ordn, pnum, smcp, tnum, zero⟩</div></td></tr>
+	<tr><td class='source' rowSpan='8'>supplementalData</td><td class='target' rowSpan='4'>​/metadata/</td><td class='target'>⊖distinguishing</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖blocking</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖skipDefaultLocale</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖skipDefaultLocale</td><td class='target'><div>⊖services</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/blocking/</td><td class='target'>⊖blockingItems</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖blockingItems</td><td class='target'><div>⊖elements</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/distinguishing/</td><td class='target'>⊖distinguishingItems</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖distinguishingItems</td><td class='target'><div>⊖exclude</div><div>⊖elements</div><div>⊖attributes</div></td></tr>
+	<tr><td class='source' rowSpan='17'>keyboard</td><td class='target' rowSpan='6'>/</td><td class='target'>+import</td><td class='target'><div>+path §d </div></td></tr>
+	<tr><td class='target'>+displayMap</td><td class='target'> </td></tr>
+	<tr><td class='target'>+layer</td><td class='target'><div>+modifier §d </div></td></tr>
+	<tr><td class='target'>+vkeys</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+reorders</td><td class='target'> </td></tr>
+	<tr><td class='target'>+backspaces</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/backspaces/</td><td class='target'>+backspace</td><td class='target'><div>+before §d </div><div>+from §d </div><div>+after §d </div><div>+to §v </div><div>+error §v ⟨fail⟩</div></td></tr>
+	<tr><td class='target'>​/displayMap/</td><td class='target'>+display</td><td class='target'><div>+to §d </div><div>+display §v </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/keyMap/</td><td class='target'>map</td><td class='target'><div>+longpress-status §d ⟨optional⟩</div><div>+multitap §v </div><div>+hint §v </div><div>+optional §d </div></td></tr>
+	<tr><td class='target'>+flicks</td><td class='target'><div>+iso §d </div></td></tr>
+	<tr><td class='target'>​/keyMap​/flicks/</td><td class='target'>+flick</td><td class='target'><div>+directions §d </div><div>+to §v </div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/layer/</td><td class='target'>+row</td><td class='target'><div>+keys §d </div></td></tr>
+	<tr><td class='target'>+switch</td><td class='target'><div>+iso §d </div><div>+layer §v </div><div>+display §v </div></td></tr>
+	<tr><td class='target'>+vkeys</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/layer​/vkeys/</td><td class='target'>+vkey</td><td class='target'><div>+iso §d </div><div>+vkey §v </div><div>+modifier §v </div></td></tr>
+	<tr><td class='target'>​/reorders/</td><td class='target'>+reorder</td><td class='target'><div>+before §d </div><div>+from §d </div><div>+after §d </div><div>+order §v </div><div>+tertiary §v </div><div>+tertiary_base §v </div><div>+prebase §v </div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>+before §d </div><div>+after §d </div><div>+error §v ⟨fail⟩</div></td></tr>
+	<tr><td class='source' rowSpan='3'><a name='32.0' href='#32.0'>32.0</a></td><td class='source'>ldml</td><td class='target'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>type ⟨… index⟩➠⟨… index, numbers⟩</div></td></tr>
+	<tr><td class='source' rowSpan='2'>supplementalData</td><td class='target'>/</td><td class='target'>+languageGroups</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/languageGroups/</td><td class='target'>+languageGroup</td><td class='target'><div>+parent §d </div></td></tr>
+	<tr><td class='source' rowSpan='15'><a name='31.0' href='#31.0'>31.0</a></td><td class='source' rowSpan='7'>ldml</td><td class='target'>​/characters/</td><td class='target'>+parseLenients</td><td class='target'><div>+scope §d ⟨general, number, date⟩</div><div>+level §d ⟨lenient, stricter⟩</div></td></tr>
+	<tr><td class='target'>​/characters​/parseLenients/</td><td class='target'>+parseLenient</td><td class='target'><div>+sample §d </div></td></tr>
+	<tr><td class='target'>​/collations/</td><td class='target'>collation</td><td class='target'><div>⊖visibility</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields/</td><td class='target'>field</td><td class='target'><div>type ⟨… zone⟩➠⟨… era-short, era-narrow, … weekOfMonth, weekOfMonth-short, weekOfMonth-narrow, … dayOfYear, dayOfYear-short, dayOfYear-narrow, … weekday-short, weekday-narrow, weekdayOfMonth, weekdayOfMonth-short, weekdayOfMonth-narrow, … dayperiod-short, dayperiod-narrow, … zone, zone-short, zone-narrow⟩</div></td></tr>
+	<tr><td class='target'>​/numbers/</td><td class='target'>+minimalPairs</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/minimalPairs/</td><td class='target'>+pluralMinimalPairs</td><td class='target'><div>+count §d </div></td></tr>
+	<tr><td class='target'>+ordinalMinimalPairs</td><td class='target'><div>+ordinal §d </div></td></tr>
+	<tr><td class='source' rowSpan='5'>supplementalData</td><td class='target' rowSpan='3'>​/languageMatching​/languageMatches/</td><td class='target'>+paradigmLocales</td><td class='target'><div>+locales §v </div></td></tr>
+	<tr><td class='target'>+matchVariable</td><td class='target'><div>+id §d </div><div>+value §v </div></td></tr>
+	<tr><td class='target'>languageMatch</td><td class='target'><div>+distance §v </div></td></tr>
+	<tr><td class='target'>​/subdivisionContainment/</td><td class='target'>subgroup</td><td class='target'><div>⊖subtype</div></td></tr>
+	<tr><td class='target'>​/territoryInfo​/territory/</td><td class='target'>languagePopulation</td><td class='target'><div>+literacyPercent §v </div></td></tr>
+	<tr><td class='source' rowSpan='3'>ldmlBCP47</td><td class='target'>/</td><td class='target'>attribute</td><td class='target'><div>deprecated §m︎➠§v</div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>deprecated §m︎➠§v</div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>deprecated §m︎➠§v</div></td></tr>
+	<tr><td class='source' rowSpan='15'><a name='30.0' href='#30.0'>30.0</a></td><td class='source' rowSpan='9'>ldml</td><td class='target'>/</td><td class='target'>+characterLabels</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/annotations/</td><td class='target'>annotation</td><td class='target'><div>⊖tts</div><div>+type §d ⟨tts⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characterLabels/</td><td class='target'>+characterLabelPattern</td><td class='target'><div>+type §d </div><div>+count §d ⟨0, 1, zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='target'>+characterLabel</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td><td class='target'>dateFormatItem</td><td class='target'><div>+count §d ⟨zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>+relativePeriod</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/localeDisplayNames/</td><td class='target'>⊖transformNames</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/localeDisplayNames​/transformNames/</td><td class='target'>⊖transformName</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖transformName</td><td class='target'><div>⊖type</div></td></tr>
+	<tr><td class='source' rowSpan='6'>supplementalData</td><td class='target'>​/calendarData​/calendar/</td><td class='target'>calendarSystem</td><td class='target'><div>type §d➠§v</div></td></tr>
+	<tr><td class='target'>​/metadata/</td><td class='target'>⊖deprecated</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/deprecated/</td><td class='target'>⊖deprecatedItems</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖deprecatedItems</td><td class='target'><div>⊖type</div><div>⊖elements</div><div>⊖attributes</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>​/metadata​/validity/</td><td class='target'>variable</td><td class='target'><div>type §d➠§v</div><div>id §v➠§d</div></td></tr>
+	<tr><td class='target'>​/weekData/</td><td class='target'>+weekOfPreference</td><td class='target'><div>+locales §d </div><div>+ordering §v </div></td></tr>
+	<tr><td class='source' rowSpan='14'><a name='29.0' href='#29.0'>29.0</a></td><td class='source' rowSpan='2'>ldml</td><td class='target' rowSpan='2'>​/collations​/collation/</td><td class='target'>import</td><td class='target'><div>⊖source</div><div>⊖type</div></td></tr>
+	<tr><td class='target'>settings</td><td class='target'><div>⊖strength</div><div>⊖alternate</div><div>⊖backwards</div><div>⊖normalization</div><div>⊖caseLevel</div><div>⊖caseFirst</div><div>⊖hiraganaQuarternary</div><div>⊖hiraganaQuaternary</div><div>⊖maxVariable</div><div>⊖numeric</div><div>⊖private</div><div>⊖variableTop</div><div>⊖reorder</div></td></tr>
+	<tr><td class='source' rowSpan='10'>supplementalData</td><td class='target' rowSpan='3'>/</td><td class='target'>version</td><td class='target'><div>cldrVersion §m︎➠§v</div><div>unicodeVersion §m︎➠§v</div></td></tr>
+	<tr><td class='target'>+unitPreferenceData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+rgScope</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dayPeriodRuleSet​/dayPeriodRules/</td><td class='target'>dayPeriodRule</td><td class='target'><div>at §d➠§v</div><div>⊖after</div><div>before §d➠§v</div><div>from §d➠§v</div><div>⊖to</div></td></tr>
+	<tr><td class='target'>​/languageMatching​/languageMatches/</td><td class='target'>languageMatch</td><td class='target'><div>desired §v➠§d</div><div>supported §v➠§d</div></td></tr>
+	<tr><td class='target'>​/rgScope/</td><td class='target'>+rgPath</td><td class='target'><div>+path §d </div></td></tr>
+	<tr><td class='target'>​/timeData/</td><td class='target'>hours</td><td class='target'><div>allowed §v➠§d</div><div>preferred §v➠§d</div><div>regions §d➠§v</div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>+alias §v </div><div>+backwardAlias §v </div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData/</td><td class='target'>+unitPreferences</td><td class='target'><div>+category §d </div><div>+usage §d </div><div>+scope §d ⟨small⟩</div></td></tr>
+	<tr><td class='target'>​/unitPreferenceData​/unitPreferences/</td><td class='target'>+unitPreference</td><td class='target'><div>+regions §d </div></td></tr>
+	<tr><td class='source' rowSpan='2'>ldmlBCP47</td><td class='target'>/</td><td class='target'>version</td><td class='target'><div>cldrVersion §m︎➠§v</div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+valueType §v ⟨single, multiple, incremental, any⟩</div></td></tr>
+	<tr><td class='source' rowSpan='322'><a name='28.0' href='#28.0'>28.0</a></td><td class='source' rowSpan='224'>ldml</td><td class='target'></td><td class='target'>ldml</td><td class='target'><div>+version §m︎ </div></td></tr>
+	<tr><td class='target' rowSpan='13'>/</td><td class='target'>⊖fallback</td><td class='target'> </td></tr>
+	<tr><td class='target'>contextTransforms</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>delimiters</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖measurement</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖measurement</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>dates</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>numbers</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>units</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>listPatterns</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>collations</td><td class='target'><div>version §d➠§m︎</div><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>posix</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>segmentations</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖references</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/annotations/</td><td class='target'>annotation</td><td class='target'><div>tts §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖stopwords</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexLabels</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖mapping</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖mapping</td><td class='target'><div>⊖registry</div><div>⊖type</div><div>⊖choice</div><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characters​/exemplarCharacters/</td><td class='target'>⊖cp</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖cp</td><td class='target'><div>⊖hex</div></td></tr>
+	<tr><td class='target' rowSpan='7'>​/characters​/indexLabels/</td><td class='target'>⊖indexSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖compressedIndexSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexRangePattern</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexLabelBefore</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexLabelAfter</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexLabel</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖indexLabel</td><td class='target'><div>⊖indexSource</div><div>⊖priority</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characters​/stopwords/</td><td class='target'>⊖stopwordList</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖stopwordList</td><td class='target'><div>⊖type</div></td></tr>
+	<tr><td class='target'>​/collations/</td><td class='target'>collation</td><td class='target'><div>visibility §d➠§v</div><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='8'>​/collations​/collation/</td><td class='target'>⊖base</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖import</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖import</td><td class='target'><div>source §d➠§v</div></td></tr>
+	<tr><td class='target'>⊖settings</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖settings</td><td class='target'><div>strength §d➠§v</div><div>alternate §d➠§v</div><div>backwards §d➠§v</div><div>normalization §d➠§v</div><div>caseLevel §d➠§v</div><div>caseFirst §d➠§v</div><div>hiraganaQuarternary §d➠§v</div><div>hiraganaQuaternary §d➠§v</div><div>maxVariable §d➠§v</div><div>numeric §d➠§v</div><div>private §d➠§v</div><div>variableTop §d➠§v</div><div>reorder §d➠§v</div></td></tr>
+	<tr><td class='target'>⊖suppress_contractions</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖optimize</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖rules</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='13'>​/collations​/collation​/rules/</td><td class='target'>⊖reset</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖reset</td><td class='target'><div>⊖before</div></td></tr>
+	<tr><td class='target'>⊖p</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖pc</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖s</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖sc</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖t</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖tc</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖q</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖qc</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖i</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖ic</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖x</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='12'>​/collations​/collation​/rules​/reset/</td><td class='target'>⊖first_variable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_variable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖first_tertiary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_tertiary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖first_secondary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_secondary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖first_primary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_primary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖first_non_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_non_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖first_trailing</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖last_trailing</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/x/</td><td class='target'>⊖context</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖extend</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/contextTransforms/</td><td class='target'>contextTransformUsage</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/dates/</td><td class='target'>⊖localizedPatternChars</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖localizedPatternChars</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖dateRangePattern</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖dateRangePattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>calendars</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>timeZoneNames</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/calendars/</td><td class='target'>⊖default</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖default</td><td class='target'><div>⊖type</div><div>⊖choice</div></td></tr>
+	<tr><td class='target'>calendar</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='20'>​/dates​/calendars​/calendar/</td><td class='target'>months</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖monthNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖monthAbbr</td><td class='target'> </td></tr>
+	<tr><td class='target'>monthPatterns</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>days</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖dayNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖dayAbbr</td><td class='target'> </td></tr>
+	<tr><td class='target'>quarters</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖week</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖week</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖am</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖am</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖pm</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖pm</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>eras</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>cyclicNameSets</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>dateFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>timeFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>dateTimeFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>fields</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets/</td><td class='target'>cyclicNameSet</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet/</td><td class='target'>cyclicNameContext</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet​/cyclicNameContext/</td><td class='target'>cyclicNameWidth</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats/</td><td class='target'>dateFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength/</td><td class='target'>dateFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>pattern</td><td class='target'><div>numbers §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/dates​/calendars​/calendar​/dateTimeFormats/</td><td class='target'>dateTimeFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>availableFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>appendItems</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>intervalFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/dateTimeFormatLength/</td><td class='target'>dateTimeFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td><td class='target'>intervalFormatFallback</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>intervalFormatItem</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats​/intervalFormatItem/</td><td class='target'>greatestDifference</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days/</td><td class='target'>dayContext</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days​/dayContext/</td><td class='target'>dayWidth</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/calendars​/calendar​/eras/</td><td class='target'>eraNames</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>eraAbbr</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>eraNarrow</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields/</td><td class='target'>field</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>relative</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>relativeTime</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields​/field​/relativeTime/</td><td class='target'>relativeTimePattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthPatterns/</td><td class='target'>monthPatternContext</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthPatterns​/monthPatternContext/</td><td class='target'>monthPatternWidth</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months/</td><td class='target'>monthContext</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months​/monthContext/</td><td class='target'>monthWidth</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/quarters/</td><td class='target'>quarterContext</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/quarters​/quarterContext/</td><td class='target'>quarterWidth</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/timeFormats/</td><td class='target'>timeFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/timeFormats​/timeFormatLength/</td><td class='target'>timeFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='8'>​/dates​/calendars​/calendar​/week/</td><td class='target'>⊖minDays</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖minDays</td><td class='target'><div>⊖count</div></td></tr>
+	<tr><td class='target'>⊖firstDay</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖firstDay</td><td class='target'><div>⊖day</div></td></tr>
+	<tr><td class='target'>⊖weekendStart</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖weekendStart</td><td class='target'><div>⊖day</div><div>⊖time</div></td></tr>
+	<tr><td class='target'>⊖weekendEnd</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖weekendEnd</td><td class='target'><div>⊖day</div><div>⊖time</div></td></tr>
+	<tr><td class='target' rowSpan='10'>​/dates​/timeZoneNames/</td><td class='target'>⊖hoursFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖fallbackRegionFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖abbreviationFallback</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖abbreviationFallback</td><td class='target'><div>⊖type</div><div>⊖choice</div></td></tr>
+	<tr><td class='target'>⊖preferenceOrdering</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖preferenceOrdering</td><td class='target'><div>⊖type</div><div>⊖choice</div></td></tr>
+	<tr><td class='target'>⊖singleCountries</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖singleCountries</td><td class='target'><div>⊖list</div></td></tr>
+	<tr><td class='target'>zone</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>metazone</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/dates​/timeZoneNames​/zone/</td><td class='target'>long</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>short</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖commonlyUsed</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖commonlyUsed</td><td class='target'><div>⊖used</div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/layout/</td><td class='target'>orientation</td><td class='target'><div>⊖characters</div><div>⊖lines</div></td></tr>
+	<tr><td class='target'>⊖inList</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖inList</td><td class='target'><div>⊖casing</div></td></tr>
+	<tr><td class='target'>⊖inText</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖inText</td><td class='target'><div>⊖type</div></td></tr>
+	<tr><td class='target'>​/listPatterns/</td><td class='target'>listPattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/listPatterns​/listPattern/</td><td class='target'>listPatternPart</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='8'>​/localeDisplayNames/</td><td class='target'>languages</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>scripts</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>territories</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>+subdivisions</td><td class='target'> </td></tr>
+	<tr><td class='target'>variants</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>keys</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>types</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>measurementSystemNames</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/subdivisions/</td><td class='target'>+subdivision</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/measurement/</td><td class='target'>⊖measurementSystem</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖measurementSystem</td><td class='target'><div>⊖type</div><div>⊖choice</div><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>⊖paperSize</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖paperSize</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurement​/paperSize/</td><td class='target'>⊖height</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖width</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/metadata​/casingData/</td><td class='target'>casingItem</td><td class='target'><div>override §d➠§v</div><div>+forceError §v ⟨true, false⟩</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/numbers/</td><td class='target'>symbols</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>decimalFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>scientificFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>percentFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>currencyFormats</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>currencies</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencies/</td><td class='target'>currency</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencies​/currency/</td><td class='target'>symbol</td><td class='target'><div>⊖choice</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/currencyFormats/</td><td class='target'>currencyFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>unitPattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats​/currencyFormatLength/</td><td class='target'>currencyFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats/</td><td class='target'>decimalFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats​/decimalFormatLength/</td><td class='target'>decimalFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats/</td><td class='target'>percentFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats​/percentFormatLength/</td><td class='target'>percentFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats/</td><td class='target'>scientificFormatLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats​/scientificFormatLength/</td><td class='target'>scientificFormat</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='17'>​/numbers​/symbols/</td><td class='target'>decimal</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>group</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>list</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>percentSign</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>⊖nativeZeroDigit</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖nativeZeroDigit</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>⊖patternDigit</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖patternDigit</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>plusSign</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>minusSign</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>exponential</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>perMille</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>infinity</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>nan</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>currencyDecimal</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>⊖currencyGroup</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖currencyGroup</td><td class='target'><div>⊖numberSystem</div></td></tr>
+	<tr><td class='target'>​/posix/</td><td class='target'>messages</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/posix​/messages/</td><td class='target'>⊖yesexpr</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖noexpr</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping/</td><td class='target'>ruleset⇣</td><td class='target'><div>access §d➠§v</div><div>allowsParsing §d➠§v</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping​/ruleset/</td><td class='target'>rbnfrule⇣</td><td class='target'><div>value §d➠§v</div><div>radix §d➠§v</div><div>decexp §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/references/</td><td class='target'>⊖reference</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖reference</td><td class='target'><div>⊖type</div><div>⊖uri</div></td></tr>
+	<tr><td class='target'>​/segmentations/</td><td class='target'>segmentation</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation/</td><td class='target'>⊖exceptions</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/exceptions/</td><td class='target'>⊖exception</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/units/</td><td class='target'>unit</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>unitLength</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/units​/durationUnit/</td><td class='target'>durationUnitPattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/units​/unitLength/</td><td class='target'>compoundUnit</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>+coordinateUnit</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/units​/unitLength​/compoundUnit/</td><td class='target'>compoundUnitPattern</td><td class='target'><div>⊖validSubLocales</div></td></tr>
+	<tr><td class='target'>​/units​/unitLength​/coordinateUnit/</td><td class='target'>+coordinateUnitPattern</td><td class='target'><div>+type §d ⟨north, east, south, west⟩</div></td></tr>
+	<tr><td class='source' rowSpan='86'>supplementalData</td><td class='target' rowSpan='8'>/</td><td class='target'>version</td><td class='target'><div>number §d➠§m︎</div><div>cldrVersion §d➠§m︎</div><div>unicodeVersion §d➠§m︎</div></td></tr>
+	<tr><td class='target'>⊖cldrVersion</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖cldrVersion</td><td class='target'><div>⊖version</div></td></tr>
+	<tr><td class='target'>+subdivisionContainment</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖postalCodeData</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖timezoneData</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖bcp47KeywordMappings</td><td class='target'> </td></tr>
+	<tr><td class='target'>+idValidity</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/bcp47KeywordMappings/</td><td class='target'>⊖mapKeys</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖mapTypes</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖mapTypes</td><td class='target'><div>⊖type</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/bcp47KeywordMappings​/mapKeys/</td><td class='target'>⊖keyMap</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖keyMap</td><td class='target'><div>⊖type</div><div>⊖bcp47</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/bcp47KeywordMappings​/mapTypes/</td><td class='target'>⊖typeMap</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖typeMap</td><td class='target'><div>⊖type</div><div>⊖bcp47</div></td></tr>
+	<tr><td class='target'>​/calendarData/</td><td class='target'>calendar</td><td class='target'><div>⊖territories</div></td></tr>
+	<tr><td class='target'>​/calendarData​/calendar​/eras/</td><td class='target'>era</td><td class='target'><div>start §d➠§v</div><div>end §d➠§v</div></td></tr>
+	<tr><td class='target'>​/calendarPreferenceData/</td><td class='target'>calendarPreference</td><td class='target'><div>ordering §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/codeMappings/</td><td class='target'>⊖languageCodes</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖languageCodes</td><td class='target'><div>⊖type</div><div>⊖alpha3</div></td></tr>
+	<tr><td class='target'>territoryCodes</td><td class='target'><div>numeric §d➠§v</div><div>alpha3 §d➠§v</div><div>fips10 §d➠§v</div><div>internet §d➠§v</div></td></tr>
+	<tr><td class='target'>currencyCodes</td><td class='target'><div>numeric §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/coverageLevels/</td><td class='target'>coverageVariable⇣</td><td class='target'><div>value §d➠§v</div></td></tr>
+	<tr><td class='target'>coverageLevel⇣</td><td class='target'><div>value §d➠§v</div></td></tr>
+	<tr><td class='target'>​/coverageLevels​/approvalRequirements/</td><td class='target'>approvalRequirement</td><td class='target'><div>votes §d➠§v</div></td></tr>
+	<tr><td class='target'>​/currencyData​/fractions/</td><td class='target'>info</td><td class='target'><div>digits §d➠§v</div><div>rounding §d➠§v</div><div>cashDigits §d➠§v</div><div>cashRounding §d➠§v</div></td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>⊖before</div><div>digits §d➠§v</div><div>rounding §d➠§v</div><div>cashRounding §d➠§v</div><div>tender §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/currencyData​/region​/currency/</td><td class='target'>⊖alternate</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖alternate</td><td class='target'><div>⊖iso4217</div></td></tr>
+	<tr><td class='target'>​/gender/</td><td class='target'>personList</td><td class='target'><div>locales §d➠§v</div></td></tr>
+	<tr><td class='target'>​/idValidity/</td><td class='target'>+id</td><td class='target'><div>+type §d </div><div>+idStatus §d </div></td></tr>
+	<tr><td class='target'>​/languageData/</td><td class='target'>language</td><td class='target'><div>scripts §d➠§v</div><div>territories §d➠§v</div><div>variants §d➠§v</div></td></tr>
+	<tr><td class='target'>​/languageMatching​/languageMatches/</td><td class='target'>languageMatch⇣</td><td class='target'><div>desired §d➠§v</div><div>oneway §d➠§v</div><div>percent §d➠§v</div><div>supported §d➠§v</div></td></tr>
+	<tr><td class='target'>​/likelySubtags/</td><td class='target'>likelySubtag</td><td class='target'><div>to §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurementData/</td><td class='target'>measurementSystem</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='target'>paperSize</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/metadata/</td><td class='target'>⊖attributeOrder</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖elementOrder</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖coverageAdditions</td><td class='target'> </td></tr>
+	<tr><td class='target'>skipDefaultLocale</td><td class='target'><div>services §d➠§v</div></td></tr>
+	<tr><td class='target'>defaultContent</td><td class='target'><div>locales §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>replacement §d➠§v</div><div>reason §d➠§v</div></td></tr>
+	<tr><td class='target'>scriptAlias</td><td class='target'><div>replacement §d➠§v</div><div>reason §d➠§v</div></td></tr>
+	<tr><td class='target'>territoryAlias</td><td class='target'><div>replacement §d➠§v</div><div>reason §d➠§v</div></td></tr>
+	<tr><td class='target'>+subdivisionAlias</td><td class='target'><div>+type §d </div><div>+replacement §v </div><div>+reason §v ⟨deprecated, overlong⟩</div></td></tr>
+	<tr><td class='target'>variantAlias</td><td class='target'><div>replacement §d➠§v</div><div>reason §d➠§v</div></td></tr>
+	<tr><td class='target'>zoneAlias</td><td class='target'><div>replacement §d➠§v</div><div>reason §d➠§v</div></td></tr>
+	<tr><td class='target'>​/metadata​/blocking/</td><td class='target'>blockingItems</td><td class='target'><div>elements §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='10'>​/metadata​/coverageAdditions/</td><td class='target'>⊖languageCoverage</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖languageCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>⊖scriptCoverage</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖scriptCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>⊖territoryCoverage</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖territoryCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>⊖currencyCoverage</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖currencyCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>⊖timezoneCoverage</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖timezoneCoverage</td><td class='target'><div>⊖type</div><div>⊖values</div></td></tr>
+	<tr><td class='target'>​/metadata​/distinguishing/</td><td class='target'>distinguishingItems</td><td class='target'><div>exclude §d➠§v</div><div>elements §d➠§v</div></td></tr>
+	<tr><td class='target'>​/metadata​/suppress/</td><td class='target'>attributes⇣</td><td class='target'><div>element §d➠§v</div><div>attribute §d➠§v</div><div>attributeValue §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/validity/</td><td class='target'>variable⇣</td><td class='target'><div>id §d➠§v</div></td></tr>
+	<tr><td class='target'>attributeValues⇣</td><td class='target'><div>+dtds §d </div><div>elements §d➠§v</div><div>attributes §d➠§v</div><div>order §d➠§v</div></td></tr>
+	<tr><td class='target'>​/metazoneInfo​/timezone/</td><td class='target'>usesMetazone</td><td class='target'><div>mzone §d➠§v</div></td></tr>
+	<tr><td class='target'>​/numberingSystems/</td><td class='target'>numberingSystem</td><td class='target'><div>type §d➠§v</div><div>radix §d➠§v</div><div>digits §d➠§v</div><div>rules §d➠§v</div></td></tr>
+	<tr><td class='target'>​/parentLocales/</td><td class='target'>parentLocale</td><td class='target'><div>locales §d➠§v</div></td></tr>
+	<tr><td class='target'>​/plurals​/pluralRanges/</td><td class='target'>pluralRange</td><td class='target'><div>result §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/postalCodeData/</td><td class='target'>⊖postCodeRegex</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖postCodeRegex</td><td class='target'><div>⊖territoryId</div></td></tr>
+	<tr><td class='target'>​/references/</td><td class='target'>reference</td><td class='target'><div>uri §d➠§v</div></td></tr>
+	<tr><td class='target'>​/subdivisionContainment/</td><td class='target'>+subgroup</td><td class='target'><div>+type §d </div><div>+subtype §d </div><div>+contains §v </div></td></tr>
+	<tr><td class='target'>​/telephoneCodeData​/codesByTerritory/</td><td class='target'>telephoneCountryCode</td><td class='target'><div>from §d➠§v</div><div>to §d➠§v</div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>group</td><td class='target'><div>contains §d➠§v</div><div>grouping §d➠§v</div></td></tr>
+	<tr><td class='target'>​/territoryInfo/</td><td class='target'>territory</td><td class='target'><div>gdp §d➠§v</div><div>literacyPercent §d➠§v</div><div>population §d➠§v</div></td></tr>
+	<tr><td class='target'>​/territoryInfo​/territory/</td><td class='target'>languagePopulation</td><td class='target'><div>writingPercent §d➠§v</div><div>populationPercent §d➠§v</div><div>officialStatus §d➠§v</div></td></tr>
+	<tr><td class='target'>​/timeData/</td><td class='target'>hours</td><td class='target'><div>allowed §d➠§v</div><div>preferred §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/timezoneData/</td><td class='target'>mapTimezones</td><td class='target'><div>otherVersion §d➠§m︎</div><div>typeVersion §d➠§m︎</div></td></tr>
+	<tr><td class='target'>⊖zoneFormatting</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖zoneFormatting</td><td class='target'><div>⊖multizone</div><div>⊖tzidVersion</div></td></tr>
+	<tr><td class='target'>​/timezoneData​/mapTimezones/</td><td class='target'>mapZone</td><td class='target'><div>type §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/timezoneData​/zoneFormatting/</td><td class='target'>⊖zoneItem</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖zoneItem</td><td class='target'><div>⊖type</div><div>⊖territory</div><div>⊖aliases</div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>visibility §d➠§v</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/weekData/</td><td class='target'>minDays</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='target'>firstDay</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='target'>weekendStart</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='target'>weekendEnd</td><td class='target'><div>territories §d➠§v</div></td></tr>
+	<tr><td class='source' rowSpan='6'>ldmlBCP47</td><td class='target' rowSpan='4'>/</td><td class='target'>version</td><td class='target'><div>number §d➠§m︎</div><div>cldrVersion §d➠§m︎</div></td></tr>
+	<tr><td class='target'>⊖cldrVersion</td><td class='target'> </td></tr>
+	<tr><td class='target'>⊖cldrVersion</td><td class='target'><div>⊖version</div></td></tr>
+	<tr><td class='target'>attribute</td><td class='target'><div>description §d➠§v</div><div>deprecated §d➠§m︎</div><div>preferred §d➠§v</div><div>since §d➠§m︎</div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>description §d➠§v</div><div>deprecated §d➠§m︎</div><div>preferred §d➠§v</div><div>alias §d➠§v</div><div>since §d➠§m︎</div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>description §d➠§v</div><div>deprecated §d➠§m︎</div><div>preferred §d➠§v</div><div>alias §d➠§v</div><div>since §d➠§m︎</div></td></tr>
+	<tr><td class='source' rowSpan='5'>keyboard</td><td class='target' rowSpan='2'>/</td><td class='target'>version</td><td class='target'><div>platform §d➠§v</div><div>number §d➠§m︎</div><div>cldrVersion §d➠§m︎</div></td></tr>
+	<tr><td class='target'>settings⇣</td><td class='target'><div>fallback §d➠§v</div><div>transformFailure §d➠§v</div><div>transformPartial §d➠§v</div></td></tr>
+	<tr><td class='target'>​/keyMap/</td><td class='target'>map</td><td class='target'><div>to §d➠§v</div><div>longPress §d➠§v</div><div>transform §d➠§v</div></td></tr>
+	<tr><td class='target'>​/names/</td><td class='target'>name</td><td class='target'><div>value §d➠§v</div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>transform</td><td class='target'><div>to §d➠§v</div></td></tr>
+	<tr><td class='source'>platform</td><td class='target'>​/hardwareMap/</td><td class='target'>map</td><td class='target'><div>iso §d➠§v</div></td></tr>
+	<tr><td class='source' rowSpan='5'><a name='27.0' href='#27.0'>27.0</a></td><td class='source' rowSpan='2'>ldml</td><td class='target'>/</td><td class='target'>+annotations</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/annotations/</td><td class='target'>+annotation</td><td class='target'><div>+cp §d </div><div>+tts §d </div></td></tr>
+	<tr><td class='source' rowSpan='3'>supplementalData</td><td class='target' rowSpan='2'>/</td><td class='target'>version</td><td class='target'><div>+unicodeVersion §d </div></td></tr>
+	<tr><td class='target'>dayPeriodRuleSet</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/measurementData/</td><td class='target'>measurementSystem</td><td class='target'><div>+category §d ⟨temperature⟩</div></td></tr>
+	<tr><td class='source' rowSpan='9'><a name='26.0' href='#26.0'>26.0</a></td><td class='source' rowSpan='7'>ldml</td><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets/</td><td class='target'>cyclicNameSet</td><td class='target'><div>type ⟨… zodiacs⟩➠⟨… zodiacs, solarTerms⟩</div></td></tr>
+	<tr><td class='target'>​/numbers/</td><td class='target'>+minimumGroupingDigits</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/numbers​/symbols/</td><td class='target'>+timeSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation/</td><td class='target'>+suppressions</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/suppressions/</td><td class='target'>+suppression</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/units​/unit/</td><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+perUnitPattern</td><td class='target'> </td></tr>
+	<tr><td class='source' rowSpan='2'>supplementalData</td><td class='target'>​/codeMappings/</td><td class='target'>+currencyCodes</td><td class='target'><div>+type §d </div><div>+numeric §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>reason ⟨… legacy⟩➠⟨… legacy, bibliographic⟩</div></td></tr>
+	<tr><td class='source' rowSpan='7'><a name='25.0' href='#25.0'>25.0</a></td><td class='source' rowSpan='3'>ldml</td><td class='target'>​/collations​/collation/</td><td class='target'>settings</td><td class='target'><div>+maxVariable §d ⟨space, punct, symbol, currency⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields/</td><td class='target'>field</td><td class='target'><div>type ⟨…⟩➠⟨… year-short, year-narrow, quarter, quarter-short, quarter-narrow, … month-short, month-narrow, … week-short, week-narrow, … day-short, day-narrow, … sun-short, sun-narrow, … mon-short, mon-narrow, … tue-short, tue-narrow, … wed-short, wed-narrow, … thu-short, thu-narrow, … fri-short, fri-narrow, … sat-short, sat-narrow, … hour-short, hour-narrow, … minute-short, minute-narrow, … second-short, second-narrow, …⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/week/</td><td class='target'>firstDay</td><td class='target'><div>day ➠⟨sun, mon, tue, wed, thu, fri, sat⟩</div></td></tr>
+	<tr><td class='source' rowSpan='4'>supplementalData</td><td class='target'>​/coverageLevels/</td><td class='target'>+approvalRequirements</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/coverageLevels​/approvalRequirements/</td><td class='target'>+approvalRequirement</td><td class='target'><div>+votes §d </div><div>+locales §d </div><div>+paths §d </div></td></tr>
+	<tr><td class='target'>​/plurals/</td><td class='target'>+pluralRanges</td><td class='target'><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/plurals​/pluralRanges/</td><td class='target'>+pluralRange</td><td class='target'><div>+start §d ⟨zero, one, two, few, many, other⟩</div><div>+end §d ⟨zero, one, two, few, many, other⟩</div><div>+result §d ⟨zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='source' rowSpan='26'><a name='24.0' href='#24.0'>24.0</a></td><td class='source' rowSpan='21'>ldml</td><td class='target'>​/characters/</td><td class='target'>ellipsis</td><td class='target'><div>type ⟨… final⟩➠⟨… final, word-initial, word-medial, word-final⟩</div></td></tr>
+	<tr><td class='target'>​/collations/</td><td class='target'>+defaultCollation</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/collations​/collation/</td><td class='target'>+cr</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields/</td><td class='target'>field</td><td class='target'><div>type ⟨…⟩➠⟨… sun, mon, tue, wed, thu, fri, sat, …⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>+relativeTime</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields​/field​/relativeTime/</td><td class='target'>+relativeTimePattern</td><td class='target'><div>+count §d ⟨zero, one, two, few, many, other⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames/</td><td class='target'>regionFormat</td><td class='target'><div>+type §d ⟨standard, daylight⟩</div></td></tr>
+	<tr><td class='target'>​/listPatterns/</td><td class='target'>listPattern</td><td class='target'><div>type ⟨NMTOKEN⟩➠</div></td></tr>
+	<tr><td class='target'>​/metadata​/casingData/</td><td class='target'>casingItem</td><td class='target'><div>+override §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/numbers/</td><td class='target'>+miscPatterns</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/miscPatterns/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/numbers​/symbols/</td><td class='target'>+superscriptingExponent</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation/</td><td class='target'>+exceptions</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/exceptions/</td><td class='target'>+exception</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/units/</td><td class='target'>+unitLength</td><td class='target'><div>+type §d ⟨long, short, narrow⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+durationUnit</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/units​/durationUnit/</td><td class='target'>+durationUnitPattern</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/units​/unitLength/</td><td class='target'>+compoundUnit</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+unit</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/units​/unitLength​/compoundUnit/</td><td class='target'>+compoundUnitPattern</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='source' rowSpan='2'>supplementalData</td><td class='target'>​/currencyData​/fractions/</td><td class='target'>info</td><td class='target'><div>+cashDigits §d </div></td></tr>
+	<tr><td class='target'>​/plurals​/pluralRules/</td><td class='target'>pluralRule</td><td class='target'><div>count ⟨… many⟩➠⟨… many, other⟩</div></td></tr>
+	<tr><td class='source' rowSpan='3'>ldmlBCP47</td><td class='target'>/</td><td class='target'>attribute</td><td class='target'><div>+preferred §d </div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+preferred §d </div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>+preferred §d </div></td></tr>
+	<tr><td class='source' rowSpan='9'><a name='23.1' href='#23.1'>23.1</a></td><td class='source' rowSpan='3'>ldml</td><td class='target'>​/dates/</td><td class='target'>+fields</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/layout​/orientation/</td><td class='target'>+characterOrder</td><td class='target'> </td></tr>
+	<tr><td class='target'>+lineOrder</td><td class='target'> </td></tr>
+	<tr><td class='source' rowSpan='6'>supplementalData</td><td class='target' rowSpan='2'>/</td><td class='target'>+timeData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+primaryZones</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/currencyData​/fractions/</td><td class='target'>info</td><td class='target'><div>+cashRounding §d </div></td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>+digits §d </div><div>+rounding §d </div><div>+cashRounding §d </div></td></tr>
+	<tr><td class='target'>​/primaryZones/</td><td class='target'>+primaryZone</td><td class='target'><div>+iso3166 §d </div></td></tr>
+	<tr><td class='target'>​/timeData/</td><td class='target'>+hours</td><td class='target'><div>+preferred §d </div><div>+allowed §d </div><div>+regions §d </div></td></tr>
+	<tr><td class='source' rowSpan='20'><a name='22.1' href='#22.1'>22.1</a></td><td class='source' rowSpan='3'>ldml</td><td class='target'>​/collations/</td><td class='target'>collation</td><td class='target'><div>+visibility §d ⟨internal, external⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>pattern</td><td class='target'><div>+count §d ⟨0, 1, zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days​/dayContext/</td><td class='target'>dayWidth</td><td class='target'><div>type ⟨…⟩➠⟨… short, …⟩</div></td></tr>
+	<tr><td class='source' rowSpan='2'>supplementalData</td><td class='target'>​/coverageLevels/</td><td class='target'>+coverageVariable</td><td class='target'><div>+key §d </div><div>+value §d </div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>group</td><td class='target'><div>status ⟨deprecated⟩➠⟨deprecated, grouping⟩</div></td></tr>
+	<tr><td class='source' rowSpan='3'>ldmlBCP47</td><td class='target'>/</td><td class='target'>attribute</td><td class='target'><div>+deprecated §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+deprecated §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>+deprecated §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='source' rowSpan='9'>keyboard</td><td class='target'></td><td class='target'>+keyboard</td><td class='target'><div>+locale §d </div></td></tr>
+	<tr><td class='target' rowSpan='5'>/</td><td class='target'>+version</td><td class='target'><div>+platform §d </div><div>+number §d </div><div>+cldrVersion §d </div></td></tr>
+	<tr><td class='target'>+names</td><td class='target'> </td></tr>
+	<tr><td class='target'>+settings</td><td class='target'><div>+fallback §d ⟨omit⟩</div><div>+transformFailure §d ⟨omit⟩</div><div>+transformPartial §d ⟨hide⟩</div></td></tr>
+	<tr><td class='target'>+keyMap</td><td class='target'><div>+modifiers §d </div></td></tr>
+	<tr><td class='target'>+transforms</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/keyMap/</td><td class='target'>+map</td><td class='target'><div>+iso §d </div><div>+to §d </div><div>+longPress §d </div><div>+transform §d ⟨no⟩</div></td></tr>
+	<tr><td class='target'>​/names/</td><td class='target'>+name</td><td class='target'><div>+value §d </div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>+transform</td><td class='target'><div>+from §d </div><div>+to §d </div></td></tr>
+	<tr><td class='source' rowSpan='3'>platform</td><td class='target'></td><td class='target'>+platform</td><td class='target'><div>+id §d </div></td></tr>
+	<tr><td class='target'>/</td><td class='target'>+hardwareMap</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/hardwareMap/</td><td class='target'>+map</td><td class='target'><div>+keycode §d </div><div>+iso §d </div></td></tr>
+	<tr><td class='source' rowSpan='26'><a name='21.0' href='#21.0'>21.0</a></td><td class='source' rowSpan='20'>ldml</td><td class='target' rowSpan='2'>/</td><td class='target'>+contextTransforms</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+metadata</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/collations​/collation/</td><td class='target'>settings</td><td class='target'><div>+reorder §d </div></td></tr>
+	<tr><td class='target'>​/contextTransforms/</td><td class='target'>+contextTransformUsage</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/contextTransforms​/contextTransformUsage/</td><td class='target'>+contextTransform</td><td class='target'><div>+type §d ⟨uiListOrMenu, stand-alone⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar/</td><td class='target'>+monthPatterns</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+cyclicNameSets</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets/</td><td class='target'>+cyclicNameSet</td><td class='target'><div>+type §d ⟨years, months, days, dayParts, zodiacs⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet/</td><td class='target'>+cyclicNameContext</td><td class='target'><div>+type §d ⟨format, stand-alone⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet​/cyclicNameContext/</td><td class='target'>+cyclicNameWidth</td><td class='target'><div>+type §d ⟨abbreviated, narrow, wide⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/cyclicNameSets​/cyclicNameSet​/cyclicNameContext​/cyclicNameWidth/</td><td class='target'>+cyclicName</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthPatterns/</td><td class='target'>+monthPatternContext</td><td class='target'><div>+type §d ⟨format, stand-alone, numeric⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthPatterns​/monthPatternContext/</td><td class='target'>+monthPatternWidth</td><td class='target'><div>+type §d ⟨abbreviated, narrow, wide, all⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthPatterns​/monthPatternContext​/monthPatternWidth/</td><td class='target'>+monthPattern</td><td class='target'><div>+type §d ⟨leap, standardAfterLeap, combined⟩</div></td></tr>
+	<tr><td class='target'>​/metadata/</td><td class='target'>+casingData</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/metadata​/casingData/</td><td class='target'>+casingItem</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/numbers/</td><td class='target'>+otherNumberingSystems</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/numbers​/otherNumberingSystems/</td><td class='target'>+native</td><td class='target'> </td></tr>
+	<tr><td class='target'>+traditional</td><td class='target'> </td></tr>
+	<tr><td class='target'>+finance</td><td class='target'> </td></tr>
+	<tr><td class='source' rowSpan='5'>supplementalData</td><td class='target' rowSpan='2'>/</td><td class='target'>plurals</td><td class='target'><div>+type §d ⟨ordinal, cardinal⟩</div></td></tr>
+	<tr><td class='target'>+gender</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/gender/</td><td class='target'>+personList</td><td class='target'><div>+type §d ⟨neutral, mixedNeutral, maleTaints⟩</div><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>group</td><td class='target'><div>+status §d ⟨deprecated⟩</div></td></tr>
+	<tr><td class='target'>​/timezoneData/</td><td class='target'>mapTimezones</td><td class='target'><div>+typeVersion §d </div><div>+otherVersion §d </div></td></tr>
+	<tr><td class='source'>ldmlBCP47</td><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+extension §d </div></td></tr>
+	<tr><td class='source' rowSpan='18'><a name='2.0.1' href='#2.0.1'>2.0.1</a></td><td class='source' rowSpan='10'>ldml</td><td class='target'>​/characters/</td><td class='target'>+stopwords</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/characters​/stopwords/</td><td class='target'>+stopwordList</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/collations​/collation/</td><td class='target'>settings</td><td class='target'><div>+private §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>displayName</td><td class='target'><div>count ⟨…⟩➠⟨0, 1, …⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods​/dayPeriodContext/</td><td class='target'>dayPeriodWidth</td><td class='target'><div>type ➠⟨abbreviated, narrow, wide⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days​/dayContext/</td><td class='target'>dayWidth</td><td class='target'><div>type ➠⟨abbreviated, narrow, wide⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/quarters​/quarterContext/</td><td class='target'>quarterWidth</td><td class='target'><div>type ➠⟨abbreviated, narrow, wide⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames/</td><td class='target'>+fallbackRegionFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/localeDisplayPattern/</td><td class='target'>+localeKeyTypePattern</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats/</td><td class='target'>unitPattern</td><td class='target'><div>count ⟨…⟩➠⟨0, 1, …⟩</div></td></tr>
+	<tr><td class='source' rowSpan='5'>supplementalData</td><td class='target'>/</td><td class='target'>+parentLocales</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/coverageLevels/</td><td class='target'>coverageLevel</td><td class='target'><div>+inLanguage §d </div><div>+inScript §d </div><div>+inTerritory §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/deprecated/</td><td class='target'>deprecatedItems</td><td class='target'><div>type ⟨… supplemental⟩➠⟨… supplemental, ldml, supplementalData, ldmlBCP47⟩</div></td></tr>
+	<tr><td class='target'>​/parentLocales/</td><td class='target'>+parentLocale</td><td class='target'><div>+parent §d </div><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>group</td><td class='target'><div>+grouping §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='source' rowSpan='3'>ldmlBCP47</td><td class='target'>/</td><td class='target'>attribute</td><td class='target'><div>+description §d </div><div>+since §d </div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>key</td><td class='target'><div>+description §d </div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>type</td><td class='target'><div>+description §d </div></td></tr>
+	<tr><td class='source' rowSpan='18'><a name='1.9.1' href='#1.9.1'>1.9.1</a></td><td class='source' rowSpan='11'>ldml</td><td class='target' rowSpan='3'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>type ⟨…⟩➠⟨… punctuation, …⟩</div></td></tr>
+	<tr><td class='target'>+ellipsis</td><td class='target'><div>+type §d ⟨initial, medial, final⟩</div></td></tr>
+	<tr><td class='target'>+moreInformation</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/collations​/collation​/rules/</td><td class='target'>+import</td><td class='target'><div>+source §d </div><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames/</td><td class='target'>+transformNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/transformNames/</td><td class='target'>+transformName</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/numbers/</td><td class='target'>symbols</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>decimalFormats</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>scientificFormats</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>percentFormats</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>currencyFormats</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='source' rowSpan='7'>supplementalData</td><td class='target'>/</td><td class='target'>+coverageLevels</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/coverageLevels/</td><td class='target'>+coverageLevel</td><td class='target'><div>+value §d </div><div>+match §d </div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/metadata​/alias/</td><td class='target'>languageAlias</td><td class='target'><div>+reason §d ⟨deprecated, overlong, macrolanguage, legacy⟩</div></td></tr>
+	<tr><td class='target'>scriptAlias</td><td class='target'><div>+reason §d ⟨deprecated, overlong⟩</div></td></tr>
+	<tr><td class='target'>territoryAlias</td><td class='target'><div>+reason §d ⟨deprecated, overlong⟩</div></td></tr>
+	<tr><td class='target'>variantAlias</td><td class='target'><div>+reason §d ⟨deprecated, overlong⟩</div></td></tr>
+	<tr><td class='target'>zoneAlias</td><td class='target'><div>+reason §d ⟨deprecated, overlong⟩</div></td></tr>
+	<tr><td class='source' rowSpan='43'><a name='1.8.1' href='#1.8.1'>1.8.1</a></td><td class='source' rowSpan='30'>ldml</td><td class='target'>/</td><td class='target'>+listPatterns</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>type ⟨… currencySymbol⟩➠⟨… currencySymbol, index⟩</div></td></tr>
+	<tr><td class='target'>+indexLabels</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='6'>​/characters​/indexLabels/</td><td class='target'>+indexSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>+compressedIndexSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>+indexRangePattern</td><td class='target'> </td></tr>
+	<tr><td class='target'>+indexLabelBefore</td><td class='target'> </td></tr>
+	<tr><td class='target'>+indexLabelAfter</td><td class='target'> </td></tr>
+	<tr><td class='target'>+indexLabel</td><td class='target'><div>+indexSource §d </div><div>+priority §d ⟨1, 2, 3⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar/</td><td class='target'>+dayPeriods</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods/</td><td class='target'>+dayPeriodContext</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods​/dayPeriodContext/</td><td class='target'>+dayPeriodWidth</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayPeriods​/dayPeriodContext​/dayPeriodWidth/</td><td class='target'>+dayPeriod</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months​/monthContext​/monthWidth/</td><td class='target'>month</td><td class='target'><div>+yeartype §d ⟨standard, leap⟩</div></td></tr>
+	<tr><td class='target'>​/listPatterns/</td><td class='target'>+listPattern</td><td class='target'><div>+type §d ⟨NMTOKEN⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/listPatterns​/listPattern/</td><td class='target'>+listPatternPart</td><td class='target'><div>+type §d ⟨start, middle, end, 2, 3⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='14'>​/numbers​/symbols/</td><td class='target'>decimal</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>group</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>list</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>percentSign</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>nativeZeroDigit</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>patternDigit</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>plusSign</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>minusSign</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>exponential</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>perMille</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>infinity</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>nan</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>currencyDecimal</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='target'>currencyGroup</td><td class='target'><div>+numberSystem §d </div></td></tr>
+	<tr><td class='source' rowSpan='12'>supplementalData</td><td class='target' rowSpan='5'>/</td><td class='target'>version</td><td class='target'><div>+cldrVersion §d </div></td></tr>
+	<tr><td class='target'>+languageMatching</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dayPeriodRuleSet</td><td class='target'> </td></tr>
+	<tr><td class='target'>+metaZones</td><td class='target'> </td></tr>
+	<tr><td class='target'>+windowsZones</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dayPeriodRuleSet/</td><td class='target'>+dayPeriodRules</td><td class='target'><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/dayPeriodRuleSet​/dayPeriodRules/</td><td class='target'>+dayPeriodRule</td><td class='target'><div>+type §d </div><div>+at §d </div><div>+after §d </div><div>+from §d </div><div>+before §d </div><div>+to §d </div></td></tr>
+	<tr><td class='target'>​/languageMatching/</td><td class='target'>+languageMatches</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/languageMatching​/languageMatches/</td><td class='target'>+languageMatch</td><td class='target'><div>+desired §d </div><div>+supported §d </div><div>+percent §d </div><div>+oneway §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metaZones/</td><td class='target'>+metazoneInfo</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+mapTimezones</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/windowsZones/</td><td class='target'>+mapTimezones</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='source'>ldmlBCP47</td><td class='target'>/</td><td class='target'>version</td><td class='target'><div>+cldrVersion §d </div></td></tr>
+	<tr><td class='source' rowSpan='26'><a name='1.7.2' href='#1.7.2'>1.7.2</a></td><td class='source' rowSpan='7'>ldml</td><td class='target'>/</td><td class='target'>+rbnf</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>pattern</td><td class='target'><div>+numbers §d </div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames/</td><td class='target'>+gmtZeroFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/numbers/</td><td class='target'>+defaultNumberingSystem</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/rbnf/</td><td class='target'>+rulesetGrouping</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping/</td><td class='target'>+ruleset</td><td class='target'><div>+type §d </div><div>+access §d ⟨public, private⟩</div><div>+allowsParsing §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/rbnf​/rulesetGrouping​/ruleset/</td><td class='target'>+rbnfrule</td><td class='target'><div>+value §d </div><div>+radix §d </div><div>+decexp §d </div></td></tr>
+	<tr><td class='source' rowSpan='12'>supplementalData</td><td class='target' rowSpan='4'>/</td><td class='target'>+postalCodeData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+calendarPreferenceData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+numberingSystems</td><td class='target'> </td></tr>
+	<tr><td class='target'>+bcp47KeywordMappings</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/bcp47KeywordMappings/</td><td class='target'>+mapKeys</td><td class='target'> </td></tr>
+	<tr><td class='target'>+mapTypes</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/bcp47KeywordMappings​/mapKeys/</td><td class='target'>+keyMap</td><td class='target'><div>+type §d </div><div>+bcp47 §d </div></td></tr>
+	<tr><td class='target'>​/bcp47KeywordMappings​/mapTypes/</td><td class='target'>+typeMap</td><td class='target'><div>+type §d </div><div>+bcp47 §d </div></td></tr>
+	<tr><td class='target'>​/calendarPreferenceData/</td><td class='target'>+calendarPreference</td><td class='target'><div>+territories §d </div><div>+ordering §d </div></td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>+tender §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/numberingSystems/</td><td class='target'>+numberingSystem</td><td class='target'><div>+id §d </div><div>+type §d ⟨numeric, algorithmic⟩</div><div>+radix §d </div><div>+digits §d </div><div>+rules §d </div></td></tr>
+	<tr><td class='target'>​/postalCodeData/</td><td class='target'>+postCodeRegex</td><td class='target'><div>+territoryId §d </div></td></tr>
+	<tr><td class='source' rowSpan='7'>ldmlBCP47</td><td class='target'></td><td class='target'>+ldmlBCP47</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='4'>/</td><td class='target'>+version</td><td class='target'><div>+number §d </div></td></tr>
+	<tr><td class='target'>+cldrVersion</td><td class='target'><div>+version §d </div></td></tr>
+	<tr><td class='target'>+keyword</td><td class='target'> </td></tr>
+	<tr><td class='target'>+attribute</td><td class='target'><div>+name §d </div></td></tr>
+	<tr><td class='target'>​/keyword/</td><td class='target'>+key</td><td class='target'><div>+name §d </div><div>+alias §d </div><div>+since §d </div></td></tr>
+	<tr><td class='target'>​/keyword​/key/</td><td class='target'>+type</td><td class='target'><div>+name §d </div><div>+alias §d </div><div>+since §d </div></td></tr>
+	<tr><td class='source' rowSpan='21'><a name='1.6.1' href='#1.6.1'>1.6.1</a></td><td class='source' rowSpan='14'>ldml</td><td class='target'>/</td><td class='target'>+units</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>displayName</td><td class='target'><div>+count §d ⟨zero, one, two, few, many, other⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats/</td><td class='target'>+intervalFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td><td class='target'>+intervalFormatFallback</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+intervalFormatItem</td><td class='target'><div>+id §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats​/intervalFormatItem/</td><td class='target'>+greatestDifference</td><td class='target'><div>+id §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames/</td><td class='target'>+localeDisplayPattern</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/localeDisplayNames​/localeDisplayPattern/</td><td class='target'>+localePattern</td><td class='target'> </td></tr>
+	<tr><td class='target'>+localeSeparator</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats/</td><td class='target'>+unitPattern</td><td class='target'><div>+count §d ⟨zero, one, two, few, many, other⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/symbols/</td><td class='target'>+currencyDecimal</td><td class='target'> </td></tr>
+	<tr><td class='target'>+currencyGroup</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/units/</td><td class='target'>+unit</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/units​/unit/</td><td class='target'>+unitPattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='source' rowSpan='7'>supplementalData</td><td class='target' rowSpan='3'>/</td><td class='target'>+cldrVersion</td><td class='target'><div>+version §d </div></td></tr>
+	<tr><td class='target'>+plurals</td><td class='target'> </td></tr>
+	<tr><td class='target'>+telephoneCodeData</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/plurals/</td><td class='target'>+pluralRules</td><td class='target'><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/plurals​/pluralRules/</td><td class='target'>+pluralRule</td><td class='target'><div>+count §d ⟨zero, one, two, few, many⟩</div></td></tr>
+	<tr><td class='target'>​/telephoneCodeData/</td><td class='target'>+codesByTerritory</td><td class='target'><div>+territory §d </div></td></tr>
+	<tr><td class='target'>​/telephoneCodeData​/codesByTerritory/</td><td class='target'>+telephoneCountryCode</td><td class='target'><div>+code §d </div><div>+from §d </div><div>+to §d </div></td></tr>
+	<tr><td class='source' rowSpan='35'><a name='1.5.1' href='#1.5.1'>1.5.1</a></td><td class='source' rowSpan='12'>ldml</td><td class='target'>/</td><td class='target'>+fallback</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>type ⟨… standard⟩➠⟨… standard, currencySymbol⟩</div></td></tr>
+	<tr><td class='target'>​/dates/</td><td class='target'>+dateRangePattern</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames/</td><td class='target'>+metazone</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/timeZoneNames​/metazone/</td><td class='target'>+long</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+short</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+commonlyUsed</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames​/zone/</td><td class='target'>+commonlyUsed</td><td class='target'><div>+used §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/layout/</td><td class='target'>inList</td><td class='target'><div>casing ⟨… titlecase-firstword⟩➠⟨… titlecase-firstword, lowercase-words, mixed⟩</div></td></tr>
+	<tr><td class='target'>+inText</td><td class='target'><div>+type §d ⟨languages, scripts, territories, variants, keys, types, measurementSystemNames, monthWidth, dayWidth, quarterWidth, long, fields, currency⟩</div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames/</td><td class='target'>+codePatterns</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/codePatterns/</td><td class='target'>+codePattern</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='source' rowSpan='23'>supplementalData</td><td class='target' rowSpan='5'>/</td><td class='target'>+territoryInfo</td><td class='target'> </td></tr>
+	<tr><td class='target'>+codeMappings</td><td class='target'> </td></tr>
+	<tr><td class='target'>+likelySubtags</td><td class='target'> </td></tr>
+	<tr><td class='target'>+metazoneInfo</td><td class='target'> </td></tr>
+	<tr><td class='target'>+references</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/calendarData​/calendar/</td><td class='target'>+calendarSystem</td><td class='target'><div>+type §d ⟨solar, lunar, lunisolar, other⟩</div></td></tr>
+	<tr><td class='target'>+eras</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/calendarData​/calendar​/eras/</td><td class='target'>+era</td><td class='target'><div>+type §d </div><div>+start §d </div><div>+end §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/codeMappings/</td><td class='target'>+languageCodes</td><td class='target'><div>+type §d </div><div>+alpha3 §d </div></td></tr>
+	<tr><td class='target'>+territoryCodes</td><td class='target'><div>+type §d </div><div>+numeric §d </div><div>+alpha3 §d </div><div>+fips10 §d </div><div>+internet §d </div></td></tr>
+	<tr><td class='target'>​/likelySubtags/</td><td class='target'>+likelySubtag</td><td class='target'><div>+from §d </div><div>+to §d </div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/metadata/</td><td class='target'>+distinguishing</td><td class='target'> </td></tr>
+	<tr><td class='target'>+blocking</td><td class='target'> </td></tr>
+	<tr><td class='target'>+defaultContent</td><td class='target'><div>+locales §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/blocking/</td><td class='target'>+blockingItems</td><td class='target'><div>+elements §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/coverageAdditions/</td><td class='target'>+currencyCoverage</td><td class='target'><div>+type §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/distinguishing/</td><td class='target'>+distinguishingItems</td><td class='target'><div>+exclude §d ⟨true, false⟩</div><div>+elements §d </div><div>+attributes §d </div></td></tr>
+	<tr><td class='target'>​/metazoneInfo/</td><td class='target'>+timezone</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/metazoneInfo​/timezone/</td><td class='target'>+usesMetazone</td><td class='target'><div>+mzone §d </div><div>+from §d </div><div>+to §d </div></td></tr>
+	<tr><td class='target'>​/references/</td><td class='target'>+reference</td><td class='target'><div>+type §d </div><div>+uri §d </div></td></tr>
+	<tr><td class='target'>​/territoryInfo/</td><td class='target'>+territory</td><td class='target'><div>+type §d </div><div>+gdp §d </div><div>+literacyPercent §d </div><div>+population §d </div></td></tr>
+	<tr><td class='target'>​/territoryInfo​/territory/</td><td class='target'>+languagePopulation</td><td class='target'><div>+type §d </div><div>+writingPercent §d </div><div>+populationPercent §d </div><div>+officialStatus §d ⟨de_facto_official, official, official_regional, official_minority⟩</div></td></tr>
+	<tr><td class='target'>​/timezoneData​/mapTimezones/</td><td class='target'>mapZone</td><td class='target'><div>+territory §d </div></td></tr>
+	<tr><td class='source' rowSpan='58'><a name='1.4.1' href='#1.4.1'>1.4.1</a></td><td class='source' rowSpan='27'>ldml</td><td class='target'>/</td><td class='target'>+segmentations</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/characters/</td><td class='target'>mapping</td><td class='target'><div>+choice §d </div></td></tr>
+	<tr><td class='target'>​/collations​/collation/</td><td class='target'>settings</td><td class='target'><div>+hiraganaQuaternary §d ⟨on, off⟩</div><div>+variableTop §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars/</td><td class='target'>default</td><td class='target'><div>+choice §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar/</td><td class='target'>+quarters</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats/</td><td class='target'>+availableFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+appendItems</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/appendItems/</td><td class='target'>+appendItem</td><td class='target'><div>+request §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td><td class='target'>+dateFormatItem</td><td class='target'><div>+id §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/eras/</td><td class='target'>+eraNarrow</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/eras​/eraNarrow/</td><td class='target'>+era</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/quarters/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+quarterContext</td><td class='target'><div>+type §d ⟨format, stand-alone⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/quarters​/quarterContext/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+quarterWidth</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/quarters​/quarterContext​/quarterWidth/</td><td class='target'>+quarter</td><td class='target'><div>+type §d ⟨1, 2, 3, 4⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/timeZoneNames/</td><td class='target'>abbreviationFallback</td><td class='target'><div>+choice §d ⟨GMT, standard⟩</div></td></tr>
+	<tr><td class='target'>preferenceOrdering</td><td class='target'><div>+choice §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames/</td><td class='target'>+measurementSystemNames</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/measurementSystemNames/</td><td class='target'>+measurementSystemName</td><td class='target'><div>+type §d ⟨US, metric, UK⟩</div></td></tr>
+	<tr><td class='target'>​/measurement/</td><td class='target'>measurementSystem</td><td class='target'><div>+choice §d ⟨metric, US, UK⟩</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencies​/currency/</td><td class='target'>symbol</td><td class='target'><div>+choice §d ⟨true, false⟩</div></td></tr>
+	<tr><td class='target'>​/segmentations/</td><td class='target'>+segmentation</td><td class='target'><div>+type §d </div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/segmentations​/segmentation/</td><td class='target'>+variables</td><td class='target'> </td></tr>
+	<tr><td class='target'>+segmentRules</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/segmentRules/</td><td class='target'>+rule</td><td class='target'><div>+id §d </div></td></tr>
+	<tr><td class='target'>​/segmentations​/segmentation​/variables/</td><td class='target'>+variable</td><td class='target'><div>+id §d </div></td></tr>
+	<tr><td class='source' rowSpan='31'>supplementalData</td><td class='target' rowSpan='4'>/</td><td class='target'>+calendarData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+weekData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+measurementData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+transforms</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/calendarData/</td><td class='target'>+calendar</td><td class='target'><div>+type §d </div><div>+territories §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurementData/</td><td class='target'>+measurementSystem</td><td class='target'><div>+type §d ⟨metric, US, UK⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='target'>+paperSize</td><td class='target'><div>+type §d ⟨A4, US-Letter⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='target' rowSpan='7'>​/metadata/</td><td class='target'>+attributeOrder</td><td class='target'> </td></tr>
+	<tr><td class='target'>+elementOrder</td><td class='target'> </td></tr>
+	<tr><td class='target'>+serialElements</td><td class='target'> </td></tr>
+	<tr><td class='target'>+suppress</td><td class='target'> </td></tr>
+	<tr><td class='target'>+validity</td><td class='target'> </td></tr>
+	<tr><td class='target'>+coverageAdditions</td><td class='target'> </td></tr>
+	<tr><td class='target'>+skipDefaultLocale</td><td class='target'><div>+services §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/alias/</td><td class='target'>+zoneAlias</td><td class='target'><div>+type §d </div><div>+replacement §d </div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/metadata​/coverageAdditions/</td><td class='target'>+languageCoverage</td><td class='target'><div>+type §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>+scriptCoverage</td><td class='target'><div>+type §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>+territoryCoverage</td><td class='target'><div>+type §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>+timezoneCoverage</td><td class='target'><div>+type §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/suppress/</td><td class='target'>+attributes</td><td class='target'><div>+element §d </div><div>+attribute §d </div><div>+attributeValue §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata​/validity/</td><td class='target'>+variable</td><td class='target'><div>+id §d </div><div>+type §d </div></td></tr>
+	<tr><td class='target'>+attributeValues</td><td class='target'><div>+elements §d </div><div>+attributes §d </div><div>+type §d </div><div>+order §d </div></td></tr>
+	<tr><td class='target'>​/timezoneData/</td><td class='target'>+zoneFormatting</td><td class='target'><div>+multizone §d </div><div>+tzidVersion §d </div></td></tr>
+	<tr><td class='target'>​/timezoneData​/zoneFormatting/</td><td class='target'>+zoneItem</td><td class='target'><div>+type §d </div><div>+territory §d </div><div>+aliases §d </div></td></tr>
+	<tr><td class='target'>​/transforms/</td><td class='target'>+transform</td><td class='target'><div>+source §d </div><div>+target §d </div><div>+variant §d </div><div>+direction §d ⟨forward, backward, both⟩</div><div>+visibility §d ⟨internal, external⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/transforms​/transform/</td><td class='target'>+comment</td><td class='target'> </td></tr>
+	<tr><td class='target'>+tRule</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='4'>​/weekData/</td><td class='target'>+minDays</td><td class='target'><div>+count §d ⟨1, 2, 3, 4, 5, 6, 7⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='target'>+firstDay</td><td class='target'><div>+day §d ⟨sun, mon, tue, wed, thu, fri, sat⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='target'>+weekendStart</td><td class='target'><div>+day §d ⟨sun, mon, tue, wed, thu, fri, sat⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='target'>+weekendEnd</td><td class='target'><div>+day §d ⟨sun, mon, tue, wed, thu, fri, sat⟩</div><div>+territories §d </div></td></tr>
+	<tr><td class='source' rowSpan='37'><a name='1.3' href='#1.3'>1.3</a></td><td class='source' rowSpan='16'>ldml</td><td class='target' rowSpan='2'>/</td><td class='target'>posix</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+references</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>relative</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/timeZoneNames/</td><td class='target'>+singleCountries</td><td class='target'><div>+list §d </div></td></tr>
+	<tr><td class='target'>​/layout/</td><td class='target'>+inList</td><td class='target'><div>+casing §d ⟨titlecase-words, titlecase-firstword⟩</div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats/</td><td class='target'>+currencySpacing</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/currencyFormats​/currencySpacing/</td><td class='target'>+beforeCurrency</td><td class='target'> </td></tr>
+	<tr><td class='target'>+afterCurrency</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/numbers​/currencyFormats​/currencySpacing​/afterCurrency/</td><td class='target'>+currencyMatch</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+surroundingMatch</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+insertBetween</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/numbers​/currencyFormats​/currencySpacing​/beforeCurrency/</td><td class='target'>+currencyMatch</td><td class='target'> </td></tr>
+	<tr><td class='target'>+surroundingMatch</td><td class='target'> </td></tr>
+	<tr><td class='target'>+insertBetween</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/posix/</td><td class='target'>messages</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/references/</td><td class='target'>+reference</td><td class='target'><div>+type §d </div><div>+uri §d </div></td></tr>
+	<tr><td class='source' rowSpan='21'>supplementalData</td><td class='target' rowSpan='6'>/</td><td class='target'>+version</td><td class='target'><div>+number §d </div></td></tr>
+	<tr><td class='target'>+territoryContainment</td><td class='target'> </td></tr>
+	<tr><td class='target'>+languageData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+timezoneData</td><td class='target'> </td></tr>
+	<tr><td class='target'>+characters</td><td class='target'> </td></tr>
+	<tr><td class='target'>+metadata</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/characters/</td><td class='target'>+character-fallback</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/characters​/character-fallback/</td><td class='target'>+character</td><td class='target'><div>+value §d </div></td></tr>
+	<tr><td class='target'>​/characters​/character-fallback​/character/</td><td class='target'>+substitute</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>currency</td><td class='target'><div>+from §d </div><div>+to §d </div></td></tr>
+	<tr><td class='target'>​/languageData/</td><td class='target'>+language</td><td class='target'><div>+type §d </div><div>+scripts §d </div><div>+territories §d </div><div>+variants §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/metadata/</td><td class='target'>+alias</td><td class='target'> </td></tr>
+	<tr><td class='target'>+deprecated</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='4'>​/metadata​/alias/</td><td class='target'>+languageAlias</td><td class='target'><div>+type §d </div><div>+replacement §d </div></td></tr>
+	<tr><td class='target'>+scriptAlias</td><td class='target'><div>+type §d </div><div>+replacement §d </div></td></tr>
+	<tr><td class='target'>+territoryAlias</td><td class='target'><div>+type §d </div><div>+replacement §d </div></td></tr>
+	<tr><td class='target'>+variantAlias</td><td class='target'><div>+type §d </div><div>+replacement §d </div></td></tr>
+	<tr><td class='target'>​/metadata​/deprecated/</td><td class='target'>+deprecatedItems</td><td class='target'><div>+type §d ⟨standard, supplemental⟩</div><div>+elements §d </div><div>+attributes §d </div><div>+values §d </div></td></tr>
+	<tr><td class='target'>​/territoryContainment/</td><td class='target'>+group</td><td class='target'><div>+type §d </div><div>+contains §d </div></td></tr>
+	<tr><td class='target'>​/timezoneData/</td><td class='target'>+mapTimezones</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/timezoneData​/mapTimezones/</td><td class='target'>+mapZone</td><td class='target'><div>+type §d </div><div>+other §d </div></td></tr>
+	<tr><td class='source' rowSpan='72'><a name='1.2' href='#1.2'>1.2</a></td><td class='source' rowSpan='72'>ldml</td><td class='target' rowSpan='5'>/</td><td class='target'>delimiters</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>measurement</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>dates</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>numbers</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>collations</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/characters/</td><td class='target'>exemplarCharacters</td><td class='target'><div>+type §d ⟨auxiliary, standard⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>mapping</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/collations/</td><td class='target'>collation</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates/</td><td class='target'>localizedPatternChars</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>calendars</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>timeZoneNames</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars/</td><td class='target'>calendar</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='10'>​/dates​/calendars​/calendar/</td><td class='target'>months</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>days</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>week</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>am</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>pm</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>eras</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>dateFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>timeFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>dateTimeFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>+fields</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats/</td><td class='target'>dateFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength/</td><td class='target'>dateFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats/</td><td class='target'>dateTimeFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/dateTimeFormatLength/</td><td class='target'>dateTimeFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days/</td><td class='target'>dayContext</td><td class='target'><div>type ➠⟨format, stand-alone⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days​/dayContext/</td><td class='target'>dayWidth</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/eras/</td><td class='target'>eraNames</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>eraAbbr</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/fields/</td><td class='target'>+field</td><td class='target'><div>+type §d ⟨era, year, month, week, day, weekday, dayperiod, hour, minute, second, zone⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/fields​/field/</td><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+relative</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months/</td><td class='target'>monthContext</td><td class='target'><div>type ➠⟨format, stand-alone⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months​/monthContext/</td><td class='target'>monthWidth</td><td class='target'><div>type ➠⟨abbreviated, narrow, wide⟩</div><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/timeFormats/</td><td class='target'>timeFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/timeFormats​/timeFormatLength/</td><td class='target'>timeFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/week/</td><td class='target'>weekendStart</td><td class='target'><div>day ➠⟨sun, mon, tue, wed, thu, fri, sat⟩</div></td></tr>
+	<tr><td class='target'>weekendEnd</td><td class='target'><div>day ➠⟨sun, mon, tue, wed, thu, fri, sat⟩</div></td></tr>
+	<tr><td class='target' rowSpan='8'>​/dates​/timeZoneNames/</td><td class='target'>+hourFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>+hoursFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>+gmtFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>+regionFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>+fallbackFormat</td><td class='target'> </td></tr>
+	<tr><td class='target'>+abbreviationFallback</td><td class='target'><div>+type §d ⟨GMT, standard⟩</div></td></tr>
+	<tr><td class='target'>+preferenceOrdering</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>zone</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/timeZoneNames​/zone/</td><td class='target'>long</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>short</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/localeDisplayNames/</td><td class='target'>languages</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>scripts</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>territories</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>variants</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>keys</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>types</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurement/</td><td class='target'>measurementSystem</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>paperSize</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/numbers/</td><td class='target'>symbols</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>decimalFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>scientificFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>percentFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>currencyFormats</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>currencies</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/currencies/</td><td class='target'>currency</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats/</td><td class='target'>currencyFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats​/currencyFormatLength/</td><td class='target'>currencyFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats/</td><td class='target'>decimalFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats​/decimalFormatLength/</td><td class='target'>decimalFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats/</td><td class='target'>percentFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats​/percentFormatLength/</td><td class='target'>percentFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats/</td><td class='target'>scientificFormatLength</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats​/scientificFormatLength/</td><td class='target'>scientificFormat</td><td class='target'><div>+validSubLocales §d </div></td></tr>
+	<tr><td class='source' rowSpan='234'><a name='1.1.1' href='#1.1.1'>1.1.1</a></td><td class='source' rowSpan='227'>ldml</td><td class='target'></td><td class='target'>+ldml</td><td class='target'><div>+version §d </div></td></tr>
+	<tr><td class='target' rowSpan='9'>/</td><td class='target'>+localeDisplayNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>+layout</td><td class='target'> </td></tr>
+	<tr><td class='target'>+characters</td><td class='target'> </td></tr>
+	<tr><td class='target'>+delimiters</td><td class='target'> </td></tr>
+	<tr><td class='target'>+measurement</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dates</td><td class='target'> </td></tr>
+	<tr><td class='target'>+numbers</td><td class='target'> </td></tr>
+	<tr><td class='target'>+collations</td><td class='target'><div>+version §d </div></td></tr>
+	<tr><td class='target'>+posix</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/characters/</td><td class='target'>+exemplarCharacters</td><td class='target'> </td></tr>
+	<tr><td class='target'>+mapping</td><td class='target'><div>+registry §d </div><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/characters​/exemplarCharacters/</td><td class='target'>+cp</td><td class='target'><div>+hex §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+collation</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/collations​/collation/</td><td class='target'>+base</td><td class='target'> </td></tr>
+	<tr><td class='target'>+settings</td><td class='target'><div>+strength §d ⟨primary, secondary, tertiary, quaternary, identical⟩</div><div>+alternate §d ⟨non-ignorable, shifted⟩</div><div>+backwards §d ⟨on, off⟩</div><div>+normalization §d ⟨on, off⟩</div><div>+caseLevel §d ⟨on, off⟩</div><div>+caseFirst §d ⟨upper, lower, off⟩</div><div>+hiraganaQuarternary §d ⟨on, off⟩</div><div>+numeric §d ⟨on, off⟩</div></td></tr>
+	<tr><td class='target'>+suppress_contractions</td><td class='target'> </td></tr>
+	<tr><td class='target'>+optimize</td><td class='target'> </td></tr>
+	<tr><td class='target'>+rules</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/collations​/collation​/optimize/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='12'>​/collations​/collation​/rules/</td><td class='target'>+reset</td><td class='target'><div>+before §d </div></td></tr>
+	<tr><td class='target'>+p</td><td class='target'> </td></tr>
+	<tr><td class='target'>+pc</td><td class='target'> </td></tr>
+	<tr><td class='target'>+s</td><td class='target'> </td></tr>
+	<tr><td class='target'>+sc</td><td class='target'> </td></tr>
+	<tr><td class='target'>+t</td><td class='target'> </td></tr>
+	<tr><td class='target'>+tc</td><td class='target'> </td></tr>
+	<tr><td class='target'>+q</td><td class='target'> </td></tr>
+	<tr><td class='target'>+qc</td><td class='target'> </td></tr>
+	<tr><td class='target'>+i</td><td class='target'> </td></tr>
+	<tr><td class='target'>+ic</td><td class='target'> </td></tr>
+	<tr><td class='target'>+x</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/i/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/ic/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/p/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/pc/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/q/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/qc/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='13'>​/collations​/collation​/rules​/reset/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+first_variable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+first_tertiary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_tertiary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+first_secondary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_secondary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+first_primary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_primary_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+first_non_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_non_ignorable</td><td class='target'> </td></tr>
+	<tr><td class='target'>+first_trailing</td><td class='target'> </td></tr>
+	<tr><td class='target'>+last_trailing</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/s/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/sc/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/t/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/collations​/collation​/rules​/tc/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+last_variable</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='12'>​/collations​/collation​/rules​/x/</td><td class='target'>+context</td><td class='target'> </td></tr>
+	<tr><td class='target'>+p</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+pc</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+s</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+sc</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+t</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+tc</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+q</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+qc</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+i</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+ic</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+extend</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/collations​/collation​/rules​/x​/context/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/collations​/collation​/rules​/x​/extend/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/collations​/collation​/suppress_contractions/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates/</td><td class='target'>+localizedPatternChars</td><td class='target'> </td></tr>
+	<tr><td class='target'>+calendars</td><td class='target'> </td></tr>
+	<tr><td class='target'>+timeZoneNames</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars/</td><td class='target'>+default</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>+calendar</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='13'>​/dates​/calendars​/calendar/</td><td class='target'>+months</td><td class='target'> </td></tr>
+	<tr><td class='target'>+monthNames</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>+monthAbbr</td><td class='target'> </td></tr>
+	<tr><td class='target'>+days</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dayNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dayAbbr</td><td class='target'> </td></tr>
+	<tr><td class='target'>+week</td><td class='target'> </td></tr>
+	<tr><td class='target'>+am</td><td class='target'> </td></tr>
+	<tr><td class='target'>+pm</td><td class='target'> </td></tr>
+	<tr><td class='target'>+eras</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dateFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+timeFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+dateTimeFormats</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dateFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dateFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td><td class='target'>+pattern</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>+displayName</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dateTimeFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats​/dateTimeFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dateTimeFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dateTimeFormats​/dateTimeFormatLength​/dateTimeFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayAbbr/</td><td class='target'>+day</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/dayNames/</td><td class='target'>+day</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/days/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dayContext</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/days​/dayContext/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+dayWidth</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/days​/dayContext​/dayWidth/</td><td class='target'>+day</td><td class='target'><div>+type §d ⟨sun, mon, tue, wed, thu, fri, sat⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/eras/</td><td class='target'>+eraNames</td><td class='target'> </td></tr>
+	<tr><td class='target'>+eraAbbr</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/eras​/eraAbbr/</td><td class='target'>+era</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/eras​/eraNames/</td><td class='target'>+era</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthAbbr/</td><td class='target'>+month</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/monthNames/</td><td class='target'>+month</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/months/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+monthContext</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/months​/monthContext/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+monthWidth</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months​/monthContext​/monthWidth/</td><td class='target'>+month</td><td class='target'><div>+type §d ⟨1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13⟩</div></td></tr>
+	<tr><td class='target'>​/dates​/calendars​/calendar​/months​/monthContext​/monthWidth​/month/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/timeFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+timeFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/timeFormats​/timeFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+timeFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/timeFormats​/timeFormatLength​/timeFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/dates​/calendars​/calendar​/week/</td><td class='target'>+minDays</td><td class='target'><div>+count §d ⟨1, 2, 3, 4, 5, 6, 7⟩</div></td></tr>
+	<tr><td class='target'>+firstDay</td><td class='target'><div>+day §d </div></td></tr>
+	<tr><td class='target'>+weekendStart</td><td class='target'><div>+day §d </div><div>+time §d </div></td></tr>
+	<tr><td class='target'>+weekendEnd</td><td class='target'><div>+day §d </div><div>+time §d </div></td></tr>
+	<tr><td class='target'>​/dates​/localizedPatternChars/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/dates​/timeZoneNames/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+zone</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/timeZoneNames​/zone/</td><td class='target'>+long</td><td class='target'> </td></tr>
+	<tr><td class='target'>+short</td><td class='target'> </td></tr>
+	<tr><td class='target'>+exemplarCity</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/timeZoneNames​/zone​/long/</td><td class='target'>+generic</td><td class='target'> </td></tr>
+	<tr><td class='target'>+standard</td><td class='target'> </td></tr>
+	<tr><td class='target'>+daylight</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='3'>​/dates​/timeZoneNames​/zone​/short/</td><td class='target'>+generic</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+standard</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+daylight</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='4'>​/delimiters/</td><td class='target'>+quotationStart</td><td class='target'> </td></tr>
+	<tr><td class='target'>+quotationEnd</td><td class='target'> </td></tr>
+	<tr><td class='target'>+alternateQuotationStart</td><td class='target'> </td></tr>
+	<tr><td class='target'>+alternateQuotationEnd</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/delimiters​/alternateQuotationEnd/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/delimiters​/alternateQuotationStart/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/delimiters​/quotationEnd/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/delimiters​/quotationStart/</td><td class='target'>+cp</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>​/layout/</td><td class='target'>+orientation</td><td class='target'><div>+characters §d ⟨left-to-right, right-to-left, top-to-bottom, bottom-to-top⟩</div><div>+lines §d ⟨left-to-right, right-to-left, top-to-bottom, bottom-to-top⟩</div></td></tr>
+	<tr><td class='target' rowSpan='6'>​/localeDisplayNames/</td><td class='target'>+languages</td><td class='target'> </td></tr>
+	<tr><td class='target'>+scripts</td><td class='target'> </td></tr>
+	<tr><td class='target'>+territories</td><td class='target'> </td></tr>
+	<tr><td class='target'>+variants</td><td class='target'> </td></tr>
+	<tr><td class='target'>+keys</td><td class='target'> </td></tr>
+	<tr><td class='target'>+types</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/keys/</td><td class='target'>+key</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/languages/</td><td class='target'>+language</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/scripts/</td><td class='target'>+script</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/territories/</td><td class='target'>+territory</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/types/</td><td class='target'>+type</td><td class='target'><div>+type §d </div><div>+key §d </div></td></tr>
+	<tr><td class='target'>​/localeDisplayNames​/variants/</td><td class='target'>+variant</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurement/</td><td class='target'>+measurementSystem</td><td class='target'><div>+type §d ⟨metric, US, UK⟩</div></td></tr>
+	<tr><td class='target'>+paperSize</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/measurement​/paperSize/</td><td class='target'>+height</td><td class='target'> </td></tr>
+	<tr><td class='target'>+width</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='6'>​/numbers/</td><td class='target'>+symbols</td><td class='target'> </td></tr>
+	<tr><td class='target'>+decimalFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+scientificFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+percentFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+currencyFormats</td><td class='target'> </td></tr>
+	<tr><td class='target'>+currencies</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/currencies/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+currency</td><td class='target'><div>+id §d </div><div>+type §d </div></td></tr>
+	<tr><td class='target' rowSpan='5'>​/numbers​/currencies​/currency/</td><td class='target'>+displayName</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+symbol</td><td class='target'> </td></tr>
+	<tr><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+decimal</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+group</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/currencyFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+currencyFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/currencyFormats​/currencyFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+currencyFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/currencyFormats​/currencyFormatLength​/currencyFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/decimalFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+decimalFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/decimalFormats​/decimalFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+decimalFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/decimalFormats​/decimalFormatLength​/decimalFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/percentFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+percentFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/percentFormats​/percentFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+percentFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/percentFormats​/percentFormatLength​/percentFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/scientificFormats/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+scientificFormatLength</td><td class='target'><div>+type §d ⟨full, long, medium, short⟩</div></td></tr>
+	<tr><td class='target' rowSpan='2'>​/numbers​/scientificFormats​/scientificFormatLength/</td><td class='target'>+default</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target'>+scientificFormat</td><td class='target'><div>+type §d </div></td></tr>
+	<tr><td class='target'>​/numbers​/scientificFormats​/scientificFormatLength​/scientificFormat/</td><td class='target'>+pattern</td><td class='target'><div>⊕</div></td></tr>
+	<tr><td class='target' rowSpan='12'>​/numbers​/symbols/</td><td class='target'>+decimal</td><td class='target'> </td></tr>
+	<tr><td class='target'>+group</td><td class='target'> </td></tr>
+	<tr><td class='target'>+list</td><td class='target'> </td></tr>
+	<tr><td class='target'>+percentSign</td><td class='target'> </td></tr>
+	<tr><td class='target'>+nativeZeroDigit</td><td class='target'> </td></tr>
+	<tr><td class='target'>+patternDigit</td><td class='target'> </td></tr>
+	<tr><td class='target'>+plusSign</td><td class='target'> </td></tr>
+	<tr><td class='target'>+minusSign</td><td class='target'> </td></tr>
+	<tr><td class='target'>+exponential</td><td class='target'> </td></tr>
+	<tr><td class='target'>+perMille</td><td class='target'> </td></tr>
+	<tr><td class='target'>+infinity</td><td class='target'> </td></tr>
+	<tr><td class='target'>+nan</td><td class='target'> </td></tr>
+	<tr><td class='target'>​/posix/</td><td class='target'>+messages</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='4'>​/posix​/messages/</td><td class='target'>+yesstr</td><td class='target'> </td></tr>
+	<tr><td class='target'>+nostr</td><td class='target'> </td></tr>
+	<tr><td class='target'>+yesexpr</td><td class='target'> </td></tr>
+	<tr><td class='target'>+noexpr</td><td class='target'> </td></tr>
+	<tr><td class='source' rowSpan='7'>supplementalData</td><td class='target'></td><td class='target'>+supplementalData</td><td class='target'><div>+version §d </div></td></tr>
+	<tr><td class='target'>/</td><td class='target'>+currencyData</td><td class='target'> </td></tr>
+	<tr><td class='target' rowSpan='2'>​/currencyData/</td><td class='target'>+fractions</td><td class='target'> </td></tr>
+	<tr><td class='target'>+region</td><td class='target'><div>+iso3166 §d </div></td></tr>
+	<tr><td class='target'>​/currencyData​/fractions/</td><td class='target'>+info</td><td class='target'><div>+iso4217 §d </div><div>+digits §d </div><div>+rounding §d </div></td></tr>
+	<tr><td class='target'>​/currencyData​/region/</td><td class='target'>+currency</td><td class='target'><div>+before §d </div><div>+iso4217 §d </div></td></tr>
+	<tr><td class='target'>​/currencyData​/region​/currency/</td><td class='target'>+alternate</td><td class='target'><div>+iso4217 §d </div></td></tr>
+</table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
