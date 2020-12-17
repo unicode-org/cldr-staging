@@ -1,0 +1,224 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unit Conversions</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Unit Conversions</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Unit Conversions provide conversions for units, such as meter ⟹ foot, so that a source units can be converted into what is needed for localized <a href='unit_preferences.html' target='unit_preferences'>Unit Preferences</a>. There are many possible units, and additional units and conversions will be added in future releases.</p><ul><li>Each Source Unit is converted to the Target Unit by multiplying it by the Factor and adding the Offset (if any).</li><li>The unit identifiers are internal, and are to be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example. <li>Each numeric value is an exact rational. The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li><li>The Systems column indicates which systems the units are used in. For now, they just show the two ‘inch-pound’ systems.</li><li>The units are grouped and ordered by Quantity (which are based on the NIST quantities, see <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). Note that the quantities are informative.</li><li>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements.</li></ul><p><b>Warning:</b> Do not scrape this chart for production data.
+Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/master/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/master/common/testData/units/unitsTest.txt' target='common/testData/units/unitsTest.txt'>common/testData/units/unitsTest.txt</a>.</p>
+<table>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='candela' href='#candela'>candela</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>candela</td><td class='target'></td><td class='target'><a name='luminous-intensity' href='#luminous-intensity'>luminous-intensity</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='grain' href='#grain'>grain</a></td><td class='target' style='text-align:right'>0.00006479891</td><td class='target' style='text-align:right' rowSpan='12'></td><td class='target' rowSpan='12'>kilogram</td><td class='target'>ussystem, uksystem</td><td class='target' rowSpan='12'><a name='mass' href='#mass'>mass</a></td></tr>
+	<tr><td class='source'><a name='carat' href='#carat'>carat</a></td><td class='target' style='text-align:right'>0.0002</td><td class='target' rowSpan='2'></td></tr>
+	<tr><td class='source'><a name='gram' href='#gram'>gram</a></td><td class='target' style='text-align:right'>0.001</td></tr>
+	<tr><td class='source'><a name='ounce' href='#ounce'>ounce</a></td><td class='target' style='text-align:right'>0.028349523125</td><td class='target' rowSpan='3'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='ounce-troy' href='#ounce-troy'>ounce-troy</a></td><td class='target' style='text-align:right'>0.03110348</td></tr>
+	<tr><td class='source'><a name='pound' href='#pound'>pound</a></td><td class='target' style='text-align:right'>0.45359237</td></tr>
+	<tr><td class='source'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='target' style='text-align:right'>1</td><td class='target'></td></tr>
+	<tr><td class='source'><a name='stone' href='#stone'>stone</a></td><td class='target' style='text-align:right'>6.35029318</td><td class='target'>uksystem</td></tr>
+	<tr><td class='source'><a name='ton' href='#ton'>ton</a></td><td class='target' style='text-align:right'>907.18474</td><td class='target'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='target' style='text-align:right'>1,000</td><td class='target' rowSpan='3'></td></tr>
+	<tr><td class='source'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='target' style='text-align:right'>5,972,200,000,000,000,000,000,000</td></tr>
+	<tr><td class='source'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='target' style='text-align:right'>1,988,470,000,000,000,000,000,000,000,000</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='point' href='#point'>point</a></td><td class='target' style='text-align:right'>0.000352˙7</td><td class='target' style='text-align:right' rowSpan='16'></td><td class='target' rowSpan='16'>meter</td><td class='target' rowSpan='4'>ussystem, uksystem</td><td class='target' rowSpan='16'><a name='length' href='#length'>length</a></td></tr>
+	<tr><td class='source'><a name='inch' href='#inch'>inch</a></td><td class='target' style='text-align:right'>0.0254</td></tr>
+	<tr><td class='source'><a name='foot' href='#foot'>foot</a></td><td class='target' style='text-align:right'>0.3048</td></tr>
+	<tr><td class='source'><a name='yard' href='#yard'>yard</a></td><td class='target' style='text-align:right'>0.9144</td></tr>
+	<tr><td class='source'><a name='meter' href='#meter'>meter</a></td><td class='target' style='text-align:right'>1</td><td class='target'></td></tr>
+	<tr><td class='source'><a name='fathom' href='#fathom'>fathom</a></td><td class='target' style='text-align:right'>1.8288</td><td class='target' rowSpan='4'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='furlong' href='#furlong'>furlong</a></td><td class='target' style='text-align:right'>201.168</td></tr>
+	<tr><td class='source'><a name='mile' href='#mile'>mile</a></td><td class='target' style='text-align:right'>1,609.344</td></tr>
+	<tr><td class='source'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td><td class='target' style='text-align:right'>1,852</td></tr>
+	<tr><td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='target' style='text-align:right'>10,000</td><td class='target' rowSpan='7'></td></tr>
+	<tr><td class='source'><a name='100-kilometer' href='#100-kilometer'>100-kilometer</a></td><td class='target' style='text-align:right'>100,000</td></tr>
+	<tr><td class='source'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='target' style='text-align:right'>6,378,100</td></tr>
+	<tr><td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='target' style='text-align:right'>695,700,000</td></tr>
+	<tr><td class='source'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td><td class='target' style='text-align:right'>149,597,900,000</td></tr>
+	<tr><td class='source'><a name='light-year' href='#light-year'>light-year</a></td><td class='target' style='text-align:right'>9,460,730,000,000,000</td></tr>
+	<tr><td class='source'><a name='parsec' href='#parsec'>parsec</a></td><td class='target' style='text-align:right'>30,856,780,000,000,000</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='second' href='#second'>second</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='7'></td><td class='target' rowSpan='7'>second</td><td class='target' rowSpan='7'></td><td class='target' rowSpan='7'><a name='duration' href='#duration'>duration</a></td></tr>
+	<tr><td class='source'><a name='minute' href='#minute'>minute</a></td><td class='target' style='text-align:right'>60</td></tr>
+	<tr><td class='source'><a name='hour' href='#hour'>hour</a></td><td class='target' style='text-align:right'>3,600</td></tr>
+	<tr><td class='source'><a name='day' href='#day'>day</a></td><td class='target' style='text-align:right' rowSpan='2'>86,400</td></tr>
+	<tr><td class='source'><a name='day-person' href='#day-person'>day-person</a></td></tr>
+	<tr><td class='source'><a name='week' href='#week'>week</a></td><td class='target' style='text-align:right' rowSpan='2'>604,800</td></tr>
+	<tr><td class='source'><a name='week-person' href='#week-person'>week-person</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='month' href='#month'>month</a></td><td class='target' style='text-align:right' rowSpan='2'>0.08˙3</td><td class='target' style='text-align:right' rowSpan='6'></td><td class='target' rowSpan='6'>year</td><td class='target' rowSpan='6'></td><td class='target' rowSpan='6'><a name='year-duration' href='#year-duration'>year-duration</a></td></tr>
+	<tr><td class='source'><a name='month-person' href='#month-person'>month-person</a></td></tr>
+	<tr><td class='source'><a name='year' href='#year'>year</a></td><td class='target' style='text-align:right' rowSpan='2'>1</td></tr>
+	<tr><td class='source'><a name='year-person' href='#year-person'>year-person</a></td></tr>
+	<tr><td class='source'><a name='decade' href='#decade'>decade</a></td><td class='target' style='text-align:right'>10</td></tr>
+	<tr><td class='source'><a name='century' href='#century'>century</a></td><td class='target' style='text-align:right'>100</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='ampere' href='#ampere'>ampere</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>ampere</td><td class='target'></td><td class='target'><a name='electric-current' href='#electric-current'>electric-current</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td><td class='target' style='text-align:right'>0.˙5</td><td class='target' style='text-align:right'>255.37˙2</td><td class='target' rowSpan='3'>kelvin</td><td class='target'>ussystem, uksystem</td><td class='target' rowSpan='3'><a name='temperature' href='#temperature'>temperature</a></td></tr>
+	<tr><td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target' style='text-align:right'></td><td class='target' rowSpan='2'></td></tr>
+	<tr><td class='source'><a name='celsius' href='#celsius'>celsius</a></td><td class='target' style='text-align:right'>273.15</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='target' style='text-align:right'>0.0000007˙716049382</td><td class='target' style='text-align:right' rowSpan='5'></td><td class='target' rowSpan='5'>revolution</td><td class='target' rowSpan='5'></td><td class='target' rowSpan='5'><a name='angle' href='#angle'>angle</a></td></tr>
+	<tr><td class='source'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='target' style='text-align:right'>0.00004˙629</td></tr>
+	<tr><td class='source'><a name='degree' href='#degree'>degree</a></td><td class='target' style='text-align:right'>0.002˙7</td></tr>
+	<tr><td class='source'><a name='radian' href='#radian'>radian</a></td><td class='target' style='text-align:right'>65,501,488/411,557,987</td></tr>
+	<tr><td class='source'><a name='revolution' href='#revolution'>revolution</a></td><td class='target' style='text-align:right'>1</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='item' href='#item'>item</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='2'></td><td class='target' rowSpan='2'>item</td><td class='target' rowSpan='2'></td><td class='target' rowSpan='2'><a name='substance-amount' href='#substance-amount'>substance-amount</a></td></tr>
+	<tr><td class='source'><a name='mole' href='#mole'>mole</a></td><td class='target' style='text-align:right'>602,214,076,000,000,000,000,000</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='permillion' href='#permillion'>permillion</a></td><td class='target' style='text-align:right'>0.000001</td><td class='target' style='text-align:right' rowSpan='6'></td><td class='target' rowSpan='6'>portion</td><td class='target' rowSpan='6'></td><td class='target' rowSpan='6'><a name='portion' href='#portion'>portion</a></td></tr>
+	<tr><td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='target' style='text-align:right'>0.0001</td></tr>
+	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td><td class='target' style='text-align:right'>0.001</td></tr>
+	<tr><td class='source'><a name='percent' href='#percent'>percent</a></td><td class='target' style='text-align:right'>0.01</td></tr>
+	<tr><td class='source'><a name='karat' href='#karat'>karat</a></td><td class='target' style='text-align:right'>0.041˙6</td></tr>
+	<tr><td class='source'><a name='portion' href='#portion'>portion</a></td><td class='target' style='text-align:right'>1</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='bit' href='#bit'>bit</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='2'></td><td class='target' rowSpan='2'>bit</td><td class='target' rowSpan='2'></td><td class='target' rowSpan='2'><a name='digital' href='#digital'>digital</a></td></tr>
+	<tr><td class='source'><a name='byte' href='#byte'>byte</a></td><td class='target' style='text-align:right'>8</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='dot' href='#dot'>dot</a></td><td class='target' style='text-align:right' rowSpan='2'>1</td><td class='target' style='text-align:right' rowSpan='2'></td><td class='target' rowSpan='2'>pixel</td><td class='target' rowSpan='2'></td><td class='target' rowSpan='2'><a name='graphics' href='#graphics'>graphics</a></td></tr>
+	<tr><td class='source'><a name='pixel' href='#pixel'>pixel</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='em' href='#em'>em</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>em</td><td class='target'></td><td class='target'><a name='typewidth' href='#typewidth'>typewidth</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='hertz' href='#hertz'>hertz</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>revolution-per-second</td><td class='target'></td><td class='target'><a name='frequency' href='#frequency'>frequency</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='newton' href='#newton'>newton</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='2'></td><td class='target' rowSpan='2'>kilogram-meter-per-square-second</td><td class='target'></td><td class='target' rowSpan='2'><a name='force' href='#force'>force</a></td></tr>
+	<tr><td class='source'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='target' style='text-align:right'>4.4482216152605</td><td class='target'>ussystem, uksystem</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='pascal' href='#pascal'>pascal</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='3'></td><td class='target' rowSpan='3'>kilogram-per-meter-square-second</td><td class='target' rowSpan='3'></td><td class='target' rowSpan='3'><a name='pressure' href='#pressure'>pressure</a></td></tr>
+	<tr><td class='source'><a name='bar' href='#bar'>bar</a></td><td class='target' style='text-align:right'>100,000</td></tr>
+	<tr><td class='source'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='target' style='text-align:right'>101,325</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='ofhg' href='#ofhg'>ofhg</a></td><td class='target' style='text-align:right'>133,322.387415</td><td class='target' style='text-align:right'></td><td class='target'>kilogram-per-square-meter-square-second</td><td class='target'></td><td class='target'><a name='pressure-per-length' href='#pressure-per-length'>pressure-per-length</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='target' style='text-align:right'>0.0000000000000000001602177</td><td class='target' style='text-align:right' rowSpan='7'></td><td class='target' rowSpan='7'>kilogram-square-meter-per-square-second</td><td class='target' rowSpan='4'></td><td class='target' rowSpan='7'><a name='energy' href='#energy'>energy</a></td></tr>
+	<tr><td class='source'><a name='dalton' href='#dalton'>dalton</a></td><td class='target' style='text-align:right'>0.00000000014924180856</td></tr>
+	<tr><td class='source'><a name='joule' href='#joule'>joule</a></td><td class='target' style='text-align:right'>1</td></tr>
+	<tr><td class='source'><a name='calorie' href='#calorie'>calorie</a></td><td class='target' style='text-align:right'>4.184</td></tr>
+	<tr><td class='source'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='target' style='text-align:right'>1,054.3502644˙8</td><td class='target' rowSpan='2'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='foodcalorie' href='#foodcalorie'>foodcalorie</a></td><td class='target' style='text-align:right'>4,184</td></tr>
+	<tr><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='target' style='text-align:right'>105,480,400</td><td class='target'>ussystem</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='watt' href='#watt'>watt</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right' rowSpan='3'></td><td class='target' rowSpan='3'>kilogram-square-meter-per-cubic-second</td><td class='target'></td><td class='target' rowSpan='3'><a name='power' href='#power'>power</a></td></tr>
+	<tr><td class='source'><a name='horsepower' href='#horsepower'>horsepower</a></td><td class='target' style='text-align:right'>745.69987158227022</td><td class='target'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='target' style='text-align:right'>382,800,000,000,000,000,000,000,000</td><td class='target'></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='volt' href='#volt'>volt</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>kilogram-square-meter-per-cubic-second-ampere</td><td class='target'></td><td class='target'><a name='voltage' href='#voltage'>voltage</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='ohm' href='#ohm'>ohm</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>kilogram-square-meter-per-cubic-second-square-ampere</td><td class='target'></td><td class='target'><a name='electric-resistance' href='#electric-resistance'>electric-resistance</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='dunam' href='#dunam'>dunam</a></td><td class='target' style='text-align:right'>1,000</td><td class='target' style='text-align:right' rowSpan='3'></td><td class='target' rowSpan='3'>square-meter</td><td class='target'></td><td class='target' rowSpan='3'><a name='area' href='#area'>area</a></td></tr>
+	<tr><td class='source'><a name='acre' href='#acre'>acre</a></td><td class='target' style='text-align:right'>4,046.8564224</td><td class='target'>ussystem, uksystem</td></tr>
+	<tr><td class='source'><a name='hectare' href='#hectare'>hectare</a></td><td class='target' style='text-align:right'>10,000</td><td class='target'></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='drop' href='#drop'>drop</a></td><td class='target' style='text-align:right'>0.0000000513429332682291˙6</td><td class='target' style='text-align:right' rowSpan='21'></td><td class='target' rowSpan='21'>cubic-meter</td><td class='target' rowSpan='3'>ussystem</td><td class='target' rowSpan='21'><a name='volume' href='#volume'>volume</a></td></tr>
+	<tr><td class='source'><a name='pinch' href='#pinch'>pinch</a></td><td class='target' style='text-align:right'>0.00000023104319970703125</td></tr>
+	<tr><td class='source'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='target' style='text-align:right'>0.00000184834559765625</td></tr>
+	<tr><td class='source'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='target' style='text-align:right'>0.0000022197705078125</td><td class='target'>uksystem</td></tr>
+	<tr><td class='source'><a name='dram' href='#dram'>dram</a></td><td class='target' style='text-align:right'>0.0000036966911953125</td><td class='target' rowSpan='3'>ussystem</td></tr>
+	<tr><td class='source'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td><td class='target' style='text-align:right'>0.00000492892159375</td></tr>
+	<tr><td class='source'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='target' style='text-align:right'>0.00001478676478125</td></tr>
+	<tr><td class='source'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='target' style='text-align:right'>0.0000284130625</td><td class='target'>uksystem</td></tr>
+	<tr><td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='target' style='text-align:right'>0.0000295735295625</td><td class='target' rowSpan='3'>ussystem</td></tr>
+	<tr><td class='source'><a name='jigger' href='#jigger'>jigger</a></td><td class='target' style='text-align:right'>0.00004436029434375</td></tr>
+	<tr><td class='source'><a name='cup' href='#cup'>cup</a></td><td class='target' style='text-align:right'>0.0002365882365</td></tr>
+	<tr><td class='source'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='target' style='text-align:right'>0.00025</td><td class='target'></td></tr>
+	<tr><td class='source'><a name='pint' href='#pint'>pint</a></td><td class='target' style='text-align:right'>0.000473176473</td><td class='target'>ussystem</td></tr>
+	<tr><td class='source'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='target' style='text-align:right'>0.0005</td><td class='target'></td></tr>
+	<tr><td class='source'><a name='quart' href='#quart'>quart</a></td><td class='target' style='text-align:right'>0.000946352946</td><td class='target'>ussystem</td></tr>
+	<tr><td class='source'><a name='liter' href='#liter'>liter</a></td><td class='target' style='text-align:right'>0.001</td><td class='target'></td></tr>
+	<tr><td class='source'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='target' style='text-align:right'>0.0011365225</td><td class='target'>uksystem</td></tr>
+	<tr><td class='source'><a name='gallon' href='#gallon'>gallon</a></td><td class='target' style='text-align:right'>0.003785411784</td><td class='target'>ussystem</td></tr>
+	<tr><td class='source'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='target' style='text-align:right'>0.00454609</td><td class='target'>uksystem</td></tr>
+	<tr><td class='source'><a name='bushel' href='#bushel'>bushel</a></td><td class='target' style='text-align:right'>0.03523907016688</td><td class='target' rowSpan='2'>ussystem</td></tr>
+	<tr><td class='source'><a name='barrel' href='#barrel'>barrel</a></td><td class='target' style='text-align:right'>0.158987294928</td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='knot' href='#knot'>knot</a></td><td class='target' style='text-align:right'>0.51˙4</td><td class='target' style='text-align:right'></td><td class='target'>meter-per-second</td><td class='target'>ussystem, uksystem</td><td class='target'><a name='speed' href='#speed'>speed</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='g-force' href='#g-force'>g-force</a></td><td class='target' style='text-align:right'>9.80665</td><td class='target' style='text-align:right'></td><td class='target'>meter-per-square-second</td><td class='target'></td><td class='target'><a name='acceleration' href='#acceleration'>acceleration</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='lux' href='#lux'>lux</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>candela-per-square-meter</td><td class='target'></td><td class='target'><a name='illuminance' href='#illuminance'>illuminance</a></td></tr>
+	<tr><th class='source'>Source Unit</th><th class='target'>Factor</th><th class='target'>Offset</th><th class='target'>Target</th><th class='target'>Systems</th><th class='target'>Quantity</th></tr>
+	<tr><td class='source'><a name='lumen' href='#lumen'>lumen</a></td><td class='target' style='text-align:right'>1</td><td class='target' style='text-align:right'></td><td class='target'>candela-square-meter-per-square-meter</td><td class='target'></td><td class='target'><a name='luminous-flux' href='#luminous-flux'>luminous-flux</a></td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
