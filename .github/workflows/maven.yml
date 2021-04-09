@@ -30,13 +30,8 @@ jobs:
           mvn -B clean package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Upload core.zip
+      - name: Upload cldr-zips.zip
         uses: actions/upload-artifact@v2
         with:
-          name: core
-          path: target/core.zip
-      - name: Upload keyboards.zip
-        uses: actions/upload-artifact@v2
-        with:
-          name: keyboards
-          path: target/keyboards.zip
+          name: cldr-zips
+          path: target/*.zip
