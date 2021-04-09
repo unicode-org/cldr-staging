@@ -43,13 +43,13 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>core</id>
+						<id>cldr-common</id>
 						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>core</finalName>
+							<finalName>cldr-common</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 							<descriptors>
 								<descriptor>src/main/assembly/cldr-common.xml</descriptor>
@@ -63,7 +63,7 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>keyboards</finalName>
+							<finalName>cldr-keyboards</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 							<descriptors>
 								<descriptor>src/main/assembly/cldr-keyboards.xml</descriptor>
