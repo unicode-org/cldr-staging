@@ -1,0 +1,459 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Language Matching</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Language Matching</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Language Matching data is used to match the user’s desired language/locales against an application’s supported languages/locales. For more information, see <a href='http://unicode.org/reports/tr35/#LanguageMatching'>Language Matching</a>. The latest release data for this chart is in <a href='http://unicode.org/cldr/latest/common/supplemental/languageInfo.xml'>languageInfo.xml</a>. The matching process is approximately:<p><ul><li>The rules are tested—in order—for matches, with the first one winning.</li><li>Any exact match between fields has zero distance.</li><li>The placeholder (*) matches any code (of that type). For the last field in Supported, it must be different than Desired.</li><li>The <i>Distance</i> indicates how close the match is, where identical fields have distance = 0. </li><li>A ⬌︎ in the <i>Sym?</i> column indicates that the distance is symmetric, and is thus used for both directions: Supported→Desired and Desired→Supported. A → indicates that the distance is <i>not</i> symmetric: this is usually a <i>fallback</i> match.</li></ul><h2>Type=written_new</h2><table>
+	<tr><th class='source'>Desired</th><th class='source'>Supported</th><th class='source'>D. Code</th><th class='source'>S. Code</th><th class='target'>Distance</th><th class='target'>Sym?</th></tr>
+	<tr><td class='source'>Norwegian Bokmål</td><td class='source'>Norwegian</td><td class='source'>nb</td><td class='source'>no</td><td class='target'>1</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Croatian</td><td class='source' rowSpan='2'>Bosnian</td><td class='source'>hr</td><td class='source'>bs</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source' rowSpan='3'>Serbo-Croatian</td><td class='source' rowSpan='3'>sh</td><td class='source'>bs</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Croatian</td><td class='source'>hr</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Serbian</td><td class='source'>sr</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Saho</td><td class='source'>Afar</td><td class='source'>ssy</td><td class='source'>aa</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Swiss German</td><td class='source' rowSpan='2'>German</td><td class='source'>gsw</td><td class='source'>de</td><td class='target'>4</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Luxembourgish</td><td class='source'>lb</td><td class='source'>de</td><td class='target'>4</td><td class='target'>→</td></tr>
+	<tr><td class='source' rowSpan='2'>Danish</td><td class='source'>Norwegian</td><td class='source' rowSpan='2'>da</td><td class='source'>no</td><td class='target'>8</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Norwegian Bokmål</td><td class='source'>nb</td><td class='target'>8</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Abkhazian</td><td class='source'>Russian</td><td class='source'>ab</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Acoli</td><td class='source'>English</td><td class='source'>ach</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Afrikaans</td><td class='source'>Dutch</td><td class='source'>af</td><td class='source'>nl</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Akan</td><td class='source' rowSpan='2'>English</td><td class='source'>ak</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Amharic</td><td class='source'>am</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Aymara</td><td class='source'>Spanish</td><td class='source'>ay</td><td class='source'>es</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Azeri</td><td class='source'>Russian</td><td class='source'>az</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Baluchi</td><td class='source'>Urdu</td><td class='source'>bal</td><td class='source'>ur</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Belarusian</td><td class='source'>Russian</td><td class='source'>be</td><td class='source'>ru</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bemba</td><td class='source'>English</td><td class='source'>bem</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bihari</td><td class='source'>Hindi</td><td class='source'>bh</td><td class='source'>hi</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bangla</td><td class='source'>English</td><td class='source'>bn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tibetan</td><td class='source'>Chinese</td><td class='source'>bo</td><td class='source'>zh</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Breton</td><td class='source'>French</td><td class='source'>br</td><td class='source'>fr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Catalan</td><td class='source'>Spanish</td><td class='source'>ca</td><td class='source'>es</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cebuano</td><td class='source'>Filipino</td><td class='source'>ceb</td><td class='source'>fil</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cherokee</td><td class='source'>English</td><td class='source'>chr</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Central Kurdish</td><td class='source'>Arabic</td><td class='source'>ckb</td><td class='source'>ar</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Corsican</td><td class='source' rowSpan='2'>French</td><td class='source'>co</td><td class='source'>fr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Seselwa Creole French</td><td class='source'>crs</td><td class='source'>fr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Czech</td><td class='source'>Slovak</td><td class='source'>cs</td><td class='source'>sk</td><td class='target'>20</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Welsh</td><td class='source' rowSpan='3'>English</td><td class='source'>cy</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ewe</td><td class='source'>ee</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Esperanto</td><td class='source'>eo</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Basque</td><td class='source'>Spanish</td><td class='source'>eu</td><td class='source'>es</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Faroese</td><td class='source'>Danish</td><td class='source'>fo</td><td class='source'>da</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Western Frisian</td><td class='source'>Dutch</td><td class='source'>fy</td><td class='source'>nl</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Irish</td><td class='source' rowSpan='3'>English</td><td class='source'>ga</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ga</td><td class='source'>gaa</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Scottish Gaelic</td><td class='source'>gd</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Galician</td><td class='source' rowSpan='2'>Spanish</td><td class='source'>gl</td><td class='source'>es</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Guarani</td><td class='source'>gn</td><td class='source'>es</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gujarati</td><td class='source'>Hindi</td><td class='source'>gu</td><td class='source'>hi</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hausa</td><td class='source' rowSpan='2'>English</td><td class='source'>ha</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hawaiian</td><td class='source'>haw</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Haitian Creole</td><td class='source'>French</td><td class='source'>ht</td><td class='source'>fr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Armenian</td><td class='source'>Russian</td><td class='source'>hy</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Interlingua</td><td class='source' rowSpan='3'>English</td><td class='source'>ia</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Igbo</td><td class='source'>ig</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Icelandic</td><td class='source'>is</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Javanese</td><td class='source'>Indonesian</td><td class='source'>jv</td><td class='source'>id</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Georgian</td><td class='source'>English</td><td class='source'>ka</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kongo</td><td class='source'>French</td><td class='source'>kg</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kazakh</td><td class='source'>Russian</td><td class='source'>kk</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Khmer</td><td class='source' rowSpan='3'>English</td><td class='source'>km</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kannada</td><td class='source'>kn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Krio</td><td class='source'>kri</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kurdish</td><td class='source'>Turkish</td><td class='source'>ku</td><td class='source'>tr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kyrgyz</td><td class='source'>Russian</td><td class='source'>ky</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Latin</td><td class='source'>Italian</td><td class='source'>la</td><td class='source'>it</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ganda</td><td class='source'>English</td><td class='source'>lg</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lingala</td><td class='source'>French</td><td class='source'>ln</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lao</td><td class='source' rowSpan='2'>English</td><td class='source'>lo</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lozi</td><td class='source'>loz</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Luba-Lulua</td><td class='source'>French</td><td class='source'>lua</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Maithili</td><td class='source'>Hindi</td><td class='source'>mai</td><td class='source'>hi</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Morisyen</td><td class='source'>English</td><td class='source'>mfe</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malagasy</td><td class='source'>French</td><td class='source'>mg</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Māori</td><td class='source' rowSpan='2'>English</td><td class='source'>mi</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malayalam</td><td class='source'>ml</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Mongolian</td><td class='source'>Russian</td><td class='source'>mn</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Marathi</td><td class='source'>Hindi</td><td class='source'>mr</td><td class='source'>hi</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malay</td><td class='source'>Indonesian</td><td class='source'>ms</td><td class='source'>id</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Maltese</td><td class='source' rowSpan='3'>English</td><td class='source'>mt</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Burmese</td><td class='source'>my</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nepali</td><td class='source'>ne</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source' rowSpan='2'>Norwegian Nynorsk</td><td class='source'>Norwegian Bokmål</td><td class='source' rowSpan='2'>nn</td><td class='source'>nb</td><td class='target'>20</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Norwegian</td><td class='source'>no</td><td class='target'>20</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Northern Sotho</td><td class='source' rowSpan='3'>English</td><td class='source'>nso</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nyanja</td><td class='source'>ny</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nyankole</td><td class='source'>nyn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Occitan</td><td class='source'>French</td><td class='source'>oc</td><td class='source'>fr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Oromo</td><td class='source' rowSpan='5'>English</td><td class='source'>om</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Odia</td><td class='source'>or</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Punjabi</td><td class='source'>pa</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nigerian Pidgin</td><td class='source'>pcm</td><td class='source'>en</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pashto</td><td class='source'>ps</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Quechua</td><td class='source'>Spanish</td><td class='source'>qu</td><td class='source'>es</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Romansh</td><td class='source'>German</td><td class='source'>rm</td><td class='source'>de</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Rundi</td><td class='source'>English</td><td class='source'>rn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kinyarwanda</td><td class='source'>French</td><td class='source'>rw</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sanskrit</td><td class='source'>Hindi</td><td class='source'>sa</td><td class='source'>hi</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sindhi</td><td class='source' rowSpan='6'>English</td><td class='source'>sd</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sinhala</td><td class='source'>si</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Shona</td><td class='source'>sn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Somali</td><td class='source'>so</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Albanian</td><td class='source'>sq</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Sotho</td><td class='source'>st</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sundanese</td><td class='source'>Indonesian</td><td class='source'>su</td><td class='source'>id</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Swahili</td><td class='source' rowSpan='3'>English</td><td class='source'>sw</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tamil</td><td class='source'>ta</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Telugu</td><td class='source'>te</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tajik</td><td class='source'>Russian</td><td class='source'>tg</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tigrinya</td><td class='source'>English</td><td class='source'>ti</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Turkmen</td><td class='source'>Russian</td><td class='source'>tk</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Klingon</td><td class='source' rowSpan='3'>English</td><td class='source'>tlh</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tswana</td><td class='source'>tn</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tongan</td><td class='source'>to</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tatar</td><td class='source'>Russian</td><td class='source'>tt</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tumbuka</td><td class='source'>English</td><td class='source'>tum</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Uyghur</td><td class='source'>Chinese</td><td class='source'>ug</td><td class='source'>zh</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ukrainian</td><td class='source'>Russian</td><td class='source'>uk</td><td class='source'>ru</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Urdu</td><td class='source'>English</td><td class='source'>ur</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Uzbek</td><td class='source'>Russian</td><td class='source'>uz</td><td class='source'>ru</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Wolof</td><td class='source'>French</td><td class='source'>wo</td><td class='source'>fr</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Xhosa</td><td class='source' rowSpan='3'>English</td><td class='source'>xh</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Yiddish</td><td class='source'>yi</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Yoruba</td><td class='source'>yo</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Zhuang</td><td class='source'>Chinese</td><td class='source'>za</td><td class='source'>zh</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Zulu</td><td class='source'>English</td><td class='source'>zu</td><td class='source'>en</td><td class='target'>30</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Algerian Saharan Arabic</td><td class='source' rowSpan='29'>Arabic</td><td class='source'>aao</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tajiki Arabic</td><td class='source'>abh</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Baharna Arabic</td><td class='source'>abv</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Mesopotamian Arabic</td><td class='source'>acm</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ta'izzi-Adeni Arabic</td><td class='source'>acq</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hijazi Arabic</td><td class='source'>acw</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Omani Arabic</td><td class='source'>acx</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cypriot Arabic</td><td class='source'>acy</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Dhofari Arabic</td><td class='source'>adf</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tunisian Arabic</td><td class='source'>aeb</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Saidi Arabic</td><td class='source'>aec</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gulf Arabic</td><td class='source'>afb</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>South Levantine Arabic</td><td class='source'>ajp</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>North Levantine Arabic</td><td class='source'>apc</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sudanese Arabic</td><td class='source'>apd</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Algerian Arabic</td><td class='source'>arq</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Najdi Arabic</td><td class='source'>ars</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Moroccan Arabic</td><td class='source'>ary</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Egyptian Arabic</td><td class='source'>arz</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Uzbeki Arabic</td><td class='source'>auz</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Eastern Egyptian Bedawi Arabic</td><td class='source'>avl</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hadrami Arabic</td><td class='source'>ayh</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Libyan Arabic</td><td class='source'>ayl</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sanaani Arabic</td><td class='source'>ayn</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>North Mesopotamian Arabic</td><td class='source'>ayp</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Babalia Creole Arabic</td><td class='source'>bbz</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sudanese Creole Arabic</td><td class='source'>pga</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chadian Arabic</td><td class='source'>shu</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Shihhi Arabic</td><td class='source'>ssh</td><td class='source'>ar</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>South Azerbaijani</td><td class='source'>Azeri</td><td class='source'>azb</td><td class='source'>az</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Võro</td><td class='source'>Estonian</td><td class='source'>vro</td><td class='source'>et</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Maasina Fulfulde</td><td class='source' rowSpan='8'>Fulah</td><td class='source'>ffm</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Adamawa Fulfulde</td><td class='source'>fub</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Borgu Fulfulde</td><td class='source'>fue</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pular</td><td class='source'>fuf</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Western Niger Fulfulde</td><td class='source'>fuh</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bagirmi Fulfulde</td><td class='source'>fui</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Central-Eastern Niger Fulfulde</td><td class='source'>fuq</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nigerian Fulfulde</td><td class='source'>fuv</td><td class='source'>ff</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Western Bolivian Guaraní</td><td class='source' rowSpan='4'>Guarani</td><td class='source'>gnw</td><td class='source'>gn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Eastern Bolivian Guaraní</td><td class='source'>gui</td><td class='source'>gn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Mbyá Guaraní</td><td class='source'>gun</td><td class='source'>gn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chiripá</td><td class='source'>nhd</td><td class='source'>gn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Inuinnaqtun</td><td class='source'>Inuktitut</td><td class='source'>ikt</td><td class='source'>iu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Markweeta</td><td class='source' rowSpan='8'>Kalenjin</td><td class='source'>enb</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Keiyo</td><td class='source'>eyo</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nandi</td><td class='source'>niq</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Okiek</td><td class='source'>oki</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pökoot</td><td class='source'>pko</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kipsigis</td><td class='source'>sgc</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Terik</td><td class='source'>tec</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tugen</td><td class='source'>tuy</td><td class='source'>kln</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Goan Konkani</td><td class='source'>Konkani</td><td class='source'>gom</td><td class='source'>kok</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Guinea Kpelle</td><td class='source'>Kpelle</td><td class='source'>gkp</td><td class='source'>kpe</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Idakho-Isukha-Tiriki</td><td class='source' rowSpan='13'>Luyia</td><td class='source'>ida</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kabras</td><td class='source'>lkb</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Khayo</td><td class='source'>lko</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kisa</td><td class='source'>lks</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Marachi</td><td class='source'>lri</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Marama</td><td class='source'>lrm</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Saamia</td><td class='source'>lsm</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tsotso</td><td class='source'>lto</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tachoni</td><td class='source'>lts</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Wanga</td><td class='source'>lwg</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>East Nyala</td><td class='source'>nle</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nyore</td><td class='source'>nyd</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Logooli</td><td class='source'>rag</td><td class='source'>luy</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Latgalian</td><td class='source'>Latvian</td><td class='source'>ltg</td><td class='source'>lv</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bara Malagasy</td><td class='source' rowSpan='11'>Malagasy</td><td class='source'>bhr</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Betsimisaraka Malagasy</td><td class='source'>bjq</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Northern Betsimisaraka Malagasy</td><td class='source'>bmm</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Betsimisaraka Malagasy</td><td class='source'>bzc</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Masikoro Malagasy</td><td class='source'>msh</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sakalava Malagasy</td><td class='source'>skg</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tandroy-Mahafaly Malagasy</td><td class='source'>tdx</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tesaka Malagasy</td><td class='source'>tkg</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tanosy Malagasy</td><td class='source'>txy</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Antankarana Malagasy</td><td class='source'>xmv</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tsimihety Malagasy</td><td class='source'>xmw</td><td class='source'>mg</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Peripheral Mongolian</td><td class='source'>Mongolian</td><td class='source'>mvf</td><td class='source'>mn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Banjar</td><td class='source' rowSpan='35'>Malay</td><td class='source'>bjn</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bacanese Malay</td><td class='source'>btj</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Berau Malay</td><td class='source'>bve</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bukit Malay</td><td class='source'>bvu</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cocos Islands Malay</td><td class='source'>coa</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Duano</td><td class='source'>dup</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Haji</td><td class='source'>hji</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Indonesian</td><td class='source'>id</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Jakun</td><td class='source'>jak</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Jambi Malay</td><td class='source'>jax</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kubu</td><td class='source'>kvb</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kerinci</td><td class='source'>kvr</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Brunei</td><td class='source'>kxd</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Loncong</td><td class='source'>lce</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lubu</td><td class='source'>lcf</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Col</td><td class='source'>liw</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>North Moluccan Malay</td><td class='source'>max</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kedah Malay</td><td class='source'>meo</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pattani Malay</td><td class='source'>mfa</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bangka</td><td class='source'>mfb</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Minangkabau</td><td class='source'>min</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kota Bangun Kutai Malay</td><td class='source'>mqg</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sabah Malay</td><td class='source'>msi</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Musi</td><td class='source'>mui</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Orang Kanaq</td><td class='source'>orn</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Orang Seletar</td><td class='source'>ors</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pekal</td><td class='source'>pel</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Central Malay</td><td class='source'>pse</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Temuan</td><td class='source'>tmw</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Urak Lawoi'</td><td class='source'>urk</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kaur</td><td class='source'>vkk</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tenggarong Kutai Malay</td><td class='source'>vkt</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Manado Malay</td><td class='source'>xmm</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malay [individual language]</td><td class='source'>zlm</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Negeri Sembilan Malay</td><td class='source'>zmi</td><td class='source'>ms</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Dotyali</td><td class='source'>Nepali</td><td class='source'>dty</td><td class='source'>ne</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Borana-Arsi-Guji Oromo</td><td class='source' rowSpan='3'>Oromo</td><td class='source'>gax</td><td class='source'>om</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Eastern Oromo</td><td class='source'>hae</td><td class='source'>om</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Orma</td><td class='source'>orc</td><td class='source'>om</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sambalpuri</td><td class='source'>Odia</td><td class='source'>spv</td><td class='source'>or</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Pashto</td><td class='source' rowSpan='2'>Pashto</td><td class='source'>pbt</td><td class='source'>ps</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Central Pashto</td><td class='source'>pst</td><td class='source'>ps</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Huallaga Huánuco Quechua</td><td class='source' rowSpan='42'>Quechua</td><td class='source'>qub</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Calderón Highland Quichua</td><td class='source'>qud</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lambayeque Quechua</td><td class='source'>quf</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chimborazo Highland Quichua</td><td class='source'>qug</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>South Bolivian Quechua</td><td class='source'>quh</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chachapoyas Quechua</td><td class='source'>quk</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>North Bolivian Quechua</td><td class='source'>qul</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Pastaza Quechua</td><td class='source'>qup</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Yanahuanca Pasco Quechua</td><td class='source'>qur</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Santiago del Estero Quichua</td><td class='source'>qus</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tena Lowland Quichua</td><td class='source'>quw</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Yauyos Quechua</td><td class='source'>qux</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ayacucho Quechua</td><td class='source'>quy</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Ambo-Pasco Quechua</td><td class='source'>qva</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cajamarca Quechua</td><td class='source'>qvc</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Eastern Apurímac Quechua</td><td class='source'>qve</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Huamalíes-Dos de Mayo Huánuco Quechua</td><td class='source'>qvh</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Imbabura Highland Quichua</td><td class='source'>qvi</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Loja Highland Quichua</td><td class='source'>qvj</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cajatambo North Lima Quechua</td><td class='source'>qvl</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Margos-Yarowilca-Lauricocha Quechua</td><td class='source'>qvm</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>North Junín Quechua</td><td class='source'>qvn</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Napo Lowland Quechua</td><td class='source'>qvo</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pacaraos Quechua</td><td class='source'>qvp</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>San Martín Quechua</td><td class='source'>qvs</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Huaylla Wanca Quechua</td><td class='source'>qvw</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Northern Pastaza Quichua</td><td class='source'>qvz</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Corongo Ancash Quechua</td><td class='source'>qwa</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Classical Quechua</td><td class='source'>qwc</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Huaylas Ancash Quechua</td><td class='source'>qwh</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sihuas Ancash Quechua</td><td class='source'>qws</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chiquián Ancash Quechua</td><td class='source'>qxa</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chincha Quechua</td><td class='source'>qxc</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Panao Huánuco Quechua</td><td class='source'>qxh</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Salasaca Highland Quichua</td><td class='source'>qxl</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Northern Conchucos Ancash Quechua</td><td class='source'>qxn</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Conchucos Ancash Quechua</td><td class='source'>qxo</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Puno Quechua</td><td class='source'>qxp</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cañar Highland Quichua</td><td class='source'>qxr</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Santa Ana de Tusi Pasco Quechua</td><td class='source'>qxt</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Arequipa-La Unión Quechua</td><td class='source'>qxu</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Jauja Wanca Quechua</td><td class='source'>qxw</td><td class='source'>qu</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sassarese Sardinian</td><td class='source' rowSpan='3'>Sardinian</td><td class='source'>sdc</td><td class='source'>sc</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gallurese Sardinian</td><td class='source'>sdn</td><td class='source'>sc</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Campidanese Sardinian</td><td class='source'>sro</td><td class='source'>sc</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Arbëreshë Albanian</td><td class='source' rowSpan='3'>Albanian</td><td class='source'>aae</td><td class='source'>sq</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Arvanitika Albanian</td><td class='source'>aat</td><td class='source'>sq</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gheg Albanian</td><td class='source'>aln</td><td class='source'>sq</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Assyrian Neo-Aramaic</td><td class='source'>Syriac</td><td class='source'>aii</td><td class='source'>syr</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Southern Uzbek</td><td class='source'>Uzbek</td><td class='source'>uzs</td><td class='source'>uz</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Western Yiddish</td><td class='source'>Yiddish</td><td class='source'>yih</td><td class='source'>yi</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Min Dong Chinese</td><td class='source' rowSpan='13'>Chinese</td><td class='source'>cdo</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Jinyu Chinese</td><td class='source'>cjy</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pu-Xian Chinese</td><td class='source'>cpx</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Huizhou Chinese</td><td class='source'>czh</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Min Zhong Chinese</td><td class='source'>czo</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gan Chinese</td><td class='source'>gan</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hakka Chinese</td><td class='source'>hak</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Xiang Chinese</td><td class='source'>hsn</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Literary Chinese</td><td class='source'>lzh</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Min Bei Chinese</td><td class='source'>mnp</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Min Nan Chinese</td><td class='source'>nan</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Wu Chinese</td><td class='source'>wuu</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Cantonese</td><td class='source'>yue</td><td class='source'>zh</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>any-language</td><td class='source'>any-other-language</td><td class='source'>*</td><td class='source'>*</td><td class='target'>80</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Amharic (Ethiopic)</td><td class='source'>English (Latin)</td><td class='source'>am_Ethi</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Azeri (Latin)</td><td class='source'>Russian (Cyrillic)</td><td class='source'>az_Latn</td><td class='source'>ru_Cyrl</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bangla (Bangla)</td><td class='source'>English (Latin)</td><td class='source'>bn_Beng</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tibetan (Tibetan)</td><td class='source'>Chinese (Simplified)</td><td class='source'>bo_Tibt</td><td class='source'>zh_Hans</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Armenian (Armenian)</td><td class='source'>Russian (Cyrillic)</td><td class='source'>hy_Armn</td><td class='source'>ru_Cyrl</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Georgian (Georgian)</td><td class='source' rowSpan='15'>English (Latin)</td><td class='source'>ka_Geor</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Khmer (Khmer)</td><td class='source'>km_Khmr</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kannada (Kannada)</td><td class='source'>kn_Knda</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Lao (Lao)</td><td class='source'>lo_Laoo</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malayalam (Malayalam)</td><td class='source'>ml_Mlym</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Burmese (Myanmar)</td><td class='source'>my_Mymr</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Nepali (Devanagari)</td><td class='source'>ne_Deva</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Odia (Odia)</td><td class='source'>or_Orya</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Punjabi (Gurmukhi)</td><td class='source'>pa_Guru</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Pashto (Arabic)</td><td class='source'>ps_Arab</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sindhi (Arabic)</td><td class='source'>sd_Arab</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Sinhala (Sinhala)</td><td class='source'>si_Sinh</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tamil (Tamil)</td><td class='source'>ta_Taml</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Telugu (Telugu)</td><td class='source'>te_Telu</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tigrinya (Ethiopic)</td><td class='source'>ti_Ethi</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Turkmen (Latin)</td><td class='source'>Russian (Cyrillic)</td><td class='source'>tk_Latn</td><td class='source'>ru_Cyrl</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Urdu (Arabic)</td><td class='source'>English (Latin)</td><td class='source'>ur_Arab</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Uzbek (Latin)</td><td class='source'>Russian (Cyrillic)</td><td class='source'>uz_Latn</td><td class='source'>ru_Cyrl</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Yiddish (Hebrew)</td><td class='source'>English (Latin)</td><td class='source'>yi_Hebr</td><td class='source'>en_Latn</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Serbian (Latin)</td><td class='source'>Serbian (Cyrillic)</td><td class='source'>sr_Latn</td><td class='source'>sr_Cyrl</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Zhuang (Latin)</td><td class='source' rowSpan='2'>Chinese (Simplified)</td><td class='source'>za_Latn</td><td class='source'>zh_Hans</td><td class='target'>10</td><td class='target'>→</td></tr>
+	<tr><td class='source' rowSpan='2'>Chinese (Han)</td><td class='source' rowSpan='2'>zh_Hani</td><td class='source'>zh_Hans</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chinese (Traditional)</td><td class='source'>zh_Hant</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Arabic (Latin)</td><td class='source'>Arabic (Arabic)</td><td class='source'>ar_Latn</td><td class='source'>ar_Arab</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Bangla (Latin)</td><td class='source'>Bangla (Bangla)</td><td class='source'>bn_Latn</td><td class='source'>bn_Beng</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Gujarati (Latin)</td><td class='source'>Gujarati (Gujarati)</td><td class='source'>gu_Latn</td><td class='source'>gu_Gujr</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Hindi (Latin)</td><td class='source'>Hindi (Devanagari)</td><td class='source'>hi_Latn</td><td class='source'>hi_Deva</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Kannada (Latin)</td><td class='source'>Kannada (Kannada)</td><td class='source'>kn_Latn</td><td class='source'>kn_Knda</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Malayalam (Latin)</td><td class='source'>Malayalam (Malayalam)</td><td class='source'>ml_Latn</td><td class='source'>ml_Mlym</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Marathi (Latin)</td><td class='source'>Marathi (Devanagari)</td><td class='source'>mr_Latn</td><td class='source'>mr_Deva</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Tamil (Latin)</td><td class='source'>Tamil (Tamil)</td><td class='source'>ta_Latn</td><td class='source'>ta_Taml</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Telugu (Latin)</td><td class='source'>Telugu (Telugu)</td><td class='source'>te_Latn</td><td class='source'>te_Telu</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Chinese (Latin)</td><td class='source'>Chinese (Simplified)</td><td class='source'>zh_Latn</td><td class='source'>zh_Hans</td><td class='target'>20</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Latin)</td><td class='source' rowSpan='5'>Japanese (Japanese)</td><td class='source'>ja_Latn</td><td class='source'>ja_Jpan</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Han)</td><td class='source'>ja_Hani</td><td class='source'>ja_Jpan</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Hiragana)</td><td class='source'>ja_Hira</td><td class='source'>ja_Jpan</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Katakana)</td><td class='source'>ja_Kana</td><td class='source'>ja_Jpan</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Japanese syllabaries)</td><td class='source'>ja_Hrkt</td><td class='source'>ja_Jpan</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Hiragana)</td><td class='source' rowSpan='2'>Japanese (Japanese syllabaries)</td><td class='source'>ja_Hira</td><td class='source'>ja_Hrkt</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Japanese (Katakana)</td><td class='source'>ja_Kana</td><td class='source'>ja_Hrkt</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Korean (Han)</td><td class='source' rowSpan='3'>Korean (Korean)</td><td class='source'>ko_Hani</td><td class='source'>ko_Kore</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Korean (Hangul)</td><td class='source'>ko_Hang</td><td class='source'>ko_Kore</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source' rowSpan='2'>Korean (Jamo)</td><td class='source' rowSpan='2'>ko_Jamo</td><td class='source'>ko_Kore</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>Korean (Hangul)</td><td class='source'>ko_Hang</td><td class='target'>5</td><td class='target'>→</td></tr>
+	<tr><td class='source'>any-language (any-script)</td><td class='source'>any-language (any-other-script)</td><td class='source'>*_*</td><td class='source'>*_*</td><td class='target'>50</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Arabic (any-script, $maghreb)</td><td class='source' rowSpan='2'>Arabic (any-other-script, XY)</td><td class='source'>ar_*_$maghreb</td><td class='source'>ar_*_$maghreb</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Arabic (any-script, $!maghreb)</td><td class='source'>ar_*_$!maghreb</td><td class='source'>ar_*_$!maghreb</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Arabic (any-script, any-region)</td><td class='source'>Arabic (any-script, any-other-region)</td><td class='source'>ar_*_*</td><td class='source'>ar_*_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>English (any-script, $enUS)</td><td class='source'>English (any-other-script, XY)</td><td class='source'>en_*_$enUS</td><td class='source'>en_*_$enUS</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source' rowSpan='2'>English (any-script, $!enUS)</td><td class='source'>English (any-other-script, UK)</td><td class='source' rowSpan='2'>en_*_$!enUS</td><td class='source'>en_*_GB</td><td class='target'>3</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>English (any-other-script, XY)</td><td class='source'>en_*_$!enUS</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>English (any-script, any-region)</td><td class='source'>English (any-script, any-other-region)</td><td class='source'>en_*_*</td><td class='source'>en_*_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Spanish (any-script, $americas)</td><td class='source' rowSpan='2'>Spanish (any-other-script, XY)</td><td class='source'>es_*_$americas</td><td class='source'>es_*_$americas</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Spanish (any-script, $!americas)</td><td class='source'>es_*_$!americas</td><td class='source'>es_*_$!americas</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Spanish (any-script, any-region)</td><td class='source'>Spanish (any-script, any-other-region)</td><td class='source'>es_*_*</td><td class='source'>es_*_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Portuguese (any-script, $americas)</td><td class='source' rowSpan='2'>Portuguese (any-other-script, XY)</td><td class='source'>pt_*_$americas</td><td class='source'>pt_*_$americas</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Portuguese (any-script, $!americas)</td><td class='source'>pt_*_$!americas</td><td class='source'>pt_*_$!americas</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Portuguese (any-script, any-region)</td><td class='source'>Portuguese (any-script, any-other-region)</td><td class='source'>pt_*_*</td><td class='source'>pt_*_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Chinese (Traditional, $cnsar)</td><td class='source' rowSpan='2'>Chinese (Traditional, XY)</td><td class='source'>zh_Hant_$cnsar</td><td class='source'>zh_Hant_$cnsar</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Chinese (Traditional, $!cnsar)</td><td class='source'>zh_Hant_$!cnsar</td><td class='source'>zh_Hant_$!cnsar</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>Chinese (Traditional, any-region)</td><td class='source'>Chinese (Traditional, any-other-region)</td><td class='source'>zh_Hant_*</td><td class='source'>zh_Hant_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
+	<tr><td class='source'>any-language (any-script, any-region)</td><td class='source'>any-language (any-script, any-other-region)</td><td class='source'>*_*_*</td><td class='source'>*_*_*</td><td class='target'>4</td><td class='target'>⬌</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

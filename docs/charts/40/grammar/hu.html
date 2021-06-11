@@ -1,0 +1,415 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hungarian: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Hungarian: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='5'>acceleration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} g gyorsulás</td><td class='target' rowSpan='5'>1 g gyorsulás</td><td class='target' rowSpan='5'>{0} g gyorsulás</td><td class='target' rowSpan='5'>2 g gyorsulás</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='5'>angle</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ívmásodperc</td><td class='target' rowSpan='5'>1 ívmásodperc</td><td class='target' rowSpan='5'>{0} ívmásodperc</td><td class='target' rowSpan='5'>2 ívmásodperc</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='5'>angle</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ívperc</td><td class='target' rowSpan='5'>1 ívperc</td><td class='target' rowSpan='5'>{0} ívperc</td><td class='target' rowSpan='5'>2 ívperc</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='5'>angle</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} fok</td><td class='target' rowSpan='5'>1 fok</td><td class='target' rowSpan='5'>{0} fok</td><td class='target' rowSpan='5'>2 fok</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='5'>angle</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} radián</td><td class='target' rowSpan='5'>1 radián</td><td class='target' rowSpan='5'>{0} radián</td><td class='target' rowSpan='5'>2 radián</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='5'>angle</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} fordulat</td><td class='target' rowSpan='5'>1 fordulat</td><td class='target' rowSpan='5'>{0} fordulat</td><td class='target' rowSpan='5'>2 fordulat</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='5'>area</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hektár</td><td class='target' rowSpan='5'>1 hektár</td><td class='target' rowSpan='5'>{0} hektár</td><td class='target' rowSpan='5'>2 hektár</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='5'>digital</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bit</td><td class='target' rowSpan='5'>1 bit</td><td class='target' rowSpan='5'>{0} bit</td><td class='target' rowSpan='5'>2 bit</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='5'>digital</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bájt</td><td class='target' rowSpan='5'>1 bájt</td><td class='target' rowSpan='5'>{0} bájt</td><td class='target' rowSpan='5'>2 bájt</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} másodperc</td><td class='target' rowSpan='5'>1 másodperc</td><td class='target' rowSpan='5'>{0} másodperc</td><td class='target' rowSpan='5'>2 másodperc</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} perc</td><td class='target' rowSpan='5'>1 perc</td><td class='target' rowSpan='5'>{0} perc</td><td class='target' rowSpan='5'>2 perc</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} óra</td><td class='target' rowSpan='5'>1 óra</td><td class='target' rowSpan='5'>{0} óra</td><td class='target' rowSpan='5'>2 óra</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} nap</td><td class='target' rowSpan='5'>1 nap</td><td class='target' rowSpan='5'>{0} nap</td><td class='target' rowSpan='5'>2 nap</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} nap</td><td class='target' rowSpan='5'>1 nap</td><td class='target' rowSpan='5'>{0} nap</td><td class='target' rowSpan='5'>2 nap</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='5'>duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hét</td><td class='target' rowSpan='5'>1 hét</td><td class='target' rowSpan='5'>{0} hét</td><td class='target' rowSpan='5'>2 hét</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='5'>electric-current</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} amper</td><td class='target' rowSpan='5'>1 amper</td><td class='target' rowSpan='5'>{0} amper</td><td class='target' rowSpan='5'>2 amper</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='5'>electric-resistance</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ohm</td><td class='target' rowSpan='5'>1 ohm</td><td class='target' rowSpan='5'>{0} ohm</td><td class='target' rowSpan='5'>2 ohm</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='5'>energy</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} joule</td><td class='target' rowSpan='5'>1 joule</td><td class='target' rowSpan='5'>{0} joule</td><td class='target' rowSpan='5'>2 joule</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='5'>energy</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kalória</td><td class='target' rowSpan='5'>1 kalória</td><td class='target' rowSpan='5'>{0} kalória</td><td class='target' rowSpan='5'>2 kalória</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='5'>force</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} newton</td><td class='target' rowSpan='5'>1 newton</td><td class='target' rowSpan='5'>{0} newton</td><td class='target' rowSpan='5'>2 newton</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='5'>frequency</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hertz</td><td class='target' rowSpan='5'>1 hertz</td><td class='target' rowSpan='5'>{0} hertz</td><td class='target' rowSpan='5'>2 hertz</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='5'>graphics</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} képpont</td><td class='target' rowSpan='5'>1 képpont</td><td class='target' rowSpan='5'>{0} képpont</td><td class='target' rowSpan='5'>2 képpont</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='5'>illuminance</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} lux</td><td class='target' rowSpan='5'>1 lux</td><td class='target' rowSpan='5'>{0} lux</td><td class='target' rowSpan='5'>2 lux</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='5'>length</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} méter</td><td class='target' rowSpan='5'>1 méter</td><td class='target' rowSpan='5'>{0} méter</td><td class='target' rowSpan='5'>2 méter</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='5'>length</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} svéd mérföld</td><td class='target' rowSpan='5'>1 svéd mérföld</td><td class='target' rowSpan='5'>{0} svéd mérföld</td><td class='target' rowSpan='5'>2 svéd mérföld</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='5'>luminous-flux</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} lumen</td><td class='target' rowSpan='5'>1 lumen</td><td class='target' rowSpan='5'>{0} lumen</td><td class='target' rowSpan='5'>2 lumen</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='5'>luminous-intensity</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kandela</td><td class='target' rowSpan='5'>1 kandela</td><td class='target' rowSpan='5'>{0} kandela</td><td class='target' rowSpan='5'>2 kandela</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='5'>mass</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} karát</td><td class='target' rowSpan='5'>1 karát</td><td class='target' rowSpan='5'>{0} karát</td><td class='target' rowSpan='5'>2 karát</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='5'>mass</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} gramm</td><td class='target' rowSpan='5'>1 gramm</td><td class='target' rowSpan='5'>{0} gramm</td><td class='target' rowSpan='5'>2 gramm</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='5'>mass</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kilogramm</td><td class='target' rowSpan='5'>1 kilogramm</td><td class='target' rowSpan='5'>{0} kilogramm</td><td class='target' rowSpan='5'>2 kilogramm</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='5'>mass</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} metrikus tonna</td><td class='target' rowSpan='5'>1 metrikus tonna</td><td class='target' rowSpan='5'>{0} metrikus tonna</td><td class='target' rowSpan='5'>2 metrikus tonna</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='5'>portion</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} részecske/millió</td><td class='target' rowSpan='5'>1 részecske/millió</td><td class='target' rowSpan='5'>{0} részecske/millió</td><td class='target' rowSpan='5'>2 részecske/millió</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='5'>portion</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} tízezrelék</td><td class='target' rowSpan='5'>1 tízezrelék</td><td class='target' rowSpan='5'>{0} tízezrelék</td><td class='target' rowSpan='5'>2 tízezrelék</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='5'>portion</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ezrelék</td><td class='target' rowSpan='5'>1 ezrelék</td><td class='target' rowSpan='5'>{0} ezrelék</td><td class='target' rowSpan='5'>2 ezrelék</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='5'>portion</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} százalék</td><td class='target' rowSpan='5'>1 százalék</td><td class='target' rowSpan='5'>{0} százalék</td><td class='target' rowSpan='5'>2 százalék</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='5'>portion</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} karát</td><td class='target' rowSpan='5'>1 karát</td><td class='target' rowSpan='5'>{0} karát</td><td class='target' rowSpan='5'>2 karát</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='5'>power</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} watt</td><td class='target' rowSpan='5'>1 watt</td><td class='target' rowSpan='5'>{0} watt</td><td class='target' rowSpan='5'>2 watt</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='5'>pressure</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} pascal</td><td class='target' rowSpan='5'>1 pascal</td><td class='target' rowSpan='5'>{0} pascal</td><td class='target' rowSpan='5'>2 pascal</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='5'>pressure</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bar</td><td class='target' rowSpan='5'>1 bar</td><td class='target' rowSpan='5'>{0} bar</td><td class='target' rowSpan='5'>2 bar</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='5'>pressure</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} atmoszféra</td><td class='target' rowSpan='5'>1 atmoszféra</td><td class='target' rowSpan='5'>{0} atmoszféra</td><td class='target' rowSpan='5'>2 atmoszféra</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='5'>substance-amount</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} mól</td><td class='target' rowSpan='5'>1 mól</td><td class='target' rowSpan='5'>{0} mól</td><td class='target' rowSpan='5'>2 mól</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='5'>temperature</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0}°</td><td class='target' rowSpan='5'>1°</td><td class='target' rowSpan='5'>{0}°</td><td class='target' rowSpan='5'>2°</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='5'>temperature</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} Celsius-fok</td><td class='target' rowSpan='5'>1 Celsius-fok</td><td class='target' rowSpan='5'>{0} Celsius-fok</td><td class='target' rowSpan='5'>2 Celsius-fok</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='5'>temperature</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kelvin</td><td class='target' rowSpan='5'>1 kelvin</td><td class='target' rowSpan='5'>{0} kelvin</td><td class='target' rowSpan='5'>2 kelvin</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='5'>typewidth</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kvirt</td><td class='target' rowSpan='5'>1 kvirt</td><td class='target' rowSpan='5'>{0} kvirt</td><td class='target' rowSpan='5'>2 kvirt</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='5'>voltage</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} volt</td><td class='target' rowSpan='5'>1 volt</td><td class='target' rowSpan='5'>{0} volt</td><td class='target' rowSpan='5'>2 volt</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='5'>volume</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bögre</td><td class='target' rowSpan='5'>1 bögre</td><td class='target' rowSpan='5'>{0} bögre</td><td class='target' rowSpan='5'>2 bögre</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='5'>volume</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} metrikus pint</td><td class='target' rowSpan='5'>1 metrikus pint</td><td class='target' rowSpan='5'>{0} metrikus pint</td><td class='target' rowSpan='5'>2 metrikus pint</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='5'>volume</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} liter</td><td class='target' rowSpan='5'>1 liter</td><td class='target' rowSpan='5'>{0} liter</td><td class='target' rowSpan='5'>2 liter</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='5'>year-duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hónap</td><td class='target' rowSpan='5'>1 hónap</td><td class='target' rowSpan='5'>{0} hónap</td><td class='target' rowSpan='5'>2 hónap</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='5'>year-duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} év</td><td class='target' rowSpan='5'>1 év</td><td class='target' rowSpan='5'>{0} év</td><td class='target' rowSpan='5'>2 év</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='5'>year-duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} évtized</td><td class='target' rowSpan='5'>1 évtized</td><td class='target' rowSpan='5'>{0} évtized</td><td class='target' rowSpan='5'>2 évtized</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='5'>year-duration</td><td class='source' rowSpan='5'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} évszázad</td><td class='target' rowSpan='5'>1 évszázad</td><td class='target' rowSpan='5'>{0} évszázad</td><td class='target' rowSpan='5'>2 évszázad</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><td class='source'>terminative</td></tr>
+	<tr><td class='source'>translative</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
