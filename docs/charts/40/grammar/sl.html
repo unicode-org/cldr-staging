@@ -1,0 +1,505 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Slovenian: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Slovenian: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='6'>acceleration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} G</td><td class='target' rowSpan='6'>101 G</td><td class='target' rowSpan='6'>{0} G</td><td class='target' rowSpan='6'>102 G</td><td class='target' rowSpan='6'>{0} G</td><td class='target' rowSpan='6'>4 G</td><td class='target' rowSpan='6'>{0} G</td><td class='target' rowSpan='6'>5 G</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kotna sekunda</td><td class='target' rowSpan='6'>101 kotna sekunda</td><td class='target' rowSpan='6'>{0} kotni sekundi</td><td class='target' rowSpan='6'>102 kotni sekundi</td><td class='target' rowSpan='6'>{0} kotne sekunde</td><td class='target' rowSpan='6'>4 kotne sekunde</td><td class='target' rowSpan='6'>{0} kotnih sekund</td><td class='target' rowSpan='6'>5 kotnih sekund</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kotna minuta</td><td class='target' rowSpan='6'>101 kotna minuta</td><td class='target' rowSpan='6'>{0} kotni minuti</td><td class='target' rowSpan='6'>102 kotni minuti</td><td class='target' rowSpan='6'>{0} kotne minute</td><td class='target' rowSpan='6'>4 kotne minute</td><td class='target' rowSpan='6'>{0} kotnih minut</td><td class='target' rowSpan='6'>5 kotnih minut</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} stopinja</td><td class='target' rowSpan='6'>101 stopinja</td><td class='target' rowSpan='6'>{0} stopinji</td><td class='target' rowSpan='6'>102 stopinji</td><td class='target' rowSpan='6'>{0} stopinje</td><td class='target' rowSpan='6'>4 stopinje</td><td class='target' rowSpan='6'>{0} stopinj</td><td class='target' rowSpan='6'>5 stopinj</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} radian</td><td class='target' rowSpan='6'>101 radian</td><td class='target' rowSpan='6'>{0} radiana</td><td class='target' rowSpan='6'>102 radiana</td><td class='target' rowSpan='6'>{0} radiani</td><td class='target' rowSpan='6'>4 radiani</td><td class='target' rowSpan='6'>{0} radianov</td><td class='target' rowSpan='6'>5 radianov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} vrtljaj</td><td class='target' rowSpan='6'>101 vrtljaj</td><td class='target' rowSpan='6'>{0} vrtljaja</td><td class='target' rowSpan='6'>102 vrtljaja</td><td class='target' rowSpan='6'>{0} vrtljaji</td><td class='target' rowSpan='6'>4 vrtljaji</td><td class='target' rowSpan='6'>{0} vrtljajev</td><td class='target' rowSpan='6'>5 vrtljajev</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='6'>area</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} hektar</td><td class='target' rowSpan='6'>101 hektar</td><td class='target' rowSpan='6'>{0} hektara</td><td class='target' rowSpan='6'>102 hektara</td><td class='target' rowSpan='6'>{0} hektari</td><td class='target' rowSpan='6'>4 hektari</td><td class='target' rowSpan='6'>{0} hektarov</td><td class='target' rowSpan='6'>5 hektarov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} bit</td><td class='target' rowSpan='6'>101 bit</td><td class='target' rowSpan='6'>{0} bita</td><td class='target' rowSpan='6'>102 bita</td><td class='target' rowSpan='6'>{0} biti</td><td class='target' rowSpan='6'>4 biti</td><td class='target' rowSpan='6'>{0} bitov</td><td class='target' rowSpan='6'>5 bitov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} bajt</td><td class='target' rowSpan='6'>101 bajt</td><td class='target' rowSpan='6'>{0} bajta</td><td class='target' rowSpan='6'>102 bajta</td><td class='target' rowSpan='6'>{0} bajti</td><td class='target' rowSpan='6'>4 bajti</td><td class='target' rowSpan='6'>{0} bajtov</td><td class='target' rowSpan='6'>5 bajtov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} sekunda</td><td class='target' rowSpan='6'>101 sekunda</td><td class='target' rowSpan='6'>{0} sekundi</td><td class='target' rowSpan='6'>102 sekundi</td><td class='target' rowSpan='6'>{0} sekunde</td><td class='target' rowSpan='6'>4 sekunde</td><td class='target' rowSpan='6'>{0} sekund</td><td class='target' rowSpan='6'>5 sekund</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} minuta</td><td class='target' rowSpan='6'>101 minuta</td><td class='target' rowSpan='6'>{0} minuti</td><td class='target' rowSpan='6'>102 minuti</td><td class='target' rowSpan='6'>{0} minute</td><td class='target' rowSpan='6'>4 minute</td><td class='target' rowSpan='6'>{0} minut</td><td class='target' rowSpan='6'>5 minut</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ura</td><td class='target' rowSpan='6'>101 ura</td><td class='target' rowSpan='6'>{0} uri</td><td class='target' rowSpan='6'>102 uri</td><td class='target' rowSpan='6'>{0} ure</td><td class='target' rowSpan='6'>4 ure</td><td class='target' rowSpan='6'>{0} ur</td><td class='target' rowSpan='6'>5 ur</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} dan</td><td class='target' rowSpan='6'>101 dan</td><td class='target' rowSpan='6'>{0} dneva</td><td class='target' rowSpan='6'>102 dneva</td><td class='target' rowSpan='6'>{0} dni</td><td class='target' rowSpan='6'>4 dni</td><td class='target' rowSpan='6'>{0} dni</td><td class='target' rowSpan='6'>5 dni</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} d</td><td class='target' rowSpan='6'>101 d</td><td class='target' rowSpan='6'>{0} d</td><td class='target' rowSpan='6'>102 d</td><td class='target' rowSpan='6'>{0} d</td><td class='target' rowSpan='6'>4 d</td><td class='target' rowSpan='6'>{0} d</td><td class='target' rowSpan='6'>5 d</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} teden</td><td class='target' rowSpan='6'>101 teden</td><td class='target' rowSpan='6'>{0} tedna</td><td class='target' rowSpan='6'>102 tedna</td><td class='target' rowSpan='6'>{0} tednov</td><td class='target' rowSpan='6'>4 tednov</td><td class='target' rowSpan='6'>{0} tednov</td><td class='target' rowSpan='6'>5 tednov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='6'>electric-current</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} amper</td><td class='target' rowSpan='6'>101 amper</td><td class='target' rowSpan='6'>{0} ampera</td><td class='target' rowSpan='6'>102 ampera</td><td class='target' rowSpan='6'>{0} amperi</td><td class='target' rowSpan='6'>4 amperi</td><td class='target' rowSpan='6'>{0} amperov</td><td class='target' rowSpan='6'>5 amperov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='6'>electric-resistance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ohm</td><td class='target' rowSpan='6'>101 ohm</td><td class='target' rowSpan='6'>{0} ohma</td><td class='target' rowSpan='6'>102 ohma</td><td class='target' rowSpan='6'>{0} ohmi</td><td class='target' rowSpan='6'>4 ohmi</td><td class='target' rowSpan='6'>{0} ohmov</td><td class='target' rowSpan='6'>5 ohmov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} joule</td><td class='target' rowSpan='6'>101 joule</td><td class='target' rowSpan='6'>{0} joula</td><td class='target' rowSpan='6'>102 joula</td><td class='target' rowSpan='6'>{0} jouli</td><td class='target' rowSpan='6'>4 jouli</td><td class='target' rowSpan='6'>{0} joulov</td><td class='target' rowSpan='6'>5 joulov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kalorija</td><td class='target' rowSpan='6'>101 kalorija</td><td class='target' rowSpan='6'>{0} kaloriji</td><td class='target' rowSpan='6'>102 kaloriji</td><td class='target' rowSpan='6'>{0} kalorije</td><td class='target' rowSpan='6'>4 kalorije</td><td class='target' rowSpan='6'>{0} kalorij</td><td class='target' rowSpan='6'>5 kalorij</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='6'>force</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} newton</td><td class='target' rowSpan='6'>101 newton</td><td class='target' rowSpan='6'>{0} newtona</td><td class='target' rowSpan='6'>102 newtona</td><td class='target' rowSpan='6'>{0} newtoni</td><td class='target' rowSpan='6'>4 newtoni</td><td class='target' rowSpan='6'>{0} newtonov</td><td class='target' rowSpan='6'>5 newtonov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='6'>frequency</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} hertz</td><td class='target' rowSpan='6'>101 hertz</td><td class='target' rowSpan='6'>{0} hertza</td><td class='target' rowSpan='6'>102 hertza</td><td class='target' rowSpan='6'>{0} hertzi</td><td class='target' rowSpan='6'>4 hertzi</td><td class='target' rowSpan='6'>{0} hertzev</td><td class='target' rowSpan='6'>5 hertzev</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='6'>graphics</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} px</td><td class='target' rowSpan='6'>101 px</td><td class='target' rowSpan='6'>{0} px</td><td class='target' rowSpan='6'>102 px</td><td class='target' rowSpan='6'>{0} px</td><td class='target' rowSpan='6'>4 px</td><td class='target' rowSpan='6'>{0} px</td><td class='target' rowSpan='6'>5 px</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='6'>illuminance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} luks</td><td class='target' rowSpan='6'>101 luks</td><td class='target' rowSpan='6'>{0} luksa</td><td class='target' rowSpan='6'>102 luksa</td><td class='target' rowSpan='6'>{0} luksi</td><td class='target' rowSpan='6'>4 luksi</td><td class='target' rowSpan='6'>{0} luksov</td><td class='target' rowSpan='6'>5 luksov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} meter</td><td class='target' rowSpan='6'>101 meter</td><td class='target' rowSpan='6'>{0} metra</td><td class='target' rowSpan='6'>102 metra</td><td class='target' rowSpan='6'>{0} metri</td><td class='target' rowSpan='6'>4 metri</td><td class='target' rowSpan='6'>{0} metrov</td><td class='target' rowSpan='6'>5 metrov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} skandinavska milja</td><td class='target' rowSpan='6'>101 skandinavska milja</td><td class='target' rowSpan='6'>{0} skandinavski milji</td><td class='target' rowSpan='6'>102 skandinavski milji</td><td class='target' rowSpan='6'>{0} skandinavske milje</td><td class='target' rowSpan='6'>4 skandinavske milje</td><td class='target' rowSpan='6'>{0} skandinavskih milj</td><td class='target' rowSpan='6'>5 skandinavskih milj</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='6'>luminous-flux</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} lumen</td><td class='target' rowSpan='6'>101 lumen</td><td class='target' rowSpan='6'>{0} lumna</td><td class='target' rowSpan='6'>102 lumna</td><td class='target' rowSpan='6'>{0} lumni</td><td class='target' rowSpan='6'>4 lumni</td><td class='target' rowSpan='6'>{0} lumnov</td><td class='target' rowSpan='6'>5 lumnov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='6'>luminous-intensity</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kandela</td><td class='target' rowSpan='6'>101 kandela</td><td class='target' rowSpan='6'>{0} kandeli</td><td class='target' rowSpan='6'>102 kandeli</td><td class='target' rowSpan='6'>{0} kandele</td><td class='target' rowSpan='6'>4 kandele</td><td class='target' rowSpan='6'>{0} kandel</td><td class='target' rowSpan='6'>5 kandel</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} karat</td><td class='target' rowSpan='6'>101 karat</td><td class='target' rowSpan='6'>{0} karata</td><td class='target' rowSpan='6'>102 karata</td><td class='target' rowSpan='6'>{0} karati</td><td class='target' rowSpan='6'>4 karati</td><td class='target' rowSpan='6'>{0} karatov</td><td class='target' rowSpan='6'>5 karatov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} gram</td><td class='target' rowSpan='6'>101 gram</td><td class='target' rowSpan='6'>{0} grama</td><td class='target' rowSpan='6'>102 grama</td><td class='target' rowSpan='6'>{0} grami</td><td class='target' rowSpan='6'>4 grami</td><td class='target' rowSpan='6'>{0} gramov</td><td class='target' rowSpan='6'>5 gramov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kilogram</td><td class='target' rowSpan='6'>101 kilogram</td><td class='target' rowSpan='6'>{0} kilograma</td><td class='target' rowSpan='6'>102 kilograma</td><td class='target' rowSpan='6'>{0} kilogrami</td><td class='target' rowSpan='6'>4 kilogrami</td><td class='target' rowSpan='6'>{0} kilogramov</td><td class='target' rowSpan='6'>5 kilogramov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metrična tona</td><td class='target' rowSpan='6'>101 metrična tona</td><td class='target' rowSpan='6'>{0} metrični toni</td><td class='target' rowSpan='6'>102 metrični toni</td><td class='target' rowSpan='6'>{0} metrične tone</td><td class='target' rowSpan='6'>4 metrične tone</td><td class='target' rowSpan='6'>{0} metričnih ton</td><td class='target' rowSpan='6'>5 metričnih ton</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} delec na milijon</td><td class='target' rowSpan='6'>101 delec na milijon</td><td class='target' rowSpan='6'>{0} delca na milijon</td><td class='target' rowSpan='6'>102 delca na milijon</td><td class='target' rowSpan='6'>{0} delci na milijon</td><td class='target' rowSpan='6'>4 delci na milijon</td><td class='target' rowSpan='6'>{0} delcev na milijon</td><td class='target' rowSpan='6'>5 delcev na milijon</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} desettisočina</td><td class='target' rowSpan='6'>101 desettisočina</td><td class='target' rowSpan='6'>{0} desettisočini</td><td class='target' rowSpan='6'>102 desettisočini</td><td class='target' rowSpan='6'>{0} desettisočine</td><td class='target' rowSpan='6'>4 desettisočine</td><td class='target' rowSpan='6'>{0} desettisočin</td><td class='target' rowSpan='6'>5 desettisočin</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} promile</td><td class='target' rowSpan='6'>101 promile</td><td class='target' rowSpan='6'>{0} promila</td><td class='target' rowSpan='6'>102 promila</td><td class='target' rowSpan='6'>{0} promili</td><td class='target' rowSpan='6'>4 promili</td><td class='target' rowSpan='6'>{0} promilov</td><td class='target' rowSpan='6'>5 promilov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} odstotek</td><td class='target' rowSpan='6'>101 odstotek</td><td class='target' rowSpan='6'>{0} odstotka</td><td class='target' rowSpan='6'>102 odstotka</td><td class='target' rowSpan='6'>{0} odstotki</td><td class='target' rowSpan='6'>4 odstotki</td><td class='target' rowSpan='6'>{0} odstotkov</td><td class='target' rowSpan='6'>5 odstotkov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} karat</td><td class='target' rowSpan='6'>101 karat</td><td class='target' rowSpan='6'>{0} karata</td><td class='target' rowSpan='6'>102 karata</td><td class='target' rowSpan='6'>{0} karati</td><td class='target' rowSpan='6'>4 karati</td><td class='target' rowSpan='6'>{0} karatov</td><td class='target' rowSpan='6'>5 karatov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='6'>power</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} vat</td><td class='target' rowSpan='6'>101 vat</td><td class='target' rowSpan='6'>{0} vata</td><td class='target' rowSpan='6'>102 vata</td><td class='target' rowSpan='6'>{0} vati</td><td class='target' rowSpan='6'>4 vati</td><td class='target' rowSpan='6'>{0} vatov</td><td class='target' rowSpan='6'>5 vatov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} paskal</td><td class='target' rowSpan='6'>101 paskal</td><td class='target' rowSpan='6'>{0} paskala</td><td class='target' rowSpan='6'>102 paskala</td><td class='target' rowSpan='6'>{0} paskali</td><td class='target' rowSpan='6'>4 paskali</td><td class='target' rowSpan='6'>{0} paskalov</td><td class='target' rowSpan='6'>5 paskalov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} bar</td><td class='target' rowSpan='6'>101 bar</td><td class='target' rowSpan='6'>{0} bara</td><td class='target' rowSpan='6'>102 bara</td><td class='target' rowSpan='6'>{0} bari</td><td class='target' rowSpan='6'>4 bari</td><td class='target' rowSpan='6'>{0} barov</td><td class='target' rowSpan='6'>5 barov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} atmosfera</td><td class='target' rowSpan='6'>101 atmosfera</td><td class='target' rowSpan='6'>{0} atmosferi</td><td class='target' rowSpan='6'>102 atmosferi</td><td class='target' rowSpan='6'>{0} atmosfere</td><td class='target' rowSpan='6'>4 atmosfere</td><td class='target' rowSpan='6'>{0} atmosfer</td><td class='target' rowSpan='6'>5 atmosfer</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='6'>substance-amount</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} mol</td><td class='target' rowSpan='6'>101 mol</td><td class='target' rowSpan='6'>{0} mola</td><td class='target' rowSpan='6'>102 mola</td><td class='target' rowSpan='6'>{0} moli</td><td class='target' rowSpan='6'>4 moli</td><td class='target' rowSpan='6'>{0} molov</td><td class='target' rowSpan='6'>5 molov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>101°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>102°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>4°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>5°</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} stopinja Celzija</td><td class='target' rowSpan='6'>101 stopinja Celzija</td><td class='target' rowSpan='6'>{0} stopinji Celzija</td><td class='target' rowSpan='6'>102 stopinji Celzija</td><td class='target' rowSpan='6'>{0} stopinje Celzija</td><td class='target' rowSpan='6'>4 stopinje Celzija</td><td class='target' rowSpan='6'>{0} stopinj Celzija</td><td class='target' rowSpan='6'>5 stopinj Celzija</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kelvin</td><td class='target' rowSpan='6'>101 kelvin</td><td class='target' rowSpan='6'>{0} kelvina</td><td class='target' rowSpan='6'>102 kelvina</td><td class='target' rowSpan='6'>{0} kelvini</td><td class='target' rowSpan='6'>4 kelvini</td><td class='target' rowSpan='6'>{0} kelvinov</td><td class='target' rowSpan='6'>5 kelvinov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='6'>typewidth</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>101 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>102 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>4 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>5 em</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='6'>voltage</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} volt</td><td class='target' rowSpan='6'>101 volt</td><td class='target' rowSpan='6'>{0} volta</td><td class='target' rowSpan='6'>102 volta</td><td class='target' rowSpan='6'>{0} volti</td><td class='target' rowSpan='6'>4 volti</td><td class='target' rowSpan='6'>{0} voltov</td><td class='target' rowSpan='6'>5 voltov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metrična skodelica</td><td class='target' rowSpan='6'>101 metrična skodelica</td><td class='target' rowSpan='6'>{0} metrični skodelici</td><td class='target' rowSpan='6'>102 metrični skodelici</td><td class='target' rowSpan='6'>{0} metrične skodelice</td><td class='target' rowSpan='6'>4 metrične skodelice</td><td class='target' rowSpan='6'>{0} metričnih skodelic</td><td class='target' rowSpan='6'>5 metričnih skodelic</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metrična pinta</td><td class='target' rowSpan='6'>101 metrična pinta</td><td class='target' rowSpan='6'>{0} metrični pinti</td><td class='target' rowSpan='6'>102 metrični pinti</td><td class='target' rowSpan='6'>{0} metrične pinte</td><td class='target' rowSpan='6'>4 metrične pinte</td><td class='target' rowSpan='6'>{0} metričnih pint</td><td class='target' rowSpan='6'>5 metričnih pint</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} liter</td><td class='target' rowSpan='6'>101 liter</td><td class='target' rowSpan='6'>{0} litra</td><td class='target' rowSpan='6'>102 litra</td><td class='target' rowSpan='6'>{0} litri</td><td class='target' rowSpan='6'>4 litri</td><td class='target' rowSpan='6'>{0} litrov</td><td class='target' rowSpan='6'>5 litrov</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} mesec</td><td class='target' rowSpan='6'>101 mesec</td><td class='target' rowSpan='6'>{0} meseca</td><td class='target' rowSpan='6'>102 meseca</td><td class='target' rowSpan='6'>{0} mesecev</td><td class='target' rowSpan='6'>4 mesecev</td><td class='target' rowSpan='6'>{0} mesecev</td><td class='target' rowSpan='6'>5 mesecev</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} leto</td><td class='target' rowSpan='6'>101 leto</td><td class='target' rowSpan='6'>{0} leti</td><td class='target' rowSpan='6'>102 leti</td><td class='target' rowSpan='6'>{0} let</td><td class='target' rowSpan='6'>4 let</td><td class='target' rowSpan='6'>{0} let</td><td class='target' rowSpan='6'>5 let</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} dec</td><td class='target' rowSpan='6'>101 dec</td><td class='target' rowSpan='6'>{0} dec</td><td class='target' rowSpan='6'>102 dec</td><td class='target' rowSpan='6'>{0} dec</td><td class='target' rowSpan='6'>4 dec</td><td class='target' rowSpan='6'>{0} dec</td><td class='target' rowSpan='6'>5 dec</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} stoletje</td><td class='target' rowSpan='6'>101 stoletje</td><td class='target' rowSpan='6'>{0} stoletji</td><td class='target' rowSpan='6'>102 stoletji</td><td class='target' rowSpan='6'>{0} stoletja</td><td class='target' rowSpan='6'>4 stoletja</td><td class='target' rowSpan='6'>{0} stoletij</td><td class='target' rowSpan='6'>5 stoletij</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='18'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>neuter</td><td class='target'>kvadratni {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kvadratna {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kvadratni {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kvadratnih {0}</td><td class='target' rowSpan='18'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>masculine</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>feminine</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratna {0}</td><td class='target'>kvadratni {0}</td><td class='target'>kvadratnih {0}</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='11.0%'>Form for: one (101.0)</th><th class='target' width='11.0%'>Formatted Sample: one (101.0)</th><th class='target' width='11.0%'>Form for: two (102.0)</th><th class='target' width='11.0%'>Formatted Sample: two (102.0)</th><th class='target' width='11.0%'>Form for: few (4.0)</th><th class='target' width='11.0%'>Formatted Sample: few (4.0)</th><th class='target' width='11.0%'>Form for: other (5.0)</th><th class='target' width='11.0%'>Formatted Sample: other (5.0)</th></tr>
+	<tr><td class='source' rowSpan='18'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>neuter</td><td class='target'>kubični {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kubična {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kubični {0}</td><td class='target' rowSpan='18'>n/a</td><td class='target'>kubičnih {0}</td><td class='target' rowSpan='18'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>masculine</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>feminine</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>kubični {0}</td><td class='target'>kubična {0}</td><td class='target'>kubični {0}</td><td class='target'>kubičnih {0}</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

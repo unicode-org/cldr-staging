@@ -1,0 +1,481 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Kannada: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Kannada: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='6'>acceleration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಜಿ-ಫೋರ್ಸ್</td><td class='target' rowSpan='6'>1 ಜಿ-ಫೋರ್ಸ್</td><td class='target' rowSpan='6'>{0} ಜಿ-ಫೋರ್ಸ್</td><td class='target' rowSpan='6'>3 ಜಿ-ಫೋರ್ಸ್</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಆರ್ಕ್‌ಸೆಕೆಂಡ್</td><td class='target' rowSpan='6'>1 ಆರ್ಕ್‌ಸೆಕೆಂಡ್</td><td class='target' rowSpan='6'>{0} ಆರ್ಕ್‌ಸೆಕೆಂಡುಗಳು</td><td class='target' rowSpan='6'>3 ಆರ್ಕ್‌ಸೆಕೆಂಡುಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಆರ್ಕ್‌ಮಿನಿಟ್</td><td class='target' rowSpan='6'>1 ಆರ್ಕ್‌ಮಿನಿಟ್</td><td class='target' rowSpan='6'>{0} ಆರ್ಕ್‌ಮಿನಿಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಆರ್ಕ್‌ಮಿನಿಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಡಿಗ್ರಿ</td><td class='target' rowSpan='6'>1 ಡಿಗ್ರಿ</td><td class='target' rowSpan='6'>{0}ಡಿಗ್ರಿಗಳು</td><td class='target' rowSpan='6'>3ಡಿಗ್ರಿಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ರೇಡಿಯಾನ್‌</td><td class='target' rowSpan='6'>1 ರೇಡಿಯಾನ್‌</td><td class='target' rowSpan='6'>{0} ರೇಡಿಯಾನ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ರೇಡಿಯಾನ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ತಿರುಗುವಿಕೆ</td><td class='target' rowSpan='6'>1 ತಿರುಗುವಿಕೆ</td><td class='target' rowSpan='6'>{0} ತಿರುಗುವಿಕೆಗಳು</td><td class='target' rowSpan='6'>3 ತಿರುಗುವಿಕೆಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='6'>area</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಹೆಕ್ಟೇರ್</td><td class='target' rowSpan='6'>1 ಹೆಕ್ಟೇರ್</td><td class='target' rowSpan='6'>{0} ಹೆಕ್ಟೇರುಗಳು</td><td class='target' rowSpan='6'>3 ಹೆಕ್ಟೇರುಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಬಿಟ್‌</td><td class='target' rowSpan='6'>1 ಬಿಟ್‌</td><td class='target' rowSpan='6'>{0} ಬಿಟ್‍ಗಳು</td><td class='target' rowSpan='6'>3 ಬಿಟ್‍ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಬೈಟ್‌</td><td class='target' rowSpan='6'>1 ಬೈಟ್‌</td><td class='target' rowSpan='6'>{0} ಬೈಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಬೈಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಸೆಕೆಂಡ್</td><td class='target' rowSpan='6'>1 ಸೆಕೆಂಡ್</td><td class='target' rowSpan='6'>{0} ಸೆಕೆಂಡುಗಳು</td><td class='target' rowSpan='6'>3 ಸೆಕೆಂಡುಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ನಿಮಿಷ</td><td class='target' rowSpan='6'>1 ನಿಮಿಷ</td><td class='target' rowSpan='6'>{0} ನಿಮಿಷಗಳು</td><td class='target' rowSpan='6'>3 ನಿಮಿಷಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಗಂಟೆ</td><td class='target' rowSpan='6'>1 ಗಂಟೆ</td><td class='target' rowSpan='6'>{0} ಗಂಟೆಗಳು</td><td class='target' rowSpan='6'>3 ಗಂಟೆಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ದಿನ</td><td class='target' rowSpan='6'>1 ದಿನ</td><td class='target' rowSpan='6'>{0} ದಿನಗಳು</td><td class='target' rowSpan='6'>3 ದಿನಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ದಿನ</td><td class='target' rowSpan='6'>1 ದಿನ</td><td class='target' rowSpan='6'>{0} ದಿನಗಳು</td><td class='target' rowSpan='6'>3 ದಿನಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ವಾರ</td><td class='target' rowSpan='6'>1 ವಾರ</td><td class='target' rowSpan='6'>{0} ವಾರಗಳು</td><td class='target' rowSpan='6'>3 ವಾರಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='6'>electric-current</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಆಂಪೇರ್‌</td><td class='target' rowSpan='6'>1 ಆಂಪೇರ್‌</td><td class='target' rowSpan='6'>{0} ಆಂಪೇರ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಆಂಪೇರ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='6'>electric-resistance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಓಂ</td><td class='target' rowSpan='6'>1 ಓಂ</td><td class='target' rowSpan='6'>{0} ಓಂಗಳು</td><td class='target' rowSpan='6'>3 ಓಂಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಜೌಲ್‌</td><td class='target' rowSpan='6'>1 ಜೌಲ್‌</td><td class='target' rowSpan='6'>{0} ಜೌಲ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಜೌಲ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾಲೋರಿ</td><td class='target' rowSpan='6'>1 ಕ್ಯಾಲೋರಿ</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾಲೋರಿಗಳು</td><td class='target' rowSpan='6'>3 ಕ್ಯಾಲೋರಿಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='6'>force</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ನ್ಯೂಟೋನ್‌</td><td class='target' rowSpan='6'>1 ನ್ಯೂಟೋನ್‌</td><td class='target' rowSpan='6'>{0} ನ್ಯೂಟೋನ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ನ್ಯೂಟೋನ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='6'>frequency</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಹರ್ಟ್ಸ್‌</td><td class='target' rowSpan='6'>1 ಹರ್ಟ್ಸ್‌</td><td class='target' rowSpan='6'>{0} ಹರ್ಟ್ಸ್‌</td><td class='target' rowSpan='6'>3 ಹರ್ಟ್ಸ್‌</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='6'>graphics</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಪಿಕ್ಸೆಲ್</td><td class='target' rowSpan='6'>1 ಪಿಕ್ಸೆಲ್</td><td class='target' rowSpan='6'>{0} ಪಿಕ್ಸೆಲ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಪಿಕ್ಸೆಲ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='6'>illuminance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಲಕ್ಸ್‌‌</td><td class='target' rowSpan='6'>1 ಲಕ್ಸ್‌‌</td><td class='target' rowSpan='6'>{0} ಲಕ್ಸ್‌‌</td><td class='target' rowSpan='6'>3 ಲಕ್ಸ್‌‌</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಮೀಟರ್</td><td class='target' rowSpan='6'>1 ಮೀಟರ್</td><td class='target' rowSpan='6'>{0} ಮೀಟರ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಮೀಟರ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಸ್ಕ್ಯಾಂಡಿನೇವಿಯನ್-ಮೈಲು</td><td class='target' rowSpan='6'>1 ಸ್ಕ್ಯಾಂಡಿನೇವಿಯನ್-ಮೈಲು</td><td class='target' rowSpan='6'>{0} ಸ್ಕ್ಯಾಂಡಿನೇವಿಯನ್-ಮೈಲುಗಳು</td><td class='target' rowSpan='6'>3 ಸ್ಕ್ಯಾಂಡಿನೇವಿಯನ್-ಮೈಲುಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='6'>luminous-flux</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಲೂಮೆನ್</td><td class='target' rowSpan='6'>1 ಲೂಮೆನ್</td><td class='target' rowSpan='6'>{0} ಲೂಮೆನ್</td><td class='target' rowSpan='6'>3 ಲೂಮೆನ್</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='6'>luminous-intensity</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾಂಡಿಲಾ</td><td class='target' rowSpan='6'>1 ಕ್ಯಾಂಡಿಲಾ</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾಂಡಿಲಾ</td><td class='target' rowSpan='6'>3 ಕ್ಯಾಂಡಿಲಾ</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾರೆಟ್‌</td><td class='target' rowSpan='6'>1 ಕ್ಯಾರೆಟ್‌</td><td class='target' rowSpan='6'>{0} ಕ್ಯಾರೆಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಕ್ಯಾರೆಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಗ್ರಾಂ</td><td class='target' rowSpan='6'>1 ಗ್ರಾಂ</td><td class='target' rowSpan='6'>{0} ಗ್ರಾಂಗಳು</td><td class='target' rowSpan='6'>3 ಗ್ರಾಂಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕಿಲೋಗ್ರಾಂ</td><td class='target' rowSpan='6'>1 ಕಿಲೋಗ್ರಾಂ</td><td class='target' rowSpan='6'>{0} ಕಿಲೋಗ್ರಾಂಗಳು</td><td class='target' rowSpan='6'>3 ಕಿಲೋಗ್ರಾಂಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್‌ ಟನ್‌</td><td class='target' rowSpan='6'>1 ಮೆಟ್ರಿಕ್‌ ಟನ್‌</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್‌‌ ಟನ್‌‌ಗಳು</td><td class='target' rowSpan='6'>3 ಮೆಟ್ರಿಕ್‌‌ ಟನ್‌‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಪ್ರತಿ ಮಿಲಿಯನ್ ಭಾಗ</td><td class='target' rowSpan='6'>1 ಪ್ರತಿ ಮಿಲಿಯನ್ ಭಾಗ</td><td class='target' rowSpan='6'>{0} ಪ್ರತಿ ಮಿಲಿಯನ್ ಭಾಗಗಳು</td><td class='target' rowSpan='6'>3 ಪ್ರತಿ ಮಿಲಿಯನ್ ಭಾಗಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಪರ್ಮಿರೈಡ್</td><td class='target' rowSpan='6'>1 ಪರ್ಮಿರೈಡ್</td><td class='target' rowSpan='6'>{0} ಪರ್ಮಿರೈಡ್</td><td class='target' rowSpan='6'>3 ಪರ್ಮಿರೈಡ್</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಪ್ರತಿ ಸಾವಿರಕ್ಕೆ</td><td class='target' rowSpan='6'>1 ಪ್ರತಿ ಸಾವಿರಕ್ಕೆ</td><td class='target' rowSpan='6'>{0} ಪ್ರತಿ ಸಾವಿರಕ್ಕೆ</td><td class='target' rowSpan='6'>3 ಪ್ರತಿ ಸಾವಿರಕ್ಕೆ</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಶೇಕಡಾ</td><td class='target' rowSpan='6'>1 ಶೇಕಡಾ</td><td class='target' rowSpan='6'>{0} ಶೇಕಡಾ</td><td class='target' rowSpan='6'>3 ಶೇಕಡಾ</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕಾರಟ್‌</td><td class='target' rowSpan='6'>1 ಕಾರಟ್‌</td><td class='target' rowSpan='6'>{0} ಕಾರಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಕಾರಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='6'>power</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ವ್ಯಾಟ್</td><td class='target' rowSpan='6'>1 ವ್ಯಾಟ್</td><td class='target' rowSpan='6'>{0} ವ್ಯಾಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ವ್ಯಾಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಪ್ಯಾಸ್ಕಲ್</td><td class='target' rowSpan='6'>1 ಪ್ಯಾಸ್ಕಲ್</td><td class='target' rowSpan='6'>{0} ಪ್ಯಾಸ್ಕಲ್ಸ್</td><td class='target' rowSpan='6'>3 ಪ್ಯಾಸ್ಕಲ್ಸ್</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಬಾರ್‌</td><td class='target' rowSpan='6'>1 ಬಾರ್‌</td><td class='target' rowSpan='6'>{0} ಬಾರ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಬಾರ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ವಾತಾವರಣ</td><td class='target' rowSpan='6'>1 ವಾತಾವರಣ</td><td class='target' rowSpan='6'>{0} ವಾತಾವರಣಗಳು</td><td class='target' rowSpan='6'>3 ವಾತಾವರಣಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='6'>substance-amount</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಮೋಲ್‌ಗಳು</td><td class='target' rowSpan='6'>1 ಮೋಲ್‌ಗಳು</td><td class='target' rowSpan='6'>{0} ಮೋಲ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಮೋಲ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>1°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>3°</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಡಿಗ್ರಿ ಸೆಲ್ಶಿಯಸ್</td><td class='target' rowSpan='6'>1 ಡಿಗ್ರಿ ಸೆಲ್ಶಿಯಸ್</td><td class='target' rowSpan='6'>{0} ಡಿಗ್ರಿ ಸೆಲ್ಶಿಯಸ್</td><td class='target' rowSpan='6'>3 ಡಿಗ್ರಿ ಸೆಲ್ಶಿಯಸ್</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಕೆಲ್ವಿನ್</td><td class='target' rowSpan='6'>1 ಕೆಲ್ವಿನ್</td><td class='target' rowSpan='6'>{0} ಕೆಲ್ವಿನ್‍ಗಳು</td><td class='target' rowSpan='6'>3 ಕೆಲ್ವಿನ್‍ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='6'>typewidth</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>1 em</td><td class='target' rowSpan='6'>{0} ems</td><td class='target' rowSpan='6'>3 ems</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='6'>voltage</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ವೋಲ್ಟ್‌</td><td class='target' rowSpan='6'>1 ವೋಲ್ಟ್‌</td><td class='target' rowSpan='6'>{0} ವೋಲ್ಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ವೋಲ್ಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್‌ ಕಪ್‌</td><td class='target' rowSpan='6'>1 ಮೆಟ್ರಿಕ್‌ ಕಪ್‌</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್‌ ಕಪ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಮೆಟ್ರಿಕ್‌ ಕಪ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್ ಪಿಂಟ್</td><td class='target' rowSpan='6'>1 ಮೆಟ್ರಿಕ್ ಪಿಂಟ್</td><td class='target' rowSpan='6'>{0} ಮೆಟ್ರಿಕ್ ಪಿಂಟ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಮೆಟ್ರಿಕ್ ಪಿಂಟ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಲೀಟರ್</td><td class='target' rowSpan='6'>1 ಲೀಟರ್</td><td class='target' rowSpan='6'>{0} ಲೀಟರ್‌ಗಳು</td><td class='target' rowSpan='6'>3 ಲೀಟರ್‌ಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ತಿಂಗಳು</td><td class='target' rowSpan='6'>1 ತಿಂಗಳು</td><td class='target' rowSpan='6'>{0} ತಿಂಗಳು</td><td class='target' rowSpan='6'>3 ತಿಂಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ವರ್ಷ</td><td class='target' rowSpan='6'>1 ವರ್ಷ</td><td class='target' rowSpan='6'>{0} ವರ್ಷಗಳು</td><td class='target' rowSpan='6'>3 ವರ್ಷಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ದಶಕ</td><td class='target' rowSpan='6'>1 ದಶಕ</td><td class='target' rowSpan='6'>{0} ದಶಕಗಳು</td><td class='target' rowSpan='6'>3 ದಶಕಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ಶತಮಾನ</td><td class='target' rowSpan='6'>1 ಶತಮಾನ</td><td class='target' rowSpan='6'>{0}ಶತಮಾನಗಳು</td><td class='target' rowSpan='6'>3ಶತಮಾನಗಳು</td></tr>
+	<tr><td class='source'>vocative</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>neuter</td><td class='target'>ಚದರ {0}</td><td class='target' rowSpan='6'>n/a</td><td class='target'>ಚ. {0}</td><td class='target' rowSpan='6'>n/a</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ಚದರ {0}</td><td class='target'>ಚ. {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ಚದರ {0}</td><td class='target'>ಚ. {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ಚದರ {0}</td><td class='target'>ಚ. {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ಚದರ {0}</td><td class='target'>ಚ. {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ಚದರ {0}</td><td class='target'>ಚ. {0}</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>neuter</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target' rowSpan='6'>n/a</td><td class='target'>ಕ್ಯೂ {0}</td><td class='target' rowSpan='6'>n/a</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target'>ಕ್ಯೂ {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target'>ಕ್ಯೂ {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target'>ಕ್ಯೂ {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target'>ಕ್ಯೂ {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ಕ್ಯೂಬಿಕ್ {0}</td><td class='target'>ಕ್ಯೂ {0}</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

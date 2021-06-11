@@ -1,0 +1,493 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lithuanian: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Lithuanian: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='6'>acceleration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} laisvojo kritimo pagreitis</td><td class='target' rowSpan='6'>21 laisvojo kritimo pagreitis</td><td class='target' rowSpan='6'>{0} laisvojo kritimo pagreičiai</td><td class='target' rowSpan='6'>3 laisvojo kritimo pagreičiai</td><td class='target' rowSpan='6'>{0} laisvojo kritimo pagreičio</td><td class='target' rowSpan='6'>0,2 laisvojo kritimo pagreičio</td><td class='target' rowSpan='6'>{0} laisvojo kritimo pagreičių</td><td class='target' rowSpan='6'>10 laisvojo kritimo pagreičių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kampo sekundė</td><td class='target' rowSpan='6'>21 kampo sekundė</td><td class='target' rowSpan='6'>{0} kampo sekundės</td><td class='target' rowSpan='6'>3 kampo sekundės</td><td class='target' rowSpan='6'>{0} kampo sekundės</td><td class='target' rowSpan='6'>0,2 kampo sekundės</td><td class='target' rowSpan='6'>{0} kampo sekundžių</td><td class='target' rowSpan='6'>10 kampo sekundžių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kampo minutė</td><td class='target' rowSpan='6'>21 kampo minutė</td><td class='target' rowSpan='6'>{0} kampo minutės</td><td class='target' rowSpan='6'>3 kampo minutės</td><td class='target' rowSpan='6'>{0} kampo minutės</td><td class='target' rowSpan='6'>0,2 kampo minutės</td><td class='target' rowSpan='6'>{0} kampo minučių</td><td class='target' rowSpan='6'>10 kampo minučių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} laipsnis</td><td class='target' rowSpan='6'>21 laipsnis</td><td class='target' rowSpan='6'>{0} laipsniai</td><td class='target' rowSpan='6'>3 laipsniai</td><td class='target' rowSpan='6'>{0} laipsnio</td><td class='target' rowSpan='6'>0,2 laipsnio</td><td class='target' rowSpan='6'>{0} laipsnių</td><td class='target' rowSpan='6'>10 laipsnių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} radianas</td><td class='target' rowSpan='6'>21 radianas</td><td class='target' rowSpan='6'>{0} radianai</td><td class='target' rowSpan='6'>3 radianai</td><td class='target' rowSpan='6'>{0} radiano</td><td class='target' rowSpan='6'>0,2 radiano</td><td class='target' rowSpan='6'>{0} radianų</td><td class='target' rowSpan='6'>10 radianų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='6'>angle</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} pilnas apsisukimas</td><td class='target' rowSpan='6'>21 pilnas apsisukimas</td><td class='target' rowSpan='6'>{0} pilni apsisukimai</td><td class='target' rowSpan='6'>3 pilni apsisukimai</td><td class='target' rowSpan='6'>{0} pilno apsisukimo</td><td class='target' rowSpan='6'>0,2 pilno apsisukimo</td><td class='target' rowSpan='6'>{0} pilnų apsisukimų</td><td class='target' rowSpan='6'>10 pilnų apsisukimų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='6'>area</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} hektaras</td><td class='target' rowSpan='6'>21 hektaras</td><td class='target' rowSpan='6'>{0} hektarai</td><td class='target' rowSpan='6'>3 hektarai</td><td class='target' rowSpan='6'>{0} hektaro</td><td class='target' rowSpan='6'>0,2 hektaro</td><td class='target' rowSpan='6'>{0} hektarų</td><td class='target' rowSpan='6'>10 hektarų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} bitas</td><td class='target' rowSpan='6'>21 bitas</td><td class='target' rowSpan='6'>{0} bitai</td><td class='target' rowSpan='6'>3 bitai</td><td class='target' rowSpan='6'>{0} bito</td><td class='target' rowSpan='6'>0,2 bito</td><td class='target' rowSpan='6'>{0} bitų</td><td class='target' rowSpan='6'>10 bitų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='6'>digital</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} baitas</td><td class='target' rowSpan='6'>21 baitas</td><td class='target' rowSpan='6'>{0} baitai</td><td class='target' rowSpan='6'>3 baitai</td><td class='target' rowSpan='6'>{0} baito</td><td class='target' rowSpan='6'>0,2 baito</td><td class='target' rowSpan='6'>{0} baitų</td><td class='target' rowSpan='6'>10 baitų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} sekundė</td><td class='target' rowSpan='6'>21 sekundė</td><td class='target' rowSpan='6'>{0} sekundės</td><td class='target' rowSpan='6'>3 sekundės</td><td class='target' rowSpan='6'>{0} sekundės</td><td class='target' rowSpan='6'>0,2 sekundės</td><td class='target' rowSpan='6'>{0} sekundžių</td><td class='target' rowSpan='6'>10 sekundžių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} minutė</td><td class='target' rowSpan='6'>21 minutė</td><td class='target' rowSpan='6'>{0} minutės</td><td class='target' rowSpan='6'>3 minutės</td><td class='target' rowSpan='6'>{0} minutės</td><td class='target' rowSpan='6'>0,2 minutės</td><td class='target' rowSpan='6'>{0} minučių</td><td class='target' rowSpan='6'>10 minučių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} valanda</td><td class='target' rowSpan='6'>21 valanda</td><td class='target' rowSpan='6'>{0} valandos</td><td class='target' rowSpan='6'>3 valandos</td><td class='target' rowSpan='6'>{0} valandos</td><td class='target' rowSpan='6'>0,2 valandos</td><td class='target' rowSpan='6'>{0} valandų</td><td class='target' rowSpan='6'>10 valandų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} diena</td><td class='target' rowSpan='6'>21 diena</td><td class='target' rowSpan='6'>{0} dienos</td><td class='target' rowSpan='6'>3 dienos</td><td class='target' rowSpan='6'>{0} dienos</td><td class='target' rowSpan='6'>0,2 dienos</td><td class='target' rowSpan='6'>{0} dienų</td><td class='target' rowSpan='6'>10 dienų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} d.</td><td class='target' rowSpan='6'>21 d.</td><td class='target' rowSpan='6'>{0} d.</td><td class='target' rowSpan='6'>3 d.</td><td class='target' rowSpan='6'>{0} d.</td><td class='target' rowSpan='6'>0,2 d.</td><td class='target' rowSpan='6'>{0} d.</td><td class='target' rowSpan='6'>10 d.</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='6'>duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} savaitė</td><td class='target' rowSpan='6'>21 savaitė</td><td class='target' rowSpan='6'>{0} savaitės</td><td class='target' rowSpan='6'>3 savaitės</td><td class='target' rowSpan='6'>{0} savaitės</td><td class='target' rowSpan='6'>0,2 savaitės</td><td class='target' rowSpan='6'>{0} savaičių</td><td class='target' rowSpan='6'>10 savaičių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='6'>electric-current</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} amperas</td><td class='target' rowSpan='6'>21 amperas</td><td class='target' rowSpan='6'>{0} amperai</td><td class='target' rowSpan='6'>3 amperai</td><td class='target' rowSpan='6'>{0} ampero</td><td class='target' rowSpan='6'>0,2 ampero</td><td class='target' rowSpan='6'>{0} amperų</td><td class='target' rowSpan='6'>10 amperų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='6'>electric-resistance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} omas</td><td class='target' rowSpan='6'>21 omas</td><td class='target' rowSpan='6'>{0} omai</td><td class='target' rowSpan='6'>3 omai</td><td class='target' rowSpan='6'>{0} omo</td><td class='target' rowSpan='6'>0,2 omo</td><td class='target' rowSpan='6'>{0} omų</td><td class='target' rowSpan='6'>10 omų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} džaulis</td><td class='target' rowSpan='6'>21 džaulis</td><td class='target' rowSpan='6'>{0} džauliai</td><td class='target' rowSpan='6'>3 džauliai</td><td class='target' rowSpan='6'>{0} džaulio</td><td class='target' rowSpan='6'>0,2 džaulio</td><td class='target' rowSpan='6'>{0} džaulių</td><td class='target' rowSpan='6'>10 džaulių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='6'>energy</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kalorija</td><td class='target' rowSpan='6'>21 kalorija</td><td class='target' rowSpan='6'>{0} kalorijos</td><td class='target' rowSpan='6'>3 kalorijos</td><td class='target' rowSpan='6'>{0} kalorijos</td><td class='target' rowSpan='6'>0,2 kalorijos</td><td class='target' rowSpan='6'>{0} kalorijų</td><td class='target' rowSpan='6'>10 kalorijų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='6'>force</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} niutonas</td><td class='target' rowSpan='6'>21 niutonas</td><td class='target' rowSpan='6'>{0} niutonai</td><td class='target' rowSpan='6'>3 niutonai</td><td class='target' rowSpan='6'>{0} niutono</td><td class='target' rowSpan='6'>0,2 niutono</td><td class='target' rowSpan='6'>{0} niutonų</td><td class='target' rowSpan='6'>10 niutonų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='6'>frequency</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} hercas</td><td class='target' rowSpan='6'>21 hercas</td><td class='target' rowSpan='6'>{0} hercai</td><td class='target' rowSpan='6'>3 hercai</td><td class='target' rowSpan='6'>{0} herco</td><td class='target' rowSpan='6'>0,2 herco</td><td class='target' rowSpan='6'>{0} hercų</td><td class='target' rowSpan='6'>10 hercų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='6'>graphics</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} pikselis</td><td class='target' rowSpan='6'>21 pikselis</td><td class='target' rowSpan='6'>{0} pikseliai</td><td class='target' rowSpan='6'>3 pikseliai</td><td class='target' rowSpan='6'>{0} pikselio</td><td class='target' rowSpan='6'>0,2 pikselio</td><td class='target' rowSpan='6'>{0} pikselių</td><td class='target' rowSpan='6'>10 pikselių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='6'>illuminance</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} liuksas</td><td class='target' rowSpan='6'>21 liuksas</td><td class='target' rowSpan='6'>{0} liuksai</td><td class='target' rowSpan='6'>3 liuksai</td><td class='target' rowSpan='6'>{0} liukso</td><td class='target' rowSpan='6'>0,2 liukso</td><td class='target' rowSpan='6'>{0} liuksų</td><td class='target' rowSpan='6'>10 liuksų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metras</td><td class='target' rowSpan='6'>21 metras</td><td class='target' rowSpan='6'>{0} metrai</td><td class='target' rowSpan='6'>3 metrai</td><td class='target' rowSpan='6'>{0} metro</td><td class='target' rowSpan='6'>0,2 metro</td><td class='target' rowSpan='6'>{0} metrų</td><td class='target' rowSpan='6'>10 metrų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='6'>length</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} ilgoji mylia</td><td class='target' rowSpan='6'>21 ilgoji mylia</td><td class='target' rowSpan='6'>{0} ilgosios mylios</td><td class='target' rowSpan='6'>3 ilgosios mylios</td><td class='target' rowSpan='6'>{0} ilgosios mylios</td><td class='target' rowSpan='6'>0,2 ilgosios mylios</td><td class='target' rowSpan='6'>{0} ilgųjų mylių</td><td class='target' rowSpan='6'>10 ilgųjų mylių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='6'>luminous-flux</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} liumenas</td><td class='target' rowSpan='6'>21 liumenas</td><td class='target' rowSpan='6'>{0} lm</td><td class='target' rowSpan='6'>3 lm</td><td class='target' rowSpan='6'>{0} lm</td><td class='target' rowSpan='6'>0,2 lm</td><td class='target' rowSpan='6'>{0} liumenų</td><td class='target' rowSpan='6'>10 liumenų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='6'>luminous-intensity</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kandela</td><td class='target' rowSpan='6'>21 kandela</td><td class='target' rowSpan='6'>{0} cd</td><td class='target' rowSpan='6'>3 cd</td><td class='target' rowSpan='6'>{0} cd</td><td class='target' rowSpan='6'>0,2 cd</td><td class='target' rowSpan='6'>{0} kandelų</td><td class='target' rowSpan='6'>10 kandelų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} karatas</td><td class='target' rowSpan='6'>21 karatas</td><td class='target' rowSpan='6'>{0} karatai</td><td class='target' rowSpan='6'>3 karatai</td><td class='target' rowSpan='6'>{0} karato</td><td class='target' rowSpan='6'>0,2 karato</td><td class='target' rowSpan='6'>{0} karatų</td><td class='target' rowSpan='6'>10 karatų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} gramas</td><td class='target' rowSpan='6'>21 gramas</td><td class='target' rowSpan='6'>{0} gramai</td><td class='target' rowSpan='6'>3 gramai</td><td class='target' rowSpan='6'>{0} gramo</td><td class='target' rowSpan='6'>0,2 gramo</td><td class='target' rowSpan='6'>{0} gramų</td><td class='target' rowSpan='6'>10 gramų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kilogramas</td><td class='target' rowSpan='6'>21 kilogramas</td><td class='target' rowSpan='6'>{0} kilogramai</td><td class='target' rowSpan='6'>3 kilogramai</td><td class='target' rowSpan='6'>{0} kilogramo</td><td class='target' rowSpan='6'>0,2 kilogramo</td><td class='target' rowSpan='6'>{0} kilogramų</td><td class='target' rowSpan='6'>10 kilogramų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='6'>mass</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metrinė tona</td><td class='target' rowSpan='6'>21 metrinė tona</td><td class='target' rowSpan='6'>{0} metrinės tonos</td><td class='target' rowSpan='6'>3 metrinės tonos</td><td class='target' rowSpan='6'>{0} metrinės tonos</td><td class='target' rowSpan='6'>0,2 metrinės tonos</td><td class='target' rowSpan='6'>{0} metrinių tonų</td><td class='target' rowSpan='6'>10 metrinių tonų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} milijoninė dalis</td><td class='target' rowSpan='6'>21 milijoninė dalis</td><td class='target' rowSpan='6'>{0} milijoninės dalys</td><td class='target' rowSpan='6'>3 milijoninės dalys</td><td class='target' rowSpan='6'>{0} milijoninės dalies</td><td class='target' rowSpan='6'>0,2 milijoninės dalies</td><td class='target' rowSpan='6'>{0} milijoninių dalių</td><td class='target' rowSpan='6'>10 milijoninių dalių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0}‱</td><td class='target' rowSpan='6'>21‱</td><td class='target' rowSpan='6'>{0}‱</td><td class='target' rowSpan='6'>3‱</td><td class='target' rowSpan='6'>{0}‱</td><td class='target' rowSpan='6'>0,2‱</td><td class='target' rowSpan='6'>{0}‱</td><td class='target' rowSpan='6'>10‱</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} promilė</td><td class='target' rowSpan='6'>21 promilė</td><td class='target' rowSpan='6'>{0} ‰</td><td class='target' rowSpan='6'>3 ‰</td><td class='target' rowSpan='6'>{0} ‰</td><td class='target' rowSpan='6'>0,2 ‰</td><td class='target' rowSpan='6'>{0} promilė</td><td class='target' rowSpan='6'>10 promilė</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} procentas</td><td class='target' rowSpan='6'>21 procentas</td><td class='target' rowSpan='6'>{0} %</td><td class='target' rowSpan='6'>3 %</td><td class='target' rowSpan='6'>{0} %</td><td class='target' rowSpan='6'>0,2 %</td><td class='target' rowSpan='6'>{0} procentas</td><td class='target' rowSpan='6'>10 procentas</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='6'>portion</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} karatas</td><td class='target' rowSpan='6'>21 karatas</td><td class='target' rowSpan='6'>{0} karatai</td><td class='target' rowSpan='6'>3 karatai</td><td class='target' rowSpan='6'>{0} karato</td><td class='target' rowSpan='6'>0,2 karato</td><td class='target' rowSpan='6'>{0} karatų</td><td class='target' rowSpan='6'>10 karatų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='6'>power</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} vatas</td><td class='target' rowSpan='6'>21 vatas</td><td class='target' rowSpan='6'>{0} vatai</td><td class='target' rowSpan='6'>3 vatai</td><td class='target' rowSpan='6'>{0} vato</td><td class='target' rowSpan='6'>0,2 vato</td><td class='target' rowSpan='6'>{0} vatų</td><td class='target' rowSpan='6'>10 vatų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} paskalis</td><td class='target' rowSpan='6'>21 paskalis</td><td class='target' rowSpan='6'>{0} paskaliai</td><td class='target' rowSpan='6'>3 paskaliai</td><td class='target' rowSpan='6'>{0} paskalio</td><td class='target' rowSpan='6'>0,2 paskalio</td><td class='target' rowSpan='6'>{0} paskalių</td><td class='target' rowSpan='6'>10 paskalių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} baras</td><td class='target' rowSpan='6'>21 baras</td><td class='target' rowSpan='6'>{0} barai</td><td class='target' rowSpan='6'>3 barai</td><td class='target' rowSpan='6'>{0} baro</td><td class='target' rowSpan='6'>0,2 baro</td><td class='target' rowSpan='6'>{0} barų</td><td class='target' rowSpan='6'>10 barų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} atmosfera</td><td class='target' rowSpan='6'>21 atmosfera</td><td class='target' rowSpan='6'>{0} atmosferos</td><td class='target' rowSpan='6'>3 atmosferos</td><td class='target' rowSpan='6'>{0} atmosferos</td><td class='target' rowSpan='6'>0,2 atmosferos</td><td class='target' rowSpan='6'>{0} atmosferų</td><td class='target' rowSpan='6'>10 atmosferų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='6'>substance-amount</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} molis</td><td class='target' rowSpan='6'>21 molis</td><td class='target' rowSpan='6'>{0} moliai</td><td class='target' rowSpan='6'>3 moliai</td><td class='target' rowSpan='6'>{0} molio</td><td class='target' rowSpan='6'>0,2 molio</td><td class='target' rowSpan='6'>{0} molių</td><td class='target' rowSpan='6'>10 molių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>21°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>3°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>0,2°</td><td class='target' rowSpan='6'>{0}°</td><td class='target' rowSpan='6'>10°</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} Celsijaus laipsnis</td><td class='target' rowSpan='6'>21 Celsijaus laipsnis</td><td class='target' rowSpan='6'>{0} Celsijaus laipsniai</td><td class='target' rowSpan='6'>3 Celsijaus laipsniai</td><td class='target' rowSpan='6'>{0} Celsijaus laipsnio</td><td class='target' rowSpan='6'>0,2 Celsijaus laipsnio</td><td class='target' rowSpan='6'>{0} Celsijaus laipsnių</td><td class='target' rowSpan='6'>10 Celsijaus laipsnių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} kelvinas</td><td class='target' rowSpan='6'>21 kelvinas</td><td class='target' rowSpan='6'>{0} kelvinai</td><td class='target' rowSpan='6'>3 kelvinai</td><td class='target' rowSpan='6'>{0} kelvino</td><td class='target' rowSpan='6'>0,2 kelvino</td><td class='target' rowSpan='6'>{0} kelvinų</td><td class='target' rowSpan='6'>10 kelvinų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='6'>typewidth</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>21 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>3 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>0,2 em</td><td class='target' rowSpan='6'>{0} em</td><td class='target' rowSpan='6'>10 em</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='6'>voltage</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} voltas</td><td class='target' rowSpan='6'>21 voltas</td><td class='target' rowSpan='6'>{0} voltai</td><td class='target' rowSpan='6'>3 voltai</td><td class='target' rowSpan='6'>{0} volto</td><td class='target' rowSpan='6'>0,2 volto</td><td class='target' rowSpan='6'>{0} voltų</td><td class='target' rowSpan='6'>10 voltų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} matavimo puodelis</td><td class='target' rowSpan='6'>21 matavimo puodelis</td><td class='target' rowSpan='6'>{0} matavimo puodeliai</td><td class='target' rowSpan='6'>3 matavimo puodeliai</td><td class='target' rowSpan='6'>{0} matavimo puodelio</td><td class='target' rowSpan='6'>0,2 matavimo puodelio</td><td class='target' rowSpan='6'>{0} matavimo puodelių</td><td class='target' rowSpan='6'>10 matavimo puodelių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metrinė pinta</td><td class='target' rowSpan='6'>21 metrinė pinta</td><td class='target' rowSpan='6'>{0} metrinės pintos</td><td class='target' rowSpan='6'>3 metrinės pintos</td><td class='target' rowSpan='6'>{0} metrinės pintos</td><td class='target' rowSpan='6'>0,2 metrinės pintos</td><td class='target' rowSpan='6'>{0} metrinių pintų</td><td class='target' rowSpan='6'>10 metrinių pintų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} litras</td><td class='target' rowSpan='6'>21 litras</td><td class='target' rowSpan='6'>{0} litrai</td><td class='target' rowSpan='6'>3 litrai</td><td class='target' rowSpan='6'>{0} litro</td><td class='target' rowSpan='6'>0,2 litro</td><td class='target' rowSpan='6'>{0} litrų</td><td class='target' rowSpan='6'>10 litrų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} mėnuo</td><td class='target' rowSpan='6'>21 mėnuo</td><td class='target' rowSpan='6'>{0} mėnesiai</td><td class='target' rowSpan='6'>3 mėnesiai</td><td class='target' rowSpan='6'>{0} mėnesio</td><td class='target' rowSpan='6'>0,2 mėnesio</td><td class='target' rowSpan='6'>{0} mėnesių</td><td class='target' rowSpan='6'>10 mėnesių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} metai</td><td class='target' rowSpan='6'>21 metai</td><td class='target' rowSpan='6'>{0} metai</td><td class='target' rowSpan='6'>3 metai</td><td class='target' rowSpan='6'>{0} metų</td><td class='target' rowSpan='6'>0,2 metų</td><td class='target' rowSpan='6'>{0} metų</td><td class='target' rowSpan='6'>10 metų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} dekada</td><td class='target' rowSpan='6'>21 dekada</td><td class='target' rowSpan='6'>{0} dekados</td><td class='target' rowSpan='6'>3 dekados</td><td class='target' rowSpan='6'>{0} dekados</td><td class='target' rowSpan='6'>0,2 dekados</td><td class='target' rowSpan='6'>{0} dekadų</td><td class='target' rowSpan='6'>10 dekadų</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='6'>year-duration</td><td class='source' rowSpan='6'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='6'>{0} amžius</td><td class='target' rowSpan='6'>21 amžius</td><td class='target' rowSpan='6'>{0} amžiai</td><td class='target' rowSpan='6'>3 amžiai</td><td class='target' rowSpan='6'>{0} amžiaus</td><td class='target' rowSpan='6'>0,2 amžiaus</td><td class='target' rowSpan='6'>{0} amžių</td><td class='target' rowSpan='6'>10 amžių</td></tr>
+	<tr><td class='source'>accusative</td></tr>
+	<tr><td class='source'>genitive</td></tr>
+	<tr><td class='source'>dative</td></tr>
+	<tr><td class='source'>locative</td></tr>
+	<tr><td class='source'>instrumental</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='12'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>masculine</td><td class='target'>{0} kvadratu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kvadratu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kvadratu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kvadratu</td><td class='target' rowSpan='12'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>feminine</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td><td class='target'>{0} kvadratu</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='11.0%'>Form for: one (21.0)</th><th class='target' width='11.0%'>Formatted Sample: one (21.0)</th><th class='target' width='11.0%'>Form for: few (3.0)</th><th class='target' width='11.0%'>Formatted Sample: few (3.0)</th><th class='target' width='11.0%'>Form for: many (0.2)</th><th class='target' width='11.0%'>Formatted Sample: many (0.2)</th><th class='target' width='11.0%'>Form for: other (10.0)</th><th class='target' width='11.0%'>Formatted Sample: other (10.0)</th></tr>
+	<tr><td class='source' rowSpan='12'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='6'>masculine</td><td class='target'>{0} kubu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kubu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kubu</td><td class='target' rowSpan='12'>n/a</td><td class='target'>{0} kubu</td><td class='target' rowSpan='12'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='6'>feminine</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td><td class='target'>{0} kubu</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='http://www.unicode.org/unicode/copyright.html'>
+<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
+<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
