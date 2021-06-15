@@ -10,7 +10,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     $Revision$
 -->
 
-<!ELEMENT keyboard ( version, generation?, names, settings?, import*, keyMap+, displayMap?, layer*, vkeys*, transforms*, reorders?, backspaces? ) >
+<!ELEMENT keyboard ( version, generation?, info?, names, settings?, import*, keyMap+, displayMap?, layer*, vkeys*, transforms*, reorders?, backspaces? ) >
 <!ATTLIST keyboard locale CDATA #REQUIRED >
     <!--@MATCH:any/TODO-->
 
@@ -21,7 +21,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ATTLIST version number CDATA #REQUIRED >
     <!--@MATCH:regex/\$Revision.*\$-->
     <!--@METADATA-->
-<!ATTLIST version cldrVersion CDATA #FIXED "39" >
+<!ATTLIST version cldrVersion CDATA #FIXED "40" >
     <!--@MATCH:version-->
     <!--@METADATA-->
 
@@ -30,6 +30,17 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ATTLIST generation date CDATA #REQUIRED >
     <!--@VALUE-->
     <!--@DEPRECATED-->
+
+<!ELEMENT info EMPTY >
+<!ATTLIST info author CDATA #IMPLIED >
+    <!--@VALUE-->
+<!ATTLIST info normalization CDATA #IMPLIED >
+    <!--@MATCH:literal/NFC, NFD, other-->
+    <!--@VALUE-->
+<!ATTLIST info layout CDATA #IMPLIED >
+    <!--@VALUE-->
+<!ATTLIST info indicator CDATA #IMPLIED >
+    <!--@VALUE-->
 
 <!ELEMENT names ( name+ ) >
 
@@ -56,7 +67,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT map EMPTY >
 <!ATTLIST map iso CDATA #REQUIRED >
-    <!--@MATCH:regex/[A-E](0[0-9]|1[0-3])-->
+    <!--@MATCH:regex/[A-Z][0-9][0-9]-->
 <!ATTLIST map to CDATA #REQUIRED >
     <!--@MATCH:any-->
     <!--@VALUE-->
@@ -74,6 +85,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT flicks ( flick+ ) >
 <!ATTLIST flicks iso CDATA #REQUIRED >
+    <!--@MATCH:regex/[A-Z][0-9][0-9]-->
 
 <!ELEMENT flick EMPTY >
 <!ATTLIST flick directions NMTOKENS #REQUIRED >
@@ -102,17 +114,19 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT vkeys ( vkey+ ) >
 <!ATTLIST vkeys type CDATA #REQUIRED >
+    <!--@MATCH:literal/android, chromeos, osx, und, windows-->
 
 <!ELEMENT vkey EMPTY >
 <!ATTLIST vkey iso CDATA #REQUIRED >
+    <!--@MATCH:regex/[A-Z][0-9][0-9]-->
 <!ATTLIST vkey vkey CDATA #REQUIRED >
     <!--@VALUE-->
-<!ATTLIST vkey modifier CDATA #REQUIRED >
+<!ATTLIST vkey modifier CDATA #IMPLIED >
     <!--@VALUE-->
 
 <!ELEMENT transforms ( transform+ ) >
 <!ATTLIST transforms type CDATA #REQUIRED >
-    <!--@MATCH:literal/simple-->
+    <!--@MATCH:literal/simple, final-->
 
 <!ELEMENT transform EMPTY >
 <!ATTLIST transform before CDATA #IMPLIED >
