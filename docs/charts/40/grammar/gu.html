@@ -60,471 +60,457 @@
 <p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
 <p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
 <ol>
-<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_case_gender_info'>Unit Case & Gender Info</a></b></li>
 <li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
 </ol>
-<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<h2><a name='unit_case_gender_info'>Unit Case & Gender Info</a></h2>
 <p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
 <ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
 <table>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='7'>acceleration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ગુ-બળ</td><td class='target' rowSpan='7'>1 ગુ-બળ</td><td class='target' rowSpan='7'>{0} ગુ-બળ</td><td class='target' rowSpan='7'>3 ગુ-બળ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ચાપસેકન્ડ</td><td class='target' rowSpan='7'>1 ચાપસેકન્ડ</td><td class='target' rowSpan='7'>{0} ચાપસેકન્ડ</td><td class='target' rowSpan='7'>3 ચાપસેકન્ડ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ચાપમિનિટ</td><td class='target' rowSpan='7'>1 ચાપમિનિટ</td><td class='target' rowSpan='7'>{0} ચાપમિનિટ</td><td class='target' rowSpan='7'>3 ચાપમિનિટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} અંશ</td><td class='target' rowSpan='7'>1 અંશ</td><td class='target' rowSpan='7'>{0} અંશ</td><td class='target' rowSpan='7'>3 અંશ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સમત્રિજ્યાકોણ</td><td class='target' rowSpan='7'>1 સમત્રિજ્યાકોણ</td><td class='target' rowSpan='7'>{0} સમત્રિજ્યાકોણ</td><td class='target' rowSpan='7'>3 સમત્રિજ્યાકોણ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પરિભ્રમણ</td><td class='target' rowSpan='7'>1 પરિભ્રમણ</td><td class='target' rowSpan='7'>{0} પરિભ્રમણ</td><td class='target' rowSpan='7'>3 પરિભ્રમણ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='7'>area</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} હેક્ટર</td><td class='target' rowSpan='7'>1 હેક્ટર</td><td class='target' rowSpan='7'>{0} હેક્ટર</td><td class='target' rowSpan='7'>3 હેક્ટર</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='7'>digital</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બિટ</td><td class='target' rowSpan='7'>1 બિટ</td><td class='target' rowSpan='7'>{0} બિટ</td><td class='target' rowSpan='7'>3 બિટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='7'>digital</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બાઇટ</td><td class='target' rowSpan='7'>1 બાઇટ</td><td class='target' rowSpan='7'>{0} બાઇટ</td><td class='target' rowSpan='7'>3 બાઇટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સેકંડ</td><td class='target' rowSpan='7'>1 સેકંડ</td><td class='target' rowSpan='7'>{0} સેકંડ</td><td class='target' rowSpan='7'>3 સેકંડ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મિનિટ</td><td class='target' rowSpan='7'>1 મિનિટ</td><td class='target' rowSpan='7'>{0} મિનિટ</td><td class='target' rowSpan='7'>3 મિનિટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કલાક</td><td class='target' rowSpan='7'>1 કલાક</td><td class='target' rowSpan='7'>{0} કલાક</td><td class='target' rowSpan='7'>3 કલાક</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} દિવસ</td><td class='target' rowSpan='7'>1 દિવસ</td><td class='target' rowSpan='7'>{0} દિવસ</td><td class='target' rowSpan='7'>3 દિવસ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} દિવસ</td><td class='target' rowSpan='7'>1 દિવસ</td><td class='target' rowSpan='7'>{0} દિવસ</td><td class='target' rowSpan='7'>3 દિવસ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} અઠવાડિયું</td><td class='target' rowSpan='7'>1 અઠવાડિયું</td><td class='target' rowSpan='7'>{0} અઠવાડિયા</td><td class='target' rowSpan='7'>3 અઠવાડિયા</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='7'>electric-current</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} એમ્પીયર</td><td class='target' rowSpan='7'>1 એમ્પીયર</td><td class='target' rowSpan='7'>{0} એમ્પીયર</td><td class='target' rowSpan='7'>3 એમ્પીયર</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='7'>electric-resistance</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ઓહ્મ</td><td class='target' rowSpan='7'>1 ઓહ્મ</td><td class='target' rowSpan='7'>{0} ઓહ્મ</td><td class='target' rowSpan='7'>3 ઓહ્મ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='7'>energy</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} જૂલ</td><td class='target' rowSpan='7'>1 જૂલ</td><td class='target' rowSpan='7'>{0} જૂલ</td><td class='target' rowSpan='7'>3 જૂલ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='7'>energy</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેલરી</td><td class='target' rowSpan='7'>1 કેલરી</td><td class='target' rowSpan='7'>{0} કેલરી</td><td class='target' rowSpan='7'>3 કેલરી</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='7'>force</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ન્યૂટન</td><td class='target' rowSpan='7'>1 ન્યૂટન</td><td class='target' rowSpan='7'>{0} ન્યૂટન</td><td class='target' rowSpan='7'>3 ન્યૂટન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='7'>frequency</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} હર્ટ્ઝ</td><td class='target' rowSpan='7'>1 હર્ટ્ઝ</td><td class='target' rowSpan='7'>{0} હર્ટ્ઝ</td><td class='target' rowSpan='7'>3 હર્ટ્ઝ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='7'>graphics</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પિક્સેલ</td><td class='target' rowSpan='7'>1 પિક્સેલ</td><td class='target' rowSpan='7'>{0} પિક્સેલ</td><td class='target' rowSpan='7'>3 પિક્સેલ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='7'>illuminance</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લક્સ</td><td class='target' rowSpan='7'>1 લક્સ</td><td class='target' rowSpan='7'>{0} લક્સ</td><td class='target' rowSpan='7'>3 લક્સ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='7'>length</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મીટર</td><td class='target' rowSpan='7'>1 મીટર</td><td class='target' rowSpan='7'>{0} મીટર</td><td class='target' rowSpan='7'>3 મીટર</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='7'>length</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} માઈલ-સ્કૅન્ડિનેવિઅન</td><td class='target' rowSpan='7'>1 માઈલ-સ્કૅન્ડિનેવિઅન</td><td class='target' rowSpan='7'>{0} માઈલ-સ્કૅન્ડિનેવિઅન</td><td class='target' rowSpan='7'>3 માઈલ-સ્કૅન્ડિનેવિઅન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='7'>luminous-flux</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લૂમેન</td><td class='target' rowSpan='7'>1 લૂમેન</td><td class='target' rowSpan='7'>{0} લૂમેન</td><td class='target' rowSpan='7'>3 લૂમેન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='7'>luminous-intensity</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} cd</td><td class='target' rowSpan='7'>1 cd</td><td class='target' rowSpan='7'>{0} cd</td><td class='target' rowSpan='7'>3 cd</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેરેટ</td><td class='target' rowSpan='7'>1 કેરેટ</td><td class='target' rowSpan='7'>{0} કેરેટ</td><td class='target' rowSpan='7'>3 કેરેટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ગ્રામ</td><td class='target' rowSpan='7'>1 ગ્રામ</td><td class='target' rowSpan='7'>{0} ગ્રામ</td><td class='target' rowSpan='7'>3 ગ્રામ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કિલોગ્રામ</td><td class='target' rowSpan='7'>1 કિલોગ્રામ</td><td class='target' rowSpan='7'>{0} કિલોગ્રામ</td><td class='target' rowSpan='7'>3 કિલોગ્રામ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક ટન</td><td class='target' rowSpan='7'>1 મેટ્રિક ટન</td><td class='target' rowSpan='7'>{0} મેટ્રિક ટન</td><td class='target' rowSpan='7'>3 મેટ્રિક ટન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કણ પ્રતિ મિલિયન</td><td class='target' rowSpan='7'>1 કણ પ્રતિ મિલિયન</td><td class='target' rowSpan='7'>{0} કણ પ્રતિ મિલિયન</td><td class='target' rowSpan='7'>3 કણ પ્રતિ મિલિયન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પરમિરિયડ</td><td class='target' rowSpan='7'>1 પરમિરિયડ</td><td class='target' rowSpan='7'>{0} પરમિરિયડ</td><td class='target' rowSpan='7'>3 પરમિરિયડ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પ્રતિમાઈલ</td><td class='target' rowSpan='7'>1 પ્રતિમાઈલ</td><td class='target' rowSpan='7'>{0} પ્રતિમાઈલ</td><td class='target' rowSpan='7'>3 પ્રતિમાઈલ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ટકા</td><td class='target' rowSpan='7'>1 ટકા</td><td class='target' rowSpan='7'>{0} ટકા</td><td class='target' rowSpan='7'>3 ટકા</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કૅરેટ</td><td class='target' rowSpan='7'>1 કૅરેટ</td><td class='target' rowSpan='7'>{0} કૅરેટ</td><td class='target' rowSpan='7'>3 કૅરેટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='7'>power</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વૉટ</td><td class='target' rowSpan='7'>1 વૉટ</td><td class='target' rowSpan='7'>{0} વૉટ</td><td class='target' rowSpan='7'>3 વૉટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પાસ્કલ</td><td class='target' rowSpan='7'>1 પાસ્કલ</td><td class='target' rowSpan='7'>{0} પાસ્કલ</td><td class='target' rowSpan='7'>3 પાસ્કલ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બાર</td><td class='target' rowSpan='7'>1 બાર</td><td class='target' rowSpan='7'>{0} બાર</td><td class='target' rowSpan='7'>3 બાર</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વાતાવરણ</td><td class='target' rowSpan='7'>1 વાતાવરણ</td><td class='target' rowSpan='7'>{0} વાતાવરણ</td><td class='target' rowSpan='7'>3 વાતાવરણ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='7'>substance-amount</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મોલ</td><td class='target' rowSpan='7'>1 મોલ</td><td class='target' rowSpan='7'>{0} મોલ</td><td class='target' rowSpan='7'>3 મોલ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0}°</td><td class='target' rowSpan='7'>1°</td><td class='target' rowSpan='7'>{0}°</td><td class='target' rowSpan='7'>3°</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ડિગ્રી સેલ્સિયસ</td><td class='target' rowSpan='7'>1 ડિગ્રી સેલ્સિયસ</td><td class='target' rowSpan='7'>{0} ડિગ્રી સેલ્સિયસ</td><td class='target' rowSpan='7'>3 ડિગ્રી સેલ્સિયસ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેલ્વિન</td><td class='target' rowSpan='7'>1 કેલ્વિન</td><td class='target' rowSpan='7'>{0} કેલ્વિન</td><td class='target' rowSpan='7'>3 કેલ્વિન</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='7'>typewidth</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} em</td><td class='target' rowSpan='7'>1 em</td><td class='target' rowSpan='7'>{0} em</td><td class='target' rowSpan='7'>3 em</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='7'>voltage</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વૉલ્ટ્</td><td class='target' rowSpan='7'>1 વૉલ્ટ્</td><td class='target' rowSpan='7'>{0} વૉલ્ટ્</td><td class='target' rowSpan='7'>3 વૉલ્ટ્</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક કપ</td><td class='target' rowSpan='7'>1 મેટ્રિક કપ</td><td class='target' rowSpan='7'>{0} મેટ્રિક કપ</td><td class='target' rowSpan='7'>3 મેટ્રિક કપ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક પિન્ટ</td><td class='target' rowSpan='7'>1 મેટ્રિક પિન્ટ</td><td class='target' rowSpan='7'>{0} મેટ્રિક પિન્ટ</td><td class='target' rowSpan='7'>3 મેટ્રિક પિન્ટ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લિટર</td><td class='target' rowSpan='7'>1 લિટર</td><td class='target' rowSpan='7'>{0} લિટર</td><td class='target' rowSpan='7'>3 લિટર</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મહિનો</td><td class='target' rowSpan='7'>1 મહિનો</td><td class='target' rowSpan='7'>{0} મહિના</td><td class='target' rowSpan='7'>3 મહિના</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વર્ષ</td><td class='target' rowSpan='7'>1 વર્ષ</td><td class='target' rowSpan='7'>{0} વર્ષ</td><td class='target' rowSpan='7'>3 વર્ષ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} દાયકો</td><td class='target' rowSpan='7'>1 દાયકો</td><td class='target' rowSpan='7'>{0} દાયકા</td><td class='target' rowSpan='7'>3 દાયકા</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સદી</td><td class='target' rowSpan='7'>1 સદી</td><td class='target' rowSpan='7'>{0} સદીઓ</td><td class='target' rowSpan='7'>3 સદીઓ</td></tr>
-	<tr><td class='source'>vocative</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>acceleration</td><td class='source' rowSpan='7'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ગુ-બળ</td><td class='target'>અમે 1 ગુ-બળ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ગુ-બળ</td><td class='target'>અમે 3 ગુ-બળ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ગુ-બળથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ગુ-બળથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ગુ-બળ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ગુ-બળ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ગુ-બળનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ગુ-બળનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ગુ-બળને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ગુ-બળને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ગુ-બળમાં ઉજવણી કરીશું.</td><td class='target'>3 ગુ-બળમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ગુ-બળ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ગુ-બળ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='35'>angle</td><td class='source' rowSpan='7'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='14'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ચાપસેકન્ડ</td><td class='target'>અમે 1 ચાપસેકન્ડ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ચાપસેકન્ડ</td><td class='target'>અમે 3 ચાપસેકન્ડ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ચાપસેકન્ડથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ચાપસેકન્ડથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ચાપસેકન્ડ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ચાપસેકન્ડ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ચાપસેકન્ડનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ચાપસેકન્ડનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ચાપસેકન્ડને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ચાપસેકન્ડને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ચાપસેકન્ડમાં ઉજવણી કરીશું.</td><td class='target'>3 ચાપસેકન્ડમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ચાપસેકન્ડ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ચાપસેકન્ડ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ચાપમિનિટ</td><td class='target'>અમે 1 ચાપમિનિટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ચાપમિનિટ</td><td class='target'>અમે 3 ચાપમિનિટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ચાપમિનિટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ચાપમિનિટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ચાપમિનિટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ચાપમિનિટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ચાપમિનિટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ચાપમિનિટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ચાપમિનિટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ચાપમિનિટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ચાપમિનિટમાં ઉજવણી કરીશું.</td><td class='target'>3 ચાપમિનિટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ચાપમિનિટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ચાપમિનિટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='21'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} અંશ</td><td class='target'>અમે 1 અંશ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} અંશ</td><td class='target'>અમે 3 અંશ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 અંશથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 અંશથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 અંશ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 અંશ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 અંશનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 અંશનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 અંશને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 અંશને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 અંશમાં ઉજવણી કરીશું.</td><td class='target'>3 અંશમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 અંશ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 અંશ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સમત્રિજ્યાકોણ</td><td class='target'>અમે 1 સમત્રિજ્યાકોણ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} સમત્રિજ્યાકોણ</td><td class='target'>અમે 3 સમત્રિજ્યાકોણ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 સમત્રિજ્યાકોણથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 સમત્રિજ્યાકોણથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 સમત્રિજ્યાકોણ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 સમત્રિજ્યાકોણ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 સમત્રિજ્યાકોણનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 સમત્રિજ્યાકોણનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 સમત્રિજ્યાકોણને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 સમત્રિજ્યાકોણને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 સમત્રિજ્યાકોણમાં ઉજવણી કરીશું.</td><td class='target'>3 સમત્રિજ્યાકોણમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 સમત્રિજ્યાકોણ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 સમત્રિજ્યાકોણ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પરિભ્રમણ</td><td class='target'>અમે 1 પરિભ્રમણ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} પરિભ્રમણ</td><td class='target'>અમે 3 પરિભ્રમણ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 પરિભ્રમણથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 પરિભ્રમણથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 પરિભ્રમણ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 પરિભ્રમણ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 પરિભ્રમણનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 પરિભ્રમણનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 પરિભ્રમણને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 પરિભ્રમણને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 પરિભ્રમણમાં ઉજવણી કરીશું.</td><td class='target'>3 પરિભ્રમણમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 પરિભ્રમણ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 પરિભ્રમણ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>area</td><td class='source' rowSpan='7'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} હેક્ટર</td><td class='target'>અમે 1 હેક્ટર દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} હેક્ટર</td><td class='target'>અમે 3 હેક્ટર દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 હેક્ટરથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 હેક્ટરથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 હેક્ટર માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 હેક્ટર માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 હેક્ટરનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 હેક્ટરનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 હેક્ટરને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 હેક્ટરને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 હેક્ટરમાં ઉજવણી કરીશું.</td><td class='target'>3 હેક્ટરમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 હેક્ટર સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 હેક્ટર સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>digital</td><td class='source' rowSpan='7'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='14'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બિટ</td><td class='target'>અમે 1 બિટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} બિટ</td><td class='target'>અમે 3 બિટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 બિટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 બિટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 બિટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 બિટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 બિટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 બિટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 બિટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 બિટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 બિટમાં ઉજવણી કરીશું.</td><td class='target'>3 બિટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 બિટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 બિટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બાઇટ</td><td class='target'>અમે 1 બાઇટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} બાઇટ</td><td class='target'>અમે 3 બાઇટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 બાઇટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 બાઇટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 બાઇટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 બાઇટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 બાઇટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 બાઇટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 બાઇટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 બાઇટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 બાઇટમાં ઉજવણી કરીશું.</td><td class='target'>3 બાઇટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 બાઇટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 બાઇટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='42'>duration</td><td class='source' rowSpan='7'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='42'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સેકંડ</td><td class='target'>અમે 1 સેકંડ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} સેકંડ</td><td class='target'>અમે 3 સેકંડ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 સેકંડથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 સેકંડથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 સેકંડ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 સેકંડ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 સેકંડનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 સેકંડનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 સેકંડમાં ઉજવણી કરીશું.</td><td class='target'>3 સેકંડમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 સેકંડ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 સેકંડ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મિનિટ</td><td class='target'>અમે 1 મિનિટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મિનિટ</td><td class='target'>અમે 3 મિનિટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મિનિટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મિનિટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મિનિટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મિનિટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મિનિટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મિનિટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મિનિટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મિનિટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મિનિટમાં ઉજવણી કરીશું.</td><td class='target'>3 મિનિટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મિનિટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મિનિટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કલાક</td><td class='target'>અમે 1 કલાક દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કલાક</td><td class='target'>અમે 3 કલાક દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કલાકથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કલાકથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કલાક માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કલાક માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કલાકનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કલાકનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કલાકને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કલાકને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કલાકમાં ઉજવણી કરીશું.</td><td class='target'>3 કલાકમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કલાક સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કલાક સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='14'>{0} દિવસ</td><td class='target'>અમે 1 દિવસ દુકાને ગયા.</td><td class='target' rowSpan='14'>{0} દિવસ</td><td class='target'>અમે 3 દિવસ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 દિવસથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 દિવસથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 દિવસ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 દિવસ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 દિવસનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 દિવસનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 દિવસને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 દિવસને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 દિવસમાં ઉજવણી કરીશું.</td><td class='target'>3 દિવસમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 દિવસ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 દિવસ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source'>nominative</td><td class='target'>અમે 1 દિવસ દુકાને ગયા.</td><td class='target'>અમે 3 દિવસ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 દિવસથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 દિવસથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 દિવસ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 દિવસ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 દિવસનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 દિવસનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 દિવસને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 દિવસને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 દિવસમાં ઉજવણી કરીશું.</td><td class='target'>3 દિવસમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 દિવસ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 દિવસ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} અઠવાડિયું</td><td class='target'>અમે 1 અઠવાડિયું દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} અઠવાડિયા</td><td class='target'>અમે 3 અઠવાડિયા દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 અઠવાડિયુંથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 અઠવાડિયાથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 અઠવાડિયું માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 અઠવાડિયા માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 અઠવાડિયુંનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 અઠવાડિયાનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 અઠવાડિયુંને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 અઠવાડિયાને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 અઠવાડિયુંમાં ઉજવણી કરીશું.</td><td class='target'>3 અઠવાડિયામાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 અઠવાડિયું સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 અઠવાડિયા સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>electric-current</td><td class='source' rowSpan='7'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} એમ્પીયર</td><td class='target'>અમે 1 એમ્પીયર દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} એમ્પીયર</td><td class='target'>અમે 3 એમ્પીયર દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 એમ્પીયરથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 એમ્પીયરથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 એમ્પીયર માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 એમ્પીયર માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 એમ્પીયરનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 એમ્પીયરનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 એમ્પીયરને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 એમ્પીયરને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 એમ્પીયરમાં ઉજવણી કરીશું.</td><td class='target'>3 એમ્પીયરમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 એમ્પીયર સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 એમ્પીયર સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>electric-resistance</td><td class='source' rowSpan='7'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ઓહ્મ</td><td class='target'>અમે 1 ઓહ્મ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ઓહ્મ</td><td class='target'>અમે 3 ઓહ્મ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ઓહ્મથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ઓહ્મથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ઓહ્મ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ઓહ્મ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ઓહ્મનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ઓહ્મનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ઓહ્મને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ઓહ્મને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ઓહ્મમાં ઉજવણી કરીશું.</td><td class='target'>3 ઓહ્મમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ઓહ્મ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ઓહ્મ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>energy</td><td class='source' rowSpan='7'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} જૂલ</td><td class='target'>અમે 1 જૂલ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} જૂલ</td><td class='target'>અમે 3 જૂલ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 જૂલથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 જૂલથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 જૂલ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 જૂલ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 જૂલનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 જૂલનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 જૂલને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 જૂલને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 જૂલમાં ઉજવણી કરીશું.</td><td class='target'>3 જૂલમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 જૂલ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 જૂલ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેલરી</td><td class='target'>અમે 1 કેલરી દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કેલરી</td><td class='target'>અમે 3 કેલરી દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કેલરીથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કેલરીથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કેલરી માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કેલરી માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કેલરીનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કેલરીનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કેલરીને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કેલરીને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કેલરીમાં ઉજવણી કરીશું.</td><td class='target'>3 કેલરીમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કેલરી સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કેલરી સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>force</td><td class='source' rowSpan='7'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ન્યૂટન</td><td class='target'>અમે 1 ન્યૂટન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ન્યૂટન</td><td class='target'>અમે 3 ન્યૂટન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ન્યૂટનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ન્યૂટનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ન્યૂટન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ન્યૂટન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ન્યૂટનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ન્યૂટનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ન્યૂટનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ન્યૂટનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ન્યૂટનમાં ઉજવણી કરીશું.</td><td class='target'>3 ન્યૂટનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ન્યૂટન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ન્યૂટન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>frequency</td><td class='source' rowSpan='7'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} હર્ટ્ઝ</td><td class='target'>અમે 1 હર્ટ્ઝ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} હર્ટ્ઝ</td><td class='target'>અમે 3 હર્ટ્ઝ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 હર્ટ્ઝથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 હર્ટ્ઝથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 હર્ટ્ઝ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 હર્ટ્ઝ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 હર્ટ્ઝનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 હર્ટ્ઝનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 હર્ટ્ઝને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 હર્ટ્ઝને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 હર્ટ્ઝમાં ઉજવણી કરીશું.</td><td class='target'>3 હર્ટ્ઝમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 હર્ટ્ઝ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 હર્ટ્ઝ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>graphics</td><td class='source' rowSpan='7'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પિક્સેલ</td><td class='target'>અમે 1 પિક્સેલ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} પિક્સેલ</td><td class='target'>અમે 3 પિક્સેલ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 પિક્સેલથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 પિક્સેલથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 પિક્સેલ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 પિક્સેલ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 પિક્સેલનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 પિક્સેલનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 પિક્સેલને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 પિક્સેલને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 પિક્સેલમાં ઉજવણી કરીશું.</td><td class='target'>3 પિક્સેલમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 પિક્સેલ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 પિક્સેલ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>illuminance</td><td class='source' rowSpan='7'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લક્સ</td><td class='target'>અમે 1 લક્સ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} લક્સ</td><td class='target'>અમે 3 લક્સ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 લક્સથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 લક્સથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 લક્સ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 લક્સ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 લક્સનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 લક્સનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 લક્સને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 લક્સને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 લક્સમાં ઉજવણી કરીશું.</td><td class='target'>3 લક્સમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 લક્સ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 લક્સ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>length</td><td class='source' rowSpan='7'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મીટર</td><td class='target'>અમે 1 મીટર દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મીટર</td><td class='target'>અમે 3 મીટર દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મીટરથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મીટરથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મીટર માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મીટર માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મીટરનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મીટરનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મીટરને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મીટરને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મીટરમાં ઉજવણી કરીશું.</td><td class='target'>3 મીટરમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મીટર સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મીટર સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} માઈલ-સ્કૅન્ડિનેવિઅન</td><td class='target'>અમે 1 માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} માઈલ-સ્કૅન્ડિનેવિઅન</td><td class='target'>અમે 3 માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td><td class='target'>3 માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>luminous-flux</td><td class='source' rowSpan='7'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લૂમેન</td><td class='target'>અમે 1 લૂમેન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} લૂમેન</td><td class='target'>અમે 3 લૂમેન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 લૂમેનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 લૂમેનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 લૂમેન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 લૂમેન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 લૂમેનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 લૂમેનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 લૂમેનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 લૂમેનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 લૂમેનમાં ઉજવણી કરીશું.</td><td class='target'>3 લૂમેનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 લૂમેન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 લૂમેન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>luminous-intensity</td><td class='source' rowSpan='7'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેન્ડેલા</td><td class='target'>અમે 1 કેન્ડેલા દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કેન્ડેલા</td><td class='target'>અમે 3 કેન્ડેલા દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કેન્ડેલાથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કેન્ડેલાથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કેન્ડેલા માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કેન્ડેલા માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કેન્ડેલાનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કેન્ડેલાનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કેન્ડેલાને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કેન્ડેલાને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કેન્ડેલામાં ઉજવણી કરીશું.</td><td class='target'>3 કેન્ડેલામાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કેન્ડેલા સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કેન્ડેલા સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='28'>mass</td><td class='source' rowSpan='7'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='28'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેરેટ</td><td class='target'>અમે 1 કેરેટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કેરેટ</td><td class='target'>અમે 3 કેરેટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કેરેટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કેરેટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કેરેટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કેરેટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કેરેટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કેરેટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કેરેટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કેરેટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કેરેટમાં ઉજવણી કરીશું.</td><td class='target'>3 કેરેટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કેરેટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કેરેટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ગ્રામ</td><td class='target'>અમે 1 ગ્રામ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ગ્રામ</td><td class='target'>અમે 3 ગ્રામ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ગ્રામથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ગ્રામથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ગ્રામ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ગ્રામ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ગ્રામનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ગ્રામનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ગ્રામને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ગ્રામને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ગ્રામમાં ઉજવણી કરીશું.</td><td class='target'>3 ગ્રામમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ગ્રામ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ગ્રામ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કિલોગ્રામ</td><td class='target'>અમે 1 કિલોગ્રામ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કિલોગ્રામ</td><td class='target'>અમે 3 કિલોગ્રામ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કિલોગ્રામથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કિલોગ્રામથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કિલોગ્રામ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કિલોગ્રામ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કિલોગ્રામનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કિલોગ્રામનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કિલોગ્રામને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કિલોગ્રામને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કિલોગ્રામમાં ઉજવણી કરીશું.</td><td class='target'>3 કિલોગ્રામમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કિલોગ્રામ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કિલોગ્રામ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક ટન</td><td class='target'>અમે 1 મેટ્રિક ટન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મેટ્રિક ટન</td><td class='target'>અમે 3 મેટ્રિક ટન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મેટ્રિક ટનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મેટ્રિક ટનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મેટ્રિક ટન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મેટ્રિક ટન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મેટ્રિક ટનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મેટ્રિક ટનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મેટ્રિક ટનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મેટ્રિક ટનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મેટ્રિક ટનમાં ઉજવણી કરીશું.</td><td class='target'>3 મેટ્રિક ટનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મેટ્રિક ટન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મેટ્રિક ટન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='35'>portion</td><td class='source' rowSpan='7'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='14'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કણ પ્રતિ મિલિયન</td><td class='target'>અમે 1 કણ પ્રતિ મિલિયન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કણ પ્રતિ મિલિયન</td><td class='target'>અમે 3 કણ પ્રતિ મિલિયન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કણ પ્રતિ મિલિયનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કણ પ્રતિ મિલિયનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કણ પ્રતિ મિલિયન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કણ પ્રતિ મિલિયન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કણ પ્રતિ મિલિયનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કણ પ્રતિ મિલિયનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કણ પ્રતિ મિલિયનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કણ પ્રતિ મિલિયનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કણ પ્રતિ મિલિયનમાં ઉજવણી કરીશું.</td><td class='target'>3 કણ પ્રતિ મિલિયનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કણ પ્રતિ મિલિયન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કણ પ્રતિ મિલિયન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પરમિરિયડ</td><td class='target'>અમે 1 પરમિરિયડ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} પરમિરિયડ</td><td class='target'>અમે 3 પરમિરિયડ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 પરમિરિયડથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 પરમિરિયડથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 પરમિરિયડ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 પરમિરિયડ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 પરમિરિયડનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 પરમિરિયડનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 પરમિરિયડને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 પરમિરિયડને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 પરમિરિયડમાં ઉજવણી કરીશું.</td><td class='target'>3 પરમિરિયડમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 પરમિરિયડ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 પરમિરિયડ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પ્રતિમાઈલ</td><td class='target'>અમે 1 પ્રતિમાઈલ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} પ્રતિમાઈલ</td><td class='target'>અમે 3 પ્રતિમાઈલ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 પ્રતિમાઈલથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 પ્રતિમાઈલથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 પ્રતિમાઈલ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 પ્રતિમાઈલ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 પ્રતિમાઈલનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 પ્રતિમાઈલનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 પ્રતિમાઈલને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 પ્રતિમાઈલને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 પ્રતિમાઈલમાં ઉજવણી કરીશું.</td><td class='target'>3 પ્રતિમાઈલમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 પ્રતિમાઈલ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 પ્રતિમાઈલ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ટકા</td><td class='target'>અમે 1 ટકા દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ટકા</td><td class='target'>અમે 3 ટકા દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ટકાથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ટકાથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ટકા માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ટકા માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ટકાનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ટકાનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ટકાને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ટકાને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ટકામાં ઉજવણી કરીશું.</td><td class='target'>3 ટકામાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ટકા સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ટકા સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કૅરેટ</td><td class='target'>અમે 1 કૅરેટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કૅરેટ</td><td class='target'>અમે 3 કૅરેટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કૅરેટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કૅરેટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કૅરેટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કૅરેટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કૅરેટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કૅરેટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કૅરેટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કૅરેટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કૅરેટમાં ઉજવણી કરીશું.</td><td class='target'>3 કૅરેટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કૅરેટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કૅરેટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>power</td><td class='source' rowSpan='7'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વૉટ</td><td class='target'>અમે 1 વૉટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} વૉટ</td><td class='target'>અમે 3 વૉટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 વૉટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 વૉટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 વૉટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 વૉટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 વૉટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 વૉટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 વૉટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 વૉટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 વૉટમાં ઉજવણી કરીશું.</td><td class='target'>3 વૉટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 વૉટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 વૉટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>pressure</td><td class='source' rowSpan='7'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='21'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} પાસ્કલ</td><td class='target'>અમે 1 પાસ્કલ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} પાસ્કલ</td><td class='target'>અમે 3 પાસ્કલ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 પાસ્કલથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 પાસ્કલથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 પાસ્કલ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 પાસ્કલ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 પાસ્કલનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 પાસ્કલનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 પાસ્કલને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 પાસ્કલને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 પાસ્કલમાં ઉજવણી કરીશું.</td><td class='target'>3 પાસ્કલમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 પાસ્કલ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 પાસ્કલ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} બાર</td><td class='target'>અમે 1 બાર દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} બાર</td><td class='target'>અમે 3 બાર દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 બારથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 બારથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 બાર માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 બાર માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 બારનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 બારનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 બારને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 બારને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 બારમાં ઉજવણી કરીશું.</td><td class='target'>3 બારમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 બાર સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 બાર સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વાતાવરણ</td><td class='target'>અમે 1 વાતાવરણ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} વાતાવરણ</td><td class='target'>અમે 3 વાતાવરણ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 વાતાવરણથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 વાતાવરણથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 વાતાવરણ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 વાતાવરણ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 વાતાવરણનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 વાતાવરણનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 વાતાવરણને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 વાતાવરણને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 વાતાવરણમાં ઉજવણી કરીશું.</td><td class='target'>3 વાતાવરણમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 વાતાવરણ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 વાતાવરણ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>substance-amount</td><td class='source' rowSpan='7'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મોલ</td><td class='target'>અમે 1 મોલ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મોલ</td><td class='target'>અમે 3 મોલ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મોલથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મોલથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મોલ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મોલ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મોલનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મોલનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મોલને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મોલને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મોલમાં ઉજવણી કરીશું.</td><td class='target'>3 મોલમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મોલ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મોલ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>temperature</td><td class='source' rowSpan='7'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='21'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0}°</td><td class='target'>અમે 1° દુકાને ગયા.</td><td class='target' rowSpan='7'>{0}°</td><td class='target'>અમે 3° દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1°થી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3°થી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1° માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3° માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1°નું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3°નું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1°ને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3°ને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1°માં ઉજવણી કરીશું.</td><td class='target'>3°માં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1° સુધી કામ પૂરું કરવું છે.</td><td class='target'>3° સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ડિગ્રી સેલ્સિયસ</td><td class='target'>અમે 1 ડિગ્રી સેલ્સિયસ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} ડિગ્રી સેલ્સિયસ</td><td class='target'>અમે 3 ડિગ્રી સેલ્સિયસ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 ડિગ્રી સેલ્સિયસથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 ડિગ્રી સેલ્સિયસથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 ડિગ્રી સેલ્સિયસ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 ડિગ્રી સેલ્સિયસ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 ડિગ્રી સેલ્સિયસનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 ડિગ્રી સેલ્સિયસનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ડિગ્રી સેલ્સિયસને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 ડિગ્રી સેલ્સિયસને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ડિગ્રી સેલ્સિયસમાં ઉજવણી કરીશું.</td><td class='target'>3 ડિગ્રી સેલ્સિયસમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ડિગ્રી સેલ્સિયસ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 ડિગ્રી સેલ્સિયસ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} કેલ્વિન</td><td class='target'>અમે 1 કેલ્વિન દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} કેલ્વિન</td><td class='target'>અમે 3 કેલ્વિન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 કેલ્વિનથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 કેલ્વિનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 કેલ્વિન માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 કેલ્વિન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 કેલ્વિનનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 કેલ્વિનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 કેલ્વિનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 કેલ્વિનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 કેલ્વિનમાં ઉજવણી કરીશું.</td><td class='target'>3 કેલ્વિનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 કેલ્વિન સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 કેલ્વિન સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>typewidth</td><td class='source' rowSpan='7'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} em</td><td class='target'>અમે 1 em દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} em</td><td class='target'>અમે 3 em દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 emથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 emથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 em માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 em માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 emનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 emનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 emને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 emને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 emમાં ઉજવણી કરીશું.</td><td class='target'>3 emમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 em સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 em સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>voltage</td><td class='source' rowSpan='7'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વૉલ્ટ</td><td class='target'>અમે 1 વૉલ્ટ દુકાને ગયા.</td><td class='target'>{0} વૉલ્ટ્</td><td class='target'>અમે 3 વૉલ્ટ્ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 વૉલ્ટથી દુઃખાવો છે!</td><td class='target' rowSpan='6'>{0} વૉલ્ટ</td><td class='target'>હે ભગવાન, 3 વૉલ્ટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 વૉલ્ટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 વૉલ્ટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 વૉલ્ટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 વૉલ્ટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 વૉલ્ટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 વૉલ્ટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 વૉલ્ટમાં ઉજવણી કરીશું.</td><td class='target'>3 વૉલ્ટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 વૉલ્ટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 વૉલ્ટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>volume</td><td class='source' rowSpan='7'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક કપ</td><td class='target'>અમે 1 મેટ્રિક કપ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મેટ્રિક કપ</td><td class='target'>અમે 3 મેટ્રિક કપ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મેટ્રિક કપથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મેટ્રિક કપથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મેટ્રિક કપ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મેટ્રિક કપ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મેટ્રિક કપનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મેટ્રિક કપનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મેટ્રિક કપને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મેટ્રિક કપને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મેટ્રિક કપમાં ઉજવણી કરીશું.</td><td class='target'>3 મેટ્રિક કપમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મેટ્રિક કપ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મેટ્રિક કપ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મેટ્રિક પિન્ટ</td><td class='target'>અમે 1 મેટ્રિક પિન્ટ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મેટ્રિક પિન્ટ</td><td class='target'>અમે 3 મેટ્રિક પિન્ટ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મેટ્રિક પિન્ટથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મેટ્રિક પિન્ટથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મેટ્રિક પિન્ટ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મેટ્રિક પિન્ટ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મેટ્રિક પિન્ટનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મેટ્રિક પિન્ટનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મેટ્રિક પિન્ટને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મેટ્રિક પિન્ટને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મેટ્રિક પિન્ટમાં ઉજવણી કરીશું.</td><td class='target'>3 મેટ્રિક પિન્ટમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મેટ્રિક પિન્ટ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મેટ્રિક પિન્ટ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='7'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} લિટર</td><td class='target'>અમે 1 લિટર દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} લિટર</td><td class='target'>અમે 3 લિટર દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 લિટરથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 લિટરથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 લિટર માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 લિટર માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 લિટરનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 લિટરનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 લિટરને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 લિટરને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 લિટરમાં ઉજવણી કરીશું.</td><td class='target'>3 લિટરમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 લિટર સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 લિટર સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
+	<tr><td class='source' rowSpan='28'>year-duration</td><td class='source' rowSpan='7'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='21'>masculine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} મહિનો</td><td class='target'>અમે 1 મહિનો દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} મહિના</td><td class='target'>અમે 3 મહિના દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 મહિનોથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 મહિનાથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 મહિનો માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 મહિના માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 મહિનોનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 મહિનાનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 મહિનોને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 મહિનાને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 મહિનોમાં ઉજવણી કરીશું.</td><td class='target'>3 મહિનામાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 મહિનો સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 મહિના સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} વર્ષ</td><td class='target'>અમે 1 વર્ષ દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} વર્ષ</td><td class='target'>અમે 3 વર્ષ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 વર્ષથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 વર્ષથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 વર્ષ માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 વર્ષ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 વર્ષનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 વર્ષનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 વર્ષને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 વર્ષને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 વર્ષમાં ઉજવણી કરીશું.</td><td class='target'>3 વર્ષમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 વર્ષ સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 વર્ષ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} દાયકો</td><td class='target'>અમે 1 દાયકો દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} દાયકા</td><td class='target'>અમે 3 દાયકા દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 દાયકોથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 દાયકાથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 દાયકો માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 દાયકા માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 દાયકોનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 દાયકાનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 દાયકોને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 દાયકાને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 દાયકોમાં ઉજવણી કરીશું.</td><td class='target'>3 દાયકામાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 દાયકો સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 દાયકા સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='7'>feminine</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} સદી</td><td class='target'>અમે 1 સદી દુકાને ગયા.</td><td class='target' rowSpan='7'>{0} સદીઓ</td><td class='target'>અમે 3 સદીઓ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>હે ભગવાન, 1 સદીથી દુઃખાવો છે!</td><td class='target'>હે ભગવાન, 3 સદીઓથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>છોકરો 1 સદી માટે બહાર રહ્યો.</td><td class='target'>છોકરો 3 સદીઓ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>અમે 1 સદીનું બિલ ભેગું આપ્યું.</td><td class='target'>અમે 3 સદીઓનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 સદીને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>3 સદીઓને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 સદીમાં ઉજવણી કરીશું.</td><td class='target'>3 સદીઓમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 સદી સુધી કામ પૂરું કરવું છે.</td><td class='target'>3 સદીઓ સુધી કામ પૂરું કરવું છે.</td></tr>
 </table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
 <p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
 	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='14'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>masculine</td><td class='target'>ચોરસ {0}</td><td class='target' rowSpan='14'>n/a</td><td class='target'>ચોરસ {0}</td><td class='target' rowSpan='14'>n/a</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter</td><td class='target'>ચોરસ {0}</td><td class='target' rowSpan='7'>n/a</td><td class='target'>ચોરસ {0}</td><td class='target' rowSpan='7'>n/a</td></tr>
 	<tr><td class='source'>vocative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
 	<tr><td class='source'>accusative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
 	<tr><td class='source'>genitive</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
 	<tr><td class='source'>dative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
 	<tr><td class='source'>locative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
 	<tr><td class='source'>instrumental</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>vocative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>accusative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>genitive</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>dative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>locative</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
-	<tr><td class='source'>instrumental</td><td class='target'>ચોરસ {0}</td><td class='target'>ચોરસ {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>masculine<br>(second)</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 1 ચોરસ સેકંડ દુકાને ગયા.</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 3 ચોરસ સેકંડ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ચોરસ {0}</td><td class='target'>હે ભગવાન, 1 ચોરસ સેકંડથી દુઃખાવો છે!</td><td class='target'>ચોરસ {0}</td><td class='target'>હે ભગવાન, 3 ચોરસ સેકંડથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ચોરસ {0}</td><td class='target'>છોકરો 1 ચોરસ સેકંડ માટે બહાર રહ્યો.</td><td class='target'>ચોરસ {0}</td><td class='target'>છોકરો 3 ચોરસ સેકંડ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 1 ચોરસ સેકંડનું બિલ ભેગું આપ્યું.</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 3 ચોરસ સેકંડનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ સેકંડમાં ઉજવણી કરીશું.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ સેકંડમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ સેકંડ સુધી કામ પૂરું કરવું છે.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ સેકંડ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine<br>(mile-scandinavian)</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ચોરસ {0}</td><td class='target'>હે ભગવાન, 1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td><td class='target'>ચોરસ {0}</td><td class='target'>હે ભગવાન, 3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ચોરસ {0}</td><td class='target'>છોકરો 1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td><td class='target'>ચોરસ {0}</td><td class='target'>છોકરો 3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td><td class='target'>ચોરસ {0}</td><td class='target'>અમે 3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ચોરસ {0}</td><td class='target'>1 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td><td class='target'>ચોરસ {0}</td><td class='target'>3 ચોરસ માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td></tr>
 	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (3.0)</th><th class='target' width='19.8%'>Formatted Sample: other (3.0)</th></tr>
-	<tr><td class='source' rowSpan='14'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>masculine</td><td class='target'>ક્યુબિક {0}</td><td class='target' rowSpan='14'>n/a</td><td class='target'>ક્યુબિક {0}</td><td class='target' rowSpan='14'>n/a</td></tr>
-	<tr><td class='source'>vocative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>accusative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>genitive</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>dative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>locative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>instrumental</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>vocative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>accusative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>genitive</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>dative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>locative</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
-	<tr><td class='source'>instrumental</td><td class='target'>ક્યુબિક {0}</td><td class='target'>ક્યુબિક {0}</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter</td><td class='target'>ઘન {0}</td><td class='target' rowSpan='7'>n/a</td><td class='target'>ઘન {0}</td><td class='target' rowSpan='7'>n/a</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ઘન {0}</td><td class='target'>ઘન {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>masculine<br>(second)</td><td class='target'>ઘન {0}</td><td class='target'>અમે 1 ઘન સેકંડ દુકાને ગયા.</td><td class='target'>ઘન {0}</td><td class='target'>અમે 3 ઘન સેકંડ દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ઘન {0}</td><td class='target'>હે ભગવાન, 1 ઘન સેકંડથી દુઃખાવો છે!</td><td class='target'>ઘન {0}</td><td class='target'>હે ભગવાન, 3 ઘન સેકંડથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ઘન {0}</td><td class='target'>છોકરો 1 ઘન સેકંડ માટે બહાર રહ્યો.</td><td class='target'>ઘન {0}</td><td class='target'>છોકરો 3 ઘન સેકંડ માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ઘન {0}</td><td class='target'>અમે 1 ઘન સેકંડનું બિલ ભેગું આપ્યું.</td><td class='target'>ઘન {0}</td><td class='target'>અમે 3 ઘન સેકંડનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન સેકંડને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન સેકંડમાં ઉજવણી કરીશું.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન સેકંડમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન સેકંડ સુધી કામ પૂરું કરવું છે.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન સેકંડ સુધી કામ પૂરું કરવું છે.</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine<br>(mile-scandinavian)</td><td class='target'>ઘન {0}</td><td class='target'>અમે 1 ઘન માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td><td class='target'>ઘન {0}</td><td class='target'>અમે 3 ઘન માઈલ-સ્કૅન્ડિનેવિઅન દુકાને ગયા.</td></tr>
+	<tr><td class='source'>vocative</td><td class='target'>ઘન {0}</td><td class='target'>હે ભગવાન, 1 ઘન માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td><td class='target'>ઘન {0}</td><td class='target'>હે ભગવાન, 3 ઘન માઈલ-સ્કૅન્ડિનેવિઅનથી દુઃખાવો છે!</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ઘન {0}</td><td class='target'>છોકરો 1 ઘન માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td><td class='target'>ઘન {0}</td><td class='target'>છોકરો 3 ઘન માઈલ-સ્કૅન્ડિનેવિઅન માટે બહાર રહ્યો.</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ઘન {0}</td><td class='target'>અમે 1 ઘન માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td><td class='target'>ઘન {0}</td><td class='target'>અમે 3 ઘન માઈલ-સ્કૅન્ડિનેવિઅનનું બિલ ભેગું આપ્યું.</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન માઈલ-સ્કૅન્ડિનેવિઅનને લીપ વર્ષ માનવામાં આવે છે.</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન માઈલ-સ્કૅન્ડિનેવિઅનમાં ઉજવણી કરીશું.</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ઘન {0}</td><td class='target'>1 ઘન માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td><td class='target'>ઘન {0}</td><td class='target'>3 ઘન માઈલ-સ્કૅન્ડિનેવિઅન સુધી કામ પૂરું કરવું છે.</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
+<a href='https://www.unicode.org/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
 <script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
 
