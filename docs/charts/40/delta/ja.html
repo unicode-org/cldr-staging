@@ -58,19 +58,661 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='6'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='6'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='source' rowSpan='58'>ja</td><td class='target'>▷missing◁</td><td class='target'>イングランド</td><td class='target' rowSpan='6'>modern</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Rohingya ► rhg</td><td class='source' rowSpan='700'>ja</td><td class='target'>rhg</td><td class='target'>ロヒンギャ語</td><td class='target' rowSpan='7'>modern</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source' rowSpan='6'><a name='Northern Europe-Subdivisions' href='#Northern Europe-Subdivisions'>Northern Europe-Subdivisions</a></td><td class='source' rowSpan='2'>gbeng</td><td class='target'>▷missing◁</td><td class='target'>イングランド</td></tr>
 	<tr><td class='target'>イングランド</td><td class='target'>▷removed◁</td></tr>
 	<tr><td class='source' rowSpan='2'>gbsct</td><td class='target'>▷missing◁</td><td class='target'>スコットランド</td></tr>
 	<tr><td class='target'>スコットランド</td><td class='target'>▷removed◁</td></tr>
 	<tr><td class='source' rowSpan='2'>gbwls</td><td class='target'>▷missing◁</td><td class='target'>ウェールズ</td></tr>
 	<tr><td class='target'>ウェールズ</td><td class='target'>▷removed◁</td></tr>
-	<tr><td class='source' rowSpan='5'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='5'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='3'>GyMd</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='2'>GGGGGy/M/d</td><td class='target'>basic</td></tr>
-	<tr><td class='source'><a name='Generic' href='#Generic'>Generic</a></td><td class='target'>moderate</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='Chinese' href='#Chinese'>Chinese</a></td><td class='target' rowSpan='2'>U-M-d</td><td class='target' rowSpan='3'>modern</td></tr>
-	<tr><td class='source'>yMd</td><td class='target'>U年M月d日</td></tr>
-	<tr><td class='source'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'>GyMd</td><td class='target'>▷missing◁</td><td class='target'>GGGGGy/M/d</td></tr>
-	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source'><a name='Eastern Europe: Russia: RUR (old)' href='#Eastern Europe: Russia: RUR (old)'>Eastern Europe: Russia: RUR (old)</a></td><td class='source'>RUR-symbol-narrow</td><td class='target'>р.</td><td class='target'>RUR</td><td class='target' rowSpan='47'>comprehensive</td></tr>
-	<tr><td class='source' rowSpan='46'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='46'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target' rowSpan='46'>▷missing◁</td><td class='target'>GGGGyMEEEEd</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='10'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='3'>GyMd</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>Gy/M/d</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Generic' href='#Generic'>Generic</a></td><td class='target'>GGGGGy/M/d</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Chinese' href='#Chinese'>Chinese</a></td><td class='target'>U-M-d</td><td class='target' rowSpan='8'>modern</td></tr>
+	<tr><td class='source'>GyMMMM</td><td class='target'>r(U)年MMMM</td></tr>
+	<tr><td class='source'>GyMMMMd</td><td class='target'>r(U)年MMMMd日</td></tr>
+	<tr><td class='source'>GyMMMMEd</td><td class='target'>r(U)年MMMMd日(E)</td></tr>
+	<tr><td class='source'>yMd</td><td class='target'>U年M月d日</td><td class='target'>U-M-d</td></tr>
+	<tr><td class='source'>yyyyMMMMd</td><td class='target' rowSpan='17'>▷missing◁</td><td class='target'>r(U)年MMMMd日</td></tr>
+	<tr><td class='source'>yyyyMMMMEd</td><td class='target'>r(U)年MMMMd日(E)</td></tr>
+	<tr><td class='source'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'>GyMd</td><td class='target'>GGGGGy/M/d</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='North America' href='#North America'>North America</a></td><td class='source'><a name='Yukon' href='#Yukon'>Yukon</a></td><td class='source'>standard-long</td><td class='target'>ユーコン時間</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='13'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>Time Separator</td><td class='target'>:</td><td class='target' rowSpan='14'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>decimal</td><td class='target'>.</td></tr>
+	<tr><td class='source'>group</td><td class='target'>,</td></tr>
+	<tr><td class='source'>plusSign</td><td class='target'>+</td></tr>
+	<tr><td class='source'>minusSign</td><td class='target'>-</td></tr>
+	<tr><td class='source'>approximatelySign</td><td class='target'>約</td></tr>
+	<tr><td class='source'>percentSign</td><td class='target'>%</td></tr>
+	<tr><td class='source'>perMille</td><td class='target'>‰</td></tr>
+	<tr><td class='source'>exponential</td><td class='target'>E</td></tr>
+	<tr><td class='source'>superscriptingExponent</td><td class='target'>×</td></tr>
+	<tr><td class='source'>infinity</td><td class='target'>∞</td></tr>
+	<tr><td class='source'>nan</td><td class='target'>NaN</td></tr>
+	<tr><td class='source'>list</td><td class='target'>;</td></tr>
+	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source'><a name='Eastern Europe: Russia: RUR (old)' href='#Eastern Europe: Russia: RUR (old)'>Eastern Europe: Russia: RUR (old)</a></td><td class='source'>RUR-symbol-narrow</td><td class='target'>р.</td><td class='target'>RUR</td></tr>
+	<tr><td class='source' rowSpan='128'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='3'><a name='Duration' href='#Duration'>Duration</a></td><td class='source'><a name='decade' href='#decade'>decade</a></td><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0} 十年</td><td class='target'>{0}十年</td><td class='target' rowSpan='202'>modern</td></tr>
+	<tr><td class='source'><a name='century' href='#century'>century</a></td><td class='target'>{0} 世紀</td><td class='target'>{0}世紀</td></tr>
+	<tr><td class='source'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td><td class='source'>narrow-displayName</td><td class='target'>ナノ秒</td><td class='target'>ns</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source'><a name='dot' href='#dot'>dot</a></td><td class='source' rowSpan='4'>narrow-other-nominative</td><td class='target'>{0} ドット</td><td class='target'>{0}ドット</td></tr>
+	<tr><td class='source'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='target'>{0} dpcm</td><td class='target'>{0}dpcm</td></tr>
+	<tr><td class='source'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='target'>{0} dpi</td><td class='target'>{0}dpi</td></tr>
+	<tr><td class='source'><a name='em' href='#em'>em</a></td><td class='target'>{0} em</td><td class='target'>{0}em</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>narrow-displayName</td><td class='target'>メガピクセル</td><td class='target'>MP</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} MP</td><td class='target'>{0}MP</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>narrow-displayName</td><td class='target'>ピクセル</td><td class='target'>px</td></tr>
+	<tr><td class='source' rowSpan='5'>narrow-other-nominative</td><td class='target'>{0} px</td><td class='target'>{0}px</td></tr>
+	<tr><td class='source'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='target'>{0} ppcm</td><td class='target'>{0}ppcm</td></tr>
+	<tr><td class='source'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='target'>{0} ppi</td><td class='target'>{0}ppi</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Length' href='#Length'>Length</a></td><td class='source'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='target'>{0} R⊕</td><td class='target'>{0}R⊕</td></tr>
+	<tr><td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='target'>{0} smi</td><td class='target'>{0}smi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='point' href='#point'>point</a></td><td class='source'>narrow-displayName</td><td class='target'>ポイント</td><td class='target'>pt</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} pt</td><td class='target'>{0}pt</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>narrow-displayName</td><td class='target'>太陽半径</td><td class='target'>R☉</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} R☉</td><td class='target'>{0}R☉</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Area' href='#Area'>Area</a></td><td class='source'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source' rowSpan='13'>narrow-displayName</td><td class='target'>平方マイル</td><td class='target'>mi²</td></tr>
+	<tr><td class='source'><a name='square-yard' href='#square-yard'>square-yard</a></td><td class='target'>平方ヤード</td><td class='target'>yd²</td></tr>
+	<tr><td class='source'><a name='square-foot' href='#square-foot'>square-foot</a></td><td class='target'>平方フィート</td><td class='target'>ft²</td></tr>
+	<tr><td class='source'><a name='square-inch' href='#square-inch'>square-inch</a></td><td class='target'>平方インチ</td><td class='target'>in²</td></tr>
+	<tr><td class='source' rowSpan='30'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td><td class='target'>立方マイル</td><td class='target'>mi³</td></tr>
+	<tr><td class='source'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td><td class='target'>立方ヤード</td><td class='target'>yd³</td></tr>
+	<tr><td class='source'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td><td class='target'>立方フィート</td><td class='target'>ft³</td></tr>
+	<tr><td class='source'><a name='cubic-inch' href='#cubic-inch'>cubic-inch</a></td><td class='target'>立方インチ</td><td class='target'>in³</td></tr>
+	<tr><td class='source'><a name='megaliter' href='#megaliter'>megaliter</a></td><td class='target'>メガリットル</td><td class='target'>ML</td></tr>
+	<tr><td class='source'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='target'>ヘクトリットル</td><td class='target'>hL</td></tr>
+	<tr><td class='source'><a name='deciliter' href='#deciliter'>deciliter</a></td><td class='target'>デシリットル</td><td class='target'>dL</td></tr>
+	<tr><td class='source'><a name='centiliter' href='#centiliter'>centiliter</a></td><td class='target'>センチリットル</td><td class='target'>cL</td></tr>
+	<tr><td class='source'><a name='milliliter' href='#milliliter'>milliliter</a></td><td class='target'>ミリリットル</td><td class='target'>mL</td></tr>
+	<tr><td class='source'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0} mpt</td><td class='target'>{0}mpt</td></tr>
+	<tr><td class='source'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='target'>{0} mc</td><td class='target'>{0}mc</td></tr>
+	<tr><td class='source'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td><td class='source' rowSpan='3'>narrow-displayName</td><td class='target'>エーカーフィート</td><td class='target'>ac ft</td></tr>
+	<tr><td class='source'><a name='gallon' href='#gallon'>gallon</a></td><td class='target'>ガロン</td><td class='target'>gal</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='target'>英ガロン</td><td class='target'>Imp gal</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} gal Imp.</td><td class='target'>{0}gal Imp.</td></tr>
+	<tr><td class='source'><a name='quart' href='#quart'>quart</a></td><td class='source' rowSpan='4'>narrow-displayName</td><td class='target'>クォート</td><td class='target'>qt</td></tr>
+	<tr><td class='source'><a name='pint' href='#pint'>pint</a></td><td class='target'>パイント</td><td class='target'>pt</td></tr>
+	<tr><td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td><td class='target'>液量オンス</td><td class='target'>fl oz</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='target'>英液量オンス</td><td class='target'>Imp fl oz</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} fl oz Imp</td><td class='target'>{0}Imp fl oz</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='barrel' href='#barrel'>barrel</a></td><td class='source'>narrow-displayName</td><td class='target'>バレル</td><td class='target'>bbl</td></tr>
+	<tr><td class='source' rowSpan='7'>narrow-other-nominative</td><td class='target'>{0} bbl</td><td class='target'>{0}bbl</td></tr>
+	<tr><td class='source'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='target'>中さじ {0}</td><td class='target'>中さじ{0}</td></tr>
+	<tr><td class='source'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='target'>{0} 英デザートスプーン</td><td class='target'>{0}英デザートスプーン</td></tr>
+	<tr><td class='source'><a name='drop' href='#drop'>drop</a></td><td class='target'>{0} 滴</td><td class='target'>{0}滴</td></tr>
+	<tr><td class='source'><a name='dram' href='#dram'>dram</a></td><td class='target'>{0} 液量ドラム</td><td class='target'>{0}fl dr</td></tr>
+	<tr><td class='source'><a name='jigger' href='#jigger'>jigger</a></td><td class='target'>{0} ジガー</td><td class='target'>{0}ジガー</td></tr>
+	<tr><td class='source'><a name='pinch' href='#pinch'>pinch</a></td><td class='target'>{0} つまみ</td><td class='target'>{0}つまみ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>narrow-displayName</td><td class='target'>英クォート</td><td class='target'>qt Imp</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0} qt Imp.</td><td class='target'>{0}qt-Imp.</td></tr>
+	<tr><td class='source'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='knot' href='#knot'>knot</a></td><td class='target'>{0} kn</td><td class='target'>{0}kn</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='2'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>narrow-displayName</td><td class='target'>トン</td><td class='target'>t</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0}MT</td><td class='target'>{0}t</td></tr>
+	<tr><td class='source'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>narrow-displayName</td><td class='target'>マイクログラム</td><td class='target'>μg</td></tr>
+	<tr><td class='source'><a name='ton' href='#ton'>ton</a></td><td class='source'>narrow-other-nominative</td><td class='target'>{0}t</td><td class='target'>{0}s/t</td></tr>
+	<tr><td class='source'><a name='ounce-troy' href='#ounce-troy'>ounce-troy</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>トロイオンス</td><td class='target'>oz t</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dalton' href='#dalton'>dalton</a></td><td class='target'>ダルトン</td><td class='target'>Da</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} Da</td><td class='target'>{0}Da</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td><td class='source'>narrow-displayName</td><td class='target'>地球質量</td><td class='target'>M⊕</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} M⊕</td><td class='target'>{0}M⊕</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td><td class='source'>narrow-displayName</td><td class='target'>太陽質量</td><td class='target'>M☉</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0} M☉</td><td class='target'>{0}M☉</td></tr>
+	<tr><td class='source'><a name='grain' href='#grain'>grain</a></td><td class='target'>{0} グレーン</td><td class='target'>{0}グレーン</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>キロワット時</td><td class='target'>kWh</td></tr>
+	<tr><td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td><td class='target'>電子ボルト</td><td class='target'>eV</td></tr>
+	<tr><td class='source'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0} BTU</td><td class='target'>{0}BTU</td></tr>
+	<tr><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='target'>{0} 米サーム</td><td class='target'>{0}米サーム</td></tr>
+	<tr><td class='source'><a name='kilowatt' href='#kilowatt'>kilowatt</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>キロワット</td><td class='target'>kW</td></tr>
+	<tr><td class='source'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td><td class='target'>ミリワット</td><td class='target'>mW</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0}mm Hg</td><td class='target'>{0}mmHg</td></tr>
+	<tr><td class='source'><a name='bar' href='#bar'>bar</a></td><td class='target'>{0} bar</td><td class='target'>{0}bar</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>narrow-displayName</td><td class='target'>パスカル</td><td class='target'>Pa</td></tr>
+	<tr><td class='source' rowSpan='3'>narrow-other-nominative</td><td class='target'>{0} Pa</td><td class='target'>{0}Pa</td></tr>
+	<tr><td class='source'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='target'>{0} kPa</td><td class='target'>{0}kPa</td></tr>
+	<tr><td class='source'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='target'>{0} MPa</td><td class='target'>{0}MPa</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='2'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>narrow-displayName</td><td class='target'>ペタバイト</td><td class='target'>PB</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} PB</td><td class='target'>{0}PB</td></tr>
+	<tr><td class='source'><a name='terabyte' href='#terabyte'>terabyte</a></td><td class='source' rowSpan='4'>narrow-displayName</td><td class='target'>テラバイト</td><td class='target'>TB</td></tr>
+	<tr><td class='source'><a name='terabit' href='#terabit'>terabit</a></td><td class='target'>テラビット</td><td class='target'>Tb</td></tr>
+	<tr><td class='source'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='target'>ギガビット</td><td class='target'>Gb</td></tr>
+	<tr><td class='source'><a name='megabit' href='#megabit'>megabit</a></td><td class='target'>メガビット</td><td class='target'>Mb</td></tr>
+	<tr><td class='source'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td><td class='source'>narrow-other-nominative</td><td class='target'>{0}kB</td><td class='target'>{0}KB</td></tr>
+	<tr><td class='source'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source' rowSpan='3'>narrow-displayName</td><td class='target'>キロビット</td><td class='target'>kb</td></tr>
+	<tr><td class='source'><a name='byte' href='#byte'>byte</a></td><td class='target'>バイト</td><td class='target'>B</td></tr>
+	<tr><td class='source' rowSpan='41'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='2'><a name='revolution' href='#revolution'>revolution</a></td><td class='target'>回転</td><td class='target'>rev</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} rev</td><td class='target'>{0}rev</td></tr>
+	<tr><td class='source'><a name='radian' href='#radian'>radian</a></td><td class='source'>narrow-displayName</td><td class='target'>ラジアン</td><td class='target'>rad</td></tr>
+	<tr><td class='source'><a name='degree' href='#degree'>degree</a></td><td class='source' rowSpan='3'>narrow-other-nominative</td><td class='target'>{0} 度</td><td class='target'>{0}°</td></tr>
+	<tr><td class='source'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='target'>{0} 分</td><td class='target'>{0}′</td></tr>
+	<tr><td class='source'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='target'>{0} 秒</td><td class='target'>{0}″</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source'>narrow-displayName</td><td class='target'>ミリグラム毎デシリットル</td><td class='target'>mg/dL</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} mg/dL</td><td class='target'>{0}mg/dL</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='millimole-per-liter' href='#millimole-per-liter'>millimole-per-liter</a></td><td class='source'>narrow-displayName</td><td class='target'>ミリモル毎リットル</td><td class='target'>mmol/L</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} mmol/L</td><td class='target'>{0}mmol/L</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='item' href='#item'>item</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target'>項目</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} 項目</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>項目</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} 項目</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='target'>{0}項目</td></tr>
+	<tr><td class='source'><a name='permillion' href='#permillion'>permillion</a></td><td class='target'>{0} ppm</td><td class='target'>{0}ppm</td></tr>
+	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='3'>narrow-displayName</td><td class='target'>パーミル</td><td class='target'>‰</td></tr>
+	<tr><td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='target'>パーミリアド</td><td class='target'>‱</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mole' href='#mole'>mole</a></td><td class='target'>モル</td><td class='target'>mol</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} mol</td><td class='target'>{0}mol</td></tr>
+	<tr><td class='source'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>マイル/ガロン</td><td class='target'>mpg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='target'>マイル毎英ガロン</td><td class='target'>マイル/英ガロン</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} mpg Imp.</td><td class='target'>{0}mpg Imp.</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source'>narrow-displayName</td><td class='target'>重量ポンド</td><td class='target'>lbf</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} lbf</td><td class='target'>{0}lbf</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='newton' href='#newton'>newton</a></td><td class='source'>narrow-displayName</td><td class='target'>ニュートン</td><td class='target'>N</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} N</td><td class='target'>{0}N</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>キロワット時毎100キロメートル</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} キロワット時毎100キロメートル</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kWh/100km</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} kWh/100km</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>kWh/100km</td></tr>
+	<tr><td class='source' rowSpan='3'>narrow-other-nominative</td><td class='target'>{0}kWh/100km</td></tr>
+	<tr><td class='source'><a name='candela' href='#candela'>candela</a></td><td class='target'>{0} cd</td><td class='target'>{0}cd</td></tr>
+	<tr><td class='source'><a name='lumen' href='#lumen'>lumen</a></td><td class='target'>{0} lm</td><td class='target'>{0}lm</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td><td class='source'>narrow-displayName</td><td class='target'>太陽光度</td><td class='target'>L☉</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} L☉</td><td class='target'>{0}L☉</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pound-force-foot' href='#pound-force-foot'>pound-force-foot</a></td><td class='source'>narrow-displayName</td><td class='target'>ポンドフィート</td><td class='target'>lbf⋅ft</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} lbf⋅ft</td><td class='target'>{0}lbf⋅ft</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>narrow-displayName</td><td class='target'>ニュートンメートル</td><td class='target'>N⋅m</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} N⋅m</td><td class='target'>{0}N⋅m</td></tr>
+	<tr><td class='source' rowSpan='494'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='14'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>🫠 -name</td><td class='target' rowSpan='540'>▷missing◁</td><td class='target'>溶けている顔</td></tr>
+	<tr><td class='source'>🫠 –keywords</td><td class='target'>とろける<br>液体<br>溶けそう<br>溶ける<br>顔</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hand' href='#face-hand'>face-hand</a></td><td class='source'>🫢 -name</td><td class='target'>目を開けて口に手を当てた顔</td></tr>
+	<tr><td class='source'>🫢 –keywords</td><td class='target'>おそれ<br>おののき<br>びっくり<br>顔<br>驚き</td></tr>
+	<tr><td class='source'>🫣 -name</td><td class='target'>指の間からのぞき見る顔</td></tr>
+	<tr><td class='source'>🫣 –keywords</td><td class='target'>こわごわ<br>のぞき見<br>盗み見<br>顔</td></tr>
+	<tr><td class='source'>🫡 -name</td><td class='target'>敬礼する顔</td></tr>
+	<tr><td class='source'>🫡 –keywords</td><td class='target'>オーケー<br>了解<br>敬礼<br>軍隊<br>顔</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🫥 -name</td><td class='target'>点線の顔</td></tr>
+	<tr><td class='source'>🫥 –keywords</td><td class='target'>内向的<br>内気<br>憂鬱<br>落胆<br>顔</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>🫤 -name</td><td class='target'>口が斜めの顔</td></tr>
+	<tr><td class='source'>🫤 –keywords</td><td class='target'>困惑<br>無気力<br>無関心<br>顔</td></tr>
+	<tr><td class='source'>🥹 -name</td><td class='target'>涙をこらえた顔</td></tr>
+	<tr><td class='source'>🥹 –keywords</td><td class='target'>うるうる<br>懇願<br>泣き顔<br>涙<br>顔</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🫱 -name</td><td class='target'>右に向けた手</td></tr>
+	<tr><td class='source'>🫱 –keywords</td><td class='target'>右側<br>手<br>方向</td></tr>
+	<tr><td class='source'>🫲 -name</td><td class='target'>左に向けた手</td></tr>
+	<tr><td class='source'>🫲 –keywords</td><td class='target'>左側<br>手<br>方向</td></tr>
+	<tr><td class='source'>🫳 -name</td><td class='target'>下に向けた手</td></tr>
+	<tr><td class='source'>🫳 –keywords</td><td class='target'>下<br>手<br>落とす</td></tr>
+	<tr><td class='source'>🫴 -name</td><td class='target'>上に向けた手</td></tr>
+	<tr><td class='source'>🫴 –keywords</td><td class='target'>上<br>受ける<br>手</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🫰 -name</td><td class='target'>親指と人差し指をクロス</td></tr>
+	<tr><td class='source'>🫰 –keywords</td><td class='target'>手<br>指<br>指をクロス</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-single-finger' href='#hand-single-finger'>hand-single-finger</a></td><td class='source'>🫵 -name</td><td class='target'>人を指差している手</td></tr>
+	<tr><td class='source'>🫵 –keywords</td><td class='target'>おまえだ<br>手<br>指差し</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hands' href='#hands'>hands</a></td><td class='source'>🫶 -name</td><td class='target'>ハート形の手</td></tr>
+	<tr><td class='source'>🫶 –keywords</td><td class='target'>ラブ<br>愛<br>手</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫦 -name</td><td class='target'>唇を咬んでいる口</td></tr>
+	<tr><td class='source'>🫦 –keywords</td><td class='target'>口<br>口惜しさ<br>誘惑</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🫅 -name</td><td class='target'>王冠をかぶった人</td></tr>
+	<tr><td class='source'>🫅 –keywords</td><td class='target'>君主<br>王家<br>王族<br>王様</td></tr>
+	<tr><td class='source'>🫃 -name</td><td class='target'>妊夫</td></tr>
+	<tr><td class='source'>🫃 –keywords</td><td class='target'>妊娠<br>男<br>男性</td></tr>
+	<tr><td class='source'>🫄 -name</td><td class='target'>妊娠した人</td></tr>
+	<tr><td class='source'>🫄 –keywords</td><td class='target'>お腹<br>妊夫<br>妊娠<br>妊婦</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧌 -name</td><td class='target'>トロール</td></tr>
+	<tr><td class='source'>🧌 –keywords</td><td class='target'>おとぎ話<br>ファンタジー<br>モンスター</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🪸 -name</td><td class='target'>サンゴ</td></tr>
+	<tr><td class='source'>🪸 –keywords</td><td class='target'>海<br>珊瑚礁</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🪷 -name</td><td class='target'>ハスの花</td></tr>
+	<tr><td class='source'>🪷 –keywords</td><td class='target'>ヒンドゥー教<br>仏教<br>清浄<br>花</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪹 -name</td><td class='target'>空っぽの巣</td></tr>
+	<tr><td class='source'>🪹 –keywords</td><td class='target'>営巣<br>巣作り</td></tr>
+	<tr><td class='source'>🪺 -name</td><td class='target'>鳥の卵と巣</td></tr>
+	<tr><td class='source'>🪺 –keywords</td><td class='target'>営巣<br>巣作り</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫘 -name</td><td class='target'>豆</td></tr>
+	<tr><td class='source'>🫘 –keywords</td><td class='target'>レッドキドニー<br>小豆<br>金時豆</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫗 -name</td><td class='target'>コップから注ぐ</td></tr>
+	<tr><td class='source'>🫗 –keywords</td><td class='target'>ガラス<br>こぼす<br>液体<br>飲み物</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🫙 -name</td><td class='target'>瓶</td></tr>
+	<tr><td class='source'>🫙 –keywords</td><td class='target'>びん<br>保存<br>容器<br>空<br>調味料</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-other' href='#place-other'>place-other</a></td><td class='source'>🛝 -name</td><td class='target'>すべり台</td></tr>
+	<tr><td class='source'>🛝 –keywords</td><td class='target'>公園<br>遊具</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛞 -name</td><td class='target'>ホイール</td></tr>
+	<tr><td class='source'>🛞 –keywords</td><td class='target'>スポーク<br>タイヤ<br>車輪</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>🛟 -name</td><td class='target'>救命浮環</td></tr>
+	<tr><td class='source'>🛟 –keywords</td><td class='target'>ライフセーバー<br>レスキュー<br>安全<br>救命具<br>浮き輪</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='game' href='#game'>game</a></td><td class='source'>🪬 -name</td><td class='target'>ハムサ</td></tr>
+	<tr><td class='source'>🪬 –keywords</td><td class='target'>お守り<br>ファーティマ<br>ミリアム<br>手<br>目<br>護符</td></tr>
+	<tr><td class='source'>🪩 -name</td><td class='target'>ミラーボール</td></tr>
+	<tr><td class='source'>🪩 –keywords</td><td class='target'>キラキラ<br>ダンス<br>ディスコ<br>パーティー</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🪫 -name</td><td class='target'>バッテリー残量低下</td></tr>
+	<tr><td class='source'>🪫 –keywords</td><td class='target'>バッテリー<br>電池残量低下</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩼 -name</td><td class='target'>松葉杖</td></tr>
+	<tr><td class='source'>🩼 –keywords</td><td class='target'>ステッキ<br>怪我<br>杖<br>歩行補助<br>障がい</td></tr>
+	<tr><td class='source'>🩻 -name</td><td class='target'>X線</td></tr>
+	<tr><td class='source'>🩻 –keywords</td><td class='target'>レントゲン<br>医者<br>骨<br>骨格</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='household' href='#household'>household</a></td><td class='source'>🫧 -name</td><td class='target'>泡</td></tr>
+	<tr><td class='source'>🫧 –keywords</td><td class='target'>あぶく<br>シャボン玉<br>水中<br>石けん</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪪 -name</td><td class='target'>身分証</td></tr>
+	<tr><td class='source'>🪪 –keywords</td><td class='target'>ID<br>セキュリティ<br>身分証明書<br>運転免許証</td></tr>
+	<tr><td class='source' rowSpan='422'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='math' href='#math'>math</a></td><td class='source'>🟰 -name</td><td class='target'>太字の等号</td></tr>
+	<tr><td class='source'>🟰 –keywords</td><td class='target'>イコール<br>数学<br>等しい<br>等号</td></tr>
+	<tr><td class='source' rowSpan='420'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>↶ -name</td><td class='target' rowSpan='2'>反時計回りの上半円矢印</td><td class='target' rowSpan='466'>comprehensive</td></tr>
+	<tr><td class='source'>↶ –keywords</td></tr>
+	<tr><td class='source'>↷ -name</td><td class='target' rowSpan='2'>時計回りの上半円矢印</td></tr>
+	<tr><td class='source'>↷ –keywords</td></tr>
+	<tr><td class='source'>↸ -name</td><td class='target' rowSpan='2'>上線付き北西矢印</td></tr>
+	<tr><td class='source'>↸ –keywords</td></tr>
+	<tr><td class='source'>↹ -name</td><td class='target' rowSpan='2'>右縦棒付き右矢印の上に左縦棒付き左矢印</td></tr>
+	<tr><td class='source'>↹ –keywords</td></tr>
+	<tr><td class='source'>↺ -name</td><td class='target' rowSpan='2'>反時計回りの開いた円矢印</td></tr>
+	<tr><td class='source'>↺ –keywords</td></tr>
+	<tr><td class='source'>↻ -name</td><td class='target' rowSpan='2'>時計回りの開いた円矢印</td></tr>
+	<tr><td class='source'>↻ –keywords</td></tr>
+	<tr><td class='source'>↼ -name</td><td class='target'>とげが上向きの左向き銛型矢印</td></tr>
+	<tr><td class='source'>↼ –keywords</td><td class='target'>とげが上向きの左向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>↽ -name</td><td class='target'>とげが下向きの左向き銛型矢印</td></tr>
+	<tr><td class='source'>↽ –keywords</td><td class='target'>とげが下向きの左向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>↾ -name</td><td class='target'>とげが右向きの上向き銛型矢印</td></tr>
+	<tr><td class='source'>↾ –keywords</td><td class='target'>とげが右向きの上向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>↿ -name</td><td class='target'>とげが左向きの上向き銛型矢印</td></tr>
+	<tr><td class='source'>↿ –keywords</td><td class='target'>とげが左向きの上向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>⇀ -name</td><td class='target'>とげが上向きの右向き銛型矢印</td></tr>
+	<tr><td class='source'>⇀ –keywords</td><td class='target'>とげが上向きの右向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>⇁ -name</td><td class='target'>とげが下向きの右向き銛型矢印</td></tr>
+	<tr><td class='source'>⇁ –keywords</td><td class='target'>とげが下向きの右向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>⇂ -name</td><td class='target'>とげが右向きの下向き銛型矢印</td></tr>
+	<tr><td class='source'>⇂ –keywords</td><td class='target'>とげが右向きの下向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>⇃ -name</td><td class='target'>とげが左向きの下向き銛型矢印</td></tr>
+	<tr><td class='source'>⇃ –keywords</td><td class='target'>とげが左向きの下向き銛型矢印<br>ハープーン</td></tr>
+	<tr><td class='source'>⇄ -name</td><td class='target' rowSpan='2'>右矢印左矢印</td></tr>
+	<tr><td class='source'>⇄ –keywords</td></tr>
+	<tr><td class='source'>⇇ -name</td><td class='target' rowSpan='2'>左向きペア矢印</td></tr>
+	<tr><td class='source'>⇇ –keywords</td></tr>
+	<tr><td class='source'>⇈ -name</td><td class='target' rowSpan='2'>上向きペア矢印</td></tr>
+	<tr><td class='source'>⇈ –keywords</td></tr>
+	<tr><td class='source'>⇉ -name</td><td class='target' rowSpan='2'>右向きペア矢印</td></tr>
+	<tr><td class='source'>⇉ –keywords</td></tr>
+	<tr><td class='source'>⇊ -name</td><td class='target' rowSpan='2'>下向きペア矢印</td></tr>
+	<tr><td class='source'>⇊ –keywords</td></tr>
+	<tr><td class='source'>⇋ -name</td><td class='target' rowSpan='2'>左向き銛型矢印右向き銛型矢印</td></tr>
+	<tr><td class='source'>⇋ –keywords</td></tr>
+	<tr><td class='source'>⇌ -name</td><td class='target' rowSpan='2'>右向き銛型矢印左向き銛型矢印</td></tr>
+	<tr><td class='source'>⇌ –keywords</td></tr>
+	<tr><td class='source'>⇐ -name</td><td class='target' rowSpan='2'>左向き二重矢印</td></tr>
+	<tr><td class='source'>⇐ –keywords</td></tr>
+	<tr><td class='source'>⇍ -name</td><td class='target' rowSpan='2'>斜線付き左向き二重矢印</td></tr>
+	<tr><td class='source'>⇍ –keywords</td></tr>
+	<tr><td class='source'>⇑ -name</td><td class='target' rowSpan='2'>上向き二重矢印</td></tr>
+	<tr><td class='source'>⇑ –keywords</td></tr>
+	<tr><td class='source'>⇒ -name</td><td class='target' rowSpan='2'>右向き二重矢印</td></tr>
+	<tr><td class='source'>⇒ –keywords</td></tr>
+	<tr><td class='source'>⇏ -name</td><td class='target' rowSpan='2'>斜線付き右向き二重矢印</td></tr>
+	<tr><td class='source'>⇏ –keywords</td></tr>
+	<tr><td class='source'>⇓ -name</td><td class='target' rowSpan='2'>下向き二重矢印</td></tr>
+	<tr><td class='source'>⇓ –keywords</td></tr>
+	<tr><td class='source'>⇔ -name</td><td class='target' rowSpan='2'>二重両矢印</td></tr>
+	<tr><td class='source'>⇔ –keywords</td></tr>
+	<tr><td class='source'>⇎ -name</td><td class='target' rowSpan='2'>斜線付き二重両矢印</td></tr>
+	<tr><td class='source'>⇎ –keywords</td></tr>
+	<tr><td class='source'>⇖ -name</td><td class='target' rowSpan='2'>北西二重矢印</td></tr>
+	<tr><td class='source'>⇖ –keywords</td></tr>
+	<tr><td class='source'>⇗ -name</td><td class='target' rowSpan='2'>北東二重矢印</td></tr>
+	<tr><td class='source'>⇗ –keywords</td></tr>
+	<tr><td class='source'>⇘ -name</td><td class='target' rowSpan='2'>南東二重矢印</td></tr>
+	<tr><td class='source'>⇘ –keywords</td></tr>
+	<tr><td class='source'>⇙ -name</td><td class='target' rowSpan='2'>南西二重矢印</td></tr>
+	<tr><td class='source'>⇙ –keywords</td></tr>
+	<tr><td class='source'>⇚ -name</td><td class='target' rowSpan='2'>左向き三重矢印</td></tr>
+	<tr><td class='source'>⇚ –keywords</td></tr>
+	<tr><td class='source'>⇛ -name</td><td class='target' rowSpan='2'>右向き三重矢印</td></tr>
+	<tr><td class='source'>⇛ –keywords</td></tr>
+	<tr><td class='source'>⇜ -name</td><td class='target' rowSpan='2'>左向きよじれ矢印</td></tr>
+	<tr><td class='source'>⇜ –keywords</td></tr>
+	<tr><td class='source'>⇝ -name</td><td class='target' rowSpan='2'>右向きよじれ矢印</td></tr>
+	<tr><td class='source'>⇝ –keywords</td></tr>
+	<tr><td class='source'>⇞ -name</td><td class='target' rowSpan='2'>二重線付き上向き矢印</td></tr>
+	<tr><td class='source'>⇞ –keywords</td></tr>
+	<tr><td class='source'>⇟ -name</td><td class='target' rowSpan='2'>二重線付き下向き矢印</td></tr>
+	<tr><td class='source'>⇟ –keywords</td></tr>
+	<tr><td class='source'>⇠ -name</td><td class='target' rowSpan='2'>左向き破線矢印</td></tr>
+	<tr><td class='source'>⇠ –keywords</td></tr>
+	<tr><td class='source'>⇡ -name</td><td class='target' rowSpan='2'>上向き破線矢印</td></tr>
+	<tr><td class='source'>⇡ –keywords</td></tr>
+	<tr><td class='source'>⇢ -name</td><td class='target' rowSpan='2'>右向き破線矢印</td></tr>
+	<tr><td class='source'>⇢ –keywords</td></tr>
+	<tr><td class='source'>⇣ -name</td><td class='target' rowSpan='2'>下向き破線矢印</td></tr>
+	<tr><td class='source'>⇣ –keywords</td></tr>
+	<tr><td class='source'>⇤ -name</td><td class='target' rowSpan='2'>左縦棒付き左矢印</td></tr>
+	<tr><td class='source'>⇤ –keywords</td></tr>
+	<tr><td class='source'>⇥ -name</td><td class='target' rowSpan='2'>右縦棒付き右矢印</td></tr>
+	<tr><td class='source'>⇥ –keywords</td></tr>
+	<tr><td class='source'>⇦ -name</td><td class='target' rowSpan='2'>左向き白矢印</td></tr>
+	<tr><td class='source'>⇦ –keywords</td></tr>
+	<tr><td class='source'>⇧ -name</td><td class='target' rowSpan='2'>上向き白矢印</td></tr>
+	<tr><td class='source'>⇧ –keywords</td></tr>
+	<tr><td class='source'>⇨ -name</td><td class='target' rowSpan='2'>右向き白矢印</td></tr>
+	<tr><td class='source'>⇨ –keywords</td></tr>
+	<tr><td class='source'>⇩ -name</td><td class='target' rowSpan='2'>下向き白矢印</td></tr>
+	<tr><td class='source'>⇩ –keywords</td></tr>
+	<tr><td class='source'>⇪ -name</td><td class='target' rowSpan='2'>棒付き上向き白矢印</td></tr>
+	<tr><td class='source'>⇪ –keywords</td></tr>
+	<tr><td class='source'>⇵ -name</td><td class='target' rowSpan='2'>下矢印上矢印</td></tr>
+	<tr><td class='source'>⇵ –keywords</td></tr>
+	<tr><td class='source'>∀ -name</td><td class='target'>全称記号</td></tr>
+	<tr><td class='source'>∀ –keywords</td><td class='target'>全ての<br>全称量化子<br>全称限定子<br>全称限量子<br>普遍​量化子</td></tr>
+	<tr><td class='source'>∂ -name</td><td class='target'>偏微分</td></tr>
+	<tr><td class='source'>∂ –keywords</td><td class='target'>偏微分記号<br>微分</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target'>存在記号</td></tr>
+	<tr><td class='source'>∃ –keywords</td><td class='target'>存在量化子<br>存在限定子</td></tr>
+	<tr><td class='source'>∅ -name</td><td class='target'>空集合</td></tr>
+	<tr><td class='source'>∅ –keywords</td><td class='target'>数学<br>空集合<br>集合演算子</td></tr>
+	<tr><td class='source'>∉ -name</td><td class='target'>要素の否定</td></tr>
+	<tr><td class='source'>∉ –keywords</td><td class='target'>元<br>要素ではない</td></tr>
+	<tr><td class='source'>∋ -name</td><td class='target'>元として含む</td></tr>
+	<tr><td class='source'>∋ –keywords</td><td class='target'>要素<br>要素として含む</td></tr>
+	<tr><td class='source'>∎ -name</td><td class='target'>墓石記号</td></tr>
+	<tr><td class='source'>∎ –keywords</td><td class='target'>Q.E.D.<br>QED<br>ハルモス<br>墓石<br>証明終了</td></tr>
+	<tr><td class='source'>∏ -name</td><td class='target'>総乗</td></tr>
+	<tr><td class='source'>∏ –keywords</td><td class='target'>無限乗積<br>積<br>総乗記号</td></tr>
+	<tr><td class='source'>∑ -name</td><td class='target'>総和</td></tr>
+	<tr><td class='source'>∑ –keywords</td><td class='target'>シグマ<br>数学<br>総和記号</td></tr>
+	<tr><td class='source'>≮ -name</td><td class='target'>より小さくはない</td></tr>
+	<tr><td class='source'>≮ –keywords</td><td class='target'>より小さくはない<br>不等号<br>数学</td></tr>
+	<tr><td class='source'>≯ -name</td><td class='target'>より大きくはない</td></tr>
+	<tr><td class='source'>≯ –keywords</td><td class='target'>より大きくはない<br>不等号<br>数学</td></tr>
+	<tr><td class='source'>∓ -name</td><td class='target'>マイナスプラス記号</td></tr>
+	<tr><td class='source'>∓ –keywords</td><td class='target'>マイナスプラス<br>複号</td></tr>
+	<tr><td class='source'>∕ -name</td><td class='target'>除算スラッシュ</td></tr>
+	<tr><td class='source'>∕ –keywords</td><td class='target'>スラッシュ<br>割り算<br>斜線<br>除算</td></tr>
+	<tr><td class='source'>⁄ -name</td><td class='target'>分数スラッシュ</td></tr>
+	<tr><td class='source'>⁄ –keywords</td><td class='target'>スラッシュ<br>分数<br>斜線</td></tr>
+	<tr><td class='source'>∗ -name</td><td class='target'>アスタリスク演算子</td></tr>
+	<tr><td class='source'>∗ –keywords</td><td class='target'>アスタリスク<br>米印</td></tr>
+	<tr><td class='source'>∘ -name</td><td class='target'>合成写像の記号</td></tr>
+	<tr><td class='source'>∘ –keywords</td><td class='target'>写像<br>合成<br>関数</td></tr>
+	<tr><td class='source'>∙ -name</td><td class='target'>ビュレット演算子</td></tr>
+	<tr><td class='source'>∙ –keywords</td><td class='target'>ビュレット<br>中点</td></tr>
+	<tr><td class='source'>∝ -name</td><td class='target'>比例</td></tr>
+	<tr><td class='source'>∝ –keywords</td><td class='target'>比例<br>比例記号</td></tr>
+	<tr><td class='source'>∟ -name</td><td class='target'>直角</td></tr>
+	<tr><td class='source'>∟ –keywords</td><td class='target'>数学<br>直角記号</td></tr>
+	<tr><td class='source'>∠ -name</td><td class='target'>角</td></tr>
+	<tr><td class='source'>∠ –keywords</td><td class='target'>角記号<br>鋭角</td></tr>
+	<tr><td class='source'>∣ -name</td><td class='target'>約数</td></tr>
+	<tr><td class='source'>∣ –keywords</td><td class='target'>約数記号<br>除数</td></tr>
+	<tr><td class='source'>∥ -name</td><td class='target'>平行</td></tr>
+	<tr><td class='source'>∥ –keywords</td><td class='target'>平行<br>平行記号</td></tr>
+	<tr><td class='source'>∧ -name</td><td class='target'>論理積</td></tr>
+	<tr><td class='source'>∧ –keywords</td><td class='target'>AND<br>かつ<br>合接<br>連言</td></tr>
+	<tr><td class='source'>∫ -name</td><td class='target'>積分</td></tr>
+	<tr><td class='source'>∫ –keywords</td><td class='target'>インテグラル<br>微積分</td></tr>
+	<tr><td class='source'>∬ -name</td><td class='target'>二重積分</td></tr>
+	<tr><td class='source'>∬ –keywords</td><td class='target'>ダブルインテグラル<br>微積分</td></tr>
+	<tr><td class='source'>∮ -name</td><td class='target' rowSpan='2'>線積分</td></tr>
+	<tr><td class='source'>∮ –keywords</td></tr>
+	<tr><td class='source'>∴ -name</td><td class='target'>ゆえに</td></tr>
+	<tr><td class='source'>∴ –keywords</td><td class='target'>したがって<br>論理記号</td></tr>
+	<tr><td class='source'>∵ -name</td><td class='target'>なぜならば</td></tr>
+	<tr><td class='source'>∵ –keywords</td><td class='target'>しかるに<br>論理記号</td></tr>
+	<tr><td class='source'>∶ -name</td><td class='target' rowSpan='2'>比</td></tr>
+	<tr><td class='source'>∶ –keywords</td></tr>
+	<tr><td class='source'>∷ -name</td><td class='target'>比率</td></tr>
+	<tr><td class='source'>∷ –keywords</td><td class='target'>比例<br>比率</td></tr>
+	<tr><td class='source'>∼ -name</td><td class='target'>チルダ演算子</td></tr>
+	<tr><td class='source'>∼ –keywords</td><td class='target'>チルダ<br>波ダッシュ</td></tr>
+	<tr><td class='source'>∽ -name</td><td class='target'>相似</td></tr>
+	<tr><td class='source'>∽ –keywords</td><td class='target'>チルダ<br>相似記号</td></tr>
+	<tr><td class='source'>∾ -name</td><td class='target' rowSpan='2'>逆の横向きS</td></tr>
+	<tr><td class='source'>∾ –keywords</td></tr>
+	<tr><td class='source'>≃ -name</td><td class='target'>漸進的に等しい</td></tr>
+	<tr><td class='source'>≃ –keywords</td><td class='target'>ホモトープ<br>数学<br>漸近線</td></tr>
+	<tr><td class='source'>≅ -name</td><td class='target'>およそ等しい</td></tr>
+	<tr><td class='source'>≅ –keywords</td><td class='target'>合同<br>同型写像<br>同形<br>数学<br>等号</td></tr>
+	<tr><td class='source'>≌ -name</td><td class='target'>すべて等しい</td></tr>
+	<tr><td class='source'>≌ –keywords</td><td class='target'>合同<br>数学<br>等号</td></tr>
+	<tr><td class='source'>≒ -name</td><td class='target' rowSpan='2'>ほとんど等しい</td></tr>
+	<tr><td class='source'>≒ –keywords</td></tr>
+	<tr><td class='source'>≖ -name</td><td class='target'>等号の中に丸</td></tr>
+	<tr><td class='source'>≖ –keywords</td><td class='target'>数学<br>等号<br>等号の中に丸</td></tr>
+	<tr><td class='source'>≣ -name</td><td class='target'>完全に同等</td></tr>
+	<tr><td class='source'>≣ –keywords</td><td class='target'>完全に同等<br>数学<br>等号</td></tr>
+	<tr><td class='source'>≦ -name</td><td class='target'>より小さいか又は等しい</td></tr>
+	<tr><td class='source'>≦ –keywords</td><td class='target'>不等号<br>小なりイコール<br>数学</td></tr>
+	<tr><td class='source'>≧ -name</td><td class='target'>より大きいか又は等しい</td></tr>
+	<tr><td class='source'>≧ –keywords</td><td class='target'>不等号<br>大なりイコール<br>数学</td></tr>
+	<tr><td class='source'>≪ -name</td><td class='target'>非常に小さい</td></tr>
+	<tr><td class='source'>≪ –keywords</td><td class='target'>不等号<br>数学<br>極度に小さい</td></tr>
+	<tr><td class='source'>≫ -name</td><td class='target'>非常に大きい</td></tr>
+	<tr><td class='source'>≫ –keywords</td><td class='target'>不等号<br>数学<br>極度に大きい</td></tr>
+	<tr><td class='source'>≬ -name</td><td class='target' rowSpan='2'>次の間に</td></tr>
+	<tr><td class='source'>≬ –keywords</td></tr>
+	<tr><td class='source'>≳ -name</td><td class='target'>大きいかほぼ等しい</td></tr>
+	<tr><td class='source'>≳ –keywords</td><td class='target'>不等号<br>大きいかほぼ等しい<br>数学</td></tr>
+	<tr><td class='source'>≺ -name</td><td class='target'>前にある</td></tr>
+	<tr><td class='source'>≺ –keywords</td><td class='target'>前にある<br>数学<br>集合<br>順序</td></tr>
+	<tr><td class='source'>≻ -name</td><td class='target'>後にある</td></tr>
+	<tr><td class='source'>≻ –keywords</td><td class='target'>後にある<br>数学<br>集合<br>順序</td></tr>
+	<tr><td class='source'>⊁ -name</td><td class='target'>後にはない</td></tr>
+	<tr><td class='source'>⊁ –keywords</td><td class='target'>後にはない<br>数学<br>集合<br>順序</td></tr>
+	<tr><td class='source'>⊃ -name</td><td class='target'>上位集合</td></tr>
+	<tr><td class='source'>⊃ –keywords</td><td class='target'>数学<br>真部分集合<br>集合</td></tr>
+	<tr><td class='source'>⊆ -name</td><td class='target' rowSpan='2'>部分集合</td></tr>
+	<tr><td class='source'>⊆ –keywords</td></tr>
+	<tr><td class='source'>⊇ -name</td><td class='target'>部分集合（逆方向）</td></tr>
+	<tr><td class='source'>⊇ –keywords</td><td class='target'>数学<br>部分集合<br>集合</td></tr>
+	<tr><td class='source'>⊕ -name</td><td class='target'>直和</td></tr>
+	<tr><td class='source'>⊕ –keywords</td><td class='target'>プラス<br>丸囲みプラス</td></tr>
+	<tr><td class='source'>⊖ -name</td><td class='target'>対称差</td></tr>
+	<tr><td class='source'>⊖ –keywords</td><td class='target'>マイナス<br>丸囲みマイナス</td></tr>
+	<tr><td class='source'>⊗ -name</td><td class='target'>直積</td></tr>
+	<tr><td class='source'>⊗ –keywords</td><td class='target'>テンソル積<br>丸囲み<br>積</td></tr>
+	<tr><td class='source'>⊘ -name</td><td class='target'>丸囲みスラッシュ</td></tr>
+	<tr><td class='source'>⊘ –keywords</td><td class='target'>スラッシュ<br>丸囲み<br>数学</td></tr>
+	<tr><td class='source'>⊙ -name</td><td class='target'>丸囲みドット</td></tr>
+	<tr><td class='source'>⊙ –keywords</td><td class='target'>XNOR<br>ドット<br>丸囲み</td></tr>
+	<tr><td class='source'>⊚ -name</td><td class='target'>丸囲みリング</td></tr>
+	<tr><td class='source'>⊚ –keywords</td><td class='target'>丸囲みリング<br>二重丸</td></tr>
+	<tr><td class='source'>⊛ -name</td><td class='target'>丸囲みアスタリスク</td></tr>
+	<tr><td class='source'>⊛ –keywords</td><td class='target'>アスタリスク<br>丸囲み<br>演算子</td></tr>
+	<tr><td class='source'>⊞ -name</td><td class='target'>四角囲みプラス</td></tr>
+	<tr><td class='source'>⊞ –keywords</td><td class='target'>四角囲み<br>数学<br>足す</td></tr>
+	<tr><td class='source'>⊟ -name</td><td class='target'>四角囲みマイナス</td></tr>
+	<tr><td class='source'>⊟ –keywords</td><td class='target'>四角囲み<br>引く<br>数学</td></tr>
+	<tr><td class='source'>⊥ -name</td><td class='target'>垂直記号</td></tr>
+	<tr><td class='source'>⊥ –keywords</td><td class='target'>アップタック記号<br>垂直<br>矛盾</td></tr>
+	<tr><td class='source'>⊮ -name</td><td class='target' rowSpan='2'>強制しない</td></tr>
+	<tr><td class='source'>⊮ –keywords</td></tr>
+	<tr><td class='source'>⊰ -name</td><td class='target'>前置関係</td></tr>
+	<tr><td class='source'>⊰ –keywords</td><td class='target'>前にある<br>数学<br>集合<br>順序</td></tr>
+	<tr><td class='source'>⊱ -name</td><td class='target'>後置関係</td></tr>
+	<tr><td class='source'>⊱ –keywords</td><td class='target'>後にある<br>数学<br>集合<br>順序</td></tr>
+	<tr><td class='source'>⋭ -name</td><td class='target'>正規部分群（逆方向）又は等しいの否定</td></tr>
+	<tr><td class='source'>⋭ –keywords</td><td class='target'>数学<br>正規部分群<br>群論</td></tr>
+	<tr><td class='source'>⊶ -name</td><td class='target' rowSpan='2'>オリジナル</td></tr>
+	<tr><td class='source'>⊶ –keywords</td></tr>
+	<tr><td class='source'>⊹ -name</td><td class='target'>エルミート共役行列</td></tr>
+	<tr><td class='source'>⊹ –keywords</td><td class='target'>エルミート行列<br>数学<br>行列<br>随伴行列</td></tr>
+	<tr><td class='source'>⊿ -name</td><td class='target'>直角三角形</td></tr>
+	<tr><td class='source'>⊿ –keywords</td><td class='target'>三角形<br>数学<br>直角三角形</td></tr>
+	<tr><td class='source'>⋁ -name</td><td class='target'>ｎ項論理和</td></tr>
+	<tr><td class='source'>⋁ –keywords</td><td class='target'>論理和<br>選言<br>離接</td></tr>
+	<tr><td class='source'>⋂ -name</td><td class='target'>ｎ項共通部分</td></tr>
+	<tr><td class='source'>⋂ –keywords</td><td class='target'>交叉<br>共通部分<br>積集合<br>集合</td></tr>
+	<tr><td class='source'>⋃ -name</td><td class='target'>ｎ項和集合</td></tr>
+	<tr><td class='source'>⋃ –keywords</td><td class='target'>合併<br>和集合<br>結び<br>集合</td></tr>
+	<tr><td class='source'>⋅ -name</td><td class='target'>ドット演算子</td></tr>
+	<tr><td class='source'>⋅ –keywords</td><td class='target'>ドット<br>中点</td></tr>
+	<tr><td class='source'>⋆ -name</td><td class='target'>スター演算子</td></tr>
+	<tr><td class='source'>⋆ –keywords</td><td class='target'>スター<br>星印</td></tr>
+	<tr><td class='source'>⋈ -name</td><td class='target'>自然結合</td></tr>
+	<tr><td class='source'>⋈ –keywords</td><td class='target'>ちょうネクタイ<br>二項演算子<br>関係代数</td></tr>
+	<tr><td class='source'>⋒ -name</td><td class='target'>二重共通部分</td></tr>
+	<tr><td class='source'>⋒ –keywords</td><td class='target'>二重共通部分<br>共通部分<br>数学<br>集合</td></tr>
+	<tr><td class='source'>⋘ -name</td><td class='target'>極度に小さい</td></tr>
+	<tr><td class='source'>⋘ –keywords</td><td class='target'>不等号<br>数学<br>極度に小さい</td></tr>
+	<tr><td class='source'>⋙ -name</td><td class='target'>極度に大きい</td></tr>
+	<tr><td class='source'>⋙ –keywords</td><td class='target'>不等号<br>数学<br>極度に大きい</td></tr>
+	<tr><td class='source'>⋮ -name</td><td class='target'>縦三点リーダー</td></tr>
+	<tr><td class='source'>⋮ –keywords</td><td class='target'>三点リーダー<br>省略記号<br>縦3点</td></tr>
+	<tr><td class='source'>⋯ -name</td><td class='target'>中央揃いの横三点リーダー</td></tr>
+	<tr><td class='source'>⋯ –keywords</td><td class='target'>3点リーダー<br>三点リーダー<br>省略記号</td></tr>
+	<tr><td class='source'>⋰ -name</td><td class='target'>右上がり斜め三点リーダー</td></tr>
+	<tr><td class='source'>⋰ –keywords</td><td class='target'>三点リーダー<br>右上がり<br>斜め3点リーダー<br>省略記号</td></tr>
+	<tr><td class='source'>⋱ -name</td><td class='target'>右下がり斜め三点リーダー</td></tr>
+	<tr><td class='source'>⋱ –keywords</td><td class='target'>三点リーダー<br>右下がり<br>斜め3点リーダー<br>省略記号</td></tr>
+	<tr><td class='source'>■ -name</td><td class='target' rowSpan='2'>黒四角</td></tr>
+	<tr><td class='source'>■ –keywords</td></tr>
+	<tr><td class='source'>□ -name</td><td class='target' rowSpan='2'>白四角</td></tr>
+	<tr><td class='source'>□ –keywords</td></tr>
+	<tr><td class='source'>▢ -name</td><td class='target' rowSpan='2'>角丸白四角</td></tr>
+	<tr><td class='source'>▢ –keywords</td></tr>
+	<tr><td class='source'>▣ -name</td><td class='target' rowSpan='2'>白四角の中に黒四角</td></tr>
+	<tr><td class='source'>▣ –keywords</td></tr>
+	<tr><td class='source'>▤ -name</td><td class='target' rowSpan='2'>横縞線入りの四角</td></tr>
+	<tr><td class='source'>▤ –keywords</td></tr>
+	<tr><td class='source'>▥ -name</td><td class='target' rowSpan='2'>縦縞線入りの四角</td></tr>
+	<tr><td class='source'>▥ –keywords</td></tr>
+	<tr><td class='source'>▦ -name</td><td class='target' rowSpan='2'>格子線入りの四角</td></tr>
+	<tr><td class='source'>▦ –keywords</td></tr>
+	<tr><td class='source'>▧ -name</td><td class='target' rowSpan='2'>左上右下斜め縞線入りの四角</td></tr>
+	<tr><td class='source'>▧ –keywords</td></tr>
+	<tr><td class='source'>▨ -name</td><td class='target' rowSpan='2'>右上左下斜め縞線入りの四角</td></tr>
+	<tr><td class='source'>▨ –keywords</td></tr>
+	<tr><td class='source'>▩ -name</td><td class='target' rowSpan='2'>斜め格子線入りの四角</td></tr>
+	<tr><td class='source'>▩ –keywords</td></tr>
+	<tr><td class='source'>▬ -name</td><td class='target' rowSpan='2'>黒い長方形</td></tr>
+	<tr><td class='source'>▬ –keywords</td></tr>
+	<tr><td class='source'>▭ -name</td><td class='target' rowSpan='2'>白い長方形</td></tr>
+	<tr><td class='source'>▭ –keywords</td></tr>
+	<tr><td class='source'>▮ -name</td><td class='target' rowSpan='2'>縦長の黒い長方形</td></tr>
+	<tr><td class='source'>▮ –keywords</td></tr>
+	<tr><td class='source'>▰ -name</td><td class='target' rowSpan='2'>黒い平行四辺形</td></tr>
+	<tr><td class='source'>▰ –keywords</td></tr>
+	<tr><td class='source'>△ -name</td><td class='target' rowSpan='2'>上向き白三角</td></tr>
+	<tr><td class='source'>△ –keywords</td></tr>
+	<tr><td class='source'>▴ -name</td><td class='target' rowSpan='2'>上向き黒三角小</td></tr>
+	<tr><td class='source'>▴ –keywords</td></tr>
+	<tr><td class='source'>▵ -name</td><td class='target' rowSpan='2'>上向き白三角小</td></tr>
+	<tr><td class='source'>▵ –keywords</td></tr>
+	<tr><td class='source'>▷ -name</td><td class='target' rowSpan='2'>右向き白三角</td></tr>
+	<tr><td class='source'>▷ –keywords</td></tr>
+	<tr><td class='source'>▸ -name</td><td class='target' rowSpan='2'>右向き黒三角小</td></tr>
+	<tr><td class='source'>▸ –keywords</td></tr>
+	<tr><td class='source'>▹ -name</td><td class='target' rowSpan='2'>右向き白三角小</td></tr>
+	<tr><td class='source'>▹ –keywords</td></tr>
+	<tr><td class='source'>► -name</td><td class='target' rowSpan='2'>右向きの黒い二等辺三角形</td></tr>
+	<tr><td class='source'>► –keywords</td></tr>
+	<tr><td class='source'>▻ -name</td><td class='target' rowSpan='2'>右向きの白い二等辺三角形</td></tr>
+	<tr><td class='source'>▻ –keywords</td></tr>
+	<tr><td class='source'>▽ -name</td><td class='target' rowSpan='2'>下向き白三角</td></tr>
+	<tr><td class='source'>▽ –keywords</td></tr>
+	<tr><td class='source'>▾ -name</td><td class='target' rowSpan='2'>下向き黒三角小</td></tr>
+	<tr><td class='source'>▾ –keywords</td></tr>
+	<tr><td class='source'>▿ -name</td><td class='target' rowSpan='2'>下向き白三角小</td></tr>
+	<tr><td class='source'>▿ –keywords</td></tr>
+	<tr><td class='source'>◁ -name</td><td class='target' rowSpan='2'>左向き白三角</td></tr>
+	<tr><td class='source'>◁ –keywords</td></tr>
+	<tr><td class='source'>◂ -name</td><td class='target' rowSpan='2'>左向き黒三角小</td></tr>
+	<tr><td class='source'>◂ –keywords</td></tr>
+	<tr><td class='source'>◃ -name</td><td class='target' rowSpan='2'>左向き白三角小</td></tr>
+	<tr><td class='source'>◃ –keywords</td></tr>
+	<tr><td class='source'>◄ -name</td><td class='target' rowSpan='2'>左向きの黒い二等辺三角形</td></tr>
+	<tr><td class='source'>◄ –keywords</td></tr>
+	<tr><td class='source'>◅ -name</td><td class='target' rowSpan='2'>左向きの白い二等辺三角形</td></tr>
+	<tr><td class='source'>◅ –keywords</td></tr>
+	<tr><td class='source'>◆ -name</td><td class='target' rowSpan='2'>黒ひし形</td></tr>
+	<tr><td class='source'>◆ –keywords</td></tr>
+	<tr><td class='source'>◇ -name</td><td class='target' rowSpan='2'>白ひし形</td></tr>
+	<tr><td class='source'>◇ –keywords</td></tr>
+	<tr><td class='source'>◈ -name</td><td class='target' rowSpan='2'>白ひし形の中に黒ひし形</td></tr>
+	<tr><td class='source'>◈ –keywords</td></tr>
+	<tr><td class='source'>◉ -name</td><td class='target'>白丸の中に黒丸</td></tr>
+	<tr><td class='source'>◉ –keywords</td><td class='target'>丸中黒<br>二重丸<br>同心円<br>蛇の目</td></tr>
+	<tr><td class='source'>◌ -name</td><td class='target' rowSpan='2'>点線の丸</td></tr>
+	<tr><td class='source'>◌ –keywords</td></tr>
+	<tr><td class='source'>◍ -name</td><td class='target' rowSpan='2'>縦線入りの丸</td></tr>
+	<tr><td class='source'>◍ –keywords</td></tr>
+	<tr><td class='source'>◎ -name</td><td class='target'>二重丸</td></tr>
+	<tr><td class='source'>◎ –keywords</td><td class='target'>二重丸<br>同心円<br>的</td></tr>
+	<tr><td class='source'>◐ -name</td><td class='target' rowSpan='2'>左半黒丸</td></tr>
+	<tr><td class='source'>◐ –keywords</td></tr>
+	<tr><td class='source'>◑ -name</td><td class='target' rowSpan='2'>右半黒丸</td></tr>
+	<tr><td class='source'>◑ –keywords</td></tr>
+	<tr><td class='source'>◒ -name</td><td class='target'>下半黒丸</td></tr>
+	<tr><td class='source'>◒ –keywords</td><td class='target'>下半黒丸<br>半黒丸</td></tr>
+	<tr><td class='source'>◓ -name</td><td class='target'>上半黒丸</td></tr>
+	<tr><td class='source'>◓ –keywords</td><td class='target'>上半黒丸<br>半黒丸</td></tr>
+	<tr><td class='source'>◔ -name</td><td class='target' rowSpan='2'>右上に黒い四分円がある白丸</td></tr>
+	<tr><td class='source'>◔ –keywords</td></tr>
+	<tr><td class='source'>◕ -name</td><td class='target' rowSpan='2'>左上に白い四分円のある黒丸</td></tr>
+	<tr><td class='source'>◕ –keywords</td></tr>
+	<tr><td class='source'>◖ -name</td><td class='target' rowSpan='2'>黒い左半円</td></tr>
+	<tr><td class='source'>◖ –keywords</td></tr>
+	<tr><td class='source'>◗ -name</td><td class='target' rowSpan='2'>黒い右半円</td></tr>
+	<tr><td class='source'>◗ –keywords</td></tr>
+	<tr><td class='source'>◘ -name</td><td class='target' rowSpan='2'>反転ビュレット</td></tr>
+	<tr><td class='source'>◘ –keywords</td></tr>
+	<tr><td class='source'>◙ -name</td><td class='target'>黒四角の中に白丸</td></tr>
+	<tr><td class='source'>◙ –keywords</td><td class='target'>反転白丸<br>黒四角の中に白丸</td></tr>
+	<tr><td class='source'>◜ -name</td><td class='target' rowSpan='2'>左上四分円弧</td></tr>
+	<tr><td class='source'>◜ –keywords</td></tr>
+	<tr><td class='source'>◝ -name</td><td class='target' rowSpan='2'>右上四分円弧</td></tr>
+	<tr><td class='source'>◝ –keywords</td></tr>
+	<tr><td class='source'>◞ -name</td><td class='target' rowSpan='2'>右下四分円弧</td></tr>
+	<tr><td class='source'>◞ –keywords</td></tr>
+	<tr><td class='source'>◟ -name</td><td class='target' rowSpan='2'>左下四分円弧</td></tr>
+	<tr><td class='source'>◟ –keywords</td></tr>
+	<tr><td class='source'>◠ -name</td><td class='target' rowSpan='2'>上半円弧</td></tr>
+	<tr><td class='source'>◠ –keywords</td></tr>
+	<tr><td class='source'>◡ -name</td><td class='target' rowSpan='2'>下半円弧</td></tr>
+	<tr><td class='source'>◡ –keywords</td></tr>
+	<tr><td class='source'>◢ -name</td><td class='target' rowSpan='2'>黒い右下三角</td></tr>
+	<tr><td class='source'>◢ –keywords</td></tr>
+	<tr><td class='source'>◣ -name</td><td class='target' rowSpan='2'>黒い左下三角</td></tr>
+	<tr><td class='source'>◣ –keywords</td></tr>
+	<tr><td class='source'>◤ -name</td><td class='target' rowSpan='2'>黒い左上三角</td></tr>
+	<tr><td class='source'>◤ –keywords</td></tr>
+	<tr><td class='source'>◥ -name</td><td class='target' rowSpan='2'>黒い右上三角</td></tr>
+	<tr><td class='source'>◥ –keywords</td></tr>
+	<tr><td class='source'>◦ -name</td><td class='target' rowSpan='2'>白ビュレット</td></tr>
+	<tr><td class='source'>◦ –keywords</td></tr>
+	<tr><td class='source'>◳ -name</td><td class='target' rowSpan='2'>右上に四角のある白四角</td></tr>
+	<tr><td class='source'>◳ –keywords</td></tr>
+	<tr><td class='source'>◷ -name</td><td class='target' rowSpan='2'>右上に四分円のある白丸</td></tr>
+	<tr><td class='source'>◷ –keywords</td></tr>
+	<tr><td class='source'>◿ -name</td><td class='target' rowSpan='2'>右下三角</td></tr>
+	<tr><td class='source'>◿ –keywords</td></tr>
+	<tr><td class='source'>⨧ -name</td><td class='target' rowSpan='2'>2下付きプラス</td></tr>
+	<tr><td class='source'>⨧ –keywords</td></tr>
+	<tr><td class='source'>⨯ -name</td><td class='target' rowSpan='2'>ベクトルクロス積</td></tr>
+	<tr><td class='source'>⨯ –keywords</td></tr>
+	<tr><td class='source'>⨼ -name</td><td class='target' rowSpan='2'>内部積</td></tr>
+	<tr><td class='source'>⨼ –keywords</td></tr>
+	<tr><td class='source'>⩣ -name</td><td class='target' rowSpan='2'>二重下線付き論理和</td></tr>
+	<tr><td class='source'>⩣ –keywords</td></tr>
+	<tr><td class='source'>⩽ -name</td><td class='target' rowSpan='2'>より小さいか又は等しい（斜め）</td></tr>
+	<tr><td class='source'>⩽ –keywords</td></tr>
+	<tr><td class='source'>⪍ -name</td><td class='target' rowSpan='2'>より小さいか又はほぼ等しい</td></tr>
+	<tr><td class='source'>⪍ –keywords</td></tr>
+	<tr><td class='source'>⪚ -name</td><td class='target'>より大きいか又は等しい（上2本線）</td></tr>
+	<tr><td class='source'>⪚ –keywords</td><td class='target'>より大きいか又は等しい<br>上2本線<br>不等号<br>数学</td></tr>
+	<tr><td class='source'>⪺ -name</td><td class='target' rowSpan='2'>後にあるか又はほぼ等しい</td></tr>
+	<tr><td class='source'>⪺ –keywords</td></tr>
+	<tr><td class='source'>₢ -name</td><td class='target'>クルゼイロ</td></tr>
+	<tr><td class='source'>₢ –keywords</td><td class='target'>BRB<br>ブラジル<br>通貨</td></tr>
+	<tr><td class='source'>₣ -name</td><td class='target'>フランスフラン</td></tr>
+	<tr><td class='source'>₣ –keywords</td><td class='target'>フラン<br>フランス<br>通貨</td></tr>
+	<tr><td class='source'>₤ -name</td><td class='target'>リラ</td></tr>
+	<tr><td class='source'>₤ –keywords</td><td class='target'>リラ記号<br>通貨</td></tr>
+	<tr><td class='source'>₰ -name</td><td class='target'>ドイツマルク</td></tr>
+	<tr><td class='source'>₰ –keywords</td><td class='target'>ドイツ<br>ペニヒ<br>通貨</td></tr>
+	<tr><td class='source'>₳ -name</td><td class='target'>アウストラル</td></tr>
+	<tr><td class='source'>₳ –keywords</td><td class='target'>ARA<br>アルゼンチン<br>通貨</td></tr>
+	<tr><td class='source'>₶ -name</td><td class='target'>トゥールリーブル</td></tr>
+	<tr><td class='source'>₶ –keywords</td><td class='target'>リーブル<br>通貨</td></tr>
+	<tr><td class='source'>₷ -name</td><td class='target'>スペスミーロ</td></tr>
+	<tr><td class='source'>₷ –keywords</td><td class='target'>エスペラント<br>通貨</td></tr>
+	<tr><td class='source'>₨ -name</td><td class='target'>ルピー</td></tr>
+	<tr><td class='source'>₨ –keywords</td><td class='target'>ルピー記号<br>通貨</td></tr>
+	<tr><td class='source'>‫﷼ -name‬</td><td class='target'>リヤル</td></tr>
+	<tr><td class='source'>‫﷼ –keywords‬</td><td class='target'>イランリヤル<br>通貨</td></tr>
+	<tr><td class='source' rowSpan='46'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='46'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GGGGyMEEEEd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GGGGyMd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target' rowSpan='2'>GyMMdd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-short</td></tr>
@@ -117,7 +759,7 @@
 	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target' rowSpan='2'>GyMMdd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-short</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
+<a href='https://www.unicode.org/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
 <script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
 

@@ -60,441 +60,427 @@
 <p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with <b>Formatted Samples</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
 <p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Samples</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
 <ol>
-<li><b><a href='#unit_case_info'>Unit Case Info</a></b></li>
+<li><b><a href='#unit_case_gender_info'>Unit Case & Gender Info</a></b></li>
 <li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
 </ol>
-<h2><a name='unit_case_info'>Unit Case Info</a></h2>
+<h2><a name='unit_case_gender_info'>Unit Case & Gender Info</a></h2>
 <p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a></b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
 <ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
 <table>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='7'>acceleration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ജി-ഫോഴ്‌സ്</td><td class='target' rowSpan='7'>1 ജി-ഫോഴ്‌സ്</td><td class='target' rowSpan='7'>{0} ജി-ഫോഴ്‌സ്</td><td class='target' rowSpan='7'>2 ജി-ഫോഴ്‌സ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ആർക്ക്സെക്കൻഡ്</td><td class='target' rowSpan='7'>1 ആർക്ക്സെക്കൻഡ്</td><td class='target' rowSpan='7'>{0} ആർക്ക്സെക്കൻഡ്</td><td class='target' rowSpan='7'>2 ആർക്ക്സെക്കൻഡ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ആർക്ക്മിനിറ്റ്</td><td class='target' rowSpan='7'>1 ആർക്ക്മിനിറ്റ്</td><td class='target' rowSpan='7'>{0} ആർക്ക്മിനിറ്റ്</td><td class='target' rowSpan='7'>2 ആർക്ക്മിനിറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഡിഗ്രി</td><td class='target' rowSpan='7'>1 ഡിഗ്രി</td><td class='target' rowSpan='7'>{0} ഡിഗ്രി</td><td class='target' rowSpan='7'>2 ഡിഗ്രി</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} റേഡിയൻ</td><td class='target' rowSpan='7'>1 റേഡിയൻ</td><td class='target' rowSpan='7'>{0} റേഡിയൻ</td><td class='target' rowSpan='7'>2 റേഡിയൻ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='revolution' href='#revolution'>revolution</a></td><td class='source' rowSpan='7'>angle</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} റെവല്യൂഷൻ</td><td class='target' rowSpan='7'>1 റെവല്യൂഷൻ</td><td class='target' rowSpan='7'>{0} റെവല്യൂഷൻ</td><td class='target' rowSpan='7'>2 റെവല്യൂഷൻ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='7'>area</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഹെക്‌ടർ</td><td class='target' rowSpan='7'>1 ഹെക്‌ടർ</td><td class='target' rowSpan='7'>{0} ഹെക്‌ടർ</td><td class='target' rowSpan='7'>2 ഹെക്‌ടർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='7'>digital</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ബിറ്റ്</td><td class='target' rowSpan='7'>1 ബിറ്റ്</td><td class='target' rowSpan='7'>{0} ബിറ്റ്</td><td class='target' rowSpan='7'>2 ബിറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source' rowSpan='7'>digital</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ബൈറ്റ്</td><td class='target' rowSpan='7'>1 ബൈറ്റ്</td><td class='target' rowSpan='7'>{0} ബൈറ്റ്</td><td class='target' rowSpan='7'>2 ബൈറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} സെക്കൻഡ്</td><td class='target' rowSpan='7'>1 സെക്കൻഡ്</td><td class='target' rowSpan='7'>{0} സെക്കൻഡ്</td><td class='target' rowSpan='7'>2 സെക്കൻഡ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മിനിറ്റ്</td><td class='target' rowSpan='7'>1 മിനിറ്റ്</td><td class='target' rowSpan='7'>{0} മിനിറ്റ്</td><td class='target' rowSpan='7'>2 മിനിറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മണിക്കൂർ</td><td class='target' rowSpan='7'>1 മണിക്കൂർ</td><td class='target' rowSpan='7'>{0} മണിക്കൂർ</td><td class='target' rowSpan='7'>2 മണിക്കൂർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ദിവസം</td><td class='target' rowSpan='7'>1 ദിവസം</td><td class='target' rowSpan='7'>{0} ദിവസം</td><td class='target' rowSpan='7'>2 ദിവസം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ദിവസം‌</td><td class='target' rowSpan='7'>1 ദിവസം‌</td><td class='target' rowSpan='7'>{0} ദിവസം‌</td><td class='target' rowSpan='7'>2 ദിവസം‌</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source' rowSpan='7'>duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ആഴ്ച</td><td class='target' rowSpan='7'>1 ആഴ്ച</td><td class='target' rowSpan='7'>{0} ആഴ്ച</td><td class='target' rowSpan='7'>2 ആഴ്ച</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='7'>electric-current</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ആമ്പിയർ</td><td class='target' rowSpan='7'>1 ആമ്പിയർ</td><td class='target' rowSpan='7'>{0} ആമ്പിയർ</td><td class='target' rowSpan='7'>2 ആമ്പിയർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='7'>electric-resistance</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഓം</td><td class='target' rowSpan='7'>1 ഓം</td><td class='target' rowSpan='7'>{0} ഓം</td><td class='target' rowSpan='7'>2 ഓം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='7'>energy</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ജൂൾ</td><td class='target' rowSpan='7'>1 ജൂൾ</td><td class='target' rowSpan='7'>{0} ജൂൾ</td><td class='target' rowSpan='7'>2 ജൂൾ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source' rowSpan='7'>energy</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} കലോറി</td><td class='target' rowSpan='7'>1 കലോറി</td><td class='target' rowSpan='7'>{0} കലോറി</td><td class='target' rowSpan='7'>2 കലോറി</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='7'>force</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ന്യൂട്ടൻ</td><td class='target' rowSpan='7'>1 ന്യൂട്ടൻ</td><td class='target' rowSpan='7'>{0} ന്യൂട്ടൻസ്</td><td class='target' rowSpan='7'>2 ന്യൂട്ടൻസ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='7'>frequency</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഹെർട്സ്</td><td class='target' rowSpan='7'>1 ഹെർട്സ്</td><td class='target' rowSpan='7'>{0} ഹെർട്സ്</td><td class='target' rowSpan='7'>2 ഹെർട്സ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='7'>graphics</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} px</td><td class='target' rowSpan='7'>1 px</td><td class='target' rowSpan='7'>{0} px</td><td class='target' rowSpan='7'>2 px</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='7'>illuminance</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ലക്സ്</td><td class='target' rowSpan='7'>1 ലക്സ്</td><td class='target' rowSpan='7'>{0} ലക്സ്</td><td class='target' rowSpan='7'>2 ലക്സ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='7'>length</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മീറ്റർ</td><td class='target' rowSpan='7'>1 മീറ്റർ</td><td class='target' rowSpan='7'>{0} മീറ്റർ</td><td class='target' rowSpan='7'>2 മീറ്റർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source' rowSpan='7'>length</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} സ്കാൻഡിനേവിയൻ മൈൽ</td><td class='target' rowSpan='7'>1 സ്കാൻഡിനേവിയൻ മൈൽ</td><td class='target' rowSpan='7'>{0} സ്കാൻഡിനേവിയൻ മൈൽ</td><td class='target' rowSpan='7'>2 സ്കാൻഡിനേവിയൻ മൈൽ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='7'>luminous-flux</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} lm</td><td class='target' rowSpan='7'>1 lm</td><td class='target' rowSpan='7'>{0} lm</td><td class='target' rowSpan='7'>2 lm</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='7'>luminous-intensity</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} cd</td><td class='target' rowSpan='7'>1 cd</td><td class='target' rowSpan='7'>{0} cd</td><td class='target' rowSpan='7'>2 cd</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ക്യാരറ്റ്</td><td class='target' rowSpan='7'>1 ക്യാരറ്റ്</td><td class='target' rowSpan='7'>{0} ക്യാരറ്റ്</td><td class='target' rowSpan='7'>2 ക്യാരറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഗ്രാം</td><td class='target' rowSpan='7'>1 ഗ്രാം</td><td class='target' rowSpan='7'>{0} ഗ്രാം</td><td class='target' rowSpan='7'>2 ഗ്രാം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} കിലോഗ്രാം</td><td class='target' rowSpan='7'>1 കിലോഗ്രാം</td><td class='target' rowSpan='7'>{0} കിലോഗ്രാം</td><td class='target' rowSpan='7'>2 കിലോഗ്രാം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='7'>mass</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മെട്രിക് ടൺ</td><td class='target' rowSpan='7'>1 മെട്രിക് ടൺ</td><td class='target' rowSpan='7'>{0} മെട്രിക് ടൺ</td><td class='target' rowSpan='7'>2 മെട്രിക് ടൺ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>പാർട്ട് / മില്ല്യൺ</td><td class='target' rowSpan='7'>പാർട്ട് / മില്ല്യൺ</td><td class='target' rowSpan='7'>{0} പാർട്‌സ് / മില്ല്യൺ</td><td class='target' rowSpan='7'>2 പാർട്‌സ് / മില്ല്യൺ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} പിരമിഡ്</td><td class='target' rowSpan='7'>1 പിരമിഡ്</td><td class='target' rowSpan='7'>{0} പിരമിഡ്</td><td class='target' rowSpan='7'>2 പിരമിഡ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} പ്രതിമില്ലി</td><td class='target' rowSpan='7'>1 പ്രതിമില്ലി</td><td class='target' rowSpan='7'>{0} പ്രതിമില്ലി</td><td class='target' rowSpan='7'>2 പ്രതിമില്ലി</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0}%</td><td class='target' rowSpan='7'>1%</td><td class='target' rowSpan='7'>{0}%</td><td class='target' rowSpan='7'>2%</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source' rowSpan='7'>portion</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ക്യാരറ്റ്</td><td class='target' rowSpan='7'>1 ക്യാരറ്റ്</td><td class='target' rowSpan='7'>{0} ക്യാരറ്റ്</td><td class='target' rowSpan='7'>2 ക്യാരറ്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='7'>power</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} വാട്ട്</td><td class='target' rowSpan='7'>1 വാട്ട്</td><td class='target' rowSpan='7'>{0} വാട്ട്</td><td class='target' rowSpan='7'>2 വാട്ട്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} പാസ്കൽ</td><td class='target' rowSpan='7'>1 പാസ്കൽ</td><td class='target' rowSpan='7'>{0} പാസ്കൽസ്</td><td class='target' rowSpan='7'>2 പാസ്കൽസ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ബാർ</td><td class='target' rowSpan='7'>1 ബാർ</td><td class='target' rowSpan='7'>{0} ബാറുകൾ</td><td class='target' rowSpan='7'>2 ബാറുകൾ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source' rowSpan='7'>pressure</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} അറ്റ്‌മോസ്‌ഫിയർ</td><td class='target' rowSpan='7'>1 അറ്റ്‌മോസ്‌ഫിയർ</td><td class='target' rowSpan='7'>{0} അറ്റ്‌മോസ്‌ഫിയർ</td><td class='target' rowSpan='7'>2 അറ്റ്‌മോസ്‌ഫിയർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='mole<br>( = 602,214,076,000,000,000,000,000 item)' href='#mole<br>( = 602,214,076,000,000,000,000,000 item)'>mole<br>( = 602,214,076,000,000,000,000,000 item)</a></td><td class='source' rowSpan='7'>substance-amount</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മോൾ</td><td class='target' rowSpan='7'>1 മോൾ</td><td class='target' rowSpan='7'>{0} മോളുകൾ</td><td class='target' rowSpan='7'>2 മോളുകൾ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0}°</td><td class='target' rowSpan='7'>1°</td><td class='target' rowSpan='7'>{0}°</td><td class='target' rowSpan='7'>2°</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ഡിഗ്രി സെൽഷ്യസ്</td><td class='target' rowSpan='7'>1 ഡിഗ്രി സെൽഷ്യസ്</td><td class='target' rowSpan='7'>{0} ഡിഗ്രി സെൽഷ്യസ്</td><td class='target' rowSpan='7'>2 ഡിഗ്രി സെൽഷ്യസ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='7'>temperature</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} കെൽവിൻ</td><td class='target' rowSpan='7'>1 കെൽവിൻ</td><td class='target' rowSpan='7'>{0} കെൽവിൻ</td><td class='target' rowSpan='7'>2 കെൽവിൻ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='typographic em' href='#typographic em'>typographic em</a></td><td class='source' rowSpan='7'>typewidth</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} em</td><td class='target' rowSpan='7'>1 em</td><td class='target' rowSpan='7'>{0} em</td><td class='target' rowSpan='7'>2 em</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='7'>voltage</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} വോൾട്ട്</td><td class='target' rowSpan='7'>1 വോൾട്ട്</td><td class='target' rowSpan='7'>{0} വോൾട്ട്</td><td class='target' rowSpan='7'>2 വോൾട്ട്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മെട്രിക് കപ്പ്</td><td class='target' rowSpan='7'>1 മെട്രിക് കപ്പ്</td><td class='target' rowSpan='7'>{0} മെട്രിക് കപ്പ്</td><td class='target' rowSpan='7'>2 മെട്രിക് കപ്പ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മെട്രിക് പൈന്റ്</td><td class='target' rowSpan='7'>1 മെട്രിക് പൈന്റ്</td><td class='target' rowSpan='7'>{0} മെട്രിക് പൈന്റ്</td><td class='target' rowSpan='7'>2 മെട്രിക് പൈന്റ്</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='7'>volume</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ലിറ്റർ</td><td class='target' rowSpan='7'>1 ലിറ്റർ</td><td class='target' rowSpan='7'>{0} ലിറ്റർ</td><td class='target' rowSpan='7'>2 ലിറ്റർ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മാസം</td><td class='target' rowSpan='7'>1 മാസം</td><td class='target' rowSpan='7'>{0} മാസം</td><td class='target' rowSpan='7'>2 മാസം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} വർഷം</td><td class='target' rowSpan='7'>1 വർഷം</td><td class='target' rowSpan='7'>{0} വർഷം</td><td class='target' rowSpan='7'>2 വർഷം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>ദശാബ്‌ദം</td><td class='target' rowSpan='7'>ദശാബ്‌ദം</td><td class='target' rowSpan='7'>{0} ദശാബ്‌ദം</td><td class='target' rowSpan='7'>2 ദശാബ്‌ദം</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
-	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='7'>year-duration</td><td class='source' rowSpan='7'>n/a</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} നൂറ്റാണ്ട്</td><td class='target' rowSpan='7'>1 നൂറ്റാണ്ട്</td><td class='target' rowSpan='7'>{0} നൂറ്റാണ്ടുകൾ</td><td class='target' rowSpan='7'>2 നൂറ്റാണ്ടുകൾ</td></tr>
-	<tr><td class='source'>accusative</td></tr>
-	<tr><td class='source'>genitive</td></tr>
-	<tr><td class='source'>dative</td></tr>
-	<tr><td class='source'>locative</td></tr>
-	<tr><td class='source'>instrumental</td></tr>
-	<tr><td class='source'>sociative</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>acceleration</td><td class='source' rowSpan='7'><a name='g-force<br>( = 9.80665 meters per second squared)' href='#g-force<br>( = 9.80665 meters per second squared)'>g-force<br>( = 9.80665 meters per second squared)</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ജി-ഫോഴ്‌സ്</td><td class='target'>1 ജി-ഫോഴ്‌സ് ദിവസം</td><td class='target'>{0} ജി-ഫോഴ്‌സ്</td><td class='target'>2 ജി-ഫോഴ്‌സ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ജി-ഫോഴ്‌സിനെ</td><td class='target'>1 ജി-ഫോഴ്‌സിനെ ദിവസത്തിനെ</td><td class='target'>{0} ജി-ഫോഴ്‌സിനെ</td><td class='target'>2 ജി-ഫോഴ്‌സിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ജി-ഫോഴ്‌സിന്റെ</td><td class='target'>1 ജി-ഫോഴ്‌സിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ജി-ഫോഴ്‌സിന്റെ</td><td class='target'>2 ജി-ഫോഴ്‌സിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ജി-ഫോഴ്‌സിനെ</td><td class='target'>1 ജി-ഫോഴ്‌സിനെ ദിവസത്തിന്</td><td class='target'>{0} ജി-ഫോഴ്‌സിന്</td><td class='target'>2 ജി-ഫോഴ്‌സിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ജി-ഫോഴ്‌സിൽ</td><td class='target'>1 ജി-ഫോഴ്‌സിൽ ദിവസത്തിൽ</td><td class='target'>{0} ജി-ഫോഴ്‌സിൽ</td><td class='target'>2 ജി-ഫോഴ്‌സിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ജി-ഫോഴ്‌സിനാൽ</td><td class='target'>1 ജി-ഫോഴ്‌സിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ജി-ഫോഴ്‌സിനാൽ</td><td class='target'>2 ജി-ഫോഴ്‌സിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ജി-ഫോഴ്‌സ്</td><td class='target'>1 ജി-ഫോഴ്‌സ് ദിവസത്തിനോട്</td><td class='target'>{0} ജി-ഫോഴ്‌സിനോട്</td><td class='target'>2 ജി-ഫോഴ്‌സിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='35'>angle</td><td class='source' rowSpan='7'><a name='arc-second<br>( = 0.0000007˙716049382 revolutions)' href='#arc-second<br>( = 0.0000007˙716049382 revolutions)'>arc-second<br>( = 0.0000007˙716049382 revolutions)</a></td><td class='source' rowSpan='35'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ആർക്ക്സെക്കൻഡ്</td><td class='target'>1 ആർക്ക്സെക്കൻഡ് ദിവസം</td><td class='target'>{0} ആർക്ക്സെക്കൻഡ്</td><td class='target'>2 ആർക്ക്സെക്കൻഡ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനെ</td><td class='target'>1 ആർക്ക്സെക്കൻഡിനെ ദിവസത്തിനെ</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനെ</td><td class='target'>2 ആർക്ക്സെക്കൻഡിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിന്റെ</td><td class='target'>1 ആർക്ക്സെക്കൻഡിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിന്റെ</td><td class='target'>2 ആർക്ക്സെക്കൻഡിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിന്</td><td class='target'>1 ആർക്ക്സെക്കൻഡിന് ദിവസത്തിന്</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിന്</td><td class='target'>2 ആർക്ക്സെക്കൻഡിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിൽ</td><td class='target'>1 ആർക്ക്സെക്കൻഡിൽ ദിവസത്തിൽ</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിൽ</td><td class='target'>2 ആർക്ക്സെക്കൻഡിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനാൽ</td><td class='target'>1 ആർക്ക്സെക്കൻഡിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനാൽ</td><td class='target'>2 ആർക്ക്സെക്കൻഡിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനോട്</td><td class='target'>1 ആർക്ക്സെക്കൻഡിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ആർക്ക്സെക്കൻഡിനോട്</td><td class='target'>2 ആർക്ക്സെക്കൻഡിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='arc-minute<br>( = 0.00004˙629 revolutions)' href='#arc-minute<br>( = 0.00004˙629 revolutions)'>arc-minute<br>( = 0.00004˙629 revolutions)</a></td><td class='source'>nominative</td><td class='target'>{0} ആർക്ക്മിനിറ്റ്</td><td class='target'>1 ആർക്ക്മിനിറ്റ് ദിവസം</td><td class='target'>{0} ആർക്ക്മിനിറ്റ്</td><td class='target'>2 ആർക്ക്മിനിറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ആർക്ക്മിനിറ്റിനെ</td><td class='target'>1 ആർക്ക്മിനിറ്റിനെ ദിവസത്തിനെ</td><td class='target'>{0} ആർക്ക്മിനിറ്റിനെ</td><td class='target'>2 ആർക്ക്മിനിറ്റിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ആക്ക്മിനിറ്റിന്റെ</td><td class='target'>1 ആക്ക്മിനിറ്റിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ആർക്ക്മിനിറ്റിന്റെ</td><td class='target'>2 ആർക്ക്മിനിറ്റിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ആർക്ക്മിനിറ്റിന്</td><td class='target'>1 ആർക്ക്മിനിറ്റിന് ദിവസത്തിന്</td><td class='target'>{0} ആർക്ക്മിനിറ്റിന്</td><td class='target'>2 ആർക്ക്മിനിറ്റിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ആർക്ക്മിനിറ്റിൽ</td><td class='target'>1 ആർക്ക്മിനിറ്റിൽ ദിവസത്തിൽ</td><td class='target'>{0} ആർക്ക്മിനിറ്റിൽ</td><td class='target'>2 ആർക്ക്മിനിറ്റിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ആർക്ക്മിറ്റിനാൽ</td><td class='target'>1 ആർക്ക്മിറ്റിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ആർക്ക്മിനിറ്റിനാൽ</td><td class='target'>2 ആർക്ക്മിനിറ്റിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ആർക്ക്മിനിറ്റിനോട്</td><td class='target'>1 ആർക്ക്മിനിറ്റിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ആർക്ക്മിനിറ്റിനോട്</td><td class='target'>2 ആർക്ക്മിനിറ്റിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='degree<br>( = 0.002˙7 revolutions)' href='#degree<br>( = 0.002˙7 revolutions)'>degree<br>( = 0.002˙7 revolutions)</a></td><td class='source'>nominative</td><td class='target'>{0} ഡിഗ്രി</td><td class='target'>1 ഡിഗ്രി ദിവസം</td><td class='target'>{0} ഡിഗ്രി</td><td class='target'>2 ഡിഗ്രി ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഡിഗ്രിയെ</td><td class='target'>1 ഡിഗ്രിയെ ദിവസത്തിനെ</td><td class='target'>{0} ഡിഗ്രിയെ</td><td class='target'>2 ഡിഗ്രിയെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഡിഗ്രിയുടെ</td><td class='target'>1 ഡിഗ്രിയുടെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഡിഗ്രിയുടെ</td><td class='target'>2 ഡിഗ്രിയുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഡിഗ്രിക്ക്</td><td class='target'>1 ഡിഗ്രിക്ക് ദിവസത്തിന്</td><td class='target'>{0} ഡിഗ്രിക്ക്</td><td class='target'>2 ഡിഗ്രിക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഡിഗ്രിയിൽ</td><td class='target'>1 ഡിഗ്രിയിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഡിഗ്രിയിൽ</td><td class='target'>2 ഡിഗ്രിയിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഡിഗ്രിയാൽ</td><td class='target'>1 ഡിഗ്രിയാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഡിഗ്രിയാൽ</td><td class='target'>2 ഡിഗ്രിയാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഡിഗ്രിയോട്</td><td class='target'>1 ഡിഗ്രിയോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഡിഗ്രിയോട്</td><td class='target'>2 ഡിഗ്രിയോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='radian<br>( = ~0.1591549430918953 revolutions)' href='#radian<br>( = ~0.1591549430918953 revolutions)'>radian<br>( = ~0.1591549430918953 revolutions)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} റേഡിയൻ</td><td class='target'>1 റേഡിയൻ ദിവസം</td><td class='target'>{0} റേഡിയൻ</td><td class='target'>2 റേഡിയൻ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 റേഡിയൻ ദിവസത്തിനെ</td><td class='target'>{0} റേഡിയനെ</td><td class='target'>2 റേഡിയനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} റേഡിയന്റെ</td><td class='target'>1 റേഡിയന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} റേഡിയന്റെ</td><td class='target'>2 റേഡിയന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} റേഡിയന്</td><td class='target'>1 റേഡിയന് ദിവസത്തിന്</td><td class='target'>{0} റേഡിയന്</td><td class='target'>2 റേഡിയന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} റേഡിയനിൽ</td><td class='target'>1 റേഡിയനിൽ ദിവസത്തിൽ</td><td class='target'>{0} റേഡിയനിൽ</td><td class='target'>2 റേഡിയനിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} റേഡിയനാൽ</td><td class='target'>1 റേഡിയനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} റേഡിയനാൽ</td><td class='target'>2 റേഡിയനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} റേഡിയനോട്</td><td class='target'>1 റേഡിയനോട് ദിവസത്തിനോട്</td><td class='target'>{0} റേഡിയനോട്</td><td class='target'>2 റേഡിയനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target'>{0} റെവല്യൂഷൻ</td><td class='target'>1 റെവല്യൂഷൻ ദിവസം</td><td class='target'>{0} റെവല്യൂഷൻ</td><td class='target'>2 റെവല്യൂഷൻ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} റെവല്യൂഷനെ</td><td class='target'>1 റെവല്യൂഷനെ ദിവസത്തിനെ</td><td class='target'>{0} റെവല്യൂഷനെ</td><td class='target'>2 റെവല്യൂഷനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} റെവല്യൂഷന്റെ</td><td class='target'>1 റെവല്യൂഷന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} റെവല്യൂഷന്റെ</td><td class='target'>2 റെവല്യൂഷന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} റെവല്യൂഷന്</td><td class='target'>1 റെവല്യൂഷന് ദിവസത്തിന്</td><td class='target'>{0} റെവല്യൂഷന്</td><td class='target'>2 റെവല്യൂഷന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} റെവല്യൂഷനിൽ</td><td class='target'>1 റെവല്യൂഷനിൽ ദിവസത്തിൽ</td><td class='target'>{0} റെവല്യൂഷനിൽ</td><td class='target'>2 റെവല്യൂഷനിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} റെവല്യൂഷനാൽ</td><td class='target'>1 റെവല്യൂഷനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} റെവല്യൂഷനാൽ</td><td class='target'>2 റെവല്യൂഷനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} റെവല്യൂഷനോട്</td><td class='target'>1 റെവല്യൂഷനോട് ദിവസത്തിനോട്</td><td class='target'>{0} റെവല്യൂഷനോട്</td><td class='target'>2 റെവല്യൂഷനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>area</td><td class='source' rowSpan='7'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ഹെക്‌ടർ</td><td class='target'>1 ഹെക്‌ടർ ദിവസം</td><td class='target'>{0} ഹെക്‌ടർ</td><td class='target'>2 ഹെക്‌ടർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഹെക്‌ടറിനെ</td><td class='target'>1 ഹെക്‌ടറിനെ ദിവസത്തിനെ</td><td class='target'>{0} ഹെക്‌ടറിനെ</td><td class='target'>2 ഹെക്‌ടറിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഹെക്‌ടറിന്റെ</td><td class='target'>1 ഹെക്‌ടറിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഹെക്‌ടറുകളുടെ</td><td class='target'>2 ഹെക്‌ടറുകളുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഹെക്‌ടറിന്</td><td class='target'>1 ഹെക്‌ടറിന് ദിവസത്തിന്</td><td class='target'>{0} ഹെക്‌ടറിന്</td><td class='target'>2 ഹെക്‌ടറിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഹെക്‌ടറിൽ</td><td class='target'>1 ഹെക്‌ടറിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഹെക്‌ടറുകളിൽ</td><td class='target'>2 ഹെക്‌ടറുകളിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഹെക്‌ടറിനാൽ</td><td class='target'>1 ഹെക്‌ടറിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഹെക്‌ടറുകളാൽ</td><td class='target'>2 ഹെക്‌ടറുകളാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഹെക്‌ടറിനോട്</td><td class='target'>1 ഹെക്‌ടറിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഹെക്‌ടറുകളോട്</td><td class='target'>2 ഹെക്‌ടറുകളോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>digital</td><td class='source' rowSpan='7'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='14'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ബിറ്റ്</td><td class='target'>1 ബിറ്റ് ദിവസം</td><td class='target'>{0} ബിറ്റ്</td><td class='target'>2 ബിറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ബിറ്റിനെ</td><td class='target'>1 ബിറ്റിനെ ദിവസത്തിനെ</td><td class='target'>{0} ബിറ്റിനെ</td><td class='target'>2 ബിറ്റിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ബിറ്റിന്റെ</td><td class='target'>1 ബിറ്റിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ബിറ്റിന്റെ</td><td class='target'>2 ബിറ്റിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ബിറ്റിന്</td><td class='target'>1 ബിറ്റിന് ദിവസത്തിന്</td><td class='target'>{0} ബിറ്റിന്</td><td class='target'>2 ബിറ്റിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ബിറ്റിൽ</td><td class='target'>1 ബിറ്റിൽ ദിവസത്തിൽ</td><td class='target'>{0} ബിറ്റിൽ</td><td class='target'>2 ബിറ്റിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ബിറ്റിനാൽ</td><td class='target'>1 ബിറ്റിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ബിറ്റിനാൽ</td><td class='target'>2 ബിറ്റിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ബിറ്റിനോട്</td><td class='target'>1 ബിറ്റിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ബിറ്റിനോട്</td><td class='target'>2 ബിറ്റിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='byte<br>( = 8 bits)' href='#byte<br>( = 8 bits)'>byte<br>( = 8 bits)</a></td><td class='source'>nominative</td><td class='target'>{0} ബൈറ്റ്</td><td class='target'>1 ബൈറ്റ് ദിവസം</td><td class='target'>{0} ബൈറ്റ്</td><td class='target'>2 ബൈറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ബൈറ്റിനെ</td><td class='target'>1 ബൈറ്റിനെ ദിവസത്തിനെ</td><td class='target'>{0} ബൈറ്റിനെ</td><td class='target'>2 ബൈറ്റിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ബൈറ്റിന്റെ</td><td class='target'>1 ബൈറ്റിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ബൈറ്റിന്റെ</td><td class='target'>2 ബൈറ്റിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ബൈറ്റിന്</td><td class='target'>1 ബൈറ്റിന് ദിവസത്തിന്</td><td class='target'>{0} ബൈറ്റിന്</td><td class='target'>2 ബൈറ്റിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ബൈറ്റിൽ</td><td class='target'>1 ബൈറ്റിൽ ദിവസത്തിൽ</td><td class='target'>{0} ബൈറ്റിൽ</td><td class='target'>2 ബൈറ്റിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ബൈറ്റിനാൽ</td><td class='target'>1 ബൈറ്റിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ബൈറ്റിനാൽ</td><td class='target'>2 ബൈറ്റിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ബൈറ്റിനോട്</td><td class='target'>1 ബൈറ്റിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ബൈറ്റിനോട്</td><td class='target'>2 ബൈറ്റിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='42'>duration</td><td class='source' rowSpan='7'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='42'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} സെക്കൻഡ്</td><td class='target'>1 സെക്കൻഡ് ദിവസം</td><td class='target' rowSpan='7'>{0} സെക്കൻഡ്</td><td class='target'>2 സെക്കൻഡ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിനെ</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിന്റെ</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിന്</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിൽ</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിനാൽ</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 സെക്കൻഡ് ദിവസത്തിനോട്</td><td class='target'>2 സെക്കൻഡ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='minute<br>( = 60 seconds)' href='#minute<br>( = 60 seconds)'>minute<br>( = 60 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മിനിറ്റ്</td><td class='target'>1 മിനിറ്റ് ദിവസം</td><td class='target' rowSpan='7'>{0} മിനിറ്റ്</td><td class='target'>2 മിനിറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിനെ</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിന്റെ</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിന്</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിൽ</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിനാൽ</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മിനിറ്റ് ദിവസത്തിനോട്</td><td class='target'>2 മിനിറ്റ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='hour<br>( = 3,600 seconds)' href='#hour<br>( = 3,600 seconds)'>hour<br>( = 3,600 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മണിക്കൂർ</td><td class='target'>1 മണിക്കൂർ ദിവസം</td><td class='target' rowSpan='7'>{0} മണിക്കൂർ</td><td class='target'>2 മണിക്കൂർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിനെ</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിന്റെ</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിന്</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിൽ</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിനാൽ</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മണിക്കൂർ ദിവസത്തിനോട്</td><td class='target'>2 മണിക്കൂർ ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='day<br>( = 86,400 seconds)' href='#day<br>( = 86,400 seconds)'>day<br>( = 86,400 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ദിവസം</td><td class='target'>1 ദിവസം ദിവസം</td><td class='target' rowSpan='7'>{0} ദിവസം</td><td class='target'>2 ദിവസം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ദിവസം ദിവസത്തിനെ</td><td class='target'>2 ദിവസം ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 ദിവസം ദിവസത്തിന്റെ</td><td class='target'>2 ദിവസം ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ദിവസം ദിവസത്തിന്</td><td class='target'>2 ദിവസം ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ദിവസം ദിവസത്തിൽ</td><td class='target'>2 ദിവസം ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ദിവസം ദിവസത്തിനാൽ</td><td class='target'>2 ദിവസം ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 ദിവസം ദിവസത്തിനോട്</td><td class='target'>2 ദിവസം ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='day-person<br>( = 86,400 seconds)' href='#day-person<br>( = 86,400 seconds)'>day-person<br>( = 86,400 seconds)</a></td><td class='source'>nominative</td><td class='target'>{0} ദിവസം‌</td><td class='target'>1 ദിവസം‌ ദിവസം</td><td class='target'>{0} മണിക്കൂർ കാലയളവ്</td><td class='target'>2 മണിക്കൂർ കാലയളവ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} മണിക്കൂർ കാലയളവിനെ</td><td class='target'>1 മണിക്കൂർ കാലയളവിനെ ദിവസത്തിനെ</td><td class='target'>{0} മണിക്കൂർ കാലയളവിലെ</td><td class='target'>2 മണിക്കൂർ കാലയളവിലെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} മണിക്കൂറിന്റെ</td><td class='target'>1 മണിക്കൂറിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} മണിക്കൂറിന്റെ</td><td class='target'>2 മണിക്കൂറിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} മണിക്കൂറിന്</td><td class='target'>1 മണിക്കൂറിന് ദിവസത്തിന്</td><td class='target'>{0} മണിക്കൂർ കാലയളവിന്</td><td class='target'>2 മണിക്കൂർ കാലയളവിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} മണിക്കൂറിൽ</td><td class='target'>1 മണിക്കൂറിൽ ദിവസത്തിൽ</td><td class='target'>{0} മണിക്കൂറിൽ</td><td class='target'>2 മണിക്കൂറിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} മണിക്കൂറിനാൽ</td><td class='target'>1 മണിക്കൂറിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} മണിക്കൂർ കാലയളവിനാൽ</td><td class='target'>2 മണിക്കൂർ കാലയളവിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} മണിക്കൂർ കാലയളവിനോട്</td><td class='target'>1 മണിക്കൂർ കാലയളവിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} കാലയളവിനോട്</td><td class='target'>2 കാലയളവിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='week<br>( = 604,800 seconds)' href='#week<br>( = 604,800 seconds)'>week<br>( = 604,800 seconds)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ആഴ്ച</td><td class='target'>1 ആഴ്ച ദിവസം</td><td class='target' rowSpan='7'>{0} ആഴ്ച</td><td class='target'>2 ആഴ്ച ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ആഴ്ച ദിവസത്തിനെ</td><td class='target'>2 ആഴ്ച ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 ആഴ്ച ദിവസത്തിന്റെ</td><td class='target'>2 ആഴ്ച ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ആഴ്ച ദിവസത്തിന്</td><td class='target'>2 ആഴ്ച ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ആഴ്ച ദിവസത്തിൽ</td><td class='target'>2 ആഴ്ച ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ആഴ്ച ദിവസത്തിനാൽ</td><td class='target'>2 ആഴ്ച ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 ആഴ്ച ദിവസത്തിനോട്</td><td class='target'>2 ആഴ്ച ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>electric-current</td><td class='source' rowSpan='7'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ആമ്പിയർ</td><td class='target'>1 ആമ്പിയർ ദിവസം</td><td class='target'>{0} ആമ്പിയർ</td><td class='target'>2 ആമ്പിയർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ആമ്പിയറിനെ</td><td class='target'>1 ആമ്പിയറിനെ ദിവസത്തിനെ</td><td class='target'>{0} ആമ്പിയറിനെ</td><td class='target'>2 ആമ്പിയറിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ആമ്പിയറിന്റെ</td><td class='target'>1 ആമ്പിയറിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ആമ്പിയറിന്റെ</td><td class='target'>2 ആമ്പിയറിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ആമ്പിയറിന്</td><td class='target'>1 ആമ്പിയറിന് ദിവസത്തിന്</td><td class='target'>{0} ആമ്പിയറിന്</td><td class='target'>2 ആമ്പിയറിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ആമ്പിയറിൽ</td><td class='target'>1 ആമ്പിയറിൽ ദിവസത്തിൽ</td><td class='target'>{0} ആമ്പിയറിൽ</td><td class='target'>2 ആമ്പിയറിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ആമ്പിയറിയാനിൽ</td><td class='target'>1 ആമ്പിയറിയാനിൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ആമ്പിയറിനാൽ</td><td class='target'>2 ആമ്പിയറിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ആമ്പിയറിനോട്</td><td class='target'>1 ആമ്പിയറിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ആമ്പിയറിനോട്</td><td class='target'>2 ആമ്പിയറിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>electric-resistance</td><td class='source' rowSpan='7'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ഓം</td><td class='target'>1 ഓം ദിവസം</td><td class='target'>{0} ഓം</td><td class='target'>2 ഓം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഓമിനെ</td><td class='target'>1 ഓമിനെ ദിവസത്തിനെ</td><td class='target'>{0} ഓമിനെ</td><td class='target'>2 ഓമിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഓമിന്റെ</td><td class='target'>1 ഓമിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഓമിന്റെ</td><td class='target'>2 ഓമിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഓമിന്</td><td class='target'>1 ഓമിന് ദിവസത്തിന്</td><td class='target'>{0} ഓമിന്</td><td class='target'>2 ഓമിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഓമിൽ</td><td class='target'>1 ഓമിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഓമിൽ</td><td class='target'>2 ഓമിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഓമിനാൽ</td><td class='target'>1 ഓമിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഓമിനാൽ</td><td class='target'>2 ഓമിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഓമിനോട്</td><td class='target'>1 ഓമിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഓമിനോട്</td><td class='target'>2 ഓമിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>energy</td><td class='source' rowSpan='7'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='14'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ജൂൾ</td><td class='target'>1 ജൂൾ ദിവസം</td><td class='target'>{0} ജൂൾ</td><td class='target'>2 ജൂൾ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ജൂളിനെ</td><td class='target'>1 ജൂളിനെ ദിവസത്തിനെ</td><td class='target'>{0} ജൂളിനെ</td><td class='target'>2 ജൂളിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ജൂളിന്റെ</td><td class='target'>1 ജൂളിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ജൂളിന്റെ</td><td class='target'>2 ജൂളിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target' rowSpan='2'>{0} ജൂളിൽ</td><td class='target'>1 ജൂളിൽ ദിവസത്തിന്</td><td class='target'>{0} ജൂളിന്</td><td class='target'>2 ജൂളിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ജൂളിൽ ദിവസത്തിൽ</td><td class='target'>{0} ജൂളിൽ</td><td class='target'>2 ജൂളിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ജൂളിനാൽ</td><td class='target'>1 ജൂളിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ജൂളിനാൽ</td><td class='target'>2 ജൂളിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ജൂളിനോട്</td><td class='target'>1 ജൂളിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ജൂളിനോട്</td><td class='target'>2 ജൂളിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='calorie<br>( = 4.184 joules)' href='#calorie<br>( = 4.184 joules)'>calorie<br>( = 4.184 joules)</a></td><td class='source'>nominative</td><td class='target'>{0} കലോറി</td><td class='target'>1 കലോറി ദിവസം</td><td class='target'>{0} കലോറി</td><td class='target'>2 കലോറി ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} കലോറിയെ</td><td class='target'>1 കലോറിയെ ദിവസത്തിനെ</td><td class='target'>{0} കലോറിയെ</td><td class='target'>2 കലോറിയെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} കലോറിയുടെ</td><td class='target'>1 കലോറിയുടെ ദിവസത്തിന്റെ</td><td class='target'>{0} കലോറിയുടെ</td><td class='target'>2 കലോറിയുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} കലോറിക്ക്</td><td class='target'>1 കലോറിക്ക് ദിവസത്തിന്</td><td class='target'>{0} കലോറിക്ക്</td><td class='target'>2 കലോറിക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} കലോറിയിൽ</td><td class='target'>1 കലോറിയിൽ ദിവസത്തിൽ</td><td class='target'>{0} കലോറിയിൽ</td><td class='target'>2 കലോറിയിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} കലോറിയാൽ</td><td class='target'>1 കലോറിയാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} കലോറിയാൽ</td><td class='target'>2 കലോറിയാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} കലോറിയോട്</td><td class='target'>1 കലോറിയോട് ദിവസത്തിനോട്</td><td class='target'>{0} കലോറിയോട്</td><td class='target'>2 കലോറിയോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>force</td><td class='source' rowSpan='7'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ന്യൂട്ടൻ</td><td class='target'>1 ന്യൂട്ടൻ ദിവസം</td><td class='target'>{0} ന്യൂട്ടൻസ്</td><td class='target'>2 ന്യൂട്ടൻസ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ന്യൂട്ടനെ</td><td class='target'>1 ന്യൂട്ടനെ ദിവസത്തിനെ</td><td class='target'>{0} ന്യൂട്ടനെ</td><td class='target'>2 ന്യൂട്ടനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ന്യൂട്ടന്റെ</td><td class='target'>1 ന്യൂട്ടന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ന്യൂട്ടന്റെ</td><td class='target'>2 ന്യൂട്ടന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ന്യൂട്ടന്</td><td class='target'>1 ന്യൂട്ടന് ദിവസത്തിന്</td><td class='target'>{0} ന്യൂട്ടന്</td><td class='target'>2 ന്യൂട്ടന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ന്യൂട്ടനിൽ</td><td class='target'>1 ന്യൂട്ടനിൽ ദിവസത്തിൽ</td><td class='target'>{0} ന്യൂട്ടനിൽ</td><td class='target'>2 ന്യൂട്ടനിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ന്യൂട്ടനാൽ</td><td class='target'>1 ന്യൂട്ടനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ന്യൂട്ടനാൽ</td><td class='target'>2 ന്യൂട്ടനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ന്യൂട്ടനോട്</td><td class='target'>1 ന്യൂട്ടനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ന്യൂട്ടനോട്</td><td class='target'>2 ന്യൂട്ടനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>frequency</td><td class='source' rowSpan='7'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ഹെർട്സ്</td><td class='target'>1 ഹെർട്സ് ദിവസം</td><td class='target'>{0} ഹെർട്സ്</td><td class='target'>2 ഹെർട്സ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഹെർട്സിനെ</td><td class='target'>1 ഹെർട്സിനെ ദിവസത്തിനെ</td><td class='target'>{0} ഹെർട്സിനെ</td><td class='target'>2 ഹെർട്സിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഹെർട്സിന്റെ</td><td class='target'>1 ഹെർട്സിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഹെർട്സിന്റെ</td><td class='target'>2 ഹെർട്സിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഹെർ‌ട്സിന്</td><td class='target'>1 ഹെർ‌ട്സിന് ദിവസത്തിന്</td><td class='target'>{0} ഹെർട്സിന്</td><td class='target'>2 ഹെർട്സിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഹെർട്സിൽ</td><td class='target'>1 ഹെർട്സിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഹെർട്സിൽ</td><td class='target'>2 ഹെർട്സിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഹെർട്സിനാൽ</td><td class='target'>1 ഹെർട്സിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഹെർട്‌സിനാൽ</td><td class='target'>2 ഹെർട്‌സിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഹെർട്സിനോട്</td><td class='target'>1 ഹെർട്സിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഹെർട്സിനോട്</td><td class='target'>2 ഹെർട്സിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>graphics</td><td class='source' rowSpan='7'><a name='pixel<br>( = 1 dot)' href='#pixel<br>( = 1 dot)'>pixel<br>( = 1 dot)</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} px</td><td class='target'>1 px ദിവസം</td><td class='target' rowSpan='7'>{0} px</td><td class='target'>2 px ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 px ദിവസത്തിനെ</td><td class='target'>2 px ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 px ദിവസത്തിന്റെ</td><td class='target'>2 px ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 px ദിവസത്തിന്</td><td class='target'>2 px ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 px ദിവസത്തിൽ</td><td class='target'>2 px ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 px ദിവസത്തിനാൽ</td><td class='target'>2 px ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 px ദിവസത്തിനോട്</td><td class='target'>2 px ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>illuminance</td><td class='source' rowSpan='7'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ലക്സ്</td><td class='target'>1 ലക്സ് ദിവസം</td><td class='target'>{0} ലക്സ്</td><td class='target'>2 ലക്സ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ലക്സിനെ</td><td class='target'>1 ലക്സിനെ ദിവസത്തിനെ</td><td class='target'>{0} ലക്‌സിനെ</td><td class='target'>2 ലക്‌സിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ലക്‌സിന്റെ</td><td class='target'>1 ലക്‌സിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ലക്‌സിന്റെ</td><td class='target'>2 ലക്‌സിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ലക്‌സിന്</td><td class='target'>1 ലക്‌സിന് ദിവസത്തിന്</td><td class='target'>{0} ലക്‌സിന്</td><td class='target'>2 ലക്‌സിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ലക്‌സിൽ</td><td class='target'>1 ലക്‌സിൽ ദിവസത്തിൽ</td><td class='target'>{0} ലക്‌സിൽ</td><td class='target'>2 ലക്‌സിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ലക്‌സിനാൽ</td><td class='target'>1 ലക്‌സിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ലക്‌സിനാൽ</td><td class='target'>2 ലക്‌സിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ലക്‌സിനോട്</td><td class='target'>1 ലക്‌സിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ലക്‌സിനോട്</td><td class='target'>2 ലക്‌സിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='14'>length</td><td class='source' rowSpan='7'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='14'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മീറ്റർ</td><td class='target'>1 മീറ്റർ ദിവസം</td><td class='target' rowSpan='7'>{0} മീറ്റർ</td><td class='target'>2 മീറ്റർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മീറ്റർ ദിവസത്തിനെ</td><td class='target'>2 മീറ്റർ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മീറ്റർ ദിവസത്തിന്റെ</td><td class='target'>2 മീറ്റർ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മീറ്റർ ദിവസത്തിന്</td><td class='target'>2 മീറ്റർ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മീറ്റർ ദിവസത്തിൽ</td><td class='target'>2 മീറ്റർ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മീറ്റർ ദിവസത്തിനാൽ</td><td class='target'>2 മീറ്റർ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മീറ്റർ ദിവസത്തിനോട്</td><td class='target'>2 മീറ്റർ ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='mile-scandinavian<br>( = 10 kilometers)' href='#mile-scandinavian<br>( = 10 kilometers)'>mile-scandinavian<br>( = 10 kilometers)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} സ്കാൻഡിനേവിയൻ മൈൽ</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസം</td><td class='target' rowSpan='7'>{0} സ്കാൻഡിനേവിയൻ മൈൽ</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനെ</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിന്റെ</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിന്</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിൽ</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനാൽ</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനോട്</td><td class='target'>2 സ്കാൻഡിനേവിയൻ മൈൽ ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>luminous-flux</td><td class='source' rowSpan='7'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} lm</td><td class='target'>1 lm ദിവസം</td><td class='target'>{0} lm</td><td class='target'>2 lm ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ലൂമെനെ</td><td class='target'>1 ലൂമെനെ ദിവസത്തിനെ</td><td class='target'>{0} ലൂമെനെ</td><td class='target'>2 ലൂമെനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ലൂമെന്റെ</td><td class='target'>1 ലൂമെന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ലൂമെന്റെ</td><td class='target'>2 ലൂമെന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ലൂമെന്</td><td class='target'>1 ലൂമെന് ദിവസത്തിന്</td><td class='target'>{0} ലൂമെന്</td><td class='target'>2 ലൂമെന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ലൂമെനിൽ</td><td class='target'>1 ലൂമെനിൽ ദിവസത്തിൽ</td><td class='target'>{0} ലൂമെനിൽ</td><td class='target'>2 ലൂമെനിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ലൂമെനാൽ</td><td class='target'>1 ലൂമെനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ലൂമെനാൽ</td><td class='target'>2 ലൂമെനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ലൂമെനോട്</td><td class='target'>1 ലൂമെനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ലൂമെനോട്</td><td class='target'>2 ലൂമെനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>luminous-intensity</td><td class='source' rowSpan='7'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} cd</td><td class='target'>1 cd ദിവസം</td><td class='target'>{0} cd</td><td class='target'>2 cd ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} കാൻഡെലയെ</td><td class='target'>1 കാൻഡെലയെ ദിവസത്തിനെ</td><td class='target'>{0} കാൻഡെലയെ</td><td class='target'>2 കാൻഡെലയെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} കാൻഡെലയുടെ</td><td class='target'>1 കാൻഡെലയുടെ ദിവസത്തിന്റെ</td><td class='target'>{0} കാൻഡെലയുടെ</td><td class='target'>2 കാൻഡെലയുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} കാൻഡെലയ്ക്ക്</td><td class='target'>1 കാൻഡെലയ്ക്ക് ദിവസത്തിന്</td><td class='target'>{0} കാൻഡെലയ്ക്ക്</td><td class='target'>2 കാൻഡെലയ്ക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} കാൻഡെലയിൽ</td><td class='target'>1 കാൻഡെലയിൽ ദിവസത്തിൽ</td><td class='target'>{0} കാൻഡെലയിൽ</td><td class='target'>2 കാൻഡെലയിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} കാൻഡെലയാൽ</td><td class='target'>1 കാൻഡെലയാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} കാൻഡെലയാൽ</td><td class='target'>2 കാൻഡെലയാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} കാൻഡെലയോട്</td><td class='target'>1 കാൻഡെലയോട് ദിവസത്തിനോട്</td><td class='target'>{0} കാൻഡെലയോട്</td><td class='target'>2 കാൻഡെലയോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='28'>mass</td><td class='source' rowSpan='7'><a name='carat<br>( = 200 milligrams)' href='#carat<br>( = 200 milligrams)'>carat<br>( = 200 milligrams)</a></td><td class='source' rowSpan='28'>neuter</td><td class='source'>nominative</td><td class='target'>{0} ക്യാരറ്റ്</td><td class='target'>1 ക്യാരറ്റ് ദിവസം</td><td class='target'>{0} ക്യാരറ്റ്</td><td class='target'>2 ക്യാരറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ക്യാരറ്റിനെ</td><td class='target'>1 ക്യാരറ്റിനെ ദിവസത്തിനെ</td><td class='target'>{0} ക്യാരറ്റിനെ</td><td class='target'>2 ക്യാരറ്റിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ക്യാരറ്റിന്റെ</td><td class='target'>1 ക്യാരറ്റിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ക്യാരറ്റിന്റെ</td><td class='target'>2 ക്യാരറ്റിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ക്യാരറ്റിന്</td><td class='target'>1 ക്യാരറ്റിന് ദിവസത്തിന്</td><td class='target'>{0} ക്യാരറ്റിന്</td><td class='target'>2 ക്യാരറ്റിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ക്യാരറ്റിൽ</td><td class='target'>1 ക്യാരറ്റിൽ ദിവസത്തിൽ</td><td class='target'>{0} ക്യാരറ്റിൽ</td><td class='target'>2 ക്യാരറ്റിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ക്യാരറ്റിനാൽ</td><td class='target'>1 ക്യാരറ്റിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ക്യാരറ്റിനാൽ</td><td class='target'>2 ക്യാരറ്റിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ക്യാരറ്റിനോട്</td><td class='target'>1 ക്യാരറ്റിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ക്യാരറ്റിനോട്</td><td class='target'>2 ക്യാരറ്റിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target'>{0} ഗ്രാം</td><td class='target'>1 ഗ്രാം ദിവസം</td><td class='target'>{0} ഗ്രാം</td><td class='target'>2 ഗ്രാം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഗ്രാമിനെ</td><td class='target'>1 ഗ്രാമിനെ ദിവസത്തിനെ</td><td class='target'>{0} ഗ്രാമിനെ</td><td class='target'>2 ഗ്രാമിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഗ്രാമിന്റെ</td><td class='target'>1 ഗ്രാമിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഗ്രാമിന്റെ</td><td class='target'>2 ഗ്രാമിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഗ്രാമിന്</td><td class='target'>1 ഗ്രാമിന് ദിവസത്തിന്</td><td class='target'>{0} ഗ്രാമിന്</td><td class='target'>2 ഗ്രാമിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഗ്രാമിൽ</td><td class='target'>1 ഗ്രാമിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഗ്രാമിൽ</td><td class='target'>2 ഗ്രാമിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഗ്രാമിനാൽ</td><td class='target'>1 ഗ്രാമിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഗ്രാമിനാൽ</td><td class='target'>2 ഗ്രാമിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഗ്രാമിനോട്</td><td class='target'>1 ഗ്രാമിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഗ്രാമിനോട്</td><td class='target'>2 ഗ്രാമിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target'>{0} കിലോഗ്രാം</td><td class='target'>1 കിലോഗ്രാം ദിവസം</td><td class='target'>{0} കിലോഗ്രാം</td><td class='target'>2 കിലോഗ്രാം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} കിലോഗ്രാമിനെ</td><td class='target'>1 കിലോഗ്രാമിനെ ദിവസത്തിനെ</td><td class='target'>{0} കിലോഗ്രാമിനാൽ</td><td class='target'>2 കിലോഗ്രാമിനാൽ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} കിലോഗ്രാമിന്റെ</td><td class='target'>1 കിലോഗ്രാമിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} കിലോഗ്രാമിന്റെ</td><td class='target'>2 കിലോഗ്രാമിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} കിലോഗ്രാമിന്</td><td class='target'>1 കിലോഗ്രാമിന് ദിവസത്തിന്</td><td class='target'>{0} കിലോഗ്രാമിന്</td><td class='target'>2 കിലോഗ്രാമിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} കിലോഗ്രാമിൽ</td><td class='target'>1 കിലോഗ്രാമിൽ ദിവസത്തിൽ</td><td class='target'>{0} കിലോഗ്രാമിൽ</td><td class='target'>2 കിലോഗ്രാമിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} കിലോഗ്രാമിനാൽ</td><td class='target'>1 കിലോഗ്രാമിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} കിലോഗ്രാമിനാൽ</td><td class='target'>2 കിലോഗ്രാമിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} കിലോഗ്രാമിനോട്</td><td class='target'>1 കിലോഗ്രാമിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} കിലോഗ്രാമിനോട്</td><td class='target'>2 കിലോഗ്രാമിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target'>{0} മെട്രിക് ടൺ</td><td class='target'>1 മെട്രിക് ടൺ ദിവസം</td><td class='target'>{0} മെട്രിക് ടൺ</td><td class='target'>2 മെട്രിക് ടൺ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} മെട്രിക് ടണ്ണിനെ</td><td class='target'>1 മെട്രിക് ടണ്ണിനെ ദിവസത്തിനെ</td><td class='target'>{0} മെട്രിക് ടണ്ണിനെ</td><td class='target'>2 മെട്രിക് ടണ്ണിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} മെട്രിക് ടണ്ണിന്റെ</td><td class='target'>1 മെട്രിക് ടണ്ണിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} മെട്രിക് ടണ്ണിന്റെ</td><td class='target'>2 മെട്രിക് ടണ്ണിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} മെട്രിക് ടണ്ണിന്</td><td class='target'>1 മെട്രിക് ടണ്ണിന് ദിവസത്തിന്</td><td class='target'>{0} മെട്രിക് ടണ്ണിന്</td><td class='target'>2 മെട്രിക് ടണ്ണിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} മെട്രിക് ടണ്ണിൽ</td><td class='target'>1 മെട്രിക് ടണ്ണിൽ ദിവസത്തിൽ</td><td class='target'>{0} മെട്രിക് ടണ്ണിൽ</td><td class='target'>2 മെട്രിക് ടണ്ണിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} മെട്രിക് ടണ്ണിനാൽ</td><td class='target'>1 മെട്രിക് ടണ്ണിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} മെട്രിക് ടണ്ണിനാൽ</td><td class='target'>2 മെട്രിക് ടണ്ണിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} മെട്രിക് ടണ്ണിനോട്</td><td class='target'>1 മെട്രിക് ടണ്ണിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} മെട്രിക് ടണ്ണിനോട്</td><td class='target'>2 മെട്രിക് ടണ്ണിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='35'>portion</td><td class='source' rowSpan='7'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='35'>neuter</td><td class='source'>nominative</td><td class='target'>പാർട്ട് / മില്ല്യൺ</td><td class='target'>പാർട്ട് / മില്ല്യൺ ദിവസം</td><td class='target'>{0} പാർട്‌സ് / മില്ല്യൺ</td><td class='target'>2 പാർട്‌സ് / മില്ല്യൺ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനെ</td><td class='target'>1 പാർട്ട് / മില്ല്യണിനെ ദിവസത്തിനെ</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനെ</td><td class='target'>2 പാർട്ട് / മില്ല്യണിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിന്റെ</td><td class='target'>1 പാർട്ട് / മില്ല്യണിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിന്റെ</td><td class='target'>2 പാർട്ട് / മില്ല്യണിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിന്</td><td class='target'>1 പാർട്ട് / മില്ല്യണിന് ദിവസത്തിന്</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിന്</td><td class='target'>2 പാർട്ട് / മില്ല്യണിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിൽ</td><td class='target'>1 പാർട്ട് / മില്ല്യണിൽ ദിവസത്തിൽ</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിൽ</td><td class='target'>2 പാർട്ട് / മില്ല്യണിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനാൽ</td><td class='target'>1 പാർട്ട് / മില്ല്യണിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനാൽ</td><td class='target'>2 പാർട്ട് / മില്ല്യണിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനോട്</td><td class='target'>1 പാർട്ട് / മില്ല്യണിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} പാർട്ട് / മില്ല്യണിനോട്</td><td class='target'>2 പാർട്ട് / മില്ല്യണിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target'>{0} പിരമിഡ്</td><td class='target'>1 പിരമിഡ് ദിവസം</td><td class='target'>{0} പിരമിഡ്</td><td class='target'>2 പിരമിഡ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} പിരമിഡിനെ</td><td class='target'>1 പിരമിഡിനെ ദിവസത്തിനെ</td><td class='target'>{0} പിരമിഡിനെ</td><td class='target'>2 പിരമിഡിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} പിരമിഡിന്റെ</td><td class='target'>1 പിരമിഡിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} പിരമിഡിന്റെ</td><td class='target'>2 പിരമിഡിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} പിരമിഡിന്</td><td class='target'>1 പിരമിഡിന് ദിവസത്തിന്</td><td class='target'>{0} പിരമിഡിന്</td><td class='target'>2 പിരമിഡിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} പിരമിഡിൽ</td><td class='target'>1 പിരമിഡിൽ ദിവസത്തിൽ</td><td class='target'>{0} പിരമിഡിൽ</td><td class='target'>2 പിരമിഡിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} പിരമിഡിനാൽ</td><td class='target'>1 പിരമിഡിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} പിരമിഡിനാൽ</td><td class='target'>2 പിരമിഡിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} പിരമിഡിനോട്</td><td class='target'>1 പിരമിഡിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} പിരമിഡിനോട്</td><td class='target'>2 പിരമിഡിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='permille' href='#permille'>permille</a></td><td class='source'>nominative</td><td class='target'>{0} പ്രതിമില്ലി</td><td class='target'>1 പ്രതിമില്ലി ദിവസം</td><td class='target'>{0} പ്രതിമില്ലി</td><td class='target'>2 പ്രതിമില്ലി ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} പ്രതിമില്ലിയെ</td><td class='target'>1 പ്രതിമില്ലിയെ ദിവസത്തിനെ</td><td class='target'>{0} പ്രതിമില്ലിയെ</td><td class='target'>2 പ്രതിമില്ലിയെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} പ്രതിമില്ലിയുടെ</td><td class='target'>1 പ്രതിമില്ലിയുടെ ദിവസത്തിന്റെ</td><td class='target'>{0} പ്രതിമില്ലിയുടെ</td><td class='target'>2 പ്രതിമില്ലിയുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} പ്രതിമില്ലിക്ക്</td><td class='target'>1 പ്രതിമില്ലിക്ക് ദിവസത്തിന്</td><td class='target'>{0} പ്രതിമില്ലിക്ക്</td><td class='target'>2 പ്രതിമില്ലിക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} പ്രതിമില്ലിയിൽ</td><td class='target'>1 പ്രതിമില്ലിയിൽ ദിവസത്തിൽ</td><td class='target'>{0} പ്രതിമില്ലിയിൽ</td><td class='target'>2 പ്രതിമില്ലിയിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} പ്രതിമില്ലിയാൽ</td><td class='target'>1 പ്രതിമില്ലിയാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} പ്രതിമില്ലിയാൽ</td><td class='target'>2 പ്രതിമില്ലിയാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} പ്രതിമില്ലിയോട്</td><td class='target'>1 പ്രതിമില്ലിയോട് ദിവസത്തിനോട്</td><td class='target'>{0} പ്രതിമില്ലിയോട്</td><td class='target'>2 പ്രതിമില്ലിയോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='percent' href='#percent'>percent</a></td><td class='source'>nominative</td><td class='target'>{0}%</td><td class='target'>1% ദിവസം</td><td class='target'>{0}%</td><td class='target'>2% ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ശതമാനത്തിനെ</td><td class='target'>1 ശതമാനത്തിനെ ദിവസത്തിനെ</td><td class='target'>{0} ശതമാനത്തിനെ</td><td class='target'>2 ശതമാനത്തിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ശതമാനത്തിന്റെ</td><td class='target'>1 ശതമാനത്തിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ശതമാനത്തിന്റെ</td><td class='target'>2 ശതമാനത്തിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ശതമാനത്തിന്</td><td class='target'>1 ശതമാനത്തിന് ദിവസത്തിന്</td><td class='target'>{0} ശതമാനത്തിന്</td><td class='target'>2 ശതമാനത്തിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ശതമാനത്തിൽ</td><td class='target'>1 ശതമാനത്തിൽ ദിവസത്തിൽ</td><td class='target'>{0} ശതമാനത്തിൽ</td><td class='target'>2 ശതമാനത്തിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ശതമാനത്തിനാൽ</td><td class='target'>1 ശതമാനത്തിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ശതമാനത്തിനാൽ</td><td class='target'>2 ശതമാനത്തിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ശതമാനത്തിനോട്</td><td class='target'>1 ശതമാനത്തിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ശതമാനത്തിനോട്</td><td class='target'>2 ശതമാനത്തിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='karat<br>( = 4.1˙6 percent)' href='#karat<br>( = 4.1˙6 percent)'>karat<br>( = 4.1˙6 percent)</a></td><td class='source'>nominative</td><td class='target'>{0} ക്യാരറ്റ്</td><td class='target'>1 ക്യാരറ്റ് ദിവസം</td><td class='target'>{0} ക്യാരറ്റ്</td><td class='target'>2 ക്യാരറ്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ക്യാരറ്റിനെ</td><td class='target'>1 ക്യാരറ്റിനെ ദിവസത്തിനെ</td><td class='target'>{0} ക്യാരറ്റിനെ</td><td class='target'>2 ക്യാരറ്റിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ക്യാരറ്റിന്റെ</td><td class='target'>1 ക്യാരറ്റിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ക്യാരറ്റിന്റെ</td><td class='target'>2 ക്യാരറ്റിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ക്യാരറ്റിന്</td><td class='target'>1 ക്യാരറ്റിന് ദിവസത്തിന്</td><td class='target'>{0} ക്യാരറ്റിന്</td><td class='target'>2 ക്യാരറ്റിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ക്യാരറ്റിൽ</td><td class='target'>1 ക്യാരറ്റിൽ ദിവസത്തിൽ</td><td class='target'>{0} ക്യാരറ്റിൽ</td><td class='target'>2 ക്യാരറ്റിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ക്യാരറ്റിനാൽ</td><td class='target'>1 ക്യാരറ്റിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ക്യാരറ്റിനാൽ</td><td class='target'>2 ക്യാരറ്റിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ക്യാരറ്റിനോട്</td><td class='target'>1 ക്യാരറ്റിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ക്യാരറ്റിനോട്</td><td class='target'>2 ക്യാരറ്റിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>power</td><td class='source' rowSpan='7'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} വാട്ട്</td><td class='target'>1 വാട്ട് ദിവസം</td><td class='target'>{0} വാട്ട്</td><td class='target'>2 വാട്ട് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} വാട്ടിനെ</td><td class='target'>1 വാട്ടിനെ ദിവസത്തിനെ</td><td class='target'>{0} വാട്ടിനെ</td><td class='target'>2 വാട്ടിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} വാട്ടിന്റെ</td><td class='target'>1 വാട്ടിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} വാട്ടിന്റെ</td><td class='target'>2 വാട്ടിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} വാട്ടിന്</td><td class='target'>1 വാട്ടിന് ദിവസത്തിന്</td><td class='target'>{0} വാട്ടിന്</td><td class='target'>2 വാട്ടിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} വാട്ടിൽ</td><td class='target'>1 വാട്ടിൽ ദിവസത്തിൽ</td><td class='target'>{0} വാട്ടിൽ</td><td class='target'>2 വാട്ടിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} വാട്ടിനാൽ</td><td class='target'>1 വാട്ടിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} വാട്ടിനാൽ</td><td class='target'>2 വാട്ടിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} വാട്ടിനോട്</td><td class='target'>1 വാട്ടിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} വാട്ടിനോട്</td><td class='target'>2 വാട്ടിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>pressure</td><td class='source' rowSpan='7'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='21'>neuter</td><td class='source'>nominative</td><td class='target'>{0} പാസ്കൽ</td><td class='target'>1 പാസ്കൽ ദിവസം</td><td class='target'>{0} പാസ്കൽസ്</td><td class='target'>2 പാസ്കൽസ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} പാസ്‌കലിനെ</td><td class='target'>1 പാസ്‌കലിനെ ദിവസത്തിനെ</td><td class='target'>{0} പാസ്‌കലിനെ</td><td class='target'>2 പാസ്‌കലിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} പാസ്‌കലിന്റെ</td><td class='target'>1 പാസ്‌കലിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} പാസ്‌കലിന്റെ</td><td class='target'>2 പാസ്‌കലിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} പാസ്‌കലിന്</td><td class='target'>1 പാസ്‌കലിന് ദിവസത്തിന്</td><td class='target'>{0} പാസ്‌കലിന്</td><td class='target'>2 പാസ്‌കലിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} പാസ്‌കലിൽ</td><td class='target'>1 പാസ്‌കലിൽ ദിവസത്തിൽ</td><td class='target'>{0} പാസ്‌കലിൽ</td><td class='target'>2 പാസ്‌കലിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} പാസ്‌കലിനാൽ</td><td class='target'>1 പാസ്‌കലിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} പാസ്‌കലിനാൽ</td><td class='target'>2 പാസ്‌കലിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} പാസ്‌കലിനോട്</td><td class='target'>1 പാസ്‌കലിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} പാസ്‌കലിനോട്</td><td class='target'>2 പാസ്‌കലിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target'>{0} ബാർ</td><td class='target'>1 ബാർ ദിവസം</td><td class='target'>{0} ബാറുകൾ</td><td class='target'>2 ബാറുകൾ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ബാറിനെ</td><td class='target'>1 ബാറിനെ ദിവസത്തിനെ</td><td class='target'>{0} ബാറിനെ</td><td class='target'>2 ബാറിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ബാറിന്റെ</td><td class='target'>1 ബാറിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ബാറിന്റെ</td><td class='target'>2 ബാറിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ബാറിന്</td><td class='target'>1 ബാറിന് ദിവസത്തിന്</td><td class='target'>{0} ബാറിന്</td><td class='target'>2 ബാറിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ബാറിൽ</td><td class='target'>1 ബാറിൽ ദിവസത്തിൽ</td><td class='target'>{0} ബാറുകളിൽ</td><td class='target'>2 ബാറുകളിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ബാറിനാൽ</td><td class='target'>1 ബാറിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ബാറുകളാൽ</td><td class='target'>2 ബാറുകളാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ബാറിനോട്</td><td class='target'>1 ബാറിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ബാറുകളോട്</td><td class='target'>2 ബാറുകളോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='atmosphere<br>( = 1.01325 bars)' href='#atmosphere<br>( = 1.01325 bars)'>atmosphere<br>( = 1.01325 bars)</a></td><td class='source'>nominative</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയർ</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയർ ദിവസം</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയർ</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനെ</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിനെ ദിവസത്തിനെ</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനെ</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിന്റെ</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിന്റെ</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിന്</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിന് ദിവസത്തിന്</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിന്</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിൽ</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിൽ ദിവസത്തിൽ</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിൽ</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനാൽ</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനാൽ</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനോട്</td><td class='target'>1 അറ്റ്‌മോസ്‌ഫിയറിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} അറ്റ്‌മോസ്‌ഫിയറിനോട്</td><td class='target'>2 അറ്റ്‌മോസ്‌ഫിയറിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>substance-amount</td><td class='source' rowSpan='7'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} മോൾ</td><td class='target'>1 മോൾ ദിവസം</td><td class='target'>{0} മോളുകൾ</td><td class='target'>2 മോളുകൾ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} മോളിനെ</td><td class='target'>1 മോളിനെ ദിവസത്തിനെ</td><td class='target'>{0} മോളുകളെ</td><td class='target'>2 മോളുകളെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} മോളിന്റെ</td><td class='target'>1 മോളിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} മോളുകളുടെ</td><td class='target'>2 മോളുകളുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} മോളിന്</td><td class='target'>1 മോളിന് ദിവസത്തിന്</td><td class='target'>{0} മോളുകൾക്ക്</td><td class='target'>2 മോളുകൾക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} മോളിൽ</td><td class='target'>1 മോളിൽ ദിവസത്തിൽ</td><td class='target'>{0} മോളുകളിൽ</td><td class='target'>2 മോളുകളിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} മോളിനാൽ</td><td class='target'>1 മോളിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} മോളുകളാൽ</td><td class='target'>2 മോളുകളാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} മോളിനോട്</td><td class='target'>1 മോളിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} മോളുകളോട്</td><td class='target'>2 മോളുകളോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>temperature</td><td class='source' rowSpan='7'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='21'>neuter</td><td class='source'>nominative</td><td class='target'>{0}°</td><td class='target'>1° ദിവസം</td><td class='target'>{0}°</td><td class='target'>2° ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഡിഗ്രിയെ</td><td class='target'>1 ഡിഗ്രിയെ ദിവസത്തിനെ</td><td class='target'>{0} ഡിഗ്രിയെ</td><td class='target'>2 ഡിഗ്രിയെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഡിഗ്രിയുടെ</td><td class='target'>1 ഡിഗ്രിയുടെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഡിഗ്രിയുടെ</td><td class='target'>2 ഡിഗ്രിയുടെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഡിഗ്രിക്ക്</td><td class='target'>1 ഡിഗ്രിക്ക് ദിവസത്തിന്</td><td class='target'>{0} ഡിഗ്രിക്ക്</td><td class='target'>2 ഡിഗ്രിക്ക് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഡിഗ്രിയിൽ</td><td class='target'>1 ഡിഗ്രിയിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഡിഗ്രിയിൽ</td><td class='target'>2 ഡിഗ്രിയിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഡിഗ്രിയാൽ</td><td class='target'>1 ഡിഗ്രിയാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഡിഗ്രിയാൽ</td><td class='target'>2 ഡിഗ്രിയാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഡിഗ്രിയോട്</td><td class='target'>1 ഡിഗ്രിയോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഡിഗ്രിയോട്</td><td class='target'>2 ഡിഗ്രിയോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='celsius<br>( = 1 kelvin)' href='#celsius<br>( = 1 kelvin)'>celsius<br>( = 1 kelvin)</a></td><td class='source'>nominative</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസ്</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസ് ദിവസം</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസ്</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനെ</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിനെ ദിവസത്തിനെ</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനെ</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിന്റെ</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിന്റെ</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിന്</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിന് ദിവസത്തിന്</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിന്</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിൽ</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിൽ ദിവസത്തിൽ</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിൽ</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനാൽ</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനാൽ</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനോട്</td><td class='target'>1 ഡിഗ്രി സെൽഷ്യസിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ഡിഗ്രി സെൽഷ്യസിനോട്</td><td class='target'>2 ഡിഗ്രി സെൽഷ്യസിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target'>{0} കെൽവിൻ</td><td class='target'>1 കെൽവിൻ ദിവസം</td><td class='target'>{0} കെൽവിൻ</td><td class='target'>2 കെൽവിൻ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} കെൽവിനെ</td><td class='target'>1 കെൽവിനെ ദിവസത്തിനെ</td><td class='target'>{0} കെൽവിനെ</td><td class='target'>2 കെൽവിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} കെൽവിന്റെ</td><td class='target'>1 കെൽവിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} കെൽവിന്റെ</td><td class='target'>2 കെൽവിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} കെൽവിന്</td><td class='target'>1 കെൽവിന് ദിവസത്തിന്</td><td class='target'>{0} കെൽ‌വിന്</td><td class='target'>2 കെൽ‌വിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} കെൽവിനിൽ</td><td class='target'>1 കെൽവിനിൽ ദിവസത്തിൽ</td><td class='target'>{0} കെൽവിനിൽ</td><td class='target'>2 കെൽവിനിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} കെൽവിനാൽ</td><td class='target'>1 കെൽവിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} കെൽവിനാൽ</td><td class='target'>2 കെൽവിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} കെൽവിനോട്</td><td class='target'>1 കെൽവിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} കെൽവിനോട്</td><td class='target'>2 കെൽവിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>typewidth</td><td class='source' rowSpan='7'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} em</td><td class='target'>1 em ദിവസം</td><td class='target' rowSpan='7'>{0} em</td><td class='target'>2 em ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 em ദിവസത്തിനെ</td><td class='target'>2 em ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 em ദിവസത്തിന്റെ</td><td class='target'>2 em ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 em ദിവസത്തിന്</td><td class='target'>2 em ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 em ദിവസത്തിൽ</td><td class='target'>2 em ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 em ദിവസത്തിനാൽ</td><td class='target'>2 em ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 em ദിവസത്തിനോട്</td><td class='target'>2 em ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='7'>voltage</td><td class='source' rowSpan='7'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='7'>neuter</td><td class='source'>nominative</td><td class='target'>{0} വോൾട്ട്</td><td class='target'>1 വോൾട്ട് ദിവസം</td><td class='target'>{0} വോൾട്ട്</td><td class='target'>2 വോൾട്ട് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} വോൾട്ടിനെ</td><td class='target'>1 വോൾട്ടിനെ ദിവസത്തിനെ</td><td class='target'>{0} വോൾട്ടിനെ</td><td class='target'>2 വോൾട്ടിനെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} വോൾട്ടിന്റെ</td><td class='target'>1 വോൾട്ടിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} വോൾട്ടിന്റെ</td><td class='target'>2 വോൾട്ടിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} വോൾട്ടിന്</td><td class='target'>1 വോൾട്ടിന് ദിവസത്തിന്</td><td class='target'>{0} വോൾട്ടിന്</td><td class='target'>2 വോൾട്ടിന് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} വോൾട്ടിൽ</td><td class='target'>1 വോൾട്ടിൽ ദിവസത്തിൽ</td><td class='target'>{0} വോൾട്ടിൽ</td><td class='target'>2 വോൾട്ടിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} വോൾട്ടിനാൽ</td><td class='target'>1 വോൾട്ടിനാൽ ദിവസത്തിനാൽ</td><td class='target'>{0} വോൾട്ടിനാൽ</td><td class='target'>2 വോൾട്ടിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} വോൾട്ടിനോട്</td><td class='target'>1 വോൾട്ടിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} വോൾട്ടിനോട്</td><td class='target'>2 വോൾട്ടിനോട് ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='21'>volume</td><td class='source' rowSpan='7'><a name='cup-metric<br>( = 2.5 deciliters)' href='#cup-metric<br>( = 2.5 deciliters)'>cup-metric<br>( = 2.5 deciliters)</a></td><td class='source' rowSpan='21'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മെട്രിക് കപ്പ്</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസം</td><td class='target' rowSpan='7'>{0} മെട്രിക് കപ്പ്</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിനെ</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിന്റെ</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിന്</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിൽ</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിനാൽ</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മെട്രിക് കപ്പ് ദിവസത്തിനോട്</td><td class='target'>2 മെട്രിക് കപ്പ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='pint-metric<br>( = 5 deciliters)' href='#pint-metric<br>( = 5 deciliters)'>pint-metric<br>( = 5 deciliters)</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മെട്രിക് പൈന്റ്</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസം</td><td class='target' rowSpan='7'>{0} മെട്രിക് പൈന്റ്</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിനെ</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിന്റെ</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിന്</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിൽ</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിനാൽ</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മെട്രിക് പൈന്റ് ദിവസത്തിനോട്</td><td class='target'>2 മെട്രിക് പൈന്റ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='liters' href='#liters'>liters</a></td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} ലിറ്റർ</td><td class='target'>1 ലിറ്റർ ദിവസം</td><td class='target' rowSpan='7'>{0} ലിറ്റർ</td><td class='target'>2 ലിറ്റർ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ലിറ്റർ ദിവസത്തിനെ</td><td class='target'>2 ലിറ്റർ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 ലിറ്റർ ദിവസത്തിന്റെ</td><td class='target'>2 ലിറ്റർ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 ലിറ്റർ ദിവസത്തിന്</td><td class='target'>2 ലിറ്റർ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 ലിറ്റർ ദിവസത്തിൽ</td><td class='target'>2 ലിറ്റർ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ലിറ്റർ ദിവസത്തിനാൽ</td><td class='target'>2 ലിറ്റർ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 ലിറ്റർ ദിവസത്തിനോട്</td><td class='target'>2 ലിറ്റർ ദിവസത്തിനോട്</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='source' width='1%'>Case</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
+	<tr><td class='source' rowSpan='28'>year-duration</td><td class='source' rowSpan='7'><a name='month<br>( = 0.08˙3 years)' href='#month<br>( = 0.08˙3 years)'>month<br>( = 0.08˙3 years)</a></td><td class='source' rowSpan='28'>neuter</td><td class='source'>nominative</td><td class='target' rowSpan='7'>{0} മാസം</td><td class='target'>1 മാസം ദിവസം</td><td class='target' rowSpan='7'>{0} മാസം</td><td class='target'>2 മാസം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 മാസം ദിവസത്തിനെ</td><td class='target'>2 മാസം ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>1 മാസം ദിവസത്തിന്റെ</td><td class='target'>2 മാസം ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>1 മാസം ദിവസത്തിന്</td><td class='target'>2 മാസം ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>1 മാസം ദിവസത്തിൽ</td><td class='target'>2 മാസം ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 മാസം ദിവസത്തിനാൽ</td><td class='target'>2 മാസം ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 മാസം ദിവസത്തിനോട്</td><td class='target'>2 മാസം ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target'>{0} വർഷം</td><td class='target'>1 വർഷം ദിവസം</td><td class='target' rowSpan='7'>{0} വർഷം</td><td class='target'>2 വർഷം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} വർഷത്തിനെ</td><td class='target'>1 വർഷത്തിനെ ദിവസത്തിനെ</td><td class='target'>2 വർഷം ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} വർഷത്തിന്റെ</td><td class='target'>1 വർഷത്തിന്റെ ദിവസത്തിന്റെ</td><td class='target'>2 വർഷം ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} വർഷത്തിന്</td><td class='target'>1 വർഷത്തിന് ദിവസത്തിന്</td><td class='target'>2 വർഷം ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target' rowSpan='3'>{0} വർഷം</td><td class='target'>1 വർഷം ദിവസത്തിൽ</td><td class='target'>2 വർഷം ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 വർഷം ദിവസത്തിനാൽ</td><td class='target'>2 വർഷം ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>1 വർഷം ദിവസത്തിനോട്</td><td class='target'>2 വർഷം ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target'>ദശാബ്‌ദം</td><td class='target'>ദശാബ്‌ദം ദിവസം</td><td class='target'>{0} ദശാബ്‌ദം</td><td class='target'>2 ദശാബ്‌ദം ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ദശാബ്‌ദത്തിനെ</td><td class='target'>ദശാബ്‌ദത്തിനെ ദിവസത്തിനെ</td><td class='target'>{0} ദശാബ്‌ദങ്ങളിലെ</td><td class='target'>2 ദശാബ്‌ദങ്ങളിലെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ദശാബ്‌ദത്തിന്റെ</td><td class='target'>1 ദശാബ്‌ദത്തിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} ദശാബ്‌ദത്തിന്റെ</td><td class='target'>2 ദശാബ്‌ദത്തിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ദശാബ്‌ദത്തിന്</td><td class='target'>1 ദശാബ്‌ദത്തിന് ദിവസത്തിന്</td><td class='target'>{0} ദശാബ്‌ദങ്ങളിലെ</td><td class='target'>2 ദശാബ്‌ദങ്ങളിലെ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ദശാബ്‌ദത്തിൽ</td><td class='target'>1 ദശാബ്‌ദത്തിൽ ദിവസത്തിൽ</td><td class='target'>{0} ദശാബ്‌ദങ്ങളിൽ</td><td class='target'>2 ദശാബ്‌ദങ്ങളിൽ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ദശാബ്‌ദം</td><td class='target'>1 ദശാബ്‌ദം ദിവസത്തിനാൽ</td><td class='target'>{0} ദശാബ്‌ദത്തിനാൽ</td><td class='target'>2 ദശാബ്‌ദത്തിനാൽ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} ദശാബ്‌ദത്തിനോട്</td><td class='target'>1 ദശാബ്‌ദത്തിനോട് ദിവസത്തിനോട്</td><td class='target'>{0} ദശാബ്‌ദങ്ങളോട്</td><td class='target'>2 ദശാബ്‌ദങ്ങളോട് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>nominative</td><td class='target'>{0} നൂറ്റാണ്ട്</td><td class='target'>1 നൂറ്റാണ്ട് ദിവസം</td><td class='target'>{0} നൂറ്റാണ്ടുകൾ</td><td class='target'>2 നൂറ്റാണ്ടുകൾ ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} നൂറ്റാണ്ടിനെ</td><td class='target'>1 നൂറ്റാണ്ടിനെ ദിവസത്തിനെ</td><td class='target'>{0} നൂറ്റാണ്ടുകളുടെ</td><td class='target'>2 നൂറ്റാണ്ടുകളുടെ ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} നൂറ്റാണ്ടിന്റെ</td><td class='target'>1 നൂറ്റാണ്ടിന്റെ ദിവസത്തിന്റെ</td><td class='target'>{0} നൂറ്റാണ്ടിന്റെ</td><td class='target'>2 നൂറ്റാണ്ടിന്റെ ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} നൂറ്റാണ്ടിന്</td><td class='target'>1 നൂറ്റാണ്ടിന് ദിവസത്തിന്</td><td class='target'>{0} നൂറ്റാണ്ടിലെ</td><td class='target'>2 നൂറ്റാണ്ടിലെ ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} നൂറ്റാണ്ടിൽ</td><td class='target'>1 നൂറ്റാണ്ടിൽ ദിവസത്തിൽ</td><td class='target' rowSpan='3'>{0} നൂറ്റാണ്ടുകൾ</td><td class='target'>2 നൂറ്റാണ്ടുകൾ ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} നൂറ്റാണ്ട്</td><td class='target'>1 നൂറ്റാണ്ട് ദിവസത്തിനാൽ</td><td class='target'>2 നൂറ്റാണ്ടുകൾ ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>{0} നൂറ്റാണ്ടിനോട്</td><td class='target'>1 നൂറ്റാണ്ടിനോട് ദിവസത്തിനോട്</td><td class='target'>2 നൂറ്റാണ്ടുകൾ ദിവസത്തിനോട്</td></tr>
 </table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
 <p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
 	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter</td><td class='target'>വർഗ്ഗം {0}</td><td class='target' rowSpan='7'>n/a</td><td class='target'>വർഗ്ഗം {0}</td><td class='target' rowSpan='7'>n/a</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter<br>(second)</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസം</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനെ</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിന്റെ</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിന്</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിൽ</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനാൽ</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>1 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനോട്</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>2 വർഗ്ഗം സെക്കൻഡ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>inanimate</td><td class='target'>വർഗ്ഗം {0}</td><td class='target' rowSpan='14'>n/a</td><td class='target'>വർഗ്ഗം {0}</td><td class='target' rowSpan='14'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
 	<tr><td class='source'>accusative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
 	<tr><td class='source'>genitive</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
 	<tr><td class='source'>dative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
@@ -502,7 +488,21 @@
 	<tr><td class='source'>instrumental</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
 	<tr><td class='source'>sociative</td><td class='target'>വർഗ്ഗം {0}</td><td class='target'>വർഗ്ഗം {0}</td></tr>
 	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Form for: one (1.0)</th><th class='target' width='19.8%'>Formatted Sample: one (1.0)</th><th class='target' width='19.8%'>Form for: other (2.0)</th><th class='target' width='19.8%'>Formatted Sample: other (2.0)</th></tr>
-	<tr><td class='source' rowSpan='7'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter</td><td class='target'>ക്യുബിക് {0}</td><td class='target' rowSpan='7'>n/a</td><td class='target'>ക്യുബിക് {0}</td><td class='target' rowSpan='7'>n/a</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='7'>neuter<br>(second)</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസം</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസം</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനെ</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനെ</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിന്റെ</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിന്റെ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിന്</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിന്</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിൽ</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിൽ</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനാൽ</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനാൽ</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>1 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനോട്</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>2 ക്യുബിക് സെക്കൻഡ് ദിവസത്തിനോട്</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>inanimate</td><td class='target'>ക്യുബിക് {0}</td><td class='target' rowSpan='14'>n/a</td><td class='target'>ക്യുബിക് {0}</td><td class='target' rowSpan='14'>n/a</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>sociative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='7'>feminine</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
 	<tr><td class='source'>accusative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
 	<tr><td class='source'>genitive</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
 	<tr><td class='source'>dative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
@@ -510,7 +510,7 @@
 	<tr><td class='source'>instrumental</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
 	<tr><td class='source'>sociative</td><td class='target'>ക്യുബിക് {0}</td><td class='target'>ക്യുബിക് {0}</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
+<a href='https://www.unicode.org/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
 <script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
 

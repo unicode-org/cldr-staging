@@ -58,7 +58,173 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='12'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='12'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='source' rowSpan='12'>sd_Deva</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>GyMMMMEEEEd</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='2'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='2'><a name='Yes and No' href='#Yes and No'>Yes and No</a></td><td class='source'>posix-no</td><td class='source' rowSpan='178'>sd_Deva</td><td class='target'>no:n</td><td class='target'>न:न</td><td class='target' rowSpan='166'>basic</td></tr>
+	<tr><td class='source'>posix-yes</td><td class='target'>yes:y</td><td class='target'>हा:हा</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='2'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td><td class='source' rowSpan='2'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td><td class='source'>script</td><td class='target'>लिपि: {0}</td><td class='target'>लिखत: {0}</td></tr>
+	<tr><td class='source'>territory</td><td class='target'>इलाको: {0}</td><td class='target'>इलाइको : {0}</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='5'><a name='C' href='#C'>C</a></td><td class='source'>Chinese ► zh</td><td class='target'>चीनी(लिप्यंतरण जो इशारो: खास करे, मेंडिरिन चीनी जे लाइ</td><td class='target'>चीनी (तर्जुमे जो द॒स :खास करे, मैन्डरिन चीनी)</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans</td><td class='target'>zh_Hans</td><td class='target'>सादी थियल चीनी</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hans-long</td><td class='target'>सवली मेंडिरिन चीनी</td><td class='target'>सादी थियल मैन्डरिन चीनी</td></tr>
+	<tr><td class='source'>Chinese ► zh_Hant-long</td><td class='target'>रवायती मेंडिरिन चीनी</td><td class='target'>रवायती मैन्डरिन चीनी</td></tr>
+	<tr><td class='source'>Chinese ► zh-menu</td><td class='target'>चीनी,मेंडारिन</td><td class='target'>चीनी, मैन्डरिन</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td><td class='source' rowSpan='3'><a name='F' href='#F'>F</a></td><td class='source'>French ► fr</td><td class='target'>फ़्रांस जी ॿोली</td><td class='target'>फ्रेंच</td></tr>
+	<tr><td class='source'>French ► fr_CA</td><td class='target'>fr_CA</td><td class='target'>कैनेडियन फ्रेंच</td></tr>
+	<tr><td class='source'>French ► fr_CH</td><td class='target'>fr_CH</td><td class='target'>स्विस फ्रेंच</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='G' href='#G'>G</a></td><td class='source'>German ► de_AT</td><td class='target'>आसट्रियन जो जर्मन</td><td class='target'>आसट्रियन जर्मन</td></tr>
+	<tr><td class='source'>German ► de_CH</td><td class='target'>स्विसु हाई जर्मनु</td><td class='target'>स्विस हाई जर्मन</td></tr>
+	<tr><td class='source'><a name='J' href='#J'>J</a></td><td class='source'>Japanese ► ja</td><td class='target'>जापानीज़</td><td class='target'>जापानी</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source' rowSpan='3'><a name='P' href='#P'>P</a></td><td class='source'>Portuguese ► pt</td><td class='target'>पुर्तगीज़</td><td class='target'>पुर्तगाली</td></tr>
+	<tr><td class='source'>Portuguese ► pt_BR</td><td class='target'>pt_BR</td><td class='target'>ब्राज़ीलियन पुर्तगाली</td></tr>
+	<tr><td class='source'>Portuguese ► pt_PT</td><td class='target'>.यूरोपी पुर्तगीज़</td><td class='target'>यूरोपी पुर्तगाली</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='S' href='#S'>S</a></td><td class='source'>Spanish ► es_419</td><td class='target'>लैटिणु अमिरिकी स्पेन वारो</td><td class='target'>लैटिन अमेरिकन स्पैनिश</td></tr>
+	<tr><td class='source'>Spanish ► es_ES</td><td class='target'>यूरोपियन स्पेनी</td><td class='target'>यूरोपी स्पैनिश</td></tr>
+	<tr><td class='source'>Spanish ► es_MX</td><td class='target'>मैक्सिकन स्पेनिश</td><td class='target'>मेक्सिकन स्पैनिश</td></tr>
+	<tr><td class='source'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='U' href='#U'>U</a></td><td class='source'>Unknown language ► und</td><td class='target'>अणवाकुफु भाषा</td><td class='target'>अणजा॒तल भाषा</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Scripts' href='#Scripts'>Scripts</a></td><td class='source' rowSpan='5'><a name='Major Use' href='#Major Use'>Major Use</a></td><td class='source'>Arab</td><td class='target'>अरेबिक</td><td class='target'>अरबी</td></tr>
+	<tr><td class='source'>Hans</td><td class='target'>सवलो थियण(लिप्यंतरण जो इशारो: लिपि नालो जो इहो तर्जमो चीनी भाषा जे नाले सां ॻडु ॻढिण में कमु इंदो आहे</td><td class='target'>सादी थियल (तरजुमे जो द॒स : लिखत जे नाले जे हिन बयानु खे चीनीअ लाए भाषा जे नाले सां गद॒ मिलाए करे इस्तेमाल कयो वेंदो आहे)</td></tr>
+	<tr><td class='source'>Hans-stand-alone</td><td class='target'>सवलो थियण हान(लिप्यंतरण जो इशारो: लिपि नालो जो इहो तर्जमो जुदा रुप में इस्तेमाल थींदो आहे चीनी भाषा जे नाले सां ॻडु थी करे ना थींदो आहे)</td><td class='target'>सादी थियल (तरजुमे जो द॒स : लिखत जे नाले जे हिन बयानु खे अलग इस्तेमाल कयो वेंदों आहे, चीनीअ लाए भाषा जे नाले सां गद॒ न कयो वेंदो आहे)</td></tr>
+	<tr><td class='source'>Hant</td><td class='target'>रवायती (लिप्यंतरण जो इशारो: लिपि नालो जो इहो तर्जमो चीनी भाषा जे नाले सां ॻडु करे ॻढिंजी करे थींदो आहे )</td><td class='target'>रवायती (तरजुमे जो द॒स : लिखत जे नाले जे हिन बयानु खे चीनीअ लाए भाषा जे नाले सां गद॒ मिलाए करे इस्तेमाल कयो वेंदो आहे)</td></tr>
+	<tr><td class='source'>Hant-stand-alone</td><td class='target'>रवायती हान (लिप्यंतरण जो इशारो: लिपि नालो जो इहो तर्जमो जुदा सां इस्तेमाल थींदो आहे चीनी भाषा जे नाले सा ॻढिंजी करे न थींदो आहे )</td><td class='target'>रवायती हान (तरजुमे जो द॒स : लिखत जे नाले जे हिन बयानु खे चीनीअ लाए भाषा जे नाले सां गद॒ मिलाए करे इस्तेमाल कयो वेंदो आहे)</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Other' href='#Other'>Other</a></td><td class='source'>Zxxx</td><td class='target'>अणलिखयल</td><td class='target'>अणलिखियल</td></tr>
+	<tr><td class='source'>Zzzz</td><td class='target'>अणवाकुफु लिपि</td><td class='target'>अणजा॒तल लिखत</td></tr>
+	<tr><td class='source'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td><td class='source'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'>ZZ</td><td class='target'>अणवाकुफु इलाको</td><td class='target'>अणजातल इलाइको</td></tr>
+	<tr><td class='source'><a name='Territories (South America)' href='#Territories (South America)'>Territories (South America)</a></td><td class='source'><a name='South America' href='#South America'>South America</a></td><td class='source'>BR</td><td class='target'>ब्राजील</td><td class='target'>ब्राज़ील</td></tr>
+	<tr><td class='source'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td><td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td><td class='source'>GB</td><td class='target'>यूनाइटेड किंगडम</td><td class='target'>बरतानी</td></tr>
+	<tr><td class='source'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td><td class='source'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td><td class='source'>CN</td><td class='target'>चाइना</td><td class='target'>चीन</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Keys' href='#Keys'>Keys</a></td><td class='source'><a name='calendar' href='#calendar'>calendar</a></td><td class='source'>calendar-gregorian</td><td class='target'>ग्रेगेरियन कलेंडरु</td><td class='target'>ग्रेगोरियन कैलेंडरु</td></tr>
+	<tr><td class='source'><a name='collation' href='#collation'>collation</a></td><td class='source'>collation-standard</td><td class='target'>मअयारी तरीके वारो आदेश</td><td class='target'>मअयारी तोर तरतीब</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers-arab</td><td class='target'>अरेबिक-इंडिक डिजिट</td><td class='target'>अरबी - इंडिक अंग</td></tr>
+	<tr><td class='source'>numbers-deva</td><td class='target'>देवनागिरी लिपि</td><td class='target'>देवनागिरी अंग</td></tr>
+	<tr><td class='source'>numbers-latn</td><td class='target'>मग़रबी डिजिट</td><td class='target'>उलहंदा अंग</td></tr>
+	<tr><td class='source' rowSpan='81'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='11'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='11'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>quarter</td><td class='target' rowSpan='3'>चोथो</td><td class='target' rowSpan='3'>टिमाही</td></tr>
+	<tr><td class='source'>quarter-short</td></tr>
+	<tr><td class='source'>quarter-narrow</td></tr>
+	<tr><td class='source'>month</td><td class='target' rowSpan='3'>महीनो</td><td class='target' rowSpan='3'>महिनो</td></tr>
+	<tr><td class='source'>month-short</td></tr>
+	<tr><td class='source'>month-narrow</td></tr>
+	<tr><td class='source'>day</td><td class='target' rowSpan='3'>ॾींहु</td><td class='target' rowSpan='3'>दीं॒हुं</td></tr>
+	<tr><td class='source'>day-short</td></tr>
+	<tr><td class='source'>day-narrow</td></tr>
+	<tr><td class='source'>weekday</td><td class='target'>हफ्ते जो ॾींहु</td><td class='target'>हफ्ते जो दीं॒हुं</td></tr>
+	<tr><td class='source'>dayperiod</td><td class='target'>ॾींहु/रातु</td><td class='target'>दीं॒हुं/ रातु</td></tr>
+	<tr><td class='source' rowSpan='68'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='4'><a name='Quarters - wide - Formatting' href='#Quarters - wide - Formatting'>Quarters - wide - Formatting</a></td><td class='source'>1</td><td class='target'>पहिरों पाड़ो</td><td class='target'>पहिंरी टिमाही</td></tr>
+	<tr><td class='source'>2</td><td class='target'>ॿियो पाड़ो</td><td class='target'>बीं॒ टिमाही</td></tr>
+	<tr><td class='source'>3</td><td class='target'>टियो पाड़ो</td><td class='target'>टीं टिमाही</td></tr>
+	<tr><td class='source'>4</td><td class='target'>चोथो पाड़ो</td><td class='target'>चोथीं टिमाही</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Quarters - wide - Standalone' href='#Quarters - wide - Standalone'>Quarters - wide - Standalone</a></td><td class='source'>1</td><td class='target'>पहिरों पाड़ो</td><td class='target'>पहिंरी टिमाही</td></tr>
+	<tr><td class='source'>2</td><td class='target'>ॿियो पाड़ो</td><td class='target'>बीं॒ टिमाही</td></tr>
+	<tr><td class='source'>3</td><td class='target'>टियो पाड़ो</td><td class='target'>टीं टिमाही</td></tr>
+	<tr><td class='source'>4</td><td class='target'>चोथो पाड़ो</td><td class='target'>चोथीं टिमाही</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Quarters - abbreviated - Formatting' href='#Quarters - abbreviated - Formatting'>Quarters - abbreviated - Formatting</a></td><td class='source'>1</td><td class='target'>पहिरों पाड़ो</td><td class='target'>पहिंरी टिमाही</td></tr>
+	<tr><td class='source'>2</td><td class='target'>ॿियो पाड़ो</td><td class='target'>बीं॒ टिमाही</td></tr>
+	<tr><td class='source'>3</td><td class='target'>टियो पाड़ो</td><td class='target'>टीं टिमाही</td></tr>
+	<tr><td class='source'>4</td><td class='target'>चोथो पाड़ो</td><td class='target'>चोथीं टिमाही</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Quarters - abbreviated - Standalone' href='#Quarters - abbreviated - Standalone'>Quarters - abbreviated - Standalone</a></td><td class='source'>1</td><td class='target'>पहिरों पाड़ो</td><td class='target'>पहिरीं टिमाही</td></tr>
+	<tr><td class='source'>2</td><td class='target'>ॿियो पाड़ो</td><td class='target'>बीं॒ टिमाही</td></tr>
+	<tr><td class='source'>3</td><td class='target'>टियो पाड़ो</td><td class='target'>टीं टिमाही</td></tr>
+	<tr><td class='source'>4</td><td class='target'>चोथो पाड़ो</td><td class='target'>चोथीं टिमाही</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td><td class='source'>Aug</td><td class='target'>अगस्त</td><td class='target'>अगस्ट</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>सितंबर</td><td class='target'>सप्टेंबर</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अक्टूबर</td><td class='target'>ऑक्टोबर</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>दिसंबर</td><td class='target'>डिसंबर</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Months - wide - Standalone' href='#Months - wide - Standalone'>Months - wide - Standalone</a></td><td class='source'>Aug</td><td class='target'>अगस्त</td><td class='target'>अगस्ट</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>सितंबर</td><td class='target'>सप्टेंबर</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अक्टूबर</td><td class='target'>ऑक्टोबर</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>दिसंबर</td><td class='target'>डिसंबर</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Months - abbreviated - Formatting' href='#Months - abbreviated - Formatting'>Months - abbreviated - Formatting</a></td><td class='source'>Sep</td><td class='target'>सितं</td><td class='target'>सप्टे</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अक्टू</td><td class='target'>ऑक्टो</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>दिसं</td><td class='target'>डिसं</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Months - abbreviated - Standalone' href='#Months - abbreviated - Standalone'>Months - abbreviated - Standalone</a></td><td class='source'>Sep</td><td class='target'>सितं</td><td class='target'>सप्टे</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अक्टू</td><td class='target'>ऑक्टो</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>दिसं</td><td class='target'>डिसं</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Months - narrow - Formatting' href='#Months - narrow - Formatting'>Months - narrow - Formatting</a></td><td class='source'>Mar</td><td class='target'>म</td><td class='target'>मा</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>अ</td><td class='target'>अग</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>सि</td><td class='target'>स</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अ</td><td class='target'>ऑ</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>द</td><td class='target'>डि</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Months - narrow - Standalone' href='#Months - narrow - Standalone'>Months - narrow - Standalone</a></td><td class='source'>May</td><td class='target'>म</td><td class='target'>मा</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>अ</td><td class='target'>अग</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>सि</td><td class='target'>स</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>अ</td><td class='target'>ऑ</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>द</td><td class='target'>डि</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Days - wide - Formatting' href='#Days - wide - Formatting'>Days - wide - Formatting</a></td><td class='source'>wed</td><td class='target'>बुधर</td><td class='target'>बु॒धर</td></tr>
+	<tr><td class='source'>fri</td><td class='target'>जुमओ</td><td class='target'>जुमो</td></tr>
+	<tr><td class='source'><a name='Days - wide - Standalone' href='#Days - wide - Standalone'>Days - wide - Standalone</a></td><td class='source' rowSpan='2'>wed</td><td class='target' rowSpan='2'>बुध</td><td class='target' rowSpan='2'>बु॒ध</td></tr>
+	<tr><td class='source'><a name='Days - abbreviated - Formatting' href='#Days - abbreviated - Formatting'>Days - abbreviated - Formatting</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Days - abbreviated - Standalone' href='#Days - abbreviated - Standalone'>Days - abbreviated - Standalone</a></td><td class='source'>thu</td><td class='target'>विस्</td><td class='target'>विस</td></tr>
+	<tr><td class='source'>fri</td><td class='target'>जुम</td><td class='target'>जु</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Days - narrow - Formatting' href='#Days - narrow - Formatting'>Days - narrow - Formatting</a></td><td class='source'>mon</td><td class='target'>म</td><td class='target'>सू</td></tr>
+	<tr><td class='source'>wed</td><td class='target'>बु</td><td class='target'>बु॒</td></tr>
+	<tr><td class='source'>fri</td><td class='target'>शु</td><td class='target'>जु</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Days - narrow - Standalone' href='#Days - narrow - Standalone'>Days - narrow - Standalone</a></td><td class='source'>wed</td><td class='target'>बु</td><td class='target'>बु॒</td></tr>
+	<tr><td class='source'>fri</td><td class='target'>शु</td><td class='target'>जु</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Day Periods - wide - Formatting' href='#Day Periods - wide - Formatting'>Day Periods - wide - Formatting</a></td><td class='source'>am</td><td class='target'>मंझंदि का पहिंरो</td><td class='target'>मंझंदि खां पहिंरियों</td></tr>
+	<tr><td class='source'>pm</td><td class='target'>मंझंदि को पोए</td><td class='target'>मंझंदि खां पोइ</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>EEEE, d MMMM y</td><td class='target'>EEEE, MMMM d, y</td></tr>
+	<tr><td class='source'>long</td><td class='target'>d MMMM y</td><td class='target'>MMMM d, y</td></tr>
+	<tr><td class='source'>medium</td><td class='target'>d MMM y</td><td class='target'>MMM d, y</td></tr>
+	<tr><td class='source'>short</td><td class='target'>d/M/yy</td><td class='target'>M/d/yy</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Standard - Time Formats' href='#Formats - Standard - Time Formats'>Formats - Standard - Time Formats</a></td><td class='source'>full</td><td class='target'>a h:mm:ss zzzz</td><td class='target'>h:mm:ss a zzzz</td></tr>
+	<tr><td class='source'>long</td><td class='target'>a h:mm:ss z</td><td class='target'>h:mm:ss a z</td></tr>
+	<tr><td class='source'>medium</td><td class='target'>a h:mm:ss</td><td class='target'>h:mm:ss a</td></tr>
+	<tr><td class='source'>short</td><td class='target'>a h:mm</td><td class='target'>h:mm a</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='2'>{1} ते {0}</td></tr>
+	<tr><td class='source'>long</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Gy</td><td class='target'>G y</td><td class='target'>y G</td></tr>
+	<tr><td class='source'>GyMd</td><td class='target'>▷missing◁</td><td class='target'>M/d/y GGGGG</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y MMM</td><td class='target'>MMM y G</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y MMM d</td><td class='target'>MMM d, y G</td></tr>
+	<tr><td class='source'>yMMMEd</td><td class='target'>y MMM d, E</td><td class='target'>E, MMM d, y</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='2'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target' rowSpan='2'>{1} 'at' {0}</td><td class='target' rowSpan='2'>{1} ते {0}</td></tr>
+	<tr><td class='source'>long</td></tr>
+	<tr><td class='source' rowSpan='31'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source' rowSpan='4'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td><td class='source' rowSpan='4'><a name='null' href='#null'>null</a></td><td class='source'>Region Format - Generic</td><td class='target'>{0} भेरो</td><td class='target'>{0} वक्त</td></tr>
+	<tr><td class='source'>Region Format - Standard</td><td class='target'>{0} (+0) मअयारी भेरो</td><td class='target'>{0} मअयारी वक्त</td></tr>
+	<tr><td class='source'>Region Format - Daylight</td><td class='target'>{0} (+1)</td><td class='target'>{0} दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source'>GMT Zero Format</td><td class='target'>जीएमटी</td><td class='target'>GMT</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='North America' href='#North America'>North America</a></td><td class='source' rowSpan='3'><a name='America_Central' href='#America_Central'>America_Central</a></td><td class='source'>generic-long</td><td class='target'>विचो भेरो</td><td class='target'>मरकज़ी वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>विचो मअयारी भेरो</td><td class='target'>मरकज़ी मअयारी वक्त</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>विचो ॾींह वारो भेरो</td><td class='target'>मरकज़ी दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Eastern' href='#America_Eastern'>America_Eastern</a></td><td class='source'>generic-long</td><td class='target'>उभिरंदो भेरो</td><td class='target'>ओभरी वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>उभिरंदो मअयारी वारो भेरो</td><td class='target'>ओभरी मअयारी वक्त</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>उभिरंदो विचो वारो भेरो</td><td class='target'>ओभरी दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Mountain' href='#America_Mountain'>America_Mountain</a></td><td class='source'>generic-long</td><td class='target'>टकरु वारो भेरो</td><td class='target'>पहाड़ी वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>टकरु वारो मअयारी भेरो</td><td class='target'>पहाड़ी मअयारी वक्त</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>टकरु जो ॾींह वारो भेरो</td><td class='target'>पहाड़ी दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='America_Pacific' href='#America_Pacific'>America_Pacific</a></td><td class='source'>generic-long</td><td class='target'>पेसीफिक वारो टाइमु</td><td class='target'>पेसिफिक वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>पेसीफिक वारो मअयारी वारो भेरो</td><td class='target'>पेसिफिक मअयारी वक्त</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>पेसीफिक जो ॾींह वारो भेरो</td><td class='target'>पेसिफिक दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Atlantic' href='#Atlantic'>Atlantic</a></td><td class='source'>generic-long</td><td class='target'>अटलांटिक टाइमु</td><td class='target'>अटलांटिक वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>अंटलांटिक जे मअयारी वारो भेरो</td><td class='target'>अटलांटिक मअयारी वक्त</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>अंटलांटिक जे ॾींह वारो भेरो</td><td class='target'>अटलांटिक दीं॒ह जो वक्त</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Europe' href='#Europe'>Europe</a></td><td class='source' rowSpan='3'><a name='Europe_Central' href='#Europe_Central'>Europe_Central</a></td><td class='source'>generic-long</td><td class='target'>सेंटरलु यूरपी टाइमु</td><td class='target'>मरकज़ी यूरोपी वक्त</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>सेंटरलु यूरपी मयआरी वारो टाइमु</td><td class='target'>मरकज़ी यूरोपी मअयारी वक्तु</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>सेंटरलु यूरपी गरमी वारो टाइमु</td><td class='target'>मरकज़ी यूरोपी उनहारे जो वक्तु</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Europe_Eastern' href='#Europe_Eastern'>Europe_Eastern</a></td><td class='source'>generic-long</td><td class='target'>उभिरंदो यूरोपी टाइमु</td><td class='target'>ओभरी यूरोपी वक्तु</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>उभिरंदो यूरोपी मअयारी वारो वक्तु</td><td class='target'>ओभरी यूरोपी मअयारी वक्तु</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>उभिरंदो यूरोपी गरमी वारो वक्तु</td><td class='target'>ओभरी यूरोपी उनहारे जो वक्तु</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Europe_Western' href='#Europe_Western'>Europe_Western</a></td><td class='source'>generic-long</td><td class='target'>उलहंदो वारो यूरोपी वारो वक्तु</td><td class='target'>उलहंदो यूरोपी वक्तु</td></tr>
+	<tr><td class='source'>standard-long</td><td class='target'>उलहंदो जे मअयारी वारो वक्तु</td><td class='target'>उलहंदो यूरोपी मअयारी वक्तु</td></tr>
+	<tr><td class='source'>daylight-long</td><td class='target'>उलहंदो जे यूरोपीअ गरमी वारो वक्तु</td><td class='target'>उलहंदो यूरोपी उनहारे जो वक्तु</td></tr>
+	<tr><td class='source'><a name='GMT' href='#GMT'>GMT</a></td><td class='source'>standard-long</td><td class='target'>ग्रीन विचु मीन टाइमु</td><td class='target'>ग्रीनविच मीन वक्तु</td></tr>
+	<tr><td class='source'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Unknown</td><td class='target'>बेखबरो शहरु</td><td class='target'>अणजा॒तल शहरु</td></tr>
+	<tr><td class='source'><a name='Overrides' href='#Overrides'>Overrides</a></td><td class='source'><a name='Etc/UTC' href='#Etc/UTC'>Etc/UTC</a></td><td class='source'>standard-long</td><td class='target'>आस्थानी चालू टाइमु</td><td class='target'>गदि॒यल आलमी वक्तु</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='North America (C)' href='#North America (C)'>North America (C)</a></td><td class='source'><a name='Northern America: United States' href='#Northern America: United States'>Northern America: United States</a></td><td class='source'>USD-name</td><td class='target'>यूएस जो डॉलल</td><td class='target'>यूएस जो डॉलर</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='South America (C)' href='#South America (C)'>South America (C)</a></td><td class='source' rowSpan='3'><a name='South America: Brazil' href='#South America: Brazil'>South America: Brazil</a></td><td class='source'>BRL-name-one</td><td class='target'>बरजिलियन रियलु</td><td class='target'>ब्राज़ीली रियालु</td></tr>
+	<tr><td class='source'>BRL-name-other</td><td class='target'>बरजिलियन रियल</td><td class='target'>ब्राज़ीली रियाल</td></tr>
+	<tr><td class='source'>BRL-name</td><td class='target'>बरजिलियन रियलु</td><td class='target'>ब्राज़ीली रियालु</td></tr>
+	<tr><td class='source'><a name='Northern/Western Europe' href='#Northern/Western Europe'>Northern/Western Europe</a></td><td class='source'><a name='Northern Europe: United Kingdom' href='#Northern Europe: United Kingdom'>Northern Europe: United Kingdom</a></td><td class='source'>GBP-name-one</td><td class='target'>बरतानवी पाउंड</td><td class='target'>बरतानवी पाउंडु</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td><td class='source' rowSpan='3'><a name='Eastern Asia: China' href='#Eastern Asia: China'>Eastern Asia: China</a></td><td class='source'>CNY-name-one</td><td class='target'>चीना युआनु</td><td class='target'>चीनी युआनु</td></tr>
+	<tr><td class='source'>CNY-name-other</td><td class='target'>चीना युआन</td><td class='target'>चीनी युआन</td></tr>
+	<tr><td class='source'>CNY-name</td><td class='target'>चीना युआनु</td><td class='target'>चीनी युआनु</td></tr>
+	<tr><td class='source'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td><td class='source'><a name='Southern Asia: India' href='#Southern Asia: India'>Southern Asia: India</a></td><td class='source'>INR-name-other</td><td class='target'>हिंदुस्तानी रुपयो</td><td class='target'>हिंदुस्तानी रुपया</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Unknown Region (C)' href='#Unknown Region (C)'>Unknown Region (C)</a></td><td class='source' rowSpan='3'><a name='Unknown Region: XXX' href='#Unknown Region: XXX'>Unknown Region: XXX</a></td><td class='source'>XXX-name-one</td><td class='target'>अणवाकुफु चालू सिक्के जो एको</td><td class='target'>(सिके जो अणजा॒तल एको)</td></tr>
+	<tr><td class='source'>XXX-name-other</td><td class='target' rowSpan='2'>अणवाकुफु चालू सिक्को</td><td class='target' rowSpan='2'>अणजा॒तल सिको</td></tr>
+	<tr><td class='source'>XXX-name</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Units' href='#Units'>Units</a></td><td class='source'><a name='Measurement Systems' href='#Measurement Systems'>Measurement Systems</a></td><td class='source'><a name='null' href='#null'>null</a></td><td class='source'>metric</td><td class='target'>मीट्रिकु</td><td class='target'>मैट्रिक</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='3'><a name='Duration Patterns' href='#Duration Patterns'>Duration Patterns</a></td><td class='source'>hm</td><td class='target'>h:mm</td><td class='target' rowSpan='2'>क:मिमि</td></tr>
+	<tr><td class='source'>hms</td><td class='target'>h:mm:ss</td></tr>
+	<tr><td class='source'>ms</td><td class='target'>m:ss</td><td class='target'>मि:सेसे</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='12'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>GyMMMMEEEEd</td><td class='target' rowSpan='12'>comprehensive</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
 	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
@@ -71,7 +237,7 @@
 	<tr><td class='source'>Formats - Standard - Time Formats-medium</td><td class='target'>ahmmss</td></tr>
 	<tr><td class='source'>Formats - Standard - Time Formats-short</td><td class='target'>ahmm</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
+<a href='https://www.unicode.org/copyright.html'>
 <img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
 <script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
 
