@@ -3,8 +3,9 @@ BCP47	u_Extension	nu-tnsa	_deprecated	▷missing◁	false
 BCP47	u_Extension	nu-tnsa	_description	▷missing◁	Tangsa digits
 Supplemental	IdValidity	script	regular	…	… Cpmn … Ougr … Tnsa Toto … Vith …
 Supplemental	IdValidity	unit	regular	…	… force-kilowatt-hour-per-100-kilometer …
+Supplemental	Locale	Parent	en_001	…	…
 Supplemental	Locale	Parent	root	…	… bal_Latn …
-Supplemental	Locale	DefaultContent	plain	…	… bal_Arab bal_Arab_PK bal_Latn_PK … hnj_Hmnp hnj_Hmnp_US … rhg_Rohg rhg_Rohg_MM … tpi_PG …
+Supplemental	Locale	DefaultContent	plain	…	… ab_GE … bal_Arab bal_Arab_PK bal_Latn_PK … hnj_Hmnp hnj_Hmnp_US … rhg_Rohg rhg_Rohg_MM … tpi_PG … yrl_BR …
 Supplemental	WZoneMapping	South Africa Standard Time	SS	Africa/Juba	▷removed◁
 Supplemental	WZoneMapping	South Sudan Standard Time	001	▷missing◁	Africa/Juba
 Supplemental	WZoneMapping	South Sudan Standard Time	SS	▷missing◁	Africa/Juba
@@ -14,13 +15,18 @@ Supplemental	Likely	Subtag	nst	▷missing◁	nst_Tnsa_IN
 Supplemental	Likely	Subtag	oui	▷missing◁	oui_Ougr_143
 Supplemental	Likely	Subtag	rhg	…	rhg_Rohg_MM
 Supplemental	Likely	Subtag	txo	▷missing◁	txo_Toto_IN
+Supplemental	Likely	Subtag	und_Cpmn	▷missing◁	und_Cpmn_CY
+Supplemental	Likely	Subtag	und_Cpmn_CY	▷missing◁	und_Cpmn_CY
 Supplemental	Likely	Subtag	und_Hmnp	…	hnj_Hmnp_US
 Supplemental	Likely	Subtag	und_Ougr	▷missing◁	oui_Ougr_143
 Supplemental	Likely	Subtag	und_Tnsa	▷missing◁	nst_Tnsa_IN
 Supplemental	Likely	Subtag	und_Toto	▷missing◁	txo_Toto_IN
 Supplemental	Likely	Subtag	und_Vith	▷missing◁	sq_Vith_AL
 Supplemental	LanguageInfo	BD/rhg	populationPercent	▷missing◁	0.52
+Supplemental	LanguageInfo	BR/yrl	populationPercent	…	0.0104
+Supplemental	LanguageInfo	CO/yrl	populationPercent	▷missing◁	0.0062
 Supplemental	LanguageInfo	MM/rhg	populationPercent	▷missing◁	1.6
+Supplemental	LanguageInfo	VE/yrl	populationPercent	▷missing◁	0.0063
 Supplemental	LanguageGroup	cpe	parent-child	▷missing◁	tpi
 Supplemental	Grammar	Case	nominal-cs-units	▷missing◁	accusative
 Supplemental	Grammar	Case	nominal-cs-units	▷missing◁	genitive
@@ -80,11 +86,6 @@ Supplemental	Grammar	Case	nominal-ta-units	▷missing◁	ablative
 Supplemental	Grammar	Case	nominal-ta-units	▷missing◁	accusative
 Supplemental	Grammar	Case	nominal-ta-units	▷missing◁	dative
 Supplemental	Grammar	Case	nominal-ta-units	▷missing◁	nominative
-Supplemental	Grammar	Case	nominal-te-units	▷missing◁	accusative
-Supplemental	Grammar	Case	nominal-te-units	▷missing◁	dative
-Supplemental	Grammar	Case	nominal-te-units	▷missing◁	instrumental
-Supplemental	Grammar	Case	nominal-te-units	▷missing◁	locative
-Supplemental	Grammar	Case	nominal-te-units	▷missing◁	nominative
 Supplemental	Grammar	Case	nominal-uk-units	▷missing◁	accusative
 Supplemental	Grammar	Case	nominal-uk-units	▷missing◁	genitive
 Supplemental	Grammar	Case	nominal-uk-units	▷missing◁	nominative
@@ -94,8 +95,7 @@ Supplemental	Grammar	Gender	nominal-cs-units	▷missing◁	neuter
 Supplemental	Grammar	Gender	nominal-hr-units	▷missing◁	feminine
 Supplemental	Grammar	Gender	nominal-hr-units	▷missing◁	inanimate
 Supplemental	Grammar	Gender	nominal-hr-units	▷missing◁	neuter
-Supplemental	Grammar	Gender	nominal-ml-units	▷missing◁	feminine
-Supplemental	Grammar	Gender	nominal-ml-units	▷missing◁	inanimate
+Supplemental	Grammar	Gender	nominal-kn-units	▷missing◁	neuter
 Supplemental	Grammar	Gender	nominal-ml-units	▷missing◁	neuter
 Supplemental	Grammar	Gender	nominal-ru-units	feminine	▷removed◁
 Supplemental	Grammar	Gender	nominal-ru-units	masculine	▷removed◁
@@ -125,11 +125,21 @@ Supplemental	NumberSystem	tnsa	digits	▷missing◁	𖫀𖫁𖫂𖫃𖫄𖫅𖫆
 Supplemental	NumberSystem	tnsa	type	▷missing◁	numeric
 Supplemental	Plural	cardinal-bal	one	▷missing◁	n = 1 @integer 1 @decimal 1.0, 1.00, 1.000, 1.0000
 Supplemental	Plural	cardinal-bal	other	▷missing◁	@integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~0.9, 1.1~1.6, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-es	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
+Supplemental	Plural	cardinal-es	other	…	@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~0.9, 1.1~1.6, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
 Supplemental	Plural	cardinal-hnj	other	▷missing◁	@integer 0~15, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-it	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
+Supplemental	Plural	cardinal-it	other	…	@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
+Supplemental	Plural	cardinal-pt	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
+Supplemental	Plural	cardinal-pt	other	…	@integer 2~17, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 2.0~3.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
+Supplemental	Plural	cardinal-pt_PT	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
+Supplemental	Plural	cardinal-pt_PT	other	…	@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
 Supplemental	Plural	cardinal-tpi	other	▷missing◁	@integer 0~15, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
 Supplemental	Plural	ordinal-bal	one	▷missing◁	n = 1 @integer 1
 Supplemental	Plural	ordinal-bal	other	▷missing◁	@integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, …
 Supplemental	Plural	ordinal-tpi	other	▷missing◁	@integer 0~15, 100, 1000, 10000, 100000, 1000000, …
+Supplemental	WeekData	firstDay	mon	…	… AU …
+Supplemental	WeekData	firstDay	sun	…	…
 Supplemental	WeekData	hours-h-regions	h	…	…
 Supplemental	WeekData	hours-h-regions	H	…	…
 Supplemental	WeekData	hours-h-regions	hb	…	…
@@ -147,5 +157,62 @@ Supplemental	Language	hnj	territories-secondary	▷missing◁	US
 Supplemental	Language	rhg	scripts	▷missing◁	Rohg
 Supplemental	Language	rhg	scripts-secondary	▷missing◁	Arab
 Supplemental	Language	rhg	scripts-secondary	▷missing◁	Latn
-Supplemental	Transform	Hani→Latn	tRule	…	… [㐜㤽㦞㵞㿧䌧䓓䲖仇俦儔嚋嬦帱幬怞惆愁懤栦椆燽畴疇皗稠筹籌紬絒綢绸菗薵裯讎讐踌躊酧酬醻雔雠𠝽𠷎𠹝𠼡𠾉𡕐𡕪𣀓𣕾𣪐𣫐𤳝𤳠𤽯𤾊𤾦𥏈𥡀𥲅𦡴𦭸𧮻𨞪𨤷𩽀𩾂𪇘𪫷𫜷𫝩𬊍𬸍]→chóu; … [㜡㞱㥖䈡䐋䐫䓗䗓䡯䢨匆囪囱忩怱悤暰枞棇樅樬漗焧熜瑽璁瞛篵緫繱聡聦聪聰苁茐葱蓯蔥蟌鍯鏦騘驄骢𡟟𡹸𢊕𢐔𢔩𤧚𥍷𥎋𥡬𦇎𦗜𦝰𨂴𨍉𨑪𨑹𨡮𨦱𨱸𨲧𩬼𪻐𫓩𬭥𰥒𰬰𰭁𰾊]→cōng; …
+Supplemental	DayPeriod	kgp	afternoon1-before	▷missing◁	19:00
+Supplemental	DayPeriod	kgp	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	kgp	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	kgp	evening1-from	▷missing◁	19:00
+Supplemental	DayPeriod	kgp	midnight-at	▷missing◁	00:00
+Supplemental	DayPeriod	kgp	morning1-before	▷missing◁	12:00
+Supplemental	DayPeriod	kgp	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	kgp	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	kgp	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	kgp	noon-at	▷missing◁	12:00
+Supplemental	DayPeriod	nn	afternoon1-before	▷missing◁	18:00
+Supplemental	DayPeriod	nn	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	nn	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	nn	evening1-from	▷missing◁	18:00
+Supplemental	DayPeriod	nn	midnight-at	▷missing◁	00:00
+Supplemental	DayPeriod	nn	morning1-before	▷missing◁	10:00
+Supplemental	DayPeriod	nn	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	nn	morning2-before	▷missing◁	12:00
+Supplemental	DayPeriod	nn	morning2-from	▷missing◁	10:00
+Supplemental	DayPeriod	nn	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	nn	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	yrl	afternoon1-before	▷missing◁	19:00
+Supplemental	DayPeriod	yrl	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	yrl	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	yrl	evening1-from	▷missing◁	19:00
+Supplemental	DayPeriod	yrl	midnight-at	▷missing◁	00:00
+Supplemental	DayPeriod	yrl	morning1-before	▷missing◁	12:00
+Supplemental	DayPeriod	yrl	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	yrl	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	yrl	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	yrl	noon-at	▷missing◁	12:00
+Supplemental	DayPeriod	selection-kgp	afternoon1-before	▷missing◁	19:00
+Supplemental	DayPeriod	selection-kgp	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	selection-kgp	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	selection-kgp	evening1-from	▷missing◁	19:00
+Supplemental	DayPeriod	selection-kgp	morning1-before	▷missing◁	12:00
+Supplemental	DayPeriod	selection-kgp	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	selection-kgp	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	selection-kgp	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	selection-nn	afternoon1-before	▷missing◁	18:00
+Supplemental	DayPeriod	selection-nn	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	selection-nn	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	selection-nn	evening1-from	▷missing◁	18:00
+Supplemental	DayPeriod	selection-nn	morning1-before	▷missing◁	10:00
+Supplemental	DayPeriod	selection-nn	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	selection-nn	morning2-before	▷missing◁	12:00
+Supplemental	DayPeriod	selection-nn	morning2-from	▷missing◁	10:00
+Supplemental	DayPeriod	selection-nn	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	selection-nn	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	selection-yrl	afternoon1-before	▷missing◁	19:00
+Supplemental	DayPeriod	selection-yrl	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	selection-yrl	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	selection-yrl	evening1-from	▷missing◁	19:00
+Supplemental	DayPeriod	selection-yrl	morning1-before	▷missing◁	12:00
+Supplemental	DayPeriod	selection-yrl	morning1-from	▷missing◁	06:00
+Supplemental	DayPeriod	selection-yrl	night1-before	▷missing◁	06:00
+Supplemental	DayPeriod	selection-yrl	night1-from	▷missing◁	00:00
+Supplemental	Transform	Hani→Latn	tRule	…	… [⺫㜈㣎㧅㾇䀲䊾䑵仫凩募墓幕幙慔慕暮木朰楘毣沐炑牧狇目睦穆縸艒苜莯蚞鉬钼雮霂鞪𡵬𣈊𤝂𥄈𥣸𥰻𦃤𦱒𧚀𨍎𨎸𩵦𩶖𩶩𫄲𫠏𬰃]→mù; … [⺯⺰㒋㟃㠼㴲㺇㺨㽄䇁䔮䡳䫢䲉丝俬凘厮厶司咝嘶噝媤廝思恖撕斯楒榹泀澌燍磃禗禠私籭糹絲緦纟缌罳蕬虒蛳蜤螄蟖蟴鉰銯鋖鐁锶颸飔騦鷥鸶鼶𠀓𠖓𡡒𢊀𢛥𢠹𢦲𣂖𣚄𤆟𤣵𥄶𥐀𥕶𥝠𥠱𥯨𦇲𦇵𦭡𦮺𦸷𦽕𧀚𧝤𨮭𩅰𩆵𩺛𪆁𪆗𪕳𪖉𬕄𬝊𰾴𱈒]→sī; … [⻃⻄㓾㕃㕧㗩㗭㘊㚀㛓㛫㛭㜎㜯㪧㬛㮩㯕㰿㱆㱤㲸㴔㴧㶉㺣㾷㿽䁯䂀䏩䐅䐖䒊䖒䖷䙵䛊䛥䭒䳶䶋俙傒僖兮凞卥厀吸唏唽嘻噏夕奚嬆嬉屖嵠嶲巇希徆徯忚怸恓息悉悕惁惜憙扱扸昔晞晰晳曦析桸榽樨橀欷氥汐浠淅渓溪潝烯焁焈焟焬煕熄熈熙熹-熻燨爔牺犀犠犧狶琋瘜皙睎瞦硒磎礂稀穸窸粞糦緆縘繥羲翕翖肸肹膝舾莃菥蒠蜥螅螇蟋蠵西覀觹觽觿譆谿豀豨豯貕赥邜郗鄎酅醯釐釸錫鏭鑴锡隵雟餏饻鯑鵗鸂鼷𠆱𠔃𠔍𠘕𠜗𠟊𠨚𠩺𠬬𠴭𠶨𠺒𡁱𡏛𡗞𡗳𡘡𡩤𡳚𡻎𢀊𢋼𢑧𢗴𢜣𢡁𢨟𢬾𢹍𣅾𣎮𣟵𣢁𣢂𣢍𣢎𣢑𣤳𣤴𣨗𤃪𤄬𤓔𤓚𤠓𤡡𤢀𤥒𤬕𤬘𤮆𤮙𤲺𤳥𤶈𤶰𤷡𤹊𤺊𥄖𥄛𥈻𥋟𥰝𦐠𦙝𦜱𦞽𦠪𦤈𦩭𦮐𦼗𧀬𧈼𧤤𧥅𧥤𧯗𧲘𧶖𧹨𧻶𧿝𨀙𨋦𨡂𨳛𨵎𨻁𩅖𩒽𩗊𩗱𩭡𩽨𩾼𪃼𪄛𫍻𫔔𬳋𰬣𱉹]→xī; … [⻈㗴㘖㘙㝚㫟㳂㶄㺂㿕㿼䀋䀽䂴䇾䉷䓂䖗䗡䢥䦲䫡严厳啱嚴塩壛壧妍姸娫娮孍岩嵒嵓巌巖巗延揅昖楌檐櫩欕沿炎狿琂盐研硏碞礹筵簷綖芫莚蔅虤蜒言訁訮詽讠郔閆閻闫阎顏顔颜鹽麣黬𠘥𠰖𡣽𢉘𢌨𣡞𣡶𣥡𣭻𣼞𤅸𤖝𤡥𤢋𤯐𤲩𥂁𥕼𥤟𥴿𥶿𦌚𦛣𦫤𧇱𧍢𧎘𧬌𧴣𧻃𨡄𨤎𨷽𨸮𩩄𩩴𪂈𪨷𫄧𫥍𫪂𫭲𬃳𬤠𬸖𰉁𰊡𰎠𰘠𰦾]→yán; … [㐰㔤㛛㭄㾙䒖䚱䛨䜗伩信囟孞焮脪舋衅訫軐釁阠顖馸𡈏𢋆𢩲𣥇𤜢𤣲𤴾𤷓𤹩𦉝𦜓𦞤𦢯𦤟𧗹𧳄𧴢𩟍𬒘𱂶]→xìn; … [㑎㛴㺁䜀䜧匘垴堖嫐恼悩惱獶獿瑙碯脑脳腦𠊦𠡷𡍍𡿺𢅈𢉵𣭺𤊲𤋫𤷻𥀮𥒢𦗮𧩣𧳦𧴙𨱵𩛋𩤘𩩀𩫺𩬷𬆛𰡻]→nǎo; … [㒕䄃䱀咉央姎抰殃泱眏秧胦鉠雵鞅鴦鸯𠮴𣐫𤢐𤸡𥃽𦴊𧲱𩲴𪓛𪚻𫓭𫚐𱌀]→yāng; … [㒛㪕䂽䔙伄吊弔掉瘹窎窵竨蓧藋訋調调釣鈟銱鋽鑃钓铞铫雿魡𠤼𠥑𣩰𤕷𤭈𤱩𥁮𥲟𥾯𦰏𧅈𨰑𩈮𩋙𫄝𫼛𬶄]→diào; … [㒿㓯㛤㠟㦒㰀㰚㴝㹈䄜䅻䉫䊍䋥䍠䍦䔆䔣䔧䖥䖽䖿䙰䣓䣫䱘䴻䵓䵩刕剓剺劙厘喱嚟囄嫠孋孷廲悡斄杝梨梩梸棃樆漓灕犁犂狸琍璃瓈盠睝离穲竰筣篱籬糎縭纚缡罹艃荲菞蓠蔾藜蘺蜊蟍蠡蠫褵謧貍邌醨鋫錅鏫鑗離驪骊鯏鯬鱺鲡鵹鸝鹂黎黧𠛘𠞙𠭰𠻗𠼝𠾆𡃷𡥽𡿎𢄡𢌈𢛮𢟢𢟤𢤂𢮃𣁟𣐬𣘬𣞴𣫥𣮉𣯤𤗫𤚓𤭜𥊈𥌛𥣥𥲧𥲪𥻿𥼅𦃇𦔓𦢱𦺙𧄚𧅯𧋎𧋠𧑇𧕮𧕯𧚩𧥖𧫬𧮛𨄛𨇎𨛫𨝏𨝖𨝟𨤫𨯽𩁟𩆲𩥬𩥴𩧋𩭇𩻌𪁐𪅆𪌱𪏼𪐅𪒔𪖂𫄥𫚞𬸎𭀖𭤎𰖩𱊃]→lí; … [㓌㛵䕝䗀䞓䟓䟫偁僜憆摚撐撑柽棦橕檉泟浾湞爯牚琤瞠称稱穪竀緽罉蛏蟶赪赬鏳鏿鐣阷靗頳饓𠏧𡽊𣥺𦓬𧯒𨭃𩁷𩞦𩠏𫎭𬭷𬲜𰩓]→chēng; … [㓧㤌㶥㿻䇞䊻乹亁凲坩尲尴尶尷忓攼杆柑泔漧玕甘疳矸竿筸粓肝芉苷迀酐魐鳱𡯋𡶑𢧀𣔼𣗲𣦖𤮽𤯌𧾲𨝌𩖦𩚵𩠁𩢨𩴁𩴌𩴵𪔆𱉊]→gān; … [㓮㚋㢯㹦䂏䘟䳂凋刁刟叼奝弴彫殦汈琱瞗碉簓虭蛁貂雕鮉鯛鲷鳭鵰鼦𠚥𠚻𠶰𥮐𦨣𦶌𦸔𧘨𧘩𨸓𩀜𩾗𫛲𱉈]→diāo; [㓰㕦㕷㚌䀨䇈䋀䛡划劃化夻婳嫿嬅崋摦杹桦槬樺澅画畫畵繣舙觟話諙諣譮话黊𠤎𠿜𢄶𢦚𣶩𥒶𥧰𦁊𦖍𦧵𦪠𨶬𩂤𩗐𩲏𩵏𩸄𫍩𫚝𫜸𫰡𰬠]→huà; … [㔷屚漏瘘瘺瘻鏤镂陋𠖛𠗩𡪅𣤋𦸢𧫞𨄋𨝢𨦖𨫒𨱐𫠥𰙕]→lòu; … [㕄㡳㡶㫑㮹㲛䅩䇛䛗䤠䳅凪劧只咫址坁夂帋徵怾恉扺抧指旨枳止汦沚洔淽疻砋祉紙纸芷茋藢衹襧訨趾軹轵酯阯黹𠮡𠼠𡙑𡱔𢇨𢛍𢰙𢷸𢽃𢽗𢾫𣔐𣖌𣚠𣲵𤶓𤸓𥒗𥔊𦐖𦰘𧊙𧛢𧜚𧝉𧠴𧸅𧸕𨎌𨬚𨰛𨵂𩬺𪑜𫐋𫟞𰽠𱉙]→zhǐ; [㕅㪴㮖㿓䀫䕛䛟䩡唊圿忦恝戛戞扴荚莢蛱蛺裌跲郏郟鋏铗頬頰颊餄鴶鵊𡊠𢫢𥇗𥑔𥞦𥞵𦎱𦧮𦸘𦺧𦽤𧿵𨒇𩉡𩚲𩛩𩠃𪇷𪈟𫛥𬡒𰇕𱉥]→jiá; … [㕉㕎㝓㤩䆟䙐䶗克刻勀勊堁娔客尅恪愙氪溘碦礊緙缂艐課课锞騍骒𠛳𠡜𠡤𠢹𠩧𠪒𠪟𠳭𠶲𠷄𡞢𡱼𢩏𢾩𣩄𣲊𣹇𤛗𥊉𥔽𥦨𥯚𧈗𧛾𧜡𧞔𧠋𩭽𩰻𩱘𪃭𮯙]→kè; … [㕡㗿㥺㪃㪉㭱㮝㮫㹇㿥䃒䅂䒩䕣䞦䢔䫘䮤䶅何劾合咊和哬啝姀峆惒敆曷柇核楁毼河涸渮澕熆狢皬盇盉盍盒礉禾秴篕籺粭紇翮荷菏萂蚵螛覈訸詥貈輅郃鉌鑉闔阂阖鞨頜颌饸魺鲄鶡鹖麧齕龁龢𠘢𠚔𠧕𠰓𠳇𠶹𠻙𡇞𡇶𢄍𣏷𣒗𣲲𣿌𤈧𤖱𥝖𥝸𥞄𥞍𥟃𥻉𥽶𦃔𦇸𦒏𦛘𦛜𦳬𦼵𧇎𧇮𧊬𧝳𧪞𧭳𧮵𨋟𨍇𨜱𨜴𨨛𨴢𩅢𩌡𩩲𪈊𪘹𪡛𫓼𫠁𬌗𬤒𬮤𰇡𰵝𰵣𰽬𱋇]→hé; … [㕨㛯㤆㴀㶗㼝䀀䉊䐪䒦䣲奿婏嬎梵汎泛滼犯畈盕笵範范訉販贩軓軬飯飰饭𠆩𠒾𡁈𡗹𡜀𡤎𡶉𢇪𣳜𤄑𤬨𤭍𥃵𥅒𥹇𧁉𧉤𧍙𧶶𨠒𩡫𩨩𫐊𰹴𱃴]→fàn; … [㕴㫳㴴㽸䆣䒞䜟䟢䢅䢈䢻䣅䤟塵宸尘忱愖揨敐晨曟樄沉煁瘎臣茞莀莐蔯薼螴訦諶谌軙辰迧鈂陈陳霃鷐麎𢆺𣀍𤘣𤹛𥉜𥫹𧨡𨑌𨼤𪁏𫈟𫜀𬬵𮭦𰳄𰵒𰺭]→chén; … [㖟㥅䛵兽受售壽夀寿授涭狩獣獸痩瘦綬绶膄鏉𠱔𣒻𥙰𥨝𧈙𧌅𧚯𧜃𧤙𧯼𨱒𩴍𪈀𫜷]→shòu; … [㖵㗆㠷㦴㭘㵧㷴䈓䐙䗘䘁䛿䨣䪂䪺䫦佮匌呄嗝塥愅挌搿敋格槅櫊滆獦膈臵茖葛蛒裓觡諽輵轕镉閣閤阁隔革鞈鞷韐韚騔骼鬲鮯𠲱𠹓𢆜𢓜𢡍𢧧𢩓𢯹𢼛𣭝𤠇𤩲𥉅𥢸𥴩𥺊𦑜𧈌𧈑𧈖𧊧𧿩𨍮𨏚𨏴𨐥𨞛𨼣𩎎𩢛𩨀𩹺𩹿𩼙𪄎𪌣𫚗𫠅𬤑𬨍𮝺𱂆𱋓]→gé; … [㗇㘡㽠䖎䖖䘥䛅䪗䫗侠俠匣叚峡峽敮暇柙炠烚狎狭狹珨瑕硖硤碬磍祫筪縀縖翈舝舺蕸赮轄辖遐鍜鎋陜陿霞騢魻鶷黠𠢆𠩘𡈮𢈙𢈤𢑓𢘉𢚌𢝅𢻗𣹱𤙇𤪆𤪍𥯾𥰶𦦕𦵯𦾏𧆥𧔂𧕱𨲑𩉾𩎲𩏓𩐀𩝛𪗾𪘘𫨆𬘻𬭪𬯅𰅻𰾤𱅞𱇟𱊟]→xiá; … [㗔㩃㩷㪠䀒䇂䉦䙴䞿仟佥僉兛千圱圲奷婜孅孯岍悭愆慳扦拪掔搴撁攐攑攓杄檶櫏欦汘汧牵牽瓩竏签箞簽籤粁臤芊茾蚈褰諐謙谦谸迁遷釺鈆鉛钎铅阡雃韆顅騫骞鬜鬝鵮鹐𠑲𠔺𠠃𠬾𢃥𢋔𢌍𢍱𢜩𢧥𣘝𣟋𣢬𣢲𤠿𤿷𥏥𥜴𥱺𥲢𦖎𧘜𧛓𧟑𧢞𧮮𧲀𧽐𨐋𨐩𨓲𨝍𨦄𨨘𩋆𩨓𩪢𪇇𪉻𫓪𫖶𫣛𫽥𰔲𰗬𱁶𱆀𱆁]→qiān; … [㘵㚴㳍㻉㾟䊇䍌䏽䑰䒀䝵䬏䴺不佈勏吥咘埔埗埠布廍怖悑抪捗柨步歨歩瓿篰簿荹蔀踄部郶钚餔餢𠘁𠜙𢁻𢇴𤚵𤸵𥑢𥳖𥹴𧉩𨋞𨛒𩅇𩊬𩊶𩢕𩣝𩷖𩻗𫗦𫚨𱃾𱋝]→bù; … [㚞㚨㰂㾕哂婶嬸审宷審弞曋沈渖瀋瞫矤矧覾訠諗讅谂谉邥頣魫𠘆𡼬𢈇𢊲𢏦𢸙𣿇𤏗𥏖𥬐𧀯𩶇𭡜𰗵𱇙]→shěn; … [㛒㢄䄈䇺䕆䛠䬦斗斣梪毭浢痘窦竇脰荳豆逗郖酘閗闘餖饾鬥鬦鬪鬬鬭𠁁𡂛𡂝𡆏𡙬𡟳𤀨𤅋𤞟𥥷𥺉𧮡𧯞𧱓𨪐𨴜𨶜𨹜𩊪𪐺𫔯𰵫]→dòu; … [㛙㣺㭢䅽䜣俽噺妡嬜廞心忻惞新昕杺欣歆炘盺芯薪訢辛邤鈊鋅鑫锌馨馫𠑰𠷓𡌜𢗀𢠝𢭧𣂗𣂜𣃄𤙖𤙣𦁍𦰸𨊳𩾽𩿃𫷷]→xīn; … [㜡㞱㥖䈡䐋䐫䓗䗓䡯䢨匆囪囱忩怱悤暰枞棇樅樬漗焧熜瑽璁瞛篵緫繱聡聦聪聰苁茐葱蓯蔥蟌鍯鏦騘驄骢𡟟𡹸𢊕𢐔𢔩𤧚𥍷𥎋𥡬𦇎𦗜𦝰𨂴𨍉𨑪𨑹𨡮𨦱𨱸𨲧𩬼𪻐𫓩𬭥𰥒𰬰𰭁𰾊]→cōng; … [㝋㶫䄦䑠䩍叾憭曢爒蓼鄝釕钌镽𢻢𢿞𣎸𤑗𥗀𧘈𧡜𨣀𪌀]→liǎo; … [㞉㦫匝咂帀拶沞紥紮臜臢迊鉔魳𠂝𠯗𠽷𣤷𣤺𦠛𦾬𧌃𨠿𩞶𫓬]→zā; … [㟗㯽㻞䚔䧬䨈傧儐宾彬斌梹椕槟檳汃滨濒濱濵瀕玢瑸璸砏繽缤虨豩豳賓賔邠鑌镔霦顮𠴇𡦻𡧼𢲰𣉮𣢏𣰨𥃰𧷟𨐰𨽗𩆱𩴱𪇕𬇄𱂸]→bīn; … [㠌㥓㩻㬤㯃㱦䗩䣛䥓䫏七倛僛凄嘁妻娸悽慼慽戚捿攲期柒栖桤桼棲榿槭欺沏淒漆紪緀萋蛣褄諆諿蹊迉郪鏚霋魌鶈𠀁𠎰𠐾𠔶𡖾𡫁𢴰𢻪𣉓𣏶𣛺𣶠𤘌𤳃𤳤𥇚𥉐𥉷𥖫𥤥𦖊𦸓𧋉𧒕𧕉𧠪𨞢𩒛𩺲𪄭𪅾𪒆𪒑𬭭𬱦𬸨𰬢𰵲]→qī; … [㠶㸋㺕䀟䉒䊩䋣䋦䌓䕰䪤䫶䭵䮳凡-凣匥墦杋柉棥樊橎氾渢瀪瀿烦煩燔璠矾礬笲籵緐繁羳膰舤舧薠蘩蠜襎蹯鐇鐢钒鷭𢐲𢶃𣔶𥢌𥸨𥻫𥼞𥿋𦊻𦨲𧀭𧊾𧢜𨆌𨙮𨟄𩧅𩨏𪖇𫄩𫔍𫖺𬸪𮐚]→fán; … [㡻䉼䎆䢧尞尥尦廖撂料炓瞭窷镣𣩢𤊽𥛰𦌒𩕐𩴤𪖷𪤗]→liào; [㡾㦑㦓㪇㬗㺌㽉䁂䃱䃸䉯䏹䐄䙹䤼䦘䧟䧮䨘䨷䱤䵇䶟伣僩僴县咞哯垷壏姭娊娨宪岘峴憲撊晛橌涀瀗献獻现現県睍硍粯糮絤綫線縣线缐羡羨腺臔臽苋莧蜆誢豏鋧錎限陥陷霰餡馅麲鼸𠚆𠜎𠯟𡐖𡒓𡞣𢋮𢕭𢖝𢚀𣆕𤁦𤑃𤟅𥓒𥙆𥦶𥰳𥻇𥽏𦋈𦩢𧠒𧻒𧾨𨍒𨏥𨐊𨖱𨘙𨘞𨵬𨸄𩤊𩦹𩧩𪎉𪭾𪾢𬀪𬖑𬖮𬘟𬭣𬮵𰂋𰂎𰉚𰊑𰹾𰽢𱇻]→xiàn; … [㤉掐葜袷𠜼𠝛𡤫𢮌𣘟𣣟𫱿]→qiā; … [㦃㯆㹌㹽䐮䑎䤘䥀䩶䵐丳产冁刬剗剷啴嘽囅嵼幝摌斺旵浐滻灛燀產産簅繟蒇蕆諂譂讇谄辴鏟铲閳闡阐骣𠁷𠋷𠐩𠑆𠑑𠑡𠹖𡍌𡶴𢁧𢱟𢷹𣃘𤚍𤯥𦆀𦈎𦢙𦸰𧈪𧬦𨄉𨇝𨔢𨩪𨪑𨲵𨼒𩝚𩥮𪙞𫞣𫟠𬊤𬤛𬳲𬺅𰗡𰸎𱋴]→chǎn; … [㦮㨜㩮㸫䁮䈤䕭䖍乾仱偂前墘媊岒忴扲拑掮揵榩橬歬潛潜濳灊箝羬蕁虔軡鈐鉗銭錢钤钱钳靬騚騝鰬黔黚𠀼𠢍𠷁𢁮𣖳𥔮𥮒𥴤𥷪𦂒𦴑𦼓𧃑𧣑𨜻𨥞𨱫𨺩𨽨𩨃𩨊𩬚𪈇𱈉]→qián; … [㧲䉈䊉䫩仐伞傘糁糂糝糣糤繖鏒鏾饊馓𡙘𢕕𥒬𦷻𦺻𩀲𩀼𩞀𫔌𬭝𬱬𰬷]→sǎn; … [㪅䱍䱎䱭䱴堩暅更𡍷𣈶𣎄𥅨𥔂𦚸𦜷𦞌𧰨𬶊𮀲𱇥𱈇𱈈]→gèng; … [㬹䆸䇰䋊䋫䍵䱢争佂凧埩姃媜峥崝崢征徰徴怔挣掙揁炡烝爭狰猙癥眐睁睜筝箏篜聇蒸诤踭鉦錚钲铮鬇鯖𠑅𠲜𡪺𢁿𢓞𢮐𢾧𤪡𦓺𦙫𦚦𦜎𦡅𦱊𧗆𧗲𧘿𧪣𧯫𨌢𨛰𨜓𨟃𨢹𨺟𩗲𩗵𩘼𩘽𩚫𩺄𰌂𰬑]→zhēng; … [㲴䱰仲众偅堹妕媑狆眾祌筗茽蚛衆衶諥重𠱧𡥿𢝆𣱧𤚏𥻝𦌋𦔉𧬤𧳮𨉢𩾋𩿀𫍳𫍼𬑔]→zhòng; … [㸨䆶䡂䰗丩勼啾揂揪揫摎朻樛牞究糺糾纠萛赳阄鬏鬮鳩鸠𠃖𠕴𠖬𠚨𠠳𠿈𢀙𢜥𣁭𣟼𤴥𤴦𤴪𥠃𥤳𦭺𦱠𦱱𦱲𦽬𨳊𩏶𩏷𩭓𩱼𫃗𫄙]→jiū; … [㽥䐓䧷䰆厹媃揉柔渘煣瑈瓇禸粈糅腬葇蝚蹂輮鍒鞣騥鰇鶔𠠐𥠊𦍭𨛶𪑶𫐓𫔄𬶧𱅟𱊗]→róu; … [䂞䏳䗪䠦䩾䵭柘樜浙淛潪蔗蟅这這鷓鹧𣇧𣶋𥑡𥭙𦠟𦠠𦯍𧀹]→zhè; … [䅛䗉䮖䱽䲝伥倀娼昌晿椙淐猖琩菖裮錩锠閶阊鯧鲳鼚𥫅𨷇𩲹𪂇𪉨𬸶𱌊]→chāng; … [䉱䌔䙔䥲塸櫙欧歐殴毆沤漚熰瓯甌筽膒藲謳讴鏂鴎鷗鸥𠢔𠥝𡂿𡈆𡩾𣂻𤛐𥈬𥱸𩔸𫋲𫪘𫭟𬁵𬔯𬕦𰽜]→ōu; … [䑝假婽岬徦斚斝椵榎槚檟玾甲瘕胛賈贾鉀钾𣦉𤖰𤗜𥑐𩌍𩨹𩲣𪆲]→jiǎ; … [䞪䥒勥匞匠夅嵹弜弶彊摾櫤洚滰犟糡糨絳绛袶謽酱醤醬降𠼢𡲣𢘸𣚦𣨣𣩴𥞜𨯞𩝽𩴒𩷄𩷭𪀘𫗳𫮬]→jiàng; … [䪮丑丒侴偢吜杻杽瞅矁醜魗𠜋𢣊𤘶𥄨𧃝𨀔𩋄𩌄𬑍𬑡𱆛]→chǒu; … [䵰䵼伤傷商墒慯殇殤滳漡熵蔏螪觞觴謪鬺𠼬𤎘𤳈𥏫𧶜𨢩𨶼𪄲𫹽𬀷𱆌𱊥]→shāng; … [乱亂釠𠦨𡄹𡭸𢿢𣨀𤔔]→luàn; … [剋]→kēi; … [塰海烸胲酼醢𣖻𣳠𥁐𥂧𨡬𬐚]→hǎi; … [捏揑𬛸]→niē; … [热熱𤍠𤑄𧧏𩭿]→rè; …
 Supplemental	Transform	tk_Cyrl→tk/BGN	tRule	…	… $wordBoundary =  [^[:L:][:M:][:N:] ] ; … Е}[[$lowerVowels - [ә] ] [йъь] ] → Ye ; # CYRILLIC CAPITAL LETTER IE Е}[[$upperVowels - [Ә] ] [ЙЪЬ] ] → YE ; # CYRILLIC CAPITAL LETTER IE … е}[[$upperVowels - [Ә] ] [$lowerVowels - [ә] ] [ЙйЪъЬь] ] → ye ; # CYRILLIC SMALL LETTER IE …
