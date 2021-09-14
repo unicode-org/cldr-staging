@@ -12,5 +12,5 @@ You can run `mvn package` in this directory to create production .zip files unde
 
 See [LICENSE.txt](./LICENSE.txt)
 
->Copyright © 2019-2020 Unicode, Inc. All rights reserved.
+>Copyright © 2019-2021 Unicode, Inc. All rights reserved.
 >Distributed under the Terms of Use in https://www.unicode.org/copyright.html
