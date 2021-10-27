@@ -58,38 +58,690 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Root ► root</td><td class='source' rowSpan='28'>lv</td><td class='target'>sakne</td><td class='target'>▷removed◁</td><td class='target'>comprehensive</td></tr>
-	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Côte d’Ivoire' href='#Western Africa: Côte d’Ivoire'>Western Africa: Côte d’Ivoire</a></td><td class='source'>XOF-symbol</td><td class='target'>CFA</td><td class='target'>F CFA</td><td class='target' rowSpan='27'>moderate</td></tr>
-	<tr><td class='source' rowSpan='26'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='2'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source'><a name='dot' href='#dot'>dot</a></td><td class='source'>short-zero-nominative</td><td class='target'>{0} p.</td><td class='target'>{0} px</td></tr>
-	<tr><td class='source'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-zero-nominative</td><td class='target'>{0} dpi</td><td class='target'>{0} ppi</td></tr>
-	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='4'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='source'>short-displayName</td><td class='target'>µm</td><td class='target'>μm</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='3'>{0} µm</td><td class='target' rowSpan='3'>{0} μm</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Rohingya ► rhg</td><td class='source' rowSpan='680'>lv</td><td class='target'>rhg</td><td class='target'>rohindžu</td><td class='target'>modern</td></tr>
+	<tr><td class='source' rowSpan='16'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='15'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>GyMd</td><td class='target'>▷missing◁</td><td class='target'>GGGGG dd-MM-y</td><td class='target' rowSpan='2'>basic</td></tr>
+	<tr><td class='source'>yMd</td><td class='target'>y.MM.d.</td><td class='target'>d.MM.y.</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y – G y</td><td class='target'>G y. – G y.</td><td class='target' rowSpan='15'>moderate</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y</td><td class='target'>G y.–y.</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y-MM – GGGGG y-MM</td><td class='target'>GGGGG MM-y. – GGGGG MM-y.</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td><td class='target' rowSpan='2'>GGGGG MM-y. – MM-y.</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target'>GGGGG y-MM-dd – y-MM-dd</td><td class='target'>GGGGG dd-MM-y. – dd-MM-y.</td></tr>
+	<tr><td class='source'>GyMd/G</td><td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td><td class='target'>GGGGG dd-MM-y. – GGGGG dd-MM-y.</td></tr>
+	<tr><td class='source'>GyMd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td><td class='target' rowSpan='2'>GGGGG dd-MM-y. – dd-MM-y.</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target'>GGGGG dd-MM-y., E – dd-MM-y., E</td></tr>
+	<tr><td class='source'>GyMEd/G</td><td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td><td class='target'>GGGGG dd-MM-y., E – GGGGG dd-MM-y., E</td></tr>
+	<tr><td class='source'>GyMEd/M</td><td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='2'>GGGGG dd-MM-y., E – dd-MM-y., E</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>GyMd</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>dd-MM-y GGGGG</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='North America' href='#North America'>North America</a></td><td class='source'><a name='Yukon' href='#Yukon'>Yukon</a></td><td class='source'>standard-long</td><td class='target'>Jukonas laiks</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='11'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>Time Separator</td><td class='target'>:</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>decimal</td><td class='target'>,</td></tr>
+	<tr><td class='source'>group</td><td class='target'> </td></tr>
+	<tr><td class='source'>plusSign</td><td class='target'>+</td></tr>
+	<tr><td class='source'>minusSign</td><td class='target'>-</td></tr>
+	<tr><td class='source'>percentSign</td><td class='target'>%</td></tr>
+	<tr><td class='source'>perMille</td><td class='target'>‰</td></tr>
+	<tr><td class='source'>exponential</td><td class='target'>E</td></tr>
+	<tr><td class='source'>superscriptingExponent</td><td class='target'>×</td></tr>
+	<tr><td class='source'>infinity</td><td class='target'>∞</td></tr>
+	<tr><td class='source'>nan</td><td class='target'>NS</td></tr>
+	<tr><td class='source' rowSpan='468'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='80'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='8'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-gender</td><td class='target'>feminine</td><td class='target' rowSpan='542'>modern</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} dekāde</td><td class='target'>{0} dekādi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} dekādei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} dekādes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} dekādē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} dekādes</td><td class='target'>{0} dekādēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} dekāžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} dekādēs</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='century' href='#century'>century</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target' rowSpan='3'>{0} gadsimts</td><td class='target'>{0} gadsimtam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} gadsimta</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} gadsimtā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} gadsimti</td><td class='target'>{0} gadsimtus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} gadsimtiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} gadsimtu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} gadsimtos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='year' href='#year'>year</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} gads</td><td class='target'>{0} gadu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} gadam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} gada</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} gadā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} gadi</td><td class='target'>{0} gadus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} gadiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} gadu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} gados</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='month' href='#month'>month</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} mēnesis</td><td class='target'>{0} mēnesi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} mēnesim</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} mēneša</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} mēnesī</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} mēneši</td><td class='target'>{0} mēnešus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} mēnešiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} mēnešu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} mēnešos</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='week' href='#week'>week</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} nedēļa</td><td class='target'>{0} nedēļu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} nedēļai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} nedēļas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} nedēļā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} nedēļas</td><td class='target'>{0} nedēļām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} nedēļu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} nedēļās</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='day' href='#day'>day</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} diena</td><td class='target'>{0} dienu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} dienai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} dienas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} dienā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} dienas</td><td class='target'>{0} dienām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} dienu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} dienās</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hour' href='#hour'>hour</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} stunda</td><td class='target'>{0} stundu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} stundai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} stundas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} stundā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} stundas</td><td class='target'>{0} stundām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} stundu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} stundās</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='minute' href='#minute'>minute</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} minūte</td><td class='target'>{0} minūti</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} minūtei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} minūtes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} minūtē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} minūtes</td><td class='target'>{0} minūtēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} minūšu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} minūtēs</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>min.</td><td class='target'>min</td></tr>
+	<tr><td class='source'>short-per</td><td class='target'>{0}/min.</td><td class='target'>{0}/min</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} min.</td><td class='target' rowSpan='2'>{0} min</td></tr>
 	<tr><td class='source'>short-zero-nominative</td></tr>
-	<tr><td class='source' rowSpan='4'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='4'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>short-displayName</td><td class='target'>µg</td><td class='target'>μg</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='3'>{0} µg</td><td class='target' rowSpan='3'>{0} μg</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>short-zero-nominative</td></tr>
-	<tr><td class='source' rowSpan='16'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='8'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>miligrami uz decilitru</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} miligrams uz decilitru</td></tr>
-	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} miligrami uz decilitru</td></tr>
-	<tr><td class='source'>long-zero-nominative</td><td class='target'>{0} miligramu uz decilitru</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>mg/dl</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='3'>{0} mg/dl</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>short-zero-nominative</td></tr>
-	<tr><td class='source' rowSpan='8'><a name='milligram-per-deciliter' href='#milligram-per-deciliter'>milligram-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target'>miligrami uz decilitru</td><td class='target' rowSpan='8'>▷removed◁</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} miligrams uz decilitru</td></tr>
-	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} miligrami uz decilitru</td></tr>
-	<tr><td class='source'>long-zero-nominative</td><td class='target'>{0} miligramu uz decilitru</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>mg/dl</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='3'>{0} mg/dl</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>short-zero-nominative</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/min.</td><td class='target'>{0}/min</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='second' href='#second'>second</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} sekunde</td><td class='target'>{0} sekundi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} sekundei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} sekundes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} sekundē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} sekundes</td><td class='target'>{0} sekundēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} sekunžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} sekundēs</td></tr>
+	<tr><td class='source'>narrow-per</td><td class='target'>{0}/sek.</td><td class='target'>{0}/s</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source'><a name='em' href='#em'>em</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>narrow-displayName</td><td class='target'>megapikseļi</td><td class='target'>MP</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} pikselis</td><td class='target'>{0} pikseli</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} pikselim</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} pikseļa</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} pikselī</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} pikseļi</td><td class='target'>{0} pikseļus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} pikseļiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} pikseļu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} pikseļos</td></tr>
+	<tr><td class='source' rowSpan='21'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='9'><a name='meter' href='#meter'>meter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} metrs</td><td class='target'>{0} metru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} metram</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} metra</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} metrā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} metri</td><td class='target'>{0} metrus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} metriem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} metru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} metros</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='fathom' href='#fathom'>fathom</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='3'>{0} fth</td><td class='target'>{0} fatoms</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} fatomi</td></tr>
+	<tr><td class='source'>narrow-zero-nominative</td><td class='target'>{0} fatomu</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} skandināvu jūdze</td><td class='target'>{0} skandināvu jūdzi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} skandināvu jūdzei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} skandināvu jūdzes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} skandināvu jūdzē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} skandināvu jūdzes</td><td class='target'>{0} skandināvu jūdzēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} skandināvu jūdžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} skandināvu jūdzēs</td></tr>
+	<tr><td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>narrow-displayName</td><td class='target'>Saules rādiusi</td><td class='target'>R☉</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='9'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} hektārs</td><td class='target'>{0} hektāru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} hektāram</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} hektāra</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} hektārā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} hektāri</td><td class='target'>{0} hektāru</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} hektāriem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} hektāru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} hektāros</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='8'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} litrs</td><td class='target'>{0} litru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} litram</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} litra</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} litrā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} litri</td><td class='target'>{0} litriem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} litru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} litros</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} metriskā pinte</td><td class='target'>{0} metrisko pinti</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} metriskajai pintei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} metriskās pintes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} metriskajā pintē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} metriskās pintes</td><td class='target'>{0} metriskajām pintēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} metrisko pinšu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} metriskajās pintēs</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} metriskā glāze</td><td class='target'>{0} metrisko glāzi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} metriskajai glāzei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} metriskās glāzes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} metriskajā glāzē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} metriskās glāzes</td><td class='target'>{0} metriskajām glāzēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} metrisko glāžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} metriskajās glāzēs</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='9'><a name='g-force' href='#g-force'>g-force</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} smagumspēks</td><td class='target'>{0} smagumspēku</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} smagumspēkam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} smagumspēka</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} smagumspēkā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} smagumspēkus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} smagumspēkiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} smagumspēku</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} smagumspēkos</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='8'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} metriskā tonna</td><td class='target'>{0} metrisko tonnu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} metriskajai tonnai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} metriskās tonnas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} metriskajā tonnā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} metriskās tonnas</td><td class='target'>{0} metriskajām tonnām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} metrisko tonnu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} metriskajās tonnās</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} kilograms</td><td class='target'>{0} kilogramu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} kilogramam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} kilograma</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} kilogramā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} kilogrami</td><td class='target'>{0} kilogramus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} kilogramiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} kilogramu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} kilogramos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='gram' href='#gram'>gram</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} grams</td><td class='target'>{0} gramu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} gramam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} grama</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} gramā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} grami</td><td class='target'>{0} gramus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} gramiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} gramu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} gramos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='carat' href='#carat'>carat</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} karāts</td><td class='target'>{0} karātu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} karātam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} karāta</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} karātā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} karāti</td><td class='target'>{0} karātus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} karātiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} karātu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} karātos</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='7'><a name='calorie' href='#calorie'>calorie</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} kalorija</td><td class='target'>{0} kaloriju</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} kalorijai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} kalorijas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} kalorijā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='2'>{0} kalorijas</td><td class='target'>{0} kalorijām</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} kalorijās</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='joule' href='#joule'>joule</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} džouls</td><td class='target'>{0} džoulu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} džoulam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} džoula</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} džoulā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} džouli</td><td class='target'>{0} džoulus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} džouliem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} džoulus</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} džoulos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='watt' href='#watt'>watt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} vats</td><td class='target'>{0} vatu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} vatam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} vata</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} vatā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} vati</td><td class='target'>{0} vatus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} vatiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} vatu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} vatos</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source' rowSpan='9'><a name='ampere' href='#ampere'>ampere</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} ampērs</td><td class='target'>{0} ampēru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} ampēram</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} ampēra</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} ampērā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} ampēri</td><td class='target'>{0} ampērus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} ampēriem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} ampēru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} ampēros</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='ohm' href='#ohm'>ohm</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} oms</td><td class='target'>{0} omu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} omam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} oma</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} omā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} omi</td><td class='target'>{0} omus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} omiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} omu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} omos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='volt' href='#volt'>volt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} volts</td><td class='target'>{0} voltu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} voltam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} volta</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} voltā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} volti</td><td class='target'>{0} voltus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} voltiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} voltu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} voltos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} hercs</td><td class='target'>{0} hercu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} hercam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} herca</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} hercā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} herci</td><td class='target'>{0} hercus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} herciem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} hercu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} hercos</td></tr>
+	<tr><td class='source' rowSpan='54'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='9'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} bārs</td><td class='target'>{0} bāru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} bāram</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} bāra</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} bārā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} bāri</td><td class='target'>{0} bārus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} bāriem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} bāru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} bāros</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} atmosfēra</td><td class='target'>{0} atmosfēru</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} atmosfērai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} atmosfēras</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} atmosfērā</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target' rowSpan='2'>{0} atmosfēras</td><td class='target'>{0} atmosfēru</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} atmosfērās</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} paskāls</td><td class='target'>{0} paskālu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} paskālam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} paskāla</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} paskālā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} paskāli</td><td class='target'>{0} paskālus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} paskāliem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} paskālu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} paskālos</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='generic' href='#generic'>generic</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='10'>{0}°</td><td class='target'>{0} grādu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} grādam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} grāda</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} grādā</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} grāds</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} grādus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} grādiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} grādu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} grādos</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} grādi</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='celsius' href='#celsius'>celsius</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} Celsija grāds</td><td class='target'>{0} Celsija grādu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} Celsija grādam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} Celsija grāda</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} Celsija grādā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} Celsija grādi</td><td class='target'>{0} Celsija grādus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} Celsija grādiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} Celsija grādu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} Celsija grādos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} kelvins</td><td class='target'>{0} kelvinu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} kelvinam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} kelvina</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} kelvinā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} kelvini</td><td class='target'>{0} kelvinus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} kelvinam</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} kelvinu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} kelvinos</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='9'><a name='byte' href='#byte'>byte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} baits</td><td class='target'>{0} baitu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} baitam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} baita</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} baitā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} baiti</td><td class='target'>{0} baitus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} baitiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} baitu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} baitos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='bit' href='#bit'>bit</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} bits</td><td class='target'>{0} bitu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} bitam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} bita</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} bitā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} biti</td><td class='target'>{0} bitus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} bitiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} bitu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} bitos</td></tr>
+	<tr><td class='source' rowSpan='146'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='9'><a name='revolution' href='#revolution'>revolution</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} apgrieziens</td><td class='target'>{0} apgriezienu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} apgriezienam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} apgrieziena</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} apgriezienā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} apgriezieni</td><td class='target'>{0} apgriezienus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} apgriezieniem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} apgriezienu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} apgriezienos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='radian' href='#radian'>radian</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} radiāns</td><td class='target'>{0} radiānu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} radiānam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} radiāna</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} radiānā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} radiāni</td><td class='target'>{0} radiānus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} radiāniem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} radiānu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} radiānos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='degree' href='#degree'>degree</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} grāds</td><td class='target'>{0} grādu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} grādam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} grāda</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} grādā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} grādi</td><td class='target'>{0} grādus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} grādiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} grādu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} grādos</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} leņķa minūte</td><td class='target'>{0} leņķa minūti</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} leņķa minūtei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} leņķa minūtes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} leņķa minūtē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} leņķa minūtes</td><td class='target'>{0} leņķa minūtēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} leņķa minūšu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} leņķa minūtēs</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} leņķa sekunde</td><td class='target'>{0} leņķa sekundi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} leņķa sekundei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} leņķa sekundes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} leņķa sekundē</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} leņķa sekundes</td><td class='target'>{0} leņķa sekundēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} leņķa sekunžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} leņķa sekundēs</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='karat' href='#karat'>karat</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} karāts</td><td class='target'>{0} karātu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} karātam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} karāta</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} karātā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} karāti</td><td class='target'>{0} karātus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} karātiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} karātu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} karātos</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='item' href='#item'>item</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>vienumi</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} vienums</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} vienumi</td></tr>
+	<tr><td class='source'>long-zero-nominative</td><td class='target'>{0} vienumu</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>vienums</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} vienums</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} vienumi</td></tr>
+	<tr><td class='source'>short-zero-nominative</td><td class='target'>{0} vienuma</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>vienums</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target'>{0} vienums</td></tr>
+	<tr><td class='source'>narrow-zero-nominative</td><td class='target'>{0} vienuma</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-gender</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} miljonā daļa</td><td class='target'>{0} miljono daļu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} miljonajai daļai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} miljonās daļas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} miljonajā daļā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} miljonās daļas</td><td class='target'>{0} miljonajām daļām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} miljono daļu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} miljonajās daļās</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='percent' href='#percent'>percent</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} procents</td><td class='target'>{0} procentu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} procentam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} procenta</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} procentā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} procenti</td><td class='target'>{0} procentus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} procentiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} procentu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} procentos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='permille' href='#permille'>permille</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} promile</td><td class='target'>{0} promili</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} promilei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} promiles</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} promilē</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} promiles</td><td class='target'>{0} promiļu</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} promilēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} promiļu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} promilēs</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} promiriāde</td><td class='target'>{0} promiriādi</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} promiriādei</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} promiriādes</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} promiriādē</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} promiriādes</td><td class='target'>{0} promiriāžu</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} promiriādēm</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} promiriāžu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} promiriādēs</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='mole' href='#mole'>mole</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} mols</td><td class='target'>{0} molu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} molam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} mola</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} molā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} moli</td><td class='target'>{0} molus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} moliem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} molu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} molos</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} ņūtons</td><td class='target'>{0} ņūtonu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} ņūtonam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} ņūtona</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} ņūtonā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} ņūtoni</td><td class='target'>{0} ņūtonus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} ņūtoniem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} ņūtonu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} ņūtonos</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='5'>▷missing◁</td><td class='target'>kilovatstunda uz 100 kilometriem</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} kilovatstunda uz 100 kilometriem</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kilovatstundas uz 100 kilometriem</td></tr>
+	<tr><td class='source'>long-zero-nominative</td><td class='target'>{0} kilovatstundu uz 100 kilometriem</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='lux' href='#lux'>lux</a></td><td class='source'>long-gender</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} lukss</td><td class='target'>{0} luksu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} luksam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} luksa</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} luksā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} luksi</td><td class='target'>{0} luksus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} luksiem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} luksu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} luksos</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} kandela</td><td class='target'>{0} kandelu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} kandelai</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} kandelas</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} kandelā</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target' rowSpan='3'>{0} kandelas</td><td class='target'>{0} kandelām</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} kandelu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} kandelām</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='4'>{0} lūmens</td><td class='target'>{0} lūmenu</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} lūmenam</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} lūmena</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} lūmenā</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target' rowSpan='4'>{0} lūmeni</td><td class='target'>{0} lūmenus</td></tr>
+	<tr><td class='source'>long-other-dative</td><td class='target'>{0} lūmeniem</td></tr>
+	<tr><td class='source'>long-other-genitive</td><td class='target'>{0} lūmenu</td></tr>
+	<tr><td class='source'>long-other-locative</td><td class='target'>{0} lūmenos</td></tr>
+	<tr><td class='source' rowSpan='164'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='14'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>🫠 -name</td><td class='target' rowSpan='74'>▷missing◁</td><td class='target'>kūstoša seja</td></tr>
+	<tr><td class='source'>🫠 –keywords</td><td class='target'>izkausēt<br>izšķīst<br>kūstoša seja<br>pazūd<br>šķidrums</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hand' href='#face-hand'>face-hand</a></td><td class='source'>🫢 -name</td><td class='target'>seja ar atvērtām acīm un roku pār muti</td></tr>
+	<tr><td class='source'>🫢 –keywords</td><td class='target'>apkaunot<br>bijība<br>izbrīns<br>neticība<br>nobijies<br>pārsteigums<br>seja ar atvērtām acīm un roku pār muti</td></tr>
+	<tr><td class='source'>🫣 -name</td><td class='target'>seja ar lūrošu aci</td></tr>
+	<tr><td class='source'>🫣 –keywords</td><td class='target'>blenzt<br>palūrēt<br>seja ar lūrošu aci<br>valdzināts</td></tr>
+	<tr><td class='source'>🫡 -name</td><td class='target' rowSpan='2'>salutējoša seja</td></tr>
+	<tr><td class='source'>🫡 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🫥 -name</td><td class='target'>punktētas līnijas seja</td></tr>
+	<tr><td class='source'>🫥 –keywords</td><td class='target'>intraverts<br>neredzams<br>nomākts<br>pazūd<br>punktētas līnijas seja<br>slēpt</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>🫤 -name</td><td class='target'>seja ar diagonālu muti</td></tr>
+	<tr><td class='source'>🫤 –keywords</td><td class='target'>meh<br>nezinu<br>seja ar diagonālu muti<br>skeptiski<br>vīlies</td></tr>
+	<tr><td class='source'>🥹 -name</td><td class='target'>seja aizturēja asaras</td></tr>
+	<tr><td class='source'>🥹 –keywords</td><td class='target'>dusmīgs<br>lepns<br>pretoties<br>raudāt<br>seja aizturēja asaras<br>skumji</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🫱 -name</td><td class='target'>labā roka</td></tr>
+	<tr><td class='source'>🫱 –keywords</td><td class='target'>labā roka<br>pa labi<br>pareizi<br>roka</td></tr>
+	<tr><td class='source'>🫲 -name</td><td class='target'>kreiso roku</td></tr>
+	<tr><td class='source'>🫲 –keywords</td><td class='target'>kreiso roku<br>pa kreisi<br>roka</td></tr>
+	<tr><td class='source'>🫳 -name</td><td class='target'>plaukstu uz leju</td></tr>
+	<tr><td class='source'>🫳 –keywords</td><td class='target'>atlaist<br>nomest<br>plaukstu uz leju<br>shoo</td></tr>
+	<tr><td class='source'>🫴 -name</td><td class='target'>plaukstu uz augšu</td></tr>
+	<tr><td class='source'>🫴 –keywords</td><td class='target'>aicināt<br>nāc<br>nozveja<br>piedāvājums<br>plaukstu uz augšu</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🫰 -name</td><td class='target'>roka ar rādītājpirkstu un īkšķi sakrustota</td></tr>
+	<tr><td class='source'>🫰 –keywords</td><td class='target'>dārgs<br>knipis<br>mīlestība<br>nauda<br>roka ar rādītājpirkstu un īkšķi sakrustota<br>sirds</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-single-finger' href='#hand-single-finger'>hand-single-finger</a></td><td class='source'>🫵 -name</td><td class='target'>rādītājpirksts pret sevi</td></tr>
+	<tr><td class='source'>🫵 –keywords</td><td class='target'>jūs<br>punkts<br>rādītājpirksts pret sevi</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hands' href='#hands'>hands</a></td><td class='source'>🫶 -name</td><td class='target'>sirds žests</td></tr>
+	<tr><td class='source'>🫶 –keywords</td><td class='target'>mīlestība<br>sirds žests</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫦 -name</td><td class='target'>košana lūpā</td></tr>
+	<tr><td class='source'>🫦 –keywords</td><td class='target'>bailes<br>flirts<br>košana lūpā<br>neērti<br>nervozs<br>noraizējies</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🫅 -name</td><td class='target'>persona ar vainagu</td></tr>
+	<tr><td class='source'>🫅 –keywords</td><td class='target'>cēls<br>honorārs<br>monarhs<br>persona ar vainagu<br>valdnieks</td></tr>
+	<tr><td class='source'>🫃 -name</td><td class='target'>vīrietis stāvoklī</td></tr>
+	<tr><td class='source'>🫃 –keywords</td><td class='target'>apaļš<br>pilns<br>stāvoklī<br>vēders<br>vīrietis stāvoklī</td></tr>
+	<tr><td class='source'>🫄 -name</td><td class='target'>cilvēks stāvoklī</td></tr>
+	<tr><td class='source'>🫄 –keywords</td><td class='target'>apaļš<br>cilvēks stāvoklī<br>pilns<br>stāvoklī<br>vēders</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧌 -name</td><td class='target'>trollis</td></tr>
+	<tr><td class='source'>🧌 –keywords</td><td class='target'>briesmonis<br>fantāzija<br>pasaka<br>trollis</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🪸 -name</td><td class='target'>koraļļi</td></tr>
+	<tr><td class='source'>🪸 –keywords</td><td class='target'>koraļļi<br>okeāns<br>rifs</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🪷 -name</td><td class='target'>lotoss</td></tr>
+	<tr><td class='source'>🪷 –keywords</td><td class='target'>Budisms<br>Hinduisms<br>Indija<br>lotoss<br>tīrība<br>Vjetnama<br>zieds</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪹 -name</td><td class='target'>tukša ligzda</td></tr>
+	<tr><td class='source'>🪹 –keywords</td><td class='target'>ligzdošana<br>tukša ligzda</td></tr>
+	<tr><td class='source'>🪺 -name</td><td class='target'>ligzda ar olām</td></tr>
+	<tr><td class='source'>🪺 –keywords</td><td class='target'>ligzda ar olām<br>ligzdošana</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫘 -name</td><td class='target'>pupiņas</td></tr>
+	<tr><td class='source'>🫘 –keywords</td><td class='target'>nieres<br>pākšaugi<br>pārtika<br>pupiņas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫗 -name</td><td class='target'>ielejot šķidrumu</td></tr>
+	<tr><td class='source'>🫗 –keywords</td><td class='target'>dzēriens<br>ielejot šķidrumu<br>noplūde<br>stikls<br>tukšs</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🫙 -name</td><td class='target'>burka</td></tr>
+	<tr><td class='source'>🫙 –keywords</td><td class='target'>burka<br>garšviela<br>konteiners<br>mērce<br>tukšs<br>veikalā</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-other' href='#place-other'>place-other</a></td><td class='source'>🛝 -name</td><td class='target'>rotaļu laukuma slidkalniņš</td></tr>
+	<tr><td class='source'>🛝 –keywords</td><td class='target'>atrakciju parks<br>rotaļu laukuma slidkalniņš<br>spēlēt</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛞 -name</td><td class='target'>ritenis</td></tr>
+	<tr><td class='source'>🛞 –keywords</td><td class='target'>aplis<br>pagriezties<br>riepa<br>ritenis</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>🛟 -name</td><td class='target'>gredzenu boja</td></tr>
+	<tr><td class='source'>🛟 –keywords</td><td class='target'>drošība<br>dzīvības glābējs<br>glābējs<br>glābšana<br>gredzenu boja<br>pludiņš</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='game' href='#game'>game</a></td><td class='source'>🪬 -name</td><td class='target'>hamsa</td></tr>
+	<tr><td class='source'>🪬 –keywords</td><td class='target'>aizsardzība<br>amulets<br>Fatima<br>hamsa<br>Marija<br>Mirjama<br>roka</td></tr>
+	<tr><td class='source'>🪩 -name</td><td class='target'>spoguļa bumba</td></tr>
+	<tr><td class='source'>🪩 –keywords</td><td class='target'>ballīte<br>deja<br>diskotēka<br>mirdzēt<br>spoguļa bumba</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🪫 -name</td><td class='target'>zems akumulatora līmenis</td></tr>
+	<tr><td class='source'>🪫 –keywords</td><td class='target'>elektroniska<br>zema enerģija<br>zems akumulatora līmenis</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩼 -name</td><td class='target'>kruķis</td></tr>
+	<tr><td class='source'>🩼 –keywords</td><td class='target'>cukurniedres<br>ievainots<br>invaliditāte<br>kruķis<br>mobilitātes atbalsts<br>nūja</td></tr>
+	<tr><td class='source'>🩻 -name</td><td class='target'>rentgens</td></tr>
+	<tr><td class='source'>🩻 –keywords</td><td class='target'>ārsts<br>kauli<br>medicīnas<br>rentgens<br>skelets</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='household' href='#household'>household</a></td><td class='source'>🫧 -name</td><td class='target'>burbuļi</td></tr>
+	<tr><td class='source'>🫧 –keywords</td><td class='target'>burbuļi<br>tīrs<br>zem ūdens<br>ziepes</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪪 -name</td><td class='target'>identifikācijas karte</td></tr>
+	<tr><td class='source'>🪪 –keywords</td><td class='target'>akreditācijas dati<br>drošība<br>ID<br>identifikācijas karte<br>licence</td></tr>
+	<tr><td class='source' rowSpan='92'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='math' href='#math'>math</a></td><td class='source'>🟰 -name</td><td class='target'>smagā vienādības zīme</td></tr>
+	<tr><td class='source'>🟰 –keywords</td><td class='target'>matemātika<br>smagā vienādības zīme<br>vienlīdzība</td></tr>
+	<tr><td class='source' rowSpan='90'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>∀ -name</td><td class='target' rowSpan='2'>E13.1-282</td><td class='target' rowSpan='2'>visiem</td><td class='target' rowSpan='90'>comprehensive</td></tr>
+	<tr><td class='source'>∀ –keywords</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target' rowSpan='2'>E13.1-284</td><td class='target' rowSpan='2'>pastāv</td></tr>
+	<tr><td class='source'>∃ –keywords</td></tr>
+	<tr><td class='source'>∎ -name</td><td class='target' rowSpan='2'>E13.1-288</td><td class='target' rowSpan='2'>pierādīšanas beigas</td></tr>
+	<tr><td class='source'>∎ –keywords</td></tr>
+	<tr><td class='source'>∥ -name</td><td class='target' rowSpan='2'>E13.1-303</td><td class='target' rowSpan='2'>paralēli</td></tr>
+	<tr><td class='source'>∥ –keywords</td></tr>
+	<tr><td class='source'>∧ -name</td><td class='target' rowSpan='2'>E13.1-304</td><td class='target' rowSpan='2'>loģiski un</td></tr>
+	<tr><td class='source'>∧ –keywords</td></tr>
+	<tr><td class='source'>∫ -name</td><td class='target' rowSpan='2'>E13.1-305</td><td class='target' rowSpan='2'>neatņemama sastāvdaļa</td></tr>
+	<tr><td class='source'>∫ –keywords</td></tr>
+	<tr><td class='source'>∬ -name</td><td class='target' rowSpan='2'>E13.1-306</td><td class='target' rowSpan='2'>dubults neatņemama sastāvdaļa</td></tr>
+	<tr><td class='source'>∬ –keywords</td></tr>
+	<tr><td class='source'>∮ -name</td><td class='target' rowSpan='2'>E13.1-307</td><td class='target' rowSpan='2'>kontūras neatņemama sastāvdaļa</td></tr>
+	<tr><td class='source'>∮ –keywords</td></tr>
+	<tr><td class='source'>∴ -name</td><td class='target' rowSpan='2'>E13.1-308</td><td class='target' rowSpan='2'>tāpēc</td></tr>
+	<tr><td class='source'>∴ –keywords</td></tr>
+	<tr><td class='source'>∵ -name</td><td class='target' rowSpan='2'>E13.1-309</td><td class='target' rowSpan='2'>jo</td></tr>
+	<tr><td class='source'>∵ –keywords</td></tr>
+	<tr><td class='source'>∶ -name</td><td class='target' rowSpan='2'>E13.1-310</td><td class='target' rowSpan='2'>attiecība</td></tr>
+	<tr><td class='source'>∶ –keywords</td></tr>
+	<tr><td class='source'>∷ -name</td><td class='target' rowSpan='2'>E13.1-311</td><td class='target' rowSpan='2'>proporcija</td></tr>
+	<tr><td class='source'>∷ –keywords</td></tr>
+	<tr><td class='source'>∼ -name</td><td class='target' rowSpan='2'>E13.1-312</td><td class='target' rowSpan='2'>tildes operators</td></tr>
+	<tr><td class='source'>∼ –keywords</td></tr>
+	<tr><td class='source'>∽ -name</td><td class='target' rowSpan='2'>E13.1-313</td><td class='target' rowSpan='2'>apgrieztā tilde</td></tr>
+	<tr><td class='source'>∽ –keywords</td></tr>
+	<tr><td class='source'>∾ -name</td><td class='target' rowSpan='2'>E13.1-314</td><td class='target' rowSpan='2'>apgriezts slinks s</td></tr>
+	<tr><td class='source'>∾ –keywords</td></tr>
+	<tr><td class='source'>≃ -name</td><td class='target' rowSpan='2'>E13.1-315</td><td class='target' rowSpan='2'>asimptotiski vienāds</td></tr>
+	<tr><td class='source'>≃ –keywords</td></tr>
+	<tr><td class='source'>≅ -name</td><td class='target' rowSpan='2'>E13.1-316</td><td class='target' rowSpan='2'>aptuveni vienāds</td></tr>
+	<tr><td class='source'>≅ –keywords</td></tr>
+	<tr><td class='source'>≌ -name</td><td class='target' rowSpan='2'>E13.1-317</td><td class='target' rowSpan='2'>visi vienādi</td></tr>
+	<tr><td class='source'>≌ –keywords</td></tr>
+	<tr><td class='source'>≒ -name</td><td class='target' rowSpan='2'>E13.1-318</td><td class='target' rowSpan='2'>aptuveni vienāds ar attēlu</td></tr>
+	<tr><td class='source'>≒ –keywords</td></tr>
+	<tr><td class='source'>≖ -name</td><td class='target' rowSpan='2'>E13.1-319</td><td class='target' rowSpan='2'>gredzens vienādi</td></tr>
+	<tr><td class='source'>≖ –keywords</td></tr>
+	<tr><td class='source'>≣ -name</td><td class='target' rowSpan='2'>E13.1-320</td><td class='target' rowSpan='2'>stingri līdzvērtīgi</td></tr>
+	<tr><td class='source'>≣ –keywords</td></tr>
+	<tr><td class='source'>≦ -name</td><td class='target'>E13.1-321</td><td class='target' rowSpan='2'>mazāk nekā vairāk par vienādu</td></tr>
+	<tr><td class='source'>≦ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>≧ -name</td><td class='target'>E13.1-322</td><td class='target' rowSpan='2'>lielāks nekā vienāds</td></tr>
+	<tr><td class='source'>≧ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>≪ -name</td><td class='target'>E13.1-323</td><td class='target' rowSpan='2'>daudz mazāk nekā</td></tr>
+	<tr><td class='source'>≪ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>≫ -name</td><td class='target'>E13.1-324</td><td class='target' rowSpan='2'>daudz lielāks-nekā</td></tr>
+	<tr><td class='source'>≫ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>≬ -name</td><td class='target' rowSpan='2'>E13.1-325</td><td class='target' rowSpan='2'>starp</td></tr>
+	<tr><td class='source'>≬ –keywords</td></tr>
+	<tr><td class='source'>≳ -name</td><td class='target'>E13.1-326</td><td class='target' rowSpan='2'>lielāks nekā ekvivalents</td></tr>
+	<tr><td class='source'>≳ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>≺ -name</td><td class='target'>E13.1-327</td><td class='target' rowSpan='2'>pirms</td></tr>
+	<tr><td class='source'>≺ –keywords</td><td class='target'>kopas operators<br>matemātika</td></tr>
+	<tr><td class='source'>≻ -name</td><td class='target'>E13.1-328</td><td class='target' rowSpan='2'>seko</td></tr>
+	<tr><td class='source'>≻ –keywords</td><td class='target'>kopas operators<br>matemātika</td></tr>
+	<tr><td class='source'>⊁ -name</td><td class='target'>E13.1-329</td><td class='target' rowSpan='2'>nepaveicas</td></tr>
+	<tr><td class='source'>⊁ –keywords</td><td class='target'>kopas operators<br>matemātika</td></tr>
+	<tr><td class='source'>⊃ -name</td><td class='target'>E13.1-330</td><td class='target' rowSpan='2'>reālā apakškopa</td></tr>
+	<tr><td class='source'>⊃ –keywords</td><td class='target'>kopas operators<br>matemātika</td></tr>
+	<tr><td class='source'>⊆ -name</td><td class='target' rowSpan='2'>E13.1-331</td><td class='target' rowSpan='2'>apakškopa</td></tr>
+	<tr><td class='source'>⊆ –keywords</td></tr>
+	<tr><td class='source'>⊇ -name</td><td class='target' rowSpan='2'>E13.1-332</td><td class='target' rowSpan='2'>pārmērība</td></tr>
+	<tr><td class='source'>⊇ –keywords</td></tr>
+	<tr><td class='source'>⊗ -name</td><td class='target' rowSpan='2'>E13.1-335</td><td class='target' rowSpan='2'>plus zīme lokā</td></tr>
+	<tr><td class='source'>⊗ –keywords</td></tr>
+	<tr><td class='source'>⋈ -name</td><td class='target' rowSpan='2'>E13.1-355</td><td class='target' rowSpan='2'>dabiski pievienoties</td></tr>
+	<tr><td class='source'>⋈ –keywords</td></tr>
+	<tr><td class='source'>⋘ -name</td><td class='target'>E13.1-357</td><td class='target' rowSpan='2'>ļoti daudz mazāk nekā</td></tr>
+	<tr><td class='source'>⋘ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>⋙ -name</td><td class='target'>E13.1-358</td><td class='target' rowSpan='2'>ļoti daudz lielāks nekā</td></tr>
+	<tr><td class='source'>⋙ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>▤ -name</td><td class='target' rowSpan='2'>E13.1-367</td><td class='target' rowSpan='2'>kvadrāts ar horizontālu aizpildījumu</td></tr>
+	<tr><td class='source'>▤ –keywords</td></tr>
+	<tr><td class='source'>⪚ -name</td><td class='target'>E13.1-432</td><td class='target' rowSpan='2'>dubultlīnija ir vienāda ar lielāku par</td></tr>
+	<tr><td class='source'>⪚ –keywords</td><td class='target'>matemātika<br>nevienādība</td></tr>
+	<tr><td class='source'>₢ -name</td><td class='target' rowSpan='2'>E13.1-434</td><td class='target' rowSpan='2'>cruzeiro</td></tr>
+	<tr><td class='source'>₢ –keywords</td></tr>
+	<tr><td class='source'>₣ -name</td><td class='target' rowSpan='2'>E13.1-435</td><td class='target' rowSpan='2'>franču franks</td></tr>
+	<tr><td class='source'>₣ –keywords</td></tr>
+	<tr><td class='source'>₤ -name</td><td class='target'>E13.1-436</td><td class='target' rowSpan='2'>lira</td></tr>
+	<tr><td class='source'>₤ –keywords</td><td class='target'>valūta</td></tr>
+	<tr><td class='source'>₰ -name</td><td class='target' rowSpan='2'>E13.1-437</td><td class='target' rowSpan='2'>vācu penss</td></tr>
+	<tr><td class='source'>₰ –keywords</td></tr>
+	<tr><td class='source'>₳ -name</td><td class='target' rowSpan='2'>E13.1-438</td><td class='target' rowSpan='2'>austral</td></tr>
+	<tr><td class='source'>₳ –keywords</td></tr>
+	<tr><td class='source'>₶ -name</td><td class='target'>E13.1-439</td><td class='target' rowSpan='2'>livre tournois</td></tr>
+	<tr><td class='source'>₶ –keywords</td><td class='target'>valūta</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='7'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='5'><a name='Case' href='#Case'>Case</a></td><td class='source'>accusative</td><td class='target' rowSpan='19'>▷missing◁</td><td class='target'>palikt {0}</td><td class='target' rowSpan='7'>modern</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>pietiks {0}</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} brauciens</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>izdarīts {0}</td></tr>
+	<tr><td class='source'>nominative</td><td class='target'>pagājusi {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Gender' href='#Gender'>Gender</a></td><td class='source'>feminine</td><td class='target'>gara {0}</td></tr>
+	<tr><td class='source'>masculine</td><td class='target'>viens {0}</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='12'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMMdd</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>yMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>yMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>yMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>yyMMdd</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-full</td><td class='target'>HHmmsszzzz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-long</td><td class='target'>HHmmssz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-medium</td><td class='target'>HHmmss</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-short</td><td class='target'>HHmm</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
-<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
-<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
 

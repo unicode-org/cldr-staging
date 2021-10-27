@@ -1,0 +1,406 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hungarian: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Hungarian: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source' rowSpan='2'>Hungarian</td><td class='source' rowSpan='2'><a name='hu' href='#hu'>hu</a></td><td class='source' rowSpan='2'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, accusative, dative, instrumental, ablative, adessive, allative, causal, delative, elative, essive, illative, inessive, sublative, superessive, terminative, translative</td></tr>
+	<tr><td class='source'>units</td><td class='source'>nominative, accusative, instrumental, terminative, translative</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>A kosár tartalma: {0} X. Megveszi?</td><td class='target'><div class='cldr_example'>A kosár tartalma: <span class='cldr_substituted'>1</span> X. Megveszi?</div></td></tr>
+	<tr><td class='source'>other</td><td class='target'>A kosár tartalma: {0} X. Megveszi őket?</td><td class='target'><div class='cldr_example'>A kosár tartalma: <span class='cldr_substituted'>2</span> X. Megveszi őket?</div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='Case' href='#Case'>Case</a></td><td class='source'>accusative</td><td class='target'>{0} évet</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 radiánt</span> évet</div></td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} évvel</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>2 radiánnal</span> évvel</div></td></tr>
+	<tr><td class='source'>nominative</td><td class='target'>{0} év</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 radián</span> év</div></td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>{0} évig</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 radiánig</span> évig</div></td></tr>
+	<tr><td class='source'>translative</td><td class='target'>{0} évvé</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 radiánná</span> évvé</div></td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>acceleration</td><td class='source' rowSpan='5'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} g gyorsulás</td><td class='target'>1 g gyorsulás év</td><td class='target' rowSpan='5'>{0} g gyorsulás</td><td class='target'>2 g gyorsulás év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 g gyorsulás évet</td><td class='target'>2 g gyorsulás évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 g gyorsulás évvel</td><td class='target'>2 g gyorsulás évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 g gyorsulás évig</td><td class='target'>2 g gyorsulás évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 g gyorsulás évvé</td><td class='target'>2 g gyorsulás évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='25'>angle</td><td class='source' rowSpan='5'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ívmásodperc</td><td class='target'>1 ívmásodperc év</td><td class='target' rowSpan='5'>{0} ívmásodperc</td><td class='target'>2 ívmásodperc év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ívmásodperc évet</td><td class='target'>2 ívmásodperc évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ívmásodperc évvel</td><td class='target'>2 ívmásodperc évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 ívmásodperc évig</td><td class='target'>2 ívmásodperc évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 ívmásodperc évvé</td><td class='target'>2 ívmásodperc évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ívperc</td><td class='target'>1 ívperc év</td><td class='target' rowSpan='5'>{0} ívperc</td><td class='target'>2 ívperc év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ívperc évet</td><td class='target'>2 ívperc évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ívperc évvel</td><td class='target'>2 ívperc évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 ívperc évig</td><td class='target'>2 ívperc évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 ívperc évvé</td><td class='target'>2 ívperc évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} fok</td><td class='target'>1 fok év</td><td class='target'>{0} fok</td><td class='target'>2 fok év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} fokot</td><td class='target'>1 fokot évet</td><td class='target'>{0} fokot</td><td class='target'>2 fokot évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} fokkal</td><td class='target'>1 fokkal évvel</td><td class='target'>{0} fokkal</td><td class='target'>2 fokkal évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>{0} fokig</td><td class='target'>1 fokig évig</td><td class='target'>{0} fokig</td><td class='target'>2 fokig évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>{0} fokká</td><td class='target'>1 fokká évvé</td><td class='target'>{0} fokká</td><td class='target'>2 fokká évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} radián</td><td class='target'>1 radián év</td><td class='target'>{0} radián</td><td class='target'>2 radián év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} radiánt</td><td class='target'>1 radiánt évet</td><td class='target'>{0} radiánt</td><td class='target'>2 radiánt évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} radián</td><td class='target'>1 radián évvel</td><td class='target'>{0} radiánnal</td><td class='target'>2 radiánnal évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>{0} radiánig</td><td class='target'>1 radiánig évig</td><td class='target'>{0} radiánig</td><td class='target'>2 radiánig évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>{0} radiánná</td><td class='target'>1 radiánná évvé</td><td class='target'>{0} radiánná</td><td class='target'>2 radiánná évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target'>{0} fordulat</td><td class='target'>1 fordulat év</td><td class='target'>{0} fordulat</td><td class='target'>2 fordulat év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} fordulatot</td><td class='target'>1 fordulatot évet</td><td class='target'>{0} fordulatot</td><td class='target'>2 fordulatot évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} fordulattal</td><td class='target'>1 fordulattal évvel</td><td class='target'>{0} fordulattal</td><td class='target'>2 fordulattal évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>{0} fordulatig</td><td class='target'>1 fordulatig évig</td><td class='target'>{0} fordulatig</td><td class='target'>2 fordulatig évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>{0} fordulattá</td><td class='target'>1 fordulattá évvé</td><td class='target'>{0} fordulattá</td><td class='target'>2 fordulattá évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>area</td><td class='source' rowSpan='5'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hektár</td><td class='target'>1 hektár év</td><td class='target' rowSpan='5'>{0} hektár</td><td class='target'>2 hektár év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 hektár évet</td><td class='target'>2 hektár évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 hektár évvel</td><td class='target'>2 hektár évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 hektár évig</td><td class='target'>2 hektár évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 hektár évvé</td><td class='target'>2 hektár évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='10'>digital</td><td class='source' rowSpan='5'><a name='bits' href='#bits'>bits</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bit</td><td class='target'>1 bit év</td><td class='target' rowSpan='5'>{0} bit</td><td class='target'>2 bit év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 bit évet</td><td class='target'>2 bit évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 bit évvel</td><td class='target'>2 bit évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 bit évig</td><td class='target'>2 bit évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 bit évvé</td><td class='target'>2 bit évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bájt</td><td class='target'>1 bájt év</td><td class='target' rowSpan='5'>{0} bájt</td><td class='target'>2 bájt év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 bájt évet</td><td class='target'>2 bájt évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 bájt évvel</td><td class='target'>2 bájt évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 bájt évig</td><td class='target'>2 bájt évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 bájt évvé</td><td class='target'>2 bájt évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='30'>duration</td><td class='source' rowSpan='5'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} másodperc</td><td class='target'>1 másodperc év</td><td class='target' rowSpan='5'>{0} másodperc</td><td class='target'>2 másodperc év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 másodperc évet</td><td class='target'>2 másodperc évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 másodperc évvel</td><td class='target'>2 másodperc évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 másodperc évig</td><td class='target'>2 másodperc évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 másodperc évvé</td><td class='target'>2 másodperc évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} perc</td><td class='target'>1 perc év</td><td class='target' rowSpan='5'>{0} perc</td><td class='target'>2 perc év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 perc évet</td><td class='target'>2 perc évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 perc évvel</td><td class='target'>2 perc évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 perc évig</td><td class='target'>2 perc évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 perc évvé</td><td class='target'>2 perc évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} óra</td><td class='target'>1 óra év</td><td class='target' rowSpan='5'>{0} óra</td><td class='target'>2 óra év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 óra évet</td><td class='target'>2 óra évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 óra évvel</td><td class='target'>2 óra évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 óra évig</td><td class='target'>2 óra évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 óra évvé</td><td class='target'>2 óra évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} nap</td><td class='target'>1 nap év</td><td class='target' rowSpan='5'>{0} nap</td><td class='target'>2 nap év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 nap évet</td><td class='target'>2 nap évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 nap évvel</td><td class='target'>2 nap évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 nap évig</td><td class='target'>2 nap évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 nap évvé</td><td class='target'>2 nap évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} nap</td><td class='target'>1 nap év</td><td class='target' rowSpan='5'>{0} nap</td><td class='target'>2 nap év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 nap évet</td><td class='target'>2 nap évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 nap évvel</td><td class='target'>2 nap évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 nap évig</td><td class='target'>2 nap évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 nap évvé</td><td class='target'>2 nap évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hét</td><td class='target'>1 hét év</td><td class='target' rowSpan='5'>{0} hét</td><td class='target'>2 hét év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 hét évet</td><td class='target'>2 hét évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 hét évvel</td><td class='target'>2 hét évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 hét évig</td><td class='target'>2 hét évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 hét évvé</td><td class='target'>2 hét évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>electric-current</td><td class='source' rowSpan='5'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} amper</td><td class='target'>1 amper év</td><td class='target' rowSpan='5'>{0} amper</td><td class='target'>2 amper év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 amper évet</td><td class='target'>2 amper évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 amper évvel</td><td class='target'>2 amper évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 amper évig</td><td class='target'>2 amper évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 amper évvé</td><td class='target'>2 amper évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>electric-resistance</td><td class='source' rowSpan='5'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ohm</td><td class='target'>1 ohm év</td><td class='target' rowSpan='5'>{0} ohm</td><td class='target'>2 ohm év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ohm évet</td><td class='target'>2 ohm évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ohm évvel</td><td class='target'>2 ohm évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 ohm évig</td><td class='target'>2 ohm évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 ohm évvé</td><td class='target'>2 ohm évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='10'>energy</td><td class='source' rowSpan='5'><a name='joules' href='#joules'>joules</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} joule</td><td class='target'>1 joule év</td><td class='target' rowSpan='5'>{0} joule</td><td class='target'>2 joule év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 joule évet</td><td class='target'>2 joule évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 joule évvel</td><td class='target'>2 joule évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 joule évig</td><td class='target'>2 joule évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 joule évvé</td><td class='target'>2 joule évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kalória</td><td class='target'>1 kalória év</td><td class='target' rowSpan='5'>{0} kalória</td><td class='target'>2 kalória év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 kalória évet</td><td class='target'>2 kalória évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 kalória évvel</td><td class='target'>2 kalória évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 kalória évig</td><td class='target'>2 kalória évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 kalória évvé</td><td class='target'>2 kalória évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>force</td><td class='source' rowSpan='5'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} newton</td><td class='target'>1 newton év</td><td class='target' rowSpan='5'>{0} newton</td><td class='target'>2 newton év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 newton évet</td><td class='target'>2 newton évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 newton évvel</td><td class='target'>2 newton évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 newton évig</td><td class='target'>2 newton évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 newton évvé</td><td class='target'>2 newton évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>frequency</td><td class='source' rowSpan='5'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hertz</td><td class='target'>1 hertz év</td><td class='target' rowSpan='5'>{0} hertz</td><td class='target'>2 hertz év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 hertz évet</td><td class='target'>2 hertz évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 hertz évvel</td><td class='target'>2 hertz évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 hertz évig</td><td class='target'>2 hertz évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 hertz évvé</td><td class='target'>2 hertz évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>graphics</td><td class='source' rowSpan='5'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} képpont</td><td class='target'>1 képpont év</td><td class='target' rowSpan='5'>{0} képpont</td><td class='target'>2 képpont év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 képpont évet</td><td class='target'>2 képpont évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 képpont évvel</td><td class='target'>2 képpont évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 képpont évig</td><td class='target'>2 képpont évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 képpont évvé</td><td class='target'>2 képpont évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>illuminance</td><td class='source' rowSpan='5'><a name='lux' href='#lux'>lux</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} lux</td><td class='target'>1 lux év</td><td class='target' rowSpan='5'>{0} lux</td><td class='target'>2 lux év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 lux évet</td><td class='target'>2 lux évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 lux évvel</td><td class='target'>2 lux évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 lux évig</td><td class='target'>2 lux évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 lux évvé</td><td class='target'>2 lux évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='10'>length</td><td class='source' rowSpan='5'><a name='meters' href='#meters'>meters</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} méter</td><td class='target'>1 méter év</td><td class='target' rowSpan='5'>{0} méter</td><td class='target'>2 méter év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 méter évet</td><td class='target'>2 méter évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 méter évvel</td><td class='target'>2 méter évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 méter évig</td><td class='target'>2 méter évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 méter évvé</td><td class='target'>2 méter évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} svéd mérföld</td><td class='target'>1 svéd mérföld év</td><td class='target' rowSpan='5'>{0} svéd mérföld</td><td class='target'>2 svéd mérföld év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 svéd mérföld évet</td><td class='target'>2 svéd mérföld évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 svéd mérföld évvel</td><td class='target'>2 svéd mérföld évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 svéd mérföld évig</td><td class='target'>2 svéd mérföld évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 svéd mérföld évvé</td><td class='target'>2 svéd mérföld évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>luminous-flux</td><td class='source' rowSpan='5'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>nominative</td><td class='target'>{0} lumen</td><td class='target'>1 lumen év</td><td class='target'>{0} lumen</td><td class='target'>2 lumen év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} lument</td><td class='target'>1 lument évet</td><td class='target'>{0} lument</td><td class='target'>2 lument évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} lumennel</td><td class='target'>1 lumennel évvel</td><td class='target'>{0} lumennel</td><td class='target'>2 lumennel évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>{0} lumenig</td><td class='target'>1 lumenig évig</td><td class='target'>{0} lumenig</td><td class='target'>2 lumenig évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>{0} lumenné</td><td class='target'>1 lumenné évvé</td><td class='target'>{0} lumenné</td><td class='target'>2 lumenné évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>luminous-intensity</td><td class='source' rowSpan='5'><a name='candela' href='#candela'>candela</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kandela</td><td class='target'>1 kandela év</td><td class='target' rowSpan='5'>{0} kandela</td><td class='target'>2 kandela év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 kandela évet</td><td class='target'>2 kandela évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 kandela évvel</td><td class='target'>2 kandela évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 kandela évig</td><td class='target'>2 kandela évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 kandela évvé</td><td class='target'>2 kandela évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>mass</td><td class='source' rowSpan='5'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} karát</td><td class='target'>1 karát év</td><td class='target' rowSpan='5'>{0} karát</td><td class='target'>2 karát év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 karát évet</td><td class='target'>2 karát évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 karát évvel</td><td class='target'>2 karát évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 karát évig</td><td class='target'>2 karát évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 karát évvé</td><td class='target'>2 karát évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} gramm</td><td class='target'>1 gramm év</td><td class='target' rowSpan='5'>{0} gramm</td><td class='target'>2 gramm év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 gramm évet</td><td class='target'>2 gramm évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 gramm évvel</td><td class='target'>2 gramm évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 gramm évig</td><td class='target'>2 gramm évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 gramm évvé</td><td class='target'>2 gramm évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kilogramm</td><td class='target'>1 kilogramm év</td><td class='target' rowSpan='5'>{0} kilogramm</td><td class='target'>2 kilogramm év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 kilogramm évet</td><td class='target'>2 kilogramm évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 kilogramm évvel</td><td class='target'>2 kilogramm évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 kilogramm évig</td><td class='target'>2 kilogramm évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 kilogramm évvé</td><td class='target'>2 kilogramm évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} metrikus tonna</td><td class='target'>1 metrikus tonna év</td><td class='target' rowSpan='5'>{0} metrikus tonna</td><td class='target'>2 metrikus tonna év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 metrikus tonna évet</td><td class='target'>2 metrikus tonna évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 metrikus tonna évvel</td><td class='target'>2 metrikus tonna évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 metrikus tonna évig</td><td class='target'>2 metrikus tonna évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 metrikus tonna évvé</td><td class='target'>2 metrikus tonna évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='25'>portion</td><td class='source' rowSpan='5'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} részecske/millió</td><td class='target'>1 részecske/millió év</td><td class='target' rowSpan='5'>{0} részecske/millió</td><td class='target'>2 részecske/millió év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 részecske/millió évet</td><td class='target'>2 részecske/millió évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 részecske/millió évvel</td><td class='target'>2 részecske/millió évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 részecske/millió évig</td><td class='target'>2 részecske/millió évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 részecske/millió évvé</td><td class='target'>2 részecske/millió évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} tízezrelék</td><td class='target'>1 tízezrelék év</td><td class='target' rowSpan='5'>{0} tízezrelék</td><td class='target'>2 tízezrelék év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 tízezrelék évet</td><td class='target'>2 tízezrelék évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 tízezrelék évvel</td><td class='target'>2 tízezrelék évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 tízezrelék évig</td><td class='target'>2 tízezrelék évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 tízezrelék évvé</td><td class='target'>2 tízezrelék évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='permille' href='#permille'>permille</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} ezrelék</td><td class='target'>1 ezrelék év</td><td class='target' rowSpan='5'>{0} ezrelék</td><td class='target'>2 ezrelék év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 ezrelék évet</td><td class='target'>2 ezrelék évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 ezrelék évvel</td><td class='target'>2 ezrelék évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 ezrelék évig</td><td class='target'>2 ezrelék évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 ezrelék évvé</td><td class='target'>2 ezrelék évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='percent' href='#percent'>percent</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} százalék</td><td class='target'>1 százalék év</td><td class='target' rowSpan='5'>{0} százalék</td><td class='target'>2 százalék év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 százalék évet</td><td class='target'>2 százalék évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 százalék évvel</td><td class='target'>2 százalék évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 százalék évig</td><td class='target'>2 százalék évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 százalék évvé</td><td class='target'>2 százalék évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} karát</td><td class='target'>1 karát év</td><td class='target' rowSpan='5'>{0} karát</td><td class='target'>2 karát év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 karát évet</td><td class='target'>2 karát évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 karát évvel</td><td class='target'>2 karát évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 karát évig</td><td class='target'>2 karát évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 karát évvé</td><td class='target'>2 karát évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>power</td><td class='source' rowSpan='5'><a name='watts' href='#watts'>watts</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} watt</td><td class='target'>1 watt év</td><td class='target' rowSpan='5'>{0} watt</td><td class='target'>2 watt év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 watt évet</td><td class='target'>2 watt évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 watt évvel</td><td class='target'>2 watt évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 watt évig</td><td class='target'>2 watt évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 watt évvé</td><td class='target'>2 watt évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='15'>pressure</td><td class='source' rowSpan='5'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} pascal</td><td class='target'>1 pascal év</td><td class='target' rowSpan='5'>{0} pascal</td><td class='target'>2 pascal év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 pascal évet</td><td class='target'>2 pascal évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 pascal évvel</td><td class='target'>2 pascal évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 pascal évig</td><td class='target'>2 pascal évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 pascal évvé</td><td class='target'>2 pascal évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bar</td><td class='target'>1 bar év</td><td class='target' rowSpan='5'>{0} bar</td><td class='target'>2 bar év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 bar évet</td><td class='target'>2 bar évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 bar évvel</td><td class='target'>2 bar évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 bar évig</td><td class='target'>2 bar évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 bar évvé</td><td class='target'>2 bar évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} atmoszféra</td><td class='target'>1 atmoszféra év</td><td class='target' rowSpan='5'>{0} atmoszféra</td><td class='target'>2 atmoszféra év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 atmoszféra évet</td><td class='target'>2 atmoszféra évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 atmoszféra évvel</td><td class='target'>2 atmoszféra évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 atmoszféra évig</td><td class='target'>2 atmoszféra évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 atmoszféra évvé</td><td class='target'>2 atmoszféra évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>substance-amount</td><td class='source' rowSpan='5'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} mól</td><td class='target'>1 mól év</td><td class='target' rowSpan='5'>{0} mól</td><td class='target'>2 mól év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 mól évet</td><td class='target'>2 mól évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 mól évvel</td><td class='target'>2 mól évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 mól évig</td><td class='target'>2 mól évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 mól évvé</td><td class='target'>2 mól évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='15'>temperature</td><td class='source' rowSpan='5'><a name='°' href='#°'>°</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0}°</td><td class='target'>1° év</td><td class='target' rowSpan='5'>{0}°</td><td class='target'>2° év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1° évet</td><td class='target'>2° évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1° évvel</td><td class='target'>2° évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1° évig</td><td class='target'>2° évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1° évvé</td><td class='target'>2° évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} Celsius-fok</td><td class='target'>1 Celsius-fok év</td><td class='target' rowSpan='5'>{0} Celsius-fok</td><td class='target'>2 Celsius-fok év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 Celsius-fok évet</td><td class='target'>2 Celsius-fok évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 Celsius-fok évvel</td><td class='target'>2 Celsius-fok évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 Celsius-fok évig</td><td class='target'>2 Celsius-fok évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 Celsius-fok évvé</td><td class='target'>2 Celsius-fok évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kelvin</td><td class='target'>1 kelvin év</td><td class='target' rowSpan='5'>{0} kelvin</td><td class='target'>2 kelvin év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 kelvin évet</td><td class='target'>2 kelvin évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 kelvin évvel</td><td class='target'>2 kelvin évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 kelvin évig</td><td class='target'>2 kelvin évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 kelvin évvé</td><td class='target'>2 kelvin évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>typewidth</td><td class='source' rowSpan='5'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} kvirt</td><td class='target'>1 kvirt év</td><td class='target' rowSpan='5'>{0} kvirt</td><td class='target'>2 kvirt év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 kvirt évet</td><td class='target'>2 kvirt évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 kvirt évvel</td><td class='target'>2 kvirt évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 kvirt évig</td><td class='target'>2 kvirt évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 kvirt évvé</td><td class='target'>2 kvirt évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='5'>voltage</td><td class='source' rowSpan='5'><a name='volts' href='#volts'>volts</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} volt</td><td class='target'>1 volt év</td><td class='target' rowSpan='5'>{0} volt</td><td class='target'>2 volt év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 volt évet</td><td class='target'>2 volt évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 volt évvel</td><td class='target'>2 volt évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 volt évig</td><td class='target'>2 volt évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 volt évvé</td><td class='target'>2 volt évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='15'>volume</td><td class='source' rowSpan='5'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} bögre</td><td class='target'>1 bögre év</td><td class='target' rowSpan='5'>{0} bögre</td><td class='target'>2 bögre év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 bögre évet</td><td class='target'>2 bögre évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 bögre évvel</td><td class='target'>2 bögre évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 bögre évig</td><td class='target'>2 bögre évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 bögre évvé</td><td class='target'>2 bögre évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} metrikus pint</td><td class='target'>1 metrikus pint év</td><td class='target' rowSpan='5'>{0} metrikus pint</td><td class='target'>2 metrikus pint év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 metrikus pint évet</td><td class='target'>2 metrikus pint évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 metrikus pint évvel</td><td class='target'>2 metrikus pint évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 metrikus pint évig</td><td class='target'>2 metrikus pint évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 metrikus pint évvé</td><td class='target'>2 metrikus pint évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='liters' href='#liters'>liters</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} liter</td><td class='target'>1 liter év</td><td class='target' rowSpan='5'>{0} liter</td><td class='target'>2 liter év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 liter évet</td><td class='target'>2 liter évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 liter évvel</td><td class='target'>2 liter évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 liter évig</td><td class='target'>2 liter évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 liter évvé</td><td class='target'>2 liter évvé</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>year-duration</td><td class='source' rowSpan='5'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} hónap</td><td class='target'>1 hónap év</td><td class='target' rowSpan='5'>{0} hónap</td><td class='target'>2 hónap év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 hónap évet</td><td class='target'>2 hónap évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 hónap évvel</td><td class='target'>2 hónap évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 hónap évig</td><td class='target'>2 hónap évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 hónap évvé</td><td class='target'>2 hónap évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} év</td><td class='target'>1 év év</td><td class='target' rowSpan='5'>{0} év</td><td class='target'>2 év év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 év évet</td><td class='target'>2 év évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 év évvel</td><td class='target'>2 év évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 év évig</td><td class='target'>2 év évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 év évvé</td><td class='target'>2 év évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} évtized</td><td class='target'>1 évtized év</td><td class='target' rowSpan='5'>{0} évtized</td><td class='target'>2 évtized év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 évtized évet</td><td class='target'>2 évtized évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 évtized évvel</td><td class='target'>2 évtized évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 évtized évig</td><td class='target'>2 évtized évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 évtized évvé</td><td class='target'>2 évtized évvé</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} évszázad</td><td class='target'>1 évszázad év</td><td class='target' rowSpan='5'>{0} évszázad</td><td class='target'>2 évszázad év</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>1 évszázad évet</td><td class='target'>2 évszázad évet</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>1 évszázad évvel</td><td class='target'>2 évszázad évvel</td></tr>
+	<tr><td class='source'>terminative</td><td class='target'>1 évszázad évig</td><td class='target'>2 évszázad évig</td></tr>
+	<tr><td class='source'>translative</td><td class='target'>1 évszázad évvé</td><td class='target'>2 évszázad évvé</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 1.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 2.0</th></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

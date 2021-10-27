@@ -1,0 +1,405 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Armenian: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Armenian: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source'>Armenian</td><td class='source'><a name='hy' href='#hy'>hy</a></td><td class='source'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, dative, locative, instrumental, ablative</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>այդ {0} ժամը</td><td class='target'><div class='cldr_example'>այդ <span class='cldr_substituted'>1</span> ժամը</div></td></tr>
+	<tr><td class='source'>other</td><td class='target'>այդ {0} ժամերը</td><td class='target'><div class='cldr_example'>այդ <span class='cldr_substituted'>2</span> ժամերը</div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='5'><a name='Case' href='#Case'>Case</a></td><td class='source'>ablative</td><td class='target'>Վախենում եմ այդ {0}</td><td class='target'><div class='cldr_example'>Վախենում եմ այդ <span class='cldr_substituted'>1 փիքսելից</span></div></td></tr>
+	<tr><td class='source'>dative</td><td class='target'>Սպասում եմ այդ {0}</td><td class='target'><div class='cldr_example'>Սպասում եմ այդ <span class='cldr_substituted'>1 փիքսելին</span></div></td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Հպարտանում եմ այդ {0}</td><td class='target'><div class='cldr_example'>Հպարտանում եմ այդ <span class='cldr_substituted'>2 փիքսելներով</span></div></td></tr>
+	<tr><td class='source'>locative</td><td class='target'>Երկրի պտույտը {0}</td><td class='target'><div class='cldr_example'>Երկրի պտույտը <span class='cldr_substituted'>2 փիքսելներում</span></div></td></tr>
+	<tr><td class='source'>nominative</td><td class='target'>Մնացել է {0}</td><td class='target'><div class='cldr_example'>Մնացել է <span class='cldr_substituted'>1 փիքսել</span></div></td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>acceleration</td><td class='source' rowSpan='5'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} g</td><td class='target'>Մնացել է 1 g</td><td class='target' rowSpan='5'>{0} g</td><td class='target'>Մնացել է 3 g</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>Սպասում եմ այդ 1 g</td><td class='target'>Սպասում եմ այդ 3 g</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>Երկրի պտույտը 1 g</td><td class='target'>Երկրի պտույտը 3 g</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Հպարտանում եմ այդ 1 g</td><td class='target'>Հպարտանում եմ այդ 3 g</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>Վախենում եմ այդ 1 g</td><td class='target'>Վախենում եմ այդ 3 g</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='25'>angle</td><td class='source' rowSpan='5'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} վայրկյան</td><td class='target'>Մնացել է 1 վայրկյան</td><td class='target'>{0} վայրկյան</td><td class='target'>Մնացել է 3 վայրկյան</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} վայրկյանին</td><td class='target'>Սպասում եմ այդ 1 վայրկյանին</td><td class='target'>{0} վայրկյանին</td><td class='target'>Սպասում եմ այդ 3 վայրկյանին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} վայրկյանում</td><td class='target'>Երկրի պտույտը 1 վայրկյանում</td><td class='target'>{0} վայրկյանում</td><td class='target'>Երկրի պտույտը 3 վայրկյանում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} վայրկյանով</td><td class='target'>Հպարտանում եմ այդ 1 վայրկյանով</td><td class='target'>{0} վայրկյանով</td><td class='target'>Հպարտանում եմ այդ 3 վայրկյանով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} վայրկյանից</td><td class='target'>Վախենում եմ այդ 1 վայրկյանից</td><td class='target'>{0} վայրկյանից</td><td class='target'>Վախենում եմ այդ 3 վայրկյանից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} րոպե</td><td class='target'>Մնացել է 1 րոպե</td><td class='target'>{0} րոպե</td><td class='target'>Մնացել է 3 րոպե</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} րոպեին</td><td class='target'>Սպասում եմ այդ 1 րոպեին</td><td class='target'>{0} րոպեին</td><td class='target'>Սպասում եմ այդ 3 րոպեին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} րոպեում</td><td class='target'>Երկրի պտույտը 1 րոպեում</td><td class='target'>{0} րոպեում</td><td class='target'>Երկրի պտույտը 3 րոպեում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} րոպեով</td><td class='target'>Հպարտանում եմ այդ 1 րոպեով</td><td class='target'>{0} րոպեով</td><td class='target'>Հպարտանում եմ այդ 3 րոպեով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} րոպեից</td><td class='target'>Վախենում եմ այդ 1 րոպեից</td><td class='target'>{0} րոպեից</td><td class='target'>Վախենում եմ այդ 3 րոպեից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} աստիճան</td><td class='target'>Մնացել է 1 աստիճան</td><td class='target'>{0} աստիճան</td><td class='target'>Մնացել է 3 աստիճան</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} աստիճանին</td><td class='target'>Սպասում եմ այդ 1 աստիճանին</td><td class='target'>{0} աստիճանին</td><td class='target'>Սպասում եմ այդ 3 աստիճանին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} աստիճանում</td><td class='target'>Երկրի պտույտը 1 աստիճանում</td><td class='target'>{0} աստիճանում</td><td class='target'>Երկրի պտույտը 3 աստիճանում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} աստիճանով</td><td class='target'>Հպարտանում եմ այդ 1 աստիճանով</td><td class='target'>{0} աստիճանով</td><td class='target'>Հպարտանում եմ այդ 3 աստիճանով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} աստիճանից</td><td class='target'>Վախենում եմ այդ 1 աստիճանից</td><td class='target'>{0} աստիճանից</td><td class='target'>Վախենում եմ այդ 3 աստիճանից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} ռադիան</td><td class='target'>Մնացել է 1 ռադիան</td><td class='target'>{0} ռադիան</td><td class='target'>Մնացել է 3 ռադիան</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ռադիանին</td><td class='target'>Սպասում եմ այդ 1 ռադիանին</td><td class='target'>{0} ռադիանին</td><td class='target'>Սպասում եմ այդ 3 ռադիանին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ռադիանում</td><td class='target'>Երկրի պտույտը 1 ռադիանում</td><td class='target'>{0} ռադիանում</td><td class='target'>Երկրի պտույտը 3 ռադիանում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ռադիանով</td><td class='target'>Հպարտանում եմ այդ 1 ռադիանով</td><td class='target'>{0} ռադիանով</td><td class='target'>Հպարտանում եմ այդ 3 ռադիանով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} ռադիանից</td><td class='target'>Վախենում եմ այդ 1 ռադիանից</td><td class='target'>{0} ռադիանից</td><td class='target'>Վախենում եմ այդ 3 ռադիանից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target'>{0} պտույտ</td><td class='target'>Մնացել է 1 պտույտ</td><td class='target'>{0} պտույտ</td><td class='target'>Մնացել է 3 պտույտ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} պտույտին</td><td class='target'>Սպասում եմ այդ 1 պտույտին</td><td class='target'>{0} պտույտին</td><td class='target'>Սպասում եմ այդ 3 պտույտին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} պտույտում</td><td class='target'>Երկրի պտույտը 1 պտույտում</td><td class='target'>{0} պտույտում</td><td class='target'>Երկրի պտույտը 3 պտույտում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} պտույտով</td><td class='target'>Հպարտանում եմ այդ 1 պտույտով</td><td class='target'>{0} պտույտով</td><td class='target'>Հպարտանում եմ այդ 3 պտույտով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} պտույտից</td><td class='target'>Վախենում եմ այդ 1 պտույտից</td><td class='target'>{0} պտույտից</td><td class='target'>Վախենում եմ այդ 3 պտույտից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>area</td><td class='source' rowSpan='5'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>nominative</td><td class='target'>{0} հեկտար</td><td class='target'>Մնացել է 1 հեկտար</td><td class='target'>{0} հեկտար</td><td class='target'>Մնացել է 3 հեկտար</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} հեկտարին</td><td class='target'>Սպասում եմ այդ 1 հեկտարին</td><td class='target'>{0} հեկտարին</td><td class='target'>Սպասում եմ այդ 3 հեկտարին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} հեկտարում</td><td class='target'>Երկրի պտույտը 1 հեկտարում</td><td class='target'>{0} հեկտարում</td><td class='target'>Երկրի պտույտը 3 հեկտարում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} հեկտարով</td><td class='target'>Հպարտանում եմ այդ 1 հեկտարով</td><td class='target'>{0} հեկտարով</td><td class='target'>Հպարտանում եմ այդ 3 հեկտարով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} հեկտարից</td><td class='target'>Վախենում եմ այդ 1 հեկտարից</td><td class='target'>{0} հեկտարից</td><td class='target'>Վախենում եմ այդ 3 հեկտարից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='10'>digital</td><td class='source' rowSpan='5'><a name='bits' href='#bits'>bits</a></td><td class='source'>nominative</td><td class='target'>{0} բիթ</td><td class='target'>Մնացել է 1 բիթ</td><td class='target'>{0} բիթ</td><td class='target'>Մնացել է 3 բիթ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} բիթին</td><td class='target'>Սպասում եմ այդ 1 բիթին</td><td class='target'>{0} բիթին</td><td class='target'>Սպասում եմ այդ 3 բիթին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} բիթում</td><td class='target'>Երկրի պտույտը 1 բիթում</td><td class='target'>{0} բիթում</td><td class='target'>Երկրի պտույտը 3 բիթում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} բիթով</td><td class='target'>Հպարտանում եմ այդ 1 բիթով</td><td class='target'>{0} բիթով</td><td class='target'>Հպարտանում եմ այդ 3 բիթով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} բիթից</td><td class='target'>Վախենում եմ այդ 1 բիթից</td><td class='target'>{0} բիթից</td><td class='target'>Վախենում եմ այդ 3 բիթից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>nominative</td><td class='target'>{0} բայթ</td><td class='target'>Մնացել է 1 բայթ</td><td class='target'>{0} բայթ</td><td class='target'>Մնացել է 3 բայթ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} բայթին</td><td class='target'>Սպասում եմ այդ 1 բայթին</td><td class='target'>{0} բայթին</td><td class='target'>Սպասում եմ այդ 3 բայթին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} բայթում</td><td class='target'>Երկրի պտույտը 1 բայթում</td><td class='target'>{0} բայթում</td><td class='target'>Երկրի պտույտը 3 բայթում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} բայթով</td><td class='target'>Հպարտանում եմ այդ 1 բայթով</td><td class='target'>{0} բայթով</td><td class='target'>Հպարտանում եմ այդ 3 բայթով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} բայթից</td><td class='target'>Վախենում եմ այդ 1 բայթից</td><td class='target'>{0} բայթից</td><td class='target'>Վախենում եմ այդ 3 բայթից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='30'>duration</td><td class='source' rowSpan='5'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>nominative</td><td class='target'>{0} վայրկյան</td><td class='target'>Մնացել է 1 վայրկյան</td><td class='target'>{0} վայրկյան</td><td class='target'>Մնացել է 3 վայրկյան</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} վայրկյանին</td><td class='target'>Սպասում եմ այդ 1 վայրկյանին</td><td class='target'>{0} վայրկյանին</td><td class='target'>Սպասում եմ այդ 3 վայրկյանին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} վայրկյանում</td><td class='target'>Երկրի պտույտը 1 վայրկյանում</td><td class='target'>{0} վայրկյանում</td><td class='target'>Երկրի պտույտը 3 վայրկյանում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} վայրկյանով</td><td class='target'>Հպարտանում եմ այդ 1 վայրկյանով</td><td class='target'>{0} վայրկյանով</td><td class='target'>Հպարտանում եմ այդ 3 վայրկյանով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} վայրկյանից</td><td class='target'>Վախենում եմ այդ 1 վայրկյանից</td><td class='target'>{0} վայրկյանից</td><td class='target'>Վախենում եմ այդ 3 վայրկյանից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} րոպե</td><td class='target'>Մնացել է 1 րոպե</td><td class='target'>{0} րոպե</td><td class='target'>Մնացել է 3 րոպե</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} րոպեին</td><td class='target'>Սպասում եմ այդ 1 րոպեին</td><td class='target'>{0} րոպեին</td><td class='target'>Սպասում եմ այդ 3 րոպեին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} րոպեում</td><td class='target'>Երկրի պտույտը 1 րոպեում</td><td class='target'>{0} րոպեում</td><td class='target'>Երկրի պտույտը 3 րոպեում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} րոպեով</td><td class='target'>Հպարտանում եմ այդ 1 րոպեով</td><td class='target'>{0} րոպեով</td><td class='target'>Հպարտանում եմ այդ 3 րոպեով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} րոպեից</td><td class='target'>Վախենում եմ այդ 1 րոպեից</td><td class='target'>{0} րոպեից</td><td class='target'>Վախենում եմ այդ 3 րոպեից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} ժամ</td><td class='target'>Մնացել է 1 ժամ</td><td class='target'>{0} ժամ</td><td class='target'>Մնացել է 3 ժամ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ժամին</td><td class='target'>Սպասում եմ այդ 1 ժամին</td><td class='target'>{0} ժամին</td><td class='target'>Սպասում եմ այդ 3 ժամին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ժամում</td><td class='target'>Երկրի պտույտը 1 ժամում</td><td class='target'>{0} ժամում</td><td class='target'>Երկրի պտույտը 3 ժամում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ժամով</td><td class='target'>Հպարտանում եմ այդ 1 ժամով</td><td class='target'>{0} ժամով</td><td class='target'>Հպարտանում եմ այդ 3 ժամով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} ժամից</td><td class='target'>Վախենում եմ այդ 1 ժամից</td><td class='target'>{0} ժամից</td><td class='target'>Վախենում եմ այդ 3 ժամից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} օր</td><td class='target'>Մնացել է 1 օր</td><td class='target' rowSpan='5'>{0} օր</td><td class='target'>Մնացել է 3 օր</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} օրվան</td><td class='target'>Սպասում եմ այդ 1 օրվան</td><td class='target'>Սպասում եմ այդ 3 օր</td></tr>
+	<tr><td class='source'>locative</td><td class='target' rowSpan='2'>{0} օր</td><td class='target'>Երկրի պտույտը 1 օր</td><td class='target'>Երկրի պտույտը 3 օր</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Հպարտանում եմ այդ 1 օր</td><td class='target'>Հպարտանում եմ այդ 3 օր</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} օրից</td><td class='target'>Վախենում եմ այդ 1 օրից</td><td class='target'>Վախենում եմ այդ 3 օր</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} օր</td><td class='target'>Մնացել է 1 օր</td><td class='target' rowSpan='5'>{0} օր</td><td class='target'>Մնացել է 3 օր</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>Սպասում եմ այդ 1 օր</td><td class='target'>Սպասում եմ այդ 3 օր</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>Երկրի պտույտը 1 օր</td><td class='target'>Երկրի պտույտը 3 օր</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Հպարտանում եմ այդ 1 օր</td><td class='target'>Հպարտանում եմ այդ 3 օր</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>Վախենում եմ այդ 1 օր</td><td class='target'>Վախենում եմ այդ 3 օր</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} շաբաթ</td><td class='target'>Մնացել է 1 շաբաթ</td><td class='target'>{0} շաբաթ</td><td class='target'>Մնացել է 3 շաբաթ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} շաբաթվան</td><td class='target'>Սպասում եմ այդ 1 շաբաթվան</td><td class='target'>{0} շաբաթվան</td><td class='target'>Սպասում եմ այդ 3 շաբաթվան</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} շաբաթում</td><td class='target'>Երկրի պտույտը 1 շաբաթում</td><td class='target'>{0} շաբաթում</td><td class='target'>Երկրի պտույտը 3 շաբաթում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} շաբաթով</td><td class='target'>Հպարտանում եմ այդ 1 շաբաթով</td><td class='target'>{0} շաբաթով</td><td class='target'>Հպարտանում եմ այդ 3 շաբաթով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} շաբաթից</td><td class='target'>Վախենում եմ այդ 1 շաբաթից</td><td class='target'>{0} շաբաթից</td><td class='target'>Վախենում եմ այդ 3 շաբաթից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>electric-current</td><td class='source' rowSpan='5'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>nominative</td><td class='target'>{0} ամպեր</td><td class='target'>Մնացել է 1 ամպեր</td><td class='target'>{0} ամպեր</td><td class='target'>Մնացել է 3 ամպեր</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ամպերին</td><td class='target'>Սպասում եմ այդ 1 ամպերին</td><td class='target'>{0} ամպերին</td><td class='target'>Սպասում եմ այդ 3 ամպերին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ամպերում</td><td class='target'>Երկրի պտույտը 1 ամպերում</td><td class='target'>{0} ամպերում</td><td class='target'>Երկրի պտույտը 3 ամպերում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ամպերով</td><td class='target'>Հպարտանում եմ այդ 1 ամպերով</td><td class='target'>{0} ամպերով</td><td class='target'>Հպարտանում եմ այդ 3 ամպերով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} ամպերից</td><td class='target'>Վախենում եմ այդ 1 ամպերից</td><td class='target'>{0} ամպերից</td><td class='target'>Վախենում եմ այդ 3 ամպերից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>electric-resistance</td><td class='source' rowSpan='5'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>nominative</td><td class='target'>{0} օհմ</td><td class='target'>Մնացել է 1 օհմ</td><td class='target'>{0} օհմ</td><td class='target'>Մնացել է 3 օհմ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} օհմին</td><td class='target'>Սպասում եմ այդ 1 օհմին</td><td class='target'>{0} օհմին</td><td class='target'>Սպասում եմ այդ 3 օհմին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} օհմում</td><td class='target'>Երկրի պտույտը 1 օհմում</td><td class='target'>{0} օհմում</td><td class='target'>Երկրի պտույտը 3 օհմում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} օհմով</td><td class='target'>Հպարտանում եմ այդ 1 օհմով</td><td class='target'>{0} օհմով</td><td class='target'>Հպարտանում եմ այդ 3 օհմով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} օհմից</td><td class='target'>Վախենում եմ այդ 1 օհմից</td><td class='target'>{0} օհմից</td><td class='target'>Վախենում եմ այդ 3 օհմից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='10'>energy</td><td class='source' rowSpan='5'><a name='joules' href='#joules'>joules</a></td><td class='source'>nominative</td><td class='target'>{0} ջոուլ</td><td class='target'>Մնացել է 1 ջոուլ</td><td class='target'>{0} ջոուլ</td><td class='target'>Մնացել է 3 ջոուլ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ջոուլին</td><td class='target'>Սպասում եմ այդ 1 ջոուլին</td><td class='target'>{0} ջոուլին</td><td class='target'>Սպասում եմ այդ 3 ջոուլին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ջոուլում</td><td class='target'>Երկրի պտույտը 1 ջոուլում</td><td class='target'>{0} ջոուլում</td><td class='target'>Երկրի պտույտը 3 ջոուլում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ջոուլով</td><td class='target'>Հպարտանում եմ այդ 1 ջոուլով</td><td class='target'>{0} ջոուլով</td><td class='target'>Հպարտանում եմ այդ 3 ջոուլով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} ջոուլից</td><td class='target'>Վախենում եմ այդ 1 ջոուլից</td><td class='target'>{0} ջոուլից</td><td class='target'>Վախենում եմ այդ 3 ջոուլից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>nominative</td><td class='target'>{0} կալորիա</td><td class='target'>Մնացել է 1 կալորիա</td><td class='target'>{0} կալորիա</td><td class='target'>Մնացել է 3 կալորիա</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կալորիային</td><td class='target'>Սպասում եմ այդ 1 կալորիային</td><td class='target'>{0} կալորիային</td><td class='target'>Սպասում եմ այդ 3 կալորիային</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կալորիայում</td><td class='target'>Երկրի պտույտը 1 կալորիայում</td><td class='target'>{0} կալորիայում</td><td class='target'>Երկրի պտույտը 3 կալորիայում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կալորիայով</td><td class='target'>Հպարտանում եմ այդ 1 կալորիայով</td><td class='target'>{0} կալորիայով</td><td class='target'>Հպարտանում եմ այդ 3 կալորիայով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կալորիայից</td><td class='target'>Վախենում եմ այդ 1 կալորիայից</td><td class='target'>{0} կալորիայից</td><td class='target'>Վախենում եմ այդ 3 կալորիայից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>force</td><td class='source' rowSpan='5'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>nominative</td><td class='target'>{0} նյուտոն</td><td class='target'>Մնացել է 1 նյուտոն</td><td class='target'>{0} նյուտոն</td><td class='target'>Մնացել է 3 նյուտոն</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} նյուտոնին</td><td class='target'>Սպասում եմ այդ 1 նյուտոնին</td><td class='target'>{0} նյուտոնին</td><td class='target'>Սպասում եմ այդ 3 նյուտոնին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} նյուտոնում</td><td class='target'>Երկրի պտույտը 1 նյուտոնում</td><td class='target'>{0} նյուտոնում</td><td class='target'>Երկրի պտույտը 3 նյուտոնում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} նյուտոնով</td><td class='target'>Հպարտանում եմ այդ 1 նյուտոնով</td><td class='target'>{0} նյուտոնով</td><td class='target'>Հպարտանում եմ այդ 3 նյուտոնով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} նյուտոնից</td><td class='target'>Վախենում եմ այդ 1 նյուտոնից</td><td class='target'>{0} նյուտոնից</td><td class='target'>Վախենում եմ այդ 3 նյուտոնից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>frequency</td><td class='source' rowSpan='5'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>nominative</td><td class='target'>{0} հերց</td><td class='target'>Մնացել է 1 հերց</td><td class='target'>{0} հերց</td><td class='target'>Մնացել է 3 հերց</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} հերցին</td><td class='target'>Սպասում եմ այդ 1 հերցին</td><td class='target'>{0} հերցին</td><td class='target'>Սպասում եմ այդ 3 հերցին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} հերցում</td><td class='target'>Երկրի պտույտը 1 հերցում</td><td class='target'>{0} հերցում</td><td class='target'>Երկրի պտույտը 3 հերցում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} հերցով</td><td class='target'>Հպարտանում եմ այդ 1 հերցով</td><td class='target'>{0} հերցով</td><td class='target'>Հպարտանում եմ այդ 3 հերցով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} հերցից</td><td class='target'>Վախենում եմ այդ 1 հերցից</td><td class='target'>{0} հերցից</td><td class='target'>Վախենում եմ այդ 3 հերցից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>graphics</td><td class='source' rowSpan='5'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>nominative</td><td class='target'>{0} փիքսել</td><td class='target'>Մնացել է 1 փիքսել</td><td class='target'>{0} փիքսել</td><td class='target'>Մնացել է 3 փիքսել</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} փիքսելին</td><td class='target'>Սպասում եմ այդ 1 փիքսելին</td><td class='target'>{0} փիքսելներին</td><td class='target'>Սպասում եմ այդ 3 փիքսելներին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} փիքսելում</td><td class='target'>Երկրի պտույտը 1 փիքսելում</td><td class='target'>{0} փիքսելներում</td><td class='target'>Երկրի պտույտը 3 փիքսելներում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} փիքսելով</td><td class='target'>Հպարտանում եմ այդ 1 փիքսելով</td><td class='target'>{0} փիքսելներով</td><td class='target'>Հպարտանում եմ այդ 3 փիքսելներով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} փիքսելից</td><td class='target'>Վախենում եմ այդ 1 փիքսելից</td><td class='target'>{0} փիքսելներից</td><td class='target'>Վախենում եմ այդ 3 փիքսելներից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>illuminance</td><td class='source' rowSpan='5'><a name='lux' href='#lux'>lux</a></td><td class='source'>nominative</td><td class='target'>{0} լյուքս</td><td class='target'>Մնացել է 1 լյուքս</td><td class='target'>{0} լյուքս</td><td class='target'>Մնացել է 3 լյուքս</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} լյուքսին</td><td class='target'>Սպասում եմ այդ 1 լյուքսին</td><td class='target'>{0} լյուքսին</td><td class='target'>Սպասում եմ այդ 3 լյուքսին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} լյուքսում</td><td class='target'>Երկրի պտույտը 1 լյուքսում</td><td class='target'>{0} լյուքսում</td><td class='target'>Երկրի պտույտը 3 լյուքսում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} լյուքսով</td><td class='target'>Հպարտանում եմ այդ 1 լյուքսով</td><td class='target'>{0} լյուքսով</td><td class='target'>Հպարտանում եմ այդ 3 լյուքսով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} լյուքսից</td><td class='target'>Վախենում եմ այդ 1 լյուքսից</td><td class='target'>{0} լյուքսից</td><td class='target'>Վախենում եմ այդ 3 լյուքսից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='10'>length</td><td class='source' rowSpan='5'><a name='meters' href='#meters'>meters</a></td><td class='source'>nominative</td><td class='target'>{0} մետր</td><td class='target'>Մնացել է 1 մետր</td><td class='target'>{0} մետր</td><td class='target'>Մնացել է 3 մետր</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մետրին</td><td class='target'>Սպասում եմ այդ 1 մետրին</td><td class='target'>{0} մետրին</td><td class='target'>Սպասում եմ այդ 3 մետրին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մետրում</td><td class='target'>Երկրի պտույտը 1 մետրում</td><td class='target'>{0} մետրում</td><td class='target'>Երկրի պտույտը 3 մետրում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մետրով</td><td class='target'>Հպարտանում եմ այդ 1 մետրով</td><td class='target'>{0} մետրով</td><td class='target'>Հպարտանում եմ այդ 3 մետրով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մետրից</td><td class='target'>Վախենում եմ այդ 1 մետրից</td><td class='target'>{0} մետրից</td><td class='target'>Վախենում եմ այդ 3 մետրից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source'>nominative</td><td class='target'>{0} սկանդինավյան մղոն</td><td class='target'>Մնացել է 1 սկանդինավյան մղոն</td><td class='target'>{0} սկանդինավյան մղոն</td><td class='target'>Մնացել է 3 սկանդինավյան մղոն</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} սկանդինավյան մղոնին</td><td class='target'>Սպասում եմ այդ 1 սկանդինավյան մղոնին</td><td class='target'>{0} սկանդինավյան մղոնին</td><td class='target'>Սպասում եմ այդ 3 սկանդինավյան մղոնին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} սկանդինավյան մղոնում</td><td class='target'>Երկրի պտույտը 1 սկանդինավյան մղոնում</td><td class='target'>{0} սկանդինավյան մղոնում</td><td class='target'>Երկրի պտույտը 3 սկանդինավյան մղոնում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} սկանդինավյան մղոնով</td><td class='target'>Հպարտանում եմ այդ 1 սկանդինավյան մղոնով</td><td class='target'>{0} սկանդինավյան մղոնով</td><td class='target'>Հպարտանում եմ այդ 3 սկանդինավյան մղոնով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} սկանդինավյան մղոնից</td><td class='target'>Վախենում եմ այդ 1 սկանդինավյան մղոնից</td><td class='target'>{0} սկանդինավյան մղոնից</td><td class='target'>Վախենում եմ այդ 3 սկանդինավյան մղոնից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>luminous-flux</td><td class='source' rowSpan='5'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>nominative</td><td class='target'>{0} լյումեն</td><td class='target'>Մնացել է 1 լյումեն</td><td class='target'>{0} լյումեն</td><td class='target'>Մնացել է 3 լյումեն</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} լյումենին</td><td class='target'>Սպասում եմ այդ 1 լյումենին</td><td class='target'>{0} լյումենին</td><td class='target'>Սպասում եմ այդ 3 լյումենին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} լյումենում</td><td class='target'>Երկրի պտույտը 1 լյումենում</td><td class='target'>{0} լյումենում</td><td class='target'>Երկրի պտույտը 3 լյումենում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} լյումենով</td><td class='target'>Հպարտանում եմ այդ 1 լյումենով</td><td class='target'>{0} լյումենով</td><td class='target'>Հպարտանում եմ այդ 3 լյումենով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} լյումենից</td><td class='target'>Վախենում եմ այդ 1 լյումենից</td><td class='target'>{0} լյումենից</td><td class='target'>Վախենում եմ այդ 3 լյումենից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>luminous-intensity</td><td class='source' rowSpan='5'><a name='candela' href='#candela'>candela</a></td><td class='source'>nominative</td><td class='target'>{0} կանդելա</td><td class='target'>Մնացել է 1 կանդելա</td><td class='target'>{0} կանդելա</td><td class='target'>Մնացել է 3 կանդելա</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կանդելային</td><td class='target'>Սպասում եմ այդ 1 կանդելային</td><td class='target'>{0} կանդելային</td><td class='target'>Սպասում եմ այդ 3 կանդելային</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կանդելայում</td><td class='target'>Երկրի պտույտը 1 կանդելայում</td><td class='target'>{0} կանդելայում</td><td class='target'>Երկրի պտույտը 3 կանդելայում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կանդելայով</td><td class='target'>Հպարտանում եմ այդ 1 կանդելայով</td><td class='target'>{0} կանդելայով</td><td class='target'>Հպարտանում եմ այդ 3 կանդելայով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կանդելայից</td><td class='target'>Վախենում եմ այդ 1 կանդելայից</td><td class='target'>{0} կանդելայից</td><td class='target'>Վախենում եմ այդ 3 կանդելայից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='20'>mass</td><td class='source' rowSpan='5'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>nominative</td><td class='target'>{0} կարատ</td><td class='target'>Մնացել է 1 կարատ</td><td class='target'>{0} կարատ</td><td class='target'>Մնացել է 3 կարատ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կարատին</td><td class='target'>Սպասում եմ այդ 1 կարատին</td><td class='target'>{0} կարատին</td><td class='target'>Սպասում եմ այդ 3 կարատին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կարատում</td><td class='target'>Երկրի պտույտը 1 կարատում</td><td class='target'>{0} կարատում</td><td class='target'>Երկրի պտույտը 3 կարատում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կարատով</td><td class='target'>Հպարտանում եմ այդ 1 կարատով</td><td class='target'>{0} կարատով</td><td class='target'>Հպարտանում եմ այդ 3 կարատով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կարատից</td><td class='target'>Վախենում եմ այդ 1 կարատից</td><td class='target'>{0} կարատից</td><td class='target'>Վախենում եմ այդ 3 կարատից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target'>{0} գրամ</td><td class='target'>Մնացել է 1 գրամ</td><td class='target'>{0} գրամ</td><td class='target'>Մնացել է 3 գրամ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} գրամին</td><td class='target'>Սպասում եմ այդ 1 գրամին</td><td class='target'>{0} գրամին</td><td class='target'>Սպասում եմ այդ 3 գրամին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} գրամում</td><td class='target'>Երկրի պտույտը 1 գրամում</td><td class='target'>{0} գրամում</td><td class='target'>Երկրի պտույտը 3 գրամում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} գրամով</td><td class='target'>Հպարտանում եմ այդ 1 գրամով</td><td class='target'>{0} գրամով</td><td class='target'>Հպարտանում եմ այդ 3 գրամով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} գրամից</td><td class='target'>Վախենում եմ այդ 1 գրամից</td><td class='target'>{0} գրամից</td><td class='target'>Վախենում եմ այդ 3 գրամից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target'>{0} կիլոգրամ</td><td class='target'>Մնացել է 1 կիլոգրամ</td><td class='target'>{0} կիլոգրամ</td><td class='target'>Մնացել է 3 կիլոգրամ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կիլոգրամին</td><td class='target'>Սպասում եմ այդ 1 կիլոգրամին</td><td class='target'>{0} կիլոգրամին</td><td class='target'>Սպասում եմ այդ 3 կիլոգրամին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կիլոգրամում</td><td class='target'>Երկրի պտույտը 1 կիլոգրամում</td><td class='target'>{0} կիլոգրամում</td><td class='target'>Երկրի պտույտը 3 կիլոգրամում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կիլոգրամով</td><td class='target'>Հպարտանում եմ այդ 1 կիլոգրամով</td><td class='target'>{0} կիլոգրամով</td><td class='target'>Հպարտանում եմ այդ 3 կիլոգրամով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կիլոգրամից</td><td class='target'>Վախենում եմ այդ 1 կիլոգրամից</td><td class='target'>{0} կիլոգրամից</td><td class='target'>Վախենում եմ այդ 3 կիլոգրամից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target'>{0} տոննա</td><td class='target'>Մնացել է 1 տոննա</td><td class='target'>{0} տոննա</td><td class='target'>Մնացել է 3 տոննա</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} տոննային</td><td class='target'>Սպասում եմ այդ 1 տոննային</td><td class='target'>{0} տոննային</td><td class='target'>Սպասում եմ այդ 3 տոննային</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} տոննայում</td><td class='target'>Երկրի պտույտը 1 տոննայում</td><td class='target'>{0} տոննայում</td><td class='target'>Երկրի պտույտը 3 տոննայում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} տոննայով</td><td class='target'>Հպարտանում եմ այդ 1 տոննայով</td><td class='target'>{0} տոննայով</td><td class='target'>Հպարտանում եմ այդ 3 տոննայով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} տոննայից</td><td class='target'>Վախենում եմ այդ 1 տոննայից</td><td class='target'>{0} տոննայից</td><td class='target'>Վախենում եմ այդ 3 տոննայից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='25'>portion</td><td class='source' rowSpan='5'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>nominative</td><td class='target'>{0} մասնիկ միլիոնի վրա</td><td class='target'>Մնացել է 1 մասնիկ միլիոնի վրա</td><td class='target'>{0} մասնիկ միլիոնի վրա</td><td class='target'>Մնացել է 3 մասնիկ միլիոնի վրա</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մասնիկին միլիոնի վրա</td><td class='target'>Սպասում եմ այդ 1 մասնիկին միլիոնի վրա</td><td class='target'>{0} մասնիկին միլիոնի վրա</td><td class='target'>Սպասում եմ այդ 3 մասնիկին միլիոնի վրա</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մասնիկում միլիոնի վրա</td><td class='target'>Երկրի պտույտը 1 մասնիկում միլիոնի վրա</td><td class='target'>{0} մասնիկում միլիոնի վրա</td><td class='target'>Երկրի պտույտը 3 մասնիկում միլիոնի վրա</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մասնիկով միլիոնի վրա</td><td class='target'>Հպարտանում եմ այդ 1 մասնիկով միլիոնի վրա</td><td class='target'>{0} մասնիկով միլիոնի վրա</td><td class='target'>Հպարտանում եմ այդ 3 մասնիկով միլիոնի վրա</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մասնիկից միլիոնի վրա</td><td class='target'>Վախենում եմ այդ 1 մասնիկից միլիոնի վրա</td><td class='target'>{0} մասնիկից միլիոնի վրա</td><td class='target'>Վախենում եմ այդ 3 մասնիկից միլիոնի վրա</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target'>{0} պերմիրիադ</td><td class='target'>Մնացել է 1 պերմիրիադ</td><td class='target'>{0} պերմիրիադ</td><td class='target'>Մնացել է 3 պերմիրիադ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} պերմիրիադին</td><td class='target'>Սպասում եմ այդ 1 պերմիրիադին</td><td class='target'>{0} պերմիրիադին</td><td class='target'>Սպասում եմ այդ 3 պերմիրիադին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} պերմիրիադում</td><td class='target'>Երկրի պտույտը 1 պերմիրիադում</td><td class='target'>{0} պերմիրիադում</td><td class='target'>Երկրի պտույտը 3 պերմիրիադում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} պերմիրիադով</td><td class='target'>Հպարտանում եմ այդ 1 պերմիրիադով</td><td class='target'>{0} պերմիրիադով</td><td class='target'>Հպարտանում եմ այդ 3 պերմիրիադով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} պերմիրիադից</td><td class='target'>Վախենում եմ այդ 1 պերմիրիադից</td><td class='target'>{0} պերմիրիադից</td><td class='target'>Վախենում եմ այդ 3 պերմիրիադից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='permille' href='#permille'>permille</a></td><td class='source'>nominative</td><td class='target'>{0} պրոմիլ</td><td class='target'>Մնացել է 1 պրոմիլ</td><td class='target'>{0} պրոմիլ</td><td class='target'>Մնացել է 3 պրոմիլ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} պրոմիլին</td><td class='target'>Սպասում եմ այդ 1 պրոմիլին</td><td class='target'>{0} պրոմիլին</td><td class='target'>Սպասում եմ այդ 3 պրոմիլին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} պրոմիլում</td><td class='target'>Երկրի պտույտը 1 պրոմիլում</td><td class='target'>{0} պրոմիլում</td><td class='target'>Երկրի պտույտը 3 պրոմիլում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} պրոմիլով</td><td class='target'>Հպարտանում եմ այդ 1 պրոմիլով</td><td class='target'>{0} պրոմիլով</td><td class='target'>Հպարտանում եմ այդ 3 պրոմիլով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} պրոմիլից</td><td class='target'>Վախենում եմ այդ 1 պրոմիլից</td><td class='target'>{0} պրոմիլից</td><td class='target'>Վախենում եմ այդ 3 պրոմիլից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='percent' href='#percent'>percent</a></td><td class='source'>nominative</td><td class='target'>{0} տոկոս</td><td class='target'>Մնացել է 1 տոկոս</td><td class='target'>{0} տոկոս</td><td class='target'>Մնացել է 3 տոկոս</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} տոկոսին</td><td class='target'>Սպասում եմ այդ 1 տոկոսին</td><td class='target'>{0} տոկոսին</td><td class='target'>Սպասում եմ այդ 3 տոկոսին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} տոկոսում</td><td class='target'>Երկրի պտույտը 1 տոկոսում</td><td class='target'>{0} տոկոսում</td><td class='target'>Երկրի պտույտը 3 տոկոսում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} տոկոսով</td><td class='target'>Հպարտանում եմ այդ 1 տոկոսով</td><td class='target'>{0} տոկոսով</td><td class='target'>Հպարտանում եմ այդ 3 տոկոսով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} տոկոսից</td><td class='target'>Վախենում եմ այդ 1 տոկոսից</td><td class='target'>{0} տոկոսից</td><td class='target'>Վախենում եմ այդ 3 տոկոսից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>nominative</td><td class='target'>{0} կարատ</td><td class='target'>Մնացել է 1 կարատ</td><td class='target'>{0} կարատ</td><td class='target'>Մնացել է 3 կարատ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կարատին</td><td class='target'>Սպասում եմ այդ 1 կարատին</td><td class='target'>{0} կարատին</td><td class='target'>Սպասում եմ այդ 3 կարատին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կարատում</td><td class='target'>Երկրի պտույտը 1 կարատում</td><td class='target'>{0} կարատում</td><td class='target'>Երկրի պտույտը 3 կարատում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կարատով</td><td class='target'>Հպարտանում եմ այդ 1 կարատով</td><td class='target'>{0} կարատով</td><td class='target'>Հպարտանում եմ այդ 3 կարատով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կարատից</td><td class='target'>Վախենում եմ այդ 1 կարատից</td><td class='target'>{0} կարատից</td><td class='target'>Վախենում եմ այդ 3 կարատից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>power</td><td class='source' rowSpan='5'><a name='watts' href='#watts'>watts</a></td><td class='source'>nominative</td><td class='target'>{0} վատտ</td><td class='target'>Մնացել է 1 վատտ</td><td class='target'>{0} վատտ</td><td class='target'>Մնացել է 3 վատտ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} վատտին</td><td class='target'>Սպասում եմ այդ 1 վատտին</td><td class='target'>{0} վատտին</td><td class='target'>Սպասում եմ այդ 3 վատտին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} վատտում</td><td class='target'>Երկրի պտույտը 1 վատտում</td><td class='target'>{0} վատտում</td><td class='target'>Երկրի պտույտը 3 վատտում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} վատտով</td><td class='target'>Հպարտանում եմ այդ 1 վատտով</td><td class='target'>{0} վատտով</td><td class='target'>Հպարտանում եմ այդ 3 վատտով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} վատտից</td><td class='target'>Վախենում եմ այդ 1 վատտից</td><td class='target'>{0} վատտից</td><td class='target'>Վախենում եմ այդ 3 վատտից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='15'>pressure</td><td class='source' rowSpan='5'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>nominative</td><td class='target'>{0} պասկալ</td><td class='target'>Մնացել է 1 պասկալ</td><td class='target'>{0} պասկալ</td><td class='target'>Մնացել է 3 պասկալ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} պասկալին</td><td class='target'>Սպասում եմ այդ 1 պասկալին</td><td class='target'>{0} պասկալին</td><td class='target'>Սպասում եմ այդ 3 պասկալին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} պասկալում</td><td class='target'>Երկրի պտույտը 1 պասկալում</td><td class='target'>{0} պասկալում</td><td class='target'>Երկրի պտույտը 3 պասկալում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} պասկալով</td><td class='target'>Հպարտանում եմ այդ 1 պասկալով</td><td class='target'>{0} պասկալով</td><td class='target'>Հպարտանում եմ այդ 3 պասկալով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} պասկալից</td><td class='target'>Վախենում եմ այդ 1 պասկալից</td><td class='target'>{0} պասկալից</td><td class='target'>Վախենում եմ այդ 3 պասկալից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target'>{0} բար</td><td class='target'>Մնացել է 1 բար</td><td class='target'>{0} բար</td><td class='target'>Մնացել է 3 բար</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} բարին</td><td class='target'>Սպասում եմ այդ 1 բարին</td><td class='target'>{0} բարին</td><td class='target'>Սպասում եմ այդ 3 բարին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} բարում</td><td class='target'>Երկրի պտույտը 1 բարում</td><td class='target'>{0} բարում</td><td class='target'>Երկրի պտույտը 3 բարում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} բարով</td><td class='target'>Հպարտանում եմ այդ 1 բարով</td><td class='target'>{0} բարով</td><td class='target'>Հպարտանում եմ այդ 3 բարով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} բարից</td><td class='target'>Վախենում եմ այդ 1 բարից</td><td class='target'>{0} բարից</td><td class='target'>Վախենում եմ այդ 3 բարից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>nominative</td><td class='target'>{0} մթնոլորտ</td><td class='target'>Մնացել է 1 մթնոլորտ</td><td class='target'>{0} մթնոլորտ</td><td class='target'>Մնացել է 3 մթնոլորտ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մթնոլորտին</td><td class='target'>Սպասում եմ այդ 1 մթնոլորտին</td><td class='target'>{0} մթնոլորտին</td><td class='target'>Սպասում եմ այդ 3 մթնոլորտին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մթնոլորտում</td><td class='target'>Երկրի պտույտը 1 մթնոլորտում</td><td class='target'>{0} մթնոլորտում</td><td class='target'>Երկրի պտույտը 3 մթնոլորտում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մթնոլորտով</td><td class='target'>Հպարտանում եմ այդ 1 մթնոլորտով</td><td class='target'>{0} մթնոլորտով</td><td class='target'>Հպարտանում եմ այդ 3 մթնոլորտով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մթնոլորտից</td><td class='target'>Վախենում եմ այդ 1 մթնոլորտից</td><td class='target'>{0} մթնոլորտից</td><td class='target'>Վախենում եմ այդ 3 մթնոլորտից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>substance-amount</td><td class='source' rowSpan='5'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>nominative</td><td class='target'>{0} մոլ</td><td class='target'>Մնացել է 1 մոլ</td><td class='target'>{0} մոլ</td><td class='target'>Մնացել է 3 մոլ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մոլին</td><td class='target'>Սպասում եմ այդ 1 մոլին</td><td class='target'>{0} մոլին</td><td class='target'>Սպասում եմ այդ 3 մոլին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մոլում</td><td class='target'>Երկրի պտույտը 1 մոլում</td><td class='target'>{0} մոլում</td><td class='target'>Երկրի պտույտը 3 մոլում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մոլով</td><td class='target'>Հպարտանում եմ այդ 1 մոլով</td><td class='target'>{0} մոլով</td><td class='target'>Հպարտանում եմ այդ 3 մոլով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մոլից</td><td class='target'>Վախենում եմ այդ 1 մոլից</td><td class='target'>{0} մոլից</td><td class='target'>Վախենում եմ այդ 3 մոլից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='15'>temperature</td><td class='source' rowSpan='5'><a name='°' href='#°'>°</a></td><td class='source'>nominative</td><td class='target'>{0}°</td><td class='target'>Մնացել է 1°</td><td class='target'>{0}°</td><td class='target'>Մնացել է 3°</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} աստիճանին</td><td class='target'>Սպասում եմ այդ 1 աստիճանին</td><td class='target'>{0} աստիճանին</td><td class='target'>Սպասում եմ այդ 3 աստիճանին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} աստիճանում</td><td class='target'>Երկրի պտույտը 1 աստիճանում</td><td class='target'>{0} աստիճանում</td><td class='target'>Երկրի պտույտը 3 աստիճանում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} աստիճանով</td><td class='target'>Հպարտանում եմ այդ 1 աստիճանով</td><td class='target'>{0} աստիճանով</td><td class='target'>Հպարտանում եմ այդ 3 աստիճանով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} աստիճանից</td><td class='target'>Վախենում եմ այդ 1 աստիճանից</td><td class='target'>{0} աստիճանից</td><td class='target'>Վախենում եմ այդ 3 աստիճանից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>nominative</td><td class='target'>{0} աստիճան ըստ Ցելսիուսի</td><td class='target'>Մնացել է 1 աստիճան ըստ Ցելսիուսի</td><td class='target'>{0} աստիճան ըստ Ցելսիուսի</td><td class='target'>Մնացել է 3 աստիճան ըստ Ցելսիուսի</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} աստիճանին ըստ Ցելսիուսի</td><td class='target'>Սպասում եմ այդ 1 աստիճանին ըստ Ցելսիուսի</td><td class='target'>{0} աստիճանին ըստ Ցելսիուսի</td><td class='target'>Սպասում եմ այդ 3 աստիճանին ըստ Ցելսիուսի</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} աստիճանում ըստ Ցելսիուսի</td><td class='target'>Երկրի պտույտը 1 աստիճանում ըստ Ցելսիուսի</td><td class='target'>{0} աստիճանում ըստ Ցելսիուսի</td><td class='target'>Երկրի պտույտը 3 աստիճանում ըստ Ցելսիուսի</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} աստիճանով ըստ Ցելսիուսի</td><td class='target'>Հպարտանում եմ այդ 1 աստիճանով ըստ Ցելսիուսի</td><td class='target'>{0} աստիճանով ըստ Ցելսիուսի</td><td class='target'>Հպարտանում եմ այդ 3 աստիճանով ըստ Ցելսիուսի</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} աստիճանից ըստ Ցելսիուսի</td><td class='target'>Վախենում եմ այդ 1 աստիճանից ըստ Ցելսիուսի</td><td class='target'>{0} աստիճանից ըստ Ցելսիուսի</td><td class='target'>Վախենում եմ այդ 3 աստիճանից ըստ Ցելսիուսի</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target'>{0} կելվին</td><td class='target'>Մնացել է 1 կելվին</td><td class='target'>{0} կելվին</td><td class='target'>Մնացել է 3 կելվին</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} կելվինին</td><td class='target'>Սպասում եմ այդ 1 կելվինին</td><td class='target'>{0} կելվինին</td><td class='target'>Սպասում եմ այդ 3 կելվինին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} կելվինում</td><td class='target'>Երկրի պտույտը 1 կելվինում</td><td class='target'>{0} կելվինում</td><td class='target'>Երկրի պտույտը 3 կելվինում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} կելվինով</td><td class='target'>Հպարտանում եմ այդ 1 կելվինով</td><td class='target'>{0} կելվինով</td><td class='target'>Հպարտանում եմ այդ 3 կելվինով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} կելվինից</td><td class='target'>Վախենում եմ այդ 1 կելվինից</td><td class='target'>{0} կելվինից</td><td class='target'>Վախենում եմ այդ 3 կելվինից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>typewidth</td><td class='source' rowSpan='5'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source'>nominative</td><td class='target' rowSpan='5'>{0} em</td><td class='target'>Մնացել է 1 em</td><td class='target' rowSpan='5'>{0} em</td><td class='target'>Մնացել է 3 em</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>Սպասում եմ այդ 1 em</td><td class='target'>Սպասում եմ այդ 3 em</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>Երկրի պտույտը 1 em</td><td class='target'>Երկրի պտույտը 3 em</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Հպարտանում եմ այդ 1 em</td><td class='target'>Հպարտանում եմ այդ 3 em</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>Վախենում եմ այդ 1 em</td><td class='target'>Վախենում եմ այդ 3 em</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='5'>voltage</td><td class='source' rowSpan='5'><a name='volts' href='#volts'>volts</a></td><td class='source'>nominative</td><td class='target'>{0} վոլտ</td><td class='target'>Մնացել է 1 վոլտ</td><td class='target'>{0} վոլտ</td><td class='target'>Մնացել է 3 վոլտ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} վոլտին</td><td class='target'>Սպասում եմ այդ 1 վոլտին</td><td class='target'>{0} վոլտին</td><td class='target'>Սպասում եմ այդ 3 վոլտին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} վոլտում</td><td class='target'>Երկրի պտույտը 1 վոլտում</td><td class='target'>{0} վոլտում</td><td class='target'>Երկրի պտույտը 3 վոլտում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} վոլտով</td><td class='target'>Հպարտանում եմ այդ 1 վոլտով</td><td class='target'>{0} վոլտով</td><td class='target'>Հպարտանում եմ այդ 3 վոլտով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} վոլտից</td><td class='target'>Վախենում եմ այդ 1 վոլտից</td><td class='target'>{0} վոլտից</td><td class='target'>Վախենում եմ այդ 3 վոլտից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='15'>volume</td><td class='source' rowSpan='5'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source'>nominative</td><td class='target'>{0} մետրիկ բաժակ</td><td class='target'>Մնացել է 1 մետրիկ բաժակ</td><td class='target'>{0} մետրիկ բաժակ</td><td class='target'>Մնացել է 3 մետրիկ բաժակ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մետրիկ բաժակին</td><td class='target'>Սպասում եմ այդ 1 մետրիկ բաժակին</td><td class='target'>{0} մետրիկ բաժակին</td><td class='target'>Սպասում եմ այդ 3 մետրիկ բաժակին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մետրիկ բաժակում</td><td class='target'>Երկրի պտույտը 1 մետրիկ բաժակում</td><td class='target'>{0} մետրիկ բաժակում</td><td class='target'>Երկրի պտույտը 3 մետրիկ բաժակում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մետրիկ բաժակով</td><td class='target'>Հպարտանում եմ այդ 1 մետրիկ բաժակով</td><td class='target'>{0} մետրիկ բաժակով</td><td class='target'>Հպարտանում եմ այդ 3 մետրիկ բաժակով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մետրիկ բաժակից</td><td class='target'>Վախենում եմ այդ 1 մետրիկ բաժակից</td><td class='target'>{0} մետրիկ բաժակից</td><td class='target'>Վախենում եմ այդ 3 մետրիկ բաժակից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source'>nominative</td><td class='target'>{0} մետրիկ փինթ</td><td class='target'>Մնացել է 1 մետրիկ փինթ</td><td class='target'>{0} մետրիկ փինթ</td><td class='target'>Մնացել է 3 մետրիկ փինթ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} մետրիկ փինթին</td><td class='target'>Սպասում եմ այդ 1 մետրիկ փինթին</td><td class='target'>{0} մետրիկ փինթին</td><td class='target'>Սպասում եմ այդ 3 մետրիկ փինթին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} մետրիկ փինթում</td><td class='target'>Երկրի պտույտը 1 մետրիկ փինթում</td><td class='target'>{0} մետրիկ փինթում</td><td class='target'>Երկրի պտույտը 3 մետրիկ փինթում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} մետրիկ փինթով</td><td class='target'>Հպարտանում եմ այդ 1 մետրիկ փինթով</td><td class='target'>{0} մետրիկ փինթով</td><td class='target'>Հպարտանում եմ այդ 3 մետրիկ փինթով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} մետրիկ փինթից</td><td class='target'>Վախենում եմ այդ 1 մետրիկ փինթից</td><td class='target'>{0} մետրիկ փինթից</td><td class='target'>Վախենում եմ այդ 3 մետրիկ փինթից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='liters' href='#liters'>liters</a></td><td class='source'>nominative</td><td class='target'>{0} լիտր</td><td class='target'>Մնացել է 1 լիտր</td><td class='target'>{0} լիտր</td><td class='target'>Մնացել է 3 լիտր</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} լիտրին</td><td class='target'>Սպասում եմ այդ 1 լիտրին</td><td class='target'>{0} լիտրին</td><td class='target'>Սպասում եմ այդ 3 լիտրին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} լիտրում</td><td class='target'>Երկրի պտույտը 1 լիտրում</td><td class='target'>{0} լիտրում</td><td class='target'>Երկրի պտույտը 3 լիտրում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} լիտրով</td><td class='target'>Հպարտանում եմ այդ 1 լիտրով</td><td class='target'>{0} լիտրով</td><td class='target'>Հպարտանում եմ այդ 3 լիտրով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} լիտրից</td><td class='target'>Վախենում եմ այդ 1 լիտրից</td><td class='target'>{0} լիտրից</td><td class='target'>Վախենում եմ այդ 3 լիտրից</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='20'>year-duration</td><td class='source' rowSpan='5'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source'>nominative</td><td class='target'>{0} ամիս</td><td class='target'>Մնացել է 1 ամիս</td><td class='target'>{0} ամիս</td><td class='target'>Մնացել է 3 ամիս</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ամսին</td><td class='target'>Սպասում եմ այդ 1 ամսին</td><td class='target'>{0} ամսին</td><td class='target'>Սպասում եմ այդ 3 ամսին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} ամսում</td><td class='target'>Երկրի պտույտը 1 ամսում</td><td class='target'>{0} ամսում</td><td class='target'>Երկրի պտույտը 3 ամսում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} ամսով</td><td class='target'>Հպարտանում եմ այդ 1 ամսով</td><td class='target'>{0} ամսով</td><td class='target'>Հպարտանում եմ այդ 3 ամսով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} ամսից</td><td class='target'>Վախենում եմ այդ 1 ամսից</td><td class='target'>{0} ամսից</td><td class='target'>Վախենում եմ այդ 3 ամսից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target'>{0} տարի</td><td class='target'>Մնացել է 1 տարի</td><td class='target'>{0} տարի</td><td class='target'>Մնացել է 3 տարի</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} տարուն</td><td class='target'>Սպասում եմ այդ 1 տարուն</td><td class='target'>{0} տարուն</td><td class='target'>Սպասում եմ այդ 3 տարուն</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} տարում</td><td class='target'>Երկրի պտույտը 1 տարում</td><td class='target'>{0} տարում</td><td class='target'>Երկրի պտույտը 3 տարում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} տարով</td><td class='target'>Հպարտանում եմ այդ 1 տարով</td><td class='target'>{0} տարով</td><td class='target'>Հպարտանում եմ այդ 3 տարով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} տարուց</td><td class='target'>Վախենում եմ այդ 1 տարուց</td><td class='target'>{0} տարուց</td><td class='target'>Վախենում եմ այդ 3 տարուց</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target'>{0} տասնամյակ</td><td class='target'>Մնացել է 1 տասնամյակ</td><td class='target'>{0} տասնամյակ</td><td class='target'>Մնացել է 3 տասնամյակ</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} տասնամյակին</td><td class='target'>Սպասում եմ այդ 1 տասնամյակին</td><td class='target'>{0} տասնամյակին</td><td class='target'>Սպասում եմ այդ 3 տասնամյակին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} տասնամյակում</td><td class='target'>Երկրի պտույտը 1 տասնամյակում</td><td class='target'>{0} տասնամյակում</td><td class='target'>Երկրի պտույտը 3 տասնամյակում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} տասնամյակով</td><td class='target'>Հպարտանում եմ այդ 1 տասնամյակով</td><td class='target'>{0} տասնամյակով</td><td class='target'>Հպարտանում եմ այդ 3 տասնամյակով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} տասնամյակից</td><td class='target'>Վախենում եմ այդ 1 տասնամյակից</td><td class='target'>{0} տասնամյակից</td><td class='target'>Վախենում եմ այդ 3 տասնամյակից</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>nominative</td><td class='target'>{0} դար</td><td class='target'>Մնացել է 1 դար</td><td class='target'>{0} դար</td><td class='target'>Մնացել է 3 դար</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} դարին</td><td class='target'>Սպասում եմ այդ 1 դարին</td><td class='target'>{0} դարին</td><td class='target'>Սպասում եմ այդ 3 դարին</td></tr>
+	<tr><td class='source'>locative</td><td class='target'>{0} դարում</td><td class='target'>Երկրի պտույտը 1 դարում</td><td class='target'>{0} դարում</td><td class='target'>Երկրի պտույտը 3 դարում</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>{0} դարով</td><td class='target'>Հպարտանում եմ այդ 1 դարով</td><td class='target'>{0} դարով</td><td class='target'>Հպարտանում եմ այդ 3 դարով</td></tr>
+	<tr><td class='source'>ablative</td><td class='target'>{0} դարից</td><td class='target'>Վախենում եմ այդ 1 դարից</td><td class='target'>{0} դարից</td><td class='target'>Վախենում եմ այդ 3 դարից</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 1.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 3.0</th></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
