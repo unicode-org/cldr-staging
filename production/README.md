@@ -6,5 +6,5 @@ This directory contains derived data from the [CLDR](https://github.com/unicode-
 
 See [LICENSE.txt](./LICENSE.txt)
 
->Copyright © 2019-2020 Unicode, Inc. All rights reserved.
+>Copyright © 2019-2021 Unicode, Inc. All rights reserved.
 >Distributed under the Terms of Use in https://www.unicode.org/copyright.html
