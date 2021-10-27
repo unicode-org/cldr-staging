@@ -1,0 +1,244 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Amharic: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Amharic: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source' rowSpan='2'>Amharic</td><td class='source' rowSpan='2'><a name='am' href='#am'>am</a></td><td class='source'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, accusative</td></tr>
+	<tr><td class='source'>grammaticalDefiniteness</td><td class='source'>general</td><td class='source'>indefinite, definite</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>{0} ቀን</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1</span> ቀን</div></td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} ቀናት</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>2</span> ቀናት</div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Case' href='#Case'>Case</a></td><td class='source'>accusative</td><td class='target'>ልጁ ለ {0} ቀረ</td><td class='target'><div class='cldr_example'>ልጁ ለ <span class='cldr_substituted'>1 ራዲያን</span> ቀረ</div></td></tr>
+	<tr><td class='source'>nominative</td><td class='target'>{0} ዩኬ የሻይ ማንኪያ</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 rad</span> ዩኬ የሻይ ማንኪያ</div></td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>acceleration</td><td class='source' rowSpan='2'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ጂ-ኃይል</td><td class='target'>1 ጂ-ኃይል ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ጂ-ኃይል</td><td class='target'>3 ጂ-ኃይል ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ጂ-ኃይል ቀረ</td><td class='target'>ልጁ ለ 3 ጂ-ኃይል ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='10'>angle</td><td class='source' rowSpan='2'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሰከንድ</td><td class='target'>1 ሰከንድ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሰከንድ</td><td class='target'>3 ሰከንድ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሰከንድ ቀረ</td><td class='target'>ልጁ ለ 3 ሰከንድ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ደቂቃ</td><td class='target'>1 ደቂቃ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ደቂቃ</td><td class='target'>3 ደቂቃ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ደቂቃ ቀረ</td><td class='target'>ልጁ ለ 3 ደቂቃ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ዲግሪ</td><td class='target'>1 ዲግሪ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ዲግሪ</td><td class='target'>3 ዲግሪ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ዲግሪ ቀረ</td><td class='target'>ልጁ ለ 3 ዲግሪ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} rad</td><td class='target'>1 rad ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} rad</td><td class='target'>3 rad ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ራዲያን</td><td class='target'>ልጁ ለ 1 ራዲያን ቀረ</td><td class='target'>{0} ራዲያኖች</td><td class='target'>ልጁ ለ 3 ራዲያኖች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target'>{0} rev</td><td class='target'>1 rev ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} rev</td><td class='target'>3 rev ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ኡደት</td><td class='target'>ልጁ ለ 1 ኡደት ቀረ</td><td class='target'>{0} ኡደቶች</td><td class='target'>ልጁ ለ 3 ኡደቶች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>area</td><td class='source' rowSpan='2'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሄክታር</td><td class='target'>1 ሄክታር ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሄክታር</td><td class='target'>3 ሄክታር ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሄክታር ቀረ</td><td class='target'>ልጁ ለ 3 ሄክታር ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='4'>digital</td><td class='source' rowSpan='2'><a name='bits' href='#bits'>bits</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ቢት</td><td class='target'>1 ቢት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ቢት</td><td class='target'>3 ቢት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ቢት ቀረ</td><td class='target'>ልጁ ለ 3 ቢት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ባይት</td><td class='target'>1 ባይት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ባይት</td><td class='target'>3 ባይት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ባይት ቀረ</td><td class='target'>ልጁ ለ 3 ባይት ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='12'>duration</td><td class='source' rowSpan='2'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሰከንድ</td><td class='target'>1 ሰከንድ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሰከንዶች</td><td class='target'>3 ሰከንዶች ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሰከንድ ቀረ</td><td class='target'>ልጁ ለ 3 ሰከንዶች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ደቂቃ</td><td class='target'>1 ደቂቃ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ደቂቃዎች</td><td class='target'>3 ደቂቃዎች ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ደቂቃ ቀረ</td><td class='target'>ልጁ ለ 3 ደቂቃዎች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሰዓት</td><td class='target'>1 ሰዓት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሰዓቶች</td><td class='target'>3 ሰዓቶች ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሰዓት ቀረ</td><td class='target'>ልጁ ለ 3 ሰዓቶች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ቀናት</td><td class='target'>1 ቀናት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ቀናት</td><td class='target'>3 ቀናት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ቀናት ቀረ</td><td class='target'>ልጁ ለ 3 ቀናት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ቀናት</td><td class='target'>1 ቀናት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ቀናት</td><td class='target'>3 ቀናት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ቀናት ቀረ</td><td class='target'>ልጁ ለ 3 ቀናት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሳምንት</td><td class='target'>1 ሳምንት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሳምንታት</td><td class='target'>3 ሳምንታት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሳምንት ቀረ</td><td class='target'>ልጁ ለ 3 ሳምንታት ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>electric-current</td><td class='source' rowSpan='2'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>nominative</td><td class='target'>{0} A</td><td class='target'>1 A ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} A</td><td class='target'>3 A ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} አምፒር</td><td class='target'>ልጁ ለ 1 አምፒር ቀረ</td><td class='target'>{0} አምፒሮች</td><td class='target'>ልጁ ለ 3 አምፒሮች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>electric-resistance</td><td class='source' rowSpan='2'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>nominative</td><td class='target'>{0} Ω</td><td class='target'>1 Ω ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} Ω</td><td class='target'>3 Ω ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ohm</td><td class='target'>ልጁ ለ 1 ohm ቀረ</td><td class='target'>{0} ohms</td><td class='target'>ልጁ ለ 3 ohms ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='4'>energy</td><td class='source' rowSpan='2'><a name='joules' href='#joules'>joules</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} J</td><td class='target'>1 J ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} J</td><td class='target'>3 J ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 J ቀረ</td><td class='target'>ልጁ ለ 3 J ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ካሎሪ</td><td class='target'>1 ካሎሪ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ካሎሪ</td><td class='target'>3 ካሎሪ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ካሎሪ ቀረ</td><td class='target'>ልጁ ለ 3 ካሎሪ ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>force</td><td class='source' rowSpan='2'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>nominative</td><td class='target'>{0} ኒ</td><td class='target'>1 ኒ ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} ኒ</td><td class='target'>3 ኒ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ኒውተን</td><td class='target'>ልጁ ለ 1 ኒውተን ቀረ</td><td class='target'>{0} ኒውተኖች</td><td class='target'>ልጁ ለ 3 ኒውተኖች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>frequency</td><td class='source' rowSpan='2'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>nominative</td><td class='target'>{0} Hz</td><td class='target'>1 Hz ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} Hz</td><td class='target'>3 Hz ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} hertz</td><td class='target'>ልጁ ለ 1 hertz ቀረ</td><td class='target'>{0} hertz</td><td class='target'>ልጁ ለ 3 hertz ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>graphics</td><td class='source' rowSpan='2'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ፒክስል</td><td class='target'>1 ፒክስል ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ፒክስል</td><td class='target'>3 ፒክስል ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ፒክስል ቀረ</td><td class='target'>ልጁ ለ 3 ፒክስል ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>illuminance</td><td class='source' rowSpan='2'><a name='lux' href='#lux'>lux</a></td><td class='source'>nominative</td><td class='target'>{0} lx</td><td class='target'>1 lx ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} lx</td><td class='target'>3 lx ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} lux</td><td class='target'>ልጁ ለ 1 lux ቀረ</td><td class='target'>{0} lux</td><td class='target'>ልጁ ለ 3 lux ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='4'>length</td><td class='source' rowSpan='2'><a name='meters' href='#meters'>meters</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሜትር</td><td class='target'>1 ሜትር ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሜትር</td><td class='target'>3 ሜትር ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሜትር ቀረ</td><td class='target'>ልጁ ለ 3 ሜትር ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ስማይል</td><td class='target'>1 ስማይል ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ስማይል</td><td class='target'>3 ስማይል ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ስማይል ቀረ</td><td class='target'>ልጁ ለ 3 ስማይል ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>luminous-flux</td><td class='source' rowSpan='2'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ቱቦ ቀዳዳ</td><td class='target'>1 ቱቦ ቀዳዳ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ቱቦ ቀዳዳ</td><td class='target'>3 ቱቦ ቀዳዳ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ቱቦ ቀዳዳ ቀረ</td><td class='target'>ልጁ ለ 3 ቱቦ ቀዳዳ ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>luminous-intensity</td><td class='source' rowSpan='2'><a name='candela' href='#candela'>candela</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ካንዴላ</td><td class='target'>1 ካንዴላ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ካንዴላ</td><td class='target'>3 ካንዴላ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ካንዴላ ቀረ</td><td class='target'>ልጁ ለ 3 ካንዴላ ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='8'>mass</td><td class='source' rowSpan='2'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ካራት</td><td class='target'>1 ካራት ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} CD</td><td class='target'>3 CD ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ካራት ቀረ</td><td class='target'>{0} ካራቶች</td><td class='target'>ልጁ ለ 3 ካራቶች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ግራም</td><td class='target'>1 ግራም ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ግራም</td><td class='target'>3 ግራም ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ግራም ቀረ</td><td class='target'>ልጁ ለ 3 ግራም ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ኪሎግራም</td><td class='target'>1 ኪሎግራም ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ኪሎግራም</td><td class='target'>3 ኪሎግራም ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ኪሎግራም ቀረ</td><td class='target'>ልጁ ለ 3 ኪሎግራም ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሜትሪክ ቶን</td><td class='target'>1 ሜትሪክ ቶን ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሜትሪክ ቶኖች</td><td class='target'>3 ሜትሪክ ቶኖች ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሜትሪክ ቶን ቀረ</td><td class='target'>ልጁ ለ 3 ሜትሪክ ቶኖች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='10'>portion</td><td class='source' rowSpan='2'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>nominative</td><td class='target'>{0} ppm</td><td class='target'>1 ppm ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} ppm</td><td class='target'>3 ppm ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ክፍል በየሚሊዮን</td><td class='target'>ልጁ ለ 1 ክፍል በየሚሊዮን ቀረ</td><td class='target'>{0} ክፍል በየሚሊዮን</td><td class='target'>ልጁ ለ 3 ክፍል በየሚሊዮን ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0}‱</td><td class='target'>1‱ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0}‱</td><td class='target'>3‱ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1‱ ቀረ</td><td class='target'>ልጁ ለ 3‱ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='permille' href='#permille'>permille</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} በማይል</td><td class='target'>1 በማይል ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0}‰</td><td class='target'>3‰ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 በማይል ቀረ</td><td class='target'>ልጁ ለ 3‰ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='percent' href='#percent'>percent</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ፐርሰንት</td><td class='target'>1 ፐርሰንት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ፐርሰንት</td><td class='target'>3 ፐርሰንት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ፐርሰንት ቀረ</td><td class='target'>ልጁ ለ 3 ፐርሰንት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ካራት</td><td class='target'>1 ካራት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ካራት</td><td class='target'>3 ካራት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ካራት ቀረ</td><td class='target'>ልጁ ለ 3 ካራት ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>power</td><td class='source' rowSpan='2'><a name='watts' href='#watts'>watts</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ዋት</td><td class='target'>1 ዋት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ዋት</td><td class='target'>3 ዋት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ዋት ቀረ</td><td class='target'>ልጁ ለ 3 ዋት ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='6'>pressure</td><td class='source' rowSpan='2'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ፓስካል</td><td class='target'>1 ፓስካል ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ፓስካል</td><td class='target'>3 ፓስካል ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ፓስካል ቀረ</td><td class='target'>ልጁ ለ 3 ፓስካል ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} አሞሌ</td><td class='target'>1 አሞሌ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} አሞሌዎች</td><td class='target'>3 አሞሌዎች ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 አሞሌ ቀረ</td><td class='target'>ልጁ ለ 3 አሞሌዎች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ከባቢ አየር</td><td class='target'>1 ከባቢ አየር ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ከባቢ አየር</td><td class='target'>3 ከባቢ አየር ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ከባቢ አየር ቀረ</td><td class='target'>ልጁ ለ 3 ከባቢ አየር ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>substance-amount</td><td class='source' rowSpan='2'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>nominative</td><td class='target'>{0} mol</td><td class='target'>1 mol ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} mol</td><td class='target'>3 mol ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} mole</td><td class='target'>ልጁ ለ 1 mole ቀረ</td><td class='target'>{0} moles</td><td class='target'>ልጁ ለ 3 moles ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='6'>temperature</td><td class='source' rowSpan='2'><a name='°' href='#°'>°</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0}°</td><td class='target'>1° ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0}°</td><td class='target'>3° ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1° ቀረ</td><td class='target'>ልጁ ለ 3° ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ዲግሪ ሴልሺየስ</td><td class='target'>1 ዲግሪ ሴልሺየስ ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ዲግሪ ሴልሺየስ</td><td class='target'>3 ዲግሪ ሴልሺየስ ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ዲግሪ ሴልሺየስ ቀረ</td><td class='target'>ልጁ ለ 3 ዲግሪ ሴልሺየስ ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target'>{0} K</td><td class='target'>1 K ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} K</td><td class='target'>3 K ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ኬልቪን</td><td class='target'>ልጁ ለ 1 ኬልቪን ቀረ</td><td class='target'>{0} ኬልቪኖች</td><td class='target'>ልጁ ለ 3 ኬልቪኖች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>typewidth</td><td class='source' rowSpan='2'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} em</td><td class='target'>1 em ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} em</td><td class='target'>3 em ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 em ቀረ</td><td class='target'>ልጁ ለ 3 em ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='2'>voltage</td><td class='source' rowSpan='2'><a name='volts' href='#volts'>volts</a></td><td class='source'>nominative</td><td class='target'>{0} V</td><td class='target'>1 V ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} V</td><td class='target'>3 V ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ቮልት</td><td class='target'>ልጁ ለ 1 ቮልት ቀረ</td><td class='target'>{0} ቮልቶች</td><td class='target'>ልጁ ለ 3 ቮልቶች ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='6'>volume</td><td class='source' rowSpan='2'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} mc</td><td class='target'>1 mc ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} mc</td><td class='target'>3 mc ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 mc ቀረ</td><td class='target'>ልጁ ለ 3 mc ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source'>nominative</td><td class='target'>{0} mpt</td><td class='target'>1 mpt ዩኬ የሻይ ማንኪያ</td><td class='target'>{0} mpt</td><td class='target'>3 mpt ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ሜትሪክ ፒንት</td><td class='target'>ልጁ ለ 1 ሜትሪክ ፒንት ቀረ</td><td class='target'>{0} ሜትሪክ ፒንቶች</td><td class='target'>ልጁ ለ 3 ሜትሪክ ፒንቶች ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='liters' href='#liters'>liters</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ሊትር</td><td class='target'>1 ሊትር ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ሊትር</td><td class='target'>3 ሊትር ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ሊትር ቀረ</td><td class='target'>ልጁ ለ 3 ሊትር ቀረ</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 3.0</th></tr>
+	<tr><td class='source' rowSpan='8'>year-duration</td><td class='source' rowSpan='2'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ወር</td><td class='target'>1 ወር ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ወራት</td><td class='target'>3 ወራት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ወር ቀረ</td><td class='target'>ልጁ ለ 3 ወራት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ዓመት</td><td class='target'>1 ዓመት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ዓመታት</td><td class='target'>3 ዓመታት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ዓመት ቀረ</td><td class='target'>ልጁ ለ 3 ዓመታት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} አስር አመታት</td><td class='target'>1 አስር አመታት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} አስር አመታት</td><td class='target'>3 አስር አመታት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 አስር አመታት ቀረ</td><td class='target'>ልጁ ለ 3 አስር አመታት ቀረ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ምዕተ ዓመት</td><td class='target'>1 ምዕተ ዓመት ዩኬ የሻይ ማንኪያ</td><td class='target' rowSpan='2'>{0} ምዕተ ዓመት</td><td class='target'>3 ምዕተ ዓመት ዩኬ የሻይ ማንኪያ</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>ልጁ ለ 1 ምዕተ ዓመት ቀረ</td><td class='target'>ልጁ ለ 3 ምዕተ ዓመት ቀረ</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 1.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 3.0</th></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

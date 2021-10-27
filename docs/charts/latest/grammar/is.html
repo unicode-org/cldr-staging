@@ -1,0 +1,382 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Icelandic: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Icelandic: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source' rowSpan='3'>Icelandic</td><td class='source' rowSpan='3'><a name='is' href='#is'>is</a></td><td class='source'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, accusative, genitive, dative</td></tr>
+	<tr><td class='source'>grammaticalDefiniteness</td><td class='source'>general</td><td class='source'>indefinite, definite</td></tr>
+	<tr><td class='source'>grammaticalGender</td><td class='source'>general</td><td class='source'>neuter, masculine, feminine</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>{0} dagur</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1</span> dagur</div></td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} dagar</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>2</span> dagar</div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='4'><a name='Case' href='#Case'>Case</a></td><td class='source'>accusative</td><td class='target'>um {0}</td><td class='target'><div class='cldr_example'>um <span class='cldr_substituted'>2 ástralska bolla</span></div></td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá {0}</td><td class='target'><div class='cldr_example'>frá <span class='cldr_substituted'>1 áströlskum bolla</span></div></td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til {0}</td><td class='target'><div class='cldr_example'>til <span class='cldr_substituted'>2 ástralskra bolla</span></div></td></tr>
+	<tr><td class='source'>nominative</td><td class='target'>hér er {0}</td><td class='target'><div class='cldr_example'>hér er <span class='cldr_substituted'>2 ástralskir bollar</span></div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='3'><a name='Gender' href='#Gender'>Gender</a></td><td class='source'>feminine</td><td class='target'>Ein {0} eftir</td><td class='target'><div class='cldr_example'>Ein <span class='cldr_substituted'>klukkustund</span> eftir</div></td></tr>
+	<tr><td class='source'>masculine</td><td class='target'>Einn {0} eftir</td><td class='target'><div class='cldr_example'>Einn <span class='cldr_substituted'>metri</span> eftir</div></td></tr>
+	<tr><td class='source'>neuter</td><td class='target'>Eitt {0} eftir</td><td class='target'><div class='cldr_example'>Eitt <span class='cldr_substituted'>mól</span> eftir</div></td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>acceleration</td><td class='source' rowSpan='4'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein þyngdarhröðun eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} þyngdarhröðun</td><td class='target'>hér er 21 þyngdarhröðun</td><td class='target' rowSpan='2'>{0} þyngdarhröðun</td><td class='target'>hér er 2 þyngdarhröðun</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 þyngdarhröðun</td><td class='target'>um 2 þyngdarhröðun</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} þyngdarhröðunar</td><td class='target'>til 21 þyngdarhröðunar</td><td class='target'>{0} þyngdarhröðunar</td><td class='target'>til 2 þyngdarhröðunar</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} þyngdarhröðun</td><td class='target'>frá 21 þyngdarhröðun</td><td class='target'>{0} þyngdarhröðun</td><td class='target'>frá 2 þyngdarhröðun</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>angle</td><td class='source' rowSpan='4'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein bogasekúnda eftir</td><td class='source'>nominative</td><td class='target'>{0} bogasekúnda</td><td class='target'>hér er 21 bogasekúnda</td><td class='target' rowSpan='2'>{0} bogasekúndur</td><td class='target'>hér er 2 bogasekúndur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} bogasekúndu</td><td class='target'>um 21 bogasekúndu</td><td class='target'>um 2 bogasekúndur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 bogasekúndu</td><td class='target'>{0} bogasekúndna</td><td class='target'>til 2 bogasekúndna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 bogasekúndu</td><td class='target'>{0} bogasekúndum</td><td class='target'>frá 2 bogasekúndum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein bogamínúta eftir</td><td class='source'>nominative</td><td class='target'>{0} bogamínúta</td><td class='target'>hér er 21 bogamínúta</td><td class='target' rowSpan='2'>{0} bogamínútur</td><td class='target'>hér er 2 bogamínútur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} bogamínútu</td><td class='target'>um 21 bogamínútu</td><td class='target'>um 2 bogamínútur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 bogamínútu</td><td class='target'>{0} bogamínútna</td><td class='target'>til 2 bogamínútna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 bogamínútu</td><td class='target'>{0} bogamínútum</td><td class='target'>frá 2 bogamínútum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein gráða eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} gráða</td><td class='target'>hér er 21 gráða</td><td class='target' rowSpan='4'>{0} gráður</td><td class='target'>hér er 2 gráður</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 gráða</td><td class='target'>um 2 gráður</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 gráða</td><td class='target'>til 2 gráður</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 gráða</td><td class='target'>frá 2 gráður</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn radían eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} radían</td><td class='target'>hér er 21 radían</td><td class='target'>{0} radíanar</td><td class='target'>hér er 2 radíanar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 radían</td><td class='target'>{0} radían</td><td class='target'>um 2 radían</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} radíans</td><td class='target'>til 21 radíans</td><td class='target'>{0} radíans</td><td class='target'>til 2 radíans</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} radíani</td><td class='target'>frá 21 radíani</td><td class='target'>{0} radíani</td><td class='target'>frá 2 radíani</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn snúningur eftir</td><td class='source'>nominative</td><td class='target'>{0} snúningur</td><td class='target'>hér er 21 snúningur</td><td class='target'>{0} snúningar</td><td class='target'>hér er 2 snúningar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} snúning</td><td class='target'>um 21 snúning</td><td class='target' rowSpan='2'>{0} snúninga</td><td class='target'>um 2 snúninga</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} snúnings</td><td class='target'>til 21 snúnings</td><td class='target'>til 2 snúninga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} snúningi</td><td class='target'>frá 21 snúningi</td><td class='target'>{0} snúningum</td><td class='target'>frá 2 snúningum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>area</td><td class='source' rowSpan='4'><a name='hectares' href='#hectares'>hectares</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn hektari eftir</td><td class='source'>nominative</td><td class='target'>{0} hektari</td><td class='target'>hér er 21 hektari</td><td class='target'>{0} hektarar</td><td class='target'>hér er 2 hektarar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} hektara</td><td class='target'>um 21 hektara</td><td class='target' rowSpan='2'>{0} hektara</td><td class='target'>um 2 hektara</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 hektara</td><td class='target'>til 2 hektara</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 hektara</td><td class='target'>{0} hekturum</td><td class='target'>frá 2 hekturum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>digital</td><td class='source' rowSpan='4'><a name='bits' href='#bits'>bits</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn biti eftir</td><td class='source'>nominative</td><td class='target'>{0} biti</td><td class='target'>hér er 21 biti</td><td class='target'>{0} bitar</td><td class='target'>hér er 2 bitar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} bita</td><td class='target'>um 21 bita</td><td class='target' rowSpan='2'>{0} bita</td><td class='target'>um 2 bita</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 bita</td><td class='target'>til 2 bita</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 bita</td><td class='target'>{0} bitum</td><td class='target'>frá 2 bitum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt bæti eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} bæti</td><td class='target'>hér er 21 bæti</td><td class='target' rowSpan='2'>{0} bæti</td><td class='target'>hér er 2 bæti</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 bæti</td><td class='target'>um 2 bæti</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} bætis</td><td class='target'>til 21 bætis</td><td class='target'>{0} bæta</td><td class='target'>til 2 bæta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} bæti</td><td class='target'>frá 21 bæti</td><td class='target'>{0} bætum</td><td class='target'>frá 2 bætum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='24'>duration</td><td class='source' rowSpan='4'><a name='seconds' href='#seconds'>seconds</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein sekúnda eftir</td><td class='source'>nominative</td><td class='target'>{0} sekúnda</td><td class='target'>hér er 21 sekúnda</td><td class='target' rowSpan='2'>{0} sekúndur</td><td class='target'>hér er 2 sekúndur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} sekúndu</td><td class='target'>um 21 sekúndu</td><td class='target'>um 2 sekúndur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 sekúndu</td><td class='target'>{0} sekúndna</td><td class='target'>til 2 sekúndna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 sekúndu</td><td class='target'>{0} sekúndum</td><td class='target'>frá 2 sekúndum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein mínúta eftir</td><td class='source'>nominative</td><td class='target'>{0} mínúta</td><td class='target'>hér er 21 mínúta</td><td class='target' rowSpan='2'>{0} mínútur</td><td class='target'>hér er 2 mínútur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} mínútu</td><td class='target'>um 21 mínútu</td><td class='target'>um 2 mínútur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 mínútu</td><td class='target'>{0} mínútna</td><td class='target'>til 2 mínútna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 mínútu</td><td class='target'>{0} mínútum</td><td class='target'>frá 2 mínútum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein klukkustund eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} klukkustund</td><td class='target'>hér er 21 klukkustund</td><td class='target' rowSpan='2'>{0} klukkustundir</td><td class='target'>hér er 2 klukkustundir</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 klukkustund</td><td class='target'>um 2 klukkustundir</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} klukkustundar</td><td class='target'>til 21 klukkustundar</td><td class='target'>{0} klukkustunda</td><td class='target'>til 2 klukkustunda</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} klukkustund</td><td class='target'>frá 21 klukkustund</td><td class='target'>{0} klukkustundum</td><td class='target'>frá 2 klukkustundum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn dagur eftir</td><td class='source'>nominative</td><td class='target'>{0} dagur</td><td class='target'>hér er 21 dagur</td><td class='target'>{0} dagar</td><td class='target'>hér er 2 dagar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} dag</td><td class='target'>um 21 dag</td><td class='target' rowSpan='2'>{0} daga</td><td class='target'>um 2 daga</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} dags</td><td class='target'>til 21 dags</td><td class='target'>til 2 daga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} degi</td><td class='target'>frá 21 degi</td><td class='target'>{0} dögum</td><td class='target'>frá 2 dögum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn dagur eftir</td><td class='source'>nominative</td><td class='target'>{0} dagur</td><td class='target'>hér er 21 dagur</td><td class='target'>{0} dagar</td><td class='target'>hér er 2 dagar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} dag</td><td class='target'>um 21 dag</td><td class='target' rowSpan='2'>{0} daga</td><td class='target'>um 2 daga</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} dags</td><td class='target'>til 21 dags</td><td class='target'>til 2 daga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} degi</td><td class='target'>frá 21 degi</td><td class='target'>{0} dögum</td><td class='target'>frá 2 dögum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein vika eftir</td><td class='source'>nominative</td><td class='target'>{0} vika</td><td class='target'>hér er 21 vika</td><td class='target' rowSpan='2'>{0} vikur</td><td class='target'>hér er 2 vikur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} viku</td><td class='target'>um 21 viku</td><td class='target'>um 2 vikur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 viku</td><td class='target'>{0} vikna</td><td class='target'>til 2 vikna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 viku</td><td class='target'>{0} vikum</td><td class='target'>frá 2 vikum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>electric-current</td><td class='source' rowSpan='4'><a name='amperes' href='#amperes'>amperes</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt amper eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} amper</td><td class='target'>hér er 21 amper</td><td class='target' rowSpan='2'>{0} amper</td><td class='target'>hér er 2 amper</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 amper</td><td class='target'>um 2 amper</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ampers</td><td class='target'>til 21 ampers</td><td class='target'>{0} ampera</td><td class='target'>til 2 ampera</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} amperi</td><td class='target'>frá 21 amperi</td><td class='target'>{0} amperum</td><td class='target'>frá 2 amperum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>electric-resistance</td><td class='source' rowSpan='4'><a name='ohms' href='#ohms'>ohms</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt ohm eftir</td><td class='source'>nominative</td><td class='target'>{0} ohm</td><td class='target'>hér er 21 ohm</td><td class='target'>{0} ohm</td><td class='target'>hér er 2 ohm</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} óm</td><td class='target'>um 21 óm</td><td class='target'>{0} óm</td><td class='target'>um 2 óm</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} óms</td><td class='target'>til 21 óms</td><td class='target'>{0} óma</td><td class='target'>til 2 óma</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ómi</td><td class='target'>frá 21 ómi</td><td class='target'>{0} ómum</td><td class='target'>frá 2 ómum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>energy</td><td class='source' rowSpan='4'><a name='joules' href='#joules'>joules</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt júl eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} júl</td><td class='target'>hér er 21 júl</td><td class='target' rowSpan='2'>{0} júl</td><td class='target'>hér er 2 júl</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 júl</td><td class='target'>um 2 júl</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} júls</td><td class='target'>til 21 júls</td><td class='target'>{0} júla</td><td class='target'>til 2 júla</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} júli</td><td class='target'>frá 21 júli</td><td class='target'>{0} júlum</td><td class='target'>frá 2 júlum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein kaloría eftir</td><td class='source'>nominative</td><td class='target'>{0} kaloría</td><td class='target'>hér er 21 kaloría</td><td class='target' rowSpan='2'>{0} kaloríur</td><td class='target'>hér er 2 kaloríur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} kaloríu</td><td class='target'>um 21 kaloríu</td><td class='target'>um 2 kaloríur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 kaloríu</td><td class='target'>{0} kaloría</td><td class='target'>til 2 kaloría</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 kaloríu</td><td class='target'>{0} kaloríum</td><td class='target'>frá 2 kaloríum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>force</td><td class='source' rowSpan='4'><a name='newtons' href='#newtons'>newtons</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt njúton eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} njúton</td><td class='target'>hér er 21 njúton</td><td class='target' rowSpan='2'>{0} njúton</td><td class='target'>hér er 2 njúton</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 njúton</td><td class='target'>um 2 njúton</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} njútons</td><td class='target'>til 21 njútons</td><td class='target'>{0} njútons</td><td class='target'>til 2 njútons</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} njútoni</td><td class='target'>frá 21 njútoni</td><td class='target'>{0} njútoni</td><td class='target'>frá 2 njútoni</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>frequency</td><td class='source' rowSpan='4'><a name='hertz' href='#hertz'>hertz</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt hertz eftir</td><td class='source'>nominative</td><td class='target' rowSpan='3'>{0} hertz</td><td class='target'>hér er 21 hertz</td><td class='target' rowSpan='2'>{0} hertz</td><td class='target'>hér er 2 hertz</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 hertz</td><td class='target'>um 2 hertz</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 hertz</td><td class='target'>{0} hertza</td><td class='target'>til 2 hertza</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} hertzi</td><td class='target'>frá 21 hertzi</td><td class='target'>{0} hertzum</td><td class='target'>frá 2 hertzum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>graphics</td><td class='source' rowSpan='4'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn pixill eftir</td><td class='source'>nominative</td><td class='target'>{0} pixill</td><td class='target'>hér er 21 pixill</td><td class='target'>{0} pixlar</td><td class='target'>hér er 2 pixlar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} pixil</td><td class='target'>um 21 pixil</td><td class='target' rowSpan='2'>{0} pixla</td><td class='target'>um 2 pixla</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} pixils</td><td class='target'>til 21 pixils</td><td class='target'>til 2 pixla</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} pixli</td><td class='target'>frá 21 pixli</td><td class='target'>{0} pixlum</td><td class='target'>frá 2 pixlum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>illuminance</td><td class='source' rowSpan='4'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt lúx eftir</td><td class='source'>nominative</td><td class='target' rowSpan='3'>{0} lúx</td><td class='target'>hér er 21 lúx</td><td class='target' rowSpan='2'>{0} lúx</td><td class='target'>hér er 2 lúx</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 lúx</td><td class='target'>um 2 lúx</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 lúx</td><td class='target'>{0} lúxa</td><td class='target'>til 2 lúxa</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} lúxi</td><td class='target'>frá 21 lúxi</td><td class='target'>{0} lúxum</td><td class='target'>frá 2 lúxum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>length</td><td class='source' rowSpan='4'><a name='meters' href='#meters'>meters</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn metri eftir</td><td class='source'>nominative</td><td class='target'>{0} metri</td><td class='target'>hér er 21 metri</td><td class='target'>{0} metrar</td><td class='target'>hér er 2 metrar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} metra</td><td class='target'>um 21 metra</td><td class='target' rowSpan='2'>{0} metra</td><td class='target'>um 2 metra</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 metra</td><td class='target'>til 2 metra</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 metra</td><td class='target'>{0} metrum</td><td class='target'>frá 2 metrum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein sænsk míla eftir</td><td class='source'>nominative</td><td class='target'>{0} sænsk míla</td><td class='target'>hér er 21 sænsk míla</td><td class='target' rowSpan='2'>{0} sænskar mílur</td><td class='target'>hér er 2 sænskar mílur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} sænska mílu</td><td class='target'>um 21 sænska mílu</td><td class='target'>um 2 sænskar mílur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} sænskrar mílu</td><td class='target'>til 21 sænskrar mílu</td><td class='target'>{0} sænskra mílna</td><td class='target'>til 2 sænskra mílna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} sænskri mílu</td><td class='target'>frá 21 sænskri mílu</td><td class='target'>{0} sænskum mílum</td><td class='target'>frá 2 sænskum mílum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>luminous-flux</td><td class='source' rowSpan='4'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt lúmen eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} lúmen</td><td class='target'>hér er 21 lúmen</td><td class='target' rowSpan='2'>{0} lúmen</td><td class='target'>hér er 2 lúmen</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 lúmen</td><td class='target'>um 2 lúmen</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} lúmens</td><td class='target'>til 21 lúmens</td><td class='target'>{0} lúmena</td><td class='target'>til 2 lúmena</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} lúmeni</td><td class='target'>frá 21 lúmeni</td><td class='target'>{0} lúmenum</td><td class='target'>frá 2 lúmenum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>luminous-intensity</td><td class='source' rowSpan='4'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt kerti eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} kerti</td><td class='target'>hér er 21 kerti</td><td class='target' rowSpan='2'>{0} kerti</td><td class='target'>hér er 2 kerti</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 kerti</td><td class='target'>um 2 kerti</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kertis</td><td class='target'>til 21 kertis</td><td class='target'>{0} kerta</td><td class='target'>til 2 kerta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kerti</td><td class='target'>frá 21 kerti</td><td class='target'>{0} kertum</td><td class='target'>frá 2 kertum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='16'>mass</td><td class='source' rowSpan='4'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt karat eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} karat</td><td class='target'>hér er 21 karat</td><td class='target' rowSpan='4'>{0} karöt</td><td class='target'>hér er 2 karöt</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 karat</td><td class='target'>um 2 karöt</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 karat</td><td class='target'>til 2 karöt</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 karat</td><td class='target'>frá 2 karöt</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='grams' href='#grams'>grams</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt gramm eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} gramm</td><td class='target'>hér er 21 gramm</td><td class='target' rowSpan='2'>{0} grömm</td><td class='target'>hér er 2 grömm</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 gramm</td><td class='target'>um 2 grömm</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} gramms</td><td class='target'>til 21 gramms</td><td class='target'>{0} gramma</td><td class='target'>til 2 gramma</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} grammi</td><td class='target'>frá 21 grammi</td><td class='target'>{0} grömmum</td><td class='target'>frá 2 grömmum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt kílógramm eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} kílógramm</td><td class='target'>hér er 21 kílógramm</td><td class='target' rowSpan='2'>{0} kílógrömm</td><td class='target'>hér er 2 kílógrömm</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 kílógramm</td><td class='target'>um 2 kílógrömm</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kílógramms</td><td class='target'>til 21 kílógramms</td><td class='target'>{0} kílógramma</td><td class='target'>til 2 kílógramma</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kílógrammi</td><td class='target'>frá 21 kílógrammi</td><td class='target'>{0} kílógrömmum</td><td class='target'>frá 2 kílógrömmum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt tonn eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} tonn</td><td class='target'>hér er 21 tonn</td><td class='target' rowSpan='2'>{0} tonn</td><td class='target'>hér er 2 tonn</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 tonn</td><td class='target'>um 2 tonn</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} tonns</td><td class='target'>til 21 tonns</td><td class='target'>{0} tonna</td><td class='target'>til 2 tonna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} tonni</td><td class='target'>frá 21 tonni</td><td class='target'>{0} tonnum</td><td class='target'>frá 2 tonnum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>portion</td><td class='source' rowSpan='4'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn milljónarhluti eftir</td><td class='source'>nominative</td><td class='target'>{0} milljónarhluti</td><td class='target'>hér er 21 milljónarhluti</td><td class='target'>{0} milljónarhlutar</td><td class='target'>hér er 2 milljónarhlutar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} milljónarhluta</td><td class='target'>um 21 milljónarhluta</td><td class='target' rowSpan='2'>{0} milljónarhluta</td><td class='target'>um 2 milljónarhluta</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 milljónarhluta</td><td class='target'>til 2 milljónarhluta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 milljónarhluta</td><td class='target'>{0} milljónarhlutum</td><td class='target'>frá 2 milljónarhlutum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt permyriad eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} permyriad</td><td class='target'>hér er 21 permyriad</td><td class='target' rowSpan='4'>{0} permyriad</td><td class='target'>hér er 2 permyriad</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 permyriad</td><td class='target'>um 2 permyriad</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 permyriad</td><td class='target'>til 2 permyriad</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 permyriad</td><td class='target'>frá 2 permyriad</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='permille' href='#permille'>permille</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt prómill eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} prómill</td><td class='target'>hér er 21 prómill</td><td class='target' rowSpan='2'>{0} prómill</td><td class='target'>hér er 2 prómill</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 prómill</td><td class='target'>um 2 prómill</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} prómills</td><td class='target'>til 21 prómills</td><td class='target'>{0} prómilla</td><td class='target'>til 2 prómilla</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} prómilli</td><td class='target'>frá 21 prómilli</td><td class='target'>{0} prómillum</td><td class='target'>frá 2 prómillum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='percent' href='#percent'>percent</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt prósent eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} prósent</td><td class='target'>hér er 21 prósent</td><td class='target' rowSpan='2'>{0} prósent</td><td class='target'>hér er 2 prósent</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 prósent</td><td class='target'>um 2 prósent</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} prósents</td><td class='target'>til 21 prósents</td><td class='target'>{0} prósenta</td><td class='target'>til 2 prósenta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} prósenti</td><td class='target'>frá 21 prósenti</td><td class='target'>{0} prósentum</td><td class='target'>frá 2 prósentum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt karat eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} karat</td><td class='target'>hér er 21 karat</td><td class='target' rowSpan='2'>{0} karöt</td><td class='target'>hér er 2 karöt</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 karat</td><td class='target'>um 2 karöt</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} karats</td><td class='target'>til 21 karats</td><td class='target'>{0} karata</td><td class='target'>til 2 karata</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} karati</td><td class='target'>frá 21 karati</td><td class='target'>{0} karötum</td><td class='target'>frá 2 karötum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>power</td><td class='source' rowSpan='4'><a name='watts' href='#watts'>watts</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt vatt eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} vatt</td><td class='target'>hér er 21 vatt</td><td class='target' rowSpan='2'>{0} vött</td><td class='target'>hér er 2 vött</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 vatt</td><td class='target'>um 2 vött</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} vatts</td><td class='target'>til 21 vatts</td><td class='target'>{0} vatta</td><td class='target'>til 2 vatta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} vatti</td><td class='target'>frá 21 vatti</td><td class='target'>{0} vöttum</td><td class='target'>frá 2 vöttum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'>pressure</td><td class='source' rowSpan='4'><a name='pascals' href='#pascals'>pascals</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt paskal eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} paskal</td><td class='target'>hér er 21 paskal</td><td class='target' rowSpan='2'>{0} pasköl</td><td class='target'>hér er 2 pasköl</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 paskal</td><td class='target'>um 2 pasköl</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} paskals</td><td class='target'>til 21 paskals</td><td class='target'>{0} paskala</td><td class='target'>til 2 paskala</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} paskali</td><td class='target'>frá 21 paskali</td><td class='target'>{0} paskölum</td><td class='target'>frá 2 paskölum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='bars' href='#bars'>bars</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt bar eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} bar</td><td class='target'>hér er 21 bar</td><td class='target' rowSpan='2'>{0} bör</td><td class='target'>hér er 2 bör</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 bar</td><td class='target'>um 2 bör</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} bars</td><td class='target'>til 21 bars</td><td class='target'>{0} bara</td><td class='target'>til 2 bara</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} bari</td><td class='target'>frá 21 bari</td><td class='target'>{0} börum</td><td class='target'>frá 2 börum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein loftþyngd eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} loftþyngd</td><td class='target'>hér er 21 loftþyngd</td><td class='target' rowSpan='2'>{0} loftþyngdir</td><td class='target'>hér er 2 loftþyngdir</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 loftþyngd</td><td class='target'>um 2 loftþyngdir</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} loftþyngdar</td><td class='target'>til 21 loftþyngdar</td><td class='target'>{0} loftþyngda</td><td class='target'>til 2 loftþyngda</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} loftþyngd</td><td class='target'>frá 21 loftþyngd</td><td class='target'>{0} loftþyngdum</td><td class='target'>frá 2 loftþyngdum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>substance-amount</td><td class='source' rowSpan='4'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt mól eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} mól</td><td class='target'>hér er 21 mól</td><td class='target' rowSpan='2'>{0} mól</td><td class='target'>hér er 2 mól</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 mól</td><td class='target'>um 2 mól</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} móls</td><td class='target'>til 21 móls</td><td class='target'>{0} móla</td><td class='target'>til 2 móla</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} móli</td><td class='target'>frá 21 móli</td><td class='target'>{0} mólum</td><td class='target'>frá 2 mólum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'>temperature</td><td class='source' rowSpan='4'><a name='°' href='#°'>°</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein ° eftir</td><td class='source'>nominative</td><td class='target'>{0}°</td><td class='target'>hér er 21°</td><td class='target'>{0}°</td><td class='target'>hér er 2°</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} gráðu</td><td class='target'>um 21 gráðu</td><td class='target'>{0} gráður</td><td class='target'>um 2 gráður</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 gráðu</td><td class='target'>{0} gráða</td><td class='target'>til 2 gráða</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 gráðu</td><td class='target'>{0} gráðum</td><td class='target'>frá 2 gráðum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein gráða á Celsíus eftir</td><td class='source'>nominative</td><td class='target'>{0} gráða á Celsíus</td><td class='target'>hér er 21 gráða á Celsíus</td><td class='target' rowSpan='2'>{0} gráður á Celsíus</td><td class='target'>hér er 2 gráður á Celsíus</td></tr>
+	<tr><td class='source'>accusative</td><td class='target' rowSpan='3'>{0} gráðu á Celsíus</td><td class='target'>um 21 gráðu á Celsíus</td><td class='target'>um 2 gráður á Celsíus</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 gráðu á Celsíus</td><td class='target'>{0} gráða á Celsíus</td><td class='target'>til 2 gráða á Celsíus</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 gráðu á Celsíus</td><td class='target'>{0} gráðum á Celsíus</td><td class='target'>frá 2 gráðum á Celsíus</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt kelvin eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} kelvin</td><td class='target'>hér er 21 kelvin</td><td class='target' rowSpan='2'>{0} kelvin</td><td class='target'>hér er 2 kelvin</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 kelvin</td><td class='target'>um 2 kelvin</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} kelvins</td><td class='target'>til 21 kelvins</td><td class='target'>{0} kelvina</td><td class='target'>til 2 kelvina</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} kelvini</td><td class='target'>frá 21 kelvini</td><td class='target'>{0} kelvinum</td><td class='target'>frá 2 kelvinum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>typewidth</td><td class='source' rowSpan='4'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt em eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} em</td><td class='target'>hér er 21 em</td><td class='target' rowSpan='4'>{0} em</td><td class='target'>hér er 2 em</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 em</td><td class='target'>um 2 em</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 em</td><td class='target'>til 2 em</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 em</td><td class='target'>frá 2 em</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>voltage</td><td class='source' rowSpan='4'><a name='volts' href='#volts'>volts</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt volt eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} volt</td><td class='target'>hér er 21 volt</td><td class='target' rowSpan='2'>{0} volt</td><td class='target'>hér er 2 volt</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 volt</td><td class='target'>um 2 volt</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} volts</td><td class='target'>til 21 volts</td><td class='target'>{0} volta</td><td class='target'>til 2 volta</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} volti</td><td class='target'>frá 21 volti</td><td class='target'>{0} voltum</td><td class='target'>frá 2 voltum</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'>volume</td><td class='source' rowSpan='4'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn ástralskur bolli eftir</td><td class='source'>nominative</td><td class='target'>{0} ástralskur bolli</td><td class='target'>hér er 21 ástralskur bolli</td><td class='target'>{0} ástralskir bollar</td><td class='target'>hér er 2 ástralskir bollar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} ástralskan bolla</td><td class='target'>um 21 ástralskan bolla</td><td class='target'>{0} ástralska bolla</td><td class='target'>um 2 ástralska bolla</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} ástralsks bolla</td><td class='target'>til 21 ástralsks bolla</td><td class='target'>{0} ástralskra bolla</td><td class='target'>til 2 ástralskra bolla</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} áströlskum bolla</td><td class='target'>frá 21 áströlskum bolla</td><td class='target'>{0} áströlskum bollum</td><td class='target'>frá 2 áströlskum bollum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein mpt eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} mpt</td><td class='target'>hér er 21 mpt</td><td class='target' rowSpan='4'>{0} mpt</td><td class='target'>hér er 2 mpt</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 mpt</td><td class='target'>um 2 mpt</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 mpt</td><td class='target'>til 2 mpt</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 mpt</td><td class='target'>frá 2 mpt</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='liters' href='#liters'>liters</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn lítri eftir</td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} lítri</td><td class='target'>hér er 21 lítri</td><td class='target' rowSpan='4'>{0} lítrar</td><td class='target'>hér er 2 lítrar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 lítri</td><td class='target'>um 2 lítrar</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>til 21 lítri</td><td class='target'>til 2 lítrar</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>frá 21 lítri</td><td class='target'>frá 2 lítrar</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 21.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='16'>year-duration</td><td class='source' rowSpan='4'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn mánuður eftir</td><td class='source'>nominative</td><td class='target'>{0} mánuður</td><td class='target'>hér er 21 mánuður</td><td class='target'>{0} mánuðir</td><td class='target'>hér er 2 mánuðir</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} mánuð</td><td class='target'>um 21 mánuð</td><td class='target'>{0} mánuði</td><td class='target'>um 2 mánuði</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} mánaðar</td><td class='target'>til 21 mánaðar</td><td class='target'>{0} mánaða</td><td class='target'>til 2 mánaða</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} mánuði</td><td class='target'>frá 21 mánuði</td><td class='target'>{0} mánuðum</td><td class='target'>frá 2 mánuðum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='years' href='#years'>years</a></td><td class='source' rowSpan='4'>neuter</td><td class='source' rowSpan='4'>Eitt ár eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} ár</td><td class='target'>hér er 21 ár</td><td class='target' rowSpan='2'>{0} ár</td><td class='target'>hér er 2 ár</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 ár</td><td class='target'>um 2 ár</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} árs</td><td class='target'>til 21 árs</td><td class='target'>{0} ára</td><td class='target'>til 2 ára</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} ári</td><td class='target'>frá 21 ári</td><td class='target'>{0} árum</td><td class='target'>frá 2 árum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='decades' href='#decades'>decades</a></td><td class='source' rowSpan='4'>masculine</td><td class='source' rowSpan='4'>Einn áratugur eftir</td><td class='source'>nominative</td><td class='target'>{0} áratugur</td><td class='target'>hér er 21 áratugur</td><td class='target'>{0} áratugir</td><td class='target'>hér er 2 áratugir</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>{0} áratug</td><td class='target'>um 21 áratug</td><td class='target'>{0} áratugi</td><td class='target'>um 2 áratugi</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} áratugs</td><td class='target'>til 21 áratugs</td><td class='target'>{0} áratuga</td><td class='target'>til 2 áratuga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} áratugi</td><td class='target'>frá 21 áratugi</td><td class='target'>{0} áratugum</td><td class='target'>frá 2 áratugum</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='centuries' href='#centuries'>centuries</a></td><td class='source' rowSpan='4'>feminine</td><td class='source' rowSpan='4'>Ein öld eftir</td><td class='source'>nominative</td><td class='target' rowSpan='2'>{0} öld</td><td class='target'>hér er 21 öld</td><td class='target' rowSpan='2'>{0} aldir</td><td class='target'>hér er 2 aldir</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>um 21 öld</td><td class='target'>um 2 aldir</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>{0} aldar</td><td class='target'>til 21 aldar</td><td class='target'>{0} alda</td><td class='target'>til 2 alda</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>{0} öld</td><td class='target'>frá 21 öld</td><td class='target'>{0} öldum</td><td class='target'>frá 2 öldum</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 21.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'><a name='power2' href='#power2'>power2</a></td><td class='source'>nominative</td><td class='source' rowSpan='4'>neuter<br>(ampere)</td><td class='target'>fer{0}</td><td class='target'>hér er 21 feramper</td><td class='target'>fer{0}</td><td class='target'>hér er 2 feramper</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>fer{0}</td><td class='target'>um 21 feramper</td><td class='target'>fer{0}</td><td class='target'>um 2 feramper</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>fer{0}</td><td class='target'>til 21 ferampers</td><td class='target'>fer{0}</td><td class='target'>til 2 ferampera</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>fer{0}</td><td class='target'>frá 21 feramperi</td><td class='target'>fer{0}</td><td class='target'>frá 2 feramperum</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='4'>masculine<br>(day)</td><td class='target'>fer{0}</td><td class='target'>hér er 21 ferdagur</td><td class='target'>fer{0}</td><td class='target'>hér er 2 ferdagar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>fer{0}</td><td class='target'>um 21 ferdag</td><td class='target'>fer{0}</td><td class='target'>um 2 ferdaga</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>fer{0}</td><td class='target'>til 21 ferdags</td><td class='target'>fer{0}</td><td class='target'>til 2 ferdaga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>fer{0}</td><td class='target'>frá 21 ferdegi</td><td class='target'>fer{0}</td><td class='target'>frá 2 ferdögum</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='4'>feminine<br>(second)</td><td class='target'>fer{0}</td><td class='target'>hér er 21 fersekúnda</td><td class='target'>fer{0}</td><td class='target'>hér er 2 fersekúndur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>fer{0}</td><td class='target'>um 21 fersekúndu</td><td class='target'>fer{0}</td><td class='target'>um 2 fersekúndur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>fer{0}</td><td class='target'>til 21 fersekúndu</td><td class='target'>fer{0}</td><td class='target'>til 2 fersekúndna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>fer{0}</td><td class='target'>frá 21 fersekúndu</td><td class='target'>fer{0}</td><td class='target'>frá 2 fersekúndum</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 21.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'><a name='power3' href='#power3'>power3</a></td><td class='source'>nominative</td><td class='source' rowSpan='4'>neuter<br>(ampere)</td><td class='target'>rúm{0}</td><td class='target'>hér er 21 rúmamper</td><td class='target'>rúm{0}</td><td class='target'>hér er 2 rúmamper</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>rúm{0}</td><td class='target'>um 21 rúmamper</td><td class='target'>rúm{0}</td><td class='target'>um 2 rúmamper</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>rúm{0}</td><td class='target'>til 21 rúmampers</td><td class='target'>rúm{0}</td><td class='target'>til 2 rúmampera</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>rúm{0}</td><td class='target'>frá 21 rúmamperi</td><td class='target'>rúm{0}</td><td class='target'>frá 2 rúmamperum</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='4'>masculine<br>(day)</td><td class='target'>rúm{0}</td><td class='target'>hér er 21 rúmdagur</td><td class='target'>rúm{0}</td><td class='target'>hér er 2 rúmdagar</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>rúm{0}</td><td class='target'>um 21 rúmdag</td><td class='target'>rúm{0}</td><td class='target'>um 2 rúmdaga</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>rúm{0}</td><td class='target'>til 21 rúmdags</td><td class='target'>rúm{0}</td><td class='target'>til 2 rúmdaga</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>rúm{0}</td><td class='target'>frá 21 rúmdegi</td><td class='target'>rúm{0}</td><td class='target'>frá 2 rúmdögum</td></tr>
+	<tr><td class='source'>nominative</td><td class='source' rowSpan='4'>feminine<br>(second)</td><td class='target'>rúm{0}</td><td class='target'>hér er 21 rúmsekúnda</td><td class='target'>rúm{0}</td><td class='target'>hér er 2 rúmsekúndur</td></tr>
+	<tr><td class='source'>accusative</td><td class='target'>rúm{0}</td><td class='target'>um 21 rúmsekúndu</td><td class='target'>rúm{0}</td><td class='target'>um 2 rúmsekúndur</td></tr>
+	<tr><td class='source'>genitive</td><td class='target'>rúm{0}</td><td class='target'>til 21 rúmsekúndu</td><td class='target'>rúm{0}</td><td class='target'>til 2 rúmsekúndna</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>rúm{0}</td><td class='target'>frá 21 rúmsekúndu</td><td class='target'>rúm{0}</td><td class='target'>frá 2 rúmsekúndum</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

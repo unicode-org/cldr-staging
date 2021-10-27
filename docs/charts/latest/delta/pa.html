@@ -58,33 +58,557 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Root ► root</td><td class='source' rowSpan='23'>pa</td><td class='target'>ਰੂਟ</td><td class='target'>▷removed◁</td><td class='target'>comprehensive</td></tr>
-	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Côte d’Ivoire' href='#Western Africa: Côte d’Ivoire'>Western Africa: Côte d’Ivoire</a></td><td class='source'>XOF-symbol</td><td class='target'>CFA</td><td class='target'>F CFA</td><td class='target' rowSpan='5'>moderate</td></tr>
-	<tr><td class='source' rowSpan='21'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='2'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source' rowSpan='3'>short-one-nominative</td><td class='target'>{0} dpcm</td><td class='target'>{0} ppcm</td></tr>
-	<tr><td class='source'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='target'>{0} dpi</td><td class='target'>{0} ppi</td></tr>
-	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='4'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='target' rowSpan='4'>{0} µm</td><td class='target' rowSpan='4'>{0} μm</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='D' href='#D'>D</a></td><td class='source'>Dogri ► doi</td><td class='source' rowSpan='547'>pa</td><td class='target'>doi</td><td class='target'>ਡੋਗਰੀ</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Rohingya ► rhg</td><td class='target'>rhg</td><td class='target'>ਰੋਹਿੰਗਿਆ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='2'>GyMd</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target' rowSpan='2'>d/M/GGGGG y</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Generic' href='#Generic'>Generic</a></td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='North America' href='#North America'>North America</a></td><td class='source'><a name='Yukon' href='#Yukon'>Yukon</a></td><td class='source'>standard-long</td><td class='target'>ਯੂਕੋਨ ਸਮਾਂ</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='11'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>Time Separator</td><td class='target'>:</td><td class='target' rowSpan='11'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>decimal</td><td class='target'>.</td></tr>
+	<tr><td class='source'>group</td><td class='target'>,</td></tr>
+	<tr><td class='source'>plusSign</td><td class='target'>+</td></tr>
+	<tr><td class='source'>minusSign</td><td class='target'>-</td></tr>
+	<tr><td class='source'>percentSign</td><td class='target'>%</td></tr>
+	<tr><td class='source'>perMille</td><td class='target'>‰</td></tr>
+	<tr><td class='source'>exponential</td><td class='target'>E</td></tr>
+	<tr><td class='source'>superscriptingExponent</td><td class='target'>×</td></tr>
+	<tr><td class='source'>infinity</td><td class='target'>∞</td></tr>
+	<tr><td class='source'>nan</td><td class='target'>NaN</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='3'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source' rowSpan='3'><a name='Southern Africa: Lesotho' href='#Southern Africa: Lesotho'>Southern Africa: Lesotho</a></td><td class='source'>LSL-name-one</td><td class='target' rowSpan='3'>LSL</td><td class='target' rowSpan='3'>ਲੇਸੋਥੋ ਲੋਟੀ</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>LSL-name-other</td></tr>
+	<tr><td class='source'>LSL-name</td></tr>
+	<tr><td class='source' rowSpan='130'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='20'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='3'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td><td class='target' rowSpan='141'>modern</td></tr>
+	<tr><td class='source'>long-one-oblique</td><td class='target'>{0} ਦਹਾਕਾ</td><td class='target'>{0} ਦਹਾਕੇ</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਦਹਾਕੇ</td><td class='target'>{0} ਦਹਾਕਿਆਂ</td></tr>
+	<tr><td class='source'><a name='century' href='#century'>century</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='year' href='#year'>year</a></td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਸਾਲ</td><td class='target'>{0} ਸਾਲਾਂ</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='month' href='#month'>month</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-oblique</td><td class='target'>{0} ਮਹੀਨਾ</td><td class='target'>{0} ਮਹੀਨੇ</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਮਹੀਨੇ</td><td class='target'>{0} ਮਹੀਨਿਆਂ</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='week' href='#week'>week</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-oblique</td><td class='target'>{0} ਹਫ਼ਤਾ</td><td class='target'>{0} ਹਫ਼ਤੇ</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਹਫ਼ਤੇ</td><td class='target'>{0} ਹਫ਼ਤਿਆਂ</td></tr>
+	<tr><td class='source'><a name='day' href='#day'>day</a></td><td class='source' rowSpan='2'>long-gender</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>masculine</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='hour' href='#hour'>hour</a></td></tr>
+	<tr><td class='source'>long-one-oblique</td><td class='target'>{0} ਘੰਟਾ</td><td class='target'>{0} ਘੰਟੇ</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਘੰਟੇ</td><td class='target'>{0} ਘੰਟਿਆਂ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='minute' href='#minute'>minute</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਮਿੰਟ</td><td class='target'>{0} ਮਿੰਟਾਂ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='second' href='#second'>second</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਸਕਿੰਟ</td><td class='target'>{0} ਸਕਿੰਟਾਂ</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='2'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ppcm</td><td class='target' rowSpan='2'>{0} dpcm</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-one-nominative</td></tr>
+	<tr><td class='source'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='target'>{0} ppi</td><td class='target'>{0} dpi</td></tr>
+	<tr><td class='source'><a name='em' href='#em'>em</a></td><td class='source' rowSpan='3'>long-gender</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='3'>masculine</td></tr>
+	<tr><td class='source'><a name='pixel' href='#pixel'>pixel</a></td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='2'><a name='meter' href='#meter'>meter</a></td></tr>
+	<tr><td class='source'>long-other-oblique</td><td class='target'>{0} ਮੀਟਰ</td><td class='target'>{0} ਮੀਟਰਾਂ</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਸਕੈਂਡ. ਮੀਲ</td><td class='target' rowSpan='2'>{0}smi</td></tr>
 	<tr><td class='source'>narrow-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='3'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>short-displayName</td><td class='target'>µg</td><td class='target'>μg</td><td class='target' rowSpan='15'>moderate</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} µg</td><td class='target' rowSpan='2'>{0} μg</td></tr>
+	<tr><td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td><td class='source'>narrow-displayName</td><td class='target'>ਸੋਲਰ ਰੇਡੀਅਸ</td><td class='target'>R☉</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='3'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ਹੈਕਟੇਅਰ</td><td class='target' rowSpan='2'>{0} ਹੈਕਟ.</td></tr>
 	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='12'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='6'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>ਮਿਲੀਗ੍ਰਾਮ ਪ੍ਰਤੀ ਡੈਸੀਲਿਟਰ</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} ਮਿਲੀਗ੍ਰਾਮ ਪ੍ਰਤੀ ਡੈਸੀਲਿਟਰ</td></tr>
+	<tr><td class='source' rowSpan='17'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='liter' href='#liter'>liter</a></td><td class='source' rowSpan='3'>long-gender</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='3'>masculine</td></tr>
+	<tr><td class='source'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td></tr>
+	<tr><td class='source'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}ਏਕੜ ਫੁੱਟ</td><td class='target' rowSpan='2'>{0} ਏ.ਫੁ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਗੈਲਨ ਇੰਪ.</td><td class='target' rowSpan='2'>{0} ਗੈ.ਇ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਫਲੂ. ਔ. ਇੰਪ.</td><td class='target' rowSpan='2'>{0} ਫ.ਔ.ਇ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਟੇਬਲ ਸਪੂਨ</td><td class='target' rowSpan='2'>{0} ਟੇ. ਸ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਡੈਜ਼ਰਟ ਸਪੂਨ</td><td class='target' rowSpan='2'>{0} ਡੈ.ਸ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਇੰਪ. ਡੈ. ਸ.</td><td class='target' rowSpan='2'>{0} ਇ.ਡੈ.ਸ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਇੰਪ. ਚੁ. ਗੈ.</td><td class='target' rowSpan='2'>{0} ਇ.ਚੁ.ਗੈ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source'><a name='g-force' href='#g-force'>g-force</a></td><td class='source' rowSpan='7'>long-gender</td><td class='target' rowSpan='7'>▷missing◁</td><td class='target' rowSpan='5'>masculine</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td></tr>
+	<tr><td class='source'><a name='kilogram' href='#kilogram'>kilogram</a></td></tr>
+	<tr><td class='source'><a name='gram' href='#gram'>gram</a></td></tr>
+	<tr><td class='source'><a name='carat' href='#carat'>carat</a></td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='calorie' href='#calorie'>calorie</a></td><td class='target'>feminine</td></tr>
+	<tr><td class='source'><a name='joule' href='#joule'>joule</a></td><td class='target'>masculine</td></tr>
+	<tr><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>narrow-displayName</td><td class='target'>US therm</td><td class='target'>ਯੂ.ਐਸ. ਥੈਰਮ</td></tr>
+	<tr><td class='source'><a name='watt' href='#watt'>watt</a></td><td class='source' rowSpan='6'>long-gender</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source'><a name='ampere' href='#ampere'>ampere</a></td><td class='target' rowSpan='5'>masculine</td></tr>
+	<tr><td class='source'><a name='ohm' href='#ohm'>ohm</a></td></tr>
+	<tr><td class='source'><a name='volt' href='#volt'>volt</a></td></tr>
+	<tr><td class='source'><a name='hertz' href='#hertz'>hertz</a></td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='bar' href='#bar'>bar</a></td></tr>
+	<tr><td class='source'><a name='millibar' href='#millibar'>millibar</a></td><td class='source'>narrow-displayName</td><td class='target'>ਮਿਲੀਬਾਰ</td><td class='target'>ਮਿ.ਬਾਰ</td></tr>
+	<tr><td class='source'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source' rowSpan='3'>long-gender</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='2'>masculine</td></tr>
+	<tr><td class='source'><a name='pascal' href='#pascal'>pascal</a></td></tr>
+	<tr><td class='source' rowSpan='5'><a name='generic' href='#generic'>generic</a></td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='4'>{0}°</td><td class='target' rowSpan='4'>{0} ਡਿਗਰੀ</td></tr>
+	<tr><td class='source'>long-one-oblique</td></tr>
 	<tr><td class='source'>long-other-nominative</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>ਮਿ.ਗ੍ਰਾ./ਡੈ.ਲਿ.</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0}ਮਿਗ੍ਰਾ/ਡੈ.ਲਿ</td></tr>
+	<tr><td class='source'>long-other-oblique</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='celsius' href='#celsius'>celsius</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>ਦਰਜੇ ਸੈਲਸੀਅਸ</td><td class='target'>ਡਿਗਰੀ ਸੈਲਸੀਅਸ</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} ਦਰਜਾ ਸੈਲਸੀਅਸ</td><td class='target' rowSpan='4'>{0} ਡਿਗਰੀ ਸੈਲਸੀਅਸ</td></tr>
+	<tr><td class='source'>long-one-oblique</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target' rowSpan='2'>{0} ਦਰਜੇ ਸੈਲਸੀਅਸ</td></tr>
+	<tr><td class='source'>long-other-oblique</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ਦਰਜਾ ਸੈਲਸੀਅਸ</td><td class='target'>ਡਿ. ਸੈਲਸੀਅਸ</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td><td class='source'>long-displayName</td><td class='target'>ਦਰਜੇ ਫਾਰੇਨਹਾਈਟ</td><td class='target'>ਡਿਗਰੀ ਫਾਰੇਨਹਾਈਟ</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} ਦਰਜਾ ਫਾਰੇਨਹਾਈਟ</td><td class='target' rowSpan='2'>{0} ਡਿਗਰੀ ਫਾਰੇਨਹਾਈਟ</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} ਦਰਜੇ ਫਾਰੇਨਹਾਈਟ</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target' rowSpan='2'>ਦਰਜਾ ਫਾਰੇਨਹਾਈਟ</td><td class='target'>ਡਿ. ਫਾ.</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>°F</td></tr>
+	<tr><td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source' rowSpan='6'>long-gender</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Digital' href='#Digital'>Digital</a></td><td class='source'><a name='byte' href='#byte'>byte</a></td><td class='target' rowSpan='3'>feminine</td></tr>
+	<tr><td class='source'><a name='bit' href='#bit'>bit</a></td></tr>
+	<tr><td class='source' rowSpan='42'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source'><a name='revolution' href='#revolution'>revolution</a></td></tr>
+	<tr><td class='source'><a name='radian' href='#radian'>radian</a></td><td class='target'>masculine</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='degree' href='#degree'>degree</a></td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ਡਿਗਰੀ</td><td class='target'>ਡਿ.</td></tr>
+	<tr><td class='source'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source' rowSpan='3'>long-gender</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='3'>masculine</td></tr>
+	<tr><td class='source'><a name='arc-second' href='#arc-second'>arc-second</a></td></tr>
+	<tr><td class='source'><a name='karat' href='#karat'>karat</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}ਮਿਗ੍ਰਾ/ਡੈ.ਲਿ</td><td class='target' rowSpan='2'>{0}mg/dL</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='item' href='#item'>item</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='13'>▷missing◁</td><td class='target'>ਆਈਟਮਾਂ</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} ਆਈਟਮ</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} ਆਈਟਮਾਂ</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ਆਈਟਮ</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ਆਈਟਮ</td></tr>
 	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='milligram-per-deciliter' href='#milligram-per-deciliter'>milligram-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target'>ਮਿਲੀਗ੍ਰਾਮ ਪ੍ਰਤੀ ਡੈਸੀਲਿਟਰ</td><td class='target' rowSpan='6'>▷removed◁</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} ਮਿਲੀਗ੍ਰਾਮ ਪ੍ਰਤੀ ਡੈਸੀਲਿਟਰ</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ਆਈਟਮ</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}ਆਈਟਮ</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='permillion' href='#permillion'>permillion</a></td><td class='source' rowSpan='4'>long-gender</td><td class='target' rowSpan='4'>masculine</td></tr>
+	<tr><td class='source'><a name='percent' href='#percent'>percent</a></td></tr>
+	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='permyriad' href='#permyriad'>permyriad</a></td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ਪ੍ਰਤੀ ਦਸ ਹਜ਼ਾਰ</td><td class='target'>‱</td></tr>
+	<tr><td class='source'><a name='mole' href='#mole'>mole</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} mpg ਇੰਪ.</td><td class='target' rowSpan='2'>{0}m/gUK</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-gender</td><td class='target' rowSpan='13'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target'>ਕਿੱਲੋਵਾਟ-ਘੰਟਾ ਪ੍ਰਤੀ 100 ਕਿੱਲੋਮੀਟਰ</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} ਕਿੱਲੋਵਾਟ-ਘੰਟਾ ਪ੍ਰਤੀ 100 ਕਿੱਲੋਮੀਟਰ</td></tr>
 	<tr><td class='source'>long-other-nominative</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>ਮਿ.ਗ੍ਰਾ./ਡੈ.ਲਿ.</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0}ਮਿਗ੍ਰਾ/ਡੈ.ਲਿ</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>ਕਿ.ਵ.ਘੰ./100ਕਿ.ਮੀ.</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ਕਿ.ਵ.ਘੰ./100ਕਿ.ਮੀ.</td></tr>
 	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>ਕਿ.ਵ.ਘੰ./100ਕਿ.ਮੀ.</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}ਕਿ.ਵ.ਘੰ./100ਕਿ.ਮੀ.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='lux' href='#lux'>lux</a></td><td class='source' rowSpan='3'>long-gender</td><td class='target' rowSpan='3'>masculine</td></tr>
+	<tr><td class='source'><a name='candela' href='#candela'>candela</a></td></tr>
+	<tr><td class='source'><a name='lumen' href='#lumen'>lumen</a></td></tr>
+	<tr><td class='source' rowSpan='3'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>narrow-displayName</td><td class='target'>ਨਿ⋅ਮੀ</td><td class='target'>N⋅m</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ਨਿ⋅ਮੀ</td><td class='target' rowSpan='2'>{0}N⋅m</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='382'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='17'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>🫠 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>ਪਿਘਲਦਾ ਹੋਇਆ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>🫠 –keywords</td><td class='target'>ਅਲੋਪ<br>ਤਰਲ<br>ਪਿਘਲ<br>ਪਿਘਲਦਾ ਹੋਇਆ ਚਿਹਰਾ<br>ਭੰਗ</td></tr>
+	<tr><td class='source'><a name='face-tongue' href='#face-tongue'>face-tongue</a></td><td class='source'>😝 –keywords</td><td class='target'>…<br>ਗੰਦਾ<br>…</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hand' href='#face-hand'>face-hand</a></td><td class='source'>🫢 -name</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target'>ਖੁੱਲ੍ਹੀ ਅੱਖਾਂ ਵਾਲਾ ਚਿਹਰਾ ਅਤੇ ਮੂੰਹ ਤੇ ਹੱਥ</td></tr>
+	<tr><td class='source'>🫢 –keywords</td><td class='target'>ਅਵਿਸ਼ਵਾਸ<br>ਸ਼ਰਮਿੰਦਾ<br>ਹੈਰਾਨ<br>ਹੈਰਾਨੀ<br>ਖੁੱਲ੍ਹੀ ਅੱਖਾਂ ਵਾਲਾ ਚਿਹਰਾ ਅਤੇ ਮੂੰਹ ਤੇ ਹੱਥ<br>ਡਰਿਆ</td></tr>
+	<tr><td class='source'>🫣 -name</td><td class='target'>ਝਾਤ ਮਾਰਦਾ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>🫣 –keywords</td><td class='target'>ਗ਼ੁਲਾਮ<br>ਘੁੰਮਣਾ<br>ਝਾਤ ਮਾਰਦਾ ਚਿਹਰਾ<br>ਝਾਤੀ</td></tr>
+	<tr><td class='source'>🫡 -name</td><td class='target'>ਸਲਾਮ ਕਰਦਾ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>🫡 –keywords</td><td class='target'>ਸਲਾਮ<br>ਸਲਾਮ ਕਰਦਾ ਚਿਹਰਾ<br>ਹਾਂ<br>ਠੀਕ ਹੈ<br>ਧੁੱਪ<br>ਫੌਜ</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🫥 -name</td><td class='target'>ਬਿੰਦੀਆਂ ਵਾਲਾ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>🫥 –keywords</td><td class='target'>ਉਦਾਸ<br>ਓਹਲੇ<br>ਅੰਤਰਜਾਮੀ<br>ਅਦਿੱਖ<br>ਅਲੋਪ<br>ਬਿੰਦੀਆਂ ਵਾਲਾ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>😮‍💨 –keywords</td><td class='target'>ਸਾਹ ਬਾਹਰ ਕੱਢਣਾ । ਸਿਸਕੀ<br>…</td><td class='target'>ਸਾਹ ਬਾਹਰ ਕੱਢਣਾ<br>…<br>ਸਿਸਕੀ<br>…</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>🫤 -name</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target'>ਤਿਰਛੇ ਮੂੰਹ ਵਾਲਾ ਚਿਹਰਾ</td><td class='target' rowSpan='70'>modern</td></tr>
+	<tr><td class='source'>🫤 –keywords</td><td class='target'>ਉਤਸ਼ਾਹਹੀਣ<br>ਸ਼ੱਕੀ<br>ਗੈਰਯਕੀਨੀ<br>ਤਿਰਛੇ ਮੂੰਹ ਵਾਲਾ ਚਿਹਰਾ<br>ਨਾਉਮੀਦ</td></tr>
+	<tr><td class='source'>🥹 -name</td><td class='target'>ਹੰਝੂ ਰੋਕਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਚਿਹਰਾ</td></tr>
+	<tr><td class='source'>🥹 –keywords</td><td class='target'>ਹੰਝੂ ਰੋਕਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਚਿਹਰਾ<br>ਗੁੱਸਾ<br>ਦੁੱਖ<br>ਫ਼ਖਰ<br>ਰੋਕਣਾ<br>ਰੋਣਾ</td></tr>
+	<tr><td class='source'><a name='cat-face' href='#cat-face'>cat-face</a></td><td class='source'>😻 –keywords</td><td class='target'>…<br>ਮੁੁਸਕਰਾਉਂਦੀ ਬਿੱਲੀ ਚਿਹਰਾ</td><td class='target'>…</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🫱 -name</td><td class='target' rowSpan='38'>▷missing◁</td><td class='target' rowSpan='2'>ਸੱਜੇ ਪਾਸੇ ਹੱਥ</td></tr>
+	<tr><td class='source'>🫱 –keywords</td></tr>
+	<tr><td class='source'>🫲 -name</td><td class='target' rowSpan='2'>ਖੱਬੇ ਪਾਸੇ ਹੱਥ</td></tr>
+	<tr><td class='source'>🫲 –keywords</td></tr>
+	<tr><td class='source'>🫳 -name</td><td class='target' rowSpan='2'>ਥੱਲੇ ਵੱਲ ਹਥੇਲੀ</td></tr>
+	<tr><td class='source'>🫳 –keywords</td></tr>
+	<tr><td class='source'>🫴 -name</td><td class='target' rowSpan='2'>ਉੱਤੇ ਵੱਲ ਹਥੇਲੀ</td></tr>
+	<tr><td class='source'>🫴 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🫰 -name</td><td class='target' rowSpan='2'>ਚੁਟਕੀ ਮਾਰਦਾ ਹੱਥ</td></tr>
+	<tr><td class='source'>🫰 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-single-finger' href='#hand-single-finger'>hand-single-finger</a></td><td class='source'>🫵 -name</td><td class='target' rowSpan='2'>ਦਰਸ਼ਕ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰਦੀ ਉਂਗਲ</td></tr>
+	<tr><td class='source'>🫵 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hands' href='#hands'>hands</a></td><td class='source'>🫶 -name</td><td class='target' rowSpan='2'>ਦਿਲ ਬਣੇ ਹੱਥ</td></tr>
+	<tr><td class='source'>🫶 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫦 -name</td><td class='target' rowSpan='2'>ਬੁੱਲ੍ਹਾਂ ਨੂੰ ਕੱਟਣਾ</td></tr>
+	<tr><td class='source'>🫦 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🫅 -name</td><td class='target' rowSpan='2'>ਤਾਜ ਵਾਲਾ ਵਿਅਕਤੀ</td></tr>
+	<tr><td class='source'>🫅 –keywords</td></tr>
+	<tr><td class='source'>🫃 -name</td><td class='target' rowSpan='2'>ਗਰਭਵਤੀ ਦਿਸਦਾ ਆਦਮੀ</td></tr>
+	<tr><td class='source'>🫃 –keywords</td></tr>
+	<tr><td class='source'>🫄 -name</td><td class='target' rowSpan='2'>ਗਰਭਵਤੀ ਦਿਸਦਾ ਵਿਅਕਤੀ</td></tr>
+	<tr><td class='source'>🫄 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧌 -name</td><td class='target' rowSpan='2'>ਟਰੋਲ</td></tr>
+	<tr><td class='source'>🧌 –keywords</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🪸 -name</td><td class='target' rowSpan='2'>ਕੋਰਲ</td></tr>
+	<tr><td class='source'>🪸 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🪷 -name</td><td class='target' rowSpan='2'>ਕੰਵਲ</td></tr>
+	<tr><td class='source'>🪷 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪹 -name</td><td class='target' rowSpan='2'>ਖਾਲੀ ਆਲ੍ਹਣਾ</td></tr>
+	<tr><td class='source'>🪹 –keywords</td></tr>
+	<tr><td class='source'>🪺 -name</td><td class='target' rowSpan='2'>ਆਂਡਿਆਂ ਵਾਲਾ ਆਲ੍ਹਣਾ</td></tr>
+	<tr><td class='source'>🪺 –keywords</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫘 -name</td><td class='target' rowSpan='2'>ਫਲੀਦਾਰ ਪੌਦਾ</td></tr>
+	<tr><td class='source'>🫘 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫗 -name</td><td class='target' rowSpan='2'>ਤਰਲ ਪਦਾਰਥ ਡੋਲ੍ਹਣਾ</td></tr>
+	<tr><td class='source'>🫗 –keywords</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🫙 -name</td><td class='target' rowSpan='2'>ਮਰਤਬਾਨ</td></tr>
+	<tr><td class='source'>🫙 –keywords</td></tr>
+	<tr><td class='source'>🏺 –keywords</td><td class='target'>ਔਜ਼਼ਾਰ<br>…<br>ਪੀਣਾ<br>…</td><td class='target'>ਔਜ਼ਾਰ<br>…</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-other' href='#place-other'>place-other</a></td><td class='source'>🛝 -name</td><td class='target' rowSpan='20'>▷missing◁</td><td class='target' rowSpan='2'>ਖੇਡ ਦੇ ਮੈਦਾਨ ਵਾਲਾ ਸਲਾਈਡ</td></tr>
+	<tr><td class='source'>🛝 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛞 -name</td><td class='target' rowSpan='2'>ਪਹੀਆ</td></tr>
+	<tr><td class='source'>🛞 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>🛟 -name</td><td class='target' rowSpan='2'>ਰਿੰਗ ਬੁਆਏ</td></tr>
+	<tr><td class='source'>🛟 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='game' href='#game'>game</a></td><td class='source'>🪬 -name</td><td class='target' rowSpan='2'>ਹਮਸਾ</td></tr>
+	<tr><td class='source'>🪬 –keywords</td></tr>
+	<tr><td class='source'>🪩 -name</td><td class='target' rowSpan='2'>ਸ਼ੀਸ਼ੇ ਦੀ ਗੇਂਦ</td></tr>
+	<tr><td class='source'>🪩 –keywords</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🪫 -name</td><td class='target' rowSpan='2'>ਘੱਟ ਬੈਟਰੀ</td></tr>
+	<tr><td class='source'>🪫 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩼 -name</td><td class='target' rowSpan='2'>ਕਰੱਚ</td></tr>
+	<tr><td class='source'>🩼 –keywords</td></tr>
+	<tr><td class='source'>🩻 -name</td><td class='target' rowSpan='2'>ਐਕਸ-ਰੇ</td></tr>
+	<tr><td class='source'>🩻 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='household' href='#household'>household</a></td><td class='source'>🫧 -name</td><td class='target' rowSpan='2'>ਬੁਲਬੁਲੇ</td></tr>
+	<tr><td class='source'>🫧 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪪 -name</td><td class='target' rowSpan='2'>ਸ਼ਨਾਖਤੀ ਕਾਰਡ</td></tr>
+	<tr><td class='source'>🪪 –keywords</td></tr>
+	<tr><td class='source' rowSpan='306'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='3'><a name='math' href='#math'>math</a></td><td class='source'>➗ –keywords</td><td class='target'>…<br>ਵੰਡ</td><td class='target'>…</td></tr>
+	<tr><td class='source'>🟰 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target'>ਬਰਾਬਰ ਦਾ ਚਿੰਨ੍ਹ</td></tr>
+	<tr><td class='source'>🟰 –keywords</td><td class='target'>ਸਮਾਨਤਾ<br>ਗਣਿਤ<br>ਬਰਾਬਰ<br>ਬਰਾਬਰ ਦਾ ਚਿੰਨ੍ਹ</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>¶ –keywords</td><td class='target'>…<br>ਪੈਰਾਫ਼</td><td class='target' rowSpan='2'>…</td></tr>
+	<tr><td class='source'># –keywords</td><td class='target'>lb<br>…<br>ਭਾਰ</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>…<br>ਨਿਯੰਤਰਣ<br>…</td><td class='target'>…<br>ਦੀਰਘਤਾ ਸੂਚਕ ਚਿੰਨ੍ਹ<br>…</td></tr>
+	<tr><td class='source' rowSpan='300'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>‽ -name</td><td class='target' rowSpan='2'>E13.1-2201</td><td class='target' rowSpan='2'>ਇਂਟਰੋਬੈਂਗ</td><td class='target' rowSpan='300'>comprehensive</td></tr>
+	<tr><td class='source'>‽ –keywords</td></tr>
+	<tr><td class='source'>∂ -name</td><td class='target' rowSpan='2'>E13.1-283</td><td class='target' rowSpan='2'>ਅੰਸ਼ਕ ਅੰਤਰ</td></tr>
+	<tr><td class='source'>∂ –keywords</td></tr>
+	<tr><td class='source'>∃ -name</td><td class='target' rowSpan='2'>E13.1-284</td><td class='target' rowSpan='2'>ਮੌਜੂਦ ਹੈ</td></tr>
+	<tr><td class='source'>∃ –keywords</td></tr>
+	<tr><td class='source'>∅ -name</td><td class='target' rowSpan='2'>E13.1-285</td><td class='target' rowSpan='2'>ਖਾਲੀ ਸੈੱਟ</td></tr>
+	<tr><td class='source'>∅ –keywords</td></tr>
+	<tr><td class='source'>∉ -name</td><td class='target'>E13.1-286</td><td class='target' rowSpan='2'>ਤੱਤ ਨਹੀਂ</td></tr>
+	<tr><td class='source'>∉ –keywords</td><td class='target'>ਤੱਤ</td></tr>
+	<tr><td class='source'>∋ -name</td><td class='target'>E13.1-287</td><td class='target' rowSpan='2'>ਮੈਂਬਰ ਦੇ ਰੂਪ ਵਿੱਚ ਸ਼ਾਮਲ</td></tr>
+	<tr><td class='source'>∋ –keywords</td><td class='target'>ਤੱਤ</td></tr>
+	<tr><td class='source'>∎ -name</td><td class='target' rowSpan='2'>E13.1-288</td><td class='target' rowSpan='2'>ਐਂਡ ਪ੍ਰੂਫ</td></tr>
+	<tr><td class='source'>∎ –keywords</td></tr>
+	<tr><td class='source'>∏ -name</td><td class='target'>E13.1-289</td><td class='target' rowSpan='2'>ਐਨ-ਅਰੇ ਉਤਪਾਦ</td></tr>
+	<tr><td class='source'>∏ –keywords</td><td class='target'>ਉਤਪਾਦ<br>ਤਰਕ</td></tr>
+	<tr><td class='source'>∑ -name</td><td class='target'>E13.1-290</td><td class='target' rowSpan='2'>ਐਨ-ਅਰੇ ਸੰਖੇਪ</td></tr>
+	<tr><td class='source'>∑ –keywords</td><td class='target'>ਸੰਖੇਪ<br>ਗਣਿਤ</td></tr>
+	<tr><td class='source'>∝ -name</td><td class='target' rowSpan='2'>E13.1-299</td><td class='target' rowSpan='2'>ਅਨੁਪਾਤਕ</td></tr>
+	<tr><td class='source'>∝ –keywords</td></tr>
+	<tr><td class='source'>∟ -name</td><td class='target'>E13.1-300</td><td class='target' rowSpan='2'>ਸੱਜਾ ਕੋਣ</td></tr>
+	<tr><td class='source'>∟ –keywords</td><td class='target'>ਗਣਿਤ</td></tr>
+	<tr><td class='source'>∣ -name</td><td class='target' rowSpan='2'>E13.1-302</td><td class='target' rowSpan='2'>ਵੰਡ</td></tr>
+	<tr><td class='source'>∣ –keywords</td></tr>
+	<tr><td class='source'>∥ -name</td><td class='target' rowSpan='2'>E13.1-303</td><td class='target' rowSpan='2'>ਸਮਾਨਾਂਤਰ</td></tr>
+	<tr><td class='source'>∥ –keywords</td></tr>
+	<tr><td class='source'>∧ -name</td><td class='target' rowSpan='2'>E13.1-304</td><td class='target' rowSpan='2'>ਤਾਰਕਕ ਐਂਡ</td></tr>
+	<tr><td class='source'>∧ –keywords</td></tr>
+	<tr><td class='source'>∫ -name</td><td class='target' rowSpan='2'>E13.1-305</td><td class='target' rowSpan='2'>ਪੂਰਕ</td></tr>
+	<tr><td class='source'>∫ –keywords</td></tr>
+	<tr><td class='source'>∬ -name</td><td class='target' rowSpan='2'>E13.1-306</td><td class='target' rowSpan='2'>ਡਬਲ ਪੂਰਕ</td></tr>
+	<tr><td class='source'>∬ –keywords</td></tr>
+	<tr><td class='source'>∮ -name</td><td class='target' rowSpan='2'>E13.1-307</td><td class='target' rowSpan='2'>ਸਮਕਾਲੀ ਪੂਰਕ</td></tr>
+	<tr><td class='source'>∮ –keywords</td></tr>
+	<tr><td class='source'>∴ -name</td><td class='target' rowSpan='2'>E13.1-308</td><td class='target' rowSpan='2'>ਇਸ ਲਈ</td></tr>
+	<tr><td class='source'>∴ –keywords</td></tr>
+	<tr><td class='source'>∵ -name</td><td class='target' rowSpan='2'>E13.1-309</td><td class='target' rowSpan='2'>ਕਿਉਂਕਿ</td></tr>
+	<tr><td class='source'>∵ –keywords</td></tr>
+	<tr><td class='source'>∶ -name</td><td class='target' rowSpan='2'>E13.1-310</td><td class='target' rowSpan='2'>ਅਨੁਪਾਤ</td></tr>
+	<tr><td class='source'>∶ –keywords</td></tr>
+	<tr><td class='source'>∷ -name</td><td class='target' rowSpan='2'>E13.1-311</td><td class='target' rowSpan='2'>ਅਨੁਰੂਪ</td></tr>
+	<tr><td class='source'>∷ –keywords</td></tr>
+	<tr><td class='source'>∼ -name</td><td class='target' rowSpan='2'>E13.1-312</td><td class='target' rowSpan='2'>ਟਿਲਡ ਆਪਰੇਟਰ</td></tr>
+	<tr><td class='source'>∼ –keywords</td></tr>
+	<tr><td class='source'>∽ -name</td><td class='target' rowSpan='2'>E13.1-313</td><td class='target' rowSpan='2'>ਉਲਟਾ ਟਿਲਡ</td></tr>
+	<tr><td class='source'>∽ –keywords</td></tr>
+	<tr><td class='source'>∾ -name</td><td class='target' rowSpan='2'>E13.1-314</td><td class='target' rowSpan='2'>ਉਲਟਾ ਲੇਜੀ ਐਸ</td></tr>
+	<tr><td class='source'>∾ –keywords</td></tr>
+	<tr><td class='source'>≃ -name</td><td class='target' rowSpan='2'>E13.1-315</td><td class='target' rowSpan='2'>ਐਸੀਮਪੋਟਿਕੈਲੀ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≃ –keywords</td></tr>
+	<tr><td class='source'>≅ -name</td><td class='target' rowSpan='2'>E13.1-316</td><td class='target' rowSpan='2'>ਤਕਰੀਬਨ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≅ –keywords</td></tr>
+	<tr><td class='source'>≌ -name</td><td class='target' rowSpan='2'>E13.1-317</td><td class='target' rowSpan='2'>ਸਭ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≌ –keywords</td></tr>
+	<tr><td class='source'>≒ -name</td><td class='target' rowSpan='2'>E13.1-318</td><td class='target' rowSpan='2'>ਤਕਰੀਬਨ ਚਿੱਤਰ ਦੇ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≒ –keywords</td></tr>
+	<tr><td class='source'>≖ -name</td><td class='target' rowSpan='2'>E13.1-319</td><td class='target' rowSpan='2'>ਬਰਾਬਰ ਵਿੱਚ ਰਿੰਗ</td></tr>
+	<tr><td class='source'>≖ –keywords</td></tr>
+	<tr><td class='source'>≣ -name</td><td class='target' rowSpan='2'>E13.1-320</td><td class='target' rowSpan='2'>ਸਖਤੀ ਦੇ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≣ –keywords</td></tr>
+	<tr><td class='source'>≦ -name</td><td class='target' rowSpan='2'>E13.1-321</td><td class='target' rowSpan='2'>ਘੱਟ - ਵੱਧ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≦ –keywords</td></tr>
+	<tr><td class='source'>≧ -name</td><td class='target' rowSpan='2'>E13.1-322</td><td class='target' rowSpan='2'>ਵੱਧ - ਵੱਧ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>≧ –keywords</td></tr>
+	<tr><td class='source'>≪ -name</td><td class='target' rowSpan='2'>E13.1-323</td><td class='target' rowSpan='2'>ਬਹੁਤ ਘੱਟ-ਨਾਲੋਂ</td></tr>
+	<tr><td class='source'>≪ –keywords</td></tr>
+	<tr><td class='source'>≫ -name</td><td class='target' rowSpan='2'>E13.1-324</td><td class='target' rowSpan='2'>ਬਹੁਤ ਵੱਡਾ-ਵੱਧ</td></tr>
+	<tr><td class='source'>≫ –keywords</td></tr>
+	<tr><td class='source'>≬ -name</td><td class='target' rowSpan='2'>E13.1-325</td><td class='target' rowSpan='2'>ਵਿਚਕਾਰ</td></tr>
+	<tr><td class='source'>≬ –keywords</td></tr>
+	<tr><td class='source'>≳ -name</td><td class='target' rowSpan='2'>E13.1-326</td><td class='target' rowSpan='2'>ਬਰਾਬਰ ਤੋਂ ਵੱਧ</td></tr>
+	<tr><td class='source'>≳ –keywords</td></tr>
+	<tr><td class='source'>≺ -name</td><td class='target' rowSpan='2'>E13.1-327</td><td class='target' rowSpan='2'>ਅੱਗੇ</td></tr>
+	<tr><td class='source'>≺ –keywords</td></tr>
+	<tr><td class='source'>≻ -name</td><td class='target' rowSpan='2'>E13.1-328</td><td class='target' rowSpan='2'>ਪਿੱਛੇ</td></tr>
+	<tr><td class='source'>≻ –keywords</td></tr>
+	<tr><td class='source'>⊁ -name</td><td class='target' rowSpan='2'>E13.1-329</td><td class='target' rowSpan='2'>ਪਿੱਛੇ ਨਹੀਂ ਜਾਂਦਾ</td></tr>
+	<tr><td class='source'>⊁ –keywords</td></tr>
+	<tr><td class='source'>⊃ -name</td><td class='target' rowSpan='2'>E13.1-330</td><td class='target' rowSpan='2'>ਸੁਪਰਸੈੱਟ</td></tr>
+	<tr><td class='source'>⊃ –keywords</td></tr>
+	<tr><td class='source'>⊆ -name</td><td class='target' rowSpan='2'>E13.1-331</td><td class='target' rowSpan='2'>ਸਬਸੈੱਟ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>⊆ –keywords</td></tr>
+	<tr><td class='source'>⊇ -name</td><td class='target' rowSpan='2'>E13.1-332</td><td class='target' rowSpan='2'>ਸੁਪਰਸੈੱਟ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>⊇ –keywords</td></tr>
+	<tr><td class='source'>⊕ -name</td><td class='target' rowSpan='2'>E13.1-333</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨਾਲ ਜੋੜ</td></tr>
+	<tr><td class='source'>⊕ –keywords</td></tr>
+	<tr><td class='source'>⊖ -name</td><td class='target' rowSpan='2'>E13.1-334</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨਾਲ ਘਟਾਓ</td></tr>
+	<tr><td class='source'>⊖ –keywords</td></tr>
+	<tr><td class='source'>⊗ -name</td><td class='target' rowSpan='2'>E13.1-335</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨਾਲ ਸਮਾਂ</td></tr>
+	<tr><td class='source'>⊗ –keywords</td></tr>
+	<tr><td class='source'>⊘ -name</td><td class='target' rowSpan='2'>E13.1-336</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨਾਲ ਵਿਭਾਜਨ ਸਲੈਸ਼</td></tr>
+	<tr><td class='source'>⊘ –keywords</td></tr>
+	<tr><td class='source'>⊙ -name</td><td class='target' rowSpan='2'>E13.1-337</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨਾਲ ਬਿੰਦੀ</td></tr>
+	<tr><td class='source'>⊙ –keywords</td></tr>
+	<tr><td class='source'>⊚ -name</td><td class='target' rowSpan='2'>E13.1-338</td><td class='target' rowSpan='2'>ਚੱਕਰ ਰਿੰਗ ਓਪਰੇਟਰ</td></tr>
+	<tr><td class='source'>⊚ –keywords</td></tr>
+	<tr><td class='source'>⊛ -name</td><td class='target' rowSpan='2'>E13.1-339</td><td class='target' rowSpan='2'>ਚੱਕਰ ਤਾਰਾ ਓਪਰੇਟਰ</td></tr>
+	<tr><td class='source'>⊛ –keywords</td></tr>
+	<tr><td class='source'>⊞ -name</td><td class='target' rowSpan='2'>E13.1-340</td><td class='target' rowSpan='2'>ਵਰਗ ਜੋੜ</td></tr>
+	<tr><td class='source'>⊞ –keywords</td></tr>
+	<tr><td class='source'>⊟ -name</td><td class='target' rowSpan='2'>E13.1-341</td><td class='target' rowSpan='2'>ਵਰਗ ਘਟਾਓ</td></tr>
+	<tr><td class='source'>⊟ –keywords</td></tr>
+	<tr><td class='source'>⊥ -name</td><td class='target' rowSpan='2'>E13.1-342</td><td class='target' rowSpan='2'>ਅਪ ਟੈਕ</td></tr>
+	<tr><td class='source'>⊥ –keywords</td></tr>
+	<tr><td class='source'>⊮ -name</td><td class='target' rowSpan='2'>E13.1-343</td><td class='target' rowSpan='2'>ਜ਼ਬਰਦਸਤੀ ਨਹੀਂ ਕਰਦਾ</td></tr>
+	<tr><td class='source'>⊮ –keywords</td></tr>
+	<tr><td class='source'>⊰ -name</td><td class='target' rowSpan='2'>E13.1-344</td><td class='target' rowSpan='2'>ਰਿਸ਼ਤੇਦਾਰੀ ਦੇ ਅਧੀਨ ਪਹਿਲ</td></tr>
+	<tr><td class='source'>⊰ –keywords</td></tr>
+	<tr><td class='source'>⊱ -name</td><td class='target' rowSpan='2'>E13.1-345</td><td class='target' rowSpan='2'>ਰਿਸ਼ਤੇਦਾਰੀ ਅਧੀਨ ਸਫਲ</td></tr>
+	<tr><td class='source'>⊱ –keywords</td></tr>
+	<tr><td class='source'>⋭ -name</td><td class='target' rowSpan='2'>E13.1-346</td><td class='target' rowSpan='2'>ਇਸ ਵਿੱਚ ਆਮ ਉਪ ਸਮੂਹ ਦੇ ਬਰਾਬਰ ਨਹੀਂ ਹੁੰਦੇ</td></tr>
+	<tr><td class='source'>⋭ –keywords</td></tr>
+	<tr><td class='source'>⊶ -name</td><td class='target' rowSpan='2'>E13.1-347</td><td class='target' rowSpan='2'>ਅਸਲੀ</td></tr>
+	<tr><td class='source'>⊶ –keywords</td></tr>
+	<tr><td class='source'>⊹ -name</td><td class='target' rowSpan='2'>E13.1-348</td><td class='target' rowSpan='2'>ਹਰਮੀਟਿਅਨ ਕੰਜੁਗੇਟ ਮੈਟ੍ਰਿਕਸ</td></tr>
+	<tr><td class='source'>⊹ –keywords</td></tr>
+	<tr><td class='source'>⊿ -name</td><td class='target' rowSpan='2'>E13.1-349</td><td class='target' rowSpan='2'>ਸੱਜਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>⊿ –keywords</td></tr>
+	<tr><td class='source'>⋁ -name</td><td class='target' rowSpan='2'>E13.1-350</td><td class='target' rowSpan='2'>ਐਨ-ਅਰੇ ਲਾਜ਼ੀਕਲ ਜਾਂ</td></tr>
+	<tr><td class='source'>⋁ –keywords</td></tr>
+	<tr><td class='source'>⋂ -name</td><td class='target' rowSpan='2'>E13.1-351</td><td class='target' rowSpan='2'>ਐਨ-ਅਰੇ ਲਾਂਘਾ</td></tr>
+	<tr><td class='source'>⋂ –keywords</td></tr>
+	<tr><td class='source'>⋃ -name</td><td class='target' rowSpan='2'>E13.1-352</td><td class='target' rowSpan='2'>ਐਨ-ਅਰੇ ਯੂਨੀਅਨ</td></tr>
+	<tr><td class='source'>⋃ –keywords</td></tr>
+	<tr><td class='source'>⋅ -name</td><td class='target' rowSpan='2'>E13.1-353</td><td class='target' rowSpan='2'>ਡਾਟ ਓਪਰੇਟਰ</td></tr>
+	<tr><td class='source'>⋅ –keywords</td></tr>
+	<tr><td class='source'>⋆ -name</td><td class='target' rowSpan='2'>E13.1-354</td><td class='target' rowSpan='2'>ਸਟਾਰ ਓਪਰੇਟਰ</td></tr>
+	<tr><td class='source'>⋆ –keywords</td></tr>
+	<tr><td class='source'>⋈ -name</td><td class='target' rowSpan='2'>E13.1-355</td><td class='target' rowSpan='2'>ਕੁਦਰਤੀ ਸ਼ਾਮਲ</td></tr>
+	<tr><td class='source'>⋈ –keywords</td></tr>
+	<tr><td class='source'>⋒ -name</td><td class='target' rowSpan='2'>E13.1-356</td><td class='target' rowSpan='2'>ਦੋਹਰਾ ਲਾਂਘਾ</td></tr>
+	<tr><td class='source'>⋒ –keywords</td></tr>
+	<tr><td class='source'>⋘ -name</td><td class='target' rowSpan='2'>E13.1-357</td><td class='target' rowSpan='2'>ਬਹੁਤ ਬਹੁਤ ਘੱਟ-ਨਾਲੋਂ</td></tr>
+	<tr><td class='source'>⋘ –keywords</td></tr>
+	<tr><td class='source'>⋙ -name</td><td class='target' rowSpan='2'>E13.1-358</td><td class='target' rowSpan='2'>ਬਹੁਤ ਜ਼ਿਆਦਾ-ਵੱਧ</td></tr>
+	<tr><td class='source'>⋙ –keywords</td></tr>
+	<tr><td class='source'>⋮ -name</td><td class='target' rowSpan='2'>E13.1-359</td><td class='target' rowSpan='2'>ਲੰਬਕਾਰੀ ਅੰਡਾਕਾਰ</td></tr>
+	<tr><td class='source'>⋮ –keywords</td></tr>
+	<tr><td class='source'>⋯ -name</td><td class='target' rowSpan='2'>E13.1-360</td><td class='target' rowSpan='2'>ਮਿਡਲਲਾਈਨ ਹਰੀਜ਼ਟਲ ਅੰਡਾਕਾਰ</td></tr>
+	<tr><td class='source'>⋯ –keywords</td></tr>
+	<tr><td class='source'>⋰ -name</td><td class='target' rowSpan='2'>E13.1-361</td><td class='target' rowSpan='2'>ਸੱਜੇ ਵਿਕਰਣ ਅੰਡਾਕਾਰ</td></tr>
+	<tr><td class='source'>⋰ –keywords</td></tr>
+	<tr><td class='source'>⋱ -name</td><td class='target' rowSpan='2'>E13.1-362</td><td class='target' rowSpan='2'>ਹੇਠਾਂ ਸੱਜਾ ਵਿਕਰਣ ਅੰਡਾਕਾਰ</td></tr>
+	<tr><td class='source'>⋱ –keywords</td></tr>
+	<tr><td class='source'>■ -name</td><td class='target' rowSpan='2'>E13.1-363</td><td class='target' rowSpan='2'>ਭਰੇ ਵਰਗ</td></tr>
+	<tr><td class='source'>■ –keywords</td></tr>
+	<tr><td class='source'>□ -name</td><td class='target' rowSpan='2'>E13.1-364</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਵਰਗ</td></tr>
+	<tr><td class='source'>□ –keywords</td></tr>
+	<tr><td class='source'>▢ -name</td><td class='target' rowSpan='2'>E13.1-365</td><td class='target' rowSpan='2'>ਗੋਲ ਕੋਨੇ ਦੇ ਨਾਲ ਖੋਖਲਾ ਵਰਗ</td></tr>
+	<tr><td class='source'>▢ –keywords</td></tr>
+	<tr><td class='source'>▣ -name</td><td class='target' rowSpan='2'>E13.1-366</td><td class='target' rowSpan='2'>ਖਾਲੀ ਵਰਗ ਜਿਸ ਵਿੱਚ ਭਰੇ ਵਰਗ ਹੈ</td></tr>
+	<tr><td class='source'>▣ –keywords</td></tr>
+	<tr><td class='source'>▤ -name</td><td class='target' rowSpan='2'>E13.1-367</td><td class='target' rowSpan='2'>ਖਿਤਿਜੀ ਭਰਨ ਦੇ ਨਾਲ ਵਰਗ</td></tr>
+	<tr><td class='source'>▤ –keywords</td></tr>
+	<tr><td class='source'>▥ -name</td><td class='target' rowSpan='2'>E13.1-368</td><td class='target' rowSpan='2'>ਲੰਬਕਾਰੀ ਭਰੋ ਨਾਲ ਵਰਗ</td></tr>
+	<tr><td class='source'>▥ –keywords</td></tr>
+	<tr><td class='source'>▦ -name</td><td class='target' rowSpan='2'>E13.1-369</td><td class='target' rowSpan='2'>ਵਰਗ ਓਰਥੋਗੋਨਲ ਕਰਾਸੈਚ ਭਰਨਾ</td></tr>
+	<tr><td class='source'>▦ –keywords</td></tr>
+	<tr><td class='source'>▧ -name</td><td class='target' rowSpan='2'>E13.1-370</td><td class='target' rowSpan='2'>ਵਰਗ ਉੱਪਰਲੇ ਖੱਬੇ ਸੱਜੇ ਭਰੋ</td></tr>
+	<tr><td class='source'>▧ –keywords</td></tr>
+	<tr><td class='source'>▨ -name</td><td class='target' rowSpan='2'>E13.1-371</td><td class='target' rowSpan='2'>ਵਰਗ ਉਪਰਲੇ ਸੱਜੇ ਹੇਠਲੇ ਖੱਬੇ ਭਰੋ</td></tr>
+	<tr><td class='source'>▨ –keywords</td></tr>
+	<tr><td class='source'>▩ -name</td><td class='target' rowSpan='2'>E13.1-372</td><td class='target' rowSpan='2'>ਵਰਗ ਵਿਕਰਣ ਕ੍ਰਾਸਚੈਚ ਭਰਨਾ</td></tr>
+	<tr><td class='source'>▩ –keywords</td></tr>
+	<tr><td class='source'>▬ -name</td><td class='target' rowSpan='2'>E13.1-373</td><td class='target' rowSpan='2'>ਭਰੇ ਚਤੁਰਭੁਜ</td></tr>
+	<tr><td class='source'>▬ –keywords</td></tr>
+	<tr><td class='source'>▭ -name</td><td class='target' rowSpan='2'>E13.1-374</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਚਤੁਰਭੁਜ</td></tr>
+	<tr><td class='source'>▭ –keywords</td></tr>
+	<tr><td class='source'>▮ -name</td><td class='target' rowSpan='2'>E13.1-375</td><td class='target' rowSpan='2'>ਭਰੀ ਲੰਬਕਾਰੀ ਚਤੁਰਭੁਜ</td></tr>
+	<tr><td class='source'>▮ –keywords</td></tr>
+	<tr><td class='source'>▰ -name</td><td class='target' rowSpan='2'>E13.1-376</td><td class='target' rowSpan='2'>ਭਰੇ ਪੈਰਲਲੋਗ੍ਰਾਮ</td></tr>
+	<tr><td class='source'>▰ –keywords</td></tr>
+	<tr><td class='source'>△ -name</td><td class='target' rowSpan='2'>E13.1-377</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਉੱਪਰ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>△ –keywords</td></tr>
+	<tr><td class='source'>▴ -name</td><td class='target' rowSpan='2'>E13.1-378</td><td class='target' rowSpan='2'>ਛੋਟਾ ਤਿਕੋਣਾ ਭਰਿਆ</td></tr>
+	<tr><td class='source'>▴ –keywords</td></tr>
+	<tr><td class='source'>▵ -name</td><td class='target' rowSpan='2'>E13.1-379</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਅਪ-ਪੁਆਇੰਟਿੰਗ ਛੋਟਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>▵ –keywords</td></tr>
+	<tr><td class='source'>▷ -name</td><td class='target' rowSpan='2'>E13.1-380</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਸੱਜਾ-ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>▷ –keywords</td></tr>
+	<tr><td class='source'>▸ -name</td><td class='target' rowSpan='2'>E13.1-381</td><td class='target' rowSpan='2'>ਛੋਟੇ ਸੱਜੇ ਪਾਸੇ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲੇ ਛੋਟੇ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>▸ –keywords</td></tr>
+	<tr><td class='source'>▹ -name</td><td class='target' rowSpan='2'>E13.1-382</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਸੱਜਾ-ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਛੋਟਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>▹ –keywords</td></tr>
+	<tr><td class='source'>► -name</td><td class='target' rowSpan='2'>E13.1-383</td><td class='target' rowSpan='2'>ਭਰਿਆ ਸੱਜਾ-ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ</td></tr>
+	<tr><td class='source'>► –keywords</td></tr>
+	<tr><td class='source'>▻ -name</td><td class='target' rowSpan='2'>E13.1-384</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਸੱਜਾ-ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ</td></tr>
+	<tr><td class='source'>▻ –keywords</td></tr>
+	<tr><td class='source'>▽ -name</td><td class='target' rowSpan='2'>E13.1-385</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਹੇਠਾਂ ਵੱਲ ਇਸ਼ਾਰਾ</td></tr>
+	<tr><td class='source'>▽ –keywords</td></tr>
+	<tr><td class='source'>▾ -name</td><td class='target' rowSpan='2'>E13.1-386</td><td class='target' rowSpan='2'>ਹੇਠਾਂ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਛੋਟਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>▾ –keywords</td></tr>
+	<tr><td class='source'>▿ -name</td><td class='target' rowSpan='2'>E13.1-387</td><td class='target' rowSpan='2'>ਖੋਖਰੀ ਹੇਠਾਂ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰਨ ਵਾਲਾ ਛੋਟਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>▿ –keywords</td></tr>
+	<tr><td class='source'>◁ -name</td><td class='target' rowSpan='2'>E13.1-388</td><td class='target' rowSpan='2'>ਖਾਲੀ ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>◁ –keywords</td></tr>
+	<tr><td class='source'>◂ -name</td><td class='target' rowSpan='2'>E13.1-389</td><td class='target' rowSpan='2'>ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਛੋਟਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>◂ –keywords</td></tr>
+	<tr><td class='source'>◃ -name</td><td class='target' rowSpan='2'>E13.1-390</td><td class='target' rowSpan='2'>ਖਾਲੀ ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਸੰਕੇਤ ਦੇਣ ਵਾਲਾ ਛੋਟਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>◃ –keywords</td></tr>
+	<tr><td class='source'>◄ -name</td><td class='target' rowSpan='2'>E13.1-391</td><td class='target' rowSpan='2'>ਖੱਬੇ ਪਾਸੇ ਦਾ ਸੰਕੇਤਕ ਭਰਿਆ</td></tr>
+	<tr><td class='source'>◄ –keywords</td></tr>
+	<tr><td class='source'>◅ -name</td><td class='target' rowSpan='2'>E13.1-392</td><td class='target' rowSpan='2'>ਖਾਲੀ ਖੱਬੇ ਪਾਸੇ ਦਾ ਸੰਕੇਤਕ</td></tr>
+	<tr><td class='source'>◅ –keywords</td></tr>
+	<tr><td class='source'>◆ -name</td><td class='target' rowSpan='2'>E13.1-393</td><td class='target' rowSpan='2'>ਭਰੇ ਹੀਰਾ</td></tr>
+	<tr><td class='source'>◆ –keywords</td></tr>
+	<tr><td class='source'>◇ -name</td><td class='target' rowSpan='2'>E13.1-394</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਹੀਰਾ</td></tr>
+	<tr><td class='source'>◇ –keywords</td></tr>
+	<tr><td class='source'>◈ -name</td><td class='target' rowSpan='2'>E13.1-395</td><td class='target' rowSpan='2'>ਖਾਲੀ ਹੀਰਾ ਭਰੇ ਹੀਰੇ ਵਾਲਾ</td></tr>
+	<tr><td class='source'>◈ –keywords</td></tr>
+	<tr><td class='source'>◉ -name</td><td class='target' rowSpan='2'>E13.1-396</td><td class='target' rowSpan='2'>ਖਾਲੀ ਚੱਕਰ ਜਿਸ ਵਿੱਚ ਭਰੇ ਹੋਏ ਚੱਕਰ ਹਨ</td></tr>
+	<tr><td class='source'>◉ –keywords</td></tr>
+	<tr><td class='source'>◌ -name</td><td class='target' rowSpan='2'>E13.1-397</td><td class='target' rowSpan='2'>ਬਿੰਦੀਦਾਰ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◌ –keywords</td></tr>
+	<tr><td class='source'>◍ -name</td><td class='target' rowSpan='2'>E13.1-398</td><td class='target' rowSpan='2'>ਲੰਬਕਾਰੀ ਭਰੋ ਨਾਲ ਚੱਕਰ ਲਗਾਓ</td></tr>
+	<tr><td class='source'>◍ –keywords</td></tr>
+	<tr><td class='source'>◎ -name</td><td class='target' rowSpan='2'>E13.1-399</td><td class='target' rowSpan='2'>ਧਿਆਨ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◎ –keywords</td></tr>
+	<tr><td class='source'>◐ -name</td><td class='target' rowSpan='2'>E13.1-400</td><td class='target' rowSpan='2'>ਚੱਕਰ ਖੱਬੇ ਅੱਧੇ ਭਰੇ</td></tr>
+	<tr><td class='source'>◐ –keywords</td></tr>
+	<tr><td class='source'>◑ -name</td><td class='target' rowSpan='2'>E13.1-401</td><td class='target' rowSpan='2'>ਚੱਕਰ ਸੱਜਾ ਅੱਧੇ ਭਰੇ</td></tr>
+	<tr><td class='source'>◑ –keywords</td></tr>
+	<tr><td class='source'>◒ -name</td><td class='target' rowSpan='2'>E13.1-402</td><td class='target' rowSpan='2'>ਚੱਕਰ ਨੀਚੇ ਅੱਧੇ ਭਰੇ</td></tr>
+	<tr><td class='source'>◒ –keywords</td></tr>
+	<tr><td class='source'>◓ -name</td><td class='target' rowSpan='2'>E13.1-403</td><td class='target' rowSpan='2'>ਚੱਕਰ ਅੱਧ ਅੱਧੇ ਭਰੇ</td></tr>
+	<tr><td class='source'>◓ –keywords</td></tr>
+	<tr><td class='source'>◔ -name</td><td class='target' rowSpan='2'>E13.1-404</td><td class='target' rowSpan='2'>ਚੱਕਰ ਦੇ ਉੱਪਰ ਸੱਜੇ ਚਤੁਰਭੁਜ ਭਰੇ ਹੋਏ</td></tr>
+	<tr><td class='source'>◔ –keywords</td></tr>
+	<tr><td class='source'>◕ -name</td><td class='target' rowSpan='2'>E13.1-405</td><td class='target' rowSpan='2'>ਸਾਰੇ ਚੱਕਰ ਕੱਟੋ ਪਰ ਉੱਪਰਲੇ ਖੱਬੇ ਚਤੁਰਭੁਜ ਨਾਲ ਭਰਿਆ</td></tr>
+	<tr><td class='source'>◕ –keywords</td></tr>
+	<tr><td class='source'>◖ -name</td><td class='target' rowSpan='2'>E13.1-406</td><td class='target' rowSpan='2'>ਖੱਬੇ ਅੱਧੇ ਭਰੇ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◖ –keywords</td></tr>
+	<tr><td class='source'>◗ -name</td><td class='target' rowSpan='2'>E13.1-407</td><td class='target' rowSpan='2'>ਸੱਜੇ ਅੱਧੇ ਭਰੇ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◗ –keywords</td></tr>
+	<tr><td class='source'>◘ -name</td><td class='target' rowSpan='2'>E13.1-408</td><td class='target' rowSpan='2'>ਉਲਟਾ ਬੁਲੇਟ</td></tr>
+	<tr><td class='source'>◘ –keywords</td></tr>
+	<tr><td class='source'>◙ -name</td><td class='target' rowSpan='2'>E13.1-409</td><td class='target' rowSpan='2'>ਭਰੇ ਵਰਗ ਵਿੱਚ ਖਾਲੀ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◙ –keywords</td></tr>
+	<tr><td class='source'>◜ -name</td><td class='target' rowSpan='2'>E13.1-410</td><td class='target' rowSpan='2'>ਉੱਪਰਲੇ ਖੱਬੇ ਚਤੁਰਭੁਜ ਸਰਕੂਲਰ ਚਾਪ</td></tr>
+	<tr><td class='source'>◜ –keywords</td></tr>
+	<tr><td class='source'>◝ -name</td><td class='target' rowSpan='2'>E13.1-411</td><td class='target' rowSpan='2'>ਉੱਪਰਲੇ ਸੱਜੇ ਚਤੁਰਭੁਜ ਸਰਕੂਲਰ ਚਾਪ</td></tr>
+	<tr><td class='source'>◝ –keywords</td></tr>
+	<tr><td class='source'>◞ -name</td><td class='target' rowSpan='2'>E13.1-412</td><td class='target' rowSpan='2'>ਹੇਠਲੇ ਸੱਜੇ ਚਤੁਰਭੁਜ ਸਰਕੂਲਰ ਚਾਪ</td></tr>
+	<tr><td class='source'>◞ –keywords</td></tr>
+	<tr><td class='source'>◟ -name</td><td class='target' rowSpan='2'>E13.1-413</td><td class='target' rowSpan='2'>ਹੇਠਾਂ ਖੱਬੇ ਚਤੁਰਭੁਜ ਸਰਕੂਲਰ ਚਾਪ</td></tr>
+	<tr><td class='source'>◟ –keywords</td></tr>
+	<tr><td class='source'>◠ -name</td><td class='target' rowSpan='2'>E13.1-414</td><td class='target' rowSpan='2'>ਉਪਰਲਾ ਅੱਧਾ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◠ –keywords</td></tr>
+	<tr><td class='source'>◡ -name</td><td class='target' rowSpan='2'>E13.1-415</td><td class='target' rowSpan='2'>ਹੇਠਲਾ ਅੱਧਾ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◡ –keywords</td></tr>
+	<tr><td class='source'>◢ -name</td><td class='target' rowSpan='2'>E13.1-416</td><td class='target' rowSpan='2'>ਭਰੇ ਹੇਠਲੇ ਸੱਜੇ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>◢ –keywords</td></tr>
+	<tr><td class='source'>◣ -name</td><td class='target' rowSpan='2'>E13.1-417</td><td class='target' rowSpan='2'>ਭਰੇ ਹੇਠਲੇ ਖੱਬੇ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>◣ –keywords</td></tr>
+	<tr><td class='source'>◤ -name</td><td class='target' rowSpan='2'>E13.1-418</td><td class='target' rowSpan='2'>ਭਰਿਆ ਉਪਰਲਾ ਖੱਬਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>◤ –keywords</td></tr>
+	<tr><td class='source'>◥ -name</td><td class='target' rowSpan='2'>E13.1-419</td><td class='target' rowSpan='2'>ਭਰਿਆ ਉਪਰਲਾ ਸੱਜਾ ਤਿਕੋਣਾ</td></tr>
+	<tr><td class='source'>◥ –keywords</td></tr>
+	<tr><td class='source'>◦ -name</td><td class='target' rowSpan='2'>E13.1-420</td><td class='target' rowSpan='2'>ਖੋਖਲੀ ਗੋਲੀ</td></tr>
+	<tr><td class='source'>◦ –keywords</td></tr>
+	<tr><td class='source'>◳ -name</td><td class='target' rowSpan='2'>E13.1-421</td><td class='target' rowSpan='2'>ਖੋਖਲਾ ਵਰਗ ਉੱਪਰ ਸੱਜੇ ਚਤੁਰਭੁਜ</td></tr>
+	<tr><td class='source'>◳ –keywords</td></tr>
+	<tr><td class='source'>◷ -name</td><td class='target' rowSpan='2'>E13.1-422</td><td class='target' rowSpan='2'>ਉੱਪਰਲੇ ਸੱਜੇ ਚਤੁਰਭੁਜ ਦੇ ਨਾਲ ਖੋਖਲਾ ਚੱਕਰ</td></tr>
+	<tr><td class='source'>◷ –keywords</td></tr>
+	<tr><td class='source'>◿ -name</td><td class='target' rowSpan='2'>E13.1-425</td><td class='target' rowSpan='2'>ਹੇਠਾਂ ਸੱਜਾ ਤਿਕੋਣ</td></tr>
+	<tr><td class='source'>◿ –keywords</td></tr>
+	<tr><td class='source'>⨧ -name</td><td class='target' rowSpan='2'>E13.1-426</td><td class='target' rowSpan='2'>ਪਲੱਸ ਸਬਸਕ੍ਰਿਪਟ ਦੋ</td></tr>
+	<tr><td class='source'>⨧ –keywords</td></tr>
+	<tr><td class='source'>⨯ -name</td><td class='target' rowSpan='2'>E13.1-427</td><td class='target' rowSpan='2'>ਵੈਕਟਰ ਕਰਾਸ ਉਤਪਾਦ</td></tr>
+	<tr><td class='source'>⨯ –keywords</td></tr>
+	<tr><td class='source'>⨼ -name</td><td class='target' rowSpan='2'>E13.1-428</td><td class='target' rowSpan='2'>ਅੰਦਰੂਨੀ ਉਤਪਾਦ</td></tr>
+	<tr><td class='source'>⨼ –keywords</td></tr>
+	<tr><td class='source'>⩣ -name</td><td class='target' rowSpan='2'>E13.1-429</td><td class='target' rowSpan='2'>ਲਾਜ਼ੀਕਲ ਜਾਂ ਡਬਲ ਅੰਡਰਬਾਰ</td></tr>
+	<tr><td class='source'>⩣ –keywords</td></tr>
+	<tr><td class='source'>⩽ -name</td><td class='target' rowSpan='2'>E13.1-430</td><td class='target' rowSpan='2'>ਘੱਟ ਤੋਂ ਘੱਟ</td></tr>
+	<tr><td class='source'>⩽ –keywords</td></tr>
+	<tr><td class='source'>⪍ -name</td><td class='target' rowSpan='2'>E13.1-431</td><td class='target' rowSpan='2'>ਘੱਟ ਦੇ ਬਰਾਬਰ ਦੇ ਬਰਾਬਰ</td></tr>
+	<tr><td class='source'>⪍ –keywords</td></tr>
+	<tr><td class='source'>⪚ -name</td><td class='target' rowSpan='2'>E13.1-432</td><td class='target' rowSpan='2'>ਡਬਲ-ਲਾਈਨ ਬਰਾਬਰ-ਤੋਂ ਵੱਧ</td></tr>
+	<tr><td class='source'>⪚ –keywords</td></tr>
+	<tr><td class='source'>⪺ -name</td><td class='target' rowSpan='2'>E13.1-433</td><td class='target' rowSpan='2'>ਲਗਭਗ ਬਰਾਬਰ ਨਾ ਦੇ ਉੱਪਰ ਸਫਲਤਾ</td></tr>
+	<tr><td class='source'>⪺ –keywords</td></tr>
+	<tr><td class='source'>₢ -name</td><td class='target' rowSpan='2'>E13.1-434</td><td class='target' rowSpan='2'>ਕਰੂਜ਼</td></tr>
+	<tr><td class='source'>₢ –keywords</td></tr>
+	<tr><td class='source'>₣ -name</td><td class='target' rowSpan='2'>E13.1-435</td><td class='target' rowSpan='2'>ਫ੍ਰੈਂਚ ਫਰੈਂਕ</td></tr>
+	<tr><td class='source'>₣ –keywords</td></tr>
+	<tr><td class='source'>₤ -name</td><td class='target' rowSpan='2'>E13.1-436</td><td class='target' rowSpan='2'>ਲੀਰਾ</td></tr>
+	<tr><td class='source'>₤ –keywords</td></tr>
+	<tr><td class='source'>₰ -name</td><td class='target' rowSpan='2'>E13.1-437</td><td class='target' rowSpan='2'>ਜਰਮਨ ਪੈਣੀ</td></tr>
+	<tr><td class='source'>₰ –keywords</td></tr>
+	<tr><td class='source'>₳ -name</td><td class='target' rowSpan='2'>E13.1-438</td><td class='target' rowSpan='2'>ਆਸਟਰਲ</td></tr>
+	<tr><td class='source'>₳ –keywords</td></tr>
+	<tr><td class='source'>₶ -name</td><td class='target' rowSpan='2'>E13.1-439</td><td class='target' rowSpan='2'>ਲਿਵਰ ਟੌਰਨੋਇਸ</td></tr>
+	<tr><td class='source'>₶ –keywords</td></tr>
+	<tr><td class='source'>₷ -name</td><td class='target' rowSpan='2'>E13.1-440</td><td class='target' rowSpan='2'>ਸਪੈਸਮਿਲੋ</td></tr>
+	<tr><td class='source'>₷ –keywords</td></tr>
+	<tr><td class='source'>₨ -name</td><td class='target' rowSpan='2'>E13.1-441</td><td class='target' rowSpan='2'>ਰੁਪਿਆ</td></tr>
+	<tr><td class='source'>₨ –keywords</td></tr>
+	<tr><td class='source'>‫﷼ -name‬</td><td class='target' rowSpan='2'>E13.1-442</td><td class='target' rowSpan='2'>ਰਿਆਲ</td></tr>
+	<tr><td class='source'>‫﷼ –keywords‬</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='4'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='2'><a name='Case' href='#Case'>Case</a></td><td class='source'>nominative</td><td class='target' rowSpan='16'>▷missing◁</td><td class='target'>ਅਧਿਆਪਕ ਨੇ {0} ਪੜ੍ਹਾਇਆ</td><td class='target' rowSpan='4'>modern</td></tr>
+	<tr><td class='source'>oblique</td><td class='target'>ਅਧਿਆਪਕ ਨੇ {0} ਤੱਕ ਪੜ੍ਹਾਇਆ</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Gender' href='#Gender'>Gender</a></td><td class='source'>feminine</td><td class='target'>ਇਹ ਕਿੰਨੀ {0} ਦਾ ਹੈ</td></tr>
+	<tr><td class='source'>masculine</td><td class='target'>ਇਹ ਕਿੰਨੇ {0} ਦਾ ਹੈ</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='12'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEdd</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMMdd</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>yMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>yMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>yMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>yyMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-full</td><td class='target'>ahmmsszzzz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-long</td><td class='target'>ahmmssz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-medium</td><td class='target'>ahmmss</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-short</td><td class='target'>ahmm</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
-<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
-<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
 

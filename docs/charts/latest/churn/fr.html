@@ -58,11 +58,77 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Côte d’Ivoire' href='#Western Africa: Côte d’Ivoire'>Western Africa: Côte d’Ivoire</a></td><td class='source'>XOF-symbol</td><td class='source'>fr</td><td class='target'>CFA</td><td class='target'>F CFA</td><td class='target'>basic</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='North America (C)' href='#North America (C)'>North America (C)</a></td><td class='source'><a name='Northern America: Canada' href='#Northern America: Canada'>Northern America: Canada</a></td><td class='source'>CAD-symbol</td><td class='source'>fr_CA</td><td class='target'>$ CA</td><td class='target'>$</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source'><a name='Southern Africa: Lesotho' href='#Southern Africa: Lesotho'>Southern Africa: Lesotho</a></td><td class='source'>LSL-symbol</td><td class='source' rowSpan='6'>fr</td><td class='target'>lLS</td><td class='target'>LSL</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='65'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='4'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='2'><a name='microsecond' href='#microsecond'>microsecond</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} μs</td><td class='target' rowSpan='2'>{0}μs</td><td class='target' rowSpan='65'>modern</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} ns</td><td class='target' rowSpan='2'>{0}ns</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='18'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='4'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source' rowSpan='2'>narrow-one-nominative</td><td class='target'>{0} pt/cm</td><td class='target'>{0}pt/cm</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} ppcm</td><td class='target'>{0}ppcm</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='source'>fr</td><td class='target'>{0} pt/cm</td><td class='target'>{0}pt/cm</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} ppcm</td><td class='target'>{0}ppcm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source' rowSpan='2'>narrow-one-nominative</td><td class='source'>fr</td><td class='target'>{0} pt/po</td><td class='target'>{0}pt/po</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} ppp</td><td class='target'>{0}ppp</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='source'>fr</td><td class='target'>{0} pt/po</td><td class='target'>{0}pt/po</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} ppp</td><td class='target'>{0}ppp</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='em' href='#em'>em</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='10'>fr</td><td class='target' rowSpan='2'>{0} em</td><td class='target' rowSpan='2'>{0}em</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} Mpx</td><td class='target' rowSpan='2'>{0}Mpx</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>narrow-one-nominative</td><td class='target'>{0} px</td><td class='target' rowSpan='2'>{0}px</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} px</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} px/cm</td><td class='target' rowSpan='2'>{0}px/cm</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} px/po</td><td class='target' rowSpan='2'>{0}px/po</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='2'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='7'>fr_CA</td><td class='target' rowSpan='2'>{0} R⊕</td><td class='target' rowSpan='2'>{0}R⊕</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='furlong' href='#furlong'>furlong</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} fur</td><td class='target' rowSpan='2'>{0}fur</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='3'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td><td class='source'>narrow-displayName</td><td class='target'>acpi</td><td class='target'>ac pi</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}acpi</td><td class='target' rowSpan='2'>{0}ac pi</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='drop' href='#drop'>drop</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='4'>fr</td><td class='target' rowSpan='2'>{0} gte</td><td class='target' rowSpan='2'>{0}gte</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dram' href='#dram'>dram</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} fl dr</td><td class='target' rowSpan='2'>{0}fl dr</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pinch' href='#pinch'>pinch</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='2'>fr_CA</td><td class='target'>{0} pincée</td><td class='target'>{0}pincée</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} pincées</td><td class='target'>{0}pincées</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='10'>fr</td><td class='target' rowSpan='2'>{0} qt imp.</td><td class='target' rowSpan='2'>{0}qt imp.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='2'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} m/s²</td><td class='target' rowSpan='2'>{0}m/s²</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='2'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} t</td><td class='target' rowSpan='2'>{0}t</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='milligram' href='#milligram'>milligram</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} mg</td><td class='target' rowSpan='2'>{0}mg</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} μg</td><td class='target' rowSpan='2'>{0}μg</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source' rowSpan='3'>narrow-one-nominative</td><td class='source'>fr_CA</td><td class='target'>{0} therm US</td><td class='target'>{0}therm US</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='bar' href='#bar'>bar</a></td><td class='source' rowSpan='4'>fr</td><td class='target'>{0} bar</td><td class='target'>{0}bar</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='pascal' href='#pascal'>pascal</a></td><td class='target' rowSpan='2'>{0} Pa</td><td class='target' rowSpan='2'>{0}Pa</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td><td class='source' rowSpan='2'>narrow-one-nominative</td><td class='target'>{0} °F</td><td class='target' rowSpan='4'>{0}°F</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} °F</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='source'>fr</td><td class='target'>{0} °F</td></tr>
+	<tr><td class='source'>fr_CA</td><td class='target'>{0} °F</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='2'>fr</td><td class='target' rowSpan='2'>{0} K</td><td class='target' rowSpan='2'>{0}K</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='2'><a name='radian' href='#radian'>radian</a></td><td class='source'>narrow-one-nominative</td><td class='source' rowSpan='2'>fr_CA</td><td class='target' rowSpan='2'>{0} rad</td><td class='target' rowSpan='2'>{0}rad</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='candela' href='#candela'>candela</a></td><td class='source' rowSpan='2'>narrow-one-nominative</td><td class='source'>fr</td><td class='target' rowSpan='4'>{0} cd</td><td class='target' rowSpan='4'>{0}cd</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='source'>fr</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='lumen' href='#lumen'>lumen</a></td><td class='source' rowSpan='2'>narrow-one-nominative</td><td class='source'>fr</td><td class='target' rowSpan='4'>{0} lm</td><td class='target' rowSpan='4'>{0}lm</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td><td class='source'>fr</td></tr>
+	<tr><td class='source'>fr_CA</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
-<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
-<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
 

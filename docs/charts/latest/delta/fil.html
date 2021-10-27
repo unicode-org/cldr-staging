@@ -58,38 +58,349 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Root ► root</td><td class='source' rowSpan='28'>fil</td><td class='target'>Root</td><td class='target'>▷removed◁</td><td class='target'>comprehensive</td></tr>
-	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'><a name='Western Africa: Côte d’Ivoire' href='#Western Africa: Côte d’Ivoire'>Western Africa: Côte d’Ivoire</a></td><td class='source'>XOF-symbol</td><td class='target'>CFA</td><td class='target'>F CFA</td><td class='target' rowSpan='4'>moderate</td></tr>
-	<tr><td class='source' rowSpan='26'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='6'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='6'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='source'>short-displayName</td><td class='target'>µmetro</td><td class='target'>μmetro</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} µm</td><td class='target' rowSpan='2'>{0} μm</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='3'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='2'><a name='C' href='#C'>C</a></td><td class='source'>Central Kurdish ► ckb-menu</td><td class='source' rowSpan='339'>fil</td><td class='target' rowSpan='2'>Central Kurdish</td><td class='target'>Kurdish, Central</td><td class='target' rowSpan='29'>modern</td></tr>
+	<tr><td class='source'>Central Kurdish ► ckb-variant</td><td class='target'>Kurdish, Sorani</td></tr>
+	<tr><td class='source'><a name='D' href='#D'>D</a></td><td class='source'>Dogri ► doi</td><td class='target'>doi</td><td class='target'>Dogri</td></tr>
+	<tr><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='M' href='#M'>M</a></td><td class='source'>Māori ► mi</td><td class='target'>Maori</td><td class='target'>Māori</td></tr>
+	<tr><td class='source'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='R' href='#R'>R</a></td><td class='source'>Rohingya ► rhg</td><td class='target'>rhg</td><td class='target'>Rohingya</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='24'><a name='Fields' href='#Fields'>Fields</a></td><td class='source'><a name='Relative Hour Narrow' href='#Relative Hour Narrow'>Relative Hour Narrow</a></td><td class='source' rowSpan='2'>past-one</td><td class='target'>{0} oras nakalipas</td><td class='target'>{0} oras ang nakalipas</td></tr>
+	<tr><td class='source'><a name='Relative Second Narrow' href='#Relative Second Narrow'>Relative Second Narrow</a></td><td class='target'>{0} seg. nakalipas</td><td class='target'>{0} seg. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Sunday Short' href='#Relative Sunday Short'>Relative Sunday Short</a></td><td class='source'>future-one</td><td class='target'>sa {0} Linggo</td><td class='target'>sa {0} Lin.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Linggo ang nakalipas</td><td class='target'>{0} Lin. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Sunday Narrow' href='#Relative Sunday Narrow'>Relative Sunday Narrow</a></td><td class='source'>future-one</td><td class='target'>sa {0} linggo</td><td class='target'>sa {0} Lin.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Linggo ang nakalipas</td><td class='target'>{0} Lin. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Monday Short' href='#Relative Monday Short'>Relative Monday Short</a></td><td class='source'>future-one</td><td class='target'>sa {0} Lunes</td><td class='target'>sa {0} Lun.</td></tr>
+	<tr><td class='source' rowSpan='2'>past-one</td><td class='target' rowSpan='2'>{0} Lunes ang nakalipas</td><td class='target' rowSpan='2'>{0} Lun. ang nakalipas</td></tr>
+	<tr><td class='source'><a name='Relative Monday Narrow' href='#Relative Monday Narrow'>Relative Monday Narrow</a></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Wednesday Short' href='#Relative Wednesday Short'>Relative Wednesday Short</a></td><td class='source'>future-one</td><td class='target'>sa {0} Miyerkules</td><td class='target'>sa {0} Miy.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Miyerkules ang nakalipas</td><td class='target'>{0} Miy. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Wednesday Narrow' href='#Relative Wednesday Narrow'>Relative Wednesday Narrow</a></td><td class='source'>future-one</td><td class='target'>sa {0} Miyerkules</td><td class='target'>sa {0} Miy.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Miyerkules ang nakalipas</td><td class='target'>{0} Miy. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Thursday Short' href='#Relative Thursday Short'>Relative Thursday Short</a></td><td class='source'>future-one</td><td class='target'>sa {0} Huwebes</td><td class='target'>sa {0} Huw.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Huwebes ang nakalipas</td><td class='target'>{0} Huw. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Thursday Narrow' href='#Relative Thursday Narrow'>Relative Thursday Narrow</a></td><td class='source'>future-one</td><td class='target'>sa {0} Huwebes</td><td class='target'>sa {0} Huw.</td></tr>
+	<tr><td class='source' rowSpan='2'>past-one</td><td class='target'>{0} Huwebes ang nakalipas</td><td class='target'>{0} Huw. ang nakalipas</td></tr>
+	<tr><td class='source'><a name='Relative Friday Short' href='#Relative Friday Short'>Relative Friday Short</a></td><td class='target'>{0} Biyernes ang nakalipas</td><td class='target'>{0} Biy. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Friday Narrow' href='#Relative Friday Narrow'>Relative Friday Narrow</a></td><td class='source'>future-one</td><td class='target'>sa {0} Biyernes</td><td class='target'>sa {0} Biy.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Biyernes ang nakalipas</td><td class='target'>{0} Biy. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Saturday Short' href='#Relative Saturday Short'>Relative Saturday Short</a></td><td class='source'>future-one</td><td class='target'>sa {0} Sabado</td><td class='target'>sa {0} Sab.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Sabado ang nakalipas</td><td class='target'>{0} Sab. ang nakalipas</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Relative Saturday Narrow' href='#Relative Saturday Narrow'>Relative Saturday Narrow</a></td><td class='source'>future-one</td><td class='target'>sa {0} Sabado</td><td class='target'>sa {0} Sab.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} Sabado ang nakalipas</td><td class='target'>{0} Sab. ang nakalipas</td></tr>
+	<tr><td class='source'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='2'>GyMd</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target' rowSpan='2'>M/d/y GGGGG</td><td class='target'>basic</td></tr>
+	<tr><td class='source'><a name='Generic' href='#Generic'>Generic</a></td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='North America' href='#North America'>North America</a></td><td class='source'><a name='Yukon' href='#Yukon'>Yukon</a></td><td class='source' rowSpan='2'>standard-long</td><td class='target'>Yukon Time</td></tr>
+	<tr><td class='source'><a name='Southern Asia' href='#Southern Asia'>Southern Asia</a></td><td class='source'><a name='India' href='#India'>India</a></td><td class='target'>Standard na Oras sa Bhutan</td><td class='target'>Standard na Oras sa India</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='12'><a name='Symbols' href='#Symbols'>Symbols</a></td><td class='source'><a name='Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Time Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>Time Separator</td><td class='target' rowSpan='12'>▷missing◁</td><td class='target'>:</td><td class='target' rowSpan='12'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='Symbols using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Symbols using Nyiakeng Puachue Hmong Digits (hmnp)'>Symbols using Nyiakeng Puachue Hmong Digits (hmnp)</a></td><td class='source'>decimal</td><td class='target'>.</td></tr>
+	<tr><td class='source'>group</td><td class='target'>,</td></tr>
+	<tr><td class='source'>plusSign</td><td class='target'>+</td></tr>
+	<tr><td class='source'>minusSign</td><td class='target'>-</td></tr>
+	<tr><td class='source'>percentSign</td><td class='target'>%</td></tr>
+	<tr><td class='source'>perMille</td><td class='target'>‰</td></tr>
+	<tr><td class='source'>exponential</td><td class='target'>E</td></tr>
+	<tr><td class='source'>superscriptingExponent</td><td class='target'>×</td></tr>
+	<tr><td class='source'>infinity</td><td class='target'>∞</td></tr>
+	<tr><td class='source'>nan</td><td class='target'>NaN</td></tr>
+	<tr><td class='source'>list</td><td class='target'>;</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='2'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td><td class='source' rowSpan='2'><a name='Southern Africa: Lesotho' href='#Southern Africa: Lesotho'>Southern Africa: Lesotho</a></td><td class='source'>LSL-name-one</td><td class='target' rowSpan='2'>Lesotho Loti</td><td class='target'>Lesotho loti</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'>LSL-name-other</td><td class='target'>Lesotho lotis</td></tr>
+	<tr><td class='source' rowSpan='45'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='7'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='3'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='source'>short-displayName</td><td class='target'>ppcm</td><td class='target'>dpcm</td><td class='target' rowSpan='208'>modern</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ppcm</td><td class='target' rowSpan='2'>{0} dpcm</td></tr>
 	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>narrow-displayName</td><td class='target'>µmetro</td><td class='target'>μmetro</td><td class='target' rowSpan='3'>modern</td></tr>
-	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} µm</td><td class='target' rowSpan='2'>{0} μm</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>short-displayName</td><td class='target'>ppi</td><td class='target'>dpi</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} ppi</td><td class='target' rowSpan='2'>{0} dpi</td></tr>
+	<tr><td class='source'>short-other-nominative</td></tr>
+	<tr><td class='source'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>short-displayName</td><td class='target'>MP</td><td class='target'>megapixel</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='3'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td><td class='source'>narrow-displayName</td><td class='target'>Imp. fl oz</td><td class='target'>Imp fl oz</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} fl oz Imp.</td><td class='target' rowSpan='2'>{0}fl oz Im</td></tr>
 	<tr><td class='source'>narrow-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='6'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>short-displayName</td><td class='target'>µg</td><td class='target'>μg</td><td class='target' rowSpan='3'>moderate</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} µg</td><td class='target' rowSpan='2'>{0} μg</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source'>narrow-displayName</td><td class='target'>µg</td><td class='target'>μg</td><td class='target' rowSpan='3'>modern</td></tr>
-	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}µg</td><td class='target' rowSpan='2'>{0}μg</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td><td class='source'>narrow-displayName</td><td class='target'>dstspn Imp</td><td class='target'>dsp lmp</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} dstspn Imp</td><td class='target' rowSpan='2'>{0}dsp-Imp</td></tr>
 	<tr><td class='source'>narrow-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='12'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='6'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target'>mg/dL</td><td class='target' rowSpan='14'>moderate</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} milligram per deciliter</td></tr>
-	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} milligrams per deciliter</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>mg/dL</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mg/dL</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='milligram-per-deciliter' href='#milligram-per-deciliter'>milligram-per-deciliter</a></td><td class='source'>long-displayName</td><td class='target'>mg/dL</td><td class='target' rowSpan='6'>▷removed◁</td></tr>
-	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} milligram per deciliter</td></tr>
-	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} milligrams per deciliter</td></tr>
-	<tr><td class='source'>short-displayName</td><td class='target'>mg/dL</td></tr>
-	<tr><td class='source'>short-one-nominative</td><td class='target' rowSpan='2'>{0} mg/dL</td></tr>
-	<tr><td class='source'>short-other-nominative</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='2'><a name='10p-6' href='#10p-6'>10p-6</a></td><td class='source'>narrow</td><td class='target' rowSpan='2'>µ{0}</td><td class='target' rowSpan='2'>μ{0}</td></tr>
-	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='dram' href='#dram'>dram</a></td><td class='source'>long-displayName</td><td class='target'>dram fluid</td><td class='target'>dram</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} dram fl</td><td class='target' rowSpan='2'>{0} dram</td></tr>
+	<tr><td class='source'>long-other-nominative</td></tr>
+	<tr><td class='source'>narrow-displayName</td><td class='target'>dram fluid</td><td class='target'>fl.dr.</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} dram fl</td><td class='target' rowSpan='2'>{0}fl.dr.</td></tr>
+	<tr><td class='source' rowSpan='2'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='jigger' href='#jigger'>jigger</a></td><td class='target'>{0} jigger</td><td class='target'>{0}jigger</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td><td class='source'>narrow-displayName</td><td class='target'>Imp na kuwart</td><td class='target'>qt Imp</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} qt Imp.</td><td class='target'>{0}qt-Imp.</td></tr>
+	<tr><td class='source'><a name='Weather' href='#Weather'>Weather</a></td><td class='source'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-displayName</td><td class='target'>Pa</td><td class='target'>pascal</td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='3'><a name='radian' href='#radian'>radian</a></td><td class='source'>short-other-nominative</td><td class='target'>{0} na rad</td><td class='target'>{0} rad</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target'>{0} rad</td><td class='target' rowSpan='2'>{0}rad</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} na rad</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='item' href='#item'>item</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target'>mga item</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} na item</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0}item</td></tr>
+	<tr><td class='source'><a name='permillion' href='#permillion'>permillion</a></td><td class='source' rowSpan='5'>narrow-displayName</td><td class='target'>parts/million</td><td class='target'>ppm</td></tr>
+	<tr><td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='target'>permyriad</td><td class='target'>‱</td></tr>
+	<tr><td class='source'><a name='mole' href='#mole'>mole</a></td><td class='target'>mole</td><td class='target'>mol</td></tr>
+	<tr><td class='source'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td><td class='target'>litro/km</td><td class='target'>L/km</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td><td class='target'>milya/gal</td><td class='target'>mpg</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='target'>{0} na mpg</td><td class='target' rowSpan='3'>{0}mpg</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0} mpg Imp.</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source'><a name='pound-force' href='#pound-force'>pound-force</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>pound-force</td><td class='target'>lbf</td></tr>
+	<tr><td class='source'><a name='newton' href='#newton'>newton</a></td><td class='target'>newton</td><td class='target'>N</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='20'>▷missing◁</td><td class='target'>kilowatt-hour bawat 100 kilometro</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} kilowatt-hour bawat 100 kilometro</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} kilowatt-hours bawat 100 kilometro</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target'>kWh/100km</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}kWh/100km</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='202'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='16'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td><td class='source'>🫠 -name</td><td class='target' rowSpan='2'>natutunaw na mukha</td></tr>
+	<tr><td class='source'>🫠 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='face-hand' href='#face-hand'>face-hand</a></td><td class='source'>🫢 -name</td><td class='target'>mukha na may mga nakabukas na mata at kamay sa bibig</td></tr>
+	<tr><td class='source'>🫢 –keywords</td><td class='target'>di makapaniwala<br>gulat<br>hiya<br>mukha na may mga nakabukas na mata at kamay sa bibig<br>paghanga<br>pagkamangha<br>takot</td></tr>
+	<tr><td class='source'>🫣 -name</td><td class='target' rowSpan='2'>mukha na may sumisilip na mata</td></tr>
+	<tr><td class='source'>🫣 –keywords</td></tr>
+	<tr><td class='source'>🫡 -name</td><td class='target'>saludo</td></tr>
+	<tr><td class='source'>🫡 –keywords</td><td class='target'>maaraw<br>ok<br>oo<br>saludo<br>tropa</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🫥 -name</td><td class='target' rowSpan='2'>dotted na linya na mukha</td></tr>
+	<tr><td class='source'>🫥 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td><td class='source'>🫤 -name</td><td class='target' rowSpan='2'>mukha na may diagonal na bibig</td></tr>
+	<tr><td class='source'>🫤 –keywords</td></tr>
+	<tr><td class='source'>🥹 -name</td><td class='target' rowSpan='2'>mukhang nagpipigil ng luha</td></tr>
+	<tr><td class='source'>🥹 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>❣ -name</td><td class='target'>malaking tandang padamdam na hugis-puso</td><td class='target'>tandang padamdam na hugis-puso</td></tr>
+	<tr><td class='source'>❣ –keywords</td><td class='target'>…</td><td class='target'>…<br>tandang padamdam na hugis-puso</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='8'><a name='hand-fingers-open' href='#hand-fingers-open'>hand-fingers-open</a></td><td class='source'>🫱 -name</td><td class='target' rowSpan='58'>▷missing◁</td><td class='target' rowSpan='2'>pakanang kamay</td></tr>
+	<tr><td class='source'>🫱 –keywords</td></tr>
+	<tr><td class='source'>🫲 -name</td><td class='target' rowSpan='2'>pakaliwang kamay</td></tr>
+	<tr><td class='source'>🫲 –keywords</td></tr>
+	<tr><td class='source'>🫳 -name</td><td class='target' rowSpan='2'>nakataob na palad</td></tr>
+	<tr><td class='source'>🫳 –keywords</td></tr>
+	<tr><td class='source'>🫴 -name</td><td class='target' rowSpan='2'>nakasalong palad</td></tr>
+	<tr><td class='source'>🫴 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-fingers-partial' href='#hand-fingers-partial'>hand-fingers-partial</a></td><td class='source'>🫰 -name</td><td class='target'>kamay na magkakrus ang hintuturo at hinlalaki</td></tr>
+	<tr><td class='source'>🫰 –keywords</td><td class='target'>kamay na magkakrus ang hintuturo at hinlalaki<br>mahal<br>pag-ibig<br>pera<br>pitik<br>puso</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hand-single-finger' href='#hand-single-finger'>hand-single-finger</a></td><td class='source'>🫵 -name</td><td class='target' rowSpan='2'>hintuturong nakaturo sa tumitingin</td></tr>
+	<tr><td class='source'>🫵 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='hands' href='#hands'>hands</a></td><td class='source'>🫶 -name</td><td class='target' rowSpan='2'>nakapusong kamay</td></tr>
+	<tr><td class='source'>🫶 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='body-parts' href='#body-parts'>body-parts</a></td><td class='source'>🫦 -name</td><td class='target' rowSpan='2'>kagat-labi</td></tr>
+	<tr><td class='source'>🫦 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='person-role' href='#person-role'>person-role</a></td><td class='source'>🫅 -name</td><td class='target' rowSpan='2'>taong may korona</td></tr>
+	<tr><td class='source'>🫅 –keywords</td></tr>
+	<tr><td class='source'>🫃 -name</td><td class='target' rowSpan='2'>lalaking buntis</td></tr>
+	<tr><td class='source'>🫃 –keywords</td></tr>
+	<tr><td class='source'>🫄 -name</td><td class='target' rowSpan='2'>taong buntis</td></tr>
+	<tr><td class='source'>🫄 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td><td class='source'>🧌 -name</td><td class='target' rowSpan='2'>troll</td></tr>
+	<tr><td class='source'>🧌 –keywords</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🪸 -name</td><td class='target' rowSpan='2'>korales</td></tr>
+	<tr><td class='source'>🪸 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🪷 -name</td><td class='target' rowSpan='2'>lotus</td></tr>
+	<tr><td class='source'>🪷 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='plant-other' href='#plant-other'>plant-other</a></td><td class='source'>🪹 -name</td><td class='target' rowSpan='2'>bakanteng pugad</td></tr>
+	<tr><td class='source'>🪹 –keywords</td></tr>
+	<tr><td class='source'>🪺 -name</td><td class='target' rowSpan='2'>pugad na may mga itlog</td></tr>
+	<tr><td class='source'>🪺 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='2'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫘 -name</td><td class='target' rowSpan='2'>beans</td></tr>
+	<tr><td class='source'>🫘 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='drink' href='#drink'>drink</a></td><td class='source'>🫗 -name</td><td class='target' rowSpan='2'>binubuhos na likido</td></tr>
+	<tr><td class='source'>🫗 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='dishware' href='#dishware'>dishware</a></td><td class='source'>🫙 -name</td><td class='target' rowSpan='2'>garapon</td></tr>
+	<tr><td class='source'>🫙 –keywords</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td><td class='source' rowSpan='2'><a name='place-other' href='#place-other'>place-other</a></td><td class='source'>🛝 -name</td><td class='target' rowSpan='2'>padulas sa playground</td></tr>
+	<tr><td class='source'>🛝 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-ground' href='#transport-ground'>transport-ground</a></td><td class='source'>🛞 -name</td><td class='target'>gulong</td></tr>
+	<tr><td class='source'>🛞 –keywords</td><td class='target'>bilog<br>goma<br>gulong</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='transport-water' href='#transport-water'>transport-water</a></td><td class='source'>🛟 -name</td><td class='target' rowSpan='2'>salbabida</td></tr>
+	<tr><td class='source'>🛟 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Activities' href='#Activities'>Activities</a></td><td class='source' rowSpan='4'><a name='game' href='#game'>game</a></td><td class='source'>🪬 -name</td><td class='target' rowSpan='2'>hamsa</td></tr>
+	<tr><td class='source'>🪬 –keywords</td></tr>
+	<tr><td class='source'>🪩 -name</td><td class='target' rowSpan='2'>disco ball</td></tr>
+	<tr><td class='source'>🪩 –keywords</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='2'><a name='computer' href='#computer'>computer</a></td><td class='source'>🪫 -name</td><td class='target' rowSpan='2'>paubos ang baterya</td></tr>
+	<tr><td class='source'>🪫 –keywords</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='medical' href='#medical'>medical</a></td><td class='source'>🩼 -name</td><td class='target' rowSpan='2'>saklay</td></tr>
+	<tr><td class='source'>🩼 –keywords</td></tr>
+	<tr><td class='source'>🩻 -name</td><td class='target' rowSpan='2'>x-ray</td></tr>
+	<tr><td class='source'>🩻 –keywords</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='household' href='#household'>household</a></td><td class='source'>🫧 -name</td><td class='target'>bula</td></tr>
+	<tr><td class='source'>🫧 –keywords</td><td class='target'>bula<br>dighay<br>ilalim ng tubig<br>malinis<br>sabon</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='other-object' href='#other-object'>other-object</a></td><td class='source'>🪪 -name</td><td class='target' rowSpan='2'>identification card</td></tr>
+	<tr><td class='source'>🪪 –keywords</td></tr>
+	<tr><td class='source' rowSpan='128'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='12'><a name='math' href='#math'>math</a></td><td class='source'>✖ -name</td><td class='target'>malaking multiplication x</td><td class='target'>multiply</td></tr>
+	<tr><td class='source'>➕ -name</td><td class='target'>malaking plus sign</td><td class='target'>plus</td></tr>
+	<tr><td class='source'>➕ –keywords</td><td class='target'>makapal<br>malaking plus sign<br>…<br>senyas</td><td class='target'>+<br>…<br>sign</td></tr>
+	<tr><td class='source'>➖ -name</td><td class='target'>malaking minus sign</td><td class='target'>minus</td></tr>
+	<tr><td class='source'>➖ –keywords</td><td class='target'>makapal<br>malaking minus sign<br>…<br>senyas</td><td class='target'>-<br>−<br>…<br>sign</td></tr>
+	<tr><td class='source'>➗ -name</td><td class='target'>malaking division sign</td><td class='target'>divide</td></tr>
+	<tr><td class='source'>➗ –keywords</td><td class='target'>…<br>makapal<br>malaking division sign<br>…<br>math<br>senyas</td><td class='target'>÷<br>divide<br>…<br>sign</td></tr>
+	<tr><td class='source'>🟰 -name</td><td class='target' rowSpan='2'>▷missing◁</td><td class='target' rowSpan='2'>madiin na equals sign</td></tr>
+	<tr><td class='source'>🟰 –keywords</td></tr>
+	<tr><td class='source'>= –keywords</td><td class='target' rowSpan='3'>…</td><td class='target'>equal<br>…</td></tr>
+	<tr><td class='source'>≈ –keywords</td><td class='target'>…<br>humigit-kumulang<br>tantya</td></tr>
+	<tr><td class='source'>≠ –keywords</td><td class='target'>hindi equal<br>hindi magkatumbas<br>…</td></tr>
+	<tr><td class='source' rowSpan='77'><a name='punctuation' href='#punctuation'>punctuation</a></td><td class='source'>‼ –keywords</td><td class='target'>…<br>bantas<br>doble<br>…</td><td class='target'>!<br>!!<br>…</td></tr>
+	<tr><td class='source'>❓ -name</td><td class='target'>tandang pananong</td><td class='target'>pulang tandang pananong</td></tr>
+	<tr><td class='source'>❓ –keywords</td><td class='target'>…</td><td class='target'>…<br>pulang tandang pananong<br>…</td></tr>
+	<tr><td class='source'>、 -name</td><td class='target' rowSpan='2'>kuwit na ideograpiko</td><td class='target'>ideographic na kuwit</td></tr>
+	<tr><td class='source'>、 –keywords</td><td class='target'>ideographic<br>ideographic na kuwit<br>kuwit</td></tr>
+	<tr><td class='source'>، -name</td><td class='target' rowSpan='2'>arabikong kuwit</td><td class='target'>arabic na kuwit</td></tr>
+	<tr><td class='source'>، –keywords</td><td class='target'>arabic<br>arabic na kuwit<br>kuwit</td></tr>
+	<tr><td class='source'>‫؛ -name‬</td><td class='target' rowSpan='2'>arabikong tuldok-kuwit</td><td class='target'>arabic na tuldok-kuwit</td></tr>
+	<tr><td class='source'>‫؛ –keywords‬</td><td class='target'>arabic<br>arabic na tuldok-kuwit<br>tuldok-kuwit</td></tr>
+	<tr><td class='source'>? -name</td><td class='target' rowSpan='2'>tanda na pananong</td><td class='target'>tandang pananong</td></tr>
+	<tr><td class='source'>? –keywords</td><td class='target'>tandang pananong<br>tanong</td></tr>
+	<tr><td class='source'>‫؟ -name‬</td><td class='target' rowSpan='2'>arabikong tandang pananong</td><td class='target'>arabic na tandang pananong</td></tr>
+	<tr><td class='source'>‫؟ –keywords‬</td><td class='target'>arabic<br>arabic na tandang pananong<br>tandang pananong<br>tanong</td></tr>
+	<tr><td class='source'>※ -name</td><td class='target' rowSpan='2'>tanda na pang reperensiya</td><td class='target' rowSpan='2'>tanda ng reference</td></tr>
+	<tr><td class='source'>※ –keywords</td></tr>
+	<tr><td class='source'>\ –keywords</td><td class='target'>…<br>reverse solidus<br>whack</td><td class='target'>…<br>baligtad na solidus<br>hiwa</td></tr>
+	<tr><td class='source'>@ -name</td><td class='target'>at sign</td><td class='target'>at-sign</td></tr>
+	<tr><td class='source'>@ –keywords</td><td class='target' rowSpan='4'>…</td><td class='target'>ampersat<br>arobase<br>arroba<br>at na simbolo<br>…<br>at-sign<br>commercial at<br>simbolong at<br>strudel</td></tr>
+	<tr><td class='source'>♪ –keywords</td><td class='target'>ikawalo<br>…<br>musika<br>nota</td></tr>
+	<tr><td class='source'>♭ –keywords</td><td class='target'>bemolle<br>…<br>musika<br>nota</td></tr>
+	<tr><td class='source'>♯ –keywords</td><td class='target'>dièse<br>diesis<br>musika<br>nota<br>…</td></tr>
+	<tr><td class='source'>` –keywords</td><td class='target'>grave accent</td><td class='target'>accent<br>grave<br>tono</td></tr>
+	<tr><td class='source'>´ –keywords</td><td class='target'>acute accent</td><td class='target'>accent<br>acute<br>tono</td></tr>
+	<tr><td class='source'>^ –keywords</td><td class='target'>circumflex accent</td><td class='target'>accent<br>chevron<br>circumflex<br>control<br>karit<br>pakupya<br>pointer<br>power<br>wedge<br>xor na simbolo</td></tr>
+	<tr><td class='source'>¨ –keywords</td><td class='target' rowSpan='6'>…</td><td class='target'>…<br>tréma<br>umlaut</td></tr>
+	<tr><td class='source'>‐ –keywords</td><td class='target'>gatlang<br>…</td></tr>
+	<tr><td class='source'>― –keywords</td><td class='target'>bar<br>gatlang<br>linya<br>…</td></tr>
+	<tr><td class='source'>_ –keywords</td><td class='target'>gatlang<br>linya<br>mababang gatlang<br>…<br>salungguhit<br>underdash</td></tr>
+	<tr><td class='source'>- –keywords</td><td class='target'>gatlang<br>gitling<br>gitling na minus<br>…<br>minus</td></tr>
+	<tr><td class='source'>… –keywords</td><td class='target'>…<br>mga tuldok<br>omisyon</td></tr>
+	<tr><td class='source'>。 -name</td><td class='target' rowSpan='2'>ideograpikong tuldok</td><td class='target'>ideographic na tuldok</td></tr>
+	<tr><td class='source'>。 –keywords</td><td class='target'>buong hinto<br>ideographic<br>ideographic na tuldok<br>tuldok</td></tr>
+	<tr><td class='source'>‧ –keywords</td><td class='target' rowSpan='8'>…</td><td class='target'>gatlang<br>gitling<br>…<br>hyphenation point<br>tuldok</td></tr>
+	<tr><td class='source'>‘ –keywords</td><td class='target'>apostrophe<br>…<br>kaliwang apostrophe<br>panipi<br>single quote<br>smart quote</td></tr>
+	<tr><td class='source'>’ –keywords</td><td class='target'>apostrophe<br>…<br>kanang apostrophe<br>panipi<br>single quote<br>smart quote</td></tr>
+	<tr><td class='source'>‚ –keywords</td><td class='target'>apostrophe<br>…<br>mababang kanang apostrophe<br>mababang panipi<br>panipi</td></tr>
+	<tr><td class='source'>' –keywords</td><td class='target'>apostrophe<br>…<br>panipi<br>single quote<br>typewriter apostrophe</td></tr>
+	<tr><td class='source'>“ –keywords</td><td class='target' rowSpan='2'>double quote<br>…<br>panipi<br>quote<br>smart quotation</td></tr>
+	<tr><td class='source'>” –keywords</td></tr>
+	<tr><td class='source'>„ –keywords</td><td class='target'>double quote<br>…<br>mababang panipi<br>panipi<br>quote<br>smart quotation</td></tr>
+	<tr><td class='source'>) -name</td><td class='target' rowSpan='2'>pang sara na panaklong</td><td class='target'>pansarang panaklong</td></tr>
+	<tr><td class='source'>) –keywords</td><td class='target'>bracket<br>panaklong<br>pansarang panaklong<br>paren<br>parens<br>round bracket</td></tr>
+	<tr><td class='source'>[ -name</td><td class='target' rowSpan='2'>bukas na kuwadradong braket</td><td class='target'>bukas na kuwadradong bracket</td></tr>
+	<tr><td class='source'>[ –keywords</td><td class='target'>bracket<br>bukas na kuwadradong bracket<br>crotchet<br>kuwadradong bracket</td></tr>
+	<tr><td class='source'>] -name</td><td class='target' rowSpan='2'>saradong kuwadrado na braket</td><td class='target'>saradong kuwadradong bracket</td></tr>
+	<tr><td class='source'>] –keywords</td><td class='target'>bracket<br>crotchet<br>kuwadradong bracket<br>saradong kuwadradong bracket</td></tr>
+	<tr><td class='source'>{ -name</td><td class='target' rowSpan='2'>bukas na kulot na braket</td><td class='target'>bukas na kulot na bracket</td></tr>
+	<tr><td class='source'>{ –keywords</td><td class='target'>brace<br>bracket<br>bukas na kulot na bracket<br>gullwing<br>kulot na brace<br>kulot na bracket</td></tr>
+	<tr><td class='source'>} –keywords</td><td class='target'>…</td><td class='target'>brace<br>bracket<br>gullwing<br>kulot na brace<br>kulot na bracket<br>saradong kulot na bracket<br>…</td></tr>
+	<tr><td class='source'>〔 -name</td><td class='target' rowSpan='2'>bukas na talukab ng pawikan na braket</td><td class='target'>bukas na tortoise shell bracket</td></tr>
+	<tr><td class='source'>〔 –keywords</td><td class='target'>bracket<br>bukas na tortoise shell bracket<br>shell bracket<br>tortoise shell bracket</td></tr>
+	<tr><td class='source'>〕 -name</td><td class='target' rowSpan='2'>saradong talukab ng pawikan na braket</td><td class='target'>saradong tortoise shell bracket</td></tr>
+	<tr><td class='source'>〕 –keywords</td><td class='target'>bracket<br>saradong tortoise shell bracket<br>shell bracket<br>tortoise shell bracket</td></tr>
+	<tr><td class='source'>〈 -name</td><td class='target' rowSpan='2'>bukas na anggulo na braket</td><td class='target'>bukas na anggulo na bracket</td></tr>
+	<tr><td class='source'>〈 –keywords</td><td class='target'>anggulong bracket<br>bracket<br>bukas na anggulo na bracket<br>bukas na anggulong bracket<br>chevron<br>mga diamond bracket<br>patusok na bracket<br>tuple</td></tr>
+	<tr><td class='source'>〉 -name</td><td class='target' rowSpan='2'>saradong anggulo na braket</td><td class='target'>saradong anggulong bracket</td></tr>
+	<tr><td class='source'>〉 –keywords</td><td class='target'>anggulong bracket<br>bracket<br>chevron<br>mga diamond na bracket<br>patusok na bracket<br>saradong anggulong bracket<br>tuple</td></tr>
+	<tr><td class='source'>《 -name</td><td class='target' rowSpan='2'>bukas na dobleng anggulo na braket</td><td class='target'>bukas na dobleng anggulo na bracket</td></tr>
+	<tr><td class='source'>《 –keywords</td><td class='target'>bracket<br>bukas na dobleng anggulo na bracket<br>bukas na dobleng anggulong bracket<br>dobleng anggulong bracket</td></tr>
+	<tr><td class='source'>》 -name</td><td class='target' rowSpan='2'>saradong dobleng anggulo na braket</td><td class='target'>saradong dobleng anggulo na bracket</td></tr>
+	<tr><td class='source'>》 –keywords</td><td class='target'>bracket<br>dobleng anggulong bracket<br>saradong dobleng anggulo na bracket<br>saradong dobleng anggulong bracket</td></tr>
+	<tr><td class='source'>「 -name</td><td class='target' rowSpan='2'>bukas na sulok na braket</td><td class='target'>bukas na corner bracket</td></tr>
+	<tr><td class='source'>「 –keywords</td><td class='target'>bracket<br>bukas na corner bracket<br>corner bracket</td></tr>
+	<tr><td class='source'>」 -name</td><td class='target' rowSpan='2'>saradong sulok na braket</td><td class='target'>saradong corner bracket</td></tr>
+	<tr><td class='source'>」 –keywords</td><td class='target'>bracket<br>corner bracket<br>saradong corner bracket</td></tr>
+	<tr><td class='source'>『 -name</td><td class='target' rowSpan='2'>bukas na guwang na sulok na braket</td><td class='target'>bukas na hollow corner bracket</td></tr>
+	<tr><td class='source'>『 –keywords</td><td class='target'>bracket<br>bukas na corner bracket<br>bukas na hollow corner bracket</td></tr>
+	<tr><td class='source'>』 -name</td><td class='target' rowSpan='2'>saradong guwang na sulok na braket</td><td class='target'>saradong hollow corner na bracket</td></tr>
+	<tr><td class='source'>』 –keywords</td><td class='target'>bracket<br>hollow na corner bracket<br>saradong hollow corner bracket<br>saradong hollow corner na bracket</td></tr>
+	<tr><td class='source'>〖 -name</td><td class='target' rowSpan='2'>bukas na guwang na lens na braket</td><td class='target'>bukas na hollow na lens bracket</td></tr>
+	<tr><td class='source'>〖 –keywords</td><td class='target'>bracket<br>bukas na hollow lens bracket<br>bukas na hollow na lens bracket<br>hollow na lens bracket<br>hollow na lenticular bracket</td></tr>
+	<tr><td class='source'>〗 -name</td><td class='target' rowSpan='2'>saradong guwang na lens na braket</td><td class='target'>saradong hollow lens bracket</td></tr>
+	<tr><td class='source'>〗 –keywords</td><td class='target'>bracket<br>hollow na lens bracket<br>hollow na lenticular bracket<br>saradong hollow lens bracket</td></tr>
+	<tr><td class='source'>【 -name</td><td class='target' rowSpan='2'>bukas na itim na lens na braket</td><td class='target'>bukas na itim na lens na bracket</td></tr>
+	<tr><td class='source'>【 –keywords</td><td class='target'>bracket<br>bukas na itim na lens bracket<br>bukas na itim na lens na bracket<br>lens na bracket<br>lenticular na bracket</td></tr>
+	<tr><td class='source'>】 -name</td><td class='target' rowSpan='2'>saradong itim na lens na braket</td><td class='target'>saradong itim na lens na bracket</td></tr>
+	<tr><td class='source'>】 –keywords</td><td class='target'>bracket<br>lens na bracket<br>lenticular na bracket<br>saradong itim na lens bracket<br>saradong itim na lens na bracket</td></tr>
+	<tr><td class='source' rowSpan='34'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td><td class='source'>∂ -name</td><td class='target' rowSpan='2'>parsiyal diperensiyal</td><td class='target'>partial na differential</td><td class='target' rowSpan='34'>comprehensive</td></tr>
+	<tr><td class='source'>∂ –keywords</td><td class='target'>differential<br>partial na differential</td></tr>
+	<tr><td class='source'>⁄ -name</td><td class='target' rowSpan='2'>praksyon slash</td><td class='target'>fraction na slash</td></tr>
+	<tr><td class='source'>⁄ –keywords</td><td class='target'>fraction na slash<br>stroke<br>virgule</td></tr>
+	<tr><td class='source'>⋈ -name</td><td class='target' rowSpan='2'>natural na sumali</td><td class='target'>natural na pagsasama</td></tr>
+	<tr><td class='source'>⋈ –keywords</td><td class='target'>binary operator<br>bowtie<br>natural na pagsasama</td></tr>
+	<tr><td class='source'>⋯ -name</td><td class='target' rowSpan='2'>midline pahalang na ellipsis</td><td class='target'>midline na pahalang na ellipsis</td></tr>
+	<tr><td class='source'>⋯ –keywords</td><td class='target'>ellipsis<br>midline na pahalang na ellipsis</td></tr>
+	<tr><td class='source'>⩽ -name</td><td class='target' rowSpan='2'>mas mababa sa nakaslant na equal</td><td class='target' rowSpan='2'>mas mababa sa naka-slant na equal</td></tr>
+	<tr><td class='source'>⩽ –keywords</td></tr>
+	<tr><td class='source'>⪍ -name</td><td class='target' rowSpan='2'>E13.1-431</td><td class='target' rowSpan='2'>mas mababa sa itaas ng similar na equal</td></tr>
+	<tr><td class='source'>⪍ –keywords</td></tr>
+	<tr><td class='source'>⪚ -name</td><td class='target' rowSpan='2'>E13.1-432</td><td class='target' rowSpan='2'>dobleng linya na equal na mas malaki sa</td></tr>
+	<tr><td class='source'>⪚ –keywords</td></tr>
+	<tr><td class='source'>⪺ -name</td><td class='target' rowSpan='2'>E13.1-433</td><td class='target' rowSpan='2'>kasunod sa itaas ng hindi halos katumbas</td></tr>
+	<tr><td class='source'>⪺ –keywords</td></tr>
+	<tr><td class='source'>₢ -name</td><td class='target' rowSpan='2'>E13.1-434</td><td class='target' rowSpan='2'>cruzeiro</td></tr>
+	<tr><td class='source'>₢ –keywords</td></tr>
+	<tr><td class='source'>₣ -name</td><td class='target' rowSpan='2'>E13.1-435</td><td class='target' rowSpan='2'>french franc</td></tr>
+	<tr><td class='source'>₣ –keywords</td></tr>
+	<tr><td class='source'>₤ -name</td><td class='target' rowSpan='2'>E13.1-436</td><td class='target' rowSpan='2'>lira</td></tr>
+	<tr><td class='source'>₤ –keywords</td></tr>
+	<tr><td class='source'>₰ -name</td><td class='target' rowSpan='2'>E13.1-437</td><td class='target' rowSpan='2'>german penny</td></tr>
+	<tr><td class='source'>₰ –keywords</td></tr>
+	<tr><td class='source'>₳ -name</td><td class='target' rowSpan='2'>E13.1-438</td><td class='target' rowSpan='2'>austral</td></tr>
+	<tr><td class='source'>₳ –keywords</td></tr>
+	<tr><td class='source'>₶ -name</td><td class='target' rowSpan='2'>E13.1-439</td><td class='target' rowSpan='2'>livre tournois</td></tr>
+	<tr><td class='source'>₶ –keywords</td></tr>
+	<tr><td class='source'>₷ -name</td><td class='target' rowSpan='2'>E13.1-440</td><td class='target' rowSpan='2'>spesmilo</td></tr>
+	<tr><td class='source'>₷ –keywords</td></tr>
+	<tr><td class='source'>₨ -name</td><td class='target' rowSpan='2'>E13.1-441</td><td class='target' rowSpan='2'>rupee</td></tr>
+	<tr><td class='source'>₨ –keywords</td></tr>
+	<tr><td class='source'>‫﷼ -name‬</td><td class='target' rowSpan='2'>E13.1-442</td><td class='target' rowSpan='2'>rial</td></tr>
+	<tr><td class='source'>‫﷼ –keywords‬</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='alphanum' href='#alphanum'>alphanum</a></td><td class='source'>🈴 –keywords</td><td class='target'>…</td><td class='target'>…<br>合</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source'>🈺 -name</td><td class='target'>nakaparisukat na ideograph ng pagpapatakbo</td><td class='target'>Hapones na button para sa salitang “open for business”</td></tr>
+	<tr><td class='source'>🈺 –keywords</td><td class='target'>…</td><td class='target'>…<br>Hapones na button para sa salitang “open for business”<br>…</td></tr>
+	<tr><td class='source'>🈵 -name</td><td class='target'>Hapones na button na ideograph ng walang bakante</td><td class='target'>Hapones na button para sa salitang “no vacancy”</td></tr>
+	<tr><td class='source'>🈵 –keywords</td><td class='target'>…</td><td class='target'>…<br>Hapones na button para sa salitang “no vacancy”<br>…</td></tr>
+	<tr><td class='source'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source'><a name='Ordinal' href='#Ordinal'>Ordinal</a></td><td class='source'>other</td><td class='target'>{0}?</td><td class='target'>Kunin ang ika-{0} (na) kanan.</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='44'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='44'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='4'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target' rowSpan='44'>▷missing◁</td><td class='target'>GyMMMMEEEEd</td><td class='target' rowSpan='44'>comprehensive</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Coptic' href='#Coptic'>Coptic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Ethiopic' href='#Ethiopic'>Ethiopic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>yMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>yMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>yMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>yyMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-full</td><td class='target'>ahmmsszzzz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-long</td><td class='target'>ahmmssz</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-medium</td><td class='target'>ahmmss</td></tr>
+	<tr><td class='source'>Formats - Standard - Time Formats-short</td><td class='target'>ahmm</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>yMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>yMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target' rowSpan='2'>yMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Indian' href='#Indian'>Indian</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Islamic' href='#Islamic'>Islamic</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Minguo' href='#Minguo'>Minguo</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Persian' href='#Persian'>Persian</a></td><td class='source'>Formats - Standard - Date Formats-full</td><td class='target'>GyMMMMEEEEd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-long</td><td class='target'>GyMMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-medium</td><td class='target'>GyMMMd</td></tr>
+	<tr><td class='source'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='http://www.unicode.org/unicode/copyright.html'>
-<img src='http://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height=50px;' alt='Access to Copyright and terms of use'></a><br>
-<script src='http://www.unicode.org/webscripts/lastModified.js'></script></div><script>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
 
