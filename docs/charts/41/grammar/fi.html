@@ -1,0 +1,535 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Finnish: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Finnish: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source' rowSpan='2'>Finnish</td><td class='source' rowSpan='2'><a name='fi' href='#fi'>fi</a></td><td class='source' rowSpan='2'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, genitive, partitive, instrumental, ablative, inessive, elative, illative, adessive, allative, essive, translative, abessive, comitative</td></tr>
+	<tr><td class='source'>units</td><td class='source'>nominative, partitive, elative, illative</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>one</td><td class='target'>{0} päivä</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1</span> päivä</div><div class='cldr_example'>❌  <span class='cldr_substituted'>2</span> päivä</div></td></tr>
+	<tr><td class='source'>other</td><td class='target'>{0} päivää</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>2</span> päivää</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1</span> päivää</div></td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='4'><a name='Case (for measurement units)' href='#Case (for measurement units)'>Case (for measurement units)</a></td><td class='source'>nominative</td><td class='target'>{0} päivä</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 metri</span> päivä</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 metristä</span> päivä</div></td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} päivää</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 metriä</span> päivää</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 metristä</span> päivää</div></td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} päivästä</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 metristä</span> päivästä</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 metriin</span> päivästä</div></td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} päivään</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1 metriin</span> päivään</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 metristä</span> päivään</div></td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>acceleration</td><td class='source' rowSpan='4'><a name='meters per second squared' href='#meters per second squared'>meters per second squared</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} metri per sekunti toiseen</td><td class='target'>1 metri per sekunti toiseen päivä</td><td class='target' rowSpan='4'>{0} metriä per sekunti toiseen</td><td class='target'>2 metriä per sekunti toiseen päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 metri per sekunti toiseen päivää</td><td class='target'>2 metriä per sekunti toiseen päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 metri per sekunti toiseen päivästä</td><td class='target'>2 metriä per sekunti toiseen päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 metri per sekunti toiseen päivään</td><td class='target'>2 metriä per sekunti toiseen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source'>nominative</td><td class='target'>{0} G-voima</td><td class='target'>1 G-voima päivä</td><td class='target' rowSpan='2'>{0} G-voimaa</td><td class='target'>2 G-voimaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} G-voimaa</td><td class='target'>1 G-voimaa päivää</td><td class='target'>2 G-voimaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} G-voimasta</td><td class='target'>1 G-voimasta päivästä</td><td class='target'>{0} G-voimasta</td><td class='target'>2 G-voimasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} G-voimaan</td><td class='target'>1 G-voimaan päivään</td><td class='target'>{0} G-voimaan</td><td class='target'>2 G-voimaan päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>angle</td><td class='source' rowSpan='4'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} kulmasekunti</td><td class='target'>1 kulmasekunti päivä</td><td class='target' rowSpan='2'>{0} kulmasekuntia</td><td class='target'>2 kulmasekuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kulmasekuntia</td><td class='target'>1 kulmasekuntia päivää</td><td class='target'>2 kulmasekuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kulmasekunnista</td><td class='target'>1 kulmasekunnista päivästä</td><td class='target'>{0} kulmasekunnista</td><td class='target'>2 kulmasekunnista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kulmasekuntiin</td><td class='target'>1 kulmasekuntiin päivään</td><td class='target'>{0} kulmasekuntiin</td><td class='target'>2 kulmasekuntiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} kulmaminuutti</td><td class='target'>1 kulmaminuutti päivä</td><td class='target' rowSpan='2'>{0} kulmaminuuttia</td><td class='target'>2 kulmaminuuttia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kulmaminuuttia</td><td class='target'>1 kulmaminuuttia päivää</td><td class='target'>2 kulmaminuuttia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kulmaminuutista</td><td class='target'>1 kulmaminuutista päivästä</td><td class='target'>{0} kulmaminuutista</td><td class='target'>2 kulmaminuutista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kulmaminuuttiin</td><td class='target'>1 kulmaminuuttiin päivään</td><td class='target'>{0} kulmaminuuttiin</td><td class='target'>2 kulmaminuuttiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} aste</td><td class='target'>1 aste päivä</td><td class='target' rowSpan='2'>{0} astetta</td><td class='target'>2 astetta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} astetta</td><td class='target'>1 astetta päivää</td><td class='target'>2 astetta päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} asteesta</td><td class='target'>1 asteesta päivästä</td><td class='target'>{0} asteesta</td><td class='target'>2 asteesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} asteeseen</td><td class='target'>1 asteeseen päivään</td><td class='target'>{0} asteeseen</td><td class='target'>2 asteeseen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source'>nominative</td><td class='target'>{0} radiaani</td><td class='target'>1 radiaani päivä</td><td class='target' rowSpan='2'>{0} radiaania</td><td class='target'>2 radiaania päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} radiaania</td><td class='target'>1 radiaania päivää</td><td class='target'>2 radiaania päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} radiaanista</td><td class='target'>1 radiaanista päivästä</td><td class='target'>{0} radiaanista</td><td class='target'>2 radiaanista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} radiaaniin</td><td class='target'>1 radiaaniin päivään</td><td class='target'>{0} radiaaniin</td><td class='target'>2 radiaaniin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>nominative</td><td class='target'>{0} kierros</td><td class='target'>1 kierros päivä</td><td class='target' rowSpan='2'>{0} kierrosta</td><td class='target'>2 kierrosta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kierrosta</td><td class='target'>1 kierrosta päivää</td><td class='target'>2 kierrosta päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kierroksesta</td><td class='target'>1 kierroksesta päivästä</td><td class='target'>{0} kierroksesta</td><td class='target'>2 kierroksesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kierrokseen</td><td class='target'>1 kierrokseen päivään</td><td class='target'>{0} kierrokseen</td><td class='target'>2 kierrokseen päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='16'>area</td><td class='source' rowSpan='4'><a name='square centimeters' href='#square centimeters'>square centimeters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} neliösenttimetri</td><td class='target'>1 neliösenttimetri päivä</td><td class='target' rowSpan='4'>{0} neliösenttimetriä</td><td class='target'>2 neliösenttimetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 neliösenttimetri päivää</td><td class='target'>2 neliösenttimetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 neliösenttimetri päivästä</td><td class='target'>2 neliösenttimetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 neliösenttimetri päivään</td><td class='target'>2 neliösenttimetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='square meters' href='#square meters'>square meters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} neliömetri</td><td class='target'>1 neliömetri päivä</td><td class='target' rowSpan='4'>{0} neliömetriä</td><td class='target'>2 neliömetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 neliömetri päivää</td><td class='target'>2 neliömetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 neliömetri päivästä</td><td class='target'>2 neliömetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 neliömetri päivään</td><td class='target'>2 neliömetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>nominative</td><td class='target'>{0} hehtaari</td><td class='target'>1 hehtaari päivä</td><td class='target' rowSpan='2'>{0} hehtaaria</td><td class='target'>2 hehtaaria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} hehtaaria</td><td class='target'>1 hehtaaria päivää</td><td class='target'>2 hehtaaria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} hehtaarista</td><td class='target'>1 hehtaarista päivästä</td><td class='target'>{0} hehtaarista</td><td class='target'>2 hehtaarista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} hehtaariin</td><td class='target'>1 hehtaariin päivään</td><td class='target'>{0} hehtaariin</td><td class='target'>2 hehtaariin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='square kilometers' href='#square kilometers'>square kilometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} neliökilometri</td><td class='target'>1 neliökilometri päivä</td><td class='target' rowSpan='4'>{0} neliökilometriä</td><td class='target'>2 neliökilometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 neliökilometri päivää</td><td class='target'>2 neliökilometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 neliökilometri päivästä</td><td class='target'>2 neliökilometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 neliökilometri päivään</td><td class='target'>2 neliökilometriä päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>concentration</td><td class='source' rowSpan='4'><a name='millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)' href='#millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)'>millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} millimooli litrassa</td><td class='target'>1 millimooli litrassa päivä</td><td class='target' rowSpan='4'>{0} millimoolia litrassa</td><td class='target'>2 millimoolia litrassa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 millimooli litrassa päivää</td><td class='target'>2 millimoolia litrassa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 millimooli litrassa päivästä</td><td class='target'>2 millimoolia litrassa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 millimooli litrassa päivään</td><td class='target'>2 millimoolia litrassa päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>consumption</td><td class='source' rowSpan='4'><a name='liters per 100 kilometers' href='#liters per 100 kilometers'>liters per 100 kilometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} litra / 100 km</td><td class='target'>1 litra / 100 km päivä</td><td class='target' rowSpan='4'>{0} litraa / 100 km</td><td class='target'>2 litraa / 100 km päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 litra / 100 km päivää</td><td class='target'>2 litraa / 100 km päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 litra / 100 km päivästä</td><td class='target'>2 litraa / 100 km päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 litra / 100 km päivään</td><td class='target'>2 litraa / 100 km päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='liters per kilometer' href='#liters per kilometer'>liters per kilometer</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} litra / kilometri</td><td class='target'>1 litra / kilometri päivä</td><td class='target' rowSpan='4'>{0} litraa / kilometri</td><td class='target'>2 litraa / kilometri päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 litra / kilometri päivää</td><td class='target'>2 litraa / kilometri päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 litra / kilometri päivästä</td><td class='target'>2 litraa / kilometri päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 litra / kilometri päivään</td><td class='target'>2 litraa / kilometri päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>digital</td><td class='source' rowSpan='4'><a name='bits' href='#bits'>bits</a></td><td class='source'>nominative</td><td class='target'>{0} bitti</td><td class='target'>1 bitti päivä</td><td class='target' rowSpan='2'>{0} bittiä</td><td class='target'>2 bittiä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} bittiä</td><td class='target'>1 bittiä päivää</td><td class='target'>2 bittiä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} bitistä</td><td class='target'>1 bitistä päivästä</td><td class='target'>{0} bitistä</td><td class='target'>2 bitistä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} bittiin</td><td class='target'>1 bittiin päivään</td><td class='target'>{0} bittiin</td><td class='target'>2 bittiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>nominative</td><td class='target'>{0} tavu</td><td class='target'>1 tavu päivä</td><td class='target' rowSpan='2'>{0} tavua</td><td class='target'>2 tavua päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} tavua</td><td class='target'>1 tavua päivää</td><td class='target'>2 tavua päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} tavusta</td><td class='target'>1 tavusta päivästä</td><td class='target'>{0} tavusta</td><td class='target'>2 tavusta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} tavuun</td><td class='target'>1 tavuun päivään</td><td class='target'>{0} tavuun</td><td class='target'>2 tavuun päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='36'>duration</td><td class='source' rowSpan='4'><a name='nanoseconds' href='#nanoseconds'>nanoseconds</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} nanosekunti</td><td class='target'>1 nanosekunti päivä</td><td class='target' rowSpan='4'>{0} nanosekuntia</td><td class='target'>2 nanosekuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 nanosekunti päivää</td><td class='target'>2 nanosekuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 nanosekunti päivästä</td><td class='target'>2 nanosekuntia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 nanosekunti päivään</td><td class='target'>2 nanosekuntia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='microseconds' href='#microseconds'>microseconds</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} mikrosekunti</td><td class='target'>1 mikrosekunti päivä</td><td class='target' rowSpan='4'>{0} mikrosekuntia</td><td class='target'>2 mikrosekuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 mikrosekunti päivää</td><td class='target'>2 mikrosekuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 mikrosekunti päivästä</td><td class='target'>2 mikrosekuntia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 mikrosekunti päivään</td><td class='target'>2 mikrosekuntia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='milliseconds' href='#milliseconds'>milliseconds</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} millisekunti</td><td class='target'>1 millisekunti päivä</td><td class='target' rowSpan='4'>{0} millisekuntia</td><td class='target'>2 millisekuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 millisekunti päivää</td><td class='target'>2 millisekuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 millisekunti päivästä</td><td class='target'>2 millisekuntia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 millisekunti päivään</td><td class='target'>2 millisekuntia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>nominative</td><td class='target'>{0} sekunti</td><td class='target'>1 sekunti päivä</td><td class='target' rowSpan='2'>{0} sekuntia</td><td class='target'>2 sekuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} sekuntia</td><td class='target'>1 sekuntia päivää</td><td class='target'>2 sekuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} sekunnista</td><td class='target'>1 sekunnista päivästä</td><td class='target'>{0} sekunnista</td><td class='target'>2 sekunnista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} sekuntiin</td><td class='target'>1 sekuntiin päivään</td><td class='target'>{0} sekuntiin</td><td class='target'>2 sekuntiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} minuutti</td><td class='target'>1 minuutti päivä</td><td class='target' rowSpan='2'>{0} minuuttia</td><td class='target'>2 minuuttia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} minuuttia</td><td class='target'>1 minuuttia päivää</td><td class='target'>2 minuuttia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} minuutista</td><td class='target'>1 minuutista päivästä</td><td class='target' rowSpan='2'>{0} minuutista</td><td class='target'>2 minuutista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} minuuttiin</td><td class='target'>1 minuuttiin päivään</td><td class='target'>2 minuutista päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} tunti</td><td class='target'>1 tunti päivä</td><td class='target' rowSpan='2'>{0} tuntia</td><td class='target'>2 tuntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} tuntia</td><td class='target'>1 tuntia päivää</td><td class='target'>2 tuntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} tunnista</td><td class='target'>1 tunnista päivästä</td><td class='target'>{0} tunnista</td><td class='target'>2 tunnista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} tuntiin</td><td class='target'>1 tuntiin päivään</td><td class='target'>{0} tuntiin</td><td class='target'>2 tuntiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} päivä</td><td class='target'>1 päivä päivä</td><td class='target' rowSpan='2'>{0} päivää</td><td class='target'>2 päivää päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} päivää</td><td class='target'>1 päivää päivää</td><td class='target'>2 päivää päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} päivästä</td><td class='target'>1 päivästä päivästä</td><td class='target'>{0} päivästä</td><td class='target'>2 päivästä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} päivään</td><td class='target'>1 päivään päivään</td><td class='target'>{0} päivään</td><td class='target'>2 päivään päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} pv</td><td class='target'>1 pv päivä</td><td class='target' rowSpan='4'>{0} pv</td><td class='target'>2 pv päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 pv päivää</td><td class='target'>2 pv päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 pv päivästä</td><td class='target'>2 pv päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 pv päivään</td><td class='target'>2 pv päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>nominative</td><td class='target'>{0} viikko</td><td class='target'>1 viikko päivä</td><td class='target' rowSpan='2'>{0} viikkoa</td><td class='target'>2 viikkoa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} viikkoa</td><td class='target'>1 viikkoa päivää</td><td class='target'>2 viikkoa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} viikosta</td><td class='target'>1 viikosta päivästä</td><td class='target'>{0} viikosta</td><td class='target'>2 viikosta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} viikkoon</td><td class='target'>1 viikkoon päivään</td><td class='target'>{0} viikkoon</td><td class='target'>2 viikkoon päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>electric-current</td><td class='source' rowSpan='4'><a name='milliamperes' href='#milliamperes'>milliamperes</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} milliampeeri</td><td class='target'>1 milliampeeri päivä</td><td class='target' rowSpan='4'>{0} milliampeeria</td><td class='target'>2 milliampeeria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 milliampeeri päivää</td><td class='target'>2 milliampeeria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 milliampeeri päivästä</td><td class='target'>2 milliampeeria päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 milliampeeri päivään</td><td class='target'>2 milliampeeria päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>nominative</td><td class='target'>{0} ampeeri</td><td class='target'>1 ampeeri päivä</td><td class='target' rowSpan='2'>{0} ampeeria</td><td class='target'>2 ampeeria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} ampeeria</td><td class='target'>1 ampeeria päivää</td><td class='target'>2 ampeeria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} ampeerista</td><td class='target'>1 ampeerista päivästä</td><td class='target'>{0} ampeerista</td><td class='target'>2 ampeerista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} ampeeriin</td><td class='target'>1 ampeeriin päivään</td><td class='target'>{0} ampeeriin</td><td class='target'>2 ampeeriin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>electric-resistance</td><td class='source' rowSpan='4'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>nominative</td><td class='target'>{0} ohmi</td><td class='target'>1 ohmi päivä</td><td class='target' rowSpan='2'>{0} ohmia</td><td class='target'>2 ohmia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} ohmia</td><td class='target'>1 ohmia päivää</td><td class='target'>2 ohmia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} ohmista</td><td class='target'>1 ohmista päivästä</td><td class='target'>{0} ohmista</td><td class='target'>2 ohmista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} ohmiin</td><td class='target'>1 ohmiin päivään</td><td class='target'>{0} ohmiin</td><td class='target'>2 ohmiin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>energy</td><td class='source' rowSpan='4'><a name='joules' href='#joules'>joules</a></td><td class='source'>nominative</td><td class='target'>{0} joule</td><td class='target'>1 joule päivä</td><td class='target' rowSpan='2'>{0} joulea</td><td class='target'>2 joulea päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} joulea</td><td class='target'>1 joulea päivää</td><td class='target'>2 joulea päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} joulesta</td><td class='target'>1 joulesta päivästä</td><td class='target'>{0} joulesta</td><td class='target'>2 joulesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} jouleen</td><td class='target'>1 jouleen päivään</td><td class='target'>{0} jouleen</td><td class='target'>2 jouleen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='newton-meter<br>( = 1 J)' href='#newton-meter<br>( = 1 J)'>newton-meter<br>( = 1 J)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} newtonmetri</td><td class='target'>1 newtonmetri päivä</td><td class='target' rowSpan='4'>{0} newtonmetriä</td><td class='target'>2 newtonmetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 newtonmetri päivää</td><td class='target'>2 newtonmetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 newtonmetri päivästä</td><td class='target'>2 newtonmetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 newtonmetri päivään</td><td class='target'>2 newtonmetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>nominative</td><td class='target'>{0} kalori</td><td class='target'>1 kalori päivä</td><td class='target' rowSpan='2'>{0} kaloria</td><td class='target'>2 kaloria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kaloria</td><td class='target'>1 kaloria päivää</td><td class='target'>2 kaloria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kalorista</td><td class='target'>1 kalorista päivästä</td><td class='target'>{0} kalorista</td><td class='target'>2 kalorista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kaloriin</td><td class='target'>1 kaloriin päivään</td><td class='target'>{0} kaloriin</td><td class='target'>2 kaloriin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilojoules' href='#kilojoules'>kilojoules</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilojoule</td><td class='target'>1 kilojoule päivä</td><td class='target' rowSpan='4'>{0} kilojoulea</td><td class='target'>2 kilojoulea päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilojoule päivää</td><td class='target'>2 kilojoulea päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilojoule päivästä</td><td class='target'>2 kilojoulea päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilojoule päivään</td><td class='target'>2 kilojoulea päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)' href='#kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)'>kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilowattitunti</td><td class='target'>1 kilowattitunti päivä</td><td class='target' rowSpan='4'>{0} kilowattituntia</td><td class='target'>2 kilowattituntia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilowattitunti päivää</td><td class='target'>2 kilowattituntia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilowattitunti päivästä</td><td class='target'>2 kilowattituntia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilowattitunti päivään</td><td class='target'>2 kilowattituntia päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>force</td><td class='source' rowSpan='4'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>nominative</td><td class='target'>{0} newton</td><td class='target'>1 newton päivä</td><td class='target' rowSpan='2'>{0} newtonia</td><td class='target'>2 newtonia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} newtonia</td><td class='target'>1 newtonia päivää</td><td class='target'>2 newtonia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} newtonista</td><td class='target'>1 newtonista päivästä</td><td class='target'>{0} newtonista</td><td class='target'>2 newtonista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} newtoniin</td><td class='target'>1 newtoniin päivään</td><td class='target'>{0} newtoniin</td><td class='target'>2 newtoniin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)' href='#kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)'>kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilowattitunti 100 kilometrillä</td><td class='target'>1 kilowattitunti 100 kilometrillä päivä</td><td class='target' rowSpan='4'>{0} kilowattituntia 100 kilometrillä</td><td class='target'>2 kilowattituntia 100 kilometrillä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilowattitunti 100 kilometrillä päivää</td><td class='target'>2 kilowattituntia 100 kilometrillä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilowattitunti 100 kilometrillä päivästä</td><td class='target'>2 kilowattituntia 100 kilometrillä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilowattitunti 100 kilometrillä päivään</td><td class='target'>2 kilowattituntia 100 kilometrillä päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='16'>frequency</td><td class='source' rowSpan='4'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>nominative</td><td class='target'>{0} hertsi</td><td class='target'>1 hertsi päivä</td><td class='target' rowSpan='2'>{0} hertsiä</td><td class='target'>2 hertsiä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} hertsiä</td><td class='target'>1 hertsiä päivää</td><td class='target'>2 hertsiä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} hertsistä</td><td class='target'>1 hertsistä päivästä</td><td class='target'>{0} hertsistä</td><td class='target'>2 hertsistä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} hertsiin</td><td class='target'>1 hertsiin päivään</td><td class='target'>{0} hertsiin</td><td class='target'>2 hertsiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilohertsi</td><td class='target'>1 kilohertsi päivä</td><td class='target' rowSpan='4'>{0} kilohertsiä</td><td class='target'>2 kilohertsiä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilohertsi päivää</td><td class='target'>2 kilohertsiä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilohertsi päivästä</td><td class='target'>2 kilohertsiä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilohertsi päivään</td><td class='target'>2 kilohertsiä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} megahertsi</td><td class='target'>1 megahertsi päivä</td><td class='target' rowSpan='4'>{0} megahertsiä</td><td class='target'>2 megahertsiä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 megahertsi päivää</td><td class='target'>2 megahertsiä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 megahertsi päivästä</td><td class='target'>2 megahertsiä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 megahertsi päivään</td><td class='target'>2 megahertsiä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} gigahertsi</td><td class='target'>1 gigahertsi päivä</td><td class='target' rowSpan='4'>{0} gigahertsiä</td><td class='target'>2 gigahertsiä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 gigahertsi päivää</td><td class='target'>2 gigahertsiä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 gigahertsi päivästä</td><td class='target'>2 gigahertsiä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 gigahertsi päivään</td><td class='target'>2 gigahertsiä päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>graphics</td><td class='source' rowSpan='4'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>nominative</td><td class='target'>{0} pikseli</td><td class='target'>1 pikseli päivä</td><td class='target' rowSpan='2'>{0} pikseliä</td><td class='target'>2 pikseliä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} pikseliä</td><td class='target'>1 pikseliä päivää</td><td class='target'>2 pikseliä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} pikselistä</td><td class='target'>1 pikselistä päivästä</td><td class='target'>{0} pikselistä</td><td class='target'>2 pikselistä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} pikseliin</td><td class='target'>1 pikseliin päivään</td><td class='target'>{0} pikseliin</td><td class='target'>2 pikseliin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>illuminance</td><td class='source' rowSpan='4'><a name='lux' href='#lux'>lux</a></td><td class='source'>nominative</td><td class='target'>{0} luksi</td><td class='target'>1 luksi päivä</td><td class='target' rowSpan='2'>{0} luksia</td><td class='target'>2 luksia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} luksia</td><td class='target'>1 luksia päivää</td><td class='target'>2 luksia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} luksista</td><td class='target'>1 luksista päivästä</td><td class='target'>{0} luksista</td><td class='target'>2 luksista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} luksiin</td><td class='target'>1 luksiin päivään</td><td class='target'>{0} luksiin</td><td class='target'>2 luksiin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='36'>length</td><td class='source' rowSpan='4'><a name='picometers' href='#picometers'>picometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} pikometri</td><td class='target'>1 pikometri päivä</td><td class='target' rowSpan='4'>{0} pikometriä</td><td class='target'>2 pikometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 pikometri päivää</td><td class='target'>2 pikometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 pikometri päivästä</td><td class='target'>2 pikometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 pikometri päivään</td><td class='target'>2 pikometriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='nanometers' href='#nanometers'>nanometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} nanometri</td><td class='target'>1 nanometri päivä</td><td class='target' rowSpan='4'>{0} nanometriä</td><td class='target'>2 nanometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 nanometri päivää</td><td class='target'>2 nanometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 nanometri päivästä</td><td class='target'>2 nanometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 nanometri päivään</td><td class='target'>2 nanometriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='micrometers' href='#micrometers'>micrometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} mikrometri</td><td class='target'>1 mikrometri päivä</td><td class='target' rowSpan='4'>{0} mikrometriä</td><td class='target'>2 mikrometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 mikrometri päivää</td><td class='target'>2 mikrometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 mikrometri päivästä</td><td class='target'>2 mikrometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 mikrometri päivään</td><td class='target'>2 mikrometriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='millimeters' href='#millimeters'>millimeters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} millimetri</td><td class='target'>1 millimetri päivä</td><td class='target' rowSpan='4'>{0} millimetriä</td><td class='target'>2 millimetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 millimetri päivää</td><td class='target'>2 millimetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 millimetri päivästä</td><td class='target'>2 millimetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 millimetri päivään</td><td class='target'>2 millimetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='centimeters' href='#centimeters'>centimeters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} senttimetri</td><td class='target'>1 senttimetri päivä</td><td class='target' rowSpan='4'>{0} senttimetriä</td><td class='target'>2 senttimetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 senttimetri päivää</td><td class='target'>2 senttimetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 senttimetri päivästä</td><td class='target'>2 senttimetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 senttimetri päivään</td><td class='target'>2 senttimetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='decimeters' href='#decimeters'>decimeters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} desimetri</td><td class='target'>1 desimetri päivä</td><td class='target' rowSpan='4'>{0} desimetriä</td><td class='target'>2 desimetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 desimetri päivää</td><td class='target'>2 desimetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 desimetri päivästä</td><td class='target'>2 desimetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 desimetri päivään</td><td class='target'>2 desimetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='meters' href='#meters'>meters</a></td><td class='source'>nominative</td><td class='target'>{0} metri</td><td class='target'>1 metri päivä</td><td class='target' rowSpan='2'>{0} metriä</td><td class='target'>2 metriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} metriä</td><td class='target'>1 metriä päivää</td><td class='target'>2 metriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} metristä</td><td class='target'>1 metristä päivästä</td><td class='target'>{0} metristä</td><td class='target'>2 metristä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} metriin</td><td class='target'>1 metriin päivään</td><td class='target'>{0} metriin</td><td class='target'>2 metriin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilometers' href='#kilometers'>kilometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilometri</td><td class='target'>1 kilometri päivä</td><td class='target' rowSpan='4'>{0} kilometriä</td><td class='target'>2 kilometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilometri päivää</td><td class='target'>2 kilometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilometri päivästä</td><td class='target'>2 kilometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilometri päivään</td><td class='target'>2 kilometriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source'>nominative</td><td class='target'>{0} peninkulma</td><td class='target'>1 peninkulma päivä</td><td class='target' rowSpan='2'>{0} peninkulmaa</td><td class='target'>2 peninkulmaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} peninkulmaa</td><td class='target'>1 peninkulmaa päivää</td><td class='target'>2 peninkulmaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} peninkulmasta</td><td class='target'>1 peninkulmasta päivästä</td><td class='target'>{0} peninkulmasta</td><td class='target'>2 peninkulmasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} peninkulmaan</td><td class='target'>1 peninkulmaan päivään</td><td class='target'>{0} peninkulmaan</td><td class='target'>2 peninkulmaan päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>luminous-flux</td><td class='source' rowSpan='4'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>nominative</td><td class='target'>{0} luumen</td><td class='target'>1 luumen päivä</td><td class='target' rowSpan='2'>{0} luumenia</td><td class='target'>2 luumenia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} luumenia</td><td class='target'>1 luumenia päivää</td><td class='target'>2 luumenia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} luumenista</td><td class='target'>1 luumenista päivästä</td><td class='target'>{0} luumenista</td><td class='target'>2 luumenista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} luumeniin</td><td class='target'>1 luumeniin päivään</td><td class='target'>{0} luumeniin</td><td class='target'>2 luumeniin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>luminous-intensity</td><td class='source' rowSpan='4'><a name='candela' href='#candela'>candela</a></td><td class='source'>nominative</td><td class='target'>{0} kandela</td><td class='target'>1 kandela päivä</td><td class='target' rowSpan='2'>{0} kandelaa</td><td class='target'>2 kandelaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kandelaa</td><td class='target'>1 kandelaa päivää</td><td class='target'>2 kandelaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kandelasta</td><td class='target'>1 kandelasta päivästä</td><td class='target'>{0} kandelasta</td><td class='target'>2 kandelasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kandelaan</td><td class='target'>1 kandelaan päivään</td><td class='target'>{0} kandelaan</td><td class='target'>2 kandelaan päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='24'>mass</td><td class='source' rowSpan='4'><a name='micrograms' href='#micrograms'>micrograms</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} mikrogramma</td><td class='target'>1 mikrogramma päivä</td><td class='target' rowSpan='4'>{0} mikrogrammaa</td><td class='target'>2 mikrogrammaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 mikrogramma päivää</td><td class='target'>2 mikrogrammaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 mikrogramma päivästä</td><td class='target'>2 mikrogrammaa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 mikrogramma päivään</td><td class='target'>2 mikrogrammaa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='milligrams' href='#milligrams'>milligrams</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} milligramma</td><td class='target'>1 milligramma päivä</td><td class='target' rowSpan='4'>{0} milligrammaa</td><td class='target'>2 milligrammaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 milligramma päivää</td><td class='target'>2 milligrammaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 milligramma päivästä</td><td class='target'>2 milligrammaa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 milligramma päivään</td><td class='target'>2 milligrammaa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>nominative</td><td class='target'>{0} karaatti</td><td class='target'>1 karaatti päivä</td><td class='target' rowSpan='2'>{0} karaattia</td><td class='target'>2 karaattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} karaattia</td><td class='target'>1 karaattia päivää</td><td class='target'>2 karaattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} karaatista</td><td class='target'>1 karaatista päivästä</td><td class='target'>{0} karaatista</td><td class='target'>2 karaatista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} karaattiin</td><td class='target'>1 karaattiin päivään</td><td class='target'>{0} karaattiin</td><td class='target'>2 karaattiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='grams' href='#grams'>grams</a></td><td class='source'>nominative</td><td class='target'>{0} gramma</td><td class='target'>1 gramma päivä</td><td class='target' rowSpan='2'>{0} grammaa</td><td class='target'>2 grammaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} grammaa</td><td class='target'>1 grammaa päivää</td><td class='target'>2 grammaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} grammasta</td><td class='target'>1 grammasta päivästä</td><td class='target'>{0} grammasta</td><td class='target'>2 grammasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} grammaan</td><td class='target'>1 grammaan päivään</td><td class='target'>{0} grammaan</td><td class='target'>2 grammaan päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>nominative</td><td class='target'>{0} kilogramma</td><td class='target'>1 kilogramma päivä</td><td class='target' rowSpan='2'>{0} kilogrammaa</td><td class='target'>2 kilogrammaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kilogrammaa</td><td class='target'>1 kilogrammaa päivää</td><td class='target'>2 kilogrammaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kilogrammasta</td><td class='target'>1 kilogrammasta päivästä</td><td class='target'>{0} kilogrammasta</td><td class='target'>2 kilogrammasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kilogrammaan</td><td class='target'>1 kilogrammaan päivään</td><td class='target'>{0} kilogrammaan</td><td class='target'>2 kilogrammaan päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>nominative</td><td class='target'>{0} tonni</td><td class='target'>1 tonni päivä</td><td class='target' rowSpan='2'>{0} tonnia</td><td class='target'>2 tonnia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} tonnia</td><td class='target'>1 tonnia päivää</td><td class='target'>2 tonnia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} tonnista</td><td class='target'>1 tonnista päivästä</td><td class='target'>{0} tonnista</td><td class='target'>2 tonnista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} tonniin</td><td class='target'>1 tonniin päivään</td><td class='target'>{0} tonniin</td><td class='target'>2 tonniin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>portion</td><td class='source' rowSpan='4'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>nominative</td><td class='target'>{0} miljoonasosa</td><td class='target'>1 miljoonasosa päivä</td><td class='target' rowSpan='2'>{0} miljoonasosaa</td><td class='target'>2 miljoonasosaa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} miljoonasosaa</td><td class='target'>1 miljoonasosaa päivää</td><td class='target'>2 miljoonasosaa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} miljoonasosasta</td><td class='target'>1 miljoonasosasta päivästä</td><td class='target'>{0} miljoonasosasta</td><td class='target'>2 miljoonasosasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} miljoonasosaan</td><td class='target'>1 miljoonasosaan päivään</td><td class='target'>{0} miljoonasosaan</td><td class='target'>2 miljoonasosaan päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>nominative</td><td class='target'>{0} peruspiste</td><td class='target'>1 peruspiste päivä</td><td class='target' rowSpan='2'>{0} peruspistettä</td><td class='target'>2 peruspistettä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} peruspistettä</td><td class='target'>1 peruspistettä päivää</td><td class='target'>2 peruspistettä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} peruspisteestä</td><td class='target'>1 peruspisteestä päivästä</td><td class='target'>{0} peruspisteestä</td><td class='target'>2 peruspisteestä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} peruspisteeseen</td><td class='target'>1 peruspisteeseen päivään</td><td class='target'>{0} peruspisteeseen</td><td class='target'>2 peruspisteeseen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='permille' href='#permille'>permille</a></td><td class='source'>nominative</td><td class='target'>{0} promille</td><td class='target'>1 promille päivä</td><td class='target' rowSpan='2'>{0} promillea</td><td class='target'>2 promillea päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} promillea</td><td class='target'>1 promillea päivää</td><td class='target'>2 promillea päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} promillesta</td><td class='target'>1 promillesta päivästä</td><td class='target'>{0} promillesta</td><td class='target'>2 promillesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} promilleen</td><td class='target'>1 promilleen päivään</td><td class='target'>{0} promilleen</td><td class='target'>2 promilleen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='percent' href='#percent'>percent</a></td><td class='source'>nominative</td><td class='target'>{0} prosentti</td><td class='target'>1 prosentti päivä</td><td class='target' rowSpan='2'>{0} prosenttia</td><td class='target'>2 prosenttia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} prosenttia</td><td class='target'>1 prosenttia päivää</td><td class='target'>2 prosenttia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} prosentista</td><td class='target'>1 prosentista päivästä</td><td class='target'>{0} prosentista</td><td class='target'>2 prosentista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} prosenttiin</td><td class='target'>1 prosenttiin päivään</td><td class='target'>{0} prosenttiin</td><td class='target'>2 prosenttiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>nominative</td><td class='target'>{0} karaatti</td><td class='target'>1 karaatti päivä</td><td class='target' rowSpan='2'>{0} karaattia</td><td class='target'>2 karaattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} karaattia</td><td class='target'>1 karaattia päivää</td><td class='target'>2 karaattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} karaatista</td><td class='target'>1 karaatista päivästä</td><td class='target'>{0} karaatista</td><td class='target'>2 karaatista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} karaattiin</td><td class='target'>1 karaattiin päivään</td><td class='target'>{0} karaattiin</td><td class='target'>2 karaattiin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='20'>power</td><td class='source' rowSpan='4'><a name='milliwatts' href='#milliwatts'>milliwatts</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} milliwatti</td><td class='target'>1 milliwatti päivä</td><td class='target' rowSpan='4'>{0} milliwattia</td><td class='target'>2 milliwattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 milliwatti päivää</td><td class='target'>2 milliwattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 milliwatti päivästä</td><td class='target'>2 milliwattia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 milliwatti päivään</td><td class='target'>2 milliwattia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='watts' href='#watts'>watts</a></td><td class='source'>nominative</td><td class='target'>{0} watti</td><td class='target'>1 watti päivä</td><td class='target' rowSpan='2'>{0} wattia</td><td class='target'>2 wattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} wattia</td><td class='target'>1 wattia päivää</td><td class='target'>2 wattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} watista</td><td class='target'>1 watista päivästä</td><td class='target'>{0} watista</td><td class='target'>2 watista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} wattiin</td><td class='target'>1 wattiin päivään</td><td class='target'>{0} wattiin</td><td class='target'>2 wattiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilowatts' href='#kilowatts'>kilowatts</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilowatti</td><td class='target'>1 kilowatti päivä</td><td class='target' rowSpan='4'>{0} kilowattia</td><td class='target'>2 kilowattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilowatti päivää</td><td class='target'>2 kilowattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilowatti päivästä</td><td class='target'>2 kilowattia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilowatti päivään</td><td class='target'>2 kilowattia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megawatts' href='#megawatts'>megawatts</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} megawatti</td><td class='target'>1 megawatti päivä</td><td class='target' rowSpan='4'>{0} megawattia</td><td class='target'>2 megawattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 megawatti päivää</td><td class='target'>2 megawattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 megawatti päivästä</td><td class='target'>2 megawattia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 megawatti päivään</td><td class='target'>2 megawattia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='gigawatts' href='#gigawatts'>gigawatts</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} gigawatti</td><td class='target'>1 gigawatti päivä</td><td class='target' rowSpan='4'>{0} gigawattia</td><td class='target'>2 gigawattia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 gigawatti päivää</td><td class='target'>2 gigawattia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 gigawatti päivästä</td><td class='target'>2 gigawattia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 gigawatti päivään</td><td class='target'>2 gigawattia päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='28'>pressure</td><td class='source' rowSpan='4'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>nominative</td><td class='target'>{0} pascal</td><td class='target'>1 pascal päivä</td><td class='target' rowSpan='2'>{0} pascalia</td><td class='target'>2 pascalia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} pascalia</td><td class='target'>1 pascalia päivää</td><td class='target'>2 pascalia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} pascalista</td><td class='target'>1 pascalista päivästä</td><td class='target'>{0} pascalista</td><td class='target'>2 pascalista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} pascaliin</td><td class='target'>1 pascaliin päivään</td><td class='target'>{0} pascaliin</td><td class='target'>2 pascaliin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hectopascal<br>( = 1 mbar)' href='#hectopascal<br>( = 1 mbar)'>hectopascal<br>( = 1 mbar)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} hehtopascal</td><td class='target'>1 hehtopascal päivä</td><td class='target' rowSpan='4'>{0} hehtopascalia</td><td class='target'>2 hehtopascalia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 hehtopascal päivää</td><td class='target'>2 hehtopascalia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 hehtopascal päivästä</td><td class='target'>2 hehtopascalia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 hehtopascal päivään</td><td class='target'>2 hehtopascalia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='millibars' href='#millibars'>millibars</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} millibaari</td><td class='target'>1 millibaari päivä</td><td class='target' rowSpan='4'>{0} millibaaria</td><td class='target'>2 millibaaria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 millibaari päivää</td><td class='target'>2 millibaaria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 millibaari päivästä</td><td class='target'>2 millibaaria päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 millibaari päivään</td><td class='target'>2 millibaaria päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kilopascals' href='#kilopascals'>kilopascals</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilopascal</td><td class='target'>1 kilopascal päivä</td><td class='target' rowSpan='4'>{0} kilopascalia</td><td class='target'>2 kilopascalia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilopascal päivää</td><td class='target'>2 kilopascalia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilopascal päivästä</td><td class='target'>2 kilopascalia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilopascal päivään</td><td class='target'>2 kilopascalia päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='bars' href='#bars'>bars</a></td><td class='source'>nominative</td><td class='target'>{0} baari</td><td class='target'>1 baari päivä</td><td class='target' rowSpan='2'>{0} baaria</td><td class='target'>2 baaria päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} baaria</td><td class='target'>1 baaria päivää</td><td class='target'>2 baaria päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} baarista</td><td class='target'>1 baarista päivästä</td><td class='target'>{0} baarista</td><td class='target'>2 baarista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} baariin</td><td class='target'>1 baariin päivään</td><td class='target'>{0} baariin</td><td class='target'>2 baariin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>nominative</td><td class='target'>{0} normaali-ilmakehä</td><td class='target'>1 normaali-ilmakehä päivä</td><td class='target' rowSpan='2'>{0} normaali-ilmakehää</td><td class='target'>2 normaali-ilmakehää päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} normaali-ilmakehää</td><td class='target'>1 normaali-ilmakehää päivää</td><td class='target'>2 normaali-ilmakehää päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} normaali-ilmakehästä</td><td class='target'>1 normaali-ilmakehästä päivästä</td><td class='target'>{0} normaali-ilmakehästä</td><td class='target'>2 normaali-ilmakehästä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} normaali-ilmakehään</td><td class='target'>1 normaali-ilmakehään päivään</td><td class='target'>{0} normaali-ilmakehään</td><td class='target'>2 normaali-ilmakehään päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megapascals' href='#megapascals'>megapascals</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} megapascal</td><td class='target'>1 megapascal päivä</td><td class='target' rowSpan='4'>{0} megapascalia</td><td class='target'>2 megapascalia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 megapascal päivää</td><td class='target'>2 megapascalia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 megapascal päivästä</td><td class='target'>2 megapascalia päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 megapascal päivään</td><td class='target'>2 megapascalia päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='8'>speed</td><td class='source' rowSpan='4'><a name='kilometer-per-hour<br>( = 0.2˙7 m/s)' href='#kilometer-per-hour<br>( = 0.2˙7 m/s)'>kilometer-per-hour<br>( = 0.2˙7 m/s)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kilometri tunnissa</td><td class='target'>1 kilometri tunnissa päivä</td><td class='target' rowSpan='4'>{0} kilometriä tunnissa</td><td class='target'>2 kilometriä tunnissa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kilometri tunnissa päivää</td><td class='target'>2 kilometriä tunnissa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kilometri tunnissa päivästä</td><td class='target'>2 kilometriä tunnissa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kilometri tunnissa päivään</td><td class='target'>2 kilometriä tunnissa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='meters per second' href='#meters per second'>meters per second</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} metri sekunnissa</td><td class='target'>1 metri sekunnissa päivä</td><td class='target' rowSpan='4'>{0} metriä sekunnissa</td><td class='target'>2 metriä sekunnissa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 metri sekunnissa päivää</td><td class='target'>2 metriä sekunnissa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 metri sekunnissa päivästä</td><td class='target'>2 metriä sekunnissa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 metri sekunnissa päivään</td><td class='target'>2 metriä sekunnissa päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>substance-amount</td><td class='source' rowSpan='4'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>nominative</td><td class='target'>{0} mooli</td><td class='target'>1 mooli päivä</td><td class='target' rowSpan='2'>{0} moolia</td><td class='target'>2 moolia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} moolia</td><td class='target'>1 moolia päivää</td><td class='target'>2 moolia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} moolista</td><td class='target'>1 moolista päivästä</td><td class='target'>{0} moolista</td><td class='target'>2 moolista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} mooliin</td><td class='target'>1 mooliin päivään</td><td class='target'>{0} mooliin</td><td class='target'>2 mooliin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='12'>temperature</td><td class='source' rowSpan='4'><a name='°' href='#°'>°</a></td><td class='source'>nominative</td><td class='target'>{0} aste</td><td class='target'>1 aste päivä</td><td class='target' rowSpan='2'>{0} astetta</td><td class='target'>2 astetta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} astetta</td><td class='target'>1 astetta päivää</td><td class='target'>2 astetta päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} asteesta</td><td class='target'>1 asteesta päivästä</td><td class='target'>{0} asteesta</td><td class='target'>2 asteesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} asteeseen</td><td class='target'>1 asteeseen päivään</td><td class='target'>{0} asteeseen</td><td class='target'>2 asteeseen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>nominative</td><td class='target'>{0} celsiusaste</td><td class='target'>1 celsiusaste päivä</td><td class='target' rowSpan='2'>{0} celsiusastetta</td><td class='target'>2 celsiusastetta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} celsiusastetta</td><td class='target'>1 celsiusastetta päivää</td><td class='target'>2 celsiusastetta päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} celsiusasteesta</td><td class='target'>1 celsiusasteesta päivästä</td><td class='target'>{0} celsiusasteesta</td><td class='target'>2 celsiusasteesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} celsiusasteeseen</td><td class='target'>1 celsiusasteeseen päivään</td><td class='target'>{0} celsiusasteeseen</td><td class='target'>2 celsiusasteeseen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>nominative</td><td class='target'>{0} kelvin</td><td class='target'>1 kelvin päivä</td><td class='target' rowSpan='2'>{0} kelviniä</td><td class='target'>2 kelviniä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kelviniä</td><td class='target'>1 kelviniä päivää</td><td class='target'>2 kelviniä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kelvinistä</td><td class='target'>1 kelvinistä päivästä</td><td class='target'>{0} kelvinistä</td><td class='target'>2 kelvinistä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kelviniin</td><td class='target'>1 kelviniin päivään</td><td class='target'>{0} kelviniin</td><td class='target'>2 kelviniin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>typewidth</td><td class='source' rowSpan='4'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source'>nominative</td><td class='target'>{0} em</td><td class='target'>1 em päivä</td><td class='target' rowSpan='2'>{0} em-väliä</td><td class='target'>2 em-väliä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} em-väliä</td><td class='target'>1 em-väliä päivää</td><td class='target'>2 em-väliä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} em-välistä</td><td class='target'>1 em-välistä päivästä</td><td class='target'>{0} em-välistä</td><td class='target'>2 em-välistä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} em-väliin</td><td class='target'>1 em-väliin päivään</td><td class='target'>{0} em-väliin</td><td class='target'>2 em-väliin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='4'>voltage</td><td class='source' rowSpan='4'><a name='volts' href='#volts'>volts</a></td><td class='source'>nominative</td><td class='target'>{0} voltti</td><td class='target'>1 voltti päivä</td><td class='target' rowSpan='2'>{0} volttia</td><td class='target'>2 volttia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} volttia</td><td class='target'>1 volttia päivää</td><td class='target'>2 volttia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} voltista</td><td class='target'>1 voltista päivästä</td><td class='target'>{0} voltista</td><td class='target'>2 voltista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} volttiin</td><td class='target'>1 volttiin päivään</td><td class='target'>{0} volttiin</td><td class='target'>2 volttiin päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='44'>volume</td><td class='source' rowSpan='4'><a name='cubic-centimeter<br>( = 1 mL)' href='#cubic-centimeter<br>( = 1 mL)'>cubic-centimeter<br>( = 1 mL)</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kuutiosenttimetri</td><td class='target'>1 kuutiosenttimetri päivä</td><td class='target' rowSpan='4'>{0} kuutiosenttimetriä</td><td class='target'>2 kuutiosenttimetriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kuutiosenttimetri päivää</td><td class='target'>2 kuutiosenttimetriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kuutiosenttimetri päivästä</td><td class='target'>2 kuutiosenttimetriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kuutiosenttimetri päivään</td><td class='target'>2 kuutiosenttimetriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='milliliters' href='#milliliters'>milliliters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} millilitra</td><td class='target'>1 millilitra päivä</td><td class='target' rowSpan='4'>{0} millilitraa</td><td class='target'>2 millilitraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 millilitra päivää</td><td class='target'>2 millilitraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 millilitra päivästä</td><td class='target'>2 millilitraa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 millilitra päivään</td><td class='target'>2 millilitraa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='centiliters' href='#centiliters'>centiliters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} senttilitra</td><td class='target'>1 senttilitra päivä</td><td class='target' rowSpan='4'>{0} senttilitraa</td><td class='target'>2 senttilitraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 senttilitra päivää</td><td class='target'>2 senttilitraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 senttilitra päivästä</td><td class='target'>2 senttilitraa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 senttilitra päivään</td><td class='target'>2 senttilitraa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='deciliters' href='#deciliters'>deciliters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} desilitra</td><td class='target'>1 desilitra päivä</td><td class='target' rowSpan='4'>{0} desilitraa</td><td class='target'>2 desilitraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 desilitra päivää</td><td class='target'>2 desilitraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 desilitra päivästä</td><td class='target'>2 desilitraa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 desilitra päivään</td><td class='target'>2 desilitraa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source'>nominative</td><td class='target'>{0} teekuppi</td><td class='target'>1 teekuppi päivä</td><td class='target' rowSpan='2'>{0} teekuppia</td><td class='target'>2 teekuppia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} teekuppia</td><td class='target'>1 teekuppia päivää</td><td class='target'>2 teekuppia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} teekupista</td><td class='target'>1 teekupista päivästä</td><td class='target'>{0} teekupista</td><td class='target'>2 teekupista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} teekuppiin</td><td class='target'>1 teekuppiin päivään</td><td class='target'>{0} teekuppiin</td><td class='target'>2 teekuppiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source'>nominative</td><td class='target'>{0} tuoppi</td><td class='target'>1 tuoppi päivä</td><td class='target' rowSpan='2'>{0} tuoppia</td><td class='target'>2 tuoppia päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} tuoppia</td><td class='target'>1 tuoppia päivää</td><td class='target'>2 tuoppia päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} tuopista</td><td class='target'>1 tuopista päivästä</td><td class='target'>{0} tuopista</td><td class='target'>2 tuopista päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} tuoppiin</td><td class='target'>1 tuoppiin päivään</td><td class='target'>{0} tuoppiin</td><td class='target'>2 tuoppiin päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='liters' href='#liters'>liters</a></td><td class='source'>nominative</td><td class='target'>{0} litra</td><td class='target'>1 litra päivä</td><td class='target' rowSpan='2'>{0} litraa</td><td class='target'>2 litraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} litraa</td><td class='target'>1 litraa päivää</td><td class='target'>2 litraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} litrasta</td><td class='target'>1 litrasta päivästä</td><td class='target'>{0} litrasta</td><td class='target'>2 litrasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} litraan</td><td class='target'>1 litraan päivään</td><td class='target'>{0} litraan</td><td class='target'>2 litraan päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='hectoliters' href='#hectoliters'>hectoliters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} hehtolitra</td><td class='target'>1 hehtolitra päivä</td><td class='target' rowSpan='4'>{0} hehtolitraa</td><td class='target'>2 hehtolitraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 hehtolitra päivää</td><td class='target'>2 hehtolitraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 hehtolitra päivästä</td><td class='target'>2 hehtolitraa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 hehtolitra päivään</td><td class='target'>2 hehtolitraa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic meters' href='#cubic meters'>cubic meters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kuutiometri</td><td class='target'>1 kuutiometri päivä</td><td class='target' rowSpan='4'>{0} kuutiometriä</td><td class='target'>2 kuutiometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kuutiometri päivää</td><td class='target'>2 kuutiometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kuutiometri päivästä</td><td class='target'>2 kuutiometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kuutiometri päivään</td><td class='target'>2 kuutiometriä päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='megaliters' href='#megaliters'>megaliters</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} megalitra</td><td class='target'>1 megalitra päivä</td><td class='target' rowSpan='4'>{0} megalitraa</td><td class='target'>2 megalitraa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 megalitra päivää</td><td class='target'>2 megalitraa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 megalitra päivästä</td><td class='target'>2 megalitraa päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 megalitra päivään</td><td class='target'>2 megalitraa päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='cubic kilometers' href='#cubic kilometers'>cubic kilometers</a></td><td class='source'>nominative</td><td class='target' rowSpan='4'>{0} kuutiokilometri</td><td class='target'>1 kuutiokilometri päivä</td><td class='target' rowSpan='4'>{0} kuutiokilometriä</td><td class='target'>2 kuutiokilometriä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>1 kuutiokilometri päivää</td><td class='target'>2 kuutiokilometriä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>1 kuutiokilometri päivästä</td><td class='target'>2 kuutiokilometriä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>1 kuutiokilometri päivään</td><td class='target'>2 kuutiokilometriä päivään</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='target'>Pattern for one</th><th class='target'>Case MP + pattern with 1.0</th><th class='target'>Pattern for other</th><th class='target'>Case MP + pattern with 2.0</th></tr>
+	<tr><td class='source' rowSpan='16'>year-duration</td><td class='source' rowSpan='4'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source'>nominative</td><td class='target'>{0} kuukausi</td><td class='target'>1 kuukausi päivä</td><td class='target' rowSpan='2'>{0} kuukautta</td><td class='target'>2 kuukautta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} kuukautta</td><td class='target'>1 kuukautta päivää</td><td class='target'>2 kuukautta päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} kuukaudesta</td><td class='target'>1 kuukaudesta päivästä</td><td class='target'>{0} kuukaudesta</td><td class='target'>2 kuukaudesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} kuukauteen</td><td class='target'>1 kuukauteen päivään</td><td class='target'>{0} kuukauteen</td><td class='target'>2 kuukauteen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='years' href='#years'>years</a></td><td class='source'>nominative</td><td class='target'>{0} vuosi</td><td class='target'>1 vuosi päivä</td><td class='target'>{0} vuotta</td><td class='target'>2 vuotta päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} vuotta</td><td class='target'>1 vuotta päivää</td><td class='target'>{0} vuoteen</td><td class='target'>2 vuoteen päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} vuodesta</td><td class='target'>1 vuodesta päivästä</td><td class='target'>{0} vuodesta</td><td class='target'>2 vuodesta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} vuoteen</td><td class='target'>1 vuoteen päivään</td><td class='target'>{0} vuoteen</td><td class='target'>2 vuoteen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='decades' href='#decades'>decades</a></td><td class='source'>nominative</td><td class='target'>{0} vuosikymmen</td><td class='target'>1 vuosikymmen päivä</td><td class='target' rowSpan='2'>{0} vuosikymmentä</td><td class='target'>2 vuosikymmentä päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} vuosikymmentä</td><td class='target'>1 vuosikymmentä päivää</td><td class='target'>2 vuosikymmentä päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} vuosikymmenestä</td><td class='target'>1 vuosikymmenestä päivästä</td><td class='target'>{0} vuosikymmenestä</td><td class='target'>2 vuosikymmenestä päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} vuosikymmeneen</td><td class='target'>1 vuosikymmeneen päivään</td><td class='target'>{0} vuosikymmeneen</td><td class='target'>2 vuosikymmeneen päivään</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>nominative</td><td class='target'>{0} vuosisata</td><td class='target'>1 vuosisata päivä</td><td class='target' rowSpan='2'>{0} vuosisataa</td><td class='target'>2 vuosisataa päivä</td></tr>
+	<tr><td class='source'>partitive</td><td class='target'>{0} vuosisataa</td><td class='target'>1 vuosisataa päivää</td><td class='target'>2 vuosisataa päivää</td></tr>
+	<tr><td class='source'>elative</td><td class='target'>{0} vuosisadasta</td><td class='target'>1 vuosisadasta päivästä</td><td class='target'>{0} vuosisadasta</td><td class='target'>2 vuosisadasta päivästä</td></tr>
+	<tr><td class='source'>illative</td><td class='target'>{0} vuosisataan</td><td class='target'>1 vuosisataan päivään</td><td class='target'>{0} vuosisataan</td><td class='target'>2 vuosisataan päivään</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='19.8%'>Pattern for one</th><th class='target' width='19.8%'>Case MP + pattern with 1.0</th><th class='target' width='19.8%'>Pattern for other</th><th class='target' width='19.8%'>Case MP + pattern with 2.0</th></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

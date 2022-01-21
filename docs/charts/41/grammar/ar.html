@@ -1,0 +1,249 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Arabic: Unit Grammar Info</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Arabic: Unit Grammar Info</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<h2>Grammatical Forms</h2><p><i>Unit Inflections, Phase 1:</i> The end goal is to add full case and gender support for formatted units. During Phase 1, a limited number of locales and units of measurement are being handled in CLDR v38, so that we can work kinks out of the process before expanding to all units for all locales.</p>
+<p>This chart shows grammatical information available for certain unit and/or power patterns. These patterns are also illustrated with a <b>Formatted Sample</b> that combine the patterns with sample numbers and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b>. For example, “… für {0} …” is a <i>case minimal pair pattern</i> that requires the placeholder {0} to be in the accusative case in German. By inserting into a minimal pair pattern, it is easier to ensure that the original unit and/or power patterns are correctly inflected. </p>
+<p><b>Notes</b><ul><li>We don't have the cross-product of minimal pairs for both case and plural forms, so the <i>case minimal pair pattern</i> might not be correct for the row’s plural category, especially in the nominative.</li><li>Translators often have difficulties with the the minimal pair patterns, since they are <i>transcreations</i> not translations. The Hindi minimal pair patterns for case and gender have been discarded because they were incorrectly translated.</li><li>We don't expect translators to supply minimal pair patterns that are natural for any kind of placeholder: for example, it is probably not typical to use the vocative with 3.2 meters! So look at the <b>Formatted Sample</b> as an aid for helping to see the context for grammatical inflections, but one that has limitations.</li></ul><h2>Table of Contents</h2>
+<ol>
+<li><b><a href='#grammatical_features'>Grammatical Features</a></b></li>
+<li><b><a href='#minimal_pairs'>Minimal Pairs</a></b></li>
+<li><b><a href='#unit_case_and_gender_info'>Unit Case and Gender Info</a></b></li>
+<li><b><a href='#unit_power_components'>Unit Power Components</a></b></li>
+</ol>
+<h2><a name='grammatical_features'>Grammatical Features</a></h2>
+<p>The following lists the available information about grammatical features for this locale. Current information is only for nominal forms. Where a Usage is present other than “general”, that means that a subset of the grammatical features are relevant to that Usage. For example, Feature=grammaticalGender and Usage=units might omit an ‘animate’ gender. For the meanings of the values, see <a target='spec' href='https://unicode.org/reports/tr35/tr35-general.html#Grammatical_Features'>LDML Grammatical Features</a>.</p><table>
+	<tr><th class='source' width='1%'>Locale</th><th class='source' width='1%'>ID</th><th class='source' width='1%'>Feature</th><th class='source'>Usage</th><th class='source'>Values</th></tr>
+	<tr><td class='source' rowSpan='3'>Arabic</td><td class='source' rowSpan='3'><a name='ar' href='#ar'>ar</a></td><td class='source'>grammaticalCase</td><td class='source'>general</td><td class='source'>nominative, accusative, genitive</td></tr>
+	<tr><td class='source'>grammaticalDefiniteness</td><td class='source'>general</td><td class='source'>indefinite, definite, construct</td></tr>
+	<tr><td class='source'>grammaticalGender</td><td class='source'>general</td><td class='source'>masculine, feminine</td></tr>
+</table><h2><a name='minimal_pairs'>Minimal Pairs</a></h2>
+<p>This table has the minimal pairs used to test the appropriateness of different values.</p>
+<table>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='6'><a name='Plural' href='#Plural'>Plural</a></td><td class='source'>zero</td><td class='target'>‫{0} كتاب‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>٠</span> كتاب</div><div class='cldr_example'>❌  <span class='cldr_substituted'>١٠٠</span> كتاب</div>‬</td></tr>
+	<tr><td class='source'>one</td><td class='target'>‫ولد واحد حضر‬</td><td class='target'>‫<div class='cldr_example'>ولد واحد حضر</div><div class='cldr_example'>❌  ولد واحد حضر</div>‬</td></tr>
+	<tr><td class='source'>two</td><td class='target'>‫ولدان حضرا‬</td><td class='target'>‫<div class='cldr_example'>ولدان حضرا</div><div class='cldr_example'>❌  ولدان حضرا</div>‬</td></tr>
+	<tr><td class='source'>few</td><td class='target'>‫{0} أولاد حضروا‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>٣</span> أولاد حضروا</div><div class='cldr_example'>❌  <span class='cldr_substituted'>١٠٠</span> أولاد حضروا</div>‬</td></tr>
+	<tr><td class='source'>many</td><td class='target'>‫{0} ولدًا حضروا‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>١١</span> ولدًا حضروا</div><div class='cldr_example'>❌  <span class='cldr_substituted'>١٠٠</span> ولدًا حضروا</div>‬</td></tr>
+	<tr><td class='source'>other</td><td class='target'>‫{0} ولد حضروا‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>١٠٠</span> ولد حضروا</div><div class='cldr_example'>❌  <span class='cldr_substituted'>٣</span> ولد حضروا</div>‬</td></tr>
+	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Gender (for measurement units)' href='#Gender (for measurement units)'>Gender (for measurement units)</a></td><td class='source'>masculine</td><td class='target'>‫{0} واحد‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>متر</span> واحد</div><div class='cldr_example'>❌  <span class='cldr_substituted'>ساعة</span> واحد</div>‬</td></tr>
+	<tr><td class='source'>feminine</td><td class='target'>‫{0} واحدة‬</td><td class='target'>‫<div class='cldr_example'><span class='cldr_substituted'>ساعة</span> واحدة</div><div class='cldr_example'>❌  <span class='cldr_substituted'>متر</span> واحدة</div>‬</td></tr>
+</table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
+<p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
+<ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
+<table>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>acceleration</td><td class='source'><a name='meters per second squared' href='#meters per second squared'>meters per second squared</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='g-force<br>( = 9.80665 m/s²)' href='#g-force<br>( = 9.80665 m/s²)'>g-force<br>( = 9.80665 m/s²)</a></td><td class='source'>feminine</td><td class='source'>‫قوة تسارع واحدة‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='5'>angle</td><td class='source'><a name='arc-second<br>( = 0.0000007˙716049382 rev)' href='#arc-second<br>( = 0.0000007˙716049382 rev)'>arc-second<br>( = 0.0000007˙716049382 rev)</a></td><td class='source'>feminine</td><td class='source'>‫ثانية قوسية واحدة‬</td></tr>
+	<tr><td class='source'><a name='arc-minute<br>( = 0.00004˙629 rev)' href='#arc-minute<br>( = 0.00004˙629 rev)'>arc-minute<br>( = 0.00004˙629 rev)</a></td><td class='source'>feminine</td><td class='source'>‫دقيقة قوسية واحدة‬</td></tr>
+	<tr><td class='source'><a name='degree<br>( = 0.002˙7 rev)' href='#degree<br>( = 0.002˙7 rev)'>degree<br>( = 0.002˙7 rev)</a></td><td class='source'>feminine</td><td class='source'>‫درجة واحدة‬</td></tr>
+	<tr><td class='source'><a name='radian<br>( = ~0.1591549430918953 rev)' href='#radian<br>( = ~0.1591549430918953 rev)'>radian<br>( = ~0.1591549430918953 rev)</a></td><td class='source'>masculine</td><td class='source'>‫راديان واحد‬</td></tr>
+	<tr><td class='source'><a name='revolutions' href='#revolutions'>revolutions</a></td><td class='source'>feminine</td><td class='source'>‫دورة واحدة‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='4'>area</td><td class='source'><a name='square centimeters' href='#square centimeters'>square centimeters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='square meters' href='#square meters'>square meters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>masculine</td><td class='source'>‫هكتار واحد‬</td></tr>
+	<tr><td class='source'><a name='square kilometers' href='#square kilometers'>square kilometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>concentration</td><td class='source'><a name='millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)' href='#millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)'>millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>consumption</td><td class='source'><a name='liters per 100 kilometers' href='#liters per 100 kilometers'>liters per 100 kilometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='liters per kilometer' href='#liters per kilometer'>liters per kilometer</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>digital</td><td class='source'><a name='bits' href='#bits'>bits</a></td><td class='source'>feminine</td><td class='source'>‫بت واحدة‬</td></tr>
+	<tr><td class='source'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>feminine</td><td class='source'>‫بايت واحدة‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='9'>duration</td><td class='source'><a name='nanoseconds' href='#nanoseconds'>nanoseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='microseconds' href='#microseconds'>microseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='milliseconds' href='#milliseconds'>milliseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>feminine</td><td class='source'>‫ثانية واحدة‬</td></tr>
+	<tr><td class='source'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>feminine</td><td class='source'>‫دقيقة واحدة‬</td></tr>
+	<tr><td class='source'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>feminine</td><td class='source'>‫ساعة واحدة‬</td></tr>
+	<tr><td class='source'><a name='day<br>( = 86,400 sec)' href='#day<br>( = 86,400 sec)'>day<br>( = 86,400 sec)</a></td><td class='source'>masculine</td><td class='source'>‫يوم واحد‬</td></tr>
+	<tr><td class='source'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>masculine</td><td class='source'>‫يوم واحد‬</td></tr>
+	<tr><td class='source'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>masculine</td><td class='source'>‫أسبوع واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>electric-current</td><td class='source'><a name='milliamperes' href='#milliamperes'>milliamperes</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>masculine</td><td class='source'>‫أمبير واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>electric-resistance</td><td class='source'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>masculine</td><td class='source'>‫أوم واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='5'>energy</td><td class='source'><a name='joules' href='#joules'>joules</a></td><td class='source'>masculine</td><td class='source'>‫جول واحد‬</td></tr>
+	<tr><td class='source'><a name='newton-meter<br>( = 1 J)' href='#newton-meter<br>( = 1 J)'>newton-meter<br>( = 1 J)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>feminine</td><td class='source'>‫سعرة واحدة‬</td></tr>
+	<tr><td class='source'><a name='kilojoules' href='#kilojoules'>kilojoules</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)' href='#kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)'>kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>force</td><td class='source'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>masculine</td><td class='source'>‫نيوتن واحد‬</td></tr>
+	<tr><td class='source'><a name='kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)' href='#kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)'>kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='4'>frequency</td><td class='source'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>masculine</td><td class='source'>‫هرتز واحد‬</td></tr>
+	<tr><td class='source'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>graphics</td><td class='source'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>masculine</td><td class='source'>‫بكسل واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>illuminance</td><td class='source'><a name='lux' href='#lux'>lux</a></td><td class='source'>masculine</td><td class='source'>‫لكس واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='9'>length</td><td class='source'><a name='picometers' href='#picometers'>picometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='nanometers' href='#nanometers'>nanometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='micrometers' href='#micrometers'>micrometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='millimeters' href='#millimeters'>millimeters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='centimeters' href='#centimeters'>centimeters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='decimeters' href='#decimeters'>decimeters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='meters' href='#meters'>meters</a></td><td class='source'>masculine</td><td class='source'>‫متر واحد‬</td></tr>
+	<tr><td class='source'><a name='kilometers' href='#kilometers'>kilometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='mile-scandinavian<br>( = 10 km)' href='#mile-scandinavian<br>( = 10 km)'>mile-scandinavian<br>( = 10 km)</a></td><td class='source'>masculine</td><td class='source'>‫ميل اسكندنافي واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>luminous-flux</td><td class='source'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>masculine</td><td class='source'>‫لومن واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>luminous-intensity</td><td class='source'><a name='candela' href='#candela'>candela</a></td><td class='source'>feminine</td><td class='source'>‫شمعة واحدة‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='6'>mass</td><td class='source'><a name='micrograms' href='#micrograms'>micrograms</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='milligrams' href='#milligrams'>milligrams</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>masculine</td><td class='source'>‫قيراط واحد‬</td></tr>
+	<tr><td class='source'><a name='grams' href='#grams'>grams</a></td><td class='source'>masculine</td><td class='source'>‫غرام واحد‬</td></tr>
+	<tr><td class='source'><a name='kilograms' href='#kilograms'>kilograms</a></td><td class='source'>masculine</td><td class='source'>‫كيلوغرام واحد‬</td></tr>
+	<tr><td class='source'><a name='metric tons' href='#metric tons'>metric tons</a></td><td class='source'>masculine</td><td class='source'>‫طن متري واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='5'>portion</td><td class='source'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>masculine</td><td class='source'>‫جزء في المليون واحد‬</td></tr>
+	<tr><td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>feminine</td><td class='source'>‫‱ واحدة‬</td></tr>
+	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td><td class='source'>masculine</td><td class='source'>‫في الألف واحد‬</td></tr>
+	<tr><td class='source'><a name='percent' href='#percent'>percent</a></td><td class='source'>feminine</td><td class='source'>‫بالمائة واحدة‬</td></tr>
+	<tr><td class='source'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>masculine</td><td class='source'>‫قيراط واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='5'>power</td><td class='source'><a name='milliwatts' href='#milliwatts'>milliwatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='watts' href='#watts'>watts</a></td><td class='source'>masculine</td><td class='source'>‫واط واحد‬</td></tr>
+	<tr><td class='source'><a name='kilowatts' href='#kilowatts'>kilowatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='megawatts' href='#megawatts'>megawatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='gigawatts' href='#gigawatts'>gigawatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='7'>pressure</td><td class='source'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>masculine</td><td class='source'>‫باسكال واحد‬</td></tr>
+	<tr><td class='source'><a name='hectopascal<br>( = 1 mbar)' href='#hectopascal<br>( = 1 mbar)'>hectopascal<br>( = 1 mbar)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='millibars' href='#millibars'>millibars</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilopascals' href='#kilopascals'>kilopascals</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='bars' href='#bars'>bars</a></td><td class='source'>masculine</td><td class='source'>‫بار واحد‬</td></tr>
+	<tr><td class='source'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>masculine</td><td class='source'>‫ضغط جوي واحد‬</td></tr>
+	<tr><td class='source'><a name='megapascals' href='#megapascals'>megapascals</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='2'>speed</td><td class='source'><a name='kilometer-per-hour<br>( = 0.2˙7 m/s)' href='#kilometer-per-hour<br>( = 0.2˙7 m/s)'>kilometer-per-hour<br>( = 0.2˙7 m/s)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='meters per second' href='#meters per second'>meters per second</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>substance-amount</td><td class='source'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>masculine</td><td class='source'>‫مول واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='3'>temperature</td><td class='source'><a name='°' href='#°'>°</a></td><td class='source'>feminine</td><td class='source'>‫° واحدة‬</td></tr>
+	<tr><td class='source'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>feminine</td><td class='source'>‫درجة مئوية واحدة‬</td></tr>
+	<tr><td class='source'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>feminine</td><td class='source'>‫درجة كلفن واحدة‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>typewidth</td><td class='source'><a name='typographic ems' href='#typographic ems'>typographic ems</a></td><td class='source'>masculine</td><td class='source'>‫إم واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>voltage</td><td class='source'><a name='volts' href='#volts'>volts</a></td><td class='source'>masculine</td><td class='source'>‫فولت واحد‬</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='11'>volume</td><td class='source'><a name='cubic-centimeter<br>( = 1 mL)' href='#cubic-centimeter<br>( = 1 mL)'>cubic-centimeter<br>( = 1 mL)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='milliliters' href='#milliliters'>milliliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='centiliters' href='#centiliters'>centiliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='deciliters' href='#deciliters'>deciliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='cup-metric<br>( = 2.5 dL)' href='#cup-metric<br>( = 2.5 dL)'>cup-metric<br>( = 2.5 dL)</a></td><td class='source'>masculine</td><td class='source'>‫كوب متري واحد‬</td></tr>
+	<tr><td class='source'><a name='pint-metric<br>( = 5 dL)' href='#pint-metric<br>( = 5 dL)'>pint-metric<br>( = 5 dL)</a></td><td class='source'>masculine</td><td class='source'>‫مكيال متري واحد‬</td></tr>
+	<tr><td class='source'><a name='liters' href='#liters'>liters</a></td><td class='source'>masculine</td><td class='source'>‫لتر واحد‬</td></tr>
+	<tr><td class='source'><a name='hectoliters' href='#hectoliters'>hectoliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='cubic meters' href='#cubic meters'>cubic meters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='megaliters' href='#megaliters'>megaliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='cubic kilometers' href='#cubic kilometers'>cubic kilometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source' rowSpan='4'>year-duration</td><td class='source'><a name='month<br>( = 0.08˙3 yrs)' href='#month<br>( = 0.08˙3 yrs)'>month<br>( = 0.08˙3 yrs)</a></td><td class='source'>masculine</td><td class='source'>‫شهر واحد‬</td></tr>
+	<tr><td class='source'><a name='years' href='#years'>years</a></td><td class='source'>feminine</td><td class='source'>‫سنة واحدة‬</td></tr>
+	<tr><td class='source'><a name='decades' href='#decades'>decades</a></td><td class='source'>masculine</td><td class='source'>‫عقد واحد‬</td></tr>
+	<tr><td class='source'><a name='centuries' href='#centuries'>centuries</a></td><td class='source'>masculine</td><td class='source'>‫قرن واحد‬</td></tr>
+</table><h2><a name='unit_power_components'>Unit Power Components</a></h2>
+<p>This table shows the square (power2) and cubic (power3) patterns, which may vary by case, gender, and plural forms. Each gender is illustrated with a unit where possible, such as <i>(second)</i> or <i>(meter)</i>. Each plural category is illustrated with a unit where possible, such as <i>(1)</i> or <i>(1.2)</i>. The patterns are first supplied, and then combined with the samples and <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair patterns</a></b> in the next <b>Formatted Sample</b> column.</p><table>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='7.615%'>Pattern for zero</th><th class='target' width='7.615%'>Case MP + pattern with 0.0</th><th class='target' width='7.615%'>Pattern for one</th><th class='target' width='7.615%'>Case MP + pattern with 1.0</th><th class='target' width='7.615%'>Pattern for two</th><th class='target' width='7.615%'>Case MP + pattern with 2.0</th><th class='target' width='7.615%'>Pattern for few</th><th class='target' width='7.615%'>Case MP + pattern with 4.0</th><th class='target' width='7.615%'>Pattern for many</th><th class='target' width='7.615%'>Case MP + pattern with 12.0</th><th class='target' width='7.615%'>Pattern for other</th><th class='target' width='7.615%'>Case MP + pattern with 101.0</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='power2' href='#power2'>power2</a></td><td class='source' rowSpan='2'>nominative</td><td class='source'>masculine<br>(day)</td><td class='target'>‫{0} مربّع‬</td><td class='target'>‫٠ يوم مربّع‬</td><td class='target'>‫{0} مربّع‬</td><td class='target'>‫يوم مربّعيوم‬</td><td class='target'>‫{0} مربّعان‬</td><td class='target'>‫يومان مربّعانيومان‬</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫٤ أيام مربّعة‬</td><td class='target'>‫{0} مربّعًا‬</td><td class='target'>‫١٢ يومًا مربّعًا‬</td><td class='target'>‫{0} مربّع‬</td><td class='target'>‫١٠١ يوم مربّع‬</td></tr>
+	<tr><td class='source'>feminine<br>(second)</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫٠ ثانية مربّعة‬</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫ثانية مربّعةثانية‬</td><td class='target'>‫{0} مربّعتان‬</td><td class='target'>‫ثانيتان مربّعتانثانيتان‬</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫٤ ثوان مربّعة‬</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫١٢ ثانية مربّعة‬</td><td class='target'>‫{0} مربّعة‬</td><td class='target'>‫١٠١ ثانية مربّعة‬</td></tr>
+	<tr><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Case</th><th class='source' width='1%'>Gender</th><th class='target' width='7.615%'>Pattern for zero</th><th class='target' width='7.615%'>Case MP + pattern with 0.0</th><th class='target' width='7.615%'>Pattern for one</th><th class='target' width='7.615%'>Case MP + pattern with 1.0</th><th class='target' width='7.615%'>Pattern for two</th><th class='target' width='7.615%'>Case MP + pattern with 2.0</th><th class='target' width='7.615%'>Pattern for few</th><th class='target' width='7.615%'>Case MP + pattern with 4.0</th><th class='target' width='7.615%'>Pattern for many</th><th class='target' width='7.615%'>Case MP + pattern with 12.0</th><th class='target' width='7.615%'>Pattern for other</th><th class='target' width='7.615%'>Case MP + pattern with 101.0</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='power3' href='#power3'>power3</a></td><td class='source' rowSpan='2'>nominative</td><td class='source'>masculine<br>(day)</td><td class='target'>‫{0} مكعّب‬</td><td class='target'>‫٠ يوم مكعّب‬</td><td class='target'>‫{0} مكعّب‬</td><td class='target'>‫يوم مكعّبيوم‬</td><td class='target'>‫{0} مكعّبان‬</td><td class='target'>‫يومان مكعّبانيومان‬</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫٤ أيام مكعّبة‬</td><td class='target'>‫{0} مكعبًا‬</td><td class='target'>‫١٢ يومًا مكعبًا‬</td><td class='target'>‫{0} مكعّب‬</td><td class='target'>‫١٠١ يوم مكعّب‬</td></tr>
+	<tr><td class='source'>feminine<br>(second)</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫٠ ثانية مكعّبة‬</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫ثانية مكعّبةثانية‬</td><td class='target'>‫{0} مكعّبتان‬</td><td class='target'>‫ثانيتان مكعّبتانثانيتان‬</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫٤ ثوان مكعّبة‬</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫١٢ ثانية مكعّبة‬</td><td class='target'>‫{0} مكعّبة‬</td><td class='target'>‫١٠١ ثانية مكعّبة‬</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
