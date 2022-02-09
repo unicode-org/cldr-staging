@@ -77,8 +77,8 @@
 	<tr><td class='source'>many</td><td class='target'>{0} di giorni</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>1.000.000</span> di giorni</div><div class='cldr_example'>❌  <span class='cldr_substituted'>2</span> di giorni</div></td></tr>
 	<tr><td class='source'>other</td><td class='target'>{0} giorni</td><td class='target'><div class='cldr_example'><span class='cldr_substituted'>2</span> giorni</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1</span> giorni</div></td></tr>
 	<tr><th class='source' width='1%'>Type</th><th class='source' width='1%'>Code</th><th class='source'>Pattern</th><th class='source'>Formatted Sample</th></tr>
-	<tr><td class='source' rowSpan='2'><a name='Gender (for measurement units)' href='#Gender (for measurement units)'>Gender (for measurement units)</a></td><td class='source'>masculine</td><td class='target'>Il {0} è …</td><td class='target'><div class='cldr_example'>Il <span class='cldr_substituted'>centimetro</span> è …</div><div class='cldr_example'>❌  Il <span class='cldr_substituted'>ora</span> è …</div></td></tr>
-	<tr><td class='source'>feminine</td><td class='target'>La {0} è …</td><td class='target'><div class='cldr_example'>La <span class='cldr_substituted'>ora</span> è …</div><div class='cldr_example'>❌  La <span class='cldr_substituted'>centimetro</span> è …</div></td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Gender (for measurement units)' href='#Gender (for measurement units)'>Gender (for measurement units)</a></td><td class='source'>masculine</td><td class='target'>Il {0} è …</td><td class='target'><div class='cldr_example'>Il <span class='cldr_substituted'>centimetro</span> è …</div><div class='cldr_example'>❌  Il <span class='cldr_substituted'>decade</span> è …</div></td></tr>
+	<tr><td class='source'>feminine</td><td class='target'>La {0} è …</td><td class='target'><div class='cldr_example'>La <span class='cldr_substituted'>decade</span> è …</div><div class='cldr_example'>❌  La <span class='cldr_substituted'>centimetro</span> è …</div></td></tr>
 </table><h2><a name='unit_case_and_gender_info'>Unit Case and Gender Info</a></h2>
 <p>This table has rows contains unit forms appropriate for different grammatical cases and plural forms. Each plural form has a sample value such as <i>(1.2)</i> or <i>(2)</i>. That value is used with the localized unit pattern to form a formatted measure, such as “2,0 Stunden”. That formatted measure is in turn substituted into a <b><a target='doc-minimal-pairs' href='http://cldr.unicode.org/translation/grammatical-inflection#TOC-Miscellaneous-Minimal-Pairs'>case minimal pair pattern</a> to get the Formatted Sample</b>. The <b>Gender</b> column is informative; it just supplies the supplied gender for the unit.</p>
 <ul><li>For clarity, conversion values are supplied for non-metric units. For more information, see <a target='unit_conversions' href='../supplemental/unit_conversions.html'>Unit Conversions</a>.</li></ul>
@@ -95,26 +95,35 @@
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='7'>area</td><td class='source'><a name='square centimeters' href='#square centimeters'>square centimeters</a></td><td class='source'>masculine</td><td class='source'>Il centimetro quadrato è …</td></tr>
 	<tr><td class='source'><a name='square-foot<br>( = 929.0304 cm²)' href='#square-foot<br>( = 929.0304 cm²)'>square-foot<br>( = 929.0304 cm²)</a></td><td class='source'>masculine</td><td class='source'>Il piede quadrato è …</td></tr>
-	<tr><td class='source'><a name='square meters' href='#square meters'>square meters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='square meters' href='#square meters'>square meters</a></td><td class='source'>masculine</td><td class='source'>Il metro quadrato è …</td></tr>
 	<tr><td class='source'><a name='acre<br>( = 4,046.8564224 m²)' href='#acre<br>( = 4,046.8564224 m²)'>acre<br>( = 4,046.8564224 m²)</a></td><td class='source'>masculine</td><td class='source'>Il acro è …</td></tr>
 	<tr><td class='source'><a name='hectares' href='#hectares'>hectares</a></td><td class='source'>masculine</td><td class='source'>Il ettaro è …</td></tr>
 	<tr><td class='source'><a name='square kilometers' href='#square kilometers'>square kilometers</a></td><td class='source'>masculine</td><td class='source'>Il chilometro quadrato è …</td></tr>
 	<tr><td class='source'><a name='square-mile<br>( = 2.589988110336 km²)' href='#square-mile<br>( = 2.589988110336 km²)'>square-mile<br>( = 2.589988110336 km²)</a></td><td class='source'>feminine</td><td class='source'>La miglio quadrato è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source'>concentration</td><td class='source'><a name='millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)' href='#millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)'>millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'>concentration</td><td class='source'><a name='millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)' href='#millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)'>millimole-per-liter<br>( = 602,214,076,000,000,000,000,000 items per cubic meter)</a></td><td class='source'>feminine</td><td class='source'>La millimole per litro è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='2'>consumption</td><td class='source'><a name='liters per 100 kilometers' href='#liters per 100 kilometers'>liters per 100 kilometers</a></td><td class='source'>masculine</td><td class='source'>Il litro per 100 chilometri è …</td></tr>
-	<tr><td class='source'><a name='liters per kilometer' href='#liters per kilometer'>liters per kilometer</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='liters per kilometer' href='#liters per kilometer'>liters per kilometer</a></td><td class='source'>masculine</td><td class='source'>Il litro per chilometro è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='2'>consumption-inverse</td><td class='source'><a name='mile-per-gallon-imperial<br>( = ~354006.1899346471 meters per cubic meter)' href='#mile-per-gallon-imperial<br>( = ~354006.1899346471 meters per cubic meter)'>mile-per-gallon-imperial<br>( = ~354006.1899346471 meters per cubic meter)</a></td><td class='source'>feminine</td><td class='source'>La miglio per gallone imperiale è …</td></tr>
 	<tr><td class='source'><a name='mile-per-gallon<br>( = ~425143.707430272 meters per cubic meter)' href='#mile-per-gallon<br>( = ~425143.707430272 meters per cubic meter)'>mile-per-gallon<br>( = ~425143.707430272 meters per cubic meter)</a></td><td class='source'>feminine</td><td class='source'>La miglio per gallone è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='2'>digital</td><td class='source'><a name='bits' href='#bits'>bits</a></td><td class='source'>masculine</td><td class='source'>Il bit è …</td></tr>
+	<tr><td class='source' rowSpan='11'>digital</td><td class='source'><a name='bits' href='#bits'>bits</a></td><td class='source'>masculine</td><td class='source'>Il bit è …</td></tr>
 	<tr><td class='source'><a name='byte<br>( = 8 bit)' href='#byte<br>( = 8 bit)'>byte<br>( = 8 bit)</a></td><td class='source'>masculine</td><td class='source'>Il byte è …</td></tr>
+	<tr><td class='source'><a name='kilobits' href='#kilobits'>kilobits</a></td><td class='source'>masculine</td><td class='source'>Il kilobit è …</td></tr>
+	<tr><td class='source'><a name='kilobyte<br>( = 8 kb)' href='#kilobyte<br>( = 8 kb)'>kilobyte<br>( = 8 kb)</a></td><td class='source'>masculine</td><td class='source'>Il kilobyte è …</td></tr>
+	<tr><td class='source'><a name='megabits' href='#megabits'>megabits</a></td><td class='source'>masculine</td><td class='source'>Il megabit è …</td></tr>
+	<tr><td class='source'><a name='megabyte<br>( = 8 Mb)' href='#megabyte<br>( = 8 Mb)'>megabyte<br>( = 8 Mb)</a></td><td class='source'>masculine</td><td class='source'>Il megabyte è …</td></tr>
+	<tr><td class='source'><a name='gigabits' href='#gigabits'>gigabits</a></td><td class='source'>masculine</td><td class='source'>Il gigabit è …</td></tr>
+	<tr><td class='source'><a name='gigabyte<br>( = 8 Gb)' href='#gigabyte<br>( = 8 Gb)'>gigabyte<br>( = 8 Gb)</a></td><td class='source'>masculine</td><td class='source'>Il gigabyte è …</td></tr>
+	<tr><td class='source'><a name='terabits' href='#terabits'>terabits</a></td><td class='source'>masculine</td><td class='source'>Il terabit è …</td></tr>
+	<tr><td class='source'><a name='terabyte<br>( = 8 Tb)' href='#terabyte<br>( = 8 Tb)'>terabyte<br>( = 8 Tb)</a></td><td class='source'>masculine</td><td class='source'>Il terabyte è …</td></tr>
+	<tr><td class='source'><a name='petabyte<br>( = 8,000 Tb)' href='#petabyte<br>( = 8,000 Tb)'>petabyte<br>( = 8,000 Tb)</a></td><td class='source'>masculine</td><td class='source'>Il petabyte è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='9'>duration</td><td class='source'><a name='nanoseconds' href='#nanoseconds'>nanoseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='microseconds' href='#microseconds'>microseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='milliseconds' href='#milliseconds'>milliseconds</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source' rowSpan='9'>duration</td><td class='source'><a name='nanoseconds' href='#nanoseconds'>nanoseconds</a></td><td class='source'>masculine</td><td class='source'>Il nanosecondo è …</td></tr>
+	<tr><td class='source'><a name='microseconds' href='#microseconds'>microseconds</a></td><td class='source'>masculine</td><td class='source'>Il microsecondo è …</td></tr>
+	<tr><td class='source'><a name='milliseconds' href='#milliseconds'>milliseconds</a></td><td class='source'>masculine</td><td class='source'>Il millisecondo è …</td></tr>
 	<tr><td class='source'><a name='seconds' href='#seconds'>seconds</a></td><td class='source'>masculine</td><td class='source'>Il secondo è …</td></tr>
 	<tr><td class='source'><a name='minute<br>( = 60 sec)' href='#minute<br>( = 60 sec)'>minute<br>( = 60 sec)</a></td><td class='source'>masculine</td><td class='source'>Il minuto è …</td></tr>
 	<tr><td class='source'><a name='hour<br>( = 3,600 sec)' href='#hour<br>( = 3,600 sec)'>hour<br>( = 3,600 sec)</a></td><td class='source'>feminine</td><td class='source'>La ora è …</td></tr>
@@ -122,39 +131,40 @@
 	<tr><td class='source'><a name='day-person<br>( = 86,400 sec)' href='#day-person<br>( = 86,400 sec)'>day-person<br>( = 86,400 sec)</a></td><td class='source'>masculine</td><td class='source'>Il giorno è …</td></tr>
 	<tr><td class='source'><a name='week<br>( = 604,800 sec)' href='#week<br>( = 604,800 sec)'>week<br>( = 604,800 sec)</a></td><td class='source'>feminine</td><td class='source'>La settimana è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='2'>electric-current</td><td class='source'><a name='milliamperes' href='#milliamperes'>milliamperes</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source' rowSpan='2'>electric-current</td><td class='source'><a name='milliamperes' href='#milliamperes'>milliamperes</a></td><td class='source'>masculine</td><td class='source'>Il milliampere è …</td></tr>
 	<tr><td class='source'><a name='amperes' href='#amperes'>amperes</a></td><td class='source'>masculine</td><td class='source'>Il ampere è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source'>electric-resistance</td><td class='source'><a name='ohms' href='#ohms'>ohms</a></td><td class='source'>masculine</td><td class='source'>Il ohm è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='8'>energy</td><td class='source'><a name='dalton<br>( = 0.00000000014924180856 J)' href='#dalton<br>( = 0.00000000014924180856 J)'>dalton<br>( = 0.00000000014924180856 J)</a></td><td class='source'>masculine</td><td class='source'>Il dalton è …</td></tr>
 	<tr><td class='source'><a name='joules' href='#joules'>joules</a></td><td class='source'>masculine</td><td class='source'>Il joule è …</td></tr>
-	<tr><td class='source'><a name='newton-meter<br>( = 1 J)' href='#newton-meter<br>( = 1 J)'>newton-meter<br>( = 1 J)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='newton-meter<br>( = 1 J)' href='#newton-meter<br>( = 1 J)'>newton-meter<br>( = 1 J)</a></td><td class='source'>masculine</td><td class='source'>Il newton metro è …</td></tr>
 	<tr><td class='source'><a name='calorie<br>( = 4.184 J)' href='#calorie<br>( = 4.184 J)'>calorie<br>( = 4.184 J)</a></td><td class='source'>feminine</td><td class='source'>La caloria è …</td></tr>
-	<tr><td class='source'><a name='kilojoules' href='#kilojoules'>kilojoules</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='foodcalorie<br>( = 4.184 kJ)' href='#foodcalorie<br>( = 4.184 kJ)'>foodcalorie<br>( = 4.184 kJ)</a></td><td class='source'>feminine</td><td class='source'>La caloria è …</td></tr>
+	<tr><td class='source'><a name='kilojoules' href='#kilojoules'>kilojoules</a></td><td class='source'>masculine</td><td class='source'>Il kilojoule è …</td></tr>
+	<tr><td class='source'><a name='foodcalorie<br>( = 4.184 kJ)' href='#foodcalorie<br>( = 4.184 kJ)'>foodcalorie<br>( = 4.184 kJ)</a></td><td class='source'>feminine</td><td class='source'>La Caloria è …</td></tr>
 	<tr><td class='source'><a name='kilocalorie<br>( = 4.184 kJ)' href='#kilocalorie<br>( = 4.184 kJ)'>kilocalorie<br>( = 4.184 kJ)</a></td><td class='source'>feminine</td><td class='source'>La chilocaloria è …</td></tr>
-	<tr><td class='source'><a name='kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)' href='#kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)'>kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)' href='#kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)'>kilowatt-hour<br>( = 3,600,000 kilogram-square meter-seconds per cubic second)</a></td><td class='source'>masculine</td><td class='source'>Il chilowattora è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='2'>force</td><td class='source'><a name='newtons' href='#newtons'>newtons</a></td><td class='source'>masculine</td><td class='source'>Il newton è …</td></tr>
-	<tr><td class='source'><a name='kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)' href='#kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)'>kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)' href='#kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)'>kilowatt-hour-per-100-kilometer<br>( = 36 kilogram-square meter-seconds per meter-cubic second)</a></td><td class='source'>masculine</td><td class='source'>Il chilowattora per 100 chilometri è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='4'>frequency</td><td class='source'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>masculine</td><td class='source'>Il hertz è …</td></tr>
-	<tr><td class='source'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>masculine</td><td class='source'>Il kilohertz è …</td></tr>
+	<tr><td class='source'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>masculine</td><td class='source'>Il megahertz è …</td></tr>
+	<tr><td class='source'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>masculine</td><td class='source'>Il gigahertz è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source'>graphics</td><td class='source'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>masculine</td><td class='source'>Il pixel è …</td></tr>
+	<tr><td class='source' rowSpan='2'>graphics</td><td class='source'><a name='pixel<br>( = 1 px)' href='#pixel<br>( = 1 px)'>pixel<br>( = 1 px)</a></td><td class='source'>masculine</td><td class='source'>Il pixel è …</td></tr>
+	<tr><td class='source'><a name='megapixels' href='#megapixels'>megapixels</a></td><td class='source'>masculine</td><td class='source'>Il megapixel è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source'>illuminance</td><td class='source'><a name='lux' href='#lux'>lux</a></td><td class='source'>masculine</td><td class='source'>Il lux è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='15'>length</td><td class='source'><a name='picometers' href='#picometers'>picometers</a></td><td class='source'>masculine</td><td class='source'>Il picometro è …</td></tr>
-	<tr><td class='source'><a name='nanometers' href='#nanometers'>nanometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='micrometers' href='#micrometers'>micrometers</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='nanometers' href='#nanometers'>nanometers</a></td><td class='source'>masculine</td><td class='source'>Il nanometro è …</td></tr>
+	<tr><td class='source'><a name='micrometers' href='#micrometers'>micrometers</a></td><td class='source'>masculine</td><td class='source'>Il micrometro è …</td></tr>
 	<tr><td class='source'><a name='millimeters' href='#millimeters'>millimeters</a></td><td class='source'>masculine</td><td class='source'>Il millimetro è …</td></tr>
 	<tr><td class='source'><a name='centimeters' href='#centimeters'>centimeters</a></td><td class='source'>masculine</td><td class='source'>Il centimetro è …</td></tr>
 	<tr><td class='source'><a name='inch<br>( = 2.54 cm)' href='#inch<br>( = 2.54 cm)'>inch<br>( = 2.54 cm)</a></td><td class='source'>masculine</td><td class='source'>Il pollice è …</td></tr>
-	<tr><td class='source'><a name='decimeters' href='#decimeters'>decimeters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='decimeters' href='#decimeters'>decimeters</a></td><td class='source'>masculine</td><td class='source'>Il decimetro è …</td></tr>
 	<tr><td class='source'><a name='foot<br>( = 3.048 dm)' href='#foot<br>( = 3.048 dm)'>foot<br>( = 3.048 dm)</a></td><td class='source'>masculine</td><td class='source'>Il piede è …</td></tr>
 	<tr><td class='source'><a name='yard<br>( = 0.9144 m)' href='#yard<br>( = 0.9144 m)'>yard<br>( = 0.9144 m)</a></td><td class='source'>feminine</td><td class='source'>La iarda è …</td></tr>
 	<tr><td class='source'><a name='meters' href='#meters'>meters</a></td><td class='source'>masculine</td><td class='source'>Il metro è …</td></tr>
@@ -168,7 +178,7 @@
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source'>luminous-intensity</td><td class='source'><a name='candela' href='#candela'>candela</a></td><td class='source'>feminine</td><td class='source'>La candela è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='11'>mass</td><td class='source'><a name='micrograms' href='#micrograms'>micrograms</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source' rowSpan='11'>mass</td><td class='source'><a name='micrograms' href='#micrograms'>micrograms</a></td><td class='source'>masculine</td><td class='source'>Il microgrammo è …</td></tr>
 	<tr><td class='source'><a name='milligrams' href='#milligrams'>milligrams</a></td><td class='source'>masculine</td><td class='source'>Il milligrammo è …</td></tr>
 	<tr><td class='source'><a name='grain<br>( = 64.79891 mg)' href='#grain<br>( = 64.79891 mg)'>grain<br>( = 64.79891 mg)</a></td><td class='source'>masculine</td><td class='source'>Il grano è …</td></tr>
 	<tr><td class='source'><a name='carat<br>( = 200 mg)' href='#carat<br>( = 200 mg)'>carat<br>( = 200 mg)</a></td><td class='source'>masculine</td><td class='source'>Il carato è …</td></tr>
@@ -182,32 +192,35 @@
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='5'>portion</td><td class='source'><a name='parts per million' href='#parts per million'>parts per million</a></td><td class='source'>feminine</td><td class='source'>La parte per milione è …</td></tr>
 	<tr><td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>masculine</td><td class='source'>Il punto base è …</td></tr>
-	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td><td class='source'>masculine</td><td class='source'>Il ‰ è …</td></tr>
+	<tr><td class='source'><a name='permille' href='#permille'>permille</a></td><td class='source'>masculine</td><td class='source'>Il per mille è …</td></tr>
 	<tr><td class='source'><a name='percent' href='#percent'>percent</a></td><td class='source'>masculine</td><td class='source'>Il percento è …</td></tr>
 	<tr><td class='source'><a name='karat<br>( = 4.1˙6%)' href='#karat<br>( = 4.1˙6%)'>karat<br>( = 4.1˙6%)</a></td><td class='source'>masculine</td><td class='source'>Il carato è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='6'>power</td><td class='source'><a name='milliwatts' href='#milliwatts'>milliwatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source' rowSpan='6'>power</td><td class='source'><a name='milliwatts' href='#milliwatts'>milliwatts</a></td><td class='source'>masculine</td><td class='source'>Il milliwatt è …</td></tr>
 	<tr><td class='source'><a name='watts' href='#watts'>watts</a></td><td class='source'>masculine</td><td class='source'>Il watt è …</td></tr>
-	<tr><td class='source'><a name='kilowatts' href='#kilowatts'>kilowatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='megawatts' href='#megawatts'>megawatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='gigawatts' href='#gigawatts'>gigawatts</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='kilowatts' href='#kilowatts'>kilowatts</a></td><td class='source'>masculine</td><td class='source'>Il kilowatt è …</td></tr>
+	<tr><td class='source'><a name='megawatts' href='#megawatts'>megawatts</a></td><td class='source'>masculine</td><td class='source'>Il megawatt è …</td></tr>
+	<tr><td class='source'><a name='gigawatts' href='#gigawatts'>gigawatts</a></td><td class='source'>masculine</td><td class='source'>Il gigawatt è …</td></tr>
 	<tr><td class='source'><a name='solar-luminosity<br>( = 382,800,000,000,000,000 GW)' href='#solar-luminosity<br>( = 382,800,000,000,000,000 GW)'>solar-luminosity<br>( = 382,800,000,000,000,000 GW)</a></td><td class='source'>feminine</td><td class='source'>La luminosità solare è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='7'>pressure</td><td class='source'><a name='pascals' href='#pascals'>pascals</a></td><td class='source'>masculine</td><td class='source'>Il pascal è …</td></tr>
-	<tr><td class='source'><a name='hectopascal<br>( = 1 mbar)' href='#hectopascal<br>( = 1 mbar)'>hectopascal<br>( = 1 mbar)</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='millibars' href='#millibars'>millibars</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='hectopascal<br>( = 1 mbar)' href='#hectopascal<br>( = 1 mbar)'>hectopascal<br>( = 1 mbar)</a></td><td class='source'>masculine</td><td class='source'>Il ettopascal è …</td></tr>
+	<tr><td class='source'><a name='millibars' href='#millibars'>millibars</a></td><td class='source'>masculine</td><td class='source'>Il millibar è …</td></tr>
 	<tr><td class='source'><a name='kilopascals' href='#kilopascals'>kilopascals</a></td><td class='source'>masculine</td><td class='source'>Il chilopascal è …</td></tr>
 	<tr><td class='source'><a name='bars' href='#bars'>bars</a></td><td class='source'>masculine</td><td class='source'>Il bar è …</td></tr>
 	<tr><td class='source'><a name='atmosphere<br>( = 1.01325 bar)' href='#atmosphere<br>( = 1.01325 bar)'>atmosphere<br>( = 1.01325 bar)</a></td><td class='source'>feminine</td><td class='source'>La atmosfera è …</td></tr>
-	<tr><td class='source'><a name='megapascals' href='#megapascals'>megapascals</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
+	<tr><td class='source'><a name='megapascals' href='#megapascals'>megapascals</a></td><td class='source'>masculine</td><td class='source'>Il megapascal è …</td></tr>
+	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
+	<tr><td class='source'>resolution</td><td class='source'><a name='pixel-per-centimeter<br>( = 1 dpcm)' href='#pixel-per-centimeter<br>( = 1 dpcm)'>pixel-per-centimeter<br>( = 1 dpcm)</a></td><td class='source'>masculine</td><td class='source'>Il pixel per centimetro è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
 	<tr><td class='source' rowSpan='3'>speed</td><td class='source'><a name='kilometer-per-hour<br>( = 0.2˙7 m/s)' href='#kilometer-per-hour<br>( = 0.2˙7 m/s)'>kilometer-per-hour<br>( = 0.2˙7 m/s)</a></td><td class='source'>masculine</td><td class='source'>Il chilometro orario è …</td></tr>
 	<tr><td class='source'><a name='mile-per-hour<br>( = 0.44704 m/s)' href='#mile-per-hour<br>( = 0.44704 m/s)'>mile-per-hour<br>( = 0.44704 m/s)</a></td><td class='source'>feminine</td><td class='source'>La miglio all’ora è …</td></tr>
 	<tr><td class='source'><a name='meters per second' href='#meters per second'>meters per second</a></td><td class='source'>masculine</td><td class='source'>Il metro al secondo è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source'>substance-amount</td><td class='source'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>feminine</td><td class='source'>La mole è …</td></tr>
+	<tr><td class='source' rowSpan='2'>substance-amount</td><td class='source'><a name='items' href='#items'>items</a></td><td class='source'>masculine</td><td class='source'>Il elemento è …</td></tr>
+	<tr><td class='source'><a name='mole<br>( = 602,214,076,000,000,000,000,000 items)' href='#mole<br>( = 602,214,076,000,000,000,000,000 items)'>mole<br>( = 602,214,076,000,000,000,000,000 items)</a></td><td class='source'>feminine</td><td class='source'>La mole è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
-	<tr><td class='source' rowSpan='4'>temperature</td><td class='source'><a name='°' href='#°'>°</a></td><td class='source'>masculine</td><td class='source'>Il ° è …</td></tr>
+	<tr><td class='source' rowSpan='4'>temperature</td><td class='source'><a name='°' href='#°'>°</a></td><td class='source'>masculine</td><td class='source'>Il grado è …</td></tr>
 	<tr><td class='source'><a name='fahrenheit<br>( = 0.˙5 K)' href='#fahrenheit<br>( = 0.˙5 K)'>fahrenheit<br>( = 0.˙5 K)</a></td><td class='source'>masculine</td><td class='source'>Il grado Fahrenheit è …</td></tr>
 	<tr><td class='source'><a name='celsius<br>( = 1 K)' href='#celsius<br>( = 1 K)'>celsius<br>( = 1 K)</a></td><td class='source'>masculine</td><td class='source'>Il grado Celsius è …</td></tr>
 	<tr><td class='source'><a name='kelvins' href='#kelvins'>kelvins</a></td><td class='source'>masculine</td><td class='source'>Il Kelvin è …</td></tr>
@@ -228,7 +241,7 @@
 	<tr><td class='source'><a name='tablespoon<br>( = 1.478676478125 cL)' href='#tablespoon<br>( = 1.478676478125 cL)'>tablespoon<br>( = 1.478676478125 cL)</a></td><td class='source'>masculine</td><td class='source'>Il cucchiaio da tavola è …</td></tr>
 	<tr><td class='source'><a name='cubic-inch<br>( = 1.6387064 cL)' href='#cubic-inch<br>( = 1.6387064 cL)'>cubic-inch<br>( = 1.6387064 cL)</a></td><td class='source'>masculine</td><td class='source'>Il pollice cubo è …</td></tr>
 	<tr><td class='source'><a name='fluid-ounce-imperial<br>( = 2.84130625 cL)' href='#fluid-ounce-imperial<br>( = 2.84130625 cL)'>fluid-ounce-imperial<br>( = 2.84130625 cL)</a></td><td class='source'>feminine</td><td class='source'>La oncia liquida imperiale è …</td></tr>
-	<tr><td class='source'><a name='fluid-ounce<br>( = 2.95735295625 cL)' href='#fluid-ounce<br>( = 2.95735295625 cL)'>fluid-ounce<br>( = 2.95735295625 cL)</a></td><td class='source'>feminine</td><td class='source'>La oncia fluida è …</td></tr>
+	<tr><td class='source'><a name='fluid-ounce<br>( = 2.95735295625 cL)' href='#fluid-ounce<br>( = 2.95735295625 cL)'>fluid-ounce<br>( = 2.95735295625 cL)</a></td><td class='source'>feminine</td><td class='source'>La oncia liquida è …</td></tr>
 	<tr><td class='source'><a name='jigger<br>( = 4.436029434375 cL)' href='#jigger<br>( = 4.436029434375 cL)'>jigger<br>( = 4.436029434375 cL)</a></td><td class='source'>masculine</td><td class='source'>Il jigger è …</td></tr>
 	<tr><td class='source'><a name='deciliters' href='#deciliters'>deciliters</a></td><td class='source'>masculine</td><td class='source'>Il decilitro è …</td></tr>
 	<tr><td class='source'><a name='cup<br>( = 2.365882365 dL)' href='#cup<br>( = 2.365882365 dL)'>cup<br>( = 2.365882365 dL)</a></td><td class='source'>feminine</td><td class='source'>La tazza è …</td></tr>
@@ -244,8 +257,8 @@
 	<tr><td class='source'><a name='hectoliters' href='#hectoliters'>hectoliters</a></td><td class='source'>masculine</td><td class='source'>Il ettolitro è …</td></tr>
 	<tr><td class='source'><a name='barrel<br>( = 1.58987294928 hL)' href='#barrel<br>( = 1.58987294928 hL)'>barrel<br>( = 1.58987294928 hL)</a></td><td class='source'>masculine</td><td class='source'>Il barile è …</td></tr>
 	<tr><td class='source'><a name='cubic meters' href='#cubic meters'>cubic meters</a></td><td class='source'>masculine</td><td class='source'>Il metro cubo è …</td></tr>
-	<tr><td class='source'><a name='megaliters' href='#megaliters'>megaliters</a></td><td class='source'>n/a</td><td class='source'>n/a</td></tr>
-	<tr><td class='source'><a name='acre-foot<br>( = 1.23348183754752 ML)' href='#acre-foot<br>( = 1.23348183754752 ML)'>acre-foot<br>( = 1.23348183754752 ML)</a></td><td class='source'>masculine</td><td class='source'>Il acre-foot è …</td></tr>
+	<tr><td class='source'><a name='megaliters' href='#megaliters'>megaliters</a></td><td class='source'>masculine</td><td class='source'>Il megalitro è …</td></tr>
+	<tr><td class='source'><a name='acre-foot<br>( = 1.23348183754752 ML)' href='#acre-foot<br>( = 1.23348183754752 ML)'>acre-foot<br>( = 1.23348183754752 ML)</a></td><td class='source'>masculine</td><td class='source'>Il piede acro è …</td></tr>
 	<tr><td class='source'><a name='cubic kilometers' href='#cubic kilometers'>cubic kilometers</a></td><td class='source'>masculine</td><td class='source'>Il chilometro cubo è …</td></tr>
 	<tr><td class='source'><a name='cubic-mile<br>( = 4.168181825440579584 km³)' href='#cubic-mile<br>( = 4.168181825440579584 km³)'>cubic-mile<br>( = 4.168181825440579584 km³)</a></td><td class='source'>feminine</td><td class='source'>La miglio cubo è …</td></tr>
 	<tr><th class='source' width='1%'>Quantity</th><th class='source' width='1%'>Unit</th><th class='source' width='1%'>Gender</th><th class='target'>Gender MP + unit</th></tr>
