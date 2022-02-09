@@ -1,0 +1,1343 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ukrainian Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Ukrainian Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td><td class='source'><a name='Oceania' href='#Oceania'>Oceania</a></td><td class='source'><a name='Cities and Regions' href='#Cities and Regions'>Cities and Regions</a></td><td class='source'>Kanton</td><td class='source' rowSpan='1258'>uk</td><td class='target'>Kanton</td><td class='target'>Кантон</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Georgia' href='#Western Asia: Georgia'>Western Asia: Georgia</a></td><td class='source'>GEL-symbol-variant</td><td class='target'>₾</td><td class='target'>GEL</td></tr>
+	<tr><td class='source' rowSpan='1253'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='120'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='9'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='6'>{0} десятиріччя</td><td class='target'>{0} десятиріччі</td><td class='target' rowSpan='1256'>modern</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} десятиріччю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} десятиріччям</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} десятиріччях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} десятиріччям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} десятиріччями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} десятиріч</td><td class='target'>{0} десятиріччях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} десятиріччям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} десятиріччями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='century' href='#century'>century</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='6'>{0} століття</td><td class='target'>{0} столітті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} століттю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} століттям</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} століттях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} століттям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} століттями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} століть</td><td class='target'>{0} століттях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} століттям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} століттями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='year' href='#year'>year</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} рік</td><td class='target'>{0} році</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} року</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} роком</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} роки</td><td class='target'>{0} роках</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} рокам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} роками</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} років</td><td class='target'>{0} роках</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} рокам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} роками</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='month' href='#month'>month</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} місяць</td><td class='target'>{0} місяці</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} місяцю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} місяцем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} місяці</td><td class='target'>{0} місяцях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} місяцям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} місяцями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} місяців</td><td class='target'>{0} місяцях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} місяцям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} місяцями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='week' href='#week'>week</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} тиждень</td><td class='target'>{0} тижні</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} тижню</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} тижнем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} тижні</td><td class='target'>{0} тижнях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} тижням</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} тижнями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} тижнів</td><td class='target'>{0} тижнях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} тижням</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} тижнями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='day' href='#day'>day</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} день</td><td class='target'>{0} дні</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} дню</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} днем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} дні</td><td class='target'>{0} днях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} дням</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} днями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} днів</td><td class='target'>{0} днях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} дням</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} днями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='hour' href='#hour'>hour</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} година</td><td class='target' rowSpan='2'>{0} годині</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} годиною</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} години</td><td class='target'>{0} годинах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} годинам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} годинами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} годин</td><td class='target'>{0} годинах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} годинам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} годинами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='minute' href='#minute'>minute</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} хвилина</td><td class='target' rowSpan='2'>{0} хвилині</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} хвилиною</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} хвилини</td><td class='target'>{0} хвилинах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} хвилинам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} хвилинами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} хвилин</td><td class='target'>{0} хвилинах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} хвилинам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} хвилинами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='second' href='#second'>second</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} секунда</td><td class='target' rowSpan='2'>{0} секунді</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} секундою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} секунди</td><td class='target'>{0} секундах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} секундам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} секундами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} секунд</td><td class='target'>{0} секундах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} секундам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} секундами</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='millisecond' href='#millisecond'>millisecond</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='5'>{0} мілісекунда</td><td class='target'>{0} мілісекунду</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} мілісекунди</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='2'>{0} мілісекунді</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мілісекундою</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мілісекунди</td><td class='target'>{0} мілісекунд</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мілісекундах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мілісекундам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мілісекундами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мілісекунд</td><td class='target'>{0} мілісекундах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мілісекундам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мілісекундами</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='microsecond' href='#microsecond'>microsecond</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='5'>{0} мікросекунда</td><td class='target'>{0} мікросекунду</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} мікросекунди</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='2'>{0} мікросекунді</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мікросекундою</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мікросекунди</td><td class='target'>{0} мікросекунд</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мікросекундах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мікросекундам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мікросекундами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мікросекунд</td><td class='target'>{0} мікросекундах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мікросекундам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мікросекундами</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='5'>{0} наносекунда</td><td class='target'>{0} наносекунду</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} наносекунди</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='2'>{0} наносекунді</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} наносекундою</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} наносекунди</td><td class='target'>{0} наносекунд</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} наносекундах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} наносекундам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} наносекундами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} наносекунд</td><td class='target'>{0} наносекундах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} наносекундам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} наносекундами</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source'><a name='dot' href='#dot'>dot</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>точка</td><td class='target'>точки</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='dot-per-centimeter' href='#dot-per-centimeter'>dot-per-centimeter</a></td><td class='target'>dpcm</td><td class='target'>точки на сантиметр</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='3'>{0} ppcm</td><td class='target'>{0} точка на сантиметр</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} точки на сантиметр</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} точок на сантиметр</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dpcm</td><td class='target'>{0} точки на сантиметр</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='dot-per-inch' href='#dot-per-inch'>dot-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>dpi</td><td class='target'>точки на дюйм</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='3'>{0} ppi</td><td class='target'>{0} точка на дюйм</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} точки на дюйм</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} точок на дюйм</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} dpi</td><td class='target'>{0} точки на дюйм</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='em' href='#em'>em</a></td><td class='source'>long-displayName</td><td class='target'>ем</td><td class='target'>типографські еми</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='24'>{0} ем</td><td class='target' rowSpan='2'>{0} типографський ем</td></tr>
+	<tr><td class='source'>long-one-accusative</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} типографського ема</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} типографському емі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} типографському ему</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} типографським емом</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} типографські еми</td></tr>
+	<tr><td class='source'>long-few-accusative</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target'>{0} типографських емів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} типографських емах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} типографським емам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} типографськими емами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='3'>{0} типографських емів</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} типографських емах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} типографським емам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} типографськими емами</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target' rowSpan='6'>{0} типографського ема</td></tr>
+	<tr><td class='source'>long-other-accusative</td></tr>
+	<tr><td class='source'>long-other-genitive</td></tr>
+	<tr><td class='source'>long-other-locative</td></tr>
+	<tr><td class='source'>long-other-dative</td></tr>
+	<tr><td class='source'>long-other-instrumental</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегапіксель</td><td class='target'>{0} мегапікселя</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегапікселі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегапікселю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегапікселем</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегапікселі</td><td class='target'>{0} мегапікселів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегапікселях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегапікселям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегапікселями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегапікселів</td><td class='target'>{0} мегапікселях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегапікселям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегапікселями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} піксель</td><td class='target'>{0} пікселі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} пікселю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} пікселем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} пікселі</td><td class='target'>{0} пікселях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} пікселям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} пікселями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} пікселів</td><td class='target'>{0} пікселях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} пікселям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} пікселями</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>ppcm</td><td class='target'>пікселі на сантиметр</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='24'>{0} ppcm</td><td class='target' rowSpan='2'>{0} піксель на сантиметр</td></tr>
+	<tr><td class='source'>long-one-accusative</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} пікселя на сантиметр</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} пікселі на сантиметр</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} пікселю на сантиметр</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} пікселем на сантиметр</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target' rowSpan='2'>{0} пікселі на сантиметр</td></tr>
+	<tr><td class='source'>long-few-accusative</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target'>{0} пікселів на сантиметр</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} пікселях на сантиметр</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} пікселям на сантиметр</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} пікселями на сантиметр</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='3'>{0} пікселів на сантиметр</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} пікселях на сантиметр</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} пікселям на сантиметр</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} пікселями на сантиметр</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target' rowSpan='6'>{0} пікселя на сантиметр</td></tr>
+	<tr><td class='source'>long-other-accusative</td></tr>
+	<tr><td class='source'>long-other-genitive</td></tr>
+	<tr><td class='source'>long-other-locative</td></tr>
+	<tr><td class='source'>long-other-dative</td></tr>
+	<tr><td class='source'>long-other-instrumental</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td><td class='source'>long-displayName</td><td class='target'>ppi</td><td class='target'>пікселі на дюйм</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='4'>{0} ppi</td><td class='target'>{0} піксель на дюйм</td></tr>
+	<tr><td class='source'>long-few-nominative</td><td class='target'>{0} пікселі на дюйм</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target'>{0} пікселів на дюйм</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} пікселя на дюйм</td></tr>
+	<tr><td class='source' rowSpan='102'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='12'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілометр</td><td class='target'>{0} кілометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілометри</td><td class='target'>{0} кілометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілометрів</td><td class='target'>{0} кілометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілометрами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='meter' href='#meter'>meter</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} метр</td><td class='target'>{0} метрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} метру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метром</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} метри</td><td class='target'>{0} метрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метрів</td><td class='target'>{0} метрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='decimeter' href='#decimeter'>decimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} дециметр</td><td class='target'>{0} дециметра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} дециметрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} дециметру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} дециметром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} дециметри</td><td class='target'>{0} дециметрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} дециметрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} дециметрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} дециметрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} дециметрів</td><td class='target'>{0} дециметрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} дециметрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} дециметрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} сантиметр</td><td class='target'>{0} сантиметра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} сантиметрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} сантиметру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} сантиметром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} сантиметри</td><td class='target'>{0} сантиметрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} сантиметрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} сантиметрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} сантиметрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} сантиметрів</td><td class='target'>{0} сантиметрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} сантиметрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} сантиметрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='millimeter' href='#millimeter'>millimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} міліметр</td><td class='target'>{0} міліметра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} міліметрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} міліметру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} міліметром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} міліметри</td><td class='target'>{0} міліметрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} міліметрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} міліметрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} міліметрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} міліметрів</td><td class='target'>{0} міліметрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} міліметрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} міліметрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мікрометр</td><td class='target'>{0} мікрометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мікрометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мікрометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мікрометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мікрометри</td><td class='target'>{0} мікрометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мікрометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мікрометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мікрометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мікрометрів</td><td class='target'>{0} мікрометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мікрометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мікрометрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='nanometer' href='#nanometer'>nanometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} нанометр</td><td class='target'>{0} нанометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} нанометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} нанометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} нанометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} нанометри</td><td class='target'>{0} нанометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} нанометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} нанометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} нанометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} нанометрів</td><td class='target'>{0} нанометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} нанометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} нанометрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='picometer' href='#picometer'>picometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} пікометр</td><td class='target'>{0} пікометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} пікометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} пікометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} пікометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} пікометри</td><td class='target'>{0} пікометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} пікометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} пікометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} пікометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} пікометрів</td><td class='target'>{0} пікометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} пікометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} пікометрами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} скандинавська миля</td><td class='target' rowSpan='2'>{0} скандинавській милі</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} скандинавською милею</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} скандинавські милі</td><td class='target'>{0} скандинавських милях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} скандинавським милям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} скандинавськими милями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} скандинавських миль</td><td class='target'>{0} скандинавських милях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} скандинавським милям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} скандинавськими милями</td></tr>
+	<tr><td class='source' rowSpan='46'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='12'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} квадратний кілометр</td><td class='target'>{0} квадратного кілометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} квадратному кілометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} квадратному кілометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} квадратним кілометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} квадратні кілометри</td><td class='target'>{0} квадратних кілометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} квадратних кілометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} квадратним кілометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} квадратними кілометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} квадратних кілометрів</td><td class='target'>{0} квадратних кілометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} квадратним кілометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} квадратними кілометрами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} гектар</td><td class='target'>{0} гектарі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гектару</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гектаром</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} гектари</td><td class='target'>{0} гектарах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гектарам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гектарами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гектарів</td><td class='target'>{0} гектарах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гектарам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гектарами</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>квадтратні метри</td><td class='target'>квадратні метри</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} квадратний метр</td><td class='target'>{0} квадратного метра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} квадратному метрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} квадратному метру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} квадратним метром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} квадратні метри</td><td class='target'>{0} квадратних метрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} квадратних метрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} квадратним метрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} квадратними метрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} квадратних метрів</td><td class='target'>{0} квадратних метрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} квадратним метрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} квадратними метрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} квадратний сантиметр</td><td class='target'>{0} квадратного сантиметра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} квадратному сантиметрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} квадратному сантиметру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} квадратним сантиметром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} квадратні сантиметри</td><td class='target'>{0} квадратних сантиметрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} квадратних сантиметрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} квадратним сантиметрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} квадратними сантиметрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} квадратних сантиметрів</td><td class='target'>{0} квадратних сантиметрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} квадратним сантиметрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} квадратними сантиметрами</td></tr>
+	<tr><td class='source' rowSpan='123'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='12'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кубічний кілометр</td><td class='target'>{0} кубічного кілометра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кубічному кілометрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кубічному кілометру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кубічним кілометром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кубічні кілометри</td><td class='target'>{0} кубічних кілометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кубічних кілометрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кубічним кілометрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кубічними кілометрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кубічних кілометрів</td><td class='target'>{0} кубічних кілометрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кубічним кілометрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кубічними кілометрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кубічний метр</td><td class='target'>{0} кубічного метра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кубічному метрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кубічному метру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кубічним метром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кубічні метри</td><td class='target'>{0} кубічних метрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кубічних метрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кубічним метрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кубічними метрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кубічних метрів</td><td class='target'>{0} кубічних метрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кубічним метрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кубічними метрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кубічний сантиметр</td><td class='target'>{0} кубічного сантиметра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кубічному сантиметрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кубічному сантиметру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кубічним сантиметром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кубічні сантиметри</td><td class='target'>{0} кубічних сантиметрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кубічних сантиметрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кубічним сантиметрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кубічними сантиметрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кубічних сантиметрів</td><td class='target'>{0} кубічних сантиметрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кубічним сантиметрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кубічними сантиметрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megaliter' href='#megaliter'>megaliter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегалітр</td><td class='target'>{0} мегалітра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегалітрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегалітру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегалітром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегалітри</td><td class='target'>{0} мегалітрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегалітрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегалітрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегалітрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегалітрів</td><td class='target'>{0} мегалітрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегалітрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегалітрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гектолітр</td><td class='target'>{0} гектолітра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гектолітрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гектолітру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гектолітром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гектолітри</td><td class='target'>{0} гектолітрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гектолітрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гектолітрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гектолітрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гектолітрів</td><td class='target'>{0} гектолітрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гектолітрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гектолітрами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} літр</td><td class='target'>{0} літрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} літру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} літром</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} літри</td><td class='target'>{0} літрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} літрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} літрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} літрів</td><td class='target'>{0} літрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} літрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} літрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='deciliter' href='#deciliter'>deciliter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} децилітр</td><td class='target'>{0} децилітра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} децилітрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} децилітру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} децилітром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} децилітри</td><td class='target'>{0} децилітрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} децилітрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} децилітрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} децилітрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} децилітрів</td><td class='target'>{0} децилітрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} децилітрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} децилітрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='centiliter' href='#centiliter'>centiliter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} сантилітр</td><td class='target'>{0} сантилітра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} сантилітрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} сантилітру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} сантилітром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} сантилітри</td><td class='target'>{0} сантилітрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} сантилітрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} сантилітрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} сантилітрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} сантилітрів</td><td class='target'>{0} сантилітрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} сантилітрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} сантилітрами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='milliliter' href='#milliliter'>milliliter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мілілітр</td><td class='target'>{0} мілілітра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мілілітрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мілілітру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мілілітром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мілілітри</td><td class='target'>{0} мілілітрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мілілітрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мілілітрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мілілітрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мілілітрів</td><td class='target'>{0} мілілітрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мілілітрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мілілітрами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} метрична пінта</td><td class='target' rowSpan='2'>{0} метричній пінті</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метричною пінтою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} метричні пінти</td><td class='target'>{0} метричних пінтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метричним пінтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метричними пінтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метричних пінт</td><td class='target'>{0} метричних пінтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метричним пінтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метричними пінтами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} метрична чашка</td><td class='target' rowSpan='2'>{0} метричній чашці</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метричною чашкою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} метричні чашки</td><td class='target'>{0} метричних чашках</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метричним чашкам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метричними чашками</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метричних чашок</td><td class='target'>{0} метричних чашках</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метричним чашкам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метричними чашками</td></tr>
+	<tr><td class='source' rowSpan='36'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='12'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} метр на секунду у квадраті</td><td class='target'>{0} метра на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} метрі на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} метру на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метром на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} метри на секунду у квадраті</td><td class='target'>{0} метрів на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} метрах на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метру на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метром на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метрів на секунду у квадраті</td><td class='target'>{0} метрах на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метрам на секунду у квадраті</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метрами на секунду у квадраті</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілометр на годину</td><td class='target'>{0} кілометра на годину</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілометрі на годину</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілометру на годину</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілометром на годину</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілометри на годину</td><td class='target'>{0} кілометрів на годину</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілометрах на годину</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілометрам на годину</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілометрами на годину</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілометрів на годину</td><td class='target'>{0} кілометрах на годину</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілометрам на годину</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілометрами на годину</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} метр на секунду</td><td class='target'>{0} метра на секунду</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} метрі на секунду</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} метру на секунду</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метром на секунду</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} метри на секунду</td><td class='target'>{0} метрів на секунду</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} метрах на секунду</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метрам на секунду</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метрами на секунду</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метрів на секунду</td><td class='target'>{0} метрах на секунду</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метрам на секунду</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метрами на секунду</td></tr>
+	<tr><td class='source' rowSpan='66'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='9'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} метрична тонна</td><td class='target' rowSpan='2'>{0} метричній тонні</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} метричною тонною</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} метричні тонни</td><td class='target'>{0} метричних тоннах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} метричним тоннам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} метричними тоннами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} метричних тонн</td><td class='target'>{0} метричних тоннах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} метричним тоннам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} метричними тоннами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} кілограм</td><td class='target'>{0} кілограмі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілограму</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілограмом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кілограми</td><td class='target'>{0} кілограмах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілограмам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілограмами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілограмів</td><td class='target'>{0} кілограмах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілограмам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілограмами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='gram' href='#gram'>gram</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} грам</td><td class='target'>{0} грамі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} граму</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} грамом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} грами</td><td class='target'>{0} грамах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} грамам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} грамами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} грамів</td><td class='target'>{0} грамах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} грамам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} грамами</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='milligram' href='#milligram'>milligram</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} міліграм</td><td class='target'>{0} міліграма</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} міліграмі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} міліграму</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} міліграмом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} міліграми</td><td class='target'>{0} міліграмів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} міліграмах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} міліграмам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} міліграмами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='6'>{0} міліграм</td><td class='target' rowSpan='3'>{0} міліграмів</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} міліграмах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} міліграмам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} міліграмами</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мікрограм</td><td class='target'>{0} мікрограма</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мікрограмі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мікрограму</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мікрограмом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мікрограми</td><td class='target'>{0} мікрограмів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мікрограмах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мікрограмам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мікрограмами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='6'>{0} мікрограм</td><td class='target' rowSpan='3'>{0} мікрограмів</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} мікрограмах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мікрограмам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мікрограмами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='carat' href='#carat'>carat</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} карат</td><td class='target'>{0} караті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} карату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} каратом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} карати</td><td class='target'>{0} каратах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} каратам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} каратами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} каратів</td><td class='target'>{0} каратах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} каратам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} каратами</td></tr>
+	<tr><td class='source' rowSpan='105'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='9'><a name='calorie' href='#calorie'>calorie</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} калорія</td><td class='target' rowSpan='2'>{0} калорії</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} калорією</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} калорії</td><td class='target'>{0} калоріях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} калоріям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} калоріями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} калорій</td><td class='target'>{0} калоріях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} калоріям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} калоріями</td></tr>
+	<tr><td class='source' rowSpan='11'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілоджоуль</td><td class='target'>{0} кілоджоуля</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілоджоулі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілоджоулю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілоджоулем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кілоджоулі</td><td class='target'>{0} кілоджоулів</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілоджоулям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілоджоулями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілоджоулів</td><td class='target'>{0} кілоджоулях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілоджоулям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілоджоулями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='joule' href='#joule'>joule</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} джоуль</td><td class='target'>{0} джоулі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} джоулю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} джоулем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} джоулі</td><td class='target'>{0} джоулях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} джоулям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} джоулями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} джоулів</td><td class='target'>{0} джоулях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} джоулям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} джоулями</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='5'>{0} кіловат-година</td><td class='target'>{0} кіловат-годину</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} кіловат-години</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='2'>{0} кіловат-годині</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кіловат-годиною</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кіловат-години</td><td class='target'>{0} кіловат-годин</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кіловат-годинах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кіловат-годинам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кіловат-годинами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кіловат-годин</td><td class='target'>{0} кіловат-годинах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кіловат-годинам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кіловат-годинами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гігават</td><td class='target'>{0} гігавата</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гігаваті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гігавату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гігаватом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гігавати</td><td class='target'>{0} гігаватів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гігаватах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гігаватам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гігаватами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гігаватів</td><td class='target'>{0} гігаватах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гігаватам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гігаватами</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='megawatt' href='#megawatt'>megawatt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегават</td><td class='target'>{0} мегавата</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегаваті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегавату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегаватом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегавати</td><td class='target'>{0} мегаватів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегаватах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегаватам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегаватами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='6'>{0} мегават</td><td class='target' rowSpan='3'>{0} мегаватів</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} мегаватах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегаватам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегаватами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilowatt' href='#kilowatt'>kilowatt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кіловат</td><td class='target'>{0} кіловата</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кіловаті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кіловату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кіловатом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кіловати</td><td class='target'>{0} кіловат</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кіловатах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кіловатам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кіловатами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кіловатів</td><td class='target'>{0} кіловатах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кіловатам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кіловатами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='watt' href='#watt'>watt</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} ват</td><td class='target'>{0} ваті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} вату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ватом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} вати</td><td class='target'>{0} ватах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} ватам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} ватами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} ватів</td><td class='target'>{0} ватах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} ватам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} ватами</td></tr>
+	<tr><td class='source' rowSpan='15'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} міліват</td><td class='target'>{0} мілівата</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} міліваті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мілівату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} міліватом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мілівати</td><td class='target'>{0} міліватів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} міліватах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} міліватам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} міліватами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='6'>{0} міліват</td><td class='target' rowSpan='3'>{0} міліватів</td></tr>
+	<tr><td class='source'>long-many-accusative</td></tr>
+	<tr><td class='source'>long-many-genitive</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} міліватах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} міліватам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} міліватами</td></tr>
+	<tr><td class='source' rowSpan='84'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source' rowSpan='9'><a name='ampere' href='#ampere'>ampere</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} ампер</td><td class='target'>{0} ампері</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} амперу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ампером</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} ампери</td><td class='target'>{0} амперах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} амперам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} амперами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} амперів</td><td class='target'>{0} амперах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} амперам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} амперами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='milliampere' href='#milliampere'>milliampere</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} міліампер</td><td class='target'>{0} міліампера</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} міліампері</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} міліамперу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} міліампером</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} міліампери</td><td class='target'>{0} міліамперів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} міліамперах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} міліамперам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} міліамперами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} міліамперів</td><td class='target'>{0} міліамперах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} міліамперам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} міліамперами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='ohm' href='#ohm'>ohm</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} ом</td><td class='target'>{0} омі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} ому</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} омом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} оми</td><td class='target'>{0} омах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} омам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} омами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} омів</td><td class='target'>{0} омах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} омам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} омами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='volt' href='#volt'>volt</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} вольт</td><td class='target'>{0} вольті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} вольту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} вольтом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} вольти</td><td class='target'>{0} вольтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} вольтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} вольтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} вольтів</td><td class='target'>{0} вольтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} вольтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} вольтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гігагерц</td><td class='target'>{0} гігагерца</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гігагерці</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гігагерцу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гігагерцом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гігагерци</td><td class='target'>{0} гігагерців</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гігагерцах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гігагерцам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гігагерцами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гігагерців</td><td class='target'>{0} гігагерцах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гігагерцам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гігагерцами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегагерц</td><td class='target'>{0} мегагерца</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегагерці</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегагерцу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегагерцом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегагерци</td><td class='target'>{0} мегагерців</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегагерцах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегагерцам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегагерцами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегагерців</td><td class='target'>{0} мегагерцах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегагерцам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегагерцами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілогерц</td><td class='target'>{0} кілогерца</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілогерці</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілогерцу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілогерцом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілогерци</td><td class='target'>{0} кілогерців</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілогерцах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілогерцам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілогерцами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілогерців</td><td class='target'>{0} кілогерцах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілогерцам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілогерцами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} герц</td><td class='target'>{0} герці</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} герцу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} герцом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} герци</td><td class='target'>{0} герцах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} герцам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} герцами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} герців</td><td class='target'>{0} герцах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} герцам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} герцами</td></tr>
+	<tr><td class='source' rowSpan='93'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='9'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} бар</td><td class='target'>{0} барі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} бару</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} баром</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} бари</td><td class='target'>{0} барах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} барам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} барами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} барів</td><td class='target'>{0} барах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} барам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} барами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='millibar' href='#millibar'>millibar</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мілібар</td><td class='target'>{0} мілібара</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мілібарі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мілібару</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мілібаром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мілібари</td><td class='target'>{0} мілібарів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мілібарах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мілібарам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мілібарами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мілібарів</td><td class='target'>{0} мілібарах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мілібарам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мілібарами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} атмосфера</td><td class='target' rowSpan='2'>{0} атмосфері</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} атмосферою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} атмосфери</td><td class='target'>{0} атмосферах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} атмосферам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} атмосферами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} атмосфер</td><td class='target'>{0} атмосферах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} атмосферам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} атмосферами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} паскаль</td><td class='target'>{0} паскалі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} паскалю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} паскалем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} паскалі</td><td class='target'>{0} паскалях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} паскалям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} паскалями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} паскалів</td><td class='target'>{0} паскалях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} паскалям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} паскалями</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='hectopascal' href='#hectopascal'>hectopascal</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гектопаскаль</td><td class='target'>{0} гектопаскаля</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гектопаскалі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гектопаскалю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гектопаскалем</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гектопаскалі</td><td class='target'>{0} гектопаскалів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гектопаскалях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гектопаскалям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гектопаскалями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гектопаскалів</td><td class='target'>{0} гектопаскалях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гектопаскалям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гектопаскалями</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілопаскаль</td><td class='target'>{0} кілопаскаля</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілопаскалі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілопаскалю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілопаскалем</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілопаскалі</td><td class='target'>{0} кілопаскалів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілопаскалях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілопаскалям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілопаскалями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілопаскалів</td><td class='target'>{0} кілопаскалях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілопаскалям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілопаскалями</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегапаскаль</td><td class='target'>{0} мегапаскаля</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегапаскалі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегапаскалю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегапаскалем</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегапаскалі</td><td class='target'>{0} мегапаскалів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегапаскалях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегапаскалям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегапаскалями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегапаскалів</td><td class='target'>{0} мегапаскалях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегапаскалям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегапаскалями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='celsius' href='#celsius'>celsius</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} градус Цельсія</td><td class='target'>{0} градусі Цельсія</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} градусу Цельсія</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} градусом Цельсія</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} градуси Цельсія</td><td class='target'>{0} градусах Цельсія</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} градусам Цельсія</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} градусами Цельсія</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} градусів Цельсія</td><td class='target'>{0} градусах Цельсія</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} градусам Цельсія</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} градусами Цельсія</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} кельвін</td><td class='target'>{0} кельвіні</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кельвіну</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кельвіном</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кельвіни</td><td class='target'>{0} кельвінах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кельвінам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кельвінами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кельвінів</td><td class='target'>{0} кельвінах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кельвінам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кельвінами</td></tr>
+	<tr><td class='source' rowSpan='126'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='12'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} петабайт</td><td class='target'>{0} петабайта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} петабайті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} петабайту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} петабайтом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} петабайти</td><td class='target'>{0} петабайтів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} петабайтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} петабайтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} петабайтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} петабайтів</td><td class='target'>{0} петабайтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} петабайтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} петабайтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='terabyte' href='#terabyte'>terabyte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} терабайт</td><td class='target'>{0} терабайта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} терабайті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} терабайту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} терабайтом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} терабайти</td><td class='target'>{0} терабайтів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} терабайтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} терабайтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} терабайтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} терабайтів</td><td class='target'>{0} терабайтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} терабайтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} терабайтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='terabit' href='#terabit'>terabit</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} терабіт</td><td class='target'>{0} терабіта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} терабіті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} терабіту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} терабітом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} терабіти</td><td class='target'>{0} терабітів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} терабітах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} терабітам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} терабітами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} терабітів</td><td class='target'>{0} терабітах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} терабітам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} терабітами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='gigabyte' href='#gigabyte'>gigabyte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гігабайт</td><td class='target'>{0} гігабайта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гігабайті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гігабайту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гігабайтом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гігабайти</td><td class='target'>{0} гігабайтів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гігабайтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гігабайтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гігабайтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гігабайтів</td><td class='target'>{0} гігабайтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гігабайтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гігабайтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} гігабіт</td><td class='target'>{0} гігабіта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} гігабіті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} гігабіту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} гігабітом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} гігабіти</td><td class='target'>{0} гігабітів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} гігабітах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} гігабітам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} гігабітами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} гігабітів</td><td class='target'>{0} гігабітах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} гігабітам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} гігабітами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megabyte' href='#megabyte'>megabyte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегабайт</td><td class='target'>{0} мегабайта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегабайті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегабайту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегабайтом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегабайти</td><td class='target'>{0} мегабайтів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегабайтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегабайтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегабайтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегабайтів</td><td class='target'>{0} мегабайтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегабайтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегабайтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='megabit' href='#megabit'>megabit</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мегабіт</td><td class='target'>{0} мегабіта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мегабіті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мегабіту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мегабітом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мегабіти</td><td class='target'>{0} мегабітів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мегабітах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мегабітам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мегабітами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мегабітів</td><td class='target'>{0} мегабітах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мегабітам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мегабітами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілобайт</td><td class='target'>{0} кілобайта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілобайті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілобайту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілобайтом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілобайти</td><td class='target'>{0} кілобайтів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілобайтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілобайтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілобайтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілобайтів</td><td class='target'>{0} кілобайтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілобайтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілобайтами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} кілобіт</td><td class='target'>{0} кілобіта</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} кілобіті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} кілобіту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кілобітом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кілобіти</td><td class='target'>{0} кілобітів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кілобітах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кілобітам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кілобітами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кілобітів</td><td class='target'>{0} кілобітах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кілобітам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кілобітами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='byte' href='#byte'>byte</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} байт</td><td class='target'>{0} байті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} байту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} байтом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} байти</td><td class='target'>{0} байтах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} байтам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} байтами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} байтів</td><td class='target'>{0} байтах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} байтам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} байтами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='bit' href='#bit'>bit</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} біт</td><td class='target'>{0} біті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} біту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} бітом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} біти</td><td class='target'>{0} бітах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} бітам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} бітами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} бітів</td><td class='target'>{0} бітах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} бітам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} бітами</td></tr>
+	<tr><td class='source' rowSpan='210'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='9'><a name='revolution' href='#revolution'>revolution</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} оберт</td><td class='target'>{0} оберті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} оберту</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} обертом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} оберти</td><td class='target'>{0} обертах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} обертам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} обертами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} обертів</td><td class='target'>{0} обертах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} обертам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} обертами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='radian' href='#radian'>radian</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} радіан</td><td class='target'>{0} радіані</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} радіану</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} радіаном</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} радіани</td><td class='target'>{0} радіанах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} радіанам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} радіанами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} радіанів</td><td class='target'>{0} радіанах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} радіанам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} радіанами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='degree' href='#degree'>degree</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} градус</td><td class='target'>{0} градусі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} градусу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} градусом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} градуси</td><td class='target'>{0} градусах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} градусам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} градусами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} градусів</td><td class='target'>{0} градусах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} градусам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} градусами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} кутова мінута</td><td class='target' rowSpan='2'>{0} кутовій мінуті</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кутовою мінутою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кутові мінути</td><td class='target'>{0} кутових мінутах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кутовим мінутам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кутовими мінутами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кутових мінут</td><td class='target'>{0} кутових мінутах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кутовим мінутам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кутовими мінутами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} кутова секунда</td><td class='target' rowSpan='2'>{0} кутовій секунді</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кутовою секундою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кутові секунди</td><td class='target'>{0} кутових секундах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кутовим секундам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кутовими секундами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кутових секунд</td><td class='target'>{0} кутових секундах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кутовим секундам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кутовими секундами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='karat' href='#karat'>karat</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} карат</td><td class='target'>{0} караті</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} карату</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} каратом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} карати</td><td class='target'>{0} каратах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} каратам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} каратами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} каратів</td><td class='target'>{0} каратах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} каратам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} каратами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='millimole-per-liter' href='#millimole-per-liter'>millimole-per-liter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} мілімоль на літр</td><td class='target'>{0} мілімоля на літр</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} мілімолі на літр</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} мілімолю на літр</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мілімолем на літр</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} мілімолі на літр</td><td class='target'>{0} мілімолів на літр</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} мілімолях на літр</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мілімолям на літр</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мілімолями на літр</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мілімолів на літр</td><td class='target'>{0} мілімолях на літр</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мілімолям на літр</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мілімолями на літр</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='item' href='#item'>item</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} елемент</td><td class='target'>{0} елемента</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} елементі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} елементу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} елементом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} елементи</td><td class='target'>{0} елементів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} елементах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} елементам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} елементами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} елементів</td><td class='target'>{0} елементах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} елементам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} елементами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} мільйонна доля</td><td class='target' rowSpan='2'>{0} мільйонній долі</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} мільйонною долею</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} мільйонні долі</td><td class='target'>{0} мільйонних долях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} мільйонним долям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} мільйонними долями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} мільйонних доль</td><td class='target'>{0} мільйонних долях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} мільйонним долям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} мільйонними долями</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='percent' href='#percent'>percent</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} відсоток</td><td class='target' rowSpan='2'>{0} відсотку</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} відсотком</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} відсотки</td><td class='target'>{0} відсотках</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} відсоткам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} відсотками</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} відсотків</td><td class='target'>{0} відсотках</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} відсоткам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} відсотками</td></tr>
+	<tr><td class='source' rowSpan='20'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>long-gender</td><td class='target'>feminine</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-displayName</td><td class='target'>проміріада</td><td class='target'>проміріад</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} проміріада</td><td class='target' rowSpan='2'>{0} проміріад</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target'>{0} проміріаду</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} проміріади</td><td class='target'>{0} проміріада</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} проміріада</td><td class='target'>{0} проміріаді</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} проміріаду</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} проміріадом</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target'>{0} проміріад</td><td class='target'>{0} проміріадів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} проміріади</td><td class='target'>{0} проміріадах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} проміріадам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} проміріадами</td></tr>
+	<tr><td class='source'>long-many-nominative</td><td class='target' rowSpan='4'>{0} проміріад</td><td class='target'>{0} проміріадів</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target'>{0} проміріадах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} проміріадам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} проміріадами</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target' rowSpan='4'>{0} проміріади</td><td class='target' rowSpan='4'>{0} проміріада</td></tr>
+	<tr><td class='source'>long-other-locative</td></tr>
+	<tr><td class='source'>long-other-dative</td></tr>
+	<tr><td class='source'>long-other-instrumental</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='mole' href='#mole'>mole</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} моль</td><td class='target'>{0} молі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} молю</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} молем</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} молі</td><td class='target'>{0} молях</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} молям</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} молями</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} молів</td><td class='target'>{0} молях</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} молям</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} молями</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} літр на кілометр</td><td class='target'>{0} літра на кілометр</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} літрі на кілометр</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} літру на кілометр</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} літром на кілометр</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} літри на кілометр</td><td class='target'>{0} літрів на кілометр</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} літрах на кілометр</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} літрам на кілометр</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} літрами на кілометр</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} літрів на кілометр</td><td class='target'>{0} літрах на кілометр</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} літрам на кілометр</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} літрами на кілометр</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} літр на 100 кілометрів</td><td class='target'>{0} літра на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} літрі на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} літру на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} літром на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} літри на 100 кілометрів</td><td class='target'>{0} літрів на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} літрах на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} літрам на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} літрами на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} літрів на 100 кілометрів</td><td class='target'>{0} літрах на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} літрам на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} літрами на 100 кілометрів</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} ньютон</td><td class='target'>{0} ньютоні</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} ньютону</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ньютоном</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} ньютони</td><td class='target'>{0} ньютонах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} ньютонам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} ньютонами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} ньютонів</td><td class='target'>{0} ньютонах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} ньютонам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} ньютонами</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>feminine</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target' rowSpan='5'>{0} кіловат-година на 100 кілометрів</td><td class='target'>{0} кіловат-годину на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target'>{0} кіловат-години на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target' rowSpan='2'>{0} кіловат-годині на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} кіловат-годиною на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} кіловат-години на 100 кілометрів</td><td class='target'>{0} кіловат-годин на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} кіловат-годинах на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} кіловат-годинам на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} кіловат-годинами на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кіловат-годин на 100 кілометрів</td><td class='target'>{0} кіловат-годинах на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} кіловат-годинам на 100 кілометрів</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} кіловат-годинами на 100 кілометрів</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='lux' href='#lux'>lux</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} люкс</td><td class='target'>{0} люксі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} люксу</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} люксом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} люкси</td><td class='target'>{0} люксах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} люксам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} люксами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} люксів</td><td class='target'>{0} люксах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} люксам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} люксами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} кандела</td><td class='target' rowSpan='2'>{0} канделі</td></tr>
+	<tr><td class='source'>long-one-dative</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} канделою</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} кандели</td><td class='target'>{0} канделах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} канделам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} канделами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} кандел</td><td class='target'>{0} канделах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} канделам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} канделами</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='lumen' href='#lumen'>lumen</a></td><td class='source'>long-one-locative</td><td class='target' rowSpan='3'>{0} люмен</td><td class='target'>{0} люмені</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} люмену</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} люменом</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target' rowSpan='3'>{0} люмени</td><td class='target'>{0} люменах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} люменам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} люменами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} люменів</td><td class='target'>{0} люменах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} люменам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} люменами</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>long-gender</td><td class='target'>▷missing◁</td><td class='target'>masculine</td></tr>
+	<tr><td class='source'>long-one-genitive</td><td class='target' rowSpan='4'>{0} ньютон-метр</td><td class='target'>{0} ньютон-метра</td></tr>
+	<tr><td class='source'>long-one-locative</td><td class='target'>{0} ньютон-метрі</td></tr>
+	<tr><td class='source'>long-one-dative</td><td class='target'>{0} ньютон-метру</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ньютон-метром</td></tr>
+	<tr><td class='source'>long-few-genitive</td><td class='target' rowSpan='4'>{0} ньютон-метри</td><td class='target'>{0} ньютон-метрів</td></tr>
+	<tr><td class='source'>long-few-locative</td><td class='target'>{0} ньютон-метрах</td></tr>
+	<tr><td class='source'>long-few-dative</td><td class='target'>{0} ньютон-метрам</td></tr>
+	<tr><td class='source'>long-few-instrumental</td><td class='target'>{0} ньютон-метрами</td></tr>
+	<tr><td class='source'>long-many-locative</td><td class='target' rowSpan='3'>{0} ньютон-метрів</td><td class='target'>{0} ньютон-метрах</td></tr>
+	<tr><td class='source'>long-many-dative</td><td class='target'>{0} ньютон-метрам</td></tr>
+	<tr><td class='source'>long-many-instrumental</td><td class='target'>{0} ньютон-метрами</td></tr>
+	<tr><td class='source' rowSpan='54'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td><td class='source' rowSpan='27'><a name='power2' href='#power2'>power2</a></td><td class='source'>long-one-locative-masculine</td><td class='target' rowSpan='9'>квадратний {0}</td><td class='target'>квадратному {0}</td></tr>
+	<tr><td class='source'>long-one-locative-feminine</td><td class='target'>квадратній {0}</td></tr>
+	<tr><td class='source'>long-one-locative-dgender</td><td class='target' rowSpan='2'>квадратному {0}</td></tr>
+	<tr><td class='source'>long-one-dative-masculine</td></tr>
+	<tr><td class='source'>long-one-dative-feminine</td><td class='target'>квадратній {0}</td></tr>
+	<tr><td class='source'>long-one-dative-dgender</td><td class='target'>квадратному {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-masculine</td><td class='target'>квадратним {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-feminine</td><td class='target'>квадратною {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-dgender</td><td class='target'>квадратним {0}</td></tr>
+	<tr><td class='source'>long-few-locative-masculine</td><td class='target' rowSpan='9'>квадратні {0}</td><td class='target' rowSpan='3'>квадратних {0}</td></tr>
+	<tr><td class='source'>long-few-locative-feminine</td></tr>
+	<tr><td class='source'>long-few-locative-dgender</td></tr>
+	<tr><td class='source'>long-few-dative-masculine</td><td class='target' rowSpan='3'>квадратним {0}</td></tr>
+	<tr><td class='source'>long-few-dative-feminine</td></tr>
+	<tr><td class='source'>long-few-dative-dgender</td></tr>
+	<tr><td class='source'>long-few-instrumental-masculine</td><td class='target' rowSpan='3'>квадратними {0}</td></tr>
+	<tr><td class='source'>long-few-instrumental-feminine</td></tr>
+	<tr><td class='source'>long-few-instrumental-dgender</td></tr>
+	<tr><td class='source'>long-many-dative-masculine</td><td class='target' rowSpan='6'>квадратних {0}</td><td class='target' rowSpan='3'>квадратним {0}</td></tr>
+	<tr><td class='source'>long-many-dative-feminine</td></tr>
+	<tr><td class='source'>long-many-dative-dgender</td></tr>
+	<tr><td class='source'>long-many-instrumental-masculine</td><td class='target' rowSpan='3'>квадратними {0}</td></tr>
+	<tr><td class='source'>long-many-instrumental-feminine</td></tr>
+	<tr><td class='source'>long-many-instrumental-dgender</td></tr>
+	<tr><td class='source'>long-other-locative-feminine</td><td class='target' rowSpan='3'>квадратного {0}</td><td class='target' rowSpan='3'>квадратної {0}</td></tr>
+	<tr><td class='source'>long-other-dative-feminine</td></tr>
+	<tr><td class='source'>long-other-instrumental-feminine</td></tr>
+	<tr><td class='source' rowSpan='27'><a name='power3' href='#power3'>power3</a></td><td class='source'>long-one-locative-masculine</td><td class='target' rowSpan='9'>кубічний {0}</td><td class='target'>кубічному {0}</td></tr>
+	<tr><td class='source'>long-one-locative-feminine</td><td class='target'>кубічній {0}</td></tr>
+	<tr><td class='source'>long-one-locative-dgender</td><td class='target' rowSpan='2'>кубічному {0}</td></tr>
+	<tr><td class='source'>long-one-dative-masculine</td></tr>
+	<tr><td class='source'>long-one-dative-feminine</td><td class='target'>кубічній {0}</td></tr>
+	<tr><td class='source'>long-one-dative-dgender</td><td class='target'>кубічному {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-masculine</td><td class='target'>кубічним {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-feminine</td><td class='target'>кубічною {0}</td></tr>
+	<tr><td class='source'>long-one-instrumental-dgender</td><td class='target'>кубічним {0}</td></tr>
+	<tr><td class='source'>long-few-locative-masculine</td><td class='target' rowSpan='9'>кубічні {0}</td><td class='target' rowSpan='3'>кубічних {0}</td></tr>
+	<tr><td class='source'>long-few-locative-feminine</td></tr>
+	<tr><td class='source'>long-few-locative-dgender</td></tr>
+	<tr><td class='source'>long-few-dative-masculine</td><td class='target' rowSpan='3'>кубічним {0}</td></tr>
+	<tr><td class='source'>long-few-dative-feminine</td></tr>
+	<tr><td class='source'>long-few-dative-dgender</td></tr>
+	<tr><td class='source'>long-few-instrumental-masculine</td><td class='target' rowSpan='3'>кубічними {0}</td></tr>
+	<tr><td class='source'>long-few-instrumental-feminine</td></tr>
+	<tr><td class='source'>long-few-instrumental-dgender</td></tr>
+	<tr><td class='source'>long-many-dative-masculine</td><td class='target' rowSpan='6'>кубічних {0}</td><td class='target' rowSpan='3'>кубічним {0}</td></tr>
+	<tr><td class='source'>long-many-dative-feminine</td></tr>
+	<tr><td class='source'>long-many-dative-dgender</td></tr>
+	<tr><td class='source'>long-many-instrumental-masculine</td><td class='target' rowSpan='3'>кубічними {0}</td></tr>
+	<tr><td class='source'>long-many-instrumental-feminine</td></tr>
+	<tr><td class='source'>long-many-instrumental-dgender</td></tr>
+	<tr><td class='source'>long-other-locative-feminine</td><td class='target' rowSpan='3'>кубічного {0}</td><td class='target' rowSpan='3'>кубічної {0}</td></tr>
+	<tr><td class='source'>long-other-dative-feminine</td></tr>
+	<tr><td class='source'>long-other-instrumental-feminine</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='3'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td><td class='source' rowSpan='3'><a name='Case (for measurement units)' href='#Case (for measurement units)'>Case (for measurement units)</a></td><td class='source'>locative</td><td class='target' rowSpan='3'>▷missing◁</td><td class='target'>Міститься в {0}</td></tr>
+	<tr><td class='source'>dative</td><td class='target'>Це відповідає {0}</td></tr>
+	<tr><td class='source'>instrumental</td><td class='target'>Вимірюється не {0}</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

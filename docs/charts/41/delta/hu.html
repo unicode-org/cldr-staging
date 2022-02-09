@@ -1,0 +1,937 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hungarian Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Hungarian Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source'><a name='Western Asia: Georgia' href='#Western Asia: Georgia'>Western Asia: Georgia</a></td><td class='source'>GEL-symbol-variant</td><td class='source' rowSpan='852'>hu</td><td class='target'>₾</td><td class='target'>GEL</td><td class='target'>moderate</td></tr>
+	<tr><td class='source' rowSpan='851'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='104'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='8'><a name='day-person' href='#day-person'>day-person</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} nap</td><td class='target'>{0} napot</td><td class='target' rowSpan='851'>modern</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} nappal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} nappá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} napig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} napot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} nappal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} nappá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} napig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='decade' href='#decade'>decade</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} évtized</td><td class='target'>{0} évtizedet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} évtizeddel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} évtizeddé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} évtizedig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} évtizedet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} évtizeddel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} évtizeddé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} évtizedig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='century' href='#century'>century</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} évszázad</td><td class='target'>{0} évszázadot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} évszázaddal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} évszázaddá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} évszázadig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} évszázadot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} évszázaddal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} évszázaddá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} évszázadig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='year' href='#year'>year</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} év</td><td class='target'>{0} évet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} évvel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} évvé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} évig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} évet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} évvel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} évvé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} évig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='month' href='#month'>month</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hónap</td><td class='target'>{0} hónapot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} hónappal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hónappá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hónapig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hónapot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} hónappal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hónappá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hónapig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='week' href='#week'>week</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hét</td><td class='target'>{0} hetet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} héttel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hétté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hétig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hetet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} héttel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hétté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hétig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='day' href='#day'>day</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} nap</td><td class='target'>{0} napot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} nappal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} nappá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} napig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} napot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} nappal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} nappá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} napig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hour' href='#hour'>hour</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} óra</td><td class='target'>{0} órát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} órával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} órává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} óráig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} órát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} órával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} órává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} óráig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='minute' href='#minute'>minute</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} perc</td><td class='target'>{0} percet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} perccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} perccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} percig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} percet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} perccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} perccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} percig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='second' href='#second'>second</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} másodperc</td><td class='target'>{0} másodpercet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} másodperccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} másodperccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} másodpercig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} másodpercet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} másodperccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} másodperccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} másodpercig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='millisecond' href='#millisecond'>millisecond</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} ezredmásodperc</td><td class='target'>{0} ezredmásodpercet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ezredmásodperccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} ezredmásodperccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target' rowSpan='2'>{0} ezredmásodpercig</td></tr>
+	<tr><td class='source'>long-other-accusative</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} ezredmásodperccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} ezredmásodperccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} ezredmásodpercig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='microsecond' href='#microsecond'>microsecond</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} mikroszekundum</td><td class='target'>{0} mikroszekundumot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} mikroszekundummal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} mikroszekundummá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} mikroszekundumig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} mikroszekundumot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} mikroszekundummal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} mikroszekundummá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} mikroszekundumig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} nanoszekundum</td><td class='target'>{0} nanoszekundumot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} nanoszekundummal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} nanoszekundummá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} nanoszekundumig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} nanoszekundumot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} nanoszekundummal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} nanoszekundummá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} nanoszekundumig</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Graphics' href='#Graphics'>Graphics</a></td><td class='source' rowSpan='8'><a name='em' href='#em'>em</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kvirt</td><td class='target'>{0} kvirtet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kvirttel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kvirtté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kvirtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kvirtet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kvirttel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kvirtté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kvirtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megapixel' href='#megapixel'>megapixel</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} millió képpont</td><td class='target'>{0} millió képpontot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} millió képponttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} millió képponttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} millió képpontig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} millió képpontot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} millió képponttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} millió képponttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} millió képpontig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='pixel' href='#pixel'>pixel</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} képpont</td><td class='target'>{0} képpontot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} képponttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} képponttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} képpontig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} képpontot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} képponttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} képponttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} képpontig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} képpont per centiméter</td><td class='target'>{0} képpont per centimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} képpont per centiméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} képpont per centiméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} képpont per centiméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} képpont per centimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} képpont per centiméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} képpont per centiméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} képpont per centiméterig</td></tr>
+	<tr><td class='source' rowSpan='72'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='8'><a name='kilometer' href='#kilometer'>kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilométer</td><td class='target'>{0} kilométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='meter' href='#meter'>meter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} méter</td><td class='target'>{0} métert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} méterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} méterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} méterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} métert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} méterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} méterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} méterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='decimeter' href='#decimeter'>decimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} deciméter</td><td class='target'>{0} decimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} deciméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} deciméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} deciméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} decimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} deciméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} deciméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} deciméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='centimeter' href='#centimeter'>centimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} centiméter</td><td class='target'>{0} centimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} centiméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} centiméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} centiméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} centimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} centiméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} centiméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} centiméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='millimeter' href='#millimeter'>millimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} milliméter</td><td class='target'>{0} millimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} milliméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} milliméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} milliméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} millimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} milliméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} milliméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} milliméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='micrometer' href='#micrometer'>micrometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} mikrométer</td><td class='target'>{0} mikrométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} mikrométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} mikrométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} mikrométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} mikrométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} mikrométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} mikrométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} mikrométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='nanometer' href='#nanometer'>nanometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} nanométer</td><td class='target'>{0} nanométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} nanométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} nanométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} nanométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} nanométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} nanométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} nanométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} nanométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='picometer' href='#picometer'>picometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} pikométer</td><td class='target'>{0} pikométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} pikométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} pikométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} pikométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} pikométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} pikométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} pikométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} pikométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} svéd mérföld</td><td class='target'>{0} svéd mérföldet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} svéd mérfölddel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} svéd mérfölddé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} svéd mérföldig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} svéd mérföldet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} svéd mérfölddel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} svéd mérfölddé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} svéd mérföldig</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Area' href='#Area'>Area</a></td><td class='source' rowSpan='8'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} négyzetkilométer</td><td class='target'>{0} négyzetkilométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} négyzetkilométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} négyzetkilométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} négyzetkilométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} négyzetkilométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} négyzetkilométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} négyzetkilométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} négyzetkilométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hectare' href='#hectare'>hectare</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hektár</td><td class='target'>{0} hektárt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} hektárral</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hektárrá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hektárig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hektárt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} hektárral</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hektárrá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hektárig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} négyzetméter</td><td class='target'>{0} négyzetmétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} négyzetméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} négyzetméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} négyzetméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} négyzetmétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} négyzetméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} négyzetméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} négyzetméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} négyzetcentiméter</td><td class='target'>{0} négyzetcentimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} négyzetcentiméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} négyzetcentiméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} négyzetcentiméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} négyzetcentimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} négyzetcentiméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} négyzetcentiméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} négyzetcentiméterig</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='Volume' href='#Volume'>Volume</a></td><td class='source' rowSpan='8'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} köbkilométer</td><td class='target'>{0} köbkilométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} köbkilométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} köbkilométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} köbkilométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} köbkilométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} köbkilométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} köbkilométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} köbkilométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} köbméter</td><td class='target'>{0} köbmétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} köbméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} köbméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} köbméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} köbmétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} köbméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} köbméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} köbméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} köbcentiméter</td><td class='target'>{0} köbcentimétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} köbcentiméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} köbcentiméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} köbcentiméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} köbcentimétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} köbcentiméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} köbcentiméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} köbcentiméterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megaliter' href='#megaliter'>megaliter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megaliter</td><td class='target'>{0} megalitert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megaliterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megaliterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megaliterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megalitert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megaliterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megaliterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megaliterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hektoliter</td><td class='target'>{0} hektolitert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} hektoliterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hektoliterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hektoliterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hektolitert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} hektoliterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hektoliterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hektoliterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} liter</td><td class='target'>{0} litert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} literrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} literré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} literig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} litert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} literrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} literré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} literig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='deciliter' href='#deciliter'>deciliter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} deciliter</td><td class='target'>{0} decilitert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} deciliterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} deciliterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} deciliterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} decilitert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} deciliterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} deciliterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} deciliterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='centiliter' href='#centiliter'>centiliter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} centiliter</td><td class='target'>{0} centilitert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} centiliterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} centiliterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} centiliterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} centilitert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} centiliterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} centiliterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} centiliterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='milliliter' href='#milliliter'>milliliter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} milliliter</td><td class='target'>{0} millilitert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} milliliterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} milliliterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} milliliterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} millilitert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} milliliterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} milliliterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} milliliterig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} metrikus pint</td><td class='target'>{0} metrikus pintet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} metrikus pinttel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} metrikus pintté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} metrikus pintig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} metrikus pintet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} metrikus pinttel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} metrikus pintté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} metrikus pintig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} bögre</td><td class='target'>{0} bögrét</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} bögrével</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} bögrévé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} bögréig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} bögrét</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} bögrével</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} bögrévé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} bögréig</td></tr>
+	<tr><td class='source' rowSpan='32'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='8'><a name='g-force' href='#g-force'>g-force</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} g gyorsulás</td><td class='target'>{0} g gyorsulást</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} g gyorsulással</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} g gyorsulássá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} g gyorsulásig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} g gyorsulást</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} g gyorsulással</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} g gyorsulássá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} g gyorsulásig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} méter per másodpercnégyzet</td><td class='target'>{0} méter per másodpercnégyzetet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} méter per másodpercnégyzettel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} méter per másodpercnégyzetté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} méter per másodpercnégyzetig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} méter per másodpercnégyzetet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} méter per másodpercnégyzettel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} méter per másodpercnégyzetté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} méter per másodpercnégyzetig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilométer per óra</td><td class='target'>{0} kilométer per órát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilométer per órával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilométer per órává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilométer per óráig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilométer per órát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilométer per órával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilométer per órává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilométer per óráig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} méter per másodperc</td><td class='target'>{0} méter per másodpercet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} méter per másodperccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} méter per másodperccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} méter per másodpercig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} méter per másodpercet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} méter per másodperccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} méter per másodperccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} méter per másodpercig</td></tr>
+	<tr><td class='source' rowSpan='48'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td><td class='source' rowSpan='8'><a name='metric-ton' href='#metric-ton'>metric-ton</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} metrikus tonna</td><td class='target'>{0} metrikus tonnát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} metrikus tonnával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} metrikus tonnává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} metrikus tonnáig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} metrikus tonnát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} metrikus tonnával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} metrikus tonnává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} metrikus tonnáig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilogram' href='#kilogram'>kilogram</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilogramm</td><td class='target'>{0} kilogrammot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilogrammal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilogrammá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilogrammig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilogrammot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilogrammal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilogrammá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilogrammig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='gram' href='#gram'>gram</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} gramm</td><td class='target'>{0} grammot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} grammal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} grammá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} grammig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} grammot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} grammal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} grammá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} grammig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='milligram' href='#milligram'>milligram</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} milligramm</td><td class='target'>{0} milligrammot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} milligrammal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} milligrammá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} milligrammig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} milligrammot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} milligrammal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} milligrammá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} milligrammig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='microgram' href='#microgram'>microgram</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} mikrogramm</td><td class='target'>{0} mikrogrammot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} mikrogrammal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} mikrogrammá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} mikrogrammig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} mikrogrammot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} mikrogrammal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} mikrogrammá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} mikrogrammig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='carat' href='#carat'>carat</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} karát</td><td class='target'>{0} karátot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} karáttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} karáttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} karátig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} karátot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} karáttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} karáttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} karátig</td></tr>
+	<tr><td class='source' rowSpan='72'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source' rowSpan='8'><a name='calorie' href='#calorie'>calorie</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kalória</td><td class='target'>{0} kalóriát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kalóriával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kalóriává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kalóriáig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kalóriát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kalóriával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kalóriává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kalóriáig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilojoule</td><td class='target'>{0} kilojoule-t</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilojoule-lal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilojoule-lá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilojoule-ig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilojoule-t</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilojoule-lal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilojoule-lá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilojoule-ig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='joule' href='#joule'>joule</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} joule</td><td class='target'>{0} joule-t</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} joule-lal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} joule-lá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} joule-ig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} joule-t</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} joule-lal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} joule-lá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} joule-ig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilowattóra</td><td class='target'>{0} kilowattórát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilowattórával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilowattórává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilowattóráig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilowattórát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilowattórával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilowattórává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilowattóráig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} gigawatt</td><td class='target'>{0} gigawattot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} gigawattal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} gigawattá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} gigawattig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} gigawattot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} gigawattal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} gigawattá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} gigawattig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megawatt' href='#megawatt'>megawatt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megawatt</td><td class='target'>{0} megawattot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megawattal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megawattá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megawattig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megawattot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megawattal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megawattá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megawattig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilowatt' href='#kilowatt'>kilowatt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilowatt</td><td class='target'>{0} kilowattot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilowattal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilowattá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilowattig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilowattot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilowattal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilowattá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilowattig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='watt' href='#watt'>watt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} watt</td><td class='target'>{0} wattot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} wattal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} wattá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} wattig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} wattot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} wattal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} wattá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} wattig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} milliwatt</td><td class='target'>{0} milliwattot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} milliwattal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} milliwattá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} milliwattig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} milliwattot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} milliwattal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} milliwattá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} milliwattig</td></tr>
+	<tr><td class='source' rowSpan='64'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td><td class='source' rowSpan='8'><a name='ampere' href='#ampere'>ampere</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} amper</td><td class='target'>{0} ampert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} amperrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} amperré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} amperig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} ampert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} amperrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} amperré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} amperig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='milliampere' href='#milliampere'>milliampere</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} milliamper</td><td class='target'>{0} milliampert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} milliamperrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} milliamperré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} milliamperig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} milliampert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} milliamperrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} milliamperré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} milliamperig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='ohm' href='#ohm'>ohm</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} ohm</td><td class='target'>{0} ohmot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ohmmal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} ohmmá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} ohmig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} ohmot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} ohmmal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} ohmmá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} ohmig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='volt' href='#volt'>volt</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} volt</td><td class='target'>{0} voltot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} volttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} volttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} voltig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} voltot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} volttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} volttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} voltig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} gigahertz</td><td class='target'>{0} gigahertzet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} gigahertzcel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} gigahertzcé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} gigahertzig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} gigahertzet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} gigahertzcel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} gigahertzcé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} gigahertzig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megahertz' href='#megahertz'>megahertz</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megahertz</td><td class='target'>{0} megahertzet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megahertzcel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megahertzcé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megahertzig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megahertzet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megahertzcel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megahertzcé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megahertzig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilohertz</td><td class='target'>{0} kilohertzet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilohertzcel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilohertzcé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilohertzig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilohertzet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilohertzcel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilohertzcé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilohertzig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hertz' href='#hertz'>hertz</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hertz</td><td class='target'>{0} hertzet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} hertzcel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hertzcé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hertzig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hertzet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} hertzcel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hertzcé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hertzig</td></tr>
+	<tr><td class='source' rowSpan='82'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='8'><a name='bar' href='#bar'>bar</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} bar</td><td class='target'>{0} bart</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} barral</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} barrá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} barig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} bart</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} barral</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} barrá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} barig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='millibar' href='#millibar'>millibar</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} millibar</td><td class='target'>{0} millibart</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} millibarral</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} millibarrá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} millibarig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} millibart</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} millibarral</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} millibarrá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} millibarig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} atmoszféra</td><td class='target'>{0} atmoszférát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} atmoszférával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} atmoszférává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} atmoszféráig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} atmoszférát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} atmoszférával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} atmoszférává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} atmoszféráig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='pascal' href='#pascal'>pascal</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} pascal</td><td class='target'>{0} pascalt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} pascallal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} pascallá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} pascalig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} pascalt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} pascallal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} pascallá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} pascalig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='hectopascal' href='#hectopascal'>hectopascal</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} hektopascal</td><td class='target'>{0} hektopascalt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} hektopascallal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} hektopascallá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} hektopascalig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} hektopascalt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} hektopascallal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} hektopascallá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} hektopascalig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilopascal</td><td class='target'>{0} kilopascalt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilopascallal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilopascallá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilopascalig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilopascalt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilopascallal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilopascallá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilopascalig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megapascal' href='#megapascal'>megapascal</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megapascal</td><td class='target'>{0} megapascalt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megapascallal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megapascallá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megapascalig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megapascalt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megapascallal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megapascallá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megapascalig</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='generic' href='#generic'>generic</a></td><td class='source'>long-one-nominative</td><td class='target' rowSpan='10'>{0}°</td><td class='target'>{0} fok</td></tr>
+	<tr><td class='source'>long-one-accusative</td><td class='target'>{0} fokot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} fokkal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} fokká</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} fokig</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} fok</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} fokot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} fokkal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} fokká</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} fokig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='celsius' href='#celsius'>celsius</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} Celsius-fok</td><td class='target'>{0} Celsius-fokot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} Celsius-fokkal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} Celsius-fokká</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} Celsius-fokig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} Celsius-fokot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} Celsius-fokkal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} Celsius-fokká</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} Celsius-fokig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kelvin' href='#kelvin'>kelvin</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kelvin</td><td class='target'>{0} kelvint</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kelvinnel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kelvinné</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kelvinig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kelvint</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kelvinnel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kelvinné</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kelvinig</td></tr>
+	<tr><td class='source' rowSpan='88'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='8'><a name='petabyte' href='#petabyte'>petabyte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} petabájt</td><td class='target'>{0} petabájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} petabájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} petabájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} petabájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} petabájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} petabájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} petabájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} petabájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='terabyte' href='#terabyte'>terabyte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} terabájt</td><td class='target'>{0} terabájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} terabájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} terabájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} terabájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} terabájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} terabájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} terabájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} terabájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='terabit' href='#terabit'>terabit</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} terabit</td><td class='target'>{0} terabitet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} terabittel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} terabitté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} terabitig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} terabitet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} terabittel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} terabitté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} terabitig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='gigabyte' href='#gigabyte'>gigabyte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} gigabájt</td><td class='target'>{0} gigabájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} gigabájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} gigabájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} gigabájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} gigabájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} gigabájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} gigabájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} gigabájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='gigabit' href='#gigabit'>gigabit</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} gigabit</td><td class='target'>{0} gigabitet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} gigabittel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} gigabitté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} gigabitig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} gigabitet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} gigabittel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} gigabitté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} gigabitig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megabyte' href='#megabyte'>megabyte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megabájt</td><td class='target'>{0} megabájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megabájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megabájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megabájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megabájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megabájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megabájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megabájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='megabit' href='#megabit'>megabit</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} megabit</td><td class='target'>{0} megabitet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} megabittel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} megabitté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} megabitig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} megabitet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} megabittel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} megabitté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} megabitig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilobájt</td><td class='target'>{0} kilobájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilobájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilobájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilobájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilobájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilobájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilobájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilobájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilobit' href='#kilobit'>kilobit</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kilobit</td><td class='target'>{0} kilobitet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kilobittel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kilobitté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kilobitig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kilobitet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kilobittel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kilobitté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kilobitig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='byte' href='#byte'>byte</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} bájt</td><td class='target'>{0} bájtot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} bájttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} bájttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} bájtig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} bájtot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} bájttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} bájttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} bájtig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='bit' href='#bit'>bit</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} bit</td><td class='target'>{0} bitet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} bittel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} bitté</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} bitig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} bitet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} bittel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} bitté</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} bitig</td></tr>
+	<tr><td class='source' rowSpan='137'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source'><a name='radian' href='#radian'>radian</a></td><td class='source'>long-one-instrumental</td><td class='target'>{0} radián</td><td class='target'>{0} radiánnal</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} ívperc</td><td class='target'>{0} ívpercet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ívperccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} ívperccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} ívpercig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} ívpercet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} ívperccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} ívperccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} ívpercig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='arc-second' href='#arc-second'>arc-second</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} ívmásodperc</td><td class='target'>{0} ívmásodpercet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ívmásodperccel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} ívmásodperccé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} ívmásodpercig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} ívmásodpercet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} ívmásodperccel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} ívmásodperccé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} ívmásodpercig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='karat' href='#karat'>karat</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} karát</td><td class='target'>{0} karátot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} karáttal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} karáttá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} karátig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} karátot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} karáttal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} karáttá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} karátig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='millimole-per-liter' href='#millimole-per-liter'>millimole-per-liter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} millimól/liter</td><td class='target'>{0} millimól/litert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} millimól/literrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} millimól/literré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} millimól/literig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} millimól/litert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} millimól/literrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} millimól/literré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} millimól/literig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='item' href='#item'>item</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} item</td><td class='target'>{0} itemet</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} itemmel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} itemmé</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} itemig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} itemet</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} itemmel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} itemmé</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} itemig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='permillion' href='#permillion'>permillion</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} részecske/millió</td><td class='target'>{0} részecske/milliót</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} részecske/millióval</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} részecske/millióvá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} részecske/millióig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} részecske/milliót</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} részecske/millióval</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} részecske/millióvá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} részecske/millióig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='percent' href='#percent'>percent</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} százalék</td><td class='target'>{0} százalékot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} százalékkal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} százalékká</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} százalékig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} százalékot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} százalékkal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} százalékká</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} százalékig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='permille' href='#permille'>permille</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} ezrelék</td><td class='target'>{0} ezreléket</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} ezrelékkel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} ezrelékké</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} ezrelékig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} ezreléket</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} ezrelékkel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} ezrelékké</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} ezrelékig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='permyriad' href='#permyriad'>permyriad</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} tízezrelék</td><td class='target'>{0} tízezreléket</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} tízezrelékkel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} tízezrelékké</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} tízezrelékig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} tízezreléket</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} tízezrelékkel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} tízezrelékké</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} tízezrelékig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='mole' href='#mole'>mole</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} mól</td><td class='target'>{0} mólt</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} móllal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} móllá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} mólig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} mólt</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} móllal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} móllá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} mólig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} liter per kilométer</td><td class='target'>{0} liter per kilométert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} liter per kilométerrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} liter per kilométerré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} liter per kilométerig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} liter per kilométert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} liter per kilométerrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} liter per kilométerré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} liter per kilométerig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} liter/100 km</td><td class='target'>{0} liter/100 km-t</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} liter/100 km-rel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} liter/100 km-ré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} liter/100 km-ig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} liter/100 km-t</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} liter/100 km-rel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} liter/100 km-ré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} liter/100 km-ig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='newton' href='#newton'>newton</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} newton</td><td class='target'>{0} newtont</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} newtonnal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} newtonná</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} newtonig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} newtont</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} newtonnal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} newtonná</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} newtonig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kWh/100 km</td><td class='target'>{0} kWh/100 km-t</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kWh/100 km-rel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kWh/100 km-ré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kWh/100 km-ig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kWh/100 km-t</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kWh/100 km-rel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kWh/100 km-ré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kWh/100 km-ig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='lux' href='#lux'>lux</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} lux</td><td class='target'>{0} luxot</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} luxszal</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} luxszá</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} luxig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} luxot</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} luxszal</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} luxszá</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} luxig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='candela' href='#candela'>candela</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} kandela</td><td class='target'>{0} kandelát</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} kandelával</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} kandelává</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} kandeláig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} kandelát</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} kandelával</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} kandelává</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} kandeláig</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td><td class='source'>long-one-accusative</td><td class='target' rowSpan='8'>{0} newtonméter</td><td class='target'>{0} newtonmétert</td></tr>
+	<tr><td class='source'>long-one-instrumental</td><td class='target'>{0} newtonméterrel</td></tr>
+	<tr><td class='source'>long-one-translative</td><td class='target'>{0} newtonméterré</td></tr>
+	<tr><td class='source'>long-one-terminative</td><td class='target'>{0} newtonméterig</td></tr>
+	<tr><td class='source'>long-other-accusative</td><td class='target'>{0} newtonmétert</td></tr>
+	<tr><td class='source'>long-other-instrumental</td><td class='target'>{0} newtonméterrel</td></tr>
+	<tr><td class='source'>long-other-translative</td><td class='target'>{0} newtonméterré</td></tr>
+	<tr><td class='source'>long-other-terminative</td><td class='target'>{0} newtonméterig</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
