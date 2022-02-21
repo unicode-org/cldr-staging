@@ -1,9 +1,11 @@
 # Grammatical Features
+#Locale	ID	Feature	Usage	Values
 Norwegian Nynorsk	nn	grammaticalCase	general	nominative, genitive
 Norwegian Nynorsk	nn	grammaticalDefiniteness	general	indefinite, definite
 Norwegian Nynorsk	nn	grammaticalGender	general	masculine, feminine, neuter
 
 # Minimal Pairs
+#Type	Code	Pattern	Formatted Sample
 Plural	one	{0} dag	<div class='cldr_example'><span class='cldr_substituted'>1</span> dag</div><div class='cldr_example'>❌  <span class='cldr_substituted'>2</span> dag</div>
 Plural	other	{0} dagar	<div class='cldr_example'><span class='cldr_substituted'>2</span> dagar</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1</span> dagar</div>
 Case (for measurement units)	nominative	Intervall på {0}	<div class='cldr_example'>Intervall på <span class='cldr_substituted'>2 timar</span></div><div class='cldr_example'>❌  Intervall på <span class='cldr_substituted'>2 timars</span></div>
@@ -13,66 +15,67 @@ Gender (for measurement units)	feminine	Det tek ei heil {0} å …	<div class='c
 Gender (for measurement units)	neuter	Mitt {0} det har tre kantar	<div class='cldr_example'>Mitt <span class='cldr_substituted'>hundreår</span> det har tre kantar</div><div class='cldr_example'>❌  Mitt <span class='cldr_substituted'>veke</span> det har tre kantar</div>
 
 # Unit Case and Gender Info
+#Quantity	Unit	Gender	Gender MP + unit	Case	Pattern for one	Case MP + pattern with 1.0	Pattern for other	Case MP + pattern with 2.0
 acceleration	meters per second squared	masculine	Min meter per sekund² han har tre kantar	nominative	{0} meter per sekund²	Intervall på 1 meter per sekund²	{0} meter per sekund²	Intervall på 2 meter per sekund²
 acceleration	meters per second squared	masculine	Min meter per sekund² han har tre kantar	genitive	{0} meter per kvadratsekunds	På 1 meter per kvadratsekunds avstand	{0} meter per kvadratsekunds	På 2 meter per kvadratsekunds avstand
-acceleration	g-force ( = 9.80665 m/s²)	feminine	Det tek ei heil g-kraft å …	nominative	{0} g-kraft	Intervall på 1 g-kraft	{0} g-krefter	Intervall på 2 g-krefter
-acceleration	g-force ( = 9.80665 m/s²)	feminine	Det tek ei heil g-kraft å …	genitive	{0} g-krafts	På 1 g-krafts avstand	{0} g-krefters	På 2 g-krefters avstand
-angle	arc-second ( = 0.0000007˙716049382 rev)	neuter	Mitt bogesekund det har tre kantar	nominative	{0} bogesekund	Intervall på 1 bogesekund	{0} bogesekund	Intervall på 2 bogesekund
-angle	arc-second ( = 0.0000007˙716049382 rev)	neuter	Mitt bogesekund det har tre kantar	genitive	{0} bogesekunds	På 1 bogesekunds avstand	{0} bogesekunds	På 2 bogesekunds avstand
-angle	arc-minute ( = 0.00004˙629 rev)	neuter	Mitt bogeminutt det har tre kantar	nominative	{0} bogeminutt	Intervall på 1 bogeminutt	{0} bogeminutt	Intervall på 2 bogeminutt
-angle	arc-minute ( = 0.00004˙629 rev)	neuter	Mitt bogeminutt det har tre kantar	genitive	{0} bogeminutts	På 1 bogeminutts avstand	{0} bogeminutts	På 2 bogeminutts avstand
-angle	degree ( = 0.002˙7 rev)	masculine	Min grad han har tre kantar	nominative	{0} grad	Intervall på 1 grad	{0} grader	Intervall på 2 grader
-angle	degree ( = 0.002˙7 rev)	masculine	Min grad han har tre kantar	genitive	{0} grads	På 1 grads avstand	{0} graders	På 2 graders avstand
-angle	radian ( = ~0.1591549430918953 rev)	masculine	Min radian han har tre kantar	nominative	{0} radian	Intervall på 1 radian	{0} radianar	Intervall på 2 radianar
-angle	radian ( = ~0.1591549430918953 rev)	masculine	Min radian han har tre kantar	genitive	{0} radians	På 1 radians avstand	{0} radianars	På 2 radianars avstand
+acceleration	g-force • ( = 9.80665 m/s²)	feminine	Det tek ei heil g-kraft å …	nominative	{0} g-kraft	Intervall på 1 g-kraft	{0} g-krefter	Intervall på 2 g-krefter
+acceleration	g-force • ( = 9.80665 m/s²)	feminine	Det tek ei heil g-kraft å …	genitive	{0} g-krafts	På 1 g-krafts avstand	{0} g-krefters	På 2 g-krefters avstand
+angle	arc-second • ( = 0.0000007˙716049382 rev)	neuter	Mitt bogesekund det har tre kantar	nominative	{0} bogesekund	Intervall på 1 bogesekund	{0} bogesekund	Intervall på 2 bogesekund
+angle	arc-second • ( = 0.0000007˙716049382 rev)	neuter	Mitt bogesekund det har tre kantar	genitive	{0} bogesekunds	På 1 bogesekunds avstand	{0} bogesekunds	På 2 bogesekunds avstand
+angle	arc-minute • ( = 0.00004˙629 rev)	neuter	Mitt bogeminutt det har tre kantar	nominative	{0} bogeminutt	Intervall på 1 bogeminutt	{0} bogeminutt	Intervall på 2 bogeminutt
+angle	arc-minute • ( = 0.00004˙629 rev)	neuter	Mitt bogeminutt det har tre kantar	genitive	{0} bogeminutts	På 1 bogeminutts avstand	{0} bogeminutts	På 2 bogeminutts avstand
+angle	degree • ( = 0.002˙7 rev)	masculine	Min grad han har tre kantar	nominative	{0} grad	Intervall på 1 grad	{0} grader	Intervall på 2 grader
+angle	degree • ( = 0.002˙7 rev)	masculine	Min grad han har tre kantar	genitive	{0} grads	På 1 grads avstand	{0} graders	På 2 graders avstand
+angle	radian • ( = ~0.1591549430918953 rev)	masculine	Min radian han har tre kantar	nominative	{0} radian	Intervall på 1 radian	{0} radianar	Intervall på 2 radianar
+angle	radian • ( = ~0.1591549430918953 rev)	masculine	Min radian han har tre kantar	genitive	{0} radians	På 1 radians avstand	{0} radianars	På 2 radianars avstand
 angle	revolutions	feminine	Det tek ei heil omdreiing å …	nominative	{0} omdreiing	Intervall på 1 omdreiing	{0} omdreiingar	Intervall på 2 omdreiingar
 angle	revolutions	feminine	Det tek ei heil omdreiing å …	genitive	{0} omdreiings	På 1 omdreiings avstand	{0} omdreiingars	På 2 omdreiingars avstand
 area	square centimeters	masculine	Min kvadratcentimeter han har tre kantar	nominative	{0} kvadratcentimeter	Intervall på 1 kvadratcentimeter	{0} kvadratcentimeter	Intervall på 2 kvadratcentimeter
 area	square centimeters	masculine	Min kvadratcentimeter han har tre kantar	genitive	{0} kvadratcentimeters	På 1 kvadratcentimeters avstand	{0} kvadratcentimeters	På 2 kvadratcentimeters avstand
-area	square-foot ( = 929.0304 cm²)	masculine	Min kvadratfot han har tre kantar	nominative	{0} kvadratfot	Intervall på 1 kvadratfot	{0} kvadratfot	Intervall på 2 kvadratfot
-area	square-foot ( = 929.0304 cm²)	masculine	Min kvadratfot han har tre kantar	genitive	{0} kvadratfot	På 1 kvadratfot avstand	{0} kvadratfot	På 2 kvadratfot avstand
+area	square-foot • ( = 929.0304 cm²)	masculine	Min kvadratfot han har tre kantar	nominative	{0} kvadratfot	Intervall på 1 kvadratfot	{0} kvadratfot	Intervall på 2 kvadratfot
+area	square-foot • ( = 929.0304 cm²)	masculine	Min kvadratfot han har tre kantar	genitive	{0} kvadratfot	På 1 kvadratfot avstand	{0} kvadratfot	På 2 kvadratfot avstand
 area	square meters	masculine	Min kvadratmeter han har tre kantar	nominative	{0} kvadratmeter	Intervall på 1 kvadratmeter	{0} kvadratmeter	Intervall på 2 kvadratmeter
 area	square meters	masculine	Min kvadratmeter han har tre kantar	genitive	{0} kvadratmeters	På 1 kvadratmeters avstand	{0} kvadratmeters	På 2 kvadratmeters avstand
-area	acre ( = 4,046.8564224 m²)	masculine	Min acre han har tre kantar	nominative	{0} acre	Intervall på 1 acre	{0} acre	Intervall på 2 acre
-area	acre ( = 4,046.8564224 m²)	masculine	Min acre han har tre kantar	genitive	{0} acre	På 1 acre avstand	{0} acre	På 2 acre avstand
+area	acre • ( = 4,046.8564224 m²)	masculine	Min acre han har tre kantar	nominative	{0} acre	Intervall på 1 acre	{0} acre	Intervall på 2 acre
+area	acre • ( = 4,046.8564224 m²)	masculine	Min acre han har tre kantar	genitive	{0} acre	På 1 acre avstand	{0} acre	På 2 acre avstand
 area	hectares	neuter	Mitt hektar det har tre kantar	nominative	{0} hektar	Intervall på 1 hektar	{0} hektar	Intervall på 2 hektar
 area	hectares	neuter	Mitt hektar det har tre kantar	genitive	{0} hektars	På 1 hektars avstand	{0} hektars	På 2 hektars avstand
 area	square kilometers	masculine	Min kvadratkilometer han har tre kantar	nominative	{0} kvadratkilometer	Intervall på 1 kvadratkilometer	{0} kvadratkilometer	Intervall på 2 kvadratkilometer
 area	square kilometers	masculine	Min kvadratkilometer han har tre kantar	genitive	{0} kvadratkilometers	På 1 kvadratkilometers avstand	{0} kvadratkilometers	På 2 kvadratkilometers avstand
-area	square-mile ( = 2.589988110336 km²)	feminine	Det tek ei heil engelsk kvadratmil å …	nominative	{0} engelsk kvadratmil	Intervall på 1 engelsk kvadratmil	{0} engelske kvadratmil	Intervall på 2 engelske kvadratmil
-area	square-mile ( = 2.589988110336 km²)	feminine	Det tek ei heil engelsk kvadratmil å …	genitive	{0} engelsk kvadratmil	På 1 engelsk kvadratmil avstand	{0} engelske kvadratmil	På 2 engelske kvadratmil avstand
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	neuter	Mitt millimol per liter det har tre kantar	nominative	{0} millimol per liter	Intervall på 1 millimol per liter	{0} millimol per liter	Intervall på 2 millimol per liter
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	neuter	Mitt millimol per liter det har tre kantar	genitive	{0} millimol per liters	På 1 millimol per liters avstand	{0} millimol per liters	På 2 millimol per liters avstand
+area	square-mile • ( = 2.589988110336 km²)	feminine	Det tek ei heil engelsk kvadratmil å …	nominative	{0} engelsk kvadratmil	Intervall på 1 engelsk kvadratmil	{0} engelske kvadratmil	Intervall på 2 engelske kvadratmil
+area	square-mile • ( = 2.589988110336 km²)	feminine	Det tek ei heil engelsk kvadratmil å …	genitive	{0} engelsk kvadratmil	På 1 engelsk kvadratmil avstand	{0} engelske kvadratmil	På 2 engelske kvadratmil avstand
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	neuter	Mitt millimol per liter det har tre kantar	nominative	{0} millimol per liter	Intervall på 1 millimol per liter	{0} millimol per liter	Intervall på 2 millimol per liter
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	neuter	Mitt millimol per liter det har tre kantar	genitive	{0} millimol per liters	På 1 millimol per liters avstand	{0} millimol per liters	På 2 millimol per liters avstand
 consumption	liters per 100 kilometers	masculine	Min liter per 100 kilometer han har tre kantar	nominative	{0} liter per 100 kilometer	Intervall på 1 liter per 100 kilometer	{0} liter per 100 kilometer	Intervall på 2 liter per 100 kilometer
 consumption	liters per 100 kilometers	masculine	Min liter per 100 kilometer han har tre kantar	genitive	{0} liter per 100 kilometers	På 1 liter per 100 kilometers avstand	{0} liter per 100 kilometers	På 2 liter per 100 kilometers avstand
 consumption	liters per kilometer	masculine	Min liter per kilometer han har tre kantar	nominative	{0} liter per kilometer	Intervall på 1 liter per kilometer	{0} liter per kilometer	Intervall på 2 liter per kilometer
 consumption	liters per kilometer	masculine	Min liter per kilometer han har tre kantar	genitive	{0} liter per kilometers	På 1 liter per kilometers avstand	{0} liter per kilometers	På 2 liter per kilometers avstand
-consumption-inverse	mile-per-gallon-imperial ( = ~354006.1899346471 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per britiske gallon å …	nominative	{0} engelsk mil per britiske gallon	Intervall på 1 engelsk mil per britiske gallon	{0} engelske mil per britiske gallon	Intervall på 2 engelske mil per britiske gallon
-consumption-inverse	mile-per-gallon-imperial ( = ~354006.1899346471 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per britiske gallon å …	genitive	{0} engelsk mil per britiske gallon	På 1 engelsk mil per britiske gallon avstand	{0} engelske mil per britiske gallon	På 2 engelske mil per britiske gallon avstand
-consumption-inverse	mile-per-gallon ( = ~425143.707430272 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per gallon å …	nominative	{0} engelsk mil per gallon	Intervall på 1 engelsk mil per gallon	{0} engelske mil per gallon	Intervall på 2 engelske mil per gallon
-consumption-inverse	mile-per-gallon ( = ~425143.707430272 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per gallon å …	genitive	{0} engelsk mil per gallon	På 1 engelsk mil per gallon avstand	{0} engelske mil per gallon	På 2 engelske mil per gallon avstand
+consumption-inverse	mile-per-gallon-imperial • ( = ~354006.1899346471 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per britiske gallon å …	nominative	{0} engelsk mil per britiske gallon	Intervall på 1 engelsk mil per britiske gallon	{0} engelske mil per britiske gallon	Intervall på 2 engelske mil per britiske gallon
+consumption-inverse	mile-per-gallon-imperial • ( = ~354006.1899346471 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per britiske gallon å …	genitive	{0} engelsk mil per britiske gallon	På 1 engelsk mil per britiske gallon avstand	{0} engelske mil per britiske gallon	På 2 engelske mil per britiske gallon avstand
+consumption-inverse	mile-per-gallon • ( = ~425143.707430272 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per gallon å …	nominative	{0} engelsk mil per gallon	Intervall på 1 engelsk mil per gallon	{0} engelske mil per gallon	Intervall på 2 engelske mil per gallon
+consumption-inverse	mile-per-gallon • ( = ~425143.707430272 meters per cubic meter)	feminine	Det tek ei heil engelsk mil per gallon å …	genitive	{0} engelsk mil per gallon	På 1 engelsk mil per gallon avstand	{0} engelske mil per gallon	På 2 engelske mil per gallon avstand
 digital	bits	masculine	Min bit han har tre kantar	nominative	{0} bit	Intervall på 1 bit	{0} bit	Intervall på 2 bit
 digital	bits	masculine	Min bit han har tre kantar	genitive	{0} bits	På 1 bits avstand	{0} bits	På 2 bits avstand
-digital	byte ( = 8 bit)	masculine	Min byte han har tre kantar	nominative	{0} byte	Intervall på 1 byte	{0} byte	Intervall på 2 byte
-digital	byte ( = 8 bit)	masculine	Min byte han har tre kantar	genitive	{0} bytes	På 1 bytes avstand	{0} bytes	På 2 bytes avstand
+digital	byte • ( = 8 bit)	masculine	Min byte han har tre kantar	nominative	{0} byte	Intervall på 1 byte	{0} byte	Intervall på 2 byte
+digital	byte • ( = 8 bit)	masculine	Min byte han har tre kantar	genitive	{0} bytes	På 1 bytes avstand	{0} bytes	På 2 bytes avstand
 digital	kilobits	masculine	Min kilobit han har tre kantar	nominative	{0} kilobit	Intervall på 1 kilobit	{0} kilobit	Intervall på 2 kilobit
 digital	kilobits	masculine	Min kilobit han har tre kantar	genitive	{0} kilobits	På 1 kilobits avstand	{0} kilobits	På 2 kilobits avstand
-digital	kilobyte ( = 8 kb)	masculine	Min kilobyte han har tre kantar	nominative	{0} kilobyte	Intervall på 1 kilobyte	{0} kilobyte	Intervall på 2 kilobyte
-digital	kilobyte ( = 8 kb)	masculine	Min kilobyte han har tre kantar	genitive	{0} kilobytes	På 1 kilobytes avstand	{0} kilobytes	På 2 kilobytes avstand
+digital	kilobyte • ( = 8 kb)	masculine	Min kilobyte han har tre kantar	nominative	{0} kilobyte	Intervall på 1 kilobyte	{0} kilobyte	Intervall på 2 kilobyte
+digital	kilobyte • ( = 8 kb)	masculine	Min kilobyte han har tre kantar	genitive	{0} kilobytes	På 1 kilobytes avstand	{0} kilobytes	På 2 kilobytes avstand
 digital	megabits	masculine	Min megabit han har tre kantar	nominative	{0} megabit	Intervall på 1 megabit	{0} megabit	Intervall på 2 megabit
 digital	megabits	masculine	Min megabit han har tre kantar	genitive	{0} megabits	På 1 megabits avstand	{0} megabits	På 2 megabits avstand
-digital	megabyte ( = 8 Mb)	masculine	Min megabyte han har tre kantar	nominative	{0} megabyte	Intervall på 1 megabyte	{0} megabyte	Intervall på 2 megabyte
-digital	megabyte ( = 8 Mb)	masculine	Min megabyte han har tre kantar	genitive	{0} megabytes	På 1 megabytes avstand	{0} megabytes	På 2 megabytes avstand
+digital	megabyte • ( = 8 Mb)	masculine	Min megabyte han har tre kantar	nominative	{0} megabyte	Intervall på 1 megabyte	{0} megabyte	Intervall på 2 megabyte
+digital	megabyte • ( = 8 Mb)	masculine	Min megabyte han har tre kantar	genitive	{0} megabytes	På 1 megabytes avstand	{0} megabytes	På 2 megabytes avstand
 digital	gigabits	masculine	Min gigabit han har tre kantar	nominative	{0} gigabit	Intervall på 1 gigabit	{0} gigabit	Intervall på 2 gigabit
 digital	gigabits	masculine	Min gigabit han har tre kantar	genitive	{0} gigabits	På 1 gigabits avstand	{0} gigabits	På 2 gigabits avstand
-digital	gigabyte ( = 8 Gb)	masculine	Min gigabyte han har tre kantar	nominative	{0} gigabyte	Intervall på 1 gigabyte	{0} gigabyte	Intervall på 2 gigabyte
-digital	gigabyte ( = 8 Gb)	masculine	Min gigabyte han har tre kantar	genitive	{0} gigabytes	På 1 gigabytes avstand	{0} gigabytes	På 2 gigabytes avstand
+digital	gigabyte • ( = 8 Gb)	masculine	Min gigabyte han har tre kantar	nominative	{0} gigabyte	Intervall på 1 gigabyte	{0} gigabyte	Intervall på 2 gigabyte
+digital	gigabyte • ( = 8 Gb)	masculine	Min gigabyte han har tre kantar	genitive	{0} gigabytes	På 1 gigabytes avstand	{0} gigabytes	På 2 gigabytes avstand
 digital	terabits	masculine	Min terabit han har tre kantar	nominative	{0} terabit	Intervall på 1 terabit	{0} terabit	Intervall på 2 terabit
 digital	terabits	masculine	Min terabit han har tre kantar	genitive	{0} terabits	På 1 terabits avstand	{0} terabits	På 2 terabits avstand
-digital	terabyte ( = 8 Tb)	masculine	Min terabyte han har tre kantar	nominative	{0} terabyte	Intervall på 1 terabyte	{0} terabyte	Intervall på 2 terabyte
-digital	terabyte ( = 8 Tb)	masculine	Min terabyte han har tre kantar	genitive	{0} terabytes	På 1 terabytes avstand	{0} terabytes	På 2 terabytes avstand
-digital	petabyte ( = 8,000 Tb)	masculine	Min petabyte han har tre kantar	nominative	{0} petabyte	Intervall på 1 petabyte	{0} petabyte	Intervall på 2 petabyte
-digital	petabyte ( = 8,000 Tb)	masculine	Min petabyte han har tre kantar	genitive	{0} petabytes	På 1 petabytes avstand	{0} petabytes	På 2 petabytes avstand
+digital	terabyte • ( = 8 Tb)	masculine	Min terabyte han har tre kantar	nominative	{0} terabyte	Intervall på 1 terabyte	{0} terabyte	Intervall på 2 terabyte
+digital	terabyte • ( = 8 Tb)	masculine	Min terabyte han har tre kantar	genitive	{0} terabytes	På 1 terabytes avstand	{0} terabytes	På 2 terabytes avstand
+digital	petabyte • ( = 8,000 Tb)	masculine	Min petabyte han har tre kantar	nominative	{0} petabyte	Intervall på 1 petabyte	{0} petabyte	Intervall på 2 petabyte
+digital	petabyte • ( = 8,000 Tb)	masculine	Min petabyte han har tre kantar	genitive	{0} petabytes	På 1 petabytes avstand	{0} petabytes	På 2 petabytes avstand
 duration	nanoseconds	neuter	Mitt nanosekund det har tre kantar	nominative	{0} nanosekund	Intervall på 1 nanosekund	{0} nanosekund	Intervall på 2 nanosekund
 duration	nanoseconds	neuter	Mitt nanosekund det har tre kantar	genitive	{0} nanosekunds	På 1 nanosekunds avstand	{0} nanosekunds	På 2 nanosekunds avstand
 duration	microseconds	neuter	Mitt mikrosekund det har tre kantar	nominative	{0} mikrosekund	Intervall på 1 mikrosekund	{0} mikrosekund	Intervall på 2 mikrosekund
@@ -81,40 +84,40 @@ duration	milliseconds	neuter	Mitt millisekund det har tre kantar	nominative	{0} 
 duration	milliseconds	neuter	Mitt millisekund det har tre kantar	genitive	{0} millisekunds	På 1 millisekunds avstand	{0} millisekunds	På 2 millisekunds avstand
 duration	seconds	neuter	Mitt sekund det har tre kantar	nominative	{0} sekund	Intervall på 1 sekund	{0} sekund	Intervall på 2 sekund
 duration	seconds	neuter	Mitt sekund det har tre kantar	genitive	{0} sekunds	På 1 sekunds avstand	{0} sekunds	På 2 sekunds avstand
-duration	minute ( = 60 sec)	neuter	Mitt minutt det har tre kantar	nominative	{0} minutt	Intervall på 1 minutt	{0} minutt	Intervall på 2 minutt
-duration	minute ( = 60 sec)	neuter	Mitt minutt det har tre kantar	genitive	{0} minutts	På 1 minutts avstand	{0} minutts	På 2 minutts avstand
-duration	hour ( = 3,600 sec)	masculine	Min time han har tre kantar	nominative	{0} time	Intervall på 1 time	{0} timar	Intervall på 2 timar
-duration	hour ( = 3,600 sec)	masculine	Min time han har tre kantar	genitive	{0} times	På 1 times avstand	{0} timars	På 2 timars avstand
-duration	day ( = 86,400 sec)	neuter	Mitt døgn det har tre kantar	nominative	{0} døgn	Intervall på 1 døgn	{0} døgn	Intervall på 2 døgn
-duration	day ( = 86,400 sec)	neuter	Mitt døgn det har tre kantar	genitive	{0} døgns	På 1 døgns avstand	{0} døgns	På 2 døgns avstand
-duration	week ( = 604,800 sec)	feminine	Det tek ei heil veke å …	nominative	{0} veke	Intervall på 1 veke	{0} veker	Intervall på 2 veker
-duration	week ( = 604,800 sec)	feminine	Det tek ei heil veke å …	genitive	{0} vekes	På 1 vekes avstand	{0} vekers	På 2 vekers avstand
+duration	minute • ( = 60 sec)	neuter	Mitt minutt det har tre kantar	nominative	{0} minutt	Intervall på 1 minutt	{0} minutt	Intervall på 2 minutt
+duration	minute • ( = 60 sec)	neuter	Mitt minutt det har tre kantar	genitive	{0} minutts	På 1 minutts avstand	{0} minutts	På 2 minutts avstand
+duration	hour • ( = 3,600 sec)	masculine	Min time han har tre kantar	nominative	{0} time	Intervall på 1 time	{0} timar	Intervall på 2 timar
+duration	hour • ( = 3,600 sec)	masculine	Min time han har tre kantar	genitive	{0} times	På 1 times avstand	{0} timars	På 2 timars avstand
+duration	day • ( = 86,400 sec)	neuter	Mitt døgn det har tre kantar	nominative	{0} døgn	Intervall på 1 døgn	{0} døgn	Intervall på 2 døgn
+duration	day • ( = 86,400 sec)	neuter	Mitt døgn det har tre kantar	genitive	{0} døgns	På 1 døgns avstand	{0} døgns	På 2 døgns avstand
+duration	week • ( = 604,800 sec)	feminine	Det tek ei heil veke å …	nominative	{0} veke	Intervall på 1 veke	{0} veker	Intervall på 2 veker
+duration	week • ( = 604,800 sec)	feminine	Det tek ei heil veke å …	genitive	{0} vekes	På 1 vekes avstand	{0} vekers	På 2 vekers avstand
 electric-current	milliamperes	masculine	Min milliampere han har tre kantar	nominative	{0} milliampere	Intervall på 1 milliampere	{0} milliampere	Intervall på 2 milliampere
 electric-current	milliamperes	masculine	Min milliampere han har tre kantar	genitive	{0} milliamperes	På 1 milliamperes avstand	{0} milliamperes	På 2 milliamperes avstand
 electric-current	amperes	masculine	Min ampere han har tre kantar	nominative	{0} ampere	Intervall på 1 ampere	{0} ampere	Intervall på 2 ampere
 electric-current	amperes	masculine	Min ampere han har tre kantar	genitive	{0} amperes	På 1 amperes avstand	{0} amperes	På 2 amperes avstand
 electric-resistance	ohms	masculine	Min ohm han har tre kantar	nominative	{0} ohm	Intervall på 1 ohm	{0} ohm	Intervall på 2 ohm
 electric-resistance	ohms	masculine	Min ohm han har tre kantar	genitive	{0} ohms	På 1 ohms avstand	{0} ohms	På 2 ohms avstand
-energy	dalton ( = 0.00000000014924180856 J)	masculine	Min dalton han har tre kantar	nominative	{0} dalton	Intervall på 1 dalton	{0} dalton	Intervall på 2 dalton
-energy	dalton ( = 0.00000000014924180856 J)	masculine	Min dalton han har tre kantar	genitive	{0} dalton	På 1 dalton avstand	{0} dalton	På 2 dalton avstand
+energy	dalton • ( = 0.00000000014924180856 J)	masculine	Min dalton han har tre kantar	nominative	{0} dalton	Intervall på 1 dalton	{0} dalton	Intervall på 2 dalton
+energy	dalton • ( = 0.00000000014924180856 J)	masculine	Min dalton han har tre kantar	genitive	{0} dalton	På 1 dalton avstand	{0} dalton	På 2 dalton avstand
 energy	joules	masculine	Min joule han har tre kantar	nominative	{0} joule	Intervall på 1 joule	{0} joule	Intervall på 2 joule
 energy	joules	masculine	Min joule han har tre kantar	genitive	{0} joules	På 1 joules avstand	{0} joules	På 2 joules avstand
-energy	newton-meter ( = 1 J)	masculine	Min newtonmeter han har tre kantar	nominative	{0} newtonmeter	Intervall på 1 newtonmeter	{0} newtonmeter	Intervall på 2 newtonmeter
-energy	newton-meter ( = 1 J)	masculine	Min newtonmeter han har tre kantar	genitive	{0} newtonmeters	På 1 newtonmeters avstand	{0} newtonmeters	På 2 newtonmeters avstand
-energy	calorie ( = 4.184 J)	masculine	Min kalori han har tre kantar	nominative	{0} kalori	Intervall på 1 kalori	{0} kaloriar	Intervall på 2 kaloriar
-energy	calorie ( = 4.184 J)	masculine	Min kalori han har tre kantar	genitive	{0} kaloris	På 1 kaloris avstand	{0} kaloriars	På 2 kaloriars avstand
+energy	newton-meter • ( = 1 J)	masculine	Min newtonmeter han har tre kantar	nominative	{0} newtonmeter	Intervall på 1 newtonmeter	{0} newtonmeter	Intervall på 2 newtonmeter
+energy	newton-meter • ( = 1 J)	masculine	Min newtonmeter han har tre kantar	genitive	{0} newtonmeters	På 1 newtonmeters avstand	{0} newtonmeters	På 2 newtonmeters avstand
+energy	calorie • ( = 4.184 J)	masculine	Min kalori han har tre kantar	nominative	{0} kalori	Intervall på 1 kalori	{0} kaloriar	Intervall på 2 kaloriar
+energy	calorie • ( = 4.184 J)	masculine	Min kalori han har tre kantar	genitive	{0} kaloris	På 1 kaloris avstand	{0} kaloriars	På 2 kaloriars avstand
 energy	kilojoules	masculine	Min kilojoule han har tre kantar	nominative	{0} kilojoule	Intervall på 1 kilojoule	{0} kilojoule	Intervall på 2 kilojoule
 energy	kilojoules	masculine	Min kilojoule han har tre kantar	genitive	{0} kilojoules	På 1 kilojoules avstand	{0} kilojoules	På 2 kilojoules avstand
-energy	foodcalorie ( = 4.184 kJ)	masculine	Min kalori han har tre kantar	nominative	{0} kalori	Intervall på 1 kalori	{0} kaloriar	Intervall på 2 kaloriar
-energy	foodcalorie ( = 4.184 kJ)	masculine	Min kalori han har tre kantar	genitive	{0} kalori	På 1 kalori avstand	{0} kaloriar	På 2 kaloriar avstand
-energy	kilocalorie ( = 4.184 kJ)	masculine	Min kilokalori han har tre kantar	nominative	{0} kilokalori	Intervall på 1 kilokalori	{0} kilokaloriar	Intervall på 2 kilokaloriar
-energy	kilocalorie ( = 4.184 kJ)	masculine	Min kilokalori han har tre kantar	genitive	{0} kilokalori	På 1 kilokalori avstand	{0} kilokaloriar	På 2 kilokaloriar avstand
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	masculine	Min kilowattime han har tre kantar	nominative	{0} kilowattime	Intervall på 1 kilowattime	{0} kilowattimar	Intervall på 2 kilowattimar
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	masculine	Min kilowattime han har tre kantar	genitive	{0} kilowattimes	På 1 kilowattimes avstand	{0} kilowattimers	På 2 kilowattimers avstand
+energy	foodcalorie • ( = 4.184 kJ)	masculine	Min kalori han har tre kantar	nominative	{0} kalori	Intervall på 1 kalori	{0} kaloriar	Intervall på 2 kaloriar
+energy	foodcalorie • ( = 4.184 kJ)	masculine	Min kalori han har tre kantar	genitive	{0} kalori	På 1 kalori avstand	{0} kaloriar	På 2 kaloriar avstand
+energy	kilocalorie • ( = 4.184 kJ)	masculine	Min kilokalori han har tre kantar	nominative	{0} kilokalori	Intervall på 1 kilokalori	{0} kilokaloriar	Intervall på 2 kilokaloriar
+energy	kilocalorie • ( = 4.184 kJ)	masculine	Min kilokalori han har tre kantar	genitive	{0} kilokalori	På 1 kilokalori avstand	{0} kilokaloriar	På 2 kilokaloriar avstand
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	masculine	Min kilowattime han har tre kantar	nominative	{0} kilowattime	Intervall på 1 kilowattime	{0} kilowattimar	Intervall på 2 kilowattimar
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	masculine	Min kilowattime han har tre kantar	genitive	{0} kilowattimes	På 1 kilowattimes avstand	{0} kilowattimers	På 2 kilowattimers avstand
 force	newtons	masculine	Min newton han har tre kantar	nominative	{0} newton	Intervall på 1 newton	{0} newton	Intervall på 2 newton
 force	newtons	masculine	Min newton han har tre kantar	genitive	{0} newtons	På 1 newtons avstand	{0} newtons	På 2 newtons avstand
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	masculine	Min kWh per 100 km han har tre kantar	nominative	{0} kWh per 100 km	Intervall på 1 kWh per 100 km	{0} kWh per 100 km	Intervall på 2 kWh per 100 km
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	masculine	Min kWh per 100 km han har tre kantar	genitive	{0} kWh per 100 kilometers	På 1 kWh per 100 kilometers avstand	{0} kWh per 100 kilometers	På 2 kWh per 100 kilometers avstand
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	masculine	Min kWh per 100 km han har tre kantar	nominative	{0} kWh per 100 km	Intervall på 1 kWh per 100 km	{0} kWh per 100 km	Intervall på 2 kWh per 100 km
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	masculine	Min kWh per 100 km han har tre kantar	genitive	{0} kWh per 100 kilometers	På 1 kWh per 100 kilometers avstand	{0} kWh per 100 kilometers	På 2 kWh per 100 kilometers avstand
 frequency	hertz	masculine	Min hertz han har tre kantar	nominative	{0} hertz	Intervall på 1 hertz	{0} hertz	Intervall på 2 hertz
 frequency	hertz	masculine	Min hertz han har tre kantar	genitive	{0} hertz’	På 1 hertz’ avstand	{0} hertz’	På 2 hertz’ avstand
 frequency	kilohertz	masculine	Min kilohertz han har tre kantar	nominative	{0} kilohertz	Intervall på 1 kilohertz	{0} kilohertz	Intervall på 2 kilohertz
@@ -123,8 +126,8 @@ frequency	megahertz	masculine	Min megahertz han har tre kantar	nominative	{0} me
 frequency	megahertz	masculine	Min megahertz han har tre kantar	genitive	{0} megahertz’	På 1 megahertz’ avstand	{0} megahertz’	På 2 megahertz’ avstand
 frequency	gigahertz	masculine	Min gigahertz han har tre kantar	nominative	{0} gigahertz	Intervall på 1 gigahertz	{0} gigahertz	Intervall på 2 gigahertz
 frequency	gigahertz	masculine	Min gigahertz han har tre kantar	genitive	{0} gigahertz’	På 1 gigahertz’ avstand	{0} gigahertz’	På 2 gigahertz’ avstand
-graphics	pixel ( = 1 px)	masculine	Min piksel han har tre kantar	nominative	{0} piksel	Intervall på 1 piksel	{0} pikslar	Intervall på 2 pikslar
-graphics	pixel ( = 1 px)	masculine	Min piksel han har tre kantar	genitive	{0} piksels	På 1 piksels avstand	{0} pikslars	På 2 pikslars avstand
+graphics	pixel • ( = 1 px)	masculine	Min piksel han har tre kantar	nominative	{0} piksel	Intervall på 1 piksel	{0} pikslar	Intervall på 2 pikslar
+graphics	pixel • ( = 1 px)	masculine	Min piksel han har tre kantar	genitive	{0} piksels	På 1 piksels avstand	{0} pikslars	På 2 pikslars avstand
 graphics	megapixels	masculine	Min megapiksel han har tre kantar	nominative	{0} megapiksel	Intervall på 1 megapiksel	{0} megapikslar	Intervall på 2 megapikslar
 graphics	megapixels	masculine	Min megapiksel han har tre kantar	genitive	{0} megapiksels	På 1 megapiksels avstand	{0} megapikslars	På 2 megapikslars avstand
 illuminance	lux	masculine	Min lux han har tre kantar	nominative	{0} lux	Intervall på 1 lux	{0} lux	Intervall på 2 lux
@@ -139,26 +142,26 @@ length	millimeters	masculine	Min millimeter han har tre kantar	nominative	{0} mi
 length	millimeters	masculine	Min millimeter han har tre kantar	genitive	{0} millimeters	På 1 millimeters avstand	{0} millimeters	På 2 millimeters avstand
 length	centimeters	masculine	Min centimeter han har tre kantar	nominative	{0} centimeter	Intervall på 1 centimeter	{0} centimeter	Intervall på 2 centimeter
 length	centimeters	masculine	Min centimeter han har tre kantar	genitive	{0} centimeters	På 1 centimeters avstand	{0} centimeters	På 2 centimeters avstand
-length	inch ( = 2.54 cm)	masculine	Min tomme han har tre kantar	nominative	{0} tomme	Intervall på 1 tomme	{0} tommar	Intervall på 2 tommar
-length	inch ( = 2.54 cm)	masculine	Min tomme han har tre kantar	genitive	{0} tomme	På 1 tomme avstand	{0} tommar	På 2 tommar avstand
+length	inch • ( = 2.54 cm)	masculine	Min tomme han har tre kantar	nominative	{0} tomme	Intervall på 1 tomme	{0} tommar	Intervall på 2 tommar
+length	inch • ( = 2.54 cm)	masculine	Min tomme han har tre kantar	genitive	{0} tomme	På 1 tomme avstand	{0} tommar	På 2 tommar avstand
 length	decimeters	masculine	Min desimeter han har tre kantar	nominative	{0} desimeter	Intervall på 1 desimeter	{0} desimeter	Intervall på 2 desimeter
 length	decimeters	masculine	Min desimeter han har tre kantar	genitive	{0} desimeters	På 1 desimeters avstand	{0} desimeters	På 2 desimeters avstand
-length	foot ( = 3.048 dm)	masculine	Min fot han har tre kantar	nominative	{0} fot	Intervall på 1 fot	{0} fot	Intervall på 2 fot
-length	foot ( = 3.048 dm)	masculine	Min fot han har tre kantar	genitive	{0} fot	På 1 fot avstand	{0} fot	På 2 fot avstand
-length	yard ( = 0.9144 m)	masculine	Min engelsk yard han har tre kantar	nominative	{0} engelsk yard	Intervall på 1 engelsk yard	{0} engelske yard	Intervall på 2 engelske yard
-length	yard ( = 0.9144 m)	masculine	Min engelsk yard han har tre kantar	genitive	{0} engelsk yard	På 1 engelsk yard avstand	{0} engelske yard	På 2 engelske yard avstand
+length	foot • ( = 3.048 dm)	masculine	Min fot han har tre kantar	nominative	{0} fot	Intervall på 1 fot	{0} fot	Intervall på 2 fot
+length	foot • ( = 3.048 dm)	masculine	Min fot han har tre kantar	genitive	{0} fot	På 1 fot avstand	{0} fot	På 2 fot avstand
+length	yard • ( = 0.9144 m)	masculine	Min engelsk yard han har tre kantar	nominative	{0} engelsk yard	Intervall på 1 engelsk yard	{0} engelske yard	Intervall på 2 engelske yard
+length	yard • ( = 0.9144 m)	masculine	Min engelsk yard han har tre kantar	genitive	{0} engelsk yard	På 1 engelsk yard avstand	{0} engelske yard	På 2 engelske yard avstand
 length	meters	masculine	Min meter han har tre kantar	nominative	{0} meter	Intervall på 1 meter	{0} meter	Intervall på 2 meter
 length	meters	masculine	Min meter han har tre kantar	genitive	{0} meters	På 1 meters avstand	{0} meters	På 2 meters avstand
 length	kilometers	masculine	Min kilometer han har tre kantar	nominative	{0} kilometer	Intervall på 1 kilometer	{0} kilometer	Intervall på 2 kilometer
 length	kilometers	masculine	Min kilometer han har tre kantar	genitive	{0} kilometers	På 1 kilometers avstand	{0} kilometers	På 2 kilometers avstand
-length	mile ( = 1.609344 km)	masculine	Min engelsk mil han har tre kantar	nominative	{0} engelsk mil	Intervall på 1 engelsk mil	{0} engelske mil	Intervall på 2 engelske mil
-length	mile ( = 1.609344 km)	masculine	Min engelsk mil han har tre kantar	genitive	{0} engelsk mil	På 1 engelsk mil avstand	{0} engelske mil	På 2 engelske mil avstand
-length	mile-scandinavian ( = 10 km)	feminine	Det tek ei heil mil å …	nominative	{0} mil	Intervall på 1 mil	{0} mil	Intervall på 2 mil
-length	mile-scandinavian ( = 10 km)	feminine	Det tek ei heil mil å …	genitive	{0} mils	På 1 mils avstand	{0} mils	På 2 mils avstand
-length	solar-radius ( = 695,700 km)	masculine	Min solradius han har tre kantar	nominative	{0} solradius	Intervall på 1 solradius	{0} solradius	Intervall på 2 solradius
-length	solar-radius ( = 695,700 km)	masculine	Min solradius han har tre kantar	genitive	{0} solradius	På 1 solradius avstand	{0} solradius	På 2 solradius avstand
-length	parsec ( = 30,856,780,000,000 km)	masculine	Min parsec han har tre kantar	nominative	{0} parsec	Intervall på 1 parsec	{0} parsec	Intervall på 2 parsec
-length	parsec ( = 30,856,780,000,000 km)	masculine	Min parsec han har tre kantar	genitive	{0} parsec	På 1 parsec avstand	{0} parsec	På 2 parsec avstand
+length	mile • ( = 1.609344 km)	masculine	Min engelsk mil han har tre kantar	nominative	{0} engelsk mil	Intervall på 1 engelsk mil	{0} engelske mil	Intervall på 2 engelske mil
+length	mile • ( = 1.609344 km)	masculine	Min engelsk mil han har tre kantar	genitive	{0} engelsk mil	På 1 engelsk mil avstand	{0} engelske mil	På 2 engelske mil avstand
+length	mile-scandinavian • ( = 10 km)	feminine	Det tek ei heil mil å …	nominative	{0} mil	Intervall på 1 mil	{0} mil	Intervall på 2 mil
+length	mile-scandinavian • ( = 10 km)	feminine	Det tek ei heil mil å …	genitive	{0} mils	På 1 mils avstand	{0} mils	På 2 mils avstand
+length	solar-radius • ( = 695,700 km)	masculine	Min solradius han har tre kantar	nominative	{0} solradius	Intervall på 1 solradius	{0} solradius	Intervall på 2 solradius
+length	solar-radius • ( = 695,700 km)	masculine	Min solradius han har tre kantar	genitive	{0} solradius	På 1 solradius avstand	{0} solradius	På 2 solradius avstand
+length	parsec • ( = 30,856,780,000,000 km)	masculine	Min parsec han har tre kantar	nominative	{0} parsec	Intervall på 1 parsec	{0} parsec	Intervall på 2 parsec
+length	parsec • ( = 30,856,780,000,000 km)	masculine	Min parsec han har tre kantar	genitive	{0} parsec	På 1 parsec avstand	{0} parsec	På 2 parsec avstand
 luminous-flux	lumen	masculine	Min lumen han har tre kantar	nominative	{0} lumen	Intervall på 1 lumen	{0} lumen	Intervall på 2 lumen
 luminous-flux	lumen	masculine	Min lumen han har tre kantar	genitive	{0} lumens	På 1 lumens avstand	{0} lumens	På 2 lumens avstand
 luminous-intensity	candela	masculine	Min candela han har tre kantar	nominative	{0} candela	Intervall på 1 candela	{0} candela	Intervall på 2 candela
@@ -167,24 +170,24 @@ mass	micrograms	neuter	Mitt mikrogram det har tre kantar	nominative	{0} mikrogra
 mass	micrograms	neuter	Mitt mikrogram det har tre kantar	genitive	{0} mikrograms	På 1 mikrograms avstand	{0} mikrograms	På 2 mikrograms avstand
 mass	milligrams	neuter	Mitt milligram det har tre kantar	nominative	{0} milligram	Intervall på 1 milligram	{0} milligram	Intervall på 2 milligram
 mass	milligrams	neuter	Mitt milligram det har tre kantar	genitive	{0} milligrams	På 1 milligrams avstand	{0} milligrams	På 2 milligrams avstand
-mass	grain ( = 64.79891 mg)	neuter	Mitt grain det har tre kantar	nominative	{0} grain	Intervall på 1 grain	{0} grain	Intervall på 2 grain
-mass	grain ( = 64.79891 mg)	neuter	Mitt grain det har tre kantar	genitive	{0} grain	På 1 grain avstand	{0} grain	På 2 grain avstand
-mass	carat ( = 200 mg)	masculine	Min karat han har tre kantar	nominative	{0} karat	Intervall på 1 karat	{0} karat	Intervall på 2 karat
-mass	carat ( = 200 mg)	masculine	Min karat han har tre kantar	genitive	{0} karats	På 1 karats avstand	{0} karats	På 2 karats avstand
+mass	grain • ( = 64.79891 mg)	neuter	Mitt grain det har tre kantar	nominative	{0} grain	Intervall på 1 grain	{0} grain	Intervall på 2 grain
+mass	grain • ( = 64.79891 mg)	neuter	Mitt grain det har tre kantar	genitive	{0} grain	På 1 grain avstand	{0} grain	På 2 grain avstand
+mass	carat • ( = 200 mg)	masculine	Min karat han har tre kantar	nominative	{0} karat	Intervall på 1 karat	{0} karat	Intervall på 2 karat
+mass	carat • ( = 200 mg)	masculine	Min karat han har tre kantar	genitive	{0} karats	På 1 karats avstand	{0} karats	På 2 karats avstand
 mass	grams	neuter	Mitt gram det har tre kantar	nominative	{0} gram	Intervall på 1 gram	{0} gram	Intervall på 2 gram
 mass	grams	neuter	Mitt gram det har tre kantar	genitive	{0} grams	På 1 grams avstand	{0} grams	På 2 grams avstand
-mass	ounce ( = 28.349523125 g)	feminine	Det tek ei heil unse å …	nominative	{0} unse	Intervall på 1 unse	{0} unser	Intervall på 2 unser
-mass	ounce ( = 28.349523125 g)	feminine	Det tek ei heil unse å …	genitive	{0} unse	På 1 unse avstand	{0} unser	På 2 unser avstand
-mass	pound ( = 453.59237 g)	neuter	Mitt pund det har tre kantar	nominative	{0} pund	Intervall på 1 pund	{0} pund	Intervall på 2 pund
-mass	pound ( = 453.59237 g)	neuter	Mitt pund det har tre kantar	genitive	{0} pund	På 1 pund avstand	{0} pund	På 2 pund avstand
+mass	ounce • ( = 28.349523125 g)	feminine	Det tek ei heil unse å …	nominative	{0} unse	Intervall på 1 unse	{0} unser	Intervall på 2 unser
+mass	ounce • ( = 28.349523125 g)	feminine	Det tek ei heil unse å …	genitive	{0} unse	På 1 unse avstand	{0} unser	På 2 unser avstand
+mass	pound • ( = 453.59237 g)	neuter	Mitt pund det har tre kantar	nominative	{0} pund	Intervall på 1 pund	{0} pund	Intervall på 2 pund
+mass	pound • ( = 453.59237 g)	neuter	Mitt pund det har tre kantar	genitive	{0} pund	På 1 pund avstand	{0} pund	På 2 pund avstand
 mass	kilograms	neuter	Mitt kilogram det har tre kantar	nominative	{0} kilogram	Intervall på 1 kilogram	{0} kilogram	Intervall på 2 kilogram
 mass	kilograms	neuter	Mitt kilogram det har tre kantar	genitive	{0} kilograms	På 1 kilograms avstand	{0} kilograms	På 2 kilograms avstand
 mass	metric tons	neuter	Mitt tonn det har tre kantar	nominative	{0} tonn	Intervall på 1 tonn	{0} tonn	Intervall på 2 tonn
 mass	metric tons	neuter	Mitt tonn det har tre kantar	genitive	{0} tonns	På 1 tonns avstand	{0} tonns	På 2 tonns avstand
-mass	earth-mass ( = 5,972,200,000,000,000,000,000 t)	masculine	Min jordmasse han har tre kantar	nominative	{0} jordmasse	Intervall på 1 jordmasse	{0} jordmassar	Intervall på 2 jordmassar
-mass	earth-mass ( = 5,972,200,000,000,000,000,000 t)	masculine	Min jordmasse han har tre kantar	genitive	{0} jordmasse	På 1 jordmasse avstand	{0} jordmassar	På 2 jordmassar avstand
-mass	solar-mass ( = 1,988,470,000,000,000,000,000,000,000 t)	masculine	Min solmasse han har tre kantar	nominative	{0} solmasse	Intervall på 1 solmasse	{0} solmassar	Intervall på 2 solmassar
-mass	solar-mass ( = 1,988,470,000,000,000,000,000,000,000 t)	masculine	Min solmasse han har tre kantar	genitive	{0} solmasse	På 1 solmasse avstand	{0} solmassar	På 2 solmassar avstand
+mass	earth-mass • ( = 5,972,200,000,000,000,000,000 t)	masculine	Min jordmasse han har tre kantar	nominative	{0} jordmasse	Intervall på 1 jordmasse	{0} jordmassar	Intervall på 2 jordmassar
+mass	earth-mass • ( = 5,972,200,000,000,000,000,000 t)	masculine	Min jordmasse han har tre kantar	genitive	{0} jordmasse	På 1 jordmasse avstand	{0} jordmassar	På 2 jordmassar avstand
+mass	solar-mass • ( = 1,988,470,000,000,000,000,000,000,000 t)	masculine	Min solmasse han har tre kantar	nominative	{0} solmasse	Intervall på 1 solmasse	{0} solmassar	Intervall på 2 solmassar
+mass	solar-mass • ( = 1,988,470,000,000,000,000,000,000,000 t)	masculine	Min solmasse han har tre kantar	genitive	{0} solmasse	På 1 solmasse avstand	{0} solmassar	På 2 solmassar avstand
 portion	parts per million	masculine	Min del per million han har tre kantar	nominative	{0} del per million	Intervall på 1 del per million	{0} milliondelar	Intervall på 2 milliondelar
 portion	parts per million	masculine	Min del per million han har tre kantar	genitive	{0} del per millions	På 1 del per millions avstand	{0} delar per millions	På 2 delar per millions avstand
 portion	permyriad	masculine	Min promyriade han har tre kantar	nominative	{0} promyriade	Intervall på 1 promyriade	{0} promyriade	Intervall på 2 promyriade
@@ -193,8 +196,8 @@ portion	permille	masculine	Min promille han har tre kantar	nominative	{0} promil
 portion	permille	masculine	Min promille han har tre kantar	genitive	{0} promilles	På 1 promilles avstand	{0} promilles	På 2 promilles avstand
 portion	percent	masculine	Min prosent han har tre kantar	nominative	{0} prosent	Intervall på 1 prosent	{0} prosent	Intervall på 2 prosent
 portion	percent	masculine	Min prosent han har tre kantar	genitive	{0} prosents	På 1 prosents avstand	{0} prosents	På 2 prosents avstand
-portion	karat ( = 4.1˙6%)	masculine	Min karat han har tre kantar	nominative	{0} karat	Intervall på 1 karat	{0} karat	Intervall på 2 karat
-portion	karat ( = 4.1˙6%)	masculine	Min karat han har tre kantar	genitive	{0} karats	På 1 karats avstand	{0} karats	På 2 karats avstand
+portion	karat • ( = 4.1˙6%)	masculine	Min karat han har tre kantar	nominative	{0} karat	Intervall på 1 karat	{0} karat	Intervall på 2 karat
+portion	karat • ( = 4.1˙6%)	masculine	Min karat han har tre kantar	genitive	{0} karats	På 1 karats avstand	{0} karats	På 2 karats avstand
 power	milliwatts	masculine	Min milliwatt han har tre kantar	nominative	{0} milliwatt	Intervall på 1 milliwatt	{0} milliwatt	Intervall på 2 milliwatt
 power	milliwatts	masculine	Min milliwatt han har tre kantar	genitive	{0} milliwatts	På 1 milliwatts avstand	{0} milliwatts	På 2 milliwatts avstand
 power	watts	masculine	Min watt han har tre kantar	nominative	{0} watt	Intervall på 1 watt	{0} watt	Intervall på 2 watt
@@ -205,110 +208,110 @@ power	megawatts	masculine	Min megawatt han har tre kantar	nominative	{0} megawat
 power	megawatts	masculine	Min megawatt han har tre kantar	genitive	{0} megawatts	På 1 megawatts avstand	{0} megawatts	På 2 megawatts avstand
 power	gigawatts	masculine	Min gigawatt han har tre kantar	nominative	{0} gigawatt	Intervall på 1 gigawatt	{0} gigawatt	Intervall på 2 gigawatt
 power	gigawatts	masculine	Min gigawatt han har tre kantar	genitive	{0} gigawatts	På 1 gigawatts avstand	{0} gigawatts	På 2 gigawatts avstand
-power	solar-luminosity ( = 382,800,000,000,000,000 GW)	masculine	Min solluminositet han har tre kantar	nominative	{0} solluminositet	Intervall på 1 solluminositet	{0} solluminositetar	Intervall på 2 solluminositetar
-power	solar-luminosity ( = 382,800,000,000,000,000 GW)	masculine	Min solluminositet han har tre kantar	genitive	{0} solluminositet	På 1 solluminositet avstand	{0} solluminositetar	På 2 solluminositetar avstand
+power	solar-luminosity • ( = 382,800,000,000,000,000 GW)	masculine	Min solluminositet han har tre kantar	nominative	{0} solluminositet	Intervall på 1 solluminositet	{0} solluminositetar	Intervall på 2 solluminositetar
+power	solar-luminosity • ( = 382,800,000,000,000,000 GW)	masculine	Min solluminositet han har tre kantar	genitive	{0} solluminositet	På 1 solluminositet avstand	{0} solluminositetar	På 2 solluminositetar avstand
 pressure	pascals	masculine	Min pascal han har tre kantar	nominative	{0} pascal	Intervall på 1 pascal	{0} pascal	Intervall på 2 pascal
 pressure	pascals	masculine	Min pascal han har tre kantar	genitive	{0} pascals	På 1 pascals avstand	{0} pascals	På 2 pascals avstand
-pressure	hectopascal ( = 1 mbar)	masculine	Min hektopascal han har tre kantar	nominative	{0} hektopascal	Intervall på 1 hektopascal	{0} hektopascal	Intervall på 2 hektopascal
-pressure	hectopascal ( = 1 mbar)	masculine	Min hektopascal han har tre kantar	genitive	{0} hektopascals	På 1 hektopascals avstand	{0} hektopascals	På 2 hektopascals avstand
+pressure	hectopascal • ( = 1 mbar)	masculine	Min hektopascal han har tre kantar	nominative	{0} hektopascal	Intervall på 1 hektopascal	{0} hektopascal	Intervall på 2 hektopascal
+pressure	hectopascal • ( = 1 mbar)	masculine	Min hektopascal han har tre kantar	genitive	{0} hektopascals	På 1 hektopascals avstand	{0} hektopascals	På 2 hektopascals avstand
 pressure	millibars	masculine	Min millibar han har tre kantar	nominative	{0} millibar	Intervall på 1 millibar	{0} millibar	Intervall på 2 millibar
 pressure	millibars	masculine	Min millibar han har tre kantar	genitive	{0} millibars	På 1 millibars avstand	{0} millibars	På 2 millibars avstand
 pressure	kilopascals	masculine	Min kilopascal han har tre kantar	nominative	{0} kilopascal	Intervall på 1 kilopascal	{0} kilopascal	Intervall på 2 kilopascal
 pressure	kilopascals	masculine	Min kilopascal han har tre kantar	genitive	{0} kilopascals	På 1 kilopascals avstand	{0} kilopascals	På 2 kilopascals avstand
 pressure	bars	masculine	Min bar han har tre kantar	nominative	{0} bar	Intervall på 1 bar	{0} bar	Intervall på 2 bar
 pressure	bars	masculine	Min bar han har tre kantar	genitive	{0} bars	På 1 bars avstand	{0} bars	På 2 bars avstand
-pressure	atmosphere ( = 1.01325 bar)	masculine	Min atmosfære han har tre kantar	nominative	{0} atmosfære	Intervall på 1 atmosfære	{0} atmosfærar	Intervall på 2 atmosfærar
-pressure	atmosphere ( = 1.01325 bar)	masculine	Min atmosfære han har tre kantar	genitive	{0} atmosfæres	På 1 atmosfæres avstand	{0} atmosfærers	På 2 atmosfærers avstand
+pressure	atmosphere • ( = 1.01325 bar)	masculine	Min atmosfære han har tre kantar	nominative	{0} atmosfære	Intervall på 1 atmosfære	{0} atmosfærar	Intervall på 2 atmosfærar
+pressure	atmosphere • ( = 1.01325 bar)	masculine	Min atmosfære han har tre kantar	genitive	{0} atmosfæres	På 1 atmosfæres avstand	{0} atmosfærers	På 2 atmosfærers avstand
 pressure	megapascals	masculine	Min megapascal han har tre kantar	nominative	{0} megapascal	Intervall på 1 megapascal	{0} megapascal	Intervall på 2 megapascal
 pressure	megapascals	masculine	Min megapascal han har tre kantar	genitive	{0} megapascals	På 1 megapascals avstand	{0} megapascals	På 2 megapascals avstand
-resolution	pixel-per-centimeter ( = 1 dpcm)	masculine	Min piksel per centimeter han har tre kantar	nominative	{0} piksel per centimeter	Intervall på 1 piksel per centimeter	{0} pikslar per centimeter	Intervall på 2 pikslar per centimeter
-resolution	pixel-per-centimeter ( = 1 dpcm)	masculine	Min piksel per centimeter han har tre kantar	genitive	{0} piksel per centimeters	På 1 piksel per centimeters avstand	{0} pikslar per centimeters	På 2 pikslar per centimeters avstand
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	masculine	Min kilometer per time han har tre kantar	nominative	{0} kilometer per time	Intervall på 1 kilometer per time	{0} kilometer per time	Intervall på 2 kilometer per time
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	masculine	Min kilometer per time han har tre kantar	genitive	{0} kilometer per times	På 1 kilometer per times avstand	{0} kilometer per times	På 2 kilometer per times avstand
-speed	mile-per-hour ( = 0.44704 m/s)	feminine	Det tek ei heil engelsk mil per time å …	nominative	{0} engelsk mil per time	Intervall på 1 engelsk mil per time	{0} engelske mil per time	Intervall på 2 engelske mil per time
-speed	mile-per-hour ( = 0.44704 m/s)	feminine	Det tek ei heil engelsk mil per time å …	genitive	{0} engelsk mil per time	På 1 engelsk mil per time avstand	{0} engelske mil per time	På 2 engelske mil per time avstand
+resolution	pixel-per-centimeter • ( = 1 dpcm)	masculine	Min piksel per centimeter han har tre kantar	nominative	{0} piksel per centimeter	Intervall på 1 piksel per centimeter	{0} pikslar per centimeter	Intervall på 2 pikslar per centimeter
+resolution	pixel-per-centimeter • ( = 1 dpcm)	masculine	Min piksel per centimeter han har tre kantar	genitive	{0} piksel per centimeters	På 1 piksel per centimeters avstand	{0} pikslar per centimeters	På 2 pikslar per centimeters avstand
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	masculine	Min kilometer per time han har tre kantar	nominative	{0} kilometer per time	Intervall på 1 kilometer per time	{0} kilometer per time	Intervall på 2 kilometer per time
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	masculine	Min kilometer per time han har tre kantar	genitive	{0} kilometer per times	På 1 kilometer per times avstand	{0} kilometer per times	På 2 kilometer per times avstand
+speed	mile-per-hour • ( = 0.44704 m/s)	feminine	Det tek ei heil engelsk mil per time å …	nominative	{0} engelsk mil per time	Intervall på 1 engelsk mil per time	{0} engelske mil per time	Intervall på 2 engelske mil per time
+speed	mile-per-hour • ( = 0.44704 m/s)	feminine	Det tek ei heil engelsk mil per time å …	genitive	{0} engelsk mil per time	På 1 engelsk mil per time avstand	{0} engelske mil per time	På 2 engelske mil per time avstand
 speed	meters per second	masculine	Min meter per sekund han har tre kantar	nominative	{0} meter per sekund	Intervall på 1 meter per sekund	{0} meter per sekund	Intervall på 2 meter per sekund
 speed	meters per second	masculine	Min meter per sekund han har tre kantar	genitive	{0} meter per sekunds	På 1 meter per sekunds avstand	{0} meter per sekunds	På 2 meter per sekunds avstand
 substance-amount	items	neuter	Mitt element det har tre kantar	nominative	{0} element	Intervall på 1 element	{0} element	Intervall på 2 element
 substance-amount	items	neuter	Mitt element det har tre kantar	genitive	{0} elements	På 1 elements avstand	{0} elements	På 2 elements avstand
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	neuter	Mitt mol det har tre kantar	nominative	{0} mol	Intervall på 1 mol	{0} mol	Intervall på 2 mol
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	neuter	Mitt mol det har tre kantar	genitive	{0} mols	På 1 mols avstand	{0} mols	På 2 mols avstand
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	neuter	Mitt mol det har tre kantar	nominative	{0} mol	Intervall på 1 mol	{0} mol	Intervall på 2 mol
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	neuter	Mitt mol det har tre kantar	genitive	{0} mols	På 1 mols avstand	{0} mols	På 2 mols avstand
 temperature	°	masculine	Min ° han har tre kantar	nominative	{0}°	Intervall på 1°	{0}°	Intervall på 2°
 temperature	°	masculine	Min ° han har tre kantar	genitive	{0} grads	På 1 grads avstand	{0} graders	På 2 graders avstand
-temperature	fahrenheit ( = 0.˙5 K)	masculine	Min grad fahrenheit han har tre kantar	nominative	{0} grad fahrenheit	Intervall på 1 grad fahrenheit	{0} grader fahrenheit	Intervall på 2 grader fahrenheit
-temperature	fahrenheit ( = 0.˙5 K)	masculine	Min grad fahrenheit han har tre kantar	genitive	{0} grad fahrenheit	På 1 grad fahrenheit avstand	{0} grader fahrenheit	På 2 grader fahrenheit avstand
-temperature	celsius ( = 1 K)	masculine	Min grad celsius han har tre kantar	nominative	{0} grad celsius	Intervall på 1 grad celsius	{0} grader celsius	Intervall på 2 grader celsius
-temperature	celsius ( = 1 K)	masculine	Min grad celsius han har tre kantar	genitive	{0} celsiusgrads	På 1 celsiusgrads avstand	{0} celsiusgraders	På 2 celsiusgraders avstand
+temperature	fahrenheit • ( = 0.˙5 K)	masculine	Min grad fahrenheit han har tre kantar	nominative	{0} grad fahrenheit	Intervall på 1 grad fahrenheit	{0} grader fahrenheit	Intervall på 2 grader fahrenheit
+temperature	fahrenheit • ( = 0.˙5 K)	masculine	Min grad fahrenheit han har tre kantar	genitive	{0} grad fahrenheit	På 1 grad fahrenheit avstand	{0} grader fahrenheit	På 2 grader fahrenheit avstand
+temperature	celsius • ( = 1 K)	masculine	Min grad celsius han har tre kantar	nominative	{0} grad celsius	Intervall på 1 grad celsius	{0} grader celsius	Intervall på 2 grader celsius
+temperature	celsius • ( = 1 K)	masculine	Min grad celsius han har tre kantar	genitive	{0} celsiusgrads	På 1 celsiusgrads avstand	{0} celsiusgraders	På 2 celsiusgraders avstand
 temperature	kelvins	masculine	Min kelvin han har tre kantar	nominative	{0} kelvin	Intervall på 1 kelvin	{0} kelvin	Intervall på 2 kelvin
 temperature	kelvins	masculine	Min kelvin han har tre kantar	genitive	{0} kelvins	På 1 kelvins avstand	{0} kelvins	På 2 kelvins avstand
 typewidth	typographic ems	masculine	Min gefirt han har tre kantar	nominative	{0} gefirt	Intervall på 1 gefirt	{0} gefirt	Intervall på 2 gefirt
 typewidth	typographic ems	masculine	Min gefirt han har tre kantar	genitive	{0} gefirts	På 1 gefirts avstand	{0} gefirts	På 2 gefirts avstand
 voltage	volts	masculine	Min volt han har tre kantar	nominative	{0} volt	Intervall på 1 volt	{0} volt	Intervall på 2 volt
 voltage	volts	masculine	Min volt han har tre kantar	genitive	{0} volts	På 1 volts avstand	{0} volts	På 2 volts avstand
-volume	drop ( = 0.0513429332682291˙6 mL)	masculine	Min drope han har tre kantar	nominative	{0} drope	Intervall på 1 drope	{0} dropar	Intervall på 2 dropar
-volume	drop ( = 0.0513429332682291˙6 mL)	masculine	Min drope han har tre kantar	genitive	{0} drope	På 1 drope avstand	{0} dropar	På 2 dropar avstand
-volume	pinch ( = 0.23104319970703125 mL)	feminine	Det tek ei heil klype å …	nominative	{0} klype	Intervall på 1 klype	{0} klyper	Intervall på 2 klyper
-volume	pinch ( = 0.23104319970703125 mL)	feminine	Det tek ei heil klype å …	genitive	{0} klype	På 1 klype avstand	{0} klyper	På 2 klyper avstand
-volume	cubic-centimeter ( = 1 mL)	masculine	Min kubikkcentimeter han har tre kantar	nominative	{0} kubikkcentimeter	Intervall på 1 kubikkcentimeter	{0} kubikkcentimeter	Intervall på 2 kubikkcentimeter
-volume	cubic-centimeter ( = 1 mL)	masculine	Min kubikkcentimeter han har tre kantar	genitive	{0} kubikkcentimeters	På 1 kubikkcentimeters avstand	{0} kubikkcentimeters	På 2 kubikkcentimeters avstand
+volume	drop • ( = 0.0513429332682291˙6 mL)	masculine	Min drope han har tre kantar	nominative	{0} drope	Intervall på 1 drope	{0} dropar	Intervall på 2 dropar
+volume	drop • ( = 0.0513429332682291˙6 mL)	masculine	Min drope han har tre kantar	genitive	{0} drope	På 1 drope avstand	{0} dropar	På 2 dropar avstand
+volume	pinch • ( = 0.23104319970703125 mL)	feminine	Det tek ei heil klype å …	nominative	{0} klype	Intervall på 1 klype	{0} klyper	Intervall på 2 klyper
+volume	pinch • ( = 0.23104319970703125 mL)	feminine	Det tek ei heil klype å …	genitive	{0} klype	På 1 klype avstand	{0} klyper	På 2 klyper avstand
+volume	cubic-centimeter • ( = 1 mL)	masculine	Min kubikkcentimeter han har tre kantar	nominative	{0} kubikkcentimeter	Intervall på 1 kubikkcentimeter	{0} kubikkcentimeter	Intervall på 2 kubikkcentimeter
+volume	cubic-centimeter • ( = 1 mL)	masculine	Min kubikkcentimeter han har tre kantar	genitive	{0} kubikkcentimeters	På 1 kubikkcentimeters avstand	{0} kubikkcentimeters	På 2 kubikkcentimeters avstand
 volume	milliliters	masculine	Min milliliter han har tre kantar	nominative	{0} milliliter	Intervall på 1 milliliter	{0} milliliter	Intervall på 2 milliliter
 volume	milliliters	masculine	Min milliliter han har tre kantar	genitive	{0} milliliters	På 1 milliliters avstand	{0} milliliters	På 2 milliliters avstand
-volume	dessert-spoon ( = 1.84834559765625 mL)	feminine	Det tek ei heil dessertskei å …	nominative	{0} dessertskei	Intervall på 1 dessertskei	{0} dessertskeier	Intervall på 2 dessertskeier
-volume	dessert-spoon ( = 1.84834559765625 mL)	feminine	Det tek ei heil dessertskei å …	genitive	{0} dessertskei	På 1 dessertskei avstand	{0} dessertskeier	På 2 dessertskeier avstand
-volume	dessert-spoon-imperial ( = 2.2197705078125 mL)	feminine	Det tek ei heil britisk dessertskei å …	nominative	{0} britisk dessertskei	Intervall på 1 britisk dessertskei	{0} britisk dessertskei	Intervall på 2 britisk dessertskei
-volume	dessert-spoon-imperial ( = 2.2197705078125 mL)	feminine	Det tek ei heil britisk dessertskei å …	genitive	{0} britisk dessertskei	På 1 britisk dessertskei avstand	{0} britisk dessertskei	På 2 britisk dessertskei avstand
-volume	dram ( = 3.6966911953125 mL)	masculine	Min dram han har tre kantar	nominative	{0} dram	Intervall på 1 dram	{0} dram	Intervall på 2 dram
-volume	dram ( = 3.6966911953125 mL)	masculine	Min dram han har tre kantar	genitive	{0} dram	På 1 dram avstand	{0} dram	På 2 dram avstand
-volume	teaspoon ( = 4.92892159375 mL)	feminine	Det tek ei heil teskei å …	nominative	{0} teskei	Intervall på 1 teskei	{0} teskeier	Intervall på 2 teskeier
-volume	teaspoon ( = 4.92892159375 mL)	feminine	Det tek ei heil teskei å …	genitive	{0} teskei	På 1 teskei avstand	{0} teskeier	På 2 teskeier avstand
+volume	dessert-spoon • ( = 1.84834559765625 mL)	feminine	Det tek ei heil dessertskei å …	nominative	{0} dessertskei	Intervall på 1 dessertskei	{0} dessertskeier	Intervall på 2 dessertskeier
+volume	dessert-spoon • ( = 1.84834559765625 mL)	feminine	Det tek ei heil dessertskei å …	genitive	{0} dessertskei	På 1 dessertskei avstand	{0} dessertskeier	På 2 dessertskeier avstand
+volume	dessert-spoon-imperial • ( = 2.2197705078125 mL)	feminine	Det tek ei heil britisk dessertskei å …	nominative	{0} britisk dessertskei	Intervall på 1 britisk dessertskei	{0} britisk dessertskei	Intervall på 2 britisk dessertskei
+volume	dessert-spoon-imperial • ( = 2.2197705078125 mL)	feminine	Det tek ei heil britisk dessertskei å …	genitive	{0} britisk dessertskei	På 1 britisk dessertskei avstand	{0} britisk dessertskei	På 2 britisk dessertskei avstand
+volume	dram • ( = 3.6966911953125 mL)	masculine	Min dram han har tre kantar	nominative	{0} dram	Intervall på 1 dram	{0} dram	Intervall på 2 dram
+volume	dram • ( = 3.6966911953125 mL)	masculine	Min dram han har tre kantar	genitive	{0} dram	På 1 dram avstand	{0} dram	På 2 dram avstand
+volume	teaspoon • ( = 4.92892159375 mL)	feminine	Det tek ei heil teskei å …	nominative	{0} teskei	Intervall på 1 teskei	{0} teskeier	Intervall på 2 teskeier
+volume	teaspoon • ( = 4.92892159375 mL)	feminine	Det tek ei heil teskei å …	genitive	{0} teskei	På 1 teskei avstand	{0} teskeier	På 2 teskeier avstand
 volume	centiliters	masculine	Min centiliter han har tre kantar	nominative	{0} centiliter	Intervall på 1 centiliter	{0} centiliter	Intervall på 2 centiliter
 volume	centiliters	masculine	Min centiliter han har tre kantar	genitive	{0} centiliters	På 1 centiliters avstand	{0} centiliters	På 2 centiliters avstand
-volume	tablespoon ( = 1.478676478125 cL)	feminine	Det tek ei heil matskei å …	nominative	{0} matskei	Intervall på 1 matskei	{0} matskeier	Intervall på 2 matskeier
-volume	tablespoon ( = 1.478676478125 cL)	feminine	Det tek ei heil matskei å …	genitive	{0} matskei	På 1 matskei avstand	{0} matskeier	På 2 matskeier avstand
-volume	cubic-inch ( = 1.6387064 cL)	masculine	Min kubikktomme han har tre kantar	nominative	{0} kubikktomme	Intervall på 1 kubikktomme	{0} kubikktommar	Intervall på 2 kubikktommar
-volume	cubic-inch ( = 1.6387064 cL)	masculine	Min kubikktomme han har tre kantar	genitive	{0} kubikktomme	På 1 kubikktomme avstand	{0} kubikktommar	På 2 kubikktommar avstand
-volume	fluid-ounce-imperial ( = 2.84130625 cL)	feminine	Det tek ei heil britisk væskeunse å …	nominative	{0} britisk væskeunse	Intervall på 1 britisk væskeunse	{0} britiske væskeunser	Intervall på 2 britiske væskeunser
-volume	fluid-ounce-imperial ( = 2.84130625 cL)	feminine	Det tek ei heil britisk væskeunse å …	genitive	{0} britisk væskeunse	På 1 britisk væskeunse avstand	{0} britiske væskeunser	På 2 britiske væskeunser avstand
-volume	fluid-ounce ( = 2.95735295625 cL)	feminine	Det tek ei heil væskeunse å …	nominative	{0} væskeunse	Intervall på 1 væskeunse	{0} væskeunser	Intervall på 2 væskeunser
-volume	fluid-ounce ( = 2.95735295625 cL)	feminine	Det tek ei heil væskeunse å …	genitive	{0} væskeunse	På 1 væskeunse avstand	{0} væskeunser	På 2 væskeunser avstand
-volume	jigger ( = 4.436029434375 cL)	masculine	Min shot han har tre kantar	nominative	{0} shot	Intervall på 1 shot	{0} shot	Intervall på 2 shot
-volume	jigger ( = 4.436029434375 cL)	masculine	Min shot han har tre kantar	genitive	{0} shot	På 1 shot avstand	{0} shot	På 2 shot avstand
+volume	tablespoon • ( = 1.478676478125 cL)	feminine	Det tek ei heil matskei å …	nominative	{0} matskei	Intervall på 1 matskei	{0} matskeier	Intervall på 2 matskeier
+volume	tablespoon • ( = 1.478676478125 cL)	feminine	Det tek ei heil matskei å …	genitive	{0} matskei	På 1 matskei avstand	{0} matskeier	På 2 matskeier avstand
+volume	cubic-inch • ( = 1.6387064 cL)	masculine	Min kubikktomme han har tre kantar	nominative	{0} kubikktomme	Intervall på 1 kubikktomme	{0} kubikktommar	Intervall på 2 kubikktommar
+volume	cubic-inch • ( = 1.6387064 cL)	masculine	Min kubikktomme han har tre kantar	genitive	{0} kubikktomme	På 1 kubikktomme avstand	{0} kubikktommar	På 2 kubikktommar avstand
+volume	fluid-ounce-imperial • ( = 2.84130625 cL)	feminine	Det tek ei heil britisk væskeunse å …	nominative	{0} britisk væskeunse	Intervall på 1 britisk væskeunse	{0} britiske væskeunser	Intervall på 2 britiske væskeunser
+volume	fluid-ounce-imperial • ( = 2.84130625 cL)	feminine	Det tek ei heil britisk væskeunse å …	genitive	{0} britisk væskeunse	På 1 britisk væskeunse avstand	{0} britiske væskeunser	På 2 britiske væskeunser avstand
+volume	fluid-ounce • ( = 2.95735295625 cL)	feminine	Det tek ei heil væskeunse å …	nominative	{0} væskeunse	Intervall på 1 væskeunse	{0} væskeunser	Intervall på 2 væskeunser
+volume	fluid-ounce • ( = 2.95735295625 cL)	feminine	Det tek ei heil væskeunse å …	genitive	{0} væskeunse	På 1 væskeunse avstand	{0} væskeunser	På 2 væskeunser avstand
+volume	jigger • ( = 4.436029434375 cL)	masculine	Min shot han har tre kantar	nominative	{0} shot	Intervall på 1 shot	{0} shot	Intervall på 2 shot
+volume	jigger • ( = 4.436029434375 cL)	masculine	Min shot han har tre kantar	genitive	{0} shot	På 1 shot avstand	{0} shot	På 2 shot avstand
 volume	deciliters	masculine	Min desiliter han har tre kantar	nominative	{0} desiliter	Intervall på 1 desiliter	{0} desiliter	Intervall på 2 desiliter
 volume	deciliters	masculine	Min desiliter han har tre kantar	genitive	{0} desiliters	På 1 desiliters avstand	{0} desiliters	På 2 desiliters avstand
-volume	cup ( = 2.365882365 dL)	masculine	Min kopp han har tre kantar	nominative	{0} kopp	Intervall på 1 kopp	{0} koppar	Intervall på 2 koppar
-volume	cup ( = 2.365882365 dL)	masculine	Min kopp han har tre kantar	genitive	{0} kopp	På 1 kopp avstand	{0} koppar	På 2 koppar avstand
-volume	cup-metric ( = 2.5 dL)	masculine	Min metrisk kopp han har tre kantar	nominative	{0} metrisk kopp	Intervall på 1 metrisk kopp	{0} metriske koppar	Intervall på 2 metriske koppar
-volume	cup-metric ( = 2.5 dL)	masculine	Min metrisk kopp han har tre kantar	genitive	{0} metrisk kopps	På 1 metrisk kopps avstand	{0} metriske koppers	På 2 metriske koppers avstand
-volume	pint ( = 4.73176473 dL)	masculine	Min pint han har tre kantar	nominative	{0} pint	Intervall på 1 pint	{0} pint	Intervall på 2 pint
-volume	pint ( = 4.73176473 dL)	masculine	Min pint han har tre kantar	genitive	{0} pint	På 1 pint avstand	{0} pint	På 2 pint avstand
-volume	pint-metric ( = 5 dL)	masculine	Min metrisk pint han har tre kantar	nominative	{0} metrisk pint	Intervall på 1 metrisk pint	{0} metriske pint	Intervall på 2 metriske pint
-volume	pint-metric ( = 5 dL)	masculine	Min metrisk pint han har tre kantar	genitive	{0} metrisk pints	På 1 metrisk pints avstand	{0} metriske pints	På 2 metriske pints avstand
-volume	quart ( = 0.946352946 L)	masculine	Min quart han har tre kantar	nominative	{0} quart	Intervall på 1 quart	{0} quart	Intervall på 2 quart
-volume	quart ( = 0.946352946 L)	masculine	Min quart han har tre kantar	genitive	{0} quart	På 1 quart avstand	{0} quart	På 2 quart avstand
+volume	cup • ( = 2.365882365 dL)	masculine	Min kopp han har tre kantar	nominative	{0} kopp	Intervall på 1 kopp	{0} koppar	Intervall på 2 koppar
+volume	cup • ( = 2.365882365 dL)	masculine	Min kopp han har tre kantar	genitive	{0} kopp	På 1 kopp avstand	{0} koppar	På 2 koppar avstand
+volume	cup-metric • ( = 2.5 dL)	masculine	Min metrisk kopp han har tre kantar	nominative	{0} metrisk kopp	Intervall på 1 metrisk kopp	{0} metriske koppar	Intervall på 2 metriske koppar
+volume	cup-metric • ( = 2.5 dL)	masculine	Min metrisk kopp han har tre kantar	genitive	{0} metrisk kopps	På 1 metrisk kopps avstand	{0} metriske koppers	På 2 metriske koppers avstand
+volume	pint • ( = 4.73176473 dL)	masculine	Min pint han har tre kantar	nominative	{0} pint	Intervall på 1 pint	{0} pint	Intervall på 2 pint
+volume	pint • ( = 4.73176473 dL)	masculine	Min pint han har tre kantar	genitive	{0} pint	På 1 pint avstand	{0} pint	På 2 pint avstand
+volume	pint-metric • ( = 5 dL)	masculine	Min metrisk pint han har tre kantar	nominative	{0} metrisk pint	Intervall på 1 metrisk pint	{0} metriske pint	Intervall på 2 metriske pint
+volume	pint-metric • ( = 5 dL)	masculine	Min metrisk pint han har tre kantar	genitive	{0} metrisk pints	På 1 metrisk pints avstand	{0} metriske pints	På 2 metriske pints avstand
+volume	quart • ( = 0.946352946 L)	masculine	Min quart han har tre kantar	nominative	{0} quart	Intervall på 1 quart	{0} quart	Intervall på 2 quart
+volume	quart • ( = 0.946352946 L)	masculine	Min quart han har tre kantar	genitive	{0} quart	På 1 quart avstand	{0} quart	På 2 quart avstand
 volume	liters	masculine	Min liter han har tre kantar	nominative	{0} liter	Intervall på 1 liter	{0} liter	Intervall på 2 liter
 volume	liters	masculine	Min liter han har tre kantar	genitive	{0} liters	På 1 liters avstand	{0} liters	På 2 liters avstand
-volume	quart-imperial ( = 1.1365225 L)	masculine	Min britisk quart han har tre kantar	nominative	{0} britisk quart	Intervall på 1 britisk quart	{0} britiske quart	Intervall på 2 britiske quart
-volume	quart-imperial ( = 1.1365225 L)	masculine	Min britisk quart han har tre kantar	genitive	{0} britisk quart	På 1 britisk quart avstand	{0} britiske quart	På 2 britiske quart avstand
-volume	gallon ( = 3.785411784 L)	masculine	Min gallon han har tre kantar	nominative	{0} gallon	Intervall på 1 gallon	{0} gallon	Intervall på 2 gallon
-volume	gallon ( = 3.785411784 L)	masculine	Min gallon han har tre kantar	genitive	{0} gallon	På 1 gallon avstand	{0} gallon	På 2 gallon avstand
-volume	gallon-imperial ( = 4.54609 L)	masculine	Min britisk gallon han har tre kantar	nominative	{0} britisk gallon	Intervall på 1 britisk gallon	{0} britiske gallon	Intervall på 2 britiske gallon
-volume	gallon-imperial ( = 4.54609 L)	masculine	Min britisk gallon han har tre kantar	genitive	{0} britisk gallon	På 1 britisk gallon avstand	{0} britiske gallon	På 2 britiske gallon avstand
-volume	cubic-foot ( = 28.316846592 L)	masculine	Min kubikkfot han har tre kantar	nominative	{0} kubikkfot	Intervall på 1 kubikkfot	{0} kubikkfot	Intervall på 2 kubikkfot
-volume	cubic-foot ( = 28.316846592 L)	masculine	Min kubikkfot han har tre kantar	genitive	{0} kubikkfot	På 1 kubikkfot avstand	{0} kubikkfot	På 2 kubikkfot avstand
+volume	quart-imperial • ( = 1.1365225 L)	masculine	Min britisk quart han har tre kantar	nominative	{0} britisk quart	Intervall på 1 britisk quart	{0} britiske quart	Intervall på 2 britiske quart
+volume	quart-imperial • ( = 1.1365225 L)	masculine	Min britisk quart han har tre kantar	genitive	{0} britisk quart	På 1 britisk quart avstand	{0} britiske quart	På 2 britiske quart avstand
+volume	gallon • ( = 3.785411784 L)	masculine	Min gallon han har tre kantar	nominative	{0} gallon	Intervall på 1 gallon	{0} gallon	Intervall på 2 gallon
+volume	gallon • ( = 3.785411784 L)	masculine	Min gallon han har tre kantar	genitive	{0} gallon	På 1 gallon avstand	{0} gallon	På 2 gallon avstand
+volume	gallon-imperial • ( = 4.54609 L)	masculine	Min britisk gallon han har tre kantar	nominative	{0} britisk gallon	Intervall på 1 britisk gallon	{0} britiske gallon	Intervall på 2 britiske gallon
+volume	gallon-imperial • ( = 4.54609 L)	masculine	Min britisk gallon han har tre kantar	genitive	{0} britisk gallon	På 1 britisk gallon avstand	{0} britiske gallon	På 2 britiske gallon avstand
+volume	cubic-foot • ( = 28.316846592 L)	masculine	Min kubikkfot han har tre kantar	nominative	{0} kubikkfot	Intervall på 1 kubikkfot	{0} kubikkfot	Intervall på 2 kubikkfot
+volume	cubic-foot • ( = 28.316846592 L)	masculine	Min kubikkfot han har tre kantar	genitive	{0} kubikkfot	På 1 kubikkfot avstand	{0} kubikkfot	På 2 kubikkfot avstand
 volume	hectoliters	masculine	Min hektoliter han har tre kantar	nominative	{0} hektoliter	Intervall på 1 hektoliter	{0} hektoliter	Intervall på 2 hektoliter
 volume	hectoliters	masculine	Min hektoliter han har tre kantar	genitive	{0} hektoliters	På 1 hektoliters avstand	{0} hektoliters	På 2 hektoliters avstand
-volume	barrel ( = 1.58987294928 hL)	neuter	Mitt fat det har tre kantar	nominative	{0} fat	Intervall på 1 fat	{0} fat	Intervall på 2 fat
-volume	barrel ( = 1.58987294928 hL)	neuter	Mitt fat det har tre kantar	genitive	{0} fat	På 1 fat avstand	{0} fat	På 2 fat avstand
+volume	barrel • ( = 1.58987294928 hL)	neuter	Mitt fat det har tre kantar	nominative	{0} fat	Intervall på 1 fat	{0} fat	Intervall på 2 fat
+volume	barrel • ( = 1.58987294928 hL)	neuter	Mitt fat det har tre kantar	genitive	{0} fat	På 1 fat avstand	{0} fat	På 2 fat avstand
 volume	cubic meters	masculine	Min kubikkmeter han har tre kantar	nominative	{0} kubikkmeter	Intervall på 1 kubikkmeter	{0} kubikkmeter	Intervall på 2 kubikkmeter
 volume	cubic meters	masculine	Min kubikkmeter han har tre kantar	genitive	{0} kubikkmeters	På 1 kubikkmeters avstand	{0} kubikkmeters	På 2 kubikkmeters avstand
 volume	megaliters	masculine	Min megaliter han har tre kantar	nominative	{0} megaliter	Intervall på 1 megaliter	{0} megaliter	Intervall på 2 megaliter
 volume	megaliters	masculine	Min megaliter han har tre kantar	genitive	{0} megaliters	På 1 megaliters avstand	{0} megaliters	På 2 megaliters avstand
 volume	cubic kilometers	masculine	Min kubikkilometer han har tre kantar	nominative	{0} kubikkilometer	Intervall på 1 kubikkilometer	{0} kubikkilometer	Intervall på 2 kubikkilometer
 volume	cubic kilometers	masculine	Min kubikkilometer han har tre kantar	genitive	{0} kubikkilometers	På 1 kubikkilometers avstand	{0} kubikkilometers	På 2 kubikkilometers avstand
-volume	cubic-mile ( = 4.168181825440579584 km³)	feminine	Det tek ei heil engelske kubikkmil å …	nominative	{0} engelske kubikkmil	Intervall på 1 engelske kubikkmil	{0} engelske kubikkmil	Intervall på 2 engelske kubikkmil
-volume	cubic-mile ( = 4.168181825440579584 km³)	feminine	Det tek ei heil engelske kubikkmil å …	genitive	{0} engelske kubikkmil	På 1 engelske kubikkmil avstand	{0} engelske kubikkmil	På 2 engelske kubikkmil avstand
-year-duration	month ( = 0.08˙3 yrs)	masculine	Min månad han har tre kantar	nominative	{0} månad	Intervall på 1 månad	{0} månadar	Intervall på 2 månadar
-year-duration	month ( = 0.08˙3 yrs)	masculine	Min månad han har tre kantar	genitive	{0} månads	På 1 månads avstand	{0} månaders	På 2 månaders avstand
+volume	cubic-mile • ( = 4.168181825440579584 km³)	feminine	Det tek ei heil engelske kubikkmil å …	nominative	{0} engelske kubikkmil	Intervall på 1 engelske kubikkmil	{0} engelske kubikkmil	Intervall på 2 engelske kubikkmil
+volume	cubic-mile • ( = 4.168181825440579584 km³)	feminine	Det tek ei heil engelske kubikkmil å …	genitive	{0} engelske kubikkmil	På 1 engelske kubikkmil avstand	{0} engelske kubikkmil	På 2 engelske kubikkmil avstand
+year-duration	month • ( = 0.08˙3 yrs)	masculine	Min månad han har tre kantar	nominative	{0} månad	Intervall på 1 månad	{0} månadar	Intervall på 2 månadar
+year-duration	month • ( = 0.08˙3 yrs)	masculine	Min månad han har tre kantar	genitive	{0} månads	På 1 månads avstand	{0} månaders	På 2 månaders avstand
 year-duration	years	neuter	Mitt år det har tre kantar	nominative	{0} år	Intervall på 1 år	{0} år	Intervall på 2 år
 year-duration	years	neuter	Mitt år det har tre kantar	genitive	{0} års	På 1 års avstand	{0} års	På 2 års avstand
 year-duration	decades	neuter	Mitt tiår det har tre kantar	nominative	{0} tiår	Intervall på 1 tiår	{0} tiår	Intervall på 2 tiår
@@ -317,15 +320,16 @@ year-duration	centuries	neuter	Mitt hundreår det har tre kantar	nominative	{0} 
 year-duration	centuries	neuter	Mitt hundreår det har tre kantar	genitive	{0} hundreårs	På 1 hundreårs avstand	{0} hundreårs	På 2 hundreårs avstand
 
 # Unit Power Components
-power2	nominative	masculine (hour)	kvadrat{0}	Intervall på 1 kvadrattime	kvadrat{0}	Intervall på 2 kvadrattimar
-power2	genitive	masculine (hour)	kvadrat{0}	På 1 kvadrattimes avstand	kvadrat{0}	På 2 kvadrattimars avstand
-power2	nominative	feminine (week)	kvadrat{0}	Intervall på 1 kvadratveke	kvadrat{0}	Intervall på 2 kvadratveker
-power2	genitive	feminine (week)	kvadrat{0}	På 1 kvadratvekes avstand	kvadrat{0}	På 2 kvadratvekers avstand
-power2	nominative	neuter (second)	kvadrat{0}	Intervall på 1 kvadratsekund	kvadrat{0}	Intervall på 2 kvadratsekund
-power2	genitive	neuter (second)	kvadrat{0}	På 1 kvadratsekunds avstand	kvadrat{0}	På 2 kvadratsekunds avstand
-power3	nominative	masculine (hour)	kubikk{0}	Intervall på 1 kubikktime	kubikk{0}	Intervall på 2 kubikktimar
-power3	genitive	masculine (hour)	kubikk{0}	På 1 kubikktimes avstand	kubikk{0}	På 2 kubikktimars avstand
-power3	nominative	feminine (week)	kubikk{0}	Intervall på 1 kubikkveke	kubikk{0}	Intervall på 2 kubikkveker
-power3	genitive	feminine (week)	kubikk{0}	På 1 kubikkvekes avstand	kubikk{0}	På 2 kubikkvekers avstand
-power3	nominative	neuter (second)	kubikk{0}	Intervall på 1 kubikksekund	kubikk{0}	Intervall på 2 kubikksekund
-power3	genitive	neuter (second)	kubikk{0}	På 1 kubikksekunds avstand	kubikk{0}	På 2 kubikksekunds avstand
+#Unit	Case	Gender	Pattern for one	Case MP + pattern with 1.0	Pattern for other	Case MP + pattern with 2.0
+power2	nominative	masculine • (hour)	kvadrat{0}	Intervall på 1 kvadrattime	kvadrat{0}	Intervall på 2 kvadrattimar
+power2	genitive	masculine • (hour)	kvadrat{0}	På 1 kvadrattimes avstand	kvadrat{0}	På 2 kvadrattimars avstand
+power2	nominative	feminine • (week)	kvadrat{0}	Intervall på 1 kvadratveke	kvadrat{0}	Intervall på 2 kvadratveker
+power2	genitive	feminine • (week)	kvadrat{0}	På 1 kvadratvekes avstand	kvadrat{0}	På 2 kvadratvekers avstand
+power2	nominative	neuter • (second)	kvadrat{0}	Intervall på 1 kvadratsekund	kvadrat{0}	Intervall på 2 kvadratsekund
+power2	genitive	neuter • (second)	kvadrat{0}	På 1 kvadratsekunds avstand	kvadrat{0}	På 2 kvadratsekunds avstand
+power3	nominative	masculine • (hour)	kubikk{0}	Intervall på 1 kubikktime	kubikk{0}	Intervall på 2 kubikktimar
+power3	genitive	masculine • (hour)	kubikk{0}	På 1 kubikktimes avstand	kubikk{0}	På 2 kubikktimars avstand
+power3	nominative	feminine • (week)	kubikk{0}	Intervall på 1 kubikkveke	kubikk{0}	Intervall på 2 kubikkveker
+power3	genitive	feminine • (week)	kubikk{0}	På 1 kubikkvekes avstand	kubikk{0}	På 2 kubikkvekers avstand
+power3	nominative	neuter • (second)	kubikk{0}	Intervall på 1 kubikksekund	kubikk{0}	Intervall på 2 kubikksekund
+power3	genitive	neuter • (second)	kubikk{0}	På 1 kubikksekunds avstand	kubikk{0}	På 2 kubikksekunds avstand

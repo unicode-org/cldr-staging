@@ -1,4 +1,5 @@
 # Section	Page	Header	Code	Old	New
+#Section	Page	Header	Code	Old	New
 BCP47	u_Extension	lw-phrase	_deprecated	▷missing◁	false
 BCP47	u_Extension	lw-phrase	_description	▷missing◁	Prioritize keeping natural phrases (of multiple words) together when breaking, used in short text like title and headline
 BCP47	u_Extension	tz-uaiev	_description	…	Kyiv, Ukraine
@@ -29,8 +30,9 @@ BCP47	t_Extension	m0-xaleget	_deprecated	▷missing◁	false
 BCP47	t_Extension	m0-xaleget	_description	▷missing◁	Eritrean Ministry of Education Blin-Latin Transliteration
 BCP47	t_Extension	s0-morse	_deprecated	▷missing◁	false
 BCP47	t_Extension	s0-morse	_description	▷missing◁	map Morse Code to Unicode encoding
-Supplemental	IdValidity	script	regular	…	… Kawi … Nagm …
-Supplemental	Locale	Parent	en_001	…	… en_MV …
+#Section	Page	Header	Code	Old	New
+Supplemental	IdValidity	script	regular	…	… • Kawi • … • Nagm • …
+Supplemental	Locale	Parent	en_001	…	… • en_MV • …
 Supplemental	Locale	Parent	en_IN	▷missing◁	hi_Latn
 Supplemental	Locale	Parent	root	…	…
 Supplemental	Transform	am_Ethi↔︎am_Brai	_alias	▷missing◁	Ethiopic-Braille/Amharic am-Brai-t-am-ethi
@@ -108,6 +110,7 @@ Supplemental	Likely	Subtag	lil	▷missing◁	lil_Latn_CA
 Supplemental	Likely	Subtag	ojs	▷missing◁	ojs_Cans_CA
 Supplemental	Likely	Subtag	oka	▷missing◁	oka_Latn_CA
 Supplemental	Likely	Subtag	pqm	▷missing◁	pqm_Latn_CA
+Supplemental	Likely	Subtag	sd_IN	▷missing◁	sd_Deva_IN
 Supplemental	Likely	Subtag	und_Kawi	▷missing◁	kaw_Kawi_ID
 Supplemental	Likely	Subtag	und_Nagm	▷missing◁	unr_Nagm_IN
 Supplemental	TerritoryInfo	MV	population	…	540542
@@ -206,12 +209,13 @@ Supplemental	LanguageInfo	GB/tr	populationPercent	▷missing◁	0.2
 Supplemental	LanguageInfo	GB/ur	populationPercent	▷missing◁	3.5
 Supplemental	LanguageInfo	GB/yi	populationPercent	0.049	▷removed◁
 Supplemental	LanguageInfo	GB/zh_Hant	populationPercent	…	0.3
+Supplemental	LanguageInfo	IN/sd_Deva	populationPercent	…	0.14
 Supplemental	LanguageInfo	MV/dv	populationPercent	…	98
 Supplemental	LanguageInfo	MV/en	populationPercent	▷missing◁	75
 Supplemental	LanguageInfo	NO/no	officialStatus	▷missing◁	official
 Supplemental	LanguageInfo	NO/no	populationPercent	▷missing◁	100
-Supplemental	Grammar	Case	nominal-cs-units	…	… dative … locative …
-Supplemental	Grammar	Case	nominal-fi-units	…	… genitive …
+Supplemental	Grammar	Case	nominal-cs-units	…	… • dative • … • locative • …
+Supplemental	Grammar	Case	nominal-fi-units	…	… • genitive • …
 Supplemental	Grammar	Case	nominal-kn-units	…	…
 Supplemental	Grammar	Case	nominal-ml-units	accusative	▷removed◁
 Supplemental	Grammar	Case	nominal-ml-units	dative	▷removed◁
@@ -220,8 +224,8 @@ Supplemental	Grammar	Case	nominal-ml-units	instrumental	▷removed◁
 Supplemental	Grammar	Case	nominal-ml-units	locative	▷removed◁
 Supplemental	Grammar	Case	nominal-ml-units	nominative	▷removed◁
 Supplemental	Grammar	Case	nominal-ml-units	sociative	▷removed◁
-Supplemental	Grammar	Case	nominal-sk-units	…	… dative … locative …
-Supplemental	Grammar	Case	nominal-uk-units	…	… dative … instrumental locative …
+Supplemental	Grammar	Case	nominal-sk-units	…	… • dative • … • locative • …
+Supplemental	Grammar	Case	nominal-uk-units	…	… • dative • … • instrumental • locative • …
 Supplemental	Grammar	Case	nominal-mr	…	…
 Supplemental	Grammar	Case	nominal-nn	▷missing◁	genitive
 Supplemental	Grammar	Case	nominal-nn	▷missing◁	nominative
@@ -237,8 +241,9 @@ Supplemental	Grammar	Gender	nominal-nn	▷missing◁	masculine
 Supplemental	Grammar	Gender	nominal-nn	▷missing◁	neuter
 Supplemental	WeekData	weekendStart	fri	…	…
 Supplemental	WeekData	weekendEnd	sat	…	…
-Supplemental	WeekData	hours-H-regions	h	…	… BI … BY … FO … GL … HU … MG … MT MU MV … NO … PL … RW … TH TJ … TM … VN … ZW …
-Supplemental	WeekData	hours-H-regions	H	…	… BI … BY … FO … GL … HU … MG … MT MU MV … NO … PL … RW … TH TJ … TM … VN … ZW …
+Supplemental	WeekData	hours-H-regions	h	…	… • BI • … • BY • … • FO • … • GL • … • HU • … • MG • … • MT • MU • MV • … • NO • … • PL • … • RW • … • TH • TJ • … • TM • … • VN • … • ZW • …
+Supplemental	WeekData	hours-H-regions	H	…	… • BI • … • BY • … • FO • … • GL • … • HU • … • MG • … • MT • MU • MV • … • NO • … • PL • … • RW • … • TH • TJ • … • TM • … • VN • … • ZW • …
+#Section	Page	Header	Code	Old	New
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	▷missing◁	$arabicNumber   = ⠼ ;
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	▷missing◁	$ethiopicNumber = ⠿ ;
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	▷missing◁	$ሀ = ⠓ ; # 125
@@ -1133,6 +1138,8 @@ Supplemental	Transform	Ethi↔︎Sarb	tRule	▷missing◁	‫፺ ↔ | 𐩿𐩲�
 Supplemental	Transform	Ethi↔︎Sarb	tRule	▷missing◁	‫፻ ↔ | 𐩿𐩣𐩿 ; # ETHIOPIC NUMBER HUNDRED‬
 Supplemental	Transform	Ethi↔︎Sarb	tRule	▷missing◁	‫፼ ↔ | 𐩿𐩲𐩱𐩿 ; # ETHIOPIC NUMBER TEN HUNDRED‬
 Supplemental	Transform	Ethi↔︎Sarb	tRule	▷missing◁	‫𐩿𐩿 → ; # This mark stripper isn't working, perhaps because the above‬
+Supplemental	Transform	my→Zawgyi	tRule	…	… • $highsignZ = [\u102d\u102e\u1032\u1036\u1039\u1064]; • $lowsignZ = [\u102f\u1030\u1037\u103c\u103d\u1087-\u108a]; • $medialraZ ($narrowconsonant) ($lowsignZ*) ($highsignZ) > \u107f $1 $2 $3; • $medialraZ ($narrowconsonant) ($subscriptitem) ($highsignZ) > \u1083 $1 $2 $3 ; • $medialraZ ($narrowconsonant) ($subscriptitem) > \u1081 $1 $2 ; • $medialraZ ($narrowconsonant) ([\u103c\u108a]) ($highsignZ) > \u1083 $1 $2 $3 ; • $medialraZ ($narrowconsonant) ([\u103c\u108a]) > \u1081 $1 $2 ; • … • $medialraZ ($narrowconsonant) \u102f ($highsignZ) > \u107f $1 \u1033 $2; • $medialraZ ($narrowconsonant) \u102f > \u103b $1 \u1033; • $medialraZ ($narrowconsonant) \u1030 ($highsignZ) > \u107f $1 \u1034 $2; • $medialraZ ($narrowconsonant) \u1030 > \u103b $1 \u1034; • $medialraZ ($narrowconsonant) \u103d ($highsignZ) > \u107f $1 \u1087 $2; • $medialraZ ($narrowconsonant) \u103d > \u103b $1 \u1087; • … • $medialraZ ($wideconsonant) ($lowsignZ*) ($highsignZ) > \u1080 $1 $2 $3; • $medialraZ ($wideconsonant) ($subscriptitem) ($highsignZ) > \u1084 $1 $2 $3; • $medialraZ ($wideconsonant) ($subscriptitem) > \u1082 $1 $2 ; • $medialraZ ($wideconsonant) ([\u103c\u108a]) ($highsignZ) > \u1084 $1 $2 $3 ; • $medialraZ ($wideconsonant) ([\u103c\u108a]) > \u1082 $1 $2 ; • … • $medialraZ ($wideconsonant) \u102f ($highsignZ) > \u1080 $1 \u1033 $2; • $medialraZ ($wideconsonant) \u102f > \u107e $1 \u1033; • $medialraZ ($wideconsonant) \u1030 ($highsignZ) > \u1080 $1 \u1034 $2; • $medialraZ ($wideconsonant) \u1030 > \u107e $1 \u1034; • $medialraZ ($wideconsonant) \u103d ($highsignZ) > \u1080 $1 \u1087 $2; • $medialraZ ($wideconsonant) \u103d > \u107e $1 \u1087; • … • ($consonant) ($subscriptitem) ($highsignZ*) \u103b > \u103b $1 $2 $3 ; • … • ($consonant) ([\u103a\u103c-\u103d]+) \u1031 > \u1031 $1 $2 ; • … • ($consonant) \u103b ([\u103c\u103d]*) \u1031 > \u1031 \u103b $1 $2; • … • ($medialraZ) ($narrowconsonant) ($lowsignZ*) ($highsignZ*) \u102f > $1 $2 $3 $4 \u1033; • ($medialraZ) ($narrowconsonant) ($lowsignZ*) ($highsignZ*) \u1030 > $1 $2 $3 $4 \u1034; • ($medialraZ) ($wideconsonant) ($lowsignZ*) ($highsignZ*) \u102f > $1 $2 $3 $4 \u1033; • ($medialraZ) ($wideconsonant) ($lowsignZ*) ($highsignZ*) \u1030 > $1 $2 $3 $4 \u1034; • … • ([\u102f\u1033]) \u102D > \u102D $1 ; • ([\u102f\u1033]) \u1036 > \u1036 $1 ; • … • \u100d\u1039\u100E > \u106F ; • … • \u1014 ($subscriptitem) ($highsignZ*) \u103b > \u103b \u108f $1 $2; • … • \u1014 \u103b ([\u103c\u103d]*) (\u1031*) > $2 \u103b \u108f $1; • … • \u102e \u103c > \u103c \u102e ; • … • \u1032 \u103c > \u103c \u1032 ; • … • \u1037 \u1039 > \u1039 \u1037; • … • \u103a \u103c > \u103c \u107d; • …
+Supplemental	Transform	Zawgyi→my	tRule	…	… • [\u103A\u107d] → \u103B ; • [\u103D\u1087] → \u103E ; • …
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	▷missing◁	$wordBoundary = [^[:L:][:M:][:N:]] ;
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	▷missing◁	$wordBoundary{አ → $አ ; # ETHIOPIC SYLLABLE GLOTTAL A
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	▷missing◁	$wordBoundary{ኡ → $ኡ ; # ETHIOPIC SYLLABLE GLOTTAL U

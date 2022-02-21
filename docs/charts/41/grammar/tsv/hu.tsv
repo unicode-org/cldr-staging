@@ -1,8 +1,10 @@
 # Grammatical Features
+#Locale	ID	Feature	Usage	Values
 Hungarian	hu	grammaticalCase	general	nominative, accusative, dative, instrumental, ablative, inessive, elative, illative, adessive, allative, essive, translative, causal, delative, sublative, superessive, terminative
 Hungarian	hu	grammaticalCase	units	nominative, accusative, instrumental, translative, terminative
 
 # Minimal Pairs
+#Type	Code	Pattern	Formatted Sample
 Plural	one	A kosár tartalma: {0} X. Megveszi?	<div class='cldr_example'>A kosár tartalma: <span class='cldr_substituted'>1</span> X. Megveszi?</div><div class='cldr_example'>❌  A kosár tartalma: <span class='cldr_substituted'>2</span> X. Megveszi?</div>
 Plural	other	A kosár tartalma: {0} X. Megveszi őket?	<div class='cldr_example'>A kosár tartalma: <span class='cldr_substituted'>2</span> X. Megveszi őket?</div><div class='cldr_example'>❌  A kosár tartalma: <span class='cldr_substituted'>1</span> X. Megveszi őket?</div>
 Case (for measurement units)	nominative	{0} év	<div class='cldr_example'><span class='cldr_substituted'>1 centiméter</span> év</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 centimétert</span> év</div>
@@ -12,36 +14,37 @@ Case (for measurement units)	translative	{0} évvé	<div class='cldr_example'><s
 Case (for measurement units)	terminative	{0} évig	<div class='cldr_example'><span class='cldr_substituted'>1 centiméterig</span> évig</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1 centimétert</span> évig</div>
 
 # Unit Case and Gender Info
+#Quantity	Unit	Case	Pattern for one	Case MP + pattern with 1.0	Pattern for other	Case MP + pattern with 2.0
 acceleration	meters per second squared	nominative	{0} méter per másodpercnégyzet	1 méter per másodpercnégyzet év	{0} méter per másodpercnégyzet	2 méter per másodpercnégyzet év
 acceleration	meters per second squared	accusative	{0} méter per másodpercnégyzetet	1 méter per másodpercnégyzetet évet	{0} méter per másodpercnégyzetet	2 méter per másodpercnégyzetet évet
 acceleration	meters per second squared	instrumental	{0} méter per másodpercnégyzettel	1 méter per másodpercnégyzettel évvel	{0} méter per másodpercnégyzettel	2 méter per másodpercnégyzettel évvel
 acceleration	meters per second squared	translative	{0} méter per másodpercnégyzetté	1 méter per másodpercnégyzetté évvé	{0} méter per másodpercnégyzetté	2 méter per másodpercnégyzetté évvé
 acceleration	meters per second squared	terminative	{0} méter per másodpercnégyzetig	1 méter per másodpercnégyzetig évig	{0} méter per másodpercnégyzetig	2 méter per másodpercnégyzetig évig
-acceleration	g-force ( = 9.80665 m/s²)	nominative	{0} g gyorsulás	1 g gyorsulás év	{0} g gyorsulás	2 g gyorsulás év
-acceleration	g-force ( = 9.80665 m/s²)	accusative	{0} g gyorsulást	1 g gyorsulást évet	{0} g gyorsulást	2 g gyorsulást évet
-acceleration	g-force ( = 9.80665 m/s²)	instrumental	{0} g gyorsulással	1 g gyorsulással évvel	{0} g gyorsulással	2 g gyorsulással évvel
-acceleration	g-force ( = 9.80665 m/s²)	translative	{0} g gyorsulássá	1 g gyorsulássá évvé	{0} g gyorsulássá	2 g gyorsulássá évvé
-acceleration	g-force ( = 9.80665 m/s²)	terminative	{0} g gyorsulásig	1 g gyorsulásig évig	{0} g gyorsulásig	2 g gyorsulásig évig
-angle	arc-second ( = 0.0000007˙716049382 rev)	nominative	{0} ívmásodperc	1 ívmásodperc év	{0} ívmásodperc	2 ívmásodperc év
-angle	arc-second ( = 0.0000007˙716049382 rev)	accusative	{0} ívmásodpercet	1 ívmásodpercet évet	{0} ívmásodpercet	2 ívmásodpercet évet
-angle	arc-second ( = 0.0000007˙716049382 rev)	instrumental	{0} ívmásodperccel	1 ívmásodperccel évvel	{0} ívmásodperccel	2 ívmásodperccel évvel
-angle	arc-second ( = 0.0000007˙716049382 rev)	translative	{0} ívmásodperccé	1 ívmásodperccé évvé	{0} ívmásodperccé	2 ívmásodperccé évvé
-angle	arc-second ( = 0.0000007˙716049382 rev)	terminative	{0} ívmásodpercig	1 ívmásodpercig évig	{0} ívmásodpercig	2 ívmásodpercig évig
-angle	arc-minute ( = 0.00004˙629 rev)	nominative	{0} ívperc	1 ívperc év	{0} ívperc	2 ívperc év
-angle	arc-minute ( = 0.00004˙629 rev)	accusative	{0} ívpercet	1 ívpercet évet	{0} ívpercet	2 ívpercet évet
-angle	arc-minute ( = 0.00004˙629 rev)	instrumental	{0} ívperccel	1 ívperccel évvel	{0} ívperccel	2 ívperccel évvel
-angle	arc-minute ( = 0.00004˙629 rev)	translative	{0} ívperccé	1 ívperccé évvé	{0} ívperccé	2 ívperccé évvé
-angle	arc-minute ( = 0.00004˙629 rev)	terminative	{0} ívpercig	1 ívpercig évig	{0} ívpercig	2 ívpercig évig
-angle	degree ( = 0.002˙7 rev)	nominative	{0} fok	1 fok év	{0} fok	2 fok év
-angle	degree ( = 0.002˙7 rev)	accusative	{0} fokot	1 fokot évet	{0} fokot	2 fokot évet
-angle	degree ( = 0.002˙7 rev)	instrumental	{0} fokkal	1 fokkal évvel	{0} fokkal	2 fokkal évvel
-angle	degree ( = 0.002˙7 rev)	translative	{0} fokká	1 fokká évvé	{0} fokká	2 fokká évvé
-angle	degree ( = 0.002˙7 rev)	terminative	{0} fokig	1 fokig évig	{0} fokig	2 fokig évig
-angle	radian ( = ~0.1591549430918953 rev)	nominative	{0} radián	1 radián év	{0} radián	2 radián év
-angle	radian ( = ~0.1591549430918953 rev)	accusative	{0} radiánt	1 radiánt évet	{0} radiánt	2 radiánt évet
-angle	radian ( = ~0.1591549430918953 rev)	instrumental	{0} radiánnal	1 radiánnal évvel	{0} radiánnal	2 radiánnal évvel
-angle	radian ( = ~0.1591549430918953 rev)	translative	{0} radiánná	1 radiánná évvé	{0} radiánná	2 radiánná évvé
-angle	radian ( = ~0.1591549430918953 rev)	terminative	{0} radiánig	1 radiánig évig	{0} radiánig	2 radiánig évig
+acceleration	g-force • ( = 9.80665 m/s²)	nominative	{0} g gyorsulás	1 g gyorsulás év	{0} g gyorsulás	2 g gyorsulás év
+acceleration	g-force • ( = 9.80665 m/s²)	accusative	{0} g gyorsulást	1 g gyorsulást évet	{0} g gyorsulást	2 g gyorsulást évet
+acceleration	g-force • ( = 9.80665 m/s²)	instrumental	{0} g gyorsulással	1 g gyorsulással évvel	{0} g gyorsulással	2 g gyorsulással évvel
+acceleration	g-force • ( = 9.80665 m/s²)	translative	{0} g gyorsulássá	1 g gyorsulássá évvé	{0} g gyorsulássá	2 g gyorsulássá évvé
+acceleration	g-force • ( = 9.80665 m/s²)	terminative	{0} g gyorsulásig	1 g gyorsulásig évig	{0} g gyorsulásig	2 g gyorsulásig évig
+angle	arc-second • ( = 0.0000007˙716049382 rev)	nominative	{0} ívmásodperc	1 ívmásodperc év	{0} ívmásodperc	2 ívmásodperc év
+angle	arc-second • ( = 0.0000007˙716049382 rev)	accusative	{0} ívmásodpercet	1 ívmásodpercet évet	{0} ívmásodpercet	2 ívmásodpercet évet
+angle	arc-second • ( = 0.0000007˙716049382 rev)	instrumental	{0} ívmásodperccel	1 ívmásodperccel évvel	{0} ívmásodperccel	2 ívmásodperccel évvel
+angle	arc-second • ( = 0.0000007˙716049382 rev)	translative	{0} ívmásodperccé	1 ívmásodperccé évvé	{0} ívmásodperccé	2 ívmásodperccé évvé
+angle	arc-second • ( = 0.0000007˙716049382 rev)	terminative	{0} ívmásodpercig	1 ívmásodpercig évig	{0} ívmásodpercig	2 ívmásodpercig évig
+angle	arc-minute • ( = 0.00004˙629 rev)	nominative	{0} ívperc	1 ívperc év	{0} ívperc	2 ívperc év
+angle	arc-minute • ( = 0.00004˙629 rev)	accusative	{0} ívpercet	1 ívpercet évet	{0} ívpercet	2 ívpercet évet
+angle	arc-minute • ( = 0.00004˙629 rev)	instrumental	{0} ívperccel	1 ívperccel évvel	{0} ívperccel	2 ívperccel évvel
+angle	arc-minute • ( = 0.00004˙629 rev)	translative	{0} ívperccé	1 ívperccé évvé	{0} ívperccé	2 ívperccé évvé
+angle	arc-minute • ( = 0.00004˙629 rev)	terminative	{0} ívpercig	1 ívpercig évig	{0} ívpercig	2 ívpercig évig
+angle	degree • ( = 0.002˙7 rev)	nominative	{0} fok	1 fok év	{0} fok	2 fok év
+angle	degree • ( = 0.002˙7 rev)	accusative	{0} fokot	1 fokot évet	{0} fokot	2 fokot évet
+angle	degree • ( = 0.002˙7 rev)	instrumental	{0} fokkal	1 fokkal évvel	{0} fokkal	2 fokkal évvel
+angle	degree • ( = 0.002˙7 rev)	translative	{0} fokká	1 fokká évvé	{0} fokká	2 fokká évvé
+angle	degree • ( = 0.002˙7 rev)	terminative	{0} fokig	1 fokig évig	{0} fokig	2 fokig évig
+angle	radian • ( = ~0.1591549430918953 rev)	nominative	{0} radián	1 radián év	{0} radián	2 radián év
+angle	radian • ( = ~0.1591549430918953 rev)	accusative	{0} radiánt	1 radiánt évet	{0} radiánt	2 radiánt évet
+angle	radian • ( = ~0.1591549430918953 rev)	instrumental	{0} radiánnal	1 radiánnal évvel	{0} radiánnal	2 radiánnal évvel
+angle	radian • ( = ~0.1591549430918953 rev)	translative	{0} radiánná	1 radiánná évvé	{0} radiánná	2 radiánná évvé
+angle	radian • ( = ~0.1591549430918953 rev)	terminative	{0} radiánig	1 radiánig évig	{0} radiánig	2 radiánig évig
 angle	revolutions	nominative	{0} fordulat	1 fordulat év	{0} fordulat	2 fordulat év
 angle	revolutions	accusative	{0} fordulatot	1 fordulatot évet	{0} fordulatot	2 fordulatot évet
 angle	revolutions	instrumental	{0} fordulattal	1 fordulattal évvel	{0} fordulattal	2 fordulattal évvel
@@ -67,11 +70,11 @@ area	square kilometers	accusative	{0} négyzetkilométert	1 négyzetkilométert 
 area	square kilometers	instrumental	{0} négyzetkilométerrel	1 négyzetkilométerrel évvel	{0} négyzetkilométerrel	2 négyzetkilométerrel évvel
 area	square kilometers	translative	{0} négyzetkilométerré	1 négyzetkilométerré évvé	{0} négyzetkilométerré	2 négyzetkilométerré évvé
 area	square kilometers	terminative	{0} négyzetkilométerig	1 négyzetkilométerig évig	{0} négyzetkilométerig	2 négyzetkilométerig évig
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	nominative	{0} millimól/liter	1 millimól/liter év	{0} millimól/liter	2 millimól/liter év
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	accusative	{0} millimól/litert	1 millimól/litert évet	{0} millimól/litert	2 millimól/litert évet
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	instrumental	{0} millimól/literrel	1 millimól/literrel évvel	{0} millimól/literrel	2 millimól/literrel évvel
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	translative	{0} millimól/literré	1 millimól/literré évvé	{0} millimól/literré	2 millimól/literré évvé
-concentration	millimole-per-liter ( = 602,214,076,000,000,000,000,000 items per cubic meter)	terminative	{0} millimól/literig	1 millimól/literig évig	{0} millimól/literig	2 millimól/literig évig
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	nominative	{0} millimól/liter	1 millimól/liter év	{0} millimól/liter	2 millimól/liter év
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	accusative	{0} millimól/litert	1 millimól/litert évet	{0} millimól/litert	2 millimól/litert évet
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	instrumental	{0} millimól/literrel	1 millimól/literrel évvel	{0} millimól/literrel	2 millimól/literrel évvel
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	translative	{0} millimól/literré	1 millimól/literré évvé	{0} millimól/literré	2 millimól/literré évvé
+concentration	millimole-per-liter • ( = 602,214,076,000,000,000,000,000 items per cubic meter)	terminative	{0} millimól/literig	1 millimól/literig évig	{0} millimól/literig	2 millimól/literig évig
 consumption	liters per 100 kilometers	nominative	{0} liter/100 km	1 liter/100 km év	{0} liter/100 km	2 liter/100 km év
 consumption	liters per 100 kilometers	accusative	{0} liter/100 km-t	1 liter/100 km-t évet	{0} liter/100 km-t	2 liter/100 km-t évet
 consumption	liters per 100 kilometers	instrumental	{0} liter/100 km-rel	1 liter/100 km-rel évvel	{0} liter/100 km-rel	2 liter/100 km-rel évvel
@@ -87,56 +90,56 @@ digital	bits	accusative	{0} bitet	1 bitet évet	{0} bitet	2 bitet évet
 digital	bits	instrumental	{0} bittel	1 bittel évvel	{0} bittel	2 bittel évvel
 digital	bits	translative	{0} bitté	1 bitté évvé	{0} bitté	2 bitté évvé
 digital	bits	terminative	{0} bitig	1 bitig évig	{0} bitig	2 bitig évig
-digital	byte ( = 8 bit)	nominative	{0} bájt	1 bájt év	{0} bájt	2 bájt év
-digital	byte ( = 8 bit)	accusative	{0} bájtot	1 bájtot évet	{0} bájtot	2 bájtot évet
-digital	byte ( = 8 bit)	instrumental	{0} bájttal	1 bájttal évvel	{0} bájttal	2 bájttal évvel
-digital	byte ( = 8 bit)	translative	{0} bájttá	1 bájttá évvé	{0} bájttá	2 bájttá évvé
-digital	byte ( = 8 bit)	terminative	{0} bájtig	1 bájtig évig	{0} bájtig	2 bájtig évig
+digital	byte • ( = 8 bit)	nominative	{0} bájt	1 bájt év	{0} bájt	2 bájt év
+digital	byte • ( = 8 bit)	accusative	{0} bájtot	1 bájtot évet	{0} bájtot	2 bájtot évet
+digital	byte • ( = 8 bit)	instrumental	{0} bájttal	1 bájttal évvel	{0} bájttal	2 bájttal évvel
+digital	byte • ( = 8 bit)	translative	{0} bájttá	1 bájttá évvé	{0} bájttá	2 bájttá évvé
+digital	byte • ( = 8 bit)	terminative	{0} bájtig	1 bájtig évig	{0} bájtig	2 bájtig évig
 digital	kilobits	nominative	{0} kilobit	1 kilobit év	{0} kilobit	2 kilobit év
 digital	kilobits	accusative	{0} kilobitet	1 kilobitet évet	{0} kilobitet	2 kilobitet évet
 digital	kilobits	instrumental	{0} kilobittel	1 kilobittel évvel	{0} kilobittel	2 kilobittel évvel
 digital	kilobits	translative	{0} kilobitté	1 kilobitté évvé	{0} kilobitté	2 kilobitté évvé
 digital	kilobits	terminative	{0} kilobitig	1 kilobitig évig	{0} kilobitig	2 kilobitig évig
-digital	kilobyte ( = 8 kb)	nominative	{0} kilobájt	1 kilobájt év	{0} kilobájt	2 kilobájt év
-digital	kilobyte ( = 8 kb)	accusative	{0} kilobájtot	1 kilobájtot évet	{0} kilobájtot	2 kilobájtot évet
-digital	kilobyte ( = 8 kb)	instrumental	{0} kilobájttal	1 kilobájttal évvel	{0} kilobájttal	2 kilobájttal évvel
-digital	kilobyte ( = 8 kb)	translative	{0} kilobájttá	1 kilobájttá évvé	{0} kilobájttá	2 kilobájttá évvé
-digital	kilobyte ( = 8 kb)	terminative	{0} kilobájtig	1 kilobájtig évig	{0} kilobájtig	2 kilobájtig évig
+digital	kilobyte • ( = 8 kb)	nominative	{0} kilobájt	1 kilobájt év	{0} kilobájt	2 kilobájt év
+digital	kilobyte • ( = 8 kb)	accusative	{0} kilobájtot	1 kilobájtot évet	{0} kilobájtot	2 kilobájtot évet
+digital	kilobyte • ( = 8 kb)	instrumental	{0} kilobájttal	1 kilobájttal évvel	{0} kilobájttal	2 kilobájttal évvel
+digital	kilobyte • ( = 8 kb)	translative	{0} kilobájttá	1 kilobájttá évvé	{0} kilobájttá	2 kilobájttá évvé
+digital	kilobyte • ( = 8 kb)	terminative	{0} kilobájtig	1 kilobájtig évig	{0} kilobájtig	2 kilobájtig évig
 digital	megabits	nominative	{0} megabit	1 megabit év	{0} megabit	2 megabit év
 digital	megabits	accusative	{0} megabitet	1 megabitet évet	{0} megabitet	2 megabitet évet
 digital	megabits	instrumental	{0} megabittel	1 megabittel évvel	{0} megabittel	2 megabittel évvel
 digital	megabits	translative	{0} megabitté	1 megabitté évvé	{0} megabitté	2 megabitté évvé
 digital	megabits	terminative	{0} megabitig	1 megabitig évig	{0} megabitig	2 megabitig évig
-digital	megabyte ( = 8 Mb)	nominative	{0} megabájt	1 megabájt év	{0} megabájt	2 megabájt év
-digital	megabyte ( = 8 Mb)	accusative	{0} megabájtot	1 megabájtot évet	{0} megabájtot	2 megabájtot évet
-digital	megabyte ( = 8 Mb)	instrumental	{0} megabájttal	1 megabájttal évvel	{0} megabájttal	2 megabájttal évvel
-digital	megabyte ( = 8 Mb)	translative	{0} megabájttá	1 megabájttá évvé	{0} megabájttá	2 megabájttá évvé
-digital	megabyte ( = 8 Mb)	terminative	{0} megabájtig	1 megabájtig évig	{0} megabájtig	2 megabájtig évig
+digital	megabyte • ( = 8 Mb)	nominative	{0} megabájt	1 megabájt év	{0} megabájt	2 megabájt év
+digital	megabyte • ( = 8 Mb)	accusative	{0} megabájtot	1 megabájtot évet	{0} megabájtot	2 megabájtot évet
+digital	megabyte • ( = 8 Mb)	instrumental	{0} megabájttal	1 megabájttal évvel	{0} megabájttal	2 megabájttal évvel
+digital	megabyte • ( = 8 Mb)	translative	{0} megabájttá	1 megabájttá évvé	{0} megabájttá	2 megabájttá évvé
+digital	megabyte • ( = 8 Mb)	terminative	{0} megabájtig	1 megabájtig évig	{0} megabájtig	2 megabájtig évig
 digital	gigabits	nominative	{0} gigabit	1 gigabit év	{0} gigabit	2 gigabit év
 digital	gigabits	accusative	{0} gigabitet	1 gigabitet évet	{0} gigabitet	2 gigabitet évet
 digital	gigabits	instrumental	{0} gigabittel	1 gigabittel évvel	{0} gigabittel	2 gigabittel évvel
 digital	gigabits	translative	{0} gigabitté	1 gigabitté évvé	{0} gigabitté	2 gigabitté évvé
 digital	gigabits	terminative	{0} gigabitig	1 gigabitig évig	{0} gigabitig	2 gigabitig évig
-digital	gigabyte ( = 8 Gb)	nominative	{0} gigabájt	1 gigabájt év	{0} gigabájt	2 gigabájt év
-digital	gigabyte ( = 8 Gb)	accusative	{0} gigabájtot	1 gigabájtot évet	{0} gigabájtot	2 gigabájtot évet
-digital	gigabyte ( = 8 Gb)	instrumental	{0} gigabájttal	1 gigabájttal évvel	{0} gigabájttal	2 gigabájttal évvel
-digital	gigabyte ( = 8 Gb)	translative	{0} gigabájttá	1 gigabájttá évvé	{0} gigabájttá	2 gigabájttá évvé
-digital	gigabyte ( = 8 Gb)	terminative	{0} gigabájtig	1 gigabájtig évig	{0} gigabájtig	2 gigabájtig évig
+digital	gigabyte • ( = 8 Gb)	nominative	{0} gigabájt	1 gigabájt év	{0} gigabájt	2 gigabájt év
+digital	gigabyte • ( = 8 Gb)	accusative	{0} gigabájtot	1 gigabájtot évet	{0} gigabájtot	2 gigabájtot évet
+digital	gigabyte • ( = 8 Gb)	instrumental	{0} gigabájttal	1 gigabájttal évvel	{0} gigabájttal	2 gigabájttal évvel
+digital	gigabyte • ( = 8 Gb)	translative	{0} gigabájttá	1 gigabájttá évvé	{0} gigabájttá	2 gigabájttá évvé
+digital	gigabyte • ( = 8 Gb)	terminative	{0} gigabájtig	1 gigabájtig évig	{0} gigabájtig	2 gigabájtig évig
 digital	terabits	nominative	{0} terabit	1 terabit év	{0} terabit	2 terabit év
 digital	terabits	accusative	{0} terabitet	1 terabitet évet	{0} terabitet	2 terabitet évet
 digital	terabits	instrumental	{0} terabittel	1 terabittel évvel	{0} terabittel	2 terabittel évvel
 digital	terabits	translative	{0} terabitté	1 terabitté évvé	{0} terabitté	2 terabitté évvé
 digital	terabits	terminative	{0} terabitig	1 terabitig évig	{0} terabitig	2 terabitig évig
-digital	terabyte ( = 8 Tb)	nominative	{0} terabájt	1 terabájt év	{0} terabájt	2 terabájt év
-digital	terabyte ( = 8 Tb)	accusative	{0} terabájtot	1 terabájtot évet	{0} terabájtot	2 terabájtot évet
-digital	terabyte ( = 8 Tb)	instrumental	{0} terabájttal	1 terabájttal évvel	{0} terabájttal	2 terabájttal évvel
-digital	terabyte ( = 8 Tb)	translative	{0} terabájttá	1 terabájttá évvé	{0} terabájttá	2 terabájttá évvé
-digital	terabyte ( = 8 Tb)	terminative	{0} terabájtig	1 terabájtig évig	{0} terabájtig	2 terabájtig évig
-digital	petabyte ( = 8,000 Tb)	nominative	{0} petabájt	1 petabájt év	{0} petabájt	2 petabájt év
-digital	petabyte ( = 8,000 Tb)	accusative	{0} petabájtot	1 petabájtot évet	{0} petabájtot	2 petabájtot évet
-digital	petabyte ( = 8,000 Tb)	instrumental	{0} petabájttal	1 petabájttal évvel	{0} petabájttal	2 petabájttal évvel
-digital	petabyte ( = 8,000 Tb)	translative	{0} petabájttá	1 petabájttá évvé	{0} petabájttá	2 petabájttá évvé
-digital	petabyte ( = 8,000 Tb)	terminative	{0} petabájtig	1 petabájtig évig	{0} petabájtig	2 petabájtig évig
+digital	terabyte • ( = 8 Tb)	nominative	{0} terabájt	1 terabájt év	{0} terabájt	2 terabájt év
+digital	terabyte • ( = 8 Tb)	accusative	{0} terabájtot	1 terabájtot évet	{0} terabájtot	2 terabájtot évet
+digital	terabyte • ( = 8 Tb)	instrumental	{0} terabájttal	1 terabájttal évvel	{0} terabájttal	2 terabájttal évvel
+digital	terabyte • ( = 8 Tb)	translative	{0} terabájttá	1 terabájttá évvé	{0} terabájttá	2 terabájttá évvé
+digital	terabyte • ( = 8 Tb)	terminative	{0} terabájtig	1 terabájtig évig	{0} terabájtig	2 terabájtig évig
+digital	petabyte • ( = 8,000 Tb)	nominative	{0} petabájt	1 petabájt év	{0} petabájt	2 petabájt év
+digital	petabyte • ( = 8,000 Tb)	accusative	{0} petabájtot	1 petabájtot évet	{0} petabájtot	2 petabájtot évet
+digital	petabyte • ( = 8,000 Tb)	instrumental	{0} petabájttal	1 petabájttal évvel	{0} petabájttal	2 petabájttal évvel
+digital	petabyte • ( = 8,000 Tb)	translative	{0} petabájttá	1 petabájttá évvé	{0} petabájttá	2 petabájttá évvé
+digital	petabyte • ( = 8,000 Tb)	terminative	{0} petabájtig	1 petabájtig évig	{0} petabájtig	2 petabájtig évig
 duration	nanoseconds	nominative	{0} nanoszekundum	1 nanoszekundum év	{0} nanoszekundum	2 nanoszekundum év
 duration	nanoseconds	accusative	{0} nanoszekundumot	1 nanoszekundumot évet	{0} nanoszekundumot	2 nanoszekundumot évet
 duration	nanoseconds	instrumental	{0} nanoszekundummal	1 nanoszekundummal évvel	{0} nanoszekundummal	2 nanoszekundummal évvel
@@ -157,31 +160,31 @@ duration	seconds	accusative	{0} másodpercet	1 másodpercet évet	{0} másodperc
 duration	seconds	instrumental	{0} másodperccel	1 másodperccel évvel	{0} másodperccel	2 másodperccel évvel
 duration	seconds	translative	{0} másodperccé	1 másodperccé évvé	{0} másodperccé	2 másodperccé évvé
 duration	seconds	terminative	{0} másodpercig	1 másodpercig évig	{0} másodpercig	2 másodpercig évig
-duration	minute ( = 60 sec)	nominative	{0} perc	1 perc év	{0} perc	2 perc év
-duration	minute ( = 60 sec)	accusative	{0} percet	1 percet évet	{0} percet	2 percet évet
-duration	minute ( = 60 sec)	instrumental	{0} perccel	1 perccel évvel	{0} perccel	2 perccel évvel
-duration	minute ( = 60 sec)	translative	{0} perccé	1 perccé évvé	{0} perccé	2 perccé évvé
-duration	minute ( = 60 sec)	terminative	{0} percig	1 percig évig	{0} percig	2 percig évig
-duration	hour ( = 3,600 sec)	nominative	{0} óra	1 óra év	{0} óra	2 óra év
-duration	hour ( = 3,600 sec)	accusative	{0} órát	1 órát évet	{0} órát	2 órát évet
-duration	hour ( = 3,600 sec)	instrumental	{0} órával	1 órával évvel	{0} órával	2 órával évvel
-duration	hour ( = 3,600 sec)	translative	{0} órává	1 órává évvé	{0} órává	2 órává évvé
-duration	hour ( = 3,600 sec)	terminative	{0} óráig	1 óráig évig	{0} óráig	2 óráig évig
-duration	day ( = 86,400 sec)	nominative	{0} nap	1 nap év	{0} nap	2 nap év
-duration	day ( = 86,400 sec)	accusative	{0} napot	1 napot évet	{0} napot	2 napot évet
-duration	day ( = 86,400 sec)	instrumental	{0} nappal	1 nappal évvel	{0} nappal	2 nappal évvel
-duration	day ( = 86,400 sec)	translative	{0} nappá	1 nappá évvé	{0} nappá	2 nappá évvé
-duration	day ( = 86,400 sec)	terminative	{0} napig	1 napig évig	{0} napig	2 napig évig
-duration	day-person ( = 86,400 sec)	nominative	{0} nap	1 nap év	{0} nap	2 nap év
-duration	day-person ( = 86,400 sec)	accusative	{0} napot	1 napot évet	{0} napot	2 napot évet
-duration	day-person ( = 86,400 sec)	instrumental	{0} nappal	1 nappal évvel	{0} nappal	2 nappal évvel
-duration	day-person ( = 86,400 sec)	translative	{0} nappá	1 nappá évvé	{0} nappá	2 nappá évvé
-duration	day-person ( = 86,400 sec)	terminative	{0} napig	1 napig évig	{0} napig	2 napig évig
-duration	week ( = 604,800 sec)	nominative	{0} hét	1 hét év	{0} hét	2 hét év
-duration	week ( = 604,800 sec)	accusative	{0} hetet	1 hetet évet	{0} hetet	2 hetet évet
-duration	week ( = 604,800 sec)	instrumental	{0} héttel	1 héttel évvel	{0} héttel	2 héttel évvel
-duration	week ( = 604,800 sec)	translative	{0} hétté	1 hétté évvé	{0} hétté	2 hétté évvé
-duration	week ( = 604,800 sec)	terminative	{0} hétig	1 hétig évig	{0} hétig	2 hétig évig
+duration	minute • ( = 60 sec)	nominative	{0} perc	1 perc év	{0} perc	2 perc év
+duration	minute • ( = 60 sec)	accusative	{0} percet	1 percet évet	{0} percet	2 percet évet
+duration	minute • ( = 60 sec)	instrumental	{0} perccel	1 perccel évvel	{0} perccel	2 perccel évvel
+duration	minute • ( = 60 sec)	translative	{0} perccé	1 perccé évvé	{0} perccé	2 perccé évvé
+duration	minute • ( = 60 sec)	terminative	{0} percig	1 percig évig	{0} percig	2 percig évig
+duration	hour • ( = 3,600 sec)	nominative	{0} óra	1 óra év	{0} óra	2 óra év
+duration	hour • ( = 3,600 sec)	accusative	{0} órát	1 órát évet	{0} órát	2 órát évet
+duration	hour • ( = 3,600 sec)	instrumental	{0} órával	1 órával évvel	{0} órával	2 órával évvel
+duration	hour • ( = 3,600 sec)	translative	{0} órává	1 órává évvé	{0} órává	2 órává évvé
+duration	hour • ( = 3,600 sec)	terminative	{0} óráig	1 óráig évig	{0} óráig	2 óráig évig
+duration	day • ( = 86,400 sec)	nominative	{0} nap	1 nap év	{0} nap	2 nap év
+duration	day • ( = 86,400 sec)	accusative	{0} napot	1 napot évet	{0} napot	2 napot évet
+duration	day • ( = 86,400 sec)	instrumental	{0} nappal	1 nappal évvel	{0} nappal	2 nappal évvel
+duration	day • ( = 86,400 sec)	translative	{0} nappá	1 nappá évvé	{0} nappá	2 nappá évvé
+duration	day • ( = 86,400 sec)	terminative	{0} napig	1 napig évig	{0} napig	2 napig évig
+duration	day-person • ( = 86,400 sec)	nominative	{0} nap	1 nap év	{0} nap	2 nap év
+duration	day-person • ( = 86,400 sec)	accusative	{0} napot	1 napot évet	{0} napot	2 napot évet
+duration	day-person • ( = 86,400 sec)	instrumental	{0} nappal	1 nappal évvel	{0} nappal	2 nappal évvel
+duration	day-person • ( = 86,400 sec)	translative	{0} nappá	1 nappá évvé	{0} nappá	2 nappá évvé
+duration	day-person • ( = 86,400 sec)	terminative	{0} napig	1 napig évig	{0} napig	2 napig évig
+duration	week • ( = 604,800 sec)	nominative	{0} hét	1 hét év	{0} hét	2 hét év
+duration	week • ( = 604,800 sec)	accusative	{0} hetet	1 hetet évet	{0} hetet	2 hetet évet
+duration	week • ( = 604,800 sec)	instrumental	{0} héttel	1 héttel évvel	{0} héttel	2 héttel évvel
+duration	week • ( = 604,800 sec)	translative	{0} hétté	1 hétté évvé	{0} hétté	2 hétté évvé
+duration	week • ( = 604,800 sec)	terminative	{0} hétig	1 hétig évig	{0} hétig	2 hétig évig
 electric-current	milliamperes	nominative	{0} milliamper	1 milliamper év	{0} milliamper	2 milliamper év
 electric-current	milliamperes	accusative	{0} milliampert	1 milliampert évet	{0} milliampert	2 milliampert évet
 electric-current	milliamperes	instrumental	{0} milliamperrel	1 milliamperrel évvel	{0} milliamperrel	2 milliamperrel évvel
@@ -202,36 +205,36 @@ energy	joules	accusative	{0} joule-t	1 joule-t évet	{0} joule-t	2 joule-t évet
 energy	joules	instrumental	{0} joule-lal	1 joule-lal évvel	{0} joule-lal	2 joule-lal évvel
 energy	joules	translative	{0} joule-lá	1 joule-lá évvé	{0} joule-lá	2 joule-lá évvé
 energy	joules	terminative	{0} joule-ig	1 joule-ig évig	{0} joule-ig	2 joule-ig évig
-energy	newton-meter ( = 1 J)	nominative	{0} newtonméter	1 newtonméter év	{0} newtonméter	2 newtonméter év
-energy	newton-meter ( = 1 J)	accusative	{0} newtonmétert	1 newtonmétert évet	{0} newtonmétert	2 newtonmétert évet
-energy	newton-meter ( = 1 J)	instrumental	{0} newtonméterrel	1 newtonméterrel évvel	{0} newtonméterrel	2 newtonméterrel évvel
-energy	newton-meter ( = 1 J)	translative	{0} newtonméterré	1 newtonméterré évvé	{0} newtonméterré	2 newtonméterré évvé
-energy	newton-meter ( = 1 J)	terminative	{0} newtonméterig	1 newtonméterig évig	{0} newtonméterig	2 newtonméterig évig
-energy	calorie ( = 4.184 J)	nominative	{0} kalória	1 kalória év	{0} kalória	2 kalória év
-energy	calorie ( = 4.184 J)	accusative	{0} kalóriát	1 kalóriát évet	{0} kalóriát	2 kalóriát évet
-energy	calorie ( = 4.184 J)	instrumental	{0} kalóriával	1 kalóriával évvel	{0} kalóriával	2 kalóriával évvel
-energy	calorie ( = 4.184 J)	translative	{0} kalóriává	1 kalóriává évvé	{0} kalóriává	2 kalóriává évvé
-energy	calorie ( = 4.184 J)	terminative	{0} kalóriáig	1 kalóriáig évig	{0} kalóriáig	2 kalóriáig évig
+energy	newton-meter • ( = 1 J)	nominative	{0} newtonméter	1 newtonméter év	{0} newtonméter	2 newtonméter év
+energy	newton-meter • ( = 1 J)	accusative	{0} newtonmétert	1 newtonmétert évet	{0} newtonmétert	2 newtonmétert évet
+energy	newton-meter • ( = 1 J)	instrumental	{0} newtonméterrel	1 newtonméterrel évvel	{0} newtonméterrel	2 newtonméterrel évvel
+energy	newton-meter • ( = 1 J)	translative	{0} newtonméterré	1 newtonméterré évvé	{0} newtonméterré	2 newtonméterré évvé
+energy	newton-meter • ( = 1 J)	terminative	{0} newtonméterig	1 newtonméterig évig	{0} newtonméterig	2 newtonméterig évig
+energy	calorie • ( = 4.184 J)	nominative	{0} kalória	1 kalória év	{0} kalória	2 kalória év
+energy	calorie • ( = 4.184 J)	accusative	{0} kalóriát	1 kalóriát évet	{0} kalóriát	2 kalóriát évet
+energy	calorie • ( = 4.184 J)	instrumental	{0} kalóriával	1 kalóriával évvel	{0} kalóriával	2 kalóriával évvel
+energy	calorie • ( = 4.184 J)	translative	{0} kalóriává	1 kalóriává évvé	{0} kalóriává	2 kalóriává évvé
+energy	calorie • ( = 4.184 J)	terminative	{0} kalóriáig	1 kalóriáig évig	{0} kalóriáig	2 kalóriáig évig
 energy	kilojoules	nominative	{0} kilojoule	1 kilojoule év	{0} kilojoule	2 kilojoule év
 energy	kilojoules	accusative	{0} kilojoule-t	1 kilojoule-t évet	{0} kilojoule-t	2 kilojoule-t évet
 energy	kilojoules	instrumental	{0} kilojoule-lal	1 kilojoule-lal évvel	{0} kilojoule-lal	2 kilojoule-lal évvel
 energy	kilojoules	translative	{0} kilojoule-lá	1 kilojoule-lá évvé	{0} kilojoule-lá	2 kilojoule-lá évvé
 energy	kilojoules	terminative	{0} kilojoule-ig	1 kilojoule-ig évig	{0} kilojoule-ig	2 kilojoule-ig évig
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	nominative	{0} kilowattóra	1 kilowattóra év	{0} kilowattóra	2 kilowattóra év
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	accusative	{0} kilowattórát	1 kilowattórát évet	{0} kilowattórát	2 kilowattórát évet
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	instrumental	{0} kilowattórával	1 kilowattórával évvel	{0} kilowattórával	2 kilowattórával évvel
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	translative	{0} kilowattórává	1 kilowattórává évvé	{0} kilowattórává	2 kilowattórává évvé
-energy	kilowatt-hour ( = 3,600,000 kilogram-square meter-seconds per cubic second)	terminative	{0} kilowattóráig	1 kilowattóráig évig	{0} kilowattóráig	2 kilowattóráig évig
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	nominative	{0} kilowattóra	1 kilowattóra év	{0} kilowattóra	2 kilowattóra év
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	accusative	{0} kilowattórát	1 kilowattórát évet	{0} kilowattórát	2 kilowattórát évet
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	instrumental	{0} kilowattórával	1 kilowattórával évvel	{0} kilowattórával	2 kilowattórával évvel
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	translative	{0} kilowattórává	1 kilowattórává évvé	{0} kilowattórává	2 kilowattórává évvé
+energy	kilowatt-hour • ( = 3,600,000 kilogram-square meter-seconds per cubic second)	terminative	{0} kilowattóráig	1 kilowattóráig évig	{0} kilowattóráig	2 kilowattóráig évig
 force	newtons	nominative	{0} newton	1 newton év	{0} newton	2 newton év
 force	newtons	accusative	{0} newtont	1 newtont évet	{0} newtont	2 newtont évet
 force	newtons	instrumental	{0} newtonnal	1 newtonnal évvel	{0} newtonnal	2 newtonnal évvel
 force	newtons	translative	{0} newtonná	1 newtonná évvé	{0} newtonná	2 newtonná évvé
 force	newtons	terminative	{0} newtonig	1 newtonig évig	{0} newtonig	2 newtonig évig
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	nominative	{0} kWh/100 km	1 kWh/100 km év	{0} kWh/100 km	2 kWh/100 km év
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	accusative	{0} kWh/100 km-t	1 kWh/100 km-t évet	{0} kWh/100 km-t	2 kWh/100 km-t évet
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	instrumental	{0} kWh/100 km-rel	1 kWh/100 km-rel évvel	{0} kWh/100 km-rel	2 kWh/100 km-rel évvel
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	translative	{0} kWh/100 km-ré	1 kWh/100 km-ré évvé	{0} kWh/100 km-ré	2 kWh/100 km-ré évvé
-force	kilowatt-hour-per-100-kilometer ( = 36 kilogram-square meter-seconds per meter-cubic second)	terminative	{0} kWh/100 km-ig	1 kWh/100 km-ig évig	{0} kWh/100 km-ig	2 kWh/100 km-ig évig
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	nominative	{0} kWh/100 km	1 kWh/100 km év	{0} kWh/100 km	2 kWh/100 km év
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	accusative	{0} kWh/100 km-t	1 kWh/100 km-t évet	{0} kWh/100 km-t	2 kWh/100 km-t évet
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	instrumental	{0} kWh/100 km-rel	1 kWh/100 km-rel évvel	{0} kWh/100 km-rel	2 kWh/100 km-rel évvel
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	translative	{0} kWh/100 km-ré	1 kWh/100 km-ré évvé	{0} kWh/100 km-ré	2 kWh/100 km-ré évvé
+force	kilowatt-hour-per-100-kilometer • ( = 36 kilogram-square meter-seconds per meter-cubic second)	terminative	{0} kWh/100 km-ig	1 kWh/100 km-ig évig	{0} kWh/100 km-ig	2 kWh/100 km-ig évig
 frequency	hertz	nominative	{0} hertz	1 hertz év	{0} hertz	2 hertz év
 frequency	hertz	accusative	{0} hertzet	1 hertzet évet	{0} hertzet	2 hertzet évet
 frequency	hertz	instrumental	{0} hertzcel	1 hertzcel évvel	{0} hertzcel	2 hertzcel évvel
@@ -252,11 +255,11 @@ frequency	gigahertz	accusative	{0} gigahertzet	1 gigahertzet évet	{0} gigahertz
 frequency	gigahertz	instrumental	{0} gigahertzcel	1 gigahertzcel évvel	{0} gigahertzcel	2 gigahertzcel évvel
 frequency	gigahertz	translative	{0} gigahertzcé	1 gigahertzcé évvé	{0} gigahertzcé	2 gigahertzcé évvé
 frequency	gigahertz	terminative	{0} gigahertzig	1 gigahertzig évig	{0} gigahertzig	2 gigahertzig évig
-graphics	pixel ( = 1 px)	nominative	{0} képpont	1 képpont év	{0} képpont	2 képpont év
-graphics	pixel ( = 1 px)	accusative	{0} képpontot	1 képpontot évet	{0} képpontot	2 képpontot évet
-graphics	pixel ( = 1 px)	instrumental	{0} képponttal	1 képponttal évvel	{0} képponttal	2 képponttal évvel
-graphics	pixel ( = 1 px)	translative	{0} képponttá	1 képponttá évvé	{0} képponttá	2 képponttá évvé
-graphics	pixel ( = 1 px)	terminative	{0} képpontig	1 képpontig évig	{0} képpontig	2 képpontig évig
+graphics	pixel • ( = 1 px)	nominative	{0} képpont	1 képpont év	{0} képpont	2 képpont év
+graphics	pixel • ( = 1 px)	accusative	{0} képpontot	1 képpontot évet	{0} képpontot	2 képpontot évet
+graphics	pixel • ( = 1 px)	instrumental	{0} képponttal	1 képponttal évvel	{0} képponttal	2 képponttal évvel
+graphics	pixel • ( = 1 px)	translative	{0} képponttá	1 képponttá évvé	{0} képponttá	2 képponttá évvé
+graphics	pixel • ( = 1 px)	terminative	{0} képpontig	1 képpontig évig	{0} képpontig	2 képpontig évig
 graphics	megapixels	nominative	{0} millió képpont	1 millió képpont év	{0} millió képpont	2 millió képpont év
 graphics	megapixels	accusative	{0} millió képpontot	1 millió képpontot évet	{0} millió képpontot	2 millió képpontot évet
 graphics	megapixels	instrumental	{0} millió képponttal	1 millió képponttal évvel	{0} millió képponttal	2 millió képponttal évvel
@@ -307,11 +310,11 @@ length	kilometers	accusative	{0} kilométert	1 kilométert évet	{0} kilométert
 length	kilometers	instrumental	{0} kilométerrel	1 kilométerrel évvel	{0} kilométerrel	2 kilométerrel évvel
 length	kilometers	translative	{0} kilométerré	1 kilométerré évvé	{0} kilométerré	2 kilométerré évvé
 length	kilometers	terminative	{0} kilométerig	1 kilométerig évig	{0} kilométerig	2 kilométerig évig
-length	mile-scandinavian ( = 10 km)	nominative	{0} svéd mérföld	1 svéd mérföld év	{0} svéd mérföld	2 svéd mérföld év
-length	mile-scandinavian ( = 10 km)	accusative	{0} svéd mérföldet	1 svéd mérföldet évet	{0} svéd mérföldet	2 svéd mérföldet évet
-length	mile-scandinavian ( = 10 km)	instrumental	{0} svéd mérfölddel	1 svéd mérfölddel évvel	{0} svéd mérfölddel	2 svéd mérfölddel évvel
-length	mile-scandinavian ( = 10 km)	translative	{0} svéd mérfölddé	1 svéd mérfölddé évvé	{0} svéd mérfölddé	2 svéd mérfölddé évvé
-length	mile-scandinavian ( = 10 km)	terminative	{0} svéd mérföldig	1 svéd mérföldig évig	{0} svéd mérföldig	2 svéd mérföldig évig
+length	mile-scandinavian • ( = 10 km)	nominative	{0} svéd mérföld	1 svéd mérföld év	{0} svéd mérföld	2 svéd mérföld év
+length	mile-scandinavian • ( = 10 km)	accusative	{0} svéd mérföldet	1 svéd mérföldet évet	{0} svéd mérföldet	2 svéd mérföldet évet
+length	mile-scandinavian • ( = 10 km)	instrumental	{0} svéd mérfölddel	1 svéd mérfölddel évvel	{0} svéd mérfölddel	2 svéd mérfölddel évvel
+length	mile-scandinavian • ( = 10 km)	translative	{0} svéd mérfölddé	1 svéd mérfölddé évvé	{0} svéd mérfölddé	2 svéd mérfölddé évvé
+length	mile-scandinavian • ( = 10 km)	terminative	{0} svéd mérföldig	1 svéd mérföldig évig	{0} svéd mérföldig	2 svéd mérföldig évig
 luminous-flux	lumen	nominative	{0} lumen	1 lumen év	{0} lumen	2 lumen év
 luminous-flux	lumen	accusative	{0} lument	1 lument évet	{0} lument	2 lument évet
 luminous-flux	lumen	instrumental	{0} lumennel	1 lumennel évvel	{0} lumennel	2 lumennel évvel
@@ -332,11 +335,11 @@ mass	milligrams	accusative	{0} milligrammot	1 milligrammot évet	{0} milligrammo
 mass	milligrams	instrumental	{0} milligrammal	1 milligrammal évvel	{0} milligrammal	2 milligrammal évvel
 mass	milligrams	translative	{0} milligrammá	1 milligrammá évvé	{0} milligrammá	2 milligrammá évvé
 mass	milligrams	terminative	{0} milligrammig	1 milligrammig évig	{0} milligrammig	2 milligrammig évig
-mass	carat ( = 200 mg)	nominative	{0} karát	1 karát év	{0} karát	2 karát év
-mass	carat ( = 200 mg)	accusative	{0} karátot	1 karátot évet	{0} karátot	2 karátot évet
-mass	carat ( = 200 mg)	instrumental	{0} karáttal	1 karáttal évvel	{0} karáttal	2 karáttal évvel
-mass	carat ( = 200 mg)	translative	{0} karáttá	1 karáttá évvé	{0} karáttá	2 karáttá évvé
-mass	carat ( = 200 mg)	terminative	{0} karátig	1 karátig évig	{0} karátig	2 karátig évig
+mass	carat • ( = 200 mg)	nominative	{0} karát	1 karát év	{0} karát	2 karát év
+mass	carat • ( = 200 mg)	accusative	{0} karátot	1 karátot évet	{0} karátot	2 karátot évet
+mass	carat • ( = 200 mg)	instrumental	{0} karáttal	1 karáttal évvel	{0} karáttal	2 karáttal évvel
+mass	carat • ( = 200 mg)	translative	{0} karáttá	1 karáttá évvé	{0} karáttá	2 karáttá évvé
+mass	carat • ( = 200 mg)	terminative	{0} karátig	1 karátig évig	{0} karátig	2 karátig évig
 mass	grams	nominative	{0} gramm	1 gramm év	{0} gramm	2 gramm év
 mass	grams	accusative	{0} grammot	1 grammot évet	{0} grammot	2 grammot évet
 mass	grams	instrumental	{0} grammal	1 grammal évvel	{0} grammal	2 grammal évvel
@@ -372,11 +375,11 @@ portion	percent	accusative	{0} százalékot	1 százalékot évet	{0} százaléko
 portion	percent	instrumental	{0} százalékkal	1 százalékkal évvel	{0} százalékkal	2 százalékkal évvel
 portion	percent	translative	{0} százalékká	1 százalékká évvé	{0} százalékká	2 százalékká évvé
 portion	percent	terminative	{0} százalékig	1 százalékig évig	{0} százalékig	2 százalékig évig
-portion	karat ( = 4.1˙6%)	nominative	{0} karát	1 karát év	{0} karát	2 karát év
-portion	karat ( = 4.1˙6%)	accusative	{0} karátot	1 karátot évet	{0} karátot	2 karátot évet
-portion	karat ( = 4.1˙6%)	instrumental	{0} karáttal	1 karáttal évvel	{0} karáttal	2 karáttal évvel
-portion	karat ( = 4.1˙6%)	translative	{0} karáttá	1 karáttá évvé	{0} karáttá	2 karáttá évvé
-portion	karat ( = 4.1˙6%)	terminative	{0} karátig	1 karátig évig	{0} karátig	2 karátig évig
+portion	karat • ( = 4.1˙6%)	nominative	{0} karát	1 karát év	{0} karát	2 karát év
+portion	karat • ( = 4.1˙6%)	accusative	{0} karátot	1 karátot évet	{0} karátot	2 karátot évet
+portion	karat • ( = 4.1˙6%)	instrumental	{0} karáttal	1 karáttal évvel	{0} karáttal	2 karáttal évvel
+portion	karat • ( = 4.1˙6%)	translative	{0} karáttá	1 karáttá évvé	{0} karáttá	2 karáttá évvé
+portion	karat • ( = 4.1˙6%)	terminative	{0} karátig	1 karátig évig	{0} karátig	2 karátig évig
 power	milliwatts	nominative	{0} milliwatt	1 milliwatt év	{0} milliwatt	2 milliwatt év
 power	milliwatts	accusative	{0} milliwattot	1 milliwattot évet	{0} milliwattot	2 milliwattot évet
 power	milliwatts	instrumental	{0} milliwattal	1 milliwattal évvel	{0} milliwattal	2 milliwattal évvel
@@ -407,11 +410,11 @@ pressure	pascals	accusative	{0} pascalt	1 pascalt évet	{0} pascalt	2 pascalt é
 pressure	pascals	instrumental	{0} pascallal	1 pascallal évvel	{0} pascallal	2 pascallal évvel
 pressure	pascals	translative	{0} pascallá	1 pascallá évvé	{0} pascallá	2 pascallá évvé
 pressure	pascals	terminative	{0} pascalig	1 pascalig évig	{0} pascalig	2 pascalig évig
-pressure	hectopascal ( = 1 mbar)	nominative	{0} hektopascal	1 hektopascal év	{0} hektopascal	2 hektopascal év
-pressure	hectopascal ( = 1 mbar)	accusative	{0} hektopascalt	1 hektopascalt évet	{0} hektopascalt	2 hektopascalt évet
-pressure	hectopascal ( = 1 mbar)	instrumental	{0} hektopascallal	1 hektopascallal évvel	{0} hektopascallal	2 hektopascallal évvel
-pressure	hectopascal ( = 1 mbar)	translative	{0} hektopascallá	1 hektopascallá évvé	{0} hektopascallá	2 hektopascallá évvé
-pressure	hectopascal ( = 1 mbar)	terminative	{0} hektopascalig	1 hektopascalig évig	{0} hektopascalig	2 hektopascalig évig
+pressure	hectopascal • ( = 1 mbar)	nominative	{0} hektopascal	1 hektopascal év	{0} hektopascal	2 hektopascal év
+pressure	hectopascal • ( = 1 mbar)	accusative	{0} hektopascalt	1 hektopascalt évet	{0} hektopascalt	2 hektopascalt évet
+pressure	hectopascal • ( = 1 mbar)	instrumental	{0} hektopascallal	1 hektopascallal évvel	{0} hektopascallal	2 hektopascallal évvel
+pressure	hectopascal • ( = 1 mbar)	translative	{0} hektopascallá	1 hektopascallá évvé	{0} hektopascallá	2 hektopascallá évvé
+pressure	hectopascal • ( = 1 mbar)	terminative	{0} hektopascalig	1 hektopascalig évig	{0} hektopascalig	2 hektopascalig évig
 pressure	millibars	nominative	{0} millibar	1 millibar év	{0} millibar	2 millibar év
 pressure	millibars	accusative	{0} millibart	1 millibart évet	{0} millibart	2 millibart évet
 pressure	millibars	instrumental	{0} millibarral	1 millibarral évvel	{0} millibarral	2 millibarral évvel
@@ -427,26 +430,26 @@ pressure	bars	accusative	{0} bart	1 bart évet	{0} bart	2 bart évet
 pressure	bars	instrumental	{0} barral	1 barral évvel	{0} barral	2 barral évvel
 pressure	bars	translative	{0} barrá	1 barrá évvé	{0} barrá	2 barrá évvé
 pressure	bars	terminative	{0} barig	1 barig évig	{0} barig	2 barig évig
-pressure	atmosphere ( = 1.01325 bar)	nominative	{0} atmoszféra	1 atmoszféra év	{0} atmoszféra	2 atmoszféra év
-pressure	atmosphere ( = 1.01325 bar)	accusative	{0} atmoszférát	1 atmoszférát évet	{0} atmoszférát	2 atmoszférát évet
-pressure	atmosphere ( = 1.01325 bar)	instrumental	{0} atmoszférával	1 atmoszférával évvel	{0} atmoszférával	2 atmoszférával évvel
-pressure	atmosphere ( = 1.01325 bar)	translative	{0} atmoszférává	1 atmoszférává évvé	{0} atmoszférává	2 atmoszférává évvé
-pressure	atmosphere ( = 1.01325 bar)	terminative	{0} atmoszféráig	1 atmoszféráig évig	{0} atmoszféráig	2 atmoszféráig évig
+pressure	atmosphere • ( = 1.01325 bar)	nominative	{0} atmoszféra	1 atmoszféra év	{0} atmoszféra	2 atmoszféra év
+pressure	atmosphere • ( = 1.01325 bar)	accusative	{0} atmoszférát	1 atmoszférát évet	{0} atmoszférát	2 atmoszférát évet
+pressure	atmosphere • ( = 1.01325 bar)	instrumental	{0} atmoszférával	1 atmoszférával évvel	{0} atmoszférával	2 atmoszférával évvel
+pressure	atmosphere • ( = 1.01325 bar)	translative	{0} atmoszférává	1 atmoszférává évvé	{0} atmoszférává	2 atmoszférává évvé
+pressure	atmosphere • ( = 1.01325 bar)	terminative	{0} atmoszféráig	1 atmoszféráig évig	{0} atmoszféráig	2 atmoszféráig évig
 pressure	megapascals	nominative	{0} megapascal	1 megapascal év	{0} megapascal	2 megapascal év
 pressure	megapascals	accusative	{0} megapascalt	1 megapascalt évet	{0} megapascalt	2 megapascalt évet
 pressure	megapascals	instrumental	{0} megapascallal	1 megapascallal évvel	{0} megapascallal	2 megapascallal évvel
 pressure	megapascals	translative	{0} megapascallá	1 megapascallá évvé	{0} megapascallá	2 megapascallá évvé
 pressure	megapascals	terminative	{0} megapascalig	1 megapascalig évig	{0} megapascalig	2 megapascalig évig
-resolution	pixel-per-centimeter ( = 1 dpcm)	nominative	{0} képpont per centiméter	1 képpont per centiméter év	{0} képpont per centiméter	2 képpont per centiméter év
-resolution	pixel-per-centimeter ( = 1 dpcm)	accusative	{0} képpont per centimétert	1 képpont per centimétert évet	{0} képpont per centimétert	2 képpont per centimétert évet
-resolution	pixel-per-centimeter ( = 1 dpcm)	instrumental	{0} képpont per centiméterrel	1 képpont per centiméterrel évvel	{0} képpont per centiméterrel	2 képpont per centiméterrel évvel
-resolution	pixel-per-centimeter ( = 1 dpcm)	translative	{0} képpont per centiméterré	1 képpont per centiméterré évvé	{0} képpont per centiméterré	2 képpont per centiméterré évvé
-resolution	pixel-per-centimeter ( = 1 dpcm)	terminative	{0} képpont per centiméterig	1 képpont per centiméterig évig	{0} képpont per centiméterig	2 képpont per centiméterig évig
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	nominative	{0} kilométer per óra	1 kilométer per óra év	{0} kilométer per óra	2 kilométer per óra év
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	accusative	{0} kilométer per órát	1 kilométer per órát évet	{0} kilométer per órát	2 kilométer per órát évet
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	instrumental	{0} kilométer per órával	1 kilométer per órával évvel	{0} kilométer per órával	2 kilométer per órával évvel
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	translative	{0} kilométer per órává	1 kilométer per órává évvé	{0} kilométer per órává	2 kilométer per órává évvé
-speed	kilometer-per-hour ( = 0.2˙7 m/s)	terminative	{0} kilométer per óráig	1 kilométer per óráig évig	{0} kilométer per óráig	2 kilométer per óráig évig
+resolution	pixel-per-centimeter • ( = 1 dpcm)	nominative	{0} képpont per centiméter	1 képpont per centiméter év	{0} képpont per centiméter	2 képpont per centiméter év
+resolution	pixel-per-centimeter • ( = 1 dpcm)	accusative	{0} képpont per centimétert	1 képpont per centimétert évet	{0} képpont per centimétert	2 képpont per centimétert évet
+resolution	pixel-per-centimeter • ( = 1 dpcm)	instrumental	{0} képpont per centiméterrel	1 képpont per centiméterrel évvel	{0} képpont per centiméterrel	2 képpont per centiméterrel évvel
+resolution	pixel-per-centimeter • ( = 1 dpcm)	translative	{0} képpont per centiméterré	1 képpont per centiméterré évvé	{0} képpont per centiméterré	2 képpont per centiméterré évvé
+resolution	pixel-per-centimeter • ( = 1 dpcm)	terminative	{0} képpont per centiméterig	1 képpont per centiméterig évig	{0} képpont per centiméterig	2 képpont per centiméterig évig
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	nominative	{0} kilométer per óra	1 kilométer per óra év	{0} kilométer per óra	2 kilométer per óra év
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	accusative	{0} kilométer per órát	1 kilométer per órát évet	{0} kilométer per órát	2 kilométer per órát évet
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	instrumental	{0} kilométer per órával	1 kilométer per órával évvel	{0} kilométer per órával	2 kilométer per órával évvel
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	translative	{0} kilométer per órává	1 kilométer per órává évvé	{0} kilométer per órává	2 kilométer per órává évvé
+speed	kilometer-per-hour • ( = 0.2˙7 m/s)	terminative	{0} kilométer per óráig	1 kilométer per óráig évig	{0} kilométer per óráig	2 kilométer per óráig évig
 speed	meters per second	nominative	{0} méter per másodperc	1 méter per másodperc év	{0} méter per másodperc	2 méter per másodperc év
 speed	meters per second	accusative	{0} méter per másodpercet	1 méter per másodpercet évet	{0} méter per másodpercet	2 méter per másodpercet évet
 speed	meters per second	instrumental	{0} méter per másodperccel	1 méter per másodperccel évvel	{0} méter per másodperccel	2 méter per másodperccel évvel
@@ -457,21 +460,21 @@ substance-amount	items	accusative	{0} itemet	1 itemet évet	{0} itemet	2 itemet 
 substance-amount	items	instrumental	{0} itemmel	1 itemmel évvel	{0} itemmel	2 itemmel évvel
 substance-amount	items	translative	{0} itemmé	1 itemmé évvé	{0} itemmé	2 itemmé évvé
 substance-amount	items	terminative	{0} itemig	1 itemig évig	{0} itemig	2 itemig évig
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	nominative	{0} mól	1 mól év	{0} mól	2 mól év
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	accusative	{0} mólt	1 mólt évet	{0} mólt	2 mólt évet
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	instrumental	{0} móllal	1 móllal évvel	{0} móllal	2 móllal évvel
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	translative	{0} móllá	1 móllá évvé	{0} móllá	2 móllá évvé
-substance-amount	mole ( = 602,214,076,000,000,000,000,000 items)	terminative	{0} mólig	1 mólig évig	{0} mólig	2 mólig évig
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	nominative	{0} mól	1 mól év	{0} mól	2 mól év
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	accusative	{0} mólt	1 mólt évet	{0} mólt	2 mólt évet
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	instrumental	{0} móllal	1 móllal évvel	{0} móllal	2 móllal évvel
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	translative	{0} móllá	1 móllá évvé	{0} móllá	2 móllá évvé
+substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	terminative	{0} mólig	1 mólig évig	{0} mólig	2 mólig évig
 temperature	°	nominative	{0} fok	1 fok év	{0} fok	2 fok év
 temperature	°	accusative	{0} fokot	1 fokot évet	{0} fokot	2 fokot évet
 temperature	°	instrumental	{0} fokkal	1 fokkal évvel	{0} fokkal	2 fokkal évvel
 temperature	°	translative	{0} fokká	1 fokká évvé	{0} fokká	2 fokká évvé
 temperature	°	terminative	{0} fokig	1 fokig évig	{0} fokig	2 fokig évig
-temperature	celsius ( = 1 K)	nominative	{0} Celsius-fok	1 Celsius-fok év	{0} Celsius-fok	2 Celsius-fok év
-temperature	celsius ( = 1 K)	accusative	{0} Celsius-fokot	1 Celsius-fokot évet	{0} Celsius-fokot	2 Celsius-fokot évet
-temperature	celsius ( = 1 K)	instrumental	{0} Celsius-fokkal	1 Celsius-fokkal évvel	{0} Celsius-fokkal	2 Celsius-fokkal évvel
-temperature	celsius ( = 1 K)	translative	{0} Celsius-fokká	1 Celsius-fokká évvé	{0} Celsius-fokká	2 Celsius-fokká évvé
-temperature	celsius ( = 1 K)	terminative	{0} Celsius-fokig	1 Celsius-fokig évig	{0} Celsius-fokig	2 Celsius-fokig évig
+temperature	celsius • ( = 1 K)	nominative	{0} Celsius-fok	1 Celsius-fok év	{0} Celsius-fok	2 Celsius-fok év
+temperature	celsius • ( = 1 K)	accusative	{0} Celsius-fokot	1 Celsius-fokot évet	{0} Celsius-fokot	2 Celsius-fokot évet
+temperature	celsius • ( = 1 K)	instrumental	{0} Celsius-fokkal	1 Celsius-fokkal évvel	{0} Celsius-fokkal	2 Celsius-fokkal évvel
+temperature	celsius • ( = 1 K)	translative	{0} Celsius-fokká	1 Celsius-fokká évvé	{0} Celsius-fokká	2 Celsius-fokká évvé
+temperature	celsius • ( = 1 K)	terminative	{0} Celsius-fokig	1 Celsius-fokig évig	{0} Celsius-fokig	2 Celsius-fokig évig
 temperature	kelvins	nominative	{0} kelvin	1 kelvin év	{0} kelvin	2 kelvin év
 temperature	kelvins	accusative	{0} kelvint	1 kelvint évet	{0} kelvint	2 kelvint évet
 temperature	kelvins	instrumental	{0} kelvinnel	1 kelvinnel évvel	{0} kelvinnel	2 kelvinnel évvel
@@ -487,11 +490,11 @@ voltage	volts	accusative	{0} voltot	1 voltot évet	{0} voltot	2 voltot évet
 voltage	volts	instrumental	{0} volttal	1 volttal évvel	{0} volttal	2 volttal évvel
 voltage	volts	translative	{0} volttá	1 volttá évvé	{0} volttá	2 volttá évvé
 voltage	volts	terminative	{0} voltig	1 voltig évig	{0} voltig	2 voltig évig
-volume	cubic-centimeter ( = 1 mL)	nominative	{0} köbcentiméter	1 köbcentiméter év	{0} köbcentiméter	2 köbcentiméter év
-volume	cubic-centimeter ( = 1 mL)	accusative	{0} köbcentimétert	1 köbcentimétert évet	{0} köbcentimétert	2 köbcentimétert évet
-volume	cubic-centimeter ( = 1 mL)	instrumental	{0} köbcentiméterrel	1 köbcentiméterrel évvel	{0} köbcentiméterrel	2 köbcentiméterrel évvel
-volume	cubic-centimeter ( = 1 mL)	translative	{0} köbcentiméterré	1 köbcentiméterré évvé	{0} köbcentiméterré	2 köbcentiméterré évvé
-volume	cubic-centimeter ( = 1 mL)	terminative	{0} köbcentiméterig	1 köbcentiméterig évig	{0} köbcentiméterig	2 köbcentiméterig évig
+volume	cubic-centimeter • ( = 1 mL)	nominative	{0} köbcentiméter	1 köbcentiméter év	{0} köbcentiméter	2 köbcentiméter év
+volume	cubic-centimeter • ( = 1 mL)	accusative	{0} köbcentimétert	1 köbcentimétert évet	{0} köbcentimétert	2 köbcentimétert évet
+volume	cubic-centimeter • ( = 1 mL)	instrumental	{0} köbcentiméterrel	1 köbcentiméterrel évvel	{0} köbcentiméterrel	2 köbcentiméterrel évvel
+volume	cubic-centimeter • ( = 1 mL)	translative	{0} köbcentiméterré	1 köbcentiméterré évvé	{0} köbcentiméterré	2 köbcentiméterré évvé
+volume	cubic-centimeter • ( = 1 mL)	terminative	{0} köbcentiméterig	1 köbcentiméterig évig	{0} köbcentiméterig	2 köbcentiméterig évig
 volume	milliliters	nominative	{0} milliliter	1 milliliter év	{0} milliliter	2 milliliter év
 volume	milliliters	accusative	{0} millilitert	1 millilitert évet	{0} millilitert	2 millilitert évet
 volume	milliliters	instrumental	{0} milliliterrel	1 milliliterrel évvel	{0} milliliterrel	2 milliliterrel évvel
@@ -507,16 +510,16 @@ volume	deciliters	accusative	{0} decilitert	1 decilitert évet	{0} decilitert	2 
 volume	deciliters	instrumental	{0} deciliterrel	1 deciliterrel évvel	{0} deciliterrel	2 deciliterrel évvel
 volume	deciliters	translative	{0} deciliterré	1 deciliterré évvé	{0} deciliterré	2 deciliterré évvé
 volume	deciliters	terminative	{0} deciliterig	1 deciliterig évig	{0} deciliterig	2 deciliterig évig
-volume	cup-metric ( = 2.5 dL)	nominative	{0} bögre	1 bögre év	{0} bögre	2 bögre év
-volume	cup-metric ( = 2.5 dL)	accusative	{0} bögrét	1 bögrét évet	{0} bögrét	2 bögrét évet
-volume	cup-metric ( = 2.5 dL)	instrumental	{0} bögrével	1 bögrével évvel	{0} bögrével	2 bögrével évvel
-volume	cup-metric ( = 2.5 dL)	translative	{0} bögrévé	1 bögrévé évvé	{0} bögrévé	2 bögrévé évvé
-volume	cup-metric ( = 2.5 dL)	terminative	{0} bögréig	1 bögréig évig	{0} bögréig	2 bögréig évig
-volume	pint-metric ( = 5 dL)	nominative	{0} metrikus pint	1 metrikus pint év	{0} metrikus pint	2 metrikus pint év
-volume	pint-metric ( = 5 dL)	accusative	{0} metrikus pintet	1 metrikus pintet évet	{0} metrikus pintet	2 metrikus pintet évet
-volume	pint-metric ( = 5 dL)	instrumental	{0} metrikus pinttel	1 metrikus pinttel évvel	{0} metrikus pinttel	2 metrikus pinttel évvel
-volume	pint-metric ( = 5 dL)	translative	{0} metrikus pintté	1 metrikus pintté évvé	{0} metrikus pintté	2 metrikus pintté évvé
-volume	pint-metric ( = 5 dL)	terminative	{0} metrikus pintig	1 metrikus pintig évig	{0} metrikus pintig	2 metrikus pintig évig
+volume	cup-metric • ( = 2.5 dL)	nominative	{0} bögre	1 bögre év	{0} bögre	2 bögre év
+volume	cup-metric • ( = 2.5 dL)	accusative	{0} bögrét	1 bögrét évet	{0} bögrét	2 bögrét évet
+volume	cup-metric • ( = 2.5 dL)	instrumental	{0} bögrével	1 bögrével évvel	{0} bögrével	2 bögrével évvel
+volume	cup-metric • ( = 2.5 dL)	translative	{0} bögrévé	1 bögrévé évvé	{0} bögrévé	2 bögrévé évvé
+volume	cup-metric • ( = 2.5 dL)	terminative	{0} bögréig	1 bögréig évig	{0} bögréig	2 bögréig évig
+volume	pint-metric • ( = 5 dL)	nominative	{0} metrikus pint	1 metrikus pint év	{0} metrikus pint	2 metrikus pint év
+volume	pint-metric • ( = 5 dL)	accusative	{0} metrikus pintet	1 metrikus pintet évet	{0} metrikus pintet	2 metrikus pintet évet
+volume	pint-metric • ( = 5 dL)	instrumental	{0} metrikus pinttel	1 metrikus pinttel évvel	{0} metrikus pinttel	2 metrikus pinttel évvel
+volume	pint-metric • ( = 5 dL)	translative	{0} metrikus pintté	1 metrikus pintté évvé	{0} metrikus pintté	2 metrikus pintté évvé
+volume	pint-metric • ( = 5 dL)	terminative	{0} metrikus pintig	1 metrikus pintig évig	{0} metrikus pintig	2 metrikus pintig évig
 volume	liters	nominative	{0} liter	1 liter év	{0} liter	2 liter év
 volume	liters	accusative	{0} litert	1 litert évet	{0} litert	2 litert évet
 volume	liters	instrumental	{0} literrel	1 literrel évvel	{0} literrel	2 literrel évvel
@@ -542,11 +545,11 @@ volume	cubic kilometers	accusative	{0} köbkilométert	1 köbkilométert évet	{
 volume	cubic kilometers	instrumental	{0} köbkilométerrel	1 köbkilométerrel évvel	{0} köbkilométerrel	2 köbkilométerrel évvel
 volume	cubic kilometers	translative	{0} köbkilométerré	1 köbkilométerré évvé	{0} köbkilométerré	2 köbkilométerré évvé
 volume	cubic kilometers	terminative	{0} köbkilométerig	1 köbkilométerig évig	{0} köbkilométerig	2 köbkilométerig évig
-year-duration	month ( = 0.08˙3 yrs)	nominative	{0} hónap	1 hónap év	{0} hónap	2 hónap év
-year-duration	month ( = 0.08˙3 yrs)	accusative	{0} hónapot	1 hónapot évet	{0} hónapot	2 hónapot évet
-year-duration	month ( = 0.08˙3 yrs)	instrumental	{0} hónappal	1 hónappal évvel	{0} hónappal	2 hónappal évvel
-year-duration	month ( = 0.08˙3 yrs)	translative	{0} hónappá	1 hónappá évvé	{0} hónappá	2 hónappá évvé
-year-duration	month ( = 0.08˙3 yrs)	terminative	{0} hónapig	1 hónapig évig	{0} hónapig	2 hónapig évig
+year-duration	month • ( = 0.08˙3 yrs)	nominative	{0} hónap	1 hónap év	{0} hónap	2 hónap év
+year-duration	month • ( = 0.08˙3 yrs)	accusative	{0} hónapot	1 hónapot évet	{0} hónapot	2 hónapot évet
+year-duration	month • ( = 0.08˙3 yrs)	instrumental	{0} hónappal	1 hónappal évvel	{0} hónappal	2 hónappal évvel
+year-duration	month • ( = 0.08˙3 yrs)	translative	{0} hónappá	1 hónappá évvé	{0} hónappá	2 hónappá évvé
+year-duration	month • ( = 0.08˙3 yrs)	terminative	{0} hónapig	1 hónapig évig	{0} hónapig	2 hónapig évig
 year-duration	years	nominative	{0} év	1 év év	{0} év	2 év év
 year-duration	years	accusative	{0} évet	1 évet évet	{0} évet	2 évet évet
 year-duration	years	instrumental	{0} évvel	1 évvel évvel	{0} évvel	2 évvel évvel
@@ -564,3 +567,4 @@ year-duration	centuries	translative	{0} évszázaddá	1 évszázaddá évvé	{0}
 year-duration	centuries	terminative	{0} évszázadig	1 évszázadig évig	{0} évszázadig	2 évszázadig évig
 
 # Unit Power Components
+#Unit	Case	Gender	Pattern for one	Case MP + pattern with 1.0	Pattern for other	Case MP + pattern with 2.0
