@@ -58,80 +58,274 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='3'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='3'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source' rowSpan='3'><a name='Western Asia: Qatar' href='#Western Asia: Qatar'>Western Asia: Qatar</a></td><td class='source'>QAR-name-one</td><td class='source' rowSpan='74'>en</td><td class='target'>Qatari rial</td><td class='target'>Qatari riyal</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td><td class='source'><a name='M' href='#M'>M</a></td><td class='source'>Maliseet-Passamaquoddy ► pqm</td><td class='source' rowSpan='46'>en</td><td class='target'>Malecite</td><td class='target'>Maliseet-Passamaquoddy</td><td class='target' rowSpan='5'>modern</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td><td class='source'><a name='O' href='#O'>O</a></td><td class='source'>Obolo ► ann</td><td class='target'>ann</td><td class='target'>Obolo</td></tr>
+	<tr><td class='source'><a name='P' href='#P'>P</a></td><td class='source'>Pijin ► pis</td><td class='target'>pis</td><td class='target'>Pijin</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='S' href='#S'>S</a></td><td class='source'>Saamia ► lsm</td><td class='target'>lsm</td><td class='target'>Saamia</td></tr>
+	<tr><td class='source'>Siksiká ► bla</td><td class='target'>Siksika</td><td class='target'>Siksiká</td></tr>
+	<tr><td class='source' rowSpan='133'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='39'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='7'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>year-narrow</td><td class='target'>yr.</td><td class='target'>yr</td><td class='target' rowSpan='7'>moderate</td></tr>
+	<tr><td class='source'>quarter-narrow</td><td class='target'>qtr.</td><td class='target'>qtr</td></tr>
+	<tr><td class='source'>month-narrow</td><td class='target'>mo.</td><td class='target'>mo</td></tr>
+	<tr><td class='source'>week-narrow</td><td class='target'>wk.</td><td class='target'>wk</td></tr>
+	<tr><td class='source'>hour-narrow</td><td class='target'>hr.</td><td class='target'>hr</td></tr>
+	<tr><td class='source'>minute-narrow</td><td class='target'>min.</td><td class='target'>min</td></tr>
+	<tr><td class='source'>second-narrow</td><td class='target'>sec.</td><td class='target'>sec</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Year Narrow' href='#Relative Year Narrow'>Relative Year Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} yr.</td><td class='target' rowSpan='2'>in {0}y</td><td class='target' rowSpan='32'>modern</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} yr. ago</td><td class='target' rowSpan='2'>{0}y ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Quarter Narrow' href='#Relative Quarter Narrow'>Relative Quarter Narrow</a></td><td class='source'>future-one</td><td class='target'>in {0} qtr.</td><td class='target' rowSpan='2'>in {0}q</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>in {0} qtrs.</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} qtr. ago</td><td class='target' rowSpan='2'>{0}q ago</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>{0} qtrs. ago</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} mo.</td><td class='target' rowSpan='2'>in {0}mo</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} mo. ago</td><td class='target' rowSpan='2'>{0}mo ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Week Narrow' href='#Relative Week Narrow'>Relative Week Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} wk.</td><td class='target' rowSpan='2'>in {0}w</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} wk. ago</td><td class='target' rowSpan='2'>{0}w ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Day Narrow' href='#Relative Day Narrow'>Relative Day Narrow</a></td><td class='source'>future-one</td><td class='target'>in {0} day</td><td class='target' rowSpan='2'>in {0}d</td></tr>
+	<tr><td class='source'>future-other</td><td class='target'>in {0} days</td></tr>
+	<tr><td class='source'>past-one</td><td class='target'>{0} day ago</td><td class='target' rowSpan='2'>{0}d ago</td></tr>
+	<tr><td class='source'>past-other</td><td class='target'>{0} days ago</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Hour Narrow' href='#Relative Hour Narrow'>Relative Hour Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} hr.</td><td class='target' rowSpan='2'>in {0}h</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} hr. ago</td><td class='target' rowSpan='2'>{0}h ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Minute Narrow' href='#Relative Minute Narrow'>Relative Minute Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} min.</td><td class='target' rowSpan='2'>in {0}m</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} min. ago</td><td class='target' rowSpan='2'>{0}m ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Relative Second Narrow' href='#Relative Second Narrow'>Relative Second Narrow</a></td><td class='source'>future-one</td><td class='target' rowSpan='2'>in {0} sec.</td><td class='target' rowSpan='2'>in {0}s</td></tr>
+	<tr><td class='source'>future-other</td></tr>
+	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>{0} sec. ago</td><td class='target' rowSpan='2'>{0}s ago</td></tr>
+	<tr><td class='source'>past-other</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='14'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='4'>full</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='86'>moderate</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='2'>en_GB</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='4'>long</td><td class='source' rowSpan='2'>en</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='2'>en_GB</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='3'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='3'>medium</td><td class='source'>en</td><td class='target' rowSpan='6'>▷missing◁</td></tr>
+	<tr><td class='source'>en_GB</td></tr>
+	<tr><td class='source'>en_MV</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='3'>short</td><td class='source'>en</td><td class='target' rowSpan='2'>{1}, {0}</td></tr>
+	<tr><td class='source'>en_GB</td></tr>
+	<tr><td class='source'>en_MV</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='2'>GyMd</td><td class='source'>en</td><td class='target'>M/d/y GGGGG</td><td class='target'>M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>d/M/y GGGGG</td><td class='target'>d/M/y G</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>GyM/G</td><td class='source' rowSpan='4'>en</td><td class='target'>M/y GGGGG – M/y GGGGG</td><td class='target'>M/y G – M/y G</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>M/y – M/y GGGGG</td><td class='target' rowSpan='2'>M/y – M/y G</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/d</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/G</td><td class='source'>en</td><td class='target'>M/d/y GGGGG – M/d/y GGGGG</td><td class='target'>M/d/y G – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y GGGGG – dd/MM/y GGGGG</td><td class='target'>dd/MM/y G – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/M</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/y</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/d</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/G</td><td class='source'>en</td><td class='target'>E, M/d/y GGGGG – E, M/d/y GGGGG</td><td class='target'>E, M/d/y G – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y GGGGG – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y G – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/M</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/y</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='51'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='2'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source' rowSpan='2'>short</td><td class='source'>en</td><td class='target'>M/d/y GGGGG</td><td class='target'>M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y GGGGG</td><td class='target'>dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='2'>full</td><td class='source' rowSpan='7'>en</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='2'>long</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='3'>{1}, {0}</td></tr>
+	<tr><td class='source'>medium</td><td class='target' rowSpan='2'>▷missing◁</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source' rowSpan='2'>GyMd</td><td class='target'>M/d/y GGGGG</td><td class='target'>M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y GGGGG</td><td class='target'>dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyM</td><td class='source'>en</td><td class='target'>M/y GGGGG</td><td class='target'>M/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>MM/y GGGGG</td><td class='target'>MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMd</td><td class='source'>en</td><td class='target'>M/d/y GGGGG</td><td class='target'>M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y GGGGG</td><td class='target'>dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMEd</td><td class='source'>en</td><td class='target'>E, M/d/y GGGGG</td><td class='target'>E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='35'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>GyM/G</td><td class='source' rowSpan='4'>en</td><td class='target'>M/y GGGGG – M/y GGGGG</td><td class='target'>M/y G – M/y G</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>M/y – M/y GGGGG</td><td class='target' rowSpan='2'>M/y – M/y G</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/d</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/G</td><td class='source'>en</td><td class='target'>M/d/y GGGGG – M/d/y GGGGG</td><td class='target'>M/d/y G – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y GGGGG – dd/MM/y GGGGG</td><td class='target'>dd/MM/y G – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/M</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMd/y</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/d</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/G</td><td class='source'>en</td><td class='target'>E, M/d/y GGGGG – E, M/d/y GGGGG</td><td class='target'>E, M/d/y G – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y GGGGG – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y G – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/M</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>GyMEd/y</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>en</td><td class='target'>M/y – M/y GGGGG</td><td class='target'>M/y – M/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>MM/y – MM/y GGGGG</td><td class='target'>MM/y – MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/y</td><td class='source'>en</td><td class='target'>M/y – M/y GGGGG</td><td class='target'>M/y – M/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>MM/y – MM/y GGGGG</td><td class='target'>MM/y – MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/y</td><td class='source'>en</td><td class='target'>M/d/y – M/d/y GGGGG</td><td class='target'>M/d/y – M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>dd/MM/y – dd/MM/y GGGGG</td><td class='target'>dd/MM/y – dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/d</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>en</td><td class='target'>E, M/d/y – E, M/d/y GGGGG</td><td class='target'>E, M/d/y – E, M/d/y G</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>E, dd/MM/y – E, dd/MM/y GGGGG</td><td class='target'>E, dd/MM/y – E, dd/MM/y G</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Chinese' href='#Chinese'>Chinese</a></td><td class='source' rowSpan='6'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='2'>full</td><td class='source' rowSpan='136'>en</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='8'>comprehensive</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target'>{1}, {0}</td></tr>
+	<tr><td class='source' rowSpan='2'>long</td><td class='target'>▷missing◁</td><td class='target'>{1} 'at' {0}</td></tr>
+	<tr><td class='target'>{1} 'at' {0}</td><td class='target' rowSpan='3'>{1}, {0}</td></tr>
+	<tr><td class='source'>medium</td><td class='target' rowSpan='2'>▷missing◁</td></tr>
+	<tr><td class='source'>short</td></tr>
+	<tr><td class='source'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>GyMd</td><td class='target'>d MMM y GGGGG</td><td class='target'>d MMM y G</td></tr>
+	<tr><td class='source'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>short</td><td class='target'>M/d/y GGGGG</td><td class='target'>M/d/y G</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='3'><a name='Western Asia (C)' href='#Western Asia (C)'>Western Asia (C)</a></td><td class='source' rowSpan='3'><a name='Western Asia: Qatar' href='#Western Asia: Qatar'>Western Asia: Qatar</a></td><td class='source'>QAR-name-one</td><td class='target'>Qatari rial</td><td class='target'>Qatari riyal</td><td class='target' rowSpan='3'>moderate</td></tr>
 	<tr><td class='source'>QAR-name-other</td><td class='target'>Qatari rials</td><td class='target'>Qatari riyals</td></tr>
 	<tr><td class='source'>QAR-name</td><td class='target'>Qatari Rial</td><td class='target'>Qatari Riyal</td></tr>
-	<tr><td class='source' rowSpan='71'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='71'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td><td class='source' rowSpan='2'><a name='NameOrder for Locales' href='#NameOrder for Locales'>NameOrder for Locales</a></td><td class='source'>givenFirst</td><td class='target' rowSpan='71'>▷missing◁</td><td class='target'>und</td><td class='target' rowSpan='71'>modern</td></tr>
-	<tr><td class='source'>surnameFirst</td><td class='target'>ja zh ko</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='InitialPatterns' href='#InitialPatterns'>InitialPatterns</a></td><td class='source'>initial</td><td class='target'>{0}.</td></tr>
-	<tr><td class='source'>initialSequence</td><td class='target'>{0} {1}</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='9'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='9'><a name='quarter' href='#quarter'>quarter</a></td><td class='source'>long-displayName</td><td class='target' rowSpan='124'>▷missing◁</td><td class='target'>quarters</td><td class='target' rowSpan='29'>modern</td></tr>
+	<tr><td class='source'>short-displayName</td><td class='target' rowSpan='2'>qtr</td></tr>
+	<tr><td class='source'>narrow-displayName</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target'>{0} quarter</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} quarters</td></tr>
+	<tr><td class='source'>short-one-nominative</td><td class='target'>{0} qtr</td></tr>
+	<tr><td class='source'>short-other-nominative</td><td class='target'>{0} qtrs</td></tr>
+	<tr><td class='source'>narrow-one-nominative</td><td class='target' rowSpan='2'>{0}q</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td></tr>
+	<tr><td class='source' rowSpan='42'><a name='Characters' href='#Characters'>Characters</a></td><td class='source' rowSpan='8'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td><td class='source' rowSpan='2'><a name='face-neutral-skeptical' href='#face-neutral-skeptical'>face-neutral-skeptical</a></td><td class='source'>🫨 -name</td><td class='target'>shaking face</td></tr>
+	<tr><td class='source'>🫨 –keywords</td><td class='target'>earthquake<br>face<br>shaking<br>shock<br>vibrate</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='emotion' href='#emotion'>emotion</a></td><td class='source'>🩵 -name</td><td class='target'>light blue heart</td></tr>
+	<tr><td class='source'>🩵 –keywords</td><td class='target'>cyan<br>heart<br>light blue<br>teal</td></tr>
+	<tr><td class='source'>🩶 -name</td><td class='target'>grey heart</td></tr>
+	<tr><td class='source'>🩶 –keywords</td><td class='target'>gray<br>heart<br>silver<br>slate</td></tr>
+	<tr><td class='source'>🩷 -name</td><td class='target'>pink heart</td></tr>
+	<tr><td class='source'>🩷 –keywords</td><td class='target'>cute<br>heart<br>like<br>love<br>pink</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='People & Body' href='#People & Body'>People & Body</a></td><td class='source' rowSpan='4'><a name='hands' href='#hands'>hands</a></td><td class='source'>🫷 -name</td><td class='target'>leftwards pushing hand</td></tr>
+	<tr><td class='source'>🫷 –keywords</td><td class='target'>high five<br>leftward<br>push<br>refuse<br>stop<br>wait</td></tr>
+	<tr><td class='source'>🫸 -name</td><td class='target'>rightwards pushing hand</td></tr>
+	<tr><td class='source'>🫸 –keywords</td><td class='target'>high five<br>push<br>refuse<br>rightward<br>stop<br>wait</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td><td class='source' rowSpan='4'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td><td class='source'>🫎 -name</td><td class='target'>moose</td></tr>
+	<tr><td class='source'>🫎 –keywords</td><td class='target'>animal<br>antlers<br>elk<br>mammal</td></tr>
+	<tr><td class='source'>🫏 -name</td><td class='target'>donkey</td></tr>
+	<tr><td class='source'>🫏 –keywords</td><td class='target'>animal<br>ass<br>burro<br>mammal<br>mule<br>stubborn</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='animal-bird' href='#animal-bird'>animal-bird</a></td><td class='source'>🪽 -name</td><td class='target'>wing</td></tr>
+	<tr><td class='source'>🪽 –keywords</td><td class='target'>angelic<br>aviation<br>bird<br>flying<br>mythology</td></tr>
+	<tr><td class='source'>🪿 -name</td><td class='target'>goose</td></tr>
+	<tr><td class='source'>🪿 –keywords</td><td class='target'>bird<br>fowl<br>honk<br>silly</td></tr>
+	<tr><td class='source'>🐦‍⬛ -name</td><td class='target'>black bird</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'>🐦‍⬛ –keywords</td><td class='target'>bird<br>black<br>crow<br>raven<br>rook</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td><td class='source'>🪼 -name</td><td class='target'>jellyfish</td><td class='target' rowSpan='93'>modern</td></tr>
+	<tr><td class='source'>🪼 –keywords</td><td class='target'>burn<br>invertebrate<br>jelly<br>marine<br>ouch<br>stinger</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='plant-flower' href='#plant-flower'>plant-flower</a></td><td class='source'>🪻 -name</td><td class='target'>hyacinth</td></tr>
+	<tr><td class='source'>🪻 –keywords</td><td class='target'>bluebonnet<br>flower<br>lavender<br>lupine<br>snapdragon</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td><td class='source' rowSpan='4'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td><td class='source'>🫚 -name</td><td class='target'>ginger root</td></tr>
+	<tr><td class='source'>🫚 –keywords</td><td class='target'>beer<br>root<br>spice</td></tr>
+	<tr><td class='source'>🫛 -name</td><td class='target'>pea pod</td></tr>
+	<tr><td class='source'>🫛 –keywords</td><td class='target'>beans<br>edamame<br>legume<br>pea<br>pod<br>vegetable</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Objects' href='#Objects'>Objects</a></td><td class='source' rowSpan='4'><a name='clothing' href='#clothing'>clothing</a></td><td class='source'>🪭 -name</td><td class='target'>folding hand fan</td></tr>
+	<tr><td class='source'>🪭 –keywords</td><td class='target'>cooling<br>dance<br>fan<br>flutter<br>hot<br>shy</td></tr>
+	<tr><td class='source'>🪮 -name</td><td class='target'>hair pick</td></tr>
+	<tr><td class='source'>🪮 –keywords</td><td class='target'>Afro<br>comb<br>hair<br>pick</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td><td class='source'>🪇 -name</td><td class='target'>maracas</td></tr>
+	<tr><td class='source'>🪇 –keywords</td><td class='target'>instrument<br>music<br>percussion<br>rattle<br>shake</td></tr>
+	<tr><td class='source'>🪈 -name</td><td class='target'>flute</td></tr>
+	<tr><td class='source'>🪈 –keywords</td><td class='target'>fife<br>music<br>pipe<br>recorder<br>woodwind</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Symbols2' href='#Symbols2'>Symbols2</a></td><td class='source' rowSpan='2'><a name='religion' href='#religion'>religion</a></td><td class='source'>🪯 -name</td><td class='target'>khanda</td></tr>
+	<tr><td class='source'>🪯 –keywords</td><td class='target'>Sikh<br>religion</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='av-symbol' href='#av-symbol'>av-symbol</a></td><td class='source'>🛜 -name</td><td class='target'>wireless</td></tr>
+	<tr><td class='source'>🛜 –keywords</td><td class='target'>computer<br>internet<br>network</td></tr>
+	<tr><td class='source' rowSpan='73'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='73'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td><td class='source' rowSpan='2'><a name='NameOrder for Locales' href='#NameOrder for Locales'>NameOrder for Locales</a></td><td class='source'>givenFirst</td><td class='target'>und en</td></tr>
+	<tr><td class='source'>surnameFirst</td><td class='target'>ja ko zh</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='AuxiliaryItems' href='#AuxiliaryItems'>AuxiliaryItems</a></td><td class='source'>pattern-initial</td><td class='target'>{0}.</td></tr>
+	<tr><td class='source'>pattern-initialSequence</td><td class='target'>{0} {1}</td></tr>
 	<tr><td class='source'><a name='SampleName Fields for Item: givenOnly' href='#SampleName Fields for Item: givenOnly'>SampleName Fields for Item: givenOnly</a></td><td class='source' rowSpan='2'>given</td><td class='target'>Sinbad</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='SampleName Fields for Item: givenSurnameOnly' href='#SampleName Fields for Item: givenSurnameOnly'>SampleName Fields for Item: givenSurnameOnly</a></td><td class='target'>Irene</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Adler</td></tr>
 	<tr><td class='source' rowSpan='3'><a name='SampleName Fields for Item: given12Surname' href='#SampleName Fields for Item: given12Surname'>SampleName Fields for Item: given12Surname</a></td><td class='source'>given</td><td class='target'>John</td></tr>
 	<tr><td class='source'>given2</td><td class='target'>Hamish</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Watson</td></tr>
-	<tr><td class='source' rowSpan='7'><a name='SampleName Fields for Item: full' href='#SampleName Fields for Item: full'>SampleName Fields for Item: full</a></td><td class='source'>prefix</td><td class='target'>Prof. Dr.</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='SampleName Fields for Item: full' href='#SampleName Fields for Item: full'>SampleName Fields for Item: full</a></td><td class='source'>prefix</td><td class='target'>Prof. Dr.</td></tr>
 	<tr><td class='source'>given</td><td class='target'>Ada Cornelia</td></tr>
 	<tr><td class='source'>given-informal</td><td class='target'>Neele</td></tr>
 	<tr><td class='source'>given2</td><td class='target'>Eva Sophia</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Meyer Wolf</td></tr>
+	<tr><td class='source'>surname-core</td><td class='target'>Wolf</td></tr>
+	<tr><td class='source'>surname-prefix</td><td class='target'>van den</td></tr>
 	<tr><td class='source'>surname2</td><td class='target'>Becker Schmidt</td></tr>
 	<tr><td class='source'>suffix</td><td class='target'>M.D. Ph.D.</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: long-referring' href='#PersonName Patterns for Length-Usage: long-referring'>PersonName Patterns for Length-Usage: long-referring</a></td><td class='source'>formal-givenFirst</td><td class='target'>{given} {given2} {surname} {suffix}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td><td class='target'>{surname} {given} {given2} {suffix}</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given} {given2} {suffix}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target'>{given-informal} {surname}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td><td class='target'>{surname} {given-informal}</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: long-addressing' href='#PersonName Patterns for Length-Usage: long-addressing'>PersonName Patterns for Length-Usage: long-addressing</a></td><td class='source'>formal-givenFirst</td><td class='target' rowSpan='2'>{prefix} {surname}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given} {given2} {suffix}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target' rowSpan='2'>{given-informal}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: long-monogram' href='#PersonName Patterns for Length-Usage: long-monogram'>PersonName Patterns for Length-Usage: long-monogram</a></td><td class='source'>formal-givenFirst</td><td class='target'>{given-initial-allCaps}{given2-initial-allCaps}{surname-initial-allCaps}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td><td class='target' rowSpan='2'>{surname-initial-allCaps}{given-initial-allCaps}{given2-initial-allCaps}</td></tr>
-	<tr><td class='source'>formal-sorting</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target'>{given-informal-initial-allCaps}{surname-initial-allCaps}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td><td class='target' rowSpan='2'>{surname-initial-allCaps}{given-informal-initial-allCaps}</td></tr>
-	<tr><td class='source'>informal-sorting</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: medium-referring' href='#PersonName Patterns for Length-Usage: medium-referring'>PersonName Patterns for Length-Usage: medium-referring</a></td><td class='source'>formal-givenFirst</td><td class='target'>{given} {given2-initial} {surname} {suffix}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td><td class='target'>{surname} {given} {given2-initial} {suffix}</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target'>{given-informal} {surname}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td><td class='target'>{surname} {given-informal}</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: medium-addressing' href='#PersonName Patterns for Length-Usage: medium-addressing'>PersonName Patterns for Length-Usage: medium-addressing</a></td><td class='source'>formal-givenFirst</td><td class='target' rowSpan='2'>{prefix} {surname}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target' rowSpan='2'>{given-informal}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: medium-monogram' href='#PersonName Patterns for Length-Usage: medium-monogram'>PersonName Patterns for Length-Usage: medium-monogram</a></td><td class='source'>formal-givenFirst</td><td class='target' rowSpan='3'>{surname-initial-allCaps}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td></tr>
-	<tr><td class='source'>formal-sorting</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target' rowSpan='3'>{given-informal-initial-allCaps}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td></tr>
-	<tr><td class='source'>informal-sorting</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: short-referring' href='#PersonName Patterns for Length-Usage: short-referring'>PersonName Patterns for Length-Usage: short-referring</a></td><td class='source'>formal-givenFirst</td><td class='target'>{given-initial} {given2-initial} {surname}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td><td class='target'>{surname} {given-initial} {given2-initial}</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given-initial} {given2-initial}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target'>{given-informal} {surname-initial}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td><td class='target'>{surname} {given-initial}</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: short-addressing' href='#PersonName Patterns for Length-Usage: short-addressing'>PersonName Patterns for Length-Usage: short-addressing</a></td><td class='source'>formal-givenFirst</td><td class='target' rowSpan='2'>{prefix} {surname}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td></tr>
-	<tr><td class='source'>formal-sorting</td><td class='target'>{surname}, {given-initial} {given2-initial}</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target' rowSpan='2'>{given-informal}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td></tr>
-	<tr><td class='source'>informal-sorting</td><td class='target'>{surname}, {given-informal}</td></tr>
-	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Length-Usage: short-monogram' href='#PersonName Patterns for Length-Usage: short-monogram'>PersonName Patterns for Length-Usage: short-monogram</a></td><td class='source'>formal-givenFirst</td><td class='target' rowSpan='3'>{surname-initial-allCaps}</td></tr>
-	<tr><td class='source'>formal-surnameFirst</td></tr>
-	<tr><td class='source'>formal-sorting</td></tr>
-	<tr><td class='source'>informal-givenFirst</td><td class='target' rowSpan='3'>{given-informal-initial-allCaps}</td></tr>
-	<tr><td class='source'>informal-surnameFirst</td></tr>
-	<tr><td class='source'>informal-sorting</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: givenFirst-long' href='#PersonName Patterns for Order-Length: givenFirst-long'>PersonName Patterns for Order-Length: givenFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2} {surname} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{given-informal} {surname}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: givenFirst-medium' href='#PersonName Patterns for Order-Length: givenFirst-medium'>PersonName Patterns for Order-Length: givenFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2-initial} {surname} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{given-informal} {surname}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: givenFirst-short' href='#PersonName Patterns for Order-Length: givenFirst-short'>PersonName Patterns for Order-Length: givenFirst-short</a></td><td class='source'>referring-formal</td><td class='target'>{given-initial} {given2-initial} {surname}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{given-informal} {surname-initial}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: surnameFirst-long' href='#PersonName Patterns for Order-Length: surnameFirst-long'>PersonName Patterns for Order-Length: surnameFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{surname} {given} {given2} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname} {given-informal}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{surname-monogram-allCaps}{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: surnameFirst-medium' href='#PersonName Patterns for Order-Length: surnameFirst-medium'>PersonName Patterns for Order-Length: surnameFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{surname} {given} {given2-initial} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname} {given-informal}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: surnameFirst-short' href='#PersonName Patterns for Order-Length: surnameFirst-short'>PersonName Patterns for Order-Length: surnameFirst-short</a></td><td class='source'>referring-formal</td><td class='target'>{surname} {given-initial} {given2-initial}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname} {given-initial}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: sorting-long' href='#PersonName Patterns for Order-Length: sorting-long'>PersonName Patterns for Order-Length: sorting-long</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{surname}, {given} {given2} {suffix}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{surname-monogram-allCaps}{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: sorting-medium' href='#PersonName Patterns for Order-Length: sorting-medium'>PersonName Patterns for Order-Length: sorting-medium</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='PersonName Patterns for Order-Length: sorting-short' href='#PersonName Patterns for Order-Length: sorting-short'>PersonName Patterns for Order-Length: sorting-short</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given-initial} {given2-initial}</td></tr>
+	<tr><td class='source'>referring-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>addressing-formal</td><td class='target'>{surname}, {given-initial} {given2-initial}</td></tr>
+	<tr><td class='source'>addressing-informal</td><td class='target'>{surname}, {given-informal}</td></tr>
+	<tr><td class='source'>monogram-formal</td><td class='target'>{surname-monogram-allCaps}</td></tr>
+	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps}</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='3'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='2'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='3'>Formats - Standard - Date Formats-short</td><td class='target'>GGGGGyMd</td><td class='target'>GyMd</td><td class='target' rowSpan='3'>comprehensive</td></tr>
+	<tr><td class='source'>en_001</td><td class='target'>GGGGGyMMdd</td><td class='target'>GyMMdd</td></tr>
+	<tr><td class='source'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source'>en</td><td class='target'>GGGGGyMd</td><td class='target'>GyMd</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='https://www.unicode.org/copyright.html'>
 <img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
