@@ -58,14 +58,111 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='8'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='4'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='8'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='source' rowSpan='8'>tt</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target' rowSpan='8'>{1}, {0}</td><td class='target' rowSpan='8'>moderate</td></tr>
-	<tr><td class='source'>long</td></tr>
-	<tr><td class='source'>medium</td></tr>
-	<tr><td class='source'>short</td></tr>
-	<tr><td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>full</td></tr>
-	<tr><td class='source'>long</td></tr>
-	<tr><td class='source'>medium</td></tr>
-	<tr><td class='source'>short</td></tr>
+	<tr><td class='source' rowSpan='103'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='55'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='3'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='source' rowSpan='105'>tt</td><td class='target'>d MMMM, y 'ел', EEEE</td><td class='target'>d MMMM, y 'ел', EEEE</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long</td><td class='target'>d MMMM, y 'ел'</td><td class='target'>d MMMM, y 'ел'</td></tr>
+	<tr><td class='source'>medium</td><td class='target'>d MMM, y 'ел'</td><td class='target'>d MMM, y 'ел'</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full-atTime</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='4'>{1}, {0}</td></tr>
+	<tr><td class='source'>long-atTime</td></tr>
+	<tr><td class='source'>medium-atTime</td></tr>
+	<tr><td class='source'>short-atTime</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Gy</td><td class='target'>G y 'ел'</td><td class='target'>G y 'ел'</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y 'ел', MMM</td><td class='target'>G y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>yMMM</td><td class='target'>y 'ел', MMM</td><td class='target'>y 'ел', MMM</td></tr>
+	<tr><td class='source'>yMMMd</td><td class='target'>y 'ел', d MMM</td><td class='target'>y 'ел', d MMM</td><td class='target'>basic</td></tr>
+	<tr><td class='source'>yMMMEd</td><td class='target'>y 'ел', d MMM, E</td><td class='target'>y 'ел', d MMM, E</td><td class='target' rowSpan='5'>moderate</td></tr>
+	<tr><td class='source'>yMMMM</td><td class='target'>y 'ел', MMMM</td><td class='target'>y 'ел', MMMM</td></tr>
+	<tr><td class='source'>yQQQ</td><td class='target'>y 'ел', QQQ</td><td class='target'>y 'ел', QQQ</td></tr>
+	<tr><td class='source'>yQQQQ</td><td class='target'>y 'ел', QQQQ</td><td class='target'>y 'ел', QQQQ</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td><td class='source'>h</td><td class='target'>h a</td><td class='target'>h a</td></tr>
+	<tr><td class='source'>hm</td><td class='target'>h:mm a</td><td class='target'>h:mm a</td><td class='target' rowSpan='3'>basic</td></tr>
+	<tr><td class='source'>hms</td><td class='target'>h:mm:ss a</td><td class='target'>h:mm:ss a</td></tr>
+	<tr><td class='source'>hmsv</td><td class='target'>h:mm:ss a v</td><td class='target'>h:mm:ss a v</td></tr>
+	<tr><td class='source'>hmv</td><td class='target'>h:mm a v</td><td class='target'>h:mm a v</td><td class='target' rowSpan='82'>moderate</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y 'ел' – G y 'ел'</td><td class='target'>G y 'ел' – G y 'ел'</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y 'ел'</td><td class='target'>G y–y 'ел'</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y 'ел', MMM – G y 'ел', MMM</td><td class='target'>G y 'ел', MMM – G y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y 'ел', MMM–MMM</td><td class='target'>G y 'ел', MMM–MMM</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y 'ел', d–d MMM</td><td class='target'>G y 'ел', d–d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y 'ел', d MMM – G y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM – G y 'ел', d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y 'ел', d MMM – d MMM</td><td class='target'>G y 'ел', d MMM – d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y 'ел', d MMM – y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM – y 'ел', d MMM</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y 'ел', d MMM, E – G y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E – G y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>y 'ел', MMM – MMM</td><td class='target'>y 'ел', MMM – MMM</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>y 'ел', MMM – y 'ел', MMM</td><td class='target'>y 'ел', MMM – y 'ел', MMM</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>y 'ел', d–d MMM</td><td class='target'>y 'ел', d–d MMM</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>y 'ел', d MMM – d MMM</td><td class='target'>y 'ел', d MMM – d MMM</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>y 'ел', d MMM – y 'ел', d MMM</td><td class='target'>y 'ел', d MMM – y 'ел', d MMM</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target' rowSpan='2'>y 'ел', d MMM, E – d MMM, E</td><td class='target' rowSpan='2'>y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>y 'ел', d MMM, E – y 'ел', d MMM, E</td><td class='target'>y 'ел', d MMM, E – y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>y 'ел', MMMM – MMMM</td><td class='target'>y 'ел', MMMM – MMMM</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>y 'ел', MMMM – y 'ел', MMMM</td><td class='target'>y 'ел', MMMM – y 'ел', MMMM</td></tr>
+	<tr><td class='source' rowSpan='10'><a name='Formats - Intervals - 12 Hour Time Formats' href='#Formats - Intervals - 12 Hour Time Formats'>Formats - Intervals - 12 Hour Time Formats</a></td><td class='source'>h/a</td><td class='target'>h a – h a</td><td class='target'>h a – h a</td></tr>
+	<tr><td class='source'>h/h</td><td class='target'>h–h a</td><td class='target'>h–h a</td></tr>
+	<tr><td class='source'>hm/a</td><td class='target'>h:mm a – h:mm a</td><td class='target'>h:mm a – h:mm a</td></tr>
+	<tr><td class='source'>hm/h</td><td class='target' rowSpan='2'>h:mm–h:mm a</td><td class='target' rowSpan='2'>h:mm–h:mm a</td></tr>
+	<tr><td class='source'>hm/m</td></tr>
+	<tr><td class='source'>hmv/a</td><td class='target'>h:mm a – h:mm a v</td><td class='target'>h:mm a – h:mm a v</td></tr>
+	<tr><td class='source'>hmv/h</td><td class='target' rowSpan='2'>h:mm–h:mm a v</td><td class='target' rowSpan='2'>h:mm–h:mm a v</td></tr>
+	<tr><td class='source'>hmv/m</td></tr>
+	<tr><td class='source'>hv/a</td><td class='target'>h a – h a v</td><td class='target'>h a – h a v</td></tr>
+	<tr><td class='source'>hv/h</td><td class='target'>h–h a v</td><td class='target'>h–h a v</td></tr>
+	<tr><td class='source' rowSpan='48'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='2'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>d MMMM, y 'ел' (G), EEEE</td><td class='target'>d MMMM, y 'ел' (G), EEEE</td></tr>
+	<tr><td class='source'>long</td><td class='target'>d MMMM, y 'ел' (G)</td><td class='target'>d MMMM, y 'ел' (G)</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full-atTime</td><td class='target' rowSpan='4'>▷missing◁</td><td class='target' rowSpan='4'>{1}, {0}</td></tr>
+	<tr><td class='source'>long-atTime</td></tr>
+	<tr><td class='source'>medium-atTime</td></tr>
+	<tr><td class='source'>short-atTime</td></tr>
+	<tr><td class='source' rowSpan='13'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Gy</td><td class='target'>G y 'ел'</td><td class='target'>G y 'ел'</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y 'ел', MMM</td><td class='target'>G y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y 'ел'</td><td class='target' rowSpan='2'>G y 'ел'</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>GGGGG y 'ел', MM</td><td class='target'>GGGGG y 'ел', MM</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y 'ел', MMM</td><td class='target'>G y 'ел', MMM</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y 'ел', MMMM</td><td class='target'>G y 'ел', MMMM</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y 'ел', QQQ</td><td class='target'>G y 'ел', QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y 'ел', QQQQ</td><td class='target'>G y 'ел', QQQQ</td></tr>
+	<tr><td class='source' rowSpan='29'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Gy/G</td><td class='target'>G y 'ел' – G y 'ел'</td><td class='target'>G y 'ел' – G y 'ел'</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>G y–y 'ел'</td><td class='target'>G y–y 'ел'</td></tr>
+	<tr><td class='source'>GyM/G</td><td class='target'>GGGGG y 'ел', MM – GGGGG y 'ел', MM</td><td class='target'>GGGGG y 'ел', MM – GGGGG y 'ел', MM</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>GGGGG y 'ел', MM – y 'ел', MM</td><td class='target' rowSpan='2'>GGGGG y 'ел', MM – y 'ел', MM</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMMM/G</td><td class='target'>G y 'ел', MMM – G y 'ел', MMM</td><td class='target'>G y 'ел', MMM – G y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMM/M</td><td class='target'>G y 'ел', MMM–MMM</td><td class='target'>G y 'ел', MMM–MMM</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>G y 'ел', d–d MMM</td><td class='target'>G y 'ел', d–d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/G</td><td class='target'>G y 'ел', d MMM – G y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM – G y 'ел', d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/M</td><td class='target'>G y 'ел', d MMM – d MMM</td><td class='target'>G y 'ел', d MMM – d MMM</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>G y 'ел', d MMM – y 'ел' d MMM</td><td class='target'>G y 'ел', d MMM – y 'ел' d MMM</td></tr>
+	<tr><td class='source'>GyMMMEd/d</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/G</td><td class='target'>G y 'ел', d MMM, E – G y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E – G y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/M</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y–y 'ел'</td><td class='target'>G y–y 'ел'</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>GGGGG y 'ел', MM – y 'ел', MM</td><td class='target' rowSpan='2'>GGGGG y 'ел', MM – y 'ел', MM</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y 'ел', MMM–MMM</td><td class='target'>G y 'ел', MMM–MMM</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td><td class='target'>G y 'ел', MMM – y 'ел', MMM</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y 'ел', d–d MMM</td><td class='target'>G y 'ел', d–d MMM</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y 'ел', d MMM – d MMM</td><td class='target'>G y 'ел', d MMM – d MMM</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y 'ел', d MMM – y 'ел', d MMM</td><td class='target'>G y 'ел', d MMM – y 'ел', d MMM</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y 'ел' d MMM, E – d MMM, E</td><td class='target'>G y 'ел' d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td><td class='target'>G y 'ел', d MMM, E – d MMM, E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td><td class='target'>G y 'ел', d MMM, E – y 'ел', d MMM, E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y 'ел', MMMM–MMMM</td><td class='target'>G y 'ел', MMMM–MMMM</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y 'ел', MMMM – y 'ел', MMMM</td><td class='target'>G y 'ел', MMMM – y 'ел', MMMM</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='2'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td><td class='source' rowSpan='2'><a name='Standard Patterns ' href='#Standard Patterns '>Standard Patterns </a></td><td class='source'>standard-currency-noCurrency</td><td class='target' rowSpan='2'>#,##0.00 ¤</td><td class='target' rowSpan='2'>#,##0.00</td><td class='target'>comprehensive</td></tr>
+	<tr><td class='source'>accounting-currency-noCurrency</td><td class='target'>moderate</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='https://www.unicode.org/copyright.html'>
 <img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>

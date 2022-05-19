@@ -58,25 +58,83 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='20'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='8'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='20'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='4'>long</td><td class='source' rowSpan='2'>ha</td><td class='target'>▷missing◁</td><td class='target'>{1} 'da' {0}</td><td class='target' rowSpan='20'>moderate</td></tr>
-	<tr><td class='target'>{1} 'da' {0}</td><td class='target'>{1}, {0}</td></tr>
-	<tr><td class='source' rowSpan='2'>ha_NE</td><td class='target'>▷missing◁</td><td class='target'>{1} 'da' {0}</td></tr>
-	<tr><td class='target'>{1} 'da' {0}</td><td class='target' rowSpan='5'>{1}, {0}</td></tr>
-	<tr><td class='source' rowSpan='2'>medium</td><td class='source'>ha</td><td class='target' rowSpan='5'>▷missing◁</td></tr>
+	<tr><td class='source' rowSpan='54'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='42'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Time Formats' href='#Formats - Standard - Time Formats'>Formats - Standard - Time Formats</a></td><td class='source'>full</td><td class='source' rowSpan='4'>ha_GH</td><td class='target'>h:mm:ss a zzzz</td><td class='target'>h:mm:ss a zzzz</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>long</td><td class='target'>h:mm:ss a z</td><td class='target'>h:mm:ss a z</td></tr>
+	<tr><td class='source'>medium</td><td class='target'>h:mm:ss a</td><td class='target'>h:mm:ss a</td></tr>
+	<tr><td class='source'>short</td><td class='target'>h:mm a</td><td class='target'>h:mm a</td></tr>
+	<tr><td class='source' rowSpan='8'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='2'>long</td><td class='source'>ha</td><td class='target' rowSpan='2'>{1} 'da' {0}</td><td class='target' rowSpan='2'>{1}, {0}</td></tr>
 	<tr><td class='source'>ha_NE</td></tr>
-	<tr><td class='source' rowSpan='2'>short</td><td class='source'>ha</td></tr>
+	<tr><td class='source' rowSpan='2'>long-atTime</td><td class='source'>ha</td><td class='target' rowSpan='6'>▷missing◁</td><td class='target' rowSpan='2'>{1} 'da' {0}</td></tr>
 	<tr><td class='source'>ha_NE</td></tr>
-	<tr><td class='source' rowSpan='12'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='4'>full</td><td class='source' rowSpan='2'>ha</td><td class='target'>{0} 'da' {1}</td></tr>
-	<tr><td class='target'>{0} 'da' {1}</td><td class='target'>{0}, {1}</td></tr>
-	<tr><td class='source' rowSpan='2'>ha_NE</td><td class='target'>▷missing◁</td><td class='target'>{0} 'da' {1}</td></tr>
-	<tr><td class='target'>{0} 'da' {1}</td><td class='target'>{0}, {1}</td></tr>
-	<tr><td class='source' rowSpan='4'>long</td><td class='source' rowSpan='2'>ha</td><td class='target'>▷missing◁</td><td class='target'>{0} 'da' {1}</td></tr>
-	<tr><td class='target'>{0} 'da' {1}</td><td class='target'>{0}, {1}</td></tr>
-	<tr><td class='source' rowSpan='2'>ha_NE</td><td class='target'>▷missing◁</td><td class='target'>{0} 'da' {1}</td></tr>
-	<tr><td class='target'>{0} 'da' {1}</td><td class='target' rowSpan='5'>{0}, {1}</td></tr>
-	<tr><td class='source' rowSpan='2'>medium</td><td class='source'>ha</td><td class='target' rowSpan='4'>▷missing◁</td></tr>
+	<tr><td class='source' rowSpan='2'>medium-atTime</td><td class='source'>ha</td><td class='target' rowSpan='4'>{1}, {0}</td></tr>
 	<tr><td class='source'>ha_NE</td></tr>
-	<tr><td class='source' rowSpan='2'>short</td><td class='source'>ha</td></tr>
+	<tr><td class='source' rowSpan='2'>short-atTime</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td><td class='source' rowSpan='2'>hm</td><td class='source'>ha</td><td class='target' rowSpan='2'>h:mm a</td><td class='target' rowSpan='2'>h:mm a</td><td class='target' rowSpan='4'>basic</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>hms</td><td class='source'>ha</td><td class='target' rowSpan='2'>h:mm:ss a</td><td class='target' rowSpan='2'>h:mm:ss a</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='22'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source' rowSpan='2'>MEd/d</td><td class='source'>ha</td><td class='target' rowSpan='2'>E, dd/M – E, dd/M</td><td class='target' rowSpan='2'>E, dd/M – E, dd/M</td><td class='target' rowSpan='38'>moderate</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>ha</td><td class='target' rowSpan='4'>MM/y – MM/y</td><td class='target' rowSpan='4'>MM/y – MM/y</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/y</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>ha</td><td class='target' rowSpan='4'>dd/MM/y – dd/MM/y</td><td class='target' rowSpan='4'>dd/MM/y – dd/MM/y</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>ha</td><td class='target' rowSpan='4'>y-MM-dd, E – y-MM-dd, E</td><td class='target' rowSpan='4'>y-MM-dd, E – y-MM-dd, E</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMMM/y</td><td class='source'>ha</td><td class='target' rowSpan='2'>y MMM – y MMM</td><td class='target' rowSpan='2'>y MMM – y MMM</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMMMd/y</td><td class='source'>ha</td><td class='target' rowSpan='2'>y MMM d – y MMM d</td><td class='target' rowSpan='2'>y MMM d – y MMM d</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMMMEd/y</td><td class='source'>ha</td><td class='target' rowSpan='2'>y MMM d, E – y MMM d, E</td><td class='target' rowSpan='2'>y MMM d, E – y MMM d, E</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMMMM/y</td><td class='source'>ha</td><td class='target' rowSpan='2'>y MMMM – y MMMM</td><td class='target' rowSpan='2'>y MMMM – y MMMM</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Intervals - 12 Hour Time Formats' href='#Formats - Intervals - 12 Hour Time Formats'>Formats - Intervals - 12 Hour Time Formats</a></td><td class='source' rowSpan='2'>h/a</td><td class='source'>ha</td><td class='target' rowSpan='2'>h a – h a</td><td class='target' rowSpan='2'>h a – h a</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>hm/a</td><td class='source'>ha</td><td class='target' rowSpan='2'>h:mm a – h:mm a</td><td class='target' rowSpan='2'>h:mm a – h:mm a</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Generic' href='#Generic'>Generic</a></td><td class='source' rowSpan='12'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source' rowSpan='2'>full</td><td class='source'>ha</td><td class='target' rowSpan='4'>{0} 'da' {1}</td><td class='target' rowSpan='4'>{0}, {1}</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>long</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>full-atTime</td><td class='source'>ha</td><td class='target' rowSpan='8'>▷missing◁</td><td class='target' rowSpan='4'>{0} 'da' {1}</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>long-atTime</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>medium-atTime</td><td class='source'>ha</td><td class='target' rowSpan='4'>{0}, {1}</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>short-atTime</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='24'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='24'><a name='Compact Decimal Formatting' href='#Compact Decimal Formatting'>Compact Decimal Formatting</a></td><td class='source' rowSpan='24'><a name='Short Currency ' href='#Short Currency '>Short Currency </a></td><td class='source' rowSpan='2'>10-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤0B</td><td class='target' rowSpan='4'>¤ 0B</td><td class='target' rowSpan='24'>modern</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>10-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>11-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤00B</td><td class='target' rowSpan='4'>¤ 00B</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>11-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>12-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤000B</td><td class='target' rowSpan='4'>¤ 000B</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>12-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>13-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤0T</td><td class='target' rowSpan='4'>¤ 0T</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>13-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>14-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤00T</td><td class='target' rowSpan='4'>¤ 00T</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>14-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>15-digits-short-one-alphaNextToNumber</td><td class='source'>ha</td><td class='target' rowSpan='4'>¤000T</td><td class='target' rowSpan='4'>¤ 000T</td></tr>
+	<tr><td class='source'>ha_NE</td></tr>
+	<tr><td class='source' rowSpan='2'>15-digits-short-other-alphaNextToNumber</td><td class='source'>ha</td></tr>
 	<tr><td class='source'>ha_NE</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='https://www.unicode.org/copyright.html'>
