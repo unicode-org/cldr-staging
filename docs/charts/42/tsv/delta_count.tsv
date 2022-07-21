@@ -144,9 +144,9 @@
 93	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-core
 92	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMMMM/y
 92	Date & Time	Generic	Formats - Intervals - Date Formats	yMMMEd/y
+92	Miscellaneous	Person Name Formats	NameOrder for Locales	givenFirst
 91	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMMM/y
 91	Units	Duration	quarter	short-other-nominative
-91	Miscellaneous	Person Name Formats	NameOrder for Locales	givenFirst
 91	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-prefix
 91	Locale Display Names	Territories (Oceania)	Australasia	NZ-variant
 89	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMd/M
@@ -637,6 +637,10 @@
 12	Numbers	Number Formatting Patterns	Standard Patterns using Arabic-Indic Digits (arab)	standard-currency-noCurrency
 12	Units	Duration	quarter	long-many-nominative
 12	Date & Time	Gregorian	Eras - abbreviated	0-variant
+12	Date & Time	Indian	Months - wide - Formatting	Apr
+12	Date & Time	Indian	Months - wide - Formatting	Sep
+12	Date & Time	Indian	Months - wide - Formatting	Nov
+12	Date & Time	Indian	Months - wide - Formatting	Dec
 12	Date & Time	Buddhist	Formats - Intervals - Date Formats	yMEd/d
 12	Date & Time	Buddhist	Formats - Intervals - Date Formats	yMEd/M
 12	Date & Time	Gregorian	Formats - Flexible - Date Formats	Gy
@@ -689,10 +693,14 @@
 12	Locale Display Names	Languages (A-D)	A	Aymara ► ay
 11	Units	Duration	quarter	short-many-nominative
 11	Units	Duration	quarter	narrow-many-nominative
-11	Date & Time	Indian	Months - wide - Formatting	Apr
-11	Date & Time	Indian	Months - wide - Formatting	Sep
-11	Date & Time	Indian	Months - wide - Formatting	Nov
-11	Date & Time	Indian	Months - wide - Formatting	Dec
+11	Date & Time	Indian	Months - wide - Formatting	Jan
+11	Date & Time	Indian	Months - wide - Formatting	Feb
+11	Date & Time	Indian	Months - wide - Formatting	Mar
+11	Date & Time	Indian	Months - wide - Formatting	May
+11	Date & Time	Indian	Months - wide - Formatting	Jun
+11	Date & Time	Indian	Months - wide - Formatting	Jul
+11	Date & Time	Indian	Months - wide - Formatting	Aug
+11	Date & Time	Indian	Months - wide - Formatting	Oct
 11	Date & Time	Buddhist	Formats - Intervals - Date Formats	h/a
 11	Date & Time	Buddhist	Formats - Intervals - Date Formats	hm/a
 11	Date & Time	Buddhist	Formats - Intervals - Date Formats	hm/h
@@ -773,14 +781,6 @@
 11	Locale Display Names	Languages (T-Z)	T	Thai ► th
 11	Characters	Symbols2	math	⁻ –keywords
 10	Date & Time	Indian	Eras - abbreviated	0
-10	Date & Time	Indian	Months - wide - Formatting	Jan
-10	Date & Time	Indian	Months - wide - Formatting	Feb
-10	Date & Time	Indian	Months - wide - Formatting	Mar
-10	Date & Time	Indian	Months - wide - Formatting	May
-10	Date & Time	Indian	Months - wide - Formatting	Jun
-10	Date & Time	Indian	Months - wide - Formatting	Jul
-10	Date & Time	Indian	Months - wide - Formatting	Aug
-10	Date & Time	Indian	Months - wide - Formatting	Oct
 10	Date & Time	Indian	Months - abbreviated - Formatting	Sep
 10	Date & Time	Indian	Months - abbreviated - Formatting	Dec
 10	Date & Time	Buddhist	Formats - Intervals - Date Formats	MEd/d
@@ -882,6 +882,7 @@
 10	Timezones	North America	Newfoundland	generic-long
 10	Units	Duration	quarter	long-one-instrumental
 10	Units	Duration	quarter	long-other-instrumental
+10	Date & Time	Fields	Relative Month	-1
 10	Characters	People & Body	person-role	🫄 –keywords
 10	Date & Time	Gregorian	Formats - Flexible - Date Formats	MEd
 10	Units	Graphics	dot	narrow-one-nominative
@@ -1039,6 +1040,7 @@
 9	Timezones	Russia	Yekaterinburg	daylight-long
 9	Timezones	Eastern Asia	Hong_Kong	daylight-long
 9	Timezones	Australasia	Norfolk	daylight-long
+9	Timezones	Oceania	Samoa	daylight-long
 9	Timezones	Overrides	Europe/Dublin	daylight-long
 9	Currencies	Western Africa	Western Africa: St. Helena	SHP-name-other
 9	Characters	Smileys & Emotion	face-tongue	😋 –keywords
@@ -1054,7 +1056,7 @@
 9	Units	Duration	quarter	long-other-locative
 9	Characters	Smileys & Emotion	face-neutral-skeptical	🫥 -name
 9	Date & Time	Gregorian	Months - wide - Formatting	Oct
-9	Date & Time	Fields	Relative Month	-1
+9	Date & Time	Fields	Relative Month Short	-1
 9	Date & Time	Fields	Relative Week	-1
 9	Date & Time	Fields	Relative Week Short	-1
 9	Characters	People & Body	person-role	🫃 –keywords
@@ -1068,6 +1070,8 @@
 9	Characters	Smileys & Emotion	face-affection	🥰 –keywords
 9	Characters	Activities	arts & crafts	🪡 –keywords
 9	Locale Display Names	Languages (O-S)	S	Spanish ► es
+9	Date & Time	Fields	Relative Month	0
+9	Date & Time	Fields	Relative Month	1
 9	Characters	Smileys & Emotion	face-unwell	🥴 –keywords
 9	Characters	Smileys & Emotion	face-hat	🥳 –keywords
 9	Characters	Objects	household	🫧 –keywords
@@ -1114,7 +1118,6 @@
 8	Numbers	Number Formatting Patterns	Standard Patterns 	standard-currency
 8	Currencies	North America (C)	Northern America: Bermuda	BMD-name-other
 8	Currencies	Western Asia (C)	Western Asia: Israel	ILS-name-other
-8	Miscellaneous	Minimal Pairs	Ordinal	other
 8	Locale Display Names	Locale Variants	null	SYNNEJYL
 8	Numbers	Compact Decimal Formatting	Short Currency 	4-digits-short-two-alphaNextToNumber
 8	Numbers	Compact Decimal Formatting	Short Currency 	5-digits-short-two-alphaNextToNumber
@@ -1280,7 +1283,6 @@
 8	Timezones	Oceania	Cook	standard-long
 8	Timezones	Oceania	Cook	daylight-long
 8	Timezones	Oceania	Niue	standard-long
-8	Timezones	Oceania	Samoa	daylight-long
 8	Timezones	Oceania	Tonga	daylight-long
 8	Timezones	Overrides	Europe/London	daylight-long
 8	Currencies	North America (C)	Central America: Nicaragua	NIO-name-other
@@ -1306,7 +1308,6 @@
 8	Timezones	South America	Paraguay	generic-long
 8	Units	Duration	quarter	long-few-accusative
 8	Characters	Smileys & Emotion	face-hand	🫡 -name
-8	Date & Time	Fields	Relative Month Short	-1
 8	Date & Time	Fields	Relative Month Narrow	-1
 8	Characters	Smileys & Emotion	face-smiling	🫠 –keywords
 8	Date & Time	Gregorian	Formats - Flexible - Date Formats	Md
@@ -1330,6 +1331,7 @@
 8	Date & Time	Fields	Date Fields	week-short
 8	Date & Time	Fields	Date Fields	weekday
 8	Date & Time	Fields	Relative Year Narrow	1
+8	Date & Time	Fields	Relative Month Short	1
 8	Date & Time	Fields	Relative Month Narrow	0
 8	Date & Time	Fields	Relative Month Narrow	1
 8	Date & Time	Fields	Relative Week Short	0
@@ -1356,8 +1358,6 @@
 8	Locale Display Names	Territories (Europe)	Northern Europe	LT
 8	Date & Time	Fields	Relative Year	-1
 8	Date & Time	Fields	Relative Year	1
-8	Date & Time	Fields	Relative Month	0
-8	Date & Time	Fields	Relative Month	1
 8	Date & Time	Fields	Relative Week	0
 8	Date & Time	Fields	Relative Week	1
 8	Characters	Smileys & Emotion	face-unwell	🥶 –keywords
@@ -1645,7 +1645,10 @@
 7	Timezones	Antarctica	DumontDUrville	standard-long
 7	Timezones	Oceania	Gilbert_Islands	standard-long
 7	Timezones	Oceania	Marshall_Islands	standard-long
+7	Timezones	Oceania	New_Caledonia	standard-long
+7	Timezones	Oceania	New_Caledonia	daylight-long
 7	Timezones	Oceania	Phoenix_Islands	standard-long
+7	Timezones	Oceania	Samoa	standard-long
 7	Timezones	Oceania	Solomon	standard-long
 7	Timezones	Oceania	Tonga	generic-long
 7	Timezones	Oceania	Tonga	standard-long
@@ -1709,6 +1712,7 @@
 7	Date & Time	Gregorian	Day Periods - abbreviated - Formatting	pm
 7	Date & Time	Gregorian	Formats - Flexible - Date Formats	yw-other
 7	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMMMd
+7	Miscellaneous	Minimal Pairs	Ordinal	other
 7	Locale Display Names	Scripts	Other	Zzzz
 7	Locale Display Names	Geographic Regions	Unknown Region	ZZ
 7	Currencies	North America (C)	Northern America: United States	USD-name-other
@@ -1720,7 +1724,6 @@
 7	Characters	Objects	medical	🩻 -name
 7	Characters	Symbols2	punctuation	@ –keywords
 7	Date & Time	Fields	Date Fields	day-narrow
-7	Date & Time	Fields	Relative Month Short	1
 7	Date & Time	Fields	Relative Week Narrow	0
 7	Date & Time	Gregorian	Formats - Flexible - Date Formats	Ed
 7	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMMEd
@@ -2095,13 +2098,10 @@
 6	Timezones	Oceania	Line_Islands	standard-long
 6	Timezones	Oceania	Marquesas	standard-long
 6	Timezones	Oceania	Nauru	standard-long
-6	Timezones	Oceania	New_Caledonia	standard-long
-6	Timezones	Oceania	New_Caledonia	daylight-long
 6	Timezones	Oceania	Palau	standard-long
 6	Timezones	Oceania	Papua_New_Guinea	standard-long
 6	Timezones	Oceania	Pitcairn	standard-long
 6	Timezones	Oceania	Ponape	standard-long
-6	Timezones	Oceania	Samoa	standard-long
 6	Timezones	Oceania	Tahiti	standard-long
 6	Timezones	Oceania	Tokelau	standard-long
 6	Timezones	Oceania	Truk	standard-long
@@ -2499,6 +2499,8 @@
 5	Characters	Symbols2	transport-sign	🚾 –keywords
 5	Characters	Symbols2	zodiac	♈ –keywords
 5	Characters	Symbols2	zodiac	♋ –keywords
+5	Characters	Symbols2	zodiac	♌ –keywords
+5	Characters	Symbols2	zodiac	♏ –keywords
 5	Characters	Symbols2	zodiac	♓ –keywords
 5	Characters	Symbols2	punctuation	* –keywords
 5	Characters	Symbols2	currency	£ –keywords
@@ -3369,9 +3371,7 @@
 4	Characters	Symbols2	arrow	⤵ –keywords
 4	Characters	Symbols2	zodiac	♉ –keywords
 4	Characters	Symbols2	zodiac	♊ –keywords
-4	Characters	Symbols2	zodiac	♌ –keywords
 4	Characters	Symbols2	zodiac	♎ –keywords
-4	Characters	Symbols2	zodiac	♏ –keywords
 4	Characters	Symbols2	zodiac	♐ –keywords
 4	Characters	Symbols2	zodiac	♑ –keywords
 4	Characters	Symbols2	zodiac	♒ –keywords
@@ -3820,6 +3820,7 @@
 4	Units	Volume	cup-metric	short-displayName
 4	Units	Volume	pint	narrow-one-nominative
 4	Units	Volume	jigger	long-displayName
+4	Units	Energy and Power	foodcalorie	short-displayName
 4	Units	Energy and Power	therm-us	narrow-other-nominative
 4	Units	Coordinates	west	long
 4	Units	Other Units	permille	narrow-displayName
@@ -4516,7 +4517,9 @@
 3	Characters	Symbols2	arrow	⤵ -name
 3	Characters	Symbols2	religion	☸ –keywords
 3	Characters	Symbols2	religion	✝ -name
+3	Characters	Symbols2	zodiac	♌ -name
 3	Characters	Symbols2	zodiac	♍ –keywords
+3	Characters	Symbols2	zodiac	♏ -name
 3	Characters	Symbols2	av-symbol	⏯ –keywords
 3	Characters	Symbols2	av-symbol	📳 –keywords
 3	Characters	Symbols2	punctuation	❗ –keywords
@@ -4912,7 +4915,7 @@
 3	Units	Graphics	dot	narrow-displayName
 3	Units	Volume	cup-metric	short-one-nominative
 3	Units	Volume	cup-metric	short-other-nominative
-3	Units	Energy and Power	foodcalorie	short-displayName
+3	Units	Energy and Power	foodcalorie	short-other-nominative
 3	Units	Weather	celsius	narrow-one-nominative
 3	Units	Weather	celsius	narrow-other-nominative
 3	Units	Coordinates	east	long
@@ -5556,6 +5559,7 @@
 3	Units	Compound Units	10p2	long
 3	Characters	Smileys & Emotion	emotion	💘 –keywords
 3	Characters	Smileys & Emotion	emotion	💔 –keywords
+3	Characters	Smileys & Emotion	emotion	❤‍🩹 –keywords
 3	Characters	Smileys & Emotion	emotion	💢 -name
 3	Characters	Smileys & Emotion	emotion	💨 –keywords
 3	Characters	Smileys & Emotion	emotion	💣 –keywords
@@ -5832,10 +5836,8 @@
 2	Characters	Symbols2	zodiac	♉ -name
 2	Characters	Symbols2	zodiac	♊ -name
 2	Characters	Symbols2	zodiac	♋ -name
-2	Characters	Symbols2	zodiac	♌ -name
 2	Characters	Symbols2	zodiac	♍ -name
 2	Characters	Symbols2	zodiac	♎ -name
-2	Characters	Symbols2	zodiac	♏ -name
 2	Characters	Symbols2	zodiac	♐ -name
 2	Characters	Symbols2	zodiac	♑ -name
 2	Characters	Symbols2	zodiac	♒ -name
@@ -5904,7 +5906,6 @@
 2	Numbers	Number Formatting Patterns	Standard Patterns using Bangla Digits (beng)	standard-currency-alphaNextToNumber
 2	Units	Compound Units	times	long
 2	Characters	Symbols2	arrow	↘ –keywords
-2	Miscellaneous	Minimal Pairs	Ordinal	few
 2	Date & Time	Japanese	Formats - Intervals - Date Formats	MEd/d
 2	Date & Time	Japanese	Formats - Intervals - Date Formats	MEd/M
 2	Date & Time	Japanese	Formats - Intervals - Date Formats	MMMEd/d
@@ -6181,7 +6182,6 @@
 2	Units	Energy and Power	foodcalorie	long-displayName
 2	Units	Energy and Power	foodcalorie	long-other-nominative
 2	Units	Energy and Power	foodcalorie	short-one-nominative
-2	Units	Energy and Power	foodcalorie	short-other-nominative
 2	Characters	People & Body	hand-single-finger	👆 -name
 2	Characters	People & Body	body-parts	👄 –keywords
 2	Characters	People & Body	person	🧔 –keywords
@@ -6487,8 +6487,8 @@
 2	Characters	Travel & Places	time	🕞 –keywords
 2	Characters	Travel & Places	time	🕢 –keywords
 2	Date & Time	Gregorian	Day Periods - wide - Standalone	evening1
-2	Date & Time	Gregorian	Day Periods - wide - Standalone	night1
 2	Date & Time	Gregorian	Day Periods - abbreviated - Standalone	evening1
+2	Date & Time	Gregorian	Day Periods - narrow - Standalone	evening1
 2	Date & Time	Coptic	Formats - Intervals - Date Formats	Md/d
 2	Date & Time	Coptic	Formats - Intervals - Date Formats	Md/M
 2	Date & Time	Ethiopic	Formats - Intervals - Date Formats	Md/d
@@ -6907,6 +6907,7 @@
 2	Characters	Smileys & Emotion	emotion	💌 -name
 2	Characters	Smileys & Emotion	emotion	💘 -name
 2	Characters	Smileys & Emotion	emotion	💔 -name
+2	Characters	Smileys & Emotion	emotion	❤‍🩹 -name
 2	Characters	People & Body	hand-fingers-open	🤚 -name
 2	Characters	People & Body	hand-fingers-closed	🤜 -name
 2	Characters	People & Body	hands	🤝 -name
@@ -7155,7 +7156,6 @@
 2	Characters	Smileys & Emotion	emotion	💓 –keywords
 2	Characters	Smileys & Emotion	emotion	💟 –keywords
 2	Characters	Smileys & Emotion	emotion	❤‍🔥 –keywords
-2	Characters	Smileys & Emotion	emotion	❤‍🩹 –keywords
 2	Characters	Smileys & Emotion	emotion	❤ –keywords
 2	Characters	Symbols2	transport-sign	♿ –keywords
 2	Units	Graphics	dot-per-centimeter	short-one-nominative
@@ -7343,7 +7343,6 @@
 1	Date & Time	Gregorian	Day Periods - wide - Formatting	morning2
 1	Date & Time	Gregorian	Day Periods - wide - Formatting	afternoon1
 1	Numbers	Number Formatting Patterns	Standard Patterns using Bangla Digits (beng)	standard-currency
-1	Miscellaneous	Minimal Pairs	Ordinal	many
 1	Date & Time	Buddhist	Formats - Intervals - Date Formats	Gy/y
 1	Date & Time	Coptic	Formats - Intervals - Date Formats	yMMM/M
 1	Date & Time	Coptic	Formats - Intervals - Date Formats	yMMMM/M
@@ -10430,6 +10429,7 @@
 1	Characters	Symbols2	alphanum	Ⓜ -name
 1	Miscellaneous	Minimal Pairs	Ordinal	one
 1	Miscellaneous	Minimal Pairs	Ordinal	two
+1	Miscellaneous	Minimal Pairs	Ordinal	few
 1	Currencies	Northern/Western Europe	Northern Europe: Estonia: EEK (old)	EEK-name-one
 1	Currencies	Northern/Western Europe	Northern Europe: Estonia: EEK (old)	EEK-name-other
 1	Units	Duration	quarter	long-one-translative
@@ -10624,11 +10624,11 @@
 1	Currencies	Southern/Eastern Europe	Eastern Europe: Russia	RUB-symbol
 1	Date & Time	Gregorian	Day Periods - wide - Standalone	midnight
 1	Date & Time	Gregorian	Day Periods - wide - Standalone	morning1
+1	Date & Time	Gregorian	Day Periods - wide - Standalone	night1
 1	Date & Time	Gregorian	Day Periods - abbreviated - Standalone	noon
 1	Date & Time	Gregorian	Day Periods - abbreviated - Standalone	morning1
 1	Date & Time	Gregorian	Day Periods - abbreviated - Standalone	night1
 1	Date & Time	Gregorian	Day Periods - narrow - Standalone	morning1
-1	Date & Time	Gregorian	Day Periods - narrow - Standalone	evening1
 1	Date & Time	Gregorian	Day Periods - narrow - Standalone	night1
 1	Date & Time	Generic	Formats - Flexible - 24 Hour Time Formats	H
 1	Date & Time	Generic	Formats - Flexible - 24 Hour Time Formats	Hm
@@ -11270,7 +11270,6 @@
 1	Characters	Smileys & Emotion	emotion	💞 -name
 1	Characters	Smileys & Emotion	emotion	💟 -name
 1	Characters	Smileys & Emotion	emotion	❣ -name
-1	Characters	Smileys & Emotion	emotion	❤‍🩹 -name
 1	Characters	Smileys & Emotion	emotion	❤ -name
 1	Characters	Smileys & Emotion	emotion	💥 -name
 1	Characters	Smileys & Emotion	emotion	💫 -name
