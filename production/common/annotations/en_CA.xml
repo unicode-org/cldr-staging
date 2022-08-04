@@ -27,20 +27,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="[">bracket | crotchet | left square bracket | open square bracket | square bracket</annotation>
 		<annotation cp="]">bracket | close square bracket | crotchet | right square bracket | square bracket</annotation>
 		<annotation cp="}">brace | bracket | close curly bracket | curly brace | curly bracket | gullwing | right curly bracket</annotation>
-		<annotation cp="〈">angle bracket | bracket | chevron | diamond brackets | left angle bracket | pointy bracket | tuple</annotation>
-		<annotation cp="〉">angle bracket | bracket | chevron | diamond brackets | pointy bracket | right angle bracket | tuple</annotation>
-		<annotation cp="《">bracket | double angle bracket | left double angle bracket</annotation>
-		<annotation cp="》">bracket | double angle bracket | right double angle bracket</annotation>
-		<annotation cp="「">bracket | corner bracket | left corner bracket</annotation>
-		<annotation cp="」">bracket | corner bracket | right corner bracket</annotation>
-		<annotation cp="『">bracket | hollow corner bracket | left hollow corner bracket</annotation>
-		<annotation cp="』">bracket | hollow corner bracket | right hollow corner bracket</annotation>
-		<annotation cp="【">bracket | left black lenticular bracket | lens bracket | lenticular bracket</annotation>
-		<annotation cp="】">bracket | lens bracket | lenticular bracket | right black lenticular bracket</annotation>
+		<annotation cp="〈">angle bracket | bracket | chevron | diamond brackets | left angle bracket | open angle bracket | pointy bracket | tuple</annotation>
+		<annotation cp="〉">angle bracket | bracket | chevron | close angle bracket | diamond brackets | pointy bracket | right angle bracket | tuple</annotation>
+		<annotation cp="《">bracket | double angle bracket | left double angle bracket | open double angle bracket</annotation>
+		<annotation cp="》">bracket | close double angle bracket | double angle bracket | right double angle bracket</annotation>
+		<annotation cp="「">bracket | corner bracket | left corner bracket | open corner bracket</annotation>
+		<annotation cp="」">bracket | close corner bracket | corner bracket | right corner bracket</annotation>
+		<annotation cp="『">bracket | hollow corner bracket | left hollow corner bracket | open hollow corner bracket</annotation>
+		<annotation cp="』">bracket | close hollow corner bracket | hollow corner bracket | right hollow corner bracket</annotation>
+		<annotation cp="【">bracket | left black lenticular bracket | lens bracket | lenticular bracket | open black lens bracket</annotation>
+		<annotation cp="】">bracket | close black lens bracket | lens bracket | lenticular bracket | right black lenticular bracket</annotation>
 		<annotation cp="〔">bracket | left tortoise shell bracket | open tortoise shell bracket | shell bracket | tortoise shell bracket</annotation>
 		<annotation cp="〕">bracket | close tortoise shell bracket | right tortoise shell bracket | shell bracket | tortoise shell bracket</annotation>
-		<annotation cp="〖">bracket | hollow lens bracket | hollow lenticular bracket | left hollow lenticular bracket</annotation>
-		<annotation cp="〗">bracket | hollow lens bracket | hollow lenticular bracket | right hollow lenticular bracket</annotation>
+		<annotation cp="〖">bracket | hollow lens bracket | hollow lenticular bracket | left hollow lenticular bracket | open hollow lens bracket</annotation>
+		<annotation cp="〗">bracket | close hollow lens bracket | hollow lens bracket | hollow lenticular bracket | right hollow lenticular bracket</annotation>
 		<annotation cp="@" type="tts">at sign</annotation>
 		<annotation cp="%">per cent | per-cent | percent | percentage</annotation>
 		<annotation cp="↹">leftwards arrow to bar over rightwards arrow to bar</annotation>
@@ -121,7 +121,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="▭">hollow rectangle | white rectangle</annotation>
 		<annotation cp="▮">black vertical rectangle | filled vertical rectangle</annotation>
 		<annotation cp="▰">black parallelogram | filled parallelogram</annotation>
-		<annotation cp="▲">arrow | black up-pointing triangle | triangle | up</annotation>
+		<annotation cp="▲">arrow | black up-pointing triangle | filled up-pointing triangle | triangle | up</annotation>
 		<annotation cp="△">hollow up-pointing triangle | white up-pointing triangle</annotation>
 		<annotation cp="▴">black up-pointing small triangle | filled up-pointing small triangle</annotation>
 		<annotation cp="▵">hollow up-pointing small triangle | white up-pointing small triangle</annotation>
@@ -130,7 +130,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="▹">hollow right-pointing small triangle | white right-pointing small triangle</annotation>
 		<annotation cp="►">black right-pointing pointer | filled right-pointing pointer</annotation>
 		<annotation cp="▻">hollow right-pointing pointer | white right-pointing pointer</annotation>
-		<annotation cp="▼">arrow | black down-pointing triangle | down | triangle</annotation>
+		<annotation cp="▼">arrow | black down-pointing triangle | down | filled down-pointing triangle | triangle</annotation>
 		<annotation cp="▽">hollow down-pointing triangle | white down-pointing triangle</annotation>
 		<annotation cp="▾">black down-pointing small triangle | filled down-pointing small triangle</annotation>
 		<annotation cp="▿">hollow down-pointing small triangle | white down-pointing small triangle</annotation>
@@ -194,16 +194,19 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😋">delicious | face | face savouring food | savoring | savouring | smile | yum</annotation>
 		<annotation cp="😋" type="tts">face savouring food</annotation>
 		<annotation cp="🤭">face with hand over mouth | oops | whoops</annotation>
+		<annotation cp="🫥">depressed | disappear | dotted line face | dotted-line face | hide | introvert | invisible</annotation>
 		<annotation cp="🫥" type="tts">dotted-line face</annotation>
 		<annotation cp="🤥">face | lie | lying face | Pinocchio</annotation>
 		<annotation cp="😷">cold | doctor | face | face with medical mask | ill | mask | sick</annotation>
-		<annotation cp="🤕">bandage | face | face with head bandage | hurt | injury</annotation>
+		<annotation cp="🤕">bandage | face | face with head bandage | face with head-bandage | hurt | injury</annotation>
 		<annotation cp="🤧">bless you | face | gesundheit | sneeze | sneezing face</annotation>
 		<annotation cp="😵‍💫">dizzy | face with spiral eyes | hypnotised | spiral | trouble | whoa</annotation>
+		<annotation cp="🤠">cowboy | cowboy-hat face | cowgirl | face | hat</annotation>
 		<annotation cp="🤠" type="tts">cowboy-hat face</annotation>
 		<annotation cp="😤">angry | face | face with steam from nose | frustration | triumph | won</annotation>
 		<annotation cp="👽">alien | creature | ET | extraterrestrial | face | fantasy | UFO</annotation>
 		<annotation cp="👾">alien | creature | ET | extraterrestrial | face | monster | UFO</annotation>
+		<annotation cp="😻">cat | eye | face | heart | love | smile | smiling cat face with heart eyes | smiling cat with heart-eyes</annotation>
 		<annotation cp="😻" type="tts">smiling cat face with heart eyes</annotation>
 		<annotation cp="💯">100 | full | hundred | hundred percent | hundred points | one hundred | score</annotation>
 		<annotation cp="💬">balloon | bubble | comic | dialog | dialogue | speech</annotation>
@@ -214,19 +217,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🫱" type="tts">rightward hand</annotation>
 		<annotation cp="🫲">hand | left | leftward | leftwards</annotation>
 		<annotation cp="🫲" type="tts">leftward hand</annotation>
+		<annotation cp="🫳">dismiss | drop | palm down hand | palm-down hand | shoo</annotation>
 		<annotation cp="🫳" type="tts">palm-down hand</annotation>
+		<annotation cp="🫴">beckon | catch | come | offer | palm up hand | palm-up hand</annotation>
 		<annotation cp="🫴" type="tts">palm-up hand</annotation>
 		<annotation cp="👌">hand | OK | perfect</annotation>
 		<annotation cp="🤞">cross | crossed fingers | finger | good luck | hand | luck</annotation>
 		<annotation cp="🤟">hand | ILY | love you gesture | love-you gesture</annotation>
 		<annotation cp="🤘">finger | hand | horns | rock on | sign of the horns</annotation>
+		<annotation cp="🤙">call | call me hand | call-me hand | hand | hang loose | Shaka</annotation>
 		<annotation cp="🤙" type="tts">call-me hand</annotation>
 		<annotation cp="🤛">fist | left-facing fist | leftward</annotation>
 		<annotation cp="🤜">fist | right-facing fist | rightward</annotation>
 		<annotation cp="🙏">ask | folded hands | hand | high five | please | pray | thanks</annotation>
-		<annotation cp="🫷">high five | leftward | leftward pushing hand | push | refuse | stop | wait</annotation>
+		<annotation cp="🫷">high five | leftward | leftward pushing hand | leftward-pushing hand | push | refuse | stop | wait</annotation>
 		<annotation cp="🫷" type="tts">leftward-pushing hand</annotation>
-		<annotation cp="🫸">high five | push | refuse | rightward | rightward pushing hand | stop | wait</annotation>
+		<annotation cp="🫸">high five | push | refuse | rightward | rightward pushing hand | rightward-pushing hand | stop | wait</annotation>
 		<annotation cp="🫸" type="tts">rightward-pushing hand</annotation>
 		<annotation cp="💪">biceps | comic | flex | flexed bicep | muscle</annotation>
 		<annotation cp="💪" type="tts">flexed bicep</annotation>
@@ -244,13 +250,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤶">celebration | Christmas | Claus | Mother | Mrs.</annotation>
 		<annotation cp="🧑‍🎄">Claus, Christmas | Mx. Claus</annotation>
 		<annotation cp="🧑‍🎄" type="tts">Mx. Claus</annotation>
-		<annotation cp="💇">barber | beauty | haircut | parlor | parlour | salon</annotation>
+		<annotation cp="💇">barber | beauty | haircut | parlor | parlour | person getting haircut | salon</annotation>
 		<annotation cp="🏋">lifter | person lifting weights | weight | weightlifter</annotation>
 		<annotation cp="🤹">balance | juggle | multi-task | multitask | person juggling | skill</annotation>
 		<annotation cp="🤹‍♂">juggling | man | multi-task | multitask</annotation>
 		<annotation cp="🤹‍♀">juggling | multi-task | multitask | woman</annotation>
-		<annotation cp="👭">couple | hand | holding hands | two women holding hands | women</annotation>
-		<annotation cp="👬">couple | Gemini | holding hands | men | twins | two men holding hands | zodiac</annotation>
+		<annotation cp="👭">couple | hand | holding hands | two women holding hands | women | women holding hands</annotation>
+		<annotation cp="👬">couple | Gemini | holding hands | men | men holding hands | twins | two men holding hands | zodiac</annotation>
 		<annotation cp="🦳">gray | grey | hair | old | white</annotation>
 		<annotation cp="🐫">Bactrian | camel | hump | two-hump camel</annotation>
 		<annotation cp="🦣">extinct | extinction | large | mammoth | tusk | woolly</annotation>
@@ -260,7 +266,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🧄">flavoring | flavouring | garlic</annotation>
 		<annotation cp="🧅">flavoring | flavouring | onion</annotation>
 		<annotation cp="🌰">chestnut | nut | plant</annotation>
-		<annotation cp="🫚">beer | ginger root | root | spice</annotation>
+		<annotation cp="🫚">beer | ginger | root | spice</annotation>
 		<annotation cp="🫚" type="tts">ginger</annotation>
 		<annotation cp="🥐">bread | breakfast | crescent | croissant | food | French | roll</annotation>
 		<annotation cp="🥖">baguette | bread | food | French</annotation>
@@ -275,7 +281,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🫔">Mexican | tamale | wrapped</annotation>
 		<annotation cp="🧆">chick pea | chickpea | falafel | meatball</annotation>
 		<annotation cp="🍥">cake | fish | fish cake with swirl | narutomaki | pastry | swirl</annotation>
-		<annotation cp="🍦">cream | dessert | ice | icecream | soft | soft serve | sweet</annotation>
+		<annotation cp="🍦">cream | dessert | ice | icecream | soft | soft serve | soft-serve ice cream | sweet</annotation>
 		<annotation cp="🍦" type="tts">soft-serve ice cream</annotation>
 		<annotation cp="🍬">candy | dessert | sweet | sweets</annotation>
 		<annotation cp="🍶">bar | beverage | bottle | cup | drink | sake | saké</annotation>
@@ -327,7 +333,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="✈">aeroplane | airplane | flight</annotation>
 		<annotation cp="🛩">aeroplane | airplane | small airplane | small plane</annotation>
 		<annotation cp="🛫">aeroplane | airplane | check-in | departure | departures | flight departure | plane departure</annotation>
-		<annotation cp="🛬">aeroplane | airplane | arrivals | arriving | flight arrival | landing | plan arrival</annotation>
+		<annotation cp="🛬">aeroplane | airplane | airplane arrival | arrivals | arriving | flight arrival | landing | plan arrival</annotation>
 		<annotation cp="🛸">flying saucer | spaceship | UFO</annotation>
 		<annotation cp="🕧">12 | 12:30 | clock | half past twelve | thirty | twelve | twelve-thirty</annotation>
 		<annotation cp="🕧" type="tts">twelve thirty</annotation>
@@ -367,7 +373,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🥏">flying disc | Frisbee | ultimate</annotation>
 		<annotation cp="🏏">ball | bat | cricket | cricket match | game</annotation>
 		<annotation cp="🏒" type="tts">hockey</annotation>
-		<annotation cp="🏓">ball | bat | game | paddle | ping-pong | table tennis</annotation>
+		<annotation cp="🏓">ball | bat | game | paddle | ping pong | ping-pong | table tennis</annotation>
 		<annotation cp="🥋">judo | karate | martial arts | martial arts uniform | MMA | taekwondo | uniform</annotation>
 		<annotation cp="🎣">fish | fishing pole | fishing rod | pole</annotation>
 		<annotation cp="🤿">diving | diving mask | scuba | snorkelling</annotation>
@@ -394,19 +400,19 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="📼">tape | VHS | video | videocassette | videotape</annotation>
 		<annotation cp="💷">banknote | bill | currency | money | note | pound | sterling</annotation>
 		<annotation cp="✉">e-mail | email | envelope | letter</annotation>
-		<annotation cp="📫">closed | closed postbox with raised flag | mail | mailbox | post | post box | postbox</annotation>
-		<annotation cp="📪">closed | closed postbox with lowered flag | mail | mailbox | post | post box | postbox</annotation>
-		<annotation cp="📬">mail | mailbox | open | open postbox with raised flag | post | post box | postbox</annotation>
-		<annotation cp="📭">mail | mailbox | open | open postbox with lowered flag | post | post box | postbox</annotation>
+		<annotation cp="📫">closed | closed mailbox with raised flag | closed postbox with raised flag | mail | mailbox | post | post box | postbox</annotation>
+		<annotation cp="📪">closed | closed mailbox with lowered flag | closed postbox with lowered flag | mail | mailbox | post | post box | postbox</annotation>
+		<annotation cp="📬">mail | mailbox | open | open mailbox with raised flag | open postbox with raised flag | post | post box | postbox</annotation>
+		<annotation cp="📭">mail | mailbox | open | open mailbox with lowered flag | open postbox with lowered flag | post | post box | postbox</annotation>
 		<annotation cp="📮">mail | mailbox | post | post box | postbox</annotation>
 		<annotation cp="📮" type="tts">mailbox</annotation>
 		<annotation cp="📐">ruler | set | set square | triangle | triangular ruler</annotation>
 		<annotation cp="🔒">closed | locked | padlock</annotation>
 		<annotation cp="🔓">lock | open | padlock | unlock | unlocked</annotation>
-		<annotation cp="🦯">accessibility | blind | guide cane</annotation>
+		<annotation cp="🦯">accessibility | blind | guide cane | white cane</annotation>
 		<annotation cp="🧬">biologist | DNA | evolution | gene | genetics | life</annotation>
 		<annotation cp="🧬" type="tts">DNA</annotation>
-		<annotation cp="🩹">injury | plaster | sticking plaster</annotation>
+		<annotation cp="🩹">adhesive bandage | injury | plaster | sticking plaster</annotation>
 		<annotation cp="🩻">bones | doctor | medical | skeleton | X-ray</annotation>
 		<annotation cp="🩻" type="tts">X-ray</annotation>
 		<annotation cp="🛋">couch | couch and lamp | hotel | lamp | sofa | sofa and lamp</annotation>
@@ -416,7 +422,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🪒">cut-throat | razor | sharp | shave</annotation>
 		<annotation cp="🛒">basket | cart | shopping | trolley</annotation>
 		<annotation cp="⚰">casket | coffin | death</annotation>
-		<annotation cp="🪪">credentials | ID | licence | security</annotation>
+		<annotation cp="🪪">credentials | ID | identification card | licence | security</annotation>
 		<annotation cp="🚮">garbage | litter | litter bin | litter in bin sign | trash</annotation>
 		<annotation cp="🚹">bathroom | lavatory | men’s | men’s room | restroom | washroom | wc</annotation>
 		<annotation cp="🚺">bathroom | ladies’ room | lavatory | restroom | washroom | wc | women’s | women’s room</annotation>
@@ -437,7 +443,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔽">arrow | button | down | downward button | downwards button | red</annotation>
 		<annotation cp="🔽" type="tts">downward button</annotation>
 		<annotation cp="📳">cell | mobile | mode | phone | telephone | vibrate | vibration</annotation>
-		<annotation cp="⁉">! | !? | ? | interrobang | mark | punctuation | question</annotation>
+		<annotation cp="⁉">! | !? | ? | exclamation question mark | interrobang | mark | punctuation | question</annotation>
 		<annotation cp="✅">✓ | button | check | mark | tick</annotation>
 		<annotation cp="☑">✓ | box | check | check box with check | tick | tick box with tick</annotation>
 		<annotation cp="®">r | registered | trademark</annotation>
