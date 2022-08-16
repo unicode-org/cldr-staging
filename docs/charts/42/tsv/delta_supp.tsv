@@ -15,9 +15,12 @@ Supplemental	Alias	language	smd-reason	▷missing◁	deprecated
 Supplemental	Alias	language	smd-replacement	▷missing◁	kmb
 Supplemental	Alias	language	snb-reason	▷missing◁	deprecated
 Supplemental	Alias	language	snb-replacement	▷missing◁	iba
+Supplemental	Alias	unit	metric-ton-reason	▷missing◁	deprecated
+Supplemental	Alias	unit	metric-ton-replacement	▷missing◁	tonne
 Supplemental	IdValidity	language	deprecated	…	… • ajt~u • … • cug • … • lak • … • lno • … • pii • … • smd • snb • … • uun • … • wrd • wya • …
 Supplemental	IdValidity	language	regular	…	… • ajs • … • bpc~e • … • cno~q • … • cuh~l • … • dsz • … • egl~m • … • goa~z • … • imr~t • … • laa~j • lal~n • … • lgk~o • … • lnl~n • … • lqr • … • lsa~e • … • lsv~w • … • nww~y • … • oie • … • phg~o • … • pia~h • pij • … • pzh • … • ria~b • … • rnb • … • rsk~n • … • sma~c • … • snc • … • tof~m • … • ugh • … • uon • … • uum • … • wdt~u • … • wyb • … • wym~n • … • xdq • … • xhm • … • zcd • …
-Supplemental	IdValidity	unit	regular	…	… • duration-quarter • …
+Supplemental	IdValidity	unit	deprecated	…	… • mass-metric-ton • …
+Supplemental	IdValidity	unit	regular	…	… • duration-quarter • … • mass-tonne • …
 Supplemental	Locale	Parent	fr_HT	▷missing◁	ht
 Supplemental	Locale	DefaultContent	plain	…	… • ann_NG • … • bgc_IN • … • bho_IN • … • frr_DE • … • mdf_RU • … • pis_SB • … • raj_IN • … • shn_MM • … • tok_001 • … • vec_IT • …
 Supplemental	Transform	am_Ethi↔︎am_Brai	_alias	▷missing◁	Ethiopic-Braille/Amharic am-Brai-t-am-ethi
@@ -69,34 +72,102 @@ Supplemental	Transform	Latn↔︎Ethi/Williamson	_visibility	▷missing◁	exter
 Supplemental	Transform	sgw_Ethi↔︎Ethi/Gurage_2013	_alias	▷missing◁	Ethiopic-Ethiopic/Gurage und-Ethi-t-sgw-ethi-m0-gurage-2013
 Supplemental	Transform	sgw_Ethi↔︎Ethi/Gurage_2013	_backwardAlias	▷missing◁	Gurage-Ethiopic sgw-Ethi-t-und-ethi-m0-gurage-2013
 Supplemental	Transform	sgw_Ethi↔︎Ethi/Gurage_2013	_visibility	▷missing◁	external
+Supplemental	Units	mass/default	001	…	… • tonne
+Supplemental	Units	IdComponent	and-values	▷missing◁	and
+Supplemental	Units	IdComponent	per-values	▷missing◁	per
+Supplemental	Units	IdComponent	power-values	▷missing◁	cubic
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow10
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow11
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow12
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow13
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow14
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow15
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow2
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow3
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow4
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow5
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow6
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow7
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow8
+Supplemental	Units	IdComponent	power-values	▷missing◁	pow9
+Supplemental	Units	IdComponent	power-values	▷missing◁	square
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	arc
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	british
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	curr
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	dessert
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	fluid
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	light
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	nautical
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	x
+Supplemental	Units	IdComponent	prefix-values	▷missing◁	xxx
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	force
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	imperial
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	luminosity
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	mass
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	metric
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	person
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	radius
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	scandinavian
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	troy
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	unit
+Supplemental	Units	IdComponent	suffix-values	▷missing◁	us
+Supplemental	Units	Constant	meters_per_AU-value	▷missing◁	149597870700
+Supplemental	Units	Constant	sec_per_julian_year-value	▷missing◁	31557600
+Supplemental	Units	Constant	speed_of_light_meters_per_second-value	▷missing◁	299792458
+Supplemental	Units	Convert	metric-ton-baseUnit	kilogram	▷removed◁
 Supplemental	Units	Convert	quarter-baseUnit	▷missing◁	year
+Supplemental	Units	Convert	tonne-baseUnit	▷missing◁	kilogram
+Supplemental	Units	Convert	astronomical-unit-factor	…	meters_per_AU
+Supplemental	Units	Convert	light-year-factor	…	speed_of_light_meters_per_second*sec_per_julian_year
+Supplemental	Units	Convert	metric-ton-factor	1000	▷removed◁
+Supplemental	Units	Convert	parsec-factor	…	meters_per_AU*60*60*180/PI
 Supplemental	Units	Convert	quarter-factor	▷missing◁	1/4
+Supplemental	Units	Convert	tonne-factor	▷missing◁	1000
+Supplemental	Units	Convert	metric-ton-systems	metric	▷removed◁
 Supplemental	Units	Convert	quarter-systems	▷missing◁	metric
+Supplemental	Units	Convert	tonne-systems	▷missing◁	metric
+Supplemental	Likely	Subtag	ajt	▷missing◁	ajt_Arab_TN
 Supplemental	Likely	Subtag	ann	…	ann_Latn_NG
 Supplemental	Likely	Subtag	oc_ES	▷missing◁	oc_Latn_ES
 Supplemental	Likely	Subtag	pis	▷missing◁	pis_Latn_SB
+Supplemental	Likely	Subtag	smd	▷missing◁	smd_Latn_AO
+Supplemental	Likely	Subtag	snb	▷missing◁	snb_Latn_MY
 Supplemental	Likely	Subtag	tok	▷missing◁	tok_Latn_001
-Supplemental	LanguageInfo	ES/oc	populationPercent	▷missing◁	0.01
-Supplemental	LanguageInfo	NG/ann	populationPercent	▷missing◁	0.0015
+Supplemental	LanguageInfo	AU/hnj	populationPercent	▷missing◁	0.0086
+Supplemental	LanguageInfo	BR/vec	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	BR/vec	populationPercent	▷missing◁	0.24
+Supplemental	LanguageInfo	CM/ken	populationPercent	▷missing◁	0.25
+Supplemental	LanguageInfo	CN/hnj	populationPercent	▷missing◁	0.004
+Supplemental	LanguageInfo	DE/frr	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	ES/oc	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	ES/oc	populationPercent	▷missing◁	0.0099
+Supplemental	LanguageInfo	ET/gez	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	FI/sms	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	FR/hnj	populationPercent	▷missing◁	0.19
+Supplemental	LanguageInfo	GB/en_Shaw	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	GF/hnj	populationPercent	▷missing◁	2.4
+Supplemental	LanguageInfo	HR/vec	populationPercent	▷missing◁	0.7
+Supplemental	LanguageInfo	IT/vec	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	LA/hnj	populationPercent	▷missing◁	3
+Supplemental	LanguageInfo	MM/hnj	populationPercent	▷missing◁	0.022
+Supplemental	LanguageInfo	MX/vec	officialStatus	▷missing◁	official_regional
+Supplemental	LanguageInfo	MX/vec	populationPercent	▷missing◁	0.0019
+Supplemental	LanguageInfo	NG/ann	populationPercent	▷missing◁	0
 Supplemental	LanguageInfo	PK/bal	populationPercent	…	2.6
-Supplemental	LanguageInfo	PK/bft	populationPercent	…	0.204
-Supplemental	LanguageInfo	PK/bgn	populationPercent	…	0.505
-Supplemental	LanguageInfo	PK/brh	populationPercent	…	1.27
-Supplemental	LanguageInfo	PK/gjk	populationPercent	…	0.063
-Supplemental	LanguageInfo	PK/gju	populationPercent	…	0.188
-Supplemental	LanguageInfo	PK/hnd	populationPercent	…	0.569
-Supplemental	LanguageInfo	PK/hno	populationPercent	…	1.717
-Supplemental	LanguageInfo	PK/khw	populationPercent	…	0.169
-Supplemental	LanguageInfo	PK/ks	populationPercent	…	0.174
-Supplemental	LanguageInfo	PK/kvx	populationPercent	…	0.172
-Supplemental	LanguageInfo	PK/kxp	populationPercent	…	0.086
-Supplemental	LanguageInfo	PK/mvy	populationPercent	…	0.096
-Supplemental	LanguageInfo	PK/ps	populationPercent	…	15.8
-Supplemental	LanguageInfo	PK/sd	populationPercent	…	14.9
-Supplemental	LanguageInfo	PK/skr	populationPercent	…	12.46
-Supplemental	LanguageInfo	PK/tg_Arab	populationPercent	0.33	▷removed◁
-Supplemental	LanguageInfo	PK/trw	populationPercent	…	0.055
-Supplemental	LanguageInfo	SB/pis	populationPercent	▷missing◁	82.33
+Supplemental	LanguageInfo	PK/hno	populationPercent	…	1.7
+Supplemental	LanguageInfo	PK/ps	populationPercent	…	16
+Supplemental	LanguageInfo	PK/sd	populationPercent	…	15
+Supplemental	LanguageInfo	PK/skr	populationPercent	…	12
+Supplemental	LanguageInfo	PL/prg	populationPercent	▷missing◁	0.0001
+Supplemental	LanguageInfo	SB/pis	populationPercent	▷missing◁	82
+Supplemental	LanguageInfo	SI/vec	populationPercent	▷missing◁	1.4
+Supplemental	LanguageInfo	SR/hnj	populationPercent	▷missing◁	0.38
+Supplemental	LanguageInfo	TH/hnj	populationPercent	▷missing◁	0.098
+Supplemental	LanguageInfo	US/hnj	populationPercent	▷missing◁	0.035
+Supplemental	LanguageInfo	US/io	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	US/jbo	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	VN/blt	populationPercent	▷missing◁	0.69
+Supplemental	LanguageInfo	VN/hnj	populationPercent	▷missing◁	0.17
 Supplemental	Metazone	yuko	deprecated	▷missing◁	false
 Supplemental	Metazone	yuko	longId	▷missing◁	Yukon
 Supplemental	NumberSystem	kawi	digits	▷missing◁	𑽐𑽑𑽒𑽓𑽔𑽕𑽖𑽗𑽘𑽙
@@ -105,14 +176,30 @@ Supplemental	NumberSystem	nagm	digits	▷missing◁	𞓰𞓱𞓲𞓳𞓴𞓵𞓶
 Supplemental	NumberSystem	nagm	type	▷missing◁	numeric
 Supplemental	Plural	cardinal-ca	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
 Supplemental	Plural	cardinal-ca	other	…	@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
+Supplemental	Plural	cardinal-he	many	v = 0 and n != 0..10 and n % 10 = 0 @integer 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …	▷removed◁
+Supplemental	Plural	cardinal-he	one	…	i = 1 and v = 0 or i = 0 and v != 0 @integer 1 @decimal 0.0~0.9, 0.00~0.05
+Supplemental	Plural	cardinal-he	other	…	@integer 0, 3~17, 100, 1000, 10000, 100000, 1000000, … @decimal 1.0~2.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-is	one	…	t = 0 and i % 10 = 1 and i % 100 != 11 or t % 10 = 1 and t % 100 != 11 @integer 1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, … @decimal 0.1, 1.0, 1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 10.1, 100.1, 1000.1, …
+Supplemental	Plural	cardinal-is	other	…	@integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 0.2~0.9, 1.2~1.8, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-iw	many	v = 0 and n != 0..10 and n % 10 = 0 @integer 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …	▷removed◁
+Supplemental	Plural	cardinal-iw	one	…	i = 1 and v = 0 or i = 0 and v != 0 @integer 1 @decimal 0.0~0.9, 0.00~0.05
+Supplemental	Plural	cardinal-iw	other	…	@integer 0, 3~17, 100, 1000, 10000, 100000, 1000000, … @decimal 1.0~2.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-mo	few	…	v != 0 or n = 0 or n != 1 and n % 100 = 1..19 @integer 0, 2~16, 101, 1001, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
 Supplemental	Plural	cardinal-mt	few	…	n = 0 or n % 100 = 3..10 @integer 0, 3~10, 103~109, 1003, … @decimal 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 103.0, 1003.0, …
 Supplemental	Plural	cardinal-mt	two	▷missing◁	n = 2 @integer 2 @decimal 2.0, 2.00, 2.000, 2.0000
+Supplemental	Plural	cardinal-ro	few	…	v != 0 or n = 0 or n != 1 and n % 100 = 1..19 @integer 0, 2~16, 101, 1001, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
 Supplemental	Plural	cardinal-vec	many	▷missing◁	e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …
 Supplemental	Plural	cardinal-vec	one	▷missing◁	i = 1 and v = 0 @integer 1
 Supplemental	Plural	cardinal-vec	other	▷missing◁	@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …
 Supplemental	Plural	ordinal-ast	other	▷missing◁	@integer 0~15, 100, 1000, 10000, 100000, 1000000, …
 Supplemental	Plural	ordinal-vec	many	▷missing◁	n = 11,8,80,800 @integer 8, 11, 80, 800
 Supplemental	Plural	ordinal-vec	other	▷missing◁	@integer 0~7, 9, 10, 12~17, 100, 1000, 10000, 100000, 1000000, …
+Supplemental	PluralRange	he	many–many	many	▷removed◁
+Supplemental	PluralRange	he	many–other	many	▷removed◁
+Supplemental	PluralRange	he	one–many	many	▷removed◁
+Supplemental	PluralRange	he	other–many	many	▷removed◁
+Supplemental	PluralRange	he	two–many	other	▷removed◁
+Supplemental	Currency	SL	SLE–2022-04-01..∞	false	▷removed◁
 Supplemental	Calendar	Preference	AL	▷missing◁	gregorian
 Supplemental	Calendar	Preference	AL	▷missing◁	islamic-civil
 Supplemental	Calendar	Preference	AL	▷missing◁	islamic-tbla
@@ -160,18 +247,19 @@ Supplemental	Calendar	Preference	XK	▷missing◁	islamic-tbla
 Supplemental	WeekData	firstDay	mon	…	… • CN • …
 Supplemental	WeekData	firstDay	sun	…	…
 Supplemental	Language	ann	scripts	▷missing◁	Latn
-Supplemental	Language	ann	territories	▷missing◁	NG
-Supplemental	Language	frr	territories	▷missing◁	DE
+Supplemental	Language	ckb	territories	IQ	▷removed◁
+Supplemental	Language	ckb	territories	IR	▷removed◁
+Supplemental	Language	ckb	territories-secondary	▷missing◁	IQ
+Supplemental	Language	ckb	territories-secondary	▷missing◁	IR
+Supplemental	Language	frr	territories-secondary	▷missing◁	DE
 Supplemental	Language	oc	territories-secondary	…	ES • …
 Supplemental	Language	pis	scripts	▷missing◁	Latn
-Supplemental	Language	pis	territories	▷missing◁	SB
-Supplemental	Language	sms	territories	▷missing◁	FI
-Supplemental	Language	tok	scripts	▷missing◁	Latn
+Supplemental	Language	pis	territories-secondary	▷missing◁	SB
+Supplemental	Language	sms	territories-secondary	▷missing◁	FI
+Supplemental	Language	tok	scripts-secondary	▷missing◁	Latn
 Supplemental	Language	vec	territories-secondary	▷missing◁	BR
-Supplemental	Language	vec	territories-secondary	▷missing◁	HR
 Supplemental	Language	vec	territories-secondary	▷missing◁	IT
 Supplemental	Language	vec	territories-secondary	▷missing◁	MX
-Supplemental	Language	vec	territories-secondary	▷missing◁	SI
 Supplemental	DayPeriod	hi_Latn	afternoon1-before	▷missing◁	16:00
 Supplemental	DayPeriod	hi_Latn	afternoon1-from	▷missing◁	12:00
 Supplemental	DayPeriod	hi_Latn	evening1-before	▷missing◁	20:00
@@ -182,6 +270,12 @@ Supplemental	DayPeriod	hi_Latn	morning1-from	▷missing◁	04:00
 Supplemental	DayPeriod	hi_Latn	night1-before	▷missing◁	04:00
 Supplemental	DayPeriod	hi_Latn	night1-from	▷missing◁	20:00
 Supplemental	DayPeriod	hi_Latn	noon-at	▷missing◁	12:00
+Supplemental	DayPeriod	mr	evening1-before	…	21:00
+Supplemental	DayPeriod	mr	evening2-before	21:00	▷removed◁
+Supplemental	DayPeriod	mr	evening2-from	18:00	▷removed◁
+Supplemental	DayPeriod	selection-mr	evening1-before	…	21:00
+Supplemental	DayPeriod	selection-mr	evening2-before	21:00	▷removed◁
+Supplemental	DayPeriod	selection-mr	evening2-from	18:00	▷removed◁
 #Section	Page	Header	Code	Old	New
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	▷missing◁	$arabicNumber   = ⠼ ;
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	▷missing◁	$ethiopicNumber = ⠿ ;
@@ -1079,6 +1173,7 @@ Supplemental	Transform	gz_Ethi↔︎Sarb	tRule	▷missing◁	‫፻ ↔ | 𐩿�
 Supplemental	Transform	gz_Ethi↔︎Sarb	tRule	▷missing◁	‫፼ ↔ | 𐩿𐩲𐩱𐩿 ; # ETHIOPIC NUMBER TEN HUNDRED‬
 Supplemental	Transform	gz_Ethi↔︎Sarb	tRule	▷missing◁	‫𐩿𐩿 → ; # This mark stripper isn't working, perhaps because the above‬
 Supplemental	Transform	Hani→Latn	tRule	…	… • [⻨䘑䜕䨫䮮佅劢勱卖売脈脉衇賣迈邁霡霢麥麦鿏鿺𥇯𥌚𦏢𦙻𧱘𩈗𩊍𪄳𪒪𬑙]→mài; • … • [㑞䙬䤝䵴噟媵映暎硬膡鞕鱦𠊶𡀘𡁊𡄖𢣙𣈣𣋋𤇾𤹥𥚿𦩩𨪄𩋹𫇦𫜙𭈉𱇸]→yìng; • … • [㒄㚩㿵䎃䒣䣸䤡冄冉姌媣染橪珃苒蒅𠱞𡜉𡜫𤲗𥀭𥬕𨹌𩃵𩢡𩧬𩶎]→rǎn; • … • [㖸㰒㶅㿱䋉䱑乴壆学學岤峃嶨斈泶澩燢穴茓袕觷踅雤鷽鸴𢯳𢼺𥀣𦥯𧉢𧸗𰃮𰴣]→xué; • … • [㗌㗧㘉㛿㜱㝂㣥㨁㨖㴛㿃䄺䆈䇧䉅䉜䎺䏯䐭䑇䓌䕌䘭䚦䚳䝰䞃䡹䥍䦯䩢䬹䭁䱃䱥䲀乿俧偫傂儨制劕厔垁墆娡寘峙崻帙帜幟庢庤廌彘徏徝志忮憄懥懫扻挃挚掷搱摯擲擳旘晊智柣栉桎梽楖櫍櫛治洷滍滞滯潌瀄炙熫狾猘瓆畤疐痔痣礩祑秩秲秷稚稺穉窒筫紩緻置翐膣至致芖蛭螲袟袠製覟觗觯觶誌豑豒豸貭質贄质贽跱踬躓軽輊轾迣郅銍鋕鑕铚锧阤陟隲雉駤騭騺驇骘鯯鴙鷙鸷鿵𠊤𠊷𠋤𠍜𠓶𠘖𠚅𡀹𡂒𡍶𡏚𡑘𡖧𡠗𡠹𡮞𡽆𢄢𢄱𢅁𢊁𢍧𢐂𢕞𢖇𢖿𢙺𢚨𢡒𢧤𢯶𢴠𢴧𢻙𣗻𣥰𣨋𤆒𤓕𤖞𤛱𤞂𤞌𤦄𤦮𤧜𤴛𤴟𤴢𤿙𥇕𥍭𥎹𥏄𥏊𥏰𥏷𥒓𥠈𥠽𥣮𥭡𥴒𥹩𥿮𦃘𦛧𦜋𦟔𦤻𦥎-𦥐𦭮𦯯𧙁𧠫𧣭𧣾𧤡𧨰𧫡𧸲𨁷𨃯𨆧𨎉𨑨𨒉𨖹𨟊𨡐𨧵𨫔𨻆𨿛𩊝𩊴𩋩𩧄𩷓𩹈𩻼𪁊𪁓𪁩𪏀𪗻𫔵𫘠𫞢𫟬𫪪𬃊𬘽𬢌𬣛𬺁𮉢𰊂𰑬𰓜𰛤𰧉𰬫𰵧𱀑𱃸𱅊𱇹𱉛]→zhì; • … • [㗔㩃㩷㪠䀒䇂䉦䙴䞿仟佥僉兛千圱圲奷婜孅孯岍悭愆慳扦拪掔搴撁攐攑攓杄檶櫏欦汘汧牵牽瓩竏签箞簽籤粁臤芊茾蚈褰諐謙谦谸迁遷釺鈆鉛钎铅阡雃韆顅騫骞鬜鬝鵮鹐𠑲𠔺𠠃𠬾𢃥𢋔𢌍𢍱𢜩𢧥𣘝𣟋𣢬𣢲𤠿𤿷𥏥𥜴𥱺𥲢𦖎𧘜𧛓𧟑𧢞𧮮𧲀𧽐𨐋𨐩𨓲𨝍𨦄𨨘𩋆𩨓𩪢𪇇𪉻𫓪𫖶𫣛𫽥𰀡𰔲𰗬𱁶𱆀𱆁]→qiān; • … • [㚵䍶䰤东倲冬咚埬娻岽崠崬徚昸東氡氭涷笗苳菄蝀鮗鯟鶇鶫鸫鼕鿴𢔅𢛔𣱝𤤮𤦪𤲚𤷆𧓕𧯾𧲴𧼓𨩧𨿢𩂓𩜍𩣳𪣆𫹼𬟽𰎏𰛒]→dōng; • … • [㝗㟍㢃㱢㾿䆡䡙䯖䱶勆嫏廊斏桹榔欴狼琅瑯硠稂筤艆蓈蜋螂躴郎郒郞鋃鎯锒阆駺鿶𢽂𥍫𥧫𦵧𨞿𨱍𩛡𩷕𪁜𫗨𬴀𬸏]→láng; • … • [㟁㱘䅁䬓䮗䯥堓婩岸按晻暗案洝犴胺荌豻貋錌闇鮟黯鿷𠰑𡎑𡪙𡹼𣆛𣣚𣽥𤞿𤟉𥏮𥳬𧖮𨲊𩓤𩭢𩹎𫗊𬮴𬴁]→àn; • …
+Supplemental	Transform	Hans↔︎Hant	tRule	…	… • 五脏→五臟; • … • 六脏→六臟; • … • 内脏→內臟; • … • 心脏→心臟; • … • 牝脏→牝臟; • … • 肝脏→肝臟; • … • 肺脏→肺臟; • … • 肾脏→腎臟; • … • 胃脏→胃臟; • … • 胰脏→胰臟; • … • 脏←臟; • 脏↔髒; • 脏器→臟器; • 脏毒→臟毒; • 脏气→臟氣; • 脏症→臟症; • 脏腑→臟腑; • 脏象→臟象; • 脏躁→臟躁; • … • 脾脏→脾臟; • …
 Supplemental	Transform	Latn↔︎Ethi	tRule	ba↔ባ;	▷removed◁
 Supplemental	Transform	Latn↔︎Ethi	tRule	be↔ቤ;	▷removed◁
 Supplemental	Transform	Latn↔︎Ethi	tRule	bi↔ቢ;	▷removed◁
