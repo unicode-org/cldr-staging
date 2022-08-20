@@ -11,9 +11,11 @@
 156	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	long-atTime
 152	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	short-atTime
 151	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	medium-atTime
+133	Miscellaneous	Person Name Formats	NameOrder for Locales	surnameFirst
 120	Units	Mass and Weight	tonne	long-displayName
 119	Units	Mass and Weight	tonne	long-other-nominative
 119	Units	Mass and Weight	metric-ton	long-displayName
+119	Miscellaneous	Person Name Formats	NameOrder for Locales	givenFirst
 118	Units	Mass and Weight	metric-ton	long-other-nominative
 115	Locale Display Names	Languages (K-N)	N	Northern Tutchone ► ttm
 114	Locale Display Names	Languages (K-N)	N	Northern East Cree ► crl
@@ -104,20 +106,19 @@
 100	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	given
 98	Units	Duration	quarter	short-displayName
 98	Units	Duration	quarter	long-other-nominative
-98	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	given-informal
+97	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	given-informal
 97	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	given2
-96	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-core
 95	Units	Duration	quarter	short-other-nominative
-95	Miscellaneous	Person Name Formats	NameOrder for Locales	givenFirst
-94	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-prefix
+95	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-core
 93	Units	Duration	quarter	short-per
 93	Units	Mass and Weight	tonne	short-one-nominative
 93	Units	Mass and Weight	metric-ton	short-one-nominative
-92	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname2
+93	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname-prefix
 92	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	suffix
 92	Locale Display Names	Territories (Oceania)	Australasia	NZ-variant
 91	Units	Duration	quarter	long-per
 90	Locale Display Names	Scripts	Limited Use	Rohg
+90	Miscellaneous	Person Name Formats	SampleName Fields for Item: full	surname2
 89	Locale Display Names	Languages (K-N)	N	Nheengatu ► yrl
 88	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-short	addressing-informal
 88	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: surnameFirst-short	addressing-informal
@@ -162,12 +163,12 @@
 80	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: surnameFirst-short	monogram-formal
 80	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: surnameFirst-short	monogram-informal
 79	Units	Duration	quarter	long-one-nominative
+79	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-medium	referring-formal
 79	Numbers	Compact Decimal Formatting	Short Currency 	6-digits-short-other-alphaNextToNumber
 79	Numbers	Compact Decimal Formatting	Short Currency 	7-digits-short-other-alphaNextToNumber
 79	Numbers	Compact Decimal Formatting	Short Currency 	8-digits-short-other-alphaNextToNumber
 78	Locale Display Names	Languages (K-N)	N	Najdi Arabic ► ars
 78	Units	Duration	quarter	narrow-displayName
-78	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-medium	referring-formal
 78	Numbers	Compact Decimal Formatting	Short Currency 	5-digits-short-other-alphaNextToNumber
 77	Units	Duration	quarter	short-one-nominative
 77	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-short	monogram-formal
@@ -178,9 +179,8 @@
 75	Locale Display Names	Keys	numbers	numbers-cakm
 75	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-long	monogram-informal
 75	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-medium	monogram-informal
-74	Miscellaneous	Person Name Formats	NameOrder for Locales	surnameFirst
+74	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-long	referring-formal
 73	Locale Display Names	Keys	numbers	numbers-olck
-73	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-long	referring-formal
 73	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-medium	monogram-formal
 73	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: surnameFirst-long	monogram-informal
 71	Locale Display Names	Keys	numbers	numbers-mtei
@@ -268,6 +268,7 @@
 22	Locale Display Names	Languages (A-D)	C	Cheyenne ► chy
 22	Locale Display Names	Languages (K-N)	K	Kalmyk ► xal
 22	Locale Display Names	Languages (T-Z)	W	Wolaytta ► wal
+22	Date & Time	Gregorian	Formats - Flexible - Date Formats	GyMd
 22	Locale Display Names	Languages (A-D)	A	Achinese ► ace
 22	Locale Display Names	Languages (A-D)	C	Chuvash ► cv
 22	Locale Display Names	Languages (A-D)	C	Comorian ► swb
@@ -292,7 +293,6 @@
 21	Locale Display Names	Languages (K-N)	M	Madurese ► mad
 21	Locale Display Names	Languages (O-S)	S	Sandawe ► sad
 21	Locale Display Names	Languages (T-Z)	T	Tyap ► kcg
-21	Date & Time	Gregorian	Formats - Flexible - Date Formats	GyMd
 21	Locale Display Names	Languages (A-D)	A	Adangme ► ada
 21	Locale Display Names	Languages (A-D)	A	Aleut ► ale
 21	Locale Display Names	Languages (A-D)	A	Arapaho ► arp
@@ -462,7 +462,6 @@
 15	Locale Display Names	Languages (E-J)	E	English ► en_AU
 15	Locale Display Names	Languages (E-J)	F	French ► fr_CH
 15	Locale Display Names	Geographic Regions	world	019
-15	Locale Display Names	Geographic Regions	Africa	018
 15	Locale Display Names	Territories (Africa)	Western Africa	CI
 15	Locale Display Names	Territories (Europe)	Northern Europe	AX
 15	Locale Display Names	Languages (O-S)	R	Rohingya ► rhg
@@ -475,6 +474,8 @@
 15	Characters	Animals & Nature	animal-marine	🪸 –keywords
 15	Characters	Animals & Nature	plant-other	🪺 –keywords
 15	Locale Display Names	Languages (A-D)	B	Bislama ► bi
+14	Date & Time	Gregorian	Formats - Flexible - Date Formats	MEd
+14	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMEd
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	Md/M
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	MEd/d
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	MEd/M
@@ -486,6 +487,7 @@
 14	Locale Display Names	Languages (A-D)	C	Chinese ► zh_Hant-long
 14	Locale Display Names	Languages (E-J)	E	English ► en_GB
 14	Locale Display Names	Languages (E-J)	G	German ► de_AT
+14	Locale Display Names	Geographic Regions	Africa	018
 14	Locale Display Names	Languages (A-D)	B	Bashkir ► ba
 14	Locale Display Names	Languages (K-N)	K	Klingon ► tlh
 14	Locale Display Names	Languages (K-N)	N	Nigerian Pidgin ► pcm
@@ -493,6 +495,7 @@
 14	Locale Display Names	Geographic Regions	world	UN
 14	Locale Display Names	Geographic Regions	Unknown Region	XA
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMEd/M
+14	Date & Time	Generic	Formats - Flexible - Date Formats	GyMd
 14	Timezones	North America	America_Central	daylight-long
 14	Locale Display Names	Languages (A-D)	C	Chinese ► zh_Hans-long
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	GyMMM/G
@@ -502,9 +505,8 @@
 14	Characters	Activities	game	🪬 –keywords
 14	Locale Display Names	Languages (K-N)	N	Navajo ► nv
 14	Locale Display Names	Languages (A-D)	A	Aymara ► ay
-13	Date & Time	Gregorian	Formats - Flexible - Date Formats	MEd
-13	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMEd
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	Md/d
+13	Date & Time	Generic	Formats - Flexible - Date Formats	MEd
 13	Units	Mass and Weight	tonne	long-many-nominative
 13	Units	Mass and Weight	metric-ton	long-many-nominative
 13	Date & Time	Gregorian	Eras - abbreviated	0-variant
@@ -536,11 +538,11 @@
 13	Locale Display Names	Territories (North America)	Northern America	PM
 13	Locale Display Names	Territories (North America)	Caribbean	CW
 13	Date & Time	Fields	Relative Week	Period
+13	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMd
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMEd/d
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMd/y
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMEd/d
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMEd/y
-13	Date & Time	Generic	Formats - Flexible - Date Formats	GyMd
 13	Timezones	North America	America_Central	generic-long
 13	Timezones	North America	America_Central	standard-long
 13	Timezones	North America	America_Eastern	daylight-long
@@ -560,13 +562,12 @@
 13	Units	Duration	quarter	long-other-dative
 13	Units	Mass and Weight	tonne	long-one-dative
 13	Units	Mass and Weight	metric-ton	long-one-dative
-13	Locale Display Names	Scripts	Major Use	Hant
 13	Characters	Food & Drink	drink	🫗 –keywords
 13	Locale Display Names	Languages (A-D)	D	Dogri ► doi
 13	Characters	Travel & Places	transport-ground	🛞 –keywords
 13	Characters	Symbols2	punctuation	^ –keywords
 13	Locale Display Names	Languages (O-S)	R	Romanian ► ro_MD
-12	Date & Time	Generic	Formats - Flexible - Date Formats	MEd
+12	Date & Time	Gregorian	Formats - Flexible - Date Formats	Md
 12	Numbers	Number Formatting Patterns	Standard Patterns 	standard-currency
 12	Numbers	Number Formatting Patterns	Standard Patterns using Arabic-Indic Digits (arab)	standard-currency-noCurrency
 12	Units	Duration	quarter	long-many-nominative
@@ -583,7 +584,6 @@
 12	Units	Measurement Systems	null	US
 12	Locale Display Names	Languages (E-J)	E	English ► en_US-short
 12	Locale Display Names	Languages (O-S)	S	Spanish ► es_MX
-12	Locale Display Names	Geographic Regions	Americas	419
 12	Locale Display Names	Geographic Regions	Oceania	053
 12	Locale Display Names	Territories (North America)	Caribbean	VI
 12	Locale Display Names	Territories (Europe)	Northern Europe	GG
@@ -607,7 +607,6 @@
 12	Locale Display Names	Territories (Europe)	Western Europe	NL
 12	Locale Display Names	Territories (Asia)	Southeast Asia	TL
 12	Date & Time	Gregorian	Eras - wide	0-variant
-12	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMd
 12	Date & Time	Gregorian	Formats - Intervals - Date Formats	yM/M
 12	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMd/d
 12	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMd/M
@@ -643,6 +642,7 @@
 12	Units	Mass and Weight	tonne	long-one-instrumental
 12	Units	Mass and Weight	metric-ton	long-one-instrumental
 12	Locale Display Names	Languages (T-Z)	T	Thai ► th
+12	Locale Display Names	Scripts	Major Use	Hant
 12	Locale Display Names	Geographic Regions	world	150
 12	Miscellaneous	Displaying Lists	“Or” List	end
 12	Characters	People & Body	body-parts	🫦 –keywords
@@ -651,7 +651,6 @@
 12	Locale Display Names	Languages (E-J)	G	Guarani ► gn
 12	Characters	Animals & Nature	plant-other	🪹 –keywords
 12	Characters	People & Body	hand-single-finger	🫵 –keywords
-11	Date & Time	Gregorian	Formats - Flexible - Date Formats	Md
 11	Units	Duration	quarter	short-many-nominative
 11	Units	Duration	quarter	narrow-many-nominative
 11	Date & Time	Indian	Months - wide - Formatting	Jan
@@ -672,6 +671,7 @@
 11	Date & Time	Gregorian	Days - wide - Formatting	fri
 11	Date & Time	Gregorian	Days - wide - Formatting	sat
 11	Locale Display Names	Languages (E-J)	G	German ► de_CH
+11	Locale Display Names	Geographic Regions	Americas	419
 11	Locale Display Names	Geographic Regions	Africa	202
 11	Locale Display Names	Geographic Regions	Oceania	QO
 11	Locale Display Names	Territories (North America)	Caribbean	BB
@@ -756,11 +756,14 @@
 11	Locale Display Names	Scripts	Major Use	Hans
 11	Locale Display Names	Territories (Africa)	Western Africa	SL
 11	Date & Time	Fields	Relative Week Short	-1
+11	Date & Time	Gregorian	Formats - Flexible - Date Formats	yM
 11	Date & Time	Gregorian	Formats - Intervals - Date Formats	yMMMd/y
 11	Characters	Smileys & Emotion	face-affection	🥰 –keywords
 11	Characters	Smileys & Emotion	face-hand	🫣 -name
 11	Characters	People & Body	person-fantasy	🧌 –keywords
 10	Locale Display Names	Territories (Europe)	Northern Europe	GB-short
+10	Date & Time	Generic	Formats - Flexible - Date Formats	Md
+10	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMEd
 10	Numbers	Number Formatting Patterns	Standard Patterns 	accounting-currency
 10	Units	Mass and Weight	tonne	long-two-nominative
 10	Units	Mass and Weight	tonne	short-two-nominative
@@ -929,7 +932,6 @@
 10	Date & Time	Fields	Relative Month Short	0
 10	Date & Time	Fields	Relative Week Short	0
 10	Date & Time	Fields	Relative Week Short	1
-10	Date & Time	Gregorian	Formats - Flexible - Date Formats	yM
 10	Date & Time	Gregorian	Formats - Intervals - Date Formats	Gy/G
 10	Characters	Smileys & Emotion	face-neutral-skeptical	🫥 -name
 10	Characters	People & Body	person-role	🫃 –keywords
@@ -941,8 +943,6 @@
 9	Core Data	Alphabetic Information	Characters in Use	Others: index
 9	Date & Time	Gregorian	Formats - Standard - Date & Time Combination Formats	medium
 9	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	medium
-9	Date & Time	Generic	Formats - Flexible - Date Formats	Md
-9	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMEd
 9	Date & Time	Generic	Formats - Intervals - Date Formats	Md/M
 9	Units	Duration	quarter	long-two-nominative
 9	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMMMEd
@@ -1048,6 +1048,9 @@
 9	Date & Time	Gregorian	Formats - Standard - Date Formats	full
 9	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMMMd
 9	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMd/d
+9	Date & Time	Generic	Formats - Standard - Date Formats	short
+9	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyM
+9	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMd
 9	Date & Time	Generic	Formats - Intervals - Date Formats	GyMMMd/y
 9	Date & Time	Generic	Formats - Intervals - Date Formats	GyMMMEd/d
 9	Date & Time	Generic	Formats - Intervals - Date Formats	GyMMMEd/M
@@ -1305,11 +1308,9 @@
 8	Date & Time	Fields	Relative Wednesday	future-other
 8	Date & Time	Fields	Relative Wednesday Short	future-other
 8	Date & Time	Gregorian	Formats - Standard - Date Formats	long
+8	Date & Time	Gregorian	Formats - Standard - Date Formats	short
 8	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMd/M
-8	Date & Time	Generic	Formats - Standard - Date Formats	short
 8	Date & Time	Generic	Formats - Flexible - Date Formats	MMMEd
-8	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyM
-8	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMd
 8	Date & Time	Generic	Formats - Flexible - Date Formats	yyyyMMMd
 8	Date & Time	Generic	Formats - Intervals - Date Formats	GyM/M
 8	Date & Time	Generic	Formats - Intervals - Date Formats	GyM/y
@@ -1420,6 +1421,7 @@
 8	Characters	Food & Drink	food-vegetable	🧄 –keywords
 8	Locale Display Names	Territories (Europe)	Western Europe	DE
 8	Currencies	South America (C)	South America: Brazil	BRL-name-other
+8	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name-other
 8	Timezones	South America	Chile	generic-long
 8	Timezones	South America	Colombia	generic-long
 8	Timezones	South America	Peru	generic-long
@@ -1669,7 +1671,6 @@
 7	Date & Time	Gregorian	Days - short - Standalone	sat
 7	Date & Time	Gregorian	Days - narrow - Formatting	sat
 7	Date & Time	Gregorian	Formats - Standard - Date Formats	medium
-7	Date & Time	Gregorian	Formats - Standard - Date Formats	short
 7	Date & Time	Gregorian	Formats - Flexible - 12 Hour Time Formats	hm
 7	Date & Time	Gregorian	Formats - Flexible - 12 Hour Time Formats	hms
 7	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMM/M
@@ -1788,7 +1789,6 @@
 7	Timezones	Oceania	Apia	daylight-long
 7	Currencies	Northern/Western Europe	Northern Europe: United Kingdom	GBP-name-other
 7	Currencies	Southern/Eastern Europe	Eastern Europe: Russia	RUB-name-other
-7	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name-other
 7	Currencies	Southeast Asia (C)	Southeast Asia: Philippines	PHP-name-other
 7	Currencies	Southeast Asia (C)	Southeast Asia: Philippines	PHP-name
 7	Currencies	Oceania (C)	Australasia: Australia	AUD-name-other
@@ -1875,6 +1875,7 @@
 7	Units	Volume	milliliter	narrow-one-nominative
 7	Date & Time	Gregorian	Day Periods - abbreviated - Formatting	am
 7	Date & Time	Gregorian	Day Periods - abbreviated - Formatting	pm
+7	Date & Time	Islamic	Formats - Flexible - Date Formats	GyMd
 7	Units	Volume	dessert-spoon-imperial	narrow-one-nominative
 7	Units	Volume	dessert-spoon-imperial	narrow-other-nominative
 7	Characters	Category	Pattern	miscellaneous
@@ -1959,6 +1960,7 @@
 6	Numbers	Compact Decimal Formatting	Short Currency 	15-digits-short-other
 6	Date & Time	Gregorian	Formats - Standard - Date & Time Combination Formats	short
 6	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	short
+6	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyMEd
 6	Date & Time	Japanese	Formats - Standard - Date & Time Combination Formats	long
 6	Date & Time	Japanese	Formats - Standard - Date & Time Combination Formats	full-atTime
 6	Date & Time	Japanese	Formats - Standard - Date & Time Combination Formats	long-atTime
@@ -2261,6 +2263,7 @@
 6	Currencies	Northern/Western Europe	Northern Europe: Iceland	ISK-name-other
 6	Currencies	Northern/Western Europe	Northern Europe: Iceland	ISK-name
 6	Currencies	Northern/Western Europe	Western Europe: Switzerland	CHF-name
+6	Currencies	Southern/Eastern Europe	Eastern Europe: Bulgaria	BGN-name-other
 6	Currencies	Southern/Eastern Europe	Eastern Europe: Belarus	BYN-name
 6	Currencies	Southern/Eastern Europe	Eastern Europe: Hungary	HUF-name
 6	Currencies	Southern/Eastern Europe	Eastern Europe: Moldova	MDL-name-other
@@ -2380,7 +2383,6 @@
 6	Units	Mass and Weight	metric-ton	long-other-instrumental
 6	Miscellaneous	Displaying Lists	“And” List	end
 6	Miscellaneous	Displaying Lists	Unit List	end
-6	Locale Display Names	Scripts	Major Use	Hant-stand-alone
 6	Locale Display Names	Territories (North America)	Northern America	US
 6	Locale Display Names	Territories (South America)	South America	PY
 6	Locale Display Names	Territories (Europe)	Southern Europe	IT
@@ -2431,6 +2433,8 @@
 6	Date & Time	Gregorian	Day Periods - abbreviated - Standalone	pm
 6	Date & Time	Gregorian	Day Periods - narrow - Standalone	am
 6	Date & Time	Gregorian	Day Periods - narrow - Standalone	pm
+6	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyM
+6	Units	Volume	fluid-ounce-imperial	narrow-other-nominative
 6	Units	Weather	generic	long-one-nominative
 6	Characters	Category	Pattern	all
 6	Characters	Category	Pattern	compatibility
@@ -2532,7 +2536,6 @@
 6	Characters	Activities	sport	🥏 –keywords
 6	Date & Time	Fields	Relative Year Short	0
 6	Characters	Objects	musical-instrument	🪕 –keywords
-6	Date & Time	Islamic	Formats - Flexible - Date Formats	GyMd
 6	Characters	People & Body	body-parts	🦾 –keywords
 6	Characters	Animals & Nature	animal-bird	🦤 –keywords
 6	Characters	Activities	game	🪀 –keywords
@@ -2571,7 +2574,8 @@
 6	Characters	Smileys & Emotion	face-concerned	😳 –keywords
 6	Timezones	Timezone Display Patterns	null	GMT Zero Format
 6	Timezones	Timezone Display Patterns	null	GMT Format
-5	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyMEd
+5	Date & Time	Islamic	Formats - Flexible - Date Formats	Md
+5	Date & Time	Islamic	Formats - Flexible - Date Formats	MEd
 5	Characters	Symbols2	alphanum	🅱 –keywords
 5	Date & Time	Indian	Formats - Standard - Date & Time Combination Formats	full
 5	Date & Time	Indian	Formats - Standard - Date & Time Combination Formats	long
@@ -2883,7 +2887,6 @@
 5	Currencies	Northern/Western Europe	Northern Europe: Norway	NOK-name
 5	Currencies	Northern/Western Europe	Northern Europe: Sweden	SEK-name-other
 5	Currencies	Northern/Western Europe	Northern Europe: Sweden	SEK-name
-5	Currencies	Southern/Eastern Europe	Eastern Europe: Bulgaria	BGN-name-other
 5	Currencies	Southern/Eastern Europe	Eastern Europe: Bulgaria	BGN-name
 5	Currencies	Southern/Eastern Europe	Southern Europe: Bosnia & Herzegovina	BAM-name
 5	Currencies	Northern Africa	Northern Africa: Algeria	DZD-name
@@ -3010,6 +3013,7 @@
 5	Core Data	Alphabetic Information	Quotation Marks	End
 5	Core Data	Alphabetic Information	Quotation Marks	Start
 5	Locale Display Names	Scripts	Major Use	Hans-stand-alone
+5	Locale Display Names	Scripts	Major Use	Hant-stand-alone
 5	Locale Display Names	Territories (Europe)	Southern Europe	MT
 5	Locale Display Names	Territories (Asia)	Eastern Asia	JP
 5	Locale Display Names	Territories (Asia)	Eastern Asia	TW
@@ -3060,6 +3064,7 @@
 5	Currencies	Eastern Asia (C)	Eastern Asia: China	CNY-name-other
 5	Currencies	Eastern Asia (C)	Eastern Asia: China	CNY-name
 5	Currencies	Southern Asia (C)	Southern Asia: India	INR-name
+5	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name
 5	Currencies	Southeast Asia (C)	Southeast Asia: Cambodia	KHR-name
 5	Currencies	Southeast Asia (C)	Southeast Asia: Singapore	SGD-name
 5	Currencies	Southeast Asia (C)	Southeast Asia: Thailand	THB-name-other
@@ -3074,9 +3079,11 @@
 5	Characters	Smileys & Emotion	face-tongue	🤪 –keywords
 5	Date & Time	Gregorian	Formats - Flexible - Date Formats	yw-one
 5	Locale Display Names	Keys	currency	currency
+5	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyMd
 5	Currencies	Western Africa	Western Africa: Sierra Leone	SLE-name-other
 5	Currencies	Western Africa	Western Africa: Sierra Leone	SLE-name
 5	Units	Volume	gallon	narrow-other-nominative
+5	Units	Volume	fluid-ounce-imperial	narrow-one-nominative
 5	Characters	Smileys & Emotion	face-neutral-skeptical	🤥 –keywords
 5	Characters	Smileys & Emotion	face-unwell	🤕 –keywords
 5	Characters	Smileys & Emotion	cat-face	😻 –keywords
@@ -3195,7 +3202,6 @@
 5	Units	Volume	pint-metric	narrow-other-nominative
 5	Units	Volume	cup-metric	narrow-one-nominative
 5	Units	Volume	cup	narrow-other-nominative
-5	Units	Volume	fluid-ounce-imperial	narrow-other-nominative
 5	Units	Volume	barrel	narrow-one-nominative
 5	Units	Volume	drop	narrow-displayName
 5	Units	Volume	drop	narrow-one-nominative
@@ -3297,7 +3303,6 @@
 5	Characters	Symbols2	punctuation	¿ –keywords
 5	Units	Area	square-mile	narrow-per
 5	Date & Time	Islamic	Formats - Flexible - Date Formats	GyMMMd
-5	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyM
 5	Characters	People & Body	person	🧓 –keywords
 5	Characters	People & Body	person	👵 –keywords
 5	Characters	Animals & Nature	animal-mammal	🦥 –keywords
@@ -3431,8 +3436,6 @@
 4	Characters	People & Body	hand-prop	✍ –keywords
 4	Core Data	Alphabetic Information	Parse	general-lenient($)
 4	Core Data	Alphabetic Information	Parse	general-lenient(£)
-4	Date & Time	Islamic	Formats - Flexible - Date Formats	Md
-4	Date & Time	Islamic	Formats - Flexible - Date Formats	MEd
 4	Date & Time	Generic	Formats - Flexible - 12 Hour Time Formats	h
 4	Date & Time	Generic	Formats - Flexible - 12 Hour Time Formats	hm
 4	Date & Time	Generic	Formats - Flexible - 12 Hour Time Formats	hms
@@ -3822,7 +3825,6 @@
 4	Currencies	Southern Asia (C)	Southern Asia: Bhutan	BTN-name
 4	Currencies	Southern Asia (C)	Southern Asia: Iran	IRR-name
 4	Currencies	Southern Asia (C)	Southern Asia: Sri Lanka	LKR-name
-4	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name
 4	Currencies	Southern Asia (C)	Southern Asia: Nepal	NPR-name
 4	Currencies	Southern Asia (C)	Southern Asia: Pakistan	PKR-name
 4	Currencies	Southeast Asia (C)	Southeast Asia: Brunei	BND-name
@@ -4057,7 +4059,6 @@
 4	Units	Volume	quart	narrow-other-nominative
 4	Units	Volume	pint	narrow-displayName
 4	Units	Volume	cup	narrow-one-nominative
-4	Units	Volume	fluid-ounce-imperial	narrow-one-nominative
 4	Units	Volume	tablespoon	narrow-other-nominative
 4	Units	Volume	pinch	narrow-one-nominative
 4	Units	Speed and Acceleration	mile-per-hour	narrow-other-nominative
@@ -4150,7 +4151,6 @@
 4	Date & Time	Islamic	Formats - Flexible - Date Formats	GyMMM
 4	Date & Time	Islamic	Formats - Flexible - Date Formats	GyMMMEd
 4	Date & Time	Islamic	Formats - Flexible - Date Formats	MMMMEd
-4	Date & Time	Islamic	Formats - Flexible - Date Formats	yyyyMd
 4	Currencies	Oceania (C)	Melanesia: Fiji	FJD-name-one
 4	Units	Duration	decade	long-other-nominative
 4	Units	Duration	day	short-other-nominative
@@ -4870,11 +4870,13 @@
 3	Date & Time	Gregorian	Formats - Flexible - Date Formats	yw-two
 3	Date & Time	Gregorian	Formats - Flexible - Date Formats	d
 3	Locale Display Names	Keys	numbers	numbers-deva
+3	Date & Time	Chinese	Formats - Standard - Date Formats	short
 3	Currencies	Western Africa	Western Africa: Sierra Leone	SLE-symbol
 3	Units	Length	earth-radius	long-other-nominative
 3	Units	Volume	gallon	narrow-displayName
 3	Units	Volume	gallon	narrow-per
 3	Units	Volume	fluid-ounce	narrow-one-nominative
+3	Units	Volume	fluid-ounce-imperial	narrow-displayName
 3	Units	Volume	fluid-ounce-imperial	short-one-nominative
 3	Units	Volume	dessert-spoon-imperial	narrow-displayName
 3	Units	Volume	quart-imperial	narrow-displayName
@@ -6006,6 +6008,11 @@
 2	Locale Display Names	Keys	lw	lw-phrase
 2	Locale Display Names	Keys	m0	m0-bgn
 2	Locale Display Names	Keys	rg	rg
+2	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMdd
+2	Date & Time	Buddhist	Formats - Flexible - Date Formats	GyMd
+2	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyM
+2	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyMd
+2	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyMEd
 2	Date & Time	Chinese	Months - wide - Formatting	Jan
 2	Date & Time	Chinese	Months - wide - Formatting	Feb
 2	Date & Time	Chinese	Months - wide - Formatting	Mar
@@ -6020,7 +6027,12 @@
 2	Date & Time	Chinese	Months - wide - Formatting	Dec
 2	Date & Time	Chinese	Formats - Standard - Date Formats	full
 2	Date & Time	Chinese	Formats - Standard - Date Formats	long
-2	Date & Time	Chinese	Formats - Standard - Date Formats	short
+2	Date & Time	Chinese	Formats - Flexible - Date Formats	MEd
+2	Date & Time	Chinese	Formats - Flexible - Date Formats	UMd
+2	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyM
+2	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMd
+2	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMEd
+2	Date & Time	Islamic	Formats - Standard - Date Formats	short
 2	Timezones	Australasia	Cities and Regions	Currie
 2	Currencies	North America (C)	Northern America: United States	USD-name-one
 2	Units	Volume	gallon	short-per
@@ -6429,6 +6441,7 @@
 2	Units	Digital	byte	short-other-nominative
 2	Characters	People & Body	person-role	🤱 -name
 2	Characters	Food & Drink	food-vegetable	🥒 –keywords
+2	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name-one
 2	Units	Area	square-mile	short-per
 2	Date & Time	Islamic	Formats - Flexible - Date Formats	MMMd
 2	Date & Time	Islamic	Formats - Flexible - Date Formats	MMMMd
@@ -6526,7 +6539,6 @@
 2	Units	Volume	gallon-imperial	short-one-nominative
 2	Units	Volume	pint	short-one-nominative
 2	Units	Volume	pint	short-other-nominative
-2	Units	Volume	fluid-ounce-imperial	narrow-displayName
 2	Units	Speed and Acceleration	g-force	narrow-displayName
 2	Units	Energy and Power	kilowatt	narrow-displayName
 2	Units	Weather	fahrenheit	narrow-displayName
@@ -7376,6 +7388,10 @@
 1	Locale Display Names	Keys	kv	kv
 1	Locale Display Names	Keys	m0	m0
 1	Locale Display Names	Keys	m0	m0-prprname
+1	Locale Display Names	Keys	mu	mu
+1	Locale Display Names	Keys	mu	mu-celsius
+1	Locale Display Names	Keys	mu	mu-fahrenhe
+1	Locale Display Names	Keys	mu	mu-kelvin
 1	Locale Display Names	Keys	numbers	numbers-adlm
 1	Locale Display Names	Keys	s0	s0
 1	Locale Display Names	Keys	sd	sd
@@ -7389,8 +7405,64 @@
 1	Locale Display Names	Keys	va	va
 1	Locale Display Names	Keys	x	x
 1	Locale Display Names	Keys	x0	x0
-1	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMdd
+1	Date & Time	Buddhist	Formats - Standard - Date Formats	short
+1	Date & Time	Buddhist	Formats - Flexible - Date Formats	Md
+1	Date & Time	Buddhist	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Chinese	Formats - Flexible - Date Formats	UM
+1	Date & Time	Coptic	Formats - Standard - Date Formats	short
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	Md
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Coptic	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Dangi	Formats - Standard - Date Formats	short
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	Md
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	UM
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	UMd
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Dangi	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Ethiopic	Formats - Standard - Date Formats	short
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	Md
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Ethiopic	Formats - Flexible - Date Formats	yyyyMEd
 1	Date & Time	Hebrew	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Hebrew	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Hebrew	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Hebrew	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Indian	Formats - Standard - Date Formats	short
+1	Date & Time	Indian	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Indian	Formats - Flexible - Date Formats	Md
+1	Date & Time	Indian	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Indian	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Indian	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Indian	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Japanese	Formats - Standard - Date Formats	short
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	Md
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Japanese	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Persian	Formats - Standard - Date Formats	short
+1	Date & Time	Persian	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Persian	Formats - Flexible - Date Formats	Md
+1	Date & Time	Persian	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Persian	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Persian	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Persian	Formats - Flexible - Date Formats	yyyyMEd
+1	Date & Time	Minguo	Formats - Standard - Date Formats	short
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	GyMd
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	Md
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	MEd
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	yyyyM
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	yyyyMd
+1	Date & Time	Minguo	Formats - Flexible - Date Formats	yyyyMEd
 1	Currencies	North America (C)	Northern America: United States	USD-symbol-narrow
 1	Currencies	South America (C)	South America: Venezuela: VEF (old)	VEF-name-one
 1	Currencies	South America (C)	South America: Venezuela: VEF (old)	VEF-name-other
@@ -7530,6 +7602,38 @@
 1	Characters	Flags	flag	🏳‍⚧ –keywords
 1	Characters	Component	skin-tone	🏻 –keywords
 1	Characters	Component	skin-tone	🏼 –keywords
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-GyMd
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-Md
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-MEd
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-yyyyM
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-yyyyMd
+1	Special	Suppress	Ethiopic-Amete-Alem	Formats - Flexible - Date Formats-yyyyMEd
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-GyMd
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-Md
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-MEd
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-yyyyM
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-yyyyMd
+1	Special	Suppress	Islamic-Civil	Formats - Flexible - Date Formats-yyyyMEd
+1	Special	Suppress	Islamic-Rgsa	Formats - Standard - Date Formats-short
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-GyMd
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-Md
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-MEd
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-yyyyM
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-yyyyMd
+1	Special	Suppress	Islamic-Rgsa	Formats - Flexible - Date Formats-yyyyMEd
+1	Special	Suppress	Islamic-Tbla	Formats - Standard - Date Formats-short
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-GyMd
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-Md
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-MEd
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-yyyyM
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-yyyyMd
+1	Special	Suppress	Islamic-Tbla	Formats - Flexible - Date Formats-yyyyMEd
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-GyMd
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-Md
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-MEd
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-yyyyM
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-yyyyMd
+1	Special	Suppress	Islamic-Umalqura	Formats - Flexible - Date Formats-yyyyMEd
 1	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMM
 1	Timezones	Timezone Display Patterns	null	GMT Hours/Minutes Format
 1	Units	Duration	minute	short-displayName
@@ -8223,16 +8327,11 @@
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	GyMMMMd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	GyMMMMEd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	Md
-1	Date & Time	Chinese	Formats - Flexible - Date Formats	MEd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	MMMd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	MMMEd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	MMMMd
-1	Date & Time	Chinese	Formats - Flexible - Date Formats	UMd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	UMMMd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	yMd
-1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyM
-1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMd
-1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMEd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMMM
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMMMd
 1	Date & Time	Chinese	Formats - Flexible - Date Formats	yyyyMMMEd
@@ -10048,9 +10147,6 @@
 1	Units	Volume	tablespoon	narrow-displayName
 1	Date & Time	Buddhist	Formats - Standard - Date & Time Combination Formats	medium-atTime
 1	Date & Time	Buddhist	Formats - Standard - Date & Time Combination Formats	short-atTime
-1	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyM
-1	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyMd
-1	Date & Time	Buddhist	Formats - Flexible - Date Formats	yyyyMEd
 1	Date & Time	Buddhist	Formats - Intervals - Date Formats	Bh/B
 1	Date & Time	Buddhist	Formats - Intervals - Date Formats	Bhm/B
 1	Date & Time	Buddhist	Formats - Intervals - Date Formats	d/d
@@ -11290,11 +11386,9 @@
 1	Numbers	Number Formatting Patterns	Standard Patterns using Telugu Digits (telu)	standard-currency-alphaNextToNumber
 1	Numbers	Number Formatting Patterns	Standard Patterns using Telugu Digits (telu)	standard-currency-noCurrency
 1	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMMMMEEEEd
-1	Date & Time	Buddhist	Formats - Flexible - Date Formats	GyMd
 1	Date & Time	Islamic	Months - abbreviated - Standalone	Jan
 1	Date & Time	Islamic	Months - abbreviated - Standalone	Sep
 1	Date & Time	Islamic	Formats - Standard - Date Formats	medium
-1	Date & Time	Islamic	Formats - Standard - Date Formats	short
 1	Date & Time	Islamic	Formats - Flexible - Date Formats	y
 1	Date & Time	Islamic	Formats - Flexible - Date Formats	yMMMd
 1	Date & Time	Islamic	Formats - Flexible - Date Formats	yMMMM
@@ -11479,7 +11573,6 @@
 1	Currencies	Southern Asia (C)	Southern Asia: India	INR-name-one
 1	Currencies	Southern Asia (C)	Southern Asia: Iran	IRR-name-one
 1	Currencies	Southern Asia (C)	Southern Asia: Sri Lanka	LKR-name-one
-1	Currencies	Southern Asia (C)	Southern Asia: Maldives	MVR-name-one
 1	Currencies	Southern Asia (C)	Southern Asia: Nepal	NPR-name-one
 1	Currencies	Southern Asia (C)	Southern Asia: Pakistan	PKR-name-one
 1	Currencies	Southeast Asia (C)	Southeast Asia: Indonesia	IDR-name-one

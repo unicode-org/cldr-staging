@@ -79,6 +79,10 @@ Key: ms
 Aliases: measure
 Description: Measurement System
 %%
+Key: mu
+Aliases: measurement-unit
+Description: Allows setting overrides for measurement units. Currently limited to quantity=temperature, and no provision for usage or size.
+%%
 Key: nu
 Aliases: numbers
 Description: Numbering system type key
@@ -1909,6 +1913,21 @@ Key: ms
 Subtype: ussystem
 Description: US System of measurement: feet, pints, etc.; pints are 16oz
 Since: 28
+%%
+Key: mu
+Subtype: celsius
+Description: temperature unit is Celsius
+Since: 42
+%%
+Key: mu
+Subtype: fahrenhe
+Description: temperature unit is Fahrenheit
+Since: 42
+%%
+Key: mu
+Subtype: kelvin
+Description: temperature unit is Kelvin
+Since: 42
 %%
 Key: nu
 Subtype: adlm
@@ -4299,7 +4318,7 @@ Description: Dar es Salaam, Tanzania
 %%
 Key: tz
 Subtype: uaiev
-Aliases: Europe/Kiev
+Aliases: Europe/Kiev, Europe/Kyiv
 Description: Kyiv, Ukraine
 %%
 Key: tz
