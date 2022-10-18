@@ -5,10 +5,10 @@ Hebrew	he	grammaticalGender	general	masculine, feminine
 
 # Minimal Pairs
 #Type	Code	Pattern	Formatted Sample
-Plural	one	‫השנה האחרונה הייתה קשה‬	‫<div class='cldr_example'>השנה האחרונה הייתה קשה</div><div class='cldr_example'>❌  השנה האחרונה הייתה קשה</div>‬
-Plural	two	‫השנתיים האחרונות היו קשות‬	‫<div class='cldr_example'>השנתיים האחרונות היו קשות</div><div class='cldr_example'>❌  השנתיים האחרונות היו קשות</div>‬
-Plural	many	‫{0} שנה‬	‫<div class='cldr_example'><span class='cldr_substituted'>20</span> שנה</div><div class='cldr_example'>❌  <span class='cldr_substituted'>3</span> שנה</div>‬
-Plural	other	‫{0} השנים האחרונות היו קשות‬	‫<div class='cldr_example'><span class='cldr_substituted'>3</span> השנים האחרונות היו קשות</div><div class='cldr_example'>❌  <span class='cldr_substituted'>20</span> השנים האחרונות היו קשות</div>‬
+Plural	one	‫יום‬	‫<div class='cldr_example'>יום</div><div class='cldr_example'>❌  יום</div>‬
+Plural	two	‫יומיים‬	‫<div class='cldr_example'>יומיים</div><div class='cldr_example'>❌  יומיים</div>‬
+Plural	many	‫{0} יום‬	‫<div class='cldr_example'><span class='cldr_substituted'>null</span> יום</div><div class='cldr_example'>❌  <span class='cldr_substituted'>3</span> יום</div>‬
+Plural	other	‫{0} ימים‬	‫<div class='cldr_example'><span class='cldr_substituted'>3</span> ימים</div><div class='cldr_example'>❌  <span class='cldr_substituted'>1</span> ימים</div>‬
 Gender (for measurement units)	masculine	‫ה{0} הראשון הוא הקובע‬	‫<div class='cldr_example'>ה<span class='cldr_substituted'>סנטימטר</span> הראשון הוא הקובע</div><div class='cldr_example'>❌  ה<span class='cldr_substituted'>מאה</span> הראשון הוא הקובע</div>‬
 Gender (for measurement units)	feminine	‫ה{0} הראשונה היא הקובעת‬	‫<div class='cldr_example'>ה<span class='cldr_substituted'>מאה</span> הראשונה היא הקובעת</div><div class='cldr_example'>❌  ה<span class='cldr_substituted'>סנטימטר</span> הראשונה היא הקובעת</div>‬
 
@@ -104,7 +104,7 @@ speed	kilometer-per-hour • ( = 0.2˙7 m/s)	masculine	‫הקילומטר לש�
 speed	meters per second	masculine	‫המטר לשנייה הראשון הוא הקובע‬
 substance-amount	items	masculine	‫הפריט הראשון הוא הקובע‬
 substance-amount	mole • ( = 602,214,076,000,000,000,000,000 items)	masculine	‫המול הראשון הוא הקובע‬
-temperature	°	feminine	‫ה° הראשונה היא הקובעת‬
+temperature	degrees temperature	feminine	‫ה° הראשונה היא הקובעת‬
 temperature	celsius • ( = 1 K)	feminine	‫המעלת צלזיוס הראשונה היא הקובעת‬
 temperature	kelvins	feminine	‫הקלווין הראשונה היא הקובעת‬
 typewidth	typographic ems	masculine	‫ה‎ em ‎ הראשון הוא הקובע‬
@@ -121,13 +121,14 @@ volume	cubic meters	masculine	‫המטר מעוקב הראשון הוא הקו�
 volume	megaliters	masculine	‫המגה ליטר הראשון הוא הקובע‬
 volume	cubic kilometers	masculine	‫הקילומטר מעוקב הראשון הוא הקובע‬
 year-duration	month • ( = 0.08˙3 yrs)	masculine	‫החודש הראשון הוא הקובע‬
+year-duration	quarter • ( = 0.25 yrs)	masculine	‫הרבעון הראשון הוא הקובע‬
 year-duration	years	feminine	‫השנה הראשונה היא הקובעת‬
 year-duration	decades	masculine	‫העשור הראשון הוא הקובע‬
 year-duration	centuries	feminine	‫המאה הראשונה היא הקובעת‬
 
 # Unit Power Components
-#Unit	Case	Gender	Pattern for one	Case MP + pattern with 1.0	Pattern for two	Case MP + pattern with 2.0	Pattern for many	Case MP + pattern with 30.0	Pattern for other	Case MP + pattern with 3.0
-power2	nominative	masculine • (day)	‫{0} בריבוע‬	‫יום בריבוע 1‬	‫{0} בריבוע‬	‫יומיים בריבועיומיים‬	‫{0} בריבוע‬	‫30 יום בריבוע‬	‫{0} בריבוע‬	‫3 ימים בריבוע‬
-power2	nominative	feminine • (second)	‫{0} בריבוע‬	‫שניה בריבועשניה‬	‫{0} בריבוע‬	‫שתי שניות בריבועשתי שניות‬	‫{0} בריבוע‬	‫‏30 שניות בריבוע‬	‫{0} בריבוע‬	‫3 שניות בריבוע‬
-power3	nominative	masculine • (day)	‫{0} מעוקב‬	‫יום מעוקב 1‬	‫{0} מעוקב‬	‫יומיים מעוקביומיים‬	‫{0} מעוקב‬	‫30 יום מעוקב‬	‫{0} מעוקב‬	‫3 ימים מעוקב‬
-power3	nominative	feminine • (second)	‫{0} מעוקב‬	‫שניה מעוקבשניה‬	‫{0} מעוקב‬	‫שתי שניות מעוקבשתי שניות‬	‫{0} מעוקב‬	‫‏30 שניות מעוקב‬	‫{0} מעוקב‬	‫3 שניות מעוקב‬
+#Unit	Case	Gender	Pattern for one	Case MP + pattern with 1.0	Pattern for two	Case MP + pattern with 2.0	Pattern for other	Case MP + pattern with 3.0
+power2	nominative	masculine • (day)	‫{0} בריבוע‬	‫יום בריבוע 1‬	‫{0} בריבוע‬	‫יומיים בריבועיומיים‬	‫{0} בריבוע‬	‫3 ימים בריבוע‬
+power2	nominative	feminine • (second)	‫{0} בריבוע‬	‫שניה בריבועשניה‬	‫{0} בריבוע‬	‫שתי שניות בריבועשתי שניות‬	‫{0} בריבוע‬	‫3 שניות בריבוע‬
+power3	nominative	masculine • (day)	‫{0} מעוקב‬	‫יום מעוקב 1‬	‫{0} מעוקב‬	‫יומיים מעוקביומיים‬	‫{0} מעוקב‬	‫3 ימים מעוקב‬
+power3	nominative	feminine • (second)	‫{0} מעוקב‬	‫שניה מעוקבשניה‬	‫{0} מעוקב‬	‫שתי שניות מעוקבשתי שניות‬	‫{0} מעוקב‬	‫3 שניות מעוקב‬

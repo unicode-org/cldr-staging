@@ -1,4 +1,4 @@
-Version: 41.0
+Version: 42.0
 Extension: u
 %%
 Key: ca
@@ -78,6 +78,9 @@ Description: Line break key for CSS lev 3 word-break options
 Key: ms
 Aliases: measure
 Description: Measurement System
+%%
+Key: mu
+Description: Allows setting overrides for measurement units. Currently limited to quantity=temperature, and no provision for usage or size.
 %%
 Key: nu
 Aliases: numbers
@@ -1910,6 +1913,21 @@ Subtype: ussystem
 Description: US System of measurement: feet, pints, etc.; pints are 16oz
 Since: 28
 %%
+Key: mu
+Subtype: celsius
+Description: temperature unit is Celsius
+Since: 42
+%%
+Key: mu
+Subtype: fahrenhe
+Description: temperature unit is Fahrenheit
+Since: 42
+%%
+Key: mu
+Subtype: kelvin
+Description: temperature unit is Kelvin
+Since: 42
+%%
 Key: nu
 Subtype: adlm
 Description: Adlam digits
@@ -2086,6 +2104,11 @@ Description: Kayah Li digits
 Since: 21
 %%
 Key: nu
+Subtype: kawi
+Description: Kawi digits
+Since: 42
+%%
+Key: nu
 Subtype: khmr
 Description: Khmer digits
 %%
@@ -2182,6 +2205,11 @@ Key: nu
 Subtype: mymrtlng
 Description: Myanmar Tai Laing digits
 Since: 28
+%%
+Key: nu
+Subtype: nagm
+Description: Nag Mundari digits
+Since: 42
 %%
 Key: nu
 Subtype: native
@@ -4289,7 +4317,7 @@ Description: Dar es Salaam, Tanzania
 %%
 Key: tz
 Subtype: uaiev
-Aliases: Europe/Kiev
+Aliases: Europe/Kiev, Europe/Kyiv
 Description: Kyiv, Ukraine
 %%
 Key: tz
