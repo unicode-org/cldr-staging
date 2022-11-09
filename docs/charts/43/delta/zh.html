@@ -1,0 +1,574 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Chinese Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Chinese Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='2'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source'><a name='C' href='#C'>C</a></td><td class='source'>Cantonese ► yue-menu</td><td class='source' rowSpan='25'>zh_Hant_HK</td><td class='target'>粵語</td><td class='target'>廣東話</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td><td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td><td class='source'>CI-variant</td><td class='target'>象牙海岸</td><td class='target'>科特迪瓦</td><td class='target' rowSpan='2'>moderate</td></tr>
+	<tr><td class='source' rowSpan='416'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='22'><a name='Fields' href='#Fields'>Fields</a></td><td class='source'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>week-narrow</td><td class='target'>週</td><td class='target'>星期</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Sunday Narrow' href='#Relative Sunday Narrow'>Relative Sunday Narrow</a></td><td class='source'>-1</td><td class='target'>上週日</td><td class='target'>上星期日</td><td class='target' rowSpan='21'>modern</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週日</td><td class='target'>本星期日</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週日</td><td class='target'>下星期日</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Monday Narrow' href='#Relative Monday Narrow'>Relative Monday Narrow</a></td><td class='source'>-1</td><td class='target'>上週一</td><td class='target'>上星期一</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週一</td><td class='target'>本星期一</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週一</td><td class='target'>下星期一</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Tuesday Narrow' href='#Relative Tuesday Narrow'>Relative Tuesday Narrow</a></td><td class='source'>-1</td><td class='target'>上週二</td><td class='target'>上星期二</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週二</td><td class='target'>本星期二</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週二</td><td class='target'>下星期二</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Wednesday Narrow' href='#Relative Wednesday Narrow'>Relative Wednesday Narrow</a></td><td class='source'>-1</td><td class='target'>上週三</td><td class='target'>上星期三</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週三</td><td class='target'>本星期三</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週三</td><td class='target'>下星期三</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Thursday Narrow' href='#Relative Thursday Narrow'>Relative Thursday Narrow</a></td><td class='source'>-1</td><td class='target'>上週四</td><td class='target'>上星期四</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週四</td><td class='target'>本星期四</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週四</td><td class='target'>下星期四</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Friday Narrow' href='#Relative Friday Narrow'>Relative Friday Narrow</a></td><td class='source'>-1</td><td class='target'>上週五</td><td class='target'>上星期五</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週五</td><td class='target'>本星期五</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週五</td><td class='target'>下星期五</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Saturday Narrow' href='#Relative Saturday Narrow'>Relative Saturday Narrow</a></td><td class='source'>-1</td><td class='target'>上週六</td><td class='target'>上星期六</td></tr>
+	<tr><td class='source'>0</td><td class='target'>本週六</td><td class='target'>本星期六</td></tr>
+	<tr><td class='source'>1</td><td class='target'>下週六</td><td class='target'>下星期六</td></tr>
+	<tr><td class='source' rowSpan='38'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td><td class='target' rowSpan='435'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Hmv/H</td><td class='source' rowSpan='3'>zh_Hans_SG</td><td class='target' rowSpan='2'>v HH:mm – HH:mm</td><td class='target' rowSpan='2'>vHH:mm–HH:mm</td></tr>
+	<tr><td class='source'>Hmv/m</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/d</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M月d日E至d日E</td><td class='target'>M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>y/y</td><td class='source'>zh_Hant_HK</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy年M月至M月</td><td class='target'>y年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='2'>zh_Hant_HK</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source' rowSpan='111'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='47'><a name='Coptic' href='#Coptic'>Coptic</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>G y年M月d日 EEEE</td><td class='target'>Gy年M月d日EEEE</td></tr>
+	<tr><td class='source'>long</td><td class='target' rowSpan='2'>G y年M月d日</td><td class='target' rowSpan='2'>Gy年M月d日</td></tr>
+	<tr><td class='source'>medium</td></tr>
+	<tr><td class='source'>short</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>d E</td><td class='target'>d日E</td></tr>
+	<tr><td class='source'>Gy</td><td class='target'>G y年</td><td class='target'>Gy年</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>Md</td><td class='target'>M/d</td><td class='target'>d/M</td></tr>
+	<tr><td class='source'>MEd</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd</td><td class='target'>M月d日 E</td><td class='target'>M月d日E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y年</td><td class='target' rowSpan='2'>Gy年</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>G y/M</td><td class='target'>Gy/M</td></tr>
+	<tr><td class='source'>yyyyMd</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'>yyyyMEd</td><td class='target'>G y/M/d（E）</td><td class='target'>Gy/M/dE</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y年QQQ</td><td class='target'>Gy年QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y年QQQQ</td><td class='target'>Gy年QQQQ</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d至M/d</td><td class='target' rowSpan='2'>d/M 至 d/M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>M/d E至M/d E</td><td class='target' rowSpan='2'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>G y/M/d至y/M/d</td><td class='target' rowSpan='3'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>G y/M/dE至y/M/dE</td><td class='target' rowSpan='3'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='47'><a name='Ethiopic' href='#Ethiopic'>Ethiopic</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>G y年M月d日 EEEE</td><td class='target'>Gy年M月d日EEEE</td></tr>
+	<tr><td class='source'>long</td><td class='target' rowSpan='2'>G y年M月d日</td><td class='target' rowSpan='2'>Gy年M月d日</td></tr>
+	<tr><td class='source'>medium</td></tr>
+	<tr><td class='source'>short</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>d E</td><td class='target'>d日E</td></tr>
+	<tr><td class='source'>Gy</td><td class='target'>G y年</td><td class='target'>Gy年</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>Md</td><td class='target'>M/d</td><td class='target'>d/M</td></tr>
+	<tr><td class='source'>MEd</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd</td><td class='target'>M月d日 E</td><td class='target'>M月d日E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y年</td><td class='target' rowSpan='2'>Gy年</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>G y/M</td><td class='target'>Gy/M</td></tr>
+	<tr><td class='source'>yyyyMd</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'>yyyyMEd</td><td class='target'>G y/M/d（E）</td><td class='target'>Gy/M/dE</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y年QQQ</td><td class='target'>Gy年QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y年QQQQ</td><td class='target'>Gy年QQQQ</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d至M/d</td><td class='target' rowSpan='2'>d/M 至 d/M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>M/d E至M/d E</td><td class='target' rowSpan='2'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>G y/M/d至y/M/d</td><td class='target' rowSpan='3'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>G y/M/dE至y/M/dE</td><td class='target' rowSpan='3'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='61'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>d E</td><td class='target'>d日E</td></tr>
+	<tr><td class='source'>Gy</td><td class='target'>G y年</td><td class='target'>Gy年</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source' rowSpan='2'>Md</td><td class='source'>zh_Hans_SG</td><td class='target' rowSpan='2'>M/d</td><td class='target'>M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE</td><td class='target'>M-dE</td></tr>
+	<tr><td class='source' rowSpan='5'>zh_Hant_HK</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd</td><td class='target'>M月d日 E</td><td class='target'>M月d日E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y年</td><td class='target' rowSpan='2'>Gy年</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>G y/M</td><td class='target'>Gy/M</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMd</td><td class='source'>zh_Hans_SG</td><td class='target' rowSpan='2'>G y/M/d</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMEd</td><td class='source'>zh_Hans_SG</td><td class='target'>G y/M/dE</td><td class='target'>Gy年M月d日，E</td></tr>
+	<tr><td class='source' rowSpan='7'>zh_Hant_HK</td><td class='target'>G y/M/d（E）</td><td class='target'>Gy/M/dE</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y年QQQ</td><td class='target'>Gy年QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y年QQQQ</td><td class='target'>Gy年QQQQ</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Hmv/H</td><td class='source' rowSpan='3'>zh_Hans_SG</td><td class='target' rowSpan='2'>v HH:mm – HH:mm</td><td class='target' rowSpan='2'>vHH:mm–HH:mm</td></tr>
+	<tr><td class='source'>Hmv/m</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/d</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M月d日E至d日E</td><td class='target'>M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>y/y</td><td class='source'>zh_Hant_HK</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy年M月至M月</td><td class='target'>y年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='2'>zh_Hant_HK</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source' rowSpan='21'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='65'><a name='Indian' href='#Indian'>Indian</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>G y年M月d日 EEEE</td><td class='target'>Gy年M月d日EEEE</td></tr>
+	<tr><td class='source'>long</td><td class='target' rowSpan='2'>G y年M月d日</td><td class='target' rowSpan='2'>Gy年M月d日</td></tr>
+	<tr><td class='source'>medium</td></tr>
+	<tr><td class='source'>short</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>d E</td><td class='target'>d日E</td></tr>
+	<tr><td class='source'>Gy</td><td class='target'>G y年</td><td class='target'>Gy年</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source' rowSpan='2'>Md</td><td class='source'>zh_Hans_SG</td><td class='target' rowSpan='2'>M/d</td><td class='target'>M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE</td><td class='target'>M-dE</td></tr>
+	<tr><td class='source' rowSpan='5'>zh_Hant_HK</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd</td><td class='target'>M月d日 E</td><td class='target'>M月d日E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y年</td><td class='target' rowSpan='2'>Gy年</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>G y/M</td><td class='target'>Gy/M</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMd</td><td class='source'>zh_Hans_SG</td><td class='target' rowSpan='2'>G y/M/d</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yyyyMEd</td><td class='source'>zh_Hans_SG</td><td class='target'>G y/M/dE</td><td class='target'>Gy年M月d日，E</td></tr>
+	<tr><td class='source' rowSpan='7'>zh_Hant_HK</td><td class='target'>G y/M/d（E）</td><td class='target'>Gy/M/dE</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y年QQQ</td><td class='target'>Gy年QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y年QQQQ</td><td class='target'>Gy年QQQQ</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Hmv/H</td><td class='source' rowSpan='3'>zh_Hans_SG</td><td class='target' rowSpan='2'>v HH:mm – HH:mm</td><td class='target' rowSpan='2'>vHH:mm–HH:mm</td></tr>
+	<tr><td class='source'>Hmv/m</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/d</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M月d日E至d日E</td><td class='target'>M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>y/y</td><td class='source'>zh_Hant_HK</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy年M月至M月</td><td class='target'>y年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='2'>zh_Hant_HK</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source' rowSpan='110'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='26'><a name='Islamic' href='#Islamic'>Islamic</a></td><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Md</td><td class='target'>M/d</td><td class='target'>d/M</td></tr>
+	<tr><td class='source'>MEd</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d至M/d</td><td class='target' rowSpan='2'>d/M 至 d/M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>M/d E至M/d E</td><td class='target' rowSpan='2'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>G y/M/d至y/M/d</td><td class='target' rowSpan='3'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>G y/M/dE至y/M/dE</td><td class='target' rowSpan='3'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='25'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Md</td><td class='target'>M/d</td><td class='target'>d/M</td></tr>
+	<tr><td class='source'>MEd</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d至M/d</td><td class='target' rowSpan='2'>d/M 至 d/M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>M/d E至M/d E</td><td class='target' rowSpan='2'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>G y/M/d至y/M/d</td><td class='target' rowSpan='3'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>G y/M/dE至y/M/dE</td><td class='target' rowSpan='3'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='47'><a name='Persian' href='#Persian'>Persian</a></td><td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source'>full</td><td class='target'>G y年M月d日 EEEE</td><td class='target'>Gy年M月d日EEEE</td></tr>
+	<tr><td class='source'>long</td><td class='target' rowSpan='2'>G y年M月d日</td><td class='target' rowSpan='2'>Gy年M月d日</td></tr>
+	<tr><td class='source'>medium</td></tr>
+	<tr><td class='source'>short</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='19'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>Ed</td><td class='target'>d E</td><td class='target'>d日E</td></tr>
+	<tr><td class='source'>Gy</td><td class='target'>G y年</td><td class='target'>Gy年</td></tr>
+	<tr><td class='source'>GyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>GyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>GyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>Md</td><td class='target'>M/d</td><td class='target'>d/M</td></tr>
+	<tr><td class='source'>MEd</td><td class='target'>M/d（E）</td><td class='target'>d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd</td><td class='target'>M月d日 E</td><td class='target'>M月d日E</td></tr>
+	<tr><td class='source'>y</td><td class='target' rowSpan='2'>G y年</td><td class='target' rowSpan='2'>Gy年</td></tr>
+	<tr><td class='source'>yyyy</td></tr>
+	<tr><td class='source'>yyyyM</td><td class='target'>G y/M</td><td class='target'>Gy/M</td></tr>
+	<tr><td class='source'>yyyyMd</td><td class='target'>G y/M/d</td><td class='target'>Gy/M/d</td></tr>
+	<tr><td class='source'>yyyyMEd</td><td class='target'>G y/M/d（E）</td><td class='target'>Gy/M/dE</td></tr>
+	<tr><td class='source'>yyyyMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyMMMd</td><td class='target'>G y年M月d日</td><td class='target'>Gy年M月d日</td></tr>
+	<tr><td class='source'>yyyyMMMEd</td><td class='target'>G y年M月d日 E</td><td class='target'>Gy年M月d日E</td></tr>
+	<tr><td class='source'>yyyyMMMM</td><td class='target'>G y年M月</td><td class='target'>Gy年M月</td></tr>
+	<tr><td class='source'>yyyyQQQ</td><td class='target'>G y年QQQ</td><td class='target'>Gy年QQQ</td></tr>
+	<tr><td class='source'>yyyyQQQQ</td><td class='target'>G y年QQQQ</td><td class='target'>Gy年QQQQ</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Md/d</td><td class='target' rowSpan='2'>M/d至M/d</td><td class='target' rowSpan='2'>d/M 至 d/M</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>M/d E至M/d E</td><td class='target' rowSpan='2'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>G y/M/d至y/M/d</td><td class='target' rowSpan='3'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>G y/M/dE至y/M/dE</td><td class='target' rowSpan='3'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='38'><a name='Minguo' href='#Minguo'>Minguo</a></td><td class='source'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td><td class='source'>full</td><td class='target'>{1}{0}</td><td class='target'>{1} {0}</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>Hmv/H</td><td class='source' rowSpan='3'>zh_Hans_SG</td><td class='target' rowSpan='2'>v HH:mm – HH:mm</td><td class='target' rowSpan='2'>vHH:mm–HH:mm</td></tr>
+	<tr><td class='source'>Hmv/m</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/d</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>Md/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/d – M/d</td><td class='target'>M-d至M-d</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d至M/d</td><td class='target'>d/M 至 d/M</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source' rowSpan='2'>MEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>M/dE至M/dE</td><td class='target'>M-dE至M-dE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>M/d E至M/d E</td><td class='target'>d/M（E） 至 d/M（E）</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>M月d日E至d日E</td><td class='target'>M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>y/y</td><td class='source'>zh_Hant_HK</td><td class='target'>G y至y</td><td class='target'>Gy年至y年</td></tr>
+	<tr><td class='source' rowSpan='2'>yM/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy年M月至M月</td><td class='target'>y年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='2'>zh_Hant_HK</td><td class='target' rowSpan='2'>G y/M至y/M</td><td class='target' rowSpan='2'>Gy/M至y/M</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/d – y/M/d</td><td class='target'>d/M/y至d/M/y</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/d至y/M/d</td><td class='target'>Gy/M/d至y/M/d</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/d</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/M</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source' rowSpan='2'>yMEd/y</td><td class='source'>zh_Hans_SG</td><td class='target'>Gy/M/dE至y/M/dE</td><td class='target'>d/M/yE至d/M/yE</td></tr>
+	<tr><td class='source' rowSpan='11'>zh_Hant_HK</td><td class='target'>G y/M/dE至y/M/dE</td><td class='target'>Gy/M/dE至y/M/dE</td></tr>
+	<tr><td class='source'>yMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>G y年M月d日至d日</td><td class='target'>Gy年M月d日至d日</td></tr>
+	<tr><td class='source'>yMMMd/M</td><td class='target'>G y年M月d日至M月d日</td><td class='target'>Gy年M月d日至M月d日</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>G y年M月d日至y年M月d日</td><td class='target'>Gy年M月d日至y年M月d日</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>G y年M月d日E至d日E</td><td class='target'>Gy年M月d日E至d日E</td></tr>
+	<tr><td class='source'>yMMMEd/M</td><td class='target'>G y年M月d日E至M月d日E</td><td class='target'>Gy年M月d日E至M月d日E</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>G y年M月d日E至y年M月d日E</td><td class='target'>Gy年M月d日E至y年M月d日E</td></tr>
+	<tr><td class='source'>yMMMM/M</td><td class='target'>G y年M月至M月</td><td class='target'>Gy年M月至M月</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>G y年M月至y年M月</td><td class='target'>Gy年M月至y年M月</td></tr>
+	<tr><td class='source' rowSpan='53'><a name='Numbers' href='#Numbers'>Numbers</a></td><td class='source' rowSpan='41'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td><td class='source'><a name='Currency Unit Patterns using Balinese Digits (bali)' href='#Currency Unit Patterns using Balinese Digits (bali)'>Currency Unit Patterns using Balinese Digits (bali)</a></td><td class='source' rowSpan='41'>currencies-other</td><td class='source' rowSpan='41'>zh_Hans_SG</td><td class='target' rowSpan='41'>{0}{1}</td><td class='target' rowSpan='41'>{0} {1}</td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Bangla Digits (beng)' href='#Currency Unit Patterns using Bangla Digits (beng)'>Currency Unit Patterns using Bangla Digits (beng)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Brahmi Digits (brah)' href='#Currency Unit Patterns using Brahmi Digits (brah)'>Currency Unit Patterns using Brahmi Digits (brah)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Chakma Digits (cakm)' href='#Currency Unit Patterns using Chakma Digits (cakm)'>Currency Unit Patterns using Chakma Digits (cakm)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Cham Digits (cham)' href='#Currency Unit Patterns using Cham Digits (cham)'>Currency Unit Patterns using Cham Digits (cham)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Chinese Decimal Numerals (hanidec)' href='#Currency Unit Patterns using Chinese Decimal Numerals (hanidec)'>Currency Unit Patterns using Chinese Decimal Numerals (hanidec)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Devanagari Digits (deva)' href='#Currency Unit Patterns using Devanagari Digits (deva)'>Currency Unit Patterns using Devanagari Digits (deva)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Extended Arabic-Indic Digits (arabext)' href='#Currency Unit Patterns using Extended Arabic-Indic Digits (arabext)'>Currency Unit Patterns using Extended Arabic-Indic Digits (arabext)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Full-Width Digits (fullwide)' href='#Currency Unit Patterns using Full-Width Digits (fullwide)'>Currency Unit Patterns using Full-Width Digits (fullwide)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Gujarati Digits (gujr)' href='#Currency Unit Patterns using Gujarati Digits (gujr)'>Currency Unit Patterns using Gujarati Digits (gujr)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Gurmukhi Digits (guru)' href='#Currency Unit Patterns using Gurmukhi Digits (guru)'>Currency Unit Patterns using Gurmukhi Digits (guru)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Javanese Digits (java)' href='#Currency Unit Patterns using Javanese Digits (java)'>Currency Unit Patterns using Javanese Digits (java)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Kannada Digits (knda)' href='#Currency Unit Patterns using Kannada Digits (knda)'>Currency Unit Patterns using Kannada Digits (knda)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Kayah Li Digits (kali)' href='#Currency Unit Patterns using Kayah Li Digits (kali)'>Currency Unit Patterns using Kayah Li Digits (kali)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Khmer Digits (khmr)' href='#Currency Unit Patterns using Khmer Digits (khmr)'>Currency Unit Patterns using Khmer Digits (khmr)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Lao Digits (laoo)' href='#Currency Unit Patterns using Lao Digits (laoo)'>Currency Unit Patterns using Lao Digits (laoo)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Lepcha Digits (lepc)' href='#Currency Unit Patterns using Lepcha Digits (lepc)'>Currency Unit Patterns using Lepcha Digits (lepc)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Limbu Digits (limb)' href='#Currency Unit Patterns using Limbu Digits (limb)'>Currency Unit Patterns using Limbu Digits (limb)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Malayalam Digits (mlym)' href='#Currency Unit Patterns using Malayalam Digits (mlym)'>Currency Unit Patterns using Malayalam Digits (mlym)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Masaram Gondi digits (gonm)' href='#Currency Unit Patterns using Masaram Gondi digits (gonm)'>Currency Unit Patterns using Masaram Gondi digits (gonm)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Meetei Mayek Digits (mtei)' href='#Currency Unit Patterns using Meetei Mayek Digits (mtei)'>Currency Unit Patterns using Meetei Mayek Digits (mtei)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Mongolian Digits (mong)' href='#Currency Unit Patterns using Mongolian Digits (mong)'>Currency Unit Patterns using Mongolian Digits (mong)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Myanmar Digits (mymr)' href='#Currency Unit Patterns using Myanmar Digits (mymr)'>Currency Unit Patterns using Myanmar Digits (mymr)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Myanmar Shan Digits (mymrshan)' href='#Currency Unit Patterns using Myanmar Shan Digits (mymrshan)'>Currency Unit Patterns using Myanmar Shan Digits (mymrshan)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using N’Ko Digits (nkoo)' href='#Currency Unit Patterns using N’Ko Digits (nkoo)'>Currency Unit Patterns using N’Ko Digits (nkoo)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using New Tai Lue Digits (talu)' href='#Currency Unit Patterns using New Tai Lue Digits (talu)'>Currency Unit Patterns using New Tai Lue Digits (talu)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Odia Digits (orya)' href='#Currency Unit Patterns using Odia Digits (orya)'>Currency Unit Patterns using Odia Digits (orya)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Ol Chiki Digits (olck)' href='#Currency Unit Patterns using Ol Chiki Digits (olck)'>Currency Unit Patterns using Ol Chiki Digits (olck)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Osmanya Digits (osma)' href='#Currency Unit Patterns using Osmanya Digits (osma)'>Currency Unit Patterns using Osmanya Digits (osma)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Saurashtra Digits (saur)' href='#Currency Unit Patterns using Saurashtra Digits (saur)'>Currency Unit Patterns using Saurashtra Digits (saur)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Sharada Digits (shrd)' href='#Currency Unit Patterns using Sharada Digits (shrd)'>Currency Unit Patterns using Sharada Digits (shrd)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Sora Sompeng Digits (sora)' href='#Currency Unit Patterns using Sora Sompeng Digits (sora)'>Currency Unit Patterns using Sora Sompeng Digits (sora)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Sundanese Digits (sund)' href='#Currency Unit Patterns using Sundanese Digits (sund)'>Currency Unit Patterns using Sundanese Digits (sund)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Tai Tham Hora Digits (lana)' href='#Currency Unit Patterns using Tai Tham Hora Digits (lana)'>Currency Unit Patterns using Tai Tham Hora Digits (lana)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Tai Tham Tham Digits (lanatham)' href='#Currency Unit Patterns using Tai Tham Tham Digits (lanatham)'>Currency Unit Patterns using Tai Tham Tham Digits (lanatham)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Takri Digits (takr)' href='#Currency Unit Patterns using Takri Digits (takr)'>Currency Unit Patterns using Takri Digits (takr)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Tamil Digits (tamldec)' href='#Currency Unit Patterns using Tamil Digits (tamldec)'>Currency Unit Patterns using Tamil Digits (tamldec)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Telugu Digits (telu)' href='#Currency Unit Patterns using Telugu Digits (telu)'>Currency Unit Patterns using Telugu Digits (telu)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Thai Digits (thai)' href='#Currency Unit Patterns using Thai Digits (thai)'>Currency Unit Patterns using Thai Digits (thai)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Tibetan Digits (tibt)' href='#Currency Unit Patterns using Tibetan Digits (tibt)'>Currency Unit Patterns using Tibetan Digits (tibt)</a></td></tr>
+	<tr><td class='source'><a name='Currency Unit Patterns using Vai Digits (vaii)' href='#Currency Unit Patterns using Vai Digits (vaii)'>Currency Unit Patterns using Vai Digits (vaii)</a></td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Compact Decimal Formatting' href='#Compact Decimal Formatting'>Compact Decimal Formatting</a></td><td class='source' rowSpan='12'><a name='Long Formats ' href='#Long Formats '>Long Formats </a></td><td class='source'>4-digits-long-other</td><td class='source' rowSpan='23'>zh_Hant_HK</td><td class='target'>0</td><td class='target'>0K</td><td class='target' rowSpan='12'>modern</td></tr>
+	<tr><td class='source'>5-digits-long-other</td><td class='target'>0萬</td><td class='target'>00K</td></tr>
+	<tr><td class='source'>6-digits-long-other</td><td class='target'>00萬</td><td class='target'>000K</td></tr>
+	<tr><td class='source'>7-digits-long-other</td><td class='target'>000萬</td><td class='target'>0M</td></tr>
+	<tr><td class='source'>8-digits-long-other</td><td class='target'>0000萬</td><td class='target'>00M</td></tr>
+	<tr><td class='source'>9-digits-long-other</td><td class='target'>0億</td><td class='target'>000M</td></tr>
+	<tr><td class='source'>10-digits-long-other</td><td class='target'>00億</td><td class='target'>0B</td></tr>
+	<tr><td class='source'>11-digits-long-other</td><td class='target'>000億</td><td class='target'>00B</td></tr>
+	<tr><td class='source'>12-digits-long-other</td><td class='target'>0000億</td><td class='target'>000B</td></tr>
+	<tr><td class='source'>13-digits-long-other</td><td class='target'>0兆</td><td class='target'>0T</td></tr>
+	<tr><td class='source'>14-digits-long-other</td><td class='target'>00兆</td><td class='target'>00T</td></tr>
+	<tr><td class='source'>15-digits-long-other</td><td class='target'>000兆</td><td class='target'>000T</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source' rowSpan='2'><a name='Southern/Eastern Europe' href='#Southern/Eastern Europe'>Southern/Eastern Europe</a></td><td class='source'><a name='Southern Europe: Bosnia & Herzegovina: BAD (old)' href='#Southern Europe: Bosnia & Herzegovina: BAD (old)'>Southern Europe: Bosnia & Herzegovina: BAD (old)</a></td><td class='source'>BAD-name-other</td><td class='target'>波士尼亞-赫塞哥維納第納爾</td><td class='target'>波斯尼亞-赫塞哥維納第納爾</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Southern Europe: Italy: ITL (old)' href='#Southern Europe: Italy: ITL (old)'>Southern Europe: Italy: ITL (old)</a></td><td class='source'>ITL-name-other</td><td class='target'>義大利里拉</td><td class='target'>意大利里拉</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='3'><a name='Duration' href='#Duration'>Duration</a></td><td class='source'><a name='month' href='#month'>month</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='target'>月</td><td class='target'>個月</td><td class='target' rowSpan='14'>modern</td></tr>
+	<tr><td class='source'><a name='week' href='#week'>week</a></td><td class='target'>週</td><td class='target'>星期</td></tr>
+	<tr><td class='source'><a name='second' href='#second'>second</a></td><td class='source'>narrow-per</td><td class='target'>{0}/秒</td><td class='target'>{0}每秒</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Length' href='#Length'>Length</a></td><td class='source' rowSpan='2'><a name='mile' href='#mile'>mile</a></td><td class='source'>long-displayName</td><td class='target'>英里</td><td class='target'>哩</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} 英里</td><td class='target'>{0} 哩</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td><td class='source'>long-displayName</td><td class='target'>海里</td><td class='target'>浬</td></tr>
+	<tr><td class='source'>long-other-nominative</td><td class='target'>{0} 海里</td><td class='target'>{0} 浬</td></tr>
+	<tr><td class='source'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='liter' href='#liter'>liter</a></td><td class='source'>long-displayName</td><td class='target'>公升</td><td class='target'>升</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td><td class='source' rowSpan='2'><a name='g-force' href='#g-force'>g-force</a></td><td class='source'>long-other-nominative</td><td class='target'>{0} G 力</td><td class='target'>{0} G</td></tr>
+	<tr><td class='source'>narrow-other-nominative</td><td class='source'>zh_Hans_SG</td><td class='target'>{0}G</td><td class='target'>{0}G力</td></tr>
+	<tr><td class='source'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td><td class='source' rowSpan='2'>narrow-displayName</td><td class='source' rowSpan='4'>zh_Hant_HK</td><td class='target'>公里/小時</td><td class='target'>公里每小時</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='foodcalorie' href='#foodcalorie'>foodcalorie</a></td><td class='target'>大卡</td><td class='target'>千卡</td></tr>
+	<tr><td class='source'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td><td class='source' rowSpan='2'>long-displayName</td><td class='target'>千焦耳</td><td class='target'>千焦</td></tr>
+	<tr><td class='source'><a name='watt' href='#watt'>watt</a></td><td class='target'>瓦特</td><td class='target'>瓦</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source' rowSpan='2'>Formats - Standard - Date Formats-short</td><td class='source' rowSpan='2'>zh_Hans_SG</td><td class='target' rowSpan='2'>GyMd</td><td class='target' rowSpan='2'>GGGGGyyMMdd</td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Indian' href='#Indian'>Indian</a></td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>

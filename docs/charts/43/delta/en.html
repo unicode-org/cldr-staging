@@ -1,0 +1,203 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>English Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">English Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!-- 
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
+	<tr><td class='source' rowSpan='58'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='7'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='4'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>weekOfMonth-narrow</td><td class='source' rowSpan='2'>en_AU</td><td class='target'>wk of mo</td><td class='target'>wk of mo.</td><td class='target' rowSpan='4'>modern</td></tr>
+	<tr><td class='source'>weekdayOfMonth-narrow</td><td class='target'>wkday of mo</td><td class='target'>wkday of mo.</td></tr>
+	<tr><td class='source'>dayperiod-short</td><td class='source' rowSpan='2'>en_IN</td><td class='target' rowSpan='2'>am/pm</td><td class='target' rowSpan='2'>AM/PM</td></tr>
+	<tr><td class='source'>dayperiod-narrow</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td><td class='source'>-1</td><td class='source' rowSpan='3'>en_SG</td><td class='target'>last mo</td><td class='target'>last mth</td><td class='target' rowSpan='7'>moderate</td></tr>
+	<tr><td class='source'>0</td><td class='target'>this mo</td><td class='target'>this mth</td></tr>
+	<tr><td class='source'>1</td><td class='target'>next mo</td><td class='target'>next mth</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='4'><a name='Day Periods - wide - Formatting' href='#Day Periods - wide - Formatting'>Day Periods - wide - Formatting</a></td><td class='source'>morning1</td><td class='source' rowSpan='4'>en_AU</td><td class='target'>in the morning</td><td class='target'>morning</td></tr>
+	<tr><td class='source'>afternoon1</td><td class='target'>in the afternoon</td><td class='target'>afternoon</td></tr>
+	<tr><td class='source'>evening1</td><td class='target'>in the evening</td><td class='target'>evening</td></tr>
+	<tr><td class='source'>night1</td><td class='target'>at night</td><td class='target'>night</td></tr>
+	<tr><td class='source' rowSpan='7'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td><td class='source' rowSpan='3'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td><td class='source'>GyMMM</td><td class='source'>en_IN</td><td class='target'>MMM y G</td><td class='target'>MMM, y G</td><td class='target' rowSpan='47'>comprehensive</td></tr>
+	<tr><td class='source' rowSpan='2'>M</td><td class='source'>en_001</td><td class='target' rowSpan='2'>L</td><td class='target' rowSpan='2'>LL</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>MMM/M</td><td class='source'>en_CA</td><td class='target'>MMM – MMM</td><td class='target'>MMM–MMM</td></tr>
+	<tr><td class='source' rowSpan='3'>y/y</td><td class='source'>en_001</td><td class='target' rowSpan='3'>y – y G</td><td class='target' rowSpan='2'>y–y G</td></tr>
+	<tr><td class='source'>en_CA</td></tr>
+	<tr><td class='source'>en_ZA</td><td class='target'>G y – y</td></tr>
+	<tr><td class='source' rowSpan='40'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source' rowSpan='40'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td><td class='source' rowSpan='9'>full</td><td class='source'>en_001</td><td class='target' rowSpan='9'>EEEE, MMMM d, y G</td><td class='target' rowSpan='2'>EEEE, d MMMM y G</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source'>en_BW</td><td class='target' rowSpan='2'>EEEE, dd MMMM y G</td></tr>
+	<tr><td class='source'>en_BZ</td></tr>
+	<tr><td class='source'>en_HK</td><td class='target'>EEEE, d MMMM, y G</td></tr>
+	<tr><td class='source'>en_IE</td><td class='target'>EEEE d MMMM y G</td></tr>
+	<tr><td class='source'>en_IN</td><td class='target'>EEEE, d MMMM, y G</td></tr>
+	<tr><td class='source'>en_ZA</td><td class='target' rowSpan='2'>EEEE, dd MMMM y G</td></tr>
+	<tr><td class='source'>en_ZW</td></tr>
+	<tr><td class='source' rowSpan='9'>long</td><td class='source'>en_001</td><td class='target' rowSpan='9'>MMMM d, y G</td><td class='target' rowSpan='2'>d MMMM y G</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source'>en_BW</td><td class='target' rowSpan='2'>dd MMMM y G</td></tr>
+	<tr><td class='source'>en_BZ</td></tr>
+	<tr><td class='source'>en_HK</td><td class='target' rowSpan='2'>d MMMM, y G</td></tr>
+	<tr><td class='source'>en_IN</td></tr>
+	<tr><td class='source'>en_MT</td><td class='target' rowSpan='3'>dd MMMM y G</td></tr>
+	<tr><td class='source'>en_ZA</td></tr>
+	<tr><td class='source'>en_ZW</td></tr>
+	<tr><td class='source' rowSpan='12'>medium</td><td class='source'>en_001</td><td class='target' rowSpan='12'>MMM d, y G</td><td class='target' rowSpan='2'>d MMM y G</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source'>en_BE</td><td class='target' rowSpan='2'>dd MMM y G</td></tr>
+	<tr><td class='source'>en_BW</td></tr>
+	<tr><td class='source'>en_BZ</td><td class='target'>dd-MMM-y G</td></tr>
+	<tr><td class='source'>en_HK</td><td class='target' rowSpan='2'>d MMM, y G</td></tr>
+	<tr><td class='source'>en_IN</td></tr>
+	<tr><td class='source'>en_MT</td><td class='target'>dd MMM y G</td></tr>
+	<tr><td class='source'>en_NZ</td><td class='target'>d/MM/y G</td></tr>
+	<tr><td class='source'>en_PK</td><td class='target'>dd-MMM-y G</td></tr>
+	<tr><td class='source'>en_ZA</td><td class='target'>dd MMM y G</td></tr>
+	<tr><td class='source'>en_ZW</td><td class='target'>dd MMM,y G</td></tr>
+	<tr><td class='source' rowSpan='10'>short</td><td class='source'>en_001</td><td class='target' rowSpan='10'>M/d/y GGGGG</td><td class='target' rowSpan='2'>dd/MM/y GGGGG</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source'>en_HK</td><td class='target'>d/M/yy GGGGG</td></tr>
+	<tr><td class='source'>en_IN</td><td class='target'>d/M/y/ GGGGG</td></tr>
+	<tr><td class='source'>en_JM</td><td class='target'>d/M/y GGGGG</td></tr>
+	<tr><td class='source'>en_NZ</td><td class='target'>d/MM/y GGGGG</td></tr>
+	<tr><td class='source'>en_SE</td><td class='target'>G y-MM-dd</td></tr>
+	<tr><td class='source'>en_SG</td><td class='target'>d/M/yy GGGGG</td></tr>
+	<tr><td class='source'>en_ZA</td><td class='target'>GGGGG y/MM/dd</td></tr>
+	<tr><td class='source'>en_ZW</td><td class='target'>d/M/y GGGGG</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Currencies' href='#Currencies'>Currencies</a></td><td class='source'><a name='Central Asia (C)' href='#Central Asia (C)'>Central Asia (C)</a></td><td class='source'><a name='Central Asia: Uzbekistan' href='#Central Asia: Uzbekistan'>Central Asia: Uzbekistan</a></td><td class='source'>UZS-name-one</td><td class='source' rowSpan='4'>en_AU</td><td class='target'>Uzbekistani som</td><td class='target'>Uzbekistani soms</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source'><a name='Southeast Asia (C)' href='#Southeast Asia (C)'>Southeast Asia (C)</a></td><td class='source'><a name='Southeast Asia: Vietnam' href='#Southeast Asia: Vietnam'>Southeast Asia: Vietnam</a></td><td class='source'>VND-name-one</td><td class='target'>Vietnamese dong</td><td class='target'>Vietnamese dongs</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Oceania (C)' href='#Oceania (C)'>Oceania (C)</a></td><td class='source'><a name='Melanesia: Papua New Guinea' href='#Melanesia: Papua New Guinea'>Melanesia: Papua New Guinea</a></td><td class='source'>PGK-name-one</td><td class='target'>Papua New Guinean kina</td><td class='target'>Papua New Guinean kinas</td></tr>
+	<tr><td class='source'><a name='Polynesia: Samoa' href='#Polynesia: Samoa'>Polynesia: Samoa</a></td><td class='source'>WST-name-one</td><td class='target'>Samoan tala</td><td class='target'>Samoan talas</td></tr>
+	<tr><td class='source' rowSpan='33'><a name='Units' href='#Units'>Units</a></td><td class='source' rowSpan='9'><a name='Duration' href='#Duration'>Duration</a></td><td class='source' rowSpan='3'><a name='hour' href='#hour'>hour</a></td><td class='source' rowSpan='9'>short-one-nominative</td><td class='source'>en_001</td><td class='target' rowSpan='3'>{0} hr</td><td class='target' rowSpan='3'>{0} hrs</td><td class='target' rowSpan='33'>modern</td></tr>
+	<tr><td class='source'>en_CA</td></tr>
+	<tr><td class='source'>en_GB</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='minute' href='#minute'>minute</a></td><td class='source'>en_001</td><td class='target' rowSpan='3'>{0} min</td><td class='target' rowSpan='3'>{0} mins</td></tr>
+	<tr><td class='source'>en_CA</td></tr>
+	<tr><td class='source'>en_GB</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='second' href='#second'>second</a></td><td class='source'>en_001</td><td class='target' rowSpan='3'>{0} sec</td><td class='target' rowSpan='3'>{0} secs</td></tr>
+	<tr><td class='source'>en_CA</td></tr>
+	<tr><td class='source'>en_GB</td></tr>
+	<tr><td class='source'><a name='Length' href='#Length'>Length</a></td><td class='source'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td><td class='source'>narrow-displayName</td><td class='source'>en_AU</td><td class='target'>au</td><td class='target'>AU</td></tr>
+	<tr><td class='source'><a name='Area' href='#Area'>Area</a></td><td class='source'><a name='square-mile' href='#square-mile'>square-mile</a></td><td class='source'>narrow-per</td><td class='source' rowSpan='5'>en_CA</td><td class='target'>{0}/mi²</td><td class='target'>{0}/sq mi</td></tr>
+	<tr><td class='source' rowSpan='4'><a name='Volume' href='#Volume'>Volume</a></td><td class='source'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td><td class='source' rowSpan='9'>narrow-displayName</td><td class='target'>km³</td><td class='target'>cu kilometres</td></tr>
+	<tr><td class='source'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td><td class='target'>m³</td><td class='target'>cu metres</td></tr>
+	<tr><td class='source'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td><td class='target'>cm³</td><td class='target'>cu centimetres</td></tr>
+	<tr><td class='source'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td><td class='target'>mi³</td><td class='target'>cu miles</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td><td class='source'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td><td class='source'>en_AU</td><td class='target'>kcal</td><td class='target'>Cal</td></tr>
+	<tr><td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td><td class='source'>en_CA</td><td class='target'>US therm</td><td class='target'>US therms</td></tr>
+	<tr><td class='source' rowSpan='6'><a name='Weather' href='#Weather'>Weather</a></td><td class='source' rowSpan='2'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td><td class='source'>en_AU</td><td class='target' rowSpan='2'>mmHg</td><td class='target' rowSpan='2'>mm Hg</td></tr>
+	<tr><td class='source' rowSpan='4'>en_CA</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='bar' href='#bar'>bar</a></td><td class='target'>bar</td><td class='target'>bars</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} bar</td><td class='target' rowSpan='2'>{0} bars</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source'><a name='millibar' href='#millibar'>millibar</a></td><td class='source'>narrow-displayName</td><td class='source'>en_AU</td><td class='target'>mbar</td><td class='target'>mb</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Digital' href='#Digital'>Digital</a></td><td class='source' rowSpan='2'><a name='byte' href='#byte'>byte</a></td><td class='source'>long-one-nominative</td><td class='source' rowSpan='5'>en_CA</td><td class='target' rowSpan='2'>{0} byte</td><td class='target' rowSpan='2'>{0} bytes</td></tr>
+	<tr><td class='source'>short-one-nominative</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='bit' href='#bit'>bit</a></td><td class='source'>narrow-displayName</td><td class='target'>bit</td><td class='target'>bits</td></tr>
+	<tr><td class='source'>long-one-nominative</td><td class='target' rowSpan='2'>{0} bit</td><td class='target' rowSpan='2'>{0} bits</td></tr>
+	<tr><td class='source' rowSpan='3'>short-one-nominative</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Other Units' href='#Other Units'>Other Units</a></td><td class='source' rowSpan='2'><a name='revolution' href='#revolution'>revolution</a></td><td class='source'>en_001</td><td class='target' rowSpan='2'>{0} rev</td><td class='target' rowSpan='2'>{0} revs</td></tr>
+	<tr><td class='source' rowSpan='4'>en_CA</td></tr>
+	<tr><td class='source'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td><td class='source' rowSpan='3'>narrow-displayName</td><td class='target'>mg/dL</td><td class='target'>milligrams/decilitre</td></tr>
+	<tr><td class='source'><a name='item' href='#item'>item</a></td><td class='target'>item</td><td class='target'>items</td></tr>
+	<tr><td class='source'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td><td class='target'>kWh/100km</td><td class='target'>kWh/100 km</td></tr>
+	<tr><td class='source' rowSpan='23'><a name='Special' href='#Special'>Special</a></td><td class='source' rowSpan='23'><a name='Suppress' href='#Suppress'>Suppress</a></td><td class='source' rowSpan='23'><a name='Japanese' href='#Japanese'>Japanese</a></td><td class='source' rowSpan='4'>Formats - Standard - Date Formats-full</td><td class='source'>en_BW</td><td class='target' rowSpan='4'>GyMMMMEEEEd</td><td class='target' rowSpan='4'>GyMMMMEEEEdd</td><td class='target' rowSpan='23'>comprehensive</td></tr>
+	<tr><td class='source'>en_BZ</td></tr>
+	<tr><td class='source'>en_ZA</td></tr>
+	<tr><td class='source'>en_ZW</td></tr>
+	<tr><td class='source' rowSpan='5'>Formats - Standard - Date Formats-long</td><td class='source'>en_BW</td><td class='target' rowSpan='5'>GyMMMMd</td><td class='target' rowSpan='5'>GyMMMMdd</td></tr>
+	<tr><td class='source'>en_BZ</td></tr>
+	<tr><td class='source'>en_MT</td></tr>
+	<tr><td class='source'>en_ZA</td></tr>
+	<tr><td class='source'>en_ZW</td></tr>
+	<tr><td class='source' rowSpan='8'>Formats - Standard - Date Formats-medium</td><td class='source'>en_BE</td><td class='target' rowSpan='8'>GyMMMd</td><td class='target' rowSpan='4'>GyMMMdd</td></tr>
+	<tr><td class='source'>en_BW</td></tr>
+	<tr><td class='source'>en_BZ</td></tr>
+	<tr><td class='source'>en_MT</td></tr>
+	<tr><td class='source'>en_NZ</td><td class='target'>GyMMd</td></tr>
+	<tr><td class='source'>en_PK</td><td class='target' rowSpan='3'>GyMMMdd</td></tr>
+	<tr><td class='source'>en_ZA</td></tr>
+	<tr><td class='source'>en_ZW</td></tr>
+	<tr><td class='source' rowSpan='6'>Formats - Standard - Date Formats-short</td><td class='source'>en_001</td><td class='target' rowSpan='6'>GGGGGyMd</td><td class='target' rowSpan='2'>GGGGGyMMdd</td></tr>
+	<tr><td class='source'>en_AE</td></tr>
+	<tr><td class='source'>en_HK</td><td class='target'>GGGGGyyMd</td></tr>
+	<tr><td class='source'>en_NZ</td><td class='target'>GGGGGyMMd</td></tr>
+	<tr><td class='source'>en_SE</td><td class='target'>GyMMdd</td></tr>
+	<tr><td class='source'>en_SG</td><td class='target'>GGGGGyyMd</td></tr>
+</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+<a href='https://www.unicode.org/copyright.html'>
+<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
+</div><script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-7672775-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</div>
+</body>
+
+</html>
