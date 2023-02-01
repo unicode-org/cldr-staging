@@ -1,0 +1,51 @@
+name: Publish to cldr-smoke
+
+on:
+  push:
+    branches:
+      - main
+      - cldr-15136/post-smoke  ## TODO TESTING
+    # Only run if docs change.
+    ## TODO CLDR-15464 reenable this!!
+    # paths:
+    #   - "tools/scripts/tr-archive/**"
+    #   - "docs/**"
+    #   - '.github/workflows/gh-pages.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: false
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Build Jekyll part of the site
+        run: |
+          gem install bundler github-pages kramdown-parser-gfm  # should pull in jekyll, etc.
+          jekyll build -s docs -d _site
+      # - name: Rearrange stuff
+      #   run: 'cp -vr tools/scripts/tr-archive/dist/* ./_site/ldml/ && cp tools/scripts/tr-archive/reports-v2.css ./_site/'
+      # - name: Deploy to GitHub Pages (main)
+      #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      #   uses: Cecilapp/GitHub-Pages-deploy@v3
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     # email: username@domain.tld
+      #     build_dir: _site               # optional
+      #     branch: gh-pages                # optional
+      #     # cname: domain.tld              # optional
+      #     # jekyll: no                     # optional
+      #     commit_message: CLDR-00000 Automated Build of Pages # optional
+      - name: rsync _site
+        uses: burnett01/rsync-deployments@5.1
+        with:
+          switches: -avzr --delete
+          path: _site/
+          remote_path: ${{ secrets.STAGING_DEV_PATH }}
+          remote_host: ${{ secrets.STAGING_DEV_HOST }}
+          remote_user: ${{ secrets.STAGING_DEV_USER }}
+          remote_key:  ${{ secrets.STAGING_DEV_KEY }}
