@@ -58,7 +58,7 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='5'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='4'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Main Letters</td><td class='source' rowSpan='314'>scn</td><td class='target' rowSpan='3'>[]</td><td class='target'>[a-jl-vzàâèêíîòôúûḍ]</td><td class='target' rowSpan='2'>core</td></tr>
+	<tr><td class='source' rowSpan='5'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='4'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Main Letters</td><td class='source' rowSpan='356'>scn</td><td class='target' rowSpan='3'>[]</td><td class='target'>[a-jl-vzàâèêíîòôúûḍ]</td><td class='target' rowSpan='2'>core</td></tr>
 	<tr><td class='source'>Others: auxiliary</td><td class='target'>[kw-yçéëìùđšəḥ]</td></tr>
 	<tr><td class='source'>Others: index</td><td class='target'>[A-JL-VZ]</td><td class='target'>moderate</td></tr>
 	<tr><td class='source'>Others: punctuation</td><td class='target'>…[\{\}]…</td><td class='target'>…[&quot;#\&amp;'*/@\u00A7\u2010\u2013\u2014\u2018\u2019\u201C\u201D\u2020\u2021\u2026\u2032\u2033]…</td><td class='target'>core</td></tr>
@@ -293,28 +293,39 @@
 	<tr><td class='source'>ms-uksystem</td><td class='target'>uksystem</td><td class='target'>Sistema mpiriali</td></tr>
 	<tr><td class='source'>ms-ussystem</td><td class='target'>ussystem</td><td class='target'>Sistema miricanu</td></tr>
 	<tr><td class='source'><a name='numbers' href='#numbers'>numbers</a></td><td class='source'>numbers</td><td class='target'>numbers</td><td class='target'>Nùmmari</td></tr>
-	<tr><td class='source' rowSpan='77'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='34'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='22'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>year</td><td class='target' rowSpan='2'>Year</td><td class='target'>annu</td><td class='target' rowSpan='6'>moderate</td></tr>
-	<tr><td class='source'>year-short</td><td class='target'>a.</td></tr>
-	<tr><td class='source'>month</td><td class='target' rowSpan='2'>Month</td><td class='target'>misi</td></tr>
-	<tr><td class='source'>month-short</td><td class='target'>m.</td></tr>
-	<tr><td class='source'>week</td><td class='target' rowSpan='2'>Week</td><td class='target'>simana</td></tr>
-	<tr><td class='source'>week-short</td><td class='target'>smn.</td></tr>
-	<tr><td class='source'>weekOfMonth</td><td class='target' rowSpan='2'>Week Of Month</td><td class='target'>simana dû misi</td><td class='target' rowSpan='2'>modern</td></tr>
-	<tr><td class='source'>weekOfMonth-short</td><td class='target'>smn. dû m.</td></tr>
-	<tr><td class='source'>day</td><td class='target' rowSpan='2'>Day</td><td class='target'>jornu</td><td class='target' rowSpan='2'>moderate</td></tr>
-	<tr><td class='source'>day-short</td><td class='target'>j.</td></tr>
-	<tr><td class='source'>dayOfYear</td><td class='target' rowSpan='2'>Day Of Year</td><td class='target'>jornu di l’annu</td><td class='target' rowSpan='2'>modern</td></tr>
-	<tr><td class='source'>dayOfYear-short</td><td class='target'>j. di l’a.</td></tr>
-	<tr><td class='source'>weekday</td><td class='target' rowSpan='2'>Day of the Week</td><td class='target'>jornu dâ simana</td><td class='target'>moderate</td></tr>
-	<tr><td class='source'>weekday-short</td><td class='target'>j. dâ smn.</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>zone</td><td class='target' rowSpan='2'>Zone</td><td class='target'>fusu urariu</td><td class='target'>moderate</td></tr>
-	<tr><td class='source'>zone-short</td><td class='target'>fusu</td><td class='target'>modern</td></tr>
-	<tr><td class='source'>hour</td><td class='target' rowSpan='2'>Hour</td><td class='target'>ura</td><td class='target' rowSpan='9'>moderate</td></tr>
-	<tr><td class='source'>hour-short</td><td class='target'>u.</td></tr>
-	<tr><td class='source'>minute</td><td class='target' rowSpan='2'>Minute</td><td class='target'>minutu</td></tr>
-	<tr><td class='source'>minute-short</td><td class='target'>min.</td></tr>
-	<tr><td class='source'>second</td><td class='target' rowSpan='2'>Second</td><td class='target'>sicunnu</td></tr>
-	<tr><td class='source'>second-short</td><td class='target'>sic.</td></tr>
+	<tr><td class='source' rowSpan='119'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='52'><a name='Fields' href='#Fields'>Fields</a></td><td class='source' rowSpan='33'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td><td class='source'>year</td><td class='target' rowSpan='3'>Year</td><td class='target'>annu</td><td class='target' rowSpan='9'>moderate</td></tr>
+	<tr><td class='source'>year-short</td><td class='target' rowSpan='2'>a.</td></tr>
+	<tr><td class='source'>year-narrow</td></tr>
+	<tr><td class='source'>month</td><td class='target' rowSpan='3'>Month</td><td class='target'>misi</td></tr>
+	<tr><td class='source'>month-short</td><td class='target' rowSpan='2'>m.</td></tr>
+	<tr><td class='source'>month-narrow</td></tr>
+	<tr><td class='source'>week</td><td class='target' rowSpan='3'>Week</td><td class='target'>simana</td></tr>
+	<tr><td class='source'>week-short</td><td class='target' rowSpan='2'>smn.</td></tr>
+	<tr><td class='source'>week-narrow</td></tr>
+	<tr><td class='source'>weekOfMonth</td><td class='target' rowSpan='3'>Week Of Month</td><td class='target'>simana dû misi</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source'>weekOfMonth-short</td><td class='target' rowSpan='2'>smn. dû m.</td></tr>
+	<tr><td class='source'>weekOfMonth-narrow</td></tr>
+	<tr><td class='source'>day</td><td class='target' rowSpan='3'>Day</td><td class='target'>jornu</td><td class='target' rowSpan='3'>moderate</td></tr>
+	<tr><td class='source'>day-short</td><td class='target' rowSpan='2'>j.</td></tr>
+	<tr><td class='source'>day-narrow</td></tr>
+	<tr><td class='source'>dayOfYear</td><td class='target' rowSpan='3'>Day Of Year</td><td class='target'>jornu di l’annu</td><td class='target' rowSpan='3'>modern</td></tr>
+	<tr><td class='source'>dayOfYear-short</td><td class='target' rowSpan='2'>j. di l’a.</td></tr>
+	<tr><td class='source'>dayOfYear-narrow</td></tr>
+	<tr><td class='source'>weekday</td><td class='target' rowSpan='3'>Day of the Week</td><td class='target'>jornu dâ simana</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>weekday-short</td><td class='target' rowSpan='2'>j. dâ smn.</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>weekday-narrow</td></tr>
+	<tr><td class='source'>zone</td><td class='target' rowSpan='3'>Zone</td><td class='target'>fusu urariu</td><td class='target'>moderate</td></tr>
+	<tr><td class='source'>zone-short</td><td class='target' rowSpan='2'>fusu</td><td class='target' rowSpan='2'>modern</td></tr>
+	<tr><td class='source'>zone-narrow</td></tr>
+	<tr><td class='source'>hour</td><td class='target' rowSpan='3'>Hour</td><td class='target'>ura</td><td class='target' rowSpan='12'>moderate</td></tr>
+	<tr><td class='source'>hour-short</td><td class='target' rowSpan='2'>u.</td></tr>
+	<tr><td class='source'>hour-narrow</td></tr>
+	<tr><td class='source'>minute</td><td class='target' rowSpan='3'>Minute</td><td class='target'>minutu</td></tr>
+	<tr><td class='source'>minute-short</td><td class='target' rowSpan='2'>min.</td></tr>
+	<tr><td class='source'>minute-narrow</td></tr>
+	<tr><td class='source'>second</td><td class='target' rowSpan='3'>Second</td><td class='target'>sicunnu</td></tr>
+	<tr><td class='source'>second-short</td><td class='target' rowSpan='2'>sic.</td></tr>
+	<tr><td class='source'>second-narrow</td></tr>
 	<tr><td class='source' rowSpan='7'><a name='Relative Year' href='#Relative Year'>Relative Year</a></td><td class='source'>-1</td><td class='target'>last year</td><td class='target'>l’annu passatu</td></tr>
 	<tr><td class='source'>0</td><td class='target'>this year</td><td class='target'>st’annu</td></tr>
 	<tr><td class='source'>1</td><td class='target'>next year</td><td class='target'>l’annu vinturu</td></tr>
@@ -322,12 +333,19 @@
 	<tr><td class='source'>future-other</td><td class='target'>nna {0} anni</td></tr>
 	<tr><td class='source'>past-one</td><td class='target' rowSpan='2'>-{0} y</td><td class='target'>n’annu nnarrè</td></tr>
 	<tr><td class='source'>past-other</td><td class='target'>{0} anni nnarrè</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='Relative Day' href='#Relative Day'>Relative Day</a></td><td class='source'>-1</td><td class='target'>yesterday</td><td class='target'>ajeri</td><td class='target' rowSpan='4'>moderate</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Day' href='#Relative Day'>Relative Day</a></td><td class='source'>-1</td><td class='target'>yesterday</td><td class='target'>ajeri</td><td class='target' rowSpan='9'>moderate</td></tr>
 	<tr><td class='source'>0</td><td class='target'>today</td><td class='target'>stjornu</td></tr>
 	<tr><td class='source'>1</td><td class='target'>tomorrow</td><td class='target'>dumani</td></tr>
-	<tr><td class='source'><a name='Relative Day Short' href='#Relative Day Short'>Relative Day Short</a></td><td class='source' rowSpan='2'>0</td><td class='target'>today</td><td class='target'>oji</td></tr>
-	<tr><td class='source'><a name='Relative Second' href='#Relative Second'>Relative Second</a></td><td class='target'>now</td><td class='target'>ora</td><td class='target'>modern</td></tr>
-	<tr><td class='source' rowSpan='43'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='12'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td><td class='source'>Jan</td><td class='target'>M01</td><td class='target'>jinnaru</td><td class='target' rowSpan='12'>basic</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Day Short' href='#Relative Day Short'>Relative Day Short</a></td><td class='source'>-1</td><td class='target'>yesterday</td><td class='target'>ajeri</td></tr>
+	<tr><td class='source'>0</td><td class='target'>today</td><td class='target'>oji</td></tr>
+	<tr><td class='source'>1</td><td class='target'>tomorrow</td><td class='target'>dumani</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='Relative Day Narrow' href='#Relative Day Narrow'>Relative Day Narrow</a></td><td class='source'>-1</td><td class='target'>yesterday</td><td class='target'>ajeri</td></tr>
+	<tr><td class='source'>0</td><td class='target'>today</td><td class='target'>oji</td></tr>
+	<tr><td class='source'>1</td><td class='target'>tomorrow</td><td class='target'>dumani</td></tr>
+	<tr><td class='source'><a name='Relative Second' href='#Relative Second'>Relative Second</a></td><td class='source' rowSpan='3'>0</td><td class='target' rowSpan='3'>now</td><td class='target' rowSpan='3'>ora</td><td class='target'>modern</td></tr>
+	<tr><td class='source'><a name='Relative Second Short' href='#Relative Second Short'>Relative Second Short</a></td><td class='target' rowSpan='2'>comprehensive</td></tr>
+	<tr><td class='source'><a name='Relative Second Narrow' href='#Relative Second Narrow'>Relative Second Narrow</a></td></tr>
+	<tr><td class='source' rowSpan='67'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='12'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td><td class='source'>Jan</td><td class='target'>M01</td><td class='target'>jinnaru</td><td class='target' rowSpan='12'>basic</td></tr>
 	<tr><td class='source'>Feb</td><td class='target'>M02</td><td class='target'>frivaru</td></tr>
 	<tr><td class='source'>Mar</td><td class='target'>M03</td><td class='target'>marzu</td></tr>
 	<tr><td class='source'>Apr</td><td class='target'>M04</td><td class='target'>aprili</td></tr>
@@ -339,7 +357,19 @@
 	<tr><td class='source'>Oct</td><td class='target'>M10</td><td class='target'>uttòviru</td></tr>
 	<tr><td class='source'>Nov</td><td class='target'>M11</td><td class='target'>nuvèmmiru</td></tr>
 	<tr><td class='source'>Dec</td><td class='target'>M12</td><td class='target'>dicèmmiru</td></tr>
-	<tr><td class='source' rowSpan='12'><a name='Months - abbreviated - Formatting' href='#Months - abbreviated - Formatting'>Months - abbreviated - Formatting</a></td><td class='source'>Jan</td><td class='target'>M01</td><td class='target'>jin</td><td class='target' rowSpan='24'>moderate</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Months - wide - Standalone' href='#Months - wide - Standalone'>Months - wide - Standalone</a></td><td class='source'>Jan</td><td class='target'>M01</td><td class='target'>jinnaru</td><td class='target' rowSpan='48'>moderate</td></tr>
+	<tr><td class='source'>Feb</td><td class='target'>M02</td><td class='target'>frivaru</td></tr>
+	<tr><td class='source'>Mar</td><td class='target'>M03</td><td class='target'>marzu</td></tr>
+	<tr><td class='source'>Apr</td><td class='target'>M04</td><td class='target'>aprili</td></tr>
+	<tr><td class='source'>May</td><td class='target'>M05</td><td class='target'>maju</td></tr>
+	<tr><td class='source'>Jun</td><td class='target'>M06</td><td class='target'>giugnu</td></tr>
+	<tr><td class='source'>Jul</td><td class='target'>M07</td><td class='target'>giugnettu</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>M08</td><td class='target'>agustu</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>M09</td><td class='target'>sittèmmiru</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>M10</td><td class='target'>uttòviru</td></tr>
+	<tr><td class='source'>Nov</td><td class='target'>M11</td><td class='target'>nuvèmmiru</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>M12</td><td class='target'>dicèmmiru</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Months - abbreviated - Formatting' href='#Months - abbreviated - Formatting'>Months - abbreviated - Formatting</a></td><td class='source'>Jan</td><td class='target'>M01</td><td class='target'>jin</td></tr>
 	<tr><td class='source'>Feb</td><td class='target'>M02</td><td class='target'>fri</td></tr>
 	<tr><td class='source'>Mar</td><td class='target'>M03</td><td class='target'>mar</td></tr>
 	<tr><td class='source'>Apr</td><td class='target'>M04</td><td class='target'>apr</td></tr>
@@ -351,6 +381,18 @@
 	<tr><td class='source'>Oct</td><td class='target'>M10</td><td class='target'>utt</td></tr>
 	<tr><td class='source'>Nov</td><td class='target'>M11</td><td class='target'>nuv</td></tr>
 	<tr><td class='source'>Dec</td><td class='target'>M12</td><td class='target'>dic</td></tr>
+	<tr><td class='source' rowSpan='12'><a name='Months - narrow - Formatting' href='#Months - narrow - Formatting'>Months - narrow - Formatting</a></td><td class='source'>Jan</td><td class='target'>1</td><td class='target'>J</td></tr>
+	<tr><td class='source'>Feb</td><td class='target'>2</td><td class='target'>F</td></tr>
+	<tr><td class='source'>Mar</td><td class='target'>3</td><td class='target'>M</td></tr>
+	<tr><td class='source'>Apr</td><td class='target'>4</td><td class='target'>A</td></tr>
+	<tr><td class='source'>May</td><td class='target'>5</td><td class='target'>M</td></tr>
+	<tr><td class='source'>Jun</td><td class='target'>6</td><td class='target' rowSpan='2'>G</td></tr>
+	<tr><td class='source'>Jul</td><td class='target'>7</td></tr>
+	<tr><td class='source'>Aug</td><td class='target'>8</td><td class='target'>A</td></tr>
+	<tr><td class='source'>Sep</td><td class='target'>9</td><td class='target'>S</td></tr>
+	<tr><td class='source'>Oct</td><td class='target'>10</td><td class='target'>U</td></tr>
+	<tr><td class='source'>Nov</td><td class='target'>11</td><td class='target'>N</td></tr>
+	<tr><td class='source'>Dec</td><td class='target'>12</td><td class='target'>D</td></tr>
 	<tr><td class='source' rowSpan='12'><a name='Months - narrow - Standalone' href='#Months - narrow - Standalone'>Months - narrow - Standalone</a></td><td class='source'>Jan</td><td class='target'>1</td><td class='target'>J</td></tr>
 	<tr><td class='source'>Feb</td><td class='target'>2</td><td class='target'>F</td></tr>
 	<tr><td class='source'>Mar</td><td class='target'>3</td><td class='target'>M</td></tr>
