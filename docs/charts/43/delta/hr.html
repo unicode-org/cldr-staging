@@ -58,7 +58,79 @@
 		 -->
 		<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
 	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='40'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='40'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td><td class='source' rowSpan='8'><a name='SampleName Fields for Item: full' href='#SampleName Fields for Item: full'>SampleName Fields for Item: full</a></td><td class='source'>prefix</td><td class='source' rowSpan='40'>hr</td><td class='target'>prof. dr.</td><td class='target' rowSpan='14'>▷removed◁</td><td class='target' rowSpan='40'>modern</td></tr>
+	<tr><td class='source' rowSpan='72'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td><td class='source' rowSpan='35'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td><td class='source' rowSpan='72'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td><td class='source'>d/d</td><td class='source' rowSpan='128'>hr</td><td class='target'>dd. – dd.</td><td class='target'>dd. – dd.</td><td class='target' rowSpan='72'>moderate</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>y. – y. G</td><td class='target'>y. – y. G</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>MM. y. – MM. y. GGGGG</td><td class='target' rowSpan='2'>MM. y. – MM. y. GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y. GGGGG</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y. GGGGG</td></tr>
+	<tr><td class='source'>GyMd/M</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y. GGGGG</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y. GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>dd. – dd. MMM y. G</td><td class='target'>dd. – dd. MMM y. G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>dd. MMM y. – dd. MMM y. G</td><td class='target'>dd. MMM y. – dd. MMM y. G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>E, dd. MMM y. – E, dd. MMM y. G</td><td class='target'>E, dd. MMM y. – E, dd. MMM y. G</td></tr>
+	<tr><td class='source'>M/M</td><td class='target'>MM. – MM.</td><td class='target'>MM. – MM.</td></tr>
+	<tr><td class='source'>Md/d</td><td class='target' rowSpan='2'>dd. MM. – dd. MM.</td><td class='target' rowSpan='2'>dd. MM. – dd. MM.</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>E, dd. MM. – E, dd. MM.</td><td class='target' rowSpan='2'>E, dd. MM. – E, dd. MM.</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>MMMd/d</td><td class='target'>dd. – dd. MMM</td><td class='target'>dd. – dd. MMM</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='target'>E, dd. – E, dd. MMM</td><td class='target'>E, dd. – E, dd. MMM</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>y. – y.</td><td class='target'>y. – y.</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>MM. y. – MM. y.</td><td class='target' rowSpan='2'>MM. y. – MM. y.</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y.</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y.</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y.</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y.</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>LLL y. – LLL y.</td><td class='target'>LLL y. – LLL y.</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>dd. – dd. MMM y.</td><td class='target'>dd. – dd. MMM y.</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>dd. MMM y. – dd. MMM y.</td><td class='target'>dd. MMM y. – dd. MMM y.</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>E, dd. – E, dd. MMM y.</td><td class='target'>E, dd. – E, dd. MMM y.</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>E, dd. MMM y. – E, dd. MMM y.</td><td class='target'>E, dd. MMM y. – E, dd. MMM y.</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>LLLL y. – LLLL y.</td><td class='target'>LLLL y. – LLLL y.</td></tr>
+	<tr><td class='source' rowSpan='37'><a name='Generic' href='#Generic'>Generic</a></td><td class='source'>d/d</td><td class='target'>dd. – dd.</td><td class='target'>dd. – dd.</td></tr>
+	<tr><td class='source'>Gy/y</td><td class='target'>y. – y. G</td><td class='target'>y. – y. G</td></tr>
+	<tr><td class='source'>GyM/M</td><td class='target' rowSpan='2'>M. y. – M. y. GGGGG</td><td class='target' rowSpan='2'>M. y. – M. y. GGGGG</td></tr>
+	<tr><td class='source'>GyM/y</td></tr>
+	<tr><td class='source'>GyMd/d</td><td class='target' rowSpan='4'>d. M. y. – d. M. y. GGGGG</td><td class='target' rowSpan='4'>d. M. y. – d. M. y. GGGGG</td></tr>
+	<tr><td class='source'>GyMd/G</td></tr>
+	<tr><td class='source'>GyMd/M</td></tr>
+	<tr><td class='source'>GyMd/y</td></tr>
+	<tr><td class='source'>GyMEd/d</td><td class='target' rowSpan='3'>E, d. M. y. – E, d. M. y. GGGGG</td><td class='target' rowSpan='3'>E, d. M. y. – E, d. M. y. GGGGG</td></tr>
+	<tr><td class='source'>GyMEd/M</td></tr>
+	<tr><td class='source'>GyMEd/y</td></tr>
+	<tr><td class='source'>GyMMM/y</td><td class='target'>MMM y. – MMM y. G</td><td class='target'>MMM y. – MMM y. G</td></tr>
+	<tr><td class='source'>GyMMMd/d</td><td class='target'>d. – d. MMM y. G</td><td class='target'>d. – d. MMM y. G</td></tr>
+	<tr><td class='source'>GyMMMd/y</td><td class='target'>d. MMM y. – d. MMM y. G</td><td class='target'>d. MMM y. – d. MMM y. G</td></tr>
+	<tr><td class='source'>GyMMMEd/y</td><td class='target'>E, d. MMM y. – E, d. MMM y. G</td><td class='target'>E, d. MMM y. – E, d. MMM y. G</td></tr>
+	<tr><td class='source'>M/M</td><td class='target'>MM. – MM.</td><td class='target'>MM. – MM.</td></tr>
+	<tr><td class='source'>Md/d</td><td class='target' rowSpan='2'>dd. MM. – dd. MM.</td><td class='target' rowSpan='2'>dd. MM. – dd. MM.</td></tr>
+	<tr><td class='source'>Md/M</td></tr>
+	<tr><td class='source'>MEd/d</td><td class='target' rowSpan='2'>E, dd. MM. – E, dd. MM.</td><td class='target' rowSpan='2'>E, dd. MM. – E, dd. MM.</td></tr>
+	<tr><td class='source'>MEd/M</td></tr>
+	<tr><td class='source'>MMMd/d</td><td class='target'>d. – d. MMM</td><td class='target'>d. – d. MMM</td></tr>
+	<tr><td class='source'>MMMEd/d</td><td class='target'>E, dd. – E, dd. MMM</td><td class='target'>E, dd. – E, dd. MMM</td></tr>
+	<tr><td class='source'>y/y</td><td class='target'>y. – y. G</td><td class='target'>y. – y. G</td></tr>
+	<tr><td class='source'>yM/M</td><td class='target' rowSpan='2'>MM. y. – MM. y. G</td><td class='target' rowSpan='2'>MM. y. – MM. y. G</td></tr>
+	<tr><td class='source'>yM/y</td></tr>
+	<tr><td class='source'>yMd/d</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y. G</td><td class='target' rowSpan='3'>dd. MM. y. – dd. MM. y. G</td></tr>
+	<tr><td class='source'>yMd/M</td></tr>
+	<tr><td class='source'>yMd/y</td></tr>
+	<tr><td class='source'>yMEd/d</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y. G</td><td class='target' rowSpan='3'>E, dd. MM. y. – E, dd. MM. y. G</td></tr>
+	<tr><td class='source'>yMEd/M</td></tr>
+	<tr><td class='source'>yMEd/y</td></tr>
+	<tr><td class='source'>yMMM/y</td><td class='target'>LLL y. – LLL y. G</td><td class='target'>LLL y. – LLL y. G</td></tr>
+	<tr><td class='source'>yMMMd/d</td><td class='target'>dd. – dd. MMM y. G</td><td class='target'>dd. – dd. MMM y. G</td></tr>
+	<tr><td class='source'>yMMMd/y</td><td class='target'>dd. MMM y. – dd. MMM y. G</td><td class='target'>dd. MMM y. – dd. MMM y. G</td></tr>
+	<tr><td class='source'>yMMMEd/d</td><td class='target'>E, dd. – E, dd. MMM y. G</td><td class='target'>E, dd. – E, dd. MMM y. G</td></tr>
+	<tr><td class='source'>yMMMEd/y</td><td class='target'>E, dd. MMM y. – E, dd. MMM y. G</td><td class='target'>E, dd. MMM y. – E, dd. MMM y. G</td></tr>
+	<tr><td class='source'>yMMMM/y</td><td class='target'>LLLL y. – LLLL y. G</td><td class='target'>LLLL y. – LLLL y. G</td></tr>
+	<tr><td class='source' rowSpan='56'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='56'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td><td class='source' rowSpan='8'><a name='SampleName Fields for Item: full' href='#SampleName Fields for Item: full'>SampleName Fields for Item: full</a></td><td class='source'>prefix</td><td class='target'>prof. dr.</td><td class='target' rowSpan='14'>▷removed◁</td><td class='target' rowSpan='56'>modern</td></tr>
 	<tr><td class='source'>given</td><td class='target'>Sunčica Ana</td></tr>
 	<tr><td class='source'>given-informal</td><td class='target'>Nela</td></tr>
 	<tr><td class='source'>given2</td><td class='target'>Eva Sofija</td></tr>
@@ -72,32 +144,48 @@
 	<tr><td class='source'><a name='SampleName Fields for Item: givenOnly' href='#SampleName Fields for Item: givenOnly'>SampleName Fields for Item: givenOnly</a></td><td class='source' rowSpan='2'>given</td><td class='target'>Slavko</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='SampleName Fields for Item: givenSurnameOnly' href='#SampleName Fields for Item: givenSurnameOnly'>SampleName Fields for Item: givenSurnameOnly</a></td><td class='target'>Irena</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Horvat</td></tr>
-	<tr><td class='source'><a name='SampleName Fields for Item: nativeG' href='#SampleName Fields for Item: nativeG'>SampleName Fields for Item: nativeG</a></td><td class='source' rowSpan='2'>given</td><td class='target' rowSpan='14'>▷missing◁</td><td class='target'>Slavko</td></tr>
+	<tr><td class='source'><a name='SampleName Fields for Item: nativeG' href='#SampleName Fields for Item: nativeG'>SampleName Fields for Item: nativeG</a></td><td class='source' rowSpan='2'>given</td><td class='target' rowSpan='30'>▷missing◁</td><td class='target'>Zrinka</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='SampleName Fields for Item: nativeGS' href='#SampleName Fields for Item: nativeGS'>SampleName Fields for Item: nativeGS</a></td><td class='target'>Irena</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Horvat</td></tr>
-	<tr><td class='source' rowSpan='3'><a name='SampleName Fields for Item: nativeGGS' href='#SampleName Fields for Item: nativeGGS'>SampleName Fields for Item: nativeGGS</a></td><td class='source'>given</td><td class='target'>Ivan</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='SampleName Fields for Item: nativeGGS' href='#SampleName Fields for Item: nativeGGS'>SampleName Fields for Item: nativeGGS</a></td><td class='source'>given</td><td class='target'>Marijana</td></tr>
 	<tr><td class='source'>given2</td><td class='target'>Tomislav</td></tr>
 	<tr><td class='source'>surname</td><td class='target'>Babić</td></tr>
-	<tr><td class='source' rowSpan='8'><a name='SampleName Fields for Item: foreignFull' href='#SampleName Fields for Item: foreignFull'>SampleName Fields for Item: foreignFull</a></td><td class='source'>credentials</td><td class='target'>univ. bacc</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='SampleName Fields for Item: nativeFull' href='#SampleName Fields for Item: nativeFull'>SampleName Fields for Item: nativeFull</a></td><td class='source'>credentials</td><td class='target'>prof.</td></tr>
+	<tr><td class='source'>generation</td><td class='target'>mlađi</td></tr>
+	<tr><td class='source'>title</td><td class='target'>dr. sc.</td></tr>
+	<tr><td class='source'>given</td><td class='target'>Branko</td></tr>
+	<tr><td class='source'>given-informal</td><td class='target'>Brane</td></tr>
+	<tr><td class='source'>given2</td><td class='target'>Hrvoje</td></tr>
+	<tr><td class='source'>surname-prefix</td><td class='target'>∅∅∅</td></tr>
+	<tr><td class='source'>surname-core</td><td class='target'>Marić</td></tr>
+	<tr><td class='source'>surname2</td><td class='target'>∅∅∅</td></tr>
+	<tr><td class='source'><a name='SampleName Fields for Item: foreignG' href='#SampleName Fields for Item: foreignG'>SampleName Fields for Item: foreignG</a></td><td class='source' rowSpan='2'>given</td><td class='target'>Sinbad</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='SampleName Fields for Item: foreignGS' href='#SampleName Fields for Item: foreignGS'>SampleName Fields for Item: foreignGS</a></td><td class='target'>Käthe</td></tr>
+	<tr><td class='source'>surname</td><td class='target'>Müller</td></tr>
+	<tr><td class='source' rowSpan='3'><a name='SampleName Fields for Item: foreignGGS' href='#SampleName Fields for Item: foreignGGS'>SampleName Fields for Item: foreignGGS</a></td><td class='source'>given</td><td class='target'>Zäzilia</td></tr>
+	<tr><td class='source'>given2</td><td class='target'>Hamish</td></tr>
+	<tr><td class='source'>surname</td><td class='target'>Stöber</td></tr>
+	<tr><td class='source' rowSpan='9'><a name='SampleName Fields for Item: foreignFull' href='#SampleName Fields for Item: foreignFull'>SampleName Fields for Item: foreignFull</a></td><td class='source'>credentials</td><td class='target'>univ. bacc</td></tr>
+	<tr><td class='source'>generation</td><td class='target'>Jr</td></tr>
 	<tr><td class='source'>title</td><td class='target'>prof. dr.</td></tr>
-	<tr><td class='source'>given</td><td class='target'>Sunčica Ana</td></tr>
-	<tr><td class='source'>given-informal</td><td class='target'>Nela</td></tr>
-	<tr><td class='source'>given2</td><td class='target'>Eva Sofija</td></tr>
-	<tr><td class='source'>surname-prefix</td><td class='target'>van den</td></tr>
-	<tr><td class='source'>surname-core</td><td class='target'>Wolf</td></tr>
-	<tr><td class='source'>surname2</td><td class='target'>Vuković-Perić</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-long' href='#PersonName Patterns for Order-Length: givenFirst-long'>PersonName Patterns for Order-Length: givenFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2} {surname}, {suffix}</td><td class='target'>{given} {given2} {surname}, {credentials}</td></tr>
+	<tr><td class='source'>given</td><td class='target'>Ada Cornelia</td></tr>
+	<tr><td class='source'>given-informal</td><td class='target'>Neele</td></tr>
+	<tr><td class='source'>given2</td><td class='target'>César Martín</td></tr>
+	<tr><td class='source'>surname-prefix</td><td class='target'>von</td></tr>
+	<tr><td class='source'>surname-core</td><td class='target'>Brühl</td></tr>
+	<tr><td class='source'>surname2</td><td class='target'>González Domingo</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-long' href='#PersonName Patterns for Order-Length: givenFirst-long'>PersonName Patterns for Order-Length: givenFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2} {surname}, {suffix}</td><td class='target'>{title} {given} {given2} {surname} {surname2}, {credentials}</td></tr>
 	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td><td class='target'>{title} {surname}</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-medium' href='#PersonName Patterns for Order-Length: givenFirst-medium'>PersonName Patterns for Order-Length: givenFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2-initial} {surname}, {suffix}</td><td class='target'>{given} {given2-initial} {surname}, {credentials}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-medium' href='#PersonName Patterns for Order-Length: givenFirst-medium'>PersonName Patterns for Order-Length: givenFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{given} {given2-initial} {surname}, {suffix}</td><td class='target'>{given} {given2-initial} {surname} {generation}, {credentials}</td></tr>
 	<tr><td class='source' rowSpan='2'>addressing-formal</td><td class='target' rowSpan='2'>{prefix} {surname}</td><td class='target' rowSpan='2'>{title} {surname}</td></tr>
 	<tr><td class='source'><a name='PersonName Patterns for Order-Length: givenFirst-short' href='#PersonName Patterns for Order-Length: givenFirst-short'>PersonName Patterns for Order-Length: givenFirst-short</a></td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-long' href='#PersonName Patterns for Order-Length: surnameFirst-long'>PersonName Patterns for Order-Length: surnameFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2}, {suffix}</td><td class='target'>{surname}, {given} {given2}, {credentials}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-long' href='#PersonName Patterns for Order-Length: surnameFirst-long'>PersonName Patterns for Order-Length: surnameFirst-long</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2}, {suffix}</td><td class='target'>{surname} {surname2} {title} {given} {given2}, {credentials}</td></tr>
 	<tr><td class='source'>addressing-formal</td><td class='target'>{prefix} {surname}</td><td class='target'>{title} {surname}</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-medium' href='#PersonName Patterns for Order-Length: surnameFirst-medium'>PersonName Patterns for Order-Length: surnameFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2-initial}, {suffix}</td><td class='target'>{surname}, {given} {given2-initial}, {credentials}</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-medium' href='#PersonName Patterns for Order-Length: surnameFirst-medium'>PersonName Patterns for Order-Length: surnameFirst-medium</a></td><td class='source'>referring-formal</td><td class='target'>{surname}, {given} {given2-initial}, {suffix}</td><td class='target'>{title} {surname} {surname2} {given} {given2}, {credentials}</td></tr>
 	<tr><td class='source' rowSpan='2'>addressing-formal</td><td class='target' rowSpan='2'>{prefix} {surname}</td><td class='target' rowSpan='2'>{title} {surname}</td></tr>
 	<tr><td class='source'><a name='PersonName Patterns for Order-Length: surnameFirst-short' href='#PersonName Patterns for Order-Length: surnameFirst-short'>PersonName Patterns for Order-Length: surnameFirst-short</a></td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-long' href='#PersonName Patterns for Order-Length: sorting/index-long'>PersonName Patterns for Order-Length: sorting/index-long</a></td><td class='source' rowSpan='2'>referring-formal</td><td class='target'>{surname}, {given} {given2} {suffix}</td><td class='target'>{surname}, {given} {given2} {credentials}</td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-medium' href='#PersonName Patterns for Order-Length: sorting/index-medium'>PersonName Patterns for Order-Length: sorting/index-medium</a></td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td><td class='target'>{surname}, {given} {given2-initial} {credentials}</td></tr>
+	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-long' href='#PersonName Patterns for Order-Length: sorting/index-long'>PersonName Patterns for Order-Length: sorting/index-long</a></td><td class='source' rowSpan='2'>referring-formal</td><td class='target'>{surname}, {given} {given2} {suffix}</td><td class='target'>{surname-core}, {given} {given2} {surname-prefix}</td></tr>
+	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-medium' href='#PersonName Patterns for Order-Length: sorting/index-medium'>PersonName Patterns for Order-Length: sorting/index-medium</a></td><td class='target'>{surname}, {given} {given2-initial} {suffix}</td><td class='target'>{surname-core}, {given} {given2-initial} {surname-prefix}</td></tr>
 </table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
 <a href='https://www.unicode.org/copyright.html'>
 <img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
