@@ -62,7 +62,7 @@
 Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/testData/units/unitPreferencesTest.txt' target='common/testData/units/unitPreferencesTest.txt'>common/testData/units/unitPreferencesTest.txt</a>.</p>
 <table>
 	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
-	<tr><td class='source' rowSpan='12'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source' rowSpan='8'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='4'>001</td><td class='target' style='text-align:right' rowSpan='12'>1</td><td class='target'>square-kilometer</td><td class='target' rowSpan='12'></td><td class='target' rowSpan='12'>area</td></tr>
+	<tr><td class='source' rowSpan='14'><a name='square-meter' href='#square-meter'>square-meter</a></td><td class='source' rowSpan='8'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='4'>001</td><td class='target' style='text-align:right' rowSpan='14'>1</td><td class='target'>square-kilometer</td><td class='target' rowSpan='14'></td><td class='target' rowSpan='14'>area</td></tr>
 	<tr><td class='target'>hectare</td></tr>
 	<tr><td class='target'>square-meter</td></tr>
 	<tr><td class='target'>square-centimeter</td></tr>
@@ -70,6 +70,8 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<tr><td class='target'>acre</td></tr>
 	<tr><td class='target'>square-foot</td></tr>
 	<tr><td class='target'>square-inch</td></tr>
+	<tr><td class='source' rowSpan='2'><a name='floor' href='#floor'>floor</a></td><td class='source'>001</td><td class='target'>square-meter</td></tr>
+	<tr><td class='source'>CA, …<sup>1</sup></td><td class='target'>square-foot</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='geograph' href='#geograph'>geograph</a></td><td class='source'>001</td><td class='target'>square-kilometer</td></tr>
 	<tr><td class='source'>GB, …<sup>1</sup></td><td class='target'>square-mile</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='land' href='#land'>land</a></td><td class='source'>001</td><td class='target'>hectare</td></tr>
@@ -83,7 +85,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<tr><td class='source' rowSpan='4'><a name='vehicle-fuel' href='#vehicle-fuel'>vehicle-fuel</a></td></tr>
 	<tr><td class='source'>BR, …<sup>1</sup></td><td class='target'>liter-per-kilometer</td></tr>
 	<tr><td class='source'>US</td><td class='target'>mile-per-gallon</td></tr>
-	<tr><td class='source'>CA, …<sup>1</sup></td><td class='target'>mile-per-gallon-imperial</td></tr>
+	<tr><td class='source'>CA, …<sup>2</sup></td><td class='target'>mile-per-gallon-imperial</td></tr>
 	<tr><th class='source'>Base Unit</th><th class='source'>Usage</th><th class='source'>Sample Region</th><th class='source'>If ≥</th><th class='target'>Result Unit</th><th class='target'>Skeleton</th><th class='target'>Quantity</th></tr>
 	<tr><td class='source' rowSpan='9'><a name='second' href='#second'>second</a></td><td class='source' rowSpan='7'><a name='default' href='#default'>default</a></td><td class='source' rowSpan='9'>001</td><td class='target' style='text-align:right' rowSpan='9'>1</td><td class='target'>day</td><td class='target' rowSpan='9'></td><td class='target' rowSpan='9'>duration</td></tr>
 	<tr><td class='target'>hour</td></tr>
@@ -107,9 +109,9 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<tr><td class='target'>inch</td></tr>
 	<tr><td class='source'><a name='focal-length' href='#focal-length'>focal-length</a></td><td class='source' rowSpan='2'>001</td><td class='target'>millimeter</td></tr>
 	<tr><td class='source' rowSpan='2'><a name='person' href='#person'>person</a></td><td class='target'>centimeter</td></tr>
-	<tr><td class='source'>CA, …<sup>2</sup></td><td class='target'>inch</td></tr>
+	<tr><td class='source'>CA, …<sup>3</sup></td><td class='target'>inch</td></tr>
 	<tr><td class='source' rowSpan='4'><a name='person-height' href='#person-height'>person-height</a></td><td class='source'>001</td><td class='target'>centimeter</td></tr>
-	<tr><td class='source' rowSpan='2'>CA, …<sup>2</sup></td><td class='target' style='text-align:right'>3</td><td class='target'>foot & inch</td></tr>
+	<tr><td class='source' rowSpan='2'>CA, …<sup>3</sup></td><td class='target' style='text-align:right'>3</td><td class='target'>foot & inch</td></tr>
 	<tr><td class='target' style='text-align:right' rowSpan='5'>1</td><td class='target'>inch</td></tr>
 	<tr><td class='source'>AT, …<sup>1</sup></td><td class='target'>meter & centimeter</td></tr>
 	<tr><td class='source' rowSpan='3'><a name='rainfall' href='#rainfall'>rainfall</a></td><td class='source'>BR</td><td class='target'>centimeter</td></tr>
@@ -224,8 +226,9 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<tr><td class='source'><a name='BR, …<sup>1</sup>' href='#BR, …<sup>1</sup>'>BR, …<sup>1</sup></a></td><td class='source'><a name='BR, IT, JP, KR, MX, MY, NL, TH, TR' href='#BR, IT, JP, KR, MX, MY, NL, TH, TR'>BR, IT, JP, KR, MX, MY, NL, TH, TR</a></td></tr>
 	<tr><td class='source'><a name='BR, …<sup>2</sup>' href='#BR, …<sup>2</sup>'>BR, …<sup>2</sup></a></td><td class='source'><a name='BR, EG, GB, IL, TH' href='#BR, EG, GB, IL, TH'>BR, EG, GB, IL, TH</a></td></tr>
 	<tr><td class='source'><a name='BS, …<sup>1</sup>' href='#BS, …<sup>1</sup>'>BS, …<sup>1</sup></a></td><td class='source'><a name='BS, BZ, KY, PR, PW, US' href='#BS, BZ, KY, PR, PW, US'>BS, BZ, KY, PR, PW, US</a></td></tr>
-	<tr><td class='source'><a name='CA, …<sup>1</sup>' href='#CA, …<sup>1</sup>'>CA, …<sup>1</sup></a></td><td class='source'><a name='CA, GB' href='#CA, GB'>CA, GB</a></td></tr>
-	<tr><td class='source'><a name='CA, …<sup>2</sup>' href='#CA, …<sup>2</sup>'>CA, …<sup>2</sup></a></td><td class='source'><a name='CA, GB, IN, US' href='#CA, GB, IN, US'>CA, GB, IN, US</a></td></tr>
+	<tr><td class='source'><a name='CA, …<sup>1</sup>' href='#CA, …<sup>1</sup>'>CA, …<sup>1</sup></a></td><td class='source'><a name='CA, GB, MM, US' href='#CA, GB, MM, US'>CA, GB, MM, US</a></td></tr>
+	<tr><td class='source'><a name='CA, …<sup>2</sup>' href='#CA, …<sup>2</sup>'>CA, …<sup>2</sup></a></td><td class='source'><a name='CA, GB' href='#CA, GB'>CA, GB</a></td></tr>
+	<tr><td class='source'><a name='CA, …<sup>3</sup>' href='#CA, …<sup>3</sup>'>CA, …<sup>3</sup></a></td><td class='source'><a name='CA, GB, IN, US' href='#CA, GB, IN, US'>CA, GB, IN, US</a></td></tr>
 	<tr><td class='source'><a name='DE, …<sup>1</sup>' href='#DE, …<sup>1</sup>'>DE, …<sup>1</sup></a></td><td class='source'><a name='DE, NL' href='#DE, NL'>DE, NL</a></td></tr>
 	<tr><td class='source'><a name='FI, …<sup>1</sup>' href='#FI, …<sup>1</sup>'>FI, …<sup>1</sup></a></td><td class='source'><a name='FI, KR, NO, PL, RU, SE' href='#FI, KR, NO, PL, RU, SE'>FI, KR, NO, PL, RU, SE</a></td></tr>
 	<tr><td class='source'><a name='GB, …<sup>1</sup>' href='#GB, …<sup>1</sup>'>GB, …<sup>1</sup></a></td><td class='source'><a name='GB, US' href='#GB, US'>GB, US</a></td></tr>
