@@ -781,7 +781,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="TN">Tuniṣia</territory>
 			<territory type="TO">Tonga</territory>
 			<territory type="TR">Tọọki</territory>
-			<territory type="TR" alt="variant">Èdè Tọọki</territory>
 			<territory type="TT">Tirinida ati Tobaga</territory>
 			<territory type="TV">Tufalu</territory>
 			<territory type="TW">Taiwani</territory>
@@ -2489,6 +2488,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Àkókò Àfẹnukò Ìgba Oòru Greenland</daylight>
 				</long>
 			</metazone>
+			<metazone type="Gulf">
+				<long>
+					<standard>Gulf Standard Time</standard>
+				</long>
+			</metazone>
 			<metazone type="Guyana">
 				<long>
 					<standard>Àkókò Gúyànà</standard>
@@ -4118,9 +4122,121 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<compoundUnit type="1024p8">
 				<unitPrefixPattern>àmì Yí {0}</unitPrefixPattern>
 			</compoundUnit>
+			<unit type="acceleration-g-force">
+				<unitPattern count="other">{0}Gs</unitPattern>
+			</unit>
+			<unit type="acceleration-meter-per-square-second">
+				<unitPattern count="other">{0}m/s²</unitPattern>
+			</unit>
+			<unit type="angle-revolution">
+				<unitPattern count="other">{0}rev</unitPattern>
+			</unit>
+			<unit type="angle-radian">
+				<unitPattern count="other">{0}rad</unitPattern>
+			</unit>
+			<unit type="area-square-kilometer">
+				<unitPattern count="other">{0}km²</unitPattern>
+			</unit>
+			<unit type="area-hectare">
+				<unitPattern count="other">{0}ha</unitPattern>
+			</unit>
+			<unit type="area-square-centimeter">
+				<unitPattern count="other">{0}cm²</unitPattern>
+				<perUnitPattern>{0}/cm²</perUnitPattern>
+			</unit>
+			<unit type="area-square-mile">
+				<unitPattern count="other">{0}mi²</unitPattern>
+			</unit>
+			<unit type="area-acre">
+				<unitPattern count="other">{0}ac</unitPattern>
+			</unit>
+			<unit type="area-square-yard">
+				<unitPattern count="other">{0}yd²</unitPattern>
+			</unit>
+			<unit type="area-square-foot">
+				<unitPattern count="other">{0}ft²</unitPattern>
+			</unit>
+			<unit type="area-square-inch">
+				<unitPattern count="other">{0}in²</unitPattern>
+			</unit>
+			<unit type="area-dunam">
+				<unitPattern count="other">{0}dunam</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<unitPattern count="other">{0}kt</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-ofglucose-per-deciliter">
+				<unitPattern count="other">{0}mg/dL</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<unitPattern count="other">{0}mmol/L</unitPattern>
+			</unit>
 			<unit type="concentr-item">
 				<displayName>ohun</displayName>
 				<unitPattern count="other">{0}ohun</unitPattern>
+			</unit>
+			<unit type="concentr-permillion">
+				<unitPattern count="other">{0}ppm</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<unitPattern count="other">{0}‰</unitPattern>
+			</unit>
+			<unit type="concentr-mole">
+				<unitPattern count="other">{0}mol</unitPattern>
+			</unit>
+			<unit type="consumption-liter-per-kilometer">
+				<unitPattern count="other">{0}L/km</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon">
+				<displayName>mpg</displayName>
+				<unitPattern count="other">{0}mpg</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>mpg UK</displayName>
+				<unitPattern count="other">{0}m/gUK</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>PB</displayName>
+				<unitPattern count="other">{0}PB</unitPattern>
+			</unit>
+			<unit type="digital-terabyte">
+				<displayName>TB</displayName>
+				<unitPattern count="other">{0}TB</unitPattern>
+			</unit>
+			<unit type="digital-terabit">
+				<unitPattern count="other">{0}Tb</unitPattern>
+			</unit>
+			<unit type="digital-gigabyte">
+				<displayName>GB</displayName>
+				<unitPattern count="other">{0}GB</unitPattern>
+			</unit>
+			<unit type="digital-gigabit">
+				<displayName>Gb</displayName>
+				<unitPattern count="other">{0}Gb</unitPattern>
+			</unit>
+			<unit type="digital-megabyte">
+				<displayName>MB</displayName>
+				<unitPattern count="other">{0}MB</unitPattern>
+			</unit>
+			<unit type="digital-megabit">
+				<displayName>Mb</displayName>
+				<unitPattern count="other">{0}Mb</unitPattern>
+			</unit>
+			<unit type="digital-kilobyte">
+				<displayName>kB</displayName>
+				<unitPattern count="other">{0}kB</unitPattern>
+			</unit>
+			<unit type="digital-kilobit">
+				<displayName>kb</displayName>
+				<unitPattern count="other">{0}kb</unitPattern>
+			</unit>
+			<unit type="digital-byte">
+				<displayName>B</displayName>
+				<unitPattern count="other">{0}B</unitPattern>
+			</unit>
+			<unit type="digital-bit">
+				<displayName>bit</displayName>
+				<unitPattern count="other">{0}bíìtì</unitPattern>
 			</unit>
 			<unit type="duration-year">
 				<displayName>ọd</displayName>
@@ -4138,6 +4254,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="duration-week">
 				<displayName>ọṣẹ́</displayName>
 				<unitPattern count="other">{0} ọṣ</unitPattern>
+				<perUnitPattern>{0}/ọ̀ṣẹ̀</perUnitPattern>
 			</unit>
 			<unit type="duration-day">
 				<displayName>ọjọ́</displayName>
@@ -4155,9 +4272,79 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>ìṣ àáy</displayName>
 				<unitPattern count="other">{0} ìṣ àáy</unitPattern>
 			</unit>
+			<unit type="electric-ampere">
+				<unitPattern count="other">{0}A</unitPattern>
+			</unit>
+			<unit type="electric-milliampere">
+				<unitPattern count="other">{0}mA</unitPattern>
+			</unit>
+			<unit type="electric-ohm">
+				<unitPattern count="other">{0}Ω</unitPattern>
+			</unit>
+			<unit type="electric-volt">
+				<unitPattern count="other">{0}V</unitPattern>
+			</unit>
+			<unit type="energy-kilocalorie">
+				<unitPattern count="other">{0}kcal</unitPattern>
+			</unit>
+			<unit type="energy-calorie">
+				<unitPattern count="other">{0}cal</unitPattern>
+			</unit>
+			<unit type="energy-foodcalorie">
+				<unitPattern count="other">{0}Cal</unitPattern>
+			</unit>
+			<unit type="energy-kilojoule">
+				<unitPattern count="other">{0}kJ</unitPattern>
+			</unit>
+			<unit type="energy-joule">
+				<unitPattern count="other">{0}J</unitPattern>
+			</unit>
+			<unit type="energy-kilowatt-hour">
+				<unitPattern count="other">{0}kWh</unitPattern>
+			</unit>
+			<unit type="energy-electronvolt">
+				<unitPattern count="other">{0}eV</unitPattern>
+			</unit>
+			<unit type="energy-british-thermal-unit">
+				<displayName>BTU</displayName>
+				<unitPattern count="other">{0}Btu</unitPattern>
+			</unit>
+			<unit type="energy-therm-us">
+				<unitPattern count="other">{0}US therms</unitPattern>
+			</unit>
+			<unit type="force-pound-force">
+				<unitPattern count="other">{0}lbf</unitPattern>
+			</unit>
+			<unit type="force-newton">
+				<unitPattern count="other">{0}N</unitPattern>
+			</unit>
 			<unit type="force-kilowatt-hour-per-100-kilometer">
 				<displayName>KWh ní 100km</displayName>
 				<unitPattern count="other">{0} kWh ní 100km</unitPattern>
+			</unit>
+			<unit type="frequency-gigahertz">
+				<unitPattern count="other">{0}GHz</unitPattern>
+			</unit>
+			<unit type="frequency-megahertz">
+				<unitPattern count="other">{0}MHz</unitPattern>
+			</unit>
+			<unit type="frequency-kilohertz">
+				<unitPattern count="other">{0}kHz</unitPattern>
+			</unit>
+			<unit type="frequency-hertz">
+				<unitPattern count="other">{0}Hz</unitPattern>
+			</unit>
+			<unit type="graphics-dot-per-centimeter">
+				<displayName>dpcm</displayName>
+				<unitPattern count="other">{0}dpcm</unitPattern>
+			</unit>
+			<unit type="graphics-dot-per-inch">
+				<displayName>dpi</displayName>
+				<unitPattern count="other">{0}dpi</unitPattern>
+			</unit>
+			<unit type="length-earth-radius">
+				<displayName>R⊕</displayName>
+				<unitPattern count="other">{0}R⊕</unitPattern>
 			</unit>
 			<unit type="length-furlong">
 				<displayName>fọ́lọ́ọ̀ngì</displayName>
@@ -4169,17 +4356,234 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="light-lux">
 				<displayName>lọ́s</displayName>
+				<unitPattern count="other">{0}lx</unitPattern>
+			</unit>
+			<unit type="light-candela">
+				<displayName>cd</displayName>
+				<unitPattern count="other">{0}cd</unitPattern>
 			</unit>
 			<unit type="light-lumen">
+				<displayName>lm</displayName>
 				<unitPattern count="other">{0} Lúmẹ́nì</unitPattern>
+			</unit>
+			<unit type="light-solar-luminosity">
+				<unitPattern count="other">{0}L☉</unitPattern>
+			</unit>
+			<unit type="mass-tonne">
+				<unitPattern count="other">{0}t</unitPattern>
+			</unit>
+			<unit type="mass-milligram">
+				<unitPattern count="other">{0}mg</unitPattern>
+			</unit>
+			<unit type="mass-microgram">
+				<unitPattern count="other">{0}μg</unitPattern>
+			</unit>
+			<unit type="mass-ton">
+				<unitPattern count="other">{0}tn</unitPattern>
 			</unit>
 			<unit type="mass-stone">
 				<displayName>okùta</displayName>
 				<unitPattern count="other">{0}st</unitPattern>
 			</unit>
+			<unit type="mass-ounce">
+				<unitPattern count="other">{0}oz</unitPattern>
+			</unit>
+			<unit type="mass-ounce-troy">
+				<unitPattern count="other">{0}oz t</unitPattern>
+			</unit>
+			<unit type="mass-carat">
+				<unitPattern count="other">{0}CD</unitPattern>
+			</unit>
+			<unit type="mass-dalton">
+				<unitPattern count="other">{0}Da</unitPattern>
+			</unit>
+			<unit type="mass-earth-mass">
+				<unitPattern count="other">{0}M⊕</unitPattern>
+			</unit>
+			<unit type="mass-solar-mass">
+				<unitPattern count="other">{0}M☉</unitPattern>
+			</unit>
+			<unit type="mass-grain">
+				<displayName>gr</displayName>
+				<unitPattern count="other">{0}gr</unitPattern>
+			</unit>
+			<unit type="power-gigawatt">
+				<unitPattern count="other">{0}GW</unitPattern>
+			</unit>
+			<unit type="power-megawatt">
+				<unitPattern count="other">{0}MW</unitPattern>
+			</unit>
+			<unit type="power-kilowatt">
+				<unitPattern count="other">{0}kW</unitPattern>
+			</unit>
+			<unit type="power-watt">
+				<unitPattern count="other">{0}W</unitPattern>
+			</unit>
+			<unit type="power-milliwatt">
+				<unitPattern count="other">{0}mW</unitPattern>
+			</unit>
+			<unit type="power-horsepower">
+				<unitPattern count="other">{0}hp</unitPattern>
+			</unit>
+			<unit type="pressure-millimeter-ofhg">
+				<displayName>mmHg</displayName>
+				<unitPattern count="other">{0}mmHg</unitPattern>
+			</unit>
+			<unit type="pressure-inch-ofhg">
+				<displayName>″ Hg</displayName>
+				<unitPattern count="other">{0}″ Hg</unitPattern>
+			</unit>
+			<unit type="pressure-bar">
+				<unitPattern count="other">{0}bar</unitPattern>
+			</unit>
+			<unit type="pressure-atmosphere">
+				<unitPattern count="other">{0}atm</unitPattern>
+			</unit>
+			<unit type="pressure-pascal">
+				<unitPattern count="other">{0}Pa</unitPattern>
+			</unit>
+			<unit type="pressure-hectopascal">
+				<unitPattern count="other">{0}hPa</unitPattern>
+			</unit>
+			<unit type="pressure-kilopascal">
+				<unitPattern count="other">{0}kPa</unitPattern>
+			</unit>
+			<unit type="pressure-megapascal">
+				<unitPattern count="other">{0}MPa</unitPattern>
+			</unit>
+			<unit type="speed-meter-per-second">
+				<unitPattern count="other">{0}m/s</unitPattern>
+			</unit>
+			<unit type="speed-mile-per-hour">
+				<unitPattern count="other">{0}mph</unitPattern>
+			</unit>
+			<unit type="speed-knot">
+				<unitPattern count="other">{0}kn</unitPattern>
+			</unit>
+			<unit type="temperature-generic">
+				<displayName>°</displayName>
+			</unit>
+			<unit type="temperature-fahrenheit">
+				<unitPattern count="other">{0}°</unitPattern>
+			</unit>
+			<unit type="temperature-kelvin">
+				<unitPattern count="other">{0}K</unitPattern>
+			</unit>
+			<unit type="torque-pound-force-foot">
+				<unitPattern count="other">{0}lbf⋅ft</unitPattern>
+			</unit>
+			<unit type="torque-newton-meter">
+				<unitPattern count="other">{0}N⋅m</unitPattern>
+			</unit>
+			<unit type="volume-cubic-kilometer">
+				<unitPattern count="other">{0}km³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-meter">
+				<unitPattern count="other">{0}m³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-centimeter">
+				<unitPattern count="other">{0}cm³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-mile">
+				<unitPattern count="other">{0}mi³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-yard">
+				<unitPattern count="other">{0}yd³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-foot">
+				<unitPattern count="other">{0}ft³</unitPattern>
+			</unit>
+			<unit type="volume-cubic-inch">
+				<unitPattern count="other">{0}in³</unitPattern>
+			</unit>
+			<unit type="volume-megaliter">
+				<unitPattern count="other">{0}ML</unitPattern>
+			</unit>
+			<unit type="volume-hectoliter">
+				<unitPattern count="other">{0}hL</unitPattern>
+			</unit>
+			<unit type="volume-liter">
+				<perUnitPattern>{0}/L</perUnitPattern>
+			</unit>
+			<unit type="volume-deciliter">
+				<unitPattern count="other">{0}dL</unitPattern>
+			</unit>
+			<unit type="volume-centiliter">
+				<unitPattern count="other">{0}cL</unitPattern>
+			</unit>
+			<unit type="volume-milliliter">
+				<unitPattern count="other">{0}mL</unitPattern>
+			</unit>
+			<unit type="volume-pint-metric">
+				<unitPattern count="other">{0}mpt</unitPattern>
+			</unit>
+			<unit type="volume-cup-metric">
+				<unitPattern count="other">{0}mc</unitPattern>
+			</unit>
+			<unit type="volume-acre-foot">
+				<displayName>acre ft</displayName>
+				<unitPattern count="other">{0}ac ft</unitPattern>
+			</unit>
 			<unit type="volume-bushel">
 				<displayName>búsẹ́li</displayName>
 				<unitPattern count="other">{0}búsẹ́ẹ̀li</unitPattern>
+			</unit>
+			<unit type="volume-gallon">
+				<displayName>gal</displayName>
+				<unitPattern count="other">{0}gal</unitPattern>
+				<perUnitPattern>{0}/gal</perUnitPattern>
+			</unit>
+			<unit type="volume-gallon-imperial">
+				<displayName>Imp gal</displayName>
+				<unitPattern count="other">{0}galIm</unitPattern>
+				<perUnitPattern>{0}/galIm</perUnitPattern>
+			</unit>
+			<unit type="volume-quart">
+				<unitPattern count="other">{0}qt</unitPattern>
+			</unit>
+			<unit type="volume-pint">
+				<unitPattern count="other">{0}pt</unitPattern>
+			</unit>
+			<unit type="volume-cup">
+				<unitPattern count="other">{0}c</unitPattern>
+			</unit>
+			<unit type="volume-fluid-ounce">
+				<displayName>fl oz</displayName>
+				<unitPattern count="other">{0}fl oz</unitPattern>
+			</unit>
+			<unit type="volume-fluid-ounce-imperial">
+				<displayName>Imp fl oz</displayName>
+				<unitPattern count="other">{0}fl oz Im</unitPattern>
+			</unit>
+			<unit type="volume-tablespoon">
+				<unitPattern count="other">{0}tbsp</unitPattern>
+			</unit>
+			<unit type="volume-teaspoon">
+				<unitPattern count="other">{0}tsp</unitPattern>
+			</unit>
+			<unit type="volume-barrel">
+				<unitPattern count="other">{0}bbl</unitPattern>
+			</unit>
+			<unit type="volume-dessert-spoon">
+				<unitPattern count="other">{0}dsp</unitPattern>
+			</unit>
+			<unit type="volume-drop">
+				<unitPattern count="other">{0}dr</unitPattern>
+			</unit>
+			<unit type="volume-dram">
+				<displayName>fl.dr.</displayName>
+				<unitPattern count="other">{0}fl.dr.</unitPattern>
+			</unit>
+			<unit type="volume-jigger">
+				<displayName>jìgá</displayName>
+				<unitPattern count="other">{0}jìgá</unitPattern>
+			</unit>
+			<unit type="volume-pinch">
+				<displayName>pn</displayName>
+				<unitPattern count="other">{0}pn</unitPattern>
+			</unit>
+			<unit type="volume-quart-imperial">
+				<unitPattern count="other">{0}àmì ìdásímérin</unitPattern>
 			</unit>
 		</unitLength>
 		<durationUnit type="hm">
@@ -4380,155 +4784,171 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<personNames>
 		<nameOrderLocales order="givenFirst">und yo</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ko vi yue zh</nameOrderLocales>
-		<initialPattern type="initial">{0}.</initialPattern>
-		<initialPattern type="initialSequence">{0} {1}</initialPattern>
 		<personName order="givenFirst" length="long" usage="referring" formality="formal">
-			<namePattern draft="provisional">{given} {given2} {surname} {credentials}</namePattern>
+			<namePattern>{given} {given2} {surname} {credentials}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="long" usage="referring" formality="informal">
-			<namePattern draft="provisional">{given-informal} {surname}</namePattern>
+			<namePattern>{given-informal} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="long" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="long" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
-		</personName>
-		<personName order="givenFirst" length="long" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="long" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{given-informal-monogram-allCaps}{surname-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal-monogram-allCaps}{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="referring" formality="formal">
-			<namePattern draft="provisional">{given} {given2-initial} {surname} {credentials}</namePattern>
+			<namePattern>{given} {given2-initial} {surname} {credentials}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="referring" formality="informal">
-			<namePattern draft="provisional">{given-informal} {surname}</namePattern>
+			<namePattern>{given-informal} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}</namePattern>
+			<namePattern>{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{given-informal-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="referring" formality="formal">
-			<namePattern draft="provisional">{given-initial} {given2-initial} {surname}</namePattern>
+			<namePattern>{given-initial} {given2-initial} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="referring" formality="informal">
-			<namePattern draft="provisional">{given-informal} {surname-initial}</namePattern>
+			<namePattern>{given-informal} {surname-initial}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}</namePattern>
+			<namePattern>{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="short" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{given-informal-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname} {given} {given2} {credentials}</namePattern>
+			<namePattern>{surname} {given} {given2} {credentials}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname} {given-informal}</namePattern>
+			<namePattern>{surname} {given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
-		</personName>
-		<personName order="surnameFirst" length="long" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}{given-informal-monogram-allCaps}</namePattern>
+			<namePattern>{surname-monogram-allCaps}{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname} {given} {given2-initial} {credentials}</namePattern>
+			<namePattern>{surname} {given} {given2-initial} {credentials}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname} {given-informal}</namePattern>
+			<namePattern>{surname} {given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}</namePattern>
+			<namePattern>{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{given-informal-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname} {given-initial} {given2-initial}</namePattern>
+			<namePattern>{surname} {given-initial} {given2-initial}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname} {given-initial}</namePattern>
+			<namePattern>{surname} {given-initial}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="addressing" formality="formal">
-			<namePattern draft="provisional">{title} {surname}</namePattern>
+			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="addressing" formality="informal">
-			<namePattern draft="provisional">{given-informal}</namePattern>
+			<namePattern>{given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="monogram" formality="formal">
-			<namePattern draft="provisional">{surname-monogram-allCaps}</namePattern>
+			<namePattern>{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="short" usage="monogram" formality="informal">
-			<namePattern draft="provisional">{given-informal-monogram-allCaps}</namePattern>
+			<namePattern>{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="sorting" length="long" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname-core}, {given} {given2} {surname-prefix}</namePattern>
+			<namePattern>{surname-core}, {given} {given2} {surname-prefix}</namePattern>
 		</personName>
 		<personName order="sorting" length="long" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname}, {given-informal}</namePattern>
+			<namePattern>{surname}, {given-informal}</namePattern>
 		</personName>
 		<personName order="sorting" length="medium" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname-core}, {given} {given2-initial} {surname-prefix}</namePattern>
+			<namePattern>{surname-core}, {given} {given2-initial} {surname-prefix}</namePattern>
 		</personName>
 		<personName order="sorting" length="medium" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname}, {given-informal}</namePattern>
+			<namePattern>{surname}, {given-informal}</namePattern>
 		</personName>
 		<personName order="sorting" length="short" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname-core}, {given-initial} {given2-initial} {surname-prefix}</namePattern>
+			<namePattern>{surname-core}, {given-initial} {given2-initial} {surname-prefix}</namePattern>
 		</personName>
 		<personName order="sorting" length="short" usage="referring" formality="informal">
-			<namePattern draft="provisional">{surname}, {given-informal}</namePattern>
+			<namePattern>{surname}, {given-informal}</namePattern>
 		</personName>
 		<sampleName item="nativeG">
-			<nameField type="given" draft="provisional">sibadì</nameField>
+			<nameField type="given">Boluwatife</nameField>
 		</sampleName>
 		<sampleName item="nativeGS">
-			<nameField type="given" draft="provisional">irínì</nameField>
-			<nameField type="surname" draft="provisional">ádà</nameField>
+			<nameField type="given">Olabisi</nameField>
+			<nameField type="surname">Adeboye</nameField>
 		</sampleName>
 		<sampleName item="nativeGGS">
-			<nameField type="given" draft="provisional">jòhánú</nameField>
-			<nameField type="given2" draft="provisional">Hamísì</nameField>
-			<nameField type="surname" draft="provisional">wásìn</nameField>
+			<nameField type="given">Ade Olu</nameField>
+			<nameField type="given2">Adegboyega</nameField>
+			<nameField type="surname">Akintola</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="title">Ọ̀gbẹ́ni</nameField>
+			<nameField type="given">Adebola Opeyemi</nameField>
+			<nameField type="given-informal">Omoge</nameField>
+			<nameField type="given2">Olumide Ajao</nameField>
+			<nameField type="surname-prefix">∅∅∅</nameField>
+			<nameField type="surname-core">Adekunle</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">Jr</nameField>
+			<nameField type="credentials">Asofin</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">Sinbad</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">Käthe</nameField>
+			<nameField type="surname">Müller</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">Zäzilia</nameField>
+			<nameField type="given2">Hamish</nameField>
+			<nameField type="surname">Stöber</nameField>
 		</sampleName>
 		<sampleName item="foreignFull">
-			<nameField type="title" draft="provisional">ọ̀jọ̀gbọ́n. omọ́wé</nameField>
-			<nameField type="given" draft="provisional">Adá Konelíà</nameField>
-			<nameField type="given-informal" draft="provisional">nélì</nameField>
-			<nameField type="given2" draft="provisional">Efa Sófíà</nameField>
-			<nameField type="surname-prefix" draft="provisional">fanú dẹ́ni</nameField>
-			<nameField type="surname-core" draft="provisional">woofù</nameField>
-			<nameField type="surname2" draft="provisional">Bekà Símíìtì</nameField>
-			<nameField type="credentials" draft="provisional">M.D. Ph.D.</nameField>
+			<nameField type="title">Ọ̀jọ̀gbọ́n Ọ̀mọ̀wé</nameField>
+			<nameField type="given">Ada Cornelia</nameField>
+			<nameField type="given-informal">Neele</nameField>
+			<nameField type="given2">César Martín</nameField>
+			<nameField type="surname-prefix">von</nameField>
+			<nameField type="surname-core">Brühl</nameField>
+			<nameField type="surname2">González Domingo</nameField>
+			<nameField type="generation">Jr</nameField>
+			<nameField type="credentials">M.D. Ph.D.</nameField>
 		</sampleName>
 	</personNames>
 </ldml>

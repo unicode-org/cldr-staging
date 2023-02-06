@@ -246,6 +246,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="lij">ligurianisht</language>
 			<language type="lil">lilluetisht</language>
 			<language type="lkt">lakotisht</language>
+			<language type="lmo">lombardisht</language>
 			<language type="ln">lingalisht</language>
 			<language type="lo">laosisht</language>
 			<language type="lou">kreole e Luizianës</language>
@@ -3575,6 +3576,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</zone>
 			<zone type="America/Hermosillo">
 				<exemplarCity>Hermosijo</exemplarCity>
+			</zone>
+			<zone type="America/Ciudad_Juarez">
+				<exemplarCity>Siudad-Huarez</exemplarCity>
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>Mazatlan</exemplarCity>
@@ -9216,9 +9220,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 	<personNames>
 		<nameOrderLocales order="givenFirst">und sq</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ko vi yue zh</nameOrderLocales>
-		<foreignSpaceReplacement xml:space="preserve"> </foreignSpaceReplacement>
-		<initialPattern type="initial">{0}.</initialPattern>
-		<initialPattern type="initialSequence">{0} {1}</initialPattern>
 		<personName order="givenFirst" length="long" usage="referring" formality="formal">
 			<namePattern>{title} {given} {surname}, {credentials}</namePattern>
 		</personName>
@@ -9232,7 +9233,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<namePattern>{title} {given-informal}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="long" usage="monogram" formality="formal">
-			<namePattern>{given-monogram-allCaps}.{surname-monogram-allCaps}.</namePattern>
+			<namePattern>{given-monogram-allCaps}{surname-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="givenFirst" length="medium" usage="referring" formality="informal">
 			<namePattern>{title} {given} {surname}</namePattern>
@@ -9265,10 +9266,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<namePattern>{title} {given-informal}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="monogram" formality="formal">
-			<namePattern>{surname-monogram-allCaps}.{given-monogram-allCaps}.{given2-monogram-allCaps}.</namePattern>
+			<namePattern>{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="monogram" formality="informal">
-			<namePattern>{surname-monogram-allCaps}.{given-informal-monogram-allCaps}.</namePattern>
+			<namePattern>{surname-monogram-allCaps}{given-informal-monogram-allCaps}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="medium" usage="referring" formality="informal">
 			<namePattern>{title} {surname}, {given}</namePattern>
@@ -9313,26 +9314,50 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<namePattern>{title} {surname}, {given-informal}</namePattern>
 		</personName>
 		<sampleName item="nativeG">
-			<nameField type="given" draft="provisional">Blerim</nameField>
+			<nameField type="given">Blerim</nameField>
 		</sampleName>
 		<sampleName item="nativeGS">
-			<nameField type="given" draft="provisional">Majlinda</nameField>
-			<nameField type="surname" draft="provisional">Kraja</nameField>
+			<nameField type="given">Majlinda</nameField>
+			<nameField type="surname">Kraja</nameField>
 		</sampleName>
 		<sampleName item="nativeGGS">
-			<nameField type="given" draft="provisional">Ilir</nameField>
-			<nameField type="given2" draft="provisional">Ilia</nameField>
-			<nameField type="surname" draft="provisional">Rustemi</nameField>
+			<nameField type="given">Ilir</nameField>
+			<nameField type="given2">Ilia</nameField>
+			<nameField type="surname">Rustemi</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="title">Z.</nameField>
+			<nameField type="given">Gavril</nameField>
+			<nameField type="given-informal">Gav</nameField>
+			<nameField type="given2">Andrea</nameField>
+			<nameField type="surname-prefix">∅∅∅</nameField>
+			<nameField type="surname-core">Dara</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">I riu</nameField>
+			<nameField type="credentials">∅∅∅</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">Sinbad</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">Menada</nameField>
+			<nameField type="surname">Fonda</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">Amarildo</nameField>
+			<nameField type="given2">Andrea</nameField>
+			<nameField type="surname">Lombardi</nameField>
 		</sampleName>
 		<sampleName item="foreignFull">
-			<nameField type="title" draft="provisional">prof. dr.</nameField>
-			<nameField type="given" draft="provisional">Gentiana</nameField>
-			<nameField type="given-informal" draft="provisional">Genta</nameField>
-			<nameField type="given2" draft="provisional">Marie</nameField>
-			<nameField type="surname-prefix" draft="provisional">van den</nameField>
-			<nameField type="surname-core" draft="provisional">Popa</nameField>
-			<nameField type="surname2" draft="provisional">Prodani</nameField>
-			<nameField type="credentials" draft="provisional">dr. shk. mjek.</nameField>
+			<nameField type="title">prof. dr.</nameField>
+			<nameField type="given">Gentiana</nameField>
+			<nameField type="given-informal">Genta</nameField>
+			<nameField type="given2">Marie</nameField>
+			<nameField type="surname-prefix">van den</nameField>
+			<nameField type="surname-core">Popa</nameField>
+			<nameField type="surname2">Prodani</nameField>
+			<nameField type="generation">E reja</nameField>
+			<nameField type="credentials">dr. shk. mjek.</nameField>
 		</sampleName>
 	</personNames>
 </ldml>

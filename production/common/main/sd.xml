@@ -802,7 +802,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="TM">ترڪمانستان</territory>
 			<territory type="TN">تيونيسيا</territory>
 			<territory type="TO">ٽونگا</territory>
-			<territory type="TR">ترڪي</territory>
+			<territory type="TR">ترڪييي</territory>
 			<territory type="TT">ٽريني ڊيڊ ۽ ٽوباگو ٻيٽ</territory>
 			<territory type="TV">توالو</territory>
 			<territory type="TW">تائیوان</territory>
@@ -3211,6 +3211,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="America/Hermosillo">
 				<exemplarCity>هرموسلو</exemplarCity>
+			</zone>
+			<zone type="America/Ciudad_Juarez">
+				<exemplarCity>سوڊيڊ جوريز</exemplarCity>
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>مزاٽلان</exemplarCity>
@@ -7793,6 +7796,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<compoundUnit type="times">
 				<compoundUnitPattern>{0}⋅{1}</compoundUnitPattern>
 			</compoundUnit>
+			<unit type="angle-radian">
+				<unitPattern count="one">{0}رئڊ</unitPattern>
+				<unitPattern count="other">{0}رئڊ</unitPattern>
+			</unit>
+			<unit type="area-hectare">
+				<unitPattern count="one">{0}ھيڪٽر</unitPattern>
+				<unitPattern count="other">{0}ھيڪٽر</unitPattern>
+			</unit>
+			<unit type="area-square-meter">
+				<unitPattern count="one">{0}m²</unitPattern>
+				<unitPattern count="other">{0}m²</unitPattern>
+			</unit>
 			<unit type="concentr-item">
 				<displayName>آئٽم</displayName>
 			</unit>
@@ -7914,6 +7929,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>ملي ميٽر</displayName>
 				<unitPattern count="one">{0} ملي ميٽر</unitPattern>
 				<unitPattern count="other">{0} ملي ميٽر</unitPattern>
+			</unit>
+			<unit type="length-mile-scandinavian">
+				<displayName>ايس ايم آئي</displayName>
+				<unitPattern count="one">{0}ايس ايم آئي</unitPattern>
+				<unitPattern count="other">{0}ايس ايم آئي</unitPattern>
+			</unit>
+			<unit type="length-point">
+				<unitPattern count="one">{0}پوائينٽ</unitPattern>
+				<unitPattern count="other">{0}پوائينٽ</unitPattern>
+			</unit>
+			<unit type="length-solar-radius">
+				<displayName>R☉</displayName>
+				<unitPattern count="one">{0}R☉</unitPattern>
+				<unitPattern count="other">{0}R☉</unitPattern>
 			</unit>
 			<unit type="mass-tonne">
 				<displayName>ٽَـ</displayName>
@@ -8191,26 +8220,50 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<nameOrderLocales order="givenFirst">und sd</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ko si ta te vi yue zh</nameOrderLocales>
 		<sampleName item="nativeG">
-			<nameField type="given" draft="provisional">سنباد</nameField>
+			<nameField type="given">سنباد</nameField>
 		</sampleName>
 		<sampleName item="nativeGS">
-			<nameField type="given" draft="provisional">آئرين</nameField>
-			<nameField type="surname" draft="provisional">ائڊلر</nameField>
+			<nameField type="given">آئرين</nameField>
+			<nameField type="surname">ائڊلر</nameField>
 		</sampleName>
 		<sampleName item="nativeGGS">
-			<nameField type="given" draft="provisional">جان</nameField>
-			<nameField type="given2" draft="provisional">ھامش</nameField>
-			<nameField type="surname" draft="provisional">واٽسن</nameField>
+			<nameField type="given">ميري سيو</nameField>
+			<nameField type="given2">ھامش</nameField>
+			<nameField type="surname">واٽسن</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="title">محترم</nameField>
+			<nameField type="given">برٽرم ولبرفورس</nameField>
+			<nameField type="given-informal">برٽي</nameField>
+			<nameField type="given2">ھينري رابرٽ</nameField>
+			<nameField type="surname-prefix">∅∅∅</nameField>
+			<nameField type="surname-core">ووسٽر</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">جونيئر</nameField>
+			<nameField type="credentials">ايم پي</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">سندباد</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">ڪئٿي</nameField>
+			<nameField type="surname">ملر</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">زيزيليا</nameField>
+			<nameField type="given2">ھئمش</nameField>
+			<nameField type="surname">اسٽوبر</nameField>
 		</sampleName>
 		<sampleName item="foreignFull">
-			<nameField type="title" draft="provisional">پروفيسر ڊاڪٽر</nameField>
-			<nameField type="given" draft="provisional">ايڊا ڪورنيليا</nameField>
-			<nameField type="given-informal" draft="provisional">نيل</nameField>
-			<nameField type="given2" draft="provisional">ايوا سوفيه</nameField>
-			<nameField type="surname-prefix" draft="provisional">وين ڊين</nameField>
-			<nameField type="surname-core" draft="provisional">ولف</nameField>
-			<nameField type="surname2" draft="provisional">بيڪر شمڊٽ</nameField>
-			<nameField type="credentials" draft="provisional">ايم ڊي پي ايڇ ڊي</nameField>
+			<nameField type="title">پروفيسر ڊاڪٽر</nameField>
+			<nameField type="given">ايڊا ڪورنيليا</nameField>
+			<nameField type="given-informal">نيل</nameField>
+			<nameField type="given2">سيزر مارٽن</nameField>
+			<nameField type="surname-prefix">وان</nameField>
+			<nameField type="surname-core">برل</nameField>
+			<nameField type="surname2">گونزالس ڊومنگو</nameField>
+			<nameField type="generation">جونيئر</nameField>
+			<nameField type="credentials">ايم ڊي ڊي ڊي ايس</nameField>
 		</sampleName>
 	</personNames>
 </ldml>

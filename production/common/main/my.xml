@@ -831,7 +831,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="TN">တူနီးရှား</territory>
 			<territory type="TO">တွန်ဂါ</territory>
 			<territory type="TR">တူရကီ</territory>
-			<territory type="TR" alt="variant">တာ့ကီယဲ</territory>
+			<territory type="TR" alt="variant">တူရကီယဲ</territory>
 			<territory type="TT">ထရီနီဒတ်နှင့် တိုဘက်ဂို</territory>
 			<territory type="TV">တူဗားလူ</territory>
 			<territory type="TW">ထိုင်ဝမ်</territory>
@@ -3122,6 +3122,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</zone>
 			<zone type="America/Hermosillo">
 				<exemplarCity>ဟာမိုစ်စီလို</exemplarCity>
+			</zone>
+			<zone type="America/Ciudad_Juarez">
+				<exemplarCity>စီယူဒတ်စ် ဟွာရက်စ်</exemplarCity>
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>မာဇတ်လန်</exemplarCity>
@@ -7336,12 +7339,22 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>%</displayName>
 				<unitPattern count="other">{0}%</unitPattern>
 			</unit>
+			<unit type="consumption-liter-per-kilometer">
+				<displayName>L/km</displayName>
+			</unit>
 			<unit type="consumption-liter-per-100-kilometer">
 				<displayName>L/100km</displayName>
 				<unitPattern count="other">{0} L/100km</unitPattern>
 			</unit>
 			<unit type="consumption-mile-per-gallon-imperial">
 				<unitPattern count="other">{0}m/gUK</unitPattern>
+			</unit>
+			<unit type="digital-gigabit">
+				<displayName>Gb</displayName>
+			</unit>
+			<unit type="digital-byte">
+				<displayName>B</displayName>
+				<unitPattern count="other">{0}B</unitPattern>
 			</unit>
 			<unit type="duration-year">
 				<displayName>နှစ်</displayName>
@@ -7375,11 +7388,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>မီလီစက္ကန့်</displayName>
 				<unitPattern count="other">{0} ms</unitPattern>
 			</unit>
+			<unit type="electric-ampere">
+				<displayName>amp</displayName>
+			</unit>
 			<unit type="energy-therm-us">
 				<unitPattern count="other">{0}US therms</unitPattern>
 			</unit>
+			<unit type="force-newton">
+				<displayName>N</displayName>
+			</unit>
 			<unit type="force-kilowatt-hour-per-100-kilometer">
 				<unitPattern count="other">{0}kWh/100km</unitPattern>
+			</unit>
+			<unit type="frequency-gigahertz">
+				<displayName>GHz</displayName>
 			</unit>
 			<unit type="graphics-dot-per-centimeter">
 				<displayName>dpcm</displayName>
@@ -7453,6 +7475,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="length-solar-radius">
 				<displayName>R☉</displayName>
 			</unit>
+			<unit type="light-lumen">
+				<displayName>lm</displayName>
+				<unitPattern count="other">{0}lm</unitPattern>
+			</unit>
+			<unit type="light-solar-luminosity">
+				<displayName>L☉</displayName>
+			</unit>
 			<unit type="mass-kilogram">
 				<displayName>ကီလိုဂရမ်</displayName>
 				<unitPattern count="other">{0} kg</unitPattern>
@@ -7476,10 +7505,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="power-horsepower">
 				<unitPattern count="other">{0} hp</unitPattern>
 			</unit>
+			<unit type="pressure-pound-force-per-square-inch">
+				<displayName>psi</displayName>
+			</unit>
 			<unit type="pressure-inch-ofhg">
+				<displayName>″ Hg</displayName>
 				<unitPattern count="other">{0} inHg</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
+				<displayName>mbar</displayName>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
 			<unit type="pressure-hectopascal">
@@ -7523,9 +7557,21 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="volume-liter">
 				<displayName>လီတာ</displayName>
 				<unitPattern count="other">{0}L</unitPattern>
+				<perUnitPattern>{0}/လီတာ</perUnitPattern>
+			</unit>
+			<unit type="volume-gallon-imperial">
+				<unitPattern count="other">ယူကေ ဂါလံ {0} ဂါလံ</unitPattern>
+				<perUnitPattern>{0}/ယူကေ ဂါလံ</perUnitPattern>
 			</unit>
 			<unit type="volume-fluid-ounce-imperial">
+				<displayName>ဗြိတိသျှသုံး အရည်အောင်စ</displayName>
 				<unitPattern count="other">{0}fl oz Im</unitPattern>
+			</unit>
+			<unit type="volume-barrel">
+				<displayName>စည်</displayName>
+			</unit>
+			<unit type="volume-drop">
+				<displayName>စက်</displayName>
 			</unit>
 			<coordinateUnit>
 				<displayName>လမ်းကြောင်း</displayName>
@@ -7776,10 +7822,56 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<nameOrderLocales order="surnameFirst">ko si ta te vi yue zh</nameOrderLocales>
 		<foreignSpaceReplacement xml:space="preserve"> </foreignSpaceReplacement>
 		<personName order="surnameFirst" length="long" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname} {given} {given2} {credentials}</namePattern>
+			<namePattern>{surname} {given} {given2} {credentials}</namePattern>
 		</personName>
 		<personName order="sorting" length="long" usage="referring" formality="formal">
-			<namePattern draft="provisional">{surname-core}၊ {given} {given2} {surname-prefix}</namePattern>
+			<namePattern>{surname-core}၊ {given} {given2} {surname-prefix}</namePattern>
 		</personName>
+		<sampleName item="nativeG">
+			<nameField type="given">ဇင်ဒါယာ</nameField>
+		</sampleName>
+		<sampleName item="nativeGS">
+			<nameField type="given">အိုင်ရင်း</nameField>
+			<nameField type="surname">အက်ဒ်လာ</nameField>
+		</sampleName>
+		<sampleName item="nativeGGS">
+			<nameField type="given">မေရီ စူး</nameField>
+			<nameField type="given2">ဟာမစ်ရှ်</nameField>
+			<nameField type="surname">ဝပ်ဆင်</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="title">မစ္စတာ</nameField>
+			<nameField type="given">ဘာထရမ် ဝဲလ်ဘာဖို့စ်</nameField>
+			<nameField type="given-informal">ဘာတီ</nameField>
+			<nameField type="given2">ဟင်နရီ ရောဘတ်</nameField>
+			<nameField type="surname-prefix">∅∅∅</nameField>
+			<nameField type="surname-core">ဝူစ်တာ</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">ဂျူနီယာ</nameField>
+			<nameField type="credentials">ဒေါက်တာ</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">ဆင်းဘတ်</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">ကက်သီ</nameField>
+			<nameField type="surname">မူလာ</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">ဇာဇီလာ</nameField>
+			<nameField type="given2">ဟာမစ်ရှ်</nameField>
+			<nameField type="surname">စတိုဘာ</nameField>
+		</sampleName>
+		<sampleName item="foreignFull">
+			<nameField type="title">ပရော်ဖက်ဆာ ဒေါက်တာ</nameField>
+			<nameField type="given">အာဒါ ကွန်နီလီယာ</nameField>
+			<nameField type="given-informal">နီလီ</nameField>
+			<nameField type="given2">ဆီဇာ မာတင်</nameField>
+			<nameField type="surname-prefix">ဝူစ်တာ ဗွန်</nameField>
+			<nameField type="surname-core">ဝူစ်တာ ဘရူ</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">ဂျူနီယာ</nameField>
+			<nameField type="credentials">ဒေါက်တာ</nameField>
+		</sampleName>
 	</personNames>
 </ldml>

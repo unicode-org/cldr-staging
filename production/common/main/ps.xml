@@ -240,6 +240,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="li">لمبرگیانی</language>
 			<language type="lil">lill</language>
 			<language type="lkt">لکوټا</language>
+			<language type="lmo">لومبارډ</language>
 			<language type="ln">لنګالا</language>
 			<language type="lo">لاو</language>
 			<language type="lou">Louis</language>
@@ -1510,7 +1511,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
 						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
-						<dateFormatItem id="MMMMW" count="one">اونۍ‘ W د MMMM‘</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="one">اونۍ W د MMMM</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="other">اونۍ W د MMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
@@ -3424,6 +3425,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="America/Hermosillo">
 				<exemplarCity>هرموسیلو</exemplarCity>
+			</zone>
+			<zone type="America/Ciudad_Juarez">
+				<exemplarCity>سیوداد جیوریز</exemplarCity>
 			</zone>
 			<zone type="America/Mazatlan">
 				<exemplarCity>مزاتلان</exemplarCity>
@@ -7642,6 +7646,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="consumption-mile-per-gallon-imperial">
 				<displayName>mpg UK</displayName>
 			</unit>
+			<unit type="duration-decade">
+				<unitPattern count="one">{0} لسیز</unitPattern>
+				<unitPattern count="other">{0} لسیز</unitPattern>
+			</unit>
 			<unit type="duration-year">
 				<displayName>yr</displayName>
 				<unitPattern count="one">{0} y</unitPattern>
@@ -7979,24 +7987,50 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<nameOrderLocales order="givenFirst">und ps</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ko vi yue zh</nameOrderLocales>
 		<sampleName item="nativeG">
-			<nameField type="given" draft="provisional">سنباد</nameField>
+			<nameField type="given">سنباد</nameField>
 		</sampleName>
 		<sampleName item="nativeGS">
-			<nameField type="given" draft="provisional">ارین</nameField>
-			<nameField type="surname" draft="provisional">اډلر</nameField>
+			<nameField type="given">ارین</nameField>
+			<nameField type="surname">اډلر</nameField>
 		</sampleName>
 		<sampleName item="nativeGGS">
-			<nameField type="given" draft="provisional">جان</nameField>
-			<nameField type="given2" draft="provisional">همیش</nameField>
-			<nameField type="surname" draft="provisional">واټسن</nameField>
+			<nameField type="given">جان</nameField>
+			<nameField type="given2">همیش</nameField>
+			<nameField type="surname">واټسن</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="title">ښاغلی.</nameField>
+			<nameField type="given">برټرام ولبرفورس</nameField>
+			<nameField type="given-informal">برټي</nameField>
+			<nameField type="given2">هنري رابرټ</nameField>
+			<nameField type="surname-prefix">∅∅∅</nameField>
+			<nameField type="surname-core">ووسټر</nameField>
+			<nameField type="surname2">∅∅∅</nameField>
+			<nameField type="generation">نسل</nameField>
+			<nameField type="credentials">ایم پی</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">سنباد</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">کیتی</nameField>
+			<nameField type="surname">مولر</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">زیزیلیا</nameField>
+			<nameField type="given2">همیش</nameField>
+			<nameField type="surname">سټوبر</nameField>
 		</sampleName>
 		<sampleName item="foreignFull">
-			<nameField type="title" draft="provisional">پروفیسور ډاکټر</nameField>
-			<nameField type="given" draft="provisional">اډا کورنیلیا</nameField>
-			<nameField type="given-informal" draft="provisional">نیلي</nameField>
-			<nameField type="given2" draft="provisional">ایوا سوفیا</nameField>
-			<nameField type="surname-core" draft="provisional">لیوه</nameField>
-			<nameField type="surname2" draft="provisional">بیکر شمیت</nameField>
+			<nameField type="title">پروفیسور ډاکټر</nameField>
+			<nameField type="given">اډا کورنیلیا</nameField>
+			<nameField type="given-informal">نیلي</nameField>
+			<nameField type="given2">ایوا سوفیا</nameField>
+			<nameField type="surname-prefix">وون</nameField>
+			<nameField type="surname-core">لیوه</nameField>
+			<nameField type="surname2">بیکر شمیت</nameField>
+			<nameField type="generation">نسل</nameField>
+			<nameField type="credentials">ایم ‌ډی ډیی ډیی ایس</nameField>
 		</sampleName>
 	</personNames>
 </ldml>

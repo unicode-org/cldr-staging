@@ -1678,6 +1678,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Etc/Unknown">
 				<exemplarCity>билгесез шәһәр</exemplarCity>
 			</zone>
+			<metazone type="Acre">
+				<long>
+					<generic>Акр вакыты</generic>
+				</long>
+			</metazone>
 			<metazone type="America_Central">
 				<long>
 					<generic>Төньяк Америка үзәк вакыты</generic>
@@ -1704,6 +1709,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Төньяк Америка Тын океан вакыты</generic>
 					<standard>Төньяк Америка гадәти Тын океан вакыты</standard>
 					<daylight>Төньяк Америка җәйге Тын океан вакыты</daylight>
+				</long>
+			</metazone>
+			<metazone type="Anadyr">
+				<long>
+					<generic>Анадырь вакыты</generic>
 				</long>
 			</metazone>
 			<metazone type="Atlantic">
@@ -1737,6 +1747,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<metazone type="GMT">
 				<long>
 					<standard>Гринвич уртача вакыты</standard>
+				</long>
+			</metazone>
+			<metazone type="Kamchatka">
+				<long>
+					<generic>Петропавловск-Камчатский вакыты</generic>
+				</long>
+			</metazone>
+			<metazone type="Samara">
+				<long>
+					<generic>Самара вакыты</generic>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -1890,5 +1910,35 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<personNames>
 		<nameOrderLocales order="givenFirst">und tt</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ja ko vi yue zh</nameOrderLocales>
+		<personName order="givenFirst" length="short" usage="addressing" formality="formal">
+			<namePattern>{title} {surname}</namePattern>
+		</personName>
+		<personName order="surnameFirst" length="long" usage="referring" formality="formal">
+			<namePattern>{surname} {title} {given} {given2} {generation}, {credentials}</namePattern>
+		</personName>
+		<sampleName item="nativeG">
+			<nameField type="given">Зөхрә</nameField>
+		</sampleName>
+		<sampleName item="nativeGS">
+			<nameField type="given">Гөлчәчәк</nameField>
+		</sampleName>
+		<sampleName item="nativeGGS">
+			<nameField type="given">Мәликә Сабирова</nameField>
+		</sampleName>
+		<sampleName item="nativeFull">
+			<nameField type="given">Бертрам Уилберфорс</nameField>
+		</sampleName>
+		<sampleName item="foreignG">
+			<nameField type="given">Синдбад</nameField>
+		</sampleName>
+		<sampleName item="foreignGS">
+			<nameField type="given">Катя</nameField>
+		</sampleName>
+		<sampleName item="foreignGGS">
+			<nameField type="given">Зазилия</nameField>
+		</sampleName>
+		<sampleName item="foreignFull">
+			<nameField type="given">Аидә Закирова</nameField>
+		</sampleName>
 	</personNames>
 </ldml>
