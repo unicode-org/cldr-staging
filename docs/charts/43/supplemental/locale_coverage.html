@@ -72,13 +72,14 @@
 <tr><th>ICU</th><td>Indicates whether included in the current version of ICU</td></tr>
 <tr><th>Confirmed</th><td>Confirmed items as a percentage of all supplied items. If low, the coverage can be improved by getting multiple organizations to confirm.</td></tr>
 <tr><th>🄼%, ⓜ%, ⓑ%, ⓒ%</th><td>Coverage at Levels: 🄼 = Modern, ⓜ = Moderate, ⓑ = Basic, ⓒ = Core. The percentage of items at that level and below is computed from <i>confirmed_items/total_items</i>. A high-level summary of the meaning of the coverage values is at <a target='_blank' href='http://www.unicode.org/reports/tr35/tr35-info.html#Coverage_Levels'>Coverage Levels</a>. The Core values are described on <a target='_blank' href='https://cldr.unicode.org/index/cldr-spec/core-data-for-new-locales'>Core Data</a>. </td></tr>
-<tr><th>Missing Features</th><td>These are not single items, but rather specific features, such as plural rules or unit grammar info. They are listed if missing at the computed level.<br>Example: <i>ⓜ collation</i> means this feature should be supported at a Moderate level.<br><i>Except for Core, these are not accounted for in the percent values.</i></td></tr>
+<tr><th>Missing Features</th><td>These are not single items, but rather specific features, such as plural rules or unit grammar info. They are listed if missing at the computed level.<br>Example: <i>ⓜ collation</i> means this feature should be supported at a Moderate level.<br><ul><li><i>Except for Core, these are not accounted for in the percent values.</i></li><li>The information needs to be provided in tickets, not through the Survey Tool.</li></ul></td></tr>
 <tr><th><a href='https://github.com/unicode-org/cldr-staging/tree/main/docs/charts/42/tsv'>TSV Files</a>:</th><td>
-<ul><li>locale-coverage.tsv — A version of this file, suitable for loading into a spreadsheet.</li>
-<li>locale-missing.tsv — Missing items for the CLDR target locales.</li>
-<li>locale-missing-summary.tsv — Summary of missing items for the CLDR target locales, by Section/Page/Header.</li>
-<li>locale-missing-basic.tsv — Missing items that keep locales from reaching the Basic level.</li></td></tr>
-<li>locale-missing-count.tsv — Counts of items per locale that are found, unconfirmed, or missing, at the target level. (Or at *basic, if there is no target level.)</li></td></tr>
+<ul><li><a href='https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/43/tsv/locale-coverage.tsv' target='cldr-tsv'>locale-missing-count.tsv</a> — A version of this file, suitable for loading into a spreadsheet.</li>
+<li><a href='https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/43/tsv/locale-missing.tsv' target='cldr-tsv'>locale-missing-count.tsv</a> — Missing items for the CLDR target locales.</li>
+<li><a href='https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/43/tsv/locale-missing-summary.tsv' target='cldr-tsv'>locale-missing-count.tsv</a> — Summary of missing items for the CLDR target locales, by Section/Page/Header.</li>
+<li><a href='https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/43/tsv/locale-missing-basic.tsv' target='cldr-tsv'>locale-missing-count.tsv</a> — Missing items that keep locales from reaching the Basic level.</li>
+<li><a href='https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/43/tsv/locale-missing-count.tsv' target='cldr-tsv'>locale-missing-count.tsv</a> — Counts of items per locale that are found, unconfirmed, or missing, at the target level. (Or at *basic, if there is no target level.)</li>
+</td></tr>
 </table>
 
 <h3><a name='main_table' href='#main_table'>Main Table</a></h3>
