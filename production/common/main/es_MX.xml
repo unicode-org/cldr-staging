@@ -126,19 +126,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
-				<days>
-					<dayContext type="format">
-						<dayWidth type="narrow">
-							<day type="sun">D</day>
-							<day type="mon">L</day>
-							<day type="tue">M</day>
-							<day type="wed">M</day>
-							<day type="thu">J</day>
-							<day type="fri">V</day>
-							<day type="sat">S</day>
-						</dayWidth>
-					</dayContext>
-				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="wide">
@@ -976,6 +963,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</unitLength>
 		<unitLength type="narrow">
 			<unit type="concentr-karat">
+				<displayName>kt</displayName>
 				<unitPattern count="one">{0}kt</unitPattern>
 				<unitPattern count="other">{0}ct</unitPattern>
 			</unit>
@@ -998,6 +986,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>días</displayName>
 				<unitPattern count="one">{0}d</unitPattern>
 				<unitPattern count="other">{0}d</unitPattern>
+			</unit>
+			<unit type="length-nautical-mile">
+				<displayName>M</displayName>
+			</unit>
+			<unit type="power-horsepower">
+				<displayName draft="contributed">CV</displayName>
+			</unit>
+			<unit type="torque-newton-meter">
+				<displayName>N⋅m</displayName>
+			</unit>
+			<unit type="volume-cup">
+				<displayName draft="contributed">tza.</displayName>
 			</unit>
 		</unitLength>
 	</units>

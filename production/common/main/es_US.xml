@@ -143,19 +143,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
-				<days>
-					<dayContext type="format">
-						<dayWidth type="narrow">
-							<day type="sun">D</day>
-							<day type="mon">L</day>
-							<day type="tue">M</day>
-							<day type="wed">M</day>
-							<day type="thu">J</day>
-							<day type="fri">V</day>
-							<day type="sat">S</day>
-						</dayWidth>
-					</dayContext>
-				</days>
 				<quarters>
 					<quarterContext type="format">
 						<quarterWidth type="wide">
@@ -843,8 +830,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="length-furlong">
 				<displayName>furlongs</displayName>
-				<unitPattern count="one">{0} fur</unitPattern>
-				<unitPattern count="other">{0} fur</unitPattern>
 			</unit>
 			<unit type="length-nautical-mile">
 				<displayName>mn</displayName>
@@ -897,6 +882,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">
+			<unit type="digital-byte">
+				<displayName>byte</displayName>
+			</unit>
+			<unit type="digital-bit">
+				<displayName>bit</displayName>
+			</unit>
 			<unit type="duration-year">
 				<displayName>a</displayName>
 				<unitPattern count="one">{0}a</unitPattern>
@@ -912,6 +903,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0}d</unitPattern>
 				<unitPattern count="other">{0}d</unitPattern>
 			</unit>
+			<unit type="energy-therm-us">
+				<displayName>th US</displayName>
+			</unit>
 			<unit type="graphics-dot">
 				<displayName>punto</displayName>
 				<unitPattern count="one">{0} p</unitPattern>
@@ -923,6 +917,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="length-fathom">
 				<displayName>braza</displayName>
 			</unit>
+			<unit type="length-nautical-mile">
+				<displayName>mn</displayName>
+			</unit>
 			<unit type="length-mile-scandinavian">
 				<displayName>mil</displayName>
 				<unitPattern count="one">{0}mil</unitPattern>
@@ -931,6 +928,24 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="temperature-fahrenheit">
 				<unitPattern count="one">{0}°</unitPattern>
 				<unitPattern count="other">{0}°</unitPattern>
+			</unit>
+			<unit type="torque-pound-force-foot">
+				<displayName>lbf⋅ft</displayName>
+			</unit>
+			<unit type="volume-pint-metric">
+				<displayName>ptm</displayName>
+			</unit>
+			<unit type="volume-bushel">
+				<displayName>bsh</displayName>
+			</unit>
+			<unit type="volume-cup">
+				<displayName>tza.</displayName>
+			</unit>
+			<unit type="volume-dessert-spoon">
+				<displayName>cdapostre</displayName>
+			</unit>
+			<unit type="volume-dram">
+				<displayName>fl dracma</displayName>
 			</unit>
 		</unitLength>
 	</units>

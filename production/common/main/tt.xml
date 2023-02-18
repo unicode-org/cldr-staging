@@ -878,6 +878,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<eraNames>
 						<era type="0">безнең эрага кадәр</era>
 						<era type="0" alt="variant">безнең эрага кадәр</era>
+						<era type="1">милади</era>
 						<era type="1" alt="variant">безнең эра</era>
 					</eraNames>
 					<eraAbbr>
@@ -1142,6 +1143,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="era">
 				<displayName>эра</displayName>
 			</field>
+			<field type="era-short">
+				<displayName>эра</displayName>
+			</field>
+			<field type="era-narrow">
+				<displayName>эра</displayName>
+			</field>
 			<field type="year">
 				<displayName>ел</displayName>
 				<relative type="-1">узган ел</relative>
@@ -1306,6 +1313,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="day-short">
 				<displayName>көн</displayName>
+				<relative type="-1">кичә</relative>
+				<relative type="0">бүген</relative>
+				<relative type="1">иртәгә</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">{0} көннән</relativeTimePattern>
 				</relativeTime>
@@ -1315,6 +1325,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="day-narrow">
 				<displayName>көн</displayName>
+				<relative type="-1">кичә</relative>
+				<relative type="0">бүген</relative>
+				<relative type="1">иртәгә</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">{0} көннән</relativeTimePattern>
 				</relativeTime>
@@ -1332,6 +1345,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>елның көне</displayName>
 			</field>
 			<field type="weekday">
+				<displayName>атна көне</displayName>
+			</field>
+			<field type="weekday-short">
+				<displayName>атна көне</displayName>
+			</field>
+			<field type="weekday-narrow">
 				<displayName>атна көне</displayName>
 			</field>
 			<field type="weekdayOfMonth">
@@ -1567,11 +1586,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<relative type="-1">узган шим.</relative>
 				<relative type="0">бу шим.</relative>
 				<relative type="1">киләсе шим.</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">{0} шим. узгач</relativeTimePattern>
+				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="other">{0} шим. элек</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayperiod-short">
+				<displayName>AM/PM</displayName>
+			</field>
 			<field type="dayperiod">
+				<displayName>AM/PM</displayName>
+			</field>
+			<field type="dayperiod-narrow">
 				<displayName>AM/PM</displayName>
 			</field>
 			<field type="hour">
@@ -1659,6 +1687,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="zone">
+				<displayName>вакыт өлкәсе</displayName>
+			</field>
+			<field type="zone-short">
+				<displayName>вакыт өлкәсе</displayName>
+			</field>
+			<field type="zone-narrow">
 				<displayName>вакыт өлкәсе</displayName>
 			</field>
 		</fields>
@@ -1910,10 +1944,31 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<personNames>
 		<nameOrderLocales order="givenFirst">und tt</nameOrderLocales>
 		<nameOrderLocales order="surnameFirst">ja ko vi yue zh</nameOrderLocales>
+		<personName order="givenFirst" length="long" usage="referring" formality="informal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
+		<personName order="givenFirst" length="long" usage="addressing" formality="formal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
+		<personName order="givenFirst" length="long" usage="addressing" formality="informal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
+		<personName order="givenFirst" length="medium" usage="referring" formality="formal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
+		<personName order="givenFirst" length="medium" usage="referring" formality="informal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
+		<personName order="givenFirst" length="medium" usage="addressing" formality="formal">
+			<namePattern>{title} {given} {given2} {surname} {surname2} {credentials}</namePattern>
+		</personName>
 		<personName order="givenFirst" length="short" usage="addressing" formality="formal">
 			<namePattern>{title} {surname}</namePattern>
 		</personName>
 		<personName order="surnameFirst" length="long" usage="referring" formality="formal">
+			<namePattern>{surname} {title} {given} {given2} {generation}, {credentials}</namePattern>
+		</personName>
+		<personName order="surnameFirst" length="long" usage="addressing" formality="formal">
 			<namePattern>{surname} {title} {given} {given2} {generation}, {credentials}</namePattern>
 		</personName>
 		<sampleName item="nativeG">

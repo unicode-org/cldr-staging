@@ -306,6 +306,15 @@ annotations.
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
+						<dayWidth type="abbreviated">
+							<day type="sun">Ravi</day>
+							<day type="mon">Som</day>
+							<day type="tue">Mangal</day>
+							<day type="wed">Budh</day>
+							<day type="thu">Guru</day>
+							<day type="fri">Shukra</day>
+							<day type="sat">Shani</day>
+						</dayWidth>
 						<dayWidth type="narrow">
 							<day type="sun">Ra</day>
 							<day type="mon">So</day>
@@ -568,6 +577,9 @@ annotations.
 					<eraAbbr>
 						<era type="0">Hijri</era>
 					</eraAbbr>
+					<eraNarrow>
+						<era type="0">Hijri</era>
+					</eraNarrow>
 				</eras>
 			</calendar>
 		</calendars>
@@ -755,6 +767,9 @@ annotations.
 			</field>
 			<field type="day-short">
 				<displayName>din</displayName>
+				<relative type="-1">kal</relative>
+				<relative type="0">aaj</relative>
+				<relative type="1">aane wala kal</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} din mein</relativeTimePattern>
 					<relativeTimePattern count="other">{0} din mein</relativeTimePattern>
@@ -766,6 +781,9 @@ annotations.
 			</field>
 			<field type="day-narrow">
 				<displayName>din</displayName>
+				<relative type="-1">kal</relative>
+				<relative type="0">aaj</relative>
+				<relative type="1">aane wala kal</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} din mein</relativeTimePattern>
 					<relativeTimePattern count="other">{0} din mein</relativeTimePattern>
@@ -2687,6 +2705,21 @@ annotations.
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">
+			<compoundUnit type="10p-6">
+				<unitPrefixPattern>μ {0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p-9">
+				<unitPrefixPattern>n {0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p6">
+				<unitPrefixPattern>M {0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p12">
+				<unitPrefixPattern>T {0}</unitPrefixPattern>
+			</compoundUnit>
+			<compoundUnit type="10p15">
+				<unitPrefixPattern>P {0}</unitPrefixPattern>
+			</compoundUnit>
 			<unit type="concentr-karat">
 				<displayName>karat</displayName>
 				<unitPattern count="one">{0}kt</unitPattern>
