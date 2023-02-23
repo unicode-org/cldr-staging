@@ -20,7 +20,6 @@
 # parameters; <options>; <length>; <usage>; <formality>
 #   Each of these parameter lines should be tested to see that when formatting the current name with these parameters, 
 #   the expected value is produced.
-#   <options> = sorting, n/a
 #
 # endName
 #   Indicates the end of the values to be tested with the current name.
@@ -49,7 +48,7 @@
 
 enum ; field ; title, given, given2, surname, surname2, generation, credentials
 enum ; modifiers ; informal, allCaps, initialCap, initial, monogram, prefix, core
-enum ; options ; n/a, sorting
+enum ; options ; none, sorting
 enum ; length ; long, medium, short
 enum ; usage ; referring, addressing, monogram
 enum ; formality ; formal, informal
@@ -59,18 +58,18 @@ name ; locale; fr_AQ
 
 expectedResult; Adèle
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; long; addressing; informal
-parameters; n/a; long; referring; formal
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; medium; referring; formal
-parameters; n/a; medium; referring; informal
-parameters; n/a; short; addressing; formal
-parameters; n/a; short; addressing; informal
-parameters; n/a; short; referring; formal
-parameters; n/a; short; referring; informal
+parameters; none; long; addressing; formal
+parameters; none; long; addressing; informal
+parameters; none; long; referring; formal
+parameters; none; long; referring; informal
+parameters; none; medium; addressing; formal
+parameters; none; medium; addressing; informal
+parameters; none; medium; referring; formal
+parameters; none; medium; referring; informal
+parameters; none; short; addressing; formal
+parameters; none; short; addressing; informal
+parameters; none; short; referring; formal
+parameters; none; short; referring; informal
 parameters; sorting; long; referring; formal
 parameters; sorting; long; referring; informal
 parameters; sorting; medium; referring; formal
@@ -80,12 +79,12 @@ parameters; sorting; short; referring; informal
 
 expectedResult; A
 
-parameters; n/a; long; monogram; formal
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
-parameters; n/a; short; monogram; formal
-parameters; n/a; short; monogram; informal
+parameters; none; long; monogram; formal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
+parameters; none; short; monogram; formal
+parameters; none; short; monogram; informal
 
 endName
 
@@ -103,10 +102,10 @@ parameters; sorting; short; referring; informal
 
 expectedResult; Louise Péricourt
 
-parameters; n/a; long; referring; formal
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; formal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; formal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; formal
+parameters; none; medium; referring; informal
 
 expectedResult; Péricourt, L.
 
@@ -114,38 +113,38 @@ parameters; sorting; short; referring; formal
 
 expectedResult; L. Péricourt
 
-parameters; n/a; short; referring; formal
+parameters; none; short; referring; formal
 
 expectedResult; Louise P.
 
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; informal
 
 expectedResult; Péricourt
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; Louise
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; LP
 
-parameters; n/a; long; monogram; formal
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; formal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
 
 expectedResult; L
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 expectedResult; P
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 endName
 
@@ -160,7 +159,7 @@ parameters; sorting; long; referring; formal
 
 expectedResult; Marie-Agnès Suzanne Gilot
 
-parameters; n/a; long; referring; formal
+parameters; none; long; referring; formal
 
 expectedResult; Gilot, Marie-Agnès S.
 
@@ -168,7 +167,7 @@ parameters; sorting; medium; referring; formal
 
 expectedResult; Marie-Agnès S. Gilot
 
-parameters; n/a; medium; referring; formal
+parameters; none; medium; referring; formal
 
 expectedResult; Gilot, Marie-Agnès
 
@@ -178,12 +177,12 @@ parameters; sorting; short; referring; informal
 
 expectedResult; Marie-Agnès Gilot
 
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; informal
 
 expectedResult; Marie-Agnès G.
 
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; informal
 
 expectedResult; Gilot, M. S.
 
@@ -191,37 +190,37 @@ parameters; sorting; short; referring; formal
 
 expectedResult; M. S. Gilot
 
-parameters; n/a; short; referring; formal
+parameters; none; short; referring; formal
 
 expectedResult; Marie-Agnès
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; Gilot
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; MSG
 
-parameters; n/a; long; monogram; formal
+parameters; none; long; monogram; formal
 
 expectedResult; MG
 
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
 
 expectedResult; G
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 expectedResult; M
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 endName
 
@@ -236,7 +235,7 @@ name ; locale; fr_AQ
 
 expectedResult; M. Jean-Nicolas Louis Marcel de Bouchart fils
 
-parameters; n/a; long; referring; formal
+parameters; none; long; referring; formal
 
 expectedResult; Bouchart, Jean-Nicolas Louis Marcel de
 
@@ -248,7 +247,7 @@ parameters; sorting; medium; referring; formal
 
 expectedResult; Jean-Nicolas L. M. de Bouchart
 
-parameters; n/a; medium; referring; formal
+parameters; none; medium; referring; formal
 
 expectedResult; Bouchart, J. L. M. de
 
@@ -256,7 +255,7 @@ parameters; sorting; short; referring; formal
 
 expectedResult; J. L. M. de Bouchart
 
-parameters; n/a; short; referring; formal
+parameters; none; short; referring; formal
 
 expectedResult; de Bouchart, Nico
 
@@ -266,45 +265,45 @@ parameters; sorting; short; referring; informal
 
 expectedResult; Nico de Bouchart
 
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; informal
 
 expectedResult; M. de Bouchart
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; Nico d. B.
 
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; informal
 
 expectedResult; Nico
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; JLB
 
-parameters; n/a; long; monogram; formal
+parameters; none; long; monogram; formal
 
 expectedResult; JB
 
-parameters; n/a; medium; monogram; formal
+parameters; none; medium; monogram; formal
 
 expectedResult; NB
 
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; informal
 
 expectedResult; B
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 expectedResult; N
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 endName
 
@@ -313,27 +312,27 @@ name ; locale; ko_AQ
 
 expectedResult; Asmar
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; long; addressing; informal
-parameters; n/a; long; referring; formal
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; medium; referring; formal
-parameters; n/a; medium; referring; informal
-parameters; n/a; short; addressing; formal
-parameters; n/a; short; addressing; informal
-parameters; n/a; short; referring; formal
-parameters; n/a; short; referring; informal
+parameters; none; long; addressing; formal
+parameters; none; long; addressing; informal
+parameters; none; long; referring; formal
+parameters; none; long; referring; informal
+parameters; none; medium; addressing; formal
+parameters; none; medium; addressing; informal
+parameters; none; medium; referring; formal
+parameters; none; medium; referring; informal
+parameters; none; short; addressing; formal
+parameters; none; short; addressing; informal
+parameters; none; short; referring; formal
+parameters; none; short; referring; informal
 
 expectedResult; A
 
-parameters; n/a; long; monogram; formal
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
-parameters; n/a; short; monogram; formal
-parameters; n/a; short; monogram; informal
+parameters; none; long; monogram; formal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
+parameters; none; short; monogram; formal
+parameters; none; short; monogram; informal
 
 endName
 
@@ -343,42 +342,42 @@ name ; locale; ko_AQ
 
 expectedResult; Granger Hermione
 
-parameters; n/a; long; referring; formal
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; formal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; formal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; formal
+parameters; none; medium; referring; informal
 
 expectedResult; Granger H.
 
-parameters; n/a; short; referring; formal
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; formal
+parameters; none; short; referring; informal
 
 expectedResult; Hermione
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; Granger
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; GH
 
-parameters; n/a; long; monogram; formal
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; formal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
 
 expectedResult; G
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 expectedResult; H
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 endName
 
@@ -389,54 +388,54 @@ name ; locale; ko_AQ
 
 expectedResult; Weasley Ginevra Molly
 
-parameters; n/a; long; referring; formal
+parameters; none; long; referring; formal
 
 expectedResult; Weasley Ginevra M.
 
-parameters; n/a; medium; referring; formal
+parameters; none; medium; referring; formal
 
 expectedResult; Weasley Ginevra
 
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; informal
 
 expectedResult; Weasley G. M.
 
-parameters; n/a; short; referring; formal
+parameters; none; short; referring; formal
 
 expectedResult; Weasley G.
 
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; informal
 
 expectedResult; Ginevra
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; Weasley
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; WGM
 
-parameters; n/a; long; monogram; formal
+parameters; none; long; monogram; formal
 
 expectedResult; WG
 
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; formal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; formal
+parameters; none; medium; monogram; informal
 
 expectedResult; G
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 expectedResult; W
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 endName
 
@@ -453,56 +452,56 @@ name ; locale; ko_AQ
 
 expectedResult; Prof. Dr. von Brühl María Florencia Martina Cristina Jr., MD DDS
 
-parameters; n/a; long; referring; formal
+parameters; none; long; referring; formal
 
 expectedResult; von Brühl María Florencia M. C.
 
-parameters; n/a; medium; referring; formal
+parameters; none; medium; referring; formal
 
 expectedResult; von Brühl M. F. M. C.
 
-parameters; n/a; short; referring; formal
+parameters; none; short; referring; formal
 
 expectedResult; Prof. Dr. von Brühl
 
-parameters; n/a; long; addressing; formal
-parameters; n/a; medium; addressing; formal
-parameters; n/a; short; addressing; formal
+parameters; none; long; addressing; formal
+parameters; none; medium; addressing; formal
+parameters; none; short; addressing; formal
 
 expectedResult; von Brühl M. F.
 
-parameters; n/a; short; referring; informal
+parameters; none; short; referring; informal
 
 expectedResult; von Brühl Flor
 
-parameters; n/a; long; referring; informal
-parameters; n/a; medium; referring; informal
+parameters; none; long; referring; informal
+parameters; none; medium; referring; informal
 
 expectedResult; Flor
 
-parameters; n/a; long; addressing; informal
-parameters; n/a; medium; addressing; informal
-parameters; n/a; short; addressing; informal
+parameters; none; long; addressing; informal
+parameters; none; medium; addressing; informal
+parameters; none; short; addressing; informal
 
 expectedResult; BMM
 
-parameters; n/a; long; monogram; formal
+parameters; none; long; monogram; formal
 
 expectedResult; BF
 
-parameters; n/a; long; monogram; informal
-parameters; n/a; medium; monogram; informal
+parameters; none; long; monogram; informal
+parameters; none; medium; monogram; informal
 
 expectedResult; BM
 
-parameters; n/a; medium; monogram; formal
+parameters; none; medium; monogram; formal
 
 expectedResult; B
 
-parameters; n/a; short; monogram; formal
+parameters; none; short; monogram; formal
 
 expectedResult; F
 
-parameters; n/a; short; monogram; informal
+parameters; none; short; monogram; informal
 
 endName
