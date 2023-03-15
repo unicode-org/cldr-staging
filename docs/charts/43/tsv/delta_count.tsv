@@ -107,9 +107,9 @@
 37	Date & Time	Gregorian	Days - abbreviated - Formatting	sat
 36	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-medium	referring-informal
 36	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-long	referring-informal
+35	Date & Time	Gregorian	Formats - Standard - Date Formats	short
 35	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: givenFirst-short	referring-informal
 35	Miscellaneous	Person Name Formats	PersonName Patterns for Order-Length: sorting/index-medium	referring-informal
-34	Date & Time	Gregorian	Formats - Standard - Date Formats	short
 34	Locale Display Names	Languages (E-J)	F	French ► fr
 34	Locale Display Names	Territories (North America)	Northern America	US
 34	Locale Display Names	Territories (Asia)	Western Asia	TR
@@ -368,6 +368,7 @@
 17	Date & Time	Gregorian	Quarters - abbreviated - Standalone	2
 17	Date & Time	Gregorian	Quarters - abbreviated - Standalone	3
 17	Date & Time	Gregorian	Quarters - abbreviated - Standalone	4
+17	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMd
 17	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMMMd
 17	Units	Measurement Systems	null	UK
 17	Currencies	Southern/Eastern Europe	Eastern Europe: Russia	RUB-name
@@ -425,7 +426,6 @@
 16	Date & Time	Fields	Date Fields	month-short
 16	Date & Time	Fields	Date Fields	week-short
 16	Date & Time	Fields	Date Fields	day-short
-16	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMd
 16	Currencies	North America (C)	Northern America: United States	USD-name
 15	Special	Suppress	Generic	Formats - Standard - Date Formats-full
 15	Special	Suppress	Gregorian	Formats - Standard - Date Formats-medium
@@ -542,6 +542,9 @@
 14	Date & Time	Gregorian	Days - narrow - Formatting	wed
 14	Date & Time	Gregorian	Days - narrow - Formatting	thu
 14	Date & Time	Gregorian	Days - narrow - Formatting	fri
+14	Date & Time	Gregorian	Formats - Flexible - Date Formats	Md
+14	Date & Time	Gregorian	Formats - Flexible - Date Formats	yM
+14	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMEd
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	Md/d
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	Md/M
 14	Date & Time	Gregorian	Formats - Intervals - Date Formats	MEd/d
@@ -608,10 +611,8 @@
 13	Date & Time	Fields	Date Fields	quarter-narrow
 13	Date & Time	Gregorian	Days - narrow - Formatting	mon
 13	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMMMW-other
-13	Date & Time	Gregorian	Formats - Flexible - Date Formats	Md
+13	Date & Time	Gregorian	Formats - Flexible - Date Formats	MEd
 13	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMMEd
-13	Date & Time	Gregorian	Formats - Flexible - Date Formats	yM
-13	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMEd
 13	Date & Time	Gregorian	Formats - Flexible - Date Formats	yMMMEd
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMEd/d
 13	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMEd/M
@@ -676,7 +677,6 @@
 12	Locale Display Names	Territories (Asia)	Eastern Asia	TW
 12	Locale Display Names	Territories (Asia)	Southern Asia	IR
 12	Locale Display Names	Territories (Asia)	Southern Asia	PK
-12	Date & Time	Gregorian	Formats - Flexible - Date Formats	MEd
 12	Date & Time	Gregorian	Formats - Flexible - Date Formats	yQQQ
 12	Date & Time	Gregorian	Formats - Flexible - Date Formats	yQQQQ
 12	Date & Time	Gregorian	Formats - Intervals - Date Formats	MMMd/M
@@ -2212,6 +2212,7 @@
 4	Locale Display Names	Scripts	Historic	Xpeo
 4	Locale Display Names	Scripts	Other	Aran
 4	Date & Time	Gregorian	Formats - Standard - Date & Time Combination Formats	short-atTime
+4	Date & Time	Gregorian	Formats - Flexible - Date Formats	GyMd
 4	Date & Time	Gregorian	Formats - Intervals - Fallback	Fallback
 4	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	short
 4	Timezones	North America	Cities and Regions	Adak
@@ -5264,7 +5265,6 @@
 3	Locale Display Names	Scripts	Historic	Tang
 3	Locale Display Names	Scripts	Historic	Tirh
 3	Locale Display Names	Scripts	Historic	Wara
-3	Date & Time	Gregorian	Formats - Flexible - Date Formats	GyMd
 3	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	full-atTime
 3	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	long-atTime
 3	Date & Time	Generic	Formats - Standard - Date & Time Combination Formats	medium-atTime
@@ -5468,6 +5468,7 @@
 3	Units	Length	meter	short-other-nominative
 3	Units	Coordinates	east	narrow
 3	Units	Coordinates	north	narrow
+3	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMdd
 3	Date & Time	Generic	Formats - Flexible - Date Formats	yMd
 3	Date & Time	Generic	Formats - Flexible - Date Formats	yMMMd
 3	Date & Time	Generic	Formats - Flexible - Date Formats	yQQQQ
@@ -6255,7 +6256,6 @@
 2	Miscellaneous	Displaying Lists	Short “and” List	start
 2	Miscellaneous	Displaying Lists	Short “and” List	middle
 2	Date & Time	Gregorian	Formats - Flexible - Date Formats	M
-2	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMdd
 2	Date & Time	Gregorian	Formats - Flexible - Date Formats	MMMMEd
 2	Date & Time	Generic	Formats - Flexible - Date Formats	MMdd
 2	Date & Time	Generic	Formats - Flexible - Date Formats	MMMMEd
@@ -7144,7 +7144,7 @@
 1	Currencies	Unknown Region (C)	Unknown Region: XDR	XDR-name
 1	Currencies	Unknown Region (C)	Unknown Region: XEU	XEU-name
 1	Currencies	Unknown Region (C)	Unknown Region: XFO	XFO-name
-1	Locale Display Names	Geographic Regions	Unknown Region	CQ
+1	Locale Display Names	Territories (Europe)	Northern Europe	CQ
 1	Locale Display Names	Keys	mu	mu
 1	Units	Speed and Acceleration	beaufort	long-displayName
 1	Units	Speed and Acceleration	beaufort	narrow-displayName
