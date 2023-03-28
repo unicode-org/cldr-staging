@@ -2,6 +2,15 @@
 <html>
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPN1D3SEJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPN1D3SEJM');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Language Matching</title>
 <link rel="stylesheet" type="text/css"
@@ -44,7 +53,7 @@
 				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
 			</table>
 		</div>
-<!-- 
+<!--
 		<div align="center">
 			<table style="margin: 1em">
 				<tr>
@@ -56,7 +65,8 @@
 			</table>
 		</div>
 		 -->
-		<p>Language Matching data is used to match the user’s desired language/locales against an application’s supported languages/locales. For more information, see <a href='http://unicode.org/reports/tr35/#LanguageMatching'>Language Matching</a>. The latest release data for this chart is in <a href='http://unicode.org/cldr/latest/common/supplemental/languageInfo.xml'>languageInfo.xml</a>. The matching process is approximately:<p><ul><li>The rules are tested—in order—for matches, with the first one winning.</li><li>Any exact match between fields has zero distance.</li><li>The placeholder (*) matches any code (of that type). For the last field in Supported, it must be different than Desired.</li><li>The <i>Distance</i> indicates how close the match is, where identical fields have distance = 0. </li><li>A ⬌︎ in the <i>Sym?</i> column indicates that the distance is symmetric, and is thus used for both directions: Supported→Desired and Desired→Supported. A → indicates that the distance is <i>not</i> symmetric: this is usually a <i>fallback</i> match.</li></ul><h2>Type=written_new</h2><table>
+<!-- begin main body-->
+<p>Language Matching data is used to match the user’s desired language/locales against an application’s supported languages/locales. For more information, see <a href='http://unicode.org/reports/tr35/#LanguageMatching'>Language Matching</a>. The latest release data for this chart is in <a href='http://unicode.org/cldr/latest/common/supplemental/languageInfo.xml'>languageInfo.xml</a>. The matching process is approximately:<p><ul><li>The rules are tested—in order—for matches, with the first one winning.</li><li>Any exact match between fields has zero distance.</li><li>The placeholder (*) matches any code (of that type). For the last field in Supported, it must be different than Desired.</li><li>The <i>Distance</i> indicates how close the match is, where identical fields have distance = 0. </li><li>A ⬌︎ in the <i>Sym?</i> column indicates that the distance is symmetric, and is thus used for both directions: Supported→Desired and Desired→Supported. A → indicates that the distance is <i>not</i> symmetric: this is usually a <i>fallback</i> match.</li></ul><h2>Type=written_new</h2><table>
 	<tr><th class='source'>Desired</th><th class='source'>Supported</th><th class='source'>D. Code</th><th class='source'>S. Code</th><th class='target'>Distance</th><th class='target'>Sym?</th></tr>
 	<tr><td class='source'>Norwegian Bokmål</td><td class='source'>Norwegian</td><td class='source'>nb</td><td class='source'>no</td><td class='target'>1</td><td class='target'>⬌</td></tr>
 	<tr><td class='source'>Croatian</td><td class='source' rowSpan='2'>Bosnian</td><td class='source'>hr</td><td class='source'>bs</td><td class='target'>4</td><td class='target'>⬌</td></tr>
@@ -432,28 +442,15 @@
 	<tr><td class='source'>Chinese (Traditional, $!cnsar)</td><td class='source'>zh_Hant_$!cnsar</td><td class='source'>zh_Hant_$!cnsar</td><td class='target'>4</td><td class='target'>⬌</td></tr>
 	<tr><td class='source'>Chinese (Traditional, any-region)</td><td class='source'>Chinese (Traditional, any-other-region)</td><td class='source'>zh_Hant_*</td><td class='source'>zh_Hant_*</td><td class='target'>5</td><td class='target'>⬌</td></tr>
 	<tr><td class='source'>any-language (any-script, any-region)</td><td class='source'>any-language (any-script, any-other-region)</td><td class='source'>*_*_*</td><td class='source'>*_*_*</td><td class='target'>4</td><td class='target'>⬌</td></tr>
-</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='https://www.unicode.org/copyright.html'>
-<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
-</div><script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
-
-		<script>
-			(function(i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				i[r] = i[r] || function() {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date();
-				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m)
-			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-			ga('create', 'UA-7672775-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+</table>
+<!-- end main body -->
 	</div>
-</body>
+	<div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+		<a href='https://www.unicode.org/copyright.html'>
+			<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;'
+				alt='Access to Copyright and terms of use'>
+		</a>
+	</div>
 
+</body>
 </html>
