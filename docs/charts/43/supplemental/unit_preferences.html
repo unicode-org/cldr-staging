@@ -2,6 +2,15 @@
 <html>
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPN1D3SEJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPN1D3SEJM');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Unit Preferences</title>
 <link rel="stylesheet" type="text/css"
@@ -44,7 +53,7 @@
 				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
 			</table>
 		</div>
-<!-- 
+<!--
 		<div align="center">
 			<table style="margin: 1em">
 				<tr>
@@ -56,7 +65,8 @@
 			</table>
 		</div>
 		 -->
-		<p>Unit Preferences provide a way to get the units that are appropriate for a region, and usage, and threshold amounts. The <a href='unit_conversions.html' target='unit_conversions'>Unit Conversions</a> are used to handle conversion of units needed to use the preferences.This release adds additional structure for usage and threshold amount, allowing for more additions of regions, usages, thresholds, and units in future releases.</p><ul><li>The Base Unit shows the unit whose amount is to be compared to the ‘If ≥’ amount of the Result Unit.<li>The unit identifiers are internal, and would be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example.<li>The Usage shows the type of usage; <i>default</i> is used as a fallback no more specific match is found.<li>The Sample region  represents a set of regions if it has a superscript. See the table at the bottom. 001 (World) is the default if no more specific region is found.</li><li>The ‘If ≥’ column shows the thresholds: the first line for a given region where the input amount is greater or equal applies. For example, for 0.5km as input for [area, default, 001] would result in <i>hectare</i>.</li><li>Each numeric value is an exact rational. The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li>
+<!-- begin main body-->
+<p>Unit Preferences provide a way to get the units that are appropriate for a region, and usage, and threshold amounts. The <a href='unit_conversions.html' target='unit_conversions'>Unit Conversions</a> are used to handle conversion of units needed to use the preferences.This release adds additional structure for usage and threshold amount, allowing for more additions of regions, usages, thresholds, and units in future releases.</p><ul><li>The Base Unit shows the unit whose amount is to be compared to the ‘If ≥’ amount of the Result Unit.<li>The unit identifiers are internal, and would be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example.<li>The Usage shows the type of usage; <i>default</i> is used as a fallback no more specific match is found.<li>The Sample region  represents a set of regions if it has a superscript. See the table at the bottom. 001 (World) is the default if no more specific region is found.</li><li>The ‘If ≥’ column shows the thresholds: the first line for a given region where the input amount is greater or equal applies. For example, for 0.5km as input for [area, default, 001] would result in <i>hectare</i>.</li><li>Each numeric value is an exact rational. The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li>
 <li>The units are grouped and ordered by Quantity (which are based on the NIST quantities, see <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). Note that the quantities are informative.</li><li>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements, and how to fall back if a given usage or region is not found.</li>
 </ul><p><b>Warning:</b> Do not scrape this chart for production data.
 Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/testData/units/unitPreferencesTest.txt' target='common/testData/units/unitPreferencesTest.txt'>common/testData/units/unitPreferencesTest.txt</a>.</p>
@@ -234,28 +244,15 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<tr><td class='source'><a name='GB, …<sup>1</sup>' href='#GB, …<sup>1</sup>'>GB, …<sup>1</sup></a></td><td class='source'><a name='GB, US' href='#GB, US'>GB, US</a></td></tr>
 	<tr><td class='source'><a name='IN, …<sup>1</sup>' href='#IN, …<sup>1</sup>'>IN, …<sup>1</sup></a></td><td class='source'><a name='IN, US' href='#IN, US'>IN, US</a></td></tr>
 	<tr><td class='source'><a name='MX, …<sup>1</sup>' href='#MX, …<sup>1</sup>'>MX, …<sup>1</sup></a></td><td class='source'><a name='MX, RU' href='#MX, RU'>MX, RU</a></td></tr>
-</table><div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
-<a href='https://www.unicode.org/copyright.html'>
-<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;' alt='Access to Copyright and terms of use'></a>
-</div><script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'CLDR', 'auto');  ga('send', 'pageview');</script>
-
-		<script>
-			(function(i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				i[r] = i[r] || function() {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date();
-				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m)
-			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-			ga('create', 'UA-7672775-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+</table>
+<!-- end main body -->
 	</div>
-</body>
+	<div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+		<a href='https://www.unicode.org/copyright.html'>
+			<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;'
+				alt='Access to Copyright and terms of use'>
+		</a>
+	</div>
 
+</body>
 </html>
