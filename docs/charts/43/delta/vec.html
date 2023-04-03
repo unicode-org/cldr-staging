@@ -67,30 +67,121 @@
 		 -->
 <!-- begin main body-->
 <p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
-	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source' rowSpan='3'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source' rowSpan='3'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source' rowSpan='3'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Main Letters</td><td class='source' rowSpan='23'>vec</td><td class='target' rowSpan='2'>[]</td><td class='target'>[a-jl-pr-vxzàèéìòóù]</td><td class='target' rowSpan='3'>core</td></tr>
-	<tr><td class='source'>Others: auxiliary</td><td class='target'>[kqwyªºáçíúćłşţǵʣʦḑ{z̧}]</td></tr>
-	<tr><td class='source'>Others: punctuation</td><td class='target'>…[]…</td><td class='target'>…[&quot;#\&amp;'*+/=@\\\u00AB\u00B7\u00BB\u2010\u2012-\u2015\u2018\u2019\u201C\u201D\u2026\u2044\u2053\u3008\u3009]…</td></tr>
-	<tr><td class='source' rowSpan='20'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td><td class='source' rowSpan='3'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td><td class='source' rowSpan='3'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td><td class='source'>language</td><td class='target' rowSpan='3'>{0}</td><td class='target'>Lengua: {0}</td><td class='target' rowSpan='3'>basic</td></tr>
-	<tr><td class='source'>script</td><td class='target'>Scritura: {0}</td></tr>
-	<tr><td class='source'>territory</td><td class='target'>Rejon: {0}</td></tr>
-	<tr><td class='source' rowSpan='16'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td><td class='source' rowSpan='16'><a name='A' href='#A'>A</a></td><td class='source'>Abkhazian ► ab</td><td class='target'>ab</td><td class='target'>abcazo</td><td class='target' rowSpan='12'>modern</td></tr>
-	<tr><td class='source'>Achinese ► ace</td><td class='target'>ace</td><td class='target'>achineze</td></tr>
-	<tr><td class='source'>Adangme ► ada</td><td class='target'>ada</td><td class='target'>adangme</td></tr>
-	<tr><td class='source'>Adyghe ► ady</td><td class='target'>ady</td><td class='target'>adiga</td></tr>
-	<tr><td class='source'>Afrikaans ► af</td><td class='target'>af</td><td class='target'>afregan</td></tr>
-	<tr><td class='source'>Aghem ► agq</td><td class='target'>agq</td><td class='target'>aghem</td></tr>
-	<tr><td class='source'>Ainu ► ain</td><td class='target'>ain</td><td class='target'>ainu</td></tr>
-	<tr><td class='source'>Akan ► ak</td><td class='target'>ak</td><td class='target'>akan</td></tr>
-	<tr><td class='source'>Albanian ► sq</td><td class='target'>sq</td><td class='target'>albaneze</td></tr>
-	<tr><td class='source'>Aleut ► ale</td><td class='target'>ale</td><td class='target'>aleutian</td></tr>
-	<tr><td class='source'>Amharic ► am</td><td class='target'>am</td><td class='target'>amàrego</td></tr>
-	<tr><td class='source'>Angika ► anp</td><td class='target'>anp</td><td class='target'>angika</td></tr>
-	<tr><td class='source'>Arabic ► ar</td><td class='target'>ar</td><td class='target'>àrabo</td><td class='target' rowSpan='2'>moderate</td></tr>
-	<tr><td class='source'>Arabic ► ar_001</td><td class='target'>ar_001</td><td class='target'>àrabo moderno</td></tr>
-	<tr><td class='source'>Aragonese ► an</td><td class='target'>an</td><td class='target'>aragoneze</td><td class='target' rowSpan='2'>modern</td></tr>
-	<tr><td class='source'>Arapaho ► arp</td><td class='target'>arp</td><td class='target'>arapaho</td></tr>
-	<tr><td class='source'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td><td class='source'><a name='V' href='#V'>V</a></td><td class='source'>Venetian ► vec</td><td class='target'>vec</td><td class='target'>Veneto</td><td class='target'>basic</td></tr>
+  <tr>
+	<th class='source'>Section</th>
+	<th class='source'>Page</th>
+	<th class='source'>Header</th>
+	<th class='source'>Code</th>
+	<th class='source'>Locale</th>
+	<th class='target'>Old</th>
+	<th class='target'>New</th>
+	<th class='target'>Level</th></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+	<td class='source' rowSpan='3'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+	<td class='source' rowSpan='3'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td>
+	<td class='source'>Main Letters</td>
+	<td class='source' rowSpan='23'>vec</td>
+	<td class='target' rowSpan='2'>[]</td>
+	<td class='target'>[a-jl-pr-vxzàèéìòóù]</td>
+	<td class='target' rowSpan='3'>core</td></tr>
+  <tr>
+	<td class='source'>Others: auxiliary</td>
+	<td class='target'>[kqwyªºáçíúćłşţǵʣʦḑ{z̧}]</td></tr>
+  <tr>
+	<td class='source'>Others: punctuation</td>
+	<td class='target'>…[]…</td>
+	<td class='target'>…[&quot;#\&amp;'*+/=@\\\u00AB\u00B7\u00BB\u2010\u2012-\u2015\u2018\u2019\u201C\u201D\u2026\u2044\u2053\u3008\u3009]…</td></tr>
+  <tr>
+	<td class='source' rowSpan='20'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td>
+	<td class='source' rowSpan='3'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td>
+	<td class='source' rowSpan='3'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td>
+	<td class='source'>language</td>
+	<td class='target' rowSpan='3'>{0}</td>
+	<td class='target'>Lengua: {0}</td>
+	<td class='target' rowSpan='3'>basic</td></tr>
+  <tr>
+	<td class='source'>script</td>
+	<td class='target'>Scritura: {0}</td></tr>
+  <tr>
+	<td class='source'>territory</td>
+	<td class='target'>Rejon: {0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='16'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td>
+	<td class='source' rowSpan='16'><a name='A' href='#A'>A</a></td>
+	<td class='source'>Abkhazian ► ab</td>
+	<td class='target'>ab</td>
+	<td class='target'>abcazo</td>
+	<td class='target' rowSpan='12'>modern</td></tr>
+  <tr>
+	<td class='source'>Achinese ► ace</td>
+	<td class='target'>ace</td>
+	<td class='target'>achineze</td></tr>
+  <tr>
+	<td class='source'>Adangme ► ada</td>
+	<td class='target'>ada</td>
+	<td class='target'>adangme</td></tr>
+  <tr>
+	<td class='source'>Adyghe ► ady</td>
+	<td class='target'>ady</td>
+	<td class='target'>adiga</td></tr>
+  <tr>
+	<td class='source'>Afrikaans ► af</td>
+	<td class='target'>af</td>
+	<td class='target'>afregan</td></tr>
+  <tr>
+	<td class='source'>Aghem ► agq</td>
+	<td class='target'>agq</td>
+	<td class='target'>aghem</td></tr>
+  <tr>
+	<td class='source'>Ainu ► ain</td>
+	<td class='target'>ain</td>
+	<td class='target'>ainu</td></tr>
+  <tr>
+	<td class='source'>Akan ► ak</td>
+	<td class='target'>ak</td>
+	<td class='target'>akan</td></tr>
+  <tr>
+	<td class='source'>Albanian ► sq</td>
+	<td class='target'>sq</td>
+	<td class='target'>albaneze</td></tr>
+  <tr>
+	<td class='source'>Aleut ► ale</td>
+	<td class='target'>ale</td>
+	<td class='target'>aleutian</td></tr>
+  <tr>
+	<td class='source'>Amharic ► am</td>
+	<td class='target'>am</td>
+	<td class='target'>amàrego</td></tr>
+  <tr>
+	<td class='source'>Angika ► anp</td>
+	<td class='target'>anp</td>
+	<td class='target'>angika</td></tr>
+  <tr>
+	<td class='source'>Arabic ► ar</td>
+	<td class='target'>ar</td>
+	<td class='target'>àrabo</td>
+	<td class='target' rowSpan='2'>moderate</td></tr>
+  <tr>
+	<td class='source'>Arabic ► ar_001</td>
+	<td class='target'>ar_001</td>
+	<td class='target'>àrabo moderno</td></tr>
+  <tr>
+	<td class='source'>Aragonese ► an</td>
+	<td class='target'>an</td>
+	<td class='target'>aragoneze</td>
+	<td class='target' rowSpan='2'>modern</td></tr>
+  <tr>
+	<td class='source'>Arapaho ► arp</td>
+	<td class='target'>arp</td>
+	<td class='target'>arapaho</td></tr>
+  <tr>
+	<td class='source'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td>
+	<td class='source'><a name='V' href='#V'>V</a></td>
+	<td class='source'>Venetian ► vec</td>
+	<td class='target'>vec</td>
+	<td class='target'>Veneto</td>
+	<td class='target'>basic</td></tr>
 </table>
 <!-- end main body -->
 	</div>
