@@ -67,18 +67,65 @@
 		 -->
 <!-- begin main body-->
 <p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
-	<tr><th class='source'>Section</th><th class='source'>Page</th><th class='source'>Header</th><th class='source'>Code</th><th class='source'>Locale</th><th class='target'>Old</th><th class='target'>New</th><th class='target'>Level</th></tr>
-	<tr><td class='source'><a name='Core Data' href='#Core Data'>Core Data</a></td><td class='source'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td><td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td><td class='source'>Others: punctuation</td><td class='source' rowSpan='11'>zh</td><td class='target'>…[]…</td><td class='target'>…[]…</td><td class='target'>core</td></tr>
-	<tr><td class='source' rowSpan='10'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td><td class='source' rowSpan='10'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-long' href='#PersonName Patterns for Order-Length: givenFirst-long'>PersonName Patterns for Order-Length: givenFirst-long</a></td><td class='source'>monogram-formal</td><td class='target'>{given-monogram-allCaps} {given2-monogram-allCaps} {surname-monogram-allCaps}</td><td class='target'>{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}</td><td class='target' rowSpan='10'>modern</td></tr>
-	<tr><td class='source'>monogram-informal</td><td class='target'>{given-informal-monogram-allCaps} {surname-monogram-allCaps}</td><td class='target'>{given-informal-monogram-allCaps}{surname-monogram-allCaps}</td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: surnameFirst-long' href='#PersonName Patterns for Order-Length: surnameFirst-long'>PersonName Patterns for Order-Length: surnameFirst-long</a></td><td class='source' rowSpan='2'>referring-informal</td><td class='target' rowSpan='2'>{surname}{given-informal}</td><td class='target' rowSpan='2'>{surname} {given-informal}</td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: surnameFirst-medium' href='#PersonName Patterns for Order-Length: surnameFirst-medium'>PersonName Patterns for Order-Length: surnameFirst-medium</a></td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-short' href='#PersonName Patterns for Order-Length: surnameFirst-short'>PersonName Patterns for Order-Length: surnameFirst-short</a></td><td class='source'>referring-formal</td><td class='target'>{surname}{given}{given2}</td><td class='target'>{surname} {given} {given2}</td></tr>
-	<tr><td class='source'>referring-informal</td><td class='target'>{surname}{given}</td><td class='target'>{surname} {given}</td></tr>
-	<tr><td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: sorting/index-long' href='#PersonName Patterns for Order-Length: sorting/index-long'>PersonName Patterns for Order-Length: sorting/index-long</a></td><td class='source'>referring-formal</td><td class='target'>{surname-core}{given}{given2}{surname-prefix}</td><td class='target'>{surname-core} {given} {given2} {surname-prefix}</td></tr>
-	<tr><td class='source' rowSpan='3'>referring-informal</td><td class='target' rowSpan='3'>{surname}{given-informal}</td><td class='target' rowSpan='3'>{surname} {given-informal}</td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-medium' href='#PersonName Patterns for Order-Length: sorting/index-medium'>PersonName Patterns for Order-Length: sorting/index-medium</a></td></tr>
-	<tr><td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-short' href='#PersonName Patterns for Order-Length: sorting/index-short'>PersonName Patterns for Order-Length: sorting/index-short</a></td></tr>
+  <tr>
+	<th class='source'>Section</th>
+	<th class='source'>Page</th>
+	<th class='source'>Header</th>
+	<th class='source'>Code</th>
+	<th class='source'>Locale</th>
+	<th class='target'>Old</th>
+	<th class='target'>New</th>
+	<th class='target'>Level</th></tr>
+  <tr>
+	<td class='source'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+	<td class='source'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+	<td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td>
+	<td class='source'>Others: punctuation</td>
+	<td class='source' rowSpan='11'>zh</td>
+	<td class='target'>…[]…</td>
+	<td class='target'>…[]…</td>
+	<td class='target'>core</td></tr>
+  <tr>
+	<td class='source' rowSpan='10'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
+	<td class='source' rowSpan='10'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td>
+	<td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: givenFirst-long' href='#PersonName Patterns for Order-Length: givenFirst-long'>PersonName Patterns for Order-Length: givenFirst-long</a></td>
+	<td class='source'>monogram-formal</td>
+	<td class='target'>{given-monogram-allCaps} {given2-monogram-allCaps} {surname-monogram-allCaps}</td>
+	<td class='target'>{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}</td>
+	<td class='target' rowSpan='10'>modern</td></tr>
+  <tr>
+	<td class='source'>monogram-informal</td>
+	<td class='target'>{given-informal-monogram-allCaps} {surname-monogram-allCaps}</td>
+	<td class='target'>{given-informal-monogram-allCaps}{surname-monogram-allCaps}</td></tr>
+  <tr>
+	<td class='source'><a name='PersonName Patterns for Order-Length: surnameFirst-long' href='#PersonName Patterns for Order-Length: surnameFirst-long'>PersonName Patterns for Order-Length: surnameFirst-long</a></td>
+	<td class='source' rowSpan='2'>referring-informal</td>
+	<td class='target' rowSpan='2'>{surname}{given-informal}</td>
+	<td class='target' rowSpan='2'>{surname} {given-informal}</td></tr>
+  <tr>
+	<td class='source'><a name='PersonName Patterns for Order-Length: surnameFirst-medium' href='#PersonName Patterns for Order-Length: surnameFirst-medium'>PersonName Patterns for Order-Length: surnameFirst-medium</a></td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: surnameFirst-short' href='#PersonName Patterns for Order-Length: surnameFirst-short'>PersonName Patterns for Order-Length: surnameFirst-short</a></td>
+	<td class='source'>referring-formal</td>
+	<td class='target'>{surname}{given}{given2}</td>
+	<td class='target'>{surname} {given} {given2}</td></tr>
+  <tr>
+	<td class='source'>referring-informal</td>
+	<td class='target'>{surname}{given}</td>
+	<td class='target'>{surname} {given}</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='PersonName Patterns for Order-Length: sorting/index-long' href='#PersonName Patterns for Order-Length: sorting/index-long'>PersonName Patterns for Order-Length: sorting/index-long</a></td>
+	<td class='source'>referring-formal</td>
+	<td class='target'>{surname-core}{given}{given2}{surname-prefix}</td>
+	<td class='target'>{surname-core} {given} {given2} {surname-prefix}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>referring-informal</td>
+	<td class='target' rowSpan='3'>{surname}{given-informal}</td>
+	<td class='target' rowSpan='3'>{surname} {given-informal}</td></tr>
+  <tr>
+	<td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-medium' href='#PersonName Patterns for Order-Length: sorting/index-medium'>PersonName Patterns for Order-Length: sorting/index-medium</a></td></tr>
+  <tr>
+	<td class='source'><a name='PersonName Patterns for Order-Length: sorting/index-short' href='#PersonName Patterns for Order-Length: sorting/index-short'>PersonName Patterns for Order-Length: sorting/index-short</a></td></tr>
 </table>
 <!-- end main body -->
 	</div>
