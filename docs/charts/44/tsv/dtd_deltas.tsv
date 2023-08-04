@@ -1,12 +1,15 @@
 #Version	Dtd Type	Intermediate Path	Element	Attributes
 44.0β	ldml	​/characterLabels/	characterLabelPattern	<div>type ⟪…⟫➠⟪… facing-left, facing-right, …⟫</div>
-44.0β	ldml	​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/	pattern	<div>alt ⟪…⟫➠⟪… ascii, …⟫</div>
-44.0β	ldml	​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/	dateFormatItem	<div>alt ⟪literal/variant⟫➠⟪literal/ascii, variant⟫</div>
+44.0β	ldml	​/contextTransforms/	contextTransformUsage	<div>type ⟪literal/calendar-field, … typographicNames⟫➠⟪literal/all, calendar-field, … currencyName-count, … key, … metazone-long, metazone-short, … territory, typographicNames, zone-exemplarCity, zone-long, zone-short⟫</div>
+44.0β	ldml	​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/	pattern	<div>numbers ⟪…⟫➠⟪… d=jpan, … tibt, …⟫</div><div>alt ⟪…⟫➠⟪… ascii, …⟫</div>
+44.0β	ldml	​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/	dateFormatItem	<div>id ⟪literal/Bh, Bhm, Bhms, E, EBhm, EBhms, EEEEd, EHm, EHms, Ed, Ehm, Ehms, Gy, GyM, GyMEEEEd, GyMMM, GyMMMEEEEd, GyMMMEd, GyMMMM, GyMMMMEd, GyMMMMd, GyMMMd, GyMd, H, HHmm, HHmmZ, HHmmss, Hm, HmZ, Hmm, Hms, Hmsv, Hmsvvvv, Hmv, Hmvvvv, M, MEEEEd, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEEEEd, MMMMEd, MMMMW, MMMMd, MMMMdd, MMMd, MMMdd, MMd, MMdd, Md, Mdd, UM, UMMM, UMMMd, UMd, d, h, hhmm, hhmmss, hm, hms, hmsv, hmsvvvv, hmv, hmvvvv, mmss, ms, y, yM, yMEEEEd, yMEd, yMM, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMccccd, yMMMMd, yMMMd, yMMdd, yMd, yQ, yQQQ, yQQQQ, yw, yyyy, yyyyM, yyyyMEEEEd, yyyyMEd, yyyyMM, yyyyMMM, yyyyMMMEEEEd, yyyyMMMEd, yyyyMMMM, yyyyMMMMEd, yyyyMMMMccccd, yyyyMMMMd, yyyyMMMd, yyyyMMdd, yyyyMd, yyyyQQQ, yyyyQQQQ⟫➠⟪regex/((E|EEEE)?(H|HH|h|hh|Bh)(m|ms|mm|mmss)?(Z|z|zzzz|v|vvvv)?)|(ms|mmss)|((G|GGGGG)?(y|yy|yyyy)((M{1,4}((E|EEEE|cccc)?(d|dd))?)|(w|Q|QQQ|QQQQ))?)|(U(M|MMM)d?)|(M{1,4}(((E|EEEE|cccc)?(d|dd))|W)?)|((E|EEEE)?d)|(E|EEEE)⟫</div><div>alt ⟪literal/variant⟫➠⟪literal/ascii, variant⟫</div>
+44.0β	ldml	​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/	intervalFormatItem	<div>id ⟪literal/Bh, Bhm, Gy, GyM, GyMEd, GyMMM, GyMMMEd, GyMMMd, GyMd, H, Hm, Hmv, Hmvvvv, Hv, Hvvvv, M, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEd, MMMMd, MMMd, Md, d, h, hm, hmv, hmvvvv, hv, hvvvv, y, yM, yMEd, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMd, yMMMd, yMd, GGGGGyM, GGGGGyMEd, GGGGGyMd, GyMMMM, GyMMMMEd, GyMMMMd⟫➠⟪regex/((H|h|Bh)m?(v|vvvv)?)|((G|GGGGG)?(y|yyyy)((M|MMM|MMMM)((E|EEEE)?d)?)?)|((M|MMM|MMMM)((E|EEEE)?d)?)|d⟫</div>
 44.0β	ldml	​/localeDisplayNames​/territories/	territory	<div>alt ⟪… variant⟫➠⟪… variant, biot, chagos⟫</div>
 44.0β	ldml	​/personNames/	+parameterDefault	<div>+parameter §d ⟨length, formality⟩</div>
 44.0β	ldml	​/personNames/	+nativeSpaceReplacement	<div>+xml:space §m︎ ⟨default, preserve⟩</div>
-44.0β	supplementalData	​/convertUnits/	convertUnit	<div>systems ⟪…⟫➠⟪… jpsystem, …⟫</div>
+44.0β	supplementalData	​/convertUnits/	convertUnit	<div>systems ⟪set/literal/ussystem, … si, other⟫➠⟪set/literal/si, si_acceptable, … metric_adjacent, ussystem, … jpsystem, astronomical, person_age, other, prefixable⟫</div><div>description ➠⟪any⟫</div>
 44.0β	supplementalData	​/coverageLevels/	coverageLevel	<div>value ⟪…⟫➠⟪… comprehensive, …⟫</div>
+44.0β	supplementalData	​/unitQuantities/	unitQuantity	<div>description ➠⟪any⟫</div>
 43.0	ldml	/	ⓟpersonNames	 
 43.0	ldml	​/collations​/collation/	cr	<div>alt ⟪literal/variant⟫➠⟪literal/variant, proposed, short⟫</div>
 43.0	ldml	​/personNames/	ⓟnameOrderLocales	 

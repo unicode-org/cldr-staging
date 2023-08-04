@@ -7,7 +7,8 @@ BCP47	u_Extension	ca-islamic-tbla	_description	…	Hijri calendar, tabular (inte
 BCP47	u_Extension	ca-islamic-umalqura	_description	…	Hijri calendar, Umm al-Qura
 #Section	Page	Header	Code	Old	New
 Supplemental	IdValidity	unit	regular	…	… • area-bu-jp • area-cho • … • area-se-jp • … • length-jo-jp • length-ken • … • length-ri-jp • length-rin • … • length-shaku-cloth • length-shaku-length • … • length-sun • … • mass-fun • … • pressure-gasoline-equivalent • … • volume-cup-jp • … • volume-koku • volume-kosaji • … • volume-osaji • … • volume-pint-imperial • … • volume-sai • volume-shaku • … • volume-to-jp
-Supplemental	Locale	DefaultContent	plain	…	… • blo_BJ • … • csw_CA • … • ie_001 • … • mic_CA • … • vmw_MZ • … • xnr_IN • …
+Supplemental	Locale	Parent	root	…	… • kxv_Deva • kxv_Orya • kxv_Telu • …
+Supplemental	Locale	DefaultContent	plain	…	… • bew_ID • … • blo_BJ • … • csw_CA • … • ie_001 • … • kxv_Deva_IN • kxv_Latn • kxv_Latn_IN • kxv_Orya_IN • kxv_Telu_IN • … • mic_CA • … • skr_PK • … • tyv_RU • … • vmw_MZ • … • xnr_IN • … • za_CN • …
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	_alias	Ethiopic-Latin/Xaleget byn-Latn-t-byn-ethi-m0-xaleget	▷removed◁
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	_visibility	external	▷removed◁
 Supplemental	Transform	byn_Ethi↔︎byn_Latn/Xaleget	_alias	▷missing◁	Ethiopic-Latin/Xaleget byn-Latn-t-byn-ethi-m0-xaleget
@@ -68,7 +69,7 @@ Supplemental	Units	Convert	cup-jp-factor	▷missing◁	1*100*0.000001
 Supplemental	Units	Convert	farad-factor	▷missing◁	1
 Supplemental	Units	Convert	fortnight-factor	▷missing◁	86400*14
 Supplemental	Units	Convert	fun-factor	▷missing◁	1*3/8000
-Supplemental	Units	Convert	gasoline-equivalent-factor	▷missing◁	33.7 * 3600 * 1000/gal_to_m3
+Supplemental	Units	Convert	gasoline-equivalent-factor	▷missing◁	33.705 * 3600 * 1000/gal_to_m3
 Supplemental	Units	Convert	jo-jp-factor	▷missing◁	shaku_to_m*10
 Supplemental	Units	Convert	katal-factor	▷missing◁	item_per_mole
 Supplemental	Units	Convert	ken-factor	▷missing◁	shaku_to_m*6
@@ -87,69 +88,206 @@ Supplemental	Units	Convert	shaku-cloth-factor	▷missing◁	shaku_to_m*5/4
 Supplemental	Units	Convert	shaku-factor	▷missing◁	sho_to_m3/100
 Supplemental	Units	Convert	shaku-length-factor	▷missing◁	shaku_to_m
 Supplemental	Units	Convert	slug-factor	▷missing◁	lb_to_kg*gravity/ft_to_m
-Supplemental	Units	Convert	steradian-factor	▷missing◁	1
+Supplemental	Units	Convert	steradian-factor	▷missing◁	1/4*PI*PI
 Supplemental	Units	Convert	sun-factor	▷missing◁	shaku_to_m/10
 Supplemental	Units	Convert	to-jp-factor	▷missing◁	sho_to_m3*10
 Supplemental	Units	Convert	week-factor	…	86400*7
 Supplemental	Units	Convert	week-person-factor	…	86400*7
+Supplemental	Units	Convert	ampere-systems	…	… • prefixable • …
+Supplemental	Units	Convert	arc-minute-systems	…	metric_adjacent • si_acceptable
+Supplemental	Units	Convert	arc-second-systems	…	metric_adjacent • si_acceptable
+Supplemental	Units	Convert	astronomical-unit-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	astronomical-unit-systems	▷missing◁	si_acceptable
+Supplemental	Units	Convert	atmosphere-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	bar-systems	…	… • prefixable • si_acceptable
 Supplemental	Units	Convert	becquerel-systems	▷missing◁	metric
+Supplemental	Units	Convert	becquerel-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	becquerel-systems	▷missing◁	si
+Supplemental	Units	Convert	bit-systems	…	… • prefixable
 Supplemental	Units	Convert	british-thermal-unit-it-systems	▷missing◁	uksystem
 Supplemental	Units	Convert	british-thermal-unit-it-systems	▷missing◁	ussystem
 Supplemental	Units	Convert	bu-jp-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	byte-systems	…	… • prefixable
+Supplemental	Units	Convert	calorie-it-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	calorie-it-systems	▷missing◁	prefixable
+Supplemental	Units	Convert	calorie-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	calorie-systems	▷missing◁	prefixable
+Supplemental	Units	Convert	candela-systems	…	… • prefixable • …
+Supplemental	Units	Convert	carat-systems	…	metric_adjacent
+Supplemental	Units	Convert	celsius-systems	…	… • si
+Supplemental	Units	Convert	century-systems	…	metric_adjacent
 Supplemental	Units	Convert	chain-systems	▷missing◁	uksystem
 Supplemental	Units	Convert	chain-systems	▷missing◁	ussystem
 Supplemental	Units	Convert	cho-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	coulomb-systems	▷missing◁	metric
+Supplemental	Units	Convert	coulomb-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	coulomb-systems	▷missing◁	si
 Supplemental	Units	Convert	cup-jp-systems	▷missing◁	jpsystem
-Supplemental	Units	Convert	fortnight-systems	▷missing◁	metric
+Supplemental	Units	Convert	cup-metric-systems	…	metric_adjacent
+Supplemental	Units	Convert	dalton-systems	▷missing◁	metric
+Supplemental	Units	Convert	dalton-systems	▷missing◁	prefixable
+Supplemental	Units	Convert	dalton-systems	▷missing◁	si_acceptable
+Supplemental	Units	Convert	day-person-systems	▷missing◁	person_age
+Supplemental	Units	Convert	day-systems	…	metric_adjacent • prefixable • si_acceptable
+Supplemental	Units	Convert	decade-systems	…	metric_adjacent
+Supplemental	Units	Convert	degree-systems	…	metric_adjacent • si_acceptable
+Supplemental	Units	Convert	dot-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	earth-mass-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	earth-radius-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	electronvolt-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	electronvolt-systems	▷missing◁	si_acceptable
+Supplemental	Units	Convert	em-systems	…	metric_adjacent
+Supplemental	Units	Convert	farad-systems	▷missing◁	metric
+Supplemental	Units	Convert	farad-systems	▷missing◁	prefixable
+Supplemental	Units	Convert	farad-systems	▷missing◁	si
+Supplemental	Units	Convert	fortnight-systems	▷missing◁	uksystem
+Supplemental	Units	Convert	fortnight-systems	▷missing◁	ussystem
 Supplemental	Units	Convert	fun-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	g-force-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	gasoline-equivalent-systems	▷missing◁	ussystem
+Supplemental	Units	Convert	gram-systems	…	… • prefixable • …
 Supplemental	Units	Convert	gray-systems	▷missing◁	metric
+Supplemental	Units	Convert	gray-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	gray-systems	▷missing◁	si
+Supplemental	Units	Convert	hectare-systems	…	… • si_acceptable
 Supplemental	Units	Convert	henry-systems	▷missing◁	metric
+Supplemental	Units	Convert	henry-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	henry-systems	▷missing◁	si
+Supplemental	Units	Convert	hertz-systems	…	… • prefixable • …
+Supplemental	Units	Convert	hour-systems	…	metric_adjacent • prefixable • si_acceptable
+Supplemental	Units	Convert	item-systems	…	metric_adjacent
 Supplemental	Units	Convert	jo-jp-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	joule-systems	…	… • prefixable • …
+Supplemental	Units	Convert	karat-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	katal-systems	▷missing◁	metric
+Supplemental	Units	Convert	katal-systems	▷missing◁	si
+Supplemental	Units	Convert	kelvin-systems	…	… • prefixable • …
 Supplemental	Units	Convert	ken-systems	▷missing◁	jpsystem
-Supplemental	Units	Convert	kilogram-force-systems	▷missing◁	metric
+Supplemental	Units	Convert	kilogram-force-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	knot-systems	…	si_acceptable • …
 Supplemental	Units	Convert	koku-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	kosaji-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	light-year-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	liter-systems	…	… • prefixable • si_acceptable
+Supplemental	Units	Convert	lumen-systems	…	… • prefixable • …
+Supplemental	Units	Convert	lux-systems	…	… • prefixable • …
+Supplemental	Units	Convert	meter-systems	…	… • prefixable • …
+Supplemental	Units	Convert	mile-scandinavian-systems	…	metric_adjacent
+Supplemental	Units	Convert	minute-systems	…	metric_adjacent • prefixable • si_acceptable
+Supplemental	Units	Convert	mole-systems	…	… • prefixable • …
+Supplemental	Units	Convert	month-person-systems	▷missing◁	person_age
+Supplemental	Units	Convert	month-systems	…	metric_adjacent
+Supplemental	Units	Convert	nautical-mile-systems	…	si_acceptable • …
+Supplemental	Units	Convert	newton-systems	…	… • prefixable • …
+Supplemental	Units	Convert	ofglucose-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	ohm-systems	…	… • prefixable • …
 Supplemental	Units	Convert	osaji-systems	▷missing◁	jpsystem
-Supplemental	Units	Convert	pint-imperial-systems	▷missing◁	metric
+Supplemental	Units	Convert	parsec-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	parsec-systems	▷missing◁	prefixable
+Supplemental	Units	Convert	pascal-systems	…	… • prefixable • …
+Supplemental	Units	Convert	percent-systems	…	metric_adjacent
+Supplemental	Units	Convert	permille-systems	…	metric_adjacent
+Supplemental	Units	Convert	permillion-systems	…	metric_adjacent
+Supplemental	Units	Convert	permyriad-systems	…	metric_adjacent
+Supplemental	Units	Convert	pint-imperial-systems	▷missing◁	uksystem
+Supplemental	Units	Convert	pint-metric-systems	…	metric_adjacent
+Supplemental	Units	Convert	pixel-systems	…	metric_adjacent • prefixable
+Supplemental	Units	Convert	portion-systems	▷missing◁	metric_adjacent
+Supplemental	Units	Convert	quarter-systems	…	metric_adjacent
 Supplemental	Units	Convert	rankine-systems	▷missing◁	uksystem
 Supplemental	Units	Convert	rankine-systems	▷missing◁	ussystem
+Supplemental	Units	Convert	revolution-systems	…	metric_adjacent
 Supplemental	Units	Convert	ri-jp-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	rin-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	rod-systems	▷missing◁	uksystem
 Supplemental	Units	Convert	rod-systems	▷missing◁	ussystem
 Supplemental	Units	Convert	sai-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	se-jp-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	second-systems	…	… • prefixable • …
 Supplemental	Units	Convert	shaku-cloth-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	shaku-length-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	shaku-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	siemens-systems	▷missing◁	metric
+Supplemental	Units	Convert	siemens-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	siemens-systems	▷missing◁	si
 Supplemental	Units	Convert	sievert-systems	▷missing◁	metric
+Supplemental	Units	Convert	sievert-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	sievert-systems	▷missing◁	si
 Supplemental	Units	Convert	slug-systems	▷missing◁	uksystem
 Supplemental	Units	Convert	slug-systems	▷missing◁	ussystem
+Supplemental	Units	Convert	solar-luminosity-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	solar-mass-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	solar-radius-systems	▷missing◁	astronomical
+Supplemental	Units	Convert	steradian-systems	▷missing◁	metric
+Supplemental	Units	Convert	steradian-systems	▷missing◁	si
 Supplemental	Units	Convert	sun-systems	▷missing◁	jpsystem
 Supplemental	Units	Convert	tesla-systems	▷missing◁	metric
+Supplemental	Units	Convert	tesla-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	tesla-systems	▷missing◁	si
 Supplemental	Units	Convert	to-jp-systems	▷missing◁	jpsystem
+Supplemental	Units	Convert	tonne-systems	…	… • prefixable • si_acceptable
+Supplemental	Units	Convert	volt-systems	…	… • prefixable • …
+Supplemental	Units	Convert	watt-systems	…	… • prefixable • …
 Supplemental	Units	Convert	weber-systems	▷missing◁	metric
+Supplemental	Units	Convert	weber-systems	▷missing◁	prefixable
 Supplemental	Units	Convert	weber-systems	▷missing◁	si
+Supplemental	Units	Convert	week-person-systems	▷missing◁	person_age
+Supplemental	Units	Convert	week-systems	…	metric_adjacent
+Supplemental	Units	Convert	year-person-systems	▷missing◁	person_age
+Supplemental	Units	Convert	year-systems	…	metric_adjacent • prefixable
+Supplemental	Likely	Subtag	kxv	…	kxv_Latn_IN
+Supplemental	Likely	Subtag	kxv_Deva	▷missing◁	kxv_Deva_IN
+Supplemental	Likely	Subtag	kxv_Latn	kxv_Latn_IN	▷removed◁
+Supplemental	Likely	Subtag	kxv_Orya	▷missing◁	kxv_Orya_IN
 Supplemental	LanguageInfo	BJ/blo	populationPercent	▷missing◁	0.26
+Supplemental	LanguageInfo	IN/kxv	populationPercent	▷missing◁	0.0029
 Supplemental	LanguageInfo	TG/blo	populationPercent	▷missing◁	0.14
+Supplemental	Plural	cardinal-blo	one	▷missing◁	n = 1 @integer 1 @decimal 1.0, 1.00, 1.000, 1.0000
+Supplemental	Plural	cardinal-blo	other	▷missing◁	@integer 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 2.0~2.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …
+Supplemental	Plural	cardinal-blo	zero	▷missing◁	n = 0 @integer 0 @decimal 0.0, 0.00, 0.000, 0.0000
+Supplemental	Plural	ordinal-blo	few	▷missing◁	i = 2,3,4,5,6 @integer 2~6
+Supplemental	Plural	ordinal-blo	one	▷missing◁	i = 1 @integer 1
+Supplemental	Plural	ordinal-blo	other	▷missing◁	@integer 7~19, 100, 1000, 10000, 100000, 1000000, …
+Supplemental	Plural	ordinal-blo	zero	▷missing◁	i = 0 @integer 0
 Supplemental	Language	blo	scripts	▷missing◁	Latn
 Supplemental	Language	blo	territories	▷missing◁	BJ
 Supplemental	Language	blo	territories	▷missing◁	TG
+Supplemental	Language	kxv	scripts	▷missing◁	Latn
+Supplemental	Language	kxv	scripts-secondary	▷missing◁	Deva
+Supplemental	Language	kxv	scripts-secondary	▷missing◁	Orya
+Supplemental	Language	kxv	scripts-secondary	▷missing◁	Telu
+Supplemental	DayPeriod	blo	afternoon1-before	▷missing◁	16:00
+Supplemental	DayPeriod	blo	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	blo	afternoon2-before	▷missing◁	20:00
+Supplemental	DayPeriod	blo	afternoon2-from	▷missing◁	16:00
+Supplemental	DayPeriod	blo	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	blo	evening1-from	▷missing◁	20:00
+Supplemental	DayPeriod	blo	morning1-before	▷missing◁	07:00
+Supplemental	DayPeriod	blo	morning1-from	▷missing◁	04:00
+Supplemental	DayPeriod	blo	morning2-before	▷missing◁	12:00
+Supplemental	DayPeriod	blo	morning2-from	▷missing◁	07:00
+Supplemental	DayPeriod	blo	night1-before	▷missing◁	04:00
+Supplemental	DayPeriod	blo	night1-from	▷missing◁	00:00
+Supplemental	DayPeriod	selection-blo	afternoon1-before	▷missing◁	16:00
+Supplemental	DayPeriod	selection-blo	afternoon1-from	▷missing◁	12:00
+Supplemental	DayPeriod	selection-blo	afternoon2-before	▷missing◁	20:00
+Supplemental	DayPeriod	selection-blo	afternoon2-from	▷missing◁	16:00
+Supplemental	DayPeriod	selection-blo	evening1-before	▷missing◁	24:00
+Supplemental	DayPeriod	selection-blo	evening1-from	▷missing◁	20:00
+Supplemental	DayPeriod	selection-blo	morning1-before	▷missing◁	07:00
+Supplemental	DayPeriod	selection-blo	morning1-from	▷missing◁	04:00
+Supplemental	DayPeriod	selection-blo	morning2-before	▷missing◁	12:00
+Supplemental	DayPeriod	selection-blo	morning2-from	▷missing◁	07:00
+Supplemental	DayPeriod	selection-blo	night1-before	▷missing◁	04:00
+Supplemental	DayPeriod	selection-blo	night1-from	▷missing◁	00:00
 #Section	Page	Header	Code	Old	New
 Supplemental	Transform	am_Ethi↔︎am_Brai	tRule	…	… • $ራብዕ = ⠁ ; # 1 • … • $አ = $ግዕዝ ; $ኡ = $ካዕብ ; $ኢ = $ሣልስ ; $ኣ = $ራብዕ ; $ኤ = $ኃምስ ; $እ = ⠷ ; $ኦ = $ሳብዕ ; $ኧ = ⠨ ; # $ⶊ = $ሳምን ; • … • $ዐ = $ግዕዝ ; $ዑ = $ካዕብ ; $ዒ = $ሣልስ ; $ዓ = $ራብዕ ; $ዔ = $ኃምስ ; $ዕ = ⠳ ; $ዖ = $ሳብዕ ; • … • $ዘመደ_ራብዕ = ⠭ ; • … • ሃ ↔ $ሀ $ራብዕ ; # ETHIOPIC SYLLABLE HAA • … • ላ ↔ $ለ $ራብዕ ; # ETHIOPIC SYLLABLE LAA • … • ሏ ↔ $ለ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE LWA • … • ሓ → $ሐ $ራብዕ ; # ETHIOPIC SYLLABLE HHAA • … • ሗ → $ሐ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE HWA • … • ማ ↔ $መ $ራብዕ ; # ETHIOPIC SYLLABLE MAA • … • ሟ ↔ $መ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE MWA • … • ሣ → $ሠ $ራብዕ ; # ETHIOPIC SYLLABLE SZAA • … • ሧ → $ሠ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE SZWA • … • ራ ↔ $ረ $ራብዕ ; # ETHIOPIC SYLLABLE RAA • … • ሯ ↔ $ረ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE RWA • … • ሳ ↔ $ሰ $ራብዕ ; # ETHIOPIC SYLLABLE SAA • … • ሷ ↔ $ሰ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE SWA • … • ሻ ↔ $ሸ $ራብዕ ; # ETHIOPIC SYLLABLE SHAA • … • ሿ ↔ $ሸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE SHWA • … • ቃ ↔ $ቀ $ራብዕ ; # ETHIOPIC SYLLABLE QAA • … • ቋ ↔ $ቀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE QWAA • … • ባ ↔ $በ $ራብዕ ; # ETHIOPIC SYLLABLE BAA • … • ቧ ↔ $በ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE BWA • … • ቫ ↔ $ቨ $ራብዕ ; # ETHIOPIC SYLLABLE VAA • … • ቯ ↔ $ቨ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE VWA • … • ታ ↔ $ተ $ራብዕ ; # ETHIOPIC SYLLABLE TAA • … • ቷ ↔ $ተ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE TWA • … • ቻ ↔ $ቸ $ራብዕ ; # ETHIOPIC SYLLABLE CAA • … • ቿ ↔ $ቸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE CWA • … • ኃ → $ኀ $ራብዕ ; # ETHIOPIC SYLLABLE XAA • … • ኋ ↔ $ኀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE XWAA • … • ና ↔ $ነ $ራብዕ ; # ETHIOPIC SYLLABLE NAA • … • ኗ ↔ $ነ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE NWA • … • ኛ ↔ $ኘ $ራብዕ ; # ETHIOPIC SYLLABLE NYAA • … • ኟ ↔ $ኘ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE NYWA • … • ኣ ↔ $እ $ራብዕ ; # ETHIOPIC SYLLABLE GLOTTAL AA • … • ካ ↔ $ከ $ራብዕ ; # ETHIOPIC SYLLABLE KAA • … • ኳ ↔ $ከ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE KWAA • … • ኻ ↔ $ኸ $ራብዕ ; # ETHIOPIC SYLLABLE KXAA • … • ዃ ↔ $ኸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE KXWAA • … • ዋ ↔ $ወ $ራብዕ ; # ETHIOPIC SYLLABLE WAA • … • ዓ ↔ $ዕ $ራብዕ ; # ETHIOPIC SYLLABLE PHARYNGEAL AA • … • ዛ ↔ $ዘ $ራብዕ ; # ETHIOPIC SYLLABLE ZAA • … • ዟ ↔ $ዘ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE ZWA • … • ዣ ↔ $ዠ $ራብዕ ; # ETHIOPIC SYLLABLE ZHAA • … • ዧ ↔ $ዠ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE ZHWA • … • ያ ↔ $የ $ራብዕ ; # ETHIOPIC SYLLABLE YAA • … • ዳ ↔ $ደ $ራብዕ ; # ETHIOPIC SYLLABLE DAA • … • ዷ ↔ $ደ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE DWA • … • ጃ ↔ $ጀ $ራብዕ ; # ETHIOPIC SYLLABLE JAA • … • ጇ ↔ $ጀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE JWA • … • ጋ ↔ $ገ $ራብዕ ; # ETHIOPIC SYLLABLE GAA • … • ጓ ↔ $ገ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE GWAA • … • ጣ ↔ $ጠ $ራብዕ ; # ETHIOPIC SYLLABLE THAA • … • ጧ ↔ $ጠ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE THWA • … • ጫ ↔ $ጨ $ራብዕ ; # ETHIOPIC SYLLABLE CHAA • … • ጯ ↔ $ጨ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE CHWA • … • ጳ ↔ $ጰ $ራብዕ ; # ETHIOPIC SYLLABLE PHAA • … • ጷ ↔ $ጰ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE PHWA • … • ጻ ↔ $ጸ $ራብዕ ; # ETHIOPIC SYLLABLE TSAA • … • ጿ ↔ $ጸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE TSWA • … • ፃ ↔ $ፀ $ራብዕ ; # ETHIOPIC SYLLABLE TZAA • … • ፋ ↔ $ፈ $ራብዕ ; # ETHIOPIC SYLLABLE FAA • … • ፏ ↔ $ፈ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE FWA • … • ፓ ↔ $ፐ $ራብዕ ; # ETHIOPIC SYLLABLE PAA • … • ፗ ↔ $ፐ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE PWA • …
 Supplemental	Transform	am_Ethi↔︎d0_Morse	tRule	…	… • $ራብዕ = ' .- ' ; • … • $ዘመደ_ራብዕ = $ካዕብ  $ወ $ራብዕ ; • … • ሃ ↔ $ሀ $ራብዕ ; # ETHIOPIC SYLLABLE HAA • … • ላ ↔ $ለ $ራብዕ ; # ETHIOPIC SYLLABLE LAA • … • ሏ ↔ $ለ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE LWA • … • ማ ↔ $መ $ራብዕ ; # ETHIOPIC SYLLABLE MAA • … • ሟ ↔ $መ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE MWA • … • ራ ↔ $ረ $ራብዕ ; # ETHIOPIC SYLLABLE RAA • … • ሯ ↔ $ረ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE RWA • … • ሳ ↔ $ሰ $ራብዕ ; # ETHIOPIC SYLLABLE SAA • … • ሷ ↔ $ሰ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE SWA • … • ሻ ↔ $ሸ $ራብዕ ; # ETHIOPIC SYLLABLE SHAA • … • ሿ ↔ $ሸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE SHWA • … • ቃ ↔ $ቀ $ራብዕ ; # ETHIOPIC SYLLABLE QAA • … • ቋ ↔ $ቀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE QWAA • … • ባ ↔ $በ $ራብዕ ; # ETHIOPIC SYLLABLE BAA • … • ቧ ↔ $በ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE BWA • … • ቫ ↔ $ቨ $ራብዕ ; # ETHIOPIC SYLLABLE VAA • … • ቯ ↔ $ቨ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE VWA • … • ታ ↔ $ተ $ራብዕ ; # ETHIOPIC SYLLABLE TAA • … • ቷ ↔ $ተ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE TWA • … • ቻ ↔ $ቸ $ራብዕ ; # ETHIOPIC SYLLABLE CAA • … • ቿ ↔ $ቸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE CWA • … • ኋ ↔ $ሀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE XWAA • … • ና ↔ $ነ $ራብዕ ; # ETHIOPIC SYLLABLE NAA • … • ኗ ↔ $ነ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE NWA • … • ኛ ↔ $ኘ $ራብዕ ; # ETHIOPIC SYLLABLE NYAA • … • ኟ ↔ $ኘ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE NYWA • … • ኣ ↔ $አ $ራብዕ ; # ETHIOPIC SYLLABLE GLOTTAL AA • … • ካ ↔ $ከ $ራብዕ ; # ETHIOPIC SYLLABLE KAA • … • ኳ ↔ $ከ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE KWAA • … • ዋ ↔ $ወ $ራብዕ ; # ETHIOPIC SYLLABLE WAA • … • ዛ ↔ $ዘ $ራብዕ ; # ETHIOPIC SYLLABLE ZAA • … • ዟ ↔ $ዘ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE ZWA • … • ዣ ↔ $ዠ $ራብዕ ; # ETHIOPIC SYLLABLE ZHAA • … • ዧ ↔ $ዠ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE ZHWA • … • ያ ↔ $የ $ራብዕ ; # ETHIOPIC SYLLABLE YAA • … • ዳ ↔ $ደ $ራብዕ ; # ETHIOPIC SYLLABLE DAA • … • ዷ ↔ $ደ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE DWA • … • ጃ ↔ $ጀ $ራብዕ ; # ETHIOPIC SYLLABLE JAA • … • ጇ ↔ $ጀ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE JWA • … • ጋ ↔ $ገ $ራብዕ ; # ETHIOPIC SYLLABLE GAA • … • ጓ ↔ $ገ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE GWAA • … • ጣ ↔ $ጠ $ራብዕ ; # ETHIOPIC SYLLABLE THAA • … • ጧ ↔ $ጠ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE THWA • … • ጫ ↔ $ጨ $ራብዕ ; # ETHIOPIC SYLLABLE CHAA • … • ጯ ↔ $ጨ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE CHWA • … • ጳ ↔ $ጰ $ራብዕ ; # ETHIOPIC SYLLABLE PHAA • … • ጷ ↔ $ጰ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE PHWA • … • ጻ ↔ $ጸ $ራብዕ ; # ETHIOPIC SYLLABLE TSAA • … • ጿ ↔ $ጸ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE TSWA • … • ፋ ↔ $ፈ $ራብዕ ; # ETHIOPIC SYLLABLE FAA • … • ፏ ↔ $ፈ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE FWA • … • ፓ ↔ $ፐ $ራብዕ ; # ETHIOPIC SYLLABLE PAA • … • ፗ ↔ $ፐ $ዘመደ_ራብዕ ; # ETHIOPIC SYLLABLE PWA • …
 Supplemental	Transform	Cyrl↔︎Latn	tRule	…	… • $beforeLower = $ignoreForCase * $lower ; • … • $ignoreForCase = [‧[:Mn:][:Me:]] ; • $lower = [[:Latin:][:Cyrillic:] & [:Ll:]]; • … • :: ( [‧ˌ̈A-Za-zÀ-ÏÑ-ÖÙ-Ýà-ïñ-öù-ýÿ-ĥĨ-İĴ-ķĹ-ľŃ-ňŌ-őŔ-ťŨ-žƏƠ-ơƯ-ưǍ-ǜǞ-ǣǦ-ǰǴ-ǵǸ-țȞ-ȟȦ-ȳəʹ-ʺ̀-̂̆-̦̱̇̌̀-́̈́ʹ΅-ΆΈ-ΊΌΎ-ΐά-ΰό-ώϓЀЃЌ-ЎЙйѐѓќ-ўӁ-ӂӐ-ӑӖ-ӗḀ-ẙẛẠ-ỹἂ-ἅἊ-Ἅἒ-ἕἚ-Ἕἢ-ἥἪ-Ἥἲ-ἵἺ-Ἵὂ-ὅὊ-Ὅὒ-ὕὛὝὢ-ὥὪ-Ὥὰ-ώᾂ-ᾅᾊ-ᾍᾒ-ᾕᾚ-ᾝᾢ-ᾥᾪ-ᾭᾰᾲᾴᾸᾺ-ΆῂῄῈ-Ή῍-῎ῐῒ-ΐῘῚ-Ί῝-῞ῠῢ-ΰῨῪ-Ύ῭-΅ῲῴῸ-ΏK-Å] ) ; • … • [Kk] { } [Һһ] → ‧ ; • … • Х } $beforeLower ↔ Kh ; • Х ↔ KH; # CYRILLIC CAPITAL LETTER HA • … • х ↔ kh ; # CYRILLIC SMALL LETTER HA • … • ← ‧ ;
+Supplemental	Transform	fa→fa_FONIPA	tRule	…	‫… • $BOUNDARY {او} → uː; • $BOUNDARY {اُو} → o; • … • $IPA_CONSONANT {\u0652 ی} $VOWEL → j; • $IPA_CONSONANT {\u0652 یو} → juː; • … • $IPA_CONSONANT {وی} $VOWEL → uːj; • $IPA_CONSONANT {ی} $VOWEL → iːj; • $IPA_CONSONANT\u0651 {و} → uː; # shadda after a consonant • … • ([ َ ِ  ُ])ّ → ّ | $1; • … • [^ːeoæ] {هٔ} $BOUNDARY → eje; • … • [e] {هٔ} $BOUNDARY → je; • … • { َ ه} $BOUNDARY → æ; • { ُو} $VOWEL → ov; • … • {و} ه $BOUNDARY → v; • {و} هٔ $BOUNDARY → v; • … • {یو} ه $BOUNDARY → iːv; • {یو} هٔ $BOUNDARY → iːv; • ء → ʔ; • … • ا َ ٔ → ʔæ; # Needed because NFD reorders fatha before hamza • ا ٔ → ʔ; • … • او → ɒːv; • … • خوا → χɒː; • خوی → χiː; • … • ع → ʔ; • … • ه ِ ّ → hhe; # Needed because NFD moves kasra before shadda • … • هِ → he; • و ٔ → ʔ; • وّ → vv; • … • َوْ → av; • … • ُ و ٔ → oʔ; • … • ُو → o; • … • ِی → ej; • … • ی ِ ٔ → ʔe; # Needed because NFD reorders kasra before hamza • ی ْ ٔ → ʔ; # Needed because NFD reorders sukun before hamza • ی ْ → j; • ی ٔ → ʔ; • … • یو → juː; • یوْ → iːv; • …‬
 Supplemental	Transform	gz_Ethi↔︎Sarb	tRule	…	‫… • ::Null ; • … • 𐩿𐩿 → ;‬
 Supplemental	Transform	Hani→Latn	tRule	…	… • [⺓㙘䌁䙅䛂䳩䶸吆喓夭妖幺枖楆殀祅腰葽訞邀鴁𠕻𠣑𡆩𡝩𡢹𡣠𢆷𢆽𣨘𥹱𦔷𧍔𧷋𨓳𩑗𩜸𫍚𬘱𮭢]→yāo; • … • [⺺⺻㚜㠨㤢㥔㦽㧒㽣䁌䂊䈅䉛䋖䋭䍞䖇䘘䘱䘻䛕䜡䞝䢖䢩䤋䨒䫻䮇䮙䴁䵥俼儥喅喐喩喻噊圫域堉妪媀嫗寓峪嶎庽彧御忬悆惐愈慾戫昱棛棜棫櫲欎欝欲毓浴淢淯滪潏澦灪焴煜燏燠爩狱獄玉琙瘉癒矞砡硲礇礖礜禦秗稢稶穥篽籞籲緎繘罭聿肀育艈芋芌茟蒮蓣蓹蕷薁蜟蜮袬裕誉諭譽谕豫軉輍轝逳遇遹郁醧鈺銉鋊錥鐭钰閾阈霱預预飫饇饫馭驈驭鬰鬱鬻魊鱊鳿鴥鴧鴪鵒鷸鸒鹆鹬龥𠀛𠊏𠏚𠕦𠫣𠽵𡇺𡈨𡋬𡒃𡒊𡔴𡨣𡨿𡬊𡬞𡿥𡿯𢌻𢒰𢔥𢔬𢔴𢖡𢛨𢡎𢯮𢺴𣋉𣍛𣕃𣝑𣡉𣣎𣩺𤀝𤞞𤳕𤸒𥆉𥉑𥎐𥘄𥙿𥝍𥷞𥸤𥸪𥹔𦈸𦋢𦎘𦏜𦒑𦡭𦦩𦱀𦱂𧉣𧐄𧑐𧗪𧫊𧶠𧼫𧿷𨄯𨉗𨗝𨞓𨩬𨪎𨮔𩈕𩊇𩋉𩋤𩎹𩏟𩏴𩘤𩘳𩘻𩚄𩛪𩛭𩝗𩟑𩰪𩱌𩱱𩲾𪁀𪂉𪂵𪋉𪋮𪑆𪑌𪓊𫓾𫗇𫚪𫛣𬛼𬪧𬰸𬱳𬲆𰂏𰬟𰬻𰾆𱃲𱅫𱉍𱊭]→yù; • … • [㐸㜞㟻㯠䈴䊴䑶䥅䪈䵖䵛俔倩傔儙刋堑塹壍嬱嵌悓慊棈椠槧欠歉皘篏篟綪縴芡茜蒨蔳輤鰜𢂺𢃘𣢖𣹥𧚫𧮽𨰂𬘬𰊢𰌆𰺉]→qiàn; • … • [㔾㰹㲔㷿㸝㺤㾾㿌䂅䄳䆎䉳䊱䩂䯭䯹䵌仙仚佡僊僲先嘕奾嬐屳廯忺憸掀攕暹杴枮氙珗祆秈籼繊纎纖纤苮莶薟褼襳跹蹮躚酰銛鍁铦锨韯韱馦鮮鱻鲜鶱𠏓𠏡𠫄𢒆𢕖𢖎𢫿𢹚𣑹𣔙𣞘𣮾𣰷𤈷𥑻𥟕𥬍𦒜𦧐𦸊𧫹𧱀𧸂𨁅𨇤𨚾𩈖𪄏𪄷𪫺𫏨𫰰𬸣𰬮𱈜]→xiān; • … • [㕡㗿㥺㪃㪉㭱㮝㮫㹇㿥䃒䅂䒩䕣䞦䢔䫘䮤䶅何劾合咊和哬啝姀峆惒敆曷柇核楁毼河涸渮澕熆狢皬盇盉盍盒礉禾秴篕籺粭紇翮荷菏萂蚵螛覈訸詥貈輅郃鉌鑉闔阂阖鞨頜颌饸魺鲄鶡鹖麧齕龁龢𠘢𠚔𠧕𠰓𠳇𠶹𠻙𡇞𡇶𢄍𣏷𣒗𣲲𣿌𤈧𤖱𥝖𥝸𥞄𥞍𥟃𥻉𥽶𦃔𦇸𦒏𦛘𦛜𦳬𦼵𧇎𧇮𧊬𧝳𧪞𧭳𧮵𨋟𨍇𨜱𨜴𨨛𨴢𩅢𩌡𩩲𪈊𪘹𪡛𫓼𫠁𬌗𬤒𰇡𰵝𰵣𰽬𱋇]→hé; • … • [㖣䞬䟝綉透𣛾𧺢𨔙𰬩]→tòu; • … • [㖵㗆㠷㦴㭘㵧㷴䈓䐙䗘䘁䛿䨣䪂䪺䫦佮匌呄嗝塥愅挌搿敋格槅櫊滆獦膈臵茖葛蛒裓觡諽輵轕镉閣閤阁隔革鞈鞷韐韚騔骼鬲鮯𠲱𠹓𢆜𢓜𢡍𢧧𢩓𢯹𢼛𣭝𤠇𤩲𥉅𥢸𥴩𥺊𦑜𧈌𧈑𧈖𧊧𧿩𨍮𨏚𨏴𨐥𨞛𨼣𩎎𩢛𩨀𩹺𩹿𩼙𪄎𪌣𫚗𫠅𬤑𬨍𬮤𮝺𱂆𱋓]→gé; • … • [㗜嗅岫峀溴珛琇璓秀繍繡绣螑袖褎褏銹鏥鏽锈齅𢓵𤚯𧙏𪁮𫔊]→xiù; • … • [㗽䊑䐟䖮享亯响想晑曏蚃蠁銄響飨餉饗饟饷鮝鯗鱶鲞𠸮𢞡𤍀𥊾𥿧𦕺𩝾𩞥𫗵𬁠]→xiǎng; • … • [㘌㜘㞫㠪㨿㩀㬬䀠䈮䛯䣰䱟䵕䶙乬俱倨倶具冣剧劇勮句埧埾壉姖寠屦屨岠巨巪怇怐怚惧愳懅懼拒拠据據昛歫洰澽炬烥犋秬窭窶簴粔耟聚苣虡蚷袓詎讵豦貗跙距踞躆遽邭醵鉅鋸鐻钜锯颶飓駏鮔𠉧𠙆𠚵𡒍𡥶𢚆𣍇𣶝𤔋𤖵𤢓𤷢𥂃𥉁𥬙𥲜𥴪𦊐𦗻𦟳𦼈𧂜𧝲𧣒𧣻𧲋𧸧𨝮𩉸𩜃𩧒𩰤𩴘𩿝𪀏𪁥𪧘𫎌𮣷𱅃𱈀]→jù; • … • [㡙䚜䫾䮠偪屄楅榌毴螕豍逼鎞鰏鲾鵖𢟵𢡅𣚡𤝸𥏠𧤃𨲋𨻼𩧿𩭧𫔇𫠈𫵘𱉝]→bī; • … • [㢈㢑㿗䀃䅪尵弚穨蘈蹪隤頹頺頽颓魋𡷜𢉭𢊮𢟴𤗴𤸉𤻊𥢢𥶐𧝋𧮓𨆨𨗞𨘃𨽟𩓬𩘺𩙬𪨇𫵒𬓼𬤱𬯎𰲁𰸞]→tuí; • … • [㪽㮦䂹䅴䈗䖛䞆䞽䣔䵀乺唢嗩惢所暛溑琐琑瑣璅索褨鎈鎍鎖鎻鏁锁𠋲𠝿𠞯𠩄𡩡𡱳𢚭𢱡𢱢𤸴𤺫𥔭𥰼𦅊𦵫𧎫𧎳𧛻𧴪𧴲𨻈𨻨𩋝𩌆𩌈𩘝𩙭𩪈𩮛𩹳𪍔𪍟𪍨𫔅𫟿𫠦𫦁𫼶𬭲𭕆]→suǒ; • … • [㸯䈖䌀䐦匼嗑嵙搕柯棵榼樖牁犐珂疴瞌砢磕礚科稞窠胢苛萪薖蝌趷軻轲醘鈳錒钶顆颏颗髁𠏀𠲙𡸡𡻘𢈈𢩘𣧤𤖇𤰙𥃕𥕤𥝹𥠁𥧇𧎗𧨵𧵛𧿫𨍰𨏿𨢸𩏭𩜭𪍎𪽇𫐔𭗡𮡈𰰾]→kē; • … • [䕹䞙䨿䪞偺喒囋囐杂沯砸磼襍雑雜雥韴𡁕𢶍𢹼𢽜𣴖𣸐𤄔𤠀𥷩𧬩𧾁𩇺𪚇𰈯𰉄𰓟𰗣𰰶]→zá; • … • [唕唣喿噪慥梍灶煰燥皁皂竃竈簉艁譟趮躁造𠴵𡌣𡨗𢲵𢵥𣴢𤍜𤟀𥖨𦯑𨒽𪣝𬤨𰞷]→zào; • …
+Supplemental	Transform	Hira↔︎Kana	tRule	…	$xa = [ • $xe = [ • $xi = [ • $xo = [ • $xu = [ • … • ぁ あ か が さ ざ • … • ぃ い き ぎ し じ • … • ぅ う く ぐ す ず • … • ぇ え け げ せ ぜ • … • ぉ お こ ご そ ぞ • … • た だ な は ば ぱ • … • ち ぢ に ひ び ぴ • … • っ つ づ ぬ ふ ぶ • … • て で ね へ べ ぺ • … • と ど の ほ ぼ ぽ • … • ぷ む ゅ ゆ る ゔ • … • ま ゃ や ら ゎ わ • … • み り ゐ • … • め れ ゑ • … • も ょ よ ろ を • …
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	$wordBoundary = [^[:L:][:M:][:N:]] ;	▷removed◁
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	$wordBoundary{አ → $አ ; # ETHIOPIC SYLLABLE GLOTTAL A	▷removed◁
 Supplemental	Transform	byn_Ethi→byn_Latn/Xaleget	tRule	$wordBoundary{ኡ → $ኡ ; # ETHIOPIC SYLLABLE GLOTTAL U	▷removed◁

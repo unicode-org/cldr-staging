@@ -80,7 +80,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='radioactivity' href='#radioactivity'>radioactivity</a></td>
 	<td class='source'>becquerel = per-second</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='becquerel' href='#becquerel'>becquerel</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -96,7 +96,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='luminous-intensity' href='#luminous-intensity'>luminous-intensity</a></td>
 	<td class='source'>candela</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='candela' href='#candela'>candela</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -112,7 +112,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='illuminance' href='#illuminance'>illuminance</a></td>
 	<td class='source'>lux = candela-per-square-meter</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='lux' href='#lux'>lux</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -128,7 +128,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='luminous-flux' href='#luminous-flux'>luminous-flux</a></td>
 	<td class='source'>lumen = candela-square-meter-per-square-meter</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='lumen' href='#lumen'>lumen</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -144,25 +144,26 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='14'><a name='mass' href='#mass'>mass</a></td>
 	<td class='source' rowSpan='14'>kilogram</td>
-	<td class='source'>metric</td>
-	<td class='source'><a name='carat' href='#carat'>carat</a></td>
-	<td class='target' style='text-align:right'>1 / 5,000</td>
-	<td class='target' style='text-align:right'>0.0002</td>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='tonne' href='#tonne'>tonne</a></td>
+	<td class='target' style='text-align:right'>1,000</td>
+	<td class='target' style='text-align:right'>1000</td>
 	<td class='target' style='text-align:right' rowSpan='14'></td></tr>
   <tr>
-	<td class='source' rowSpan='2'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='gram' href='#gram'>gram</a></td>
 	<td class='target' style='text-align:right'>1 / 1,000</td>
 	<td class='target' style='text-align:right'>0.001</td></tr>
   <tr>
+	<td class='source'>si, metric</td>
 	<td class='source'><a name='kilogram' href='#kilogram'>kilogram</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
-	<td class='source'>metric</td>
-	<td class='source'><a name='tonne' href='#tonne'>tonne</a></td>
-	<td class='target' style='text-align:right'>1,000</td>
-	<td class='target' style='text-align:right'>1000</td></tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='carat' href='#carat'>carat</a></td>
+	<td class='target' style='text-align:right'>1 / 5,000</td>
+	<td class='target' style='text-align:right'>0.0002</td></tr>
   <tr>
 	<td class='source' rowSpan='4'>ussystem, uksystem</td>
 	<td class='source'><a name='grain' href='#grain'>grain</a></td>
@@ -200,7 +201,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>3 / 8,000</td>
 	<td class='target' style='text-align:right'>0.000375</td></tr>
   <tr>
-	<td class='source' rowSpan='2'>other</td>
+	<td class='source' rowSpan='2'>astronomical</td>
 	<td class='source'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td>
 	<td class='target' style='text-align:right'>5.972 × 10ˆ24</td>
 	<td class='target' style='text-align:right'>5972200000000000000000000</td></tr>
@@ -219,25 +220,26 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='4'><a name='pressure' href='#pressure'>pressure</a></td>
 	<td class='source' rowSpan='4'>pascal = kilogram-per-meter-square-second</td>
-	<td class='source'>si, metric</td>
-	<td class='source'><a name='pascal' href='#pascal'>pascal</a></td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right' rowSpan='4'></td></tr>
-  <tr>
-	<td class='source'>metric</td>
+	<td class='source'>si_acceptable, metric, prefixable</td>
 	<td class='source'><a name='bar' href='#bar'>bar</a></td>
 	<td class='target' style='text-align:right'>100,000</td>
-	<td class='target' style='text-align:right'>100000</td></tr>
+	<td class='target' style='text-align:right'>100000</td>
+	<td class='target' style='text-align:right' rowSpan='4'></td></tr>
   <tr>
-	<td class='source' rowSpan='2'>other</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='pascal' href='#pascal'>pascal</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source'>ussystem</td>
+	<td class='source'><a name='gasoline-equivalent' href='#gasoline-equivalent'>gasoline-equivalent</a></td>
+	<td class='target' style='text-align:right'>~32.05 × 10ˆ9</td>
+	<td class='target' style='text-align:right'>722250000000000000 / 22532213</td></tr>
+  <tr>
+	<td class='source'>astronomical</td>
 	<td class='source'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td>
 	<td class='target' style='text-align:right'>101,325</td>
 	<td class='target' style='text-align:right'>101325</td></tr>
-  <tr>
-	<td class='source'><a name='gasoline-equivalent' href='#gasoline-equivalent'>gasoline-equivalent</a></td>
-	<td class='target' style='text-align:right'>~32.05 × 10ˆ9</td>
-	<td class='target' style='text-align:right'>5055000000000000000 / 157725491</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
 	<th class='source'>Target</th>
@@ -265,7 +267,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='magnetic-induction' href='#magnetic-induction'>magnetic-induction</a></td>
 	<td class='source'>tesla = kilogram-per-square-second-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='tesla' href='#tesla'>tesla</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -281,13 +283,13 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='3'><a name='force' href='#force'>force</a></td>
 	<td class='source' rowSpan='3'>newton = kilogram-meter-per-square-second</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='newton' href='#newton'>newton</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right' rowSpan='3'></td></tr>
   <tr>
-	<td class='source'>metric</td>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='kilogram-force' href='#kilogram-force'>kilogram-force</a></td>
 	<td class='target' style='text-align:right'>~9.8066</td>
 	<td class='target' style='text-align:right'>9.80665</td></tr>
@@ -307,11 +309,30 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='9'><a name='energy' href='#energy'>energy</a></td>
 	<td class='source' rowSpan='9'>joule = kilogram-square-meter-per-square-second</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si_acceptable, metric_adjacent</td>
+	<td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td>
+	<td class='target' style='text-align:right'>~160.2 × 10ˆ-21</td>
+	<td class='target' style='text-align:right'>0.0000000000000000001602177</td>
+	<td class='target' style='text-align:right' rowSpan='9'></td></tr>
+  <tr>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='dalton' href='#dalton'>dalton</a></td>
+	<td class='target' style='text-align:right'>~149.2 × 10ˆ-12</td>
+	<td class='target' style='text-align:right'>0.00000000014924180856</td></tr>
+  <tr>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='joule' href='#joule'>joule</a></td>
 	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right' rowSpan='9'></td></tr>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>metric_adjacent, prefixable</td>
+	<td class='source'><a name='calorie' href='#calorie'>calorie</a></td>
+	<td class='target' style='text-align:right'>4.184</td>
+	<td class='target' style='text-align:right'>4.184</td></tr>
+  <tr>
+	<td class='source'><a name='calorie-it' href='#calorie-it'>calorie-it</a></td>
+	<td class='target' style='text-align:right'>4.1868</td>
+	<td class='target' style='text-align:right'>4.1868</td></tr>
   <tr>
 	<td class='source' rowSpan='3'>ussystem, uksystem</td>
 	<td class='source'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td>
@@ -331,23 +352,6 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>105.5 × 10ˆ6</td>
 	<td class='target' style='text-align:right'>105480400</td></tr>
   <tr>
-	<td class='source' rowSpan='4'>other</td>
-	<td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td>
-	<td class='target' style='text-align:right'>~160.2 × 10ˆ-21</td>
-	<td class='target' style='text-align:right'>0.0000000000000000001602177</td></tr>
-  <tr>
-	<td class='source'><a name='dalton' href='#dalton'>dalton</a></td>
-	<td class='target' style='text-align:right'>~149.2 × 10ˆ-12</td>
-	<td class='target' style='text-align:right'>0.00000000014924180856</td></tr>
-  <tr>
-	<td class='source'><a name='calorie' href='#calorie'>calorie</a></td>
-	<td class='target' style='text-align:right'>4.184</td>
-	<td class='target' style='text-align:right'>4.184</td></tr>
-  <tr>
-	<td class='source'><a name='calorie-it' href='#calorie-it'>calorie-it</a></td>
-	<td class='target' style='text-align:right'>4.1868</td>
-	<td class='target' style='text-align:right'>4.1868</td></tr>
-  <tr>
 	<th class='source'>Quantity</th>
 	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
@@ -358,7 +362,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='magnetic-flux' href='#magnetic-flux'>magnetic-flux</a></td>
 	<td class='source'>weber = kilogram-square-meter-per-square-second-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='weber' href='#weber'>weber</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -374,7 +378,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-inductance' href='#electric-inductance'>electric-inductance</a></td>
 	<td class='source'>henry = kilogram-square-meter-per-square-second-square-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='henry' href='#henry'>henry</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -390,7 +394,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='3'><a name='power' href='#power'>power</a></td>
 	<td class='source' rowSpan='3'>watt = kilogram-square-meter-per-cubic-second</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='watt' href='#watt'>watt</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -401,7 +405,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~745.7</td>
 	<td class='target' style='text-align:right'>745.69987158227022</td></tr>
   <tr>
-	<td class='source'>other</td>
+	<td class='source'>astronomical</td>
 	<td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td>
 	<td class='target' style='text-align:right'>382.8 × 10ˆ24</td>
 	<td class='target' style='text-align:right'>382800000000000000000000000</td></tr>
@@ -416,7 +420,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='voltage' href='#voltage'>voltage</a></td>
 	<td class='source'>volt = kilogram-square-meter-per-cubic-second-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='volt' href='#volt'>volt</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -432,7 +436,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-resistance' href='#electric-resistance'>electric-resistance</a></td>
 	<td class='source'>ohm = kilogram-square-meter-per-cubic-second-square-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='ohm' href='#ohm'>ohm</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -448,22 +452,33 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='25'><a name='length' href='#length'>length</a></td>
 	<td class='source' rowSpan='25'>meter</td>
-	<td class='source'>si, metric</td>
-	<td class='source'><a name='meter' href='#meter'>meter</a></td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
+	<td class='source'>si_acceptable, ussystem, uksystem</td>
+	<td class='source'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td>
+	<td class='target' style='text-align:right'>1,852</td>
+	<td class='target' style='text-align:right'>1852</td>
 	<td class='target' style='text-align:right' rowSpan='25'></td></tr>
   <tr>
-	<td class='source' rowSpan='2'>metric</td>
-	<td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td>
-	<td class='target' style='text-align:right'>10,000</td>
-	<td class='target' style='text-align:right'>10000</td></tr>
+	<td class='source'>si_acceptable, astronomical</td>
+	<td class='source'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td>
+	<td class='target' style='text-align:right'>149.6 × 10ˆ9</td>
+	<td class='target' style='text-align:right'>149597870700</td></tr>
   <tr>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='meter' href='#meter'>meter</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source'>metric</td>
 	<td class='source'><a name='100-kilometer' href='#100-kilometer'>100-kilometer</a></td>
 	<td class='target' style='text-align:right'>100,000</td>
 	<td class='target' style='text-align:right'>100000</td></tr>
   <tr>
-	<td class='source' rowSpan='10'>ussystem, uksystem</td>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td>
+	<td class='target' style='text-align:right'>10,000</td>
+	<td class='target' style='text-align:right'>10000</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'>ussystem, uksystem</td>
 	<td class='source'><a name='point' href='#point'>point</a></td>
 	<td class='target' style='text-align:right'>~352.8 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.000352˙7</td></tr>
@@ -500,10 +515,6 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~1,609.3</td>
 	<td class='target' style='text-align:right'>1609.344</td></tr>
   <tr>
-	<td class='source'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td>
-	<td class='target' style='text-align:right'>1,852</td>
-	<td class='target' style='text-align:right'>1852</td></tr>
-  <tr>
 	<td class='source' rowSpan='7'>jpsystem</td>
 	<td class='source'><a name='rin' href='#rin'>rin</a></td>
 	<td class='target' style='text-align:right'>~33.06 × 10ˆ-6</td>
@@ -533,7 +544,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~428.43</td>
 	<td class='target' style='text-align:right'>428.˙4297520661157024793388</td></tr>
   <tr>
-	<td class='source' rowSpan='5'>other</td>
+	<td class='source' rowSpan='3'>astronomical</td>
 	<td class='source'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td>
 	<td class='target' style='text-align:right'>6,378,100</td>
 	<td class='target' style='text-align:right'>6378100</td></tr>
@@ -542,14 +553,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>695.7 × 10ˆ6</td>
 	<td class='target' style='text-align:right'>695700000</td></tr>
   <tr>
-	<td class='source'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td>
-	<td class='target' style='text-align:right'>149.6 × 10ˆ9</td>
-	<td class='target' style='text-align:right'>149597870700</td></tr>
-  <tr>
 	<td class='source'><a name='light-year' href='#light-year'>light-year</a></td>
 	<td class='target' style='text-align:right'>9.461 × 10ˆ15</td>
 	<td class='target' style='text-align:right'>9460730472580800</td></tr>
   <tr>
+	<td class='source'>astronomical, prefixable</td>
 	<td class='source'><a name='parsec' href='#parsec'>parsec</a></td>
 	<td class='target' style='text-align:right'>~30.86 × 10ˆ15</td>
 	<td class='target' style='text-align:right'>12699352539696155673600000 / 411557987</td></tr>
@@ -564,7 +572,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='speed' href='#speed'>speed</a></td>
 	<td class='source'>meter-per-second</td>
-	<td class='source'>ussystem, uksystem</td>
+	<td class='source'>si_acceptable, ussystem, uksystem</td>
 	<td class='source'><a name='knot' href='#knot'>knot</a></td>
 	<td class='target' style='text-align:right'>~0.51444</td>
 	<td class='target' style='text-align:right'>0.51˙4</td>
@@ -580,7 +588,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='acceleration' href='#acceleration'>acceleration</a></td>
 	<td class='source'>meter-per-square-second</td>
-	<td class='source'>other</td>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='g-force' href='#g-force'>g-force</a></td>
 	<td class='target' style='text-align:right'>~9.8066</td>
 	<td class='target' style='text-align:right'>9.80665</td>
@@ -596,7 +604,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='6'><a name='area' href='#area'>area</a></td>
 	<td class='source' rowSpan='6'>square-meter</td>
-	<td class='source'>metric</td>
+	<td class='source'>si_acceptable, metric</td>
 	<td class='source'><a name='hectare' href='#hectare'>hectare</a></td>
 	<td class='target' style='text-align:right'>10,000</td>
 	<td class='target' style='text-align:right'>10000</td>
@@ -635,7 +643,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='2'><a name='ionizing-radiation' href='#ionizing-radiation'>ionizing-radiation</a></td>
 	<td class='source' rowSpan='2'>gray = square-meter-per-square-second</td>
-	<td class='source' rowSpan='2'>si, metric</td>
+	<td class='source' rowSpan='2'>si, metric, prefixable</td>
 	<td class='source'><a name='gray' href='#gray'>gray</a></td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
@@ -653,23 +661,20 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='29'><a name='volume' href='#volume'>volume</a></td>
 	<td class='source' rowSpan='29'>cubic-meter</td>
-	<td class='source' rowSpan='4'>metric</td>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='liter' href='#liter'>liter</a></td>
+	<td class='target' style='text-align:right'>1 / 1,000</td>
+	<td class='target' style='text-align:right'>0.001</td>
+	<td class='target' style='text-align:right' rowSpan='29'></td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>metric_adjacent</td>
 	<td class='source'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td>
 	<td class='target' style='text-align:right'>1 / 4,000</td>
-	<td class='target' style='text-align:right'>0.00025</td>
-	<td class='target' style='text-align:right' rowSpan='29'></td></tr>
+	<td class='target' style='text-align:right'>0.00025</td></tr>
   <tr>
 	<td class='source'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td>
 	<td class='target' style='text-align:right'>1 / 2,000</td>
 	<td class='target' style='text-align:right'>0.0005</td></tr>
-  <tr>
-	<td class='source'><a name='pint-imperial' href='#pint-imperial'>pint-imperial</a></td>
-	<td class='target' style='text-align:right'>~568.3 × 10ˆ-6</td>
-	<td class='target' style='text-align:right'>0.00056826125</td></tr>
-  <tr>
-	<td class='source'><a name='liter' href='#liter'>liter</a></td>
-	<td class='target' style='text-align:right'>1 / 1,000</td>
-	<td class='target' style='text-align:right'>0.001</td></tr>
   <tr>
 	<td class='source' rowSpan='3'>ussystem</td>
 	<td class='source'><a name='drop' href='#drop'>drop</a></td>
@@ -707,7 +712,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~28.41 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.0000284130625</td></tr>
   <tr>
-	<td class='source' rowSpan='5'>ussystem</td>
+	<td class='source' rowSpan='4'>ussystem</td>
 	<td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td>
 	<td class='target' style='text-align:right'>~29.57 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.0000295735295625</td></tr>
@@ -724,6 +729,12 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~473.2 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.000473176473</td></tr>
   <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='pint-imperial' href='#pint-imperial'>pint-imperial</a></td>
+	<td class='target' style='text-align:right'>~568.3 × 10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00056826125</td></tr>
+  <tr>
+	<td class='source'>ussystem</td>
 	<td class='source'><a name='quart' href='#quart'>quart</a></td>
 	<td class='target' style='text-align:right'>~946.4 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.000946352946</td></tr>
@@ -791,16 +802,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='8'><a name='duration' href='#duration'>duration</a></td>
 	<td class='source' rowSpan='8'>second</td>
-	<td class='source'>si, metric</td>
-	<td class='source'><a name='second' href='#second'>second</a></td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right' rowSpan='8'></td></tr>
-  <tr>
-	<td class='source' rowSpan='5'>metric</td>
+	<td class='source' rowSpan='3'>si_acceptable, metric_adjacent, prefixable</td>
 	<td class='source'><a name='minute' href='#minute'>minute</a></td>
 	<td class='target' style='text-align:right'>60</td>
-	<td class='target' style='text-align:right'>60</td></tr>
+	<td class='target' style='text-align:right'>60</td>
+	<td class='target' style='text-align:right' rowSpan='8'></td></tr>
   <tr>
 	<td class='source'><a name='hour' href='#hour'>hour</a></td>
 	<td class='target' style='text-align:right'>3,600</td>
@@ -810,15 +816,22 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>86,400</td>
 	<td class='target' style='text-align:right'>86400</td></tr>
   <tr>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='second' href='#second'>second</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='week' href='#week'>week</a></td>
 	<td class='target' style='text-align:right'>604,800</td>
 	<td class='target' style='text-align:right'>604800</td></tr>
   <tr>
+	<td class='source'>ussystem, uksystem</td>
 	<td class='source'><a name='fortnight' href='#fortnight'>fortnight</a></td>
 	<td class='target' style='text-align:right'>1,209,600</td>
 	<td class='target' style='text-align:right'>1209600</td></tr>
   <tr>
-	<td class='source' rowSpan='2'>other</td>
+	<td class='source' rowSpan='2'>person_age</td>
 	<td class='source'><a name='day-person' href='#day-person'>day-person</a></td>
 	<td class='target' style='text-align:right'>86,400</td>
 	<td class='target' style='text-align:right'>86400</td></tr>
@@ -837,7 +850,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-charge' href='#electric-charge'>electric-charge</a></td>
 	<td class='source'>coulomb = second-ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='coulomb' href='#coulomb'>coulomb</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -853,7 +866,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-conductance' href='#electric-conductance'>electric-conductance</a></td>
 	<td class='source'>siemens = cubic-second-square-ampere-per-kilogram-square-meter</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='siemens' href='#siemens'>siemens</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -869,7 +882,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-capacitance' href='#electric-capacitance'>electric-capacitance</a></td>
 	<td class='source'>farad = pow4-second-square-ampere-per-kilogram-square-meter</td>
-	<td class='source'>other</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='farad' href='#farad'>farad</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -885,7 +898,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='7'><a name='year-duration' href='#year-duration'>year-duration</a></td>
 	<td class='source' rowSpan='7'>year</td>
-	<td class='source' rowSpan='5'>metric</td>
+	<td class='source' rowSpan='2'>metric_adjacent</td>
 	<td class='source'><a name='month' href='#month'>month</a></td>
 	<td class='target' style='text-align:right'>1 / 12</td>
 	<td class='target' style='text-align:right'>0.08˙3</td>
@@ -895,10 +908,12 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1 / 4</td>
 	<td class='target' style='text-align:right'>0.25</td></tr>
   <tr>
+	<td class='source'>metric_adjacent, prefixable</td>
 	<td class='source'><a name='year' href='#year'>year</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
+	<td class='source' rowSpan='2'>metric_adjacent</td>
 	<td class='source'><a name='decade' href='#decade'>decade</a></td>
 	<td class='target' style='text-align:right'>10</td>
 	<td class='target' style='text-align:right'>10</td></tr>
@@ -907,7 +922,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>100</td>
 	<td class='target' style='text-align:right'>100</td></tr>
   <tr>
-	<td class='source' rowSpan='2'>other</td>
+	<td class='source' rowSpan='2'>person_age</td>
 	<td class='source'><a name='month-person' href='#month-person'>month-person</a></td>
 	<td class='target' style='text-align:right'>1 / 12</td>
 	<td class='target' style='text-align:right'>0.08˙3</td></tr>
@@ -926,7 +941,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='electric-current' href='#electric-current'>electric-current</a></td>
 	<td class='source'>ampere</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='ampere' href='#ampere'>ampere</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -942,13 +957,13 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='4'><a name='temperature' href='#temperature'>temperature</a></td>
 	<td class='source' rowSpan='4'>kelvin</td>
-	<td class='source'>metric</td>
+	<td class='source'>si, metric</td>
 	<td class='source'><a name='celsius' href='#celsius'>celsius</a></td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
 	<td class='target' style='text-align:right'>273.15</td></tr>
   <tr>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td>
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
@@ -971,7 +986,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='5'><a name='angle' href='#angle'>angle</a></td>
 	<td class='source' rowSpan='5'>revolution</td>
-	<td class='source' rowSpan='3'>metric</td>
+	<td class='source' rowSpan='3'>si_acceptable, metric_adjacent</td>
 	<td class='source'><a name='arc-second' href='#arc-second'>arc-second</a></td>
 	<td class='target' style='text-align:right'>~771.6 × 10ˆ-9</td>
 	<td class='target' style='text-align:right'>0.0000007˙716049382</td>
@@ -990,7 +1005,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>~0.15915</td>
 	<td class='target' style='text-align:right'>65501488 / 411557987</td></tr>
   <tr>
-	<td class='source'>metric</td>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='revolution' href='#revolution'>revolution</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td></tr>
@@ -1005,7 +1020,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='frequency' href='#frequency'>frequency</a></td>
 	<td class='source'>hertz = revolution-per-second</td>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='hertz' href='#hertz'>hertz</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -1020,11 +1035,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='solid-angle' href='#solid-angle'>solid-angle</a></td>
-	<td class='source'>steradian = square-revolution</td>
-	<td class='source'>other</td>
+	<td class='source'>square-revolution</td>
+	<td class='source'>si, metric</td>
 	<td class='source'><a name='steradian' href='#steradian'>steradian</a></td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>~0.02533</td>
+	<td class='target' style='text-align:right'>4290444930214144 / 169379976663492169</td>
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
@@ -1037,16 +1052,16 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='2'><a name='substance-amount' href='#substance-amount'>substance-amount</a></td>
 	<td class='source' rowSpan='2'>item</td>
-	<td class='source'>metric</td>
-	<td class='source'><a name='item' href='#item'>item</a></td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right'>1</td>
-	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
-  <tr>
-	<td class='source'>si, metric</td>
+	<td class='source'>si, metric, prefixable</td>
 	<td class='source'><a name='mole' href='#mole'>mole</a></td>
 	<td class='target' style='text-align:right'>602.2 × 10ˆ21</td>
-	<td class='target' style='text-align:right'>602214076000000000000000</td></tr>
+	<td class='target' style='text-align:right'>602214076000000000000000</td>
+	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='item' href='#item'>item</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
 	<th class='source'>Target</th>
@@ -1058,7 +1073,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='concentration-mass' href='#concentration-mass'>concentration-mass</a></td>
 	<td class='source'>item-per-kilogram</td>
-	<td class='source'>other</td>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='ofglucose' href='#ofglucose'>ofglucose</a></td>
 	<td class='target' style='text-align:right'>~3.343 × 10ˆ24</td>
 	<td class='target' style='text-align:right'>6022140760000000000000000000000 / 1801557</td>
@@ -1074,7 +1089,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='catalytic-activity' href='#catalytic-activity'>catalytic-activity</a></td>
 	<td class='source'>item-per-second</td>
-	<td class='source'>other</td>
+	<td class='source'>si, metric</td>
 	<td class='source'><a name='katal' href='#katal'>katal</a></td>
 	<td class='target' style='text-align:right'>602.2 × 10ˆ21</td>
 	<td class='target' style='text-align:right'>602214076000000000000000</td>
@@ -1090,7 +1105,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='6'><a name='portion' href='#portion'>portion</a></td>
 	<td class='source' rowSpan='6'>portion</td>
-	<td class='source' rowSpan='4'>metric</td>
+	<td class='source' rowSpan='6'>metric_adjacent</td>
 	<td class='source'><a name='permillion' href='#permillion'>permillion</a></td>
 	<td class='target' style='text-align:right'>1 × 10ˆ-6</td>
 	<td class='target' style='text-align:right'>0.000001</td>
@@ -1108,7 +1123,6 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1 / 100</td>
 	<td class='target' style='text-align:right'>0.01</td></tr>
   <tr>
-	<td class='source' rowSpan='2'>other</td>
 	<td class='source'><a name='karat' href='#karat'>karat</a></td>
 	<td class='target' style='text-align:right'>1 / 24</td>
 	<td class='target' style='text-align:right'>0.041˙6</td></tr>
@@ -1127,7 +1141,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='2'><a name='digital' href='#digital'>digital</a></td>
 	<td class='source' rowSpan='2'>bit</td>
-	<td class='source' rowSpan='2'>metric</td>
+	<td class='source' rowSpan='2'>metric, prefixable</td>
 	<td class='source'><a name='bit' href='#bit'>bit</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
@@ -1147,14 +1161,14 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source' rowSpan='2'><a name='graphics' href='#graphics'>graphics</a></td>
 	<td class='source' rowSpan='2'>dot = pixel</td>
-	<td class='source'>metric</td>
-	<td class='source'><a name='pixel' href='#pixel'>pixel</a></td>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='dot' href='#dot'>dot</a></td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
 	<td class='target' style='text-align:right' rowSpan='2'>1</td>
 	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
   <tr>
-	<td class='source'>other</td>
-	<td class='source'><a name='dot' href='#dot'>dot</a></td></tr>
+	<td class='source'>metric_adjacent, prefixable</td>
+	<td class='source'><a name='pixel' href='#pixel'>pixel</a></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
 	<th class='source'>Target</th>
@@ -1166,7 +1180,7 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
   <tr>
 	<td class='source'><a name='typewidth' href='#typewidth'>typewidth</a></td>
 	<td class='source'>em</td>
-	<td class='source'>metric</td>
+	<td class='source'>metric_adjacent</td>
 	<td class='source'><a name='em' href='#em'>em</a></td>
 	<td class='target' style='text-align:right'>1</td>
 	<td class='target' style='text-align:right'>1</td>
