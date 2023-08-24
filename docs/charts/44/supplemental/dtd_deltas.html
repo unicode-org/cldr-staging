@@ -266,7 +266,7 @@
 	<td class='target'>+unitIdComponent</td>
 	<td class='target'><div>+type §d ⟪literal/prefix, suffix, power, and, per⟫</div><div>+values §v ⟪set/regex/[a-z]+[0-9]*⟫</div></td></tr>
   <tr>
-	<td class='source' rowSpan='15'><a name='40.0' href='#40.0'>40.0</a></td>
+	<td class='source' rowSpan='8'><a name='40.0' href='#40.0'>40.0</a></td>
 	<td class='source' rowSpan='5'>ldml</td>
 	<td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td>
 	<td class='target'>+datetimeSkeleton</td>
@@ -300,34 +300,6 @@
 	<td class='target'>​/numberingSystems/</td>
 	<td class='target'>numberingSystem</td>
 	<td class='target'><div>digits ⟪unicodeset/[\p{Nd}[\u3007\u4E00\u4E03\u4E09\u4E5D\u4E8C\u4E94\u516B\u516D\u56DB][\U0001E140-\U0001E149][\U0001E2F0-\U0001E2F9]]⟫➠⟪unicodeset/[\p{Nd}[\u3007\u4E00\u4E03\u4E09\u4E5D\u4E8C\u4E94\u516B\u516D\u56DB][\U00016AC0-\U00016AC9]]⟫</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='6'>keyboard</td>
-	<td class='target' rowSpan='2'>/</td>
-	<td class='target'>+info</td>
-	<td class='target'><div>+author §v </div><div>+normalization §v ⟪literal/NFC, NFD, other⟫</div><div>+layout §v </div><div>+indicator §v </div></td></tr>
-  <tr>
-	<td class='target'>transforms</td>
-	<td class='target'><div>type ⟪literal/simple⟫➠⟪literal/simple, final⟫</div></td></tr>
-  <tr>
-	<td class='target' rowSpan='2'>​/keyMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>iso ⟪regex/[A-E](0[0-9]|1[0-3])⟫➠⟪regex/[A-Z][0-9][0-9]⟫</div></td></tr>
-  <tr>
-	<td class='target'>flicks</td>
-	<td class='target'><div>iso ➠⟪regex/[A-Z][0-9][0-9]⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/layer/</td>
-	<td class='target'>vkeys</td>
-	<td class='target'><div>type ➠⟪literal/android, chromeos, osx, und, windows⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/layer​/vkeys/</td>
-	<td class='target'>vkey</td>
-	<td class='target'><div>iso ➠⟪regex/[A-Z][0-9][0-9]⟫</div></td></tr>
-  <tr>
-	<td class='source'>platform</td>
-	<td class='target'>​/hardwareMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>iso ⟪regex/[A-E](0[0-9]|1[0-3])⟫➠⟪regex/[A-Z][0-9][0-9]⟫</div></td></tr>
   <tr>
 	<td class='source' rowSpan='4'><a name='39.0' href='#39.0'>39.0</a></td>
 	<td class='source' rowSpan='4'>supplementalData</td>
@@ -519,7 +491,7 @@
 	<td class='target'>compoundUnit</td>
 	<td class='target'><div>type ⟪literal/per⟫➠⟪literal/per, times⟫</div></td></tr>
   <tr>
-	<td class='source' rowSpan='134'><a name='35.0' href='#35.0'>35.0</a></td>
+	<td class='source' rowSpan='125'><a name='35.0' href='#35.0'>35.0</a></td>
 	<td class='source' rowSpan='61'>ldml</td>
 	<td class='target'>​/annotations/</td>
 	<td class='target'>annotation</td>
@@ -994,42 +966,6 @@
 	<td class='target'>type</td>
 	<td class='target'><div>name ➠⟪any⟫</div><div>description ➠⟪any⟫</div><div>preferred ➠⟪bcp47/anyvalue⟫</div><div>alias ➠⟪any⟫</div><div>since ➠⟪version⟫</div></td></tr>
   <tr>
-	<td class='source' rowSpan='7'>keyboard</td>
-	<td class='target'></td>
-	<td class='target'>keyboard</td>
-	<td class='target'><div>locale ➠⟪any/TODO⟫</div></td></tr>
-  <tr>
-	<td class='target' rowSpan='3'>/</td>
-	<td class='target'>version</td>
-	<td class='target'><div>platform ➠⟪version⟫</div><div>number ➠⟪regex/\$Revision.*\$⟫</div><div>cldrVersion ➠⟪version⟫</div></td></tr>
-  <tr>
-	<td class='target'>keyMap</td>
-	<td class='target'><div>modifiers ➠⟪any/TODO⟫</div></td></tr>
-  <tr>
-	<td class='target'>transforms</td>
-	<td class='target'><div>type ➠⟪literal/simple⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/keyMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>iso ➠⟪regex/[A-E](0[0-9]|1[0-3])⟫</div><div>to ➠⟪any⟫</div><div>longPress ➠⟪any⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/names/</td>
-	<td class='target'>name</td>
-	<td class='target'><div>value ➠⟪any⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/transforms/</td>
-	<td class='target'>transform</td>
-	<td class='target'><div>from ➠⟪any⟫</div><div>to ➠⟪any⟫</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='2'>platform</td>
-	<td class='target'></td>
-	<td class='target'>platform</td>
-	<td class='target'><div>id ➠⟪literal/android, chromeos, osx, windows⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/hardwareMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>keycode ➠⟪range/0~150⟫</div><div>iso ➠⟪regex/[A-E](0[0-9]|1[0-3])⟫</div></td></tr>
-  <tr>
 	<td class='source' rowSpan='6'><a name='34.0' href='#34.0'>34.0</a></td>
 	<td class='source'>ldml</td>
 	<td class='target'>​/units​/unitLength​/coordinateUnit/</td>
@@ -1057,7 +993,7 @@
 	<td class='target'>⊖telephoneCountryCode</td>
 	<td class='target'><div>⊖code</div><div>⊖from</div><div>⊖to</div><div>⊖alt</div></td></tr>
   <tr>
-	<td class='source' rowSpan='26'><a name='33.0' href='#33.0'>33.0</a></td>
+	<td class='source' rowSpan='9'><a name='33.0' href='#33.0'>33.0</a></td>
 	<td class='source' rowSpan='4'>ldml</td>
 	<td class='target'>/</td>
 	<td class='target'>+typographicNames</td>
@@ -1091,67 +1027,6 @@
 	<td class='target'>​/metadata​/distinguishing/</td>
 	<td class='target'>⊖distinguishingItems</td>
 	<td class='target'><div>⊖exclude</div><div>⊖elements</div><div>⊖attributes</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='17'>keyboard</td>
-	<td class='target' rowSpan='6'>/</td>
-	<td class='target'>+import</td>
-	<td class='target'><div>+path §d </div></td></tr>
-  <tr>
-	<td class='target'>+displayMap</td>
-	<td class='target'> </td></tr>
-  <tr>
-	<td class='target'>+layer</td>
-	<td class='target'><div>+modifier §d </div></td></tr>
-  <tr>
-	<td class='target'>+vkeys</td>
-	<td class='target'><div>⊕</div></td></tr>
-  <tr>
-	<td class='target'>+reorders</td>
-	<td class='target'> </td></tr>
-  <tr>
-	<td class='target'>+backspaces</td>
-	<td class='target'> </td></tr>
-  <tr>
-	<td class='target'>​/backspaces/</td>
-	<td class='target'>+backspace</td>
-	<td class='target'><div>+before §d </div><div>+from §d </div><div>+after §d </div><div>+to §v </div><div>+error §v ⟨fail⟩</div></td></tr>
-  <tr>
-	<td class='target'>​/displayMap/</td>
-	<td class='target'>+display</td>
-	<td class='target'><div>+to §d </div><div>+display §v </div></td></tr>
-  <tr>
-	<td class='target' rowSpan='2'>​/keyMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>+longpress-status §d ⟨optional⟩</div><div>+multitap §v </div><div>+hint §v </div><div>+optional §d </div></td></tr>
-  <tr>
-	<td class='target'>+flicks</td>
-	<td class='target'><div>+iso §d </div></td></tr>
-  <tr>
-	<td class='target'>​/keyMap​/flicks/</td>
-	<td class='target'>+flick</td>
-	<td class='target'><div>+directions §d </div><div>+to §v </div></td></tr>
-  <tr>
-	<td class='target' rowSpan='3'>​/layer/</td>
-	<td class='target'>+row</td>
-	<td class='target'><div>+keys §d </div></td></tr>
-  <tr>
-	<td class='target'>+switch</td>
-	<td class='target'><div>+iso §d </div><div>+layer §v </div><div>+display §v </div></td></tr>
-  <tr>
-	<td class='target'>+vkeys</td>
-	<td class='target'><div>+type §d </div></td></tr>
-  <tr>
-	<td class='target'>​/layer​/vkeys/</td>
-	<td class='target'>+vkey</td>
-	<td class='target'><div>+iso §d </div><div>+vkey §v </div><div>+modifier §v </div></td></tr>
-  <tr>
-	<td class='target'>​/reorders/</td>
-	<td class='target'>+reorder</td>
-	<td class='target'><div>+before §d </div><div>+from §d </div><div>+after §d </div><div>+order §v </div><div>+tertiary §v </div><div>+tertiary_base §v </div><div>+prebase §v </div></td></tr>
-  <tr>
-	<td class='target'>​/transforms/</td>
-	<td class='target'>transform</td>
-	<td class='target'><div>+before §d </div><div>+after §d </div><div>+error §v ⟨fail⟩</div></td></tr>
   <tr>
 	<td class='source' rowSpan='3'><a name='32.0' href='#32.0'>32.0</a></td>
 	<td class='source'>ldml</td>
@@ -1344,7 +1219,7 @@
 	<td class='target'>key</td>
 	<td class='target'><div>+valueType §v ⟨single, multiple, incremental, any⟩</div></td></tr>
   <tr>
-	<td class='source' rowSpan='283'><a name='28.0' href='#28.0'>28.0</a></td>
+	<td class='source' rowSpan='277'><a name='28.0' href='#28.0'>28.0</a></td>
 	<td class='source' rowSpan='196'>ldml</td>
 	<td class='target'></td>
 	<td class='target'>ldml</td>
@@ -2306,31 +2181,6 @@
 	<td class='target'>type</td>
 	<td class='target'><div>description §d➠§v</div><div>deprecated §d➠§m︎</div><div>preferred §d➠§v</div><div>alias §d➠§v</div><div>since §d➠§m︎</div></td></tr>
   <tr>
-	<td class='source' rowSpan='5'>keyboard</td>
-	<td class='target' rowSpan='2'>/</td>
-	<td class='target'>version</td>
-	<td class='target'><div>platform §d➠§v</div><div>number §d➠§m︎</div><div>cldrVersion §d➠§m︎</div></td></tr>
-  <tr>
-	<td class='target'>settings⇣</td>
-	<td class='target'><div>fallback §d➠§v</div><div>transformFailure §d➠§v</div><div>transformPartial §d➠§v</div></td></tr>
-  <tr>
-	<td class='target'>​/keyMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>to §d➠§v</div><div>longPress §d➠§v</div><div>transform §d➠§v</div></td></tr>
-  <tr>
-	<td class='target'>​/names/</td>
-	<td class='target'>name</td>
-	<td class='target'><div>value §d➠§v</div></td></tr>
-  <tr>
-	<td class='target'>​/transforms/</td>
-	<td class='target'>transform</td>
-	<td class='target'><div>to §d➠§v</div></td></tr>
-  <tr>
-	<td class='source'>platform</td>
-	<td class='target'>​/hardwareMap/</td>
-	<td class='target'>map</td>
-	<td class='target'><div>iso §d➠§v</div></td></tr>
-  <tr>
 	<td class='source' rowSpan='5'><a name='27.0' href='#27.0'>27.0</a></td>
 	<td class='source' rowSpan='2'>ldml</td>
 	<td class='target'>/</td>
@@ -2564,7 +2414,7 @@
 	<td class='target'>+hours</td>
 	<td class='target'><div>+preferred §d </div><div>+allowed §d </div><div>+regions §d </div></td></tr>
   <tr>
-	<td class='source' rowSpan='20'><a name='22.1' href='#22.1'>22.1</a></td>
+	<td class='source' rowSpan='8'><a name='22.1' href='#22.1'>22.1</a></td>
 	<td class='source' rowSpan='3'>ldml</td>
 	<td class='target'>​/collations/</td>
 	<td class='target'>collation</td>
@@ -2599,52 +2449,6 @@
 	<td class='target'>​/keyword​/key/</td>
 	<td class='target'>type</td>
 	<td class='target'><div>+deprecated §d ⟨true, false⟩</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='9'>keyboard</td>
-	<td class='target'></td>
-	<td class='target'>+keyboard</td>
-	<td class='target'><div>+locale §d </div></td></tr>
-  <tr>
-	<td class='target' rowSpan='5'>/</td>
-	<td class='target'>+version</td>
-	<td class='target'><div>+platform §d </div><div>+number §d </div><div>+cldrVersion §d </div></td></tr>
-  <tr>
-	<td class='target'>+names</td>
-	<td class='target'> </td></tr>
-  <tr>
-	<td class='target'>+settings</td>
-	<td class='target'><div>+fallback §d ⟨omit⟩</div><div>+transformFailure §d ⟨omit⟩</div><div>+transformPartial §d ⟨hide⟩</div></td></tr>
-  <tr>
-	<td class='target'>+keyMap</td>
-	<td class='target'><div>+modifiers §d </div></td></tr>
-  <tr>
-	<td class='target'>+transforms</td>
-	<td class='target'><div>+type §d </div></td></tr>
-  <tr>
-	<td class='target'>​/keyMap/</td>
-	<td class='target'>+map</td>
-	<td class='target'><div>+iso §d </div><div>+to §d </div><div>+longPress §d </div><div>+transform §d ⟨no⟩</div></td></tr>
-  <tr>
-	<td class='target'>​/names/</td>
-	<td class='target'>+name</td>
-	<td class='target'><div>+value §d </div></td></tr>
-  <tr>
-	<td class='target'>​/transforms/</td>
-	<td class='target'>+transform</td>
-	<td class='target'><div>+from §d </div><div>+to §d </div></td></tr>
-  <tr>
-	<td class='source' rowSpan='3'>platform</td>
-	<td class='target'></td>
-	<td class='target'>+platform</td>
-	<td class='target'><div>+id §d </div></td></tr>
-  <tr>
-	<td class='target'>/</td>
-	<td class='target'>+hardwareMap</td>
-	<td class='target'> </td></tr>
-  <tr>
-	<td class='target'>​/hardwareMap/</td>
-	<td class='target'>+map</td>
-	<td class='target'><div>+keycode §d </div><div>+iso §d </div></td></tr>
   <tr>
 	<td class='source' rowSpan='26'><a name='21.0' href='#21.0'>21.0</a></td>
 	<td class='source' rowSpan='20'>ldml</td>
