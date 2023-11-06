@@ -1,0 +1,1201 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPN1D3SEJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPN1D3SEJM');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unit Conversions</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Unit Conversions</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!--
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+<!-- begin main body-->
+<p>Unit Conversions provide conversions for units, such as meter ⟹ foot, so that a source units can be converted into what is needed for localized <a href='unit_preferences.html' target='unit_preferences'>Unit Preferences</a>. There are many possible units, and additional units and conversions will be added in future releases.</p><ul><li>Each Source Unit is converted to the Target Unit by multiplying it by the Factor and adding the Offset (if any).</li><li>The unit identifiers are internal, and are to be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example. <li>Each numeric value is an exact rational. (Radians are an exception since the value of π is irrational; a rational approximation is used.)The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li><li>The Systems column indicates which systems the units are used in. For now, they just show the two ‘inch-pound’ systems.</li><li>The units are grouped and ordered by Quantity (which are based on the NIST quantities, see <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). Note that the quantities are informative.</li><li>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements.</li></ul><p><b>Warning:</b> Do not scrape this chart for production data.
+Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/testData/units/unitsTest.txt' target='common/testData/units/unitsTest.txt'>common/testData/units/unitsTest.txt</a>.</p>
+<table>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='radioactivity' href='#radioactivity'>radioactivity</a></td>
+	<td class='source'>becquerel = per-second</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='becquerel' href='#becquerel'>becquerel</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='luminous-intensity' href='#luminous-intensity'>luminous-intensity</a></td>
+	<td class='source'>candela</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='candela' href='#candela'>candela</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='illuminance' href='#illuminance'>illuminance</a></td>
+	<td class='source'>lux = candela-per-square-meter</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='lux' href='#lux'>lux</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='luminous-flux' href='#luminous-flux'>luminous-flux</a></td>
+	<td class='source'>lumen = candela-square-meter-per-square-meter</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='lumen' href='#lumen'>lumen</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='15'><a name='mass' href='#mass'>mass</a></td>
+	<td class='source' rowSpan='15'>kilogram</td>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='dalton' href='#dalton'>dalton</a></td>
+	<td class='target' style='text-align:right'>~1.6605×10ˆ-27</td>
+	<td class='target' style='text-align:right'>0.00000000000000000000000000166053878283</td>
+	<td class='target' style='text-align:right' rowSpan='15'></td></tr>
+  <tr>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='gram' href='#gram'>gram</a></td>
+	<td class='target' style='text-align:right'>1/1000</td>
+	<td class='target' style='text-align:right'>0.001</td></tr>
+  <tr>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='kilogram' href='#kilogram'>kilogram</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='tonne' href='#tonne'>tonne</a></td>
+	<td class='target' style='text-align:right'>1,000</td>
+	<td class='target' style='text-align:right'>1000</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='carat' href='#carat'>carat</a></td>
+	<td class='target' style='text-align:right'>1/5000</td>
+	<td class='target' style='text-align:right'>0.0002</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'>ussystem, uksystem</td>
+	<td class='source'><a name='grain' href='#grain'>grain</a></td>
+	<td class='target' style='text-align:right'>~64.799×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00006479891</td></tr>
+  <tr>
+	<td class='source'><a name='ounce' href='#ounce'>ounce</a></td>
+	<td class='target' style='text-align:right'>~0.02835</td>
+	<td class='target' style='text-align:right'>0.028349523125</td></tr>
+  <tr>
+	<td class='source'><a name='ounce-troy' href='#ounce-troy'>ounce-troy</a></td>
+	<td class='target' style='text-align:right'>~0.031103</td>
+	<td class='target' style='text-align:right'>0.03110348</td></tr>
+  <tr>
+	<td class='source'><a name='pound' href='#pound'>pound</a></td>
+	<td class='target' style='text-align:right'>~0.45359</td>
+	<td class='target' style='text-align:right'>0.45359237</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='stone' href='#stone'>stone</a></td>
+	<td class='target' style='text-align:right'>~6.3503</td>
+	<td class='target' style='text-align:right'>6.35029318</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>ussystem, uksystem</td>
+	<td class='source'><a name='slug' href='#slug'>slug</a></td>
+	<td class='target' style='text-align:right'>~14.594</td>
+	<td class='target' style='text-align:right'>5,560.277019075625/381</td></tr>
+  <tr>
+	<td class='source'><a name='ton' href='#ton'>ton</a></td>
+	<td class='target' style='text-align:right'>~907.18</td>
+	<td class='target' style='text-align:right'>907.18474</td></tr>
+  <tr>
+	<td class='source'>jpsystem</td>
+	<td class='source'><a name='fun' href='#fun'>fun</a></td>
+	<td class='target' style='text-align:right'>3/8000</td>
+	<td class='target' style='text-align:right'>0.000375</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>astronomical</td>
+	<td class='source'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td>
+	<td class='target' style='text-align:right'>5.9722×10ˆ24</td>
+	<td class='target' style='text-align:right'>5972200000000000000000000</td></tr>
+  <tr>
+	<td class='source'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td>
+	<td class='target' style='text-align:right'>~1.9885×10ˆ30</td>
+	<td class='target' style='text-align:right'>1988470000000000000000000000000</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='pressure' href='#pressure'>pressure</a></td>
+	<td class='source' rowSpan='4'>pascal = kilogram-per-meter-square-second</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='pascal' href='#pascal'>pascal</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='4'></td></tr>
+  <tr>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='bar' href='#bar'>bar</a></td>
+	<td class='target' style='text-align:right'>100,000</td>
+	<td class='target' style='text-align:right'>100000</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='gasoline-energy-density' href='#gasoline-energy-density'>gasoline-energy-density</a></td>
+	<td class='target' style='text-align:right'>~32.054×10ˆ9</td>
+	<td class='target' style='text-align:right'>722,250,000,000,000,000/22532213</td></tr>
+  <tr>
+	<td class='source'>ussystem, uksystem</td>
+	<td class='source'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td>
+	<td class='target' style='text-align:right'>101,325</td>
+	<td class='target' style='text-align:right'>101325</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='pressure-per-length' href='#pressure-per-length'>pressure-per-length</a></td>
+	<td class='source'>kilogram-per-square-meter-square-second</td>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='ofhg' href='#ofhg'>ofhg</a></td>
+	<td class='target' style='text-align:right'>~133,320</td>
+	<td class='target' style='text-align:right'>133322.387415</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='magnetic-induction' href='#magnetic-induction'>magnetic-induction</a></td>
+	<td class='source'>tesla = kilogram-per-square-second-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='tesla' href='#tesla'>tesla</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='force' href='#force'>force</a></td>
+	<td class='source' rowSpan='3'>newton = kilogram-meter-per-square-second</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='newton' href='#newton'>newton</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='3'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='kilogram-force' href='#kilogram-force'>kilogram-force</a></td>
+	<td class='target' style='text-align:right'>~9.8066</td>
+	<td class='target' style='text-align:right'>9.80665</td></tr>
+  <tr>
+	<td class='source'>ussystem, uksystem</td>
+	<td class='source'><a name='pound-force' href='#pound-force'>pound-force</a></td>
+	<td class='target' style='text-align:right'>~4.4482</td>
+	<td class='target' style='text-align:right'>4.4482216152605</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='energy' href='#energy'>energy</a></td>
+	<td class='source' rowSpan='8'>joule = kilogram-square-meter-per-square-second</td>
+	<td class='source'>si_acceptable, metric_adjacent</td>
+	<td class='source'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td>
+	<td class='target' style='text-align:right'>~160.22×10ˆ-21</td>
+	<td class='target' style='text-align:right'>0.0000000000000000001602177</td>
+	<td class='target' style='text-align:right' rowSpan='8'></td></tr>
+  <tr>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='joule' href='#joule'>joule</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>metric_adjacent, prefixable</td>
+	<td class='source'><a name='calorie' href='#calorie'>calorie</a></td>
+	<td class='target' style='text-align:right'>4.184</td>
+	<td class='target' style='text-align:right'>4.184</td></tr>
+  <tr>
+	<td class='source'><a name='calorie-it' href='#calorie-it'>calorie-it</a></td>
+	<td class='target' style='text-align:right'>4.1868</td>
+	<td class='target' style='text-align:right'>4.1868</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>ussystem, uksystem</td>
+	<td class='source'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td>
+	<td class='target' style='text-align:right'>~1,054.4</td>
+	<td class='target' style='text-align:right'>1054.3502644˙8</td></tr>
+  <tr>
+	<td class='source'><a name='british-thermal-unit-it' href='#british-thermal-unit-it'>british-thermal-unit-it</a></td>
+	<td class='target' style='text-align:right'>~1,055.1</td>
+	<td class='target' style='text-align:right'>1055.05585262</td></tr>
+  <tr>
+	<td class='source'><a name='foodcalorie' href='#foodcalorie'>foodcalorie</a></td>
+	<td class='target' style='text-align:right'>4,184</td>
+	<td class='target' style='text-align:right'>4184</td></tr>
+  <tr>
+	<td class='source'>ussystem</td>
+	<td class='source'><a name='therm-us' href='#therm-us'>therm-us</a></td>
+	<td class='target' style='text-align:right'>~105.48×10ˆ6</td>
+	<td class='target' style='text-align:right'>105480400</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='magnetic-flux' href='#magnetic-flux'>magnetic-flux</a></td>
+	<td class='source'>weber = kilogram-square-meter-per-square-second-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='weber' href='#weber'>weber</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-inductance' href='#electric-inductance'>electric-inductance</a></td>
+	<td class='source'>henry = kilogram-square-meter-per-square-second-square-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='henry' href='#henry'>henry</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='power' href='#power'>power</a></td>
+	<td class='source' rowSpan='3'>watt = kilogram-square-meter-per-cubic-second</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='watt' href='#watt'>watt</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='3'></td></tr>
+  <tr>
+	<td class='source'>ussystem, uksystem</td>
+	<td class='source'><a name='horsepower' href='#horsepower'>horsepower</a></td>
+	<td class='target' style='text-align:right'>~745.7</td>
+	<td class='target' style='text-align:right'>745.69987158227022</td></tr>
+  <tr>
+	<td class='source'>astronomical</td>
+	<td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td>
+	<td class='target' style='text-align:right'>382.8×10ˆ24</td>
+	<td class='target' style='text-align:right'>382800000000000000000000000</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='voltage' href='#voltage'>voltage</a></td>
+	<td class='source'>volt = kilogram-square-meter-per-cubic-second-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='volt' href='#volt'>volt</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-resistance' href='#electric-resistance'>electric-resistance</a></td>
+	<td class='source'>ohm = kilogram-square-meter-per-cubic-second-square-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='ohm' href='#ohm'>ohm</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='25'><a name='length' href='#length'>length</a></td>
+	<td class='source' rowSpan='25'>meter</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='meter' href='#meter'>meter</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='25'></td></tr>
+  <tr>
+	<td class='source'>si_acceptable, ussystem, uksystem</td>
+	<td class='source'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td>
+	<td class='target' style='text-align:right'>1,852</td>
+	<td class='target' style='text-align:right'>1852</td></tr>
+  <tr>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='100-kilometer' href='#100-kilometer'>100-kilometer</a></td>
+	<td class='target' style='text-align:right'>100,000</td>
+	<td class='target' style='text-align:right'>100000</td></tr>
+  <tr>
+	<td class='source'>si_acceptable, astronomical</td>
+	<td class='source'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td>
+	<td class='target' style='text-align:right'>~149.6×10ˆ9</td>
+	<td class='target' style='text-align:right'>149597870700</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='point' href='#point'>point</a></td>
+	<td class='target' style='text-align:right'>~352.78×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000352˙7</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td>
+	<td class='target' style='text-align:right'>10,000</td>
+	<td class='target' style='text-align:right'>10000</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'>ussystem, uksystem</td>
+	<td class='source'><a name='inch' href='#inch'>inch</a></td>
+	<td class='target' style='text-align:right'>0.0254</td>
+	<td class='target' style='text-align:right'>0.0254</td></tr>
+  <tr>
+	<td class='source'><a name='foot' href='#foot'>foot</a></td>
+	<td class='target' style='text-align:right'>0.3048</td>
+	<td class='target' style='text-align:right'>0.3048</td></tr>
+  <tr>
+	<td class='source'><a name='yard' href='#yard'>yard</a></td>
+	<td class='target' style='text-align:right'>0.9144</td>
+	<td class='target' style='text-align:right'>0.9144</td></tr>
+  <tr>
+	<td class='source'><a name='fathom' href='#fathom'>fathom</a></td>
+	<td class='target' style='text-align:right'>1.8288</td>
+	<td class='target' style='text-align:right'>1.8288</td></tr>
+  <tr>
+	<td class='source'><a name='rod' href='#rod'>rod</a></td>
+	<td class='target' style='text-align:right'>5.0292</td>
+	<td class='target' style='text-align:right'>5.0292</td></tr>
+  <tr>
+	<td class='source'><a name='chain' href='#chain'>chain</a></td>
+	<td class='target' style='text-align:right'>~20.117</td>
+	<td class='target' style='text-align:right'>20.1168</td></tr>
+  <tr>
+	<td class='source'><a name='furlong' href='#furlong'>furlong</a></td>
+	<td class='target' style='text-align:right'>~201.17</td>
+	<td class='target' style='text-align:right'>201.168</td></tr>
+  <tr>
+	<td class='source'><a name='mile' href='#mile'>mile</a></td>
+	<td class='target' style='text-align:right'>~1,609.3</td>
+	<td class='target' style='text-align:right'>1609.344</td></tr>
+  <tr>
+	<td class='source' rowSpan='7'>jpsystem</td>
+	<td class='source'><a name='rin' href='#rin'>rin</a></td>
+	<td class='target' style='text-align:right'>~33.058×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000˙0330578512396694214876</td></tr>
+  <tr>
+	<td class='source'><a name='sun' href='#sun'>sun</a></td>
+	<td class='target' style='text-align:right'>2/605</td>
+	<td class='target' style='text-align:right'>0.0˙0330578512396694214876</td></tr>
+  <tr>
+	<td class='source'><a name='shaku-length' href='#shaku-length'>shaku-length</a></td>
+	<td class='target' style='text-align:right'>4/121</td>
+	<td class='target' style='text-align:right'>0.˙0330578512396694214876</td></tr>
+  <tr>
+	<td class='source'><a name='shaku-cloth' href='#shaku-cloth'>shaku-cloth</a></td>
+	<td class='target' style='text-align:right'>5/121</td>
+	<td class='target' style='text-align:right'>0.˙0413223140495867768595</td></tr>
+  <tr>
+	<td class='source'><a name='ken' href='#ken'>ken</a></td>
+	<td class='target' style='text-align:right'>~0.19835</td>
+	<td class='target' style='text-align:right'>0.˙1983471074380165289256</td></tr>
+  <tr>
+	<td class='source'><a name='jo-jp' href='#jo-jp'>jo-jp</a></td>
+	<td class='target' style='text-align:right'>~0.33058</td>
+	<td class='target' style='text-align:right'>0.˙3305785123966942148760</td></tr>
+  <tr>
+	<td class='source'><a name='ri-jp' href='#ri-jp'>ri-jp</a></td>
+	<td class='target' style='text-align:right'>~428.43</td>
+	<td class='target' style='text-align:right'>428.˙4297520661157024793388</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>astronomical</td>
+	<td class='source'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td>
+	<td class='target' style='text-align:right'>6,378,100</td>
+	<td class='target' style='text-align:right'>6378100</td></tr>
+  <tr>
+	<td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td>
+	<td class='target' style='text-align:right'>695.7×10ˆ6</td>
+	<td class='target' style='text-align:right'>695700000</td></tr>
+  <tr>
+	<td class='source'><a name='light-year' href='#light-year'>light-year</a></td>
+	<td class='target' style='text-align:right'>~9.4607×10ˆ15</td>
+	<td class='target' style='text-align:right'>9460730472580800</td></tr>
+  <tr>
+	<td class='source'>astronomical, prefixable</td>
+	<td class='source'><a name='parsec' href='#parsec'>parsec</a></td>
+	<td class='target' style='text-align:right'>~30.857×10ˆ15</td>
+	<td class='target' style='text-align:right'>12,699,352,539,696,155,673,600,000/411557987</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='speed' href='#speed'>speed</a></td>
+	<td class='source'>meter-per-second</td>
+	<td class='source'>si_acceptable, ussystem, uksystem</td>
+	<td class='source'><a name='knot' href='#knot'>knot</a></td>
+	<td class='target' style='text-align:right'>~0.51444</td>
+	<td class='target' style='text-align:right'>0.51˙4</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='acceleration' href='#acceleration'>acceleration</a></td>
+	<td class='source'>meter-per-square-second</td>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='g-force' href='#g-force'>g-force</a></td>
+	<td class='target' style='text-align:right'>~9.8066</td>
+	<td class='target' style='text-align:right'>9.80665</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='area' href='#area'>area</a></td>
+	<td class='source' rowSpan='6'>square-meter</td>
+	<td class='source'>si_acceptable, metric</td>
+	<td class='source'><a name='hectare' href='#hectare'>hectare</a></td>
+	<td class='target' style='text-align:right'>10,000</td>
+	<td class='target' style='text-align:right'>10000</td>
+	<td class='target' style='text-align:right' rowSpan='6'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='dunam' href='#dunam'>dunam</a></td>
+	<td class='target' style='text-align:right'>1,000</td>
+	<td class='target' style='text-align:right'>1000</td></tr>
+  <tr>
+	<td class='source'>ussystem, uksystem</td>
+	<td class='source'><a name='acre' href='#acre'>acre</a></td>
+	<td class='target' style='text-align:right'>~4,046.9</td>
+	<td class='target' style='text-align:right'>4046.8564224</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>jpsystem</td>
+	<td class='source'><a name='bu-jp' href='#bu-jp'>bu-jp</a></td>
+	<td class='target' style='text-align:right'>~3.3058</td>
+	<td class='target' style='text-align:right'>3.˙3057851239669421487603</td></tr>
+  <tr>
+	<td class='source'><a name='se-jp' href='#se-jp'>se-jp</a></td>
+	<td class='target' style='text-align:right'>~99.174</td>
+	<td class='target' style='text-align:right'>99.˙1735537190082644628099</td></tr>
+  <tr>
+	<td class='source'><a name='cho' href='#cho'>cho</a></td>
+	<td class='target' style='text-align:right'>~9,917.4</td>
+	<td class='target' style='text-align:right'>9917.˙3553719008264462809917</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='ionizing-radiation' href='#ionizing-radiation'>ionizing-radiation</a></td>
+	<td class='source' rowSpan='2'>gray = square-meter-per-square-second</td>
+	<td class='source' rowSpan='2'>si, metric, prefixable</td>
+	<td class='source'><a name='gray' href='#gray'>gray</a></td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
+  <tr>
+	<td class='source'><a name='sievert' href='#sievert'>sievert</a></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='29'><a name='volume' href='#volume'>volume</a></td>
+	<td class='source' rowSpan='29'>cubic-meter</td>
+	<td class='source'>si_acceptable, metric, prefixable</td>
+	<td class='source'><a name='liter' href='#liter'>liter</a></td>
+	<td class='target' style='text-align:right'>1/1000</td>
+	<td class='target' style='text-align:right'>0.001</td>
+	<td class='target' style='text-align:right' rowSpan='29'></td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>metric_adjacent</td>
+	<td class='source'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td>
+	<td class='target' style='text-align:right'>1/4000</td>
+	<td class='target' style='text-align:right'>0.00025</td></tr>
+  <tr>
+	<td class='source'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td>
+	<td class='target' style='text-align:right'>1/2000</td>
+	<td class='target' style='text-align:right'>0.0005</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>ussystem</td>
+	<td class='source'><a name='drop' href='#drop'>drop</a></td>
+	<td class='target' style='text-align:right'>~51.343×10ˆ-9</td>
+	<td class='target' style='text-align:right'>0.0000000513429332682291˙6</td></tr>
+  <tr>
+	<td class='source'><a name='pinch' href='#pinch'>pinch</a></td>
+	<td class='target' style='text-align:right'>~231.04×10ˆ-9</td>
+	<td class='target' style='text-align:right'>0.00000023104319970703125</td></tr>
+  <tr>
+	<td class='source'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td>
+	<td class='target' style='text-align:right'>~1.8483×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00000184834559765625</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td>
+	<td class='target' style='text-align:right'>~2.2198×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.0000022197705078125</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>ussystem</td>
+	<td class='source'><a name='dram' href='#dram'>dram</a></td>
+	<td class='target' style='text-align:right'>~3.6967×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.0000036966911953125</td></tr>
+  <tr>
+	<td class='source'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td>
+	<td class='target' style='text-align:right'>~4.9289×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00000492892159375</td></tr>
+  <tr>
+	<td class='source'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td>
+	<td class='target' style='text-align:right'>~14.787×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00001478676478125</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='fluid-ounce-imperial' href='#fluid-ounce-imperial'>fluid-ounce-imperial</a></td>
+	<td class='target' style='text-align:right'>~28.413×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.0000284130625</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'>ussystem</td>
+	<td class='source'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td>
+	<td class='target' style='text-align:right'>~29.574×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.0000295735295625</td></tr>
+  <tr>
+	<td class='source'><a name='jigger' href='#jigger'>jigger</a></td>
+	<td class='target' style='text-align:right'>~44.36×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00004436029434375</td></tr>
+  <tr>
+	<td class='source'><a name='cup' href='#cup'>cup</a></td>
+	<td class='target' style='text-align:right'>~236.59×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.0002365882365</td></tr>
+  <tr>
+	<td class='source'><a name='pint' href='#pint'>pint</a></td>
+	<td class='target' style='text-align:right'>~473.18×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000473176473</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='pint-imperial' href='#pint-imperial'>pint-imperial</a></td>
+	<td class='target' style='text-align:right'>~568.26×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00056826125</td></tr>
+  <tr>
+	<td class='source'>ussystem</td>
+	<td class='source'><a name='quart' href='#quart'>quart</a></td>
+	<td class='target' style='text-align:right'>~946.35×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000946352946</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td>
+	<td class='target' style='text-align:right'>~0.0011365</td>
+	<td class='target' style='text-align:right'>0.0011365225</td></tr>
+  <tr>
+	<td class='source'>ussystem</td>
+	<td class='source'><a name='gallon' href='#gallon'>gallon</a></td>
+	<td class='target' style='text-align:right'>~0.0037854</td>
+	<td class='target' style='text-align:right'>0.003785411784</td></tr>
+  <tr>
+	<td class='source'>uksystem</td>
+	<td class='source'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td>
+	<td class='target' style='text-align:right'>~0.0045461</td>
+	<td class='target' style='text-align:right'>0.00454609</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>ussystem</td>
+	<td class='source'><a name='bushel' href='#bushel'>bushel</a></td>
+	<td class='target' style='text-align:right'>~0.035239</td>
+	<td class='target' style='text-align:right'>0.03523907016688</td></tr>
+  <tr>
+	<td class='source'><a name='barrel' href='#barrel'>barrel</a></td>
+	<td class='target' style='text-align:right'>~0.15899</td>
+	<td class='target' style='text-align:right'>0.158987294928</td></tr>
+  <tr>
+	<td class='source' rowSpan='7'>jpsystem</td>
+	<td class='source'><a name='sai' href='#sai'>sai</a></td>
+	<td class='target' style='text-align:right'>~1.8039×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.002401/1331</td></tr>
+  <tr>
+	<td class='source'><a name='kosaji' href='#kosaji'>kosaji</a></td>
+	<td class='target' style='text-align:right'>5×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000005</td></tr>
+  <tr>
+	<td class='source'><a name='osaji' href='#osaji'>osaji</a></td>
+	<td class='target' style='text-align:right'>15×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000015</td></tr>
+  <tr>
+	<td class='source'><a name='shaku' href='#shaku'>shaku</a></td>
+	<td class='target' style='text-align:right'>~18.039×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.02401/1331</td></tr>
+  <tr>
+	<td class='source'><a name='cup-jp' href='#cup-jp'>cup-jp</a></td>
+	<td class='target' style='text-align:right'>1/10000</td>
+	<td class='target' style='text-align:right'>0.0001</td></tr>
+  <tr>
+	<td class='source'><a name='to-jp' href='#to-jp'>to-jp</a></td>
+	<td class='target' style='text-align:right'>~0.018039</td>
+	<td class='target' style='text-align:right'>24.01/1331</td></tr>
+  <tr>
+	<td class='source'><a name='koku' href='#koku'>koku</a></td>
+	<td class='target' style='text-align:right'>~0.18039</td>
+	<td class='target' style='text-align:right'>240.1/1331</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='duration' href='#duration'>duration</a></td>
+	<td class='source' rowSpan='8'>second</td>
+	<td class='source'>si, metric, ussystem, uksystem, astronomical, prefixable</td>
+	<td class='source'><a name='second' href='#second'>second</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='8'></td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>si_acceptable, metric_adjacent, ussystem, uksystem, astronomical, prefixable</td>
+	<td class='source'><a name='minute' href='#minute'>minute</a></td>
+	<td class='target' style='text-align:right'>60</td>
+	<td class='target' style='text-align:right'>60</td></tr>
+  <tr>
+	<td class='source'><a name='hour' href='#hour'>hour</a></td>
+	<td class='target' style='text-align:right'>3,600</td>
+	<td class='target' style='text-align:right'>3600</td></tr>
+  <tr>
+	<td class='source'><a name='day' href='#day'>day</a></td>
+	<td class='target' style='text-align:right'>86,400</td>
+	<td class='target' style='text-align:right'>86400</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem, astronomical</td>
+	<td class='source'><a name='week' href='#week'>week</a></td>
+	<td class='target' style='text-align:right'>604,800</td>
+	<td class='target' style='text-align:right'>604800</td></tr>
+  <tr>
+	<td class='source'>ussystem, uksystem</td>
+	<td class='source'><a name='fortnight' href='#fortnight'>fortnight</a></td>
+	<td class='target' style='text-align:right'>1,209,600</td>
+	<td class='target' style='text-align:right'>1209600</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>person_age</td>
+	<td class='source'><a name='day-person' href='#day-person'>day-person</a></td>
+	<td class='target' style='text-align:right'>86,400</td>
+	<td class='target' style='text-align:right'>86400</td></tr>
+  <tr>
+	<td class='source'><a name='week-person' href='#week-person'>week-person</a></td>
+	<td class='target' style='text-align:right'>604,800</td>
+	<td class='target' style='text-align:right'>604800</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-charge' href='#electric-charge'>electric-charge</a></td>
+	<td class='source'>coulomb = second-ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='coulomb' href='#coulomb'>coulomb</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-conductance' href='#electric-conductance'>electric-conductance</a></td>
+	<td class='source'>siemens = cubic-second-square-ampere-per-kilogram-square-meter</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='siemens' href='#siemens'>siemens</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-capacitance' href='#electric-capacitance'>electric-capacitance</a></td>
+	<td class='source'>farad = pow4-second-square-ampere-per-kilogram-square-meter</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='farad' href='#farad'>farad</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='7'><a name='year-duration' href='#year-duration'>year-duration</a></td>
+	<td class='source' rowSpan='7'>year</td>
+	<td class='source'>metric_adjacent, ussystem, uksystem, astronomical</td>
+	<td class='source'><a name='month' href='#month'>month</a></td>
+	<td class='target' style='text-align:right'>1/12</td>
+	<td class='target' style='text-align:right'>0.08˙3</td>
+	<td class='target' style='text-align:right' rowSpan='7'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='quarter' href='#quarter'>quarter</a></td>
+	<td class='target' style='text-align:right'>1/4</td>
+	<td class='target' style='text-align:right'>0.25</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem, astronomical, prefixable</td>
+	<td class='source'><a name='year' href='#year'>year</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>metric_adjacent, ussystem, uksystem, astronomical</td>
+	<td class='source'><a name='decade' href='#decade'>decade</a></td>
+	<td class='target' style='text-align:right'>10</td>
+	<td class='target' style='text-align:right'>10</td></tr>
+  <tr>
+	<td class='source'><a name='century' href='#century'>century</a></td>
+	<td class='target' style='text-align:right'>100</td>
+	<td class='target' style='text-align:right'>100</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>person_age</td>
+	<td class='source'><a name='month-person' href='#month-person'>month-person</a></td>
+	<td class='target' style='text-align:right'>1/12</td>
+	<td class='target' style='text-align:right'>0.08˙3</td></tr>
+  <tr>
+	<td class='source'><a name='year-person' href='#year-person'>year-person</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='electric-current' href='#electric-current'>electric-current</a></td>
+	<td class='source'>ampere</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='ampere' href='#ampere'>ampere</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='temperature' href='#temperature'>temperature</a></td>
+	<td class='source' rowSpan='4'>kelvin</td>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='celsius' href='#celsius'>celsius</a></td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right'>273.15</td></tr>
+  <tr>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>ussystem, uksystem</td>
+	<td class='source'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td>
+	<td class='target' style='text-align:right' rowSpan='2'>5/9</td>
+	<td class='target' style='text-align:right' rowSpan='2'>0.˙5</td>
+	<td class='target' style='text-align:right'>255.37˙2</td></tr>
+  <tr>
+	<td class='source'><a name='rankine' href='#rankine'>rankine</a></td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='5'><a name='angle' href='#angle'>angle</a></td>
+	<td class='source' rowSpan='5'>revolution</td>
+	<td class='source' rowSpan='3'>si_acceptable, metric_adjacent, ussystem, uksystem, astronomical</td>
+	<td class='source'><a name='arc-second' href='#arc-second'>arc-second</a></td>
+	<td class='target' style='text-align:right'>~771.6×10ˆ-9</td>
+	<td class='target' style='text-align:right'>0.0000007˙716049382</td>
+	<td class='target' style='text-align:right' rowSpan='5'></td></tr>
+  <tr>
+	<td class='source'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td>
+	<td class='target' style='text-align:right'>~46.296×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.00004˙629</td></tr>
+  <tr>
+	<td class='source'><a name='degree' href='#degree'>degree</a></td>
+	<td class='target' style='text-align:right'>1/360</td>
+	<td class='target' style='text-align:right'>0.002˙7</td></tr>
+  <tr>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='radian' href='#radian'>radian</a></td>
+	<td class='target' style='text-align:right'>~0.15915</td>
+	<td class='target' style='text-align:right'>65,501,488/411557987</td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='revolution' href='#revolution'>revolution</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='frequency' href='#frequency'>frequency</a></td>
+	<td class='source'>hertz = revolution-per-second</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='hertz' href='#hertz'>hertz</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='solid-angle' href='#solid-angle'>solid-angle</a></td>
+	<td class='source'>square-revolution</td>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='steradian' href='#steradian'>steradian</a></td>
+	<td class='target' style='text-align:right'>~0.02533</td>
+	<td class='target' style='text-align:right'>4,290,444,930,214,144/169379976663492169</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='substance-amount' href='#substance-amount'>substance-amount</a></td>
+	<td class='source' rowSpan='2'>item</td>
+	<td class='source'>si, metric, prefixable</td>
+	<td class='source'><a name='mole' href='#mole'>mole</a></td>
+	<td class='target' style='text-align:right'>~602.21×10ˆ21</td>
+	<td class='target' style='text-align:right'>602214076000000000000000</td>
+	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='item' href='#item'>item</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='concentration-mass' href='#concentration-mass'>concentration-mass</a></td>
+	<td class='source'>item-per-kilogram</td>
+	<td class='source'>metric_adjacent</td>
+	<td class='source'><a name='ofglucose' href='#ofglucose'>ofglucose</a></td>
+	<td class='target' style='text-align:right'>~3.3427×10ˆ24</td>
+	<td class='target' style='text-align:right'>6,022,140,760,000,000,000,000,000,000,000/1801557</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='catalytic-activity' href='#catalytic-activity'>catalytic-activity</a></td>
+	<td class='source'>item-per-second</td>
+	<td class='source'>si, metric</td>
+	<td class='source'><a name='katal' href='#katal'>katal</a></td>
+	<td class='target' style='text-align:right'>~602.21×10ˆ21</td>
+	<td class='target' style='text-align:right'>602214076000000000000000</td>
+	<td class='target' style='text-align:right'></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='portion' href='#portion'>portion</a></td>
+	<td class='source' rowSpan='6'>portion</td>
+	<td class='source' rowSpan='6'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='permillion' href='#permillion'>permillion</a></td>
+	<td class='target' style='text-align:right'>1×10ˆ-6</td>
+	<td class='target' style='text-align:right'>0.000001</td>
+	<td class='target' style='text-align:right' rowSpan='6'></td></tr>
+  <tr>
+	<td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td>
+	<td class='target' style='text-align:right'>1/10000</td>
+	<td class='target' style='text-align:right'>0.0001</td></tr>
+  <tr>
+	<td class='source'><a name='permille' href='#permille'>permille</a></td>
+	<td class='target' style='text-align:right'>1/1000</td>
+	<td class='target' style='text-align:right'>0.001</td></tr>
+  <tr>
+	<td class='source'><a name='percent' href='#percent'>percent</a></td>
+	<td class='target' style='text-align:right'>1/100</td>
+	<td class='target' style='text-align:right'>0.01</td></tr>
+  <tr>
+	<td class='source'><a name='karat' href='#karat'>karat</a></td>
+	<td class='target' style='text-align:right'>1/24</td>
+	<td class='target' style='text-align:right'>0.041˙6</td></tr>
+  <tr>
+	<td class='source'><a name='portion' href='#portion'>portion</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='digital' href='#digital'>digital</a></td>
+	<td class='source' rowSpan='2'>bit</td>
+	<td class='source' rowSpan='2'>metric_adjacent, ussystem, uksystem, prefixable</td>
+	<td class='source'><a name='bit' href='#bit'>bit</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
+  <tr>
+	<td class='source'><a name='byte' href='#byte'>byte</a></td>
+	<td class='target' style='text-align:right'>8</td>
+	<td class='target' style='text-align:right'>8</td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='graphics' href='#graphics'>graphics</a></td>
+	<td class='source' rowSpan='2'>dot = pixel</td>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='dot' href='#dot'>dot</a></td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'>1</td>
+	<td class='target' style='text-align:right' rowSpan='2'></td></tr>
+  <tr>
+	<td class='source'>metric_adjacent, ussystem, uksystem, prefixable</td>
+	<td class='source'><a name='pixel' href='#pixel'>pixel</a></td></tr>
+  <tr>
+	<th class='source'>Quantity</th>
+	<th class='source'>Target</th>
+	<th class='source'>Systems</th>
+	<th class='source'>Source Unit</th>
+	<th class='target'>Approx. Factor</th>
+	<th class='target'>Exact* Factor</th>
+	<th class='target'>Offset</th></tr>
+  <tr>
+	<td class='source'><a name='typewidth' href='#typewidth'>typewidth</a></td>
+	<td class='source'>em</td>
+	<td class='source'>metric_adjacent, ussystem, uksystem</td>
+	<td class='source'><a name='em' href='#em'>em</a></td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'>1</td>
+	<td class='target' style='text-align:right'></td></tr>
+</table>
+<!-- end main body -->
+	</div>
+	<div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+		<a href='https://www.unicode.org/copyright.html'>
+			<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;'
+				alt='Access to Copyright and terms of use'>
+		</a>
+	</div>
+
+</body>
+</html>
