@@ -1,0 +1,825 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPN1D3SEJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPN1D3SEJM');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Simplified Chinese Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Simplified Chinese Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!--
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+<!-- begin main body-->
+<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+  <tr>
+	<th class='source'>Section</th>
+	<th class='source'>Page</th>
+	<th class='source'>Header</th>
+	<th class='source'>Code</th>
+	<th class='source'>Locale</th>
+	<th class='target'>Old</th>
+	<th class='target'>New</th>
+	<th class='target'>Level</th></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td>
+	<td class='source' rowSpan='2'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td>
+	<td class='source' rowSpan='2'><a name='H' href='#H'>H</a></td>
+	<td class='source' rowSpan='2'>Hindi ► hi_Latn-variant</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>印地语（拉丁文）</td>
+	<td class='target' rowSpan='2'>印式英语</td>
+	<td class='target' rowSpan='2'>moderate</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td>
+	<td class='source' rowSpan='2'><a name='P' href='#P'>P</a></td>
+	<td class='source' rowSpan='2'>Persian ► fa_AF</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>波斯语（阿富汗）</td>
+	<td class='target' rowSpan='2'>达里语</td>
+	<td class='target' rowSpan='113'>comprehensive</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='143'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='31'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td>
+	<td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>MMM</td>
+	<td class='source' rowSpan='3'>zh_Hans_HK</td>
+	<td class='target'>LLL</td>
+	<td class='target'>M月</td></tr>
+  <tr>
+	<td class='source' rowSpan='28'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>h/h</td>
+	<td class='target'>ah时至h时</td>
+	<td class='target'>ah至h时</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/H</td>
+	<td class='target' rowSpan='4'>v HH:mm – HH:mm</td>
+	<td class='target' rowSpan='4'>vHH:mm–HH:mm</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/m</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hv/H</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>HH–HH v</td>
+	<td class='target' rowSpan='2'>vHH–HH</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source'>Md/d</td>
+	<td class='target' rowSpan='2'>M/d – M/d</td>
+	<td class='target' rowSpan='2'>M-d至M-d</td></tr>
+  <tr>
+	<td class='source'>Md/M</td></tr>
+  <tr>
+	<td class='source'>MEd/d</td>
+	<td class='target' rowSpan='2'>M/dE至M/dE</td>
+	<td class='target' rowSpan='2'>M-dE至M-dE</td></tr>
+  <tr>
+	<td class='source'>MEd/M</td></tr>
+  <tr>
+	<td class='source'>MMMEd/d</td>
+	<td class='target'>M月d日E至d日E</td>
+	<td class='target'>M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yM/M</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月至M月</td>
+	<td class='target' rowSpan='2'>y年M月至y年M月</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/d – y/M/d</td>
+	<td class='target' rowSpan='6'>d/M/y至d/M/y</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/dE至y/M/dE</td>
+	<td class='target' rowSpan='6'>d/M/yE至d/M/yE</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMMMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月d日E至d日E</td>
+	<td class='target' rowSpan='2'>y年M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Intervals - Fallback' href='#Formats - Intervals - Fallback'>Formats - Intervals - Fallback</a></td>
+	<td class='source' rowSpan='2'>Fallback</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>{0} – {1}</td>
+	<td class='target' rowSpan='2'>{0}–{1}</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='40'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td>
+	<td class='source' rowSpan='10'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source' rowSpan='2'>Md</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>M/d</td>
+	<td class='target'>d/M</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>M-d</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>MEd</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>M/dE</td>
+	<td class='target'>E, d/M</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>M-dE</td></tr>
+  <tr>
+	<td class='source'>MMM</td>
+	<td class='source' rowSpan='3'>zh_Hans_HK</td>
+	<td class='target'>LL</td>
+	<td class='target'>M月</td></tr>
+  <tr>
+	<td class='source'>yyyyM</td>
+	<td class='target'>Gy年M月</td>
+	<td class='target'>M/yGGGGG</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yyyyMd</td>
+	<td class='target' rowSpan='2'>G y/M/d</td>
+	<td class='target'>d/M/yGGGGG</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>Gy年M月d日</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yyyyMEd</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>G y/M/dE</td>
+	<td class='target'>E, d/M/yGGGGG</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>Gy年M月d日，E</td></tr>
+  <tr>
+	<td class='source' rowSpan='28'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>h/h</td>
+	<td class='source' rowSpan='2'>zh_Hans_HK</td>
+	<td class='target'>ah时至h时</td>
+	<td class='target'>ah至h时</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/H</td>
+	<td class='target' rowSpan='4'>v HH:mm – HH:mm</td>
+	<td class='target' rowSpan='4'>vHH:mm–HH:mm</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/m</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hv/H</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>HH–HH v</td>
+	<td class='target' rowSpan='2'>vHH–HH</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source'>Md/d</td>
+	<td class='target' rowSpan='2'>M/d – M/d</td>
+	<td class='target' rowSpan='2'>M-d至M-d</td></tr>
+  <tr>
+	<td class='source'>Md/M</td></tr>
+  <tr>
+	<td class='source'>MEd/d</td>
+	<td class='target' rowSpan='2'>M/dE至M/dE</td>
+	<td class='target' rowSpan='2'>M-dE至M-dE</td></tr>
+  <tr>
+	<td class='source'>MEd/M</td></tr>
+  <tr>
+	<td class='source'>MMMEd/d</td>
+	<td class='target'>M月d日E至d日E</td>
+	<td class='target'>M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yM/M</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月至M月</td>
+	<td class='target' rowSpan='2'>y年M月至y年M月</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/d – y/M/d</td>
+	<td class='target' rowSpan='6'>d/M/y至d/M/y</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/dE至y/M/dE</td>
+	<td class='target' rowSpan='6'>d/M/yE至d/M/yE</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMMMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月d日E至d日E</td>
+	<td class='target' rowSpan='2'>y年M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Intervals - Fallback' href='#Formats - Intervals - Fallback'>Formats - Intervals - Fallback</a></td>
+	<td class='source' rowSpan='2'>Fallback</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>{0} – {1}</td>
+	<td class='target' rowSpan='2'>{0}–{1}</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='40'><a name='Indian' href='#Indian'>Indian</a></td>
+	<td class='source' rowSpan='10'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source' rowSpan='2'>Md</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>M/d</td>
+	<td class='target'>d/M</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>M-d</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>MEd</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>M/dE</td>
+	<td class='target'>E, d/M</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>M-dE</td></tr>
+  <tr>
+	<td class='source'>MMM</td>
+	<td class='source' rowSpan='3'>zh_Hans_HK</td>
+	<td class='target'>LL</td>
+	<td class='target'>M月</td></tr>
+  <tr>
+	<td class='source'>yyyyM</td>
+	<td class='target'>Gy年M月</td>
+	<td class='target'>M/yGGGGG</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yyyyMd</td>
+	<td class='target' rowSpan='2'>G y/M/d</td>
+	<td class='target'>d/M/yGGGGG</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>Gy年M月d日</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yyyyMEd</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>G y/M/dE</td>
+	<td class='target'>E, d/M/yGGGGG</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td>
+	<td class='target'>Gy年M月d日，E</td></tr>
+  <tr>
+	<td class='source' rowSpan='28'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>h/h</td>
+	<td class='source' rowSpan='2'>zh_Hans_HK</td>
+	<td class='target'>ah时至h时</td>
+	<td class='target'>ah至h时</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/H</td>
+	<td class='target' rowSpan='4'>v HH:mm – HH:mm</td>
+	<td class='target' rowSpan='4'>vHH:mm–HH:mm</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/m</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hv/H</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>HH–HH v</td>
+	<td class='target' rowSpan='2'>vHH–HH</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source'>Md/d</td>
+	<td class='target' rowSpan='2'>M/d – M/d</td>
+	<td class='target' rowSpan='2'>M-d至M-d</td></tr>
+  <tr>
+	<td class='source'>Md/M</td></tr>
+  <tr>
+	<td class='source'>MEd/d</td>
+	<td class='target' rowSpan='2'>M/dE至M/dE</td>
+	<td class='target' rowSpan='2'>M-dE至M-dE</td></tr>
+  <tr>
+	<td class='source'>MEd/M</td></tr>
+  <tr>
+	<td class='source'>MMMEd/d</td>
+	<td class='target'>M月d日E至d日E</td>
+	<td class='target'>M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yM/M</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月至M月</td>
+	<td class='target' rowSpan='2'>y年M月至y年M月</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/d – y/M/d</td>
+	<td class='target' rowSpan='6'>d/M/y至d/M/y</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/dE至y/M/dE</td>
+	<td class='target' rowSpan='6'>d/M/yE至d/M/yE</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMMMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月d日E至d日E</td>
+	<td class='target' rowSpan='2'>y年M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Intervals - Fallback' href='#Formats - Intervals - Fallback'>Formats - Intervals - Fallback</a></td>
+	<td class='source' rowSpan='2'>Fallback</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>{0} – {1}</td>
+	<td class='target' rowSpan='2'>{0}–{1}</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='32'><a name='Minguo' href='#Minguo'>Minguo</a></td>
+	<td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>MEd</td>
+	<td class='source' rowSpan='4'>zh_Hans_HK</td>
+	<td class='target'>M/dE</td>
+	<td class='target'>E, d/M</td>
+	<td class='target' rowSpan='2'>modern</td></tr>
+  <tr>
+	<td class='source'>yyyyM</td>
+	<td class='target'>Gy年M月</td>
+	<td class='target'>M/yGGGGG</td></tr>
+  <tr>
+	<td class='source' rowSpan='28'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>h/h</td>
+	<td class='target'>ah时至h时</td>
+	<td class='target'>ah至h时</td>
+	<td class='target' rowSpan='76'>comprehensive</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/H</td>
+	<td class='target' rowSpan='4'>v HH:mm – HH:mm</td>
+	<td class='target' rowSpan='4'>vHH:mm–HH:mm</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hmv/m</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Hv/H</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>HH–HH v</td>
+	<td class='target' rowSpan='2'>vHH–HH</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source'>Md/d</td>
+	<td class='target' rowSpan='2'>M/d – M/d</td>
+	<td class='target' rowSpan='2'>M-d至M-d</td></tr>
+  <tr>
+	<td class='source'>Md/M</td></tr>
+  <tr>
+	<td class='source'>MEd/d</td>
+	<td class='target' rowSpan='2'>M/dE至M/dE</td>
+	<td class='target' rowSpan='2'>M-dE至M-dE</td></tr>
+  <tr>
+	<td class='source'>MEd/M</td></tr>
+  <tr>
+	<td class='source'>MMMEd/d</td>
+	<td class='target'>M月d日E至d日E</td>
+	<td class='target'>M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yM/M</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月至M月</td>
+	<td class='target' rowSpan='2'>y年M月至y年M月</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/d – y/M/d</td>
+	<td class='target' rowSpan='6'>d/M/y至d/M/y</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='6'>Gy/M/dE至y/M/dE</td>
+	<td class='target' rowSpan='6'>d/M/yE至d/M/yE</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/M</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMEd/y</td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yMMMEd/d</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>Gy年M月d日E至d日E</td>
+	<td class='target' rowSpan='2'>y年M月d日E至M月d日E</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Intervals - Fallback' href='#Formats - Intervals - Fallback'>Formats - Intervals - Fallback</a></td>
+	<td class='source' rowSpan='2'>Fallback</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>{0} – {1}</td>
+	<td class='target' rowSpan='2'>{0}–{1}</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='46'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+	<td class='source' rowSpan='46'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Ahom Digits (ahom)' href='#Currency Unit Patterns using Ahom Digits (ahom)'>Currency Unit Patterns using Ahom Digits (ahom)</a></td>
+	<td class='source' rowSpan='46'>currencies-other</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='46'>▷missing◁</td>
+	<td class='target' rowSpan='46'>{0} {1}</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Bhaiksuki Digits (bhks)' href='#Currency Unit Patterns using Bhaiksuki Digits (bhks)'>Currency Unit Patterns using Bhaiksuki Digits (bhks)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Dives Akuru Digits (diak)' href='#Currency Unit Patterns using Dives Akuru Digits (diak)'>Currency Unit Patterns using Dives Akuru Digits (diak)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Kawi Digits (kawi)' href='#Currency Unit Patterns using Kawi Digits (kawi)'>Currency Unit Patterns using Kawi Digits (kawi)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Khudawadi Digits (sind)' href='#Currency Unit Patterns using Khudawadi Digits (sind)'>Currency Unit Patterns using Khudawadi Digits (sind)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mathematical Bold Digits (mathbold)' href='#Currency Unit Patterns using Mathematical Bold Digits (mathbold)'>Currency Unit Patterns using Mathematical Bold Digits (mathbold)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mathematical Double-Struck Digits (mathdbl)' href='#Currency Unit Patterns using Mathematical Double-Struck Digits (mathdbl)'>Currency Unit Patterns using Mathematical Double-Struck Digits (mathdbl)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mathematical Monospace Digits (mathmono)' href='#Currency Unit Patterns using Mathematical Monospace Digits (mathmono)'>Currency Unit Patterns using Mathematical Monospace Digits (mathmono)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mathematical Sans-Serif Bold Digits (mathsanb)' href='#Currency Unit Patterns using Mathematical Sans-Serif Bold Digits (mathsanb)'>Currency Unit Patterns using Mathematical Sans-Serif Bold Digits (mathsanb)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mathematical Sans-Serif Digits (mathsans)' href='#Currency Unit Patterns using Mathematical Sans-Serif Digits (mathsans)'>Currency Unit Patterns using Mathematical Sans-Serif Digits (mathsans)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Modi Digits (modi)' href='#Currency Unit Patterns using Modi Digits (modi)'>Currency Unit Patterns using Modi Digits (modi)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Mro Digits (mroo)' href='#Currency Unit Patterns using Mro Digits (mroo)'>Currency Unit Patterns using Mro Digits (mroo)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Myanmar Tai Laing Digits (mymrtlng)' href='#Currency Unit Patterns using Myanmar Tai Laing Digits (mymrtlng)'>Currency Unit Patterns using Myanmar Tai Laing Digits (mymrtlng)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Nag Mundari Digits (nagm)' href='#Currency Unit Patterns using Nag Mundari Digits (nagm)'>Currency Unit Patterns using Nag Mundari Digits (nagm)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Newa Digits (newa)' href='#Currency Unit Patterns using Newa Digits (newa)'>Currency Unit Patterns using Newa Digits (newa)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Nyiakeng Puachue Hmong Digits (hmnp)' href='#Currency Unit Patterns using Nyiakeng Puachue Hmong Digits (hmnp)'>Currency Unit Patterns using Nyiakeng Puachue Hmong Digits (hmnp)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Pahawh Hmong Digits (hmng)' href='#Currency Unit Patterns using Pahawh Hmong Digits (hmng)'>Currency Unit Patterns using Pahawh Hmong Digits (hmng)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Segmented Digits (segment)' href='#Currency Unit Patterns using Segmented Digits (segment)'>Currency Unit Patterns using Segmented Digits (segment)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Sinhala Lith Digits (sinh)' href='#Currency Unit Patterns using Sinhala Lith Digits (sinh)'>Currency Unit Patterns using Sinhala Lith Digits (sinh)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Tangsa Digits (tnsa)' href='#Currency Unit Patterns using Tangsa Digits (tnsa)'>Currency Unit Patterns using Tangsa Digits (tnsa)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Tirhuta Digits (tirh)' href='#Currency Unit Patterns using Tirhuta Digits (tirh)'>Currency Unit Patterns using Tirhuta Digits (tirh)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Wancho Digits (wcho)' href='#Currency Unit Patterns using Wancho Digits (wcho)'>Currency Unit Patterns using Wancho Digits (wcho)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Currency Unit Patterns using Warang Citi Digits (wara)' href='#Currency Unit Patterns using Warang Citi Digits (wara)'>Currency Unit Patterns using Warang Citi Digits (wara)</a></td>
+	<td class='source'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Units' href='#Units'>Units</a></td>
+	<td class='source' rowSpan='2'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td>
+	<td class='source' rowSpan='2'><a name='g-force' href='#g-force'>g-force</a></td>
+	<td class='source' rowSpan='2'>narrow-other-nominative</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>{0}G</td>
+	<td class='target' rowSpan='2'>{0}G力</td>
+	<td class='target' rowSpan='2'>modern</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='30'><a name='Special' href='#Special'>Special</a></td>
+	<td class='source' rowSpan='30'><a name='Suppress' href='#Suppress'>Suppress</a></td>
+	<td class='source'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td>
+	<td class='source'>Formats - Standard - Date Formats-short</td>
+	<td class='source' rowSpan='2'>zh_Hans_HK</td>
+	<td class='target' rowSpan='30'>▷missing◁</td>
+	<td class='target'>GyyMd</td>
+	<td class='target' rowSpan='30'>comprehensive</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Chinese' href='#Chinese'>Chinese</a></td>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-full</td>
+	<td class='target' rowSpan='2'>UMMMEEEEd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-full_numbers</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>hanidec</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-long</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>UMMMd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-long_numbers</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>hanidec</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-medium</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>UMMMd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Date Formats-medium_numbers</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>hanidec</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Generic' href='#Generic'>Generic</a></td>
+	<td class='source' rowSpan='4'>Formats - Standard - Date Formats-short</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>GGGGGyyMd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='10'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>yyMd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Time Formats-full</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>ahmmsszzzz</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Time Formats-long</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>ahmmssz</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Time Formats-medium</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>ahmmss</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Formats - Standard - Time Formats-short</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='2'>ahmm</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Islamic' href='#Islamic'>Islamic</a></td>
+	<td class='source' rowSpan='5'>Formats - Standard - Date Formats-short</td>
+	<td class='source'>zh_Hans_HK</td>
+	<td class='target' rowSpan='5'>GyyMd</td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+  <tr>
+	<td class='source'><a name='Japanese' href='#Japanese'>Japanese</a></td>
+	<td class='source' rowSpan='2'>zh_Hans_HK</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Minguo' href='#Minguo'>Minguo</a></td></tr>
+  <tr>
+	<td class='source'>zh_Hans_MO</td></tr>
+</table>
+<!-- end main body -->
+	</div>
+	<div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+		<a href='https://www.unicode.org/copyright.html'>
+			<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;'
+				alt='Access to Copyright and terms of use'>
+		</a>
+	</div>
+
+</body>
+</html>
