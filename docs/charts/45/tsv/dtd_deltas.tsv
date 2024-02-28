@@ -1,8 +1,57 @@
 #Version	Dtd Type	Intermediate Path	Element	Attributes
 45.0β	supplementalData	/	+unitPrefixes	 
+45.0β	supplementalData	/	parentLocales	<div>component ⟪literal/segmentations, collations⟫➠⟪set/literal/segmentations, collations, plurals, grammaticalFeatures⟫</div>
+45.0β	supplementalData	​/convertUnits/	convertUnit	<div>+special §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div>
 45.0β	supplementalData	​/currencyData​/region/	currency	<div>+tz §v ⟪bcp47/tz⟫</div><div>+to-tz §v ⟪bcp47/tz⟫</div>
+45.0β	supplementalData	​/parentLocales/	parentLocale	<div>+localeRules §v ⟪set/literal/nonlikelyScript⟫</div>
 45.0β	supplementalData	​/unitPrefixes/	+unitPrefix	<div>+type §d ⟪regex/[A-Za-z]{3,6}⟫</div><div>+symbol §v ⟪regex/[a-zA-Zμ]{1,2}⟫</div><div>+power10 §v ⟪regex/-?[0-9]{1,2}⟫</div><div>+power2 §v ⟪regex/[0-9]0⟫</div>
-44.1	keyboard3	​/locales/	locale	<div>id §v➠§d</div>
+45.0β	keyboard3		+🅟keyboard3	<div>+locale §d ⟪validity/bcp47-wellformed⟫</div><div>+conformsTo §m︎ ⟨techpreview⟩</div><div>+xmlns §m︎ ⟪any⟫</div>
+45.0β	keyboard3	/	+🅟import	<div>+path §d ⟪any⟫</div><div>+base §d ⟨cldr⟩</div>
+45.0β	keyboard3	/	+🅟locales	 
+45.0β	keyboard3	/	+🅟version	<div>+number §v ⟪semver⟫</div><div>+cldrVersion §m︎ ⟪any⟫</div>
+45.0β	keyboard3	/	+🅟info	<div>+name §v ⟪any⟫</div><div>+author §v ⟪any⟫</div><div>+layout §v ⟪any⟫</div><div>+indicator §v ⟪any⟫</div>
+45.0β	keyboard3	/	+🅟settings⇣	<div>+normalization §v ⟨disabled⟩</div>
+45.0β	keyboard3	/	+🅟displays	 
+45.0β	keyboard3	/	+🅟keys	 
+45.0β	keyboard3	/	+flicks	 
+45.0β	keyboard3	/	+🅟forms	 
+45.0β	keyboard3	/	+🅟layers	<div>+formId §d ⟪any⟫</div><div>+minDeviceWidth §d ⟪range/1~999⟫</div>
+45.0β	keyboard3	/	+🅟variables	 
+45.0β	keyboard3	/	+🅟transforms	<div>+type §d ⟨simple, backspace⟩</div>
+45.0β	keyboard3	​/displays/	+import	<div>⊕</div>
+45.0β	keyboard3	​/displays/	+🅟display	<div>+keyId §d ⟪any⟫</div><div>+output §d ⟪any⟫</div><div>+display §v ⟪any⟫</div>
+45.0β	keyboard3	​/displays/	+🅟displayOptions	<div>+baseCharacter §v ⟪any⟫</div>
+45.0β	keyboard3	​/flicks/	+import	<div>⊕</div>
+45.0β	keyboard3	​/flicks/	+🅟flick	<div>+id §d ⟪any⟫</div>
+45.0β	keyboard3	​/flicks​/flick/	+🅟flickSegment	<div>+directions §d ⟪regex/(n|e|s|w|ne|nw|se|sw)([ ]+(n|e|s|w|ne|nw|se|sw))*⟫</div><div>+keyId §v ⟪any⟫</div>
+45.0β	keyboard3	​/forms/	+import	<div>⊕</div>
+45.0β	keyboard3	​/forms/	+🅟form	<div>+id §d ⟪any⟫</div>
+45.0β	keyboard3	​/forms​/form/	+🅟scanCodes	<div>+codes §v ⟪regex/[0-9a-fA-F]{2}( [0-9a-fA-F]{2})*⟫</div>
+45.0β	keyboard3	​/keys/	+import	<div>⊕</div>
+45.0β	keyboard3	​/keys/	+🅟key	<div>+id §d ⟪any⟫</div><div>+flickId §d ⟪any⟫</div><div>+gap §v ⟨true⟩</div><div>+output §v ⟪any⟫</div><div>+longPressKeyIds §v ⟪any⟫</div><div>+longPressDefaultKeyId §v ⟪any⟫</div><div>+multiTapKeyIds §v ⟪any⟫</div><div>+stretch §v ⟨true⟩</div><div>+layerId §v ⟪any⟫</div><div>+width §v ⟪range/0.01~100.0⟫</div>
+45.0β	keyboard3	​/layers/	+import	<div>⊕</div>
+45.0β	keyboard3	​/layers/	+🅟layer	<div>+id §d ⟪any⟫</div><div>+modifiers §d ⟪regex/(none|([A-Za-z0-9]+)( [A-Za-z0-9]+)*)⟫</div>
+45.0β	keyboard3	​/layers​/layer/	+🅟row⇣	<div>+keys §v ⟪any⟫</div>
+45.0β	keyboard3	​/locales/	+🅟locale	<div>+id §d ⟪validity/bcp47-wellformed⟫</div>
+45.0β	keyboard3	​/transforms/	+import	<div>⊕</div>
+45.0β	keyboard3	​/transforms/	+🅟transformGroup	 
+45.0β	keyboard3	​/transforms​/transformGroup/	+import	<div>⊕</div>
+45.0β	keyboard3	​/transforms​/transformGroup/	+transform⇣	<div>+from §v ⟪any⟫</div><div>+to §v ⟪any⟫</div>
+45.0β	keyboard3	​/transforms​/transformGroup/	+🅟reorder⇣	<div>+before §v ⟪any⟫</div><div>+from §v ⟪any⟫</div><div>+order §v ⟪any⟫</div><div>+tertiary §v ⟪any⟫</div><div>+tertiaryBase §v ⟪any⟫</div><div>+preBase §v ⟪any⟫</div>
+45.0β	keyboard3	​/variables/	+import	<div>⊕</div>
+45.0β	keyboard3	​/variables/	+string	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
+45.0β	keyboard3	​/variables/	+set	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
+45.0β	keyboard3	​/variables/	+uset	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
+45.0β	keyboardTest3		+🅟keyboardTest3	<div>+conformsTo §m︎ ⟨techpreview⟩</div>
+45.0β	keyboardTest3	/	+🅟info	<div>+keyboard §v ⟪any⟫</div><div>+author §m︎ ⟪any⟫</div><div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
+45.0β	keyboardTest3	/	+🅟repertoire	<div>+chars §v ⟪any⟫</div><div>+type §v ⟨default, simple, gesture, flick, longPress, multiTap, hardware⟩</div><div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
+45.0β	keyboardTest3	/	+🅟tests	<div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
+45.0β	keyboardTest3	​/tests/	+🅟test	<div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
+45.0β	keyboardTest3	​/tests​/test/	+🅟startContext	<div>+to §v ⟪any⟫</div>
+45.0β	keyboardTest3	​/tests​/test/	+🅟keystroke⇣	<div>+key §v ⟪any⟫</div><div>+flick §v ⟪any⟫</div><div>+longPress §v ⟪range/1~999⟫</div><div>+tapCount §v ⟪range/2~999⟫</div>
+45.0β	keyboardTest3	​/tests​/test/	+🅟emit⇣	<div>+to §v ⟪any⟫</div>
+45.0β	keyboardTest3	​/tests​/test/	+🅟backspace⇣	 
+45.0β	keyboardTest3	​/tests​/test/	+🅟check⇣	<div>+result §v ⟪any⟫</div>
 44.0	ldml	​/characterLabels/	characterLabelPattern	<div>type ⟪…⟫➠⟪… facing-left, facing-right, …⟫</div>
 44.0	ldml	​/contextTransforms/	contextTransformUsage	<div>type ⟪literal/calendar-field, … typographicNames⟫➠⟪literal/all, calendar-field, … currencyName-count, … key, … metazone-long, metazone-short, … territory, typographicNames, zone-exemplarCity, zone-long, zone-short⟫</div>
 44.0	ldml	​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/	pattern	<div>numbers ⟪…⟫➠⟪… d=jpan, … tibt, …⟫</div><div>alt ⟪…⟫➠⟪… ascii, …⟫</div>
@@ -15,53 +64,6 @@
 44.0	supplementalData	​/coverageLevels/	coverageLevel	<div>value ⟪…⟫➠⟪… comprehensive, …⟫</div>
 44.0	supplementalData	​/unitQuantities/	unitQuantity	<div>description ➠⟪any⟫</div>
 44.0	ldmlBCP47	​/keyword​/key/	type	<div>+iana §v ⟪regex/^[A-Za-z]+(/[A-Za-z_\-]+)+$⟫</div>
-44.0	keyboard3		+🅟keyboard3	<div>+locale §d ⟪validity/bcp47-wellformed⟫</div><div>+conformsTo §m︎ ⟨techpreview⟩</div>
-44.0	keyboard3	/	+🅟import	<div>+path §d ⟪any⟫</div><div>+base §d ⟨cldr⟩</div>
-44.0	keyboard3	/	+🅟locales	 
-44.0	keyboard3	/	+🅟version	<div>+number §v ⟪semver⟫</div><div>+cldrVersion §m︎ ⟪any⟫</div>
-44.0	keyboard3	/	+🅟info	<div>+name §v ⟪any⟫</div><div>+author §v ⟪any⟫</div><div>+layout §v ⟪any⟫</div><div>+indicator §v ⟪any⟫</div>
-44.0	keyboard3	/	+🅟settings⇣	<div>+normalization §v ⟨disabled⟩</div>
-44.0	keyboard3	/	+🅟displays	 
-44.0	keyboard3	/	+🅟keys	 
-44.0	keyboard3	/	+flicks	 
-44.0	keyboard3	/	+🅟forms	 
-44.0	keyboard3	/	+🅟layers	<div>+formId §d ⟪any⟫</div><div>+minDeviceWidth §d ⟪range/1~999⟫</div>
-44.0	keyboard3	/	+🅟variables	 
-44.0	keyboard3	/	+🅟transforms	<div>+type §d ⟨simple, backspace⟩</div>
-44.0	keyboard3	​/displays/	+import	<div>⊕</div>
-44.0	keyboard3	​/displays/	+🅟display	<div>+keyId §d ⟪any⟫</div><div>+output §d ⟪any⟫</div><div>+display §v ⟪any⟫</div>
-44.0	keyboard3	​/displays/	+🅟displayOptions	<div>+baseCharacter §v ⟪any⟫</div>
-44.0	keyboard3	​/flicks/	+import	<div>⊕</div>
-44.0	keyboard3	​/flicks/	+🅟flick	<div>+id §d ⟪any⟫</div>
-44.0	keyboard3	​/flicks​/flick/	+🅟flickSegment	<div>+directions §d ⟪regex/(n|e|s|w|ne|nw|se|sw)([ ]+(n|e|s|w|ne|nw|se|sw))*⟫</div><div>+keyId §v ⟪any⟫</div>
-44.0	keyboard3	​/forms/	+import	<div>⊕</div>
-44.0	keyboard3	​/forms/	+🅟form	<div>+id §d ⟪any⟫</div>
-44.0	keyboard3	​/forms​/form/	+🅟scanCodes	<div>+codes §v ⟪regex/[0-9a-fA-F]{2}( [0-9a-fA-F]{2})*⟫</div>
-44.0	keyboard3	​/keys/	+import	<div>⊕</div>
-44.0	keyboard3	​/keys/	+🅟key	<div>+id §d ⟪any⟫</div><div>+flickId §d ⟪any⟫</div><div>+gap §v ⟨true⟩</div><div>+output §v ⟪any⟫</div><div>+longPressKeyIds §v ⟪any⟫</div><div>+longPressDefaultKeyId §v ⟪any⟫</div><div>+multiTapKeyIds §v ⟪any⟫</div><div>+stretch §v ⟨true⟩</div><div>+layerId §v ⟪any⟫</div><div>+width §v ⟪range/0.01~100.0⟫</div>
-44.0	keyboard3	​/layers/	+import	<div>⊕</div>
-44.0	keyboard3	​/layers/	+🅟layer	<div>+id §d ⟪any⟫</div><div>+modifiers §d ⟪regex/(none|([A-Za-z0-9]+)( [A-Za-z0-9]+)*)⟫</div>
-44.0	keyboard3	​/layers​/layer/	+🅟row⇣	<div>+keys §v ⟪any⟫</div>
-44.0	keyboard3	​/locales/	+🅟locale	<div>+id §v ⟪validity/bcp47-wellformed⟫</div>
-44.0	keyboard3	​/transforms/	+import	<div>⊕</div>
-44.0	keyboard3	​/transforms/	+🅟transformGroup	 
-44.0	keyboard3	​/transforms​/transformGroup/	+import	<div>⊕</div>
-44.0	keyboard3	​/transforms​/transformGroup/	+transform⇣	<div>+from §v ⟪any⟫</div><div>+to §v ⟪any⟫</div>
-44.0	keyboard3	​/transforms​/transformGroup/	+🅟reorder⇣	<div>+before §v ⟪any⟫</div><div>+from §v ⟪any⟫</div><div>+order §v ⟪any⟫</div><div>+tertiary §v ⟪any⟫</div><div>+tertiaryBase §v ⟪any⟫</div><div>+preBase §v ⟪any⟫</div>
-44.0	keyboard3	​/variables/	+import	<div>⊕</div>
-44.0	keyboard3	​/variables/	+string	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
-44.0	keyboard3	​/variables/	+set	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
-44.0	keyboard3	​/variables/	+unicodeSet	<div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div>
-44.0	keyboardTest3		+🅟keyboardTest3	<div>+conformsTo §m︎ ⟨techpreview⟩</div>
-44.0	keyboardTest3	/	+🅟info	<div>+keyboard §v ⟪any⟫</div><div>+author §m︎ ⟪any⟫</div><div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
-44.0	keyboardTest3	/	+🅟repertoire	<div>+chars §v ⟪any⟫</div><div>+type §v ⟨default, simple, gesture, flick, longPress, multiTap, hardware⟩</div><div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
-44.0	keyboardTest3	/	+🅟tests	<div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
-44.0	keyboardTest3	​/tests/	+🅟test	<div>+name §d ⟪regex/[A-Za-z0-9][A-Za-z0-9-]*⟫</div>
-44.0	keyboardTest3	​/tests​/test/	+🅟startContext	<div>+to §v ⟪any⟫</div>
-44.0	keyboardTest3	​/tests​/test/	+🅟keystroke⇣	<div>+key §v ⟪any⟫</div><div>+flick §v ⟪any⟫</div><div>+longPress §v ⟪range/1~999⟫</div><div>+tapCount §v ⟪range/2~999⟫</div>
-44.0	keyboardTest3	​/tests​/test/	+🅟emit⇣	<div>+to §v ⟪any⟫</div>
-44.0	keyboardTest3	​/tests​/test/	+🅟backspace⇣	 
-44.0	keyboardTest3	​/tests​/test/	+🅟check⇣	<div>+result §v ⟪any⟫</div>
 43.0	ldml	/	ⓟpersonNames	 
 43.0	ldml	​/collations​/collation/	cr	<div>alt ⟪literal/variant⟫➠⟪literal/variant, proposed, short⟫</div>
 43.0	ldml	​/personNames/	ⓟnameOrderLocales	 
