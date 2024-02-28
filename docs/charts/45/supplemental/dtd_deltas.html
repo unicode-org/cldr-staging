@@ -87,81 +87,35 @@
 	<th class='target'>Element</th>
 	<th class='target'>Attributes</th></tr>
   <tr>
-	<td class='source' rowSpan='3'><a name='45.0β' href='#45.0β'>45.0β</a></td>
-	<td class='source' rowSpan='3'>supplementalData</td>
-	<td class='target'>/</td>
+	<td class='source' rowSpan='53'><a name='45.0β' href='#45.0β'>45.0β</a></td>
+	<td class='source' rowSpan='6'>supplementalData</td>
+	<td class='target' rowSpan='2'>/</td>
 	<td class='target'>+unitPrefixes</td>
 	<td class='target'> </td></tr>
+  <tr>
+	<td class='target'>parentLocales</td>
+	<td class='target'><div>component ⟪literal/segmentations, collations⟫➠⟪set/literal/segmentations, collations, plurals, grammaticalFeatures⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/convertUnits/</td>
+	<td class='target'>convertUnit</td>
+	<td class='target'><div>+special §v ⟪regex/[A-Za-z][-A-Za-z0-9]*⟫</div></td></tr>
   <tr>
 	<td class='target'>​/currencyData​/region/</td>
 	<td class='target'>currency</td>
 	<td class='target'><div>+tz §v ⟪bcp47/tz⟫</div><div>+to-tz §v ⟪bcp47/tz⟫</div></td></tr>
   <tr>
+	<td class='target'>​/parentLocales/</td>
+	<td class='target'>parentLocale</td>
+	<td class='target'><div>+localeRules §v ⟪set/literal/nonlikelyScript⟫</div></td></tr>
+  <tr>
 	<td class='target'>​/unitPrefixes/</td>
 	<td class='target'>+unitPrefix</td>
 	<td class='target'><div>+type §d ⟪regex/[A-Za-z]{3,6}⟫</div><div>+symbol §v ⟪regex/[a-zA-Zμ]{1,2}⟫</div><div>+power10 §v ⟪regex/-?[0-9]{1,2}⟫</div><div>+power2 §v ⟪regex/[0-9]0⟫</div></td></tr>
   <tr>
-	<td class='source'><a name='44.1' href='#44.1'>44.1</a></td>
-	<td class='source'>keyboard3</td>
-	<td class='target'>​/locales/</td>
-	<td class='target'>locale</td>
-	<td class='target'><div>id §v➠§d</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='59'><a name='44.0' href='#44.0'>44.0</a></td>
-	<td class='source' rowSpan='8'>ldml</td>
-	<td class='target'>​/characterLabels/</td>
-	<td class='target'>characterLabelPattern</td>
-	<td class='target'><div>type ⟪…⟫➠⟪… facing-left, facing-right, …⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/contextTransforms/</td>
-	<td class='target'>contextTransformUsage</td>
-	<td class='target'><div>type ⟪literal/calendar-field, … typographicNames⟫➠⟪literal/all, calendar-field, … currencyName-count, … key, … metazone-long, metazone-short, … territory, typographicNames, zone-exemplarCity, zone-long, zone-short⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td>
-	<td class='target'>pattern</td>
-	<td class='target'><div>numbers ⟪…⟫➠⟪… d=jpan, … tibt, …⟫</div><div>alt ⟪…⟫➠⟪… ascii, …⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td>
-	<td class='target'>dateFormatItem</td>
-	<td class='target'><div>id ⟪literal/Bh, Bhm, Bhms, E, EBhm, EBhms, EEEEd, EHm, EHms, Ed, Ehm, Ehms, Gy, GyM, GyMEEEEd, GyMMM, GyMMMEEEEd, GyMMMEd, GyMMMM, GyMMMMEd, GyMMMMd, GyMMMd, GyMd, H, HHmm, HHmmZ, HHmmss, Hm, HmZ, Hmm, Hms, Hmsv, Hmsvvvv, Hmv, Hmvvvv, M, MEEEEd, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEEEEd, MMMMEd, MMMMW, MMMMd, MMMMdd, MMMd, MMMdd, MMd, MMdd, Md, Mdd, UM, UMMM, UMMMd, UMd, d, h, hhmm, hhmmss, hm, hms, hmsv, hmsvvvv, hmv, hmvvvv, mmss, ms, y, yM, yMEEEEd, yMEd, yMM, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMccccd, yMMMMd, yMMMd, yMMdd, yMd, yQ, yQQQ, yQQQQ, yw, yyyy, yyyyM, yyyyMEEEEd, yyyyMEd, yyyyMM, yyyyMMM, yyyyMMMEEEEd, yyyyMMMEd, yyyyMMMM, yyyyMMMMEd, yyyyMMMMccccd, yyyyMMMMd, yyyyMMMd, yyyyMMdd, yyyyMd, yyyyQQQ, yyyyQQQQ⟫➠⟪regex/((E|EEEE)?(H|HH|h|hh|Bh)(m|ms|mm|mmss)?(Z|z|zzzz|v|vvvv)?)|(ms|mmss)|((G|GGGGG)?(y|yy|yyyy)((M{1,4}((E|EEEE|cccc)?(d|dd))?)|(w|Q|QQQ|QQQQ))?)|(U(M|MMM)d?)|(M{1,4}(((E|EEEE|cccc)?(d|dd))|W)?)|((E|EEEE)?d)|(E|EEEE)⟫</div><div>alt ⟪literal/variant⟫➠⟪literal/ascii, variant⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td>
-	<td class='target'>intervalFormatItem</td>
-	<td class='target'><div>id ⟪literal/Bh, Bhm, Gy, GyM, GyMEd, GyMMM, GyMMMEd, GyMMMd, GyMd, H, Hm, Hmv, Hmvvvv, Hv, Hvvvv, M, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEd, MMMMd, MMMd, Md, d, h, hm, hmv, hmvvvv, hv, hvvvv, y, yM, yMEd, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMd, yMMMd, yMd, GGGGGyM, GGGGGyMEd, GGGGGyMd, GyMMMM, GyMMMMEd, GyMMMMd⟫➠⟪regex/((H|h|Bh)m?(v|vvvv)?)|((G|GGGGG)?(y|yyyy)((M|MMM|MMMM)((E|EEEE)?d)?)?)|((M|MMM|MMMM)((E|EEEE)?d)?)|d⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/localeDisplayNames​/territories/</td>
-	<td class='target'>territory</td>
-	<td class='target'><div>alt ⟪… variant⟫➠⟪… variant, biot, chagos⟫</div></td></tr>
-  <tr>
-	<td class='target' rowSpan='2'>​/personNames/</td>
-	<td class='target'>+parameterDefault</td>
-	<td class='target'><div>+parameter §d ⟨length, formality⟩</div></td></tr>
-  <tr>
-	<td class='target'>+nativeSpaceReplacement</td>
-	<td class='target'><div>+xml:space §m︎ ⟨default, preserve⟩</div></td></tr>
-  <tr>
-	<td class='source' rowSpan='3'>supplementalData</td>
-	<td class='target'>​/convertUnits/</td>
-	<td class='target'>convertUnit</td>
-	<td class='target'><div>systems ⟪set/literal/ussystem, … si, other⟫➠⟪set/literal/si, si_acceptable, … metric_adjacent, ussystem, … jpsystem, astronomical, person_age, other, prefixable⟫</div><div>description ➠⟪any⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/coverageLevels/</td>
-	<td class='target'>coverageLevel</td>
-	<td class='target'><div>value ⟪…⟫➠⟪… comprehensive, …⟫</div></td></tr>
-  <tr>
-	<td class='target'>​/unitQuantities/</td>
-	<td class='target'>unitQuantity</td>
-	<td class='target'><div>description ➠⟪any⟫</div></td></tr>
-  <tr>
-	<td class='source'>ldmlBCP47</td>
-	<td class='target'>​/keyword​/key/</td>
-	<td class='target'>type</td>
-	<td class='target'><div>+iana §v ⟪regex/^[A-Za-z]+(/[A-Za-z_\-]+)+$⟫</div></td></tr>
-  <tr>
 	<td class='source' rowSpan='37'>keyboard3</td>
 	<td class='target'></td>
 	<td class='target'>+🅟keyboard3</td>
-	<td class='target'><div>+locale §d ⟪validity/bcp47-wellformed⟫</div><div>+conformsTo §m︎ ⟨techpreview⟩</div></td></tr>
+	<td class='target'><div>+locale §d ⟪validity/bcp47-wellformed⟫</div><div>+conformsTo §m︎ ⟨techpreview⟩</div><div>+xmlns §m︎ ⟪any⟫</div></td></tr>
   <tr>
 	<td class='target' rowSpan='12'>/</td>
 	<td class='target'>+🅟import</td>
@@ -252,7 +206,7 @@
   <tr>
 	<td class='target'>​/locales/</td>
 	<td class='target'>+🅟locale</td>
-	<td class='target'><div>+id §v ⟪validity/bcp47-wellformed⟫</div></td></tr>
+	<td class='target'><div>+id §d ⟪validity/bcp47-wellformed⟫</div></td></tr>
   <tr>
 	<td class='target' rowSpan='2'>​/transforms/</td>
 	<td class='target'>+import</td>
@@ -281,7 +235,7 @@
 	<td class='target'>+set</td>
 	<td class='target'><div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div></td></tr>
   <tr>
-	<td class='target'>+unicodeSet</td>
+	<td class='target'>+uset</td>
 	<td class='target'><div>+id §d ⟪regex/[0-9A-Za-z_]{1,32}⟫</div><div>+value §v ⟪any⟫</div></td></tr>
   <tr>
 	<td class='source' rowSpan='10'>keyboardTest3</td>
@@ -318,6 +272,57 @@
   <tr>
 	<td class='target'>+🅟check⇣</td>
 	<td class='target'><div>+result §v ⟪any⟫</div></td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='44.0' href='#44.0'>44.0</a></td>
+	<td class='source' rowSpan='8'>ldml</td>
+	<td class='target'>​/characterLabels/</td>
+	<td class='target'>characterLabelPattern</td>
+	<td class='target'><div>type ⟪…⟫➠⟪… facing-left, facing-right, …⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/contextTransforms/</td>
+	<td class='target'>contextTransformUsage</td>
+	<td class='target'><div>type ⟪literal/calendar-field, … typographicNames⟫➠⟪literal/all, calendar-field, … currencyName-count, … key, … metazone-long, metazone-short, … territory, typographicNames, zone-exemplarCity, zone-long, zone-short⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/dates​/calendars​/calendar​/dateFormats​/dateFormatLength​/dateFormat/</td>
+	<td class='target'>pattern</td>
+	<td class='target'><div>numbers ⟪…⟫➠⟪… d=jpan, … tibt, …⟫</div><div>alt ⟪…⟫➠⟪… ascii, …⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td>
+	<td class='target'>dateFormatItem</td>
+	<td class='target'><div>id ⟪literal/Bh, Bhm, Bhms, E, EBhm, EBhms, EEEEd, EHm, EHms, Ed, Ehm, Ehms, Gy, GyM, GyMEEEEd, GyMMM, GyMMMEEEEd, GyMMMEd, GyMMMM, GyMMMMEd, GyMMMMd, GyMMMd, GyMd, H, HHmm, HHmmZ, HHmmss, Hm, HmZ, Hmm, Hms, Hmsv, Hmsvvvv, Hmv, Hmvvvv, M, MEEEEd, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEEEEd, MMMMEd, MMMMW, MMMMd, MMMMdd, MMMd, MMMdd, MMd, MMdd, Md, Mdd, UM, UMMM, UMMMd, UMd, d, h, hhmm, hhmmss, hm, hms, hmsv, hmsvvvv, hmv, hmvvvv, mmss, ms, y, yM, yMEEEEd, yMEd, yMM, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMccccd, yMMMMd, yMMMd, yMMdd, yMd, yQ, yQQQ, yQQQQ, yw, yyyy, yyyyM, yyyyMEEEEd, yyyyMEd, yyyyMM, yyyyMMM, yyyyMMMEEEEd, yyyyMMMEd, yyyyMMMM, yyyyMMMMEd, yyyyMMMMccccd, yyyyMMMMd, yyyyMMMd, yyyyMMdd, yyyyMd, yyyyQQQ, yyyyQQQQ⟫➠⟪regex/((E|EEEE)?(H|HH|h|hh|Bh)(m|ms|mm|mmss)?(Z|z|zzzz|v|vvvv)?)|(ms|mmss)|((G|GGGGG)?(y|yy|yyyy)((M{1,4}((E|EEEE|cccc)?(d|dd))?)|(w|Q|QQQ|QQQQ))?)|(U(M|MMM)d?)|(M{1,4}(((E|EEEE|cccc)?(d|dd))|W)?)|((E|EEEE)?d)|(E|EEEE)⟫</div><div>alt ⟪literal/variant⟫➠⟪literal/ascii, variant⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td>
+	<td class='target'>intervalFormatItem</td>
+	<td class='target'><div>id ⟪literal/Bh, Bhm, Gy, GyM, GyMEd, GyMMM, GyMMMEd, GyMMMd, GyMd, H, Hm, Hmv, Hmvvvv, Hv, Hvvvv, M, MEd, MMM, MMMEEEEd, MMMEd, MMMM, MMMMEd, MMMMd, MMMd, Md, d, h, hm, hmv, hmvvvv, hv, hvvvv, y, yM, yMEd, yMMM, yMMMEEEEd, yMMMEd, yMMMM, yMMMMEEEEd, yMMMMEd, yMMMMd, yMMMd, yMd, GGGGGyM, GGGGGyMEd, GGGGGyMd, GyMMMM, GyMMMMEd, GyMMMMd⟫➠⟪regex/((H|h|Bh)m?(v|vvvv)?)|((G|GGGGG)?(y|yyyy)((M|MMM|MMMM)((E|EEEE)?d)?)?)|((M|MMM|MMMM)((E|EEEE)?d)?)|d⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/localeDisplayNames​/territories/</td>
+	<td class='target'>territory</td>
+	<td class='target'><div>alt ⟪… variant⟫➠⟪… variant, biot, chagos⟫</div></td></tr>
+  <tr>
+	<td class='target' rowSpan='2'>​/personNames/</td>
+	<td class='target'>+parameterDefault</td>
+	<td class='target'><div>+parameter §d ⟨length, formality⟩</div></td></tr>
+  <tr>
+	<td class='target'>+nativeSpaceReplacement</td>
+	<td class='target'><div>+xml:space §m︎ ⟨default, preserve⟩</div></td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>supplementalData</td>
+	<td class='target'>​/convertUnits/</td>
+	<td class='target'>convertUnit</td>
+	<td class='target'><div>systems ⟪set/literal/ussystem, … si, other⟫➠⟪set/literal/si, si_acceptable, … metric_adjacent, ussystem, … jpsystem, astronomical, person_age, other, prefixable⟫</div><div>description ➠⟪any⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/coverageLevels/</td>
+	<td class='target'>coverageLevel</td>
+	<td class='target'><div>value ⟪…⟫➠⟪… comprehensive, …⟫</div></td></tr>
+  <tr>
+	<td class='target'>​/unitQuantities/</td>
+	<td class='target'>unitQuantity</td>
+	<td class='target'><div>description ➠⟪any⟫</div></td></tr>
+  <tr>
+	<td class='source'>ldmlBCP47</td>
+	<td class='target'>​/keyword​/key/</td>
+	<td class='target'>type</td>
+	<td class='target'><div>+iana §v ⟪regex/^[A-Za-z]+(/[A-Za-z_\-]+)+$⟫</div></td></tr>
   <tr>
 	<td class='source' rowSpan='14'><a name='43.0' href='#43.0'>43.0</a></td>
 	<td class='source' rowSpan='10'>ldml</td>
