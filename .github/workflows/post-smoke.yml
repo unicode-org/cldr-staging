@@ -20,7 +20,7 @@ jobs:
           lfs: false
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.2
           bundler-cache: true
       - name: Build Jekyll part of the site
         run: |
@@ -49,3 +49,8 @@ jobs:
           remote_host: ${{ secrets.STAGING_DEV_HOST }}
           remote_user: ${{ secrets.STAGING_DEV_USER }}
           remote_key:  ${{ secrets.STAGING_DEV_KEY }}
+
+# only run one of these at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
