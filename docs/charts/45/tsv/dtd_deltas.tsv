@@ -15,7 +15,7 @@
 45.0β	keyboard3	/	+keys	 
 45.0β	keyboard3	/	+flicks	 
 45.0β	keyboard3	/	+forms	 
-45.0β	keyboard3	/	+layers	<div>+formId §d ⟪any⟫</div><div>+minDeviceWidth §d ⟪range/1~999⟫</div>
+45.0β	keyboard3	/	+layers	<div>+formId §d ⟪regex/[A-Za-z0-9][A-Za-z0-9_-]*⟫</div><div>+minDeviceWidth §d ⟪range/1~999⟫</div>
 45.0β	keyboard3	/	+variables	 
 45.0β	keyboard3	/	+transforms	<div>+type §d ⟨simple, backspace⟩</div>
 45.0β	keyboard3	​/displays/	+import	<div>⊕</div>
@@ -25,12 +25,12 @@
 45.0β	keyboard3	​/flicks/	+flick	<div>+id §d ⟪any⟫</div>
 45.0β	keyboard3	​/flicks​/flick/	+flickSegment	<div>+directions §d ⟪regex/(n|e|s|w|ne|nw|se|sw)([ ]+(n|e|s|w|ne|nw|se|sw))*⟫</div><div>+keyId §v ⟪any⟫</div>
 45.0β	keyboard3	​/forms/	+import	<div>⊕</div>
-45.0β	keyboard3	​/forms/	+form	<div>+id §d ⟪any⟫</div>
+45.0β	keyboard3	​/forms/	+form	<div>+id §d ⟪regex/[A-Za-z0-9][A-Za-z0-9_-]*⟫</div>
 45.0β	keyboard3	​/forms​/form/	+scanCodes	<div>+codes §v ⟪regex/[0-9a-fA-F]{2}( [0-9a-fA-F]{2})*⟫</div>
 45.0β	keyboard3	​/keys/	+import	<div>⊕</div>
 45.0β	keyboard3	​/keys/	+key	<div>+id §d ⟪any⟫</div><div>+flickId §d ⟪any⟫</div><div>+gap §v ⟨true⟩</div><div>+output §v ⟪any⟫</div><div>+longPressKeyIds §v ⟪any⟫</div><div>+longPressDefaultKeyId §v ⟪any⟫</div><div>+multiTapKeyIds §v ⟪any⟫</div><div>+stretch §v ⟨true⟩</div><div>+layerId §v ⟪any⟫</div><div>+width §v ⟪range/0.01~100.0⟫</div>
 45.0β	keyboard3	​/layers/	+import	<div>⊕</div>
-45.0β	keyboard3	​/layers/	+layer	<div>+id §d ⟪any⟫</div><div>+modifiers §d ⟪regex/(none|([A-Za-z0-9]+)( [A-Za-z0-9]+)*)⟫</div>
+45.0β	keyboard3	​/layers/	+layer	<div>+id §d ⟪regex/[A-Za-z0-9][A-Za-z0-9_-]*⟫</div><div>+modifiers §d ⟪regex/(none|([A-Za-z0-9]+)( [A-Za-z0-9]+)*)⟫</div>
 45.0β	keyboard3	​/layers​/layer/	+row⇣	<div>+keys §v ⟪any⟫</div>
 45.0β	keyboard3	​/locales/	+locale	<div>+id §d ⟪validity/bcp47-wellformed⟫</div>
 45.0β	keyboard3	​/transforms/	+import	<div>⊕</div>
