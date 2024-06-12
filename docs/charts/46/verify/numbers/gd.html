@@ -7,10 +7,35 @@
 
 <p>To correct problems in compact numbers below, please go to <a href='https://st.unicode.org/cldr-apps/v#/gd/Compact_Decimal_Formatting/'><em>Compact Decimal Formatting</em></a>.</p><table class='dtf-table'>
   <tr>
-	<th class='dtf-th'>Numeric Format</th>
+	<th class='dtf-th'>Numeric Format<br>(neutral context,<br>then RTL if relevant)</th>
 	<th class='dtf-th'>Compact-Short</th>
 	<th class='dtf-th'>Compact-Long</th>
 	<th class='dtf-th'>Compact-Short<br>+Currency</th></tr>
+  <tr>
+	<th class='dtf-s'>-123,456.7</th>
+	<td class='dtf-s'>-123K</td>
+	<td class='dtf-s'>-123 mìle</td>
+	<td class='dtf-s'>-€123K</td></tr>
+  <tr>
+	<th class='dtf-s'>-123,456</th>
+	<td class='dtf-s'>-123K</td>
+	<td class='dtf-s'>-123 mìle</td>
+	<td class='dtf-s'>-€123K</td></tr>
+  <tr>
+	<th class='dtf-s'>-12.3</th>
+	<td class='dtf-s'>-12.3</td>
+	<td class='dtf-s'>-12.3</td>
+	<td class='dtf-s'>-€12.3</td></tr>
+  <tr>
+	<th class='dtf-s'>-12</th>
+	<td class='dtf-s'>-12</td>
+	<td class='dtf-s'>-12</td>
+	<td class='dtf-s'>-€12</td></tr>
+  <tr>
+	<th class='dtf-s'>0</th>
+	<td class='dtf-s'>0</td>
+	<td class='dtf-s'>0</td>
+	<td class='dtf-s'>€0</td></tr>
   <tr>
 	<th class='dtf-s'>1</th>
 	<td class='dtf-s'>1</td>
@@ -65,7 +90,7 @@
 	<th class='dtf-s'>1,000</th>
 	<td class='dtf-s'>1K</td>
 	<td class='dtf-s'>1 mhìle</td>
-	<td class='dtf-s'>€ 1K</td></tr>
+	<td class='dtf-s'>€1K</td></tr>
   <tr>
 	<th class='dtf-s'>1,100</th>
 	<td class='dtf-s'>1.1K</td>
@@ -80,7 +105,7 @@
 	<th class='dtf-s'>2,000</th>
 	<td class='dtf-s'>2K</td>
 	<td class='dtf-s'>2 mhìle</td>
-	<td class='dtf-s'>€ 2K</td></tr>
+	<td class='dtf-s'>€2K</td></tr>
   <tr>
 	<th class='dtf-s'>3,000</th>
 	<td class='dtf-s'>3K</td>
@@ -90,7 +115,7 @@
 	<th class='dtf-s'>10,000</th>
 	<td class='dtf-s'>10K</td>
 	<td class='dtf-s'>10 mìltean</td>
-	<td class='dtf-s'>€ 10K</td></tr>
+	<td class='dtf-s'>€10K</td></tr>
   <tr>
 	<th class='dtf-s'>11,000</th>
 	<td class='dtf-s'>11K</td>
@@ -100,7 +125,7 @@
 	<th class='dtf-s'>12,000</th>
 	<td class='dtf-s'>12K</td>
 	<td class='dtf-s'>12 mhìle</td>
-	<td class='dtf-s'>€ 12K</td></tr>
+	<td class='dtf-s'>€12K</td></tr>
   <tr>
 	<th class='dtf-s'>20,000</th>
 	<td class='dtf-s'>20K</td>
@@ -130,12 +155,12 @@
 	<th class='dtf-s'>2,000,000</th>
 	<td class='dtf-s'>2M</td>
 	<td class='dtf-s'>2 mhillean</td>
-	<td class='dtf-s'>€ 2M</td></tr>
+	<td class='dtf-s'>€2M</td></tr>
   <tr>
 	<th class='dtf-s'>3,000,000</th>
 	<td class='dtf-s'>3M</td>
 	<td class='dtf-s'>3 milleanan</td>
-	<td class='dtf-s'>€ 3M</td></tr>
+	<td class='dtf-s'>€3M</td></tr>
   <tr>
 	<th class='dtf-s'>10,000,000</th>
 	<td class='dtf-s'>10M</td>
@@ -145,17 +170,17 @@
 	<th class='dtf-s'>11,000,000</th>
 	<td class='dtf-s'>11M</td>
 	<td class='dtf-s'>11 mhillean</td>
-	<td class='dtf-s'>€ 11M</td></tr>
+	<td class='dtf-s'>€11M</td></tr>
   <tr>
 	<th class='dtf-s'>12,000,000</th>
 	<td class='dtf-s'>12M</td>
 	<td class='dtf-s'>12 mhillean</td>
-	<td class='dtf-s'>€ 12M</td></tr>
+	<td class='dtf-s'>€12M</td></tr>
   <tr>
 	<th class='dtf-s'>20,000,000</th>
 	<td class='dtf-s'>20M</td>
 	<td class='dtf-s'>20 millean</td>
-	<td class='dtf-s'>€ 20M</td></tr>
+	<td class='dtf-s'>€20M</td></tr>
   <tr>
 	<th class='dtf-s'>100,000,000</th>
 	<td class='dtf-s'>100M</td>
@@ -165,27 +190,27 @@
 	<th class='dtf-s'>1,000,000,000</th>
 	<td class='dtf-s'>1B</td>
 	<td class='dtf-s'>1 bhillean</td>
-	<td class='dtf-s'>€ 1B</td></tr>
+	<td class='dtf-s'>€1B</td></tr>
   <tr>
 	<th class='dtf-s'>1,100,000,000</th>
 	<td class='dtf-s'>1.1B</td>
 	<td class='dtf-s'>1.1 billean</td>
-	<td class='dtf-s'>€ 1.1B</td></tr>
+	<td class='dtf-s'>€1.1B</td></tr>
   <tr>
 	<th class='dtf-s'>1,500,000,000</th>
 	<td class='dtf-s'>1.5B</td>
 	<td class='dtf-s'>1.5 billean</td>
-	<td class='dtf-s'>€ 1.5B</td></tr>
+	<td class='dtf-s'>€1.5B</td></tr>
   <tr>
 	<th class='dtf-s'>2,000,000,000</th>
 	<td class='dtf-s'>2B</td>
 	<td class='dtf-s'>2 bhillean</td>
-	<td class='dtf-s'>€ 2B</td></tr>
+	<td class='dtf-s'>€2B</td></tr>
   <tr>
 	<th class='dtf-s'>3,000,000,000</th>
 	<td class='dtf-s'>3B</td>
 	<td class='dtf-s'>3 billeanan</td>
-	<td class='dtf-s'>€ 3B</td></tr>
+	<td class='dtf-s'>€3B</td></tr>
   <tr>
 	<th class='dtf-s'>10,000,000,000</th>
 	<td class='dtf-s'>10B</td>
@@ -200,7 +225,7 @@
 	<th class='dtf-s'>12,000,000,000</th>
 	<td class='dtf-s'>12B</td>
 	<td class='dtf-s'>12 bhillean</td>
-	<td class='dtf-s'>€ 12B</td></tr>
+	<td class='dtf-s'>€12B</td></tr>
   <tr>
 	<th class='dtf-s'>20,000,000,000</th>
 	<td class='dtf-s'>20B</td>
@@ -215,17 +240,17 @@
 	<th class='dtf-s'>1,000,000,000,000</th>
 	<td class='dtf-s'>1T</td>
 	<td class='dtf-s'>1 trillean</td>
-	<td class='dtf-s'>€ 1T</td></tr>
+	<td class='dtf-s'>€1T</td></tr>
   <tr>
 	<th class='dtf-s'>1,100,000,000,000</th>
 	<td class='dtf-s'>1.1T</td>
 	<td class='dtf-s'>1.1 trillean</td>
-	<td class='dtf-s'>€ 1.1T</td></tr>
+	<td class='dtf-s'>€1.1T</td></tr>
   <tr>
 	<th class='dtf-s'>1,500,000,000,000</th>
 	<td class='dtf-s'>1.5T</td>
 	<td class='dtf-s'>1.5 trillean</td>
-	<td class='dtf-s'>€ 1.5T</td></tr>
+	<td class='dtf-s'>€1.5T</td></tr>
   <tr>
 	<th class='dtf-s'>2,000,000,000,000</th>
 	<td class='dtf-s'>2T</td>
@@ -240,32 +265,32 @@
 	<th class='dtf-s'>10,000,000,000,000</th>
 	<td class='dtf-s'>10T</td>
 	<td class='dtf-s'>10 trilleanan</td>
-	<td class='dtf-s'>€ 10T</td></tr>
+	<td class='dtf-s'>€10T</td></tr>
   <tr>
 	<th class='dtf-s'>11,000,000,000,000</th>
 	<td class='dtf-s'>11T</td>
 	<td class='dtf-s'>11 trillean</td>
-	<td class='dtf-s'>€ 11T</td></tr>
+	<td class='dtf-s'>€11T</td></tr>
   <tr>
 	<th class='dtf-s'>12,000,000,000,000</th>
 	<td class='dtf-s'>12T</td>
 	<td class='dtf-s'>12 thrillean</td>
-	<td class='dtf-s'>€ 12T</td></tr>
+	<td class='dtf-s'>€12T</td></tr>
   <tr>
 	<th class='dtf-s'>20,000,000,000,000</th>
 	<td class='dtf-s'>20T</td>
 	<td class='dtf-s'>20 trillean</td>
-	<td class='dtf-s'>€ 20T</td></tr>
+	<td class='dtf-s'>€20T</td></tr>
   <tr>
 	<th class='dtf-s'>100,000,000,000,000</th>
 	<td class='dtf-s'>100T</td>
 	<td class='dtf-s'>100 trillean</td>
-	<td class='dtf-s'>€ 100T</td></tr>
+	<td class='dtf-s'>€100T</td></tr>
   <tr>
 	<th class='dtf-s'>1,100,000,000,000,000</th>
 	<td class='dtf-s'>1100T</td>
 	<td class='dtf-s'>1100 trillean</td>
-	<td class='dtf-s'>€ 1100T</td></tr>
+	<td class='dtf-s'>€1100T</td></tr>
 </table>
 <h3>Plural Rules</h3><p>Look over the Minimal Pairs to make sure they are ok. Then review the examples in the cell to the left. All of those you should be able to substitute for the numbers in the Minimal Pairs, with an acceptable result. If any would be incorrect, please <a target='ticket' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'>file a ticket</a>.</p><p>For more details, see <a target='CLDR-ST-DOCS' href='http://cldr.unicode.org/index/cldr-spec/plural-rules'>Plural Rules</a>.</p><table class='dtf-table'>
   <tr>
