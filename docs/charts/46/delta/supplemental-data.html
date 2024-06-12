@@ -75,7 +75,7 @@
 	<th class='target'>Old</th>
 	<th class='target'>New</th></tr>
   <tr>
-	<td class='source' rowSpan='100'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
+	<td class='source' rowSpan='113'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
 	<td class='source' rowSpan='4'><a name='Alias' href='#Alias'>Alias</a></td>
 	<td class='source' rowSpan='6'><a name='language' href='#language'>language</a></td>
 	<td class='source'>gom-reason</td>
@@ -127,7 +127,7 @@
 	<td class='source'><a name='DefaultContent' href='#DefaultContent'>DefaultContent</a></td>
 	<td class='source'>plain</td>
 	<td class='target'>…</td>
-	<td class='target'>…<br>kaa_Cyrl<br>kaa_Cyrl_UZ<br>kaa_Latn_UZ<br>…<br>kk_Arab_CN<br>kk_Cyrl<br>kk_Cyrl_KZ<br>…<br>kok_Deva<br>kok_Deva_IN<br>kok_Latn_IN<br>…<br>lld_IT<br>…<br>ltg_LV<br>…<br>mhn_IT<br>…</td></tr>
+	<td class='target'>…<br>kaa_Cyrl<br>kaa_Cyrl_UZ<br>kaa_Latn_UZ<br>…<br>kk_Arab_CN<br>kk_Cyrl<br>kk_Cyrl_KZ<br>…<br>kok_Deva<br>kok_Deva_IN<br>kok_Latn_IN<br>…<br>lld_IT<br>…<br>ltg_LV<br>…<br>mhn_IT<br>…<br>zh_Latn_CN<br>…</td></tr>
   <tr>
 	<td class='source' rowSpan='12'><a name='Units' href='#Units'>Units</a></td>
 	<td class='source' rowSpan='2'><a name='Quantity' href='#Quantity'>Quantity</a></td>
@@ -493,6 +493,64 @@
 	<td class='source'>type</td>
 	<td class='target'>▷missing◁</td>
 	<td class='target'>numeric</td></tr>
+  <tr>
+	<td class='source' rowSpan='5'><a name='Plural' href='#Plural'>Plural</a></td>
+	<td class='source' rowSpan='3'><a name='cardinal-lld' href='#cardinal-lld'>cardinal-lld</a></td>
+	<td class='source'>many</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …</td></tr>
+  <tr>
+	<td class='source'>one</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>i = 1 and v = 0 @integer 1</td></tr>
+  <tr>
+	<td class='source'>other</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='ordinal-lld' href='#ordinal-lld'>ordinal-lld</a></td>
+	<td class='source'>many</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>n = 11,8,80,800 @integer 8, 11, 80, 800</td></tr>
+  <tr>
+	<td class='source'>other</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>@integer 0~7, 9, 10, 12~17, 100, 1000, 10000, 100000, 1000000, …</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='WeekData' href='#WeekData'>WeekData</a></td>
+	<td class='source' rowSpan='4'><a name='hours-h-regions' href='#hours-h-regions'>hours-h-regions</a></td>
+	<td class='source'>h</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_HK<br>en_MY<br>…</td></tr>
+  <tr>
+	<td class='source'>H</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_HK<br>en_MY<br>…</td></tr>
+  <tr>
+	<td class='source'>hb</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_HK<br>en_MY<br>…</td></tr>
+  <tr>
+	<td class='source'>hB</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_HK<br>en_MY<br>…</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='hours-H-regions' href='#hours-H-regions'>hours-H-regions</a></td>
+	<td class='source'>h</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_IL<br>…</td></tr>
+  <tr>
+	<td class='source'>H</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_IL<br>…</td></tr>
+  <tr>
+	<td class='source'>hb</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_IL<br>…</td></tr>
+  <tr>
+	<td class='source'>hB</td>
+	<td class='target'>…</td>
+	<td class='target'>…<br>en_IL<br>…</td></tr>
   <tr>
 	<td class='source' rowSpan='9'><a name='Language' href='#Language'>Language</a></td>
 	<td class='source' rowSpan='2'><a name='gom' href='#gom'>gom</a></td>

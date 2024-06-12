@@ -7,162 +7,187 @@
 
 <p>To correct problems in compact numbers below, please go to <a href='https://st.unicode.org/cldr-apps/v#/ur/Compact_Decimal_Formatting/'><em>Compact Decimal Formatting</em></a>.</p><table class='dtf-table'>
   <tr>
-	<th class='dtf-th'>Numeric Format</th>
+	<th class='dtf-th'>Numeric Format<br>(neutral context,<br>then RTL if relevant)</th>
 	<th class='dtf-th'>Compact-Short</th>
 	<th class='dtf-th'>Compact-Long</th>
 	<th class='dtf-th'>Compact-Short<br>+Currency</th></tr>
   <tr>
-	<th class='dtf-s'>1</th>
+	<th class='dtf-s'>‎-123,456.7<br><div dir='rtl'>‎-123,456.7</div></th>
+	<td class='dtf-s'>‫‎-1.23 لاکھ‬</td>
+	<td class='dtf-s'>‫‎-1.23 لاکھ‬</td>
+	<td class='dtf-s'>‫‎-€ 1.23 لاکھ‬</td></tr>
+  <tr>
+	<th class='dtf-s'>‎-123,456<br><div dir='rtl'>‎-123,456</div></th>
+	<td class='dtf-s'>‫‎-1.23 لاکھ‬</td>
+	<td class='dtf-s'>‫‎-1.23 لاکھ‬</td>
+	<td class='dtf-s'>‫‎-€ 1.23 لاکھ‬</td></tr>
+  <tr>
+	<th class='dtf-s'>‎-12.3<br><div dir='rtl'>‎-12.3</div></th>
+	<td class='dtf-s'>‎-12.3</td>
+	<td class='dtf-s'>‎-12.3</td>
+	<td class='dtf-s'>‎-€12.3</td></tr>
+  <tr>
+	<th class='dtf-s'>‎-12<br><div dir='rtl'>‎-12</div></th>
+	<td class='dtf-s'>‎-12</td>
+	<td class='dtf-s'>‎-12</td>
+	<td class='dtf-s'>‎-€12</td></tr>
+  <tr>
+	<th class='dtf-s'>0<br><div dir='rtl'>0</div></th>
+	<td class='dtf-s'>0</td>
+	<td class='dtf-s'>0</td>
+	<td class='dtf-s'>€0</td></tr>
+  <tr>
+	<th class='dtf-s'>1<br><div dir='rtl'>1</div></th>
 	<td class='dtf-s'>1</td>
 	<td class='dtf-s'>1</td>
 	<td class='dtf-s'>€1</td></tr>
   <tr>
-	<th class='dtf-s'>1.1</th>
+	<th class='dtf-s'>1.1<br><div dir='rtl'>1.1</div></th>
 	<td class='dtf-s'>1.1</td>
 	<td class='dtf-s'>1.1</td>
 	<td class='dtf-s'>€1.1</td></tr>
   <tr>
-	<th class='dtf-s'>1.5</th>
+	<th class='dtf-s'>1.5<br><div dir='rtl'>1.5</div></th>
 	<td class='dtf-s'>1.5</td>
 	<td class='dtf-s'>1.5</td>
 	<td class='dtf-s'>€1.5</td></tr>
   <tr>
-	<th class='dtf-s'>2</th>
+	<th class='dtf-s'>2<br><div dir='rtl'>2</div></th>
 	<td class='dtf-s'>2</td>
 	<td class='dtf-s'>2</td>
 	<td class='dtf-s'>€2</td></tr>
   <tr>
-	<th class='dtf-s'>10</th>
+	<th class='dtf-s'>10<br><div dir='rtl'>10</div></th>
 	<td class='dtf-s'>10</td>
 	<td class='dtf-s'>10</td>
 	<td class='dtf-s'>€10</td></tr>
   <tr>
-	<th class='dtf-s'>100</th>
+	<th class='dtf-s'>100<br><div dir='rtl'>100</div></th>
 	<td class='dtf-s'>100</td>
 	<td class='dtf-s'>100</td>
 	<td class='dtf-s'>€100</td></tr>
   <tr>
-	<th class='dtf-s'>1,000</th>
+	<th class='dtf-s'>1,000<br><div dir='rtl'>1,000</div></th>
 	<td class='dtf-s'>‫1 ہزار‬</td>
 	<td class='dtf-s'>‫1 ہزار‬</td>
 	<td class='dtf-s'>‫€ 1 ہزار‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,100</th>
+	<th class='dtf-s'>1,100<br><div dir='rtl'>1,100</div></th>
 	<td class='dtf-s'>‫1.1 ہزار‬</td>
 	<td class='dtf-s'>‫1.1 ہزار‬</td>
 	<td class='dtf-s'>‫€ 1.1 ہزار‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,500</th>
+	<th class='dtf-s'>1,500<br><div dir='rtl'>1,500</div></th>
 	<td class='dtf-s'>‫1.5 ہزار‬</td>
 	<td class='dtf-s'>‫1.5 ہزار‬</td>
 	<td class='dtf-s'>‫€ 1.5 ہزار‬</td></tr>
   <tr>
-	<th class='dtf-s'>2,000</th>
+	<th class='dtf-s'>2,000<br><div dir='rtl'>2,000</div></th>
 	<td class='dtf-s'>‫2 ہزار‬</td>
 	<td class='dtf-s'>‫2 ہزار‬</td>
 	<td class='dtf-s'>‫€ 2 ہزار‬</td></tr>
   <tr>
-	<th class='dtf-s'>10,000</th>
+	<th class='dtf-s'>10,000<br><div dir='rtl'>10,000</div></th>
 	<td class='dtf-s'>‫10 ہزار‬</td>
 	<td class='dtf-s'>‫10 ہزار‬</td>
 	<td class='dtf-s'>‫€ 10 ہزار‬</td></tr>
   <tr>
-	<th class='dtf-s'>100,000</th>
+	<th class='dtf-s'>100,000<br><div dir='rtl'>100,000</div></th>
 	<td class='dtf-s'>‫1 لاکھ‬</td>
 	<td class='dtf-s'>‫1 لاکھ‬</td>
 	<td class='dtf-s'>‫€ 1 لاکھ‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,000,000</th>
+	<th class='dtf-s'>1,000,000<br><div dir='rtl'>1,000,000</div></th>
 	<td class='dtf-s'>‫10 لاکھ‬</td>
 	<td class='dtf-s'>‫10 لاکھ‬</td>
 	<td class='dtf-s'>‫€ 10 لاکھ‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,100,000</th>
+	<th class='dtf-s'>1,100,000<br><div dir='rtl'>1,100,000</div></th>
 	<td class='dtf-s'>‫11 لاکھ‬</td>
 	<td class='dtf-s'>‫11 لاکھ‬</td>
 	<td class='dtf-s'>‫€ 11 لاکھ‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,500,000</th>
+	<th class='dtf-s'>1,500,000<br><div dir='rtl'>1,500,000</div></th>
 	<td class='dtf-s'>‫15 لاکھ‬</td>
 	<td class='dtf-s'>‫15 لاکھ‬</td>
 	<td class='dtf-s'>‫€ 15 لاکھ‬</td></tr>
   <tr>
-	<th class='dtf-s'>2,000,000</th>
+	<th class='dtf-s'>2,000,000<br><div dir='rtl'>2,000,000</div></th>
 	<td class='dtf-s'>‫20 لاکھ‬</td>
 	<td class='dtf-s'>‫20 لاکھ‬</td>
 	<td class='dtf-s'>‫€ 20 لاکھ‬</td></tr>
   <tr>
-	<th class='dtf-s'>10,000,000</th>
+	<th class='dtf-s'>10,000,000<br><div dir='rtl'>10,000,000</div></th>
 	<td class='dtf-s'>‫1 کروڑ‬</td>
 	<td class='dtf-s'>‫1 کروڑ‬</td>
 	<td class='dtf-s'>‫€ 1 کروڑ‬</td></tr>
   <tr>
-	<th class='dtf-s'>100,000,000</th>
+	<th class='dtf-s'>100,000,000<br><div dir='rtl'>100,000,000</div></th>
 	<td class='dtf-s'>‫10 کروڑ‬</td>
 	<td class='dtf-s'>‫10 کروڑ‬</td>
 	<td class='dtf-s'>‫€ 10 کروڑ‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,000,000,000</th>
+	<th class='dtf-s'>1,000,000,000<br><div dir='rtl'>1,000,000,000</div></th>
 	<td class='dtf-s'>‫1 ارب‬</td>
 	<td class='dtf-s'>‫1 ارب‬</td>
 	<td class='dtf-s'>‫€ 1 ارب‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,100,000,000</th>
+	<th class='dtf-s'>1,100,000,000<br><div dir='rtl'>1,100,000,000</div></th>
 	<td class='dtf-s'>‫1.1 ارب‬</td>
 	<td class='dtf-s'>‫1.1 ارب‬</td>
 	<td class='dtf-s'>‫€ 1.1 ارب‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,500,000,000</th>
+	<th class='dtf-s'>1,500,000,000<br><div dir='rtl'>1,500,000,000</div></th>
 	<td class='dtf-s'>‫1.5 ارب‬</td>
 	<td class='dtf-s'>‫1.5 ارب‬</td>
 	<td class='dtf-s'>‫€ 1.5 ارب‬</td></tr>
   <tr>
-	<th class='dtf-s'>2,000,000,000</th>
+	<th class='dtf-s'>2,000,000,000<br><div dir='rtl'>2,000,000,000</div></th>
 	<td class='dtf-s'>‫2 ارب‬</td>
 	<td class='dtf-s'>‫2 ارب‬</td>
 	<td class='dtf-s'>‫€ 2 ارب‬</td></tr>
   <tr>
-	<th class='dtf-s'>10,000,000,000</th>
+	<th class='dtf-s'>10,000,000,000<br><div dir='rtl'>10,000,000,000</div></th>
 	<td class='dtf-s'>‫10 ارب‬</td>
 	<td class='dtf-s'>‫10 ارب‬</td>
 	<td class='dtf-s'>‫€ 10 ارب‬</td></tr>
   <tr>
-	<th class='dtf-s'>100,000,000,000</th>
+	<th class='dtf-s'>100,000,000,000<br><div dir='rtl'>100,000,000,000</div></th>
 	<td class='dtf-s'>‫1 کھرب‬</td>
 	<td class='dtf-s'>‫1 کھرب‬</td>
 	<td class='dtf-s'>‫€ 1 کھرب‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,000,000,000,000</th>
+	<th class='dtf-s'>1,000,000,000,000<br><div dir='rtl'>1,000,000,000,000</div></th>
 	<td class='dtf-s'>‫10 کھرب‬</td>
 	<td class='dtf-s'>‫10 کھرب‬</td>
-	<td class='dtf-s'>‫€ 1 ٹریلین‬</td></tr>
+	<td class='dtf-s'>‫€1 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,100,000,000,000</th>
+	<th class='dtf-s'>1,100,000,000,000<br><div dir='rtl'>1,100,000,000,000</div></th>
 	<td class='dtf-s'>‫11 کھرب‬</td>
 	<td class='dtf-s'>‫11 کھرب‬</td>
 	<td class='dtf-s'>‫€1.1 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,500,000,000,000</th>
+	<th class='dtf-s'>1,500,000,000,000<br><div dir='rtl'>1,500,000,000,000</div></th>
 	<td class='dtf-s'>‫15 کھرب‬</td>
 	<td class='dtf-s'>‫15 کھرب‬</td>
 	<td class='dtf-s'>‫€1.5 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>2,000,000,000,000</th>
+	<th class='dtf-s'>2,000,000,000,000<br><div dir='rtl'>2,000,000,000,000</div></th>
 	<td class='dtf-s'>‫20 کھرب‬</td>
 	<td class='dtf-s'>‫20 کھرب‬</td>
 	<td class='dtf-s'>‫€2 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>10,000,000,000,000</th>
+	<th class='dtf-s'>10,000,000,000,000<br><div dir='rtl'>10,000,000,000,000</div></th>
 	<td class='dtf-s'>‫10 ٹریلین‬</td>
 	<td class='dtf-s'>‫10 ٹریلین‬</td>
 	<td class='dtf-s'>‫€ 10 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>100,000,000,000,000</th>
+	<th class='dtf-s'>100,000,000,000,000<br><div dir='rtl'>100,000,000,000,000</div></th>
 	<td class='dtf-s'>‫100 ٹریلین‬</td>
 	<td class='dtf-s'>‫100 ٹریلین‬</td>
 	<td class='dtf-s'>‫€ 100 ٹریلین‬</td></tr>
   <tr>
-	<th class='dtf-s'>1,100,000,000,000,000</th>
+	<th class='dtf-s'>1,100,000,000,000,000<br><div dir='rtl'>1,100,000,000,000,000</div></th>
 	<td class='dtf-s'>‫1100 ٹریلین‬</td>
 	<td class='dtf-s'>‫1100 ٹریلین‬</td>
 	<td class='dtf-s'>‫€ 1100 ٹریلین‬</td></tr>
