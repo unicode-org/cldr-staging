@@ -77,14 +77,520 @@
 	<th class='target'>New</th>
 	<th class='target'>Level</th></tr>
   <tr>
-	<td class='source' rowSpan='24'><a name='Numbers' href='#Numbers'>Numbers</a></td>
-	<td class='source' rowSpan='24'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+	<td class='source' rowSpan='120'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='15'><a name='Fields' href='#Fields'>Fields</a></td>
+	<td class='source' rowSpan='15'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td>
+	<td class='source'>weekOfMonth</td>
+	<td class='source' rowSpan='592'>doi</td>
+	<td class='target' rowSpan='3'>Week Of Month</td>
+	<td class='target'>म्हीने दा हफ्ता</td>
+	<td class='target' rowSpan='15'>modern</td></tr>
+  <tr>
+	<td class='source'>weekOfMonth-short</td>
+	<td class='target' rowSpan='2'>म्ही.दा ह.</td></tr>
+  <tr>
+	<td class='source'>weekOfMonth-narrow</td></tr>
+  <tr>
+	<td class='source'>dayOfYear</td>
+	<td class='target' rowSpan='3'>Day Of Year</td>
+	<td class='target' rowSpan='3'>ब’रे दा दिन</td></tr>
+  <tr>
+	<td class='source'>dayOfYear-short</td></tr>
+  <tr>
+	<td class='source'>dayOfYear-narrow</td></tr>
+  <tr>
+	<td class='source'>weekday-short</td>
+	<td class='target' rowSpan='2'>हफ्ते दा दिन</td>
+	<td class='target' rowSpan='2'>कम्म-दिन</td></tr>
+  <tr>
+	<td class='source'>weekday-narrow</td></tr>
+  <tr>
+	<td class='source'>weekdayOfMonth</td>
+	<td class='target' rowSpan='3'>Weekday Of Month</td>
+	<td class='target' rowSpan='3'>म्हीने दा कम्म-दिन</td></tr>
+  <tr>
+	<td class='source'>weekdayOfMonth-short</td></tr>
+  <tr>
+	<td class='source'>weekdayOfMonth-narrow</td></tr>
+  <tr>
+	<td class='source'>dayperiod-short</td>
+	<td class='target' rowSpan='2'>सवेर/बा.दपै.</td>
+	<td class='target' rowSpan='2'>बडलै/स’ञां</td></tr>
+  <tr>
+	<td class='source'>dayperiod-narrow</td></tr>
+  <tr>
+	<td class='source'>zone-short</td>
+	<td class='target' rowSpan='2'>समां खेत्तर</td>
+	<td class='target' rowSpan='2'>ज़ोन</td></tr>
+  <tr>
+	<td class='source'>zone-narrow</td></tr>
+  <tr>
+	<td class='source' rowSpan='93'><a name='Relative' href='#Relative'>Relative</a></td>
+	<td class='source' rowSpan='3'><a name='Relative Year' href='#Relative Year'>Relative Year</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last year</td>
+	<td class='target'>पिछला ब’रा</td>
+	<td class='target' rowSpan='9'>moderate</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this year</td>
+	<td class='target'>एह् ब’रा</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next year</td>
+	<td class='target'>अगला ब’रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Year Short' href='#Relative Year Short'>Relative Year Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last year</td>
+	<td class='target'>पिछला ब’रा/पिछले ब’रै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this year</td>
+	<td class='target'>एह् ब’रा/इस ब’रै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next year</td>
+	<td class='target'>अगला ब’रा/अगले ब’रै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Year Narrow' href='#Relative Year Narrow'>Relative Year Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last year</td>
+	<td class='target'>पिछला ब’रा</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this year</td>
+	<td class='target'>एह् ब’रा</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next year</td>
+	<td class='target'>अगला ब’रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Quarter' href='#Relative Quarter'>Relative Quarter</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last quarter</td>
+	<td class='target'>आखरी त्रमाही</td>
+	<td class='target' rowSpan='3'>modern</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this quarter</td>
+	<td class='target'>एह् त्रमाही</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next quarter</td>
+	<td class='target'>अगली त्रमाही</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Month' href='#Relative Month'>Relative Month</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last month</td>
+	<td class='target'>पिछला म्हीना/पिछले म्हीनै</td>
+	<td class='target' rowSpan='18'>moderate</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this month</td>
+	<td class='target'>एह् म्हीना/इस म्हीनै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next month</td>
+	<td class='target'>अगला म्हीना/अगले म्हीनै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Month Short' href='#Relative Month Short'>Relative Month Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last month</td>
+	<td class='target'>पिछला म्हीना/पिछले म्हीनै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this month</td>
+	<td class='target'>एह् म्हीना/इस म्हीनै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next month</td>
+	<td class='target'>अगला म्हीना/अगले म्हीनै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Month Narrow' href='#Relative Month Narrow'>Relative Month Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last month</td>
+	<td class='target'>पिछला म्हीना/पिछले म्हीनै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this month</td>
+	<td class='target'>एह् म्हीना/इस म्हीनै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next month</td>
+	<td class='target'>अगला म्हीना/अगले म्हीनै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Week' href='#Relative Week'>Relative Week</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last week</td>
+	<td class='target'>पिछला हफ्ता/पिछले हफ्तै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this week</td>
+	<td class='target'>एह् हफ्ता/इस हफ्तै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next week</td>
+	<td class='target'>अगला हफ्ता/अगले हफ्तै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Week Short' href='#Relative Week Short'>Relative Week Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last week</td>
+	<td class='target'>पिछला हफ्ता/पिछले हफ्तै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this week</td>
+	<td class='target'>एह् हफ्ता/इस हफ्तै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next week</td>
+	<td class='target'>अगला हफ्ता/अगले हफ्तै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Week Narrow' href='#Relative Week Narrow'>Relative Week Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last week</td>
+	<td class='target'>पिछला हफ्ता/पिछले हफ्तै</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this week</td>
+	<td class='target'>एह् हफ्ता/इस हफ्तै</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next week</td>
+	<td class='target'>अगला हफ्ता/अगले हफ्तै</td></tr>
+  <tr>
+	<td class='source'><a name='Relative Hour' href='#Relative Hour'>Relative Hour</a></td>
+	<td class='source' rowSpan='3'>0</td>
+	<td class='target'>this hour</td>
+	<td class='target'>एह् घैंटा/ इस घैंटे</td>
+	<td class='target' rowSpan='63'>modern</td></tr>
+  <tr>
+	<td class='source'><a name='Relative Minute' href='#Relative Minute'>Relative Minute</a></td>
+	<td class='target'>this minute</td>
+	<td class='target'>एह् मिंट/ इस मिंट</td></tr>
+  <tr>
+	<td class='source'><a name='Relative Second' href='#Relative Second'>Relative Second</a></td>
+	<td class='target'>now</td>
+	<td class='target'>हून/इसलै</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Sunday' href='#Relative Sunday'>Relative Sunday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Sunday</td>
+	<td class='target'>पिछला ऐतबार/पिछले ऐतबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Sunday</td>
+	<td class='target'>एह् ऐतबार/इस ऐतबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Sunday</td>
+	<td class='target'>अगला ऐतबार/अगले ऐतबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Sunday Short' href='#Relative Sunday Short'>Relative Sunday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Sunday</td>
+	<td class='target'>पिछला ऐत./पिछले ऐत.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Sunday</td>
+	<td class='target'>एह् ऐत./इस ऐत.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Sunday</td>
+	<td class='target'>अगला ऐत./अगले ऐत.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Sunday Narrow' href='#Relative Sunday Narrow'>Relative Sunday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Sunday</td>
+	<td class='target'>पिछला ऐ./पिछले ऐ.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Sunday</td>
+	<td class='target'>एह् ऐ./इस ऐ.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Sunday</td>
+	<td class='target'>अगला ऐ./अगले ऐ.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Monday' href='#Relative Monday'>Relative Monday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Monday</td>
+	<td class='target'>पिछला सोमबार/पिछले सोमबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Monday</td>
+	<td class='target'>एह् सोमबार/इस सोमबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Monday</td>
+	<td class='target'>अगला सोमबार/अगले सोमबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Monday Short' href='#Relative Monday Short'>Relative Monday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Monday</td>
+	<td class='target'>पिछला सोम./पिछले सोम.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Monday</td>
+	<td class='target'>एह् सोम./इस सोम.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Monday</td>
+	<td class='target'>अगला सोम./अगले सोम.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Monday Narrow' href='#Relative Monday Narrow'>Relative Monday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Monday</td>
+	<td class='target'>पिछला सो./पिछले सो.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Monday</td>
+	<td class='target'>एह् सो./इस सो.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Monday</td>
+	<td class='target'>अगला सो./अगले सो.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Tuesday' href='#Relative Tuesday'>Relative Tuesday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Tuesday</td>
+	<td class='target'>पिछला मंगलबार/पिछले मंगलबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Tuesday</td>
+	<td class='target'>एह् मंगलबार/इस मंगलबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Tuesday</td>
+	<td class='target'>अगला मंगलबार/अगले मंगलबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Tuesday Short' href='#Relative Tuesday Short'>Relative Tuesday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Tuesday</td>
+	<td class='target'>पिछला मंगल./पिछले मंगल.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Tuesday</td>
+	<td class='target'>एह् मंगल./इस मंगल.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Tuesday</td>
+	<td class='target'>अगला मंगल./अगले मंगल.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Tuesday Narrow' href='#Relative Tuesday Narrow'>Relative Tuesday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Tuesday</td>
+	<td class='target'>पिछला मं./पिछले मं.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Tuesday</td>
+	<td class='target'>एह् मं./इस मं.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Tuesday</td>
+	<td class='target'>अगला मं./अगले मं.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Wednesday' href='#Relative Wednesday'>Relative Wednesday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Wednesday</td>
+	<td class='target'>पिछला बुद्धबार/पिछले बुद्धबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Wednesday</td>
+	<td class='target'>एह् बुद्धबार/इस बुद्धबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Wednesday</td>
+	<td class='target'>अगला बुद्धबार/अगले बुद्धबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Wednesday Short' href='#Relative Wednesday Short'>Relative Wednesday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Wednesday</td>
+	<td class='target'>पिछला बुद्ध./पिछले बुद्ध.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Wednesday</td>
+	<td class='target'>एह् बुद्ध./इस बुद्ध.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Wednesday</td>
+	<td class='target'>अगला बुद्ध./अगले बुद्ध.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Wednesday Narrow' href='#Relative Wednesday Narrow'>Relative Wednesday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Wednesday</td>
+	<td class='target'>पिछला बु./पिछले बु.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Wednesday</td>
+	<td class='target'>एह् बु./इस बु.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Wednesday</td>
+	<td class='target'>अगला बु./अगले बु.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Thursday' href='#Relative Thursday'>Relative Thursday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Thursday</td>
+	<td class='target'>पिछला बीरबार/पिछले बीरबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Thursday</td>
+	<td class='target'>एह् बीरबार/इस बीरबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Thursday</td>
+	<td class='target'>अगला बीरबार/अगले बीरबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Thursday Short' href='#Relative Thursday Short'>Relative Thursday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Thursday</td>
+	<td class='target'>पिछला बीर./पिछले बीर.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Thursday</td>
+	<td class='target'>एह् बीर./इस बीर.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Thursday</td>
+	<td class='target'>अगला बीर./अगले बीर.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Thursday Narrow' href='#Relative Thursday Narrow'>Relative Thursday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Thursday</td>
+	<td class='target'>पिछला बी./पिछले बी.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Thursday</td>
+	<td class='target'>एह् बी./इस बी.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Thursday</td>
+	<td class='target'>अगला बी./अगले बी.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Friday' href='#Relative Friday'>Relative Friday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Friday</td>
+	<td class='target'>पिछला शुक्करबार/पिछले शुक्करबारें</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Friday</td>
+	<td class='target'>एह् शुक्करबार/इस शुक्करबारें</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Friday</td>
+	<td class='target'>अगला शुक्करबार/अगले शुक्करबारें</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Friday Short' href='#Relative Friday Short'>Relative Friday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Friday</td>
+	<td class='target'>पिछला शुक्कर./पिछले शुक्कर.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Friday</td>
+	<td class='target'>एह् शुक्कर./इस शुक्कर.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Friday</td>
+	<td class='target'>अगला शुक्कर./अगले शुक्कर.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Friday Narrow' href='#Relative Friday Narrow'>Relative Friday Narrow</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Friday</td>
+	<td class='target'>पिछला शु./पिछले शु.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Friday</td>
+	<td class='target'>एह् शु./इस शु.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Friday</td>
+	<td class='target'>अगला शु./अगले शु.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Saturday' href='#Relative Saturday'>Relative Saturday</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Saturday</td>
+	<td class='target'>पिछला शनी./पिछले शनी.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Saturday</td>
+	<td class='target'>एह् शनी./इस शनी.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Saturday</td>
+	<td class='target'>अगला शनी./अगले शनी.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Relative Saturday Short' href='#Relative Saturday Short'>Relative Saturday Short</a></td>
+	<td class='source'>-1</td>
+	<td class='target'>last Saturday</td>
+	<td class='target'>पिछला श./पिछले श.</td></tr>
+  <tr>
+	<td class='source'>0</td>
+	<td class='target'>this Saturday</td>
+	<td class='target'>एह् श./इस श.</td></tr>
+  <tr>
+	<td class='source'>1</td>
+	<td class='target'>next Saturday</td>
+	<td class='target'>अगला श./अगले श.</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Indian' href='#Indian'>Indian</a></td>
+	<td class='source' rowSpan='12'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td>
+	<td class='source'>Jan</td>
+	<td class='target'>Chaitra</td>
+	<td class='target'>चेत्तर</td>
+	<td class='target' rowSpan='12'>moderate</td></tr>
+  <tr>
+	<td class='source'>Feb</td>
+	<td class='target'>Vaisakha</td>
+	<td class='target'>बसाख</td></tr>
+  <tr>
+	<td class='source'>Mar</td>
+	<td class='target'>Jyaistha</td>
+	<td class='target'>जेठ</td></tr>
+  <tr>
+	<td class='source'>Apr</td>
+	<td class='target'>Asadha</td>
+	<td class='target'>हाड़</td></tr>
+  <tr>
+	<td class='source'>May</td>
+	<td class='target'>Sravana</td>
+	<td class='target'>सौन</td></tr>
+  <tr>
+	<td class='source'>Jun</td>
+	<td class='target'>Bhadra</td>
+	<td class='target'>भाद्रो</td></tr>
+  <tr>
+	<td class='source'>Jul</td>
+	<td class='target'>Asvina</td>
+	<td class='target'>अस्सू</td></tr>
+  <tr>
+	<td class='source'>Aug</td>
+	<td class='target'>Kartika</td>
+	<td class='target'>कत्ता</td></tr>
+  <tr>
+	<td class='source'>Sep</td>
+	<td class='target'>Agrahayana</td>
+	<td class='target'>मग्घर</td></tr>
+  <tr>
+	<td class='source'>Oct</td>
+	<td class='target'>Pausa</td>
+	<td class='target'>पोह्</td></tr>
+  <tr>
+	<td class='source'>Nov</td>
+	<td class='target'>Magha</td>
+	<td class='target'>माघ</td></tr>
+  <tr>
+	<td class='source'>Dec</td>
+	<td class='target'>Phalguna</td>
+	<td class='target'>फग्गन</td></tr>
+  <tr>
+	<td class='source' rowSpan='16'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+	<td class='source' rowSpan='16'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
 	<td class='source' rowSpan='2'><a name='Standard Patterns using Garay Digits (gara)' href='#Standard Patterns using Garay Digits (gara)'>Standard Patterns using Garay Digits (gara)</a></td>
 	<td class='source'>standard-currency</td>
-	<td class='source' rowSpan='24'>doi</td>
-	<td class='target' rowSpan='24'>▷missing◁</td>
+	<td class='target' rowSpan='16'>▷missing◁</td>
 	<td class='target' rowSpan='16'>¤#,##0.00</td>
-	<td class='target' rowSpan='24'>comprehensive</td></tr>
+	<td class='target' rowSpan='16'>comprehensive</td></tr>
   <tr>
 	<td class='source'>accounting-currency</td></tr>
   <tr>
@@ -123,23 +629,1616 @@
   <tr>
 	<td class='source'>accounting-currency</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Garay Digits (gara)' href='#Currency Unit Patterns using Garay Digits (gara)'>Currency Unit Patterns using Garay Digits (gara)</a></td>
-	<td class='source' rowSpan='8'>currencies-other</td>
-	<td class='target' rowSpan='8'>{0} {1}</td></tr>
+	<td class='source' rowSpan='456'><a name='Units' href='#Units'>Units</a></td>
+	<td class='source' rowSpan='39'><a name='Duration' href='#Duration'>Duration</a></td>
+	<td class='source' rowSpan='3'><a name='decade' href='#decade'>decade</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>dec</td>
+	<td class='target'>द्हाके</td>
+	<td class='target' rowSpan='390'>modern</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Gurung Khema Digits (gukh)' href='#Currency Unit Patterns using Gurung Khema Digits (gukh)'>Currency Unit Patterns using Gurung Khema Digits (gukh)</a></td></tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>द्हा.</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Kirat Rai Digits (krai)' href='#Currency Unit Patterns using Kirat Rai Digits (krai)'>Currency Unit Patterns using Kirat Rai Digits (krai)</a></td></tr>
+	<td class='source'>narrow-displayName</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td></tr>
+	<td class='source' rowSpan='3'><a name='century' href='#century'>century</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>c</td>
+	<td class='target'>सदियां</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Myanmar Pao Digits (mymrpao)' href='#Currency Unit Patterns using Myanmar Pao Digits (mymrpao)'>Currency Unit Patterns using Myanmar Pao Digits (mymrpao)</a></td></tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>स.</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Ol Onal Digits (onao)' href='#Currency Unit Patterns using Ol Onal Digits (onao)'>Currency Unit Patterns using Ol Onal Digits (onao)</a></td></tr>
+	<td class='source'>narrow-displayName</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Outlined Digits (outlined)' href='#Currency Unit Patterns using Outlined Digits (outlined)'>Currency Unit Patterns using Outlined Digits (outlined)</a></td></tr>
+	<td class='source' rowSpan='3'><a name='year' href='#year'>year</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>yr</td>
+	<td class='target' rowSpan='2'>ब’रे/साल</td></tr>
   <tr>
-	<td class='source'><a name='Currency Unit Patterns using Sunuwar Digits (sunu)' href='#Currency Unit Patterns using Sunuwar Digits (sunu)'>Currency Unit Patterns using Sunuwar Digits (sunu)</a></td></tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>ब’रा/साल</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='quarter' href='#quarter'>quarter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>qtr</td>
+	<td class='target'>त्रमाहियां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>त्रमा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='month' href='#month'>month</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mon</td>
+	<td class='target' rowSpan='2'>म्हीने</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>म्हीना</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='week' href='#week'>week</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>wk</td>
+	<td class='target' rowSpan='2'>हफ्ते</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>हफ्</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='day' href='#day'>day</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>day</td>
+	<td class='target' rowSpan='3'>दिन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='hour' href='#hour'>hour</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>hr</td>
+	<td class='target' rowSpan='2'>घैंटे</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>घैंटा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='minute' href='#minute'>minute</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>min</td>
+	<td class='target'>मिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मिं.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='second' href='#second'>second</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>sec</td>
+	<td class='target'>सकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>सकिं.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>सकिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='millisecond' href='#millisecond'>millisecond</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ms</td>
+	<td class='target'>मिलीसकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मिलीसकिं.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मि.सकिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='microsecond' href='#microsecond'>microsecond</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>μs</td>
+	<td class='target'>माइक्रोसकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>माइक्रोसकिं</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मासकिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='nanosecond' href='#nanosecond'>nanosecond</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ns</td>
+	<td class='target'>नैनो सकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>नैनो सकिं</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>नैसकिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='7'><a name='Graphics' href='#Graphics'>Graphics</a></td>
+	<td class='source'><a name='em' href='#em'>em</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>em</td>
+	<td class='target'>टाइपोग्राफ़िक ऐम्म</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='megapixel' href='#megapixel'>megapixel</a></td>
+	<td class='target' rowSpan='2'>MP</td>
+	<td class='target' rowSpan='2'>मैगापिक्सल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='pixel' href='#pixel'>pixel</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>px</td>
+	<td class='target' rowSpan='2'>पिक्सल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='pixel-per-centimeter' href='#pixel-per-centimeter'>pixel-per-centimeter</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>ppcm</td>
+	<td class='target'>पिक्सल फी सैंटीमीटर</td></tr>
+  <tr>
+	<td class='source'><a name='pixel-per-inch' href='#pixel-per-inch'>pixel-per-inch</a></td>
+	<td class='target'>ppi</td>
+	<td class='target'>पिक्सल फी इंच</td></tr>
+  <tr>
+	<td class='source' rowSpan='22'><a name='Length Metric' href='#Length Metric'>Length Metric</a></td>
+	<td class='source' rowSpan='3'><a name='kilometer' href='#kilometer'>kilometer</a></td>
+	<td class='target' rowSpan='3'>km</td>
+	<td class='target'>किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>कि.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='meter' href='#meter'>meter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>meter</td>
+	<td class='target'>मीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='decimeter' href='#decimeter'>decimeter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>dm</td>
+	<td class='target'>डैसीमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>डै.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>डैमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='centimeter' href='#centimeter'>centimeter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cm</td>
+	<td class='target'>सैंटीमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>सैं.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>सैंमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='millimeter' href='#millimeter'>millimeter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mm</td>
+	<td class='target'>मिलीमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मि.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='micrometer' href='#micrometer'>micrometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>μm</td>
+	<td class='target'>माइक्रोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मामी</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='nanometer' href='#nanometer'>nanometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>nm</td>
+	<td class='target'>नैनोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>नैमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='picometer' href='#picometer'>picometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>pm</td>
+	<td class='target'>पिकोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>पिमी</td></tr>
+  <tr>
+	<td class='source'><a name='mile-scandinavian' href='#mile-scandinavian'>mile-scandinavian</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>smi</td>
+	<td class='target'>मील-स्कैण्डिनेवियन</td></tr>
+  <tr>
+	<td class='source' rowSpan='31'><a name='Length Other' href='#Length Other'>Length Other</a></td>
+	<td class='source'><a name='earth-radius' href='#earth-radius'>earth-radius</a></td>
+	<td class='target'>R⊕</td>
+	<td class='target'>धरती दा घेरा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='mile' href='#mile'>mile</a></td>
+	<td class='target' rowSpan='3'>mi</td>
+	<td class='target' rowSpan='3'>मील</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='yard' href='#yard'>yard</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>yd</td>
+	<td class='target' rowSpan='2'>गज</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>ग.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='foot' href='#foot'>foot</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ft</td>
+	<td class='target' rowSpan='2'>फुट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>फु.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='inch' href='#inch'>inch</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>in</td>
+	<td class='target' rowSpan='2'>इंच</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>इं.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='parsec' href='#parsec'>parsec</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>pc</td>
+	<td class='target' rowSpan='3'>पारसेक</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='light-year' href='#light-year'>light-year</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ly</td>
+	<td class='target' rowSpan='2'>रुशनाई ब’रे</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>रुब</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='astronomical-unit' href='#astronomical-unit'>astronomical-unit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>au</td>
+	<td class='target'>खगोली यूनटां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>खगो.यू.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>खगोयू</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='furlong' href='#furlong'>furlong</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>fur</td>
+	<td class='target' rowSpan='3'>फरलांग</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='fathom' href='#fathom'>fathom</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>fm</td>
+	<td class='target' rowSpan='2'>मसातरां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मसातर</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='nautical-mile' href='#nautical-mile'>nautical-mile</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>nmi</td>
+	<td class='target'>नॉटिकल मील</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>नॉमी</td></tr>
+  <tr>
+	<td class='source'><a name='solar-radius' href='#solar-radius'>solar-radius</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>R☉</td>
+	<td class='target'>सौर अद्धाव्यास</td></tr>
+  <tr>
+	<td class='source' rowSpan='30'><a name='Area' href='#Area'>Area</a></td>
+	<td class='source' rowSpan='3'><a name='square-kilometer' href='#square-kilometer'>square-kilometer</a></td>
+	<td class='target' rowSpan='3'>km²</td>
+	<td class='target'>वर्ग किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>व. कि.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>व. किमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='hectare' href='#hectare'>hectare</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>hectare</td>
+	<td class='target' rowSpan='3'>हैक्टर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-meter' href='#square-meter'>square-meter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>m²</td>
+	<td class='target'>वर्ग मीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>व. मीटर</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-centimeter' href='#square-centimeter'>square-centimeter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cm²</td>
+	<td class='target'>वर्ग सैंटीमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>व. सैं.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>व.सैंमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-mile' href='#square-mile'>square-mile</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mi²</td>
+	<td class='target'>वर्ग मील</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>व.मील</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='acre' href='#acre'>acre</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>acre</td>
+	<td class='target' rowSpan='2'>किल्ले</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किल्ला</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-yard' href='#square-yard'>square-yard</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>yd²</td>
+	<td class='target'>वर्ग गज</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>व.गज</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>वग</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-foot' href='#square-foot'>square-foot</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ft²</td>
+	<td class='target'>वर्ग फुट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>व.फु.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>वफु</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='square-inch' href='#square-inch'>square-inch</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>in²</td>
+	<td class='target'>वर्ग इंच</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>व.इं॰</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>वइं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='dunam' href='#dunam'>dunam</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>dunam</td>
+	<td class='target' rowSpan='3'>डोनम</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='33'><a name='Volume Metric' href='#Volume Metric'>Volume Metric</a></td>
+	<td class='source' rowSpan='3'><a name='cubic-kilometer' href='#cubic-kilometer'>cubic-kilometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>km³</td>
+	<td class='target'>क्यूबिक किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू. कि.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यू.किमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cubic-meter' href='#cubic-meter'>cubic-meter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>m³</td>
+	<td class='target'>क्यूबिक मीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यू मी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cubic-centimeter' href='#cubic-centimeter'>cubic-centimeter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cm³</td>
+	<td class='target'>क्यूबिक सेंटीमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू.सैं.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यू सैंमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='megaliter' href='#megaliter'>megaliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ML</td>
+	<td class='target'>मैगालीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मै.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मैली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>hL</td>
+	<td class='target'>हैक्टोलीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>है.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>हैली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='liter' href='#liter'>liter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>liter</td>
+	<td class='target' rowSpan='3'>लीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='deciliter' href='#deciliter'>deciliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>dL</td>
+	<td class='target'>डैसीलीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>डै.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>डैली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='centiliter' href='#centiliter'>centiliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cL</td>
+	<td class='target'>सैंटीलीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>सैं.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>सैली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='milliliter' href='#milliliter'>milliliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mL</td>
+	<td class='target'>मिलीलीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मि.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='pint-metric' href='#pint-metric'>pint-metric</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mpt</td>
+	<td class='target'>मीट्रिक पिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मी.पिं.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मीपिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cup-metric' href='#cup-metric'>cup-metric</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mcup</td>
+	<td class='target'>मीट्रिक कप</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मी.क.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मीक</td></tr>
+  <tr>
+	<td class='source' rowSpan='53'><a name='Volume US' href='#Volume US'>Volume US</a></td>
+	<td class='source' rowSpan='3'><a name='cubic-mile' href='#cubic-mile'>cubic-mile</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mi³</td>
+	<td class='target'>क्यूबिक मील</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू. मील</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यू मील</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>yd³</td>
+	<td class='target'>क्यूबिक गज</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू.ग.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यूग</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cubic-foot' href='#cubic-foot'>cubic-foot</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ft³</td>
+	<td class='target'>क्यूबिक फुट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू. फुट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यूफु</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cubic-inch' href='#cubic-inch'>cubic-inch</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>in³</td>
+	<td class='target'>क्यूबिक इंच</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>क्यू. इंच</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>क्यूइं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='acre-foot' href='#acre-foot'>acre-foot</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ac ft</td>
+	<td class='target'>किल्ला-फुट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>किल्ला फु.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किल्ला फु</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='bushel' href='#bushel'>bushel</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>bu</td>
+	<td class='target' rowSpan='3'>बुशल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='gallon' href='#gallon'>gallon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>US gal</td>
+	<td class='target'>गैलनां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>गैल.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>गैल</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='quart' href='#quart'>quart</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>qt</td>
+	<td class='target' rowSpan='3'>कुआर्ट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='pint' href='#pint'>pint</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>pt</td>
+	<td class='target' rowSpan='2'>पिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>पिं.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='cup' href='#cup'>cup</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cup</td>
+	<td class='target' rowSpan='3'>कप</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='fluid-ounce' href='#fluid-ounce'>fluid-ounce</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>US fl oz</td>
+	<td class='target'>फ्लूइड औंस</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>फ्लू. औं.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>tbsp</td>
+	<td class='target'>टेबलस्पून</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>टेस्पून</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>tsp</td>
+	<td class='target'>टी स्पून</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>टीस्पून</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='barrel' href='#barrel'>barrel</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>bbl</td>
+	<td class='target' rowSpan='2'>बैरल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>बैर.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='dessert-spoon' href='#dessert-spoon'>dessert-spoon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>dstspn</td>
+	<td class='target'>डेज़र्ट स्पून</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>डेस्पून</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='drop' href='#drop'>drop</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>drop</td>
+	<td class='target' rowSpan='3'>बूंद</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='dram' href='#dram'>dram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>dram fluid</td>
+	<td class='target' rowSpan='2'>ड्रैम फ्लूइड</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>ड्रै.फ्लू.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='jigger' href='#jigger'>jigger</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>jigger</td>
+	<td class='target' rowSpan='3'>जिगर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='pinch' href='#pinch'>pinch</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>pinch</td>
+	<td class='target'>चूंडियां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>चूंडी</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>चूं</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Volume Other' href='#Volume Other'>Volume Other</a></td>
+	<td class='source' rowSpan='3'><a name='gallon-imperial' href='#gallon-imperial'>gallon-imperial</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Imp. gal</td>
+	<td class='target'>इंपीरियल गैलनां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>इंपी. गैल.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>इंपी गैल</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='dessert-spoon-imperial' href='#dessert-spoon-imperial'>dessert-spoon-imperial</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>dstspn Imp</td>
+	<td class='target'>इंपी. डेज़र्टस्पून</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>इंपी डेस्पून</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='quart-imperial' href='#quart-imperial'>quart-imperial</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>qt Imp</td>
+	<td class='target'>इंपी. कुआर्ट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>कु इंपी</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='18'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td>
+	<td class='source' rowSpan='3'><a name='g-force' href='#g-force'>g-force</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>g-force</td>
+	<td class='target' rowSpan='3'>ग्रै-फोर्स</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='meter-per-square-second' href='#meter-per-square-second'>meter-per-square-second</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>m/s²</td>
+	<td class='target'>मीटर फी सकिंट²</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मीटर/सकिं²</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मीटर/स²</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilometer-per-hour' href='#kilometer-per-hour'>kilometer-per-hour</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>km/h</td>
+	<td class='target'>किलोमीटर फी घैंटा</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>कि.मी./घैंटा</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किमी/घैं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='meter-per-second' href='#meter-per-second'>meter-per-second</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>m/s</td>
+	<td class='target'>मीटर प्रति सकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मीटर/सकिं</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मीटर/स</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='mile-per-hour' href='#mile-per-hour'>mile-per-hour</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mi/h</td>
+	<td class='target'>मील प्रति घैंटा</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मील/घैंटा</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मील/घैं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='knot' href='#knot'>knot</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kn</td>
+	<td class='target' rowSpan='3'>नॉट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='37'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td>
+	<td class='source' rowSpan='3'><a name='tonne' href='#tonne'>tonne</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>t</td>
+	<td class='target'>मीट्रिक टन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>टन</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilogram' href='#kilogram'>kilogram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target'>किल्लो</td>
+	<td class='target'>किलोग्राम</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>kg</td>
+	<td class='target'>कि.ग्रा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किग्रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='gram' href='#gram'>gram</a></td>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>gram</td>
+	<td class='target' rowSpan='2'>ग्राम</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='milligram' href='#milligram'>milligram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mg</td>
+	<td class='target'>मिलीग्राम</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मि.ग्रा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिग्रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='microgram' href='#microgram'>microgram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>μg</td>
+	<td class='target'>माइक्रोग्राम</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मा.ग्रा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>माग्रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='stone' href='#stone'>stone</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>st</td>
+	<td class='target' rowSpan='3'>स्टोन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='pound' href='#pound'>pound</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>lb</td>
+	<td class='target' rowSpan='3'>पौंड</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='ounce' href='#ounce'>ounce</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>oz</td>
+	<td class='target'>औंस</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>औं.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>औं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='ounce-troy' href='#ounce-troy'>ounce-troy</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>oz t</td>
+	<td class='target'>ट्राय औंस</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>औं. ट्राय</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>औं.ट्रा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='carat' href='#carat'>carat</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>CD</td>
+	<td class='target' rowSpan='3'>कैरट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='dalton' href='#dalton'>dalton</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Da</td>
+	<td class='target' rowSpan='2'>डाल्टन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>डा</td></tr>
+  <tr>
+	<td class='source'><a name='earth-mass' href='#earth-mass'>earth-mass</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>M⊕</td>
+	<td class='target'>धरती पिंड</td></tr>
+  <tr>
+	<td class='source'><a name='solar-mass' href='#solar-mass'>solar-mass</a></td>
+	<td class='target'>M☉</td>
+	<td class='target'>सौर पिंड</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='grain' href='#grain'>grain</a></td>
+	<td class='target' rowSpan='3'>grain</td>
+	<td class='target' rowSpan='2'>डेढ रत्ती</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>डे. रत्ती</td></tr>
+  <tr>
+	<td class='source' rowSpan='39'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td>
+	<td class='source' rowSpan='3'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kcal</td>
+	<td class='target'>किलो कैलोरी</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>किकैल</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='calorie' href='#calorie'>calorie</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>cal</td>
+	<td class='target'>कैलोरियां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>कैल</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kJ</td>
+	<td class='target' rowSpan='2'>किलो जूल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किजू</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='joule' href='#joule'>joule</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>joule</td>
+	<td class='target' rowSpan='3'>जूल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilowatt-hour' href='#kilowatt-hour'>kilowatt-hour</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kWh</td>
+	<td class='target'>किलोवॉट-घैंटे</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>किवॉघैं</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='electronvolt' href='#electronvolt'>electronvolt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>eV</td>
+	<td class='target' rowSpan='2'>इलैक्ट्रॉनवोल्ट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>इवो</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='british-thermal-unit' href='#british-thermal-unit'>british-thermal-unit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Btu</td>
+	<td class='target'>ब्रिटिश थर्मल यूनटां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>ब्रिथयू</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='therm-us' href='#therm-us'>therm-us</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>US therm</td>
+	<td class='target' rowSpan='3'>यूऐस्स थर्म</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>GW</td>
+	<td class='target'>गीगावॉट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>मैवॉ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilowatt' href='#kilowatt'>kilowatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kW</td>
+	<td class='target'>किलोवॉट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>किवॉ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='watt' href='#watt'>watt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>watt</td>
+	<td class='target' rowSpan='3'>वॉट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mW</td>
+	<td class='target'>मिलीवॉट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>मिवॉ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='horsepower' href='#horsepower'>horsepower</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>hp</td>
+	<td class='target'>हार्सपावर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>हापा</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='16'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td>
+	<td class='source' rowSpan='3'><a name='ampere' href='#ampere'>ampere</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>amp</td>
+	<td class='target'>एंपीयर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>एंपी</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='milliampere' href='#milliampere'>milliampere</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mA</td>
+	<td class='target'>मिलीएंपीयर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मिलीएंप</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिएं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='ohm' href='#ohm'>ohm</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ohm</td>
+	<td class='target' rowSpan='3'>ओम</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='volt' href='#volt'>volt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>volt</td>
+	<td class='target' rowSpan='3'>वोल्ट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td>
+	<td class='source' rowSpan='8'>long-displayName</td>
+	<td class='target'>GHz</td>
+	<td class='target'>गीगाहर्ट्ज़</td></tr>
+  <tr>
+	<td class='source'><a name='megahertz' href='#megahertz'>megahertz</a></td>
+	<td class='target'>MHz</td>
+	<td class='target'>मैगाहर्ट्ज़</td></tr>
+  <tr>
+	<td class='source'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td>
+	<td class='target'>kHz</td>
+	<td class='target'>किलोहर्ट्ज़</td></tr>
+  <tr>
+	<td class='source'><a name='hertz' href='#hertz'>hertz</a></td>
+	<td class='target'>Hz</td>
+	<td class='target'>हर्ट्ज़</td></tr>
+  <tr>
+	<td class='source' rowSpan='25'><a name='Weather' href='#Weather'>Weather</a></td>
+	<td class='source'><a name='millimeter-ofhg' href='#millimeter-ofhg'>millimeter-ofhg</a></td>
+	<td class='target'>mm Hg</td>
+	<td class='target'>पाराई मिलीमीटर</td></tr>
+  <tr>
+	<td class='source'><a name='pound-force-per-square-inch' href='#pound-force-per-square-inch'>pound-force-per-square-inch</a></td>
+	<td class='target'>psi</td>
+	<td class='target'>पौंड-फोर्स फी वर्ग इंच</td></tr>
+  <tr>
+	<td class='source'><a name='inch-ofhg' href='#inch-ofhg'>inch-ofhg</a></td>
+	<td class='target'>inHg</td>
+	<td class='target'>पाराई इंच</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='bar' href='#bar'>bar</a></td>
+	<td class='target' rowSpan='3'>bar</td>
+	<td class='target' rowSpan='3'>बार</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='millibar' href='#millibar'>millibar</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>mbar</td>
+	<td class='target'>मिलीबार</td></tr>
+  <tr>
+	<td class='source'><a name='atmosphere' href='#atmosphere'>atmosphere</a></td>
+	<td class='target'>atm</td>
+	<td class='target'>वायुमंडली दबाऽ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='pascal' href='#pascal'>pascal</a></td>
+	<td class='target' rowSpan='3'>Pa</td>
+	<td class='target'>पास्कल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>पा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>पा</td></tr>
+  <tr>
+	<td class='source'><a name='hectopascal' href='#hectopascal'>hectopascal</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>hPa</td>
+	<td class='target'>हैक्टोपास्कल</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilopascal' href='#kilopascal'>kilopascal</a></td>
+	<td class='target' rowSpan='3'>kPa</td>
+	<td class='target'>किलोपास्कल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>किपा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किपा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='megapascal' href='#megapascal'>megapascal</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>MPa</td>
+	<td class='target'>मैगापास्कल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मेपा.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मेपा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='celsius' href='#celsius'>celsius</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>°C</td>
+	<td class='target' rowSpan='2'>डिग्री सेल्सियस</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>°से॰</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='fahrenheit' href='#fahrenheit'>fahrenheit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>°F</td>
+	<td class='target' rowSpan='3'>डिग्री फारेनहाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='kelvin' href='#kelvin'>kelvin</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>K</td>
+	<td class='target'>केल्विन</td></tr>
+  <tr>
+	<td class='source' rowSpan='32'><a name='Digital' href='#Digital'>Digital</a></td>
+	<td class='source' rowSpan='3'><a name='petabyte' href='#petabyte'>petabyte</a></td>
+	<td class='target' rowSpan='3'>PB</td>
+	<td class='target'>पेटाबाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>पेबाइट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>पेबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='terabyte' href='#terabyte'>terabyte</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>TB</td>
+	<td class='target'>टैराबाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>टैबाइट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>टैबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='terabit' href='#terabit'>terabit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>Tb</td>
+	<td class='target'>टैराबिट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>टैबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='gigabyte' href='#gigabyte'>gigabyte</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>GB</td>
+	<td class='target'>गीगाबाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>गीबाइट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>गीबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='gigabit' href='#gigabit'>gigabit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Gb</td>
+	<td class='target'>गीगाबिट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>गीबिट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>गीबि</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='megabyte' href='#megabyte'>megabyte</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>MB</td>
+	<td class='target'>मैगाबाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मैबाइट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मैबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='megabit' href='#megabit'>megabit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Mb</td>
+	<td class='target'>मैगाबिट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मैबिट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मैबि</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilobyte' href='#kilobyte'>kilobyte</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kB</td>
+	<td class='target'>किलोबाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>किबाइट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किबा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='kilobit' href='#kilobit'>kilobit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kb</td>
+	<td class='target'>किलोबिट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>किबिट</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किबी</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='byte' href='#byte'>byte</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>byte</td>
+	<td class='target' rowSpan='2'>बाइट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>बा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='bit' href='#bit'>bit</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>bit</td>
+	<td class='target' rowSpan='3'>बिट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Coordinates' href='#Coordinates'>Coordinates</a></td>
+	<td class='source' rowSpan='3'><a name='all' href='#all'>all</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>direction</td>
+	<td class='target'>प्रधान दिशा</td>
+	<td class='target' rowSpan='3'>moderate</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>दिशा</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='32'><a name='Other Units Metric' href='#Other Units Metric'>Other Units Metric</a></td>
+	<td class='source' rowSpan='3'><a name='revolution' href='#revolution'>revolution</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>rev</td>
+	<td class='target' rowSpan='2'>घमघेरे</td>
+	<td class='target' rowSpan='63'>modern</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>घमघेरा</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='radian' href='#radian'>radian</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>rad</td>
+	<td class='target' rowSpan='2'>रेडियन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>रेडि</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='degree' href='#degree'>degree</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>deg</td>
+	<td class='target' rowSpan='2'>डिग्रियां</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>डिग.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='arc-minute' href='#arc-minute'>arc-minute</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>arcmin</td>
+	<td class='target' rowSpan='3'>आर्क मिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='arc-second' href='#arc-second'>arc-second</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>arcsec</td>
+	<td class='target'>आर्क सकिंट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>आर्क सकिं</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>आर्कसकिं</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='karat' href='#karat'>karat</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kt</td>
+	<td class='target' rowSpan='3'>कैरट</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='mole' href='#mole'>mole</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mol</td>
+	<td class='target' rowSpan='3'>मोल</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='newton' href='#newton'>newton</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>N</td>
+	<td class='target' rowSpan='2'>न्यूटन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>न्यू.</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='lux' href='#lux'>lux</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>lx</td>
+	<td class='target' rowSpan='3'>लक्स</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='candela' href='#candela'>candela</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>cd</td>
+	<td class='target'>कैंडेला</td></tr>
+  <tr>
+	<td class='source'><a name='lumen' href='#lumen'>lumen</a></td>
+	<td class='target'>lm</td>
+	<td class='target'>लुमेन</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='newton-meter' href='#newton-meter'>newton-meter</a></td>
+	<td class='target' rowSpan='3'>N⋅m</td>
+	<td class='target'>न्यूटन-मीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>न्यू.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='22'><a name='Other Units Metric Per' href='#Other Units Metric Per'>Other Units Metric Per</a></td>
+	<td class='source' rowSpan='3'><a name='milligram-ofglucose-per-deciliter' href='#milligram-ofglucose-per-deciliter'>milligram-ofglucose-per-deciliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mg/dL</td>
+	<td class='target'>मिलिग्राम फी डैसीलीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मि॰ग्रा॰/डै.ली.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मि॰ग्रा॰/डैली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='millimole-per-liter' href='#millimole-per-liter'>millimole-per-liter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mmol/L</td>
+	<td class='target'>मिलीमोल फी लीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मिलीमोल/लीटर</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मिलीमोल/ली</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='permillion' href='#permillion'>permillion</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ppm</td>
+	<td class='target'>हिस्से फी दस लक्ख</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>हिस्से/दस लक्ख</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>हिफीदल</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='percent' href='#percent'>percent</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>%</td>
+	<td class='target' rowSpan='2'>प्रतिशत/फीसदी</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='permille' href='#permille'>permille</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>‰</td>
+	<td class='target' rowSpan='2'>फी ज्हार</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'><a name='permyriad' href='#permyriad'>permyriad</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>‱</td>
+	<td class='target'>फी दस ज्हार</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='liter-per-kilometer' href='#liter-per-kilometer'>liter-per-kilometer</a></td>
+	<td class='target' rowSpan='3'>L/km</td>
+	<td class='target'>लीटर प्रति किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>लीटर/किमी</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='liter-per-100-kilometer' href='#liter-per-100-kilometer'>liter-per-100-kilometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>L/100km</td>
+	<td class='target'>लीटर प्रति 100 किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>ली./100 कि.मी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>ली/100 किमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='kilowatt-hour-per-100-kilometer' href='#kilowatt-hour-per-100-kilometer'>kilowatt-hour-per-100-kilometer</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>kWh/100km</td>
+	<td class='target'>किलोवॉट-घैंटे फी 100किलोमीटर</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>किवॉघैं/100किमी</td></tr>
+  <tr>
+	<td class='source' rowSpan='5'><a name='Other Units US' href='#Other Units US'>Other Units US</a></td>
+	<td class='source' rowSpan='3'><a name='mile-per-gallon' href='#mile-per-gallon'>mile-per-gallon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mpg US</td>
+	<td class='target'>मील प्रति गैलन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मील/गैल</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मील/गै</td></tr>
+  <tr>
+	<td class='source'><a name='pound-force' href='#pound-force'>pound-force</a></td>
+	<td class='source' rowSpan='3'>long-displayName</td>
+	<td class='target'>lbf</td>
+	<td class='target'>पौंड-बल</td></tr>
+  <tr>
+	<td class='source'><a name='pound-force-foot' href='#pound-force-foot'>pound-force-foot</a></td>
+	<td class='target'>lbf⋅ft</td>
+	<td class='target'>पौंड-फोर्स-फुट</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Other Units' href='#Other Units'>Other Units</a></td>
+	<td class='source' rowSpan='3'><a name='mile-per-gallon-imperial' href='#mile-per-gallon-imperial'>mile-per-gallon-imperial</a></td>
+	<td class='target' rowSpan='3'>mpg Imp.</td>
+	<td class='target'>मील प्रति इंपीरियल गैलन</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target'>मील/गैल इंपी.</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>मी/गै यूके</td></tr>
+  <tr>
+	<td class='source'><a name='solar-luminosity' href='#solar-luminosity'>solar-luminosity</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target'>L☉</td>
+	<td class='target'>सौर चानन</td></tr>
 </table>
 <!-- end main body -->
 	</div>
