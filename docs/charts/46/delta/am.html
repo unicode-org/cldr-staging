@@ -77,14 +77,608 @@
 	<th class='target'>New</th>
 	<th class='target'>Level</th></tr>
   <tr>
-	<td class='source' rowSpan='320'><a name='Numbers' href='#Numbers'>Numbers</a></td>
-	<td class='source' rowSpan='32'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+	<td class='source' rowSpan='5'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+	<td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+	<td class='source' rowSpan='5'><a name='Parse' href='#Parse'>Parse</a></td>
+	<td class='source'>date-lenient(:)</td>
+	<td class='source' rowSpan='1947'>am</td>
+	<td class='target'>[\: ∶]</td>
+	<td class='target'>[\:：﹕︓ ∶]</td>
+	<td class='target' rowSpan='5'>moderate</td></tr>
+  <tr>
+	<td class='source'>general-lenient(£)</td>
+	<td class='target'>[£ ₤]</td>
+	<td class='target'>[£￡ ₤]</td></tr>
+  <tr>
+	<td class='source'>number-lenient(-)</td>
+	<td class='target'>[\-－﹣ ‑ ‒ −⁻₋ ➖]</td>
+	<td class='target'>[\-－﹣ ‐‑ ‒ – −⁻₋ ➖]</td></tr>
+  <tr>
+	<td class='source'>number-lenient(,)</td>
+	<td class='target'>[,，﹐︐ ، ٫ 、﹑､︑]</td>
+	<td class='target'>[,，﹐︐ ⹁ ، ٫ 、﹑､︑]</td></tr>
+  <tr>
+	<td class='source'>number-stricter(,)</td>
+	<td class='target'>[,，﹐︐ ٫]</td>
+	<td class='target'>[,，﹐︐ ⹁ ٫]</td></tr>
+  <tr>
+	<td class='source' rowSpan='88'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td>
+	<td class='source' rowSpan='5'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td>
+	<td class='source' rowSpan='2'><a name='Locale Formatting' href='#Locale Formatting'>Locale Formatting</a></td>
+	<td class='source'>localeSeparator</td>
+	<td class='target'>{0}፣{1}</td>
+	<td class='target'>{0}፣ {1}</td>
+	<td class='target'>basic</td></tr>
+  <tr>
+	<td class='source'>localeKeyTypePattern</td>
+	<td class='target'>{0}: {1}</td>
+	<td class='target'>{0}፦ {1}</td>
+	<td class='target'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td>
+	<td class='source'>language</td>
+	<td class='target' rowSpan='3'>{0}</td>
+	<td class='target'>ቋንቋ፦ {0}</td>
+	<td class='target' rowSpan='3'>basic</td></tr>
+  <tr>
+	<td class='source'>script</td>
+	<td class='target'>ፊደል፦ {0}</td></tr>
+  <tr>
+	<td class='source'>territory</td>
+	<td class='target'>ክልል፦ {0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td>
+	<td class='source' rowSpan='4'><a name='A' href='#A'>A</a></td>
+	<td class='source'>Anii ► blo</td>
+	<td class='target'>blo</td>
+	<td class='target'>አኒኛ</td>
+	<td class='target' rowSpan='14'>modern</td></tr>
+  <tr>
+	<td class='source'>Armenian ► hy</td>
+	<td class='target'>አርመናዊ</td>
+	<td class='target'>አርሜንኛ</td></tr>
+  <tr>
+	<td class='source'>Assamese ► as</td>
+	<td class='target'>አሳሜዛዊ</td>
+	<td class='target'>አሳሜዝ</td></tr>
+  <tr>
+	<td class='source'>Asturian ► ast</td>
+	<td class='target'>አስቱሪያን</td>
+	<td class='target'>አስቱሪያንኛ</td></tr>
+  <tr>
+	<td class='source'><a name='B' href='#B'>B</a></td>
+	<td class='source'>Bhojpuri ► bho</td>
+	<td class='target'>ቦጁሪ</td>
+	<td class='target'>ቦጅፑሪ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='C' href='#C'>C</a></td>
+	<td class='source'>Cantonese ► yue-menu</td>
+	<td class='target'>ቻይና፤ ካንቶንኛ</td>
+	<td class='target'>ካንቶኒዝ ቻይንኛ</td></tr>
+  <tr>
+	<td class='source'>Cebuano ► ceb</td>
+	<td class='target'>ካቡዋኖ</td>
+	<td class='target'>ሴብዋኖ</td></tr>
+  <tr>
+	<td class='source'>Chuvash ► cv</td>
+	<td class='target'>ቹቫሽ</td>
+	<td class='target'>ቹቫሽኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='10'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td>
+	<td class='source' rowSpan='2'><a name='F' href='#F'>F</a></td>
+	<td class='source'>Finnish ► fi</td>
+	<td class='target'>ፊኒሽ</td>
+	<td class='target'>ፊንላንድኛ</td></tr>
+  <tr>
+	<td class='source'>Fula ► ff</td>
+	<td class='target'>ፉላ</td>
+	<td class='target'>ፉላኒኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='G' href='#G'>G</a></td>
+	<td class='source'>Galician ► gl</td>
+	<td class='target'>ጋሊሽያዊ</td>
+	<td class='target'>ጋሊሺያንኛ</td></tr>
+  <tr>
+	<td class='source'>Georgian ► ka</td>
+	<td class='target'>ጆርጂያዊ</td>
+	<td class='target'>ጆርጂያንኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='H' href='#H'>H</a></td>
+	<td class='source'>Haryanvi ► bgc</td>
+	<td class='target'>ሃርያንቪ</td>
+	<td class='target'>ሃርያንቪኛ</td></tr>
+  <tr>
+	<td class='source'>Hindi ► hi</td>
+	<td class='target'>ሒንዱኛ</td>
+	<td class='target'>ሕንድኛ</td></tr>
+  <tr>
+	<td class='source'>Hindi ► hi_Latn</td>
+	<td class='target'>ሒንዱኛ (ላቲን)</td>
+	<td class='target' rowSpan='2'>ሕንድኛ (ላቲን)</td>
+	<td class='target' rowSpan='2'>moderate</td></tr>
+  <tr>
+	<td class='source'>Hindi ► hi_Latn-variant</td>
+	<td class='target'>ሂንግሊሽ</td></tr>
+  <tr>
+	<td class='source'><a name='I' href='#I'>I</a></td>
+	<td class='source'>Irish ► ga</td>
+	<td class='target'>አይሪሽ</td>
+	<td class='target'>አየርላንድኛ</td>
+	<td class='target' rowSpan='26'>modern</td></tr>
+  <tr>
+	<td class='source'><a name='J' href='#J'>J</a></td>
+	<td class='source'>Javanese ► jv</td>
+	<td class='target'>ጃቫኒዝ</td>
+	<td class='target'>ጃቫኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='10'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td>
+	<td class='source' rowSpan='2'><a name='K' href='#K'>K</a></td>
+	<td class='source'>Kangri ► xnr</td>
+	<td class='target'>xnr</td>
+	<td class='target'>ካንጋሪ</td></tr>
+  <tr>
+	<td class='source'>Kuvi ► kxv</td>
+	<td class='target'>kxv</td>
+	<td class='target'>ኩቪኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='5'><a name='L' href='#L'>L</a></td>
+	<td class='source'>Latvian ► lv</td>
+	<td class='target'>ላትቪያን</td>
+	<td class='target'>ላትቪያኛ</td></tr>
+  <tr>
+	<td class='source'>Ligurian ► lij</td>
+	<td class='target'>lij</td>
+	<td class='target'>ሊጓሪያኛ</td></tr>
+  <tr>
+	<td class='source'>Lithuanian ► lt</td>
+	<td class='target'>ሉቴንያንኛ</td>
+	<td class='target'>ሊቱዌንያኛ</td></tr>
+  <tr>
+	<td class='source'>Lombard ► lmo</td>
+	<td class='target'>lmo</td>
+	<td class='target'>ሎምባርድኛ</td></tr>
+  <tr>
+	<td class='source'>Lower Sorbian ► dsb</td>
+	<td class='target'>የታችኛው ሰርቢያኛ</td>
+	<td class='target'>የታችኛው ሶርቢያኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='M' href='#M'>M</a></td>
+	<td class='source'>Makhuwa ► vmw</td>
+	<td class='target'>vmw</td>
+	<td class='target'>ማክሁዋኛ</td></tr>
+  <tr>
+	<td class='source'>Maltese ► mt</td>
+	<td class='target'>ማልቲስ</td>
+	<td class='target'>ማልቲዝኛ</td></tr>
+  <tr>
+	<td class='source'><a name='N' href='#N'>N</a></td>
+	<td class='source'>Norwegian ► no</td>
+	<td class='target'>ኖርዌጂያን</td>
+	<td class='target'>ኖርዌይኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td>
+	<td class='source' rowSpan='2'><a name='S' href='#S'>S</a></td>
+	<td class='source'>Scottish Gaelic ► gd</td>
+	<td class='target'>ስኮቲሽ ጋይሊክ</td>
+	<td class='target'>የስኮትላንድ ጌይሊክ</td></tr>
+  <tr>
+	<td class='source'>Silesian ► szl</td>
+	<td class='target'>szl</td>
+	<td class='target'>ሲሌሲያኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td>
+	<td class='source'><a name='U' href='#U'>U</a></td>
+	<td class='source'>Uyghur ► ug-variant</td>
+	<td class='target'>ኡይገር</td>
+	<td class='target'>ኡይግሁር</td></tr>
+  <tr>
+	<td class='source'><a name='V' href='#V'>V</a></td>
+	<td class='source'>Venetian ► vec</td>
+	<td class='target'>vec</td>
+	<td class='target'>ቬነቲያንኛ</td></tr>
+  <tr>
+	<td class='source'><a name='W' href='#W'>W</a></td>
+	<td class='source'>Welsh ► cy</td>
+	<td class='target'>ወልሽ</td>
+	<td class='target'>ዌልሽ</td></tr>
+  <tr>
+	<td class='source'><a name='Y' href='#Y'>Y</a></td>
+	<td class='source'>Yakut ► sah</td>
+	<td class='target'>ሳክሃ</td>
+	<td class='target'>ያኩት</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='Scripts' href='#Scripts'>Scripts</a></td>
+	<td class='source' rowSpan='4'><a name='Major Use' href='#Major Use'>Major Use</a></td>
+	<td class='source'>Hanb</td>
+	<td class='target'>ሃንብ</td>
+	<td class='target'>ሃን ከቦፖሞፎ ጋር</td></tr>
+  <tr>
+	<td class='source'>Knda</td>
+	<td class='target'>ካንአዳ</td>
+	<td class='target'>ካናዳ</td></tr>
+  <tr>
+	<td class='source'>Orya</td>
+	<td class='target'>ኦሪያ</td>
+	<td class='target'>ኦዲያ</td></tr>
+  <tr>
+	<td class='source'>Tibt</td>
+	<td class='target'>ቲቤታን</td>
+	<td class='target'>ቲቤትኛ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Limited Use' href='#Limited Use'>Limited Use</a></td>
+	<td class='source'>Cans</td>
+	<td class='target'>የተዋሐዱ የካናዳ ጥንታዊ ምልክቶች</td>
+	<td class='target'>የተዋሐዱ የካናዳ አቦሪጂኖች ፊደላት</td></tr>
+  <tr>
+	<td class='source'>Sund</td>
+	<td class='target'>ሱዳናዊ</td>
+	<td class='target'>ሱዳንኛ</td></tr>
+  <tr>
+	<td class='source'>Syrc</td>
+	<td class='target'>ሲሪክ</td>
+	<td class='target'>ሲሪያክ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Other' href='#Other'>Other</a></td>
+	<td class='source'>Hrkt</td>
+	<td class='target'>ጃፓንኛ ስይላቤሪስ</td>
+	<td class='target'>ጃፓንኛ ፊደላት</td></tr>
+  <tr>
+	<td class='source'>Zzzz</td>
+	<td class='target'>ያልታወቀ ስክሪፕት</td>
+	<td class='target'>ያልታወቀ ፊደል</td>
+	<td class='target' rowSpan='28'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td>
+	<td class='source' rowSpan='3'><a name='world' href='#world'>world</a></td>
+	<td class='source'>142</td>
+	<td class='target'>እሲያ</td>
+	<td class='target'>እስያ</td></tr>
+  <tr>
+	<td class='source'>009</td>
+	<td class='target'>ኦሺንያ</td>
+	<td class='target'>ኦሺያንያ</td></tr>
+  <tr>
+	<td class='source'>EZ</td>
+	<td class='target'>የአውሮፓ ዞን</td>
+	<td class='target'>የዩሮ ዞን</td></tr>
+  <tr>
+	<td class='source'><a name='Africa' href='#Africa'>Africa</a></td>
+	<td class='source'>011</td>
+	<td class='target'>ምስራቃዊ አፍሪካ</td>
+	<td class='target'>ምዕራባዊ አፍሪካ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Asia' href='#Asia'>Asia</a></td>
+	<td class='source'>143</td>
+	<td class='target'>መካከለኛው እሲያ</td>
+	<td class='target'>መካከለኛው እስያ</td></tr>
+  <tr>
+	<td class='source'>034</td>
+	<td class='target'>ደቡባዊ እሲያ</td>
+	<td class='target'>ደቡባዊ እስያ</td></tr>
+  <tr>
+	<td class='source'>035</td>
+	<td class='target'>ደቡብ ምስራቅ እሲያ</td>
+	<td class='target'>ደቡብ ምስራቅ እስያ</td></tr>
+  <tr>
+	<td class='source'><a name='Oceania' href='#Oceania'>Oceania</a></td>
+	<td class='source'>QO</td>
+	<td class='target'>አውትላይንግ ኦሽንያ</td>
+	<td class='target'>የኦሺያንያ ዳርቻ</td></tr>
+  <tr>
+	<td class='source' rowSpan='5'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td>
+	<td class='source'><a name='Northern America' href='#Northern America'>Northern America</a></td>
+	<td class='source'>PM</td>
+	<td class='target'>ቅዱስ ፒዬር እና ሚኩኤሎን</td>
+	<td class='target'>ሴንት ፒዬር እና ሚኩኤሎን</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Caribbean' href='#Caribbean'>Caribbean</a></td>
+	<td class='source'>AG</td>
+	<td class='target'>አንቲጓ እና ባሩዳ</td>
+	<td class='target'>አንቲጓ እና ባርቡዳ</td></tr>
+  <tr>
+	<td class='source'>BL</td>
+	<td class='target'>ቅዱስ በርቴሎሜ</td>
+	<td class='target'>ሴንት ባርቴሌሚ</td></tr>
+  <tr>
+	<td class='source'>PR</td>
+	<td class='target'>ፖርታ ሪኮ</td>
+	<td class='target'>ፑዌርቶ ሪኮ</td></tr>
+  <tr>
+	<td class='source'>VC</td>
+	<td class='target'>ቅዱስ ቪንሴንት እና ግሬናዲንስ</td>
+	<td class='target'>ሴንት ቪንሴንት እና ግሬናዲንስ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td>
+	<td class='source'><a name='Eastern Africa' href='#Eastern Africa'>Eastern Africa</a></td>
+	<td class='source'>SO</td>
+	<td class='target'>ሱማሌ</td>
+	<td class='target'>ሶማሊያ</td></tr>
+  <tr>
+	<td class='source'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td>
+	<td class='source'>SZ</td>
+	<td class='target'>ሱዋዚላንድ</td>
+	<td class='target'>ኤስዋቲኒ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td>
+	<td class='source' rowSpan='2'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td>
+	<td class='source'>JE</td>
+	<td class='target'>ጀርሲ</td>
+	<td class='target'>ጀርዚ</td></tr>
+  <tr>
+	<td class='source'>GB-short</td>
+	<td class='target'>ዩናይትድ ኪንግደም</td>
+	<td class='target'>ዩኬ</td></tr>
+  <tr>
+	<td class='source'><a name='Eastern Europe' href='#Eastern Europe'>Eastern Europe</a></td>
+	<td class='source'>BG</td>
+	<td class='target'>ቡልጌሪያ</td>
+	<td class='target'>ቡልጋሪያ</td></tr>
+  <tr>
+	<td class='source'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td>
+	<td class='source'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td>
+	<td class='source'>KW</td>
+	<td class='target'>ክዌት</td>
+	<td class='target'>ኩዌት</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Territories (Oceania)' href='#Territories (Oceania)'>Territories (Oceania)</a></td>
+	<td class='source' rowSpan='2'><a name='Australasia' href='#Australasia'>Australasia</a></td>
+	<td class='source'>HM</td>
+	<td class='target'>ኽርድ ደሴቶችና ማክዶናልድ ደሴቶች</td>
+	<td class='target'>ኽርድ ኣና ማክዶናልድ ደሴቶች</td></tr>
+  <tr>
+	<td class='source'>NZ-variant</td>
+	<td class='target'>ኒው ዚላንድ</td>
+	<td class='target'>አዎቴአሮአ ኒው ዚላንድ</td></tr>
+  <tr>
+	<td class='source'><a name='Melanesia' href='#Melanesia'>Melanesia</a></td>
+	<td class='source'>SB</td>
+	<td class='target'>ሰሎሞን ደሴት</td>
+	<td class='target'>ሰለሞን ደሴቶች</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Micronesian Region' href='#Micronesian Region'>Micronesian Region</a></td>
+	<td class='source'>FM</td>
+	<td class='target'>ሚክሮኔዢያ</td>
+	<td class='target'>ማይክሮኔዢያ</td></tr>
+  <tr>
+	<td class='source'>MH</td>
+	<td class='target'>ማርሻል አይላንድ</td>
+	<td class='target'>ማርሻል ደሴቶች</td></tr>
+  <tr>
+	<td class='source'><a name='Polynesia' href='#Polynesia'>Polynesia</a></td>
+	<td class='source'>NU</td>
+	<td class='target'>ኒኡይ</td>
+	<td class='target'>ኒዌ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Outlying Oceania' href='#Outlying Oceania'>Outlying Oceania</a></td>
+	<td class='source'>DG</td>
+	<td class='target'>ዲዬጎ ጋርሺያ</td>
+	<td class='target'>ዲዬጎ ጋርሲያ</td></tr>
+  <tr>
+	<td class='source'>TA</td>
+	<td class='target'>ትሪስታን ዲ ኩንሃ</td>
+	<td class='target'>ትሪስታን ዳ ኩንሃ</td></tr>
+  <tr>
+	<td class='source' rowSpan='13'><a name='Keys' href='#Keys'>Keys</a></td>
+	<td class='source'><a name='colAlternate' href='#colAlternate'>colAlternate</a></td>
+	<td class='source'>colAlternate</td>
+	<td class='target'>የምልክቶች ድርደራ ችላ በለው</td>
+	<td class='target'>የምልክቶችን ድርደራ ችላ በል</td>
+	<td class='target' rowSpan='2'>modern</td></tr>
+  <tr>
+	<td class='source'><a name='colBackwards' href='#colBackwards'>colBackwards</a></td>
+	<td class='source'>colBackwards</td>
+	<td class='target'>የኋሊዮሽ የፊደል ጭረት ድርደራ</td>
+	<td class='target'>የኋሊዮሽ የትእምርት ድርደራ</td></tr>
+  <tr>
+	<td class='source'><a name='collation' href='#collation'>collation</a></td>
+	<td class='source'>collation-standard</td>
+	<td class='target'>መደበኛ</td>
+	<td class='target'>መደበኛ የድርድር ቅደም ተከተል</td>
+	<td class='target'>moderate</td></tr>
+  <tr>
+	<td class='source'><a name='m0' href='#m0'>m0</a></td>
+	<td class='source'>m0-bgn</td>
+	<td class='target'>ቢ ጂ ኤን</td>
+	<td class='target'>ዩኤስ ቢጂኤን ትራንስሊትሬሽን</td>
+	<td class='target' rowSpan='6'>modern</td></tr>
+  <tr>
+	<td class='source'><a name='Measurement System' href='#Measurement System'>Measurement System</a></td>
+	<td class='source'>ms-metric</td>
+	<td class='target'>የልኬት ስርዓት</td>
+	<td class='target'>ሜትሪክ ስርዓት</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='numbers' href='#numbers'>numbers</a></td>
+	<td class='source'>numbers-armnlow</td>
+	<td class='target'>የአሜሪካን ንዑስ ሆሄ አሃዞች</td>
+	<td class='target'>የአሜሪካ ንዑስ ሆሄ አሃዞች</td></tr>
+  <tr>
+	<td class='source'>numbers-cakm</td>
+	<td class='target'>ቻክማ አሃዝ</td>
+	<td class='target'>የቻክማ አሃዞች</td></tr>
+  <tr>
+	<td class='source'>numbers-geor</td>
+	<td class='target'>የጆርጂያን ቁጥሮች</td>
+	<td class='target'>የጆርጂያ ቁጥሮች</td></tr>
+  <tr>
+	<td class='source'>numbers-java</td>
+	<td class='target'>ጃቫኒዝ አሃዞች</td>
+	<td class='target'>የጃቫ አሃዞች</td></tr>
+  <tr>
+	<td class='source'>numbers-latn</td>
+	<td class='target'>የምስራቃዊ አሃዞች</td>
+	<td class='target'>ምዕራባዊ አሃዞች</td>
+	<td class='target'>moderate</td></tr>
+  <tr>
+	<td class='source'>numbers-native</td>
+	<td class='target'>ትውልድ አሃዞች</td>
+	<td class='target'>ሀገር በቀል አሃዞች</td>
+	<td class='target' rowSpan='3'>modern</td></tr>
+  <tr>
+	<td class='source'>numbers-orya</td>
+	<td class='target'>የኦሪያኛ አሃዞች</td>
+	<td class='target'>የኦዲያ አሃዞች</td></tr>
+  <tr>
+	<td class='source'>numbers-tibt</td>
+	<td class='target'>የቲቤታን አሃዞች</td>
+	<td class='target'>የቲቤት አሃዞች</td></tr>
+  <tr>
+	<td class='source' rowSpan='26'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='26'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+	<td class='source'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td>
+	<td class='source'>1-variant</td>
+	<td class='target'>መዓ</td>
+	<td class='target'>ዓ/ም</td>
+	<td class='target' rowSpan='12'>moderate</td></tr>
+  <tr>
+	<td class='source'><a name='Day Periods - abbreviated - Standalone' href='#Day Periods - abbreviated - Standalone'>Day Periods - abbreviated - Standalone</a></td>
+	<td class='source'>afternoon1</td>
+	<td class='target'>ከሰዓት በኋላ</td>
+	<td class='target'>ከሰዓት</td></tr>
+  <tr>
+	<td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td>
+	<td class='source'>full</td>
+	<td class='target'>y MMMM d, EEEE</td>
+	<td class='target'>EEEE d MMMM y</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>MMMMW-one</td>
+	<td class='target' rowSpan='2'>ሳምንት W የ MMMM</td>
+	<td class='target' rowSpan='2'>የMMMM Wኛ ሳምንት</td></tr>
+  <tr>
+	<td class='source'>MMMMW-other</td></tr>
+  <tr>
+	<td class='source'>yw-one</td>
+	<td class='target' rowSpan='2'>'week' w 'of' Y</td>
+	<td class='target' rowSpan='2'>የY wኛ ሳምንት</td></tr>
+  <tr>
+	<td class='source'>yw-other</td></tr>
+  <tr>
+	<td class='source'>GyMd</td>
+	<td class='target'>M/d/y GGGGG</td>
+	<td class='target'>d/M/y GGGGG</td></tr>
+  <tr>
+	<td class='source'>GyMMMd</td>
+	<td class='target'>G y MMM d</td>
+	<td class='target'>MMM d y G</td></tr>
+  <tr>
+	<td class='source'>GyMMMEd</td>
+	<td class='target'>G y MMM d, E</td>
+	<td class='target'>E MMM d y G</td></tr>
+  <tr>
+	<td class='source'>Md</td>
+	<td class='target'>M/d</td>
+	<td class='target'>d/M</td></tr>
+  <tr>
+	<td class='source'>MEd</td>
+	<td class='target'>E፣ M/d</td>
+	<td class='target'>E፣ d/M</td></tr>
+  <tr>
+	<td class='source'>yMMMd</td>
+	<td class='target'>d MMM y</td>
+	<td class='target'>MMM d y</td>
+	<td class='target'>basic</td></tr>
+  <tr>
+	<td class='source'>yQQQ</td>
+	<td class='target'>QQQ y</td>
+	<td class='target'>y QQQ</td>
+	<td class='target' rowSpan='10'>moderate</td></tr>
+  <tr>
+	<td class='source'>yQQQQ</td>
+	<td class='target'>QQQQ y</td>
+	<td class='target'>y QQQQ</td></tr>
+  <tr>
+	<td class='source' rowSpan='10'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td>
+	<td class='source'>Bh</td>
+	<td class='target'>h B</td>
+	<td class='target'>B h</td></tr>
+  <tr>
+	<td class='source'>Bhm</td>
+	<td class='target'>h:mm B</td>
+	<td class='target'>B h:mm</td></tr>
+  <tr>
+	<td class='source'>Bhms</td>
+	<td class='target'>h:mm:ss B</td>
+	<td class='target'>B h:mm:ss</td></tr>
+  <tr>
+	<td class='source'>EBhm</td>
+	<td class='target'>E h:mm B</td>
+	<td class='target'>E B h:mm</td></tr>
+  <tr>
+	<td class='source'>EBhms</td>
+	<td class='target'>E h:mm:ss B</td>
+	<td class='target'>E B h:mm:ss</td></tr>
+  <tr>
+	<td class='source'>Ehm</td>
+	<td class='target'>E h:mm a</td>
+	<td class='target'>E a h:mm</td></tr>
+  <tr>
+	<td class='source'>Ehms</td>
+	<td class='target'>E h:mm:ss a</td>
+	<td class='target'>E a h:mm:ss</td></tr>
+  <tr>
+	<td class='source'>h</td>
+	<td class='target'>h a</td>
+	<td class='target'>a h</td></tr>
+  <tr>
+	<td class='source'>hm</td>
+	<td class='target'>h:mm a</td>
+	<td class='target'>a h:mm</td>
+	<td class='target' rowSpan='2'>basic</td></tr>
+  <tr>
+	<td class='source'>hms</td>
+	<td class='target'>h:mm:ss a</td>
+	<td class='target'>a h:mm:ss</td></tr>
+  <tr>
+	<td class='source'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>GyMd/M</td>
+	<td class='target'>GGGGG d/M/y – d/M/y</td>
+	<td class='target'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Timezones' href='#Timezones'>Timezones</a></td>
+	<td class='source'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td>
+	<td class='source'><a name='null' href='#null'>null</a></td>
+	<td class='source'>Region Format - Generic</td>
+	<td class='target'>{0} ጊዜ</td>
+	<td class='target'>{0} ሰዓት</td>
+	<td class='target'>basic</td></tr>
+  <tr>
+	<td class='source'><a name='Central Asia' href='#Central Asia'>Central Asia</a></td>
+	<td class='source'><a name='Kazakhstan' href='#Kazakhstan'>Kazakhstan</a></td>
+	<td class='source'>standard-long</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>ካዛኪስታን ሰዓት</td>
+	<td class='target' rowSpan='2'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='321'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+	<td class='source' rowSpan='9'><a name='Symbols' href='#Symbols'>Symbols</a></td>
+	<td class='source'><a name='Symbols ' href='#Symbols '>Symbols </a></td>
+	<td class='source' rowSpan='9'>nan</td>
+	<td class='target'>NaN</td>
+	<td class='target' rowSpan='9'>በቁጥር ሊገለጽ የማይችል</td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Garay Digits (gara)' href='#Symbols using Garay Digits (gara)'>Symbols using Garay Digits (gara)</a></td>
+	<td class='target' rowSpan='320'>▷missing◁</td>
+	<td class='target' rowSpan='320'>comprehensive</td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Gurung Khema Digits (gukh)' href='#Symbols using Gurung Khema Digits (gukh)'>Symbols using Gurung Khema Digits (gukh)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Kirat Rai Digits (krai)' href='#Symbols using Kirat Rai Digits (krai)'>Symbols using Kirat Rai Digits (krai)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Myanmar Pao Digits (mymrpao)' href='#Symbols using Myanmar Pao Digits (mymrpao)'>Symbols using Myanmar Pao Digits (mymrpao)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Ol Onal Digits (onao)' href='#Symbols using Ol Onal Digits (onao)'>Symbols using Ol Onal Digits (onao)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Outlined Digits (outlined)' href='#Symbols using Outlined Digits (outlined)'>Symbols using Outlined Digits (outlined)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Symbols using Sunuwar Digits (sunu)' href='#Symbols using Sunuwar Digits (sunu)'>Symbols using Sunuwar Digits (sunu)</a></td></tr>
+  <tr>
+	<td class='source' rowSpan='24'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
 	<td class='source' rowSpan='2'><a name='Standard Patterns using Garay Digits (gara)' href='#Standard Patterns using Garay Digits (gara)'>Standard Patterns using Garay Digits (gara)</a></td>
 	<td class='source'>standard-currency</td>
-	<td class='source' rowSpan='1498'>am</td>
-	<td class='target' rowSpan='320'>▷missing◁</td>
-	<td class='target'>¤#,##0.00</td>
-	<td class='target' rowSpan='320'>comprehensive</td></tr>
+	<td class='target'>¤#,##0.00</td></tr>
   <tr>
 	<td class='source'>accounting-currency</td>
 	<td class='target'>¤#,##0.00;(¤#,##0.00)</td></tr>
@@ -137,24 +731,6 @@
   <tr>
 	<td class='source'>accounting-currency</td>
 	<td class='target'>¤#,##0.00;(¤#,##0.00)</td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Garay Digits (gara)' href='#Currency Unit Patterns using Garay Digits (gara)'>Currency Unit Patterns using Garay Digits (gara)</a></td>
-	<td class='source' rowSpan='8'>currencies-other</td>
-	<td class='target' rowSpan='8'>{0} {1}</td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Gurung Khema Digits (gukh)' href='#Currency Unit Patterns using Gurung Khema Digits (gukh)'>Currency Unit Patterns using Gurung Khema Digits (gukh)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Kirat Rai Digits (krai)' href='#Currency Unit Patterns using Kirat Rai Digits (krai)'>Currency Unit Patterns using Kirat Rai Digits (krai)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Myanmar Pao Digits (mymrpao)' href='#Currency Unit Patterns using Myanmar Pao Digits (mymrpao)'>Currency Unit Patterns using Myanmar Pao Digits (mymrpao)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Ol Onal Digits (onao)' href='#Currency Unit Patterns using Ol Onal Digits (onao)'>Currency Unit Patterns using Ol Onal Digits (onao)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Outlined Digits (outlined)' href='#Currency Unit Patterns using Outlined Digits (outlined)'>Currency Unit Patterns using Outlined Digits (outlined)</a></td></tr>
-  <tr>
-	<td class='source'><a name='Currency Unit Patterns using Sunuwar Digits (sunu)' href='#Currency Unit Patterns using Sunuwar Digits (sunu)'>Currency Unit Patterns using Sunuwar Digits (sunu)</a></td></tr>
   <tr>
 	<td class='source'><a name='Miscellaneous Patterns using Garay Digits (gara)' href='#Miscellaneous Patterns using Garay Digits (gara)'>Miscellaneous Patterns using Garay Digits (gara)</a></td>
 	<td class='source' rowSpan='8'>atLeast</td>
@@ -1063,13 +1639,784 @@
 	<td class='source'>15-digits-short-other</td>
 	<td class='target'>000 ት</td></tr>
   <tr>
-	<td class='source' rowSpan='1178'><a name='Characters' href='#Characters'>Characters</a></td>
-	<td class='source' rowSpan='128'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td>
+	<td class='source'><a name='Currencies' href='#Currencies'>Currencies</a></td>
+	<td class='source'><a name='Eastern Asia (C)' href='#Eastern Asia (C)'>Eastern Asia (C)</a></td>
+	<td class='source'><a name='Eastern Asia: China: CNH (offshore)' href='#Eastern Asia: China: CNH (offshore)'>Eastern Asia: China: CNH (offshore)</a></td>
+	<td class='source'>CNH-symbol</td>
+	<td class='target'>የቻይና ዩዋን</td>
+	<td class='target'>CNH</td>
+	<td class='target'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='289'><a name='Units' href='#Units'>Units</a></td>
+	<td class='source' rowSpan='14'><a name='Duration' href='#Duration'>Duration</a></td>
+	<td class='source' rowSpan='14'><a name='night' href='#night'>night</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='14'>▷missing◁</td>
+	<td class='target'>ለሊት</td>
+	<td class='target' rowSpan='1482'>modern</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>ለሊቶች</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-per</td>
+	<td class='target' rowSpan='7'>{0}/ለሊት</td></tr>
+  <tr>
+	<td class='source'>short-per</td></tr>
+  <tr>
+	<td class='source'>narrow-per</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} ለሊት</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Area' href='#Area'>Area</a></td>
+	<td class='source' rowSpan='8'><a name='square-yard' href='#square-yard'>square-yard</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>yd²</td>
+	<td class='target' rowSpan='2'>ስኴር ያርድ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} yd²</td>
+	<td class='target' rowSpan='6'>{0} ስኴር ያርድ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='15'><a name='Volume Metric' href='#Volume Metric'>Volume Metric</a></td>
+	<td class='source' rowSpan='6'><a name='megaliter' href='#megaliter'>megaliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>ML</td>
+	<td class='target' rowSpan='2'>ሜጋሊትር</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} ML</td>
+	<td class='target' rowSpan='4'>{0} ሜሊ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='hectoliter' href='#hectoliter'>hectoliter</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>hL</td>
+	<td class='target'>ሄክቶሊትር</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>ሄሊ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} hL</td>
+	<td class='target' rowSpan='6'>{0} ሄሊ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='54'><a name='Volume US' href='#Volume US'>Volume US</a></td>
+	<td class='source' rowSpan='9'><a name='cubic-yard' href='#cubic-yard'>cubic-yard</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>yd³</td>
+	<td class='target' rowSpan='3'>ኪዩቢክ ያርድ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} yd³</td>
+	<td class='target' rowSpan='6'>{0} ኪዩቢክ ያርድ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='gallon' href='#gallon'>gallon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>gal</td>
+	<td class='target' rowSpan='3'>ጋሎን</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-per</td>
+	<td class='target' rowSpan='3'>{0}/gal</td>
+	<td class='target' rowSpan='6'>{0}/ጋሎን</td></tr>
+  <tr>
+	<td class='source'>short-per</td></tr>
+  <tr>
+	<td class='source'>narrow-per</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} gal</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td>
+	<td class='target' rowSpan='3'>{0} ጋሎን</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='quart' href='#quart'>quart</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>qt</td>
+	<td class='target' rowSpan='3'>ኳርትስ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} qt</td>
+	<td class='target' rowSpan='6'>{0} ኳርትስ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='cup' href='#cup'>cup</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>cup</td>
+	<td class='target' rowSpan='2'>ኩባያ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} c</td>
+	<td class='target' rowSpan='4'>{0} ኩባያ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='tablespoon' href='#tablespoon'>tablespoon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>tbsp</td>
+	<td class='target' rowSpan='3'>የሻይ ማንኪያ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} tbsp</td>
+	<td class='target' rowSpan='6'>{0} የሻይ ማንኪያ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='teaspoon' href='#teaspoon'>teaspoon</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>tsp</td>
+	<td class='target' rowSpan='3'>የሻይ ማንኪያዎች</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} tsp</td>
+	<td class='target' rowSpan='6'>{0} የሻይ ማንኪያዎች</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='Speed and Acceleration' href='#Speed and Acceleration'>Speed and Acceleration</a></td>
+	<td class='source' rowSpan='11'><a name='light-speed' href='#light-speed'>light-speed</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='11'>▷missing◁</td>
+	<td class='target' rowSpan='3'>ብርሃን</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} ብርሃን</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='26'><a name='Mass and Weight' href='#Mass and Weight'>Mass and Weight</a></td>
+	<td class='source' rowSpan='8'><a name='milligram' href='#milligram'>milligram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>mg</td>
+	<td class='target' rowSpan='2'>ሚግ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} mg</td>
+	<td class='target' rowSpan='6'>{0} ሚግ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='microgram' href='#microgram'>microgram</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>μg</td>
+	<td class='target' rowSpan='3'>ማግ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} μg</td>
+	<td class='target' rowSpan='6'>{0} ማግ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='dalton' href='#dalton'>dalton</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>ዳተንስ</td>
+	<td class='target' rowSpan='3'>ዳልተንስ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='2'>{0} ዳተንስ</td>
+	<td class='target' rowSpan='6'>{0} ዳልተንስ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} Da</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='67'><a name='Energy and Power' href='#Energy and Power'>Energy and Power</a></td>
+	<td class='source' rowSpan='11'><a name='kilocalorie' href='#kilocalorie'>kilocalorie</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kcal</td>
+	<td class='target' rowSpan='3'>ኪሎ ካሎሪ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} kcal</td>
+	<td class='target' rowSpan='8'>{0} ኪሎ ካሎሪ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source'><a name='calorie' href='#calorie'>calorie</a></td>
+	<td class='source' rowSpan='2'>long-displayName</td>
+	<td class='target'>cal</td>
+	<td class='target'>ካሎሪ</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='kilojoule' href='#kilojoule'>kilojoule</a></td>
+	<td class='target' rowSpan='3'>kJ</td>
+	<td class='target' rowSpan='3'>ኪጁ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} kJ</td>
+	<td class='target' rowSpan='8'>{0} ኪጁ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='joule' href='#joule'>joule</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>joule</td>
+	<td class='target' rowSpan='3'>ጁልስ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} J</td>
+	<td class='target' rowSpan='8'>{0} ጁልስ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='gigawatt' href='#gigawatt'>gigawatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>GW</td>
+	<td class='target' rowSpan='2'>ጊጋ ዋት</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td>
+	<td class='target'>ጊዋ</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} GW</td>
+	<td class='target' rowSpan='8'>{0} ጊዋ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='megawatt' href='#megawatt'>megawatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>MW</td>
+	<td class='target'>ሜጋ ዋት</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>ሜዋ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} MW</td>
+	<td class='target' rowSpan='8'>{0} ሜዋ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='milliwatt' href='#milliwatt'>milliwatt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>mW</td>
+	<td class='target'>ሚሊ ዋት</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td>
+	<td class='target' rowSpan='2'>ሚዋ</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} mW</td>
+	<td class='target' rowSpan='8'>{0} ሚዋ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='62'><a name='Electrical and Frequency' href='#Electrical and Frequency'>Electrical and Frequency</a></td>
+	<td class='source' rowSpan='9'><a name='ampere' href='#ampere'>ampere</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>amp</td>
+	<td class='target' rowSpan='3'>አምፒር</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} A</td>
+	<td class='target' rowSpan='6'>{0} አምፒር</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='9'><a name='volt' href='#volt'>volt</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>volt</td>
+	<td class='target' rowSpan='3'>ቮልት</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='6'>{0} V</td>
+	<td class='target' rowSpan='6'>{0} ቮልት</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='gigahertz' href='#gigahertz'>gigahertz</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>GHz</td>
+	<td class='target' rowSpan='3'>ጊጋኸርዝ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} GHz</td>
+	<td class='target' rowSpan='8'>{0} ጊጋኸርዝ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='megahertz' href='#megahertz'>megahertz</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>MHz</td>
+	<td class='target' rowSpan='3'>ሜጋኸርዝ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} MHz</td>
+	<td class='target' rowSpan='8'>{0} ሜጋኸርዝ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='kilohertz' href='#kilohertz'>kilohertz</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>kHz</td>
+	<td class='target' rowSpan='3'>ኪሎኸርዝ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='8'>{0} kHz</td>
+	<td class='target' rowSpan='8'>{0} ኪሎኸርዝ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='hertz' href='#hertz'>hertz</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='3'>Hz</td>
+	<td class='target' rowSpan='3'>ኸርዝ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>narrow-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target'>{0} Hz</td>
+	<td class='target' rowSpan='8'>{0} ኸርዝ</td></tr>
+  <tr>
+	<td class='source'>long-one-accusative</td>
+	<td class='target'>{0} hertz</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td>
+	<td class='target'>{0} Hz</td></tr>
+  <tr>
+	<td class='source'>long-other-accusative</td>
+	<td class='target'>{0} hertz</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} Hz</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-one-nominative</td></tr>
+  <tr>
+	<td class='source'>narrow-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Weather' href='#Weather'>Weather</a></td>
+	<td class='source' rowSpan='6'><a name='kelvin' href='#kelvin'>kelvin</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>K</td>
+	<td class='target' rowSpan='2'>ኬ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} K</td>
+	<td class='target' rowSpan='4'>{0} ኬ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Other Units Metric' href='#Other Units Metric'>Other Units Metric</a></td>
+	<td class='source' rowSpan='6'><a name='revolution' href='#revolution'>revolution</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>rev</td>
+	<td class='target' rowSpan='2'>ኡደት</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} rev</td>
+	<td class='target' rowSpan='4'>{0} ኡደት</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='radian' href='#radian'>radian</a></td>
+	<td class='source'>long-displayName</td>
+	<td class='target' rowSpan='2'>rad</td>
+	<td class='target' rowSpan='2'>ራዲ</td></tr>
+  <tr>
+	<td class='source'>short-displayName</td></tr>
+  <tr>
+	<td class='source'>long-one-nominative</td>
+	<td class='target' rowSpan='4'>{0} rad</td>
+	<td class='target' rowSpan='4'>{0} ራዲ</td></tr>
+  <tr>
+	<td class='source'>long-other-nominative</td></tr>
+  <tr>
+	<td class='source'>short-one-nominative</td></tr>
+  <tr>
+	<td class='source'>short-other-nominative</td></tr>
+  <tr>
+	<td class='source' rowSpan='14'><a name='Compound Units' href='#Compound Units'>Compound Units</a></td>
+	<td class='source' rowSpan='2'><a name='10p-6' href='#10p-6'>10p-6</a></td>
+	<td class='source'>narrow</td>
+	<td class='target' rowSpan='2'>μ{0}</td>
+	<td class='target' rowSpan='2'>ማይክሮ{0}</td></tr>
+  <tr>
+	<td class='source'>short</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='10p21' href='#10p21'>10p21</a></td>
+	<td class='source'>long</td>
+	<td class='target' rowSpan='3'>Z{0}</td>
+	<td class='target' rowSpan='3'>ዜታ {0}</td></tr>
+  <tr>
+	<td class='source'>narrow</td></tr>
+  <tr>
+	<td class='source'>short</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='10p24' href='#10p24'>10p24</a></td>
+	<td class='source'>long</td>
+	<td class='target' rowSpan='3'>Y{0}</td>
+	<td class='target' rowSpan='3'>ዮታ {0}</td></tr>
+  <tr>
+	<td class='source'>narrow</td></tr>
+  <tr>
+	<td class='source'>short</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='10p27' href='#10p27'>10p27</a></td>
+	<td class='source'>long</td>
+	<td class='target' rowSpan='3'>R{0}</td>
+	<td class='target' rowSpan='3'>ሮና {0}</td></tr>
+  <tr>
+	<td class='source'>narrow</td></tr>
+  <tr>
+	<td class='source'>short</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='1024p8' href='#1024p8'>1024p8</a></td>
+	<td class='source'>long</td>
+	<td class='target' rowSpan='3'>Yi{0}</td>
+	<td class='target' rowSpan='3'>ዮቢ {0}</td></tr>
+  <tr>
+	<td class='source'>narrow</td></tr>
+  <tr>
+	<td class='source'>short</td></tr>
+  <tr>
+	<td class='source' rowSpan='1193'><a name='Characters' href='#Characters'>Characters</a></td>
+	<td class='source' rowSpan='130'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td>
 	<td class='source' rowSpan='12'><a name='face-smiling' href='#face-smiling'>face-smiling</a></td>
 	<td class='source'>😀 –keywords</td>
-	<td class='target' rowSpan='51'>…</td>
-	<td class='target'>ሳቅ<br>ደስተኛ<br>ደስታ<br>…</td>
-	<td class='target' rowSpan='1178'>modern</td></tr>
+	<td class='target' rowSpan='46'>…</td>
+	<td class='target'>ሳቅ<br>ደስተኛ<br>ደስታ<br>…</td></tr>
   <tr>
 	<td class='source'>😃 –keywords</td>
 	<td class='target'>…<br>ሳቅ<br>አሪፍ<br>…<br>ፈገግታ<br>…</td></tr>
@@ -1195,7 +2542,7 @@
 	<td class='source'>🫨 –keywords</td>
 	<td class='target'>መሸበር<br>…<br>መደነቅ<br>…<br>መፍዘዝ<br>እብድ<br>ዋው<br>…<br>ድንጋጤ<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='5'><a name='face-sleepy' href='#face-sleepy'>face-sleepy</a></td>
+	<td class='source' rowSpan='7'><a name='face-sleepy' href='#face-sleepy'>face-sleepy</a></td>
 	<td class='source'>😌 –keywords</td>
 	<td class='target'>ሐሳብ<br>እረፍት<br>…</td></tr>
   <tr>
@@ -1211,8 +2558,16 @@
 	<td class='source'>😴 –keywords</td>
 	<td class='target'>…<br>ደህና ደሩ<br>…</td></tr>
   <tr>
+	<td class='source'>🫩 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>ከዓይኖች በታች ከረጢቶች ጋር ፊት</td></tr>
+  <tr>
+	<td class='source'>🫩 –keywords</td>
+	<td class='target'>ረፍዷል<br>ቦርሳዎች<br>አሰልቺ<br>አይኖች<br>እንቅልፋም<br>ደክሞ<br>ደክሞኛል<br>ፊት</td></tr>
+  <tr>
 	<td class='source' rowSpan='10'><a name='face-unwell' href='#face-unwell'>face-unwell</a></td>
 	<td class='source'>😷 –keywords</td>
+	<td class='target' rowSpan='5'>…</td>
 	<td class='target'>…<br>ኮቪድ<br>…</td></tr>
   <tr>
 	<td class='source'>🤒 –keywords</td>
@@ -1291,7 +2646,7 @@
 	<td class='target'>ሐፍረት<br>ምን?<br>አላምንም<br>…<br>የደነበረ<br>የደነገጠ<br>…</td></tr>
   <tr>
 	<td class='source'>🥺 –keywords</td>
-	<td class='target' rowSpan='39'>…</td>
+	<td class='target' rowSpan='30'>…</td>
 	<td class='target'>ለምን አይሆንም<br>…<br>ማዘን<br>…<br>ቆንጆ እባክህ<br>ቆንጆ እባክሽ<br>ትልልቅ አይኖች<br>እባክህ<br>እባክሽ<br>…<br>የሚለምን ፊት<br>…<br>የውሻ ቡችላ አይኖች<br>ፊት</td></tr>
   <tr>
 	<td class='source'>🥹 –keywords</td>
@@ -1386,9 +2741,11 @@
   <tr>
 	<td class='source' rowSpan='3'><a name='monkey-face' href='#monkey-face'>monkey-face</a></td>
 	<td class='source'>🙈 –keywords</td>
-	<td class='target'>መደበቅ<br>…<br>ማየት አልችልም<br>ምስጢር<br>…<br>ምንም ክፉ አላይም ጦጣ<br>ተመልከት<br>ተመልከች<br>አይ<br>አይሆንም<br>አይደለም<br>እረሳው<br>እንስሳ<br>…<br>የሚያፍር<br>…<br>የእጅ ምልክት<br>የፈጣሪ ያለህ<br>…<br>ፍርሃት</td></tr>
+	<td class='target'>…<br>ክፉ<br>የተከለከለ<br>ጦጣ<br>ፊት</td>
+	<td class='target'>መደበቅ<br>…<br>ማየት አልችልም<br>ምስጢር<br>…<br>ምንም ክፉ አላይም ጦጣ<br>ተመልከት<br>ተመልከች<br>አይ<br>አይሆንም<br>አይደለም</td></tr>
   <tr>
 	<td class='source'>🙉 –keywords</td>
+	<td class='target' rowSpan='8'>…</td>
 	<td class='target'>ምስጢር<br>…<br>እንስሳ<br>…<br>ክፉ አይሰሜ ጦጣ<br>…<br>ጆሮ የለኝም<br>ጉድ<br>…</td></tr>
   <tr>
 	<td class='source'>🙊 –keywords</td>
@@ -1807,7 +3164,7 @@
 	<td class='target'>መርማሪ<br>…<br>ሰው<br>ትልቅ ሰው<br>…<br>ፖሊስ</td></tr>
   <tr>
 	<td class='source'>🕵‍♀ –keywords</td>
-	<td class='target' rowSpan='188'>…</td>
+	<td class='target' rowSpan='96'>…</td>
 	<td class='target'>…<br>የክትትል ፖሊስ</td></tr>
   <tr>
 	<td class='source'>💂 –keywords</td>
@@ -1861,7 +3218,7 @@
 	<td class='source'>🧑‍🍼 –keywords</td>
 	<td class='target'>…<br>መመገብ<br>…<br>ሞግዚት<br>…<br>ሰው ህጻን ሲያጠባ<br>ሴት<br>…<br>አራስ<br>አባት<br>እናት<br>ወንድ</td></tr>
   <tr>
-	<td class='source' rowSpan='78'><a name='People & Body 2' href='#People & Body 2'>People & Body 2</a></td>
+	<td class='source' rowSpan='80'><a name='People & Body 2' href='#People & Body 2'>People & Body 2</a></td>
 	<td class='source' rowSpan='12'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td>
 	<td class='source'>👼 –keywords</td>
 	<td class='target'>ሕጻን መልዓክ<br>…<br>ኪሩብ<br>…</td></tr>
@@ -2086,7 +3443,7 @@
 	<td class='source'>💏 –keywords</td>
 	<td class='target'>…<br>መሳሳም<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='5'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td>
+	<td class='source' rowSpan='7'><a name='person-symbol' href='#person-symbol'>person-symbol</a></td>
 	<td class='source'>👤 –keywords</td>
 	<td class='target'>…<br>ምስጢራዊ<br>ሲሉዌት<br>…</td></tr>
   <tr>
@@ -2102,15 +3459,28 @@
 	<td class='source'>👣 –keywords</td>
 	<td class='target'>…<br>ውስጥ እግር<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='146'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td>
-	<td class='source' rowSpan='62'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td>
+	<td class='source'>🫆 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>የጣት አሻራ</td></tr>
+  <tr>
+	<td class='source'>🫆 –keywords</td>
+	<td class='target'>መርማሪ<br>ማተም<br>ማንነት<br>ምስጢር<br>ወንጀል<br>የጣት አሻራ<br>ደህንነት<br>ፈለግ<br>ፍንጭ<br>ፎረንሲክስ</td></tr>
+  <tr>
+	<td class='source' rowSpan='149'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td>
+	<td class='source' rowSpan='63'><a name='animal-mammal' href='#animal-mammal'>animal-mammal</a></td>
 	<td class='source'>🐵 –keywords</td>
+	<td class='target' rowSpan='2'>…</td>
 	<td class='target'>ሙዝ<br>እንስሳ<br>የማወቅ ጉጉት ያለው ጆርጅ<br>…</td></tr>
   <tr>
 	<td class='source'>🐒 –keywords</td>
 	<td class='target'>ሙዝ<br>እንስሳ<br>…</td></tr>
   <tr>
+	<td class='source'>🦍 -name</td>
+	<td class='target'>ጉሬላ</td>
+	<td class='target'>ጉሬዛ</td></tr>
+  <tr>
 	<td class='source'>🦧 –keywords</td>
+	<td class='target' rowSpan='90'>…</td>
 	<td class='target'>መንጠላጠል<br>እንስሳ<br>…<br>ጦጣ</td></tr>
   <tr>
 	<td class='source'>🐶 –keywords</td>
@@ -2126,7 +3496,7 @@
 	<td class='target'>ተደራሽ<br>…<br>የቤት እንስሳ</td></tr>
   <tr>
 	<td class='source'>🐩 –keywords</td>
-	<td class='target'>ለስላሳ ፀጉር<br>እንስሳ<br>…<br>ጥቅጥቅ ያለ ፀጉር<br>…</td></tr>
+	<td class='target'>ለስላሳ ፀጉር<br>እንስሳ<br>…<br>ጥቅጥቅ ያለ ፀጉር<br>…<br>ፑድል</td></tr>
   <tr>
 	<td class='source'>🐺 –keywords</td>
 	<td class='target' rowSpan='3'>…<br>እንስሳ<br>…</td></tr>
@@ -2136,10 +3506,10 @@
 	<td class='source'>🦝 –keywords</td></tr>
   <tr>
 	<td class='source'>🐱 –keywords</td>
-	<td class='target'>እንስሳ<br>ውሮ<br>…<br>የድመት ግልገል<br>…</td></tr>
+	<td class='target'>ሙጭሊት<br>እንስሳ<br>ውሮ<br>…<br>የድመት ግልገል<br>…</td></tr>
   <tr>
 	<td class='source'>🐈 –keywords</td>
-	<td class='target'>እንስሳ<br>እንስሳት<br>…<br>የድመት ግልገል<br>…<br>ድመቶች</td></tr>
+	<td class='target'>ሙጭሊት<br>እንስሳ<br>እንስሳት<br>…<br>የድመት ግልገል<br>…<br>ድመቶች</td></tr>
   <tr>
 	<td class='source'>🐈‍⬛ –keywords</td>
 	<td class='target'>ሃሎዊን<br>ሚያው<br>እንስሳ<br>…<br>የድመት ዝርያ<br>…</td></tr>
@@ -2385,7 +3755,7 @@
   <tr>
 	<td class='source' rowSpan='15'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td>
 	<td class='source'>🐳 –keywords</td>
-	<td class='target' rowSpan='84'>…</td>
+	<td class='target' rowSpan='53'>…</td>
 	<td class='target'>እንስሳ<br>…<br>ውቅያኖስ<br>…<br>የባህር ዳርቻ<br>…</td></tr>
   <tr>
 	<td class='source'>🐋 –keywords</td>
@@ -2498,7 +3868,7 @@
 	<td class='source'>🪻 –keywords</td>
 	<td class='target'>…<br>ሐምራዊ<br>ቁጥቋጦ<br>…<br>ተክል<br>ነጣ ያለ ወይን ጠጅ<br>…<br>ወይን ጠጅ<br>የፈካ<br>ያበበ</td></tr>
   <tr>
-	<td class='source' rowSpan='16'><a name='plant-other' href='#plant-other'>plant-other</a></td>
+	<td class='source' rowSpan='18'><a name='plant-other' href='#plant-other'>plant-other</a></td>
 	<td class='source'>🌱 –keywords</td>
 	<td class='target'>ለጋ<br>…<br>ችግኝ ማፍላት<br>…</td></tr>
   <tr>
@@ -2547,9 +3917,17 @@
 	<td class='source'>🍄 –keywords</td>
 	<td class='target'>ማሪዮ<br>…<br>የጅብ ጥላ<br>ፈንገስ</td></tr>
   <tr>
-	<td class='source' rowSpan='109'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td>
+	<td class='source'>🪾 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>ቅጠል የሌለው ዛፍ</td></tr>
+  <tr>
+	<td class='source'>🪾 –keywords</td>
+	<td class='target'>መካን<br>ቅርንጫፎች<br>ቅጠል የሌለው<br>ባዶ<br>እንጨት<br>ክረምት<br>ዛፍ<br>የሞተ<br>ድርቅ<br>ግንድ</td></tr>
+  <tr>
+	<td class='source' rowSpan='111'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td>
 	<td class='source' rowSpan='14'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td>
 	<td class='source'>🍇 –keywords</td>
+	<td class='target' rowSpan='30'>…</td>
 	<td class='target'>…<br>የወይን ዛለላዎች<br>…<br>ዳዮኒስስ<br>…</td></tr>
   <tr>
 	<td class='source'>🍈 –keywords</td>
@@ -2591,7 +3969,7 @@
 	<td class='source'>🥥 –keywords</td>
 	<td class='target'>…<br>ዘንባባ<br>ፒና ኮላዳ</td></tr>
   <tr>
-	<td class='source' rowSpan='16'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td>
+	<td class='source' rowSpan='18'><a name='food-vegetable' href='#food-vegetable'>food-vegetable</a></td>
 	<td class='source'>🍆 –keywords</td>
 	<td class='target'>…<br>አትክልት<br>…</td></tr>
   <tr>
@@ -2639,8 +4017,16 @@
 	<td class='source'>🍄‍🟫 –keywords</td>
 	<td class='target'>ማጣፈጫዎች<br>ምግብ<br>…<br>ቅጠል በል<br>ቡኒ የጅብ ጥላ<br>…<br>ተፈጥሮ<br>አታክልት<br>እምቡጥ<br>የጅብ ጥላ<br>የፒዛ ተጨማሪዎች<br>ፈንገስ<br>ፈንገሶች<br>ፖርቶቤሎ</td></tr>
   <tr>
+	<td class='source'>🫜 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>ሥር አትክልቶች</td></tr>
+  <tr>
+	<td class='source'>🫜 –keywords</td>
+	<td class='target'>ምግብ<br>ራዲሽ<br>ሰላጣ<br>ስር<br>ሽንብራ<br>ቢት<br>ቬጀቴሪያን<br>አትክልት<br>የአትክልት ስፍራ</td></tr>
+  <tr>
 	<td class='source' rowSpan='31'><a name='food-prepared' href='#food-prepared'>food-prepared</a></td>
 	<td class='source'>🍞 –keywords</td>
+	<td class='target'>…</td>
 	<td class='target'>ምግብ<br>ምግብ ቤት<br>ስንዴ<br>እህል<br>ካርቦሃይድሬትስ<br>…<br>ጥብስ</td></tr>
   <tr>
 	<td class='source'>🥐 –keywords</td>
@@ -3590,7 +4976,7 @@
 	<td class='source'>🪢 –keywords</td>
 	<td class='target'>ማሰር<br>…<br>ገመድ</td></tr>
   <tr>
-	<td class='source' rowSpan='105'><a name='Objects' href='#Objects'>Objects</a></td>
+	<td class='source' rowSpan='107'><a name='Objects' href='#Objects'>Objects</a></td>
 	<td class='source' rowSpan='43'><a name='clothing' href='#clothing'>clothing</a></td>
 	<td class='source'>🕶 –keywords</td>
 	<td class='target'>…<br>ጥቁር መነጽር<br>…</td></tr>
@@ -3761,7 +5147,7 @@
 	<td class='target'>…<br>ቁልፎች</td></tr>
   <tr>
 	<td class='source'>🎤 –keywords</td>
-	<td class='target' rowSpan='56'>…</td>
+	<td class='target' rowSpan='12'>…</td>
 	<td class='target'>…<br>ማይክሮፎን<br>…</td></tr>
   <tr>
 	<td class='source'>🎧 –keywords</td>
@@ -3770,7 +5156,7 @@
 	<td class='source'>📻 –keywords</td>
 	<td class='target'>መዝናኛ<br>ራዲዮ<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='9'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td>
+	<td class='source' rowSpan='11'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td>
 	<td class='source'>🪗 –keywords</td>
 	<td class='target'>ሙዚቃ<br>ስኩዊዝቦክስ<br>…<br>የሙዚቃ መሳሪያ</td></tr>
   <tr>
@@ -3798,8 +5184,16 @@
 	<td class='source'>🪈 –keywords</td>
 	<td class='target'>…<br>ማርች ባንድ<br>ቱቦ<br>ኦርኬስትራ<br>…<br>ዋሽንት ነፊ<br>የሙዚቃ መሳሪያ<br>የሙዚቃ ቡድን<br>የትንፋሽ የሙዚቃ መሳሪያ<br>…<br>ፊፍ<br>ፒኮሎ</td></tr>
   <tr>
+	<td class='source'>🪉 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>በገና</td></tr>
+  <tr>
+	<td class='source'>🪉 –keywords</td>
+	<td class='target'>መሳሪያ<br>ሙዚቃ<br>በገና<br>ኦርኬስትራ<br>ኩፒድ<br>ፍቅር</td></tr>
+  <tr>
 	<td class='source' rowSpan='6'><a name='phone' href='#phone'>phone</a></td>
 	<td class='source'>📱 –keywords</td>
+	<td class='target' rowSpan='44'>…</td>
 	<td class='target'>…<br>ግንኙነት</td></tr>
   <tr>
 	<td class='source'>📲 –keywords</td>
@@ -3916,7 +5310,7 @@
 	<td class='source'>🏷 –keywords</td>
 	<td class='target'>…<br>መሰየሚያ<br>ጉትቻ</td></tr>
   <tr>
-	<td class='source' rowSpan='107'><a name='Objects2' href='#Objects2'>Objects2</a></td>
+	<td class='source' rowSpan='109'><a name='Objects2' href='#Objects2'>Objects2</a></td>
 	<td class='source' rowSpan='8'><a name='money' href='#money'>money</a></td>
 	<td class='source'>💰 –keywords</td>
 	<td class='target'>ሀብታም<br>መክፈል<br>ሚሊዮን<br>ቋጣሪ<br>ቢሊየን<br>ባንክ<br>…<br>አሸናፊ<br>ወጪ<br>ውርርድ<br>የተከፈለ<br>የወርቅ ማሰሮ<br>…<br>ገንዘብ ማውጣት<br>ጥሬ ገንዘብ</td></tr>
@@ -4005,7 +5399,7 @@
 	<td class='target'>…<br>ካርድ<br>የካርድ መጥቁም<br>የድሮ</td></tr>
   <tr>
 	<td class='source'>📈 –keywords</td>
-	<td class='target' rowSpan='96'>…</td>
+	<td class='target' rowSpan='38'>…</td>
 	<td class='target'>…<br>ሽቅብ<br>…<br>ግራፍ</td></tr>
   <tr>
 	<td class='source'>📉 –keywords</td>
@@ -4057,7 +5451,7 @@
 	<td class='source'>🗝 –keywords</td>
 	<td class='target'>…<br>የድሮ<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='21'><a name='tool' href='#tool'>tool</a></td>
+	<td class='source' rowSpan='23'><a name='tool' href='#tool'>tool</a></td>
 	<td class='source'>🔨 –keywords</td>
 	<td class='target'>…<br>መሳሪያ<br>…<br>መገልገያ</td></tr>
   <tr>
@@ -4121,8 +5515,16 @@
 	<td class='source'>🪜 –keywords</td>
 	<td class='target'>…<br>መውጣት<br>ደረጃ መወጣጫ<br>ግንባታ</td></tr>
   <tr>
+	<td class='source'>🪏 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>አካፋ</td></tr>
+  <tr>
+	<td class='source'>🪏 –keywords</td>
+	<td class='target'>መቅበር<br>መቆፈር<br>ስካፕ<br>በረዶ<br>ተክል<br>አካፋ<br>አጭር አካፋ<br>የአትክልት ስፍራ<br>ጉድጓድ</td></tr>
+  <tr>
 	<td class='source' rowSpan='5'><a name='science' href='#science'>science</a></td>
 	<td class='source'>🧪 –keywords</td>
+	<td class='target' rowSpan='58'>…</td>
 	<td class='target'>…<br>ቤተ ሙከራ<br>…<br>የሙከራ ቱቦ<br>…</td></tr>
   <tr>
 	<td class='source'>🧫 –keywords</td>
@@ -4251,7 +5653,7 @@
 	<td class='source'>🪪 –keywords</td>
 	<td class='target'>መለያ<br>…<br>ማስረጃ<br>…<br>ሰነድ<br>የማንነት መለያ<br>…</td></tr>
   <tr>
-	<td class='source' rowSpan='149'><a name='Emoji Symbols' href='#Emoji Symbols'>Emoji Symbols</a></td>
+	<td class='source' rowSpan='151'><a name='Emoji Symbols' href='#Emoji Symbols'>Emoji Symbols</a></td>
 	<td class='source' rowSpan='10'><a name='transport-sign' href='#transport-sign'>transport-sign</a></td>
 	<td class='source'>🏧 –keywords</td>
 	<td class='target'>…<br>የገንዘብ መክፈያ ማሽን<br>…</td></tr>
@@ -4495,7 +5897,7 @@
 	<td class='source'>💲 –keywords</td>
 	<td class='target'>ሚሊዮን<br>…<br>ቢሊዮን<br>ክፍያ<br>…<br>ጥሬ ገንዘብ</td></tr>
   <tr>
-	<td class='source' rowSpan='15'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td>
+	<td class='source' rowSpan='17'><a name='other-symbol' href='#other-symbol'>other-symbol</a></td>
 	<td class='source'>⚕ –keywords</td>
 	<td class='target'>…<br>መድሃኒት ቤት<br>አስኩላፐስ<br>እባብና ዘንግ<br>…</td></tr>
   <tr>
@@ -4510,7 +5912,7 @@
 	<td class='target'>መሳሪያ<br>ሼቭሮን<br>…<br>ቢጫ<br>አረንጓዴ<br>…<br>የጃፓን ምልክት ለጀማሪ<br>…<br>ጀማሪ</td></tr>
   <tr>
 	<td class='source'>⭕ –keywords</td>
-	<td class='target' rowSpan='18'>…</td>
+	<td class='target' rowSpan='11'>…</td>
 	<td class='target'>ቀለበት<br>ቀይ ቀለበት<br>…</td></tr>
   <tr>
 	<td class='source'>✅ –keywords</td>
@@ -4543,8 +5945,16 @@
 	<td class='source'>® –keywords</td>
 	<td class='target'>…<br>የንግድ ምልክት</td></tr>
   <tr>
+	<td class='source'>🫟 -name</td>
+	<td class='target' rowSpan='2'>▷missing◁</td>
+	<td class='target'>የውሃ መረጨት</td></tr>
+  <tr>
+	<td class='source'>🫟 –keywords</td>
+	<td class='target'>ሆሊ<br>መፍሰስ<br>ምስቅልቅል<br>ቀለም<br>ነጠብጣብ<br>እድፍ<br>የውሃ መረጨት<br>ፈሳሽ</td></tr>
+  <tr>
 	<td class='source' rowSpan='34'><a name='alphanum' href='#alphanum'>alphanum</a></td>
 	<td class='source'>🔢 –keywords</td>
+	<td class='target' rowSpan='7'>…</td>
 	<td class='target'>…<br>ምልክት<br>…</td></tr>
   <tr>
 	<td class='source'>🔤 –keywords</td>
@@ -4738,6 +6148,92 @@
   <tr>
 	<td class='source'>🏳‍🌈 –keywords</td>
 	<td class='target'>ሌዝቢያን<br>…<br>ትራንስ<br>ትራንስጀንደር<br>ንጥል ጾታዊ<br>ኩራት<br>…<br>የግብረሰዶማውያን ባንዴራ<br>ግብረ ሰዶማዊ<br>ጾታ ያለዩ</td></tr>
+  <tr>
+	<td class='source' rowSpan='22'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
+	<td class='source' rowSpan='11'><a name='Displaying Lists' href='#Displaying Lists'>Displaying Lists</a></td>
+	<td class='source'><a name='“And” List' href='#“And” List'>“And” List</a></td>
+	<td class='source' rowSpan='7'>end</td>
+	<td class='target' rowSpan='2'>{0}፣ እና {1}</td>
+	<td class='target' rowSpan='3'>{0} እና {1}</td>
+	<td class='target' rowSpan='11'>moderate</td></tr>
+  <tr>
+	<td class='source'><a name='Short “and” List' href='#Short “and” List'>Short “and” List</a></td></tr>
+  <tr>
+	<td class='source'><a name='Narrow “and” List' href='#Narrow “and” List'>Narrow “and” List</a></td>
+	<td class='target'>{0}, እና {1}</td></tr>
+  <tr>
+	<td class='source'><a name='“Or” List' href='#“Or” List'>“Or” List</a></td>
+	<td class='target' rowSpan='3'>{0}፣ ወይም {1}</td>
+	<td class='target' rowSpan='3'>{0} ወይም {1}</td></tr>
+  <tr>
+	<td class='source'><a name='Short “Or” List' href='#Short “Or” List'>Short “Or” List</a></td></tr>
+  <tr>
+	<td class='source'><a name='Narrow “Or” List' href='#Narrow “Or” List'>Narrow “Or” List</a></td></tr>
+  <tr>
+	<td class='source'><a name='Unit List' href='#Unit List'>Unit List</a></td>
+	<td class='target' rowSpan='3'>{0}፣ {1}</td>
+	<td class='target' rowSpan='5'>{0} እና {1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Short Unit List' href='#Short Unit List'>Short Unit List</a></td>
+	<td class='source'>2</td></tr>
+  <tr>
+	<td class='source'>end</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Narrow Unit List' href='#Narrow Unit List'>Narrow Unit List</a></td>
+	<td class='source'>2</td>
+	<td class='target' rowSpan='2'>{0} {1}</td></tr>
+  <tr>
+	<td class='source'>end</td></tr>
+  <tr>
+	<td class='source' rowSpan='11'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td>
+	<td class='source'><a name='NameOrder for Locales' href='#NameOrder for Locales'>NameOrder for Locales</a></td>
+	<td class='source'>surnameFirst</td>
+	<td class='target'>ko vi yue zh</td>
+	<td class='target'>ja ko vi yue zh</td>
+	<td class='target' rowSpan='11'>modern</td></tr>
+  <tr>
+	<td class='source'><a name='SampleName Fields for Item: nativeGS' href='#SampleName Fields for Item: nativeGS'>SampleName Fields for Item: nativeGS</a></td>
+	<td class='source' rowSpan='2'>given</td>
+	<td class='target'>ኢሬን</td>
+	<td class='target'>አይሪን</td></tr>
+  <tr>
+	<td class='source'><a name='SampleName Fields for Item: nativeGGS' href='#SampleName Fields for Item: nativeGGS'>SampleName Fields for Item: nativeGGS</a></td>
+	<td class='target'>ጆን</td>
+	<td class='target'>ሜሪ ሱ</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='SampleName Fields for Item: nativeFull' href='#SampleName Fields for Item: nativeFull'>SampleName Fields for Item: nativeFull</a></td>
+	<td class='source'>credentials</td>
+	<td class='target'>ኤምፒ</td>
+	<td class='target'>የፓርላማ አባል</td></tr>
+  <tr>
+	<td class='source'>generation</td>
+	<td class='target'>ተማሪ</td>
+	<td class='target'>ልጅ</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>given</td>
+	<td class='target'>በርታም ዊልበርፎርስ</td>
+	<td class='target'>በርትራም ዊልበርፎርስ</td></tr>
+  <tr>
+	<td class='source'><a name='SampleName Fields for Item: foreignGGS' href='#SampleName Fields for Item: foreignGGS'>SampleName Fields for Item: foreignGGS</a></td>
+	<td class='target'>ዛዚላ</td>
+	<td class='target'>ዛዚሊያ</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='SampleName Fields for Item: foreignFull' href='#SampleName Fields for Item: foreignFull'>SampleName Fields for Item: foreignFull</a></td>
+	<td class='source'>credentials</td>
+	<td class='target'>ሚ/ዶ ዶ/ር</td>
+	<td class='target'>ዶ/ር የጥርስ ዶ/ር</td></tr>
+  <tr>
+	<td class='source'>generation</td>
+	<td class='target'>ተማሪ</td>
+	<td class='target'>ልጅ</td></tr>
+  <tr>
+	<td class='source'>given2</td>
+	<td class='target'>ኢቫ ሶፊያ</td>
+	<td class='target'>ሴዛር ማርቲን</td></tr>
+  <tr>
+	<td class='source'>surname-prefix</td>
+	<td class='target'>ቫን ደን</td>
+	<td class='target'>ቮን</td></tr>
 </table>
 <!-- end main body -->
 	</div>
