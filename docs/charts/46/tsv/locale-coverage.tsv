@@ -61,6 +61,7 @@ vi	Vietnamese	Tiếng Việt	Latn	VN	1	modern	 ≡	modern	ICU	1.0	1.0	1.0	1.0	1.
 zh	Chinese	中文	Hans	CN	5	modern	 ≡	modern	ICU	1.0	1.0	1.0	1.0	1.0	
 cy	Welsh	Cymraeg	Latn	GB	1	modern	 ≡	modern	ICU	1.0	0.9999352415490221	1.0	1.0	1.0	🄼 grammar
 ga	Irish	Gaeilge	Latn	IE	2	modern	 ≡	modern	ICU	1.0	0.9999301578432742	1.0	1.0	1.0	🄼 grammar
+sr_Latn	Serbian (Latin)	srpski (latinica)	Latn	RS	4	‡modern	 ≡	modern	ICU	1.0	0.9999267881982575	1.0	1.0	1.0	🄼 grammar
 be	Belarusian	беларуская	Cyrl	BY	1	modern	 ≡	modern	ICU	1.0	0.9999240871479541	1.0	1.0	1.0	🄼 grammar
 hsb	Upper Sorbian	hornjoserbšćina	Latn	DE	1	‡modern	 ≡	modern	ICU	1.0	0.9999230117791977	1.0	1.0	1.0	🄼 grammar
 dsb	Lower Sorbian	dolnoserbšćina	Latn	DE	1	‡modern	 ≡	modern	ICU	1.0	0.999922015129065	1.0	1.0	1.0	🄼 grammar
@@ -86,14 +87,13 @@ ig	Igbo	Igbo	Latn	NG	1	modern	 ≡	modern	ICU	1.0	0.9998009554140127	1.0	1.0	1.0
 chr	Cherokee	ᏣᎳᎩ	Cher	US	1	‡modern	 ≡	modern	ICU	1.0	0.9997303370786517	1.0	1.0	1.0	🄼 grammar, 🄼 ordinals, 🄼 romanization
 nn	Norwegian Nynorsk	norsk nynorsk	Latn	NO	1	modern	 ≡	modern	ICU	0.9992426701287461	0.9993089149965446	1.0	1.0	1.0	🄼 ordinals
 gd	Scottish Gaelic	Gàidhlig	Latn	GB	1	modern	 ≡	modern	ICU	1.0	0.9997737556561086	0.9996297667530544	1.0	1.0	ⓜ collation, 🄼 grammar
-sr_Latn	Serbian (Latin)	srpski (latinica)	Latn	RS	4	‡modern	 ≡	modern	ICU	1.0	0.9963170300530347	0.9996178830722201	1.0	1.0	🄼 grammar
 sd	Sindhi	‫سنڌي‬	Arab	PK	1	modern	 ≡	modern	ICU	1.0	0.9997398317578701	0.999601593625498	1.0	1.0	ⓜ collation, 🄼 grammar
 so	Somali	Soomaali	Latn	SO	4	modern	 ≡	modern	ICU	1.0	0.9996509294004713	0.9995943204868154	1.0	1.0	ⓜ collation, 🄼 grammar, 🄼 ordinals
 eu	Basque	euskara	Latn	ES	1	modern	 ≡	modern	ICU	1.0	0.9997322145853789	0.9995764506565015	1.0	1.0	ⓜ collation, 🄼 grammar
-yue	Cantonese	粵語	Hant	HK	1	modern	 ≡	modern	ICU	1.0	0.9997093304912315	0.9995535714285714	1.0	1.0	ⓜ collation, 🄼 grammar
+yue	Cantonese	粵語	Hant	HK	2	modern	 ≡	modern	ICU	1.0	0.9997093304912315	0.9995535714285714	1.0	1.0	ⓜ collation, 🄼 grammar
+yue_Hans	Cantonese (Simplified)	粤语 (简体)	Hans	CN	0	‡modern	 ≡	modern	ICU	1.0	0.9993217711462068	0.9995535714285714	1.0	1.0	ⓜ collation, 🄼 grammar
 kok	Konkani	कोंकणी	Deva	IN	1	modern	 ≡	modern	ICU	1.0	0.999608265595926	0.9995440036479708	1.0	1.0	ⓜ plurals, 🄼 grammar, 🄼 ordinals
 pcm	Nigerian Pidgin	Naijíriá Píjin	Latn	NG	1	modern	 ≡	modern	ICU	1.0	0.9994591671173607	0.9991304347826087	1.0	1.0	ⓜ casing, ⓜ collation, 🄼 grammar, 🄼 ordinals
-yue_Hans	Cantonese (Simplified)	粤语 (简体)	Hans	CN	0	‡modern	 ≡	modern	ICU	1.0	0.9960248206321505	0.9991071428571429	1.0	1.0	ⓜ collation, 🄼 grammar
 jv	Javanese	Jawa	Latn	ID	1	modern	 ≡	modern	ICU	1.0	0.9994136043784206	0.9990850869167429	1.0	1.0	ⓜ casing, ⓜ collation, 🄼 grammar, 🄼 ordinals
 ti	Tigrinya	ትግርኛ	Ethi	ET	2	moderate	 <	modern	ICU	1.0	0.9996496452658317	0.9995939910678034	1.0	1.0	ⓜ collation, 🄼 grammar, 🄼 ordinals
 fo	Faroese	føroyskt	Latn	FO	2	‡moderate	 ≡	moderate	ICU	1.0	0.9552830869094843	1.0	1.0	1.0	
@@ -298,8 +298,8 @@ dv	Divehi	‫ދިވެހިބަސް‬	Thaa	MV	1		 ≡			0.44	0.003240873129348965
 ab	Abkhazian	Аԥсшәа	Cyrl	GE	1		 ≡			0.011811023622047244	0.005668101186102656	0.015797032072762087	0.16883116883116883	1.0	
 an	Aragonese	aragonés	Latn	ES	1		 ≡			0.010434782608695653	0.0036641541038525964	0.01229946524064171	0.16883116883116883	1.0	
 co	Corsican	corsu	Latn	FR	1		 ≡			0.014516129032258065	0.003404448479346346	0.012089810017271158	0.16883116883116883	1.0	
+scn	Sicilian	sicilianu	Latn	IT	1		 ≡			0.005980861244019139	0.003940413262854397	0.011284722222222222	0.16883116883116883	1.0	
 myv	Erzya	эрзянь кель	Cyrl	RU	1		 ≡			0.025252525252525252	0.00338230631011521	0.010700389105058366	0.16883116883116883	1.0	
-scn	Sicilian	sicilianu	Latn	IT	1		 ≡			0.004786597526924611	0.003364414111314044	0.00998697351280938	0.16883116883116883	1.0	
 frr	Northern Frisian	Nordfriisk	Latn	DE	1		 ≡			0.0013977128335451081	0.0032064128256513026	0.009976247030878859	0.16883116883116883	1.0	
 rif	Riffian	Tarifit	Latn	MA	1		 ≡			0.005754475703324808	0.0031549058786412873	0.01014983083615273	0.16666666666666666	1.0	
 moh	Mohawk	Kanienʼkéha	Latn	CA	1		 ≡			1.0	0.004060795915999536	0.014075887392900856	0.16	1.0	ⓑ own_regions
