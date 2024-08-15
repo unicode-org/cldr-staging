@@ -77,14 +77,20 @@
 	<th class='target'>New</th>
 	<th class='target'>Level</th></tr>
   <tr>
-	<td class='source' rowSpan='4'><a name='Core Data' href='#Core Data'>Core Data</a></td>
-	<td class='source' rowSpan='4'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+	<td class='source' rowSpan='5'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+	<td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
 	<td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td>
 	<td class='source'>Others: punctuation</td>
-	<td class='source' rowSpan='21'>sr</td>
+	<td class='source' rowSpan='22'>sr</td>
 	<td class='target'>…[\u2018\u201A\u201C]…</td>
 	<td class='target'>…[/\u2019\u201D]…</td>
 	<td class='target'>core</td></tr>
+  <tr>
+	<td class='source'><a name='Parse' href='#Parse'>Parse</a></td>
+	<td class='source'>general-lenient(£)</td>
+	<td class='target'>[£ ₤]</td>
+	<td class='target'>[£￡ ₤]</td>
+	<td class='target'>moderate</td></tr>
   <tr>
 	<td class='source' rowSpan='3'><a name='Quotation Marks' href='#Quotation Marks'>Quotation Marks</a></td>
 	<td class='source'>End</td>
@@ -170,7 +176,7 @@
 	<td class='source'>QO</td>
 	<td class='target'>Океанија (удаљена острва)</td>
 	<td class='target'>удаљена острва Океаније</td>
-	<td class='target' rowSpan='20'>moderate</td></tr>
+	<td class='target' rowSpan='25'>moderate</td></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td>
 	<td class='source'>XA</td>
@@ -187,19 +193,24 @@
 	<td class='target'>Бермуда</td>
 	<td class='target'>Бермуди</td></tr>
   <tr>
-	<td class='source' rowSpan='14'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
-	<td class='source' rowSpan='14'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
-	<td class='source' rowSpan='2'><a name='Day Periods - wide - Formatting' href='#Day Periods - wide - Formatting'>Day Periods - wide - Formatting</a></td>
-	<td class='source' rowSpan='3'>morning1</td>
+	<td class='source' rowSpan='19'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='19'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+	<td class='source' rowSpan='3'><a name='Day Periods - wide - Formatting' href='#Day Periods - wide - Formatting'>Day Periods - wide - Formatting</a></td>
+	<td class='source' rowSpan='4'>morning1</td>
 	<td class='target'>ујутро</td>
-	<td class='target' rowSpan='3'>ујутру</td></tr>
+	<td class='target' rowSpan='2'>ујутру</td></tr>
   <tr>
 	<td class='source'>sr_Cyrl_XK</td>
 	<td class='target'>јутро</td></tr>
   <tr>
+	<td class='source'>sr_Latn_ME</td>
+	<td class='target'>jutro</td>
+	<td class='target'>ujutru</td></tr>
+  <tr>
 	<td class='source'><a name='Day Periods - abbreviated - Formatting' href='#Day Periods - abbreviated - Formatting'>Day Periods - abbreviated - Formatting</a></td>
-	<td class='source' rowSpan='13'>sr</td>
-	<td class='target'>ујутро</td></tr>
+	<td class='source' rowSpan='5'>sr</td>
+	<td class='target'>ујутро</td>
+	<td class='target'>ујутру</td></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='Day Periods - narrow - Standalone' href='#Day Periods - narrow - Standalone'>Day Periods - narrow - Standalone</a></td>
 	<td class='source'>am</td>
@@ -215,22 +226,50 @@
 	<td class='target'>d.M.yy.</td>
 	<td class='target'>d. M. y.</td></tr>
   <tr>
-	<td class='source' rowSpan='6'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
-	<td class='source'>MMMMW-few</td>
-	<td class='target' rowSpan='3'>W. 'седмица' 'у' MMMM.</td>
-	<td class='target' rowSpan='3'>MMMM: W. 'недеља'</td></tr>
+	<td class='source' rowSpan='10'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source' rowSpan='2'>MMMMW-few</td>
+	<td class='target'>W. 'седмица' 'у' MMMM.</td>
+	<td class='target'>MMMM: W. 'недеља'</td></tr>
   <tr>
-	<td class='source'>MMMMW-one</td></tr>
+	<td class='source'>sr_Latn_ME</td>
+	<td class='target'>W. 'sjedmica' 'u' MMMM</td>
+	<td class='target'>MMMM: W. 'nedelja'</td></tr>
   <tr>
-	<td class='source'>MMMMW-other</td></tr>
+	<td class='source' rowSpan='2'>MMMMW-one</td>
+	<td class='source'>sr</td>
+	<td class='target'>W. 'седмица' 'у' MMMM.</td>
+	<td class='target'>MMMM: W. 'недеља'</td></tr>
   <tr>
-	<td class='source'>yw-few</td>
-	<td class='target' rowSpan='3'>w. 'седмица' 'у' Y.</td>
-	<td class='target' rowSpan='3'>w. 'недеља' 'у' Y.</td></tr>
+	<td class='source'>sr_Latn_ME</td>
+	<td class='target'>W. 'sjedmica' 'u' MMMM</td>
+	<td class='target'>MMMM: W. 'nedelja'</td></tr>
   <tr>
-	<td class='source'>yw-one</td></tr>
+	<td class='source'>MMMMW-other</td>
+	<td class='source' rowSpan='2'>sr</td>
+	<td class='target'>W. 'седмица' 'у' MMMM.</td>
+	<td class='target'>MMMM: W. 'недеља'</td></tr>
   <tr>
-	<td class='source'>yw-other</td></tr>
+	<td class='source' rowSpan='2'>yw-few</td>
+	<td class='target'>w. 'седмица' 'у' Y.</td>
+	<td class='target'>w. 'недеља' 'у' Y.</td></tr>
+  <tr>
+	<td class='source'>sr_Latn_ME</td>
+	<td class='target'>w. 'sjedmica' 'u' Y.</td>
+	<td class='target'>w. 'nedelja' 'u' Y.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>yw-one</td>
+	<td class='source'>sr</td>
+	<td class='target'>w. 'седмица' 'у' Y.</td>
+	<td class='target'>w. 'недеља' 'у' Y.</td></tr>
+  <tr>
+	<td class='source'>sr_Latn_ME</td>
+	<td class='target'>w. 'sjedmica' 'u' Y.</td>
+	<td class='target'>w. 'nedelja' 'u' Y.</td></tr>
+  <tr>
+	<td class='source'>yw-other</td>
+	<td class='source' rowSpan='4'>sr</td>
+	<td class='target'>w. 'седмица' 'у' Y.</td>
+	<td class='target'>w. 'недеља' 'у' Y.</td></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td>
 	<td class='source'>EBhm</td>
