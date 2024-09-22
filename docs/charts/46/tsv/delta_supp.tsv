@@ -27,6 +27,10 @@ BCP47	u_Extension	tz-est5edt	_alias	EST5EDT	▷removed◁
 BCP47	u_Extension	tz-est5edt	_deprecated	…	true
 BCP47	u_Extension	tz-est5edt	_preferred	▷missing◁	usnyc
 BCP47	u_Extension	tz-grath	_alias	…	Europe/Athens EET
+BCP47	u_Extension	tz-mncoq	_alias	Asia/Choibalsan	▷removed◁
+BCP47	u_Extension	tz-mncoq	_deprecated	…	true
+BCP47	u_Extension	tz-mncoq	_preferred	▷missing◁	mnuln
+BCP47	u_Extension	tz-mnuln	_alias	…	Asia/Ulaanbaatar Asia/Ulan_Bator Asia/Choibalsan
 BCP47	u_Extension	tz-mst7mdt	_alias	MST7MDT	▷removed◁
 BCP47	u_Extension	tz-mst7mdt	_deprecated	…	true
 BCP47	u_Extension	tz-mst7mdt	_preferred	▷missing◁	usden
@@ -56,6 +60,8 @@ Supplemental	Alias	subdivision	frlre-reason	▷missing◁	deprecated
 Supplemental	Alias	subdivision	frlre-replacement	▷missing◁	RE
 Supplemental	Alias	subdivision	frmay-reason	▷missing◁	deprecated
 Supplemental	Alias	subdivision	frmay-replacement	▷missing◁	YT
+Supplemental	Alias	zone	Asia/Choibalsan-reason	▷missing◁	deprecated
+Supplemental	Alias	zone	Asia/Choibalsan-replacement	▷missing◁	Asia/Ulaanbaatar
 Supplemental	Alias	zone	CST6CDT-reason	▷missing◁	deprecated
 Supplemental	Alias	zone	CST6CDT-replacement	▷missing◁	America/Chicago
 Supplemental	Alias	zone	EST-replacement	…	America/Panama
@@ -80,6 +86,7 @@ Supplemental	WZoneMapping	Central Standard Time	ZZ	CST6CDT	▷removed◁
 Supplemental	WZoneMapping	Eastern Standard Time	ZZ	EST5EDT	▷removed◁
 Supplemental	WZoneMapping	Mountain Standard Time	ZZ	MST7MDT	▷removed◁
 Supplemental	WZoneMapping	Pacific Standard Time	ZZ	PST8PDT	▷removed◁
+Supplemental	WZoneMapping	Ulaanbaatar Standard Time	MN	…	Asia/Ulaanbaatar
 Supplemental	Units	speed/wind	CN	▷missing◁	meter-per-second
 Supplemental	Units	speed/wind	DK	▷missing◁	meter-per-second
 Supplemental	Units	speed/wind	JP	▷missing◁	meter-per-second
@@ -1499,6 +1506,27 @@ Supplemental	LanguageGroup	xgn	parent-child	…	… • ykh • …
 Supplemental	LanguageGroup	ypk	parent-child	…	…
 Supplemental	LanguageGroup	zhx	parent-child	…	… • cnp • … • csp • …
 Supplemental	LanguageGroup	zls	parent-child	…	… • kjv • …
+Supplemental	Metazone	America/Bahia_Banderas	1970-01-01 08:00-2010-04-04 09:00	America_Mountain	▷removed◁
+Supplemental	Metazone	America/Bahia_Banderas	-∞..1970-01-01 08:00	America_Pacific	▷removed◁
+Supplemental	Metazone	America/Bahia_Banderas	-∞..2010-04-04 09:00	▷missing◁	America_Mountain
+Supplemental	Metazone	America/Cancun	1981-12-23 06:00-1998-08-02 06:00	America_Eastern	▷removed◁
+Supplemental	Metazone	America/Cancun	1981-12-26 08:00-1983-01-04 05:00	▷missing◁	America_Eastern
+Supplemental	Metazone	America/Cancun	1983-01-04 05:00-1997-10-26 07:00	▷missing◁	America_Central
+Supplemental	Metazone	America/Cancun	1997-10-26 07:00-1998-08-02 06:00	▷missing◁	America_Eastern
+Supplemental	Metazone	America/Cancun	-∞..1981-12-23 06:00	America_Central	▷removed◁
+Supplemental	Metazone	America/Cancun	-∞..1981-12-26 08:00	▷missing◁	America_Central
+Supplemental	Metazone	America/Hermosillo	1970-01-01 08:00..∞	Mexico_Pacific	▷removed◁
+Supplemental	Metazone	America/Hermosillo	-∞..1970-01-01 08:00	America_Pacific	▷removed◁
+Supplemental	Metazone	America/Hermosillo	-∞..∞	▷missing◁	Mexico_Pacific
+Supplemental	Metazone	America/Mazatlan	1970-01-01 08:00..∞	Mexico_Pacific	▷removed◁
+Supplemental	Metazone	America/Mazatlan	-∞..1970-01-01 08:00	America_Pacific	▷removed◁
+Supplemental	Metazone	America/Mazatlan	-∞..∞	▷missing◁	Mexico_Pacific
+Supplemental	Metazone	America/Merida	1981-12-23 06:00-1982-12-02 05:00	America_Eastern	▷removed◁
+Supplemental	Metazone	America/Merida	1981-12-26 08:00-1982-11-02 07:00	▷missing◁	America_Eastern
+Supplemental	Metazone	America/Merida	1982-11-02 07:00..∞	▷missing◁	America_Central
+Supplemental	Metazone	America/Merida	1982-12-02 05:00..∞	America_Central	▷removed◁
+Supplemental	Metazone	America/Merida	-∞..1981-12-23 06:00	America_Central	▷removed◁
+Supplemental	Metazone	America/Merida	-∞..1981-12-26 08:00	▷missing◁	America_Central
 Supplemental	Metazone	Asia/Almaty	2024-02-29 18:00..∞	…	Kazakhstan
 Supplemental	Metazone	Asia/Aqtau	2004-10-30 22:00-2024-02-29 18:00	▷missing◁	Kazakhstan_Western
 Supplemental	Metazone	Asia/Aqtau	2004-10-30 22:00..∞	Kazakhstan_Western	▷removed◁
@@ -1509,6 +1537,9 @@ Supplemental	Metazone	Asia/Aqtobe	2024-02-29 18:00..∞	▷missing◁	Kazakhstan
 Supplemental	Metazone	Asia/Atyrau	2004-10-30 22:00-2024-02-29 18:00	▷missing◁	Kazakhstan_Western
 Supplemental	Metazone	Asia/Atyrau	2004-10-30 22:00..∞	Kazakhstan_Western	▷removed◁
 Supplemental	Metazone	Asia/Atyrau	2024-02-29 18:00..∞	▷missing◁	Kazakhstan
+Supplemental	Metazone	Asia/Choibalsan	1983-03-31 16:00-2008-03-30 15:00	Choibalsan	▷removed◁
+Supplemental	Metazone	Asia/Choibalsan	2008-03-30 15:00..∞	Mongolia	▷removed◁
+Supplemental	Metazone	Asia/Choibalsan	-∞..1983-03-31 16:00	Mongolia	▷removed◁
 Supplemental	Metazone	Asia/Kuala_Lumpur	1981-12-31 16:00..∞	▷missing◁	Malaysia
 Supplemental	Metazone	Asia/Kuala_Lumpur	1981-12-31 16:30..∞	Malaysia	▷removed◁
 Supplemental	Metazone	Asia/Kuala_Lumpur	-∞..1981-12-31 16:00	▷missing◁	Malaya
@@ -1520,10 +1551,19 @@ Supplemental	Metazone	Asia/Qostanay	2024-02-29 18:00..∞	…	Kazakhstan
 Supplemental	Metazone	Asia/Qyzylorda	2018-12-20 18:00-2024-02-29 18:00	▷missing◁	Kazakhstan_Western
 Supplemental	Metazone	Asia/Qyzylorda	2018-12-20 18:00..∞	Kazakhstan_Western	▷removed◁
 Supplemental	Metazone	Asia/Qyzylorda	2024-02-29 18:00..∞	▷missing◁	Kazakhstan
+Supplemental	Metazone	Atlantic/Azores	1992-09-27 02:00-1993-03-28 01:00	Europe_Western	▷removed◁
+Supplemental	Metazone	Atlantic/Azores	1992-12-27 02:00-1993-06-17 01:00	▷missing◁	Europe_Western
+Supplemental	Metazone	Atlantic/Azores	1993-03-28 01:00..∞	Azores	▷removed◁
+Supplemental	Metazone	Atlantic/Azores	1993-06-17 01:00..∞	▷missing◁	Azores
+Supplemental	Metazone	Atlantic/Azores	-∞..1992-09-27 02:00	Azores	▷removed◁
+Supplemental	Metazone	Atlantic/Azores	-∞..1992-12-27 02:00	▷missing◁	Azores
+Supplemental	Metazone	choi	deprecated	false	▷removed◁
+Supplemental	Metazone	choi	longId	Choibalsan	▷removed◁
 Supplemental	Metazone	CST6CDT	-∞..∞	America_Central	▷removed◁
 Supplemental	Metazone	EST5EDT	-∞..∞	America_Eastern	▷removed◁
 Supplemental	Metazone	kaza	deprecated	▷missing◁	false
 Supplemental	Metazone	kaza	longId	▷missing◁	Kazakhstan
+Supplemental	Metazone	metazones	Choibalsan-001	Asia/Choibalsan	▷removed◁
 Supplemental	Metazone	metazones	Kazakhstan-001	▷missing◁	Asia/Almaty
 Supplemental	Metazone	MST7MDT	-∞..∞	America_Mountain	▷removed◁
 Supplemental	Metazone	PST8PDT	-∞..∞	America_Pacific	▷removed◁
