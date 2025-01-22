@@ -11,7 +11,11 @@ Supplemental	IdValidity	currency	regular	…	…
 Supplemental	IdValidity	language	deprecated	…	… • cls • …
 Supplemental	IdValidity	language	regular	…	… • clt~u • …
 Supplemental	Locale	Parent	en_001	…	… • en_GS • …
+Supplemental	Locale	Parent	en_150	…	… • en_CZ • … • en_ES • … • en_FR • en_HU • en_IT • … • en_NO • en_PL • en_PT • en_RO • … • en_SK
 Supplemental	Locale	DefaultContent	plain	…	… • cop_EG • … • ht_HT • …
+Supplemental	Transform	Hani→Latn	_alias	…	Han-Latin Hans-Latn und-Latn-t-und-hani und-Latn-t-und-hans
+Supplemental	Transform	Hant→Latn	_alias	▷missing◁	und-Latn-t-und-hant
+Supplemental	Transform	Hant→Latn	_visibility	▷missing◁	external
 Supplemental	Likely	Subtag	apd	…	apd_Arab_SD
 Supplemental	Likely	Subtag	grc	…	grc_Grek_GR
 Supplemental	Likely	Subtag	grc_Linb	grc_Linb_GR	▷removed◁
@@ -224,6 +228,10 @@ Supplemental	WeekData	weekOfPreference	he	▷missing◁	weekOfMonth
 Supplemental	WeekData	weekOfPreference	iw	weekOfDate	▷removed◁
 Supplemental	WeekData	weekOfPreference	iw	weekOfInterval	▷removed◁
 Supplemental	WeekData	weekOfPreference	iw	weekOfMonth	▷removed◁
+Supplemental	WeekData	hours-H-regions	h	…	… • GS • …
+Supplemental	WeekData	hours-H-regions	H	…	… • GS • …
+Supplemental	WeekData	hours-H-regions	hb	…	… • GS • …
+Supplemental	WeekData	hours-H-regions	hB	…	… • GS • …
 Supplemental	Language	ae	scripts	▷missing◁	Avst
 Supplemental	Language	ae	scripts-secondary	Avst	▷removed◁
 Supplemental	Language	akk	scripts	▷missing◁	Xsux
@@ -394,12 +402,107 @@ Supplemental	Transform	am_Ethi↔︎d0_Morse	tRule	…	… • :: [[:Zs:]0-9!\?\
 Supplemental	Transform	Arab↔︎Latn	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][‎ⁿ،؛؟ـً-ٕ٠-٬۰-۹﷼ښ][\u0611\u0670]] ; • …‬
 Supplemental	Transform	az→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { I → ı; • [:Cased:] [:Case_Ignorable:]* { İ → i; • …
 Supplemental	Transform	Beng→Latn	tRule	…	… • ::[[:Script=Bengali:][।-॥ঁ-ঃঅ-ঌএ-ঐও-নপ-রলশ-হ়-ৄে-ৈো-্ৗড়-ঢ়য়-ৣ০-৺ৎ]];
+Supplemental	Transform	chr→chr_FONIPA	tRule	…	… • ə̃ ə̃+ → ə̃; • …
 Supplemental	Transform	Cyrl↔︎Latn	tRule	…	… • | KS ← X } $ignore [:Uppercase_Letter:] ; • | KS ← [:Uppercase_Letter:] $ignore { X ; • …
 Supplemental	Transform	de→ASCII	tRule	…	… • ::Latin-ASCII; • …
 Supplemental	Transform	el→Lower	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { Σ → ς; • Σ } [:Case_Ignorable:]* [:Cased:] → σ;
 Supplemental	Transform	el→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { Σ } [:Case_Ignorable:]* [:Cased:] → σ; • [:Cased:] [:Case_Ignorable:]* { Σ → ς;
 Supplemental	Transform	Grek↔︎Latn	tRule	…	… • $glower = [[:Greek:] & [:Ll:]]; • … • $ignore [:Uppercase_Letter:] { $rough → H ; • … • $lower = [[:Latin:][:Greek:] & [:Ll:]]; • … • $rough } $ignore [:Uppercase_Letter:] → H ; • … • $upper = [[:Latin:][:Greek:] & [:Lu:]] ; • …
 Supplemental	Transform	Han↔︎Spacedhan	tRule	…	$initialPunct = [[:Ps:][:Pi:]]; • … • :: [[、。々《-』〜・㆒-㆟㈠-㉇㊀-㊰㋀-㋋ ㍘-㍰㍻-㍿㏠-㏾🈐-🈒🈔-🈺🉀-🉈🉐🉑][:Ideographic:][:sc=Han:]] nfkc; • …
+Supplemental	Transform	Hani→Latn	tRule	…	…
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	::Hani-Latn();
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[㪅]→gēng;  # U+3A85
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[㴔]→xī;    # U+3D14
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[䏲跌]→dié;  # U+43F2,8DCC
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[万]→mò;    # U+4E07
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[乾]→gān;   # U+4E7E
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[伲]→nǐ;    # U+4F32
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[俾]→bì;    # U+4FFE
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[剋]→kè;    # U+524B
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[剖頗]→pǒ;   # U+5256,9817
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[剽]→piào;  # U+527D
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[卜]→bǔ;    # U+535C
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[叚]→jiǎ;   # U+53DA
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[呇]→qǐ;    # U+5447
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[呷]→xiá;   # U+5477
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[啵]→bō;    # U+5575
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[嗯]→en;    # U+55EF
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[嗲]→diē;   # U+55F2
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[嘸]→wǔ;    # U+5638
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[噠]→dá;    # U+5660
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[地]→dì;    # U+5730
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[坋]→fèn;   # U+574B
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[埫]→chǒng; # U+57EB
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[堤隄]→tí;   # U+5824,9684
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[峛]→lǐ;    # U+5CDB
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[崾]→yǎo;    # U+5D3E
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[嶦]→zhān;   # U+5DA6
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[差]→chā;   # U+5DEE
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[帆]→fán;   # U+5E06
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[彷]→fǎng;  # U+5F77
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[徵]→zhēng;   # U+5FB5
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[摽脿蔈麃]→biāo; # U+647D,813F,8508,9E83
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[斗]→dǒu;   # U+6597
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[杓]→sháo;  # U+6753
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[杣]→shān;  # U+6763
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[柁]→duò;   # U+67C1
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[柏薄]→bó;   # U+67CF,8584
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[框]→kuāng; # U+6846
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[棓]→bàng;  # U+68D3
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[楯]→shǔn;  # U+696F
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[槭]→cù;    # U+69ED
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[欻]→hū;    # U+6B3B
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[氾]→fàn;   # U+6C3E
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[氿]→guǐ;   # U+6C3F
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[沈]→chén;  # U+6C88
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[沓]→tà;    # U+6C93
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[洓]→suǒ;   # U+6D13
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[炔]→guì;   # U+7094
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[牚]→chēng; # U+725A
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[町]→dīng;  # U+753A
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[畬]→yú;   # U+756C
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[癿]→qié;   # U+767F
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[眄]→miǎn;  # U+7704
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[瞭]→liǎo;  # U+77AD
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[砉]→huò;   # U+7809
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[硊]→wěi;   # U+784A
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[硍]→xiàn;   # U+784D
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[碈]→mín;   # U+7888
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[碡]→dú;    # U+78A1
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[筽]→wú;    # U+7B7D
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[繃]→bēng;  # U+7E43
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[耙]→pá;    # U+8019
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[聒]→guā;   # U+8052
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[肋]→lè;    # U+808B
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[舍]→shè;   # U+820D
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[芎]→qiōng; # U+828E
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[芘]→pí;    # U+8298
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[苧]→zhù;   # U+82E7
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[菹]→jū;    # U+83F9
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[萎]→wēi;   # U+840E
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[萹]→biǎn;  # U+8439
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[著]→zhe;   # U+8457
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[蓇]→gǔ;    # U+84C7
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[蓻]→jí;    # U+84FB
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[蕃]→fān;   # U+8543
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[薁]→yù;   # U+8581
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[袷]→jiá;   # U+88B7
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[誰]→shéi;  # U+8AB0
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[諞]→pián;  # U+8ADE
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[諷讽]→fèng; # U+8AF7,8BBD
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[識识]→shì; # U+8B58,8BC6
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[蹣]→mán;   # U+8E63
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[蹬]→dèng;  # U+8E6C
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[适]→kuò;   # U+9002
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[都]→dū;    # U+90FD
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[醱]→pò;    # U+91B1
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[釐]→lí;    # U+91D0
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[髪髮]→fǎ;   # U+9AEA,9AEE
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[𩷕]→liáng; # U+29DD5
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[𪟝]→jī;    # U+2A7DD
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[𲆦]→xì;    # U+321A6
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	[𲆰]→xí;    # U+321B0
+Supplemental	Transform	Hant→Latn	tRule	▷missing◁	沈 } 阳 →shěn;# 沈 is shěn (not chén) if followed by 阳 yáng: 沈阳 city Shěnyáng
 Supplemental	Transform	Hira↔︎Kana	tRule	…	… • :: ([[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]]); • … • :: [[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]]; • …
 Supplemental	Transform	it→am	tRule	…	… • [:Nonspacing_Mark:] → ; • …
 Supplemental	Transform	it→ja	tRule	…	… • [:Nonspacing_Mark:] → ; • …
@@ -412,7 +515,9 @@ Supplemental	Transform	Thai↔︎ThaiSemi	tRule	…	$thai = [[:Thai:] ก-ฺเ
 Supplemental	Transform	ThaiLogical↔︎Latin	tRule	…	… • $notAbove = [^\p{ccc=0}\p{ccc=Above}] ; • $notBelow = [^\p{ccc=0}\p{ccc=Below}] ; • …
 Supplemental	Transform	tr→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { I → ı; • [:Cased:] [:Case_Ignorable:]* { İ → i; • …
 Supplemental	Transform	ar→ar_Latn/BGN	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْ٠١٢٣٤٥٦٧٨٩ٱ]] ; • …‬
+Supplemental	Transform	byn_Ethi↔︎byn_Latn/Xaleget	tRule	…	… • ፡ $1 ← \,([^0-9])   ; • ። $1 ← \.([^0-9.]) ; • …
 Supplemental	Transform	dv→dv_Latn/BGN	tRule	…	‫… • ::[[:Block=Thaana:][،؛؟٪٫٬]\uFDF2] ; • …‬
+Supplemental	Transform	Ethi→Latn/Beta_Metsehaf_Geminate	tRule	…	… • :: Ethiopic-Latin/Beta_Metsehaf ;
 Supplemental	Transform	fa→fa_Latn/BGN	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهویيَُِّْ٠١٢٣٤٥٦٧٨٩پچژگی]] ; • …‬
 Supplemental	Transform	Grek↔︎Latn/UNGEGN	tRule	…	… • $lower = [[:Latin:][:Greek:] & [:Ll:]] ; • … • $upper = [[:Latin:][:Greek:] & [:Lu:]] ; • …
 Supplemental	Transform	Han→Latin/Names	tRule	…	… • [:^Script=Han:] { ([:Script=Han:]) → $startOfHanMarker $1; • …
