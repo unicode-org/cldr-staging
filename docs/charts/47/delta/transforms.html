@@ -75,62 +75,12 @@
 	<th class='target'>Old</th>
 	<th class='target'>New</th></tr>
   <tr>
-	<td class='source' rowSpan='123'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
-	<td class='source' rowSpan='123'><a name='Transform' href='#Transform'>Transform</a></td>
-	<td class='source'><a name='am_Ethi↔︎d0_Morse' href='#am_Ethi↔︎d0_Morse'>am_Ethi↔︎d0_Morse</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>:: [[:Zs:]0-9!\?\+/@()\[\]_:;,\.'"\$=\-[:Ethiopic:]] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Arab↔︎Latn' href='#Arab↔︎Latn'>Arab↔︎Latn</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>‫…<br>:: [[:Arabic:][:Block=Arabic:][‎ⁿ،؛؟ـً-ٕ٠-٬۰-۹﷼ښ][\u0611\u0670]] ;<br>…‬</td></tr>
-  <tr>
-	<td class='source'><a name='az→Title' href='#az→Title'>az→Title</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ;<br>[:Cased:] [:Case_Ignorable:]* { I → ı;<br>[:Cased:] [:Case_Ignorable:]* { İ → i;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Beng→Latn' href='#Beng→Latn'>Beng→Latn</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>::[[:Script=Bengali:][।-॥ঁ-ঃঅ-ঌএ-ঐও-নপ-রলশ-হ়-ৄে-ৈো-্ৗড়-ঢ়য়-ৣ০-৺ৎ]];</td></tr>
-  <tr>
+	<td class='source' rowSpan='97'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
+	<td class='source' rowSpan='97'><a name='Transform' href='#Transform'>Transform</a></td>
 	<td class='source'><a name='chr→chr_FONIPA' href='#chr→chr_FONIPA'>chr→chr_FONIPA</a></td>
 	<td class='source'>tRule</td>
 	<td class='target'>…</td>
 	<td class='target'>…<br>ə̃ ə̃+ → ə̃;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Cyrl↔︎Latn' href='#Cyrl↔︎Latn'>Cyrl↔︎Latn</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>| KS ← X } $ignore [:Uppercase_Letter:] ;<br>| KS ← [:Uppercase_Letter:] $ignore { X ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='de→ASCII' href='#de→ASCII'>de→ASCII</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>::Latin-ASCII;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='el→Lower' href='#el→Lower'>el→Lower</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Cased:] [:Case_Ignorable:]* { Σ → ς;<br>Σ } [:Case_Ignorable:]* [:Cased:] → σ;</td></tr>
-  <tr>
-	<td class='source'><a name='el→Title' href='#el→Title'>el→Title</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ;<br>[:Cased:] [:Case_Ignorable:]* { Σ } [:Case_Ignorable:]* [:Cased:] → σ;<br>[:Cased:] [:Case_Ignorable:]* { Σ → ς;</td></tr>
-  <tr>
-	<td class='source'><a name='Grek↔︎Latn' href='#Grek↔︎Latn'>Grek↔︎Latn</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>$glower = [[:Greek:] & [:Ll:]];<br>…<br>$ignore [:Uppercase_Letter:] { $rough → H ;<br>…<br>$lower = [[:Latin:][:Greek:] & [:Ll:]];<br>…<br>$rough } $ignore [:Uppercase_Letter:] → H ;<br>…<br>$upper = [[:Latin:][:Greek:] & [:Lu:]] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Han↔︎Spacedhan' href='#Han↔︎Spacedhan'>Han↔︎Spacedhan</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>$initialPunct = [[:Ps:][:Pi:]];<br>…<br>:: [[、。々《-』〜・㆒-㆟㈠-㉇㊀-㊰㋀-㋋ ㍘-㍰㍻-㍿㏠-㏾🈐-🈒🈔-🈺🉀-🉈🉐🉑][:Ideographic:][:sc=Han:]] nfkc;<br>…</td></tr>
   <tr>
 	<td class='source'><a name='Hani→Latn' href='#Hani→Latn'>Hani→Latn</a></td>
 	<td class='source'>tRule</td>
@@ -510,95 +460,15 @@
 	<td class='target'>▷missing◁</td>
 	<td class='target'>沈 } 阳 →shěn;# 沈 is shěn (not chén) if followed by 阳 yáng: 沈阳 city Shěnyáng</td></tr>
   <tr>
-	<td class='source'><a name='Hira↔︎Kana' href='#Hira↔︎Kana'>Hira↔︎Kana</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>:: ([[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]]);<br>…<br>:: [[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]];<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='it→am' href='#it→am'>it→am</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Nonspacing_Mark:] → ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='it→ja' href='#it→ja'>it→ja</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Nonspacing_Mark:] → ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Latin↔︎NumericPinyin' href='#Latin↔︎NumericPinyin'>Latin↔︎NumericPinyin</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>&NumericPinyin-Pinyin($1) ← [:Letter:] {($digit)};<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Latn→Jamo' href='#Latn→Jamo'>Latn→Jamo</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>::[[:Script=Latin:][:M:]-];<br>::[[:Script=Latin:][:M:]] NFC;</td></tr>
-  <tr>
-	<td class='source'><a name='lt→Title' href='#lt→Title'>lt→Title</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ;<br>[:Cased:] [:Case_Ignorable:]* {I \u0300 → i \u0307 \u0300;<br>[:Cased:] [:Case_Ignorable:]* {I \u0301 → i \u0307 \u0301;<br>[:Cased:] [:Case_Ignorable:]* {I \u0303 → i \u0307 \u0303;<br>[:Cased:] [:Case_Ignorable:]* {I \u0328 } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → i \u0328 \u0307;<br>[:Cased:] [:Case_Ignorable:]* {I } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → i \u0307;<br>[:Cased:] [:Case_Ignorable:]* {J } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → j \u0307;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Thai→Latn' href='#Thai→Latn'>Thai→Latn</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>::[[:Thai:] ก-ฺเ-๛];</td></tr>
-  <tr>
-	<td class='source'><a name='Thai↔︎ThaiLogical' href='#Thai↔︎ThaiLogical'>Thai↔︎ThaiLogical</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>$thai = [[:Thai:] ก-ฺเ-๛] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Thai↔︎ThaiSemi' href='#Thai↔︎ThaiSemi'>Thai↔︎ThaiSemi</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>$thai = [[:Thai:] ก-ฺเ-๛] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='ThaiLogical↔︎Latin' href='#ThaiLogical↔︎Latin'>ThaiLogical↔︎Latin</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>$notAbove = [^\p{ccc=0}\p{ccc=Above}] ;<br>$notBelow = [^\p{ccc=0}\p{ccc=Below}] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='tr→Title' href='#tr→Title'>tr→Title</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ;<br>[:Cased:] [:Case_Ignorable:]* { I → ı;<br>[:Cased:] [:Case_Ignorable:]* { İ → i;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='ar→ar_Latn/BGN' href='#ar→ar_Latn/BGN'>ar→ar_Latn/BGN</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>‫…<br>:: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْ٠١٢٣٤٥٦٧٨٩ٱ]] ;<br>…‬</td></tr>
-  <tr>
 	<td class='source'><a name='byn_Ethi↔︎byn_Latn/Xaleget' href='#byn_Ethi↔︎byn_Latn/Xaleget'>byn_Ethi↔︎byn_Latn/Xaleget</a></td>
 	<td class='source'>tRule</td>
 	<td class='target'>…</td>
 	<td class='target'>…<br>፡ $1 ← \,([^0-9])   ;<br>። $1 ← \.([^0-9.]) ;<br>…</td></tr>
   <tr>
-	<td class='source'><a name='dv→dv_Latn/BGN' href='#dv→dv_Latn/BGN'>dv→dv_Latn/BGN</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>‫…<br>::[[:Block=Thaana:][،؛؟٪٫٬]\uFDF2] ;<br>…‬</td></tr>
-  <tr>
 	<td class='source'><a name='Ethi→Latn/Beta_Metsehaf_Geminate' href='#Ethi→Latn/Beta_Metsehaf_Geminate'>Ethi→Latn/Beta_Metsehaf_Geminate</a></td>
 	<td class='source'>tRule</td>
 	<td class='target'>…</td>
 	<td class='target'>…<br>:: Ethiopic-Latin/Beta_Metsehaf ;</td></tr>
-  <tr>
-	<td class='source'><a name='fa→fa_Latn/BGN' href='#fa→fa_Latn/BGN'>fa→fa_Latn/BGN</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>‫…<br>:: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهویيَُِّْ٠١٢٣٤٥٦٧٨٩پچژگی]] ;<br>…‬</td></tr>
-  <tr>
-	<td class='source'><a name='Grek↔︎Latn/UNGEGN' href='#Grek↔︎Latn/UNGEGN'>Grek↔︎Latn/UNGEGN</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>$lower = [[:Latin:][:Greek:] & [:Ll:]] ;<br>…<br>$upper = [[:Latin:][:Greek:] & [:Lu:]] ;<br>…</td></tr>
-  <tr>
-	<td class='source'><a name='Han→Latin/Names' href='#Han→Latin/Names'>Han→Latin/Names</a></td>
-	<td class='source'>tRule</td>
-	<td class='target'>…</td>
-	<td class='target'>…<br>[:^Script=Han:] { ([:Script=Han:]) → $startOfHanMarker $1;<br>…</td></tr>
 </table>
 <!-- end main body -->
 	</div>
