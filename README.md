@@ -17,6 +17,10 @@ It also contains charts.
 
 - No. Next question.
 
+## Is this repo an official source for data?
+
+- No. See <https://cldr.unicode.org/index/downloads> instead. This repository is guaranteed to mismatch the official download tags and zip files in certain cases.
+
 ## Can I building production zips from this repo?
 
 - You can run `mvn package` in this directory to create production .zip files under `target/`
