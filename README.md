@@ -4,9 +4,23 @@ This directory contains derived data from the [CLDR](https://github.com/unicode-
 
 ![maven](https://github.com/unicode-org/cldr-staging/workflows/maven/badge.svg)
 
-## Building production zips
+It also contains charts.
 
-You can run `mvn package` in this directory to create production .zip files under `target/`
+## I have questions. What even is production data, where does it come from, why does this repo exist?
+
+- Production data means what you get from downloads at <https://cldr.unicode.org/index/downloads>
+- The [inheritance marker](https://unicode.org/reports/tr35/47/tr35.html#inheritance-marker) is in the source git repo, but not in the production data.
+- The tool GenerateProductionData can generate production data (hence the name) from the source repo.
+- We use this **cldr-staging** repo to contain a copy of the production data.
+
+## Does this repo have anything to do with the fabled cldr-staging survey tool instance?
+
+- No. Next question.
+
+## Can I building production zips from this repo?
+
+- You can run `mvn package` in this directory to create production .zip files under `target/`
+- in fact, though, this is run automatically, if you have permissions see the Actions tab in GitHub.
 
 ### Copyright & Licenses
 
