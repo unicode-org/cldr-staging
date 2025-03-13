@@ -186,10 +186,11 @@ const _KeyboardData =
      }
     },
     "info": {
-     "@_name": "Maltese",
+     "@_name": "Malti (48-key, MSA 100:2002)",
      "@_author": "Steven R. Loomis",
      "@_layout": "QWERTY",
-     "@_indicator": "MT"
+     "@_indicator": "MT",
+     "@_attribution": "Malta Standards Authority"
     },
     "keys": {
      "import": [
@@ -366,9 +367,9 @@ const _KeyboardData =
      ],
      "@_formId": "iso"
     },
-    "@_xmlns": "https://schemas.unicode.org/cldr/45/keyboard3",
+    "@_xmlns": "https://schemas.unicode.org/cldr/47/keyboard3",
     "@_locale": "mt",
-    "@_conformsTo": "45"
+    "@_conformsTo": "47"
    }
   },
   "mt-t-k0-47key.xml": {
@@ -383,10 +384,11 @@ const _KeyboardData =
      }
     },
     "info": {
-     "@_name": "Maltese 47-key",
+     "@_name": "Malti (47-key, MSA 100-2002)",
      "@_author": "Steven R. Loomis",
      "@_layout": "QWERTY",
-     "@_indicator": "MT"
+     "@_indicator": "MT",
+     "@_attribution": "Malta Standards Authority"
     },
     "keys": {
      "import": [
@@ -568,9 +570,9 @@ const _KeyboardData =
      ],
      "@_formId": "us"
     },
-    "@_xmlns": "https://schemas.unicode.org/cldr/45/keyboard3",
+    "@_xmlns": "https://schemas.unicode.org/cldr/47/keyboard3",
     "@_locale": "mt-t-k0-47key",
-    "@_conformsTo": "45"
+    "@_conformsTo": "47"
    }
   },
   "ja-Hira-t-k0-flicks.xml": {
