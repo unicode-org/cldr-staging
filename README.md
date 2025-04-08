@@ -13,9 +13,9 @@ It also contains charts, [the HTML website summarizing the CLDR data](https://ww
 - The tool GenerateProductionData can generate production data (hence the name) from the source repo.
 - We use this **cldr-staging** repo to contain a copy of the production data.
 
-## Does this repo have anything to do with the fabled cldr-staging survey tool instance?
+## Is this repository used by the Survey Tool cldr-staging instance?
 
-- No. Next question.
+The [Survey Tool](https://cldr.unicode.org/index/survey-tool) is unrelated.
 
 ## Is this repo an official source for data?
 
