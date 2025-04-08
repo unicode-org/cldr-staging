@@ -6,7 +6,7 @@ This directory contains derived data from the [CLDR](https://github.com/unicode-
 
 It also contains charts, [the HTML website summarizing the CLDR data](https://www.unicode.org/cldr/charts/latest). Read more about what the charts are in [the unicode documentation](https://cldr.unicode.org/index/charts)
 
-## I have questions. What even is production data, where does it come from, why does this repo exist?
+## What is production data, where does it come from, why does this repo exist?
 
 - Production data means what you get from downloads at <https://cldr.unicode.org/index/downloads>
 - The [inheritance marker](https://unicode.org/reports/tr35/47/tr35.html#inheritance-marker) is in the source git repo, but not in the production data.
