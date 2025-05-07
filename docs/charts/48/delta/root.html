@@ -81,7 +81,7 @@
 	<td class='source' rowSpan='5'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
 	<td class='source' rowSpan='5'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td>
 	<td class='source'>Others: numbers</td>
-	<td class='source' rowSpan='445'>root</td>
+	<td class='source' rowSpan='507'>root</td>
 	<td class='target'>…[]…</td>
 	<td class='target'>…[\u2212]…</td>
 	<td class='target'>core</td></tr>
@@ -99,17 +99,17 @@
 	<td class='source'>Others: punctuation-auxiliary</td>
 	<td class='target' rowSpan='2'>[]</td>
 	<td class='target'>[]</td>
-	<td class='target' rowSpan='10'>moderate</td></tr>
+	<td class='target' rowSpan='20'>moderate</td></tr>
   <tr>
 	<td class='source'>Others: punctuation-person</td>
 	<td class='target'>[,-/‐‑]</td></tr>
   <tr>
-	<td class='source' rowSpan='17'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
-	<td class='source' rowSpan='4'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
-	<td class='source' rowSpan='8'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
+	<td class='source' rowSpan='60'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='18'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+	<td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
 	<td class='source'>full-relative</td>
-	<td class='target' rowSpan='8'>▷missing◁</td>
-	<td class='target' rowSpan='8'>{1} {0}</td></tr>
+	<td class='target' rowSpan='5'>▷missing◁</td>
+	<td class='target' rowSpan='4'>{1} {0}</td></tr>
   <tr>
 	<td class='source'>long-relative</td></tr>
   <tr>
@@ -117,36 +117,62 @@
   <tr>
 	<td class='source'>short-relative</td></tr>
   <tr>
-	<td class='source' rowSpan='5'><a name='ISO 8601' href='#ISO 8601'>ISO 8601</a></td>
-	<td class='source'>full-relative</td></tr>
+	<td class='source' rowSpan='3'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>GyM</td>
+	<td class='target'>G y-MM</td></tr>
   <tr>
-	<td class='source'>long-relative</td></tr>
+	<td class='source'>GyMd</td>
+	<td class='target'>GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd</td></tr>
   <tr>
-	<td class='source'>medium-relative</td></tr>
+	<td class='source'>GyMEd</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>G y-MM-dd, E</td></tr>
   <tr>
-	<td class='source'>short-relative</td></tr>
+	<td class='source' rowSpan='11'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>GyM/G</td>
+	<td class='target'>GGGGG y-MM – GGGGG y-MM</td>
+	<td class='target'>G y-MM – G y-MM</td></tr>
   <tr>
-	<td class='source'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
-	<td class='source'>MMMEd</td>
-	<td class='target'>MMM d</td>
-	<td class='target'>MMM d, E</td>
-	<td class='target'>comprehensive</td></tr>
+	<td class='source'>GyM/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td>
+	<td class='target' rowSpan='2'>G y-MM – y-MM</td></tr>
   <tr>
-	<td class='source' rowSpan='4'><a name='Generic' href='#Generic'>Generic</a></td>
-	<td class='source' rowSpan='8'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
+	<td class='source'>GyM/y</td></tr>
+  <tr>
+	<td class='source'>GyMd/d</td>
+	<td class='target'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target'>G y-MM-dd – y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/G</td>
+	<td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd – G y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target' rowSpan='2'>G y-MM-dd – y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/y</td></tr>
+  <tr>
+	<td class='source'>GyMEd/d</td>
+	<td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td>
+	<td class='target'>G y-MM-dd, E – y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/G</td>
+	<td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td>
+	<td class='target'>G y-MM-dd, E – G y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td>
+	<td class='target' rowSpan='2'>G y-MM-dd, E – y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/y</td></tr>
+  <tr>
+	<td class='source' rowSpan='7'><a name='Gregorian YMD' href='#Gregorian YMD'>Gregorian YMD</a></td>
+	<td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
 	<td class='source'>full-relative</td>
-	<td class='target' rowSpan='9'>▷missing◁</td>
-	<td class='target' rowSpan='8'>{1} {0}</td>
-	<td class='target' rowSpan='4'>moderate</td></tr>
-  <tr>
-	<td class='source'>long-relative</td></tr>
-  <tr>
-	<td class='source'>medium-relative</td></tr>
-  <tr>
-	<td class='source'>short-relative</td></tr>
-  <tr>
-	<td class='source' rowSpan='4'><a name='Chinese' href='#Chinese'>Chinese</a></td>
-	<td class='source'>full-relative</td>
+	<td class='target' rowSpan='6'>▷missing◁</td>
+	<td class='target' rowSpan='4'>{1} {0}</td>
 	<td class='target' rowSpan='4'>comprehensive</td></tr>
   <tr>
 	<td class='source'>long-relative</td></tr>
@@ -154,6 +180,138 @@
 	<td class='source'>medium-relative</td></tr>
   <tr>
 	<td class='source'>short-relative</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>GyM</td>
+	<td class='target'>G y-MM</td>
+	<td class='target' rowSpan='33'>moderate</td></tr>
+  <tr>
+	<td class='source'>GyMEd</td>
+	<td class='target'>G y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>MMMEd</td>
+	<td class='target'>MMM d</td>
+	<td class='target'>MMM d, E</td></tr>
+  <tr>
+	<td class='source' rowSpan='30'><a name='Generic' href='#Generic'>Generic</a></td>
+	<td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td>
+	<td class='source'>short</td>
+	<td class='target'>GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
+	<td class='source'>full-relative</td>
+	<td class='target' rowSpan='5'>▷missing◁</td>
+	<td class='target' rowSpan='4'>{1} {0}</td></tr>
+  <tr>
+	<td class='source'>long-relative</td></tr>
+  <tr>
+	<td class='source'>medium-relative</td></tr>
+  <tr>
+	<td class='source'>short-relative</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+	<td class='source'>GyM</td>
+	<td class='target'>G y-MM</td></tr>
+  <tr>
+	<td class='source'>GyMd</td>
+	<td class='target'>GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMEd</td>
+	<td class='target'>▷missing◁</td>
+	<td class='target'>G y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>yyyyM</td>
+	<td class='target'>GGGGG y-MM</td>
+	<td class='target'>G y-MM</td></tr>
+  <tr>
+	<td class='source'>yyyyMd</td>
+	<td class='target'>GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>yyyyMEd</td>
+	<td class='target'>GGGGG y-MM-dd, E</td>
+	<td class='target'>G y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source' rowSpan='19'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>GyM/G</td>
+	<td class='target'>GGGGG y-MM – GGGGG y-MM</td>
+	<td class='target'>G y-MM – G y-MM</td></tr>
+  <tr>
+	<td class='source'>GyM/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td>
+	<td class='target' rowSpan='2'>G y-MM – y-MM</td></tr>
+  <tr>
+	<td class='source'>GyM/y</td></tr>
+  <tr>
+	<td class='source'>GyMd/d</td>
+	<td class='target'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target'>G y-MM-dd – y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/G</td>
+	<td class='target'>GGGGG y-MM-dd – GGGGG y-MM-dd</td>
+	<td class='target'>G y-MM-dd – G y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target' rowSpan='2'>G y-MM-dd – y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>GyMd/y</td></tr>
+  <tr>
+	<td class='source'>GyMEd/d</td>
+	<td class='target'>GGGGG y-MM-dd, E – y-MM-dd, E</td>
+	<td class='target'>G y-MM-dd, E – y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/G</td>
+	<td class='target'>GGGGG y-MM-dd, E – GGGGG y-MM-dd, E</td>
+	<td class='target'>G y-MM-dd, E – G y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM-dd, E – y-MM-dd, E</td>
+	<td class='target' rowSpan='2'>G y-MM-dd, E – y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>GyMEd/y</td></tr>
+  <tr>
+	<td class='source'>yM/M</td>
+	<td class='target' rowSpan='2'>GGGGG y-MM – y-MM</td>
+	<td class='target' rowSpan='2'>G y-MM – y-MM</td></tr>
+  <tr>
+	<td class='source'>yM/y</td></tr>
+  <tr>
+	<td class='source'>yMd/d</td>
+	<td class='target' rowSpan='3'>GGGGG y-MM-dd – y-MM-dd</td>
+	<td class='target' rowSpan='3'>G y-MM-dd – y-MM-dd</td></tr>
+  <tr>
+	<td class='source'>yMd/M</td></tr>
+  <tr>
+	<td class='source'>yMd/y</td></tr>
+  <tr>
+	<td class='source'>yMEd/d</td>
+	<td class='target' rowSpan='3'>GGGGG y-MM-dd, E – y-MM-dd, E</td>
+	<td class='target' rowSpan='3'>G y-MM-dd, E – y-MM-dd, E</td></tr>
+  <tr>
+	<td class='source'>yMEd/M</td></tr>
+  <tr>
+	<td class='source'>yMEd/y</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Chinese' href='#Chinese'>Chinese</a></td>
+	<td class='source' rowSpan='4'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
+	<td class='source'>full-relative</td>
+	<td class='target' rowSpan='6'>▷missing◁</td>
+	<td class='target' rowSpan='4'>{1} {0}</td>
+	<td class='target' rowSpan='5'>comprehensive</td></tr>
+  <tr>
+	<td class='source'>long-relative</td></tr>
+  <tr>
+	<td class='source'>medium-relative</td></tr>
+  <tr>
+	<td class='source'>short-relative</td></tr>
+  <tr>
+	<td class='source'><a name='Islamic' href='#Islamic'>Islamic</a></td>
+	<td class='source'><a name='Eras - abbreviated' href='#Eras - abbreviated'>Eras - abbreviated</a></td>
+	<td class='source'>1</td>
+	<td class='target'>BH</td></tr>
   <tr>
 	<td class='source' rowSpan='31'><a name='Timezones' href='#Timezones'>Timezones</a></td>
 	<td class='source'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td>
@@ -1354,7 +1512,7 @@
 	<td class='source' rowSpan='2'><a name='part' href='#part'>part</a></td>
 	<td class='source'>short-displayName</td>
 	<td class='target'>part</td>
-	<td class='target' rowSpan='22'>modern</td></tr>
+	<td class='target' rowSpan='40'>modern</td></tr>
   <tr>
 	<td class='source'>short-other-nominative</td>
 	<td class='target'>{0} part</td></tr>
@@ -1432,13 +1590,83 @@
 	<td class='source'>short-other-nominative</td>
 	<td class='target'>{0} ppb</td></tr>
   <tr>
+	<td class='source' rowSpan='18'><a name='Characters' href='#Characters'>Characters</a></td>
+	<td class='source' rowSpan='4'><a name='Smileys & Emotion' href='#Smileys & Emotion'>Smileys & Emotion</a></td>
+	<td class='source' rowSpan='2'><a name='face-concerned' href='#face-concerned'>face-concerned</a></td>
+	<td class='source'>🫪 -name</td>
+	<td class='target' rowSpan='18'>▷missing◁</td>
+	<td class='target' rowSpan='2'>E17-001</td></tr>
+  <tr>
+	<td class='source'>🫪 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='emotion' href='#emotion'>emotion</a></td>
+	<td class='source'>🫯 -name</td>
+	<td class='target' rowSpan='2'>E17-002</td></tr>
+  <tr>
+	<td class='source'>🫯 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='People & Body 2' href='#People & Body 2'>People & Body 2</a></td>
+	<td class='source' rowSpan='2'><a name='person-fantasy' href='#person-fantasy'>person-fantasy</a></td>
+	<td class='source'>🫈 -name</td>
+	<td class='target' rowSpan='2'>E17-003</td></tr>
+  <tr>
+	<td class='source'>🫈 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='person-activity' href='#person-activity'>person-activity</a></td>
+	<td class='source'>🧑‍🩰 -name</td>
+	<td class='target' rowSpan='2'>E17-004</td></tr>
+  <tr>
+	<td class='source'>🧑‍🩰 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Animals & Nature' href='#Animals & Nature'>Animals & Nature</a></td>
+	<td class='source' rowSpan='2'><a name='animal-marine' href='#animal-marine'>animal-marine</a></td>
+	<td class='source'>🫍 -name</td>
+	<td class='target' rowSpan='2'>E17-005</td></tr>
+  <tr>
+	<td class='source'>🫍 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Food & Drink' href='#Food & Drink'>Food & Drink</a></td>
+	<td class='source' rowSpan='2'><a name='food-fruit' href='#food-fruit'>food-fruit</a></td>
+	<td class='source'>🫝 -name</td>
+	<td class='target' rowSpan='2'>E17-006</td></tr>
+  <tr>
+	<td class='source'>🫝 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Travel & Places' href='#Travel & Places'>Travel & Places</a></td>
+	<td class='source' rowSpan='2'><a name='place-geographic' href='#place-geographic'>place-geographic</a></td>
+	<td class='source'>🛘 -name</td>
+	<td class='target' rowSpan='2'>E17-007</td></tr>
+  <tr>
+	<td class='source'>🛘 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Objects' href='#Objects'>Objects</a></td>
+	<td class='source' rowSpan='2'><a name='musical-instrument' href='#musical-instrument'>musical-instrument</a></td>
+	<td class='source'>🪊 -name</td>
+	<td class='target' rowSpan='2'>E17-008</td></tr>
+  <tr>
+	<td class='source'>🪊 –keywords</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Objects2' href='#Objects2'>Objects2</a></td>
+	<td class='source' rowSpan='2'><a name='money' href='#money'>money</a></td>
+	<td class='source'>🪎 -name</td>
+	<td class='target' rowSpan='2'>E17-009</td></tr>
+  <tr>
+	<td class='source'>🪎 –keywords</td></tr>
+  <tr>
+	<td class='source'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
+	<td class='source'><a name='Linguistic Elements' href='#Linguistic Elements'>Linguistic Elements</a></td>
+	<td class='source'><a name='Collation' href='#Collation'>Collation</a></td>
+	<td class='source'>emoji</td>
+	<td class='target'>…<br>&lt;*😕🫤😟🙁☹😮😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱<br>…<br>&lt;*💋💯💢💥💫💦💨🕳💬<br>…<br>&lt;*🧌<br>…<br>&lt; 👯‍♂<br>&lt; 👯‍♀<br>…<br>&lt; 🤼‍♂<br>&lt; 🤼‍♀<br>…<br>&lt;*🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🪼🦀🦞🦐🦑🦪<br>…<br>&lt;*🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥<br>…<br>&lt;*🏔⛰🌋🗻🏕🏖🏜🏝🏞<br>…<br>&lt;*🎷🪗🎸🎹🎺🎻🪕🥁🪘🪇🪈🪉<br>…<br>&lt;*💰🪙💴💵💶💷💸💳🧾💹<br>…</td>
+	<td class='target'>…<br>&lt;*😕🫤😟🙁☹😮😯😲😳🫪🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱<br>…<br>&lt;*💋💯💢🫯💥💫💦💨🕳💬<br>…<br>&lt;*🧌🫈<br>…<br>&lt; 🧑‍🩰 &lt;&lt; 🧑🏻‍🩰 &lt;&lt; 🧑🏼‍🩰 &lt;&lt; 🧑🏽‍🩰 &lt;&lt; 🧑🏾‍🩰 &lt;&lt; 🧑🏿‍🩰<br>…<br>&lt; 👯‍♂ &lt;&lt; 👯🏻‍♂ &lt;&lt; 👯🏼‍♂ &lt;&lt; 👯🏽‍♂ &lt;&lt; 👯🏾‍♂ &lt;&lt; 👯🏿‍♂<br>&lt; 👯‍♀ &lt;&lt; 👯🏻‍♀ &lt;&lt; 👯🏼‍♀ &lt;&lt; 👯🏽‍♀ &lt;&lt; 👯🏾‍♀ &lt;&lt; 👯🏿‍♀<br>…<br>&lt; 🤼‍♂ &lt;&lt; 🤼🏻‍♂ &lt;&lt; 🤼🏼‍♂ &lt;&lt; 🤼🏽‍♂ &lt;&lt; 🤼🏾‍♂ &lt;&lt; 🤼🏿‍♂<br>&lt; 🤼‍♀ &lt;&lt; 🤼🏻‍♀ &lt;&lt; 🤼🏼‍♀ &lt;&lt; 🤼🏽‍♀ &lt;&lt; 🤼🏾‍♀ &lt;&lt; 🤼🏿‍♀<br>…<br>&lt;*🐳🐋🐬🫍🦭🐟🐠🐡🦈🐙🐚🪸🪼🦀🦞🦐🦑🦪<br>…<br>&lt;*🍌🍍🥭🍎🫝🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥<br>…<br>&lt;*🏔⛰🛘🌋🗻🏕🏖🏜🏝🏞<br>…<br>&lt;*🎷🎺🪊🪗🎸🎹🎻🪕🥁🪘🪇🪈🪉<br>…<br>&lt;*🪙💰🪎💴💵💶💷💸💳🧾💹<br>…</td>
+	<td class='target' rowSpan='64'>comprehensive</td></tr>
+  <tr>
 	<td class='source' rowSpan='63'><a name='Special' href='#Special'>Special</a></td>
 	<td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td>
 	<td class='source' rowSpan='2'><a name='Append-Fallback-iso8601' href='#Append-Fallback-iso8601'>Append-Fallback-iso8601</a></td>
 	<td class='source'>Era</td>
 	<td class='target' rowSpan='2'>{1} {0}</td>
-	<td class='target' rowSpan='2'>{0} {1}</td>
-	<td class='target' rowSpan='63'>comprehensive</td></tr>
+	<td class='target' rowSpan='2'>{0} {1}</td></tr>
   <tr>
 	<td class='source'>Year</td></tr>
   <tr>
