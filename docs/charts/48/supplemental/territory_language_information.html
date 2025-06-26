@@ -66,44 +66,43 @@
 		</div>
 		 -->
 <!-- begin main body-->
-<p>A main goal for CLDR language data is to provide
-						approximate figures for the population of
-						each language in each territory (country), 
-						plus the <i>writing population</i>: 
-						that is, the population that is
-					    reading and writing the language on a daily basis — 
-					    and is comfortable with using it with computers.
-					    The GDP and Literacy figures are taken from the World Bank
-						where available, supplemented by other data sources.
-						The GDP figures are "PPP (constant 2000 international$)". 
-						The per-language data is processed using many sources,
-						including per-country census data. 
-						These are referenced where possible, in the XML Source.</p>
-					<p>The literacy rate is used as a proxy for computing the writing population.
-					    It may be discounted to reflect the actual usage of
-						the written form in normal daily life.
-						Thus languages that are typically not written, such as Swiss German, 
-						will be given a low writing population, 
-						even though all Swiss German speakers <i>could</i> read and write in Swiss German.
+The main goal for CLDR language data is to provide
+					approximate figures for the literate, functional population for
+					each language in each territory: that is, the population that is
+					able to read and write each language, and is comfortable enough to
+					use it with computers.
+					<p>The GDP and Literacy figures are taken from the World Bank
+						where available, otherwise supplemented by FactBook data and other
+						sources. The GDP figures are "PPP (constant 2000 international
+						$)". Much of the per-language data is taken from the Ethnologue,
+						but is supplemented and processed using many other sources,
+						including per-country census data. (The focus of the Ethnologue is
+						native speakers, which includes people who are not literate, and
+						excludes people who are functional second-langauge users.)</p>
+					<p>
+						The literacy rate may be discounted to reflect the actual usage of
+						the written form in normal daily life. Thus languages that are
+						typically not written, such as Swiss German, will be given a low
+						literacy rate, even though the whole population <i>could</i> write
+						in Swiss German.
 					</p>
 					<p>The percentages may add up to more than 100% due to
 						multilingual populations, or may be less than 100% due to
 						illiteracy or because the data has not yet been gathered or
-						processed. Languages with a small population in a territory may be omitted.</p>
-					<p>Official status is supplied where available, formatted as an abbreviation such as {O}. 
-						Hovering with the mouse shows a short description.</p>
+						processed. Languages with a small population may be omitted.</p>
+					<p>Official status is supplied where available, formatted as
+						{O}. Hovering with the mouse shows a short description.</p>
 					<ul>
 						<li><b>Likely languages and scripts:</b>To see (and verify)
-							the likely languages, scripts, and regions, see <a target="likely_subtags" href="https://www.unicode.org/cldr/charts/48/supplemental/likely_subtags.html">Likely Subtags</a>.</li>
+							the likely languages and scripts for this subtag, click on the
+							country code.</li>
 						<li><b>Reporting Defects:</b> If you find errors or omissions
 							in this data, please report the information with the <i>bug</i>
 							or <i>add new</i> links, below.</li>
-						<li><b>XML Source:</b> <a target="territoryInfo" href="https://github.com/unicode-org/cldr/tree/main/common/supplemental/supplementalData.xml#:~:text=%3CterritoryInfo%3E">
-								supplementalData.xml</a>, with the element <code>&lt;territoryInfo&gt;</code>.
-								References, such as "R1055", can be found by searching in the document.</li>
-						<li><b>TSV format:</b> A Tab-Separated Values version of the dat is available at 
-							<a href="https://github.com/unicode-org/cldr-staging/blob/main/docs/charts/48/tsv/territory_language_information.tsv" target="territory_language_information">territory_language_information.tsv</a>.
-						</li>
+						<li><b>XML Source:</b> <a href="https://github.com/unicode-org/cldr/tree/main/common/supplemental/supplementalData.xml">
+								supplementalData.xml</a> (see the &lt;territoryInfo&gt;,
+							&lt;calendarData&gt;, &lt;weekData&gt;, and
+							&lt;measurementData&gt; elements)</li>
 					</ul><table>
   <tr>
 	<th class='source'>Territory</th>
@@ -114,7 +113,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='11'>Afghanistan</td>
@@ -506,9 +505,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='5'>Armenia</td>
-	<td class='source' rowSpan='5'><a name='AM' href='#AM'>AM</a></td>
-	<td class='targetRight' rowSpan='5'>100%</td>
+	<td class='source' rowSpan='6'>Armenia</td>
+	<td class='source' rowSpan='6'><a name='AM' href='#AM'>AM</a></td>
+	<td class='targetRight' rowSpan='6'>100%</td>
 	<td class='target'>Armenian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#hy">hy</a></td>
 	<td class='targetRight'>2,900,000</td>
@@ -535,10 +534,16 @@
 	<td class='targetRight'>100%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Azeri</td>
+	<td class='target'><a href="language_territory_information.html#az">az</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -775,7 +780,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='2'>Bahamas</td>
@@ -1522,9 +1527,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='4'>Burkina Faso</td>
-	<td class='source' rowSpan='4'><a name='BF' href='#BF'>BF</a></td>
-	<td class='targetRight' rowSpan='4'>29%</td>
+	<td class='source' rowSpan='6'>Burkina Faso</td>
+	<td class='source' rowSpan='6'><a name='BF' href='#BF'>BF</a></td>
+	<td class='targetRight' rowSpan='6'>29%</td>
 	<td class='target'>Mossi</td>
 	<td class='target'><a href="language_territory_information.html#mos">mos</a></td>
 	<td class='targetRight'>9,200,000</td>
@@ -1549,10 +1554,20 @@
 	<td class='targetRight'>29%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -1602,7 +1617,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Cambodia</td>
@@ -1636,9 +1651,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='28'>Cameroon</td>
-	<td class='source' rowSpan='28'><a name='CM' href='#CM'>CM</a></td>
-	<td class='targetRight' rowSpan='28'>71%</td>
+	<td class='source' rowSpan='29'>Cameroon</td>
+	<td class='source' rowSpan='29'><a name='CM' href='#CM'>CM</a></td>
+	<td class='targetRight' rowSpan='29'>71%</td>
 	<td class='target'>French <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#fr">fr</a></td>
 	<td class='targetRight'>21,000,000</td>
@@ -1836,10 +1851,16 @@
 	<td class='targetRight'>71%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -2441,9 +2462,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='28'>China</td>
-	<td class='source' rowSpan='28'><a name='CN' href='#CN'>CN</a></td>
-	<td class='targetRight' rowSpan='28'>95%</td>
+	<td class='source' rowSpan='29'>China</td>
+	<td class='source' rowSpan='29'><a name='CN' href='#CN'>CN</a></td>
+	<td class='targetRight' rowSpan='29'>95%</td>
 	<td class='target'>Chinese <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#zh">zh</a></td>
 	<td class='targetRight'>1,300,000,000</td>
@@ -2618,10 +2639,16 @@
 	<td class='targetRight'>0.00040%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Literary Chinese</td>
+	<td class='target'><a href="language_territory_information.html#lzh">lzh</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -3145,12 +3172,12 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
-	<td class='source' rowSpan='7'>Denmark</td>
-	<td class='source' rowSpan='7'><a name='DK' href='#DK'>DK</a></td>
-	<td class='targetRight' rowSpan='7'>99%</td>
+	<td class='source' rowSpan='8'>Denmark</td>
+	<td class='source' rowSpan='8'><a name='DK' href='#DK'>DK</a></td>
+	<td class='targetRight' rowSpan='8'>99%</td>
 	<td class='target'>Danish <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#da">da</a></td>
 	<td class='targetRight'>5,600,000</td>
@@ -3191,10 +3218,16 @@
 	<td class='targetRight'>0.12%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Jutish</td>
+	<td class='target'><a href="language_territory_information.html#jut">jut</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -3311,7 +3344,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Ecuador</td>
@@ -3627,9 +3660,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='9'>Ethiopia</td>
-	<td class='source' rowSpan='9'><a name='ET' href='#ET'>ET</a></td>
-	<td class='targetRight' rowSpan='9'>39%</td>
+	<td class='source' rowSpan='10'>Ethiopia</td>
+	<td class='source' rowSpan='10'><a name='ET' href='#ET'>ET</a></td>
+	<td class='targetRight' rowSpan='10'>39%</td>
 	<td class='target'>English</td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>51,000,000</td>
@@ -3678,10 +3711,16 @@
 	<td class='targetRight'>1.4%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Geez</td>
+	<td class='target'><a href="language_territory_information.html#gez">gez</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -3694,7 +3733,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='2'>Falkland Islands</td>
@@ -4093,7 +4132,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Gabon</td>
@@ -4123,9 +4162,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='4'>Gambia</td>
-	<td class='source' rowSpan='4'><a name='GM' href='#GM'>GM</a></td>
-	<td class='targetRight' rowSpan='4'>51%</td>
+	<td class='source' rowSpan='6'>Gambia</td>
+	<td class='source' rowSpan='6'><a name='GM' href='#GM'>GM</a></td>
+	<td class='targetRight' rowSpan='6'>51%</td>
 	<td class='target'>English <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>1,000,000</td>
@@ -4147,10 +4186,20 @@
 	<td class='targetRight'>5.0%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -4224,9 +4273,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='25'>Germany</td>
-	<td class='source' rowSpan='25'><a name='DE' href='#DE'>DE</a></td>
-	<td class='targetRight' rowSpan='25'>99%</td>
+	<td class='source' rowSpan='26'>Germany</td>
+	<td class='source' rowSpan='26'><a name='DE' href='#DE'>DE</a></td>
+	<td class='targetRight' rowSpan='26'>99%</td>
 	<td class='target'>German <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#de">de</a></td>
 	<td class='targetRight'>77,000,000</td>
@@ -4382,17 +4431,23 @@
 	<td class='targetRight'>0.0012%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Palatine German</td>
+	<td class='target'><a href="language_territory_information.html#pfl">pfl</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='11'>Ghana</td>
-	<td class='source' rowSpan='11'><a name='GH' href='#GH'>GH</a></td>
-	<td class='targetRight' rowSpan='11'>72%</td>
+	<td class='source' rowSpan='13'>Ghana</td>
+	<td class='source' rowSpan='13'><a name='GH' href='#GH'>GH</a></td>
+	<td class='targetRight' rowSpan='13'>72%</td>
 	<td class='target'>Akan <span title='official regional'>{OR}</span></td>
 	<td class='target'><a href="language_territory_information.html#ak">ak</a></td>
 	<td class='targetRight'>13,000,000</td>
@@ -4455,10 +4510,20 @@
 	<td class='targetRight'>0.012%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -4488,9 +4553,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='11'>Greece</td>
-	<td class='source' rowSpan='11'><a name='GR' href='#GR'>GR</a></td>
-	<td class='targetRight' rowSpan='11'>97%</td>
+	<td class='source' rowSpan='13'>Greece</td>
+	<td class='source' rowSpan='13'><a name='GR' href='#GR'>GR</a></td>
+	<td class='targetRight' rowSpan='13'>97%</td>
 	<td class='target'>Greek <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#el">el</a></td>
 	<td class='targetRight'>10,000,000</td>
@@ -4563,10 +4628,20 @@
 	<td class='targetRight'>0.0019%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Mycenaean Greek</td>
+	<td class='target'><a href="language_territory_information.html#gmy">gmy</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Ancient Greek</td>
+	<td class='target'><a href="language_territory_information.html#grc">grc</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -4845,9 +4920,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='8'>Guinea</td>
-	<td class='source' rowSpan='8'><a name='GN' href='#GN'>GN</a></td>
-	<td class='targetRight' rowSpan='8'>41%</td>
+	<td class='source' rowSpan='9'>Guinea</td>
+	<td class='source' rowSpan='9'><a name='GN' href='#GN'>GN</a></td>
+	<td class='targetRight' rowSpan='9'>41%</td>
 	<td class='target'>French <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#fr">fr</a></td>
 	<td class='targetRight'>3,800,000</td>
@@ -4900,17 +4975,23 @@
 	<td class='targetRight'>41%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='4'>Guinea-Bissau</td>
-	<td class='source' rowSpan='4'><a name='GW' href='#GW'>GW</a></td>
-	<td class='targetRight' rowSpan='4'>55%</td>
+	<td class='source' rowSpan='6'>Guinea-Bissau</td>
+	<td class='source' rowSpan='6'><a name='GW' href='#GW'>GW</a></td>
+	<td class='targetRight' rowSpan='6'>55%</td>
 	<td class='target'>Portuguese <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#pt">pt</a></td>
 	<td class='targetRight'>2,100,000</td>
@@ -4935,10 +5016,20 @@
 	<td class='targetRight'>55%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -4970,7 +5061,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Haiti</td>
@@ -5170,7 +5261,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Iceland</td>
@@ -5198,9 +5289,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='80'>India</td>
-	<td class='source' rowSpan='80'><a name='IN' href='#IN'>IN</a></td>
-	<td class='targetRight' rowSpan='80'>63%</td>
+	<td class='source' rowSpan='81'>India</td>
+	<td class='source' rowSpan='81'><a name='IN' href='#IN'>IN</a></td>
+	<td class='targetRight' rowSpan='81'>63%</td>
 	<td class='target'>Hindi <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#hi">hi</a></td>
 	<td class='targetRight'>580,000,000</td>
@@ -5724,17 +5815,23 @@
 	<td class='targetRight'>0.00020%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Pali (Devanagari)</td>
+	<td class='target'><a href="language_territory_information.html#pi_Deva">pi_Deva</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='31'>Indonesia</td>
-	<td class='source' rowSpan='31'><a name='ID' href='#ID'>ID</a></td>
-	<td class='targetRight' rowSpan='31'>93%</td>
+	<td class='source' rowSpan='33'>Indonesia</td>
+	<td class='source' rowSpan='33'><a name='ID' href='#ID'>ID</a></td>
+	<td class='targetRight' rowSpan='33'>93%</td>
 	<td class='target'>Indonesian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#id">id</a></td>
 	<td class='targetRight'>180,000,000</td>
@@ -5941,10 +6038,20 @@
 	<td class='targetRight'>93%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Balinese (Balinese)</td>
+	<td class='target'><a href="language_territory_information.html#ban_Bali">ban_Bali</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Kawi</td>
+	<td class='target'><a href="language_territory_information.html#kaw">kaw</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -6326,9 +6433,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='21'>Italy</td>
-	<td class='source' rowSpan='21'><a name='IT' href='#IT'>IT</a></td>
-	<td class='targetRight' rowSpan='21'>99%</td>
+	<td class='source' rowSpan='22'>Italy</td>
+	<td class='source' rowSpan='22'><a name='IT' href='#IT'>IT</a></td>
+	<td class='targetRight' rowSpan='22'>99%</td>
 	<td class='target'>Italian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#it">it</a></td>
 	<td class='targetRight'>58,000,000</td>
@@ -6464,10 +6571,16 @@
 	<td class='targetRight'>99%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Romagnol</td>
+	<td class='target'><a href="language_territory_information.html#rgn">rgn</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -6480,7 +6593,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Jamaica</td>
@@ -6602,7 +6715,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='7'>Kazakhstan</td>
@@ -6929,7 +7042,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='6'>Laos</td>
@@ -7120,9 +7233,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='13'>Liberia</td>
-	<td class='source' rowSpan='13'><a name='LR' href='#LR'>LR</a></td>
-	<td class='targetRight' rowSpan='13'>61%</td>
+	<td class='source' rowSpan='16'>Liberia</td>
+	<td class='source' rowSpan='16'><a name='LR' href='#LR'>LR</a></td>
+	<td class='targetRight' rowSpan='16'>61%</td>
 	<td class='target'>English <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>4,500,000</td>
@@ -7205,10 +7318,24 @@
 	<td class='targetRight'>1.7%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='4'>0.0</td>
+	<td class='targetRight' rowSpan='4'>0.0%</td>
+	<td class='targetRight' rowSpan='3'>NaN%</td>
+	<td class='targetRight' rowSpan='3'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Vai (Latin)</td>
+	<td class='target'><a href="language_territory_information.html#vai_Latn">vai_Latn</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -7265,9 +7392,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='5'>Lithuania</td>
-	<td class='source' rowSpan='5'><a name='LT' href='#LT'>LT</a></td>
-	<td class='targetRight' rowSpan='5'>100%</td>
+	<td class='source' rowSpan='6'>Lithuania</td>
+	<td class='source' rowSpan='6'><a name='LT' href='#LT'>LT</a></td>
+	<td class='targetRight' rowSpan='6'>100%</td>
 	<td class='target'>Lithuanian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#lt">lt</a></td>
 	<td class='targetRight'>2,300,000</td>
@@ -7296,10 +7423,16 @@
 	<td class='targetRight'>100%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Samogitian</td>
+	<td class='target'><a href="language_territory_information.html#sgs">sgs</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -7357,7 +7490,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='8'>Macao SAR China</td>
@@ -7795,9 +7928,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='6'>Mauritania</td>
-	<td class='source' rowSpan='6'><a name='MR' href='#MR'>MR</a></td>
-	<td class='targetRight' rowSpan='6'>59%</td>
+	<td class='source' rowSpan='7'>Mauritania</td>
+	<td class='source' rowSpan='7'><a name='MR' href='#MR'>MR</a></td>
+	<td class='targetRight' rowSpan='7'>59%</td>
 	<td class='target'>Hassaniyya</td>
 	<td class='target'><a href="language_territory_information.html#mey">mey</a></td>
 	<td class='targetRight'>3,800,000</td>
@@ -7834,10 +7967,16 @@
 	<td class='targetRight'>0.23%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -8397,9 +8536,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='8'>Myanmar (Burma)</td>
-	<td class='source' rowSpan='8'><a name='MM' href='#MM'>MM</a></td>
-	<td class='targetRight' rowSpan='8'>93%</td>
+	<td class='source' rowSpan='9'>Myanmar (Burma)</td>
+	<td class='source' rowSpan='9'><a name='MM' href='#MM'>MM</a></td>
+	<td class='targetRight' rowSpan='9'>93%</td>
 	<td class='target'>Burmese <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#my">my</a></td>
 	<td class='targetRight'>37,000,000</td>
@@ -8442,10 +8581,16 @@
 	<td class='targetRight'>0.0074%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Pali (Myanmar)</td>
+	<td class='target'><a href="language_territory_information.html#pi_Mymr">pi_Mymr</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -8458,7 +8603,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='9'>Namibia</td>
@@ -8918,9 +9063,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='8'>Niger</td>
-	<td class='source' rowSpan='8'><a name='NE' href='#NE'>NE</a></td>
-	<td class='targetRight' rowSpan='8'>29%</td>
+	<td class='source' rowSpan='10'>Niger</td>
+	<td class='source' rowSpan='10'><a name='NE' href='#NE'>NE</a></td>
+	<td class='targetRight' rowSpan='10'>29%</td>
 	<td class='target'>Hausa</td>
 	<td class='target'><a href="language_territory_information.html#ha">ha</a></td>
 	<td class='targetRight'>11,000,000</td>
@@ -8967,17 +9112,27 @@
 	<td class='targetRight'>0.030%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='17'>Nigeria</td>
-	<td class='source' rowSpan='17'><a name='NG' href='#NG'>NG</a></td>
-	<td class='targetRight' rowSpan='17'>61%</td>
+	<td class='source' rowSpan='20'>Nigeria</td>
+	<td class='source' rowSpan='20'><a name='NG' href='#NG'>NG</a></td>
+	<td class='targetRight' rowSpan='20'>61%</td>
 	<td class='target'>English <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>130,000,000</td>
@@ -9086,10 +9241,24 @@
 	<td class='targetRight'>0.0087%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Obolo</td>
+	<td class='target'><a href="language_territory_information.html#ann">ann</a></td>
+	<td class='targetRight' rowSpan='4'>0.0</td>
+	<td class='targetRight' rowSpan='4'>0.0%</td>
+	<td class='targetRight' rowSpan='3'>NaN%</td>
+	<td class='targetRight' rowSpan='3'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -9256,7 +9425,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Oman</td>
@@ -9298,7 +9467,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='25'>Pakistan</td>
@@ -9993,7 +10162,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Qatar</td>
@@ -10035,7 +10204,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Réunion</td>
@@ -10164,9 +10333,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='37'>Russia</td>
-	<td class='source' rowSpan='37'><a name='RU' href='#RU'>RU</a></td>
-	<td class='targetRight' rowSpan='37'>100%</td>
+	<td class='source' rowSpan='39'>Russia</td>
+	<td class='source' rowSpan='39'><a name='RU' href='#RU'>RU</a></td>
+	<td class='targetRight' rowSpan='39'>100%</td>
 	<td class='target'>Russian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#ru">ru</a></td>
 	<td class='targetRight'>130,000,000</td>
@@ -10393,10 +10562,20 @@
 	<td class='targetRight'>0.00010%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Church Slavic</td>
+	<td class='target'><a href="language_territory_information.html#cu">cu</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Votic</td>
+	<td class='target'><a href="language_territory_information.html#vot">vot</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -10442,7 +10621,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Samoa</td>
@@ -10565,9 +10744,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='14'>Senegal</td>
-	<td class='source' rowSpan='14'><a name='SN' href='#SN'>SN</a></td>
-	<td class='targetRight' rowSpan='14'>50%</td>
+	<td class='source' rowSpan='15'>Senegal</td>
+	<td class='source' rowSpan='15'><a name='SN' href='#SN'>SN</a></td>
+	<td class='targetRight' rowSpan='15'>50%</td>
 	<td class='target'>Wolof <span title='de facto official'>{OD}</span></td>
 	<td class='target'><a href="language_territory_information.html#wo">wo</a></td>
 	<td class='targetRight'>13,000,000</td>
@@ -10664,17 +10843,23 @@
 	<td class='targetRight'>0.018%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='8'>Serbia</td>
-	<td class='source' rowSpan='8'><a name='RS' href='#RS'>RS</a></td>
-	<td class='targetRight' rowSpan='8'>98%</td>
+	<td class='source' rowSpan='9'>Serbia</td>
+	<td class='source' rowSpan='9'><a name='RS' href='#RS'>RS</a></td>
+	<td class='targetRight' rowSpan='9'>98%</td>
 	<td class='target'>Serbian <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#sr">sr</a></td>
 	<td class='targetRight' rowSpan='2'>6,600,000</td>
@@ -10723,10 +10908,16 @@
 	<td class='targetRight'>0.85%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Ukrainian <span title='official regional'>{OR}</span></td>
+	<td class='target'><a href="language_territory_information.html#uk">uk</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -10766,9 +10957,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='5'>Sierra Leone</td>
-	<td class='source' rowSpan='5'><a name='SL' href='#SL'>SL</a></td>
-	<td class='targetRight' rowSpan='5'>43%</td>
+	<td class='source' rowSpan='7'>Sierra Leone</td>
+	<td class='source' rowSpan='7'><a name='SL' href='#SL'>SL</a></td>
+	<td class='targetRight' rowSpan='7'>43%</td>
 	<td class='target'>Krio</td>
 	<td class='target'><a href="language_territory_information.html#kri">kri</a></td>
 	<td class='targetRight'>8,700,000</td>
@@ -10797,10 +10988,20 @@
 	<td class='targetRight'>6.0%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Fula</td>
+	<td class='target'><a href="language_territory_information.html#ff">ff</a></td>
+	<td class='targetRight' rowSpan='3'>0.0</td>
+	<td class='targetRight' rowSpan='3'>0.0%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='targetRight' rowSpan='2'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Fula (Adlam)</td>
+	<td class='target'><a href="language_territory_information.html#ff_Adlm">ff_Adlm</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -11334,9 +11535,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='4'>Sri Lanka</td>
-	<td class='source' rowSpan='4'><a name='LK' href='#LK'>LK</a></td>
-	<td class='targetRight' rowSpan='4'>91%</td>
+	<td class='source' rowSpan='5'>Sri Lanka</td>
+	<td class='source' rowSpan='5'><a name='LK' href='#LK'>LK</a></td>
+	<td class='targetRight' rowSpan='5'>91%</td>
 	<td class='target'>Sinhala <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#si">si</a></td>
 	<td class='targetRight'>15,000,000</td>
@@ -11357,10 +11558,16 @@
 	<td class='targetRight'>10%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Pali (Sinhala)</td>
+	<td class='target'><a href="language_territory_information.html#pi_Sinh">pi_Sinh</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -11641,9 +11848,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='10'>Sweden</td>
-	<td class='source' rowSpan='10'><a name='SE' href='#SE'>SE</a></td>
-	<td class='targetRight' rowSpan='10'>99%</td>
+	<td class='source' rowSpan='11'>Sweden</td>
+	<td class='source' rowSpan='11'><a name='SE' href='#SE'>SE</a></td>
+	<td class='targetRight' rowSpan='11'>99%</td>
 	<td class='target'>Swedish <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#sv">sv</a></td>
 	<td class='targetRight'>10,000,000</td>
@@ -11708,10 +11915,16 @@
 	<td class='targetRight'>75%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Interlingua</td>
+	<td class='target'><a href="language_territory_information.html#ia">ia</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -11859,7 +12072,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='5'>Taiwan</td>
@@ -12051,9 +12264,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='16'>Thailand</td>
-	<td class='source' rowSpan='16'><a name='TH' href='#TH'>TH</a></td>
-	<td class='targetRight' rowSpan='16'>94%</td>
+	<td class='source' rowSpan='17'>Thailand</td>
+	<td class='source' rowSpan='17'><a name='TH' href='#TH'>TH</a></td>
+	<td class='targetRight' rowSpan='17'>94%</td>
 	<td class='target'>Thai <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#th">th</a></td>
 	<td class='targetRight'>56,000,000</td>
@@ -12156,10 +12369,16 @@
 	<td class='targetRight'>93%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Pali (Thai)</td>
+	<td class='target'><a href="language_territory_information.html#pi_Thai">pi_Thai</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -12652,7 +12871,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='2'>U.S. Outlying Islands</td>
@@ -12932,9 +13151,9 @@
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='25'>United Kingdom</td>
-	<td class='source' rowSpan='25'><a name='GB' href='#GB'>GB</a></td>
-	<td class='targetRight' rowSpan='25'>99%</td>
+	<td class='source' rowSpan='26'>United Kingdom</td>
+	<td class='source' rowSpan='26'><a name='GB' href='#GB'>GB</a></td>
+	<td class='targetRight' rowSpan='26'>99%</td>
 	<td class='target'>English <span title='official'>{O}</span></td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>67,000,000</td>
@@ -13077,17 +13296,23 @@
 	<td class='targetRight'>0.00020%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>English (Shavian)</td>
+	<td class='target'><a href="language_territory_information.html#en_Shaw">en_Shaw</a></td>
+	<td class='targetRight' rowSpan='2'>0.0</td>
+	<td class='targetRight' rowSpan='2'>0.0%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='targetRight'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
   <tr>
-	<td class='source' rowSpan='26'>United States</td>
-	<td class='source' rowSpan='26'><a name='US' href='#US'>US</a></td>
-	<td class='targetRight' rowSpan='26'>99%</td>
+	<td class='source' rowSpan='31'>United States</td>
+	<td class='source' rowSpan='31'><a name='US' href='#US'>US</a></td>
+	<td class='targetRight' rowSpan='31'>99%</td>
 	<td class='target'>English <span title='de facto official'>{OD}</span></td>
 	<td class='target'><a href="language_territory_information.html#en">en</a></td>
 	<td class='targetRight'>330,000,000</td>
@@ -13254,10 +13479,32 @@
 	<td class='targetRight'>99%</td>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
   <tr>
+	<td class='target'>Caddo</td>
+	<td class='target'><a href="language_territory_information.html#cad">cad</a></td>
+	<td class='targetRight' rowSpan='6'>0.0</td>
+	<td class='targetRight' rowSpan='6'>0.0%</td>
+	<td class='targetRight' rowSpan='5'>NaN%</td>
+	<td class='targetRight' rowSpan='5'>NaN%</td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Chickasaw</td>
+	<td class='target'><a href="language_territory_information.html#cic">cic</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Ido</td>
+	<td class='target'><a href="language_territory_information.html#io">io</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Lojban</td>
+	<td class='target'><a href="language_territory_information.html#jbo">jbo</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
+	<td class='target'>Osage</td>
+	<td class='target'><a href="language_territory_information.html#osa">osa</a></td>
+	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>bug</i></a></td></tr>
+  <tr>
 	<td class='target'><a target='_blank' href='https://cldr.unicode.org/index/bug-reports#TOC-Filing-a-Ticket'><i>add new</i></a></td>
 	<td class='target'><a href="language_territory_information.html#"></a></td>
-	<td class='targetRight'>0.0</td>
-	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='targetRight'>0.0%</td>
 	<td class='target'></td></tr>
@@ -13332,7 +13579,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Vanuatu</td>
@@ -13473,7 +13720,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='4'>Wallis & Futuna</td>
@@ -13540,7 +13787,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='3'>Yemen</td>
@@ -13576,7 +13823,7 @@
 	<th class='target'>Lang. Pop.</th>
 	<th class='target'>Pop.%</th>
 	<th class='target'>Literacy%</th>
-	<th class='target'>Writing Pop.</th>
+	<th class='target'>Written%</th>
 	<th class='target'>Report Bug</th></tr>
   <tr>
 	<td class='source' rowSpan='12'>Zambia</td>

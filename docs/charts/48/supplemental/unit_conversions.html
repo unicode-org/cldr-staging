@@ -66,16 +66,16 @@
 		</div>
 		 -->
 <!-- begin main body-->
-<p>Unit Conversions provide conversions for units, such as meter ⟹ foot, so that a source units can be converted into what is needed for localized <a href='unit_preferences.html' target='unit_preferences'>Unit Preferences</a>. There are many possible units, and additional units and conversions will be added in future releases. The unit identifiers are internal, and are to be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example. </p><details><summary><b>Column Key</b></summary><ul><li><b>Quantity.</b> The units are grouped and ordered by Quantity (which are based on SI quantities according to <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). There are some additions, such as year-duration.</li><li><b>Base Unit.</b> The Base Unit is based on an SI base unit or derived unit (with some additions). </li><li><b>Systems.</b> These indicate which systems the units are used in. </li><li><b>Source Unit.</b> Each Source Unit is converted to the Base Unit by multiplying it by the Factor and adding the Offset (if any). The inverse conversion is done by subtracting the Offset, and dividing by the Factor. Conversion between units is done by converting the first unit to the Base Units, then using the inverse conversion to get the second unit. </li><li><b>Approx. Factor.</b> This is an approximation to the exact factor, limited to <a href='https://en.wikipedia.org/wiki/Double-precision_floating-point_format'>double precision</a>,which has at most 17 decimal digits of accuracy. Some values are given as simple rational numbers. Some units (such as beaufort) require more complex conversions than factor & offset. The values that are not equivalent to the Exact Factor are marked with ~, such as ~9.4607×10ˆ15. </li><li><b>Exact* Factor.</b> Each numeric value is an exact rational, with a few exceptions, such as radians because the value of π is irrational — a rational approximation is used.) The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> of the form <i>numerator/denominator</i>. The numerator may be a precise decimal (24.01/1331 rather than 2401/133100, and the denominator is skipped if 1.</li><li><b>Offset.</b> This is rarely needed. The format is the same as Exact* Factor. </li></ul><p>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements, or what the Systems mean. </p></details><p><b>Warning:</b> Do not scrape this chart for production data.
+<p>Unit Conversions provide conversions for units, such as meter ⟹ foot, so that a source units can be converted into what is needed for localized <a href='unit_preferences.html' target='unit_preferences'>Unit Preferences</a>. There are many possible units, and additional units and conversions will be added in future releases.</p><ul><li>Each Source Unit is converted to the Target Unit by multiplying it by the Factor and adding the Offset (if any).</li><li>The unit identifiers are internal, and are to be localized for display to users. See <a href='https://www.unicode.org/cldr/charts/latest/by_type/units.area.html#hectare' target='units.area.hectare'>Hectare</a>, for example. <li>Each numeric value is an exact rational. (Radians are an exception since the value of π is irrational; a rational approximation is used.)The format is a terminating decimal where possible; otherwise a repeating decimal if possible (where ˙ marks the start of the <a href='https://en.wikipedia.org/wiki/Repeating_decimal' target='wiki'>reptend</a>); otherwise a <a href='https://en.wikipedia.org/wiki/Rational_number' target='wiki'>rational number</a> (of the form <i>numerator/denominator</i>).</li><li>The Systems column indicates which systems the units are used in. For now, they just show the two ‘inch-pound’ systems.</li><li>The units are grouped and ordered by Quantity (which are based on the NIST quantities, see <a href='https://www.nist.gov/pml/special-publication-811' target='nist811'>NIST 811</a>). Note that the quantities are informative.</li><li>The <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a> should be consulted for more details, such as how to handle complex units (such as foot-per-minute) by converting the elements.</li></ul><p><b>Warning:</b> Do not scrape this chart for production data.
 Instead, for the meaning of the fields and data consult the <a href='https://unicode.org/reports/tr35//tr35-general.html#Contents' target='units.xml'>LDML specification</a>, and for machine-readable source data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/supplemental/units.xml' target='common/supplemental/units.xml'>common/supplemental/units.xml</a>, and for test data, access <a href='https://github.com/unicode-org/cldr/blob/main/common/testData/units/unitsTest.txt' target='common/testData/units/unitsTest.txt'>common/testData/units/unitsTest.txt</a>.</p>
 <table>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='radioactivity' href='#radioactivity'>radioactivity</a></td>
@@ -87,11 +87,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='luminous-intensity' href='#luminous-intensity'>luminous-intensity</a></td>
@@ -103,11 +103,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='illuminance' href='#illuminance'>illuminance</a></td>
@@ -119,11 +119,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='luminous-flux' href='#luminous-flux'>luminous-flux</a></td>
@@ -135,11 +135,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='15'><a name='mass' href='#mass'>mass</a></td>
@@ -216,11 +216,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1988470000000000000000000000000</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='4'><a name='pressure' href='#pressure'>pressure</a></td>
@@ -246,11 +246,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>722,250,000,000,000,000/22532213</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='pressure-per-length' href='#pressure-per-length'>pressure-per-length</a></td>
@@ -262,11 +262,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='magnetic-induction' href='#magnetic-induction'>magnetic-induction</a></td>
@@ -278,11 +278,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='3'><a name='force' href='#force'>force</a></td>
@@ -304,11 +304,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>4.4482216152605</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='8'><a name='energy' href='#energy'>energy</a></td>
@@ -352,11 +352,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>105480400</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='magnetic-flux' href='#magnetic-flux'>magnetic-flux</a></td>
@@ -368,11 +368,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-inductance' href='#electric-inductance'>electric-inductance</a></td>
@@ -384,11 +384,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='3'><a name='power' href='#power'>power</a></td>
@@ -410,11 +410,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>382800000000000000000000000</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='voltage' href='#voltage'>voltage</a></td>
@@ -426,11 +426,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-resistance' href='#electric-resistance'>electric-resistance</a></td>
@@ -442,11 +442,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='24'><a name='length' href='#length'>length</a></td>
@@ -558,11 +558,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>12,699,352,539,696,155,673,600,000/411557987</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='3'><a name='speed' href='#speed'>speed</a></td>
@@ -583,11 +583,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>0</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='acceleration' href='#acceleration'>acceleration</a></td>
@@ -599,11 +599,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='6'><a name='area' href='#area'>area</a></td>
@@ -638,11 +638,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>9917.˙3553719008264462809917</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='ionizing-radiation' href='#ionizing-radiation'>ionizing-radiation</a></td>
@@ -656,11 +656,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='source'><a name='sievert' href='#sievert'>sievert</a></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='31'><a name='volume' href='#volume'>volume</a></td>
@@ -807,11 +807,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>240.1/1331</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='8'><a name='duration' href='#duration'>duration</a></td>
@@ -855,11 +855,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>604800</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-charge' href='#electric-charge'>electric-charge</a></td>
@@ -871,11 +871,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-conductance' href='#electric-conductance'>electric-conductance</a></td>
@@ -887,11 +887,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-capacitance' href='#electric-capacitance'>electric-capacitance</a></td>
@@ -903,11 +903,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='7'><a name='year-duration' href='#year-duration'>year-duration</a></td>
@@ -947,11 +947,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='night-duration' href='#night-duration'>night-duration</a></td>
@@ -963,11 +963,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='electric-current' href='#electric-current'>electric-current</a></td>
@@ -979,11 +979,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='4'><a name='temperature' href='#temperature'>temperature</a></td>
@@ -1008,11 +1008,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='5'><a name='angle' href='#angle'>angle</a></td>
@@ -1042,11 +1042,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='frequency' href='#frequency'>frequency</a></td>
@@ -1058,11 +1058,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='solid-angle' href='#solid-angle'>solid-angle</a></td>
@@ -1074,11 +1074,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='substance-amount' href='#substance-amount'>substance-amount</a></td>
@@ -1095,11 +1095,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='concentration-mass' href='#concentration-mass'>concentration-mass</a></td>
@@ -1111,11 +1111,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='catalytic-activity' href='#catalytic-activity'>catalytic-activity</a></td>
@@ -1127,11 +1127,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='5'><a name='portion' href='#portion'>portion</a></td>
@@ -1159,11 +1159,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>1</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='digital' href='#digital'>digital</a></td>
@@ -1179,11 +1179,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='target' style='text-align:right'>8</td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source' rowSpan='2'><a name='graphics' href='#graphics'>graphics</a></td>
@@ -1198,11 +1198,11 @@ Instead, for the meaning of the fields and data consult the <a href='https://uni
 	<td class='source'><a name='pixel' href='#pixel'>pixel</a></td></tr>
   <tr>
 	<th class='source'>Quantity</th>
-	<th class='source'>Base Unit</th>
+	<th class='source'>Target</th>
 	<th class='source'>Systems</th>
 	<th class='source'>Source Unit</th>
 	<th class='target'>Approx. Factor</th>
-	<th class='target'>Exact Factor</th>
+	<th class='target'>Exact* Factor</th>
 	<th class='target'>Offset</th></tr>
   <tr>
 	<td class='source'><a name='typewidth' href='#typewidth'>typewidth</a></td>
