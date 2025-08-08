@@ -83,62 +83,1657 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class='source' rowSpan='12'><a name='Numbers' href='#Numbers'>Numbers</a></td>
-			<td class='source' rowSpan='4'><a name='Symbols' href='#Symbols'>Symbols</a></td>
-			<td class='source' rowSpan='2'><a name='Symbols using Chisoi Digits (chis)' href='#Symbols using Chisoi Digits (chis)'>Symbols using Chisoi Digits (chis)</a></td>
-			<td class='source'>decimal</td>
-			<td class='source' rowSpan='18'>tok</td>
-			<td class='target' rowSpan='12'>▷missing◁</td>
-			<td class='target'>,</td>
-			<td class='target' rowSpan='18'>comprehensive</td>
+			<td class='source' rowSpan='3'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+			<td class='source' rowSpan='3'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+			<td class='source'><a name='Characters in Use' href='#Characters in Use'>Characters in Use</a></td>
+			<td class='source'>Others: numbers</td>
+			<td class='source' rowSpan='317'>tok</td>
+			<td class='target'>…[]…</td>
+			<td class='target'>…[4]…</td>
+			<td class='target'>core</td>
 		</tr>
 		<tr>
-			<td class='source'>group</td>
-			<td class='target'> </td>
+			<td class='source' rowSpan='2'><a name='Yes and No' href='#Yes and No'>Yes and No</a></td>
+			<td class='source'>posix-no</td>
+			<td class='target'>no:n</td>
+			<td class='target'>ala:a:n</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
 		</tr>
 		<tr>
+			<td class='source'>posix-yes</td>
+			<td class='target'>yes:y</td>
+			<td class='target'>lon:l:y</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='178'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td>
+			<td class='source' rowSpan='5'><a name='Locale Name Patterns' href='#Locale Name Patterns'>Locale Name Patterns</a></td>
+			<td class='source' rowSpan='2'><a name='Locale Formatting' href='#Locale Formatting'>Locale Formatting</a></td>
+			<td class='source'>localePattern</td>
+			<td class='target' rowSpan='2'>{0} pi {1}</td>
+			<td class='target'>{0} ({1})</td>
+			<td class='target' rowSpan='5'>basic</td>
+		</tr>
+		<tr>
+			<td class='source'>localeSeparator</td>
+			<td class='target'>{0}, {1}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Locale Field Fallbacks' href='#Locale Field Fallbacks'>Locale Field Fallbacks</a></td>
+			<td class='source'>language</td>
+			<td class='target'>toki li {0}</td>
+			<td class='target'>toki: {0}</td>
+		</tr>
+		<tr>
+			<td class='source'>script</td>
+			<td class='target'>sitelen li {0}</td>
+			<td class='target'>sitelen: {0}</td>
+		</tr>
+		<tr>
+			<td class='source'>territory</td>
+			<td class='target'>ma li {0}</td>
+			<td class='target'>ma: {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='15'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td>
+			<td class='source' rowSpan='2'><a name='A' href='#A'>A</a></td>
+			<td class='source'>Afrikaans ► af</td>
+			<td class='target' rowSpan='8'>▷missing◁</td>
+			<td class='target'>toki Apikan</td>
+			<td class='target' rowSpan='8'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Amharic ► am</td>
+			<td class='target'>toki Amali</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='B' href='#B'>B</a></td>
+			<td class='source'>Basque ► eu</td>
+			<td class='target'>toki Esuka</td>
+		</tr>
+		<tr>
+			<td class='source'>Bosnian ► bs</td>
+			<td class='target'>toki Posuna</td>
+		</tr>
+		<tr>
+			<td class='source'>Burmese ► my</td>
+			<td class='target'>toki Mijama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='10'><a name='C' href='#C'>C</a></td>
+			<td class='source'>Cantonese ► yue</td>
+			<td class='target'>toki Ju</td>
+		</tr>
+		<tr>
+			<td class='source'>Cantonese ► yue-menu</td>
+			<td class='target'>toki Konton</td>
+		</tr>
+		<tr>
+			<td class='source'>Cebuano ► ceb</td>
+			<td class='target'>toki Supo</td>
+		</tr>
+		<tr>
+			<td class='source'>Chinese ► zh_Hans</td>
+			<td class='target' rowSpan='2'>toki Sonko pi sitelen Sonko</td>
+			<td class='target'>toki Sonko pi linja lili</td>
+			<td class='target' rowSpan='5'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Chinese ► zh_Hans-long</td>
+			<td class='target'>toki An pi linja lili</td>
+		</tr>
+		<tr>
+			<td class='source'>Chinese ► zh_Hant</td>
+			<td class='target' rowSpan='2'>toki Sonko pi Hant</td>
+			<td class='target'>toki Sonko pi linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>Chinese ► zh_Hant-long</td>
+			<td class='target'>toki An pi linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>Chinese ► zh-menu</td>
+			<td class='target'>toki Sonko</td>
+			<td class='target'>toki Sonko kulupu</td>
+		</tr>
+		<tr>
+			<td class='source'>Cornish ► kw</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>toki Kenuwe</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Croatian ► hr</td>
+			<td class='target'>toki Kowata</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='12'><a name='Languages (E-J)' href='#Languages (E-J)'>Languages (E-J)</a></td>
+			<td class='source' rowSpan='3'><a name='E' href='#E'>E</a></td>
+			<td class='source'>English ► en_AU</td>
+			<td class='target'>toki Inli pi ma Oselija</td>
+			<td class='target'>toki Inli pi ma Oseja</td>
+			<td class='target' rowSpan='2'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>English ► en_GB</td>
+			<td class='target'>toki Inli pi ma Piten</td>
+			<td class='target'>toki Inli pi ma Juke</td>
+		</tr>
+		<tr>
+			<td class='source'>Esperanto ► eo</td>
+			<td class='target' rowSpan='24'>▷missing◁</td>
+			<td class='target'>toki Epelanto</td>
+			<td class='target' rowSpan='7'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='F' href='#F'>F</a></td>
+			<td class='source'>Filipino ► fil</td>
+			<td class='target'>toki Takalo</td>
+		</tr>
+		<tr>
+			<td class='source'>Finnish ► fi</td>
+			<td class='target'>toki Sumi</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='G' href='#G'>G</a></td>
+			<td class='source'>Greek ► el</td>
+			<td class='target'>toki Elin</td>
+		</tr>
+		<tr>
+			<td class='source'>Gujarati ► gu</td>
+			<td class='target'>toki Kusalasi</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='H' href='#H'>H</a></td>
+			<td class='source'>Hebrew ► he</td>
+			<td class='target'>toki Iwi</td>
+		</tr>
+		<tr>
+			<td class='source'>Hungarian ► hu</td>
+			<td class='target'>toki Maja</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='I' href='#I'>I</a></td>
+			<td class='source'>Ido ► io</td>
+			<td class='target'>toki Ito</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Interlingua ► ia</td>
+			<td class='target'>toki Intelinwa</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='J' href='#J'>J</a></td>
+			<td class='source'>Javanese ► jv</td>
+			<td class='target'>toki Sowa</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='13'><a name='Languages (K-N)' href='#Languages (K-N)'>Languages (K-N)</a></td>
+			<td class='source'><a name='K' href='#K'>K</a></td>
+			<td class='source'>Khmer ► km</td>
+			<td class='target'>toki Kame</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='L' href='#L'>L</a></td>
+			<td class='source'>Latin ► la</td>
+			<td class='target'>toki Lasina</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Lojban ► jbo</td>
+			<td class='target'>toki Losupan</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='M' href='#M'>M</a></td>
+			<td class='source'>Malay ► ms</td>
+			<td class='target'>toki Melaju</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Māori ► mi</td>
+			<td class='target'>toki Majoli</td>
+		</tr>
+		<tr>
+			<td class='source'>Marathi ► mr</td>
+			<td class='target'>toki Malasi</td>
+		</tr>
+		<tr>
+			<td class='source'>Masai ► mas</td>
+			<td class='target'>toki Ma</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Min Nan Chinese ► nan</td>
+			<td class='target'>toki Pan pi ma seli</td>
+		</tr>
+		<tr>
+			<td class='source'>Multiple languages ► mul</td>
+			<td class='target'>toki mute</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='4'><a name='N' href='#N'>N</a></td>
+			<td class='source'>No linguistic content ► zxx</td>
+			<td class='target'>toki ala</td>
+		</tr>
+		<tr>
+			<td class='source'>Norwegian ► no</td>
+			<td class='target'>toki Nosiki</td>
+		</tr>
+		<tr>
+			<td class='source'>Norwegian Bokmål ► nb</td>
+			<td class='target'>toki Nosiki lipu</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Norwegian Nynorsk ► nn</td>
+			<td class='target'>toki Nosiki sin</td>
+			<td class='target' rowSpan='2'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='12'><a name='Languages (O-S)' href='#Languages (O-S)'>Languages (O-S)</a></td>
+			<td class='source' rowSpan='2'><a name='P' href='#P'>P</a></td>
+			<td class='source'>Persian ► fa</td>
+			<td class='target'>toki Pasi</td>
+		</tr>
+		<tr>
+			<td class='source'>Persian ► fa_AF</td>
+			<td class='target'>fa pi ma Akanisan</td>
+			<td class='target'>toki Pasi pi ma Akan</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='10'><a name='S' href='#S'>S</a></td>
+			<td class='source'>Serbian ► sr</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>toki Sepi</td>
+			<td class='target' rowSpan='2'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Somali ► so</td>
+			<td class='target'>toki Somali</td>
+		</tr>
+		<tr>
+			<td class='source'>Spanish ► es</td>
+			<td class='target'>toki Epanja</td>
+			<td class='target'>toki Epanjo</td>
+			<td class='target' rowSpan='4'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Spanish ► es_419</td>
+			<td class='target'>toki Epanja pi ma Amelika</td>
+			<td class='target'>toki Epanjo pi ma Amelika</td>
+		</tr>
+		<tr>
+			<td class='source'>Spanish ► es_ES</td>
+			<td class='target'>toki Epanja pi ma Epanja</td>
+			<td class='target'>toki Epanjo pi ma Epanja</td>
+		</tr>
+		<tr>
+			<td class='source'>Spanish ► es_MX</td>
+			<td class='target'>toki Epanja pi ma Mesiko</td>
+			<td class='target'>toki Epanjo pi ma Mesiko</td>
+		</tr>
+		<tr>
+			<td class='source'>Swahili ► sw</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>toki Suwawili</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Swahili ► sw_CD</td>
+			<td class='target'>sw pi ma Konko pi ma tomo Kinsasa</td>
+			<td class='target'>toki Suwawili pi ma Konko</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Swati ► ss</td>
+			<td class='target' rowSpan='16'>▷missing◁</td>
+			<td class='target'>toki Suwasi</td>
+		</tr>
+		<tr>
+			<td class='source'>Swedish ► sv</td>
+			<td class='target'>toki Sensa</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='13'><a name='Languages (T-Z)' href='#Languages (T-Z)'>Languages (T-Z)</a></td>
+			<td class='source' rowSpan='4'><a name='T' href='#T'>T</a></td>
+			<td class='source'>Tamil ► ta</td>
+			<td class='target'>toki Tami</td>
+		</tr>
+		<tr>
+			<td class='source'>Telugu ► te</td>
+			<td class='target'>toki Teluku</td>
+		</tr>
+		<tr>
+			<td class='source'>Tsonga ► ts</td>
+			<td class='target'>toki Sonka</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Tswana ► tn</td>
+			<td class='target'>toki Suwana</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='U' href='#U'>U</a></td>
+			<td class='source'>Ukrainian ► uk</td>
+			<td class='target'>toki Ukawina</td>
+		</tr>
+		<tr>
+			<td class='source'>Urdu ► ur</td>
+			<td class='target'>toki Utu</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='V' href='#V'>V</a></td>
+			<td class='source'>Venda ► ve</td>
+			<td class='target'>toki Wenta</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Vietnamese ► vi</td>
+			<td class='target'>toki Wije</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Volapük ► vo</td>
+			<td class='target'>toki Olapu</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='W' href='#W'>W</a></td>
+			<td class='source'>Western Frisian ► fy</td>
+			<td class='target'>toki Lise</td>
+			<td class='target' rowSpan='5'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='X' href='#X'>X</a></td>
+			<td class='source'>Xhosa ► xh</td>
+			<td class='target'>toki Kosa</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Y' href='#Y'>Y</a></td>
+			<td class='source'>Yoruba ► yo</td>
+			<td class='target'>toki Jolupa</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Z' href='#Z'>Z</a></td>
+			<td class='source'>Zulu ► zu</td>
+			<td class='target'>toki Sulu</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='22'><a name='Scripts' href='#Scripts'>Scripts</a></td>
+			<td class='source' rowSpan='18'><a name='Major Use' href='#Major Use'>Major Use</a></td>
+			<td class='source'>Beng</td>
+			<td class='target'>sitelen Panla</td>
+		</tr>
+		<tr>
+			<td class='source'>Cyrl</td>
+			<td class='target'>sitelen Kililita</td>
+			<td class='target'>sitelen Kililisa</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Grek</td>
+			<td class='target' rowSpan='4'>▷missing◁</td>
+			<td class='target'>sitelen Elin</td>
+			<td class='target' rowSpan='4'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Gujr</td>
+			<td class='target'>sitelen Kusalasi</td>
+		</tr>
+		<tr>
+			<td class='source'>Hang</td>
+			<td class='target'>sitelen Anku</td>
+		</tr>
+		<tr>
+			<td class='source'>Hani</td>
+			<td class='target'>sitelen An</td>
+		</tr>
+		<tr>
+			<td class='source'>Hans</td>
+			<td class='target' rowSpan='2'>sitelen Sonko</td>
+			<td class='target'>linja lili</td>
+			<td class='target' rowSpan='4'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Hans-stand-alone</td>
+			<td class='target'>sitelen Sonko pi linja lili</td>
+		</tr>
+		<tr>
+			<td class='source'>Hant</td>
+			<td class='target' rowSpan='7'>▷missing◁</td>
+			<td class='target'>linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>Hant-stand-alone</td>
+			<td class='target'>sitelen Sonko pi linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>Hebr</td>
+			<td class='target'>sitelen Iwi</td>
+			<td class='target' rowSpan='6'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Khmr</td>
+			<td class='target'>sitelen Kame</td>
+		</tr>
+		<tr>
+			<td class='source'>Mymr</td>
+			<td class='target'>sitelen Mijama</td>
+		</tr>
+		<tr>
+			<td class='source'>Taml</td>
+			<td class='target'>sitelen Tami</td>
+		</tr>
+		<tr>
+			<td class='source'>Telu</td>
+			<td class='target'>sitelen Teluku</td>
+		</tr>
+		<tr>
+			<td class='source'>Thai</td>
+			<td class='target'>Thai</td>
+			<td class='target'>sitelen Tawi</td>
+		</tr>
+		<tr>
+			<td class='source'>Zinh</td>
+			<td class='target' rowSpan='6'>▷missing◁</td>
+			<td class='target'>sitelen poka</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Zyyy</td>
+			<td class='target'>sitelen ale</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Limited Use' href='#Limited Use'>Limited Use</a></td>
+			<td class='source'>Java</td>
+			<td class='target'>sitelen Sowa</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Other' href='#Other'>Other</a></td>
+			<td class='source'>Zmth</td>
+			<td class='target'>sitelen nanpa</td>
+			<td class='target' rowSpan='3'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>Zsye</td>
+			<td class='target'>sitelen Emosi</td>
+		</tr>
+		<tr>
+			<td class='source'>Zsym</td>
+			<td class='target'>sitelen ijo</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='9'><a name='Geographic Regions' href='#Geographic Regions'>Geographic Regions</a></td>
+			<td class='source'><a name='world' href='#world'>world</a></td>
+			<td class='source'>009</td>
+			<td class='target'>ma Osijanija</td>
+			<td class='target'>ma Osejanija</td>
+			<td class='target' rowSpan='44'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Americas' href='#Americas'>Americas</a></td>
+			<td class='source'>003</td>
+			<td class='target' rowSpan='10'>▷missing◁</td>
+			<td class='target'>ma Amelika lete</td>
+		</tr>
+		<tr>
+			<td class='source'>013</td>
+			<td class='target'>ma Amelika insa</td>
+		</tr>
+		<tr>
+			<td class='source'>005</td>
+			<td class='target'>ma Amelika seli</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='4'><a name='Europe' href='#Europe'>Europe</a></td>
+			<td class='source'>154</td>
+			<td class='target'>ma Elopa lete</td>
+		</tr>
+		<tr>
+			<td class='source'>155</td>
+			<td class='target'>ma Elopa pi pini suno</td>
+		</tr>
+		<tr>
+			<td class='source'>151</td>
+			<td class='target'>ma Elopa pi kama suno</td>
+		</tr>
+		<tr>
+			<td class='source'>039</td>
+			<td class='target'>ma Elopa seli</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td>
+			<td class='source'>ZZ</td>
+			<td class='target'>ma ante</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Territories (North America)' href='#Territories (North America)'>Territories (North America)</a></td>
+			<td class='source'><a name='Northern America' href='#Northern America'>Northern America</a></td>
+			<td class='source'>CA</td>
+			<td class='target'>ma Kanata</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Central America' href='#Central America'>Central America</a></td>
+			<td class='source'>SV</td>
+			<td class='target'>ma Sawato</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Territories (South America)' href='#Territories (South America)'>Territories (South America)</a></td>
+			<td class='source'><a name='South America' href='#South America'>South America</a></td>
+			<td class='source'>EC</td>
+			<td class='target'>ma Ekato</td>
+			<td class='target'>ma Ekuwato</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Territories (Africa)' href='#Territories (Africa)'>Territories (Africa)</a></td>
+			<td class='source'><a name='Northern Africa' href='#Northern Africa'>Northern Africa</a></td>
+			<td class='source'>EG</td>
+			<td class='target'>ma Masu</td>
+			<td class='target'>ma Masi</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Western Africa' href='#Western Africa'>Western Africa</a></td>
+			<td class='source'>NG</td>
+			<td class='target'>ma Naselija</td>
+			<td class='target'>ma Nasilija</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Eastern Africa' href='#Eastern Africa'>Eastern Africa</a></td>
+			<td class='source'>SO</td>
+			<td class='target'>ma Somalija</td>
+			<td class='target'>ma Somali</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='4'><a name='Southern Africa' href='#Southern Africa'>Southern Africa</a></td>
+			<td class='source'>BW</td>
+			<td class='target'>ma Posuwana</td>
+			<td class='target'>ma Suwana</td>
+		</tr>
+		<tr>
+			<td class='source'>LS</td>
+			<td class='target'>ma Lesoto</td>
+			<td class='target'>ma Sutu</td>
+		</tr>
+		<tr>
+			<td class='source'>SZ</td>
+			<td class='target'>ma Sawasi</td>
+			<td class='target'>ma Suwasi</td>
+		</tr>
+		<tr>
+			<td class='source'>ZA</td>
+			<td class='target'>ma Setapika</td>
+			<td class='target'>ma Unsansi</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td>
+			<td class='source' rowSpan='2'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td>
+			<td class='source'>GB</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target' rowSpan='2'>ma Juke</td>
+		</tr>
+		<tr>
+			<td class='source'>GB-short</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Western Europe' href='#Western Europe'>Western Europe</a></td>
+			<td class='source'>BE</td>
+			<td class='target'>ma Pesije</td>
+			<td class='target'>ma Pelije</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Eastern Europe' href='#Eastern Europe'>Eastern Europe</a></td>
+			<td class='source'>HU</td>
+			<td class='target'>ma Mosijo</td>
+			<td class='target'>ma Maja</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Southern Europe' href='#Southern Europe'>Southern Europe</a></td>
+			<td class='source'>GR</td>
+			<td class='target'>ma Elena</td>
+			<td class='target'>ma Elin</td>
+		</tr>
+		<tr>
+			<td class='source'>HR</td>
+			<td class='target'>ma Lowasi</td>
+			<td class='target'>ma Kowata</td>
+		</tr>
+		<tr>
+			<td class='source'>RS</td>
+			<td class='target'>ma Sopisi</td>
+			<td class='target'>ma Sepi</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='15'><a name='Territories (Asia)' href='#Territories (Asia)'>Territories (Asia)</a></td>
+			<td class='source' rowSpan='7'><a name='Western Asia' href='#Western Asia'>Western Asia</a></td>
+			<td class='source'>AE</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>ma Imala</td>
+		</tr>
+		<tr>
+			<td class='source'>IQ</td>
+			<td class='target'>ma Ilakija</td>
+			<td class='target'>ma Ilaki</td>
+		</tr>
+		<tr>
+			<td class='source'>PS</td>
+			<td class='target' rowSpan='2'>ma Pilisin</td>
+			<td class='target' rowSpan='2'>ma Palasin</td>
+		</tr>
+		<tr>
+			<td class='source'>PS-short</td>
+		</tr>
+		<tr>
+			<td class='source'>QA</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>ma Kita</td>
+		</tr>
+		<tr>
+			<td class='source'>SA</td>
+			<td class='target'>ma Sawusi</td>
+			<td class='target'>ma Sajusi</td>
+		</tr>
+		<tr>
+			<td class='source'>SY</td>
+			<td class='target'>ma Sulija</td>
+			<td class='target'>ma Suli</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Central Asia' href='#Central Asia'>Central Asia</a></td>
+			<td class='source'>UZ</td>
+			<td class='target'>ma Opekisan</td>
+			<td class='target'>ma Opeki</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Eastern Asia' href='#Eastern Asia'>Eastern Asia</a></td>
+			<td class='source'>KP</td>
+			<td class='target'>ma Anku</td>
+			<td class='target'>ma Soson</td>
+		</tr>
+		<tr>
+			<td class='source'>KR</td>
+			<td class='target'>ma Soson</td>
+			<td class='target'>ma Anku</td>
+		</tr>
+		<tr>
+			<td class='source'>TW</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>ma Tawan</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Southern Asia' href='#Southern Asia'>Southern Asia</a></td>
+			<td class='source'>AF</td>
+			<td class='target'>ma Akanisan</td>
+			<td class='target'>ma Akan</td>
+		</tr>
+		<tr>
+			<td class='source'>PK</td>
+			<td class='target'>ma Pakisan</td>
+			<td class='target'>ma Pakitan</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Southeast Asia' href='#Southeast Asia'>Southeast Asia</a></td>
+			<td class='source'>KH</td>
+			<td class='target'>ma Kanpusi</td>
+			<td class='target'>ma Kame</td>
+		</tr>
+		<tr>
+			<td class='source'>MY</td>
+			<td class='target'>ma Malasija</td>
+			<td class='target'>ma Malesija</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Territories (Oceania)' href='#Territories (Oceania)'>Territories (Oceania)</a></td>
+			<td class='source' rowSpan='3'><a name='Australasia' href='#Australasia'>Australasia</a></td>
+			<td class='source'>AU</td>
+			<td class='target'>ma Oselija</td>
+			<td class='target'>ma Oseja</td>
+		</tr>
+		<tr>
+			<td class='source'>NZ</td>
+			<td class='target' rowSpan='2'>ma Nusilan</td>
+			<td class='target' rowSpan='2'>ma Awatejalowa</td>
+		</tr>
+		<tr>
+			<td class='source'>NZ-variant</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Locale Variants' href='#Locale Variants'>Locale Variants</a></td>
+			<td class='source' rowSpan='2'><a name='null' href='#null'>null</a></td>
+			<td class='source'>FONIPA</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>sitelen IPA</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>FONUPA</td>
+			<td class='target'>sitelen UPA</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='40'><a name='Keys' href='#Keys'>Keys</a></td>
+			<td class='source' rowSpan='3'><a name='calendar' href='#calendar'>calendar</a></td>
+			<td class='source'>calendar</td>
+			<td class='target'>calendar</td>
+			<td class='target'>nasin tenpo</td>
+			<td class='target' rowSpan='6'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>calendar-japanese</td>
+			<td class='target'>japanese</td>
+			<td class='target'>nasin tenpo Nijon</td>
+		</tr>
+		<tr>
+			<td class='source'>calendar-japanese-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin Nijon</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='collation' href='#collation'>collation</a></td>
+			<td class='source'>collation</td>
+			<td class='target'>collation</td>
+			<td class='target'>nasin nimi</td>
+		</tr>
+		<tr>
+			<td class='source'>collation-ducet</td>
+			<td class='target'>ducet</td>
+			<td class='target'>nasin nimi Juniko</td>
+		</tr>
+		<tr>
+			<td class='source'>collation-ducet-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin Juniko</td>
+		</tr>
+		<tr>
+			<td class='source'>collation-emoji</td>
+			<td class='target'>emoji</td>
+			<td class='target'>nasin nimi Emosi</td>
+			<td class='target' rowSpan='3'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>collation-pinyin</td>
+			<td class='target'>pinyin</td>
+			<td class='target'>nasin nimi Pinin</td>
+		</tr>
+		<tr>
+			<td class='source'>collation-pinyin-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin Pinin</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='currency' href='#currency'>currency</a></td>
+			<td class='source'>currency</td>
+			<td class='target'>currency</td>
+			<td class='target'>mani</td>
+			<td class='target' rowSpan='31'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Currency Format' href='#Currency Format'>Currency Format</a></td>
+			<td class='source'>cf</td>
+			<td class='target'>cf</td>
+			<td class='target'>nasin mani</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Emoji Presentation' href='#Emoji Presentation'>Emoji Presentation</a></td>
+			<td class='source'>em-default-core</td>
+			<td class='target' rowSpan='3'>▷missing◁</td>
+			<td class='target'>nasin sitelen</td>
+		</tr>
+		<tr>
+			<td class='source'>em-emoji-core</td>
+			<td class='target'>nasin sitelen Emosi</td>
+		</tr>
+		<tr>
+			<td class='source'>em-text-core</td>
+			<td class='target'>nasin sitelen Emosi ala</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Measurement System' href='#Measurement System'>Measurement System</a></td>
+			<td class='source'>ms</td>
+			<td class='target'>ms</td>
+			<td class='target'>nasin nanpa pi suli ijo</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-metric</td>
+			<td class='target'>metric</td>
+			<td class='target'>nasin nanpa pi kulupu SI</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-metric-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin SI</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-uksystem</td>
+			<td class='target'>uksystem</td>
+			<td class='target'>nasin nanpa pi ma Juke</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-uksystem-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin Juke</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-ussystem</td>
+			<td class='target'>ussystem</td>
+			<td class='target'>nasin nanpa pi ma Mewika</td>
+		</tr>
+		<tr>
+			<td class='source'>ms-ussystem-core</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>nasin Mewika</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='19'><a name='numbers' href='#numbers'>numbers</a></td>
+			<td class='source'>numbers</td>
+			<td class='target'>numbers</td>
+			<td class='target'>sitelen nanpa</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-arab</td>
+			<td class='target'>sitelen nanpa Alapi</td>
+			<td class='target'>nasin nanpa Alapi</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-beng</td>
+			<td class='target'>beng</td>
+			<td class='target'>sitelen nanpa Panla</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-grek</td>
+			<td class='target'>grek</td>
+			<td class='target'>sitelen nanpa Elin</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-gujr</td>
+			<td class='target'>gujr</td>
+			<td class='target'>sitelen nanpa Kusalasi</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hanidec</td>
+			<td class='target'>hanidec</td>
+			<td class='target'>sitelen nanpa Sonko</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hans</td>
+			<td class='target'>hans</td>
+			<td class='target'>sitelen nanpa Sonko pi linja lili</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hansfin</td>
+			<td class='target'>hansfin</td>
+			<td class='target'>sitelen nanpa mani Sonko pi linja lili</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hant</td>
+			<td class='target'>hant</td>
+			<td class='target'>sitelen nanpa Sonko pi linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hantfin</td>
+			<td class='target'>hantfin</td>
+			<td class='target'>sitelen nanpa mani Sonko pi linja mute</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-hebr</td>
+			<td class='target'>hebr</td>
+			<td class='target'>sitelen nanpa Iwi</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-java</td>
+			<td class='target'>java</td>
+			<td class='target'>sitelen nanpa Sowa</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-jpan</td>
+			<td class='target'>jpan</td>
+			<td class='target'>sitelen nanpa Nijon</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-jpanfin</td>
+			<td class='target'>jpanfin</td>
+			<td class='target'>sitelen nanpa mani Nijon</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-knda</td>
+			<td class='target'>knda</td>
+			<td class='target'>sitelen nanpa Kanata</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-mymr</td>
+			<td class='target'>mymr</td>
+			<td class='target'>sitelen nanpa Mijama</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-telu</td>
+			<td class='target'>telu</td>
+			<td class='target'>sitelen nanpa Teluku</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-thai</td>
+			<td class='target'>thai</td>
+			<td class='target'>sitelen nanpa Tawi</td>
+		</tr>
+		<tr>
+			<td class='source'>numbers-tibt</td>
+			<td class='target'>tibt</td>
+			<td class='target'>sitelen nanpa Po</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='102'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+			<td class='source' rowSpan='15'><a name='Fields' href='#Fields'>Fields</a></td>
+			<td class='source' rowSpan='15'><a name='Date Fields' href='#Date Fields'>Date Fields</a></td>
+			<td class='source'>era</td>
+			<td class='target'>Era</td>
+			<td class='target'>tenpo</td>
+			<td class='target' rowSpan='18'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>year</td>
+			<td class='target' rowSpan='3'>Year</td>
+			<td class='target'>tenpo sike</td>
+		</tr>
+		<tr>
+			<td class='source'>year-short</td>
+			<td class='target' rowSpan='2'>sike</td>
+		</tr>
+		<tr>
+			<td class='source'>year-narrow</td>
+		</tr>
+		<tr>
+			<td class='source'>month</td>
+			<td class='target' rowSpan='3'>Month</td>
+			<td class='target'>tenpo mun</td>
+		</tr>
+		<tr>
+			<td class='source'>month-short</td>
+			<td class='target' rowSpan='2'>mun</td>
+		</tr>
+		<tr>
+			<td class='source'>month-narrow</td>
+		</tr>
+		<tr>
+			<td class='source'>week</td>
+			<td class='target' rowSpan='3'>Week</td>
+			<td class='target'>tenpo esun</td>
+		</tr>
+		<tr>
+			<td class='source'>week-short</td>
+			<td class='target' rowSpan='2'>esun</td>
+		</tr>
+		<tr>
+			<td class='source'>week-narrow</td>
+		</tr>
+		<tr>
+			<td class='source'>day</td>
+			<td class='target' rowSpan='3'>Day</td>
+			<td class='target'>tenpo suno</td>
+		</tr>
+		<tr>
+			<td class='source'>day-short</td>
+			<td class='target' rowSpan='2'>suno</td>
+		</tr>
+		<tr>
+			<td class='source'>day-narrow</td>
+		</tr>
+		<tr>
+			<td class='source'>zone</td>
+			<td class='target'>Zone</td>
+			<td class='target'>nasin tenpo</td>
+		</tr>
+		<tr>
+			<td class='source'>hour</td>
+			<td class='target'>Hour</td>
+			<td class='target'>tenpo ilo</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='44'><a name='Relative' href='#Relative'>Relative</a></td>
+			<td class='source' rowSpan='5'><a name='Relative Year' href='#Relative Year'>Relative Year</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last year</td>
+			<td class='target'>tenpo sike pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this year</td>
+			<td class='target'>tenpo sike ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next year</td>
+			<td class='target'>tenpo sike wan</td>
+		</tr>
+		<tr>
+			<td class='source'>future-other</td>
+			<td class='target'>+{0} y</td>
+			<td class='target'>tenpo sike kama {0}</td>
+			<td class='target' rowSpan='2'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>past-other</td>
+			<td class='target'>-{0} y</td>
+			<td class='target'>tenpo sike pini {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='5'><a name='Relative Month' href='#Relative Month'>Relative Month</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last month</td>
+			<td class='target'>tenpo mun pini</td>
+			<td class='target' rowSpan='3'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this month</td>
+			<td class='target'>tenpo mun ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next month</td>
+			<td class='target'>tenpo mun kama</td>
+		</tr>
+		<tr>
+			<td class='source'>future-other</td>
+			<td class='target'>+{0} m</td>
+			<td class='target'>tenpo mun kama {0}</td>
+			<td class='target' rowSpan='2'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>past-other</td>
+			<td class='target'>-{0} m</td>
+			<td class='target'>tenpo mun pini {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='5'><a name='Relative Week' href='#Relative Week'>Relative Week</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last week</td>
+			<td class='target'>tenpo esun pini</td>
+			<td class='target' rowSpan='3'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this week</td>
+			<td class='target'>tenpo esun ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next week</td>
+			<td class='target'>tenpo esun kama</td>
+		</tr>
+		<tr>
+			<td class='source'>future-other</td>
+			<td class='target'>+{0} w</td>
+			<td class='target'>tenpo esun kama {0}</td>
+			<td class='target' rowSpan='2'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>past-other</td>
+			<td class='target'>-{0} w</td>
+			<td class='target'>tenpo esun pini {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='5'><a name='Relative Day' href='#Relative Day'>Relative Day</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>yesterday</td>
+			<td class='target'>tenpo suno pini</td>
+			<td class='target' rowSpan='3'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>today</td>
+			<td class='target'>tenpo suno ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>tomorrow</td>
+			<td class='target'>tenpo suno kama</td>
+		</tr>
+		<tr>
+			<td class='source'>future-other</td>
+			<td class='target'>+{0} d</td>
+			<td class='target'>tenpo suno kama {0}</td>
+			<td class='target' rowSpan='26'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>past-other</td>
+			<td class='target'>-{0} d</td>
+			<td class='target'>tenpo suno pini {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Hour' href='#Relative Hour'>Relative Hour</a></td>
+			<td class='source'>0</td>
+			<td class='target'>this hour</td>
+			<td class='target'>tenpo ilo ni</td>
+		</tr>
+		<tr>
+			<td class='source'>future-other</td>
+			<td class='target'>+{0} h</td>
+			<td class='target'>tenpo ilo kama {0}</td>
+		</tr>
+		<tr>
+			<td class='source'>past-other</td>
+			<td class='target'>-{0} h</td>
+			<td class='target'>tenpo ilo pini {0}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Sunday' href='#Relative Sunday'>Relative Sunday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Sunday</td>
+			<td class='target'>tenpo esun #7 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Sunday</td>
+			<td class='target'>tenpo esun #7 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Sunday</td>
+			<td class='target'>tenpo esun #7 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Monday' href='#Relative Monday'>Relative Monday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Monday</td>
+			<td class='target'>tenpo esun #1 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Monday</td>
+			<td class='target'>tenpo esun #1 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Monday</td>
+			<td class='target'>tenpo esun #1 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Tuesday' href='#Relative Tuesday'>Relative Tuesday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Tuesday</td>
+			<td class='target'>tenpo esun #2 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Tuesday</td>
+			<td class='target'>tenpo esun #2 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Tuesday</td>
+			<td class='target'>tenpo esun #2 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Wednesday' href='#Relative Wednesday'>Relative Wednesday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Wednesday</td>
+			<td class='target'>tenpo esun #3 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Wednesday</td>
+			<td class='target'>tenpo esun #3 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Wednesday</td>
+			<td class='target'>tenpo esun #3 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Thursday' href='#Relative Thursday'>Relative Thursday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Thursday</td>
+			<td class='target'>tenpo esun #4 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Thursday</td>
+			<td class='target'>tenpo esun #4 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Thursday</td>
+			<td class='target'>tenpo esun #4 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Friday' href='#Relative Friday'>Relative Friday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Friday</td>
+			<td class='target'>tenpo esun #5 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Friday</td>
+			<td class='target'>tenpo esun #5 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Friday</td>
+			<td class='target'>tenpo esun #5 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Relative Saturday' href='#Relative Saturday'>Relative Saturday</a></td>
+			<td class='source'>-1</td>
+			<td class='target'>last Saturday</td>
+			<td class='target'>tenpo esun #6 pini</td>
+		</tr>
+		<tr>
+			<td class='source'>0</td>
+			<td class='target'>this Saturday</td>
+			<td class='target'>tenpo esun #6 ni</td>
+		</tr>
+		<tr>
+			<td class='source'>1</td>
+			<td class='target'>next Saturday</td>
+			<td class='target'>tenpo esun #6 kama</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='43'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+			<td class='source' rowSpan='12'><a name='Months - wide - Formatting' href='#Months - wide - Formatting'>Months - wide - Formatting</a></td>
+			<td class='source'>Jan</td>
+			<td class='target'>mun #1</td>
+			<td class='target'>tenpo mun #1</td>
+			<td class='target' rowSpan='12'>basic</td>
+		</tr>
+		<tr>
+			<td class='source'>Feb</td>
+			<td class='target'>mun #2</td>
+			<td class='target'>tenpo mun #2</td>
+		</tr>
+		<tr>
+			<td class='source'>Mar</td>
+			<td class='target'>mun #3</td>
+			<td class='target'>tenpo mun #3</td>
+		</tr>
+		<tr>
+			<td class='source'>Apr</td>
+			<td class='target'>mun #4</td>
+			<td class='target'>tenpo mun #4</td>
+		</tr>
+		<tr>
+			<td class='source'>May</td>
+			<td class='target'>mun #5</td>
+			<td class='target'>tenpo mun #5</td>
+		</tr>
+		<tr>
+			<td class='source'>Jun</td>
+			<td class='target'>mun #6</td>
+			<td class='target'>tenpo mun #6</td>
+		</tr>
+		<tr>
+			<td class='source'>Jul</td>
+			<td class='target'>mun #7</td>
+			<td class='target'>tenpo mun #7</td>
+		</tr>
+		<tr>
+			<td class='source'>Aug</td>
+			<td class='target'>mun #8</td>
+			<td class='target'>tenpo mun #8</td>
+		</tr>
+		<tr>
+			<td class='source'>Sep</td>
+			<td class='target'>mun #9</td>
+			<td class='target'>tenpo mun #9</td>
+		</tr>
+		<tr>
+			<td class='source'>Oct</td>
+			<td class='target'>mun #10</td>
+			<td class='target'>tenpo mun #10</td>
+		</tr>
+		<tr>
+			<td class='source'>Nov</td>
+			<td class='target'>mun #11</td>
+			<td class='target'>tenpo mun #11</td>
+		</tr>
+		<tr>
+			<td class='source'>Dec</td>
+			<td class='target'>mun #12</td>
+			<td class='target'>tenpo mun #12</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Days - narrow - Formatting' href='#Days - narrow - Formatting'>Days - narrow - Formatting</a></td>
+			<td class='source'>sun</td>
+			<td class='target'>S</td>
+			<td class='target'>7</td>
+			<td class='target' rowSpan='31'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>mon</td>
+			<td class='target'>M</td>
+			<td class='target'>1</td>
+		</tr>
+		<tr>
+			<td class='source'>tue</td>
+			<td class='target'>T</td>
+			<td class='target'>2</td>
+		</tr>
+		<tr>
+			<td class='source'>wed</td>
+			<td class='target'>W</td>
+			<td class='target'>3</td>
+		</tr>
+		<tr>
+			<td class='source'>thu</td>
+			<td class='target'>T</td>
+			<td class='target'>4</td>
+		</tr>
+		<tr>
+			<td class='source'>fri</td>
+			<td class='target'>F</td>
+			<td class='target'>5</td>
+		</tr>
+		<tr>
+			<td class='source'>sat</td>
+			<td class='target' rowSpan='2'>S</td>
+			<td class='target'>6</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Days - narrow - Standalone' href='#Days - narrow - Standalone'>Days - narrow - Standalone</a></td>
+			<td class='source'>sun</td>
+			<td class='target'>7</td>
+		</tr>
+		<tr>
+			<td class='source'>mon</td>
+			<td class='target'>M</td>
+			<td class='target'>1</td>
+		</tr>
+		<tr>
+			<td class='source'>tue</td>
+			<td class='target'>T</td>
+			<td class='target'>2</td>
+		</tr>
+		<tr>
+			<td class='source'>wed</td>
+			<td class='target'>W</td>
+			<td class='target'>3</td>
+		</tr>
+		<tr>
+			<td class='source'>thu</td>
+			<td class='target'>T</td>
+			<td class='target'>4</td>
+		</tr>
+		<tr>
+			<td class='source'>fri</td>
+			<td class='target'>F</td>
+			<td class='target'>5</td>
+		</tr>
+		<tr>
+			<td class='source'>sat</td>
+			<td class='target'>S</td>
+			<td class='target'>6</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Day Periods - wide - Standalone' href='#Day Periods - wide - Standalone'>Day Periods - wide - Standalone</a></td>
+			<td class='source'>am</td>
+			<td class='target'>AM</td>
+			<td class='target'>open suno</td>
+		</tr>
+		<tr>
+			<td class='source'>pm</td>
+			<td class='target'>PM</td>
+			<td class='target'>pini suno</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td>
+			<td class='source'>full</td>
+			<td class='target'>y MMMM d, EEEE</td>
+			<td class='target'>'sike' #y 'la' MMM 'la' 'suno' #d</td>
+		</tr>
+		<tr>
+			<td class='source'>long</td>
+			<td class='target'>y MMMM d</td>
+			<td class='target'>'tenpo' 'sike' #y 'la' 'tenpo' MMMM 'la' 'tenpo' 'suno' #d</td>
+		</tr>
+		<tr>
+			<td class='source'>medium</td>
+			<td class='target'>y MMM d</td>
+			<td class='target'>'sike' #y 'la' MMM 'la' 'suno' #d</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Formats - Standard - Time Formats' href='#Formats - Standard - Time Formats'>Formats - Standard - Time Formats</a></td>
+			<td class='source'>full</td>
+			<td class='target'>HH:mm:ss zzzz</td>
+			<td class='target'>zzzz 'la' HH:mm:ss</td>
+		</tr>
+		<tr>
+			<td class='source'>long</td>
+			<td class='target'>HH:mm:ss z</td>
+			<td class='target'>z 'la' HH:mm:ss</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='7'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source'>MMMMW-other</td>
+			<td class='target'>'week' W 'of' MMMM</td>
+			<td class='target'>MMMM 'la' 'sike' 'esun' #W</td>
+		</tr>
+		<tr>
+			<td class='source'>yw-other</td>
+			<td class='target'>'week' w 'of' Y</td>
+			<td class='target'>Y 'la' 'sike' 'esun' #w</td>
+		</tr>
+		<tr>
+			<td class='source'>d</td>
+			<td class='target'>d</td>
+			<td class='target'>#d</td>
+		</tr>
+		<tr>
+			<td class='source'>y</td>
+			<td class='target'>y</td>
+			<td class='target'>#y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMMMM</td>
+			<td class='target'>y MMMM</td>
+			<td class='target'>#y 'la' MMMM</td>
+		</tr>
+		<tr>
+			<td class='source'>yQQQ</td>
+			<td class='target'>y QQQ</td>
+			<td class='target'>#y 'la' QQQ</td>
+		</tr>
+		<tr>
+			<td class='source'>yQQQQ</td>
+			<td class='target'>y QQQQ</td>
+			<td class='target'>#y 'la' QQQQ</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td>
+			<td class='source'>Bh</td>
+			<td class='target'>h B</td>
+			<td class='target'>'tenpo' 'ilo' #h B</td>
+		</tr>
+		<tr>
+			<td class='source'>h</td>
+			<td class='target'>h a</td>
+			<td class='target'>'tenpo' 'ilo' #h a</td>
+		</tr>
+		<tr>
+			<td class='source'>hmv</td>
+			<td class='target'>h:mm a v</td>
+			<td class='target'>#h:mm a 'lon' v</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Timezones' href='#Timezones'>Timezones</a></td>
+			<td class='source'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td>
+			<td class='source'><a name='null' href='#null'>null</a></td>
+			<td class='source'>GMT Format</td>
+			<td class='target'>tenpo UTC{0}</td>
+			<td class='target'>tenpo GMT{0}</td>
+			<td class='target'>basic</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+			<td class='source' rowSpan='2'><a name='Symbols' href='#Symbols'>Symbols</a></td>
 			<td class='source' rowSpan='2'><a name='Symbols using Tolong Siki Digits (tols)' href='#Symbols using Tolong Siki Digits (tols)'>Symbols using Tolong Siki Digits (tols)</a></td>
 			<td class='source'>decimal</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
 			<td class='target'>,</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>group</td>
 			<td class='target'> </td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='8'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
-			<td class='source' rowSpan='4'><a name='Standard Patterns using Chisoi Digits (chis)' href='#Standard Patterns using Chisoi Digits (chis)'>Standard Patterns using Chisoi Digits (chis)</a></td>
+			<td class='source' rowSpan='4'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+			<td class='source'><a name='Standard Patterns ' href='#Standard Patterns '>Standard Patterns </a></td>
+			<td class='source'>standard-percent</td>
+			<td class='target'>%#,#0</td>
+			<td class='target'>#,##0%</td>
+			<td class='target'>basic</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Standard Patterns using Tolong Siki Digits (tols)' href='#Standard Patterns using Tolong Siki Digits (tols)'>Standard Patterns using Tolong Siki Digits (tols)</a></td>
 			<td class='source'>standard-decimal</td>
+			<td class='target' rowSpan='3'>▷missing◁</td>
 			<td class='target'>#,#0.###</td>
+			<td class='target' rowSpan='3'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>standard-currency</td>
-			<td class='target'>¤#,#0.00</td>
-		</tr>
-		<tr>
-			<td class='source'>standard-percent</td>
-			<td class='target'>%#,#0</td>
+			<td class='target' rowSpan='2'>¤#,#0.00</td>
 		</tr>
 		<tr>
 			<td class='source'>accounting-currency</td>
-			<td class='target'>¤#,#0.00</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='4'><a name='Standard Patterns using Tolong Siki Digits (tols)' href='#Standard Patterns using Tolong Siki Digits (tols)'>Standard Patterns using Tolong Siki Digits (tols)</a></td>
-			<td class='source'>standard-decimal</td>
-			<td class='target'>#,#0.###</td>
+			<td class='source' rowSpan='16'><a name='Currencies' href='#Currencies'>Currencies</a></td>
+			<td class='source' rowSpan='6'><a name='Southern Asia (C)' href='#Southern Asia (C)'>Southern Asia (C)</a></td>
+			<td class='source'><a name='Southern Asia: Afghanistan' href='#Southern Asia: Afghanistan'>Southern Asia: Afghanistan</a></td>
+			<td class='source'>AFN-name-other</td>
+			<td class='target'>AFN</td>
+			<td class='target'>mani Akan</td>
+			<td class='target' rowSpan='20'>moderate</td>
 		</tr>
 		<tr>
-			<td class='source'>standard-currency</td>
-			<td class='target'>¤#,#0.00</td>
+			<td class='source'><a name='Southern Asia: Bangladesh' href='#Southern Asia: Bangladesh'>Southern Asia: Bangladesh</a></td>
+			<td class='source'>BDT-name-other</td>
+			<td class='target'>BDT</td>
+			<td class='target'>mani Panla</td>
 		</tr>
 		<tr>
-			<td class='source'>standard-percent</td>
-			<td class='target'>%#,#0</td>
+			<td class='source'><a name='Southern Asia: India' href='#Southern Asia: India'>Southern Asia: India</a></td>
+			<td class='source'>INR-name-other</td>
+			<td class='target'>INR</td>
+			<td class='target'>mani Palata</td>
 		</tr>
 		<tr>
-			<td class='source'>accounting-currency</td>
-			<td class='target'>¤#,#0.00</td>
+			<td class='source'><a name='Southern Asia: Iran' href='#Southern Asia: Iran'>Southern Asia: Iran</a></td>
+			<td class='source'>IRR-name-other</td>
+			<td class='target'>IRR</td>
+			<td class='target'>mani Ilan</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southern Asia: Sri Lanka' href='#Southern Asia: Sri Lanka'>Southern Asia: Sri Lanka</a></td>
+			<td class='source'>LKR-name-other</td>
+			<td class='target'>LKR</td>
+			<td class='target'>mani Lanka</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southern Asia: Pakistan' href='#Southern Asia: Pakistan'>Southern Asia: Pakistan</a></td>
+			<td class='source'>PKR-name-other</td>
+			<td class='target'>PKR</td>
+			<td class='target'>mani Pakitan</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='8'><a name='Southeast Asia (C)' href='#Southeast Asia (C)'>Southeast Asia (C)</a></td>
+			<td class='source'><a name='Southeast Asia: Indonesia' href='#Southeast Asia: Indonesia'>Southeast Asia: Indonesia</a></td>
+			<td class='source'>IDR-name-other</td>
+			<td class='target'>IDR</td>
+			<td class='target'>mani Intonesija</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Cambodia' href='#Southeast Asia: Cambodia'>Southeast Asia: Cambodia</a></td>
+			<td class='source'>KHR-name-other</td>
+			<td class='target'>KHR</td>
+			<td class='target'>mani Kame</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Myanmar (Burma)' href='#Southeast Asia: Myanmar (Burma)'>Southeast Asia: Myanmar (Burma)</a></td>
+			<td class='source'>MMK-name-other</td>
+			<td class='target'>MMK</td>
+			<td class='target'>mani Mijama</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Malaysia' href='#Southeast Asia: Malaysia'>Southeast Asia: Malaysia</a></td>
+			<td class='source'>MYR-name-other</td>
+			<td class='target'>MYR</td>
+			<td class='target'>mani Malesija</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Philippines' href='#Southeast Asia: Philippines'>Southeast Asia: Philippines</a></td>
+			<td class='source'>PHP-name-other</td>
+			<td class='target'>PHP</td>
+			<td class='target'>mani Pilipina</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Singapore' href='#Southeast Asia: Singapore'>Southeast Asia: Singapore</a></td>
+			<td class='source'>SGD-name-other</td>
+			<td class='target'>SGD</td>
+			<td class='target'>mani Sinkapo</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Thailand' href='#Southeast Asia: Thailand'>Southeast Asia: Thailand</a></td>
+			<td class='source'>THB-name-other</td>
+			<td class='target'>THB</td>
+			<td class='target'>mani Tawi</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Southeast Asia: Vietnam' href='#Southeast Asia: Vietnam'>Southeast Asia: Vietnam</a></td>
+			<td class='source'>VND-name-other</td>
+			<td class='target'>VND</td>
+			<td class='target'>mani Wije</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Oceania (C)' href='#Oceania (C)'>Oceania (C)</a></td>
+			<td class='source'><a name='Australasia: Australia' href='#Australasia: Australia'>Australasia: Australia</a></td>
+			<td class='source'>AUD-name-other</td>
+			<td class='target'>AUD</td>
+			<td class='target'>mani Oseja</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Australasia: New Zealand' href='#Australasia: New Zealand'>Australasia: New Zealand</a></td>
+			<td class='source'>NZD-name-other</td>
+			<td class='target'>NZD</td>
+			<td class='target'>mani Awatejalowa</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Units' href='#Units'>Units</a></td>
+			<td class='source' rowSpan='3'><a name='Duration' href='#Duration'>Duration</a></td>
+			<td class='source' rowSpan='3'><a name='Duration Patterns' href='#Duration Patterns'>Duration Patterns</a></td>
+			<td class='source'>hm</td>
+			<td class='target'>h:mm</td>
+			<td class='target'>hh:mm</td>
+		</tr>
+		<tr>
+			<td class='source'>hms</td>
+			<td class='target'>h:mm:ss</td>
+			<td class='target'>hh:mm:ss</td>
+		</tr>
+		<tr>
+			<td class='source'>ms</td>
+			<td class='target'>m:ss</td>
+			<td class='target'>mm:ss</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
+			<td class='source'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td>
+			<td class='source'><a name='Plural' href='#Plural'>Plural</a></td>
+			<td class='source'>other</td>
+			<td class='target'>{0}?</td>
+			<td class='target'>tenpo suno {0}</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Person Name Formats' href='#Person Name Formats'>Person Name Formats</a></td>
+			<td class='source'><a name='Default Parameters' href='#Default Parameters'>Default Parameters</a></td>
+			<td class='source'>formality</td>
+			<td class='target'>formal</td>
+			<td class='target'>informal</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Special' href='#Special'>Special</a></td>
@@ -147,6 +1742,7 @@
 			<td class='source'>pattern-standard-accounting</td>
 			<td class='target' rowSpan='2'>¤#,#0.00</td>
 			<td class='target' rowSpan='6'>▷removed◁</td>
+			<td class='target' rowSpan='6'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='3'>pattern-standard-standard</td>
