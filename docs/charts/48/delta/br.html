@@ -87,7 +87,7 @@
 			<td class='source' rowSpan='9'><a name='Languages (A-D)' href='#Languages (A-D)'>Languages (A-D)</a></td>
 			<td class='source' rowSpan='3'><a name='A' href='#A'>A</a></td>
 			<td class='source'>Afrikaans ► af</td>
-			<td class='source' rowSpan='330'>br</td>
+			<td class='source' rowSpan='454'>br</td>
 			<td class='target'>afrikaans</td>
 			<td class='target'>afrikaaneg</td>
 			<td class='target' rowSpan='4'>modern</td>
@@ -1040,7 +1040,7 @@
 			<td class='target'>Lecʼhiadur dianav</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='35'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+			<td class='source' rowSpan='159'><a name='Numbers' href='#Numbers'>Numbers</a></td>
 			<td class='source' rowSpan='2'><a name='Symbols' href='#Symbols'>Symbols</a></td>
 			<td class='source' rowSpan='2'><a name='Symbols using Tolong Siki Digits (tols)' href='#Symbols using Tolong Siki Digits (tols)'>Symbols using Tolong Siki Digits (tols)</a></td>
 			<td class='source'>decimal</td>
@@ -1053,23 +1053,44 @@
 			<td class='target'> </td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='6'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
-			<td class='source' rowSpan='2'><a name='Standard Patterns ' href='#Standard Patterns '>Standard Patterns </a></td>
+			<td class='source' rowSpan='10'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+			<td class='source' rowSpan='4'><a name='Standard Patterns ' href='#Standard Patterns '>Standard Patterns </a></td>
+			<td class='source'>standard-currency-alphaNextToNumber</td>
+			<td class='target'>¤ #,##0.00</td>
+			<td class='target'>#,##0.00 ¤</td>
+			<td class='target' rowSpan='4'>moderate</td>
+		</tr>
+		<tr>
 			<td class='source'>accounting-currency</td>
 			<td class='target'>#,##0.00 ¤</td>
 			<td class='target' rowSpan='2'>#,##0.00 ¤;(#,##0.00 ¤)</td>
-			<td class='target' rowSpan='2'>moderate</td>
 		</tr>
 		<tr>
 			<td class='source'>accounting-currency-alphaNextToNumber</td>
 			<td class='target'>¤ #,##0.00</td>
 		</tr>
 		<tr>
+			<td class='source'>accounting-currency-noCurrency</td>
+			<td class='target'>#,##0.00</td>
+			<td class='target'>#,##0.00;(#,##0.00)</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Standard Patterns using Adlam Digits (adlm)' href='#Standard Patterns using Adlam Digits (adlm)'>Standard Patterns using Adlam Digits (adlm)</a></td>
+			<td class='source'>standard-currency-alphaNextToNumber</td>
+			<td class='target'>¤ #,##0.00</td>
+			<td class='target'>#,##0.00 ¤</td>
+			<td class='target' rowSpan='6'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>accounting-currency-noCurrency</td>
+			<td class='target'>#,##0.00</td>
+			<td class='target'>#,##0.00;(#,##0.00)</td>
+		</tr>
+		<tr>
 			<td class='source' rowSpan='3'><a name='Standard Patterns using Tolong Siki Digits (tols)' href='#Standard Patterns using Tolong Siki Digits (tols)'>Standard Patterns using Tolong Siki Digits (tols)</a></td>
 			<td class='source'>standard-currency</td>
-			<td class='target' rowSpan='36'>▷missing◁</td>
+			<td class='target' rowSpan='4'>▷missing◁</td>
 			<td class='target'>#,##0.00 ¤</td>
-			<td class='target' rowSpan='31'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>standard-percent</td>
@@ -1085,54 +1106,670 @@
 			<td class='target'>{0} {1}</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='27'><a name='Compact Decimal Formatting (Other Numbering Systems)' href='#Compact Decimal Formatting (Other Numbering Systems)'>Compact Decimal Formatting (Other Numbering Systems)</a></td>
-			<td class='source' rowSpan='12'><a name='Short Currency using Tolong Siki Digits (tols)' href='#Short Currency using Tolong Siki Digits (tols)'>Short Currency using Tolong Siki Digits (tols)</a></td>
+			<td class='source' rowSpan='120'><a name='Compact Decimal Formatting' href='#Compact Decimal Formatting'>Compact Decimal Formatting</a></td>
+			<td class='source' rowSpan='120'><a name='Short Currency ' href='#Short Currency '>Short Currency </a></td>
+			<td class='source'>4-digits-short-one</td>
+			<td class='target'>0 k¤</td>
+			<td class='target' rowSpan='10'>0k ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>0 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-two</td>
+			<td class='target'>0 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>0 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-few</td>
+			<td class='target'>0 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>0 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-many</td>
+			<td class='target'>0 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>0 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
 			<td class='source'>4-digits-short-other</td>
 			<td class='target'>0 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>4-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>0 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-one</td>
+			<td class='target'>00 k¤</td>
+			<td class='target' rowSpan='10'>00k ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>00 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-two</td>
+			<td class='target'>00 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>00 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-few</td>
+			<td class='target'>00 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>00 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-many</td>
+			<td class='target'>00 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>00 k ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>5-digits-short-other</td>
 			<td class='target'>00 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>00 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-one</td>
+			<td class='target'>000 k¤</td>
+			<td class='target' rowSpan='10'>000k ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>000 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-two</td>
+			<td class='target'>000 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>000 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-few</td>
+			<td class='target'>000 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>000 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-many</td>
+			<td class='target'>000 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>000 k ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>6-digits-short-other</td>
 			<td class='target'>000 k¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>000 k ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-one</td>
+			<td class='target'>0 M¤</td>
+			<td class='target' rowSpan='10'>0M ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>0 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-two</td>
+			<td class='target'>0 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>0 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-few</td>
+			<td class='target'>0 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>0 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-many</td>
+			<td class='target'>0 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>0 M ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>7-digits-short-other</td>
 			<td class='target'>0 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>0 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-one</td>
+			<td class='target'>00 M¤</td>
+			<td class='target' rowSpan='10'>00M ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>00 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-two</td>
+			<td class='target'>00 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>00 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-few</td>
+			<td class='target'>00 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>00 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-many</td>
+			<td class='target'>00 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>00 M ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>8-digits-short-other</td>
 			<td class='target'>00 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>00 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-one</td>
+			<td class='target'>000 M¤</td>
+			<td class='target' rowSpan='10'>000M ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>000 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-two</td>
+			<td class='target'>000 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>000 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-few</td>
+			<td class='target'>000 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>000 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-many</td>
+			<td class='target'>000 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>000 M ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>9-digits-short-other</td>
 			<td class='target'>000 M¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>000 M ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-one</td>
+			<td class='target'>0 G¤</td>
+			<td class='target' rowSpan='10'>0G ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>0 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-two</td>
+			<td class='target'>0 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>0 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-few</td>
+			<td class='target'>0 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>0 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-many</td>
+			<td class='target'>0 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>0 G ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>10-digits-short-other</td>
 			<td class='target'>0 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>0 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-one</td>
+			<td class='target'>00 G¤</td>
+			<td class='target' rowSpan='10'>00G ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>00 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-two</td>
+			<td class='target'>00 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>00 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-few</td>
+			<td class='target'>00 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>00 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-many</td>
+			<td class='target'>00 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>00 G ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>11-digits-short-other</td>
 			<td class='target'>00 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>00 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-one</td>
+			<td class='target'>000 G¤</td>
+			<td class='target' rowSpan='10'>000G ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>000 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-two</td>
+			<td class='target'>000 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>000 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-few</td>
+			<td class='target'>000 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>000 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-many</td>
+			<td class='target'>000 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>000 G ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>12-digits-short-other</td>
 			<td class='target'>000 G¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>000 G ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-one</td>
+			<td class='target'>0 T¤</td>
+			<td class='target' rowSpan='10'>0T ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>0 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-two</td>
+			<td class='target'>0 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>0 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-few</td>
+			<td class='target'>0 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>0 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-many</td>
+			<td class='target'>0 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>0 T ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>13-digits-short-other</td>
 			<td class='target'>0 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>0 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-one</td>
+			<td class='target'>00 T¤</td>
+			<td class='target' rowSpan='10'>00T ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>00 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-two</td>
+			<td class='target'>00 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>00 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-few</td>
+			<td class='target'>00 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>00 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-many</td>
+			<td class='target'>00 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>00 T ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>14-digits-short-other</td>
 			<td class='target'>00 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>00 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-one</td>
+			<td class='target'>000 T¤</td>
+			<td class='target' rowSpan='10'>000T ¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-one-alphaNextToNumber</td>
+			<td class='target'>000 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-two</td>
+			<td class='target'>000 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-two-alphaNextToNumber</td>
+			<td class='target'>000 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-few</td>
+			<td class='target'>000 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-few-alphaNextToNumber</td>
+			<td class='target'>000 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-many</td>
+			<td class='target'>000 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-many-alphaNextToNumber</td>
+			<td class='target'>000 T ¤</td>
+			<td class='target'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>15-digits-short-other</td>
 			<td class='target'>000 T¤</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-other-alphaNextToNumber</td>
+			<td class='target'>000 T ¤</td>
+			<td class='target'>modern</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='27'><a name='Compact Decimal Formatting (Other Numbering Systems)' href='#Compact Decimal Formatting (Other Numbering Systems)'>Compact Decimal Formatting (Other Numbering Systems)</a></td>
+			<td class='source' rowSpan='12'><a name='Short Currency using Tolong Siki Digits (tols)' href='#Short Currency using Tolong Siki Digits (tols)'>Short Currency using Tolong Siki Digits (tols)</a></td>
+			<td class='source'>4-digits-short-other</td>
+			<td class='target' rowSpan='32'>▷missing◁</td>
+			<td class='target'>0k ¤</td>
+			<td class='target' rowSpan='27'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>5-digits-short-other</td>
+			<td class='target'>00k ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>6-digits-short-other</td>
+			<td class='target'>000k ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>7-digits-short-other</td>
+			<td class='target'>0M ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>8-digits-short-other</td>
+			<td class='target'>00M ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>9-digits-short-other</td>
+			<td class='target'>000M ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>10-digits-short-other</td>
+			<td class='target'>0G ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>11-digits-short-other</td>
+			<td class='target'>00G ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>12-digits-short-other</td>
+			<td class='target'>000G ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>13-digits-short-other</td>
+			<td class='target'>0T ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>14-digits-short-other</td>
+			<td class='target'>00T ¤</td>
+		</tr>
+		<tr>
+			<td class='source'>15-digits-short-other</td>
+			<td class='target'>000T ¤</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='12'><a name='Long Formats using Tolong Siki Digits (tols)' href='#Long Formats using Tolong Siki Digits (tols)'>Long Formats using Tolong Siki Digits (tols)</a></td>
