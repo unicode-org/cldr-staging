@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Lint GitHub Actions
         run: npx yaml-lint .github/workflows/*.yml .github/*.yml
       - name: Cache local Maven repository
