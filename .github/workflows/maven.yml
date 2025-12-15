@@ -17,7 +17,7 @@ jobs:
       - name: Lint GitHub Actions
         run: npx yaml-lint .github/workflows/*.yml .github/*.yml
       - name: Cache local Maven repository
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('tools/**/pom.xml') }}
