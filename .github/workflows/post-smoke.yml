@@ -3,54 +3,38 @@ name: Publish to cldr-smoke
 on:
   push:
     branches:
-      - main
-      - cldr-15136/post-smoke  ## TODO TESTING
-    # Only run if docs change.
-    ## TODO CLDR-15464 reenable this!!
-    # paths:
-    #   - "tools/scripts/tr-archive/**"
-    #   - "docs/**"
-    #   - '.github/workflows/gh-pages.yml'
+      - charts/*
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          lfs: false
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.2
-          bundler-cache: true
-      - name: Build Jekyll part of the site
+      - name: get chart number
+        id: chartnum
         run: |
-          gem install bundler github-pages kramdown-parser-gfm  # should pull in jekyll, etc.
-          jekyll build -s docs -d _site
-      # - name: Rearrange stuff
-      #   run: 'cp -vr tools/scripts/tr-archive/dist/* ./_site/ldml/ && cp tools/scripts/tr-archive/reports-v2.css ./_site/'
-      # - name: Deploy to GitHub Pages (main)
-      #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      #   uses: Cecilapp/GitHub-Pages-deploy@v3
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     # email: username@domain.tld
-      #     build_dir: _site               # optional
-      #     branch: gh-pages                # optional
-      #     # cname: domain.tld              # optional
-      #     # jekyll: no                     # optional
-      #     commit_message: CLDR-00000 Automated Build of Pages # optional
-      - name: rsync _site
-        uses: burnett01/rsync-deployments@5.2
-        with:
-          switches: -avzr --delete
-          path: _site/
-          remote_path: ${{ secrets.STAGING_DEV_PATH }}
-          remote_host: ${{ secrets.STAGING_DEV_HOST }}
-          remote_user: ${{ secrets.STAGING_DEV_USER }}
-          remote_key:  ${{ secrets.STAGING_DEV_KEY }}
+          echo ${{ github.ref }}
 
-# only run one of these at a time
+      - uses: actions/checkout@v6
+        with:
+            sparse-checkout: 'docs/charts'
+
+      - name: check checkout
+        run: du -sh docs/charts/*
+
+      - name: Set known host key
+        # For the host key verification of ssh behind rsync.
+        run: |
+          mkdir ~/.ssh
+          echo "sarasvati.unicode.org ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGx+XeCMGtRbA7X26EVcYG41zQrZmM05Vw5I0zISPqz9f+94Vlm4P26hsmY/DCA1j4EMlbbiISqRqzbLfAz1s5s=" >> ~/.ssh/known_hosts
+          echo "cldr-smoke.unicode.org ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKebRPtFh4wfiya5UX+8OGJorbdu66PeXASGLvgmSMgewsBF0LwS2r5qcMlv11LdSQh/PrP0gWndmG7bBOQOZj0=" >> ~/.ssh/known_hosts
+
+      # - name: Sync files to server
+      #   run: |
+      #     rsync --recursive --inplace --verbose --verbose \
+      #     website/charts \
+      #     gh-charts@sarasvati.unicode.org:/home/httpd/htdocs
+      #   env:
+      #     SSHPASS: ${{ secrets.WEBSITE_DEPLOYMENT_PASSWORD }}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
