@@ -9,16 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get chart number
-        id: chartnum
+        id: setup
+        # refs/heads/charts/49
+        # steps.setup.outputs.chartnum
         run: |
-          echo ${{ github.ref }}
+          echo "chartnum="$(echo ${{ github.ref }} | cut -d/ -f4) | tee -a $GITHUB_OUTPUT
 
       - uses: actions/checkout@v6
         with:
             sparse-checkout: 'docs/charts'
 
       - name: check checkout
-        run: du -sh docs/charts/*
+        run: du -sh docs/charts/${{ steps.setup.outputs.chartnum }}
 
       - name: Set known host key
         # For the host key verification of ssh behind rsync.
