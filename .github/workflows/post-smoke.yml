@@ -90,7 +90,7 @@ jobs:
           ${{ vars.SSH_HOST }}:public_html/cldr/charts/${{ steps.setup.outputs.chartnum }}
       - name: Notify
         run: |
-          echo "- Updated: https://cldr-smoke.unicode.org/cldr/charts/${{ steps.setup.outputs.chartnum }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated: https://www.unicode.org/cldr/charts/${{ steps.setup.outputs.chartnum }}" >> $GITHUB_STEP_SUMMARY
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
