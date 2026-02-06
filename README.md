@@ -4,7 +4,7 @@ This directory contains derived data from the [CLDR](https://github.com/unicode-
 
 ![maven](https://github.com/unicode-org/cldr-staging/workflows/maven/badge.svg)
 
-It also contains charts, [the HTML website summarizing the CLDR data](https://www.unicode.org/cldr/charts/latest). Read more about what the charts are in [the unicode documentation](https://cldr.unicode.org/index/charts)
+The main branch doesn't contain any charts, they are on the `charts/49` etc. branches. [See this link for charts](https://www.unicode.org/cldr/charts/latest). Read more about what the charts are in [the unicode documentation](https://cldr.unicode.org/index/charts)
 
 ## What is production data, where does it come from, why does this repo exist?
 
@@ -28,7 +28,7 @@ The [Survey Tool](https://cldr.unicode.org/index/survey-tool) is unrelated.
 
 ### Copyright & Licenses
 
-Copyright © 2019-2025 Unicode, Inc. Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the United States and other countries.
+Copyright © 2019-2026 Unicode, Inc. Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the United States and other countries.
 
 A CLA is required to contribute to this project - please refer to the [CONTRIBUTING.md](https://github.com/unicode-org/.github/blob/main/.github/CONTRIBUTING.md) file (or start a Pull Request) for more information.
 
