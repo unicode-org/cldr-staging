@@ -1,0 +1,45 @@
+# Section	Page	Header	Code	Old	New
+#Section	Page	Header	Code	Old	New
+Supplemental	Likely	Subtag	grc	…	grc_Grek_GR
+Supplemental	Likely	Subtag	grc_Linb	grc_Linb_GR	▷removed◁
+Supplemental	Likely	Subtag	kaw	…	kaw_Bali_ID
+Supplemental	Likely	Subtag	und_Cprt	…	ecy_Cprt_CY
+Supplemental	Likely	Subtag	und_Linb	…	gmy_Linb_GR
+Supplemental	LanguageInfo	CY/ecy	populationPercent	▷missing◁	0.0001
+Supplemental	LanguageInfo	GR/gmy	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	GR/grc	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	ID/ban_Bali	populationPercent	▷missing◁	0
+Supplemental	LanguageInfo	ID/kaw	populationPercent	▷missing◁	0
+Supplemental	Language	ecy	scripts-secondary	▷missing◁	Cprt
+Supplemental	Language	gmy	scripts-secondary	▷missing◁	Linb
+Supplemental	Language	grc	scripts-secondary	…	…
+Supplemental	Language	kaw	scripts-secondary	▷missing◁	Bali
+Supplemental	Language	kaw	scripts-secondary	▷missing◁	Java
+Supplemental	Language	kaw	scripts-secondary	▷missing◁	Kawi
+#Section	Page	Header	Code	Old	New
+Supplemental	Transform	am_Ethi↔︎d0_Morse	tRule	…	… • :: [[:Zs:]0-9!\?\+/@()\[\]_:;,\.'"\$=\-[:Ethiopic:]] ; • …
+Supplemental	Transform	Arab↔︎Latn	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][‎ⁿ،؛؟ـً-ٕ٠-٬۰-۹﷼ښ][\u0611\u0670]] ; • …‬
+Supplemental	Transform	az→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { I → ı; • [:Cased:] [:Case_Ignorable:]* { İ → i; • …
+Supplemental	Transform	Beng→Latn	tRule	…	… • ::[[:Script=Bengali:][।-॥ঁ-ঃঅ-ঌএ-ঐও-নপ-রলশ-হ়-ৄে-ৈো-্ৗড়-ঢ়য়-ৣ০-৺ৎ]];
+Supplemental	Transform	Cyrl↔︎Latn	tRule	…	… • | KS ← X } $ignore [:Uppercase_Letter:] ; • | KS ← [:Uppercase_Letter:] $ignore { X ; • …
+Supplemental	Transform	de→ASCII	tRule	…	… • ::Latin-ASCII; • …
+Supplemental	Transform	el→Lower	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { Σ → ς; • Σ } [:Case_Ignorable:]* [:Cased:] → σ;
+Supplemental	Transform	el→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { Σ } [:Case_Ignorable:]* [:Cased:] → σ; • [:Cased:] [:Case_Ignorable:]* { Σ → ς;
+Supplemental	Transform	Grek↔︎Latn	tRule	…	… • $glower = [[:Greek:] & [:Ll:]]; • … • $ignore [:Uppercase_Letter:] { $rough → H ; • … • $lower = [[:Latin:][:Greek:] & [:Ll:]]; • … • $rough } $ignore [:Uppercase_Letter:] → H ; • … • $upper = [[:Latin:][:Greek:] & [:Lu:]] ; • …
+Supplemental	Transform	Han↔︎Spacedhan	tRule	…	$initialPunct = [[:Ps:][:Pi:]]; • … • :: [[、。々《-』〜・㆒-㆟㈠-㉇㊀-㊰㋀-㋋ ㍘-㍰㍻-㍿㏠-㏾🈐-🈒🈔-🈺🉀-🉈🉐🉑][:Ideographic:][:sc=Han:]] nfkc; • …
+Supplemental	Transform	Hira↔︎Kana	tRule	…	… • :: ([[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]]); • … • :: [[\u0000-\u007E 、。 ゙-゜ ァ-ー ｡-ﾟー[:Hiragana:] [:Katakana:] [:Nonspacing_Mark:]]-[\u309B \u309C]]; • …
+Supplemental	Transform	it→am	tRule	…	… • [:Nonspacing_Mark:] → ; • …
+Supplemental	Transform	it→ja	tRule	…	… • [:Nonspacing_Mark:] → ; • …
+Supplemental	Transform	Latin↔︎NumericPinyin	tRule	…	… • &NumericPinyin-Pinyin($1) ← [:Letter:] {($digit)}; • …
+Supplemental	Transform	Latn→Jamo	tRule	…	… • ::[[:Script=Latin:][:M:]-]; • ::[[:Script=Latin:][:M:]] NFC;
+Supplemental	Transform	lt→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* {I \u0300 → i \u0307 \u0300; • [:Cased:] [:Case_Ignorable:]* {I \u0301 → i \u0307 \u0301; • [:Cased:] [:Case_Ignorable:]* {I \u0303 → i \u0307 \u0303; • [:Cased:] [:Case_Ignorable:]* {I \u0328 } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → i \u0328 \u0307; • [:Cased:] [:Case_Ignorable:]* {I } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → i \u0307; • [:Cased:] [:Case_Ignorable:]* {J } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → j \u0307; • …
+Supplemental	Transform	Thai→Latn	tRule	…	… • ::[[:Thai:] ก-ฺเ-๛];
+Supplemental	Transform	Thai↔︎ThaiLogical	tRule	…	… • $thai = [[:Thai:] ก-ฺเ-๛] ; • …
+Supplemental	Transform	Thai↔︎ThaiSemi	tRule	…	$thai = [[:Thai:] ก-ฺเ-๛] ; • …
+Supplemental	Transform	ThaiLogical↔︎Latin	tRule	…	… • $notAbove = [^\p{ccc=0}\p{ccc=Above}] ; • $notBelow = [^\p{ccc=0}\p{ccc=Below}] ; • …
+Supplemental	Transform	tr→Title	tRule	…	… • [:Cased:] [:Case_Ignorable:]* { (.) → &Any-Lower($1) ; • [:Cased:] [:Case_Ignorable:]* { I → ı; • [:Cased:] [:Case_Ignorable:]* { İ → i; • …
+Supplemental	Transform	ar→ar_Latn/BGN	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْ٠١٢٣٤٥٦٧٨٩ٱ]] ; • …‬
+Supplemental	Transform	dv→dv_Latn/BGN	tRule	…	‫… • ::[[:Block=Thaana:][،؛؟٪٫٬]\uFDF2] ; • …‬
+Supplemental	Transform	fa→fa_Latn/BGN	tRule	…	‫… • :: [[:Arabic:][:Block=Arabic:][ءآابةتثجحخدذرزسشصضطظعغفقكلمنهویيَُِّْ٠١٢٣٤٥٦٧٨٩پچژگی]] ; • …‬
+Supplemental	Transform	Grek↔︎Latn/UNGEGN	tRule	…	… • $lower = [[:Latin:][:Greek:] & [:Ll:]] ; • … • $upper = [[:Latin:][:Greek:] & [:Lu:]] ; • …
+Supplemental	Transform	Han→Latin/Names	tRule	…	… • [:^Script=Han:] { ([:Script=Han:]) → $startOfHanMarker $1; • …
