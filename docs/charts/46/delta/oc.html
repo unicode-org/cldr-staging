@@ -1,0 +1,1804 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPN1D3SEJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPN1D3SEJM');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Occitan Delta</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.unicode.org/webscripts/standard_styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="icon"><a href="http://www.unicode.org/"> <img
+								border="0" src="http://www.unicode.org/webscripts/logo60s2.gif"
+								align="middle" alt="[Unicode]" width="34" height="33"></a>&nbsp;&nbsp;
+							<a class="bar"
+							href="http://www.unicode.org/cldr/comparison_charts.html"><font
+								size="3">CLDR Charts</font></a></td>
+						<td class="bar"><a href="http://www.unicode.org" class="bar">Home</a>
+							| <a href="http://www.unicode.org/sitemap/" class="bar">Site
+								Map</a> | <a href="http://www.unicode.org/search/" class="bar">Search</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="gray">&nbsp;</td>
+		</tr>
+	</table>
+	<div class="body">
+		<div align="center">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align: left" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-version.html"></iframe></td>
+					<td style="text-align: center" nowrap width="50%"><h1 align="center">Occitan Delta</h1></td>
+					<td style="text-align: right" nowrap width="25%"><iframe scrolling="no" class="versionDate" src="include-date.html"></iframe></td>
+				</tr>
+				<tr><td style="text-align: center" colSpan="3"><a class="upLink" href="index.html">Index</a></td></tr>
+			</table>
+		</div>
+<!--
+		<div align="center">
+			<table style="margin: 1em">
+				<tr>
+					<td align="left" nowrap width="20%">CLDR Version <span class='version'>%version%</span></td>
+					<td style="text-align: center" nowrap width="50%"><b><font
+							size="4"> <a href="index.html">Index</a></font></b></td>
+					<td style="text-align: right" nowrap width="20%">%date%</td>
+				</tr>
+			</table>
+		</div>
+		 -->
+<!-- begin main body-->
+<p>Lists data fields that differ from the last major version (see versions above). Inherited differences in locales are suppressed, except where the source locales are different. <p><table>
+  <tr>
+	<th class='source'>Section</th>
+	<th class='source'>Page</th>
+	<th class='source'>Header</th>
+	<th class='source'>Code</th>
+	<th class='source'>Locale</th>
+	<th class='target'>Old</th>
+	<th class='target'>New</th>
+	<th class='target'>Level</th></tr>
+  <tr>
+	<td class='source'><a name='Core Data' href='#Core Data'>Core Data</a></td>
+	<td class='source'><a name='Alphabetic Information' href='#Alphabetic Information'>Alphabetic Information</a></td>
+	<td class='source'><a name='Parse' href='#Parse'>Parse</a></td>
+	<td class='source'>general-lenient(£)</td>
+	<td class='source'>oc_ES</td>
+	<td class='target'>[£ ₤]</td>
+	<td class='target'>[£￡ ₤]</td>
+	<td class='target' rowSpan='9'>moderate</td></tr>
+  <tr>
+	<td class='source' rowSpan='8'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+	<td class='source' rowSpan='8'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+	<td class='source'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td>
+	<td class='source'>short</td>
+	<td class='source' rowSpan='10'>oc</td>
+	<td class='target'>d/MM/yy</td>
+	<td class='target'>dd/MM/yy</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Standard - Time Formats' href='#Formats - Standard - Time Formats'>Formats - Standard - Time Formats</a></td>
+	<td class='source'>long</td>
+	<td class='target'>H'h'mm:ss z</td>
+	<td class='target'>HH:mm:ss z</td></tr>
+  <tr>
+	<td class='source'>medium</td>
+	<td class='target'>H'h'mm:ss</td>
+	<td class='target'>HH:mm:ss</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Standard - Date & Time Combination Formats' href='#Formats - Standard - Date & Time Combination Formats'>Formats - Standard - Date & Time Combination Formats</a></td>
+	<td class='source'>medium-atTime</td>
+	<td class='target' rowSpan='2'>{1}, {0}</td>
+	<td class='target' rowSpan='2'>{1} 'a' {0}</td></tr>
+  <tr>
+	<td class='source'>short-atTime</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Formats - Flexible - 12 Hour Time Formats' href='#Formats - Flexible - 12 Hour Time Formats'>Formats - Flexible - 12 Hour Time Formats</a></td>
+	<td class='source'>Bhms</td>
+	<td class='target'>h'h'mm:ss B</td>
+	<td class='target'>h:mm:ss B</td></tr>
+  <tr>
+	<td class='source'>EBhms</td>
+	<td class='target'>E h'h'mm:ss B</td>
+	<td class='target'>E h:mm:ss B</td></tr>
+  <tr>
+	<td class='source'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+	<td class='source'>yMMMd/d</td>
+	<td class='target'>d – d MMM y</td>
+	<td class='target'>MMM d – d 'de' y</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Timezones' href='#Timezones'>Timezones</a></td>
+	<td class='source' rowSpan='4'><a name='Unknown Region' href='#Unknown Region'>Unknown Region</a></td>
+	<td class='source' rowSpan='4'><a name='Choibalsan' href='#Choibalsan'>Choibalsan</a></td>
+	<td class='source'>generic-long</td>
+	<td class='target'>ora de Choibalsan</td>
+	<td class='target' rowSpan='4'>▷removed◁</td>
+	<td class='target' rowSpan='499'>comprehensive</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>standard-long</td>
+	<td class='target'>ora estandarda de Choibalsan</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>ora estandard de Choibalsan</td></tr>
+  <tr>
+	<td class='source'>daylight-long</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>ora d’estiu de Choibalsan</td></tr>
+  <tr>
+	<td class='source' rowSpan='232'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+	<td class='source' rowSpan='64'><a name='Symbols' href='#Symbols'>Symbols</a></td>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Garay Digits (gara)' href='#Time Symbols using Garay Digits (gara)'>Time Symbols using Garay Digits (gara)</a></td>
+	<td class='source' rowSpan='16'>Time Separator</td>
+	<td class='target' rowSpan='495'>▷missing◁</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Gurung Khema Digits (gukh)' href='#Time Symbols using Gurung Khema Digits (gukh)'>Time Symbols using Gurung Khema Digits (gukh)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Kirat Rai Digits (krai)' href='#Time Symbols using Kirat Rai Digits (krai)'>Time Symbols using Kirat Rai Digits (krai)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Time Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Time Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Myanmar Pao Digits (mymrpao)' href='#Time Symbols using Myanmar Pao Digits (mymrpao)'>Time Symbols using Myanmar Pao Digits (mymrpao)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Ol Onal Digits (onao)' href='#Time Symbols using Ol Onal Digits (onao)'>Time Symbols using Ol Onal Digits (onao)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Outlined Digits (outlined)' href='#Time Symbols using Outlined Digits (outlined)'>Time Symbols using Outlined Digits (outlined)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'><a name='Time Symbols using Sunuwar Digits (sunu)' href='#Time Symbols using Sunuwar Digits (sunu)'>Time Symbols using Sunuwar Digits (sunu)</a></td>
+	<td class='source'>oc</td>
+	<td class='target'>'h'</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>:</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Garay Digits (gara)' href='#Symbols using Garay Digits (gara)'>Symbols using Garay Digits (gara)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Gurung Khema Digits (gukh)' href='#Symbols using Gurung Khema Digits (gukh)'>Symbols using Gurung Khema Digits (gukh)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Kirat Rai Digits (krai)' href='#Symbols using Kirat Rai Digits (krai)'>Symbols using Kirat Rai Digits (krai)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Symbols using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Myanmar Pao Digits (mymrpao)' href='#Symbols using Myanmar Pao Digits (mymrpao)'>Symbols using Myanmar Pao Digits (mymrpao)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Ol Onal Digits (onao)' href='#Symbols using Ol Onal Digits (onao)'>Symbols using Ol Onal Digits (onao)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Outlined Digits (outlined)' href='#Symbols using Outlined Digits (outlined)'>Symbols using Outlined Digits (outlined)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='6'><a name='Symbols using Sunuwar Digits (sunu)' href='#Symbols using Sunuwar Digits (sunu)'>Symbols using Sunuwar Digits (sunu)</a></td>
+	<td class='source' rowSpan='2'>decimal</td>
+	<td class='source'>oc</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>group</td>
+	<td class='source'>oc</td>
+	<td class='target'> </td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>,</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>approximatelySign</td>
+	<td class='source'>oc</td>
+	<td class='target'>≃</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>~</td></tr>
+  <tr>
+	<td class='source' rowSpan='72'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Garay Digits (gara)' href='#Standard Patterns using Garay Digits (gara)'>Standard Patterns using Garay Digits (gara)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td>
+	<td class='target'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Gurung Khema Digits (gukh)' href='#Standard Patterns using Gurung Khema Digits (gukh)'>Standard Patterns using Gurung Khema Digits (gukh)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Kirat Rai Digits (krai)' href='#Standard Patterns using Kirat Rai Digits (krai)'>Standard Patterns using Kirat Rai Digits (krai)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Standard Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Standard Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Myanmar Pao Digits (mymrpao)' href='#Standard Patterns using Myanmar Pao Digits (mymrpao)'>Standard Patterns using Myanmar Pao Digits (mymrpao)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Ol Onal Digits (onao)' href='#Standard Patterns using Ol Onal Digits (onao)'>Standard Patterns using Ol Onal Digits (onao)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Outlined Digits (outlined)' href='#Standard Patterns using Outlined Digits (outlined)'>Standard Patterns using Outlined Digits (outlined)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target' rowSpan='2'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Standard Patterns using Sunuwar Digits (sunu)' href='#Standard Patterns using Sunuwar Digits (sunu)'>Standard Patterns using Sunuwar Digits (sunu)</a></td>
+	<td class='source'>standard-currency</td>
+	<td class='source' rowSpan='3'>oc</td></tr>
+  <tr>
+	<td class='source'>standard-percent</td>
+	<td class='target'>#,##0 %</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>accounting-currency</td>
+	<td class='target'>#,##0.00¤;(#,##0.00¤)</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>#,##0.00¤</td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Garay Digits (gara)' href='#Currency Unit Patterns using Garay Digits (gara)'>Currency Unit Patterns using Garay Digits (gara)</a></td>
+	<td class='source' rowSpan='8'>currencies-other</td>
+	<td class='source' rowSpan='9'>oc</td>
+	<td class='target' rowSpan='8'>{0} {1}</td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Gurung Khema Digits (gukh)' href='#Currency Unit Patterns using Gurung Khema Digits (gukh)'>Currency Unit Patterns using Gurung Khema Digits (gukh)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Kirat Rai Digits (krai)' href='#Currency Unit Patterns using Kirat Rai Digits (krai)'>Currency Unit Patterns using Kirat Rai Digits (krai)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Currency Unit Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Myanmar Pao Digits (mymrpao)' href='#Currency Unit Patterns using Myanmar Pao Digits (mymrpao)'>Currency Unit Patterns using Myanmar Pao Digits (mymrpao)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Ol Onal Digits (onao)' href='#Currency Unit Patterns using Ol Onal Digits (onao)'>Currency Unit Patterns using Ol Onal Digits (onao)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Outlined Digits (outlined)' href='#Currency Unit Patterns using Outlined Digits (outlined)'>Currency Unit Patterns using Outlined Digits (outlined)</a></td></tr>
+  <tr>
+	<td class='source'><a name='Currency Unit Patterns using Sunuwar Digits (sunu)' href='#Currency Unit Patterns using Sunuwar Digits (sunu)'>Currency Unit Patterns using Sunuwar Digits (sunu)</a></td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Garay Digits (gara)' href='#Miscellaneous Patterns using Garay Digits (gara)'>Miscellaneous Patterns using Garay Digits (gara)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Gurung Khema Digits (gukh)' href='#Miscellaneous Patterns using Gurung Khema Digits (gukh)'>Miscellaneous Patterns using Gurung Khema Digits (gukh)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Kirat Rai Digits (krai)' href='#Miscellaneous Patterns using Kirat Rai Digits (krai)'>Miscellaneous Patterns using Kirat Rai Digits (krai)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Miscellaneous Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Miscellaneous Patterns using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Myanmar Pao Digits (mymrpao)' href='#Miscellaneous Patterns using Myanmar Pao Digits (mymrpao)'>Miscellaneous Patterns using Myanmar Pao Digits (mymrpao)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Ol Onal Digits (onao)' href='#Miscellaneous Patterns using Ol Onal Digits (onao)'>Miscellaneous Patterns using Ol Onal Digits (onao)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Outlined Digits (outlined)' href='#Miscellaneous Patterns using Outlined Digits (outlined)'>Miscellaneous Patterns using Outlined Digits (outlined)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='4'><a name='Miscellaneous Patterns using Sunuwar Digits (sunu)' href='#Miscellaneous Patterns using Sunuwar Digits (sunu)'>Miscellaneous Patterns using Sunuwar Digits (sunu)</a></td>
+	<td class='source' rowSpan='2'>approximately</td>
+	<td class='source'>oc</td>
+	<td class='target'>≈{0}</td></tr>
+  <tr>
+	<td class='source' rowSpan='3'>oc_ES</td>
+	<td class='target'>~{0}</td></tr>
+  <tr>
+	<td class='source'>atLeast</td>
+	<td class='target'>Mès de {0}</td></tr>
+  <tr>
+	<td class='source'>range</td>
+	<td class='target'>{0}-{1}</td></tr>
+  <tr>
+	<td class='source' rowSpan='96'><a name='Compact Decimal Formatting (Other Numbering Systems)' href='#Compact Decimal Formatting (Other Numbering Systems)'>Compact Decimal Formatting (Other Numbering Systems)</a></td>
+	<td class='source' rowSpan='12'><a name='Short Currency using Garay Digits (gara)' href='#Short Currency using Garay Digits (gara)'>Short Currency using Garay Digits (gara)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='source' rowSpan='96'>oc</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Gurung Khema Digits (gukh)' href='#Short Currency using Gurung Khema Digits (gukh)'>Short Currency using Gurung Khema Digits (gukh)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Kirat Rai Digits (krai)' href='#Short Currency using Kirat Rai Digits (krai)'>Short Currency using Kirat Rai Digits (krai)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Myanmar Eastern Pwo Karen Digits (mymrepka)' href='#Short Currency using Myanmar Eastern Pwo Karen Digits (mymrepka)'>Short Currency using Myanmar Eastern Pwo Karen Digits (mymrepka)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Myanmar Pao Digits (mymrpao)' href='#Short Currency using Myanmar Pao Digits (mymrpao)'>Short Currency using Myanmar Pao Digits (mymrpao)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Ol Onal Digits (onao)' href='#Short Currency using Ol Onal Digits (onao)'>Short Currency using Ol Onal Digits (onao)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Outlined Digits (outlined)' href='#Short Currency using Outlined Digits (outlined)'>Short Currency using Outlined Digits (outlined)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='12'><a name='Short Currency using Sunuwar Digits (sunu)' href='#Short Currency using Sunuwar Digits (sunu)'>Short Currency using Sunuwar Digits (sunu)</a></td>
+	<td class='source'>4-digits-short-other</td>
+	<td class='target'>0K¤</td></tr>
+  <tr>
+	<td class='source'>5-digits-short-other</td>
+	<td class='target'>00K¤</td></tr>
+  <tr>
+	<td class='source'>6-digits-short-other</td>
+	<td class='target'>000K¤</td></tr>
+  <tr>
+	<td class='source'>7-digits-short-other</td>
+	<td class='target'>0M¤</td></tr>
+  <tr>
+	<td class='source'>8-digits-short-other</td>
+	<td class='target'>00M¤</td></tr>
+  <tr>
+	<td class='source'>9-digits-short-other</td>
+	<td class='target'>000M¤</td></tr>
+  <tr>
+	<td class='source'>10-digits-short-other</td>
+	<td class='target'>0G¤</td></tr>
+  <tr>
+	<td class='source'>11-digits-short-other</td>
+	<td class='target'>00G¤</td></tr>
+  <tr>
+	<td class='source'>12-digits-short-other</td>
+	<td class='target'>000G¤</td></tr>
+  <tr>
+	<td class='source'>13-digits-short-other</td>
+	<td class='target'>0T¤</td></tr>
+  <tr>
+	<td class='source'>14-digits-short-other</td>
+	<td class='target'>00T¤</td></tr>
+  <tr>
+	<td class='source'>15-digits-short-other</td>
+	<td class='target'>000T¤</td></tr>
+  <tr>
+	<td class='source' rowSpan='263'><a name='Special' href='#Special'>Special</a></td>
+	<td class='source' rowSpan='263'><a name='Suppress' href='#Suppress'>Suppress</a></td>
+	<td class='source' rowSpan='263'><a name='ISO 8601' href='#ISO 8601'>ISO 8601</a></td>
+	<td class='source'>Day Periods - abbreviated - Formatting-am</td>
+	<td class='source' rowSpan='6'>oc_ES</td>
+	<td class='target' rowSpan='5'>a. m.</td></tr>
+  <tr>
+	<td class='source'>Day Periods - abbreviated - Standalone-am</td></tr>
+  <tr>
+	<td class='source'>Day Periods - narrow - Formatting-am</td></tr>
+  <tr>
+	<td class='source'>Day Periods - narrow - Standalone-am</td></tr>
+  <tr>
+	<td class='source'>Day Periods - wide - Formatting-am</td></tr>
+  <tr>
+	<td class='source'>Day Periods - wide - Standalone-am</td>
+	<td class='target'>a. m.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimenge</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dim</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimenge</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dim</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dg</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>D</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dg</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>D</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Formatting-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>dg</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>di</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Standalone-sun</td>
+	<td class='source'>oc</td>
+	<td class='target'>dg</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>di</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Formatting-sun</td>
+	<td class='source' rowSpan='3'>oc</td>
+	<td class='target' rowSpan='2'>dimenge</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Standalone-sun</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - wide-0</td>
+	<td class='target'>Abans Jèsus-Crist</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>abans Jesucrist</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - wide-1</td>
+	<td class='source'>oc</td>
+	<td class='target'>despús Jèsus-Crist</td></tr>
+  <tr>
+	<td class='source' rowSpan='7'>oc_ES</td>
+	<td class='target'>dempús de Crist</td></tr>
+  <tr>
+	<td class='source'>Day Periods - abbreviated - Formatting-pm</td>
+	<td class='target' rowSpan='5'>p. m.</td></tr>
+  <tr>
+	<td class='source'>Day Periods - abbreviated - Standalone-pm</td></tr>
+  <tr>
+	<td class='source'>Day Periods - narrow - Formatting-pm</td></tr>
+  <tr>
+	<td class='source'>Day Periods - narrow - Standalone-pm</td></tr>
+  <tr>
+	<td class='source'>Day Periods - wide - Formatting-pm</td></tr>
+  <tr>
+	<td class='source'>Day Periods - wide - Standalone-pm</td>
+	<td class='target'>p. m.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>diluns</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>del</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>diluns</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>del</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dl</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>L</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dl</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>L</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Formatting-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>dl</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>de</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Standalone-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>dl</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>de</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Formatting-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>diluns</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>deluns</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Standalone-mon</td>
+	<td class='source'>oc</td>
+	<td class='target'>diluns</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>deluns</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimars</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dma</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimars</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dma</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dm</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dm</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Formatting-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>dm</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>da</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Standalone-tue</td>
+	<td class='source'>oc</td>
+	<td class='target'>dm</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>da</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Formatting-tue</td>
+	<td class='source' rowSpan='3'>oc</td>
+	<td class='target' rowSpan='2'>dimars</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Standalone-tue</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-wed</td>
+	<td class='target'>dimècres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dmè</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimècres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dmè</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dc</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>X</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dc</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>X</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Formatting-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>dc</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dm</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Standalone-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>dc</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dm</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Formatting-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimècres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dimèrcles</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Standalone-wed</td>
+	<td class='source'>oc</td>
+	<td class='target'>dimècres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dimèrcles</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-thu</td>
+	<td class='source'>oc</td>
+	<td class='target'>dijòus</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dij</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-thu</td>
+	<td class='source'>oc</td>
+	<td class='target'>dijòus</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dij</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-thu</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dj</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>J</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-thu</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dj</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>J</td></tr>
+  <tr>
+	<td class='source'>Days - short - Formatting-thu</td>
+	<td class='source' rowSpan='3'>oc</td>
+	<td class='target' rowSpan='2'>dj</td></tr>
+  <tr>
+	<td class='source'>Days - short - Standalone-thu</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Formatting-thu</td>
+	<td class='target'>dijòus</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dijaus</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Standalone-thu</td>
+	<td class='source'>oc</td>
+	<td class='target'>dijòus</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dijaus</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>divendres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>diu</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>divendres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>diu</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dv</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>U</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>Dv</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>U</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Formatting-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>dv</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>du</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - short - Standalone-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>dv</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>du</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Formatting-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>divendres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>diuendres</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - wide - Standalone-fri</td>
+	<td class='source'>oc</td>
+	<td class='target'>divendres</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>diuendres</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Formatting-sat</td>
+	<td class='source'>oc</td>
+	<td class='target'>dissabte</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dis</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - abbreviated - Standalone-sat</td>
+	<td class='source'>oc</td>
+	<td class='target'>dissabte</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dis</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Formatting-sat</td>
+	<td class='source'>oc</td>
+	<td class='target'>Ds</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>S</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Days - narrow - Standalone-sat</td>
+	<td class='source'>oc</td>
+	<td class='target'>Ds</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>S</td></tr>
+  <tr>
+	<td class='source'>Days - short - Formatting-sat</td>
+	<td class='source' rowSpan='5'>oc</td>
+	<td class='target' rowSpan='2'>ds</td></tr>
+  <tr>
+	<td class='source'>Days - short - Standalone-sat</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Formatting-sat</td>
+	<td class='target' rowSpan='2'>dissabte</td></tr>
+  <tr>
+	<td class='source'>Days - wide - Standalone-sat</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - abbreviated-0</td>
+	<td class='target'>Ab. J.C.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>a. C.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - abbreviated-1</td>
+	<td class='source'>oc</td>
+	<td class='target'>de. J.-C.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>d. C.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - narrow-0</td>
+	<td class='source'>oc</td>
+	<td class='target'>Ab. J.C.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>a. C.</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Eras - narrow-1</td>
+	<td class='source'>oc</td>
+	<td class='target'>CE</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>d. C.</td></tr>
+  <tr>
+	<td class='source'>Quarters - wide - Formatting-1</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>1èr trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Formatting-2</td>
+	<td class='target'>2nd trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>2au trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Formatting-3</td>
+	<td class='source'>oc</td>
+	<td class='target'>3en trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>3au trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Formatting-4</td>
+	<td class='source'>oc</td>
+	<td class='target'>4en trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>4au trimèstre</td></tr>
+  <tr>
+	<td class='source'>Quarters - wide - Standalone-1</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>1èr trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Standalone-2</td>
+	<td class='target'>2nd trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>2au trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Standalone-3</td>
+	<td class='source'>oc</td>
+	<td class='target'>3en trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>3au trimèstre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Quarters - wide - Standalone-4</td>
+	<td class='source'>oc</td>
+	<td class='target'>4en trimèstre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>4au trimèstre</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Formatting-1</td>
+	<td class='source' rowSpan='9'>oc</td>
+	<td class='target'>T1</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Formatting-2</td>
+	<td class='target'>T2</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Formatting-3</td>
+	<td class='target'>T3</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Formatting-4</td>
+	<td class='target'>T4</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Standalone-1</td>
+	<td class='target'>T1</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Standalone-2</td>
+	<td class='target'>T2</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Standalone-3</td>
+	<td class='target'>T3</td></tr>
+  <tr>
+	<td class='source'>Quarters - abbreviated - Standalone-4</td>
+	<td class='target'>T4</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M1</td>
+	<td class='target'>de genièr</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>gèr</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M2</td>
+	<td class='source'>oc</td>
+	<td class='target'>de febrièr</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>hereuèr</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M3</td>
+	<td class='source'>oc</td>
+	<td class='target'>de març</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>març</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M4</td>
+	<td class='source'>oc</td>
+	<td class='target'>d’abril</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>abriu</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M5</td>
+	<td class='source'>oc</td>
+	<td class='target'>de mai</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>mai</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M6</td>
+	<td class='source'>oc</td>
+	<td class='target'>de junh</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>junh</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M7</td>
+	<td class='source'>oc</td>
+	<td class='target'>de julhet</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>juriòl</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M8</td>
+	<td class='source'>oc</td>
+	<td class='target'>d’agost</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>agost</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M9</td>
+	<td class='source'>oc</td>
+	<td class='target'>de setembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>seteme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M10</td>
+	<td class='source'>oc</td>
+	<td class='target'>d’octòbre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>octobre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M11</td>
+	<td class='source'>oc</td>
+	<td class='target'>de novembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>noveme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Formatting-M12</td>
+	<td class='source'>oc</td>
+	<td class='target'>de decembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>deseme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M1</td>
+	<td class='source'>oc</td>
+	<td class='target'>genièr</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>gèr</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M2</td>
+	<td class='source'>oc</td>
+	<td class='target'>febrièr</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>hereuèr</td></tr>
+  <tr>
+	<td class='source'>Months - wide - Standalone-M3</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>març</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M4</td>
+	<td class='target'>abril</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>abriu</td></tr>
+  <tr>
+	<td class='source'>Months - wide - Standalone-M5</td>
+	<td class='source' rowSpan='3'>oc</td>
+	<td class='target'>mai</td></tr>
+  <tr>
+	<td class='source'>Months - wide - Standalone-M6</td>
+	<td class='target'>junh</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M7</td>
+	<td class='target'>julhet</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>juriòl</td></tr>
+  <tr>
+	<td class='source'>Months - wide - Standalone-M8</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>agost</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M9</td>
+	<td class='target'>setembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>seteme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M10</td>
+	<td class='source'>oc</td>
+	<td class='target'>octòbre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>octobre</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M11</td>
+	<td class='source'>oc</td>
+	<td class='target'>novembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>noveme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - wide - Standalone-M12</td>
+	<td class='source'>oc</td>
+	<td class='target'>decembre</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>deseme</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M1</td>
+	<td class='source'>oc</td>
+	<td class='target'>gen.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>gèr</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M2</td>
+	<td class='source'>oc</td>
+	<td class='target'>feb.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>her</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M3</td>
+	<td class='source'>oc</td>
+	<td class='target'>març</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>mar</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M4</td>
+	<td class='source'>oc</td>
+	<td class='target'>abr.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>abr</td></tr>
+  <tr>
+	<td class='source'>Months - abbreviated - Formatting-M5</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>mai</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M6</td>
+	<td class='target'>junh</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>jun</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M7</td>
+	<td class='source'>oc</td>
+	<td class='target'>jul.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>jur</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M8</td>
+	<td class='source'>oc</td>
+	<td class='target'>ago.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>ago</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M9</td>
+	<td class='source'>oc</td>
+	<td class='target'>set.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>set</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M10</td>
+	<td class='source'>oc</td>
+	<td class='target'>oct.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>oct</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M11</td>
+	<td class='source'>oc</td>
+	<td class='target'>nov.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>nov</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Formatting-M12</td>
+	<td class='source'>oc</td>
+	<td class='target'>dec.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dec</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M1</td>
+	<td class='source'>oc</td>
+	<td class='target'>gen.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>gèr</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M2</td>
+	<td class='source'>oc</td>
+	<td class='target'>feb.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>her</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M3</td>
+	<td class='source'>oc</td>
+	<td class='target'>març</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>mar</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M4</td>
+	<td class='source'>oc</td>
+	<td class='target'>abr.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>abr</td></tr>
+  <tr>
+	<td class='source'>Months - abbreviated - Standalone-M5</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>mai</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M6</td>
+	<td class='target'>junh</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>jun</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M7</td>
+	<td class='source'>oc</td>
+	<td class='target'>jul.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>jur</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M8</td>
+	<td class='source'>oc</td>
+	<td class='target'>ago.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>ago</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M9</td>
+	<td class='source'>oc</td>
+	<td class='target'>set.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>set</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M10</td>
+	<td class='source'>oc</td>
+	<td class='target'>oct.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>oct</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M11</td>
+	<td class='source'>oc</td>
+	<td class='target'>nov.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>nov</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - abbreviated - Standalone-M12</td>
+	<td class='source'>oc</td>
+	<td class='target'>dec.</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>dec</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M1</td>
+	<td class='source' rowSpan='2'>oc</td>
+	<td class='target'>G</td></tr>
+  <tr>
+	<td class='source' rowSpan='2'>Months - narrow - Formatting-M2</td>
+	<td class='target'>F</td></tr>
+  <tr>
+	<td class='source'>oc_ES</td>
+	<td class='target'>H</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M3</td>
+	<td class='source' rowSpan='22'>oc</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M4</td>
+	<td class='target'>A</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M5</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M6</td>
+	<td class='target' rowSpan='2'>J</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M7</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M8</td>
+	<td class='target'>A</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M9</td>
+	<td class='target'>S</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M10</td>
+	<td class='target'>O</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M11</td>
+	<td class='target'>N</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Formatting-M12</td>
+	<td class='target'>D</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M1</td>
+	<td class='target'>G</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M2</td>
+	<td class='target'>F</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M3</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M4</td>
+	<td class='target'>A</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M5</td>
+	<td class='target'>M</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M6</td>
+	<td class='target' rowSpan='2'>J</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M7</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M8</td>
+	<td class='target'>A</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M9</td>
+	<td class='target'>S</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M10</td>
+	<td class='target'>O</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M11</td>
+	<td class='target'>N</td></tr>
+  <tr>
+	<td class='source'>Months - narrow - Standalone-M12</td>
+	<td class='target'>D</td></tr>
+</table>
+<!-- end main body -->
+	</div>
+	<div style='text-align: center; margin-top:2em; margin-bottom: 60em;'><br>
+		<a href='https://www.unicode.org/copyright.html'>
+			<img src='https://www.unicode.org/img/hb_notice.gif' style='border-style: none; width: 216px; height:50px;'
+				alt='Access to Copyright and terms of use'>
+		</a>
+	</div>
+
+</body>
+</html>
