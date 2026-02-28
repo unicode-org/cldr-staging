@@ -9,7 +9,7 @@ The main branch doesn't contain any charts, they are on the `charts/49` etc. bra
 ## What is production data, where does it come from, why does this repo exist?
 
 - Production data means what you get from downloads at <https://cldr.unicode.org/index/downloads>
-- The [inheritance marker](https://unicode.org/reports/tr35/47/tr35.html#inheritance-marker)(`↑↑↑`) is in the source git repo. It is used to indicate that the data for a locale comes from its parent locale or language. The inheritance markers are replaced by the actual values in the production data.
+- The [inheritance marker](https://unicode.org/reports/tr35/tr35.html#inheritance-marker)(`↑↑↑`) is in the source git repo. It is used to indicate that the data for a locale comes from its parent locale or language. The inheritance markers are replaced by the actual values in the production data.
 - The tool GenerateProductionData can generate production data (hence the name) from the source repo.
 - We use this **cldr-staging** repo to contain a copy of the production data.
 
