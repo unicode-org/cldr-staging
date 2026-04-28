@@ -83,19 +83,431 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class='source' rowSpan='2'><a name='Numbers' href='#Numbers'>Numbers</a></td>
+			<td class='source' rowSpan='67'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+			<td class='source' rowSpan='61'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+			<td class='source' rowSpan='2'><a name='Numeric separator' href='#Numeric separator'>Numeric separator</a></td>
+			<td class='source'>Date</td>
+			<td class='source' rowSpan='89'>rw</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>-</td>
+			<td class='target' rowSpan='8'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Time</td>
+			<td class='target'>:</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='8'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source'>GyM</td>
+			<td class='target'>MM-y G</td>
+			<td class='target'>MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd</td>
+			<td class='target'>dd-MM-y G</td>
+			<td class='target'>dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd</td>
+			<td class='target'>E, dd-MM-y G</td>
+			<td class='target'>E, dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>Md</td>
+			<td class='target'>dd-MM</td>
+			<td class='target'>dd/MM</td>
+		</tr>
+		<tr>
+			<td class='source'>MEd</td>
+			<td class='target'>E, dd-MM</td>
+			<td class='target'>E, dd/MM</td>
+		</tr>
+		<tr>
+			<td class='source'>yM</td>
+			<td class='target'>MM-y</td>
+			<td class='target'>MM/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMd</td>
+			<td class='target'>dd-MM-y</td>
+			<td class='target'>dd/MM/y</td>
+			<td class='target'>basic</td>
+		</tr>
+		<tr>
+			<td class='source'>yMEd</td>
+			<td class='target'>E, dd-MM-y</td>
+			<td class='target'>E, dd/MM/y</td>
+			<td class='target' rowSpan='58'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='39'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+			<td class='source'>Gy/G</td>
+			<td class='target'>y G–y G</td>
+			<td class='target'>y G – y G</td>
+		</tr>
+		<tr>
+			<td class='source'>Gy/y</td>
+			<td class='target'>y–y G</td>
+			<td class='target'>y – y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/G</td>
+			<td class='target'>MM-y G– MM-y G</td>
+			<td class='target'>MM/y G – MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/M</td>
+			<td class='target' rowSpan='2'>MM-y– MM-y G</td>
+			<td class='target' rowSpan='2'>MM/y – MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/d</td>
+			<td class='target'>dd-MM-y– dd-MM-y G</td>
+			<td class='target'>dd/MM/y – dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/G</td>
+			<td class='target'>dd-MM-y G – dd-MM-y G</td>
+			<td class='target'>dd/MM/y G – dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/M</td>
+			<td class='target' rowSpan='2'>dd-MM-y – dd-MM-y G</td>
+			<td class='target' rowSpan='2'>dd/MM/y – dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/d</td>
+			<td class='target'>E, dd-MM-y – E, dd-MM-y G</td>
+			<td class='target'>E, dd/MM/y – E, dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/G</td>
+			<td class='target'>E, dd-MM-y G–E, dd-MM-y G</td>
+			<td class='target'>E, dd/MM/y G – E, dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/M</td>
+			<td class='target' rowSpan='2'>E, dd-MM-y – E, dd-MM-y G</td>
+			<td class='target' rowSpan='2'>E, dd/MM/y – E, dd/MM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/M</td>
+			<td class='target'>MMM–MMM y G</td>
+			<td class='target'>MMM – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/d</td>
+			<td class='target'>d–d MMM y G</td>
+			<td class='target'>d – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/G</td>
+			<td class='target'>d-MMM-y G–d-MMM-y G</td>
+			<td class='target'>d/MMM/y G – d/MMM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/M</td>
+			<td class='target'>d MMM–d MMM y G</td>
+			<td class='target'>d MMM – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/y</td>
+			<td class='target'>d-MMM-y–d-MMM-y G</td>
+			<td class='target'>d/MMM/y – d/MMM/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/d</td>
+			<td class='target'>E, d MMM–d MMM y G</td>
+			<td class='target'>E, d MMM – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/G</td>
+			<td class='target'>E, d MMM y G–E, d MMM y G</td>
+			<td class='target'>E, d MMM y G – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/M</td>
+			<td class='target'>E, d MMM y–E, d MMM G</td>
+			<td class='target'>E, d MMM – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/y</td>
+			<td class='target'>E, d MMM y –E, d MMM y G</td>
+			<td class='target'>E, d MMM y – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>M/M</td>
+			<td class='target'>MM–MM</td>
+			<td class='target'>M – M</td>
+		</tr>
+		<tr>
+			<td class='source'>Md/d</td>
+			<td class='target' rowSpan='2'>dd-MM – dd-MM</td>
+			<td class='target' rowSpan='2'>dd/MM – dd/MM</td>
+		</tr>
+		<tr>
+			<td class='source'>Md/M</td>
+		</tr>
+		<tr>
+			<td class='source'>MEd/d</td>
+			<td class='target' rowSpan='2'>E, dd-MM – E, dd-MM</td>
+			<td class='target' rowSpan='2'>E, dd/MM – E, dd/MM</td>
+		</tr>
+		<tr>
+			<td class='source'>MEd/M</td>
+		</tr>
+		<tr>
+			<td class='source'>MMMd/d</td>
+			<td class='target'>d–d MMM</td>
+			<td class='target'>d – d MMM</td>
+		</tr>
+		<tr>
+			<td class='source'>yM/M</td>
+			<td class='target'>MM-y –MM-y</td>
+			<td class='target' rowSpan='2'>M/y – M/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yM/y</td>
+			<td class='target'>MM-y – MM-y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMd/d</td>
+			<td class='target'>dd-MM-y – dd-MM-y </td>
+			<td class='target' rowSpan='3'>d/M/y – d/M/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMd/M</td>
+			<td class='target' rowSpan='2'>dd-MM-y – dd-MM-y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMEd/d</td>
+			<td class='target'>E, dd–dd-MM–y – E, dd-dd-MM–y </td>
+			<td class='target' rowSpan='3'>E, d/M/y – E, d/M/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMEd/M</td>
+			<td class='target' rowSpan='2'>E, dd-MM-y –E, dd-MM-y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMEd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMMM/M</td>
+			<td class='target'>MMM–MMM y</td>
+			<td class='target'>MMM – MMM y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMMMd/d</td>
+			<td class='target'>d–d MMM y</td>
+			<td class='target' rowSpan='2'>d – d MMM y</td>
+		</tr>
+		<tr>
+			<td class='source'>yMMMd/M</td>
+			<td class='target'>d MMM – d MMM y</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Formats - Intervals - 12 Hour Time Formats' href='#Formats - Intervals - 12 Hour Time Formats'>Formats - Intervals - 12 Hour Time Formats</a></td>
+			<td class='source'>h/h</td>
+			<td class='target'>h–h a</td>
+			<td class='target'>h – h a</td>
+		</tr>
+		<tr>
+			<td class='source'>hm/h</td>
+			<td class='target' rowSpan='2'>h:mm–h:mm a</td>
+			<td class='target' rowSpan='2'>h:mm – h:mm a</td>
+		</tr>
+		<tr>
+			<td class='source'>hm/m</td>
+		</tr>
+		<tr>
+			<td class='source'>hmv/h</td>
+			<td class='target' rowSpan='2'>h:mm–h:mm a v</td>
+			<td class='target' rowSpan='2'>h:mm – h:mm a v</td>
+		</tr>
+		<tr>
+			<td class='source'>hmv/m</td>
+		</tr>
+		<tr>
+			<td class='source'>hv/h</td>
+			<td class='target'>h–h a v</td>
+			<td class='target'>h – h a v</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Formats - Intervals - 24 Hour Time Formats' href='#Formats - Intervals - 24 Hour Time Formats'>Formats - Intervals - 24 Hour Time Formats</a></td>
+			<td class='source'>H/H</td>
+			<td class='target'>HH–HH</td>
+			<td class='target'>HH – HH</td>
+		</tr>
+		<tr>
+			<td class='source'>Hm/H</td>
+			<td class='target' rowSpan='2'>HH:mm–HH:mm</td>
+			<td class='target' rowSpan='2'>HH:mm – HH:mm</td>
+		</tr>
+		<tr>
+			<td class='source'>Hm/m</td>
+		</tr>
+		<tr>
+			<td class='source'>Hmv/H</td>
+			<td class='target' rowSpan='2'>HH:mm–HH:mm v</td>
+			<td class='target' rowSpan='2'>HH:mm – HH:mm v</td>
+		</tr>
+		<tr>
+			<td class='source'>Hmv/m</td>
+		</tr>
+		<tr>
+			<td class='source'>Hv/H</td>
+			<td class='target'>HH–HH v</td>
+			<td class='target'>HH – HH v</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Generic' href='#Generic'>Generic</a></td>
+			<td class='source' rowSpan='2'><a name='Numeric separator' href='#Numeric separator'>Numeric separator</a></td>
+			<td class='source'>Date</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>-</td>
+		</tr>
+		<tr>
+			<td class='source'>Time</td>
+			<td class='target'>:</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='4'><a name='Formats - Standard - Date Formats' href='#Formats - Standard - Date Formats'>Formats - Standard - Date Formats</a></td>
+			<td class='source'>full</td>
+			<td class='target'>EEEE, G y MMMM dd</td>
+			<td class='target'>EEEE, d MMMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>long</td>
+			<td class='target'>G y MMMM d</td>
+			<td class='target'>d MMMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>medium</td>
+			<td class='target'>G y MMM d</td>
+			<td class='target'>d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>short</td>
+			<td class='target'>GGGGG yy/MM/dd</td>
+			<td class='target'>dd/MM/y GGGGG</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Numbers' href='#Numbers'>Numbers</a></td>
 			<td class='source' rowSpan='2'><a name='Symbols' href='#Symbols'>Symbols</a></td>
-			<td class='source' rowSpan='2'><a name='Symbols ' href='#Symbols '>Symbols </a></td>
+			<td class='source' rowSpan='2'><a name='Symbols using Chisoi Digits (chis)' href='#Symbols using Chisoi Digits (chis)'>Symbols using Chisoi Digits (chis)</a></td>
 			<td class='source'>decimal</td>
-			<td class='source' rowSpan='2'>rw</td>
-			<td class='target'>,</td>
+			<td class='target' rowSpan='3'>▷missing◁</td>
 			<td class='target'>.</td>
-			<td class='target' rowSpan='2'>basic</td>
+			<td class='target' rowSpan='3'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>group</td>
-			<td class='target'>.</td>
 			<td class='target'>,</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
+			<td class='source'><a name='Currency Unit Patterns using Chisoi Digits (chis)' href='#Currency Unit Patterns using Chisoi Digits (chis)'>Currency Unit Patterns using Chisoi Digits (chis)</a></td>
+			<td class='source'>currencies-other</td>
+			<td class='target'>{0} {1}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='17'><a name='Characters' href='#Characters'>Characters</a></td>
+			<td class='source' rowSpan='17'><a name='Emoji Symbols' href='#Emoji Symbols'>Emoji Symbols</a></td>
+			<td class='source' rowSpan='17'><a name='alphanum' href='#alphanum'>alphanum</a></td>
+			<td class='source'>🈁 –keywords</td>
+			<td class='target'>…<br>ココ</td>
+			<td class='target' rowSpan='17'>…</td>
+			<td class='target' rowSpan='17'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>🈂 –keywords</td>
+			<td class='target'>…<br>サ</td>
+		</tr>
+		<tr>
+			<td class='source'>🈷 –keywords</td>
+			<td class='target'>…<br>月</td>
+		</tr>
+		<tr>
+			<td class='source'>🈶 –keywords</td>
+			<td class='target'>…<br>有</td>
+		</tr>
+		<tr>
+			<td class='source'>🈯 –keywords</td>
+			<td class='target'>…<br>指</td>
+		</tr>
+		<tr>
+			<td class='source'>🉐 –keywords</td>
+			<td class='target'>…<br>得</td>
+		</tr>
+		<tr>
+			<td class='source'>🈹 –keywords</td>
+			<td class='target'>…<br>割</td>
+		</tr>
+		<tr>
+			<td class='source'>🈚 –keywords</td>
+			<td class='target'>…<br>無</td>
+		</tr>
+		<tr>
+			<td class='source'>🈲 –keywords</td>
+			<td class='target'>…<br>禁</td>
+		</tr>
+		<tr>
+			<td class='source'>🉑 –keywords</td>
+			<td class='target'>…<br>可</td>
+		</tr>
+		<tr>
+			<td class='source'>🈸 –keywords</td>
+			<td class='target'>…<br>申</td>
+		</tr>
+		<tr>
+			<td class='source'>🈴 –keywords</td>
+			<td class='target'>…<br>合</td>
+		</tr>
+		<tr>
+			<td class='source'>🈳 –keywords</td>
+			<td class='target'>…<br>空</td>
+		</tr>
+		<tr>
+			<td class='source'>㊗ –keywords</td>
+			<td class='target'>…<br>祝</td>
+		</tr>
+		<tr>
+			<td class='source'>㊙ –keywords</td>
+			<td class='target'>…<br>秘</td>
+		</tr>
+		<tr>
+			<td class='source'>🈺 –keywords</td>
+			<td class='target'>…<br>営</td>
+		</tr>
+		<tr>
+			<td class='source'>🈵 –keywords</td>
+			<td class='target'>…<br>満</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Special' href='#Special'>Special</a></td>
+			<td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td>
+			<td class='source' rowSpan='2'><a name='Generic' href='#Generic'>Generic</a></td>
+			<td class='source'>Formats - Standard - Date Formats-full</td>
+			<td class='target'>GyMMMMEEEEdd</td>
+			<td class='target'>GyMMMMEEEEd</td>
+			<td class='target' rowSpan='2'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'>Formats - Standard - Date Formats-short</td>
+			<td class='target'>GGGGGyyMMdd</td>
+			<td class='target'>GGGGGyMMdd</td>
 		</tr>
 	</tbody>
 </table>

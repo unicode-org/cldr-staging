@@ -93,7 +93,104 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class='source' rowSpan='2'><a name='49.0β' href='#49.0β'>49.0β</a></td>
+			<td class='source' rowSpan='20'><a name='49.0β' href='#49.0β'>49.0β</a></td>
+			<td class='source' rowSpan='18'>ldml</td>
+			<td class='target'>​/characters/</td>
+			<td class='target'>+nestedBracketReplacement</td>
+			<td class='target'><div>+bracket §d ⟪any⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar/</td>
+			<td class='target'>+dayOfMonths</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats/</td>
+			<td class='target'>+numericSeparators</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/appendItems/</td>
+			<td class='target'>appendItem</td>
+			<td class='target'><div>request ⟪literal/Day, …⟫➠⟪literal/Date-Timezone, Day, Time-Day-Of-Week, …⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/availableFormats/</td>
+			<td class='target'>dateFormatItem</td>
+			<td class='target'><div>id ⟪regex/((E|EEEE)?(H|HH|h|hh|Bh)(m|ms|mm|mmss)?(Z|z|zzzz|v|vvvv)?)|(ms|mmss)|((G|GGGGG)?(y|yy|yyyy)((M{1,4}((E|EEEE|cccc)?(d|dd))?)|(w|Q|QQQ|QQQQ))?)|(U(M|MMM)d?)|(M{1,4}(((E|EEEE|cccc)?(d|dd))|W)?)|((E|EEEE)?d)|(E|EEEE)⟫➠⟪regex/((E|EEEE)?(H|HH|h|hh|Bh)(m|ms|mm|mmss)?(v|vvvv)?)|(ms|mmss)|((G|GGGGG)?(y|yy|yyyy)((M{1,4}((E|EEEE|cccc)?(d{1,3}))?)|(w|Q|QQQ|QQQQ))?)|(U(M|MMM)d?)|(M{1,4}(((E|EEEE|cccc)?(d{1,3}))|W)?)|((E|EEEE)?d)|(E|EEEE)⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats/</td>
+			<td class='target'>+intervalFormatRanges</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dateTimeFormats​/intervalFormats​/intervalFormatRanges/</td>
+			<td class='target'>+intervalFormatRange</td>
+			<td class='target'><div>+type §d ⟪literal/numeric, non-numeric, mixed⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target' rowSpan='3'>​/dates​/calendars​/calendar​/dateTimeFormats​/numericSeparators/</td>
+			<td class='target'>+default</td>
+			<td class='target'><div>⊕</div></td>
+		</tr>
+		<tr>
+			<td class='target'>+numericDateSeparator</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='target'>+numericTimeSeparator</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dayOfMonths/</td>
+			<td class='target'>+default</td>
+			<td class='target'><div>⊕</div></td>
+		</tr>
+		<tr>
+			<td class='target'>+dayOfMonthContext</td>
+			<td class='target'><div>+type §d ⟨format⟩</div></td>
+		</tr>
+		<tr>
+			<td class='target' rowSpan='2'>​/dates​/calendars​/calendar​/dayOfMonths​/dayOfMonthContext/</td>
+			<td class='target'>+default</td>
+			<td class='target'><div>⊕</div></td>
+		</tr>
+		<tr>
+			<td class='target'>+dayOfMonthWidth</td>
+			<td class='target'><div>+type §d ⟨abbreviated, wide⟩</div></td>
+		</tr>
+		<tr>
+			<td class='target'>​/dates​/calendars​/calendar​/dayOfMonths​/dayOfMonthContext​/dayOfMonthWidth/</td>
+			<td class='target'>+dayOfMonth</td>
+			<td class='target'><div>+type §d ⟪literal/1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32⟫</div><div>+ordinal §d ⟨zero, one, two, few, many, other⟩</div></td>
+		</tr>
+		<tr>
+			<td class='target' rowSpan='3'>​/dates​/timeZoneNames/</td>
+			<td class='target'>gmtFormat</td>
+			<td class='target'><div>alt ⟪literal/variant⟫➠⟪literal/utc⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>gmtUnknownFormat</td>
+			<td class='target'><div>alt ⟪literal/variant⟫➠⟪literal/utc⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>+dualOffsetFormat</td>
+			<td class='target'> </td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'>supplementalData</td>
+			<td class='target'>​/currencyData​/fractions/</td>
+			<td class='target'>info</td>
+			<td class='target'><div>cashRounding ⟪…⟫➠⟪… 20, …⟫</div></td>
+		</tr>
+		<tr>
+			<td class='target'>​/numberingSystems/</td>
+			<td class='target'>numberingSystem</td>
+			<td class='target'><div>digits ⟪unicodeset/[\p{Nd}[\u3007\u4E00\u4E03\u4E09\u4E5D\u4E8C\u4E94\u516B\u516D\u56DB][\U00011DE0-\U00011DE9]]⟫➠⟪unicodeset/[\p{Nd}[\u3007\u4E00\u4E03\u4E09\u4E5D\u4E8C\u4E94\u516B\u516D\u56DB][\U00011DE0-\U00011DE9\U00016DA0-\U00016DA9]]⟫</div></td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='48.1' href='#48.1'>48.1</a></td>
 			<td class='source'>ldml</td>
 			<td class='target'>​/numbers​/currencies/</td>
 			<td class='target'>currency</td>
