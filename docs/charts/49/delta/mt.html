@@ -83,14 +83,52 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class='source' rowSpan='12'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
-			<td class='source' rowSpan='3'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
-			<td class='source' rowSpan='12'><a name='Formats - Intervals - Range' href='#Formats - Intervals - Range'>Formats - Intervals - Range</a></td>
+			<td class='source' rowSpan='3'><a name='Locale Display Names' href='#Locale Display Names'>Locale Display Names</a></td>
+			<td class='source' rowSpan='3'><a name='Keys' href='#Keys'>Keys</a></td>
+			<td class='source' rowSpan='2'><a name='calendar' href='#calendar'>calendar</a></td>
+			<td class='source'>calendar-gregorian-core</td>
+			<td class='source' rowSpan='73'>mt</td>
+			<td class='target' rowSpan='6'>▷missing◁</td>
+			<td class='target' rowSpan='2'>Gregorjan</td>
+			<td class='target' rowSpan='4'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>calendar-iso8601-core</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='collation' href='#collation'>collation</a></td>
+			<td class='source'>collation-standard-core</td>
+			<td class='target'>Standard</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='19'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+			<td class='source' rowSpan='7'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+			<td class='source'><a name='Formats - Numeric - separator' href='#Formats - Numeric - separator'>Formats - Numeric - separator</a></td>
+			<td class='source'>Date</td>
+			<td class='target'>/</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source'>yMMMMd</td>
+			<td class='target'>d 'ta'’ MMMM, y</td>
+			<td class='target' rowSpan='2'>basic</td>
+		</tr>
+		<tr>
+			<td class='source'>yMMMMEd</td>
+			<td class='target'>E, d 'ta'’ MMMM, y</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Formats - Flexible - Append' href='#Formats - Flexible - Append'>Formats - Flexible - Append</a></td>
+			<td class='source'>Day-Of-Week</td>
+			<td class='target'>{0} {1}</td>
+			<td class='target'>{1}, {0}</td>
+			<td class='target' rowSpan='4'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Formats - Intervals - Range' href='#Formats - Intervals - Range'>Formats - Intervals - Range</a></td>
 			<td class='source'>mixed</td>
-			<td class='source' rowSpan='44'>mt</td>
-			<td class='target' rowSpan='27'>▷missing◁</td>
+			<td class='target' rowSpan='7'>▷missing◁</td>
 			<td class='target'>{0} – {1}</td>
-			<td class='target' rowSpan='3'>moderate</td>
 		</tr>
 		<tr>
 			<td class='source'>non-numeric</td>
@@ -111,25 +149,28 @@
 		</tr>
 		<tr>
 			<td class='source'>numeric</td>
-			<td class='target' rowSpan='2'>{0} – {1}</td>
+			<td class='target'>{0} – {1}</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='3'><a name='Generic' href='#Generic'>Generic</a></td>
+			<td class='source' rowSpan='5'><a name='Generic' href='#Generic'>Generic</a></td>
+			<td class='source'><a name='Formats - Numeric - separator' href='#Formats - Numeric - separator'>Formats - Numeric - separator</a></td>
+			<td class='source'>Date</td>
+			<td class='target'>/</td>
+			<td class='target'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Formats - Flexible - Append' href='#Formats - Flexible - Append'>Formats - Flexible - Append</a></td>
+			<td class='source'>Day-Of-Week</td>
+			<td class='target'>{0} {1}</td>
+			<td class='target'>{1}, {0}</td>
+			<td class='target'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Formats - Intervals - Range' href='#Formats - Intervals - Range'>Formats - Intervals - Range</a></td>
 			<td class='source'>mixed</td>
+			<td class='target' rowSpan='7'>▷missing◁</td>
+			<td class='target'>{0} – {1}</td>
 			<td class='target' rowSpan='3'>moderate</td>
-		</tr>
-		<tr>
-			<td class='source'>non-numeric</td>
-			<td class='target'>{0}–{1}</td>
-		</tr>
-		<tr>
-			<td class='source'>numeric</td>
-			<td class='target' rowSpan='2'>{0} – {1}</td>
-		</tr>
-		<tr>
-			<td class='source' rowSpan='3'><a name='Chinese' href='#Chinese'>Chinese</a></td>
-			<td class='source'>mixed</td>
-			<td class='target' rowSpan='18'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>non-numeric</td>
@@ -140,11 +181,54 @@
 			<td class='target'>{0} – {1}</td>
 		</tr>
 		<tr>
+			<td class='source' rowSpan='4'><a name='Chinese' href='#Chinese'>Chinese</a></td>
+			<td class='source'><a name='Formats - Numeric - separator' href='#Formats - Numeric - separator'>Formats - Numeric - separator</a></td>
+			<td class='source'>Date</td>
+			<td class='target'>/</td>
+			<td class='target' rowSpan='4'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Formats - Intervals - Range' href='#Formats - Intervals - Range'>Formats - Intervals - Range</a></td>
+			<td class='source'>mixed</td>
+			<td class='target'>{0} – {1}</td>
+		</tr>
+		<tr>
+			<td class='source'>non-numeric</td>
+			<td class='target'>{0}–{1}</td>
+		</tr>
+		<tr>
+			<td class='source'>numeric</td>
+			<td class='target'>{0} – {1}</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='Timezones' href='#Timezones'>Timezones</a></td>
+			<td class='source'><a name='Timezone Display Patterns' href='#Timezone Display Patterns'>Timezone Display Patterns</a></td>
+			<td class='source'><a name='null' href='#null'>null</a></td>
+			<td class='source'>GMT Format-utc</td>
+			<td class='target'>GMT{0}</td>
+			<td class='target'>ĦUK{0}</td>
+			<td class='target' rowSpan='3'>basic</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Overrides' href='#Overrides'>Overrides</a></td>
+			<td class='source' rowSpan='2'><a name='Etc/UTC' href='#Etc/UTC'>Etc/UTC</a></td>
+			<td class='source'>standard-long</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Ħin Universali Koordinat</td>
+		</tr>
+		<tr>
+			<td class='source'>standard-short</td>
+			<td class='target'>UTC</td>
+			<td class='target'>ĦUK</td>
+		</tr>
+		<tr>
 			<td class='source' rowSpan='15'><a name='Numbers' href='#Numbers'>Numbers</a></td>
 			<td class='source' rowSpan='3'><a name='Number Formatting Patterns' href='#Number Formatting Patterns'>Number Formatting Patterns</a></td>
 			<td class='source' rowSpan='2'><a name='Standard Patterns using Chisoi Digits (chis)' href='#Standard Patterns using Chisoi Digits (chis)'>Standard Patterns using Chisoi Digits (chis)</a></td>
 			<td class='source'>standard-currency</td>
+			<td class='target' rowSpan='15'>▷missing◁</td>
 			<td class='target' rowSpan='2'>¤#,##0.00</td>
+			<td class='target' rowSpan='15'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>accounting-currency</td>
@@ -205,13 +289,64 @@
 			<td class='target'>¤000T</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='17'><a name='Characters' href='#Characters'>Characters</a></td>
-			<td class='source' rowSpan='17'><a name='Emoji Symbols' href='#Emoji Symbols'>Emoji Symbols</a></td>
+			<td class='source' rowSpan='27'><a name='Characters' href='#Characters'>Characters</a></td>
+			<td class='source' rowSpan='27'><a name='Emoji Symbols' href='#Emoji Symbols'>Emoji Symbols</a></td>
+			<td class='source' rowSpan='10'><a name='keycap' href='#keycap'>keycap</a></td>
+			<td class='source'>0⃣ -name</td>
+			<td class='target'>E17–100</td>
+			<td class='target'>keycap: 0</td>
+			<td class='target' rowSpan='27'>modern</td>
+		</tr>
+		<tr>
+			<td class='source'>1⃣ -name</td>
+			<td class='target'>E17–101</td>
+			<td class='target'>keycap: 1</td>
+		</tr>
+		<tr>
+			<td class='source'>2⃣ -name</td>
+			<td class='target'>E17–102</td>
+			<td class='target'>keycap: 2</td>
+		</tr>
+		<tr>
+			<td class='source'>3⃣ -name</td>
+			<td class='target'>E17–103</td>
+			<td class='target'>keycap: 3</td>
+		</tr>
+		<tr>
+			<td class='source'>4⃣ -name</td>
+			<td class='target'>E17–104</td>
+			<td class='target'>keycap: 4</td>
+		</tr>
+		<tr>
+			<td class='source'>5⃣ -name</td>
+			<td class='target'>E17–105</td>
+			<td class='target'>keycap: 5</td>
+		</tr>
+		<tr>
+			<td class='source'>6⃣ -name</td>
+			<td class='target'>E17–106</td>
+			<td class='target'>keycap: 6</td>
+		</tr>
+		<tr>
+			<td class='source'>7⃣ -name</td>
+			<td class='target'>E17–107</td>
+			<td class='target'>keycap: 7</td>
+		</tr>
+		<tr>
+			<td class='source'>8⃣ -name</td>
+			<td class='target'>E17–108</td>
+			<td class='target'>keycap: 8</td>
+		</tr>
+		<tr>
+			<td class='source'>9⃣ -name</td>
+			<td class='target'>E17–109</td>
+			<td class='target'>keycap: 9</td>
+		</tr>
+		<tr>
 			<td class='source' rowSpan='17'><a name='alphanum' href='#alphanum'>alphanum</a></td>
 			<td class='source'>🈁 –keywords</td>
 			<td class='target'>…<br>ココ</td>
 			<td class='target' rowSpan='17'>…</td>
-			<td class='target' rowSpan='17'>modern</td>
 		</tr>
 		<tr>
 			<td class='source'>🈂 –keywords</td>
@@ -271,6 +406,38 @@
 		<tr>
 			<td class='source'>🈵 –keywords</td>
 			<td class='target'>…<br>有</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='6'><a name='Special' href='#Special'>Special</a></td>
+			<td class='source' rowSpan='2'><a name='Suppress' href='#Suppress'>Suppress</a></td>
+			<td class='source'><a name='Append-Fallback-chinese' href='#Append-Fallback-chinese'>Append-Fallback-chinese</a></td>
+			<td class='source' rowSpan='2'>Day-Of-Week</td>
+			<td class='target' rowSpan='2'>{0} {1}</td>
+			<td class='target' rowSpan='2'>{1}, {0}</td>
+			<td class='target' rowSpan='6'>comprehensive</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='Append-Fallback-iso8601' href='#Append-Fallback-iso8601'>Append-Fallback-iso8601</a></td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='4'><a name='Deprecated' href='#Deprecated'>Deprecated</a></td>
+			<td class='source' rowSpan='2'><a name='British' href='#British'>British</a></td>
+			<td class='source'>standard-long</td>
+			<td class='target' rowSpan='4'>▷missing◁</td>
+			<td class='target'>Greenwich Mean Time</td>
+		</tr>
+		<tr>
+			<td class='source'>standard-short</td>
+			<td class='target'>GMT</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Irish' href='#Irish'>Irish</a></td>
+			<td class='source'>standard-long</td>
+			<td class='target'>Greenwich Mean Time</td>
+		</tr>
+		<tr>
+			<td class='source'>standard-short</td>
+			<td class='target'>GMT</td>
 		</tr>
 	</tbody>
 </table>
