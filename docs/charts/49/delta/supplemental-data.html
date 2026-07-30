@@ -81,7 +81,7 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class='source' rowSpan='536'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
+			<td class='source' rowSpan='544'><a name='Supplemental' href='#Supplemental'>Supplemental</a></td>
 			<td class='source' rowSpan='2'><a name='IdValidity' href='#IdValidity'>IdValidity</a></td>
 			<td class='source'><a name='script' href='#script'>script</a></td>
 			<td class='source'>regular</td>
@@ -822,14 +822,25 @@
 			<td class='target'>3</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='119'><a name='Metazone' href='#Metazone'>Metazone</a></td>
+			<td class='source' rowSpan='123'><a name='Metazone' href='#Metazone'>Metazone</a></td>
 			<td class='source'><a name='Africa/Bissau' href='#Africa/Bissau'>Africa/Bissau</a></td>
 			<td class='source'>-∞..1975-01-01 01:00</td>
 			<td class='target'>Africa_FarWestern</td>
 			<td class='target'>▷removed◁</td>
 		</tr>
 		<tr>
-			<td class='source'><a name='Africa/El_Aaiun' href='#Africa/El_Aaiun'>Africa/El_Aaiun</a></td>
+			<td class='source'><a name='Africa/Casablanca' href='#Africa/Casablanca'>Africa/Casablanca</a></td>
+			<td class='source'>2026-09-20 01:00..∞</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Europe_Western</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='2'><a name='Africa/El_Aaiun' href='#Africa/El_Aaiun'>Africa/El_Aaiun</a></td>
+			<td class='source'>2026-09-20 01:00..∞</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Europe_Western</td>
+		</tr>
+		<tr>
 			<td class='source'>-∞..1976-04-14 01:00</td>
 			<td class='target'>Africa_FarWestern</td>
 			<td class='target'>▷removed◁</td>
@@ -1462,10 +1473,22 @@
 			<td class='target'>Urumqi</td>
 		</tr>
 		<tr>
+			<td class='source'><a name='America/Edmonton-std-offset' href='#America/Edmonton-std-offset'>America/Edmonton-std-offset</a></td>
+			<td class='source'>-∞..∞</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>-07</td>
+		</tr>
+		<tr>
 			<td class='source'><a name='Europe/Dublin-std-offset' href='#Europe/Dublin-std-offset'>Europe/Dublin-std-offset</a></td>
 			<td class='source'>-∞..1971-10-31 02:00</td>
 			<td class='target'>+00</td>
 			<td class='target'>▷removed◁</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='America/Edmonton-dst-offset' href='#America/Edmonton-dst-offset'>America/Edmonton-dst-offset</a></td>
+			<td class='source'>-∞..∞</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>-06</td>
 		</tr>
 		<tr>
 			<td class='source'><a name='Europe/Dublin-dst-offset' href='#Europe/Dublin-dst-offset'>Europe/Dublin-dst-offset</a></td>
@@ -1486,7 +1509,7 @@
 			<td class='target'>numeric</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='15'><a name='Plural' href='#Plural'>Plural</a></td>
+			<td class='source' rowSpan='13'><a name='Plural' href='#Plural'>Plural</a></td>
 			<td class='source' rowSpan='2'><a name='cardinal-tg' href='#cardinal-tg'>cardinal-tg</a></td>
 			<td class='source'>one</td>
 			<td class='target'>▷missing◁</td>
@@ -1520,15 +1543,10 @@
 			<td class='target'>@integer 0, 1, 20~33, 100, 1000, 10000, 100000, 1000000, …</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='6'><a name='ordinal-bg' href='#ordinal-bg'>ordinal-bg</a></td>
+			<td class='source' rowSpan='4'><a name='ordinal-bg' href='#ordinal-bg'>ordinal-bg</a></td>
 			<td class='source'>few</td>
 			<td class='target'>▷missing◁</td>
 			<td class='target'>i % 10 = 3,4 and i % 100 != 13,14 @integer 3, 4, 23, 24, 33, 34, 43, 44, 53, 54, 63, 64, 73, 74, 83, 84, 103, 1003, …</td>
-		</tr>
-		<tr>
-			<td class='source'>many</td>
-			<td class='target'>▷missing◁</td>
-			<td class='target'>i % 10 = 7,8 and i % 100 != 17,18 @integer 7, 8, 27, 28, 37, 38, 47, 48, 57, 58, 67, 68, 77, 78, 87, 88, 107, 1007, …</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
@@ -1538,17 +1556,12 @@
 		<tr>
 			<td class='source'>other</td>
 			<td class='target'>…</td>
-			<td class='target'>@integer 0, 5, 6, 9~20, 25, 105, 1005, …</td>
+			<td class='target'>@integer 0, 5~20, 25~30, 100, 1000, 10000, 100000, 1000000, …</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
 			<td class='target'>▷missing◁</td>
 			<td class='target'>i % 10 = 2 and i % 100 != 12 @integer 2, 22, 32, 42, 52, 62, 72, 82, 102, 1002, …</td>
-		</tr>
-		<tr>
-			<td class='source'>zero</td>
-			<td class='target'>▷missing◁</td>
-			<td class='target'>i % 100 = 0 and i != 0 @integer 100, 200, 300, 400, 500, 600, 700, 800, 1000, 10000, 100000, 1000000, …</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='2'><a name='ordinal-es' href='#ordinal-es'>ordinal-es</a></td>
@@ -1601,7 +1614,7 @@
 			<td class='target'>other</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='5'><a name='Currency' href='#Currency'>Currency</a></td>
+			<td class='source' rowSpan='8'><a name='Currency' href='#Currency'>Currency</a></td>
 			<td class='source'><a name='CN' href='#CN'>CN</a></td>
 			<td class='source'>CNX–1979-01-01–1998-12-31</td>
 			<td class='target'>false</td>
@@ -1627,6 +1640,22 @@
 			<td class='source'>Fractions-rounding</td>
 			<td class='target'>▷missing◁</td>
 			<td class='target'>0</td>
+		</tr>
+		<tr>
+			<td class='source' rowSpan='3'><a name='PKR' href='#PKR'>PKR</a></td>
+			<td class='source'>Fractions-cashDigits</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>0</td>
+		</tr>
+		<tr>
+			<td class='source'>Fractions-cashRounding</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>0</td>
+		</tr>
+		<tr>
+			<td class='source'>Fractions-digits</td>
+			<td class='target'>…</td>
+			<td class='target'>2</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='232'><a name='Calendar' href='#Calendar'>Calendar</a></td>
@@ -2834,7 +2863,7 @@
 			<td class='target'>…<br>AR<br>…<br>CL<br>…<br>HT<br>…<br>PY<br>…<br>RW<br>…<br>UY<br>…<br>ZM<br>…</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='21'><a name='Language' href='#Language'>Language</a></td>
+			<td class='source' rowSpan='24'><a name='Language' href='#Language'>Language</a></td>
 			<td class='source' rowSpan='2'><a name='cdo' href='#cdo'>cdo</a></td>
 			<td class='source'>scripts</td>
 			<td class='target'>▷missing◁</td>
@@ -2899,6 +2928,12 @@
 			<td class='target'>Telu</td>
 		</tr>
 		<tr>
+			<td class='source'><a name='hrx' href='#hrx'>hrx</a></td>
+			<td class='source'>scripts</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Latn</td>
+		</tr>
+		<tr>
 			<td class='source' rowSpan='2'><a name='isv' href='#isv'>isv</a></td>
 			<td class='source'>scripts</td>
 			<td class='target'>▷missing◁</td>
@@ -2908,6 +2943,12 @@
 			<td class='source'>scripts-secondary</td>
 			<td class='target'>▷missing◁</td>
 			<td class='target'>Cyrl</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='kek' href='#kek'>kek</a></td>
+			<td class='source'>scripts</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Latn</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='2'><a name='mnp' href='#mnp'>mnp</a></td>
@@ -2946,6 +2987,12 @@
 			<td class='source'>scripts-secondary</td>
 			<td class='target'>▷missing◁</td>
 			<td class='target'>Gonm</td>
+		</tr>
+		<tr>
+			<td class='source'><a name='xdq' href='#xdq'>xdq</a></td>
+			<td class='source'>scripts</td>
+			<td class='target'>▷missing◁</td>
+			<td class='target'>Cyrl</td>
 		</tr>
 	</tbody>
 </table>

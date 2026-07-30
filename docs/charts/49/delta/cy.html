@@ -87,7 +87,7 @@
 			<td class='source'><a name='Territories (Europe)' href='#Territories (Europe)'>Territories (Europe)</a></td>
 			<td class='source'><a name='Northern Europe' href='#Northern Europe'>Northern Europe</a></td>
 			<td class='source'>GG</td>
-			<td class='source' rowSpan='380'>cy</td>
+			<td class='source' rowSpan='429'>cy</td>
 			<td class='target'>Ynys y Garn</td>
 			<td class='target'>Guernsey</td>
 			<td class='target'>moderate</td>
@@ -538,13 +538,13 @@
 			<td class='target'>Ymlaen</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='138'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
-			<td class='source' rowSpan='40'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
+			<td class='source' rowSpan='193'><a name='Date & Time' href='#Date & Time'>Date & Time</a></td>
+			<td class='source' rowSpan='67'><a name='Gregorian' href='#Gregorian'>Gregorian</a></td>
 			<td class='source' rowSpan='4'><a name='Days - narrow - Formatting' href='#Days - narrow - Formatting'>Days - narrow - Formatting</a></td>
 			<td class='source'>sun</td>
 			<td class='target'>S</td>
 			<td class='target'>Su</td>
-			<td class='target' rowSpan='24'>moderate</td>
+			<td class='target' rowSpan='67'>moderate</td>
 		</tr>
 		<tr>
 			<td class='source'>tue</td>
@@ -586,14 +586,19 @@
 			<td class='target'>/</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='19'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source' rowSpan='21'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
 			<td class='source'>GyMd</td>
 			<td class='target'>M/d/y GGGGG</td>
 			<td class='target'>d/M/y GGGGG</td>
 		</tr>
 		<tr>
+			<td class='source'>GyMEd</td>
+			<td class='target'>E, M/d/y G</td>
+			<td class='target'>E, d/M/y G</td>
+		</tr>
+		<tr>
 			<td class='source'>GyMMMddd</td>
-			<td class='target' rowSpan='18'>▷missing◁</td>
+			<td class='target' rowSpan='9'>▷missing◁</td>
 			<td class='target'>ddd MMM y G</td>
 		</tr>
 		<tr>
@@ -629,7 +634,13 @@
 			<td class='target'>E, ddd MMM</td>
 		</tr>
 		<tr>
+			<td class='source'>MMMMd</td>
+			<td class='target'>MMMM d</td>
+			<td class='target'>d MMMM</td>
+		</tr>
+		<tr>
 			<td class='source'>MMMMddd</td>
+			<td class='target' rowSpan='9'>▷missing◁</td>
 			<td class='target'>ddd MMMM</td>
 		</tr>
 		<tr>
@@ -651,22 +662,18 @@
 		<tr>
 			<td class='source'>yMMMMd</td>
 			<td class='target'>d MMMM y</td>
-			<td class='target'>basic</td>
 		</tr>
 		<tr>
 			<td class='source'>yMMMMddd</td>
-			<td class='target'>y ddd MMMM</td>
-			<td class='target'>moderate</td>
+			<td class='target'>ddd MMMM y</td>
 		</tr>
 		<tr>
 			<td class='source'>yMMMMEd</td>
-			<td class='target'>E d MMMM y</td>
-			<td class='target'>basic</td>
+			<td class='target'>E, d MMMM y</td>
 		</tr>
 		<tr>
 			<td class='source'>yMMMMEddd</td>
-			<td class='target'>y ddd MMMM, E</td>
-			<td class='target' rowSpan='13'>moderate</td>
+			<td class='target'>E, ddd MMMM y</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='3'><a name='Formats - Flexible - Append' href='#Formats - Flexible - Append'>Formats - Flexible - Append</a></td>
@@ -681,13 +688,132 @@
 		</tr>
 		<tr>
 			<td class='source'>Time-Day-Of-Week</td>
-			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>▷missing◁</td>
 			<td class='target'>{1}, {0}</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='2'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+			<td class='source' rowSpan='27'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+			<td class='source'>Gy/G</td>
+			<td class='target'>G y – G y</td>
+			<td class='target'>y G – y G</td>
+		</tr>
+		<tr>
+			<td class='source'>Gy/y</td>
+			<td class='target'>G y–y</td>
+			<td class='target'>y – y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/G</td>
+			<td class='target'>G y-MM – G y-MM</td>
+			<td class='target'>M/y G – M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/M</td>
+			<td class='target' rowSpan='2'>G y-MM – y-MM</td>
+			<td class='target' rowSpan='2'>M/y – M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/d</td>
+			<td class='target'>G y-MM-dd – y-MM-dd</td>
+			<td class='target'>d/M/y – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/G</td>
+			<td class='target'>G y-MM-dd – G y-MM-dd</td>
+			<td class='target'>d/M/y G – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/M</td>
+			<td class='target' rowSpan='2'>G y-MM-dd – y-MM-dd</td>
+			<td class='target' rowSpan='2'>d/M/y – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/d</td>
+			<td class='target'>G y-MM-dd, E – y-MM-dd, E</td>
+			<td class='target'>E, d/M/y – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/G</td>
+			<td class='target'>G y-MM-dd, E – G y-MM-dd, E</td>
+			<td class='target'>E, d/M/y G – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/M</td>
+			<td class='target' rowSpan='2'>G y-MM-dd, E – y-MM-dd, E</td>
+			<td class='target' rowSpan='2'>E, d/M/y – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/G</td>
+			<td class='target'>G y MMM – G y MMM</td>
+			<td class='target'>MMM y G – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/M</td>
+			<td class='target'>G y MMM–MMM</td>
+			<td class='target'>MMM – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/y</td>
+			<td class='target'>G y MMM – y MMM</td>
+			<td class='target'>MMM y – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/d</td>
+			<td class='target'>G y MMM d–d</td>
+			<td class='target'>d – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/G</td>
+			<td class='target'>G y MMM d – G y MMM d</td>
+			<td class='target'>d MMM y G – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/M</td>
+			<td class='target'>G y MMM d – MMM d</td>
+			<td class='target'>d MMM – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/y</td>
+			<td class='target'>G y MMM d – y MMM d</td>
+			<td class='target'>d MMM y –d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/d</td>
+			<td class='target'>G y MMM d, E – MMM d, E</td>
+			<td class='target'>E, d MMM – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/G</td>
+			<td class='target'>G y MMM d, E – G y MMM d, E</td>
+			<td class='target'>E, d MMM y G – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/M</td>
+			<td class='target'>G y MMM d, E – MMM d, E</td>
+			<td class='target'>E, d MMM – E, d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/y</td>
+			<td class='target'>G y MMM d, E – y MMM d, E</td>
+			<td class='target'>E, d MMM y – E, d MMM y G</td>
+		</tr>
+		<tr>
 			<td class='source'>MMMMd/d</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
 			<td class='target'>d – d MMMM</td>
+		</tr>
+		<tr>
+			<td class='source'>MMMMd/M</td>
+			<td class='target'>d MMMM – d MMMM</td>
 		</tr>
 		<tr>
 			<td class='source'>y/y</td>
@@ -697,21 +823,21 @@
 		<tr>
 			<td class='source'><a name='Formats - Intervals - Range' href='#Formats - Intervals - Range'>Formats - Intervals - Range</a></td>
 			<td class='source'>non-numeric</td>
-			<td class='target' rowSpan='22'>▷missing◁</td>
+			<td class='target' rowSpan='15'>▷missing◁</td>
 			<td class='target'>{0} – {1}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='DayOfMonth - abbreviated - Formatting' href='#DayOfMonth - abbreviated - Formatting'>DayOfMonth - abbreviated - Formatting</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -719,11 +845,11 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='7'><a name='Gregorian YMD' href='#Gregorian YMD'>Gregorian YMD</a></td>
@@ -735,15 +861,15 @@
 		<tr>
 			<td class='source' rowSpan='6'><a name='DayOfMonth - abbreviated - Formatting' href='#DayOfMonth - abbreviated - Formatting'>DayOfMonth - abbreviated - Formatting</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -751,22 +877,33 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='28'><a name='Generic' href='#Generic'>Generic</a></td>
+			<td class='source' rowSpan='56'><a name='Generic' href='#Generic'>Generic</a></td>
 			<td class='source'><a name='Formats - Numeric - separator' href='#Formats - Numeric - separator'>Formats - Numeric - separator</a></td>
 			<td class='source'>Date</td>
 			<td class='target'>/</td>
-			<td class='target' rowSpan='8'>moderate</td>
+			<td class='target' rowSpan='14'>moderate</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='7'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source' rowSpan='13'><a name='Formats - Flexible - Date Formats' href='#Formats - Flexible - Date Formats'>Formats - Flexible - Date Formats</a></td>
+			<td class='source'>GyMd</td>
+			<td class='target'>M/d/y GGGGG</td>
+			<td class='target'>d/M/y GGGGG</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd</td>
+			<td class='target'>E, M/d/y G</td>
+			<td class='target'>E, d/M/y G</td>
+		</tr>
+		<tr>
 			<td class='source'>GyMMMddd</td>
+			<td class='target' rowSpan='5'>▷missing◁</td>
 			<td class='target'>ddd MMM y G</td>
 		</tr>
 		<tr>
@@ -786,12 +923,33 @@
 			<td class='target'>ddd MMMM</td>
 		</tr>
 		<tr>
+			<td class='source'>yyyyM</td>
+			<td class='target'>G y-MM</td>
+			<td class='target'>M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>yyyyMd</td>
+			<td class='target'>G y-MM-dd</td>
+			<td class='target'>d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>yyyyMEd</td>
+			<td class='target'>G y-MM-dd, E</td>
+			<td class='target'>E, d/M/y G</td>
+		</tr>
+		<tr>
 			<td class='source'>yyyyMMMddd</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
 			<td class='target'>ddd MMM y G</td>
 		</tr>
 		<tr>
 			<td class='source'>yyyyMMMEddd</td>
-			<td class='target'>G y ddd MMM E</td>
+			<td class='target'>E, ddd MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>yyyyMMMM</td>
+			<td class='target'>G y MMMM</td>
+			<td class='target'>MMMM y G</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='3'><a name='Formats - Flexible - Append' href='#Formats - Flexible - Append'>Formats - Flexible - Append</a></td>
@@ -807,14 +965,118 @@
 		</tr>
 		<tr>
 			<td class='source'>Time-Day-Of-Week</td>
-			<td class='target' rowSpan='2'>▷missing◁</td>
+			<td class='target'>▷missing◁</td>
 			<td class='target'>{1}, {0}</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='9'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+			<td class='source' rowSpan='31'><a name='Formats - Intervals - Date Formats' href='#Formats - Intervals - Date Formats'>Formats - Intervals - Date Formats</a></td>
+			<td class='source'>Gy/G</td>
+			<td class='target'>G y – G y</td>
+			<td class='target'>y G – y G</td>
+			<td class='target' rowSpan='39'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>Gy/y</td>
+			<td class='target'>G y–y</td>
+			<td class='target'>y – y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/G</td>
+			<td class='target'>G y-MM – G y-MM</td>
+			<td class='target'>M/y G – M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/M</td>
+			<td class='target' rowSpan='2'>G y-MM – y-MM</td>
+			<td class='target' rowSpan='2'>M/y – M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyM/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/d</td>
+			<td class='target'>G y-MM-dd – y-MM-dd</td>
+			<td class='target'>d/M/y – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/G</td>
+			<td class='target'>G y-MM-dd – G y-MM-dd</td>
+			<td class='target'>d/M/y G – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/M</td>
+			<td class='target' rowSpan='2'>G y-MM-dd – y-MM-dd</td>
+			<td class='target' rowSpan='2'>d/M/y – d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/d</td>
+			<td class='target'>G y-MM-dd, E – y-MM-dd, E</td>
+			<td class='target'>E, d/M/y – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/G</td>
+			<td class='target'>G y-MM-dd, E – G y-MM-dd, E</td>
+			<td class='target'>E, d/M/y G – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/M</td>
+			<td class='target' rowSpan='2'>G y-MM-dd, E – y-MM-dd, E</td>
+			<td class='target' rowSpan='2'>E, d/M/y – E, d/M/y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMEd/y</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/G</td>
+			<td class='target'>G y MMM – G y MMM</td>
+			<td class='target'>MMM y G – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/M</td>
+			<td class='target'>G y MMM–MMM</td>
+			<td class='target'>MMM – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMM/y</td>
+			<td class='target'>G y MMM – y MMM</td>
+			<td class='target'>MMM y – MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/d</td>
+			<td class='target'>G y MMM d–d</td>
+			<td class='target'>MMM d – d, y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/G</td>
+			<td class='target'>G y MMM d – G y MMM d</td>
+			<td class='target'>d MMM y G – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/M</td>
+			<td class='target'>G y MMM d – MMM d</td>
+			<td class='target'>d MMM – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMd/y</td>
+			<td class='target'>G y MMM d – y MMM d</td>
+			<td class='target'>d MMM y – d MMM y G</td>
+		</tr>
+		<tr>
+			<td class='source'>GyMMMEd/d</td>
+			<td class='target'>G y MMM d, E – MMM d, E</td>
+			<td class='target'>E, d MMM – E, d MMM y G</td>
+		</tr>
+		<tr>
 			<td class='source'>MMMMd/d</td>
+			<td class='target' rowSpan='2'>▷missing◁</td>
 			<td class='target'>d – d MMMM</td>
-			<td class='target' rowSpan='17'>moderate</td>
+		</tr>
+		<tr>
+			<td class='source'>MMMMd/M</td>
+			<td class='target'>d MMMM – d MMMM</td>
 		</tr>
 		<tr>
 			<td class='source'>yM/M</td>
@@ -858,7 +1120,7 @@
 		<tr>
 			<td class='source' rowSpan='12'><a name='DayOfMonth - abbreviated - Formatting' href='#DayOfMonth - abbreviated - Formatting'>DayOfMonth - abbreviated - Formatting</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
@@ -874,25 +1136,25 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Buddhist' href='#Buddhist'>Buddhist</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 			<td class='target' rowSpan='63'>comprehensive</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -900,11 +1162,11 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='9'><a name='Chinese' href='#Chinese'>Chinese</a></td>
@@ -923,15 +1185,15 @@
 		<tr>
 			<td class='source' rowSpan='54'><a name='DayOfMonth - abbreviated - Formatting' href='#DayOfMonth - abbreviated - Formatting'>DayOfMonth - abbreviated - Formatting</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -939,24 +1201,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Coptic' href='#Coptic'>Coptic</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -964,24 +1226,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Ethiopic' href='#Ethiopic'>Ethiopic</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -989,24 +1251,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Hebrew' href='#Hebrew'>Hebrew</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1014,24 +1276,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Indian' href='#Indian'>Indian</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1039,24 +1301,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Islamic' href='#Islamic'>Islamic</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1064,24 +1326,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Japanese' href='#Japanese'>Japanese</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1089,24 +1351,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Persian' href='#Persian'>Persian</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1114,24 +1376,24 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'><a name='Minguo' href='#Minguo'>Minguo</a></td>
 			<td class='source'>zero</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
 			<td class='source'>one</td>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
-			<td class='target'>ail</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='source'>few</td>
@@ -1139,11 +1401,11 @@
 		</tr>
 		<tr>
 			<td class='source'>many</td>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
 			<td class='source'>other</td>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='30'><a name='Timezones' href='#Timezones'>Timezones</a></td>
@@ -1587,13 +1849,13 @@
 			<td class='target'>…<br>bang<br>coch<br>…</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='10'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
-			<td class='source' rowSpan='10'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td>
+			<td class='source' rowSpan='4'><a name='Miscellaneous' href='#Miscellaneous'>Miscellaneous</a></td>
+			<td class='source' rowSpan='4'><a name='Minimal Pairs' href='#Minimal Pairs'>Minimal Pairs</a></td>
 			<td class='source' rowSpan='4'><a name='Ordinal' href='#Ordinal'>Ordinal</a></td>
 			<td class='source'>one</td>
 			<td class='target'>ci {0}af</td>
 			<td class='target'>Cymerwch y troad {0}af ar y dde.</td>
-			<td class='target' rowSpan='10'>moderate</td>
+			<td class='target' rowSpan='4'>moderate</td>
 		</tr>
 		<tr>
 			<td class='source'>two</td>
@@ -1611,132 +1873,101 @@
 			<td class='target'>Cymerwch droad rhif {0} ar y dde.</td>
 		</tr>
 		<tr>
-			<td class='source' rowSpan='6'><a name='Plural' href='#Plural'>Plural</a></td>
-			<td class='source'>zero</td>
-			<td class='target'>{0} cŵn, {0} cathod</td>
-			<td class='target'>{0}</td>
-		</tr>
-		<tr>
-			<td class='source'>one</td>
-			<td class='target'>{0} ci, {0} gath</td>
-			<td class='target'>{0} diwrnod</td>
-		</tr>
-		<tr>
-			<td class='source'>two</td>
-			<td class='target'>{0} gi, {0} gath</td>
-			<td class='target'>dau</td>
-		</tr>
-		<tr>
-			<td class='source'>few</td>
-			<td class='target'>{0} chi, {0} cath</td>
-			<td class='target'>ychydig</td>
-		</tr>
-		<tr>
-			<td class='source'>many</td>
-			<td class='target'>{0} chi, {0} chath</td>
-			<td class='target'>llawer</td>
-		</tr>
-		<tr>
-			<td class='source'>other</td>
-			<td class='target'>{0} ci, {0} cath</td>
-			<td class='target'>{0} o ddiwrnodau</td>
-		</tr>
-		<tr>
 			<td class='source' rowSpan='40'><a name='Special' href='#Special'>Special</a></td>
 			<td class='source' rowSpan='36'><a name='Suppress' href='#Suppress'>Suppress</a></td>
 			<td class='source' rowSpan='30'><a name='null' href='#null'>null</a></td>
 			<td class='source' rowSpan='6'>calendar-ethiopic-amete-alem</td>
 			<td class='target' rowSpan='30'>▷missing◁</td>
-			<td class='target'>0</td>
+			<td class='target'>{0}</td>
 			<td class='target' rowSpan='40'>comprehensive</td>
 		</tr>
 		<tr>
-			<td class='target'>ail</td>
+			<td class='target'>{0}af</td>
 		</tr>
 		<tr>
-			<td class='target'>cyntaf</td>
+			<td class='target'>{0}ed</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}</td>
+			<td class='target'>{0}fed</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='target'>{0}ydd</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'>calendar-islamic-civil</td>
-			<td class='target'>0</td>
-		</tr>
-		<tr>
-			<td class='target'>ail</td>
-		</tr>
-		<tr>
-			<td class='target'>cyntaf</td>
-		</tr>
-		<tr>
 			<td class='target'>{0}</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}af</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}ed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}fed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='target'>{0}ydd</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'>calendar-islamic-rgsa</td>
-			<td class='target'>0</td>
-		</tr>
-		<tr>
-			<td class='target'>ail</td>
-		</tr>
-		<tr>
-			<td class='target'>cyntaf</td>
-		</tr>
-		<tr>
 			<td class='target'>{0}</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}af</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}ed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}fed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='target'>{0}ydd</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'>calendar-islamic-tbla</td>
-			<td class='target'>0</td>
-		</tr>
-		<tr>
-			<td class='target'>ail</td>
-		</tr>
-		<tr>
-			<td class='target'>cyntaf</td>
-		</tr>
-		<tr>
 			<td class='target'>{0}</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}af</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}ed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}fed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='target'>{0}ydd</td>
 		</tr>
 		<tr>
 			<td class='source' rowSpan='6'>calendar-islamic-umalqura</td>
-			<td class='target'>0</td>
-		</tr>
-		<tr>
-			<td class='target'>ail</td>
-		</tr>
-		<tr>
-			<td class='target'>cyntaf</td>
-		</tr>
-		<tr>
 			<td class='target'>{0}</td>
 		</tr>
 		<tr>
-			<td class='target'>{0}th</td>
+			<td class='target'>{0}af</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}ed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}fed</td>
+		</tr>
+		<tr>
+			<td class='target'>{0}il</td>
 		</tr>
 		<tr>
 			<td class='target'>{0}ydd</td>
