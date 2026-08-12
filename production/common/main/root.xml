@@ -82,6 +82,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<parseLenient sample=",">[,，﹐︐ ⹁ ٫]</parseLenient>
 			<parseLenient sample=".">[.．․﹒ ｡]</parseLenient>
 		</parseLenients>
+		<placeholderBoundarySpacing type="digit-digit" scopes="datetime" xml:space="preserve"> </placeholderBoundarySpacing>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -95,6 +96,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<months>
 					<alias source="locale" path="../../calendar[@type='gregorian']/months"/>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -201,6 +205,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthPatternWidth>
 					</monthPatternContext>
 				</monthPatterns>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -393,6 +400,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
+					<numericSeparators>
+						<alias source="locale" path="../../../calendar[@type='generic']/dateTimeFormats/numericSeparators"/>
+					</numericSeparators>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -489,19 +499,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yyyyQQQQ">r(U) QQQQ</dateFormatItem>
 					</availableFormats>
 					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{1} {0}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{1} {0}</appendItem>
+						<alias source="locale" path="../../../calendar[@type='generic']/dateTimeFormats/appendItems"/>
 					</appendItems>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<alias source="locale" path="../../../../calendar[@type='generic']/dateTimeFormats/intervalFormats/intervalFormatRanges"/>
+						</intervalFormatRanges>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="B">h B – h B</greatestDifference>
@@ -656,6 +659,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -764,6 +770,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -796,38 +805,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="ethiopic-amete-alem">
-				<months>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/months"/>
-				</months>
-				<days>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/days"/>
-				</days>
-				<quarters>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/quarters"/>
-				</quarters>
-				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/dayPeriods"/>
-				</dayPeriods>
-				<eras>
-					<eraNames>
-						<alias source="locale" path="../eraAbbr"/>
-					</eraNames>
-					<eraAbbr>
-						<era type="0">AA</era>
-					</eraAbbr>
-					<eraNarrow>
-						<alias source="locale" path="../eraAbbr"/>
-					</eraNarrow>
-				</eras>
-				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/dateFormats"/>
-				</dateFormats>
-				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/timeFormats"/>
-				</timeFormats>
-				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='ethiopic']/dateTimeFormats"/>
-				</dateTimeFormats>
+				<alias source="locale" path="../calendar[@type='ethiopic']"/>
 			</calendar>
 			<calendar type="generic">
 				<months>
@@ -876,6 +854,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -927,6 +908,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
+					<numericSeparators>
+						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/numericSeparators"/>
+					</numericSeparators>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -992,7 +976,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="GyMEd">G y-MM-dd, E</dateFormatItem>
 						<dateFormatItem id="GyMMM">G y MMM</dateFormatItem>
 						<dateFormatItem id="GyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMddd">G y MMM ddd</dateFormatItem>
 						<dateFormatItem id="GyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="GyMMMEddd">G y MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -1006,8 +992,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMddd">MMM ddd</dateFormatItem>
 						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
+						<dateFormatItem id="MMMEddd">MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMddd">MMMM ddd</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">G y</dateFormatItem>
 						<dateFormatItem id="yyyy">G y</dateFormatItem>
@@ -1016,25 +1005,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yyyyMEd">G y-MM-dd, E</dateFormatItem>
 						<dateFormatItem id="yyyyMMM">G y MMM</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="yyyyMMMddd">G y MMM ddd</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEddd">G y MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="yyyyMMMM">G y MMMM</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ">G y QQQ</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
 					</availableFormats>
 					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{1} {0}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{1} {0}</appendItem>
+						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/appendItems"/>
 					</appendItems>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<alias source="locale" path="../../../../calendar[@type='gregorian']/dateTimeFormats/intervalFormats/intervalFormatRanges"/>
+						</intervalFormatRanges>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="B">h B – h B</greatestDifference>
@@ -1139,6 +1123,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
 							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMMd">
+							<greatestDifference id="d">MMMM d–d</greatestDifference>
+							<greatestDifference id="M">MMMM d – MMMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">G y–y</greatestDifference>
@@ -1387,6 +1375,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+					<numericSeparators>
+						<numericDateSeparator>-</numericDateSeparator>
+						<numericTimeSeparator>:</numericTimeSeparator>
+					</numericSeparators>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -1452,7 +1444,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="GyMEd">G y-MM-dd, E</dateFormatItem>
 						<dateFormatItem id="GyMMM">G y MMM</dateFormatItem>
 						<dateFormatItem id="GyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMddd">G y MMM ddd</dateFormatItem>
 						<dateFormatItem id="GyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="GyMMMEddd">G y MMM ddd, E</dateFormatItem>
+						<dateFormatItem id="GyMMMM">G y MMMM</dateFormatItem>
+						<dateFormatItem id="GyMMMMd">G y MMMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMMddd">G y MMMM ddd</dateFormatItem>
+						<dateFormatItem id="GyMMMMEd">G y MMMM d, E</dateFormatItem>
+						<dateFormatItem id="GyMMMMEddd">G y MMMM ddd, E</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -1470,8 +1469,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMddd">MMM ddd</dateFormatItem>
 						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
+						<dateFormatItem id="MMMEddd">MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMddd">MMMM ddd</dateFormatItem>
+						<dateFormatItem id="MMMMEd">MMMM d, E</dateFormatItem>
+						<dateFormatItem id="MMMMEddd">MMMM ddd, E</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="other">'week' W 'of' MMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
@@ -1480,26 +1484,37 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yMEd">y-MM-dd, E</dateFormatItem>
 						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
 						<dateFormatItem id="yMMMd">y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMddd">y MMM ddd</dateFormatItem>
 						<dateFormatItem id="yMMMEd">y MMM d, E</dateFormatItem>
+						<dateFormatItem id="yMMMEddd">y MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMMddd">y MMMM ddd</dateFormatItem>
+						<dateFormatItem id="yMMMMEddd">y MMMM ddd, E</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
 						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
+						<appendItem request="Date-Timezone">{0} {1}</appendItem>
 						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
+						<appendItem request="Day-Of-Week">{1} {0}</appendItem>
 						<appendItem request="Era">{1} {0}</appendItem>
 						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
 						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
 						<appendItem request="Month">{0} ({2}: {1})</appendItem>
 						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
 						<appendItem request="Second">{0} ({2}: {1})</appendItem>
+						<appendItem request="Time-Day-Of-Week">{1} {0}</appendItem>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 						<appendItem request="Week">{0} ({2}: {1})</appendItem>
 						<appendItem request="Year">{1} {0}</appendItem>
 					</appendItems>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric">{0}–{1}</intervalFormatRange>
+							<intervalFormatRange type="numeric">{0}–{1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="B">h B – h B</greatestDifference>
@@ -1605,6 +1620,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
 							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="MMMMd">
+							<greatestDifference id="d">MMMM d–d</greatestDifference>
+							<greatestDifference id="M">MMMM d – MMMM d</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
@@ -1694,6 +1713,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -1771,6 +1793,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -1859,6 +1884,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -1891,113 +1919,24 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="islamic-civil">
-				<months>
-					<alias source="locale" path="../../calendar[@type='islamic']/months"/>
-				</months>
-				<days>
-					<alias source="locale" path="../../calendar[@type='islamic']/days"/>
-				</days>
-				<quarters>
-					<alias source="locale" path="../../calendar[@type='islamic']/quarters"/>
-				</quarters>
-				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='islamic']/dayPeriods"/>
-				</dayPeriods>
-				<eras>
-					<alias source="locale" path="../../calendar[@type='islamic']/eras"/>
-				</eras>
-				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateFormats"/>
-				</dateFormats>
-				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/timeFormats"/>
-				</timeFormats>
-				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateTimeFormats"/>
-				</dateTimeFormats>
+				<alias source="locale" path="../calendar[@type='islamic']"/>
 			</calendar>
 			<calendar type="islamic-rgsa">
-				<months>
-					<alias source="locale" path="../../calendar[@type='islamic']/months"/>
-				</months>
-				<days>
-					<alias source="locale" path="../../calendar[@type='islamic']/days"/>
-				</days>
-				<quarters>
-					<alias source="locale" path="../../calendar[@type='islamic']/quarters"/>
-				</quarters>
-				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='islamic']/dayPeriods"/>
-				</dayPeriods>
-				<eras>
-					<alias source="locale" path="../../calendar[@type='islamic']/eras"/>
-				</eras>
-				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateFormats"/>
-				</dateFormats>
-				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/timeFormats"/>
-				</timeFormats>
-				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateTimeFormats"/>
-				</dateTimeFormats>
+				<alias source="locale" path="../calendar[@type='islamic']"/>
 			</calendar>
 			<calendar type="islamic-tbla">
-				<months>
-					<alias source="locale" path="../../calendar[@type='islamic']/months"/>
-				</months>
-				<days>
-					<alias source="locale" path="../../calendar[@type='islamic']/days"/>
-				</days>
-				<quarters>
-					<alias source="locale" path="../../calendar[@type='islamic']/quarters"/>
-				</quarters>
-				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='islamic']/dayPeriods"/>
-				</dayPeriods>
-				<eras>
-					<alias source="locale" path="../../calendar[@type='islamic']/eras"/>
-				</eras>
-				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateFormats"/>
-				</dateFormats>
-				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/timeFormats"/>
-				</timeFormats>
-				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateTimeFormats"/>
-				</dateTimeFormats>
+				<alias source="locale" path="../calendar[@type='islamic']"/>
 			</calendar>
 			<calendar type="islamic-umalqura">
-				<months>
-					<alias source="locale" path="../../calendar[@type='islamic']/months"/>
-				</months>
-				<days>
-					<alias source="locale" path="../../calendar[@type='islamic']/days"/>
-				</days>
-				<quarters>
-					<alias source="locale" path="../../calendar[@type='islamic']/quarters"/>
-				</quarters>
-				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='islamic']/dayPeriods"/>
-				</dayPeriods>
-				<eras>
-					<alias source="locale" path="../../calendar[@type='islamic']/eras"/>
-				</eras>
-				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateFormats"/>
-				</dateFormats>
-				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/timeFormats"/>
-				</timeFormats>
-				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='islamic']/dateTimeFormats"/>
-				</dateTimeFormats>
+				<alias source="locale" path="../calendar[@type='islamic']"/>
 			</calendar>
 			<calendar type="iso8601">
 				<months>
 					<alias source="locale" path="../../calendar[@type='gregorian']/months"/>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -2063,6 +2002,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
+					<numericSeparators>
+						<numericDateSeparator>-</numericDateSeparator>
+						<numericTimeSeparator>:</numericTimeSeparator>
+					</numericSeparators>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -2145,19 +2088,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yw" count="other">Y 'week' w</dateFormatItem>
 					</availableFormats>
 					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{1} {0}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{1} {0}</appendItem>
+						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/appendItems"/>
 					</appendItems>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<alias source="locale" path="../../../../calendar[@type='gregorian']/dateTimeFormats/intervalFormats/intervalFormatRanges"/>
+						</intervalFormatRanges>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="B">h B – h B</greatestDifference>
@@ -2305,6 +2241,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<months>
 					<alias source="locale" path="../../calendar[@type='gregorian']/months"/>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -2390,6 +2329,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -2424,6 +2366,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<months>
 					<alias source="locale" path="../../calendar[@type='gregorian']/months"/>
 				</months>
+				<dayOfMonths>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayOfMonths"/>
+				</dayOfMonths>
 				<days>
 					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
 				</days>
@@ -2782,8 +2727,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
-			<gmtZeroFormat>GMT</gmtZeroFormat>
+			<gmtFormat alt="utc">UTC{0}</gmtFormat>
 			<gmtUnknownFormat>GMT+?</gmtUnknownFormat>
+			<gmtUnknownFormat alt="utc">UTC+?</gmtUnknownFormat>
+			<dualOffsetFormat>{0}/{1}</dualOffsetFormat>
 			<regionFormat>{0}</regionFormat>
 			<regionFormat type="daylight">{0} (+1)</regionFormat>
 			<regionFormat type="standard">{0} (+0)</regionFormat>
@@ -3009,6 +2956,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<zone type="Pacific/Wallis">
 				<exemplarCity>Wallis &amp; Futuna</exemplarCity>
 			</zone>
+			<metazone type="British">
+			<long>
+				<alias source="locale" path="../../metazone[@type='GMT']/long"/>
+			</long>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<alias source="locale" path="../../metazone[@type='GMT']/long"/>
+				</long>
+			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
@@ -4597,6 +4554,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>CA$</symbol>
 				<symbol alt="narrow">$</symbol>
 			</currency>
+			<currency type="CHF">
+				<symbol>CHF</symbol>
+				<symbol alt="narrow">Fr.</symbol>
+			</currency>
 			<currency type="CLP">
 				<symbol alt="narrow">$</symbol>
 			</currency>
@@ -5121,10 +5082,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<miscPatterns numberSystem="wcho">
 			<alias source="locale" path="../miscPatterns[@numberSystem='latn']"/>
 		</miscPatterns>
-		<minimalPairs>
-			<pluralMinimalPairs count="other">{0}?</pluralMinimalPairs>
-			<ordinalMinimalPairs ordinal="other">{0}?</ordinalMinimalPairs>
-		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -5545,9 +5502,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>lbf</displayName>
 				<unitPattern count="other">{0} lbf</unitPattern>
 			</unit>
+			<unit type="force-poundal">
+				<displayName>pdl</displayName>
+				<unitPattern count="other">{0} pdl</unitPattern>
+			</unit>
 			<unit type="force-newton">
 				<displayName>N</displayName>
 				<unitPattern count="other">{0} N</unitPattern>
+			</unit>
+			<unit type="force-dyne">
+				<displayName>dyn</displayName>
+				<unitPattern count="other">{0} dyn</unitPattern>
 			</unit>
 			<unit type="force-kilowatt-hour-per-100-kilometer">
 				<displayName>kWh/100km</displayName>
@@ -5654,6 +5619,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>in</displayName>
 				<unitPattern count="other">{0} in</unitPattern>
 				<perUnitPattern>{0}/in</perUnitPattern>
+			</unit>
+			<unit type="length-mil">
+				<displayName>mil [US]</displayName>
+				<unitPattern count="other">{0} mil [US]</unitPattern>
 			</unit>
 			<unit type="length-parsec">
 				<displayName>pc</displayName>

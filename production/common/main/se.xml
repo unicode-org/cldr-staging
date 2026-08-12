@@ -595,6 +595,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="hmv">h:mm a v</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatItem id="h">
 							<greatestDifference id="a">h a – h a</greatestDifference>
 							<greatestDifference id="h">h–h a</greatestDifference>
@@ -775,7 +780,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<timeZoneNames>
 			<hourFormat draft="contributed">+HH:mm;−HH:mm</hourFormat>
 			<gmtFormat draft="contributed">UTC{0}</gmtFormat>
-			<gmtZeroFormat draft="contributed">UTC</gmtZeroFormat>
 			<regionFormat draft="contributed">{0} áigi</regionFormat>
 			<regionFormat type="daylight" draft="unconfirmed">{0} geassiáigi</regionFormat>
 			<regionFormat type="standard" draft="unconfirmed">{0} dábálašáigi</regionFormat>
@@ -1676,6 +1680,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other" draft="contributed">{0}m/s</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
+				<displayName>°C</displayName>
 				<unitPattern count="one" draft="contributed">{0}°</unitPattern>
 				<unitPattern count="two" draft="contributed">{0}°</unitPattern>
 				<unitPattern count="other" draft="contributed">{0}°</unitPattern>

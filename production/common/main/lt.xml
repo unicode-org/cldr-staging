@@ -240,6 +240,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="hax">Pietų Haidos</language>
 			<language type="he">hebrajų</language>
 			<language type="hi">hindi</language>
+			<language type="hi_Latn" alt="variant">hindi anglų</language>
 			<language type="hif">Fidžio hindi</language>
 			<language type="hil">hiligainonų</language>
 			<language type="hit">hititų</language>
@@ -1201,18 +1202,34 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<key type="collation">rikiavimas</key>
 			<key type="colNormalization">Normalizuotas rikiavimas</key>
 			<key type="colNumeric">Skaitinis rikiavimas</key>
+			<key type="colReorder">Scenarijaus / bloko pertvarkymas</key>
 			<key type="colStrength">Rikiavimo intensyvumas</key>
 			<key type="currency">valiuta</key>
+			<key type="d0">keisti paskirties vietą</key>
+			<key type="dx">žodyno skilimo išimtys</key>
 			<key type="em">Jaustukų pateiktis</key>
+			<key type="fw">Pirma savaitės diena</key>
+			<key type="h0">sumaišytas</key>
 			<key type="hc">valandų ciklas (12 ir 24)</key>
+			<key type="i0">įvesties metodas</key>
+			<key type="k0">klaviatūra</key>
+			<key type="kv">labiausiai ignoruojami</key>
 			<key type="lb">teksto laužymo stilius</key>
 			<key type="lw">Eilučių laužymas</key>
+			<key type="m0">Transformacijos taisyklės</key>
 			<key type="ms">matų sistema</key>
+			<key type="mu">Matavimo vienetas</key>
 			<key type="numbers">skaičiai</key>
+			<key type="rg">papildomų duomenų regionas</key>
+			<key type="s0">transformacijos šaltinis</key>
+			<key type="sd">regiono padalinys</key>
 			<key type="ss">tarpas po trumpinio</key>
+			<key type="t">transformuoti</key>
+			<key type="t0">mašininio vertimo</key>
 			<key type="timezone">Laiko juosta</key>
 			<key type="va">Lokalės variantas</key>
 			<key type="x">Naudoti privačiai</key>
+			<key type="x0">Privataus naudojimo transformacija</key>
 		</keys>
 		<types>
 			<type key="calendar" type="buddhist">budistų kalendorius</type>
@@ -1232,15 +1249,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="calendar" type="hebrew">hebrajų kalendorius</type>
 			<type key="calendar" type="hebrew" scope="core">hebrajų</type>
 			<type key="calendar" type="indian">nacionalinis indų kalendorius</type>
+			<type key="calendar" type="indian" scope="core">indų (nacionalinis)</type>
 			<type key="calendar" type="islamic">musulmonų kalendorius</type>
 			<type key="calendar" type="islamic" scope="core">Islamo</type>
 			<type key="calendar" type="islamic-civil">musulmonų kalendorius (lentelinis, pilietinė era)</type>
 			<type key="calendar" type="islamic-civil" scope="core">musulmonų (lentelinis, pilietinė era)</type>
 			<type key="calendar" type="islamic-rgsa" draft="contributed">Islamo kalendorius (Saudo Arabija)</type>
+			<type key="calendar" type="islamic-rgsa" scope="core">musulmonų (Saudo Arabijos)</type>
 			<type key="calendar" type="islamic-tbla" draft="contributed">Islamo kalendorius (lentelinis, astronominė era)</type>
+			<type key="calendar" type="islamic-tbla" scope="core">musulmonų (lentelinis, astronominė era)</type>
 			<type key="calendar" type="islamic-umalqura">musulmonų kalendorius (Umm al-Qura)</type>
 			<type key="calendar" type="islamic-umalqura" scope="core">musulmonų (Umm al-Qura)</type>
 			<type key="calendar" type="iso8601">ISO 8601 kalendorius</type>
+			<type key="calendar" type="iso8601" scope="core">Grigaliaus</type>
 			<type key="calendar" type="japanese">japonų kalendorius</type>
 			<type key="calendar" type="japanese" scope="core">japonų</type>
 			<type key="calendar" type="persian">persų kalendorius</type>
@@ -1256,36 +1277,61 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="colBackwards" type="no">Rikiuoti diakritinius ženklus įprastai</type>
 			<type key="colBackwards" type="yes">Rikiuoti diakritinius ženklus atvirkščiai</type>
 			<type key="colCaseFirst" type="lower">Rikiuoti suteikiant pirmumą mažosioms raidėms</type>
+			<type key="colCaseFirst" type="lower" scope="core">Mažosios raidės</type>
 			<type key="colCaseFirst" type="no">Rikiuoti įprasta didžiųjų ir mažųjų raidžių tvarka</type>
+			<type key="colCaseFirst" type="no" scope="core">Mažosios raidės</type>
 			<type key="colCaseFirst" type="upper">Rikiuoti suteikiant pirmumą didžiosioms raidėms</type>
+			<type key="colCaseFirst" type="upper" scope="core">Didžiosios raidės</type>
 			<type key="colCaseLevel" type="no">Rikiuoti neskiriant didžiųjų ir mažųjų raidžių</type>
 			<type key="colCaseLevel" type="yes">Rikiuoti skiriant didžiąsias ir mažąsias raides</type>
 			<type key="collation" type="compat">ankstesnė rūšiavimo tvarka, skirta suderinamumui</type>
+			<type key="collation" type="compat" scope="core">suderinamumas</type>
 			<type key="collation" type="dictionary">žodyno rūšiavimo tvarka</type>
+			<type key="collation" type="dictionary" scope="core">žodynas</type>
 			<type key="collation" type="ducet">numatytasis unikodo rikiavimas</type>
 			<type key="collation" type="ducet" scope="core">numatytasis unikodo</type>
+			<type key="collation" type="emoji" scope="core">jausmaženklis</type>
 			<type key="collation" type="eor">rūšiavimo tvarka daugiakalbės Europos dokumentų</type>
+			<type key="collation" type="eor" scope="core">europietiškos taisyklės</type>
 			<type key="collation" type="phonebook">telefonų knygos rūšiavimo tvarka</type>
+			<type key="collation" type="phonebook" scope="core">telefono knyga</type>
 			<type key="collation" type="phonetic">Fonetinė rikiavimo tvarka</type>
+			<type key="collation" type="phonetic" scope="core">fonetinis</type>
 			<type key="collation" type="pinyin">supaprastinta kiniškų hieroglifų rūšiavimo tvarka</type>
+			<type key="collation" type="pinyin" scope="core">pinjinas</type>
 			<type key="collation" type="search">bendroji paieška</type>
 			<type key="collation" type="search" scope="core">paieška</type>
 			<type key="collation" type="searchjl" draft="provisional">ieškoti pagal hangul pirmines priebalses</type>
+			<type key="collation" type="searchjl" scope="core">korėjiečių pradinis priebalsis</type>
 			<type key="collation" type="standard">standartinis rikiavimas</type>
 			<type key="collation" type="standard" scope="core">standartinis</type>
 			<type key="collation" type="stroke">Įprasta kiniško požymio rūšiavimo tvarka</type>
+			<type key="collation" type="stroke" scope="core">rikiavimas pagal brūkšnius</type>
 			<type key="collation" type="traditional">įprasta rūšiavimo tvarka</type>
+			<type key="collation" type="traditional" scope="core">tradicinis</type>
 			<type key="collation" type="unihan">Šaknies ženklų ir brūkšnių rūšiavimo tvarka</type>
+			<type key="collation" type="unihan" scope="core">raktai ir brūkšniai</type>
 			<type key="collation" type="zhuyin">Zhuyin rikiavimo tvarka</type>
+			<type key="collation" type="zhuyin" scope="core">džujinas</type>
 			<type key="colNormalization" type="no">Rikiuoti nenormalizuojant</type>
 			<type key="colNormalization" type="yes">Rikiuoti normalizuojant unikodą</type>
 			<type key="colNumeric" type="no">Rikiuoti skaitmenis atskirai</type>
 			<type key="colNumeric" type="yes">Rikiuoti skaitmenis pagal skaičius</type>
+			<type key="colReorder" type="currency" scope="core">Valiuta</type>
+			<type key="colReorder" type="digit" scope="core">Skaitmenys</type>
+			<type key="colReorder" type="punct" scope="core">Skyryba</type>
+			<type key="colReorder" type="space" scope="core">Tarpai</type>
+			<type key="colReorder" type="symbol" scope="core">Simboliai</type>
 			<type key="colStrength" type="identical">Rikiuoti viską</type>
+			<type key="colStrength" type="identical" scope="core">Viskas</type>
 			<type key="colStrength" type="primary">Rikiuoti tik pagal pamatines raides</type>
+			<type key="colStrength" type="primary" scope="core">Tik pagrindinės raidės</type>
 			<type key="colStrength" type="quaternary">Rikiuoti pagal didžiąsias ir mažąsias raides / plotį / diakritinius / kanos ženklus</type>
+			<type key="colStrength" type="quaternary" scope="core">Bazė, akcentai, atvejis, variantai, Kana</type>
 			<type key="colStrength" type="secondary">Rikiuoti diakritinius ženklus</type>
+			<type key="colStrength" type="secondary" scope="core">Bazė, akcentai</type>
 			<type key="colStrength" type="tertiary">Rikiuoti pagal diakritinius ženklus / didžiąsias ir mažąsias raides / plotį</type>
+			<type key="colStrength" type="tertiary" scope="core">Bazė, akcentai, atvejis, variantai</type>
 			<type key="d0" type="fwidth">viso pločio</type>
 			<type key="d0" type="hwidth">vidutinio pločio</type>
 			<type key="d0" type="npinyin">Skaitinis</type>
@@ -1304,6 +1350,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="hc" type="h23" scope="core">24 (0–23)</type>
 			<type key="hc" type="h24">24 valandų sistema (1–24)</type>
 			<type key="hc" type="h24" scope="core">24 (1–24)</type>
+			<type key="kv" type="currency" scope="core">SHIFT tarpai, skyryba, visi simboliai</type>
+			<type key="kv" type="punct" scope="core">SHIFT tarpai, skyryba</type>
+			<type key="kv" type="space" scope="core">SHIFT tarpai, skyryba</type>
+			<type key="kv" type="symbol" scope="core">SHIFT tarpai, skyryba, ne valiutos simboliai</type>
 			<type key="lb" type="loose">laisvas teksto laužymo stilius</type>
 			<type key="lb" type="loose" scope="core">laisvas</type>
 			<type key="lb" type="normal">įprastas teksto laužymo stilius</type>
@@ -1324,8 +1374,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="ms" type="ussystem" scope="core">JAV</type>
 			<type key="numbers" type="arab">arabų-indų skaitmenys</type>
 			<type key="numbers" type="arabext">išplėstiniai arabų-indų skaitmenys</type>
+			<type key="numbers" type="arabext" scope="core">išplėstiniai arabų-indų</type>
 			<type key="numbers" type="armn">armėnų skaitmenys</type>
 			<type key="numbers" type="armnlow">armėnų skaitmenys mažosiomis raidėmis</type>
+			<type key="numbers" type="armnlow" scope="core">armėnų mažosiomis raidėmis</type>
 			<type key="numbers" type="bali">bali skaitmenys</type>
 			<type key="numbers" type="beng">bengalų skaitmenys</type>
 			<type key="numbers" type="brah">Brahmi skaitmenys</type>
@@ -1334,43 +1386,67 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="numbers" type="deva">devanagari skaitmenys</type>
 			<type key="numbers" type="ethi">Etiopijos skaitmenys</type>
 			<type key="numbers" type="finance">Finansiniai skaičiai</type>
+			<type key="numbers" type="finance" scope="core">finansiniai</type>
 			<type key="numbers" type="fullwide">viso pločio skaitmenys</type>
+			<type key="numbers" type="fullwide" scope="core">viso pločio</type>
 			<type key="numbers" type="geor">gruzinų skaitmenys</type>
 			<type key="numbers" type="grek">graikų skaitmenys</type>
 			<type key="numbers" type="greklow">graikų skaitmenys mažosiomis raidėmis</type>
+			<type key="numbers" type="greklow" scope="core">graikų mažosiomis raidėmis</type>
 			<type key="numbers" type="gujr">gudžaratų skaitmenys</type>
 			<type key="numbers" type="guru">gurmuki skaitmenys</type>
+			<type key="numbers" type="hanidays" scope="core">Han simbolių mėnesio dienų numeracija tradiciniuose kalendoriuose</type>
 			<type key="numbers" type="hanidec">kinų dešimtainiai skaitmenys</type>
+			<type key="numbers" type="hanidec" scope="core">Pozicinė dešimtainė sistema, naudojanti kinų skaičių ideografus kaip skaitmenis</type>
 			<type key="numbers" type="hans">supaprastintos kinų k. skaitmenys</type>
 			<type key="numbers" type="hansfin">supaprastintos kinų k. finans. skaitmenys</type>
+			<type key="numbers" type="hansfin" scope="core">supaprastintos kinų k. finansiniai</type>
 			<type key="numbers" type="hant">tradicinės kinų k. skaitmenys</type>
 			<type key="numbers" type="hantfin">tradicinės kinų k. finans. skaitmenys</type>
+			<type key="numbers" type="hantfin" scope="core">tradicinės kinų k. finansiniai</type>
 			<type key="numbers" type="hebr">hebrajų skaitmenys</type>
 			<type key="numbers" type="java">javiečių skaitmenys</type>
 			<type key="numbers" type="jpan">japonų skaitmenys</type>
 			<type key="numbers" type="jpanfin">japonų finans. skaitmenys</type>
+			<type key="numbers" type="jpanfin" scope="core">japonų finansiniai</type>
+			<type key="numbers" type="jpanyear" scope="core">japonų pirmųjų eros metų numeracija</type>
 			<type key="numbers" type="kali">Kayah Li skaitmenys</type>
 			<type key="numbers" type="khmr">khmerų skaitmenys</type>
 			<type key="numbers" type="knda">kanadų skaitmenys</type>
 			<type key="numbers" type="lana">Tai Tham Hora skaitmenys</type>
 			<type key="numbers" type="lanatham">Tai Tham Tham skaitmenys</type>
+			<type key="numbers" type="lanatham" scope="core">Tai Tham Tham (bažnytinis)</type>
 			<type key="numbers" type="laoo">laosiečių skaitmenys</type>
 			<type key="numbers" type="latn">lotyniški skaitmenys</type>
 			<type key="numbers" type="lepc">Lepcha skaitmenys</type>
 			<type key="numbers" type="limb">Limbu skaitmenys</type>
+			<type key="numbers" type="mathbold" scope="core">matematiniai pajuodinti</type>
+			<type key="numbers" type="mathdbl" scope="core">matematiniai su dvigubu brūkšniu</type>
+			<type key="numbers" type="mathmono" scope="core">matematiniai vienodo pločio</type>
+			<type key="numbers" type="mathsanb" scope="core">matematiniai pajuodinti be užraitų</type>
+			<type key="numbers" type="mathsans" scope="core">matematiniai be užraitų</type>
 			<type key="numbers" type="mlym">malajalių skaitmenys</type>
 			<type key="numbers" type="mong">mongolų skaitmenys</type>
 			<type key="numbers" type="mtei">Meetei Mayek skaitmenys</type>
 			<type key="numbers" type="mymr">mianmariečių skaitmenys</type>
+			<type key="numbers" type="mymrepka" scope="core">mianmariečių rytų Pwo Karen</type>
+			<type key="numbers" type="mymrpao" scope="core">mianmariečių Pao</type>
 			<type key="numbers" type="mymrshan">Myanmar Shan skaitmenys</type>
+			<type key="numbers" type="mymrshan" scope="core">mianmariečių Shan</type>
+			<type key="numbers" type="mymrtlng" scope="core">mianmariečių Tai Laing</type>
 			<type key="numbers" type="native">Vietiniai skaitmenys</type>
+			<type key="numbers" type="native" scope="core">vietiniai skaitmenys</type>
 			<type key="numbers" type="nkoo">N’Ko skaitmenys</type>
 			<type key="numbers" type="olck">Ol Chiki skaitmenys</type>
 			<type key="numbers" type="orya">orijų skaitmenys</type>
 			<type key="numbers" type="osma">Osmanų skaitmenys</type>
+			<type key="numbers" type="outlined" scope="core">už kontūro</type>
 			<type key="numbers" type="roman">romėniški skaitmenys</type>
+			<type key="numbers" type="roman" scope="core">romėniški didžiosiomis raidėmis</type>
 			<type key="numbers" type="romanlow">romėniški skaitmenys mažosiomis raidėmis</type>
+			<type key="numbers" type="romanlow" scope="core">romėniški mažosiomis raidėmis</type>
 			<type key="numbers" type="saur">Sauraštrų skaitmenys</type>
+			<type key="numbers" type="segment" scope="core">segmentuoti</type>
 			<type key="numbers" type="shrd">Šaradų skaitmenys</type>
 			<type key="numbers" type="sora">Sora Sompeng skaitmenys</type>
 			<type key="numbers" type="sund">Sudaniečių skaitmenys</type>
@@ -1378,14 +1454,22 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<type key="numbers" type="talu">Naujieji Tai Lue skaitmenys</type>
 			<type key="numbers" type="taml">tradicinės tamilų skaitmenys</type>
 			<type key="numbers" type="tamldec">tamilų skaitmenys</type>
+			<type key="numbers" type="tamldec" scope="core">šiuolaikinės tamilų</type>
 			<type key="numbers" type="telu">telugų skaitmenys</type>
 			<type key="numbers" type="thai">tajų skaitmenys</type>
 			<type key="numbers" type="tibt">tibetiečių skaitmenys</type>
 			<type key="numbers" type="traditional">Tradiciniai skaičiai</type>
+			<type key="numbers" type="traditional" scope="core">tradiciniai skaitmenys</type>
 			<type key="numbers" type="vaii">vai skaitmenys</type>
 			<type key="ss" type="none" scope="core">išjungta</type>
 			<type key="ss" type="standard" scope="core">įjungta</type>
+			<type key="t0" type="und">nenurodytas mašininis vertimas</type>
+			<type key="va" type="posix" scope="core">POSIX variantas</type>
 		</types>
+		<typeValues>
+			<typeValue type="no">išjungta</typeValue>
+			<typeValue type="yes">įjungta</typeValue>
+		</typeValues>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">metrinė</measurementSystemName>
 			<measurementSystemName type="UK">JK</measurementSystemName>
@@ -1403,9 +1487,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<exemplarCharacters type="index">[AĄ B C Č D EĘĖ F G H IĮY J K L M N O P R S Š T UŲŪ V Z Ž]</exemplarCharacters>
 		<exemplarCharacters type="numbers">[  , % ‰ + − 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐‑ – — , ; \: ! ? . … “„ ( ) \[ \] \{ \}]</exemplarCharacters>
-		<parseLenients scope="date" level="lenient">
-			<parseLenient sample=":">[\: ∶]</parseLenient>
-		</parseLenients>
 		<parseLenients scope="number" level="lenient">
 			<parseLenient sample="-">[\-－﹣ ‑ ‒ −⁻₋ ➖]</parseLenient>
 			<parseLenient sample=",">[,，﹐︐ ، ٫ 、﹑､︑]</parseLenient>
@@ -1604,6 +1685,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="generic">
+				<dayOfMonths>
+					<dayOfMonthContext type="format">
+						<dayOfMonthWidth type="abbreviated">
+							<dayOfMonth ordinal="other">{0}-oji</dayOfMonth>
+						</dayOfMonthWidth>
+					</dayOfMonthContext>
+				</dayOfMonths>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -1808,6 +1896,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</monthWidth>
 					</monthContext>
 				</months>
+				<dayOfMonths>
+					<dayOfMonthContext type="format">
+						<dayOfMonthWidth type="abbreviated">
+							<dayOfMonth ordinal="other">{0}-oji</dayOfMonth>
+						</dayOfMonthWidth>
+					</dayOfMonthContext>
+				</dayOfMonths>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
@@ -2004,10 +2099,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="GyMEd">y-MM-dd G, E</dateFormatItem>
 						<dateFormatItem id="GyMMM">y-MM G</dateFormatItem>
 						<dateFormatItem id="GyMMMd">y-MM-dd G</dateFormatItem>
+						<dateFormatItem id="GyMMMddd">MMM ddd, y 'm'. G</dateFormatItem>
 						<dateFormatItem id="GyMMMEd">y-MM-dd G, E</dateFormatItem>
+						<dateFormatItem id="GyMMMEddd">MMM ddd, E, y 'm'. G</dateFormatItem>
 						<dateFormatItem id="GyMMMM">y 'm'. G, LLLL</dateFormatItem>
 						<dateFormatItem id="GyMMMMd">y 'm'. G MMMM d 'd'.</dateFormatItem>
+						<dateFormatItem id="GyMMMMddd">MMMM ddd, y 'm'. G</dateFormatItem>
 						<dateFormatItem id="GyMMMMEd">y 'm'. G MMMM d 'd'., E</dateFormatItem>
+						<dateFormatItem id="GyMMMMEddd">MMMM ddd, E, y 'm'. G</dateFormatItem>
 						<dateFormatItem id="h">hh a</dateFormatItem>
 						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
 						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
@@ -2015,7 +2114,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="Hmsv">HH:mm:ss; v</dateFormatItem>
 						<dateFormatItem id="hmv">hh:mm a; v</dateFormatItem>
 						<dateFormatItem id="Hmv">HH:mm; v</dateFormatItem>
-						<dateFormatItem id="Hv">HH v</dateFormatItem>
+						<dateFormatItem id="Hv">HH; v</dateFormatItem>
 						<dateFormatItem id="M">MM</dateFormatItem>
 						<dateFormatItem id="Md">MM-d</dateFormatItem>
 						<dateFormatItem id="MMdd">MM-dd</dateFormatItem>
@@ -2031,15 +2130,24 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MMMMW" count="other">MMMM W 'sav'.</dateFormatItem>
 						<dateFormatItem id="yMMM">y-MM</dateFormatItem>
 						<dateFormatItem id="yMMMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMMMddd">y 'm'. MMM ddd</dateFormatItem>
 						<dateFormatItem id="yMMMEd">y-MM-dd, E</dateFormatItem>
+						<dateFormatItem id="yMMMEddd">y 'm'. MMM ddd, E</dateFormatItem>
 						<dateFormatItem id="yMMMM">y 'm'. LLLL</dateFormatItem>
 						<dateFormatItem id="yMMMMd">y 'm'. MMMM d 'd'.</dateFormatItem>
+						<dateFormatItem id="yMMMMddd">y 'm'. MMMM ddd</dateFormatItem>
 						<dateFormatItem id="yMMMMEd">y 'm'. MMMM d 'd'., E</dateFormatItem>
+						<dateFormatItem id="yMMMMEddd">y 'm'. MMMM ddd, E</dateFormatItem>
 						<dateFormatItem id="yw" count="one">Y w 'sav'.</dateFormatItem>
 						<dateFormatItem id="yw" count="few">Y w 'sav'.</dateFormatItem>
 						<dateFormatItem id="yw" count="many">Y w 'sav'.</dateFormatItem>
 						<dateFormatItem id="yw" count="other">Y w 'sav'.</dateFormatItem>
 					</availableFormats>
+					<appendItems>
+						<appendItem request="Day-Of-Week">{1}, {0}</appendItem>
+						<appendItem request="Era">{0} {1}</appendItem>
+						<appendItem request="Time-Day-Of-Week">{1}, {0}</appendItem>
+					</appendItems>
 					<intervalFormats>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="h">hh–hh B</greatestDifference>
@@ -2054,10 +2162,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M">LLLL–LLLL</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="MMMMd">
-							<greatestDifference id="d">MMMM d–d</greatestDifference>
-							<greatestDifference id="M">MMMM d – MMMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMMEd">
 							<greatestDifference id="d">MMMM d, E – MMMM d, E</greatestDifference>
@@ -3094,9 +3198,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<exemplarCity>Librevilis</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
-				<long>
-					<daylight>Britanijos vasaros laikas</daylight>
-				</long>
 				<exemplarCity>Londonas</exemplarCity>
 			</zone>
 			<zone type="Asia/Tbilisi">
@@ -3184,9 +3285,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<exemplarCity>Džajapura</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
-				<long>
-					<daylight>Airijos vasaros laikas</daylight>
-				</long>
 				<exemplarCity>Dublinas</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
@@ -3821,9 +3919,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</zone>
 			<metazone type="Acre">
 				<long>
-					<generic>Ako laikas</generic>
-					<standard>Ako standartinis laikas</standard>
-					<daylight>Ako vasaros laikas</daylight>
+					<generic>Akrės laikas</generic>
+					<standard>Akrės žiemos laikas</standard>
+					<daylight>Akrės vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Afghanistan">
@@ -3856,13 +3954,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Aliaskos laikas</generic>
 					<standard>Aliaskos žiemos laikas</standard>
 					<daylight>Aliaskos vasaros laikas</daylight>
-				</long>
-			</metazone>
-			<metazone type="Almaty">
-				<long>
-					<generic>Almatos laikas</generic>
-					<standard>Almatos žiemos laikas</standard>
-					<daylight>Almatos vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Amazon">
@@ -3912,20 +4003,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Apijos laikas</generic>
 					<standard>Apijos žiemos laikas</standard>
 					<daylight>Apijos vasaros laikas</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtau">
-				<long>
-					<generic>Aktau laikas</generic>
-					<standard>Aktau žiemos laikas</standard>
-					<daylight>Aktau vasaros laikas</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtobe">
-				<long>
-					<generic>Aktobės laikas</generic>
-					<standard>Aktobės žiemos laikas</standard>
-					<daylight>Aktobės vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -4027,6 +4104,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Brazilijos laikas</generic>
 					<standard>Brazilijos žiemos laikas</standard>
 					<daylight>Brazilijos vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="British">
+				<long>
+					<generic>Britų laikas</generic>
+					<daylight>Britanijos vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brunei">
@@ -4207,6 +4290,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<standard>Grinvičo laikas</standard>
 				</long>
 			</metazone>
+			<metazone type="Greenland">
+				<long>
+					<generic>Grenlandijos laikas</generic>
+					<standard>Grenlandijos žiemos laikas</standard>
+					<daylight>Grenlandijos vasaros laikas</daylight>
+				</long>
+			</metazone>
 			<metazone type="Greenland_Eastern">
 				<long>
 					<generic>Grenlandijos rytų laikas</generic>
@@ -4221,11 +4311,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<daylight>Grenlandijos vakarų vasaros laikas</daylight>
 				</long>
 			</metazone>
-			<metazone type="Guam">
-				<long>
-					<standard>Guamo laikas</standard>
-				</long>
-			</metazone>
 			<metazone type="Gulf">
 				<long>
 					<standard>Persijos įlankos laikas</standard>
@@ -4238,7 +4323,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</metazone>
 			<metazone type="Hawaii">
 				<long>
-					<standard>Havajų–Aleutų žiemos laikas</standard>
+					<standard>Havajų ir Aleutų žiemos laikas</standard>
 				</long>
 			</metazone>
 			<metazone type="Hawaii_Aleutian">
@@ -4297,6 +4382,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Irano laikas</generic>
 					<standard>Irano žiemos laikas</standard>
 					<daylight>Irano vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<generic>Airijos laikas</generic>
+					<daylight>Airijos vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Irkutsk">
@@ -4366,11 +4457,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<standard>Kirgistano laikas</standard>
 				</long>
 			</metazone>
-			<metazone type="Lanka">
-				<long>
-					<standard>Lankos laikas</standard>
-				</long>
-			</metazone>
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Laino Salų laikas</standard>
@@ -4381,13 +4467,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Lordo Hau laikas</generic>
 					<standard>Lordo Hau žiemos laikas</standard>
 					<daylight>Lordo Hau vasaros laikas</daylight>
-				</long>
-			</metazone>
-			<metazone type="Macau">
-				<long>
-					<generic>Makau laikas</generic>
-					<standard>Makau žiemos laikas</standard>
-					<daylight>Makau vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Magadan">
@@ -4505,11 +4584,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<daylight>Fernando de Noronjos vasaros laikas</daylight>
 				</long>
 			</metazone>
-			<metazone type="North_Mariana">
-				<long>
-					<standard>Šiaurės Marianos Salų laikas</standard>
-				</long>
-			</metazone>
 			<metazone type="Novosibirsk">
 				<long>
 					<generic>Novosibirsko laikas</generic>
@@ -4589,13 +4663,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<standard>Pchenjano laikas</standard>
 				</long>
 			</metazone>
-			<metazone type="Qyzylorda">
-				<long>
-					<generic>Kyzylordos laikas</generic>
-					<standard>Kyzylordos žiemos laikas</standard>
-					<daylight>Kyzylordos vasaros laikas</daylight>
-				</long>
-			</metazone>
 			<metazone type="Reunion">
 				<long>
 					<standard>Reunjono laikas</standard>
@@ -4622,9 +4689,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<generic>Samoa laikas</generic>
 					<standard>Samoa žiemos laikas</standard>
-					<daylight>Samoa vasaros laikas</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -4715,6 +4780,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>Urugvajaus laikas</generic>
 					<standard>Urugvajaus žiemos laikas</standard>
 					<daylight>Urugvajaus vasaros laikas</daylight>
+				</long>
+			</metazone>
+			<metazone type="Urumqi">
+				<long>
+					<standard>Urumčio laikas</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -4887,9 +4957,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<currencyFormatLength>
 				<currencyFormat type="standard">
 					<pattern>#,##0.00 ¤</pattern>
-					<pattern alt="alphaNextToNumber">#,##0.00 ¤</pattern>
-				</currencyFormat>
-				<currencyFormat type="accounting">
 					<pattern alt="alphaNextToNumber">#,##0.00 ¤</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
@@ -5405,13 +5472,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="few">Kinijos Užsienio juaniai</displayName>
 				<displayName count="many">Kinijos Užsienio juanio</displayName>
 				<displayName count="other">Kinijos Užsienio juanių</displayName>
-			</currency>
-			<currency type="CNX">
-				<displayName>Kinijos &quot;People&quot; banko doleris</displayName>
-				<displayName count="one">Kinijos &quot;People&quot; banko doleris</displayName>
-				<displayName count="few">Kinijos &quot;People&quot; banko doleriai</displayName>
-				<displayName count="many">Kinijos &quot;People&quot; banko dolerio</displayName>
-				<displayName count="other">Kinijos &quot;People&quot; banko dolerių</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Kinijos ženminbi juanis</displayName>
@@ -7043,10 +7103,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</currency>
 			<currency type="ZWG">
 				<displayName>Zimbabvės auksas</displayName>
-				<displayName count="one">Zimbabvės auksas</displayName>
-				<displayName count="few">Zimbabvės auksas</displayName>
-				<displayName count="many">Zimbabvės auksas</displayName>
-				<displayName count="other">Zimbabvės auksas</displayName>
 			</currency>
 			<currency type="ZWL">
 				<displayName>Zimbabvės doleris (2009)</displayName>
@@ -7728,13 +7784,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other" case="instrumental">{0} elementų</unitPattern>
 				<unitPattern count="other" case="locative">{0} elementų</unitPattern>
 			</unit>
-			<unit type="concentr-part">
-				<displayName>dalelė</displayName>
-				<unitPattern count="one">{0} dalelė</unitPattern>
-				<unitPattern count="few">{0} dalelės</unitPattern>
-				<unitPattern count="many">{0} dalelės</unitPattern>
-				<unitPattern count="other">{0} dalelių</unitPattern>
-			</unit>
 			<unit type="concentr-part-per-1e6">
 				<gender>feminine</gender>
 				<displayName>milijoninės dalys</displayName>
@@ -7849,7 +7898,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other" case="locative">{0} molių</unitPattern>
 			</unit>
 			<unit type="concentr-ofglucose">
-				<displayName>gliukozė</displayName>
 				<unitPattern count="one">gliukozės kiekis – {0}</unitPattern>
 				<unitPattern count="few">gliukozės kiekis – {0}</unitPattern>
 				<unitPattern count="many">gliukozės kiekis – {0}</unitPattern>
@@ -10934,10 +10982,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="speed-light-speed">
 				<displayName>šviesos greitis</displayName>
-				<unitPattern count="one">{0} šm</unitPattern>
-				<unitPattern count="few">{0} šm</unitPattern>
-				<unitPattern count="many">{0} šm</unitPattern>
-				<unitPattern count="other">{0} šm</unitPattern>
 			</unit>
 			<unit type="concentr-part-per-1e9">
 				<gender>feminine</gender>
@@ -10971,7 +11015,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<gender>feminine</gender>
 				<displayName>naktis</displayName>
 				<unitPattern count="one">{0} naktis</unitPattern>
-				<unitPattern count="one" case="accusative">{0} naktis</unitPattern>
+				<unitPattern count="one" case="accusative">{0} naktį</unitPattern>
 				<unitPattern count="one" case="dative">{0} nakčiai</unitPattern>
 				<unitPattern count="one" case="genitive">{0} nakties</unitPattern>
 				<unitPattern count="one" case="instrumental">{0} naktimi</unitPattern>
@@ -11249,9 +11293,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="electric-volt">
 				<displayName>V</displayName>
-			</unit>
-			<unit type="energy-calorie">
-				<displayName>kal.</displayName>
 			</unit>
 			<unit type="energy-foodcalorie">
 				<displayName>cal</displayName>
@@ -11613,11 +11654,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} imp. kv.</unitPattern>
 			</unit>
 			<unit type="energy-calorie-it">
-				<displayName>cal</displayName>
-				<unitPattern count="one">{0} cal</unitPattern>
-				<unitPattern count="few">{0} cal</unitPattern>
-				<unitPattern count="many">{0} cal</unitPattern>
-				<unitPattern count="other">{0} cal</unitPattern>
+				<displayName>cal-IT</displayName>
 			</unit>
 			<unit type="speed-light-speed">
 				<displayName>šm</displayName>
@@ -11682,7 +11719,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} ft²</unitPattern>
 			</unit>
 			<unit type="concentr-part">
-				<displayName>dalelė</displayName>
 				<unitPattern count="one">{0} dal.</unitPattern>
 				<unitPattern count="few">{0} dal.</unitPattern>
 				<unitPattern count="many">{0} dal.</unitPattern>
@@ -11690,9 +11726,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="concentr-percent">
 				<displayName>%</displayName>
-			</unit>
-			<unit type="concentr-ofglucose">
-				<displayName>gliukozė</displayName>
 			</unit>
 			<unit type="consumption-mile-per-gallon">
 				<unitPattern count="one">{0} mi/gal</unitPattern>
@@ -11722,6 +11755,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="many">{0} s</unitPattern>
 				<unitPattern count="other">{0} s</unitPattern>
 			</unit>
+			<unit type="energy-calorie">
+				<displayName>cal</displayName>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -11750,27 +11786,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} fl oz</unitPattern>
 				<unitPattern count="many">{0} fl oz</unitPattern>
 				<unitPattern count="other">{0} fl oz</unitPattern>
-			</unit>
-			<unit type="energy-calorie-it">
-				<displayName>cal</displayName>
-				<unitPattern count="one">{0} cal</unitPattern>
-				<unitPattern count="few">{0} cal</unitPattern>
-				<unitPattern count="many">{0} cal</unitPattern>
-				<unitPattern count="other">{0} cal</unitPattern>
-			</unit>
-			<unit type="speed-light-speed">
-				<displayName>šm</displayName>
-				<unitPattern count="one">{0} šm</unitPattern>
-				<unitPattern count="few">{0} šm</unitPattern>
-				<unitPattern count="many">{0} šm</unitPattern>
-				<unitPattern count="other">{0} šm</unitPattern>
-			</unit>
-			<unit type="concentr-part-per-1e9">
-				<displayName>dalis/mlrd.</displayName>
-				<unitPattern count="one">{0} dal./mlrd.</unitPattern>
-				<unitPattern count="few">{0} dal./mlrd.</unitPattern>
-				<unitPattern count="many">{0} dal./mlrd.</unitPattern>
-				<unitPattern count="other">{0} dal./mlrd.</unitPattern>
 			</unit>
 		</unitLength>
 		<durationUnit type="hm">

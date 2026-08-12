@@ -1670,6 +1670,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yw" count="other">'седмица' w 'година' Y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatItem id="h">
 							<greatestDifference id="a">hh a – hh a</greatestDifference>
 							<greatestDifference id="h">hh–hh a</greatestDifference>
@@ -2770,9 +2775,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>Либревил</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
-				<long>
-					<daylight>Британско љетње вријеме</daylight>
-				</long>
 				<exemplarCity>Лондон</exemplarCity>
 			</zone>
 			<zone type="America/Grenada">
@@ -2863,9 +2865,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>Џајапура</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
-				<long>
-					<daylight>Ирско стандардно вријеме</daylight>
-				</long>
 				<exemplarCity>Даблин</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
@@ -3594,13 +3593,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Аљаска љетње вријеме</daylight>
 				</long>
 			</metazone>
-			<metazone type="Almaty">
-				<long>
-					<generic>Алмати време</generic>
-					<standard>Алмати стандардно време</standard>
-					<daylight>Алмати летње рачунање времена</daylight>
-				</long>
-			</metazone>
 			<metazone type="Amazon">
 				<long>
 					<generic>Амазон вријеме</generic>
@@ -3648,20 +3640,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Апија вријеме</generic>
 					<standard>Апија стандардно вријеме</standard>
 					<daylight>Апија љетње рачунање времена</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtau">
-				<long>
-					<generic>Акватау време</generic>
-					<standard>Акватау стандардно време</standard>
-					<daylight>Акватау летње рачунање времена</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtobe">
-				<long>
-					<generic>Акутобе време</generic>
-					<standard>Акутобе стандардно време</standard>
-					<daylight>Акутобе летње рачунање времена</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -3763,6 +3741,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Бразилија вријеме</generic>
 					<standard>Бразилија стандардно вријеме</standard>
 					<daylight>Бразилија љетње рачунање времена</daylight>
+				</long>
+			</metazone>
+			<metazone type="British">
+				<long>
+					<daylight>Британско љетње вријеме</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brunei">
@@ -3952,11 +3935,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Западни Гренланд љетње рачунање времена</daylight>
 				</long>
 			</metazone>
-			<metazone type="Guam">
-				<long>
-					<standard>Гуам стандардно време</standard>
-				</long>
-			</metazone>
 			<metazone type="Gulf">
 				<long>
 					<standard>Заливско вријеме</standard>
@@ -4030,6 +4008,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Иран љетње рачунање времена</daylight>
 				</long>
 			</metazone>
+			<metazone type="Irish">
+				<long>
+					<daylight>Ирско стандардно вријеме</daylight>
+				</long>
+			</metazone>
 			<metazone type="Irkutsk">
 				<long>
 					<generic>Иркуцк вријеме</generic>
@@ -4097,11 +4080,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<standard>Киргистан вријеме</standard>
 				</long>
 			</metazone>
-			<metazone type="Lanka">
-				<long>
-					<standard>Шри Ланка време</standard>
-				</long>
-			</metazone>
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Лине Острва вријеме</standard>
@@ -4112,13 +4090,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Лорд Хов вријеме</generic>
 					<standard>Лорд Хов стандардно вријеме</standard>
 					<daylight>Лорд Хов љетње рачунање времена</daylight>
-				</long>
-			</metazone>
-			<metazone type="Macau">
-				<long>
-					<generic>Макао време</generic>
-					<standard>Макао стандардно време</standard>
-					<daylight>Макао летње рачунање вемена</daylight>
 				</long>
 			</metazone>
 			<metazone type="Magadan">
@@ -4236,11 +4207,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Фернандо де Нороња љетње рачунање времена</daylight>
 				</long>
 			</metazone>
-			<metazone type="North_Mariana">
-				<long>
-					<standard>Северна Маријанска Острва време</standard>
-				</long>
-			</metazone>
 			<metazone type="Novosibirsk">
 				<long>
 					<generic>Новосибирско вријеме</generic>
@@ -4320,13 +4286,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<standard>Пјонгјанг вријеме</standard>
 				</long>
 			</metazone>
-			<metazone type="Qyzylorda">
-				<long>
-					<generic>Кизилорда време</generic>
-					<standard>Кизилорда стандардно време</standard>
-					<daylight>Кизилорда летње рачунање времена</daylight>
-				</long>
-			</metazone>
 			<metazone type="Reunion">
 				<long>
 					<standard>Реинион вријеме</standard>
@@ -4353,9 +4312,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<generic>Самоа вријеме</generic>
 					<standard>Самоа стандардно вријеме</standard>
-					<daylight>Самоа љетње рачунање времена</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -5031,11 +4988,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="one">кинески јуан (острвски)</displayName>
 				<displayName count="few">кинеска јуана (острвска)</displayName>
 				<displayName count="other">кинеских јуана (острвских)</displayName>
-			</currency>
-			<currency type="CNX">
-				<displayName count="one" draft="provisional">долар кинеске народне банке</displayName>
-				<displayName count="few" draft="provisional">долара кинеске народне банке</displayName>
-				<displayName count="other" draft="provisional">долара кинеске народне банке</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Кинески јуан</displayName>
