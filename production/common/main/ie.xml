@@ -1201,6 +1201,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0} – {1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatFallback>{0} til {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="h" draft="unconfirmed">h – h B</greatestDifference>
@@ -1652,7 +1657,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</fields>
 		<timeZoneNames>
 			<gmtFormat>TMG{0}</gmtFormat>
-			<gmtZeroFormat>TMG</gmtZeroFormat>
 			<gmtUnknownFormat>TMG+?</gmtUnknownFormat>
 			<regionFormat>témpor de {0}</regionFormat>
 			<regionFormat type="daylight">témpor estival de {0}</regionFormat>
@@ -1800,11 +1804,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Atlantic/Faeroe">
 				<exemplarCity draft="unconfirmed">Feroe</exemplarCity>
 			</zone>
-			<zone type="Europe/London">
-				<long>
-					<daylight draft="unconfirmed">britanic estival témpor</daylight>
-				</long>
-			</zone>
 			<zone type="America/Guadeloupe">
 				<exemplarCity draft="unconfirmed">Guadelupa</exemplarCity>
 			</zone>
@@ -1816,11 +1815,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="Asia/Hong_Kong">
 				<exemplarCity draft="unconfirmed">Hong-Kong</exemplarCity>
-			</zone>
-			<zone type="Europe/Dublin">
-				<long>
-					<daylight draft="unconfirmed">irlandesi standard témpor</daylight>
-				</long>
 			</zone>
 			<zone type="Europe/Isle_of_Man">
 				<exemplarCity>Insul de Man</exemplarCity>
@@ -2018,6 +2012,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight draft="unconfirmed">témpor estival del Azores</daylight>
 				</long>
 			</metazone>
+			<metazone type="British">
+				<long>
+					<daylight draft="unconfirmed">britanic estival témpor</daylight>
+				</long>
+			</metazone>
 			<metazone type="Christmas">
 				<long>
 					<standard draft="unconfirmed">témpor del Insul Christmas</standard>
@@ -2104,6 +2103,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic draft="unconfirmed">témpor de Hawai e Aleutes</generic>
 					<standard draft="unconfirmed">témpor standard de Hawai e Aleutes</standard>
 					<daylight draft="unconfirmed">témpor estival de Hawai e Aleutes</daylight>
+				</long>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<daylight draft="unconfirmed">irlandesi standard témpor</daylight>
 				</long>
 			</metazone>
 			<metazone type="Line_Islands">

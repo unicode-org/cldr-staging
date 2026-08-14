@@ -368,7 +368,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="014">Àfrica livantina</territory>
 			<territory type="015">Àfrica di tramuntana</territory>
 			<territory type="017">Àfrica di menzu</territory>
-			<territory type="018">Àfrica di sciroccu</territory>
 			<territory type="019">Mèrichi</territory>
 			<territory type="021">Mèrica di tramuntana</territory>
 			<territory type="029">Caràibbi</territory>
@@ -1149,6 +1148,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yw" count="other">'simana' w 'dû' Y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatItem id="Bhm">
 							<greatestDifference id="h">h:mm – h:mm B</greatestDifference>
 							<greatestDifference id="m">h:mm – h:mm B</greatestDifference>
@@ -1611,9 +1615,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>Pariggi</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
-				<long>
-					<daylight>Ura ligali Britànnica</daylight>
-				</long>
 				<exemplarCity>Lònnira</exemplarCity>
 			</zone>
 			<zone type="Europe/Gibraltar">
@@ -1641,9 +1642,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>Giacarta</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
-				<long>
-					<daylight>Ura sulari Irlannisi</daylight>
-				</long>
 				<exemplarCity>Dubblinu</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
@@ -2016,6 +2014,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Ura ligali di Brasilia</daylight>
 				</long>
 			</metazone>
+			<metazone type="British">
+				<long>
+					<daylight>Ura ligali Britànnica</daylight>
+				</long>
+			</metazone>
 			<metazone type="Brunei">
 				<long>
 					<standard>Ura dû Brunei</standard>
@@ -2294,6 +2297,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Ura di l’Iran</generic>
 					<standard>Ura sulari di l’Iran</standard>
 					<daylight>Ura ligali di l’Iran</daylight>
+				</long>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<daylight>Ura sulari Irlannisi</daylight>
 				</long>
 			</metazone>
 			<metazone type="Irkutsk">
@@ -2581,9 +2589,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<generic>Ura dî Samoa miricani</generic>
 					<standard>Ura sulari dî Samoa miricani</standard>
-					<daylight>Ura ligali dî Samoa miricani</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">

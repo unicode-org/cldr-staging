@@ -2162,6 +2162,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yw" count="other">'selmana' w 'de' Y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0} – {1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d – d</greatestDifference>
 						</intervalFormatItem>
@@ -2988,9 +2993,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>París</exemplarCity>
 			</zone>
 			<zone type="Europe/London">
-				<long>
-					<daylight>Hora braniega británica</daylight>
-				</long>
 				<exemplarCity>Londres</exemplarCity>
 			</zone>
 			<zone type="America/Grenada">
@@ -3021,9 +3023,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<exemplarCity>Xayapura</exemplarCity>
 			</zone>
 			<zone type="Europe/Dublin">
-				<long>
-					<daylight>Hora estándar irlandesa</daylight>
-				</long>
 				<exemplarCity>Dublín</exemplarCity>
 			</zone>
 			<zone type="Asia/Jerusalem">
@@ -3280,13 +3279,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight draft="contributed">AKDT</daylight>
 				</short>
 			</metazone>
-			<metazone type="Almaty">
-				<long>
-					<generic>Hora d’Almaty</generic>
-					<standard>hora estándar d’Almaty</standard>
-					<daylight>hora braniega d’Almaty</daylight>
-				</long>
-			</metazone>
 			<metazone type="Amazon">
 				<long>
 					<generic>Hora del Amazonas</generic>
@@ -3354,20 +3346,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Hora d’Apia</generic>
 					<standard>Hora estándar d’Apia</standard>
 					<daylight>Hora braniega d’Apia</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtau">
-				<long>
-					<generic>Hora d’Aqtau</generic>
-					<standard>Hora estándar d’Aqtau</standard>
-					<daylight>Hora braniega d’Aqtau</daylight>
-				</long>
-			</metazone>
-			<metazone type="Aqtobe">
-				<long>
-					<generic>Hora d’Aqtobe</generic>
-					<standard>Hora estándar d’Aqtobe</standard>
-					<daylight>Hora braniega d’Aqtobe</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -3474,6 +3452,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Hora de Brasilia</generic>
 					<standard>Hora estándar de Brasilia</standard>
 					<daylight>Hora braniega de Brasilia</daylight>
+				</long>
+			</metazone>
+			<metazone type="British">
+				<long>
+					<daylight>Hora braniega británica</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brunei">
@@ -3686,11 +3669,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Hora braniega de Groenlandia occidental</daylight>
 				</long>
 			</metazone>
-			<metazone type="Guam">
-				<long>
-					<standard>Hora estándar de Guam</standard>
-				</long>
-			</metazone>
 			<metazone type="Gulf">
 				<long>
 					<standard>Hora estándar del Golfu</standard>
@@ -3769,6 +3747,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Hora braniega d’Irán</daylight>
 				</long>
 			</metazone>
+			<metazone type="Irish">
+				<long>
+					<daylight>Hora estándar irlandesa</daylight>
+				</long>
+			</metazone>
 			<metazone type="Irkutsk">
 				<long>
 					<generic>Hora d’Irkutsk</generic>
@@ -3831,11 +3814,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<standard>Hora del Kirguistán</standard>
 				</long>
 			</metazone>
-			<metazone type="Lanka">
-				<long>
-					<standard>Hora de Lanka</standard>
-				</long>
-			</metazone>
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Hora de les Islles Line</standard>
@@ -3846,13 +3824,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Hora de Lord Howe</generic>
 					<standard>Hora estándar de Lord Howe</standard>
 					<daylight>Hora braniega de Lord Howe</daylight>
-				</long>
-			</metazone>
-			<metazone type="Macau">
-				<long>
-					<generic>Hora de Macáu</generic>
-					<standard>Hora estándar de Macáu</standard>
-					<daylight>Hora braniega de Macáu</daylight>
 				</long>
 			</metazone>
 			<metazone type="Magadan">
@@ -3970,11 +3941,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>Hora braniega de Fernando de Noronha</daylight>
 				</long>
 			</metazone>
-			<metazone type="North_Mariana">
-				<long>
-					<standard>Hora de les Islles Marianes del Norte</standard>
-				</long>
-			</metazone>
 			<metazone type="Novosibirsk">
 				<long>
 					<generic>Hora de Novosibirsk</generic>
@@ -4054,13 +4020,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<standard>hora de Pyongyang</standard>
 				</long>
 			</metazone>
-			<metazone type="Qyzylorda">
-				<long>
-					<generic>Hora de Qyzylorda</generic>
-					<standard>Hora estándar de Qyzylorda</standard>
-					<daylight>Hora braniega de Qyzylorda</daylight>
-				</long>
-			</metazone>
 			<metazone type="Reunion">
 				<long>
 					<standard>Hora de Reunión</standard>
@@ -4087,9 +4046,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<generic>Hora de Samoa</generic>
 					<standard>Hora estándar de Samoa</standard>
-					<daylight>Hora braniega de Samoa</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -4634,11 +4591,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>pesu chilenu</displayName>
 				<displayName count="one">pesu chilenu</displayName>
 				<displayName count="other">pesos chilenos</displayName>
-			</currency>
-			<currency type="CNX">
-				<displayName>Dólar del Bancu Popular Chinu</displayName>
-				<displayName count="one">dólar del Bancu Popular Chinu</displayName>
-				<displayName count="other">dólares del Bancu Popular Chinu</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Yuan chinu</displayName>

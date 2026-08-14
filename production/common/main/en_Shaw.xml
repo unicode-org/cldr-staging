@@ -293,6 +293,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="ss" type="none" scope="core" draft="unconfirmed">𐑪𐑓</type>
 			<type key="ss" type="standard" scope="core" draft="unconfirmed">𐑪𐑯</type>
 		</types>
+		<typeValues>
+			<typeValue type="no" draft="unconfirmed">𐑪𐑓</typeValue>
+			<typeValue type="yes" draft="unconfirmed">𐑪𐑯</typeValue>
+		</typeValues>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="unconfirmed">𐑥𐑧𐑑𐑮𐑦𐑒</measurementSystemName>
 			<measurementSystemName type="UK" draft="unconfirmed">𐑿𐑒𐑱</measurementSystemName>
@@ -704,6 +708,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yw" count="other" draft="unconfirmed">𐑢𐑰𐑒 w 𐑝 Y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
+						<intervalFormatRanges>
+							<intervalFormatRange type="mixed" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="non-numeric" draft="provisional">{0} – {1}</intervalFormatRange>
+							<intervalFormatRange type="numeric" draft="provisional">{0}–{1}</intervalFormatRange>
+						</intervalFormatRanges>
 						<intervalFormatItem id="Bh">
 							<greatestDifference id="h" draft="unconfirmed">h – h B</greatestDifference>
 						</intervalFormatItem>
@@ -1090,7 +1099,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</fields>
 		<timeZoneNames>
 			<gmtFormat>·𐑜𐑥𐑑{0}</gmtFormat>
-			<gmtZeroFormat>·𐑜𐑥𐑑</gmtZeroFormat>
 			<gmtUnknownFormat draft="unconfirmed">𐑜𐑥𐑑+?</gmtUnknownFormat>
 			<regionFormat>{0} 𐑑𐑲𐑥</regionFormat>
 			<regionFormat type="daylight" draft="unconfirmed">{0} 𐑛𐑱𐑤𐑲𐑑 𐑑𐑲𐑥</regionFormat>
@@ -1106,16 +1114,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="unconfirmed">𐑳𐑯𐑯𐑴𐑯 𐑤𐑴𐑒𐑱𐑖𐑩𐑯</exemplarCity>
 			</zone>
-			<zone type="Europe/London">
+			<metazone type="British">
 				<long>
 					<daylight draft="unconfirmed">𐑚𐑮𐑦𐑑𐑦𐑖 𐑕𐑳𐑥𐑼 𐑑𐑲𐑥</daylight>
 				</long>
-			</zone>
-			<zone type="Europe/Dublin">
-				<long>
-					<daylight draft="unconfirmed">𐑲𐑮𐑦𐑖 𐑕𐑑𐑨𐑯𐑛𐑼𐑛 𐑑𐑲𐑥</daylight>
-				</long>
-			</zone>
+			</metazone>
 			<metazone type="Europe_Central">
 				<long>
 					<generic draft="unconfirmed">𐑕𐑧𐑯𐑑𐑮𐑩𐑤 𐑘𐑫𐑼𐑩𐑐𐑾𐑯 𐑑𐑲𐑥</generic>
@@ -1164,6 +1167,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<short>
 					<standard draft="unconfirmed">𐑜𐑥𐑑</standard>
 				</short>
+			</metazone>
+			<metazone type="Irish">
+				<long>
+					<daylight draft="unconfirmed">𐑲𐑮𐑦𐑖 𐑕𐑑𐑨𐑯𐑛𐑼𐑛 𐑑𐑲𐑥</daylight>
+				</long>
 			</metazone>
 		</timeZoneNames>
 	</dates>
