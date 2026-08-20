@@ -743,13 +743,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<dates>
 		<calendars>
 			<calendar type="generic">
-				<dayOfMonths>
-					<dayOfMonthContext type="format">
-						<dayOfMonthWidth type="abbreviated">
-							<dayOfMonth ordinal="other">{0}th</dayOfMonth>
-						</dayOfMonthWidth>
-					</dayOfMonthContext>
-				</dayOfMonths>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -958,13 +951,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</monthWidth>
 					</monthContext>
 				</months>
-				<dayOfMonths>
-					<dayOfMonthContext type="format">
-						<dayOfMonthWidth type="abbreviated">
-							<dayOfMonth ordinal="other">{0}th</dayOfMonth>
-						</dayOfMonthWidth>
-					</dayOfMonthContext>
-				</dayOfMonths>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
@@ -1141,6 +1127,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMd">y 'ел', d MMM</dateFormatItem>
 						<dateFormatItem id="yMMMEd">y 'ел', d MMM, E</dateFormatItem>
 						<dateFormatItem id="yMMMM">y 'ел', MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMMd" draft="contributed">y 'ел', d MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMMEd" draft="contributed">y 'ел', d MMMM, EEE</dateFormatItem>
 						<dateFormatItem id="yQQQ">y 'ел', QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y 'ел', QQQQ</dateFormatItem>
 						<dateFormatItem id="yw" count="other">Y 'елның' w 'атнасы'</dateFormatItem>

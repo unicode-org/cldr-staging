@@ -1094,16 +1094,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<dates>
 		<calendars>
 			<calendar type="generic">
-				<dayOfMonths>
-					<dayOfMonthContext type="format">
-						<dayOfMonthWidth type="abbreviated">
-							<dayOfMonth ordinal="one">{0}st</dayOfMonth>
-							<dayOfMonth ordinal="two">{0}nd</dayOfMonth>
-							<dayOfMonth ordinal="few">{0}rd</dayOfMonth>
-							<dayOfMonth ordinal="other">{0}th</dayOfMonth>
-						</dayOfMonthWidth>
-					</dayOfMonthContext>
-				</dayOfMonths>
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -1380,16 +1370,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</monthWidth>
 					</monthContext>
 				</months>
-				<dayOfMonths>
-					<dayOfMonthContext type="format">
-						<dayOfMonthWidth type="abbreviated">
-							<dayOfMonth ordinal="one">{0}st</dayOfMonth>
-							<dayOfMonth ordinal="two">{0}nd</dayOfMonth>
-							<dayOfMonth ordinal="few">{0}rd</dayOfMonth>
-							<dayOfMonth ordinal="other">{0}th</dayOfMonth>
-						</dayOfMonthWidth>
-					</dayOfMonthContext>
-				</dayOfMonths>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="narrow">
@@ -1639,6 +1619,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMMd" draft="contributed">d MMMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMMEd" draft="contributed">y MMMM d, EEE</dateFormatItem>
 						<dateFormatItem id="yw" count="one">Y हाचो सप्तक w</dateFormatItem>
 						<dateFormatItem id="yw" count="other">Y हाचो सप्तक w</dateFormatItem>
 					</availableFormats>
