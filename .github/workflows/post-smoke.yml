@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "chartnum="$(echo ${{ github.ref }} | cut -d/ -f4) | tee -a $GITHUB_OUTPUT
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
             sparse-checkout: 'docs/charts'
 
@@ -59,7 +59,7 @@ jobs:
         run: |
           echo "chartnum="$(echo ${{ github.ref }} | cut -d/ -f4) | tee -a $GITHUB_OUTPUT
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
             sparse-checkout: 'docs/charts'
 
